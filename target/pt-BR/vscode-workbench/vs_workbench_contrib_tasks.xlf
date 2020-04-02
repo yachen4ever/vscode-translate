@@ -1,0 +1,1548 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/workbench/contrib/tasks/node/processRunnerDetector" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="TaskSystemDetector.noGulpTasks">
+        <source xml:lang="en">Running gulp --tasks-simple didn't list any tasks. Did you run npm install?</source>
+        <target state="translated">Executando gulp..-tarefas-simples não listam nenhuma tarefa. Você executou a instalação do npm?</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noJakeTasks">
+        <source xml:lang="en">Running jake --tasks didn't list any tasks. Did you run npm install?</source>
+        <target state="translated">Executando jake..-tarefas não listam nenhuma tarefa. Você instalou o npm?</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noGulpProgram">
+        <source xml:lang="en">Gulp is not installed on your system. Run npm install -g gulp to install it.</source>
+        <target state="translated">Gulp não está instalado no seu sistema. Execute npm install -g gulp para instalá-lo.</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noJakeProgram">
+        <source xml:lang="en">Jake is not installed on your system. Run npm install -g jake to install it.</source>
+        <target state="translated">Jake não está instalado no seu sistema. Execute npm install -g jake para instalá-lo.</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noGruntProgram">
+        <source xml:lang="en">Grunt is not installed on your system. Run npm install -g grunt to install it.</source>
+        <target state="translated">Grunhido não está instalado no seu sistema. Execute npm install -g grunt para instalá-lo.</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noProgram">
+        <source xml:lang="en">Program {0} was not found. Message is {1}</source>
+        <target state="translated">Programa {0} não foi encontrado. Mensagem é {1}</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.buildTaskDetected">
+        <source xml:lang="en">Build task named '{0}' detected.</source>
+        <target state="translated">Tarefa de construção chamada '{0}' detectada.</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.testTaskDetected">
+        <source xml:lang="en">Test task named '{0}' detected.</source>
+        <target state="translated">Tarefa de teste chamada '{0}' detectada.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/node/processTaskSystem" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="version1_0">
+        <source xml:lang="en">The task system is configured for version 0.1.0 (see tasks.json file), which can only execute custom tasks. Upgrade to version 2.0.0 to run the task: {0}</source>
+        <target state="translated">O sistema de tarefas é configurado para a versão 0.1.0 (consulte o arquivo tasks.json), que só podem executar tarefas personalizadas. Upgrade para a versão 2.0.0 para executar a tarefa: {0}</target>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.unknownError">
+        <source xml:lang="en">A unknown error has occurred while executing a task. See task output log for details.</source>
+        <target state="translated">Um erro desconhecido ocorreu durante a execução de uma tarefa. Consulte o log de saída de tarefa para obter detalhes.</target>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.watchingBuildTaskFinished">
+        <source xml:lang="en">
+Watching build tasks has finished.</source>
+        <target state="translated">
+Tarefas de compilação de monitoramento terminaram.</target>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.childProcessError">
+        <source xml:lang="en">Failed to launch external program {0} {1}.</source>
+        <target state="translated">Falha ao iniciar o programa externo {0} {1}.</target>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.cancelRequested">
+        <source xml:lang="en">
+The task '{0}' was terminated per user request.</source>
+        <target state="translated">
+A tarefa '{0}' foi finalizada por solicitação do usuário.</target>
+      </trans-unit>
+      <trans-unit id="unknownProblemMatcher">
+        <source xml:lang="en">Problem matcher {0} can't be resolved. The matcher will be ignored</source>
+        <target state="translated">Problem matcher {0} não pode ser resolvido. O matcher será ignorado</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/task.contribution" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="tasksCategory">
+        <source xml:lang="en">Tasks</source>
+        <target state="translated">Tarefas</target>
+      </trans-unit>
+      <trans-unit id="building">
+        <source xml:lang="en">Building...</source>
+        <target state="translated">Compilando...</target>
+      </trans-unit>
+      <trans-unit id="runningTasks">
+        <source xml:lang="en">Show Running Tasks</source>
+        <target state="translated">Mostrar tarefas em execução</target>
+      </trans-unit>
+      <trans-unit id="status.runningTasks">
+        <source xml:lang="en">Running Tasks</source>
+        <target state="translated">Executando tarefas</target>
+      </trans-unit>
+      <trans-unit id="miRunTask">
+        <source xml:lang="en">&amp;&amp;Run Task...</source>
+        <target state="translated">&amp;&amp;Executar Tarefa...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miBuildTask">
+        <source xml:lang="en">Run &amp;&amp;Build Task...</source>
+        <target state="translated">Executar tarefa de &amp;&amp;build...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miRunningTask">
+        <source xml:lang="en">Show Runnin&amp;&amp;g Tasks...</source>
+        <target state="translated">Mostrar Tarefas &amp;&amp; em Execução...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miRestartTask">
+        <source xml:lang="en">R&amp;&amp;estart Running Task...</source>
+        <target state="translated">R&amp;&amp;einiciar Tarefa em Execução...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miTerminateTask">
+        <source xml:lang="en">&amp;&amp;Terminate Task...</source>
+        <target state="translated">&amp;&amp;Finalizar tarefa...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miConfigureTask">
+        <source xml:lang="en">&amp;&amp;Configure Tasks...</source>
+        <target state="translated">&amp;&amp;Configurar Tarefas...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miConfigureBuildTask">
+        <source xml:lang="en">Configure De&amp;&amp;fault Build Task...</source>
+        <target state="translated">Configurar T&amp;&amp;arefa de Build Padrão...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.openWorkspaceFileTasks">
+        <source xml:lang="en">Open Workspace Tasks</source>
+        <target state="new">Open Workspace Tasks</target>
+      </trans-unit>
+      <trans-unit id="ShowLogAction.label">
+        <source xml:lang="en">Show Task Log</source>
+        <target state="translated">Visualizar o Log de Tarefas</target>
+      </trans-unit>
+      <trans-unit id="RunTaskAction.label">
+        <source xml:lang="en">Run Task</source>
+        <target state="translated">Executar Tarefa</target>
+      </trans-unit>
+      <trans-unit id="ReRunTaskAction.label">
+        <source xml:lang="en">Rerun Last Task</source>
+        <target state="translated">Executar novamente a última tarefa</target>
+      </trans-unit>
+      <trans-unit id="RestartTaskAction.label">
+        <source xml:lang="en">Restart Running Task</source>
+        <target state="translated">Reiniciar Tarefa em Execução</target>
+      </trans-unit>
+      <trans-unit id="ShowTasksAction.label">
+        <source xml:lang="en">Show Running Tasks</source>
+        <target state="translated">Mostrar tarefas em execução</target>
+      </trans-unit>
+      <trans-unit id="TerminateAction.label">
+        <source xml:lang="en">Terminate Task</source>
+        <target state="translated">Finalizar Tarefa</target>
+      </trans-unit>
+      <trans-unit id="BuildAction.label">
+        <source xml:lang="en">Run Build Task</source>
+        <target state="translated">Executar Tarefa de compilação</target>
+      </trans-unit>
+      <trans-unit id="TestAction.label">
+        <source xml:lang="en">Run Test Task</source>
+        <target state="translated">Executar Tarefa de Teste</target>
+      </trans-unit>
+      <trans-unit id="ConfigureDefaultBuildTask.label">
+        <source xml:lang="en">Configure Default Build Task</source>
+        <target state="translated">Configurar Tarefa de Compilação Padrão</target>
+      </trans-unit>
+      <trans-unit id="ConfigureDefaultTestTask.label">
+        <source xml:lang="en">Configure Default Test Task</source>
+        <target state="translated">Configurar Tarefa de Teste Padrão</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.openUserTasks">
+        <source xml:lang="en">Open User Tasks</source>
+        <target state="translated">Abrir tarefas do usuário</target>
+      </trans-unit>
+      <trans-unit id="quickOpen.task">
+        <source xml:lang="en">Run Task</source>
+        <target state="translated">Executar Tarefa</target>
+      </trans-unit>
+      <trans-unit id="tasksConfigurationTitle">
+        <source xml:lang="en">Tasks</source>
+        <target state="translated">Tarefas</target>
+      </trans-unit>
+      <trans-unit id="task.problemMatchers.neverPrompt">
+        <source xml:lang="en">Configures whether to show the problem matcher prompt when running a task. Set to `true` to never prompt, or use a dictionary of task types to turn off prompting only for specific task types.</source>
+        <target state="translated">Configura se deve ser exibido o prompt do correspondente do problema ao executar uma tarefa. Defina como `true` para nunca solicitar, ou use um dicionário de tipos de tarefas para desativar a solicitação apenas para tipos de tarefas específicos.</target>
+      </trans-unit>
+      <trans-unit id="task.problemMatchers.neverPrompt.boolean">
+        <source xml:lang="en">Sets problem matcher prompting behavior for all tasks.</source>
+        <target state="translated">Define o comportamento de solicitação do correspondente de problema para todas as tarefas.</target>
+      </trans-unit>
+      <trans-unit id="task.problemMatchers.neverPrompt.array">
+        <source xml:lang="en">An object containing task type-boolean pairs to never prompt for problem matchers on.</source>
+        <target state="translated">Um objeto contendo pares de tarefas tipo-booleanos para nunca solicitar a correspondência de problemas.</target>
+      </trans-unit>
+      <trans-unit id="task.autoDetect">
+        <source xml:lang="en">Controls enablement of `provideTasks` for all task provider extension. If the Tasks: Run Task command is slow, disabling auto detect for task providers may help. Individual extensions may also provide settings that disable auto detection.</source>
+        <target state="new">Controls enablement of `provideTasks` for all task provider extension. If the Tasks: Run Task command is slow, disabling auto detect for task providers may help. Individual extensions may also provide settings that disable auto detection.</target>
+      </trans-unit>
+      <trans-unit id="task.slowProviderWarning">
+        <source xml:lang="en">Configures whether a warning is shown when a provider is slow</source>
+        <target state="translated">Configura se um aviso é mostrado quando um provedor está lento</target>
+      </trans-unit>
+      <trans-unit id="task.slowProviderWarning.boolean">
+        <source xml:lang="en">Sets the slow provider warning for all tasks.</source>
+        <target state="translated">Define o aviso de provedor lento para todas as tarefas.</target>
+      </trans-unit>
+      <trans-unit id="task.slowProviderWarning.array">
+        <source xml:lang="en">An array of task types to never show the slow provider warning.</source>
+        <target state="translated">Uma matriz de tipos de tarefa para nunca mostrar o aviso de provedor lento.</target>
+      </trans-unit>
+      <trans-unit id="task.quickOpen.history">
+        <source xml:lang="en">Controls the number of recent items tracked in task quick open dialog.</source>
+        <target state="translated">Controla o número de itens recentes rastreados na caixa de diálogo de abertura rápida da tarefa.</target>
+      </trans-unit>
+      <trans-unit id="task.quickOpen.detail">
+        <source xml:lang="en">Controls whether to show the task detail for task that have a detail in the Run Task quick pick.</source>
+        <target state="translated">Controla se é necessário mostrar os detalhes da tarefa que possui um detalhe na seleção rápida Executar Tarefa.</target>
+      </trans-unit>
+      <trans-unit id="task.quickOpen.skip">
+        <source xml:lang="en">Controls whether the task quick pick is skipped when there is only one task to pick from.</source>
+        <target state="translated">Controla se a seleção rápida da tarefa é ignorada quando há apenas uma tarefa para escolher.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/tasks" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="TaskDefinition.missingRequiredProperty">
+        <source xml:lang="en">Error: the task identifier '{0}' is missing the required property '{1}'. The task identifier will be ignored.</source>
+        <target state="translated">Erro: o identificador da tarefa '{0}' não possui a propriedade obrigatória '{1}'. O identificador da tarefa será ignorado.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/taskQuickOpen" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="tasksAriaLabel">
+        <source xml:lang="en">Type the name of a task to run</source>
+        <target state="translated">Digite o nome de uma tarefa para executar</target>
+      </trans-unit>
+      <trans-unit id="noTasksMatching">
+        <source xml:lang="en">No tasks matching</source>
+        <target state="translated">Não há tarefas correspondentes</target>
+      </trans-unit>
+      <trans-unit id="noTasksFound">
+        <source xml:lang="en">No tasks found</source>
+        <target state="translated">Não há tarefas encontradas</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/jsonSchema_v1" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="JsonSchema.version.deprecated">
+        <source xml:lang="en">Task version 0.1.0 is deprecated. Please use 2.0.0</source>
+        <target state="translated">Tarefa versão 0.1.0 está obsoleta. Por favor use 2.0.0</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.version">
+        <source xml:lang="en">The config's version number</source>
+        <target state="translated">Número da versão do config</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema._runner">
+        <source xml:lang="en">The runner has graduated. Use the offical runner property</source>
+        <target state="translated">O runner já se formou. Use a propriedade runner oficial</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.runner">
+        <source xml:lang="en">Defines whether the task is executed as a process and the output is shown in the output window or inside the terminal.</source>
+        <target state="translated">Define se a tarefa é executada como um processo e a saída é mostrada na janela de saída ou dentro do terminal.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.windows">
+        <source xml:lang="en">Windows specific command configuration</source>
+        <target state="translated">Configuração de comando específica do Windows</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.mac">
+        <source xml:lang="en">Mac specific command configuration</source>
+        <target state="translated">Configuração de comando específica do Mac</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.linux">
+        <source xml:lang="en">Linux specific command configuration</source>
+        <target state="translated">Configuração de comando específica do Linux</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.shell">
+        <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
+        <target state="translated">Especifica se o comando é um comando shell ou um programa externo. O padrão é falso se omitido.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/taskDefinitionRegistry" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="TaskDefinition.description">
+        <source xml:lang="en">The actual task type. Please note that types starting with a '$' are reserved for internal usage.</source>
+        <target state="translated">O atual tipo de tarefa. Por favor, note que os tipos começando com um '$' são reservados para uso interno.</target>
+      </trans-unit>
+      <trans-unit id="TaskDefinition.properties">
+        <source xml:lang="en">Additional properties of the task type</source>
+        <target state="translated">Propriedades adicionais do tipo de tarefa</target>
+      </trans-unit>
+      <trans-unit id="TaskTypeConfiguration.noType">
+        <source xml:lang="en">The task type configuration is missing the required 'taskType' property</source>
+        <target state="translated">A propriedade necessária 'taskType' está faltando na configuração do tipo de tarefa </target>
+      </trans-unit>
+      <trans-unit id="TaskDefinitionExtPoint">
+        <source xml:lang="en">Contributes task kinds</source>
+        <target state="translated">Contribui com os tipos de tarefa</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/runAutomaticTasks" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="tasks.run.allowAutomatic">
+        <source xml:lang="en">This folder has tasks ({0}) defined in 'tasks.json' that run automatically when you open this folder. Do you allow automatic tasks to run when you open this folder?</source>
+        <target state="translated">Esta pasta tem tarefas ({0}) definidas em 'tasks.json' que são executadas automaticamente quando você abre esta pasta. Você permite que tarefas automáticas sejam executadas quando você abrir esta pasta?</target>
+      </trans-unit>
+      <trans-unit id="allow">
+        <source xml:lang="en">Allow and run</source>
+        <target state="translated">Permitir e executar</target>
+      </trans-unit>
+      <trans-unit id="disallow">
+        <source xml:lang="en">Disallow</source>
+        <target state="translated">Não permitir</target>
+      </trans-unit>
+      <trans-unit id="openTasks">
+        <source xml:lang="en">Open tasks.json</source>
+        <target state="translated">Abrir tasks.json</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.manageAutomaticRunning">
+        <source xml:lang="en">Manage Automatic Tasks in Folder</source>
+        <target state="translated">Gerenciar tarefas automáticas na pasta</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.allowAutomaticTasks">
+        <source xml:lang="en">Allow Automatic Tasks in Folder</source>
+        <target state="translated">Permite tarefas automáticas na pasta</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.disallowAutomaticTasks">
+        <source xml:lang="en">Disallow Automatic Tasks in Folder</source>
+        <target state="translated">Não Permitir Tarefas Automáticas em Pasta</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/quickOpen" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="entryAriaLabel">
+        <source xml:lang="en">{0}, tasks</source>
+        <target state="translated">{0}, tarefas</target>
+      </trans-unit>
+      <trans-unit id="recentlyUsed">
+        <source xml:lang="en">recently used tasks</source>
+        <target state="translated">tarefas recentemente utilizadas</target>
+      </trans-unit>
+      <trans-unit id="configured">
+        <source xml:lang="en">configured tasks</source>
+        <target state="translated">tarefas configuradas</target>
+      </trans-unit>
+      <trans-unit id="detected">
+        <source xml:lang="en">detected tasks</source>
+        <target state="translated">tarefas detectadas</target>
+      </trans-unit>
+      <trans-unit id="customizeTask">
+        <source xml:lang="en">Configure Task</source>
+        <target state="translated">Configurar a tarefa</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/taskConfiguration" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="ConfigurationParser.invalidCWD">
+        <source xml:lang="en">Warning: options.cwd must be of type string. Ignoring value {0}
+</source>
+        <target state="translated">Aviso: options.cwd deve ser do tipo string. Ignorando valor {0}
+</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.inValidArg">
+        <source xml:lang="en">Error: command argument must either be a string or a quoted string. Provided value is:
+{0}</source>
+        <target state="translated">Erro: o argumento do comando deve ser uma string ou uma string entre aspas. Valor fornecido:
+{0}</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.noShell">
+        <source xml:lang="en">Warning: shell configuration is only supported when executing tasks in the terminal.</source>
+        <target state="translated">Aviso: A configuração do shell somente é suportada quando estiver executando tarefas no terminal.</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.noName">
+        <source xml:lang="en">Error: Problem Matcher in declare scope must have a name:
+{0}
+</source>
+        <target state="translated">Erro: Problem Matcher no escopo declarado deve ter um nome:
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.unknownMatcherKind">
+        <source xml:lang="en">Warning: the defined problem matcher is unknown. Supported types are string | ProblemMatcher | Array&lt;string | ProblemMatcher&gt;.
+{0}
+</source>
+        <target state="translated">Aviso: a correspondência de problema definida é desconhecida. Tipos suportados são cadeia de caracteres | ProblemMatcher | Matriz &lt; de cadeia de caracteres | ProblemMatcher &gt;.
+{0}</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.invalidVariableReference">
+        <source xml:lang="en">Error: Invalid problemMatcher reference: {0}
+</source>
+        <target state="translated">Erro: ProblemMatcher inválido referência: {0}
+</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.noTaskType">
+        <source xml:lang="en">Error: tasks configuration must have a type property. The configuration will be ignored.
+{0}
+</source>
+        <target state="translated">Erro: configuração de tarefas deve ter uma propriedade de tipo. A configuração será ignorada.
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.noTypeDefinition">
+        <source xml:lang="en">Error: there is no registered task type '{0}'. Did you miss to install an extension that provides a corresponding task provider?</source>
+        <target state="translated">Erro: não há nenhum tipo de tarefa registrado '{0}'. Você esqueceu de instalar uma extensão que fornece um provedor de tarefa correspondente?</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.missingType">
+        <source xml:lang="en">Error: the task configuration '{0}' is missing the required property 'type'. The task configuration will be ignored.</source>
+        <target state="translated">Erro: a configuração da tarefa '{0}' não possui a propriedade obrigatória 'type'. A configuração da tarefa será ignorada.</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.incorrectType">
+        <source xml:lang="en">Error: the task configuration '{0}' is using an unknown type. The task configuration will be ignored.</source>
+        <target state="translated">Erro: a configuração da tarefa '{0}' está usando um tipo desconhecido. A configuração da tarefa será ignorada.</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.notCustom">
+        <source xml:lang="en">Error: tasks is not declared as a custom task. The configuration will be ignored.
+{0}
+</source>
+        <target state="translated">Erro: tarefas não está declarada como uma tarefa personalizada. A configuração será ignorada.
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.noTaskName">
+        <source xml:lang="en">Error: a task must provide a label property. The task will be ignored.
+{0}
+</source>
+        <target state="translated">Erro: uma tarefa deve fornecer uma propriedade de rótulo. A tarefa será ignorada.
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="taskConfiguration.noCommandOrDependsOn">
+        <source xml:lang="en">Error: the task '{0}' neither specifies a command nor a dependsOn property. The task will be ignored. Its definition is:
+{1}</source>
+        <target state="translated">Erro: a tarefa '{0}' não especifica nem um comando nem uma propriedade dependsOn. A tarefa será ignorada. Sua definição é: 
+{1}</target>
+      </trans-unit>
+      <trans-unit id="taskConfiguration.noCommand">
+        <source xml:lang="en">Error: the task '{0}' doesn't define a command. The task will be ignored. Its definition is:
+{1}</source>
+        <target state="translated">Erro: a tarefa '{0}' não define um comando. A tarefa será ignorada. Sua definição é: {1}</target>
+      </trans-unit>
+      <trans-unit id="TaskParse.noOsSpecificGlobalTasks">
+        <source xml:lang="en">Task version 2.0.0 doesn't support global OS specific tasks. Convert them to a task with a OS specific command. Affected tasks are:
+{0}</source>
+        <target state="translated">Tarefa versão 2.0.0 não oferece suporte a tarefas globais específicas do sistema operacional. Converta-as em uma tarefa com um comando específico do sistema operacional. Tarefas afetadas:
+{0}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/jsonSchema_v2" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="JsonSchema.shell">
+        <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
+        <target state="translated">Especifica se o comando é um comando shell ou um programa externo. O padrão é falso se omitido.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.isShellCommand.deprecated">
+        <source xml:lang="en">The property isShellCommand is deprecated. Use the type property of the task and the shell property in the options instead. See also the 1.14 release notes.</source>
+        <target state="translated">A propriedade isShellCommand é obsoleta. Use a propriedade type da tarefa e a propriedade shell nas opções. Veja também as notas de versão 1.14.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOn.identifier">
+        <source xml:lang="en">The task identifier.</source>
+        <target state="translated">O identificador de tarefa.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOn.string">
+        <source xml:lang="en">Another task this task depends on.</source>
+        <target state="translated">Outra tarefa da qual esta tarefa depende.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOn.array">
+        <source xml:lang="en">The other tasks this task depends on.</source>
+        <target state="translated">A outra tarefa que esta tarefa depende.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOn">
+        <source xml:lang="en">Either a string representing another task or an array of other tasks that this task depends on.</source>
+        <target state="translated">Ou uma cadeia de caracteres que representa outra tarefa ou uma matriz de outras tarefas que essa tarefa depende.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOrder.parallel">
+        <source xml:lang="en">Run all dependsOn tasks in parallel.</source>
+        <target state="translated">Execute todas as tarefas dependsOn em paralelo.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOrder.sequence">
+        <source xml:lang="en">Run all dependsOn tasks in sequence.</source>
+        <target state="translated">Execute todas as tarefas dependsOn em sequência.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOrder">
+        <source xml:lang="en">Determines the order of the dependsOn tasks for this task. Note that this property is not recursive.</source>
+        <target state="translated">Determina a ordem das tarefas dependsOn para esta tarefa. Observe que essa propriedade não é recursiva.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.detail">
+        <source xml:lang="en">An optional description of a task that shows in the Run Task quick pick as a detail.</source>
+        <target state="translated">Uma descrição opcional de uma tarefa que é mostrada no atalho rápido Iniciar Tarefa como um detalhe.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation">
+        <source xml:lang="en">Configures the panel that is used to present the task's output and reads its input.</source>
+        <target state="translated">Configura o painel que é usado para apresentar a saída da tarefa e lê sua entrada.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.echo">
+        <source xml:lang="en">Controls whether the executed command is echoed to the panel. Default is true.</source>
+        <target state="translated">Controla se o comando executado é ecoado para o painel. Padrão é true.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.focus">
+        <source xml:lang="en">Controls whether the panel takes focus. Default is false. If set to true the panel is revealed as well.</source>
+        <target state="translated">Controla se o painel ganha foco. O padrão é false. Se definido como true, o painel é revelado também.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.revealProblems.always">
+        <source xml:lang="en">Always reveals the problems panel when this task is executed.</source>
+        <target state="translated">Sempre revela o painel de problemas quando esta tarefa for executada.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.revealProblems.onProblem">
+        <source xml:lang="en">Only reveals the problems panel if a problem is found.</source>
+        <target state="translated">Só revela o painel de problemas se um problema for encontrado.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.revealProblems.never">
+        <source xml:lang="en">Never reveals the problems panel when this task is executed.</source>
+        <target state="translated">Nunca revela o painel de problemas quando essa tarefa é executada.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.revealProblems">
+        <source xml:lang="en">Controls whether the problems panel is revealed when running this task or not. Takes precedence over option "reveal". Default is "never".</source>
+        <target state="translated">Controla se o painel de problemas é revelado ao executar esta tarefa ou não. Tem precedência sobre a opção "revelar". O padrão é "nunca".</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.reveal.always">
+        <source xml:lang="en">Always reveals the terminal when this task is executed.</source>
+        <target state="translated">Sempre revela o terminal quando esta tarefa é executada.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.reveal.silent">
+        <source xml:lang="en">Only reveals the terminal if the task exits with an error or the problem matcher finds an error.</source>
+        <target state="translated">Só revela o terminal se a tarefa for encerrada com um erro ou o analisador de problemas encontra um erro.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.reveal.never">
+        <source xml:lang="en">Never reveals the terminal when this task is executed.</source>
+        <target state="translated">Nunca revela o terminal quando esta tarefa é executada.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.reveal">
+        <source xml:lang="en">Controls whether the terminal running the task is revealed or not. May be overridden by option "revealProblems". Default is "always".</source>
+        <target state="translated">Controla se o terminal que executa a tarefa é revelado ou não. Pode ser substituída pela opção "revealProblems". O padrão é "sempre".</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.instance">
+        <source xml:lang="en">Controls if the panel is shared between tasks, dedicated to this task or a new one is created on every run.</source>
+        <target state="translated">Controla se o painel é compartilhado entre tarefas, dedicado a esta tarefa ou um novo é criado em cada execução.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.showReuseMessage">
+        <source xml:lang="en">Controls whether to show the `Terminal will be reused by tasks, press any key to close it` message.</source>
+        <target state="translated">Controla quando mostrar a mensagem 'O terminal será reutilizado pelas tarefas, pressione qualquer tecla para fechar'.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.clear">
+        <source xml:lang="en">Controls whether the terminal is cleared before executing the task.</source>
+        <target state="translated">Controla se o terminal é limpo antes de executar a tarefa.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.group">
+        <source xml:lang="en">Controls whether the task is executed in a specific terminal group using split panes.</source>
+        <target state="translated">Controla se a tarefa é executada em um grupo específico de terminal usando painéis de separação.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.terminal">
+        <source xml:lang="en">The terminal property is deprecated. Use presentation instead</source>
+        <target state="translated">A propriedade terminal é obsoleta. Use presentation em seu lugar.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.kind">
+        <source xml:lang="en">The task's execution group.</source>
+        <target state="translated">Grupo de execução da tarefa.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.isDefault">
+        <source xml:lang="en">Defines if this task is the default task in the group.</source>
+        <target state="translated">Define-se essa tarefa é a tarefa do padrão do grupo.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.defaultBuild">
+        <source xml:lang="en">Marks the task as the default build task.</source>
+        <target state="translated">Marca a tarefa como a tarefa de compilação padrão.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.defaultTest">
+        <source xml:lang="en">Marks the task as the default test task.</source>
+        <target state="translated">Marca a tarefa como a tarefa de teste padrão.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.build">
+        <source xml:lang="en">Marks the task as a build task accessible through the 'Run Build Task' command.</source>
+        <target state="translated">Marca a tarefa como uma tarefa de build acessível através do comando 'Executar tarefa de build'.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.test">
+        <source xml:lang="en">Marks the task as a test task accessible through the 'Run Test Task' command.</source>
+        <target state="translated">Marca a tarefa como uma tarefa de teste acessível através do comando 'Executar Tarefa Teste'.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.none">
+        <source xml:lang="en">Assigns the task to no group</source>
+        <target state="translated">Atribui a tarefa para nenhum grupo</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group">
+        <source xml:lang="en">Defines to which execution group this task belongs to. It supports "build" to add it to the build group and "test" to add it to the test group.</source>
+        <target state="translated">Define a que grupo de execução desta tarefa pertence. Suporta "build" para adicioná-lo ao grupo de compilação e "test" para adicioná-lo ao grupo de teste.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.type">
+        <source xml:lang="en">Defines whether the task is run as a process or as a command inside a shell.</source>
+        <target state="translated">Define quando a tarefa é executada como um processo ou como um comando dentro do shell.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.commandArray">
+        <source xml:lang="en">The shell command to be executed. Array items will be joined using a space character</source>
+        <target state="translated">O comando shell a ser executado. Itens de array serão juntados usando um caractere de espaço</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.command.quotedString.value">
+        <source xml:lang="en">The actual command value</source>
+        <target state="translated">O valor real do comando</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.quoting.escape">
+        <source xml:lang="en">Escapes characters using the shell's escape character (e.g. ` under PowerShell and \ under bash).</source>
+        <target state="translated">Escapa caracteres usando o caractere de escape do shell (por exemplo ` sob o PowerShell e \ sob o bash).</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.quoting.strong">
+        <source xml:lang="en">Quotes the argument using the shell's strong quote character (e.g. " under PowerShell and bash).</source>
+        <target state="translated">Aplicar aspas no argumento usando o caractere de aspas duplas do shell (por exemplo " sob o PowerShell e bash).</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.quoting.weak">
+        <source xml:lang="en">Quotes the argument using the shell's weak quote character (e.g. ' under PowerShell and bash).</source>
+        <target state="translated">Aplicar aspas no argumento usando o caractere de aspas simples do shell (por exemplo ' sob o PowerShell e bash).</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.command.quotesString.quote">
+        <source xml:lang="en">How the command value should be quoted.</source>
+        <target state="translated">Como aspas devem ser aplicadas no valor do comando.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.command">
+        <source xml:lang="en">The command to be executed. Can be an external program or a shell command.</source>
+        <target state="translated">O comando a ser executado. Pode ser um programa externo ou um comando shell.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.args.quotedString.value">
+        <source xml:lang="en">The actual argument value</source>
+        <target state="translated">O valor real do argumento</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.args.quotesString.quote">
+        <source xml:lang="en">How the argument value should be quoted.</source>
+        <target state="translated">Como aspas devem ser aplicadas no valor do argumento.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.args">
+        <source xml:lang="en">Arguments passed to the command when this task is invoked.</source>
+        <target state="translated">Argumentos passados para o comando quando esta tarefa é invocada.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.label">
+        <source xml:lang="en">The task's user interface label</source>
+        <target state="translated">O rótulo da tarefa na interface do usuário.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.version">
+        <source xml:lang="en">The config's version number.</source>
+        <target state="translated">O número da versão do config.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.identifier">
+        <source xml:lang="en">A user defined identifier to reference the task in launch.json or a dependsOn clause.</source>
+        <target state="translated">Um identificador definido pelo usuário para fazer referência a tarefa em launch.json ou uma cláusula dependsOn.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.identifier.deprecated">
+        <source xml:lang="en">User defined identifiers are deprecated. For custom task use the name as a reference and for tasks provided by extensions use their defined task identifier.</source>
+        <target state="translated">Identificadores definidos pelo usuário estão obsoletos. Para tarefas personalizadas utilize o nome como uma referência e para tarefas fornecidas por extensões use seu identificador de tarefa definido.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.reevaluateOnRerun">
+        <source xml:lang="en">Whether to reevaluate task variables on rerun.</source>
+        <target state="translated">Se deve reavaliar variáveis de tarefa em reexecução.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.runOn">
+        <source xml:lang="en">Configures when the task should be run. If set to folderOpen, then the task will be run automatically when the folder is opened.</source>
+        <target state="translated">Configura-se quando a tarefa deve ser executada. Se definido como folderOpen, então a tarefa será executada automaticamente quando a pasta é aberta.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.instanceLimit">
+        <source xml:lang="en">The number of instances of the task that are allowed to run simultaneously.</source>
+        <target state="new">The number of instances of the task that are allowed to run simultaneously.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.runOptions">
+        <source xml:lang="en">The task's run related options</source>
+        <target state="translated">Opções relacionadas à execução da tarefa</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.taskLabel">
+        <source xml:lang="en">The task's label</source>
+        <target state="translated">A etiqueta da tarefa</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.taskName">
+        <source xml:lang="en">The task's name</source>
+        <target state="translated">Nome da tarefa</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.taskName.deprecated">
+        <source xml:lang="en">The task's name property is deprecated. Use the label property instead.</source>
+        <target state="translated">A propriedade name da tarefa é obsoleta. Use a propriedade label.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.background">
+        <source xml:lang="en">Whether the executed task is kept alive and is running in the background.</source>
+        <target state="translated">Se a tarefa executada é mantida viva e é executado em segundo plano.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.promptOnClose">
+        <source xml:lang="en">Whether the user is prompted when VS Code closes with a running task.</source>
+        <target state="translated">Se o usuário é solicitado quando VS Code fecha com uma tarefa sendo executada.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.matchers">
+        <source xml:lang="en">The problem matcher(s) to use. Can either be a string or a problem matcher definition or an array of strings and problem matchers.</source>
+        <target state="translated">A correspondência de problemas a ser utilizada. Pode ser uma sequência de caracteres ou uma definição de correspondência de problemas ou uma matriz de sequências de caracteres e correspondência de problemas.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.customizations.customizes.type">
+        <source xml:lang="en">The task type to customize</source>
+        <target state="translated">O tipo de tarefa a ser personalizada</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.customize.deprecated">
+        <source xml:lang="en">The customize property is deprecated. See the 1.14 release notes on how to migrate to the new task customization approach</source>
+        <target state="translated">A propriedade customize é obsoleta. Consulte as notas de versão 1.14 sobre como migrar para a nova abordagem de personalização de tarefa</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.showOutput.deprecated">
+        <source xml:lang="en">The property showOutput is deprecated. Use the reveal property inside the presentation property instead. See also the 1.14 release notes.</source>
+        <target state="translated">A propriedade showOutput é obsoleta. Use a propriedade reveal dentro da propriedade presentation. Ver também as notas de versão 1.14.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.echoCommand.deprecated">
+        <source xml:lang="en">The property echoCommand is deprecated. Use the echo property inside the presentation property instead. See also the 1.14 release notes.</source>
+        <target state="translated">A propriedade echoCommand é obsoleta. Use a propriedade echo dentro da propriedade presentation. Ver também as notas de versão 1.14.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.suppressTaskName.deprecated">
+        <source xml:lang="en">The property suppressTaskName is deprecated. Inline the command with its arguments into the task instead. See also the 1.14 release notes.</source>
+        <target state="translated">A propriedade suppressTaskName é obsoleta. Ao invés, coloque o comando junto com seus argumentos dentro de uma tarefa. Veja também as notas de lançamento da versão 1.14.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.isBuildCommand.deprecated">
+        <source xml:lang="en">The property isBuildCommand is deprecated. Use the group property instead. See also the 1.14 release notes.</source>
+        <target state="translated">A propriedade isBuildCommand é obsoleta. Use a propriedade group em seu lugar. Ver também as notas de versão 1.14.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.isTestCommand.deprecated">
+        <source xml:lang="en">The property isTestCommand is deprecated. Use the group property instead. See also the 1.14 release notes.</source>
+        <target state="translated">A propriedade isTestCommand é obsoleta. Use a propriedade group em seu lugar. Ver também as notas de versão 1.14.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.taskSelector.deprecated">
+        <source xml:lang="en">The property taskSelector is deprecated. Inline the command with its arguments into the task instead. See also the 1.14 release notes.</source>
+        <target state="translated">A propriedade taskSelector é obsoleta. Ao invés, coloque o comando junto com seus argumentos dentro de uma tarefa. Veja também as notas de lançamento da versão 1.14.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.windows">
+        <source xml:lang="en">Windows specific command configuration</source>
+        <target state="translated">Configuração de comando específica do Windows</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.mac">
+        <source xml:lang="en">Mac specific command configuration</source>
+        <target state="translated">Configuração de comando específica do Mac</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.linux">
+        <source xml:lang="en">Linux specific command configuration</source>
+        <target state="translated">Configuração de comando específica do Linux</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/jsonSchemaCommon" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="JsonSchema.options">
+        <source xml:lang="en">Additional command options</source>
+        <target state="translated">Opções de comando adicionais</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.options.cwd">
+        <source xml:lang="en">The current working directory of the executed program or script. If omitted Code's current workspace root is used.</source>
+        <target state="translated">O diretório de trabalho atual do programa executado ou do script. Se omitido raiz de espaço de trabalho atual do código é usado.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.options.env">
+        <source xml:lang="en">The environment of the executed program or shell. If omitted the parent process' environment is used.</source>
+        <target state="translated">O ambiente do programa executado ou comando shell. Se omitido o ambiente do processo pai é usado.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.shellConfiguration">
+        <source xml:lang="en">Configures the shell to be used.</source>
+        <target state="translated">Configura a shell a ser usada.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.shell.executable">
+        <source xml:lang="en">The shell to be used.</source>
+        <target state="translated">O shell a ser usado.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.shell.args">
+        <source xml:lang="en">The shell arguments.</source>
+        <target state="translated">Os argumentos shell.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.command">
+        <source xml:lang="en">The command to be executed. Can be an external program or a shell command.</source>
+        <target state="translated">O comando a ser executado. Pode ser um programa externo ou um comando shell.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.args">
+        <source xml:lang="en">Arguments passed to the command when this task is invoked.</source>
+        <target state="translated">Argumentos passados para o comando quando esta tarefa é invocada.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.taskName">
+        <source xml:lang="en">The task's name</source>
+        <target state="translated">Nome da tarefa</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.windows">
+        <source xml:lang="en">Windows specific command configuration</source>
+        <target state="translated">Configuração de comando específica do Windows</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.matchers">
+        <source xml:lang="en">The problem matcher(s) to use. Can either be a string or a problem matcher definition or an array of strings and problem matchers.</source>
+        <target state="translated">A correspondência de problemas a ser utilizada. Pode ser uma sequência de caracteres ou uma definição de correspondência de problemas ou uma matriz de sequências de caracteres e correspondência de problemas.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.mac">
+        <source xml:lang="en">Mac specific command configuration</source>
+        <target state="translated">Configuração de comando específica do Mac</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.linux">
+        <source xml:lang="en">Linux specific command configuration</source>
+        <target state="translated">Configuração de comando específica do Linux</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.suppressTaskName">
+        <source xml:lang="en">Controls whether the task name is added as an argument to the command. If omitted the globally defined value is used.</source>
+        <target state="translated">Controla se o nome de tarefa é adicionado como um argumento para o comando. Se omitido o valor definido globalmente é usado.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.showOutput">
+        <source xml:lang="en">Controls whether the output of the running task is shown or not. If omitted the globally defined value is used.</source>
+        <target state="translated">Controla se a saída da execução de tarefas é mostrada ou não. Se omitido o valor definido globalmente é usado.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.echoCommand">
+        <source xml:lang="en">Controls whether the executed command is echoed to the output. Default is false.</source>
+        <target state="translated">Controla se o comando executado é enviado para a saída. O padrão é false.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.watching.deprecation">
+        <source xml:lang="en">Deprecated. Use isBackground instead.</source>
+        <target state="translated">Descontinuado. Use isBackground.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.watching">
+        <source xml:lang="en">Whether the executed task is kept alive and is watching the file system.</source>
+        <target state="translated">Se a tarefa executada é mantida viva e está monitorando o sistema de arquivos.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.background">
+        <source xml:lang="en">Whether the executed task is kept alive and is running in the background.</source>
+        <target state="translated">Se a tarefa executada é mantida viva e é executado em segundo plano.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.promptOnClose">
+        <source xml:lang="en">Whether the user is prompted when VS Code closes with a running task.</source>
+        <target state="translated">Se o usuário é solicitado quando VS Code fecha com uma tarefa sendo executada.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.build">
+        <source xml:lang="en">Maps this task to Code's default build command.</source>
+        <target state="translated">Esta tarefa é mapeada para o comando de compilação padrão do código.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.test">
+        <source xml:lang="en">Maps this task to Code's default test command.</source>
+        <target state="translated">Esta tarefa é mapeada para o comando de teste padrão do código.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.args">
+        <source xml:lang="en">Additional arguments passed to the command.</source>
+        <target state="translated">Argumentos adicionais passados para o comando.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.showOutput">
+        <source xml:lang="en">Controls whether the output of the running task is shown or not. If omitted 'always' is used.</source>
+        <target state="translated">Controla se a saída da execução de tarefas é mostrada ou não. Se omitido 'sempre' é usado.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.watching.deprecation">
+        <source xml:lang="en">Deprecated. Use isBackground instead.</source>
+        <target state="translated">Descontinuado. Use isBackground.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.watching">
+        <source xml:lang="en">Whether the executed task is kept alive and is watching the file system.</source>
+        <target state="translated">Se a tarefa executada é mantida viva e está monitorando o sistema de arquivos.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.background">
+        <source xml:lang="en">Whether the executed task is kept alive and is running in the background.</source>
+        <target state="translated">Se a tarefa executada é mantida viva e é executado em segundo plano.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.promptOnClose">
+        <source xml:lang="en">Whether the user is prompted when VS Code closes with a running background task.</source>
+        <target state="translated">Se o usuário é solicitado quando VS Code fecha com uma tarefa de segundo plano em execução.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.suppressTaskName">
+        <source xml:lang="en">Controls whether the task name is added as an argument to the command. Default is false.</source>
+        <target state="translated">Controla se o nome de tarefa é adicionado como um argumento para o comando. O padrão é false.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.taskSelector">
+        <source xml:lang="en">Prefix to indicate that an argument is task.</source>
+        <target state="translated">Prefixo para indicar que um argumento é tarefa.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.matchers">
+        <source xml:lang="en">The problem matcher(s) to use. Can either be a string or a problem matcher definition or an array of strings and problem matchers.</source>
+        <target state="translated">A correspondência de problemas a ser utilizada. Pode ser uma sequência de caracteres ou uma definição de correspondência de problemas ou uma matriz de sequências de caracteres e correspondência de problemas.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks">
+        <source xml:lang="en">The task configurations. Usually these are enrichments of task already defined in the external task runner.</source>
+        <target state="translated">As configurações de tarefa. Normalmente são ampliações de tarefas já definidas na execução de tarefa externa.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/problemMatcher" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="ProblemPatternParser.problemPattern.missingRegExp">
+        <source xml:lang="en">The problem pattern is missing a regular expression.</source>
+        <target state="translated">Está faltando uma expressão regular a problema padrão.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternParser.loopProperty.notLast">
+        <source xml:lang="en">The loop property is only supported on the last line matcher.</source>
+        <target state="translated">A propriedade loop só é suportada na última linha correspondente.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternParser.problemPattern.kindProperty.notFirst">
+        <source xml:lang="en">The problem pattern is invalid. The kind property must be provided only in the first element</source>
+        <target state="translated">O padrão de problema é inválido. O tipo de propriedade deve ser informado somente no primeiro elemento.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternParser.problemPattern.missingProperty">
+        <source xml:lang="en">The problem pattern is invalid. It must have at least have a file and a message.</source>
+        <target state="translated">O padrão de problema é inválido. Ele deve ter ao menos um arquivo e uma mensagem. </target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternParser.problemPattern.missingLocation">
+        <source xml:lang="en">The problem pattern is invalid. It must either have kind: "file" or have a line or location match group.</source>
+        <target state="translated">O padrão de problema é inválido. Ele deve ter ao menos um tipo: "arquivo", uma linha ou um grupo de correspondência de localização. </target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternParser.invalidRegexp">
+        <source xml:lang="en">Error: The string {0} is not a valid regular expression.
+</source>
+        <target state="translated">Erro: a cadeia de caracteres {0} não é uma expressão regular válida. </target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.regexp">
+        <source xml:lang="en">The regular expression to find an error, warning or info in the output.</source>
+        <target state="translated">A expressão regular para procurar um erro, aviso ou informação na saída.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.kind">
+        <source xml:lang="en">whether the pattern matches a location (file and line) or only a file.</source>
+        <target state="translated">Se o padrão corresponde a uma localização (arquivo e linha) ou somente um arquivo.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.file">
+        <source xml:lang="en">The match group index of the filename. If omitted 1 is used.</source>
+        <target state="translated">O índice do grupo de correspondência do arquivo. Se omitido, será usado 1.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.location">
+        <source xml:lang="en">The match group index of the problem's location. Valid location patterns are: (line), (line,column) and (startLine,startColumn,endLine,endColumn). If omitted (line,column) is assumed.</source>
+        <target state="translated">O índice de grupo de correspondência da localização do problema. Padrões de localização válidos são: (linha), (linha, coluna) e (startLine, startColumn, endLine, endColumn). Se omitido (linha, coluna) é assumido.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.line">
+        <source xml:lang="en">The match group index of the problem's line. Defaults to 2</source>
+        <target state="translated">O índice de grupo de correspondência da linha do problema. O padrão é 2</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.column">
+        <source xml:lang="en">The match group index of the problem's line character. Defaults to 3</source>
+        <target state="translated">O índice de grupo de correspondência de caractere da linha do problema. O padrão é 3</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.endLine">
+        <source xml:lang="en">The match group index of the problem's end line. Defaults to undefined</source>
+        <target state="translated">O índice de grupo de correspondência de linha final do problema. O padrão é indefinido</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.endColumn">
+        <source xml:lang="en">The match group index of the problem's end line character. Defaults to undefined</source>
+        <target state="translated">O índice de grupo de correspondência de caráter final de linha do problema. O padrão é indefinido</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.severity">
+        <source xml:lang="en">The match group index of the problem's severity. Defaults to undefined</source>
+        <target state="translated">O índice de grupo de correspondência da gravidade do problema. O padrão é indefinido</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.code">
+        <source xml:lang="en">The match group index of the problem's code. Defaults to undefined</source>
+        <target state="translated">O índice de grupo de correspondência do código do problema. O padrão é indefinido</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.message">
+        <source xml:lang="en">The match group index of the message. If omitted it defaults to 4 if location is specified. Otherwise it defaults to 5.</source>
+        <target state="translated">O índice de grupo de correspondência da mensagem. Se omitido o padrão é 4 se o local for especificado. Caso contrário o padrão é 5.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.loop">
+        <source xml:lang="en">In a multi line matcher loop indicated whether this pattern is executed in a loop as long as it matches. Can only specified on a last pattern in a multi line pattern.</source>
+        <target state="translated">Em um loop de correspondência multi linha indica se este padrão é executado em um loop enquanto houver correspondências. Somente pode ser especificado no último padrão em um padrão de linha múltiplas.</target>
+      </trans-unit>
+      <trans-unit id="NamedProblemPatternSchema.name">
+        <source xml:lang="en">The name of the problem pattern.</source>
+        <target state="translated">O nome do modelo de problema.</target>
+      </trans-unit>
+      <trans-unit id="NamedMultiLineProblemPatternSchema.name">
+        <source xml:lang="en">The name of the problem multi line problem pattern.</source>
+        <target state="translated">O nome do modelo de problema multi-linhas.</target>
+      </trans-unit>
+      <trans-unit id="NamedMultiLineProblemPatternSchema.patterns">
+        <source xml:lang="en">The actual patterns.</source>
+        <target state="translated">Os padrões atuais.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternExtPoint">
+        <source xml:lang="en">Contributes problem patterns</source>
+        <target state="translated">Contribui aos modelos de problema</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternRegistry.error">
+        <source xml:lang="en">Invalid problem pattern. The pattern will be ignored.</source>
+        <target state="translated">Modelo de problema inválido. O  modelo será ignorado.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noProblemMatcher">
+        <source xml:lang="en">Error: the description can't be converted into a problem matcher:
+{0}
+</source>
+        <target state="translated">Erro: a descrição não pode ser convertida em uma correspondência de problema:
+{0}
+
+</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noProblemPattern">
+        <source xml:lang="en">Error: the description doesn't define a valid problem pattern:
+{0}
+</source>
+        <target state="translated">Erro: a descrição nao define um padrão de problema válido: {0}
+</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noOwner">
+        <source xml:lang="en">Error: the description doesn't define an owner:
+{0}
+</source>
+        <target state="translated">Erro: a descriçao não define um proprietário:
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noFileLocation">
+        <source xml:lang="en">Error: the description doesn't define a file location:
+{0}
+</source>
+        <target state="translated">Erro: a descrição não define uma localização de arquivo:
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.unknownSeverity">
+        <source xml:lang="en">Info: unknown severity {0}. Valid values are error, warning and info.
+</source>
+        <target state="translated">Info: severidade {0} desconhecida. Valores válidos são erro, aviso e info.
+</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noDefinedPatter">
+        <source xml:lang="en">Error: the pattern with the identifier {0} doesn't exist.</source>
+        <target state="translated">Erro: o padrão com o identificador {0} não existe.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noIdentifier">
+        <source xml:lang="en">Error: the pattern property refers to an empty identifier.</source>
+        <target state="translated">Erro: a propriedade padrão se refere a um identificador vazio.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noValidIdentifier">
+        <source xml:lang="en">Error: the pattern property {0} is not a valid pattern variable name.</source>
+        <target state="translated">Erro: a propriedade padrão {0} não é uma variável de padrões válida.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.problemPattern.watchingMatcher">
+        <source xml:lang="en">A problem matcher must define both a begin pattern and an end pattern for watching.</source>
+        <target state="translated">Um problema de correspondência deve obrigatoriamente definir padrão inicial e um padrão final para monitoramento.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.invalidRegexp">
+        <source xml:lang="en">Error: The string {0} is not a valid regular expression.
+</source>
+        <target state="translated">Erro: a cadeia de caracteres {0} não é uma expressão regular válida. </target>
+      </trans-unit>
+      <trans-unit id="WatchingPatternSchema.regexp">
+        <source xml:lang="en">The regular expression to detect the begin or end of a background task.</source>
+        <target state="translated">A expressão regular para detectar o início ou o fim de uma tarefa em segundo plano.</target>
+      </trans-unit>
+      <trans-unit id="WatchingPatternSchema.file">
+        <source xml:lang="en">The match group index of the filename. Can be omitted.</source>
+        <target state="translated">O índice do grupo de correspondência do arquivo. Pode ser omitido.</target>
+      </trans-unit>
+      <trans-unit id="PatternTypeSchema.name">
+        <source xml:lang="en">The name of a contributed or predefined pattern</source>
+        <target state="translated">O nome de um padrão pré-definido ou contribuído.</target>
+      </trans-unit>
+      <trans-unit id="PatternTypeSchema.description">
+        <source xml:lang="en">A problem pattern or the name of a contributed or predefined problem pattern. Can be omitted if base is specified.</source>
+        <target state="translated">Um padrão de problema ou o nome de um padrão de problema pré-definido ou contribuído. Pode ser omitido se base for especificada.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.base">
+        <source xml:lang="en">The name of a base problem matcher to use.</source>
+        <target state="translated">O nome de uma correspondência de problema base a ser utilizado.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.owner">
+        <source xml:lang="en">The owner of the problem inside Code. Can be omitted if base is specified. Defaults to 'external' if omitted and base is not specified.</source>
+        <target state="translated">O proprietário de um problema dentro do código. Pode ser omitido se base for especificada. Default para 'externo' se omitido e base não for especificada.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.source">
+        <source xml:lang="en">A human-readable string describing the source of this diagnostic, e.g. 'typescript' or 'super lint'.</source>
+        <target state="translated">Uma string legível por humanos descrevendo a origem deste diagnóstico, por exemplo 'typescript' ou 'super lint'.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.severity">
+        <source xml:lang="en">The default severity for captures problems. Is used if the pattern doesn't define a match group for severity.</source>
+        <target state="translated">A severidade padrão para captura de problemas. É utilizada se o padrão não definir um grupo correspondente para severidade.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.applyTo">
+        <source xml:lang="en">Controls if a problem reported on a text document is applied only to open, closed or all documents.</source>
+        <target state="translated">Controla se um problema reportado em um documento de texto é aplicado somente para aberto, fechado ou todos os documentos.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.fileLocation">
+        <source xml:lang="en">Defines how file names reported in a problem pattern should be interpreted.</source>
+        <target state="translated">Define como os nomes de arquivos reportados em um padrão de problema devem ser interpretados.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.background">
+        <source xml:lang="en">Patterns to track the begin and end of a matcher active on a background task.</source>
+        <target state="translated">Padrões para monitorar o início e o término de um pesquisador ativo em uma tarefa em segundo plano.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.background.activeOnStart">
+        <source xml:lang="en">If set to true the background monitor is in active mode when the task starts. This is equals of issuing a line that matches the beginsPattern</source>
+        <target state="translated">Se definido como true, o monitor de plano de fundo fica no modo ativo quando a tarefa é iniciada. Isso é igual a emitir uma linha que corresponde ao beginsPattern</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.background.beginsPattern">
+        <source xml:lang="en">If matched in the output the start of a background task is signaled.</source>
+        <target state="translated">Se houver correspondência na saída o início de uma tarefa em segundo plano é sinalizada.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.background.endsPattern">
+        <source xml:lang="en">If matched in the output the end of a background task is signaled.</source>
+        <target state="translated">Se houver correspondência na saída o final de uma tarefa em segundo plano é sinalizada.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.watching.deprecated">
+        <source xml:lang="en">The watching property is deprecated. Use background instead.</source>
+        <target state="translated">A propriedade watching foi descontinuada. Use background no lugar dela.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.watching">
+        <source xml:lang="en">Patterns to track the begin and end of a watching matcher.</source>
+        <target state="translated">Padrões para monitorar o início e o término de um pesquisador observando.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.watching.activeOnStart">
+        <source xml:lang="en">If set to true the watcher is in active mode when the task starts. This is equals of issuing a line that matches the beginPattern</source>
+        <target state="translated">Se configurado para verdadeiro, o monitoramento está em modo ativo quando a tarefa inicia. Isto é igual a emissão de uma linha que corresponde ao beginPattern</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.watching.beginsPattern">
+        <source xml:lang="en">If matched in the output the start of a watching task is signaled.</source>
+        <target state="translated">Se houver correspondência na saída o início de uma tarefa observada é sinalizada.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.watching.endsPattern">
+        <source xml:lang="en">If matched in the output the end of a watching task is signaled.</source>
+        <target state="translated">Se houver correspondência na saída o final de uma tarefa observada é sinalizada.</target>
+      </trans-unit>
+      <trans-unit id="LegacyProblemMatcherSchema.watchedBegin.deprecated">
+        <source xml:lang="en">This property is deprecated. Use the watching property instead.</source>
+        <target state="translated">Esta propriedade está descontinuada. Ao invés, use a propriedade de observação.</target>
+      </trans-unit>
+      <trans-unit id="LegacyProblemMatcherSchema.watchedBegin">
+        <source xml:lang="en">A regular expression signaling that a watched tasks begins executing triggered through file watching.</source>
+        <target state="translated">Uma expressão regular sinalizando que uma tarefa observada é ativada através da observação.</target>
+      </trans-unit>
+      <trans-unit id="LegacyProblemMatcherSchema.watchedEnd.deprecated">
+        <source xml:lang="en">This property is deprecated. Use the watching property instead.</source>
+        <target state="translated">Esta propriedade está descontinuada. Ao invés, use a propriedade de observação.</target>
+      </trans-unit>
+      <trans-unit id="LegacyProblemMatcherSchema.watchedEnd">
+        <source xml:lang="en">A regular expression signaling that a watched tasks ends executing.</source>
+        <target state="translated">Uma expressão regular sinalizando que uma tarefa observada terminou a execução.</target>
+      </trans-unit>
+      <trans-unit id="NamedProblemMatcherSchema.name">
+        <source xml:lang="en">The name of the problem matcher used to refer to it.</source>
+        <target state="translated">O nome do correspondente do problema usado para se referir a ele.</target>
+      </trans-unit>
+      <trans-unit id="NamedProblemMatcherSchema.label">
+        <source xml:lang="en">A human readable label of the problem matcher.</source>
+        <target state="translated">Um rótulo legível para o correspondente do problema.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherExtPoint">
+        <source xml:lang="en">Contributes problem matchers</source>
+        <target state="translated">Contribui aos correspondentes de problema</target>
+      </trans-unit>
+      <trans-unit id="msCompile">
+        <source xml:lang="en">Microsoft compiler problems</source>
+        <target state="translated">Problemas do compilador Microsoft</target>
+      </trans-unit>
+      <trans-unit id="lessCompile">
+        <source xml:lang="en">Less problems</source>
+        <target state="translated">Menos problemas</target>
+      </trans-unit>
+      <trans-unit id="gulp-tsc">
+        <source xml:lang="en">Gulp TSC Problems</source>
+        <target state="translated">Problemas do Gulp TSC</target>
+      </trans-unit>
+      <trans-unit id="jshint">
+        <source xml:lang="en">JSHint problems</source>
+        <target state="translated">Problemas JSHint</target>
+      </trans-unit>
+      <trans-unit id="jshint-stylish">
+        <source xml:lang="en">JSHint stylish problems</source>
+        <target state="translated">Problemas de estilo JSHint</target>
+      </trans-unit>
+      <trans-unit id="eslint-compact">
+        <source xml:lang="en">ESLint compact problems</source>
+        <target state="translated">Problemas compactos ESLint</target>
+      </trans-unit>
+      <trans-unit id="eslint-stylish">
+        <source xml:lang="en">ESLint stylish problems</source>
+        <target state="translated">Problemas de estilo ESLint</target>
+      </trans-unit>
+      <trans-unit id="go">
+        <source xml:lang="en">Go problems</source>
+        <target state="translated">Problemas Go</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/abstractTaskService" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="ConfigureTaskRunnerAction.label">
+        <source xml:lang="en">Configure Task</source>
+        <target state="translated">Configurar a tarefa</target>
+      </trans-unit>
+      <trans-unit id="tasks">
+        <source xml:lang="en">Tasks</source>
+        <target state="translated">Tarefas</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.noHotSwap">
+        <source xml:lang="en">Changing the task execution engine with an active task running requires to reload the Window</source>
+        <target state="translated">Alterar o mecanismo de execução da tarefa com uma tarefa ativa executando exige que a janela seja recarregada</target>
+      </trans-unit>
+      <trans-unit id="reloadWindow">
+        <source xml:lang="en">Reload Window</source>
+        <target state="translated">Recarregar Janela</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickBuildTaskForLabel">
+        <source xml:lang="en">Select the build task (there is no default build task defined)</source>
+        <target state="translated">Selecione a tarefa de compilação (não há nenhuma tarefa de compilação padrão definida)</target>
+      </trans-unit>
+      <trans-unit id="taskServiceOutputPrompt">
+        <source xml:lang="en">There are task errors. See the output for details.</source>
+        <target state="translated">Existem erros de tarefa. Confira a saída para conhecer detalhes.</target>
+      </trans-unit>
+      <trans-unit id="showOutput">
+        <source xml:lang="en">Show output</source>
+        <target state="translated">Mostrar saída</target>
+      </trans-unit>
+      <trans-unit id="TaskServer.folderIgnored">
+        <source xml:lang="en">The folder {0} is ignored since it uses task version 0.1.0</source>
+        <target state="translated">A pasta {0} é ignorada desde que use a versão de tarefas 0.1.0</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noBuildTask1">
+        <source xml:lang="en">No build task defined. Mark a task with 'isBuildCommand' in the tasks.json file.</source>
+        <target state="translated">Nenhuma tarefa de compilação definida. Marque uma tarefa com 'isBuildCommand' no arquivo tasks.json.</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noBuildTask2">
+        <source xml:lang="en">No build task defined. Mark a task with as a 'build' group in the tasks.json file.</source>
+        <target state="translated">Nenhuma tarefa de compilação definida. Marque uma tarefa como um grupo 'build' no arquivo tasks.json.</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noTestTask1">
+        <source xml:lang="en">No test task defined. Mark a task with 'isTestCommand' in the tasks.json file.</source>
+        <target state="translated">Nenhuma tarefa de teste definida. Marque uma tarefa com 'isTestCommand' no arquivo tasks.json.</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noTestTask2">
+        <source xml:lang="en">No test task defined. Mark a task with as a 'test' group in the tasks.json file.</source>
+        <target state="translated">Nenhuma tarefa de teste definida. Marque uma tarefa com um grupo 'teste' no arquivo tasks.json.</target>
+      </trans-unit>
+      <trans-unit id="TaskServer.noTask">
+        <source xml:lang="en">Task to execute is undefined</source>
+        <target state="translated">A tarefa a ser executada não está definida</target>
+      </trans-unit>
+      <trans-unit id="TaskService.associate">
+        <source xml:lang="en">associate</source>
+        <target state="translated">Associar</target>
+      </trans-unit>
+      <trans-unit id="TaskService.attachProblemMatcher.continueWithout">
+        <source xml:lang="en">Continue without scanning the task output</source>
+        <target state="translated">Continuar sem examinar a saída da tarefa</target>
+      </trans-unit>
+      <trans-unit id="TaskService.attachProblemMatcher.never">
+        <source xml:lang="en">Never scan the task output for this task</source>
+        <target state="translated">Nunca verifique a saída da tarefa para esta tarefa</target>
+      </trans-unit>
+      <trans-unit id="TaskService.attachProblemMatcher.neverType">
+        <source xml:lang="en">Never scan the task output for {0} tasks</source>
+        <target state="new">Never scan the task output for {0} tasks</target>
+      </trans-unit>
+      <trans-unit id="TaskService.attachProblemMatcher.learnMoreAbout">
+        <source xml:lang="en">Learn more about scanning the task output</source>
+        <target state="translated">Saiba mais sobre como verificar a saída de uma tarefa</target>
+      </trans-unit>
+      <trans-unit id="selectProblemMatcher">
+        <source xml:lang="en">Select for which kind of errors and warnings to scan the task output</source>
+        <target state="translated">Selecione quais tipos de erros e avisos da saída da tarefa você deseja verificar</target>
+      </trans-unit>
+      <trans-unit id="customizeParseErrors">
+        <source xml:lang="en">The current task configuration has errors. Please fix the errors first before customizing a task.</source>
+        <target state="translated">A configuração da tarefa atual tem erros. Por favor, corrija os erros primeiro antes de personalizar uma tarefa.</target>
+      </trans-unit>
+      <trans-unit id="tasksJsonComment">
+        <source xml:lang="en">	// See https://go.microsoft.com/fwlink/?LinkId=733558 
+	// for the documentation about the tasks.json format</source>
+        <target state="translated">// Veja https://go.microsoft.com/fwlink/?LinkId=733558 
+	// para a documentação sobre o formato tasks.json</target>
+      </trans-unit>
+      <trans-unit id="moreThanOneBuildTask">
+        <source xml:lang="en">There are many build tasks defined in the tasks.json. Executing the first one.
+</source>
+        <target state="translated">Há muitas tarefas de compilação definidas em tasks.json. Executando a primeira.
+</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.activeSame.noBackground">
+        <source xml:lang="en">The task '{0}' is already active.</source>
+        <target state="translated">A tarefa '{0}' já está ativa.</target>
+      </trans-unit>
+      <trans-unit id="terminateTask">
+        <source xml:lang="en">Terminate Task</source>
+        <target state="translated">Finalizar Tarefa</target>
+      </trans-unit>
+      <trans-unit id="restartTask">
+        <source xml:lang="en">Restart Task</source>
+        <target state="translated">Reiniciar Tarefa</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.active">
+        <source xml:lang="en">There is already a task running. Terminate it first before executing another task.</source>
+        <target state="translated">Já existe uma tarefa sendo executada. Finalize-a antes de executar outra tarefa.</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.restartFailed">
+        <source xml:lang="en">Failed to terminate and restart task {0}</source>
+        <target state="translated">Falha ao finalizar e reiniciar a tarefa {0}</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noConfiguration">
+        <source xml:lang="en">Error: The {0} task detection didn't contribute a task for the following configuration:
+{1}
+The task will be ignored.
+</source>
+        <target state="translated">Erro: A deteção de tarefa {0} não contribuiu para uma tarefa para a seguinte configuração: {1} a tarefa será ignorada.
+</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.configurationErrors">
+        <source xml:lang="en">Error: the provided task configuration has validation errors and can't not be used. Please correct the errors first.</source>
+        <target state="translated">Erro: A configuração da tarefa informada possui erros de validação e não pode ser utilizada. Por favor, corrija os erros primeiro.</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.invalidTaskJsonOther">
+        <source xml:lang="en">Error: The content of the tasks json in {0} has syntax errors. Please correct them before executing a task.
+</source>
+        <target state="translated">Erro: O conteúdo das tarefas json em {0} possui erros de sintaxe. Corrija-os antes de executar uma tarefa.</target>
+      </trans-unit>
+      <trans-unit id="TasksSystem.locationWorkspaceConfig">
+        <source xml:lang="en">workspace file</source>
+        <target state="translated">arquivo de espaço de trabalho</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.versionWorkspaceFile">
+        <source xml:lang="en">Only tasks version 2.0.0 permitted in .codeworkspace.</source>
+        <target state="translated">Somente as tarefas versão 2.0.0 são permitidas no .codeworkspace.</target>
+      </trans-unit>
+      <trans-unit id="TasksSystem.locationUserConfig">
+        <source xml:lang="en">user settings</source>
+        <target state="translated">Configurações do usuário</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.versionSettings">
+        <source xml:lang="en">Only tasks version 2.0.0 permitted in user settings.</source>
+        <target state="translated">Somente as tarefas versão 2.0.0 são permitidas nas configurações do usuário.</target>
+      </trans-unit>
+      <trans-unit id="taskService.ignoreingFolder">
+        <source xml:lang="en">Ignoring task configurations for workspace folder {0}. Multi folder workspace task support requires that all folders use task version 2.0.0
+</source>
+        <target state="translated">Ignorar as configurações de tarefa para a pasta de trabalho {0}. Suporte a tarefas de espaço de trabalho de múltiplas pastas requer que todas as pastas usem a versão de tarefas 2.0.0
+</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.invalidTaskJson">
+        <source xml:lang="en">Error: The content of the tasks.json file has syntax errors. Please correct them before executing a task.
+</source>
+        <target state="translated">Erro: O conteúdo do arquivo tasks.json possui erros de sintaxe. Por favor, corrija-os antes de executar uma tarefa.
+</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.runningTask">
+        <source xml:lang="en">There is a task running. Do you want to terminate it?</source>
+        <target state="translated">Há uma tarefa sendo executada. Deseja finalizá-la?</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.terminateTask">
+        <source xml:lang="en">&amp;&amp;Terminate Task</source>
+        <target state="translated">&amp;&amp;Finalizar Tarefa</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="TaskSystem.noProcess">
+        <source xml:lang="en">The launched task doesn't exist anymore. If the task spawned background processes exiting VS Code might result in orphaned processes. To avoid this start the last background process with a wait flag.</source>
+        <target state="translated">A tarefa executada não existe mais. Se a tarefa produziu processos em background, finalizar o VS Code pode resultar em processos órfãos. Para evitar isso inicie o último processo em background com uma flag de espera.</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.exitAnyways">
+        <source xml:lang="en">&amp;&amp;Exit Anyways</source>
+        <target state="translated">&amp;&amp;Sair de todo modo</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="TerminateAction.label">
+        <source xml:lang="en">Terminate Task</source>
+        <target state="translated">Finalizar Tarefa</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.unknownError">
+        <source xml:lang="en">An error has occurred while running a task. See task log for details.</source>
+        <target state="translated">Ocorreu um erro enquanto a tarefa estava sendo executada. Verifique o log de tarefas para detalhes.</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noWorkspace">
+        <source xml:lang="en">Tasks are only available on a workspace folder.</source>
+        <target state="translated">Tarefas somente estão disponíveis em uma pasta da área de trabalho.</target>
+      </trans-unit>
+      <trans-unit id="TaskService.learnMore">
+        <source xml:lang="en">Learn More</source>
+        <target state="translated">Saiba mais</target>
+      </trans-unit>
+      <trans-unit id="configureTask">
+        <source xml:lang="en">Configure Task</source>
+        <target state="translated">Configurar a tarefa</target>
+      </trans-unit>
+      <trans-unit id="recentlyUsed">
+        <source xml:lang="en">recently used tasks</source>
+        <target state="translated">tarefas recentemente utilizadas</target>
+      </trans-unit>
+      <trans-unit id="configured">
+        <source xml:lang="en">configured tasks</source>
+        <target state="translated">tarefas configuradas</target>
+      </trans-unit>
+      <trans-unit id="detected">
+        <source xml:lang="en">detected tasks</source>
+        <target state="translated">tarefas detectadas</target>
+      </trans-unit>
+      <trans-unit id="pickProgressManager.description">
+        <source xml:lang="en">Detecting tasks ({0} of {1}): {2} in progress</source>
+        <target state="new">Detecting tasks ({0} of {1}): {2} in progress</target>
+      </trans-unit>
+      <trans-unit id="taskQuickPick.cancel">
+        <source xml:lang="en">Stop detecting</source>
+        <target state="new">Stop detecting</target>
+      </trans-unit>
+      <trans-unit id="TaskService.ignoredFolder">
+        <source xml:lang="en">The following workspace folders are ignored since they use task version 0.1.0: {0}</source>
+        <target state="translated">As seguintes pastas do espaço de trabalho estão sendo ignoradas, uma vez que elas usam task versão 0.1.0: {0}</target>
+      </trans-unit>
+      <trans-unit id="TaskService.notAgain">
+        <source xml:lang="en">Don't Show Again</source>
+        <target state="translated">Não mostrar novamente</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickRunTask">
+        <source xml:lang="en">Select the task to run</source>
+        <target state="translated">Selecione a tarefa a ser executada</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noEntryToRun">
+        <source xml:lang="en">No task to run found. Configure Tasks...</source>
+        <target state="translated">Nenhuma tarefa para executar foi encontrada. Configure Tarefas...</target>
+      </trans-unit>
+      <trans-unit id="TaskService.fetchingBuildTasks">
+        <source xml:lang="en">Fetching build tasks...</source>
+        <target state="translated">Buscando tarefas de compilação...</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickBuildTask">
+        <source xml:lang="en">Select the build task to run</source>
+        <target state="translated">Selecione a tarefa de compilação para executar</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noBuildTask">
+        <source xml:lang="en">No build task to run found. Configure Build Task...</source>
+        <target state="translated">Nenhuma tarefa de compilação para executar foi encontrada. Configure a tarefa de compilação... 
+</target>
+      </trans-unit>
+      <trans-unit id="TaskService.fetchingTestTasks">
+        <source xml:lang="en">Fetching test tasks...</source>
+        <target state="translated">Buscando tarefas de teste...</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickTestTask">
+        <source xml:lang="en">Select the test task to run</source>
+        <target state="translated">Selecione a tarefa de teste para executar</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noTestTaskTerminal">
+        <source xml:lang="en">No test task to run found. Configure Tasks...</source>
+        <target state="translated">Nenhuma tarefa de teste para executar foi encontrada. Configure Tarefas...</target>
+      </trans-unit>
+      <trans-unit id="TaskService.taskToTerminate">
+        <source xml:lang="en">Select a task to terminate</source>
+        <target state="translated">Selecione uma tarefa para encerrar</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noTaskRunning">
+        <source xml:lang="en">No task is currently running</source>
+        <target state="translated">Nenhuma tarefa está atualmente em execução</target>
+      </trans-unit>
+      <trans-unit id="TaskService.terminateAllRunningTasks">
+        <source xml:lang="en">All Running Tasks</source>
+        <target state="translated">Todas as tarefas em execução</target>
+      </trans-unit>
+      <trans-unit id="TerminateAction.noProcess">
+        <source xml:lang="en">The launched process doesn't exist anymore. If the task spawned background tasks exiting VS Code might result in orphaned processes.</source>
+        <target state="translated">O processo executado não existe mais. Se a tarefa produziu processos em background, finalizar o VS Code pode resultar em processos órfãos.</target>
+      </trans-unit>
+      <trans-unit id="TerminateAction.failed">
+        <source xml:lang="en">Failed to terminate running task</source>
+        <target state="translated">Falha ao finalizar a tarefa sendo executada</target>
+      </trans-unit>
+      <trans-unit id="TaskService.taskToRestart">
+        <source xml:lang="en">Select the task to restart</source>
+        <target state="translated">Selecione a tarefa para reiniciar</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noTaskToRestart">
+        <source xml:lang="en">No task to restart</source>
+        <target state="translated">Nenhuma tarefa para reiniciar</target>
+      </trans-unit>
+      <trans-unit id="TaskService.template">
+        <source xml:lang="en">Select a Task Template</source>
+        <target state="translated">Selecione um Modelo de Tarefa</target>
+      </trans-unit>
+      <trans-unit id="taskQuickPick.userSettings">
+        <source xml:lang="en">User Settings</source>
+        <target state="translated">Configurações do usuário</target>
+      </trans-unit>
+      <trans-unit id="TaskService.createJsonFile">
+        <source xml:lang="en">Create tasks.json file from template</source>
+        <target state="translated">Criar arquivo tasks.json a partir de modelo</target>
+      </trans-unit>
+      <trans-unit id="TaskService.openJsonFile">
+        <source xml:lang="en">Open tasks.json file</source>
+        <target state="translated">Abrir arquivo tasks.json</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickTask">
+        <source xml:lang="en">Select a task to configure</source>
+        <target state="translated">Selecione uma tarefa para configurar</target>
+      </trans-unit>
+      <trans-unit id="TaskService.defaultBuildTaskExists">
+        <source xml:lang="en">{0} is already marked as the default build task</source>
+        <target state="translated">{0} já está marcada como a tarefa de compilação padrão</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickDefaultBuildTask">
+        <source xml:lang="en">Select the task to be used as the default build task</source>
+        <target state="translated">Selecione a tarefa a ser usada como a tarefa de compilação padrão</target>
+      </trans-unit>
+      <trans-unit id="TaskService.defaultTestTaskExists">
+        <source xml:lang="en">{0} is already marked as the default test task.</source>
+        <target state="translated">{0} já está marcado como a tarefa de teste padrão.</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickDefaultTestTask">
+        <source xml:lang="en">Select the task to be used as the default test task</source>
+        <target state="translated">Selecione a tarefa a ser usada como a tarefa de teste padrão</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickShowTask">
+        <source xml:lang="en">Select the task to show its output</source>
+        <target state="translated">Selecione a tarefa para mostrar sua saída</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noTaskIsRunning">
+        <source xml:lang="en">No task is running</source>
+        <target state="translated">Nenhuma tarefa em execução</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/taskTemplates" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="dotnetCore">
+        <source xml:lang="en">Executes .NET Core build command</source>
+        <target state="translated">Executa comando de compilação do .NET Core</target>
+      </trans-unit>
+      <trans-unit id="msbuild">
+        <source xml:lang="en">Executes the build target</source>
+        <target state="translated">Executa a compilação destino</target>
+      </trans-unit>
+      <trans-unit id="externalCommand">
+        <source xml:lang="en">Example to run an arbitrary external command</source>
+        <target state="translated">Exemplo para executar um comando externo arbitrário</target>
+      </trans-unit>
+      <trans-unit id="Maven">
+        <source xml:lang="en">Executes common maven commands</source>
+        <target state="translated">Executa comandos comuns específicos</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/terminalTaskSystem" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="TerminalTaskSystem.unknownError">
+        <source xml:lang="en">A unknown error has occurred while executing a task. See task output log for details.</source>
+        <target state="translated">Um erro desconhecido ocorreu durante a execução de uma tarefa. Consulte o log de saída de tarefa para obter detalhes.</target>
+      </trans-unit>
+      <trans-unit id="dependencyFailed">
+        <source xml:lang="en">Couldn't resolve dependent task '{0}' in workspace folder '{1}'</source>
+        <target state="translated">Não foi possível resolver a tarefa dependente '{0}' na pasta de espaço de trabalho '{1}'</target>
+      </trans-unit>
+      <trans-unit id="TerminalTaskSystem.nonWatchingMatcher">
+        <source xml:lang="en">Task {0} is a background task but uses a problem matcher without a background pattern</source>
+        <target state="translated">A tarefa {0} é uma tarefa em segundo plano, mas usa um correspondente de problemas sem um padrão em segundo plano</target>
+      </trans-unit>
+      <trans-unit id="TerminalTaskSystem.terminalName">
+        <source xml:lang="en">Task - {0}</source>
+        <target state="translated">Tarefa - {0}</target>
+      </trans-unit>
+      <trans-unit id="closeTerminal">
+        <source xml:lang="en">Press any key to close the terminal.</source>
+        <target state="translated">Pressione qualquer tecla para fechar o terminal.</target>
+      </trans-unit>
+      <trans-unit id="reuseTerminal">
+        <source xml:lang="en">Terminal will be reused by tasks, press any key to close it.</source>
+        <target state="translated">Terminal será reutilizado pelas tarefas, pressione qualquer tecla para fechar.</target>
+      </trans-unit>
+      <trans-unit id="TerminalTaskSystem">
+        <source xml:lang="en">Can't execute a shell command on an UNC drive using cmd.exe.</source>
+        <target state="translated">Não é possível executar um comando shell em uma unidade UNC usando o cmd.exe.</target>
+      </trans-unit>
+      <trans-unit id="unknownProblemMatcher">
+        <source xml:lang="en">Problem matcher {0} can't be resolved. The matcher will be ignored</source>
+        <target state="translated">Problem matcher {0} não pode ser resolvido. O matcher será ignorado</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

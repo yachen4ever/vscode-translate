@@ -1,0 +1,560 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="extensions/ms-vscode.js-debug-nightly/package" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="add.browser.breakpoint">
+        <source xml:lang="en">Add Browser Breakpoint</source>
+        <target state="translated">ブラウザー ブレークポイントの追加</target>
+      </trans-unit>
+      <trans-unit id="attach.node.process">
+        <source xml:lang="en">Attach to Node Process (preview)</source>
+        <target state="translated">ノード プロセスへのアタッチ (プレビュー)</target>
+      </trans-unit>
+      <trans-unit id="browser.address.description">
+        <source xml:lang="en">TCP/IP address of debug port</source>
+        <target state="translated">デバッグ ポートの TCP/IP アドレス</target>
+      </trans-unit>
+      <trans-unit id="browser.baseUrl.description">
+        <source xml:lang="en">Base URL to resolve paths baseUrl. baseURL is trimmed when mapping URLs to the files on disk. Defaults to the launch URL domain.</source>
+        <target state="translated">パス baseUrl を解決するためのベース URL。URL をディスク上のファイルにマップする場合、baseURL はトリミングされます。既定では、起動 URL ドメインに設定されます。</target>
+      </trans-unit>
+      <trans-unit id="browser.cwd.description">
+        <source xml:lang="en">Optional working directory for the runtime executable.</source>
+        <target state="translated">ランタイム実行ファイルのオプションの作業ディレクトリ</target>
+      </trans-unit>
+      <trans-unit id="browser.disableNetworkCache.description">
+        <source xml:lang="en">Controls whether to skip the network cache for each request</source>
+        <target state="translated">各リクエストのネットワーク キャッシュをスキップするかどうかの制御</target>
+      </trans-unit>
+      <trans-unit id="browser.env.description">
+        <source xml:lang="en">Optional dictionary of environment key/value pairs for the browser.</source>
+        <target state="translated">ブラウザーの環境キーと値のペアから成るディクショナリ (省略可能)。</target>
+      </trans-unit>
+      <trans-unit id="browser.file.description">
+        <source xml:lang="en">A local html file to open in the browser</source>
+        <target state="translated">ブラウザーで開くローカル HTML ファイル</target>
+      </trans-unit>
+      <trans-unit id="browser.inspectUri.description">
+        <source xml:lang="en">Format to use to rewrite the inspectUri: It's a template string that interpolates keys in `{curlyBraces}`. Available keys are:
+ - `url.*` is the parsed address of the running application. For instance, `{url.port}`, `{url.hostname}`
+ - `port` is the debug port that Chrome is listening on.
+ - `browserInspectUri` is the inspector URI on the launched browser
+ - `wsProtocol` is the hinted websocket protocol. This is set to `wss` if the original URL is `https`, or `ws` otherwise.
+</source>
+        <target state="translated">inspectUri の書き換えに使用する形式です。`{curlyBraces}` のキーを補間するテンプレート文字列です。使用できるキーは以下のとおりです。
+ - `url.*` は、実行中のアプリケーションの解析されたアドレスです。たとえば、`{url.port}`、`{url.hostname}`
+ - `port` は、Chrome がリッスンするデバッグ ポートです。
+ - `browserInspectUri` は、起動したブラウザーのインスペクター URI です。
+ - `wsProtocol` は、ヒントの WebSocket プロトコルです。元の URL が `https` の場合は `wss` に設定され、それ以外の場合は `ws` に設定されます。</target>
+      </trans-unit>
+      <trans-unit id="browser.pathMapping.description">
+        <source xml:lang="en">A mapping of URLs/paths to local folders, to resolve scripts in the Browser to scripts on disk</source>
+        <target state="translated">ブラウザのスクリプトをディスク上のスクリプトに解決するための、ローカル フォルダーへの URL またはパスのマッピング</target>
+      </trans-unit>
+      <trans-unit id="browser.port.description">
+        <source xml:lang="en">Port to use for remote debugging the browser.</source>
+        <target state="translated">ブラウザーのリモート デバッグに使用するポート。</target>
+      </trans-unit>
+      <trans-unit id="browser.runtimeArgs.description">
+        <source xml:lang="en">Optional arguments passed to the runtime executable.</source>
+        <target state="translated">ランタイム実行可能ファイルに渡される省略可能な引数。</target>
+      </trans-unit>
+      <trans-unit id="browser.runtimeExecutable.description">
+        <source xml:lang="en">Either 'canary', 'stable', 'custom' or path to the browser executable. Custom means a custom wrapper, custom build or CHROME_PATH environment variable.</source>
+        <target state="translated">'カナリア'、'安定'、'カスタム'、ブラウザー実行可能ファイルのパスのいずれか。[カスタム] は、カスタム ラッパー、カスタム ビルド、または CHROME_PATH 環境変数を意味します。</target>
+      </trans-unit>
+      <trans-unit id="browser.server.description">
+        <source xml:lang="en">Configures a web server to start up. Takes the same configuration as the 'node' launch task.</source>
+        <target state="translated">起動する Web サーバーを構成します。'ノード' 起動タスクと同じ構成になります。</target>
+      </trans-unit>
+      <trans-unit id="browser.skipFiles.description">
+        <source xml:lang="en">An array of file or folder names, or path globs, to skip when debugging.</source>
+        <target state="translated">デバッグ時にスキップするファイル、フォルダー名もしくはパスのパターンマッチ形式の配列。</target>
+      </trans-unit>
+      <trans-unit id="browser.smartStep.description">
+        <source xml:lang="en">Automatically step through unmapped lines in sourcemapped files. For example, code that TypeScript produces automatically when downcompiling async/await or other features.</source>
+        <target state="translated">ソースマップされたファイル内のマップされていない行を自動的にステップします。たとえば、TypeScript で async/await やそのほかの機能をダウンコンパイル時に生成されるコードです。</target>
+      </trans-unit>
+      <trans-unit id="browser.sourceMapPathOverrides.description">
+        <source xml:lang="en">A set of mappings for rewriting the locations of source files from what the sourcemap says, to their locations on disk. See README for details.</source>
+        <target state="translated">ソース ファイルの場所をソースマップが示している場所からディスク上の場所に書き換えるための一連のマッピングです。 詳細は README を参照してください。</target>
+      </trans-unit>
+      <trans-unit id="browser.sourceMaps.description">
+        <source xml:lang="en">Use JavaScript source maps (if they exist).</source>
+        <target state="translated">JavaScript ソース マップを使用します (存在する場合)。</target>
+      </trans-unit>
+      <trans-unit id="browser.timeout.description">
+        <source xml:lang="en">Retry for this number of milliseconds to connect to the browser. Default is 10000 ms.</source>
+        <target state="translated">ブラウザに接続するには、このミリ秒の間再試行してください。既定値は、10000 ミリ秒です。</target>
+      </trans-unit>
+      <trans-unit id="browser.url.description">
+        <source xml:lang="en">Will search for a tab with this exact url and attach to it, if found</source>
+        <target state="translated">これとまったく同じ URL のタブを検索し、見つかった場合はそれにアタッチします</target>
+      </trans-unit>
+      <trans-unit id="browser.urlFilter.description">
+        <source xml:lang="en">Will search for a page with this url and attach to it, if found. Can have * wildcards.</source>
+        <target state="translated">この URL でページを検索し、見つかった場合はアタッチします。ワイルドカードとして * を使用できます。</target>
+      </trans-unit>
+      <trans-unit id="browser.userDataDir.description">
+        <source xml:lang="en">By default, the browser is launched with a separate user profile in a temp folder. Use this option to override it. Set to false to launch with your default user profile.</source>
+        <target state="translated">既定では、ブラウザーは一時フォルダー内の個別のユーザー プロファイルで起動されます。このオプションを使用して、上書きします。false に設定すると、既定のユーザー プロファイルで起動します。</target>
+      </trans-unit>
+      <trans-unit id="browser.webRoot.description">
+        <source xml:lang="en">This specifies the workspace absolute path to the webserver root. Used to resolve paths like `/app.js` to files on disk. Shorthand for a pathMapping for "/"</source>
+        <target state="translated">これは Web サーバーのルートにワークスペースの絶対パスを指定します。`/app.js` のようなパスをディスク上のファイルに解決するために使用します。"/" のパスマッピングの省略形です。</target>
+      </trans-unit>
+      <trans-unit id="chrome.attach.description">
+        <source xml:lang="en">Attach to an instance of Chrome already in debug mode</source>
+        <target state="translated">既にデバッグ モードになっている Chrome のインスタンスにアタッチする</target>
+      </trans-unit>
+      <trans-unit id="chrome.attach.label">
+        <source xml:lang="en">Chrome: Attach</source>
+        <target state="translated">Chrome: アタッチ</target>
+      </trans-unit>
+      <trans-unit id="chrome.label">
+        <source xml:lang="en">Chrome (preview)</source>
+        <target state="translated">Chrome (プレビュー)</target>
+      </trans-unit>
+      <trans-unit id="chrome.launch.description">
+        <source xml:lang="en">Launch Chrome to debug a URL</source>
+        <target state="translated">Chrome を起動して URL をデバッグする</target>
+      </trans-unit>
+      <trans-unit id="chrome.launch.label">
+        <source xml:lang="en">Chrome: Launch</source>
+        <target state="translated">Chrome: 起動</target>
+      </trans-unit>
+      <trans-unit id="configuration.npmScriptLensLocation">
+        <source xml:lang="en">Where a "Run" and "Debug" code lens should be shown in your npm scripts. It may be on "all", scripts, on "top" of the script section, or "never".</source>
+        <target state="translated">npm スクリプトで "実行" と "デバッグ" のコード レンズが表示される場所。"すべて" のスクリプトまたはスクリプト セクションの "上" に表示するか、"表示しない" を指定できます。</target>
+      </trans-unit>
+      <trans-unit id="configuration.suggestPrettyPrinting">
+        <source xml:lang="en">Whether to suggest pretty printing JavaScript code that looks minified when you step into it.</source>
+        <target state="translated">お客様がそれにステップ インしたときに縮小されたように見える JavaScript コードの再フォーマットを提案するかどうか。</target>
+      </trans-unit>
+      <trans-unit id="configuration.terminalOptions">
+        <source xml:lang="en">Default launch options for the JavaScript debug terminal and npm scripts.</source>
+        <target state="translated">JavaScript デバッグ ターミナルおよび npm スクリプトの既定の起動オプション。</target>
+      </trans-unit>
+      <trans-unit id="configuration.usePreview">
+        <source xml:lang="en">Use the new in-preview JavaScript debugger for Node.js and Chrome.</source>
+        <target state="translated">Node.js と Chrome にプレビュー段階の新しい JavaScript デバッガ―を使用します。</target>
+      </trans-unit>
+      <trans-unit id="configuration.warnOnLongPrediction">
+        <source xml:lang="en">Whether a loading prompt should be shown if breakpoint prediction takes a while.</source>
+        <target state="translated">ブレークポイント予測に時間がかかる場合に、読み込み中のプロンプトを表示するかどうか。</target>
+      </trans-unit>
+      <trans-unit id="debug.npm.edit">
+        <source xml:lang="en">Edit package.json</source>
+        <target state="translated">package.json を編集</target>
+      </trans-unit>
+      <trans-unit id="debug.npm.noScripts">
+        <source xml:lang="en">No npm scripts found in your package.json</source>
+        <target state="translated">package.json に npm スクリプトがありません</target>
+      </trans-unit>
+      <trans-unit id="debug.npm.noWorkspaceFolder">
+        <source xml:lang="en">You need to open a workspace folder to debug npm scripts.</source>
+        <target state="translated">npm スクリプトをデバッグするには、ワークスペース フォルダーを開く必要があります。</target>
+      </trans-unit>
+      <trans-unit id="debug.npm.parseError">
+        <source xml:lang="en">Could not read {0}: {1}</source>
+        <target state="translated">{0} を読み取ることができませんでした: {1}</target>
+      </trans-unit>
+      <trans-unit id="debug.npm.script">
+        <source xml:lang="en">Debug NPM Script</source>
+        <target state="translated">NPM スクリプトのデバッグ</target>
+      </trans-unit>
+      <trans-unit id="debug.terminal.label">
+        <source xml:lang="en">Create JavaScript Debug Terminal</source>
+        <target state="translated">JavaScript デバッグ ターミナルの作成</target>
+      </trans-unit>
+      <trans-unit id="debug.terminal.program.description">
+        <source xml:lang="en">Command to run in the launched terminal. If not provided, the terminal will open without launching a program.</source>
+        <target state="translated">起動されたターミナルで実行するコマンド。指定しない場合、ターミナルはプログラムを起動せずに開きます。</target>
+      </trans-unit>
+      <trans-unit id="debug.terminal.snippet.label">
+        <source xml:lang="en">Run "npm start" in a debug terminal</source>
+        <target state="translated">デバッグ ターミナルで "npm start" を実行する</target>
+      </trans-unit>
+      <trans-unit id="edge.attach.description">
+        <source xml:lang="en">Attach to an instance of Edge already in debug mode</source>
+        <target state="translated">Microsoft Edge のインスタンスへのアタッチは既にデバッグ モードです</target>
+      </trans-unit>
+      <trans-unit id="edge.attach.label">
+        <source xml:lang="en">Edge: Attach</source>
+        <target state="translated">Microsoft Edge: アタッチ</target>
+      </trans-unit>
+      <trans-unit id="edge.label">
+        <source xml:lang="en">Edge (preview)</source>
+        <target state="translated">Microsoft Edge (プレビュー)</target>
+      </trans-unit>
+      <trans-unit id="edge.launch.description">
+        <source xml:lang="en">Launch Edge to debug a URL</source>
+        <target state="translated">Microsoft Edge を起動して URL をデバッグする</target>
+      </trans-unit>
+      <trans-unit id="edge.launch.label">
+        <source xml:lang="en">Edge: Launch</source>
+        <target state="translated">Microsoft Edge: 起動</target>
+      </trans-unit>
+      <trans-unit id="edge.useWebView.description">
+        <source xml:lang="en">(Edge (Chromium) only) When 'true', the debugger will treat the runtime executable as a host application that contains a WebView allowing you to debug the WebView script content.</source>
+        <target state="translated">(Microsoft Edge (Chromium) のみ) 'true' の場合、デバッガーはランタイム実行可能ファイルを WebView を含むホスト アプリケーションとして処理するため、ユーザーは WebView スクリプトの内容をデバッグできます。</target>
+      </trans-unit>
+      <trans-unit id="errors.timeout">
+        <source xml:lang="en">{0}: timeout after {1}ms</source>
+        <target state="translated">{0}: {1} ミリ秒後にタイムアウト</target>
+      </trans-unit>
+      <trans-unit id="extension.description">
+        <source xml:lang="en">An extension for debugging Node.js programs and Chrome.</source>
+        <target state="translated">Node.js プログラムと Chrome をデバッグするための拡張機能。</target>
+      </trans-unit>
+      <trans-unit id="extensionHost.label">
+        <source xml:lang="en">VS Code Extension Development (preview)</source>
+        <target state="translated">VS Code 拡張機能の開発 (プレビュー)</target>
+      </trans-unit>
+      <trans-unit id="extensionHost.launch.config.name">
+        <source xml:lang="en">Launch Extension</source>
+        <target state="translated">拡張機能の起動</target>
+      </trans-unit>
+      <trans-unit id="extensionHost.launch.env.description">
+        <source xml:lang="en">Environment variables passed to the extension host.</source>
+        <target state="translated">拡張機能ホストに渡された環境変数。</target>
+      </trans-unit>
+      <trans-unit id="extensionHost.launch.runtimeExecutable.description">
+        <source xml:lang="en">Absolute path to VS Code.</source>
+        <target state="translated">VS Code への絶対パス。</target>
+      </trans-unit>
+      <trans-unit id="extensionHost.launch.stopOnEntry.description">
+        <source xml:lang="en">Automatically stop the extension host after launch.</source>
+        <target state="translated">起動後に拡張機能ホストを自動的に停止します。</target>
+      </trans-unit>
+      <trans-unit id="extensionHost.snippet.launch.description">
+        <source xml:lang="en">Launch a VS Code extension in debug mode</source>
+        <target state="translated">VS Code 拡張機能をデバッグ モードで起動します</target>
+      </trans-unit>
+      <trans-unit id="extensionHost.snippet.launch.label">
+        <source xml:lang="en">VS Code Extension Development</source>
+        <target state="translated">VS Code 拡張機能の開発</target>
+      </trans-unit>
+      <trans-unit id="longPredictionWarning.disable">
+        <source xml:lang="en">Don't show again</source>
+        <target state="translated">今後表示しない</target>
+      </trans-unit>
+      <trans-unit id="longPredictionWarning.message">
+        <source xml:lang="en">It's taking a while to configure your breakpoints. You can speed this up by updating the 'outFiles' in your launch.json.</source>
+        <target state="translated">ブレークポイントの構成に時間がかかっています。launch.json で 'outFiles' を更新することによって、スピードアップさせることができます。</target>
+      </trans-unit>
+      <trans-unit id="longPredictionWarning.noFolder">
+        <source xml:lang="en">No workspace folder open.</source>
+        <target state="translated">開いているワークスペース フォルダーがありません。</target>
+      </trans-unit>
+      <trans-unit id="longPredictionWarning.open">
+        <source xml:lang="en">Open launch.json</source>
+        <target state="translated">launch.json を開く</target>
+      </trans-unit>
+      <trans-unit id="node.address.description">
+        <source xml:lang="en">TCP/IP address of process to be debugged. Default is 'localhost'.</source>
+        <target state="translated">デバッグするプロセスの TCP/IP アドレス。既定値は 'localhost' です。</target>
+      </trans-unit>
+      <trans-unit id="node.attach.attachExistingChildren.description">
+        <source xml:lang="en">Whether to attempt to attach to already-spawned child processes.</source>
+        <target state="translated">生成済みの子プロセスにアタッチを試行するかどうか。</target>
+      </trans-unit>
+      <trans-unit id="node.attach.attachSpawnedProcesses.description">
+        <source xml:lang="en">Whether to set environment variables in the attached process to track spawned children.</source>
+        <target state="translated">生成された子を追跡するために、アタッチされたプロセスで環境変数を設定するかどうか。</target>
+      </trans-unit>
+      <trans-unit id="node.attach.config.name">
+        <source xml:lang="en">Attach</source>
+        <target state="translated">アタッチ</target>
+      </trans-unit>
+      <trans-unit id="node.attach.continueOnAttach">
+        <source xml:lang="en">If true, we'll automatically resume programs launched and waiting on `--inspect-brk`</source>
+        <target state="translated">true の場合、`--inspect-brk`を待機中の起動済みのプログラムを自動的に再開します</target>
+      </trans-unit>
+      <trans-unit id="node.attach.processId.description">
+        <source xml:lang="en">ID of process to attach to.</source>
+        <target state="translated">アタッチ先のプロセスの ID。</target>
+      </trans-unit>
+      <trans-unit id="node.attach.restart.description">
+        <source xml:lang="en">Try to reconnect to the program if we lose connection.</source>
+        <target state="translated">接続が失われる場合は、プログラムに再接続してみてください。</target>
+      </trans-unit>
+      <trans-unit id="node.console.title">
+        <source xml:lang="en">Node Debug Console</source>
+        <target state="translated">Node デバッグ コンソール</target>
+      </trans-unit>
+      <trans-unit id="node.disableOptimisticBPs.description">
+        <source xml:lang="en">Don't set breakpoints in any file until a sourcemap has been loaded for that file.</source>
+        <target state="translated">そのファイルのソースマップが読み込み終わるまで、ファイル内にブレークポイントを設定しません。</target>
+      </trans-unit>
+      <trans-unit id="node.label">
+        <source xml:lang="en">Node.js (preview)</source>
+        <target state="translated">Node.js (プレビュー)</target>
+      </trans-unit>
+      <trans-unit id="node.launch.args.description">
+        <source xml:lang="en">Command line arguments passed to the program.</source>
+        <target state="translated">プログラムに渡されるコマンド ライン引数。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.autoAttachChildProcesses.description">
+        <source xml:lang="en">Attach debugger to new child processes automatically.</source>
+        <target state="translated">デバッガーを自動的に新しい子プロセスにアタッチします。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.config.name">
+        <source xml:lang="en">Launch</source>
+        <target state="translated">起動</target>
+      </trans-unit>
+      <trans-unit id="node.launch.console.description">
+        <source xml:lang="en">Where to launch the debug target.</source>
+        <target state="translated">デバッグ ターゲットの起動場所です。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.console.externalTerminal.description">
+        <source xml:lang="en">External terminal that can be configured via user settings</source>
+        <target state="translated">ユーザー設定を介して構成できる外部ターミナルです</target>
+      </trans-unit>
+      <trans-unit id="node.launch.console.integratedTerminal.description">
+        <source xml:lang="en">VS Code's integrated terminal</source>
+        <target state="translated">VS Code の統合ターミナルです</target>
+      </trans-unit>
+      <trans-unit id="node.launch.console.internalConsole.description">
+        <source xml:lang="en">VS Code Debug Console (which doesn't support to read input from a program)</source>
+        <target state="translated">VS Code デバッグ コンソールです (プログラムからの入力の読み取りはサポートしていません)</target>
+      </trans-unit>
+      <trans-unit id="node.launch.cwd.description">
+        <source xml:lang="en">Absolute path to the working directory of the program being debugged.</source>
+        <target state="translated">デバッグされるプログラムの作業ディレクトリへの絶対パス。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.env.description">
+        <source xml:lang="en">Environment variables passed to the program. The value `null` removes the variable from the environment.</source>
+        <target state="translated">プログラムに渡される環境変数。`null` 値は環境変数から変数を削除します。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.envFile.description">
+        <source xml:lang="en">Absolute path to a file containing environment variable definitions.</source>
+        <target state="translated">環境変数の定義を含むファイルへの絶対パス。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.logging">
+        <source xml:lang="en">Logging configuration</source>
+        <target state="translated">ログ構成</target>
+      </trans-unit>
+      <trans-unit id="node.launch.logging.cdp">
+        <source xml:lang="en">Path to the log file for Chrome DevTools Protocol messages</source>
+        <target state="translated">Chrome DevTools Protocol メッセージのログ ファイルへのパス</target>
+      </trans-unit>
+      <trans-unit id="node.launch.logging.dap">
+        <source xml:lang="en">Path to the log file for Debug Adapter Protocol messages</source>
+        <target state="translated">デバッグ アダプター プロトコル メッセージのログ ファイルへのパス</target>
+      </trans-unit>
+      <trans-unit id="node.launch.outputCapture.description">
+        <source xml:lang="en">From where to capture output messages: The debug API, or stdout/stderr streams.</source>
+        <target state="translated">出力メッセージのキャプチャ場所: debug API, stdout/stderr ストリーム</target>
+      </trans-unit>
+      <trans-unit id="node.launch.program.description">
+        <source xml:lang="en">Absolute path to the program. Generated value is guessed by looking at package.json and opened files. Edit this attribute.</source>
+        <target state="translated">プログラムへの絶対パス。生成される値は、package.json ファイルと開かれたファイルを参照して推測されます。この属性を編集してください。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.restart.description">
+        <source xml:lang="en">Try to restart the program if it exits with a non-zero exit code.</source>
+        <target state="translated">ゼロ以外の終了コードでプログラムが終了した場合は、プログラムを再起動してみてください。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.runtimeArgs.description">
+        <source xml:lang="en">Optional arguments passed to the runtime executable.</source>
+        <target state="translated">ランタイム実行可能ファイルに渡される省略可能な引数。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.runtimeExecutable.description">
+        <source xml:lang="en">Runtime to use. Either an absolute path or the name of a runtime available on the PATH. If omitted `node` is assumed.</source>
+        <target state="translated">使用するランタイム。絶対パス、または PATH 上で使用可能なランタイムの名前のいずれかです。省略した場合は、`node` とみなされます。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.runtimeVersion.description">
+        <source xml:lang="en">Version of `node` runtime to use. Requires `nvm`.</source>
+        <target state="translated">使用する `node` ランタイムのバージョン。`nvm` が必要です。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.useWSL.deprecation">
+        <source xml:lang="en">'useWSL' is deprecated and support for it will be dropped. Use the 'Remote - WSL' extension instead.</source>
+        <target state="translated">'useWSL' は廃止され、サポートが終了されます。代わりに 'Remote - WSL' 拡張機能を使用します。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.useWSL.description">
+        <source xml:lang="en">Use Windows Subsystem for Linux.</source>
+        <target state="translated">Windows Subsystem for Linux を使用します。</target>
+      </trans-unit>
+      <trans-unit id="node.localRoot.description">
+        <source xml:lang="en">Path to the local directory containing the program.</source>
+        <target state="translated">プログラムの入ったローカル ディレクトリへのパス。</target>
+      </trans-unit>
+      <trans-unit id="node.pauseForSourceMap.description">
+        <source xml:lang="en">Whether to wait for source maps to load for each incoming script. This has a performance overhead, and might be safely disabled when running off of disk, so long as `rootPath` is not disabled.</source>
+        <target state="translated">各入力スクリプトに対してソース マップが読み込まれるのを待機するかどうか。これには、パフォーマンス上のオーバーヘッドが発生しており、'rootPath' が無効でない限り、ディスクからの実行時に安全に無効にされる可能性があります。</target>
+      </trans-unit>
+      <trans-unit id="node.port.description">
+        <source xml:lang="en">Debug port to attach to. Default is 5858.</source>
+        <target state="translated">添付先のデバッグ ポート。既定は 5858 です。</target>
+      </trans-unit>
+      <trans-unit id="node.processattach.config.name">
+        <source xml:lang="en">Attach to Process</source>
+        <target state="translated">プロセスにアタッチ</target>
+      </trans-unit>
+      <trans-unit id="node.remoteRoot.description">
+        <source xml:lang="en">Absolute path to the remote directory containing the program.</source>
+        <target state="translated">プログラムの入ったリモート ディレクトリへの絶対パス。</target>
+      </trans-unit>
+      <trans-unit id="node.resolveSourceMapLocations.description">
+        <source xml:lang="en">A list of minimatch patterns for locations (folders and URLs) in which source maps can be used to resolve local files. This can be used to avoid incorrectly breaking in external source mapped code. Patterns can be prefixed with "!" to exclude them. May be set to an empty array or null to avoid restriction.</source>
+        <target state="translated">ソース マップを使用してローカル ファイルを解決できる場所 (フォルダーと URL) の minimatch パターンの一覧。これを使用すると、外部ソースのマップされたコードの誤った破損を回避できます。パターンは、その先頭に "!" を付けて除外できます。制約を避けるために、空の配列または null に設定できます。</target>
+      </trans-unit>
+      <trans-unit id="node.showAsyncStacks.description">
+        <source xml:lang="en">Show the async calls that led to the current call stack.</source>
+        <target state="translated">現在の呼び出し履歴の原因となった非同期呼び出しを表示します。</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.attach.description">
+        <source xml:lang="en">Attach to a running node program</source>
+        <target state="translated">実行中のノード プログラムにアタッチします</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.attach.label">
+        <source xml:lang="en">Node.js: Attach</source>
+        <target state="translated">Node.js: アタッチ</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.attachProcess.description">
+        <source xml:lang="en">Open process picker to select node process to attach to</source>
+        <target state="translated">プロセス ピッカーを開いて、アタッチ先の node プロセスを選択します</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.attachProcess.label">
+        <source xml:lang="en">Node.js: Attach to Process</source>
+        <target state="translated">Node.js: プロセスへのアタッチ</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.electron.description">
+        <source xml:lang="en">Debug the Electron main process</source>
+        <target state="translated">Electron のメイン プロセスをデバッグします</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.electron.label">
+        <source xml:lang="en">Node.js: Electron Main</source>
+        <target state="translated">Node.js: Electron (メイン)</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.gulp.description">
+        <source xml:lang="en">Debug gulp task (make sure to have a local gulp installed in your project)</source>
+        <target state="translated">gulp タスクをデバッグします (プロジェクトにローカルの gulp がインストールされていることを確認します)</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.gulp.label">
+        <source xml:lang="en">Node.js: Gulp task</source>
+        <target state="translated">Node.js: Gulp タスク</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.launch.description">
+        <source xml:lang="en">Launch a node program in debug mode</source>
+        <target state="translated">ノード プログラムをデバッグ モードで起動します</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.launch.label">
+        <source xml:lang="en">Node.js: Launch Program</source>
+        <target state="translated">Node.js: プログラムの起動</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.mocha.description">
+        <source xml:lang="en">Debug mocha tests</source>
+        <target state="translated">Mocha テストをデバッグします</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.mocha.label">
+        <source xml:lang="en">Node.js: Mocha Tests</source>
+        <target state="translated">Node.js: Mocha テスト</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.nodemon.description">
+        <source xml:lang="en">Use nodemon to relaunch a debug session on source changes</source>
+        <target state="translated">nodemon を使用してソース変更時にデバッグ セッションを再起動します</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.nodemon.label">
+        <source xml:lang="en">Node.js: Nodemon Setup</source>
+        <target state="translated">Node.js: nodemon のセットアップ</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.npm.description">
+        <source xml:lang="en">Launch a node program through an npm `debug` script</source>
+        <target state="translated">npm の `debug` スクリプトにより Node プログラムを起動します</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.npm.label">
+        <source xml:lang="en">Node.js: Launch via NPM</source>
+        <target state="translated">Node.js: NPM による起動</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.remoteattach.description">
+        <source xml:lang="en">Attach to the debug port of a remote node program</source>
+        <target state="translated">リモート ノード プログラムのデバッグ ポートにアタッチします</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.remoteattach.label">
+        <source xml:lang="en">Node.js: Attach to Remote Program</source>
+        <target state="translated">Node.js: リモート プログラムにアタッチする</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.yo.description">
+        <source xml:lang="en">Debug yeoman generator (install by running `npm link` in project folder)</source>
+        <target state="translated">yeoman ジェネレーターをデバッグします (プロジェクト フォルダーで `npm link` を実行してインストールします)</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.yo.label">
+        <source xml:lang="en">Node.js: Yeoman generator</source>
+        <target state="translated">Node.js: Yeoman ジェネレーター</target>
+      </trans-unit>
+      <trans-unit id="node.sourceMapPathOverrides.description">
+        <source xml:lang="en">A set of mappings for rewriting the locations of source files from what the sourcemap says, to their locations on disk.</source>
+        <target state="translated">ソース ファイルの場所をソースマップが示している場所からディスク上の場所に書き換えるための一連のマッピングです。</target>
+      </trans-unit>
+      <trans-unit id="node.sourceMaps.description">
+        <source xml:lang="en">Use JavaScript source maps (if they exist).</source>
+        <target state="translated">JavaScript ソース マップを使用します (存在する場合)。</target>
+      </trans-unit>
+      <trans-unit id="node.stopOnEntry.description">
+        <source xml:lang="en">Automatically stop program after launch.</source>
+        <target state="translated">起動後、プログラムを自動的に停止します。</target>
+      </trans-unit>
+      <trans-unit id="node.timeout.description">
+        <source xml:lang="en">Retry for this number of milliseconds to connect to Node.js. Default is 10000 ms.</source>
+        <target state="translated">このミリ秒の間、Node.js への接続を再試行します。既定値は 10000 ミリ秒です。</target>
+      </trans-unit>
+      <trans-unit id="outFiles.description">
+        <source xml:lang="en">If source maps are enabled, these glob patterns specify the generated JavaScript files. If a pattern starts with `!` the files are excluded. If not specified, the generated code is expected in the same directory as its source.</source>
+        <target state="translated">ソース マップを有効にすると、これらの glob パターンは生成した JavaScript ファイルを指定します。パターンが `!` で始まる場合は、ファイルは除外されます。指定しない場合は、生成されたコードはそのソースと同じディレクトリ内にあると想定されます。</target>
+      </trans-unit>
+      <trans-unit id="pretty.print.script">
+        <source xml:lang="en">Pretty print for debugging</source>
+        <target state="translated">デバッグ用の整形出力</target>
+      </trans-unit>
+      <trans-unit id="remove.browser.breakpoint">
+        <source xml:lang="en">Remove Browser Breakpoint</source>
+        <target state="translated">ブラウザー ブレークポイントの削除</target>
+      </trans-unit>
+      <trans-unit id="remove.browser.breakpoint.all">
+        <source xml:lang="en">Remove All Browser Breakpoints</source>
+        <target state="translated">すべてのブラウザー ブレークポイントを削除</target>
+      </trans-unit>
+      <trans-unit id="skipFiles.description">
+        <source xml:lang="en">An array of glob patterns for files to skip when debugging. The pattern `&lt;node_internals&gt;/**` matches all internal Node.js modules.</source>
+        <target state="translated">デバッグ時にスキップするファイルの glob パターンの配列。パターン `&lt;node_internals&gt;/**` はすべての内部 Node.js モジュールに一致します。</target>
+      </trans-unit>
+      <trans-unit id="smartStep.description">
+        <source xml:lang="en">Automatically step through generated code that cannot be mapped back to the original source.</source>
+        <target state="translated">元のソースにマップし直すことができない、生成されたコードを自動的にステップ スルーします。</target>
+      </trans-unit>
+      <trans-unit id="start.with.stop.on.entry">
+        <source xml:lang="en">Start Debugging and Stop on Entry</source>
+        <target state="translated">デバッグを開始して、エントリで停止する</target>
+      </trans-unit>
+      <trans-unit id="toggle.skipping.this.file">
+        <source xml:lang="en">Toggle Skipping this File</source>
+        <target state="translated">このファイルをスキップする</target>
+      </trans-unit>
+      <trans-unit id="trace.boolean.description">
+        <source xml:lang="en">Trace may be set to 'true' to write diagnostic logs to the disk.</source>
+        <target state="translated">診断ログをディスクに書き込むには、トレースを 'true' に設定します。</target>
+      </trans-unit>
+      <trans-unit id="trace.console.description">
+        <source xml:lang="en">Configures whether logs are also returned to the debug console.</source>
+        <target state="translated">ログをデバッグ コンソールにも返すかどうかを構成します。</target>
+      </trans-unit>
+      <trans-unit id="trace.description">
+        <source xml:lang="en">Configures what diagnostic output is produced.</source>
+        <target state="translated">生成される診断出力を構成します。</target>
+      </trans-unit>
+      <trans-unit id="trace.level.description">
+        <source xml:lang="en">Configures the level of logs recorded.</source>
+        <target state="translated">記録されるログのレベルを構成します。</target>
+      </trans-unit>
+      <trans-unit id="trace.logFile.description">
+        <source xml:lang="en">Configures where on disk logs are written.</source>
+        <target state="translated">ディスク上のログが書き込まれる場所を構成します。</target>
+      </trans-unit>
+      <trans-unit id="trace.tags.description">
+        <source xml:lang="en">Configures what types of logs are recorded.</source>
+        <target state="translated">記録するログの種類を構成します。</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

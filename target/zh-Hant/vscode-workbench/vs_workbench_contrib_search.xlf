@@ -1,0 +1,643 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/workbench/contrib/search/browser/openAnythingHandler" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="fileAndTypeResults">
+        <source xml:lang="en">file and symbol results</source>
+        <target state="translated">檔案和符號結果</target>
+      </trans-unit>
+      <trans-unit id="fileResults">
+        <source xml:lang="en">file results</source>
+        <target state="translated">檔案結果</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/search/browser/search.contribution" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="search">
+        <source xml:lang="en">Search</source>
+        <target state="translated">搜尋</target>
+      </trans-unit>
+      <trans-unit id="copyMatchLabel">
+        <source xml:lang="en">Copy</source>
+        <target state="translated">複製</target>
+      </trans-unit>
+      <trans-unit id="copyPathLabel">
+        <source xml:lang="en">Copy Path</source>
+        <target state="translated">複製路徑</target>
+      </trans-unit>
+      <trans-unit id="copyAllLabel">
+        <source xml:lang="en">Copy All</source>
+        <target state="translated">全部複製</target>
+      </trans-unit>
+      <trans-unit id="revealInSideBar">
+        <source xml:lang="en">Reveal in Side Bar</source>
+        <target state="translated">在提要欄位中顯示</target>
+      </trans-unit>
+      <trans-unit id="clearSearchHistoryLabel">
+        <source xml:lang="en">Clear Search History</source>
+        <target state="translated">清除搜尋歷程記錄</target>
+      </trans-unit>
+      <trans-unit id="focusSearchListCommandLabel">
+        <source xml:lang="en">Focus List</source>
+        <target state="translated">焦點清單</target>
+      </trans-unit>
+      <trans-unit id="findInFolder">
+        <source xml:lang="en">Find in Folder...</source>
+        <target state="translated">在資料夾中尋找...</target>
+      </trans-unit>
+      <trans-unit id="findInWorkspace">
+        <source xml:lang="en">Find in Workspace...</source>
+        <target state="translated">在工作區中尋找...</target>
+      </trans-unit>
+      <trans-unit id="showTriggerActions">
+        <source xml:lang="en">Go to Symbol in Workspace...</source>
+        <target state="translated">前往工作區中的符號...</target>
+      </trans-unit>
+      <trans-unit id="name">
+        <source xml:lang="en">Search</source>
+        <target state="translated">搜尋</target>
+      </trans-unit>
+      <trans-unit id="view">
+        <source xml:lang="en">View</source>
+        <target state="translated">檢視</target>
+      </trans-unit>
+      <trans-unit id="findInFiles">
+        <source xml:lang="en">Find in Files</source>
+        <target state="translated">在檔案中尋找</target>
+      </trans-unit>
+      <trans-unit id="miFindInFiles">
+        <source xml:lang="en">Find &amp;&amp;in Files</source>
+        <target state="translated">在檔案中尋找(&amp;&amp;I)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miReplaceInFiles">
+        <source xml:lang="en">Replace &amp;&amp;in Files</source>
+        <target state="translated">檔案中取代(&amp;&amp;I)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="openAnythingHandlerDescription">
+        <source xml:lang="en">Go to File</source>
+        <target state="translated">前往檔案</target>
+      </trans-unit>
+      <trans-unit id="openSymbolDescriptionNormal">
+        <source xml:lang="en">Go to Symbol in Workspace</source>
+        <target state="translated">前往工作區中的符號</target>
+      </trans-unit>
+      <trans-unit id="searchConfigurationTitle">
+        <source xml:lang="en">Search</source>
+        <target state="translated">搜尋</target>
+      </trans-unit>
+      <trans-unit id="exclude">
+        <source xml:lang="en">Configure glob patterns for excluding files and folders in searches. Inherits all glob patterns from the `#files.exclude#` setting. Read more about glob patterns [here](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).</source>
+        <target state="translated">設定 Glob 模式，以在搜尋中排除檔案和資料夾。這會從 `#files.exclude#` 設定繼承所有 Glob 模式。請前往[這裡](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options)閱讀更多關於 Glob 模式的內容。</target>
+      </trans-unit>
+      <trans-unit id="exclude.boolean">
+        <source xml:lang="en">The glob pattern to match file paths against. Set to true or false to enable or disable the pattern.</source>
+        <target state="translated">要符合檔案路徑的 Glob 模式。設為 True 或 False 可啟用或停用模式。</target>
+      </trans-unit>
+      <trans-unit id="exclude.when">
+        <source xml:lang="en">Additional check on the siblings of a matching file. Use $(basename) as variable for the matching file name.</source>
+        <target state="translated">在相符檔案同層級上額外的檢查。請使用 $(basename) 作為相符檔案名稱的變數。</target>
+      </trans-unit>
+      <trans-unit id="useRipgrep">
+        <source xml:lang="en">This setting is deprecated and now falls back on "search.usePCRE2".</source>
+        <target state="translated"> 此設定已淘汰，現在會回復至 "search.usePCRE2"。</target>
+      </trans-unit>
+      <trans-unit id="useRipgrepDeprecated">
+        <source xml:lang="en">Deprecated. Consider "search.usePCRE2" for advanced regex feature support.</source>
+        <target state="translated">已淘汰。請考慮使用 "search.usePCRE2" 來取得進階 regex 功能支援。</target>
+      </trans-unit>
+      <trans-unit id="search.maintainFileSearchCache">
+        <source xml:lang="en">When enabled, the searchService process will be kept alive instead of being shut down after an hour of inactivity. This will keep the file search cache in memory.</source>
+        <target state="translated">若啟用，searchService 程序在處於非使用狀態一小時後會保持運作，而不是關閉。這會將檔案搜尋快取保留在記憶體中。</target>
+      </trans-unit>
+      <trans-unit id="useIgnoreFiles">
+        <source xml:lang="en">Controls whether to use `.gitignore` and `.ignore` files when searching for files.</source>
+        <target state="translated">控制是否在搜尋檔案時使用 `.gitignore` 和 `.ignore` 檔案。</target>
+      </trans-unit>
+      <trans-unit id="useGlobalIgnoreFiles">
+        <source xml:lang="en">Controls whether to use global `.gitignore` and `.ignore` files when searching for files.</source>
+        <target state="translated">控制是否要在搜尋檔案時使用全域 `.gitignore` 和 `.ignore` 檔案。</target>
+      </trans-unit>
+      <trans-unit id="search.quickOpen.includeSymbols">
+        <source xml:lang="en">Whether to include results from a global symbol search in the file results for Quick Open.</source>
+        <target state="translated">是否在 Quick Open 的檔案結果中，包含全域符號搜尋中的結果。</target>
+      </trans-unit>
+      <trans-unit id="search.quickOpen.includeHistory">
+        <source xml:lang="en">Whether to include results from recently opened files in the file results for Quick Open.</source>
+        <target state="translated">是否要在 Quick Open 中包含檔案結果中，來自最近開啟檔案的結果。</target>
+      </trans-unit>
+      <trans-unit id="search.followSymlinks">
+        <source xml:lang="en">Controls whether to follow symlinks while searching.</source>
+        <target state="translated">控制是否要在搜尋時遵循 symlink。</target>
+      </trans-unit>
+      <trans-unit id="search.smartCase">
+        <source xml:lang="en">Search case-insensitively if the pattern is all lowercase, otherwise, search case-sensitively.</source>
+        <target state="translated">若模式為全小寫，搜尋時不會區分大小寫; 否則會區分大小寫。</target>
+      </trans-unit>
+      <trans-unit id="search.globalFindClipboard">
+        <source xml:lang="en">Controls whether the search view should read or modify the shared find clipboard on macOS.</source>
+        <target state="translated">控制搜尋檢視應讀取或修改 macOS 上的共用尋找剪貼簿。 </target>
+      </trans-unit>
+      <trans-unit id="search.location">
+        <source xml:lang="en">Controls whether the search will be shown as a view in the sidebar or as a panel in the panel area for more horizontal space.</source>
+        <target state="translated">控制搜尋要顯示為資訊看板中的檢視，或顯示為面板區域中的面板以增加水平空間。</target>
+      </trans-unit>
+      <trans-unit id="search.location.deprecationMessage">
+        <source xml:lang="en">This setting is deprecated. Please use the search view's context menu instead.</source>
+        <target state="translated">這個設定已淘汰。請改用搜尋檢視的操作功能表。</target>
+      </trans-unit>
+      <trans-unit id="search.collapseAllResults">
+        <source xml:lang="en">Controls whether the search results will be collapsed or expanded.</source>
+        <target state="translated">控制要摺疊或展開搜尋結果。</target>
+      </trans-unit>
+      <trans-unit id="search.useReplacePreview">
+        <source xml:lang="en">Controls whether to open Replace Preview when selecting or replacing a match.</source>
+        <target state="translated">控制是否要在選取或取代相符項目時開啟 [取代預覽]。</target>
+      </trans-unit>
+      <trans-unit id="search.showLineNumbers">
+        <source xml:lang="en">Controls whether to show line numbers for search results.</source>
+        <target state="translated">控制是否要為搜尋結果顯示行號。</target>
+      </trans-unit>
+      <trans-unit id="search.usePCRE2">
+        <source xml:lang="en">Whether to use the PCRE2 regex engine in text search. This enables using some advanced regex features like lookahead and backreferences. However, not all PCRE2 features are supported - only features that are also supported by JavaScript.</source>
+        <target state="translated">是否要在文字搜尋中使用 PCRE2 規則運算式引擎。這可使用部分進階功能，如 lookahead 和 backreferences。但是，並不支援所有 PCRE2 功能，僅支援 JavaScript 也支援的功能。</target>
+      </trans-unit>
+      <trans-unit id="usePCRE2Deprecated">
+        <source xml:lang="en">Deprecated. PCRE2 will be used automatically when using regex features that are only supported by PCRE2.</source>
+        <target state="translated">已淘汰。當使用僅有 PCRE2 支援的 regex 功能時，會自動使用 PCRE 2。</target>
+      </trans-unit>
+      <trans-unit id="search.actionsPositionAuto">
+        <source xml:lang="en">Position the actionbar to the right when the search view is narrow, and immediately after the content when the search view is wide.</source>
+        <target state="translated">當搜尋檢視較窄時，將動作列放在右邊，當搜尋檢視較寬時，立即放於內容之後。</target>
+      </trans-unit>
+      <trans-unit id="search.actionsPositionRight">
+        <source xml:lang="en">Always position the actionbar to the right.</source>
+        <target state="translated">永遠將動作列放在右邊。</target>
+      </trans-unit>
+      <trans-unit id="search.actionsPosition">
+        <source xml:lang="en">Controls the positioning of the actionbar on rows in the search view.</source>
+        <target state="translated">控制動作列在搜尋檢視列上的位置。</target>
+      </trans-unit>
+      <trans-unit id="search.searchOnType">
+        <source xml:lang="en">Search all files as you type.</source>
+        <target state="translated">鍵入的同時搜尋所有檔案。</target>
+      </trans-unit>
+      <trans-unit id="search.searchOnTypeDebouncePeriod">
+        <source xml:lang="en">When `#search.searchOnType#` is enabled, controls the timeout in milliseconds between a character being typed and the search starting. Has no effect when `search.searchOnType` is disabled.</source>
+        <target state="translated">啟用 `#search.searchOnType#` 時，控制字元鍵入和搜尋開始之間的逾時 (毫秒)。當 `search.searchOnType` 停用時無效。</target>
+      </trans-unit>
+      <trans-unit id="search.searchEditor.doubleClickBehaviour.selectWord">
+        <source xml:lang="en">Double clicking selects the word under the cursor.</source>
+        <target state="translated">點兩下選擇游標下的單字。</target>
+      </trans-unit>
+      <trans-unit id="search.searchEditor.doubleClickBehaviour.goToLocation">
+        <source xml:lang="en">Double clicking opens the result in the active editor group.</source>
+        <target state="translated">按兩下將會在正在使用的編輯器群組中開啟結果。</target>
+      </trans-unit>
+      <trans-unit id="search.searchEditor.doubleClickBehaviour.openLocationToSide">
+        <source xml:lang="en">Double clicking opens the result in the editor group to the side, creating one if it does not yet exist.</source>
+        <target state="translated">按兩下就會在側邊的編輯器群組中開啟結果，如果不存在就會建立一個。</target>
+      </trans-unit>
+      <trans-unit id="search.searchEditor.doubleClickBehaviour">
+        <source xml:lang="en">Configure effect of double clicking a result in a search editor.</source>
+        <target state="translated">設定在搜尋編輯器中按兩下結果的效果。</target>
+      </trans-unit>
+      <trans-unit id="searchSortOrder.default">
+        <source xml:lang="en">Results are sorted by folder and file names, in alphabetical order.</source>
+        <target state="translated">結果會根據資料夾和檔案名稱排序，按字母順序排列。</target>
+      </trans-unit>
+      <trans-unit id="searchSortOrder.filesOnly">
+        <source xml:lang="en">Results are sorted by file names ignoring folder order, in alphabetical order.</source>
+        <target state="translated">結果會忽略資料夾順序並根據檔案名稱排序，按字母順序排列。</target>
+      </trans-unit>
+      <trans-unit id="searchSortOrder.type">
+        <source xml:lang="en">Results are sorted by file extensions, in alphabetical order.</source>
+        <target state="translated">結果會根據副檔名排序，按字母順序排列。</target>
+      </trans-unit>
+      <trans-unit id="searchSortOrder.modified">
+        <source xml:lang="en">Results are sorted by file last modified date, in descending order.</source>
+        <target state="translated">結果會根據最後修改日期降冪排序。</target>
+      </trans-unit>
+      <trans-unit id="searchSortOrder.countDescending">
+        <source xml:lang="en">Results are sorted by count per file, in descending order.</source>
+        <target state="translated">結果會根據每個檔案的計數降冪排序。</target>
+      </trans-unit>
+      <trans-unit id="searchSortOrder.countAscending">
+        <source xml:lang="en">Results are sorted by count per file, in ascending order.</source>
+        <target state="translated">結果會根據每個檔案的計數升冪排序。</target>
+      </trans-unit>
+      <trans-unit id="search.sortOrder">
+        <source xml:lang="en">Controls sorting order of search results.</source>
+        <target state="translated">控制搜尋結果的排列順序。</target>
+      </trans-unit>
+      <trans-unit id="miViewSearch">
+        <source xml:lang="en">&amp;&amp;Search</source>
+        <target state="translated">搜尋(&amp;&amp;S)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miGotoSymbolInWorkspace">
+        <source xml:lang="en">Go to Symbol in &amp;&amp;Workspace...</source>
+        <target state="translated">前往工作區中的符號(&amp;&amp;W)...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/search/browser/openSymbolHandler" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="entryAriaLabel">
+        <source xml:lang="en">{0}, symbols picker</source>
+        <target state="translated">{0}，符號選擇器</target>
+      </trans-unit>
+      <trans-unit id="symbols">
+        <source xml:lang="en">symbol results</source>
+        <target state="translated">符號結果</target>
+      </trans-unit>
+      <trans-unit id="noSymbolsMatching">
+        <source xml:lang="en">No symbols matching</source>
+        <target state="translated">沒有相符的符號</target>
+      </trans-unit>
+      <trans-unit id="noSymbolsWithoutInput">
+        <source xml:lang="en">Type to search for symbols</source>
+        <target state="translated">輸入以搜尋符號</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/search/browser/openFileHandler" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="entryAriaLabel">
+        <source xml:lang="en">{0}, file picker</source>
+        <target state="translated">{0}，檔案選擇器</target>
+      </trans-unit>
+      <trans-unit id="searchResults">
+        <source xml:lang="en">search results</source>
+        <target state="translated">搜尋結果</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/search/browser/searchView" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="searchCanceled">
+        <source xml:lang="en">Search was canceled before any results could be found - </source>
+        <target state="translated">在可能找到任何結果之前已取消搜尋 - </target>
+      </trans-unit>
+      <trans-unit id="searchView">
+        <source xml:lang="en">Search</source>
+        <target state="translated">搜尋</target>
+      </trans-unit>
+      <trans-unit id="moreSearch">
+        <source xml:lang="en">Toggle Search Details</source>
+        <target state="translated">切換搜尋詳細資料</target>
+      </trans-unit>
+      <trans-unit id="searchScope.includes">
+        <source xml:lang="en">files to include</source>
+        <target state="translated">要包含的檔案</target>
+      </trans-unit>
+      <trans-unit id="label.includes">
+        <source xml:lang="en">Search Include Patterns</source>
+        <target state="translated">搜尋包含模式</target>
+      </trans-unit>
+      <trans-unit id="searchScope.excludes">
+        <source xml:lang="en">files to exclude</source>
+        <target state="translated">要排除的檔案</target>
+      </trans-unit>
+      <trans-unit id="label.excludes">
+        <source xml:lang="en">Search Exclude Patterns</source>
+        <target state="translated">搜尋排除模式</target>
+      </trans-unit>
+      <trans-unit id="replaceAll.confirmation.title">
+        <source xml:lang="en">Replace All</source>
+        <target state="translated">全部取代</target>
+      </trans-unit>
+      <trans-unit id="replaceAll.confirm.button">
+        <source xml:lang="en">&amp;&amp;Replace</source>
+        <target state="translated">取代(&amp;&amp;R)</target>
+      </trans-unit>
+      <trans-unit id="replaceAll.occurrence.file.message">
+        <source xml:lang="en">Replaced {0} occurrence across {1} file with '{2}'.</source>
+        <target state="translated">已將 {1} 個檔案中的 {0} 個相符項目取代為 '{2}'。</target>
+      </trans-unit>
+      <trans-unit id="removeAll.occurrence.file.message">
+        <source xml:lang="en">Replaced {0} occurrence across {1} file.</source>
+        <target state="translated">已取代 {1} 檔案的 {0} 發生次數。</target>
+      </trans-unit>
+      <trans-unit id="replaceAll.occurrence.files.message">
+        <source xml:lang="en">Replaced {0} occurrence across {1} files with '{2}'.</source>
+        <target state="translated">已將 {1} 個檔案中的 {0} 個相符項目取代為 '{2}'。</target>
+      </trans-unit>
+      <trans-unit id="removeAll.occurrence.files.message">
+        <source xml:lang="en">Replaced {0} occurrence across {1} files.</source>
+        <target state="translated">已取代 {1} 個檔案中的 {0} 個相符項目。</target>
+      </trans-unit>
+      <trans-unit id="replaceAll.occurrences.file.message">
+        <source xml:lang="en">Replaced {0} occurrences across {1} file with '{2}'.</source>
+        <target state="translated">已將 {1} 個檔案中的 {0} 個相符項目取代為 '{2}'。</target>
+      </trans-unit>
+      <trans-unit id="removeAll.occurrences.file.message">
+        <source xml:lang="en">Replaced {0} occurrences across {1} file.</source>
+        <target state="translated">取代 {1} 檔案的 {0} 發生次數。</target>
+      </trans-unit>
+      <trans-unit id="replaceAll.occurrences.files.message">
+        <source xml:lang="en">Replaced {0} occurrences across {1} files with '{2}'.</source>
+        <target state="translated">已將 {1} 個檔案中的 {0} 個相符項目取代為 '{2}'。</target>
+      </trans-unit>
+      <trans-unit id="removeAll.occurrences.files.message">
+        <source xml:lang="en">Replaced {0} occurrences across {1} files.</source>
+        <target state="translated">已取代 {1} 個檔案中的 {0} 個相符項目。</target>
+      </trans-unit>
+      <trans-unit id="removeAll.occurrence.file.confirmation.message">
+        <source xml:lang="en">Replace {0} occurrence across {1} file with '{2}'?</source>
+        <target state="translated">要將 {1} 個檔案中的 {0} 個相符項目取代為 '{2}' 嗎?</target>
+      </trans-unit>
+      <trans-unit id="replaceAll.occurrence.file.confirmation.message">
+        <source xml:lang="en">Replace {0} occurrence across {1} file?</source>
+        <target state="translated">要取代 {1} 檔案的 {0} 發生次數嗎?</target>
+      </trans-unit>
+      <trans-unit id="removeAll.occurrence.files.confirmation.message">
+        <source xml:lang="en">Replace {0} occurrence across {1} files with '{2}'?</source>
+        <target state="translated">要將 {1} 個檔案中的 {0} 個相符項目取代為 '{2}' 嗎?</target>
+      </trans-unit>
+      <trans-unit id="replaceAll.occurrence.files.confirmation.message">
+        <source xml:lang="en">Replace {0} occurrence across {1} files?</source>
+        <target state="translated">要取代 {1} 個檔案中的 {0} 個相符項目嗎?</target>
+      </trans-unit>
+      <trans-unit id="removeAll.occurrences.file.confirmation.message">
+        <source xml:lang="en">Replace {0} occurrences across {1} file with '{2}'?</source>
+        <target state="translated">要將 {1} 個檔案中的 {0} 個相符項目取代為 '{2}' 嗎?</target>
+      </trans-unit>
+      <trans-unit id="replaceAll.occurrences.file.confirmation.message">
+        <source xml:lang="en">Replace {0} occurrences across {1} file?</source>
+        <target state="translated">要取代 {1} 檔案的 {0} 發生次數嗎?</target>
+      </trans-unit>
+      <trans-unit id="removeAll.occurrences.files.confirmation.message">
+        <source xml:lang="en">Replace {0} occurrences across {1} files with '{2}'?</source>
+        <target state="translated">要將 {1} 個檔案中的 {0} 個相符項目取代為 '{2}' 嗎?</target>
+      </trans-unit>
+      <trans-unit id="replaceAll.occurrences.files.confirmation.message">
+        <source xml:lang="en">Replace {0} occurrences across {1} files?</source>
+        <target state="translated">要取代 {1} 個檔案中的 {0} 個相符項目嗎?</target>
+      </trans-unit>
+      <trans-unit id="ariaSearchResultsClearStatus">
+        <source xml:lang="en">The search results have been cleared</source>
+        <target state="translated">已清除搜尋結果</target>
+      </trans-unit>
+      <trans-unit id="searchPathNotFoundError">
+        <source xml:lang="en">Search path not found: {0}</source>
+        <target state="translated">找不到搜尋路徑: {0}</target>
+      </trans-unit>
+      <trans-unit id="searchMaxResultsWarning">
+        <source xml:lang="en">The result set only contains a subset of all matches. Please be more specific in your search to narrow down the results.</source>
+        <target state="translated">結果集只包含所有符合項的子集。請提供更具體的搜尋條件以縮小結果範圍。</target>
+      </trans-unit>
+      <trans-unit id="noResultsIncludesExcludes">
+        <source xml:lang="en">No results found in '{0}' excluding '{1}' - </source>
+        <target state="translated">在 '{0}' 中找不到排除 '{1}' 的結果 - </target>
+      </trans-unit>
+      <trans-unit id="noResultsIncludes">
+        <source xml:lang="en">No results found in '{0}' - </source>
+        <target state="translated">在 '{0}' 中找不到結果 - </target>
+      </trans-unit>
+      <trans-unit id="noResultsExcludes">
+        <source xml:lang="en">No results found excluding '{0}' - </source>
+        <target state="translated">找不到排除 '{0}' 的結果 - </target>
+      </trans-unit>
+      <trans-unit id="noResultsFound">
+        <source xml:lang="en">No results found. Review your settings for configured exclusions and check your gitignore files - </source>
+        <target state="translated">找不到任何結果。請檢閱您所設定排除的設定，並檢查您的 gitignore 檔案 -</target>
+      </trans-unit>
+      <trans-unit id="rerunSearch.message">
+        <source xml:lang="en">Search again</source>
+        <target state="translated">再次搜尋</target>
+      </trans-unit>
+      <trans-unit id="rerunSearchInAll.message">
+        <source xml:lang="en">Search again in all files</source>
+        <target state="translated">在所有檔案中再次搜尋</target>
+      </trans-unit>
+      <trans-unit id="openSettings.message">
+        <source xml:lang="en">Open Settings</source>
+        <target state="translated">開啟設定</target>
+      </trans-unit>
+      <trans-unit id="openSettings.learnMore">
+        <source xml:lang="en">Learn More</source>
+        <target state="translated">深入了解</target>
+      </trans-unit>
+      <trans-unit id="ariaSearchResultsStatus">
+        <source xml:lang="en">Search returned {0} results in {1} files</source>
+        <target state="translated">搜尋傳回 {1} 個檔案中的 {0} 個結果</target>
+      </trans-unit>
+      <trans-unit id="useIgnoresAndExcludesDisabled">
+        <source xml:lang="en"> - exclude settings and ignore files are disabled</source>
+        <target state="translated"> - 已停用排除設定和忽略檔案</target>
+      </trans-unit>
+      <trans-unit id="openInEditor.message">
+        <source xml:lang="en">Open in editor</source>
+        <target state="translated">在編輯器中開啟</target>
+      </trans-unit>
+      <trans-unit id="openInEditor.tooltip">
+        <source xml:lang="en">Copy current search results to an editor</source>
+        <target state="translated">將目前的搜尋結果複製到編輯器</target>
+      </trans-unit>
+      <trans-unit id="search.file.result">
+        <source xml:lang="en">{0} result in {1} file</source>
+        <target state="translated">{1} 個檔案中有 {0} 個結果</target>
+      </trans-unit>
+      <trans-unit id="search.files.result">
+        <source xml:lang="en">{0} result in {1} files</source>
+        <target state="translated">{1} 個檔案中有 {0} 個結果</target>
+      </trans-unit>
+      <trans-unit id="search.file.results">
+        <source xml:lang="en">{0} results in {1} file</source>
+        <target state="translated">{1} 個檔案中有 {0} 個結果</target>
+      </trans-unit>
+      <trans-unit id="search.files.results">
+        <source xml:lang="en">{0} results in {1} files</source>
+        <target state="translated">{1} 個檔案中有 {0} 個結果</target>
+      </trans-unit>
+      <trans-unit id="searchWithoutFolder">
+        <source xml:lang="en">You have not opened or specified a folder. Only open files are currently searched - </source>
+        <target state="translated">您尚未開啟或指定資料夾。目前僅搜尋開啟的檔案 -</target>
+      </trans-unit>
+      <trans-unit id="openFolder">
+        <source xml:lang="en">Open Folder</source>
+        <target state="translated">開啟資料夾</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/search/common/queryBuilder" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="search.noWorkspaceWithName">
+        <source xml:lang="en">No folder in workspace with name: {0}</source>
+        <target state="translated">工作區內無此名稱資料夾: {0}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/search/browser/searchWidget" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="search.action.replaceAll.disabled.label">
+        <source xml:lang="en">Replace All (Submit Search to Enable)</source>
+        <target state="translated">全部取代 (提交搜尋以啟用)</target>
+      </trans-unit>
+      <trans-unit id="search.action.replaceAll.enabled.label">
+        <source xml:lang="en">Replace All</source>
+        <target state="translated">全部取代</target>
+      </trans-unit>
+      <trans-unit id="search.replace.toggle.button.title">
+        <source xml:lang="en">Toggle Replace</source>
+        <target state="translated">切換取代</target>
+      </trans-unit>
+      <trans-unit id="label.Search">
+        <source xml:lang="en">Search: Type Search Term and press Enter to search or Escape to cancel</source>
+        <target state="translated">搜尋: 輸入搜尋字詞，然後按 Enter 鍵搜尋或按 Esc 鍵取消</target>
+      </trans-unit>
+      <trans-unit id="search.placeHolder">
+        <source xml:lang="en">Search</source>
+        <target state="translated">搜尋</target>
+      </trans-unit>
+      <trans-unit id="showContext">
+        <source xml:lang="en">Show Context</source>
+        <target state="translated">顯示內文</target>
+      </trans-unit>
+      <trans-unit id="label.Replace">
+        <source xml:lang="en">Replace: Type replace term and press Enter to preview or Escape to cancel</source>
+        <target state="translated">取代: 輸入取代字詞後按下 Enter 以預覽，或按 Escape 取消</target>
+      </trans-unit>
+      <trans-unit id="search.replace.placeHolder">
+        <source xml:lang="en">Replace</source>
+        <target state="translated">取代</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/search/browser/searchActions" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="showSearch">
+        <source xml:lang="en">Show Search</source>
+        <target state="translated">顯示搜尋</target>
+      </trans-unit>
+      <trans-unit id="replaceInFiles">
+        <source xml:lang="en">Replace in Files</source>
+        <target state="translated">檔案中取代</target>
+      </trans-unit>
+      <trans-unit id="toggleTabs">
+        <source xml:lang="en">Toggle Search on Type</source>
+        <target state="translated">切換類型搜尋</target>
+      </trans-unit>
+      <trans-unit id="RefreshAction.label">
+        <source xml:lang="en">Refresh</source>
+        <target state="translated">重新整理</target>
+      </trans-unit>
+      <trans-unit id="CollapseDeepestExpandedLevelAction.label">
+        <source xml:lang="en">Collapse All</source>
+        <target state="translated">全部摺疊</target>
+      </trans-unit>
+      <trans-unit id="ExpandAllAction.label">
+        <source xml:lang="en">Expand All</source>
+        <target state="translated">全部展開</target>
+      </trans-unit>
+      <trans-unit id="ToggleCollapseAndExpandAction.label">
+        <source xml:lang="en">Toggle Collapse and Expand</source>
+        <target state="translated">切換折疊和展開</target>
+      </trans-unit>
+      <trans-unit id="ClearSearchResultsAction.label">
+        <source xml:lang="en">Clear Search Results</source>
+        <target state="translated">清除搜尋結果</target>
+      </trans-unit>
+      <trans-unit id="CancelSearchAction.label">
+        <source xml:lang="en">Cancel Search</source>
+        <target state="translated">取消搜尋</target>
+      </trans-unit>
+      <trans-unit id="FocusNextSearchResult.label">
+        <source xml:lang="en">Focus Next Search Result</source>
+        <target state="translated">聚焦於下一個搜尋結果</target>
+      </trans-unit>
+      <trans-unit id="FocusPreviousSearchResult.label">
+        <source xml:lang="en">Focus Previous Search Result</source>
+        <target state="translated">聚焦於上一個搜尋結果</target>
+      </trans-unit>
+      <trans-unit id="RemoveAction.label">
+        <source xml:lang="en">Dismiss</source>
+        <target state="translated">關閉</target>
+      </trans-unit>
+      <trans-unit id="file.replaceAll.label">
+        <source xml:lang="en">Replace All</source>
+        <target state="translated">全部取代</target>
+      </trans-unit>
+      <trans-unit id="match.replace.label">
+        <source xml:lang="en">Replace</source>
+        <target state="translated">取代</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/search/browser/patternInputWidget" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="defaultLabel">
+        <source xml:lang="en">input</source>
+        <target state="translated">輸入</target>
+      </trans-unit>
+      <trans-unit id="useExcludesAndIgnoreFilesDescription">
+        <source xml:lang="en">Use Exclude Settings and Ignore Files</source>
+        <target state="translated">使用排除設定與忽略檔案</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/search/browser/replaceService" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="fileReplaceChanges">
+        <source xml:lang="en">{0} ↔ {1} (Replace Preview)</source>
+        <target state="translated">{0} ↔ {1} (Replace Preview)</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/search/browser/searchResultsView" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="searchFolderMatch.other.label">
+        <source xml:lang="en">Other files</source>
+        <target state="translated">其他檔案</target>
+      </trans-unit>
+      <trans-unit id="searchFileMatches">
+        <source xml:lang="en">{0} files found</source>
+        <target state="translated">找到 {0} 個檔案</target>
+      </trans-unit>
+      <trans-unit id="searchFileMatch">
+        <source xml:lang="en">{0} file found</source>
+        <target state="translated">找到 {0} 個檔案</target>
+      </trans-unit>
+      <trans-unit id="searchMatches">
+        <source xml:lang="en">{0} matches found</source>
+        <target state="translated">找到 {0} 個相符</target>
+      </trans-unit>
+      <trans-unit id="searchMatch">
+        <source xml:lang="en">{0} match found</source>
+        <target state="translated">找到 {0} 個相符</target>
+      </trans-unit>
+      <trans-unit id="lineNumStr">
+        <source xml:lang="en">From line {0}</source>
+        <target state="translated">從第 {0} 行</target>
+      </trans-unit>
+      <trans-unit id="numLinesStr">
+        <source xml:lang="en">{0} more lines</source>
+        <target state="translated">其他 {0} 行</target>
+      </trans-unit>
+      <trans-unit id="folderMatchAriaLabel">
+        <source xml:lang="en">{0} matches in folder root {1}, Search result</source>
+        <target state="translated">資料夾根目錄 {1} 中有 {0} 個相符，搜尋結果</target>
+      </trans-unit>
+      <trans-unit id="otherFilesAriaLabel">
+        <source xml:lang="en">{0} matches outside of the workspace, Search result</source>
+        <target state="translated">工作區外有 {0} 個相符，搜尋結果</target>
+      </trans-unit>
+      <trans-unit id="fileMatchAriaLabel">
+        <source xml:lang="en">{0} matches in file {1} of folder {2}, Search result</source>
+        <target state="translated">資料夾 {2} 的檔案 {1} 中有 {0} 個相符，搜尋結果</target>
+      </trans-unit>
+      <trans-unit id="replacePreviewResultAria">
+        <source xml:lang="en">Replace term {0} with {1} at column position {2} in line with text {3}</source>
+        <target state="translated">根據文字({3})在({2})欄位列表中將({1})替代為文字{{0}}</target>
+      </trans-unit>
+      <trans-unit id="searchResultAria">
+        <source xml:lang="en">Found term {0} at column position {1} in line with text {2}</source>
+        <target state="translated">根據文字({2})並在({1})欄位列表中找到符合({0})的項目</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/workbench/services/extensions/electron-browser/extensionService" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="extensionsDisabled">
+        <source xml:lang="en">All installed extensions are temporarily disabled. Reload the window to return to the previous state.</source>
+        <target state="translated">Ideiglenesen az összes telepített kiegészítő le van tiltva. A korábbi állapot visszaállításához töltse újra az ablakot!</target>
+      </trans-unit>
+      <trans-unit id="Reload">
+        <source xml:lang="en">Reload</source>
+        <target state="translated">Újratöltés</target>
+      </trans-unit>
+      <trans-unit id="looping">
+        <source xml:lang="en">The following extensions contain dependency loops and have been disabled: {0}</source>
+        <target state="new">The following extensions contain dependency loops and have been disabled: {0}</target>
+      </trans-unit>
+      <trans-unit id="extensionService.versionMismatchCrash">
+        <source xml:lang="en">Extension host cannot start: version mismatch.</source>
+        <target state="translated">A kiegészítő gazdafolyamata nem indítható verzióeltérés miatt.</target>
+      </trans-unit>
+      <trans-unit id="relaunch">
+        <source xml:lang="en">Relaunch VS Code</source>
+        <target state="translated">VS Code újraindítása</target>
+      </trans-unit>
+      <trans-unit id="extensionService.crash">
+        <source xml:lang="en">Extension host terminated unexpectedly.</source>
+        <target state="translated">A kiegészítő gazdafolyamata váratlanul leállt.</target>
+      </trans-unit>
+      <trans-unit id="devTools">
+        <source xml:lang="en">Open Developer Tools</source>
+        <target state="translated">Fejlesztői eszközök megnyitása</target>
+      </trans-unit>
+      <trans-unit id="restart">
+        <source xml:lang="en">Restart Extension Host</source>
+        <target state="translated">Kiegészítő gazdafolyamatának újraindítása</target>
+      </trans-unit>
+      <trans-unit id="resolveAuthorityFailure">
+        <source xml:lang="en">Resolving the authority `{0}` failed</source>
+        <target state="new">Resolving the authority `{0}` failed</target>
+      </trans-unit>
+      <trans-unit id="getEnvironmentFailure">
+        <source xml:lang="en">Could not fetch remote environment</source>
+        <target state="new">Could not fetch remote environment</target>
+      </trans-unit>
+      <trans-unit id="enableResolver">
+        <source xml:lang="en">Extension '{0}' is required to open the remote window.
+Ok to enable?</source>
+        <target state="new">Extension '{0}' is required to open the remote window.
+Ok to enable?</target>
+      </trans-unit>
+      <trans-unit id="enable">
+        <source xml:lang="en">Enable and Reload</source>
+        <target state="new">Enable and Reload</target>
+      </trans-unit>
+      <trans-unit id="installResolver">
+        <source xml:lang="en">Extension '{0}' is required to open the remote window.
+Ok to install?</source>
+        <target state="new">Extension '{0}' is required to open the remote window.
+Ok to install?</target>
+      </trans-unit>
+      <trans-unit id="install">
+        <source xml:lang="en">Install and Reload</source>
+        <target state="new">Install and Reload</target>
+      </trans-unit>
+      <trans-unit id="resolverExtensionNotFound">
+        <source xml:lang="en">`{0}` not found on marketplace</source>
+        <target state="new">`{0}` not found on marketplace</target>
+      </trans-unit>
+      <trans-unit id="restartExtensionHost">
+        <source xml:lang="en">Developer: Restart Extension Host</source>
+        <target state="new">Developer: Restart Extension Host</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/electron-browser/remoteExtensionManagementIpc" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="incompatible">
+        <source xml:lang="en">Unable to install extension '{0}' as it is not compatible with VS Code '{1}'.</source>
+        <target state="translated">A(z) „{0}” kiegészítő nem telepíthető, mivel nem kompatibilis a VS Code „{1}” verziójával.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/common/extensionsRegistry" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="ui">
+        <source xml:lang="en">UI extension kind. In a remote window, such extensions are enabled only when available on the local machine.</source>
+        <target state="new">UI extension kind. In a remote window, such extensions are enabled only when available on the local machine.</target>
+      </trans-unit>
+      <trans-unit id="workspace">
+        <source xml:lang="en">Workspace extension kind. In a remote window, such extensions are enabled only when available on the remote.</source>
+        <target state="new">Workspace extension kind. In a remote window, such extensions are enabled only when available on the remote.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.engines">
+        <source xml:lang="en">Engine compatibility.</source>
+        <target state="translated">Motorkompatibilitás.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.engines.vscode">
+        <source xml:lang="en">For VS Code extensions, specifies the VS Code version that the extension is compatible with. Cannot be *. For example: ^0.10.5 indicates compatibility with a minimum VS Code version of 0.10.5.</source>
+        <target state="translated">VS Code kiegészítőkhöz. Meghatározza azt a VS Code-verziót, amivel a kiegészítő kompatibilis. Nem lehet *. Például a ^0.10.5 a VS Code minimum 0.10.5-ös verziójával való kompatibilitást jelzi.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.publisher">
+        <source xml:lang="en">The publisher of the VS Code extension.</source>
+        <target state="translated">A VS Code-kiegészítő kiadója.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.displayName">
+        <source xml:lang="en">The display name for the extension used in the VS Code gallery.</source>
+        <target state="translated">A kiegészítő VS Code galériában megjelenített neve.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.categories">
+        <source xml:lang="en">The categories used by the VS Code gallery to categorize the extension.</source>
+        <target state="translated">A VS Code-galériában való kategorizálásra használt kategóriák.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.category.languages.deprecated">
+        <source xml:lang="en">Use 'Programming  Languages' instead</source>
+        <target state="translated">Használja helyette a „programozási nyelveket”!</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.galleryBanner">
+        <source xml:lang="en">Banner used in the VS Code marketplace.</source>
+        <target state="translated">A VS Code piactéren használt szalagcím.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.galleryBanner.color">
+        <source xml:lang="en">The banner color on the VS Code marketplace page header.</source>
+        <target state="translated">A VS Code piactéren használt szalagcím színe.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.galleryBanner.theme">
+        <source xml:lang="en">The color theme for the font used in the banner.</source>
+        <target state="translated">A szalagcímben használt betűtípus színsémája.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes">
+        <source xml:lang="en">All contributions of the VS Code extension represented by this package.</source>
+        <target state="translated">A csomagban található összes szolgáltatás, amit ez a VS Code kiterjesztés tartalmaz.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.preview">
+        <source xml:lang="en">Sets the extension to be flagged as a Preview in the Marketplace.</source>
+        <target state="translated">A kiegészítő előnézetesnek jelölése a piactéren.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents">
+        <source xml:lang="en">Activation events for the VS Code extension.</source>
+        <target state="translated">A VS Code kiegészítő aktiválási eseményei.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onLanguage">
+        <source xml:lang="en">An activation event emitted whenever a file that resolves to the specified language gets opened.</source>
+        <target state="translated">Aktiváló esemény, ami akkor fut le, ha az adott nyelvhez társított fájl kerül megnyitásra.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onCommand">
+        <source xml:lang="en">An activation event emitted whenever the specified command gets invoked.</source>
+        <target state="translated">Aktiváló esemény, ami akkor fut le, amikor a megadott parancsot meghívják.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onDebug">
+        <source xml:lang="en">An activation event emitted whenever a user is about to start debugging or about to setup debug configurations.</source>
+        <target state="translated">Aktiváló esemény, ami akkor fut le, ha a felhasználó hibakeresést indít el vagy beállítani készül a hibakeresési konfigurációt.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onDebugInitialConfigurations">
+        <source xml:lang="en">An activation event emitted whenever a "launch.json" needs to be created (and all provideDebugConfigurations methods need to be called).</source>
+        <target state="translated">Aktivációs esemény, ami minden esetben kiváltódik, ha "launch.json"-t kell létrehozni (és az összes provideDebugConfigurations metódusokat meg kell hívni).</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onDebugResolve">
+        <source xml:lang="en">An activation event emitted whenever a debug session with the specific type is about to be launched (and a corresponding resolveDebugConfiguration method needs to be called).</source>
+        <target state="translated">Aktiváló esemény, ami akkor fut, ha a megadott típusú hibakeresési munkamenetnek kell elindulnia (és a megfelelő resolveDebugConfiguration metódusokat meg kell hívni).</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onDebugAdapterProtocolTracker">
+        <source xml:lang="en">An activation event emitted whenever a debug session with the specific type is about to be launched and a debug protocol tracker might be needed.</source>
+        <target state="translated">Aktiváló esemény, ami akkor fut, ha a megadott típusú hibakeresési munkamenetnek kell elindulnia, és egy hibakeresési követőre van szükség.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.workspaceContains">
+        <source xml:lang="en">An activation event emitted whenever a folder is opened that contains at least a file matching the specified glob pattern.</source>
+        <target state="translated">Aktiváló esemény, ami akkor fut le, ha egy olyan mappa kerül megnyitásra, amiben legalább egy olyan fájl van, amely illeszkedik a megadott globális mintára.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onFileSystem">
+        <source xml:lang="en">An activation event emitted whenever a file or folder is accessed with the given scheme.</source>
+        <target state="translated">Aktiváló esemény, ami akkor fut le, amikor a megadott sémával rendelkező mappához akar valaki hozzáférni.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onSearch">
+        <source xml:lang="en">An activation event emitted whenever a search is started in the folder with the given scheme.</source>
+        <target state="translated">Aktiváló esemény, ami akkor fut le, amikor keresés indul a megadott sémával rendelkező mappában.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onView">
+        <source xml:lang="en">An activation event emitted whenever the specified view is expanded.</source>
+        <target state="translated">Aktiváló esemény, ami akkor fut le, amikor a megadott nézetet kiterjesztik.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onIdentity">
+        <source xml:lang="en">An activation event emitted whenever the specified user identity.</source>
+        <target state="new">An activation event emitted whenever the specified user identity.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onUri">
+        <source xml:lang="en">An activation event emitted whenever a system-wide Uri directed towards this extension is open.</source>
+        <target state="translated">Aktiváló esemény, ami akkor fut le, amikor megnyílik egy URI, ami ehhez a kiegészítőhöz van irányítva.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.star">
+        <source xml:lang="en">An activation event emitted on VS Code startup. To ensure a great end user experience, please use this activation event in your extension only when no other activation events combination works in your use-case.</source>
+        <target state="translated">Aktiváló esemény, ami a VS Code indításakor fut le. A jó felhasználói élmény érdekében csak akkor használja ezt az eseményt, ha más aktiváló események nem alkalmasak az adott kiegészítő esetében.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.badges">
+        <source xml:lang="en">Array of badges to display in the sidebar of the Marketplace's extension page.</source>
+        <target state="translated">A kiegészítő piactéren található oldalának oldalsávjában megjelenő jelvények listája.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.badges.url">
+        <source xml:lang="en">Badge image URL.</source>
+        <target state="translated">A jelvény kép URL-je.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.badges.href">
+        <source xml:lang="en">Badge link.</source>
+        <target state="translated">A jelvény hivatkozása.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.badges.description">
+        <source xml:lang="en">Badge description.</source>
+        <target state="translated">A jelvény leírása.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.markdown">
+        <source xml:lang="en">Controls the Markdown rendering engine used in the Marketplace. Either github (default) or standard.</source>
+        <target state="translated">Meghatározza a piactéren a markdown-tartalom megjelenítéséhez használt motort.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.qna">
+        <source xml:lang="en">Controls the Q&amp;A link in the Marketplace. Set to marketplace to enable the default Marketplace Q &amp; A site. Set to a string to provide the URL of a custom Q &amp; A site. Set to false to disable Q &amp; A altogether.</source>
+        <target state="new">Controls the Q&amp;A link in the Marketplace. Set to marketplace to enable the default Marketplace Q &amp; A site. Set to a string to provide the URL of a custom Q &amp; A site. Set to false to disable Q &amp; A altogether.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.extensionDependencies">
+        <source xml:lang="en">Dependencies to other extensions. The identifier of an extension is always ${publisher}.${name}. For example: vscode.csharp.</source>
+        <target state="translated">Más kiegészítők, melyek függőségei ennek a kiegészítőnek. A kiegészítők azonosítója mindig ${publisher}.${name} formájú. Például: vscode.csharp.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.extensionPack">
+        <source xml:lang="en">A set of extensions that can be installed together. The identifier of an extension is always ${publisher}.${name}. For example: vscode.csharp.</source>
+        <target state="translated">Kiegészítők csoportja, amelyeket együtt lehet telepíteni. A kiegészítők azonosítója mindig „${publisher}.${name}” formában van. Példa: „vscode.csharp”. </target>
+      </trans-unit>
+      <trans-unit id="extensionKind">
+        <source xml:lang="en">Define the kind of an extension. `ui` extensions are installed and run on the local machine while `workspace` extensions run on the remote.</source>
+        <target state="new">Define the kind of an extension. `ui` extensions are installed and run on the local machine while `workspace` extensions run on the remote.</target>
+      </trans-unit>
+      <trans-unit id="extensionKind.ui">
+        <source xml:lang="en">Define an extension which can run only on the local machine when connected to remote window.</source>
+        <target state="new">Define an extension which can run only on the local machine when connected to remote window.</target>
+      </trans-unit>
+      <trans-unit id="extensionKind.workspace">
+        <source xml:lang="en">Define an extension which can run only on the remote machine when connected remote window.</source>
+        <target state="new">Define an extension which can run only on the remote machine when connected remote window.</target>
+      </trans-unit>
+      <trans-unit id="extensionKind.ui-workspace">
+        <source xml:lang="en">Define an extension which can run on either side, with a preference towards running on the local machine.</source>
+        <target state="new">Define an extension which can run on either side, with a preference towards running on the local machine.</target>
+      </trans-unit>
+      <trans-unit id="extensionKind.workspace-ui">
+        <source xml:lang="en">Define an extension which can run on either side, with a preference towards running on the remote machine.</source>
+        <target state="new">Define an extension which can run on either side, with a preference towards running on the remote machine.</target>
+      </trans-unit>
+      <trans-unit id="extensionKind.empty">
+        <source xml:lang="en">Define an extension which cannot run in a remote context, neither on the local, nor on the remote machine.</source>
+        <target state="new">Define an extension which cannot run in a remote context, neither on the local, nor on the remote machine.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.scripts.prepublish">
+        <source xml:lang="en">Script executed before the package is published as a VS Code extension.</source>
+        <target state="translated">A VS Code kiegészítő publikálása előtt végrehajtott parancsfájl.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.scripts.uninstall">
+        <source xml:lang="en">Uninstall hook for VS Code extension. Script that gets executed when the extension is completely uninstalled from VS Code which is when VS Code is restarted (shutdown and start) after the extension is uninstalled. Only Node scripts are supported.</source>
+        <target state="translated">Eltávolítási illesztőpont VS Code kiegészítők számára. Parancsfájl, ami a VS Code újraindítása (leállása és elindítása) esetén fut le a kiegészítő teljes eltávolítása után. Csak Node-parancsfájlok használhatók.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.icon">
+        <source xml:lang="en">The path to a 128x128 pixel icon.</source>
+        <target state="translated">Egy 128x128 pixeles ikon elérési útja.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/browser/extensionUrlHandler" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="confirmUrl">
+        <source xml:lang="en">Allow an extension to open this URI?</source>
+        <target state="new">Allow an extension to open this URI?</target>
+      </trans-unit>
+      <trans-unit id="rememberConfirmUrl">
+        <source xml:lang="en">Don't ask again for this extension.</source>
+        <target state="new">Don't ask again for this extension.</target>
+      </trans-unit>
+      <trans-unit id="open">
+        <source xml:lang="en">&amp;&amp;Open</source>
+        <target state="new">&amp;&amp;Open</target>
+      </trans-unit>
+      <trans-unit id="reloadAndHandle">
+        <source xml:lang="en">Extension '{0}' is not loaded. Would you like to reload the window to load the extension and open the URL?</source>
+        <target state="translated">A(z) „{0}” kiegészítő nincs betöltve. Szeretné újratölteni az ablakot, betölteni a kiegészítőt és megnyitni az URL-t?</target>
+      </trans-unit>
+      <trans-unit id="reloadAndOpen">
+        <source xml:lang="en">&amp;&amp;Reload Window and Open</source>
+        <target state="new">&amp;&amp;Reload Window and Open</target>
+      </trans-unit>
+      <trans-unit id="enableAndHandle">
+        <source xml:lang="en">Extension '{0}' is disabled. Would you like to enable the extension and reload the window to open the URL?</source>
+        <target state="translated">A(z) „{0}” kiegészítő nincs betöltve. Szeretné engedélyezni a kiegészítőt és újratölteni az ablakot az URL megnyitásához?</target>
+      </trans-unit>
+      <trans-unit id="enableAndReload">
+        <source xml:lang="en">&amp;&amp;Enable and Open</source>
+        <target state="new">&amp;&amp;Enable and Open</target>
+      </trans-unit>
+      <trans-unit id="installAndHandle">
+        <source xml:lang="en">Extension '{0}' is not installed. Would you like to install the extension and reload the window to open this URL?</source>
+        <target state="translated">A(z) „{0}” kiegészítő nincs telepítve. Szeretné telepíteni a kiegészítőt és újratölteni az ablakot az URL megnyitásához?</target>
+      </trans-unit>
+      <trans-unit id="install">
+        <source xml:lang="en">&amp;&amp;Install</source>
+        <target state="new">&amp;&amp;Install</target>
+      </trans-unit>
+      <trans-unit id="Installing">
+        <source xml:lang="en">Installing Extension '{0}'...</source>
+        <target state="translated">„{0}” kiegészítő telepítése...</target>
+      </trans-unit>
+      <trans-unit id="reload">
+        <source xml:lang="en">Would you like to reload the window and open the URL '{0}'?</source>
+        <target state="translated">Szeretné újratölteni az ablakot és megnyitni a következő URL-t: „{0}”?</target>
+      </trans-unit>
+      <trans-unit id="Reload">
+        <source xml:lang="en">Reload Window and Open</source>
+        <target state="translated">Ablak újratöltése és megnyitás</target>
+      </trans-unit>
+      <trans-unit id="manage">
+        <source xml:lang="en">Manage Authorized Extension URIs...</source>
+        <target state="new">Manage Authorized Extension URIs...</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/common/remoteExtensionHostClient" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="remote extension host Log">
+        <source xml:lang="en">Remote Extension Host</source>
+        <target state="new">Remote Extension Host</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/electron-browser/cachedExtensionScanner" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="overwritingExtension">
+        <source xml:lang="en">Overwriting extension {0} with {1}.</source>
+        <target state="translated">A(z) {0} kiegészítő felülírása a következővel: {1}.</target>
+      </trans-unit>
+      <trans-unit id="extensionUnderDevelopment">
+        <source xml:lang="en">Loading development extension at {0}</source>
+        <target state="translated">A(z) {0} elérési úton található fejlesztői kiegészítő betöltése</target>
+      </trans-unit>
+      <trans-unit id="extensionCache.invalid">
+        <source xml:lang="en">Extensions have been modified on disk. Please reload the window.</source>
+        <target state="translated">A kiegészítők módosultak a lemezen. Töltse újra az ablakot!</target>
+      </trans-unit>
+      <trans-unit id="reloadWindow">
+        <source xml:lang="en">Reload Window</source>
+        <target state="translated">Ablak újratöltése</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/common/extensionHostProcessManager" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="measureExtHostLatency">
+        <source xml:lang="en">Measure Extension Host Latency</source>
+        <target state="new">Measure Extension Host Latency</target>
+      </trans-unit>
+      <trans-unit id="developer">
+        <source xml:lang="en">Developer</source>
+        <target state="translated">Fejlesztői</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/electron-browser/extensionHost" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="extensionHost.startupFailDebug">
+        <source xml:lang="en">Extension host did not start in 10 seconds, it might be stopped on the first line and needs a debugger to continue.</source>
+        <target state="translated">A kiegészítő gazdafolyamata nem idult el 10 másodperben belül. Elképzelhető, hogy megállt az első soron, és szüksége van a hibakeresőre a folytatáshoz.</target>
+      </trans-unit>
+      <trans-unit id="extensionHost.startupFail">
+        <source xml:lang="en">Extension host did not start in 10 seconds, that might be a problem.</source>
+        <target state="translated">A kiegészítő gazdafolyamata nem idult el 10 másodperben belül. Ez probléma lehet.</target>
+      </trans-unit>
+      <trans-unit id="reloadWindow">
+        <source xml:lang="en">Reload Window</source>
+        <target state="translated">Ablak újratöltése</target>
+      </trans-unit>
+      <trans-unit id="extension host Log">
+        <source xml:lang="en">Extension Host</source>
+        <target state="translated">Kiegészítő gazdafolyamata</target>
+      </trans-unit>
+      <trans-unit id="extensionHost.error">
+        <source xml:lang="en">Error from the extension host: {0}</source>
+        <target state="translated">A kiegészítő gazdafolyamatától hiba érkezett: {0}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/node/extensionPoints" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="jsonParseFail">
+        <source xml:lang="en">Failed to parse {0}: [{1}, {2}] {3}.</source>
+        <target state="new">Failed to parse {0}: [{1}, {2}] {3}.</target>
+      </trans-unit>
+      <trans-unit id="fileReadFail">
+        <source xml:lang="en">Cannot read file {0}: {1}.</source>
+        <target state="translated">A(z) ({0}) fájl nem olvasható: {1}.</target>
+      </trans-unit>
+      <trans-unit id="jsonsParseReportErrors">
+        <source xml:lang="en">Failed to parse {0}: {1}.</source>
+        <target state="translated">Hiba a(z) {0} feldolgozása közben: {1}.</target>
+      </trans-unit>
+      <trans-unit id="jsonInvalidFormat">
+        <source xml:lang="en">Invalid format {0}: JSON object expected.</source>
+        <target state="new">Invalid format {0}: JSON object expected.</target>
+      </trans-unit>
+      <trans-unit id="missingNLSKey">
+        <source xml:lang="en">Couldn't find message for key {0}.</source>
+        <target state="translated">A(z) {0} kulcshoz tartozó üzenet nem található.</target>
+      </trans-unit>
+      <trans-unit id="notSemver">
+        <source xml:lang="en">Extension version is not semver compatible.</source>
+        <target state="translated">A kiegészítő verziója nem semver-kompatibilis.</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.empty">
+        <source xml:lang="en">Got empty extension description</source>
+        <target state="translated">A kiegészítő leírása üres</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.publisher">
+        <source xml:lang="en">property publisher must be of type `string`.</source>
+        <target state="translated">a publisher tulajdonság értékének `string` típusúnak kell lennie.</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.name">
+        <source xml:lang="en">property `{0}` is mandatory and must be of type `string`</source>
+        <target state="translated">a(z) `{0}` tulajdonság kötelező és `string` típusúnak kell lennie</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.version">
+        <source xml:lang="en">property `{0}` is mandatory and must be of type `string`</source>
+        <target state="translated">a(z) `{0}` tulajdonság kötelező és `string` típusúnak kell lennie</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.engines">
+        <source xml:lang="en">property `{0}` is mandatory and must be of type `object`</source>
+        <target state="translated">a(z) `{0}` tulajdonság kötelező és `object` típusúnak kell lennie</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.engines.vscode">
+        <source xml:lang="en">property `{0}` is mandatory and must be of type `string`</source>
+        <target state="translated">a(z) `{0}` tulajdonság kötelező és `string` típusúnak kell lennie</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.extensionDependencies">
+        <source xml:lang="en">property `{0}` can be omitted or must be of type `string[]`</source>
+        <target state="translated">a(z) `{0}` tulajdonság elhagyható vagy `string[]` típusúnak kell lennie</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.activationEvents1">
+        <source xml:lang="en">property `{0}` can be omitted or must be of type `string[]`</source>
+        <target state="translated">a(z) `{0}` tulajdonság elhagyható vagy `string[]` típusúnak kell lennie</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.activationEvents2">
+        <source xml:lang="en">properties `{0}` and `{1}` must both be specified or must both be omitted</source>
+        <target state="translated">a(z) `{0}` és `{1}` megadása kötelező vagy mindkettőt el kell hagyni</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.main1">
+        <source xml:lang="en">property `{0}` can be omitted or must be of type `string`</source>
+        <target state="translated">a(z) `{0}` tulajdonság elhagyható vagy `string` típusúnak kell lennie</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.main2">
+        <source xml:lang="en">Expected `main` ({0}) to be included inside extension's folder ({1}). This might make the extension non-portable.</source>
+        <target state="translated">A `main` ({0}) nem a kiegészítő mappáján belül található ({1}). Emiatt előfordulhat, hogy a kiegészítő nem lesz hordozható.</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.main3">
+        <source xml:lang="en">properties `{0}` and `{1}` must both be specified or must both be omitted</source>
+        <target state="translated">a(z) `{0}` és `{1}` megadása kötelező vagy mindkettőt el kell hagyni</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,1552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/workbench/contrib/tasks/node/processRunnerDetector" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="TaskSystemDetector.noGulpTasks">
+        <source xml:lang="en">Running gulp --tasks-simple didn't list any tasks. Did you run npm install?</source>
+        <target state="translated">gulp --tasks-simple을 실행해도 작업이 나열되지 않습니다. npm install을 실행했나요?</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noJakeTasks">
+        <source xml:lang="en">Running jake --tasks didn't list any tasks. Did you run npm install?</source>
+        <target state="translated">jake --tasks를 실행해도 작업이 나열되지 않습니다. npm install을 실행했나요?</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noGulpProgram">
+        <source xml:lang="en">Gulp is not installed on your system. Run npm install -g gulp to install it.</source>
+        <target state="translated">Gulp가 시스템에 설치되어 있지 않습니다. npm install -g gulp를 실행하여 설치하세요.</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noJakeProgram">
+        <source xml:lang="en">Jake is not installed on your system. Run npm install -g jake to install it.</source>
+        <target state="translated">Jake가 시스템에 설치되어 있지 않습니다. npm install -g jake를 실행하여 설치하세요.</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noGruntProgram">
+        <source xml:lang="en">Grunt is not installed on your system. Run npm install -g grunt to install it.</source>
+        <target state="translated">Grunt가 시스템에 설치되어 있지 않습니다. npm install -g grunt를 실행하여 설치하세요.</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noProgram">
+        <source xml:lang="en">Program {0} was not found. Message is {1}</source>
+        <target state="translated">{0} 프로그램을 찾을 수 없습니다. 메시지는 {1}입니다.</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.buildTaskDetected">
+        <source xml:lang="en">Build task named '{0}' detected.</source>
+        <target state="translated">이름이 '{0}'인 빌드 작업이 발견되었습니다.</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.testTaskDetected">
+        <source xml:lang="en">Test task named '{0}' detected.</source>
+        <target state="translated">이름이 '{0}'인 테스트 작업이 발견되었습니다.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/node/processTaskSystem" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="version1_0">
+        <source xml:lang="en">The task system is configured for version 0.1.0 (see tasks.json file), which can only execute custom tasks. Upgrade to version 2.0.0 to run the task: {0}</source>
+        <target state="translated">작업 시스템이 버전 0.1.0용으로 구성되어 있어서(tasks.json 파일 참조), 사용자 지정 작업만 실행할 수 있습니다. 작업을 실행하려면 버전 2.0.0으로 업그레이드하세요. {0}</target>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.unknownError">
+        <source xml:lang="en">A unknown error has occurred while executing a task. See task output log for details.</source>
+        <target state="translated">작업을 실행하는 동안 알 수 없는 오류가 발생했습니다. 자세한 내용은 작업 출력 로그를 참조하세요.</target>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.watchingBuildTaskFinished">
+        <source xml:lang="en">
+Watching build tasks has finished.</source>
+        <target state="translated">
+빌드 감시 작업이 완료되었습니다.</target>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.childProcessError">
+        <source xml:lang="en">Failed to launch external program {0} {1}.</source>
+        <target state="translated">외부 프로그램 {0} {1}을(를) 시작하지 못했습니다.</target>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.cancelRequested">
+        <source xml:lang="en">
+The task '{0}' was terminated per user request.</source>
+        <target state="translated">
+사용자 요청에 따라 '{0}' 작업이 종료되었습니다.</target>
+      </trans-unit>
+      <trans-unit id="unknownProblemMatcher">
+        <source xml:lang="en">Problem matcher {0} can't be resolved. The matcher will be ignored</source>
+        <target state="translated">문제 선택기 {0}을(를) 확인할 수 없습니다. 이 선택기는 무시됩니다.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/task.contribution" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="tasksCategory">
+        <source xml:lang="en">Tasks</source>
+        <target state="translated">작업</target>
+      </trans-unit>
+      <trans-unit id="building">
+        <source xml:lang="en">Building...</source>
+        <target state="translated">빌드하고 있습니다...</target>
+      </trans-unit>
+      <trans-unit id="runningTasks">
+        <source xml:lang="en">Show Running Tasks</source>
+        <target state="translated">실행 중인 작업 표시</target>
+      </trans-unit>
+      <trans-unit id="status.runningTasks">
+        <source xml:lang="en">Running Tasks</source>
+        <target state="translated">실행중인 작업</target>
+      </trans-unit>
+      <trans-unit id="miRunTask">
+        <source xml:lang="en">&amp;&amp;Run Task...</source>
+        <target state="translated">작업 실행(&amp;&amp;R)...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miBuildTask">
+        <source xml:lang="en">Run &amp;&amp;Build Task...</source>
+        <target state="translated">빌드 작업 실행(&amp;&amp;B)...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miRunningTask">
+        <source xml:lang="en">Show Runnin&amp;&amp;g Tasks...</source>
+        <target state="translated">실행 중인 작업 표시(&amp;&amp;G)...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miRestartTask">
+        <source xml:lang="en">R&amp;&amp;estart Running Task...</source>
+        <target state="translated">실행 중인 작업 다시 시작(&amp;&amp;E)...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miTerminateTask">
+        <source xml:lang="en">&amp;&amp;Terminate Task...</source>
+        <target state="translated">작업 종료(&amp;&amp;T)...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miConfigureTask">
+        <source xml:lang="en">&amp;&amp;Configure Tasks...</source>
+        <target state="translated">작업 구성(&amp;&amp;C)...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miConfigureBuildTask">
+        <source xml:lang="en">Configure De&amp;&amp;fault Build Task...</source>
+        <target state="translated">기본 빌드 작업 구성(&amp;&amp;F)...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.openWorkspaceFileTasks">
+        <source xml:lang="en">Open Workspace Tasks</source>
+        <target state="translated">작업 영역 작업 열기</target>
+      </trans-unit>
+      <trans-unit id="ShowLogAction.label">
+        <source xml:lang="en">Show Task Log</source>
+        <target state="translated">작업 로그 표시</target>
+      </trans-unit>
+      <trans-unit id="RunTaskAction.label">
+        <source xml:lang="en">Run Task</source>
+        <target state="translated">작업 실행</target>
+      </trans-unit>
+      <trans-unit id="ReRunTaskAction.label">
+        <source xml:lang="en">Rerun Last Task</source>
+        <target state="translated">마지막 작업 다시 실행</target>
+      </trans-unit>
+      <trans-unit id="RestartTaskAction.label">
+        <source xml:lang="en">Restart Running Task</source>
+        <target state="translated">실행 중인 작업 다시 시작</target>
+      </trans-unit>
+      <trans-unit id="ShowTasksAction.label">
+        <source xml:lang="en">Show Running Tasks</source>
+        <target state="translated">실행 중인 작업 표시</target>
+      </trans-unit>
+      <trans-unit id="TerminateAction.label">
+        <source xml:lang="en">Terminate Task</source>
+        <target state="translated">작업 종료</target>
+      </trans-unit>
+      <trans-unit id="BuildAction.label">
+        <source xml:lang="en">Run Build Task</source>
+        <target state="translated">빌드 작업 실행</target>
+      </trans-unit>
+      <trans-unit id="TestAction.label">
+        <source xml:lang="en">Run Test Task</source>
+        <target state="translated">테스트 작업 실행</target>
+      </trans-unit>
+      <trans-unit id="ConfigureDefaultBuildTask.label">
+        <source xml:lang="en">Configure Default Build Task</source>
+        <target state="translated">기본 빌드 작업 구성</target>
+      </trans-unit>
+      <trans-unit id="ConfigureDefaultTestTask.label">
+        <source xml:lang="en">Configure Default Test Task</source>
+        <target state="translated">기본 테스트 작업 구성</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.openUserTasks">
+        <source xml:lang="en">Open User Tasks</source>
+        <target state="translated">사용자 작업 열기</target>
+      </trans-unit>
+      <trans-unit id="quickOpen.task">
+        <source xml:lang="en">Run Task</source>
+        <target state="translated">작업 실행</target>
+      </trans-unit>
+      <trans-unit id="tasksConfigurationTitle">
+        <source xml:lang="en">Tasks</source>
+        <target state="translated">작업</target>
+      </trans-unit>
+      <trans-unit id="task.problemMatchers.neverPrompt">
+        <source xml:lang="en">Configures whether to show the problem matcher prompt when running a task. Set to `true` to never prompt, or use a dictionary of task types to turn off prompting only for specific task types.</source>
+        <target state="translated">작업을 실행할 때 문제 선택기 프롬프트를 표시할지 여부를 구성합니다. 'true'로 설정하여 프롬프트하지 않거나 작업 유형 사전을 사용하여 특정 작업 유형에 대해서만 프롬프트를 해제합니다.</target>
+      </trans-unit>
+      <trans-unit id="task.problemMatchers.neverPrompt.boolean">
+        <source xml:lang="en">Sets problem matcher prompting behavior for all tasks.</source>
+        <target state="translated">모든 작업에 대해 문제 선택기 프롬프트 동작을 설정합니다.</target>
+      </trans-unit>
+      <trans-unit id="task.problemMatchers.neverPrompt.array">
+        <source xml:lang="en">An object containing task type-boolean pairs to never prompt for problem matchers on.</source>
+        <target state="translated">작업 형식 부울 쌍을 포함하는 개체에는 문제 선택기에 대한 프롬프트가 표시되지 않습니다.</target>
+      </trans-unit>
+      <trans-unit id="task.autoDetect">
+        <source xml:lang="en">Controls enablement of `provideTasks` for all task provider extension. If the Tasks: Run Task command is slow, disabling auto detect for task providers may help. Individual extensions may also provide settings that disable auto detection.</source>
+        <target state="translated">모든 작업 공급자 확장에 `provideTasks`의 사용 여부를 제어합니다. Tasks: Run Task 명령이 느린 경우 작업 공급자에 대한 자동 검색을 사용하지 않도록 설정하면 도움이 될 수 있습니다. 또한 개별 확장은 자동 검색을 사용하지 않도록 하는 설정을 제공합니다.</target>
+      </trans-unit>
+      <trans-unit id="task.slowProviderWarning">
+        <source xml:lang="en">Configures whether a warning is shown when a provider is slow</source>
+        <target state="translated">공급자 속도가 느린 경우 경고를 표시할지 여부를 구성합니다.</target>
+      </trans-unit>
+      <trans-unit id="task.slowProviderWarning.boolean">
+        <source xml:lang="en">Sets the slow provider warning for all tasks.</source>
+        <target state="translated">모든 작업에 대해 느린 공급자 경고를 설정합니다.</target>
+      </trans-unit>
+      <trans-unit id="task.slowProviderWarning.array">
+        <source xml:lang="en">An array of task types to never show the slow provider warning.</source>
+        <target state="translated">느린 공급자 경고를 표시하지 않는 작업 유형의 배열입니다.</target>
+      </trans-unit>
+      <trans-unit id="task.quickOpen.history">
+        <source xml:lang="en">Controls the number of recent items tracked in task quick open dialog.</source>
+        <target state="translated">작업 Quick Open 대화 상자에서 추적된 최근 항목의 수를 제어합니다.</target>
+      </trans-unit>
+      <trans-unit id="task.quickOpen.detail">
+        <source xml:lang="en">Controls whether to show the task detail for task that have a detail in the Run Task quick pick.</source>
+        <target state="translated">작업 실행 빠른 선택에 세부 정보가 있는 작업의 작업 세부 정보를 표시할지 여부를 제어합니다.</target>
+      </trans-unit>
+      <trans-unit id="task.quickOpen.skip">
+        <source xml:lang="en">Controls whether the task quick pick is skipped when there is only one task to pick from.</source>
+        <target state="translated">선택할 작업이 하나만 있는 경우 작업 빠른 선택을 건너뛰는지 여부를 제어합니다.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/tasks" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="TaskDefinition.missingRequiredProperty">
+        <source xml:lang="en">Error: the task identifier '{0}' is missing the required property '{1}'. The task identifier will be ignored.</source>
+        <target state="translated">오류: 작업 식별자 '{0}'에 필요한 속성 '{1}'이(가) 없습니다. 작업 식별자가 무시됩니다.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/taskQuickOpen" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="tasksAriaLabel">
+        <source xml:lang="en">Type the name of a task to run</source>
+        <target state="translated">실행할 작업의 이름 입력</target>
+      </trans-unit>
+      <trans-unit id="noTasksMatching">
+        <source xml:lang="en">No tasks matching</source>
+        <target state="translated">일치하는 작업 없음</target>
+      </trans-unit>
+      <trans-unit id="noTasksFound">
+        <source xml:lang="en">No tasks found</source>
+        <target state="translated">작업을 찾을 수 없음</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/jsonSchema_v1" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="JsonSchema.version.deprecated">
+        <source xml:lang="en">Task version 0.1.0 is deprecated. Please use 2.0.0</source>
+        <target state="translated">작업 버전 0.1.0은 사용되지 않습니다. 2.0.0을 사용하세요.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.version">
+        <source xml:lang="en">The config's version number</source>
+        <target state="translated">구성의 버전 번호입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema._runner">
+        <source xml:lang="en">The runner has graduated. Use the offical runner property</source>
+        <target state="translated">러너가 더 이상 사용되지 않습니다. 공식 러너 속성을 사용하세요.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.runner">
+        <source xml:lang="en">Defines whether the task is executed as a process and the output is shown in the output window or inside the terminal.</source>
+        <target state="translated">작업이 프로세스로 실행되는지 여부와 출력이 출력 창이나 터미널 내부 중 어디에 표시되는지를 정의합니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.windows">
+        <source xml:lang="en">Windows specific command configuration</source>
+        <target state="translated">Windows 특정 명령 구성</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.mac">
+        <source xml:lang="en">Mac specific command configuration</source>
+        <target state="translated">Mac 특정 명령 구성</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.linux">
+        <source xml:lang="en">Linux specific command configuration</source>
+        <target state="translated">Linux 특정 명령 구성</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.shell">
+        <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
+        <target state="translated">명령이 셸 명령인지 외부 프로그램인지 여부를 지정합니다. 생략하면 기본값 false가 사용됩니다.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/taskDefinitionRegistry" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="TaskDefinition.description">
+        <source xml:lang="en">The actual task type. Please note that types starting with a '$' are reserved for internal usage.</source>
+        <target state="translated">실제 작업 형식입니다. '$'로 시작하는 형식은 내부용으로 예약되어 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="TaskDefinition.properties">
+        <source xml:lang="en">Additional properties of the task type</source>
+        <target state="translated">작업 유형의 추가 속성</target>
+      </trans-unit>
+      <trans-unit id="TaskTypeConfiguration.noType">
+        <source xml:lang="en">The task type configuration is missing the required 'taskType' property</source>
+        <target state="translated">작업 유형 구성에 필요한 'taskType' 속성이 없음</target>
+      </trans-unit>
+      <trans-unit id="TaskDefinitionExtPoint">
+        <source xml:lang="en">Contributes task kinds</source>
+        <target state="translated">작업 유형 적용</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/runAutomaticTasks" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="tasks.run.allowAutomatic">
+        <source xml:lang="en">This folder has tasks ({0}) defined in 'tasks.json' that run automatically when you open this folder. Do you allow automatic tasks to run when you open this folder?</source>
+        <target state="translated">이 폴더의 'tasks.json'에는 이 폴더를 열 때 자동으로 실행되는 작업({0})이 정의되어 있습니다. 자동 작업이 이 폴더를 열 때 실행되도록 허용하시겠어요?</target>
+      </trans-unit>
+      <trans-unit id="allow">
+        <source xml:lang="en">Allow and run</source>
+        <target state="translated">허용 및 실행</target>
+      </trans-unit>
+      <trans-unit id="disallow">
+        <source xml:lang="en">Disallow</source>
+        <target state="translated">허용 안 함</target>
+      </trans-unit>
+      <trans-unit id="openTasks">
+        <source xml:lang="en">Open tasks.json</source>
+        <target state="translated">tasks.json 열기</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.manageAutomaticRunning">
+        <source xml:lang="en">Manage Automatic Tasks in Folder</source>
+        <target state="translated">폴더에서 자동 작업 관리</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.allowAutomaticTasks">
+        <source xml:lang="en">Allow Automatic Tasks in Folder</source>
+        <target state="translated">폴더에서 자동 작업 허용</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.disallowAutomaticTasks">
+        <source xml:lang="en">Disallow Automatic Tasks in Folder</source>
+        <target state="translated">폴더에서 자동 작업 허용 안 함</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/quickOpen" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="entryAriaLabel">
+        <source xml:lang="en">{0}, tasks</source>
+        <target state="translated">{0}, tasks</target>
+      </trans-unit>
+      <trans-unit id="recentlyUsed">
+        <source xml:lang="en">recently used tasks</source>
+        <target state="translated">최근에 사용한 작업</target>
+      </trans-unit>
+      <trans-unit id="configured">
+        <source xml:lang="en">configured tasks</source>
+        <target state="translated">구성된 작업</target>
+      </trans-unit>
+      <trans-unit id="detected">
+        <source xml:lang="en">detected tasks</source>
+        <target state="translated">감지된 작업</target>
+      </trans-unit>
+      <trans-unit id="customizeTask">
+        <source xml:lang="en">Configure Task</source>
+        <target state="translated">작업 구성</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/taskConfiguration" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="ConfigurationParser.invalidCWD">
+        <source xml:lang="en">Warning: options.cwd must be of type string. Ignoring value {0}
+</source>
+        <target state="translated">경고: options.cwd는 string 형식이어야 합니다. {0} 값을 무시합니다.
+</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.inValidArg">
+        <source xml:lang="en">Error: command argument must either be a string or a quoted string. Provided value is:
+{0}</source>
+        <target state="translated">오류: 명령 인수는 문자열 또는 따옴표 붙은 문자열이어야 합니다. 제공된 값:
+{0}</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.noShell">
+        <source xml:lang="en">Warning: shell configuration is only supported when executing tasks in the terminal.</source>
+        <target state="translated">경고: 셸 구성은 작업을 터미널에서 실행 중일 때에만 지원됩니다.</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.noName">
+        <source xml:lang="en">Error: Problem Matcher in declare scope must have a name:
+{0}
+</source>
+        <target state="translated">오류: 선언 범위 내의 문제 선택기는 이름이 있어야 합니다.
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.unknownMatcherKind">
+        <source xml:lang="en">Warning: the defined problem matcher is unknown. Supported types are string | ProblemMatcher | Array&lt;string | ProblemMatcher&gt;.
+{0}
+</source>
+        <target state="translated">경고: 알 수 없는 문제 선택기가 정의되었습니다. 지원되는 형식은 string | ProblemMatcher | Array&lt;string | ProblemMatcher&gt;입니다.
+{0}</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.invalidVariableReference">
+        <source xml:lang="en">Error: Invalid problemMatcher reference: {0}
+</source>
+        <target state="translated">오류: 잘못된 problemMatcher 참조:  {0}
+</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.noTaskType">
+        <source xml:lang="en">Error: tasks configuration must have a type property. The configuration will be ignored.
+{0}
+</source>
+        <target state="translated">오류: 작업 구성은 유형 속성이 필요합니다. 이 구성은 무시됩니다.
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.noTypeDefinition">
+        <source xml:lang="en">Error: there is no registered task type '{0}'. Did you miss to install an extension that provides a corresponding task provider?</source>
+        <target state="translated">오류: 등록된 작업 형식 '{0}'이(가) 없습니다. 해당하는 작업 공급자를 제공하는 확장을 설치하지 않으셨습니까?</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.missingType">
+        <source xml:lang="en">Error: the task configuration '{0}' is missing the required property 'type'. The task configuration will be ignored.</source>
+        <target state="translated">오류: 작업 구성 '{0}'에 필요한 속성 'type'이 없습니다. 작업 구성이 무시됩니다.</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.incorrectType">
+        <source xml:lang="en">Error: the task configuration '{0}' is using an unknown type. The task configuration will be ignored.</source>
+        <target state="translated">오류: 작업 구성 '{0}'은(는) 알 수 없는 형식을 사용 중입니다. 작업 구성이 무시됩니다.</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.notCustom">
+        <source xml:lang="en">Error: tasks is not declared as a custom task. The configuration will be ignored.
+{0}
+</source>
+        <target state="translated">오류: 작업이 사용자 지정 작업으로 선언되지 않았습니다. 이 구성은 무시됩니다.
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.noTaskName">
+        <source xml:lang="en">Error: a task must provide a label property. The task will be ignored.
+{0}
+</source>
+        <target state="translated">오류: 작업에서 레이블 속성을 제공해야 합니다. 이 작업은 무시됩니다.
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="taskConfiguration.noCommandOrDependsOn">
+        <source xml:lang="en">Error: the task '{0}' neither specifies a command nor a dependsOn property. The task will be ignored. Its definition is:
+{1}</source>
+        <target state="translated">오류: 작업 '{0}'에서 명령이나 dependsOn 속성을 지정하지 않습니다. 이 작업은 무시됩니다. 해당 작업의 정의는 {1}입니다.</target>
+      </trans-unit>
+      <trans-unit id="taskConfiguration.noCommand">
+        <source xml:lang="en">Error: the task '{0}' doesn't define a command. The task will be ignored. Its definition is:
+{1}</source>
+        <target state="translated">오류: 작업 '{0}'에서 명령을 정의하지 않습니다. 이 작업은 무시됩니다. 해당 작업의 정의는
+{1}입니다.</target>
+      </trans-unit>
+      <trans-unit id="TaskParse.noOsSpecificGlobalTasks">
+        <source xml:lang="en">Task version 2.0.0 doesn't support global OS specific tasks. Convert them to a task with a OS specific command. Affected tasks are:
+{0}</source>
+        <target state="translated">작업 버전 2.0.0은 글로벌 OS별 작업을 지원하지 않습니다. OS별 명령을 사용하여 작업으로 변환하세요. 영향을 받는 작업:
+{0}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/jsonSchema_v2" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="JsonSchema.shell">
+        <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
+        <target state="translated">명령이 셸 명령인지 외부 프로그램인지 여부를 지정합니다. 생략하면 기본값 false가 사용됩니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.isShellCommand.deprecated">
+        <source xml:lang="en">The property isShellCommand is deprecated. Use the type property of the task and the shell property in the options instead. See also the 1.14 release notes.</source>
+        <target state="translated">isShellCommand 속성은 사용 중단되었습니다. 작업의 유형 속성과 셸 속성을 대신 사용하세요. 1.14 릴리스 노트를 참고하세요.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOn.identifier">
+        <source xml:lang="en">The task identifier.</source>
+        <target state="translated">작업 식별자입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOn.string">
+        <source xml:lang="en">Another task this task depends on.</source>
+        <target state="translated">이 작업이 종속된 또 다른 작업입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOn.array">
+        <source xml:lang="en">The other tasks this task depends on.</source>
+        <target state="translated">이 작업이 종속된 다른 여러 작업입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOn">
+        <source xml:lang="en">Either a string representing another task or an array of other tasks that this task depends on.</source>
+        <target state="translated">다른 작업을 나타내는 문자열 또는 이 작업이 종속된 다른 작업의 배열입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOrder.parallel">
+        <source xml:lang="en">Run all dependsOn tasks in parallel.</source>
+        <target state="translated">모든 dependsOn 작업을 병렬로 실행합니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOrder.sequence">
+        <source xml:lang="en">Run all dependsOn tasks in sequence.</source>
+        <target state="translated">모든 dependsOn 작업을 순차적으로 실행합니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOrder">
+        <source xml:lang="en">Determines the order of the dependsOn tasks for this task. Note that this property is not recursive.</source>
+        <target state="translated">이 작업의 dependsOn 작업 순서를 결정합니다. 이 속성은 재귀적이 아닙니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.detail">
+        <source xml:lang="en">An optional description of a task that shows in the Run Task quick pick as a detail.</source>
+        <target state="translated">작업 실행 빠른 선택에 세부 정보로 표시되는 작업의 선택적 설명입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation">
+        <source xml:lang="en">Configures the panel that is used to present the task's output and reads its input.</source>
+        <target state="translated">작업의 출력을 표시하는 데 사용되는 패널을 구성하고 작업의 입력을 읽습니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.echo">
+        <source xml:lang="en">Controls whether the executed command is echoed to the panel. Default is true.</source>
+        <target state="translated">실행된 명령을 패널에 에코할지 결정합니다. 기본값은 true입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.focus">
+        <source xml:lang="en">Controls whether the panel takes focus. Default is false. If set to true the panel is revealed as well.</source>
+        <target state="translated">패널이 포커스를 잡는지 결정합니다. 기본값은 false입니다. true로 설정하면 패널도 드러납니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.revealProblems.always">
+        <source xml:lang="en">Always reveals the problems panel when this task is executed.</source>
+        <target state="translated">이 작업을 실행할 때 문제 패널을 항상 표시합니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.revealProblems.onProblem">
+        <source xml:lang="en">Only reveals the problems panel if a problem is found.</source>
+        <target state="translated">문제를 찾은 경우에만 문제 패널을 표시합니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.revealProblems.never">
+        <source xml:lang="en">Never reveals the problems panel when this task is executed.</source>
+        <target state="translated">이 작업을 실행할 때 문제 패널을 표시하지 않습니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.revealProblems">
+        <source xml:lang="en">Controls whether the problems panel is revealed when running this task or not. Takes precedence over option "reveal". Default is "never".</source>
+        <target state="translated">이 작업을 실행할 때 문제 패널을 표시할지 여부를 제거합니다. "reveal" 옵션보다 우선합니다. 기본값은 "안 함"입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.reveal.always">
+        <source xml:lang="en">Always reveals the terminal when this task is executed.</source>
+        <target state="translated">이 작업이 호출될 때 터미널을 항상 표시합니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.reveal.silent">
+        <source xml:lang="en">Only reveals the terminal if the task exits with an error or the problem matcher finds an error.</source>
+        <target state="translated">작업이 오류와 함께 종료되거나 문제 선택기에서 오류를 찾는 경우에만 터미널을 표시합니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.reveal.never">
+        <source xml:lang="en">Never reveals the terminal when this task is executed.</source>
+        <target state="translated">작업을 실행할 때 터미널을 표시하지 않습니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.reveal">
+        <source xml:lang="en">Controls whether the terminal running the task is revealed or not. May be overridden by option "revealProblems". Default is "always".</source>
+        <target state="translated">작업을 실행 중인 터미널을 표시할지 여부를 제어합니다. "revealProblems" 옵션으로 재정의할 수 있습니다. 기본값은 "항상"입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.instance">
+        <source xml:lang="en">Controls if the panel is shared between tasks, dedicated to this task or a new one is created on every run.</source>
+        <target state="translated">패널을 작업 간에 공유할지 결정합니다. 이 작업 전용 패널로 사용하거나 실행할 때마다 새로 생성합니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.showReuseMessage">
+        <source xml:lang="en">Controls whether to show the `Terminal will be reused by tasks, press any key to close it` message.</source>
+        <target state="translated">`터미널이 작업에서 다시 사용됩니다. 닫으려면 아무 키나 누르세요` 메시지를 표시할지 여부를 제어합니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.clear">
+        <source xml:lang="en">Controls whether the terminal is cleared before executing the task.</source>
+        <target state="translated">작업을 실행하기 전에 터미널을 지울지 여부를 제어합니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.group">
+        <source xml:lang="en">Controls whether the task is executed in a specific terminal group using split panes.</source>
+        <target state="translated">분할 창을 사용하여 특정 터미널 그룹에서 작업을 실행할지 여부를 제어합니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.terminal">
+        <source xml:lang="en">The terminal property is deprecated. Use presentation instead</source>
+        <target state="translated">이 터미널 속성은 사용되지 않습니다. 프레젠테이션을 대신 사용하세요.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.kind">
+        <source xml:lang="en">The task's execution group.</source>
+        <target state="translated">작업 실행 그룹입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.isDefault">
+        <source xml:lang="en">Defines if this task is the default task in the group.</source>
+        <target state="translated">작업이 그룹 내 기본 작업에 있는지 정의합니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.defaultBuild">
+        <source xml:lang="en">Marks the task as the default build task.</source>
+        <target state="translated">이 작업을 기본 빌드 작업으로 표시합니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.defaultTest">
+        <source xml:lang="en">Marks the task as the default test task.</source>
+        <target state="translated">이 작업을 기본 테스트 작업으로 표시합니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.build">
+        <source xml:lang="en">Marks the task as a build task accessible through the 'Run Build Task' command.</source>
+        <target state="translated">'작업 빌드 실행' 명령을 통해 액세스할 수 있는 빌드 작업으로 작업을 표시합니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.test">
+        <source xml:lang="en">Marks the task as a test task accessible through the 'Run Test Task' command.</source>
+        <target state="translated">작업을 '테스트 작업 실행' 명령을 통해 액세스할 수 있는 테스트 작업으로 표시합니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.none">
+        <source xml:lang="en">Assigns the task to no group</source>
+        <target state="translated">작업을 그룹에 할당 안 함</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group">
+        <source xml:lang="en">Defines to which execution group this task belongs to. It supports "build" to add it to the build group and "test" to add it to the test group.</source>
+        <target state="translated">이 작업을 할당할 실행 그룹을 정의합니다. 빌드 그룹에 추가를 위한 "build'와 테스트 그룹에 추가를 위한 "test"를 지원합니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.type">
+        <source xml:lang="en">Defines whether the task is run as a process or as a command inside a shell.</source>
+        <target state="translated">작업이 프로세스로 실행되는지 또는 셸 내의 명령으로 실행되는지를 제어합니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.commandArray">
+        <source xml:lang="en">The shell command to be executed. Array items will be joined using a space character</source>
+        <target state="translated">실행할 셸 명령입니다. 배열 항목은 공백 문자를 사용하여 연결됩니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.command.quotedString.value">
+        <source xml:lang="en">The actual command value</source>
+        <target state="translated">실제 명령 값</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.quoting.escape">
+        <source xml:lang="en">Escapes characters using the shell's escape character (e.g. ` under PowerShell and \ under bash).</source>
+        <target state="translated">셸의 이스케이프 문자를 사용하여 문자를 이스케이프합니다(예: ` under PowerShell 및 \ under bash).</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.quoting.strong">
+        <source xml:lang="en">Quotes the argument using the shell's strong quote character (e.g. " under PowerShell and bash).</source>
+        <target state="translated">셸의 강력한 따옴표 문자를 사용하여 인수를 따옴표 처리합니다(예: " under PowerShell and bash).</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.quoting.weak">
+        <source xml:lang="en">Quotes the argument using the shell's weak quote character (e.g. ' under PowerShell and bash).</source>
+        <target state="translated">셸의 약한 따옴표 문자를 사용하여 인수를 따옴표 처리합니다(예: PowerShell 및 bash의 경우 ').</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.command.quotesString.quote">
+        <source xml:lang="en">How the command value should be quoted.</source>
+        <target state="translated">명령 값을 따옴표로 묶을 방법입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.command">
+        <source xml:lang="en">The command to be executed. Can be an external program or a shell command.</source>
+        <target state="translated">실행할 명령이며, 외부 프로그램 또는 셸 명령입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.args.quotedString.value">
+        <source xml:lang="en">The actual argument value</source>
+        <target state="translated">실제 인수 값</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.args.quotesString.quote">
+        <source xml:lang="en">How the argument value should be quoted.</source>
+        <target state="translated">인수 값을 따옴표로 묶을 방법입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.args">
+        <source xml:lang="en">Arguments passed to the command when this task is invoked.</source>
+        <target state="translated">이 작업이 호출될 때 명령에 전달되는 인수입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.label">
+        <source xml:lang="en">The task's user interface label</source>
+        <target state="translated">작업 사용자 인터페이스 레이블</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.version">
+        <source xml:lang="en">The config's version number.</source>
+        <target state="translated">구성의 버전 번호입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.identifier">
+        <source xml:lang="en">A user defined identifier to reference the task in launch.json or a dependsOn clause.</source>
+        <target state="translated">작업을 launch.json 또는 dependsOn 구문에서 참조할 사용자 정의 식별자입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.identifier.deprecated">
+        <source xml:lang="en">User defined identifiers are deprecated. For custom task use the name as a reference and for tasks provided by extensions use their defined task identifier.</source>
+        <target state="translated">사용자 정의 식별자는 사용되지 않습니다. 이름을 참조로 사용한 사용자 지정 작업 및 확장에서 제공한 작업의 경우 작업에서 정의한 작업 식별자를 사용하세요.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.reevaluateOnRerun">
+        <source xml:lang="en">Whether to reevaluate task variables on rerun.</source>
+        <target state="translated">다시 실행 시 작업 변수를 다시 평가할지 여부입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.runOn">
+        <source xml:lang="en">Configures when the task should be run. If set to folderOpen, then the task will be run automatically when the folder is opened.</source>
+        <target state="translated">작업을 실행해야 하는 시기를 구성합니다. folderOpen으로 설정하면 이 폴더가 열리면 작업이 자동으로 실행됩니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.instanceLimit">
+        <source xml:lang="en">The number of instances of the task that are allowed to run simultaneously.</source>
+        <target state="translated">동시에 실행할 수 있는 작업의 인스턴스 수입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.runOptions">
+        <source xml:lang="en">The task's run related options</source>
+        <target state="translated">작업 실행 관련 옵션</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.taskLabel">
+        <source xml:lang="en">The task's label</source>
+        <target state="translated">작업 레이블</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.taskName">
+        <source xml:lang="en">The task's name</source>
+        <target state="translated">작업 이름</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.taskName.deprecated">
+        <source xml:lang="en">The task's name property is deprecated. Use the label property instead.</source>
+        <target state="translated">이 작업 이름은 사용되지 않습니다. 레이블 속성을 대신 사용하세요.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.background">
+        <source xml:lang="en">Whether the executed task is kept alive and is running in the background.</source>
+        <target state="translated">실행한 작업을 활성 상태로 유지하고 배경에서 실행하는지 여부입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.promptOnClose">
+        <source xml:lang="en">Whether the user is prompted when VS Code closes with a running task.</source>
+        <target state="translated">실행 중인 작업이 있는 VS Code가 닫힐 때 사용자에게 메시지를 표시할지 여부입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.matchers">
+        <source xml:lang="en">The problem matcher(s) to use. Can either be a string or a problem matcher definition or an array of strings and problem matchers.</source>
+        <target state="translated">사용할 문제 선택기입니다. 문자열, 문제 선택기 정의 또는 문자열 및 문제 선택기 배열일 수 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.customizations.customizes.type">
+        <source xml:lang="en">The task type to customize</source>
+        <target state="translated">사용자 지정할 작업 유형</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.customize.deprecated">
+        <source xml:lang="en">The customize property is deprecated. See the 1.14 release notes on how to migrate to the new task customization approach</source>
+        <target state="translated">사용자 지정 속성은 사용되지 않습니다. 새로운 작업 사용자 지정 방식으로 마이그레이션을 위해 1.14 릴리스 노트를 참고하세요.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.showOutput.deprecated">
+        <source xml:lang="en">The property showOutput is deprecated. Use the reveal property inside the presentation property instead. See also the 1.14 release notes.</source>
+        <target state="translated">showOutput 속성은 사용되지 않습니다. 대신 presentation 속성 내 reveal 속성을 사용하세요. 1.14 릴리스 노트도 참고하세요.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.echoCommand.deprecated">
+        <source xml:lang="en">The property echoCommand is deprecated. Use the echo property inside the presentation property instead. See also the 1.14 release notes.</source>
+        <target state="translated">echoCommand 속성은 사용되지 않습니다. 대신 presentation 속성 내 echo 속성을 사용하세요. 1.14 릴리스 노트도 참고하세요.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.suppressTaskName.deprecated">
+        <source xml:lang="en">The property suppressTaskName is deprecated. Inline the command with its arguments into the task instead. See also the 1.14 release notes.</source>
+        <target state="translated">suppressTaskName 속성은 사용되지 않습니다. 대신 명령을 인수와 함께 작업에 인라인으로 삽입하세요. 1.14 릴리스 노트를 참고하세요.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.isBuildCommand.deprecated">
+        <source xml:lang="en">The property isBuildCommand is deprecated. Use the group property instead. See also the 1.14 release notes.</source>
+        <target state="translated">isBuildCommand 속성은 사용되지 않습니다. 대신 group 속성을 사용하세요. 1.14 릴리스 노트도 참고하세요.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.isTestCommand.deprecated">
+        <source xml:lang="en">The property isTestCommand is deprecated. Use the group property instead. See also the 1.14 release notes.</source>
+        <target state="translated">isTestCommand 속성은 사용되지 않습니다. 대신 group 속성을 사용하세요. 1.14 릴리스 노트를 참고하세요.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.taskSelector.deprecated">
+        <source xml:lang="en">The property taskSelector is deprecated. Inline the command with its arguments into the task instead. See also the 1.14 release notes.</source>
+        <target state="translated">taskSelector 속성은 사용되지 않습니다. 대신 명령을 인수와 함께 작업에 인라인으로 삽입하세요. 1.14 릴리스 노트를 참고하세요.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.windows">
+        <source xml:lang="en">Windows specific command configuration</source>
+        <target state="translated">Windows 특정 명령 구성</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.mac">
+        <source xml:lang="en">Mac specific command configuration</source>
+        <target state="translated">Mac 특정 명령 구성</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.linux">
+        <source xml:lang="en">Linux specific command configuration</source>
+        <target state="translated">Linux 특정 명령 구성</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/jsonSchemaCommon" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="JsonSchema.options">
+        <source xml:lang="en">Additional command options</source>
+        <target state="translated">추가 명령 옵션</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.options.cwd">
+        <source xml:lang="en">The current working directory of the executed program or script. If omitted Code's current workspace root is used.</source>
+        <target state="translated">실행된 프로그램 또는 스크립트의 현재 작업 디렉터리입니다. 생략된 경우 Code의 현재 작업 영역 루트가 사용됩니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.options.env">
+        <source xml:lang="en">The environment of the executed program or shell. If omitted the parent process' environment is used.</source>
+        <target state="translated">실행할 프로그램 또는 셸의 환경입니다. 생략하면 부모 프로세스의 환경이 사용됩니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.shellConfiguration">
+        <source xml:lang="en">Configures the shell to be used.</source>
+        <target state="translated">사용할 셸을 구성합니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.shell.executable">
+        <source xml:lang="en">The shell to be used.</source>
+        <target state="translated">사용할 셸입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.shell.args">
+        <source xml:lang="en">The shell arguments.</source>
+        <target state="translated">셸 인수입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.command">
+        <source xml:lang="en">The command to be executed. Can be an external program or a shell command.</source>
+        <target state="translated">실행할 명령이며, 외부 프로그램 또는 셸 명령입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.args">
+        <source xml:lang="en">Arguments passed to the command when this task is invoked.</source>
+        <target state="translated">이 작업이 호출될 때 명령에 전달되는 인수입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.taskName">
+        <source xml:lang="en">The task's name</source>
+        <target state="translated">작업 이름</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.windows">
+        <source xml:lang="en">Windows specific command configuration</source>
+        <target state="translated">Windows 특정 명령 구성</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.matchers">
+        <source xml:lang="en">The problem matcher(s) to use. Can either be a string or a problem matcher definition or an array of strings and problem matchers.</source>
+        <target state="translated">사용할 문제 선택기입니다. 문자열, 문제 선택기 정의 또는 문자열 및 문제 선택기 배열일 수 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.mac">
+        <source xml:lang="en">Mac specific command configuration</source>
+        <target state="translated">Mac 특정 명령 구성</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.linux">
+        <source xml:lang="en">Linux specific command configuration</source>
+        <target state="translated">Linux 특정 명령 구성</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.suppressTaskName">
+        <source xml:lang="en">Controls whether the task name is added as an argument to the command. If omitted the globally defined value is used.</source>
+        <target state="translated">작업 이름을 명령에 인수로 추가할지 여부를 제어합니다. 생략하면 전역적으로 정의된 값이 사용됩니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.showOutput">
+        <source xml:lang="en">Controls whether the output of the running task is shown or not. If omitted the globally defined value is used.</source>
+        <target state="translated">실행 중인 작업에 대한 출력을 표시할지 여부를 제어합니다. 생략하면 전역적으로 정의된 값이 사용됩니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.echoCommand">
+        <source xml:lang="en">Controls whether the executed command is echoed to the output. Default is false.</source>
+        <target state="translated">실행된 명령을 출력에 에코할지 여부를 제어합니다. 기본값은 false입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.watching.deprecation">
+        <source xml:lang="en">Deprecated. Use isBackground instead.</source>
+        <target state="translated">사용되지 않습니다. 대신 isBackground를 사용합니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.watching">
+        <source xml:lang="en">Whether the executed task is kept alive and is watching the file system.</source>
+        <target state="translated">실행된 작업을 활성 상태로 유지할지 파일 시스템을 조사할지 여부를 나타냅니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.background">
+        <source xml:lang="en">Whether the executed task is kept alive and is running in the background.</source>
+        <target state="translated">실행한 작업을 활성 상태로 유지하고 배경에서 실행하는지 여부입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.promptOnClose">
+        <source xml:lang="en">Whether the user is prompted when VS Code closes with a running task.</source>
+        <target state="translated">실행 중인 작업이 있는 VS Code가 닫힐 때 사용자에게 메시지를 표시할지 여부입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.build">
+        <source xml:lang="en">Maps this task to Code's default build command.</source>
+        <target state="translated">이 작업을 Code의 기본 빌드 명령에 매핑합니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.test">
+        <source xml:lang="en">Maps this task to Code's default test command.</source>
+        <target state="translated">이 작업을 Code의 기본 테스트 명령에 매핑합니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.args">
+        <source xml:lang="en">Additional arguments passed to the command.</source>
+        <target state="translated">명령에 전달되는 추가 인수입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.showOutput">
+        <source xml:lang="en">Controls whether the output of the running task is shown or not. If omitted 'always' is used.</source>
+        <target state="translated">실행 중인 작업에 대한 출력을 표시할지 여부를 제어합니다. 생략하면 '항상'이 사용됩니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.watching.deprecation">
+        <source xml:lang="en">Deprecated. Use isBackground instead.</source>
+        <target state="translated">사용되지 않습니다. 대신 isBackground를 사용합니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.watching">
+        <source xml:lang="en">Whether the executed task is kept alive and is watching the file system.</source>
+        <target state="translated">실행된 작업을 활성 상태로 유지할지 파일 시스템을 조사할지 여부를 나타냅니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.background">
+        <source xml:lang="en">Whether the executed task is kept alive and is running in the background.</source>
+        <target state="translated">실행한 작업을 활성 상태로 유지하고 배경에서 실행하는지 여부입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.promptOnClose">
+        <source xml:lang="en">Whether the user is prompted when VS Code closes with a running background task.</source>
+        <target state="translated">백그라운드 작업이 실행 중인 상태에서 VS Code가 종료될 경우 사용자에게 메시지를 표시할지 여부를 나타냅니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.suppressTaskName">
+        <source xml:lang="en">Controls whether the task name is added as an argument to the command. Default is false.</source>
+        <target state="translated">작업 이름을 명령에 인수로 추가할지 여부를 제어합니다. 기본값은 false입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.taskSelector">
+        <source xml:lang="en">Prefix to indicate that an argument is task.</source>
+        <target state="translated">인수가 작업임을 나타내는 접두사입니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.matchers">
+        <source xml:lang="en">The problem matcher(s) to use. Can either be a string or a problem matcher definition or an array of strings and problem matchers.</source>
+        <target state="translated">사용할 문제 선택기입니다. 문자열, 문제 선택기 정의 또는 문자열 및 문제 선택기 배열일 수 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks">
+        <source xml:lang="en">The task configurations. Usually these are enrichments of task already defined in the external task runner.</source>
+        <target state="translated">작업 구성입니다. 일반적으로 외부 Task Runner에 이미 정의되어 있는 작업을 보강합니다.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/problemMatcher" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="ProblemPatternParser.problemPattern.missingRegExp">
+        <source xml:lang="en">The problem pattern is missing a regular expression.</source>
+        <target state="translated">문제 패턴에 정규식이 없습니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternParser.loopProperty.notLast">
+        <source xml:lang="en">The loop property is only supported on the last line matcher.</source>
+        <target state="translated">loop 속성은 마지막 줄 검사기에서만 지원됩니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternParser.problemPattern.kindProperty.notFirst">
+        <source xml:lang="en">The problem pattern is invalid. The kind property must be provided only in the first element</source>
+        <target state="translated">문제 패턴이 잘못되었습니다. Kind 속성은 첫 번째 요소에만 지정해야 합니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternParser.problemPattern.missingProperty">
+        <source xml:lang="en">The problem pattern is invalid. It must have at least have a file and a message.</source>
+        <target state="translated">문제 패턴이 잘못되었습니다. 하나 이상의 파일 및 메시지를 포함해야 합니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternParser.problemPattern.missingLocation">
+        <source xml:lang="en">The problem pattern is invalid. It must either have kind: "file" or have a line or location match group.</source>
+        <target state="translated">문제 패턴이 잘못되었습니다. "파일" 종류, 줄 또는 위치 일치 그룹을 포함해야 합니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternParser.invalidRegexp">
+        <source xml:lang="en">Error: The string {0} is not a valid regular expression.
+</source>
+        <target state="translated">오류: {0} 문자열은 유효한 정규식이 아닙니다.
+</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.regexp">
+        <source xml:lang="en">The regular expression to find an error, warning or info in the output.</source>
+        <target state="translated">출력에서 오류, 경고 또는 정보를 찾는 정규식입니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.kind">
+        <source xml:lang="en">whether the pattern matches a location (file and line) or only a file.</source>
+        <target state="translated">패턴이 위치(파일 및 줄)와 일치하는지 또는 파일하고만 일치하는지 여부입니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.file">
+        <source xml:lang="en">The match group index of the filename. If omitted 1 is used.</source>
+        <target state="translated">파일 이름의 일치 그룹 인덱스입니다. 생략된 경우 1이 사용됩니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.location">
+        <source xml:lang="en">The match group index of the problem's location. Valid location patterns are: (line), (line,column) and (startLine,startColumn,endLine,endColumn). If omitted (line,column) is assumed.</source>
+        <target state="translated">문제 위치의 일치 그룹 인덱스입니다. 유효한 위치 패턴은 (line), (line,column) 및 (startLine,startColumn,endLine,endColumn)입니다. 생략하면 (line,column)이 사용됩니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.line">
+        <source xml:lang="en">The match group index of the problem's line. Defaults to 2</source>
+        <target state="translated">문제 줄의 일치 그룹 인덱스입니다. 기본값은 2입니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.column">
+        <source xml:lang="en">The match group index of the problem's line character. Defaults to 3</source>
+        <target state="translated">문제의 줄바꿈 문자의 일치 그룹 인덱스입니다. 기본값은 3입니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.endLine">
+        <source xml:lang="en">The match group index of the problem's end line. Defaults to undefined</source>
+        <target state="translated">문제 끝 줄의 일치 그룹 인덱스입니다. 기본적으로 정의되지 않습니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.endColumn">
+        <source xml:lang="en">The match group index of the problem's end line character. Defaults to undefined</source>
+        <target state="translated">문제의 끝 줄바꿈 문자의 일치 그룹 인덱스입니다. 기본값은 정의되지 않았습니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.severity">
+        <source xml:lang="en">The match group index of the problem's severity. Defaults to undefined</source>
+        <target state="translated">문제 심각도의 일치 그룹 인덱스입니다. 기본적으로 정의되지 않습니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.code">
+        <source xml:lang="en">The match group index of the problem's code. Defaults to undefined</source>
+        <target state="translated">문제 코드의 일치 그룹 인덱스입니다. 기본적으로 정의되지 않습니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.message">
+        <source xml:lang="en">The match group index of the message. If omitted it defaults to 4 if location is specified. Otherwise it defaults to 5.</source>
+        <target state="translated">메시지의 일치 그룹 인덱스입니다. 생략된 경우 기본값은 위치가 지정된 경우 4이고, 그렇지 않으면 5입니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.loop">
+        <source xml:lang="en">In a multi line matcher loop indicated whether this pattern is executed in a loop as long as it matches. Can only specified on a last pattern in a multi line pattern.</source>
+        <target state="translated">여러 줄 선택기 루프에서는 이 패턴이 일치할 경우 루프에서 패턴을 실행할지 여부를 나타냅니다. 여러 줄 패턴의 마지막 패턴에 대해서만 지정할 수 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="NamedProblemPatternSchema.name">
+        <source xml:lang="en">The name of the problem pattern.</source>
+        <target state="translated">문제 패턴의 이름입니다.</target>
+      </trans-unit>
+      <trans-unit id="NamedMultiLineProblemPatternSchema.name">
+        <source xml:lang="en">The name of the problem multi line problem pattern.</source>
+        <target state="translated">여러 줄 문제 패턴의 이름입니다.</target>
+      </trans-unit>
+      <trans-unit id="NamedMultiLineProblemPatternSchema.patterns">
+        <source xml:lang="en">The actual patterns.</source>
+        <target state="translated">실제 패턴입니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternExtPoint">
+        <source xml:lang="en">Contributes problem patterns</source>
+        <target state="translated">문제 패턴을 제공합니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternRegistry.error">
+        <source xml:lang="en">Invalid problem pattern. The pattern will be ignored.</source>
+        <target state="translated">잘못된 문제 패턴입니다. 패턴이 무시됩니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noProblemMatcher">
+        <source xml:lang="en">Error: the description can't be converted into a problem matcher:
+{0}
+</source>
+        <target state="translated">오류: 설명을 문제 선택기로 변환할 수 없습니다.
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noProblemPattern">
+        <source xml:lang="en">Error: the description doesn't define a valid problem pattern:
+{0}
+</source>
+        <target state="translated">오류: 설명에서 유효한 문제 패턴을 정의하지 않습니다.
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noOwner">
+        <source xml:lang="en">Error: the description doesn't define an owner:
+{0}
+</source>
+        <target state="translated">오류: 설명에서 소유자를 정의하지 않습니다.
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noFileLocation">
+        <source xml:lang="en">Error: the description doesn't define a file location:
+{0}
+</source>
+        <target state="translated">오류: 설명에서 파일 위치를 정의하지 않습니다.
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.unknownSeverity">
+        <source xml:lang="en">Info: unknown severity {0}. Valid values are error, warning and info.
+</source>
+        <target state="translated">정보: 알 수 없는 심각도 {0}. 유효한 값은 오류, 경고 및 정보입니다.
+</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noDefinedPatter">
+        <source xml:lang="en">Error: the pattern with the identifier {0} doesn't exist.</source>
+        <target state="translated">오류: 식별자가 {0}인 패턴이 없습니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noIdentifier">
+        <source xml:lang="en">Error: the pattern property refers to an empty identifier.</source>
+        <target state="translated">오류: 패턴 속성이 빈 식별자를 참조합니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noValidIdentifier">
+        <source xml:lang="en">Error: the pattern property {0} is not a valid pattern variable name.</source>
+        <target state="translated">오류: 패턴 속성 {0}이(가) 유효한 패턴 변수 이름이 아닙니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.problemPattern.watchingMatcher">
+        <source xml:lang="en">A problem matcher must define both a begin pattern and an end pattern for watching.</source>
+        <target state="translated">문제 검사기에서 감시 시작 패턴과 종료 패턴을 모두 정의해야 합니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.invalidRegexp">
+        <source xml:lang="en">Error: The string {0} is not a valid regular expression.
+</source>
+        <target state="translated">오류: {0} 문자열은 유효한 정규식이 아닙니다.
+</target>
+      </trans-unit>
+      <trans-unit id="WatchingPatternSchema.regexp">
+        <source xml:lang="en">The regular expression to detect the begin or end of a background task.</source>
+        <target state="translated">백그라운드 작업의 시작 또는 종료를 감지하는 정규식입니다.</target>
+      </trans-unit>
+      <trans-unit id="WatchingPatternSchema.file">
+        <source xml:lang="en">The match group index of the filename. Can be omitted.</source>
+        <target state="translated">파일 이름의 일치 그룹 인덱스이며 생략할 수 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="PatternTypeSchema.name">
+        <source xml:lang="en">The name of a contributed or predefined pattern</source>
+        <target state="translated">제공되거나 미리 정의된 패턴의 이름</target>
+      </trans-unit>
+      <trans-unit id="PatternTypeSchema.description">
+        <source xml:lang="en">A problem pattern or the name of a contributed or predefined problem pattern. Can be omitted if base is specified.</source>
+        <target state="translated">문제 패턴 또는 제공되거나 미리 정의된 문제 패턴의 이름입니다. 기본이 지정된 경우 생략할 수 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.base">
+        <source xml:lang="en">The name of a base problem matcher to use.</source>
+        <target state="translated">사용할 기본 문제 선택기의 이름입니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.owner">
+        <source xml:lang="en">The owner of the problem inside Code. Can be omitted if base is specified. Defaults to 'external' if omitted and base is not specified.</source>
+        <target state="translated">Code 내부의 문제 소유자입니다. 기본값을 지정한 경우 생략할 수 있습니다. 기본값을 지정하지 않고 생략한 경우 기본값은 '외부'입니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.source">
+        <source xml:lang="en">A human-readable string describing the source of this diagnostic, e.g. 'typescript' or 'super lint'.</source>
+        <target state="translated">이 진단의 소스를 설명하는 사람이 읽을 수 있는 문자열입니다(예: 'typescript' 또는 'super lint').</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.severity">
+        <source xml:lang="en">The default severity for captures problems. Is used if the pattern doesn't define a match group for severity.</source>
+        <target state="translated">캡처 문제에 대한 기본 심각도입니다. 패턴에서 심각도에 대한 일치 그룹을 정의하지 않은 경우에 사용됩니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.applyTo">
+        <source xml:lang="en">Controls if a problem reported on a text document is applied only to open, closed or all documents.</source>
+        <target state="translated">텍스트 문서에 복된 문제가 열린 문서, 닫힌 문서 또는 모든 문서에 적용되는지를 제어합니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.fileLocation">
+        <source xml:lang="en">Defines how file names reported in a problem pattern should be interpreted.</source>
+        <target state="translated">문제 패턴에 보고된 파일 이름을 해석하는 방법을 정의합니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.background">
+        <source xml:lang="en">Patterns to track the begin and end of a matcher active on a background task.</source>
+        <target state="translated">백그라운드 작업에서 활성 상태인 matcher의 시작과 끝을 추적하는 패턴입니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.background.activeOnStart">
+        <source xml:lang="en">If set to true the background monitor is in active mode when the task starts. This is equals of issuing a line that matches the beginsPattern</source>
+        <target state="translated">True로 설정한 경우 작업이 시작되면 백그라운드 모니터가 활성 모드로 전환됩니다. 이는 beginsPattern과 일치하는 줄을 실행하는 것과 같습니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.background.beginsPattern">
+        <source xml:lang="en">If matched in the output the start of a background task is signaled.</source>
+        <target state="translated">출력이 일치하는 경우 백그라운드 작업을 시작할 때 신호를 받습니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.background.endsPattern">
+        <source xml:lang="en">If matched in the output the end of a background task is signaled.</source>
+        <target state="translated">출력이 일치하는 경우 백그라운드 작업을 끝날 때 신호를 받습니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.watching.deprecated">
+        <source xml:lang="en">The watching property is deprecated. Use background instead.</source>
+        <target state="translated">조사 속성은 사용되지 않습니다. 백그라운드 속성을 대신 사용하세요.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.watching">
+        <source xml:lang="en">Patterns to track the begin and end of a watching matcher.</source>
+        <target state="translated">조사 matcher의 시작과 끝을 추적하는 패턴입니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.watching.activeOnStart">
+        <source xml:lang="en">If set to true the watcher is in active mode when the task starts. This is equals of issuing a line that matches the beginPattern</source>
+        <target state="translated">true로 설정한 경우 작업이 시작되면 선택기가 활성 모드로 전환됩니다. 이는 beginPattern과 일치하는 줄을 실행하는 것과 같습니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.watching.beginsPattern">
+        <source xml:lang="en">If matched in the output the start of a watching task is signaled.</source>
+        <target state="translated">출력이 일치하는 경우 조사 작업을 시작할 때 신호를 받습니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.watching.endsPattern">
+        <source xml:lang="en">If matched in the output the end of a watching task is signaled.</source>
+        <target state="translated">출력이 일치하는 경우 조사 작업을 끝날 때 신호를 받습니다.</target>
+      </trans-unit>
+      <trans-unit id="LegacyProblemMatcherSchema.watchedBegin.deprecated">
+        <source xml:lang="en">This property is deprecated. Use the watching property instead.</source>
+        <target state="translated">이 속성은 사용되지 않습니다. 대신 감시 속성을 사용하세요.</target>
+      </trans-unit>
+      <trans-unit id="LegacyProblemMatcherSchema.watchedBegin">
+        <source xml:lang="en">A regular expression signaling that a watched tasks begins executing triggered through file watching.</source>
+        <target state="translated">파일 감시를 통해 트리거되는 감시되는 작업이 시작됨을 나타내는 정규식입니다.</target>
+      </trans-unit>
+      <trans-unit id="LegacyProblemMatcherSchema.watchedEnd.deprecated">
+        <source xml:lang="en">This property is deprecated. Use the watching property instead.</source>
+        <target state="translated">이 속성은 사용되지 않습니다. 대신 감시 속성을 사용하세요.</target>
+      </trans-unit>
+      <trans-unit id="LegacyProblemMatcherSchema.watchedEnd">
+        <source xml:lang="en">A regular expression signaling that a watched tasks ends executing.</source>
+        <target state="translated">감시되는 작업이 종료됨을 나타내는 정규식입니다.</target>
+      </trans-unit>
+      <trans-unit id="NamedProblemMatcherSchema.name">
+        <source xml:lang="en">The name of the problem matcher used to refer to it.</source>
+        <target state="translated">참조를 위한 문제 선택기의 이름입니다.</target>
+      </trans-unit>
+      <trans-unit id="NamedProblemMatcherSchema.label">
+        <source xml:lang="en">A human readable label of the problem matcher.</source>
+        <target state="translated">사람이 읽을 수 있는 문제 일치기의 레이블입니다.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherExtPoint">
+        <source xml:lang="en">Contributes problem matchers</source>
+        <target state="translated">문제 선택기를 제공합니다.</target>
+      </trans-unit>
+      <trans-unit id="msCompile">
+        <source xml:lang="en">Microsoft compiler problems</source>
+        <target state="translated">Microsoft 컴파일러 문제</target>
+      </trans-unit>
+      <trans-unit id="lessCompile">
+        <source xml:lang="en">Less problems</source>
+        <target state="translated">문제 적게 보기</target>
+      </trans-unit>
+      <trans-unit id="gulp-tsc">
+        <source xml:lang="en">Gulp TSC Problems</source>
+        <target state="translated">Gulp TSC 문제</target>
+      </trans-unit>
+      <trans-unit id="jshint">
+        <source xml:lang="en">JSHint problems</source>
+        <target state="translated">JSHint 문제</target>
+      </trans-unit>
+      <trans-unit id="jshint-stylish">
+        <source xml:lang="en">JSHint stylish problems</source>
+        <target state="translated">JSHint 스타일 문제</target>
+      </trans-unit>
+      <trans-unit id="eslint-compact">
+        <source xml:lang="en">ESLint compact problems</source>
+        <target state="translated">ESLint 컴팩트 문제</target>
+      </trans-unit>
+      <trans-unit id="eslint-stylish">
+        <source xml:lang="en">ESLint stylish problems</source>
+        <target state="translated">ESLint 스타일 문제</target>
+      </trans-unit>
+      <trans-unit id="go">
+        <source xml:lang="en">Go problems</source>
+        <target state="translated">이동 문제</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/abstractTaskService" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="ConfigureTaskRunnerAction.label">
+        <source xml:lang="en">Configure Task</source>
+        <target state="translated">작업 구성</target>
+      </trans-unit>
+      <trans-unit id="tasks">
+        <source xml:lang="en">Tasks</source>
+        <target state="translated">작업</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.noHotSwap">
+        <source xml:lang="en">Changing the task execution engine with an active task running requires to reload the Window</source>
+        <target state="translated">실행 중인 활성 작업이 있는 작업 실행 엔진을 변경하면 Window를 다시 로드해야 합니다.</target>
+      </trans-unit>
+      <trans-unit id="reloadWindow">
+        <source xml:lang="en">Reload Window</source>
+        <target state="translated">창 다시 로드</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickBuildTaskForLabel">
+        <source xml:lang="en">Select the build task (there is no default build task defined)</source>
+        <target state="translated">빌드 작업 선택(정의된 기본 빌드 작업이 없음)</target>
+      </trans-unit>
+      <trans-unit id="taskServiceOutputPrompt">
+        <source xml:lang="en">There are task errors. See the output for details.</source>
+        <target state="translated">작업 오류가 있습니다. 자세한 내용은 출력을 참조하세요.</target>
+      </trans-unit>
+      <trans-unit id="showOutput">
+        <source xml:lang="en">Show output</source>
+        <target state="translated">출력 표시</target>
+      </trans-unit>
+      <trans-unit id="TaskServer.folderIgnored">
+        <source xml:lang="en">The folder {0} is ignored since it uses task version 0.1.0</source>
+        <target state="translated">작업 버전 0.1.0을 사용하므로 {0} 폴더가 무시됩니다.</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noBuildTask1">
+        <source xml:lang="en">No build task defined. Mark a task with 'isBuildCommand' in the tasks.json file.</source>
+        <target state="translated">정의된 빌드 작업이 없습니다. tasks.json 파일에서 작업을 'isBuildCommand'로 표시하세요.</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noBuildTask2">
+        <source xml:lang="en">No build task defined. Mark a task with as a 'build' group in the tasks.json file.</source>
+        <target state="translated">정의된 빌드 작업이 없습니다. tasks.json 파일에서 작업을 'build'로 표시하세요.</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noTestTask1">
+        <source xml:lang="en">No test task defined. Mark a task with 'isTestCommand' in the tasks.json file.</source>
+        <target state="translated">정의된 테스트 작업이 없습니다. tasks.json 파일에서 작업을 'isTestCommand'로 표시하세요.</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noTestTask2">
+        <source xml:lang="en">No test task defined. Mark a task with as a 'test' group in the tasks.json file.</source>
+        <target state="translated">정의된 테스트 작업이 없습니다. tasks.json 파일에서 작업을 'test'로 표시하세요.</target>
+      </trans-unit>
+      <trans-unit id="TaskServer.noTask">
+        <source xml:lang="en">Task to execute is undefined</source>
+        <target state="translated">실행할 작업이 정의되지 않았습니다.</target>
+      </trans-unit>
+      <trans-unit id="TaskService.associate">
+        <source xml:lang="en">associate</source>
+        <target state="translated">연결</target>
+      </trans-unit>
+      <trans-unit id="TaskService.attachProblemMatcher.continueWithout">
+        <source xml:lang="en">Continue without scanning the task output</source>
+        <target state="translated">작업 출력을 스캔하지 않고 계속</target>
+      </trans-unit>
+      <trans-unit id="TaskService.attachProblemMatcher.never">
+        <source xml:lang="en">Never scan the task output for this task</source>
+        <target state="translated">이 작업에 대한 작업 출력을 스캔하지 않음</target>
+      </trans-unit>
+      <trans-unit id="TaskService.attachProblemMatcher.neverType">
+        <source xml:lang="en">Never scan the task output for {0} tasks</source>
+        <target state="translated">{0} 작업에 대한 작업 출력을 스캔해서는 안 됩니다.</target>
+      </trans-unit>
+      <trans-unit id="TaskService.attachProblemMatcher.learnMoreAbout">
+        <source xml:lang="en">Learn more about scanning the task output</source>
+        <target state="translated">작업 출력 스캔에 대해 자세히 알아보기</target>
+      </trans-unit>
+      <trans-unit id="selectProblemMatcher">
+        <source xml:lang="en">Select for which kind of errors and warnings to scan the task output</source>
+        <target state="translated">작업 출력에서 스캔할 오류 및 경고 유형을 선택</target>
+      </trans-unit>
+      <trans-unit id="customizeParseErrors">
+        <source xml:lang="en">The current task configuration has errors. Please fix the errors first before customizing a task.</source>
+        <target state="translated">현재 작성 구성에 오류가 있습니다. 작업을 사용자 지정하기 전에 오류를 수정하세요.
+</target>
+      </trans-unit>
+      <trans-unit id="tasksJsonComment">
+        <source xml:lang="en">	// See https://go.microsoft.com/fwlink/?LinkId=733558 
+	// for the documentation about the tasks.json format</source>
+        <target state="translated">// tasks.json 형식에 대한 설명서는 
+	// https://go.microsoft.com/fwlink/?LinkId=733558을 참조하세요.</target>
+      </trans-unit>
+      <trans-unit id="moreThanOneBuildTask">
+        <source xml:lang="en">There are many build tasks defined in the tasks.json. Executing the first one.
+</source>
+        <target state="translated">tasks.json에 여러 빌드 작업이 정의되어 있습니다. 첫 번째 작업을 실행합니다.
+</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.activeSame.noBackground">
+        <source xml:lang="en">The task '{0}' is already active.</source>
+        <target state="translated">'{0}' 작업은 이미 활성 상태입니다.</target>
+      </trans-unit>
+      <trans-unit id="terminateTask">
+        <source xml:lang="en">Terminate Task</source>
+        <target state="translated">작업 종료</target>
+      </trans-unit>
+      <trans-unit id="restartTask">
+        <source xml:lang="en">Restart Task</source>
+        <target state="translated">작업 다시 시작</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.active">
+        <source xml:lang="en">There is already a task running. Terminate it first before executing another task.</source>
+        <target state="translated">이미 실행 중인 작업이 있습니다. 다른 작업을 실행하려면 먼저 이 작업을 종료하세요.</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.restartFailed">
+        <source xml:lang="en">Failed to terminate and restart task {0}</source>
+        <target state="translated">{0} 작업을 종료하고 다시 시작하지 못했습니다.</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noConfiguration">
+        <source xml:lang="en">Error: The {0} task detection didn't contribute a task for the following configuration:
+{1}
+The task will be ignored.
+</source>
+        <target state="translated">오류: {0} 작업 검색에서는 다음 구성에 대한 작업을 제공하지 않습니다:
+{1}
+이 작업이 무시됩니다.
+</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.configurationErrors">
+        <source xml:lang="en">Error: the provided task configuration has validation errors and can't not be used. Please correct the errors first.</source>
+        <target state="translated">오류: 제공한 작업 구성에 유효성 검사 오류가 있으며 사용할 수 없습니다. 먼저 오류를 수정하세요.</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.invalidTaskJsonOther">
+        <source xml:lang="en">Error: The content of the tasks json in {0} has syntax errors. Please correct them before executing a task.
+</source>
+        <target state="translated">오류: {0}의 작업 json 콘텐츠에 구문 오류가 있습니다. 작업을 실행하기 전에 수정하세요.</target>
+      </trans-unit>
+      <trans-unit id="TasksSystem.locationWorkspaceConfig">
+        <source xml:lang="en">workspace file</source>
+        <target state="translated">작업 영역 파일</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.versionWorkspaceFile">
+        <source xml:lang="en">Only tasks version 2.0.0 permitted in .codeworkspace.</source>
+        <target state="translated">.codeworkspace에서는 작업 버전 2.0.0만 허용됩니다.</target>
+      </trans-unit>
+      <trans-unit id="TasksSystem.locationUserConfig">
+        <source xml:lang="en">user settings</source>
+        <target state="translated">사용자 설정</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.versionSettings">
+        <source xml:lang="en">Only tasks version 2.0.0 permitted in user settings.</source>
+        <target state="translated">사용자 설정에서는 작업 버전 2.0.0만 허용됩니다.</target>
+      </trans-unit>
+      <trans-unit id="taskService.ignoreingFolder">
+        <source xml:lang="en">Ignoring task configurations for workspace folder {0}. Multi folder workspace task support requires that all folders use task version 2.0.0
+</source>
+        <target state="translated">작업 영역 폴더 {0}에 대한 작업 구성을 무시합니다. 여러 폴더 작업 영역 작업 지원은 모든 폴더가 작업 버전 2.0.0을 사용해야 합니다.
+</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.invalidTaskJson">
+        <source xml:lang="en">Error: The content of the tasks.json file has syntax errors. Please correct them before executing a task.
+</source>
+        <target state="translated">오류: tasks.json 파일의 내용에 구문 오류가 있습니다. 작업을 실행하기 전에 오류를 정정하세요.
+</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.runningTask">
+        <source xml:lang="en">There is a task running. Do you want to terminate it?</source>
+        <target state="translated">실행 중인 작업이 있습니다. 이 작업을 종료할까요?</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.terminateTask">
+        <source xml:lang="en">&amp;&amp;Terminate Task</source>
+        <target state="translated">작업 종료(&amp;&amp;T)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="TaskSystem.noProcess">
+        <source xml:lang="en">The launched task doesn't exist anymore. If the task spawned background processes exiting VS Code might result in orphaned processes. To avoid this start the last background process with a wait flag.</source>
+        <target state="translated">시작된 작업이 더 이상 존재하지 않습니다. 작업에서 생성된, VS Code를 끝내는 백그라운드 프로세스가 분리된 프로세스가 될 수 있습니다. 이를 방지하려면 wait 플래그를 사용하여 마지막 백그라운드 프로세스를 시작하세요.</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.exitAnyways">
+        <source xml:lang="en">&amp;&amp;Exit Anyways</source>
+        <target state="translated">끝내기(&amp;&amp;E)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="TerminateAction.label">
+        <source xml:lang="en">Terminate Task</source>
+        <target state="translated">작업 종료</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.unknownError">
+        <source xml:lang="en">An error has occurred while running a task. See task log for details.</source>
+        <target state="translated">작업을 실행하는 동안 오류가 발생했습니다. 자세한 내용은 작업 로그를 참조하세요.</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noWorkspace">
+        <source xml:lang="en">Tasks are only available on a workspace folder.</source>
+        <target state="translated">작업은 작업 영역 폴더에서만 사용할 수 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="TaskService.learnMore">
+        <source xml:lang="en">Learn More</source>
+        <target state="translated">자세한 정보</target>
+      </trans-unit>
+      <trans-unit id="configureTask">
+        <source xml:lang="en">Configure Task</source>
+        <target state="translated">작업 구성</target>
+      </trans-unit>
+      <trans-unit id="recentlyUsed">
+        <source xml:lang="en">recently used tasks</source>
+        <target state="translated">최근에 사용한 작업</target>
+      </trans-unit>
+      <trans-unit id="configured">
+        <source xml:lang="en">configured tasks</source>
+        <target state="translated">구성된 작업</target>
+      </trans-unit>
+      <trans-unit id="detected">
+        <source xml:lang="en">detected tasks</source>
+        <target state="translated">감지된 작업</target>
+      </trans-unit>
+      <trans-unit id="pickProgressManager.description">
+        <source xml:lang="en">Detecting tasks ({0} of {1}): {2} in progress</source>
+        <target state="translated">작업 검색({0}/{1}): {2} 진행 중</target>
+      </trans-unit>
+      <trans-unit id="taskQuickPick.cancel">
+        <source xml:lang="en">Stop detecting</source>
+        <target state="translated">검색 중지</target>
+      </trans-unit>
+      <trans-unit id="TaskService.ignoredFolder">
+        <source xml:lang="en">The following workspace folders are ignored since they use task version 0.1.0: {0}</source>
+        <target state="translated">작업 버전 0.1.0을 사용하기 때문에 다음 작업 영역 폴더는 무시됩니다. {0}</target>
+      </trans-unit>
+      <trans-unit id="TaskService.notAgain">
+        <source xml:lang="en">Don't Show Again</source>
+        <target state="translated">다시 표시 안 함</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickRunTask">
+        <source xml:lang="en">Select the task to run</source>
+        <target state="translated">실행할 작업 선택</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noEntryToRun">
+        <source xml:lang="en">No task to run found. Configure Tasks...</source>
+        <target state="translated">실행할 작업이 없습니다. 작업 구성...</target>
+      </trans-unit>
+      <trans-unit id="TaskService.fetchingBuildTasks">
+        <source xml:lang="en">Fetching build tasks...</source>
+        <target state="translated">빌드 작업을 페치하는 중...</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickBuildTask">
+        <source xml:lang="en">Select the build task to run</source>
+        <target state="translated">실행할 빌드 작업 선택</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noBuildTask">
+        <source xml:lang="en">No build task to run found. Configure Build Task...</source>
+        <target state="translated">실행할 빌드 작업을 찾을 수 없습니다. 빌드 작업 구성...</target>
+      </trans-unit>
+      <trans-unit id="TaskService.fetchingTestTasks">
+        <source xml:lang="en">Fetching test tasks...</source>
+        <target state="translated">테스트 작업을 페치하는 중...</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickTestTask">
+        <source xml:lang="en">Select the test task to run</source>
+        <target state="translated">실행할 테스트 작업 선택</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noTestTaskTerminal">
+        <source xml:lang="en">No test task to run found. Configure Tasks...</source>
+        <target state="translated">실행할 테스트 작업이 없습니다. 작업 구성...</target>
+      </trans-unit>
+      <trans-unit id="TaskService.taskToTerminate">
+        <source xml:lang="en">Select a task to terminate</source>
+        <target state="translated">종료할 작업 선택</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noTaskRunning">
+        <source xml:lang="en">No task is currently running</source>
+        <target state="translated">현재 실행 중인 작업이 없습니다.</target>
+      </trans-unit>
+      <trans-unit id="TaskService.terminateAllRunningTasks">
+        <source xml:lang="en">All Running Tasks</source>
+        <target state="translated">실행 중인 모든 작업</target>
+      </trans-unit>
+      <trans-unit id="TerminateAction.noProcess">
+        <source xml:lang="en">The launched process doesn't exist anymore. If the task spawned background tasks exiting VS Code might result in orphaned processes.</source>
+        <target state="translated">시작된 프로세스가 더 이상 존재하지 않습니다. 작업에서 생성된, VS Code를 끝내는 백그라운드 작업이 분리된 프로세스가 될 수 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="TerminateAction.failed">
+        <source xml:lang="en">Failed to terminate running task</source>
+        <target state="translated">실행 중인 작업을 종료하지 못했습니다.</target>
+      </trans-unit>
+      <trans-unit id="TaskService.taskToRestart">
+        <source xml:lang="en">Select the task to restart</source>
+        <target state="translated">다시 시작할 작업 선택</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noTaskToRestart">
+        <source xml:lang="en">No task to restart</source>
+        <target state="translated">다시 시작할 작업이 없습니다.</target>
+      </trans-unit>
+      <trans-unit id="TaskService.template">
+        <source xml:lang="en">Select a Task Template</source>
+        <target state="translated">작업 템플릿 선택</target>
+      </trans-unit>
+      <trans-unit id="taskQuickPick.userSettings">
+        <source xml:lang="en">User Settings</source>
+        <target state="translated">사용자 설정</target>
+      </trans-unit>
+      <trans-unit id="TaskService.createJsonFile">
+        <source xml:lang="en">Create tasks.json file from template</source>
+        <target state="translated">템플릿에서 tasks.json 파일 만들기</target>
+      </trans-unit>
+      <trans-unit id="TaskService.openJsonFile">
+        <source xml:lang="en">Open tasks.json file</source>
+        <target state="translated">tasks.json 파일 열기</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickTask">
+        <source xml:lang="en">Select a task to configure</source>
+        <target state="translated">구성할 작업 선택</target>
+      </trans-unit>
+      <trans-unit id="TaskService.defaultBuildTaskExists">
+        <source xml:lang="en">{0} is already marked as the default build task</source>
+        <target state="translated">{0}은(는) 이미 기본 빌드 작업으로 표시되어 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickDefaultBuildTask">
+        <source xml:lang="en">Select the task to be used as the default build task</source>
+        <target state="translated">기본 빌드 작업으로 사용할 작업을 선택</target>
+      </trans-unit>
+      <trans-unit id="TaskService.defaultTestTaskExists">
+        <source xml:lang="en">{0} is already marked as the default test task.</source>
+        <target state="translated">{0}은(는) 이미 기본 테스트 작업으로 표시되어 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickDefaultTestTask">
+        <source xml:lang="en">Select the task to be used as the default test task</source>
+        <target state="translated">기본 테스트 작업으로 사용할 작업 선택</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickShowTask">
+        <source xml:lang="en">Select the task to show its output</source>
+        <target state="translated">출력을 표시할 작업 선택</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noTaskIsRunning">
+        <source xml:lang="en">No task is running</source>
+        <target state="translated">실행 중인 작업이 없습니다.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/taskTemplates" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="dotnetCore">
+        <source xml:lang="en">Executes .NET Core build command</source>
+        <target state="translated">.NET Core 빌드 명령을 실행합니다.</target>
+      </trans-unit>
+      <trans-unit id="msbuild">
+        <source xml:lang="en">Executes the build target</source>
+        <target state="translated">빌드 대상을 실행합니다.</target>
+      </trans-unit>
+      <trans-unit id="externalCommand">
+        <source xml:lang="en">Example to run an arbitrary external command</source>
+        <target state="translated">임의의 외부 명령을 실행하는 예</target>
+      </trans-unit>
+      <trans-unit id="Maven">
+        <source xml:lang="en">Executes common maven commands</source>
+        <target state="translated">일반적인 Maven 명령을 실행합니다.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/terminalTaskSystem" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="TerminalTaskSystem.unknownError">
+        <source xml:lang="en">A unknown error has occurred while executing a task. See task output log for details.</source>
+        <target state="translated">작업을 실행하는 동안 알 수 없는 오류가 발생했습니다. 자세한 내용은 작업 출력 로그를 참조하세요.</target>
+      </trans-unit>
+      <trans-unit id="dependencyFailed">
+        <source xml:lang="en">Couldn't resolve dependent task '{0}' in workspace folder '{1}'</source>
+        <target state="translated">작업 영역 폴더 '{1}'에서 종속 작업 '{0}'을(를) 확인할 수 없습니다. </target>
+      </trans-unit>
+      <trans-unit id="TerminalTaskSystem.nonWatchingMatcher">
+        <source xml:lang="en">Task {0} is a background task but uses a problem matcher without a background pattern</source>
+        <target state="translated">작업 {0}은(는) 백그라운드 작업이지만 배경 패턴 없이 문제 선택기를 사용합니다.</target>
+      </trans-unit>
+      <trans-unit id="TerminalTaskSystem.terminalName">
+        <source xml:lang="en">Task - {0}</source>
+        <target state="translated">작업 - {0}</target>
+      </trans-unit>
+      <trans-unit id="closeTerminal">
+        <source xml:lang="en">Press any key to close the terminal.</source>
+        <target state="translated">터미널을 종료하려면 아무 키나 누르세요.</target>
+      </trans-unit>
+      <trans-unit id="reuseTerminal">
+        <source xml:lang="en">Terminal will be reused by tasks, press any key to close it.</source>
+        <target state="translated">터미널이 작업에서 다시 사용됩니다. 닫으려면 아무 키나 누르세요.</target>
+      </trans-unit>
+      <trans-unit id="TerminalTaskSystem">
+        <source xml:lang="en">Can't execute a shell command on an UNC drive using cmd.exe.</source>
+        <target state="translated">Cmd.exe를 사용하여 UNC 드라이브에 셸 명령을 실행할 수 없습니다.</target>
+      </trans-unit>
+      <trans-unit id="unknownProblemMatcher">
+        <source xml:lang="en">Problem matcher {0} can't be resolved. The matcher will be ignored</source>
+        <target state="translated">문제 선택기 {0}을(를) 확인할 수 없습니다. 이 선택기는 무시됩니다.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

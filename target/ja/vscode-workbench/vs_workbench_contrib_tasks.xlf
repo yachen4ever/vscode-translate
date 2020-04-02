@@ -1,0 +1,1550 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/workbench/contrib/tasks/node/processRunnerDetector" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="TaskSystemDetector.noGulpTasks">
+        <source xml:lang="en">Running gulp --tasks-simple didn't list any tasks. Did you run npm install?</source>
+        <target state="translated">gulp --tasks-simple が実行されましたがタスクの一覧は表示されませんでした。npm install を実行しましたか?</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noJakeTasks">
+        <source xml:lang="en">Running jake --tasks didn't list any tasks. Did you run npm install?</source>
+        <target state="translated">jake --tasks が実行されましたがタスクの一覧は表示されませんでした。npm install を実行しましたか?</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noGulpProgram">
+        <source xml:lang="en">Gulp is not installed on your system. Run npm install -g gulp to install it.</source>
+        <target state="translated">システムに Gulp がインストールされていません。npm install -g gulp を実行してインストールしてください。</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noJakeProgram">
+        <source xml:lang="en">Jake is not installed on your system. Run npm install -g jake to install it.</source>
+        <target state="translated">システムに Jake がインストールされていません。npm install -g jake を実行してインストールしてください。</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noGruntProgram">
+        <source xml:lang="en">Grunt is not installed on your system. Run npm install -g grunt to install it.</source>
+        <target state="translated">システムに Grunt がインストールされていません。npm install -g grunt を実行してインストールしてください。</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noProgram">
+        <source xml:lang="en">Program {0} was not found. Message is {1}</source>
+        <target state="translated">プログラム {0} が見つかりませんでした。メッセージは {1} です</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.buildTaskDetected">
+        <source xml:lang="en">Build task named '{0}' detected.</source>
+        <target state="translated">名前 '{0}' のビルド タスクが検出されました。</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.testTaskDetected">
+        <source xml:lang="en">Test task named '{0}' detected.</source>
+        <target state="translated">名前 '{0}' のテスト タスクが検出されました。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/node/processTaskSystem" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="version1_0">
+        <source xml:lang="en">The task system is configured for version 0.1.0 (see tasks.json file), which can only execute custom tasks. Upgrade to version 2.0.0 to run the task: {0}</source>
+        <target state="translated"> タスク システムがバージョン 0.1.0 で構成されています (tasks.json ファイルを見てください)。このバージョンはカスタム タスクのみ実行できます。タスクを実行するにはバージョン 2.0.0 に更新してください: {0}</target>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.unknownError">
+        <source xml:lang="en">A unknown error has occurred while executing a task. See task output log for details.</source>
+        <target state="translated">タスクの実行中に不明なエラーが発生しました。詳細については、タスク出力ログを参照してください。</target>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.watchingBuildTaskFinished">
+        <source xml:lang="en">
+Watching build tasks has finished.</source>
+        <target state="translated">
+ビルド タスクのウォッチが終了しました。</target>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.childProcessError">
+        <source xml:lang="en">Failed to launch external program {0} {1}.</source>
+        <target state="translated">外部プログラム {0} {1} を起動できませんでした。</target>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.cancelRequested">
+        <source xml:lang="en">
+The task '{0}' was terminated per user request.</source>
+        <target state="translated">
+ユーザー要求ごとにタスク '{0}' が終了しました。</target>
+      </trans-unit>
+      <trans-unit id="unknownProblemMatcher">
+        <source xml:lang="en">Problem matcher {0} can't be resolved. The matcher will be ignored</source>
+        <target state="translated">問題マッチャー {0} は解決できませんでした。マッチャーは無視されます</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/task.contribution" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="tasksCategory">
+        <source xml:lang="en">Tasks</source>
+        <target state="translated">タスク</target>
+      </trans-unit>
+      <trans-unit id="building">
+        <source xml:lang="en">Building...</source>
+        <target state="translated">ビルドしています...</target>
+      </trans-unit>
+      <trans-unit id="runningTasks">
+        <source xml:lang="en">Show Running Tasks</source>
+        <target state="translated">実行中のタスクを表示</target>
+      </trans-unit>
+      <trans-unit id="status.runningTasks">
+        <source xml:lang="en">Running Tasks</source>
+        <target state="translated">実行中のタスク</target>
+      </trans-unit>
+      <trans-unit id="miRunTask">
+        <source xml:lang="en">&amp;&amp;Run Task...</source>
+        <target state="translated">タスクの実行(&amp;&amp;R)...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miBuildTask">
+        <source xml:lang="en">Run &amp;&amp;Build Task...</source>
+        <target state="translated">ビルド タスクの実行(&amp;&amp;B)...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miRunningTask">
+        <source xml:lang="en">Show Runnin&amp;&amp;g Tasks...</source>
+        <target state="translated">実行中のタスクを表示(&amp;&amp;G)...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miRestartTask">
+        <source xml:lang="en">R&amp;&amp;estart Running Task...</source>
+        <target state="translated">実行中のタスクの再開(&amp;&amp;E)...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miTerminateTask">
+        <source xml:lang="en">&amp;&amp;Terminate Task...</source>
+        <target state="translated">タスクの終了(&amp;&amp;T)...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miConfigureTask">
+        <source xml:lang="en">&amp;&amp;Configure Tasks...</source>
+        <target state="translated">タスクの構成(&amp;&amp;C)...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miConfigureBuildTask">
+        <source xml:lang="en">Configure De&amp;&amp;fault Build Task...</source>
+        <target state="translated">既定のビルド タスクの構成(&amp;&amp;F)...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.openWorkspaceFileTasks">
+        <source xml:lang="en">Open Workspace Tasks</source>
+        <target state="translated">ワークスペース タスクを開く</target>
+      </trans-unit>
+      <trans-unit id="ShowLogAction.label">
+        <source xml:lang="en">Show Task Log</source>
+        <target state="translated">タスク ログの表示</target>
+      </trans-unit>
+      <trans-unit id="RunTaskAction.label">
+        <source xml:lang="en">Run Task</source>
+        <target state="translated">タスクの実行</target>
+      </trans-unit>
+      <trans-unit id="ReRunTaskAction.label">
+        <source xml:lang="en">Rerun Last Task</source>
+        <target state="translated">最後のタスクを再実行</target>
+      </trans-unit>
+      <trans-unit id="RestartTaskAction.label">
+        <source xml:lang="en">Restart Running Task</source>
+        <target state="translated">実行中のタスクの再起動</target>
+      </trans-unit>
+      <trans-unit id="ShowTasksAction.label">
+        <source xml:lang="en">Show Running Tasks</source>
+        <target state="translated">実行中のタスクを表示</target>
+      </trans-unit>
+      <trans-unit id="TerminateAction.label">
+        <source xml:lang="en">Terminate Task</source>
+        <target state="translated">タスクの終了</target>
+      </trans-unit>
+      <trans-unit id="BuildAction.label">
+        <source xml:lang="en">Run Build Task</source>
+        <target state="translated">ビルド タスクの実行</target>
+      </trans-unit>
+      <trans-unit id="TestAction.label">
+        <source xml:lang="en">Run Test Task</source>
+        <target state="translated">テスト タスクの実行</target>
+      </trans-unit>
+      <trans-unit id="ConfigureDefaultBuildTask.label">
+        <source xml:lang="en">Configure Default Build Task</source>
+        <target state="translated">既定のビルド タスクを構成する</target>
+      </trans-unit>
+      <trans-unit id="ConfigureDefaultTestTask.label">
+        <source xml:lang="en">Configure Default Test Task</source>
+        <target state="translated">既定のテスト タスクを構成する</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.openUserTasks">
+        <source xml:lang="en">Open User Tasks</source>
+        <target state="translated">ユーザー タスクを開く</target>
+      </trans-unit>
+      <trans-unit id="quickOpen.task">
+        <source xml:lang="en">Run Task</source>
+        <target state="translated">タスクの実行</target>
+      </trans-unit>
+      <trans-unit id="tasksConfigurationTitle">
+        <source xml:lang="en">Tasks</source>
+        <target state="translated">タスク</target>
+      </trans-unit>
+      <trans-unit id="task.problemMatchers.neverPrompt">
+        <source xml:lang="en">Configures whether to show the problem matcher prompt when running a task. Set to `true` to never prompt, or use a dictionary of task types to turn off prompting only for specific task types.</source>
+        <target state="translated">タスクの実行時に問題マッチャーのプロンプトを表示するかどうかを構成します。'true' に設定してプロンプトしないようにするか、タスクの種類のディクショナリを使用して、特定のタスクの種類に対してのみプロンプトをオフにします。</target>
+      </trans-unit>
+      <trans-unit id="task.problemMatchers.neverPrompt.boolean">
+        <source xml:lang="en">Sets problem matcher prompting behavior for all tasks.</source>
+        <target state="translated">すべてのタスクの動作を表示する問題マッチャーを設定します。</target>
+      </trans-unit>
+      <trans-unit id="task.problemMatchers.neverPrompt.array">
+        <source xml:lang="en">An object containing task type-boolean pairs to never prompt for problem matchers on.</source>
+        <target state="translated">問題マッチャーを表示しないブール型のタスクのペアを含むオブジェクト。</target>
+      </trans-unit>
+      <trans-unit id="task.autoDetect">
+        <source xml:lang="en">Controls enablement of `provideTasks` for all task provider extension. If the Tasks: Run Task command is slow, disabling auto detect for task providers may help. Individual extensions may also provide settings that disable auto detection.</source>
+        <target state="translated">すべてのタスク プロバイダー拡張機能に対する 'provideTasks' の有効化を制御します。Tasks: Run Task コマンドが低速の場合、タスク プロバイダーの自動検出を無効にすると改善される可能性があります。個々の拡張機能で、自動検出を無効にする設定が備わっている場合もあります。</target>
+      </trans-unit>
+      <trans-unit id="task.slowProviderWarning">
+        <source xml:lang="en">Configures whether a warning is shown when a provider is slow</source>
+        <target state="translated">プロバイダーの速度が遅いときに警告を表示するかどうかを構成します</target>
+      </trans-unit>
+      <trans-unit id="task.slowProviderWarning.boolean">
+        <source xml:lang="en">Sets the slow provider warning for all tasks.</source>
+        <target state="translated">すべてのタスクに対して低速プロバイダー警告を設定します。</target>
+      </trans-unit>
+      <trans-unit id="task.slowProviderWarning.array">
+        <source xml:lang="en">An array of task types to never show the slow provider warning.</source>
+        <target state="translated">低速なプロバイダーの警告を表示しないタスクの種類の配列。</target>
+      </trans-unit>
+      <trans-unit id="task.quickOpen.history">
+        <source xml:lang="en">Controls the number of recent items tracked in task quick open dialog.</source>
+        <target state="translated">タスククイックオープンダイアログで追跡された最近のアイテムの数を制御します。</target>
+      </trans-unit>
+      <trans-unit id="task.quickOpen.detail">
+        <source xml:lang="en">Controls whether to show the task detail for task that have a detail in the Run Task quick pick.</source>
+        <target state="translated">[タスクの実行] クイック ピックに詳細があるタスクについてタスクの詳細を表示するかどうかを制御します。</target>
+      </trans-unit>
+      <trans-unit id="task.quickOpen.skip">
+        <source xml:lang="en">Controls whether the task quick pick is skipped when there is only one task to pick from.</source>
+        <target state="translated">選択するタスクが 1 つしかない場合に、タスクのクイック ピックをスキップするかどうかを制御します。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/tasks" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="TaskDefinition.missingRequiredProperty">
+        <source xml:lang="en">Error: the task identifier '{0}' is missing the required property '{1}'. The task identifier will be ignored.</source>
+        <target state="translated">エラー: タスク識別子 '{0}' に必要な '{1}' プロパティがありません。タスク識別子は無視されます。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/taskQuickOpen" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="tasksAriaLabel">
+        <source xml:lang="en">Type the name of a task to run</source>
+        <target state="translated">実行するタスクの名前を入力します</target>
+      </trans-unit>
+      <trans-unit id="noTasksMatching">
+        <source xml:lang="en">No tasks matching</source>
+        <target state="translated">一致するタスクがありません</target>
+      </trans-unit>
+      <trans-unit id="noTasksFound">
+        <source xml:lang="en">No tasks found</source>
+        <target state="translated">タスクが見つかりません</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/jsonSchema_v1" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="JsonSchema.version.deprecated">
+        <source xml:lang="en">Task version 0.1.0 is deprecated. Please use 2.0.0</source>
+        <target state="translated">バージョン 0.1.0 のタスクは非推奨です。2.0.0 を使用してください。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.version">
+        <source xml:lang="en">The config's version number</source>
+        <target state="translated">構成のバージョン番号</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema._runner">
+        <source xml:lang="en">The runner has graduated. Use the offical runner property</source>
+        <target state="translated">ランナーが新しくなります。正式なランナープロパティーを使用してください</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.runner">
+        <source xml:lang="en">Defines whether the task is executed as a process and the output is shown in the output window or inside the terminal.</source>
+        <target state="translated">タスクをプロセスとして実行して、出力が出力ウィンドウまたはターミナル内に表示されるかどうかを定義します。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.windows">
+        <source xml:lang="en">Windows specific command configuration</source>
+        <target state="translated">Windows 固有のコマンド構成</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.mac">
+        <source xml:lang="en">Mac specific command configuration</source>
+        <target state="translated">Mac 固有のコマンド構成</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.linux">
+        <source xml:lang="en">Linux specific command configuration</source>
+        <target state="translated">Linux 固有のコマンド構成</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.shell">
+        <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
+        <target state="translated">コマンドがシェル コマンドか外部プログラムかを指定します。省略すると、既定は false になります。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/taskDefinitionRegistry" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="TaskDefinition.description">
+        <source xml:lang="en">The actual task type. Please note that types starting with a '$' are reserved for internal usage.</source>
+        <target state="translated">実際のタスクの種類。先頭が '$' で始まる種類は内部使用のために予約されています。</target>
+      </trans-unit>
+      <trans-unit id="TaskDefinition.properties">
+        <source xml:lang="en">Additional properties of the task type</source>
+        <target state="translated">タスクの種類の追加プロパティ</target>
+      </trans-unit>
+      <trans-unit id="TaskTypeConfiguration.noType">
+        <source xml:lang="en">The task type configuration is missing the required 'taskType' property</source>
+        <target state="translated">タスクの種類を構成するのに必要な 'taskType' プロパティがありません</target>
+      </trans-unit>
+      <trans-unit id="TaskDefinitionExtPoint">
+        <source xml:lang="en">Contributes task kinds</source>
+        <target state="translated">タスクの種類を提供</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/runAutomaticTasks" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="tasks.run.allowAutomatic">
+        <source xml:lang="en">This folder has tasks ({0}) defined in 'tasks.json' that run automatically when you open this folder. Do you allow automatic tasks to run when you open this folder?</source>
+        <target state="translated">このフォルダーには、このフォルダーを開くと自動的に実行される 'tasks.json' で定義されているタスク ({0}) が入っています。このフォルダーを開くときにタスクの自動実行を許可しますか。</target>
+      </trans-unit>
+      <trans-unit id="allow">
+        <source xml:lang="en">Allow and run</source>
+        <target state="translated">許可して実行</target>
+      </trans-unit>
+      <trans-unit id="disallow">
+        <source xml:lang="en">Disallow</source>
+        <target state="translated">許可しない</target>
+      </trans-unit>
+      <trans-unit id="openTasks">
+        <source xml:lang="en">Open tasks.json</source>
+        <target state="translated">tasks.json を開く</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.manageAutomaticRunning">
+        <source xml:lang="en">Manage Automatic Tasks in Folder</source>
+        <target state="translated">フォルダー内の自動タスクの管理</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.allowAutomaticTasks">
+        <source xml:lang="en">Allow Automatic Tasks in Folder</source>
+        <target state="translated">フォルダーで自動タスクを許可する</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.disallowAutomaticTasks">
+        <source xml:lang="en">Disallow Automatic Tasks in Folder</source>
+        <target state="translated">フォルダー内で自動タスクを許可しない</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/quickOpen" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="entryAriaLabel">
+        <source xml:lang="en">{0}, tasks</source>
+        <target state="translated">{0}、タスク</target>
+      </trans-unit>
+      <trans-unit id="recentlyUsed">
+        <source xml:lang="en">recently used tasks</source>
+        <target state="translated">最近使用したタスク</target>
+      </trans-unit>
+      <trans-unit id="configured">
+        <source xml:lang="en">configured tasks</source>
+        <target state="translated">構成済みのタスク</target>
+      </trans-unit>
+      <trans-unit id="detected">
+        <source xml:lang="en">detected tasks</source>
+        <target state="translated">検出されたタスク</target>
+      </trans-unit>
+      <trans-unit id="customizeTask">
+        <source xml:lang="en">Configure Task</source>
+        <target state="translated">タスクの構成</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/taskConfiguration" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="ConfigurationParser.invalidCWD">
+        <source xml:lang="en">Warning: options.cwd must be of type string. Ignoring value {0}
+</source>
+        <target state="translated">警告: options.cwd は、string 型でなければなりません。値 {0} を無視します</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.inValidArg">
+        <source xml:lang="en">Error: command argument must either be a string or a quoted string. Provided value is:
+{0}</source>
+        <target state="translated">エラー: コマンド引数は文字列もしくは引用文字列のどちらかである必要があります。指定された値:
+{0}</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.noShell">
+        <source xml:lang="en">Warning: shell configuration is only supported when executing tasks in the terminal.</source>
+        <target state="translated">警告: シェル構成がサポートされるのは、ターミナルでタスクを実行している場合のみです。</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.noName">
+        <source xml:lang="en">Error: Problem Matcher in declare scope must have a name:
+{0}
+</source>
+        <target state="translated">エラー: 宣言スコープ内の問題マッチャーに次の名前がなければなりません:
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.unknownMatcherKind">
+        <source xml:lang="en">Warning: the defined problem matcher is unknown. Supported types are string | ProblemMatcher | Array&lt;string | ProblemMatcher&gt;.
+{0}
+</source>
+        <target state="translated">警告: 定義されている問題マッチャーが不明です。サポートされている種類は string | ProblemMatcher | Array&lt;string | ProblemMatcher&gt;.
+{0} です</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.invalidVariableReference">
+        <source xml:lang="en">Error: Invalid problemMatcher reference: {0}
+</source>
+        <target state="translated">エラー: 正しくない problemMatcher 参照 {0}
+</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.noTaskType">
+        <source xml:lang="en">Error: tasks configuration must have a type property. The configuration will be ignored.
+{0}
+</source>
+        <target state="translated">エラー: タスクの構成には type プロパティが必要です。この構成は無視されます。
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.noTypeDefinition">
+        <source xml:lang="en">Error: there is no registered task type '{0}'. Did you miss to install an extension that provides a corresponding task provider?</source>
+        <target state="translated">Error: タスク タイプ '{0}' は登録されていません。対応するタスク プロバイダーを提供する拡張機能をインストールしましたか?</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.missingType">
+        <source xml:lang="en">Error: the task configuration '{0}' is missing the required property 'type'. The task configuration will be ignored.</source>
+        <target state="translated">エラー: タスク構成 '{0}' に必要な 'type' プロパティがありません。タスク構成は無視されます。</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.incorrectType">
+        <source xml:lang="en">Error: the task configuration '{0}' is using an unknown type. The task configuration will be ignored.</source>
+        <target state="translated">エラー: タスク構成 '{0}' に未知の型が使用されています。タスク構成は無視されます。</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.notCustom">
+        <source xml:lang="en">Error: tasks is not declared as a custom task. The configuration will be ignored.
+{0}
+</source>
+        <target state="translated">エラー: タスクがカスタム タスクとして定義されていません。この構成は無視されます。
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.noTaskName">
+        <source xml:lang="en">Error: a task must provide a label property. The task will be ignored.
+{0}
+</source>
+        <target state="translated">エラー: タスクが label プロパティを提供しなければなりません。このタスクは無視されます。
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="taskConfiguration.noCommandOrDependsOn">
+        <source xml:lang="en">Error: the task '{0}' neither specifies a command nor a dependsOn property. The task will be ignored. Its definition is:
+{1}</source>
+        <target state="translated">エラー: タスク '{0}' は、コマンドも dependsOn プロパティも指定していません。このタスクは無視されます。定義は次のとおりです:
+{1}</target>
+      </trans-unit>
+      <trans-unit id="taskConfiguration.noCommand">
+        <source xml:lang="en">Error: the task '{0}' doesn't define a command. The task will be ignored. Its definition is:
+{1}</source>
+        <target state="translated">エラー: タスク '{0}' はコマンドを定義していません。このタスクは無視されます。定義は次のとおりです:
+{1}</target>
+      </trans-unit>
+      <trans-unit id="TaskParse.noOsSpecificGlobalTasks">
+        <source xml:lang="en">Task version 2.0.0 doesn't support global OS specific tasks. Convert them to a task with a OS specific command. Affected tasks are:
+{0}</source>
+        <target state="translated">バージョン 2.0.0 のタスクでは、OS に固有のグローバル タスクはサポートされません。OS に固有のコマンドを使用したタスクに変換してください。影響を受けるタスクは次のとおりです。
+{0}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/jsonSchema_v2" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="JsonSchema.shell">
+        <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
+        <target state="translated">コマンドがシェル コマンドか外部プログラムかを指定します。省略すると、既定は false になります。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.isShellCommand.deprecated">
+        <source xml:lang="en">The property isShellCommand is deprecated. Use the type property of the task and the shell property in the options instead. See also the 1.14 release notes.</source>
+        <target state="translated">isShellCommand プロパティは使用されていません。代わりに、タスクの type プロパティとオプションの shell プロパティをご使用ください。また 1.14 リリース ノートをご確認ください。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOn.identifier">
+        <source xml:lang="en">The task identifier.</source>
+        <target state="translated">タスク識別子。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOn.string">
+        <source xml:lang="en">Another task this task depends on.</source>
+        <target state="translated">このタスクが依存している別のタスク。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOn.array">
+        <source xml:lang="en">The other tasks this task depends on.</source>
+        <target state="translated">このタスクが依存している他の複数のタスク。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOn">
+        <source xml:lang="en">Either a string representing another task or an array of other tasks that this task depends on.</source>
+        <target state="translated">別のタスクを表す文字列、またはこのタスクが依存する他のタスクの配列のいずれか。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOrder.parallel">
+        <source xml:lang="en">Run all dependsOn tasks in parallel.</source>
+        <target state="translated">すべての dependsOn タスクを同時に実行します。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOrder.sequence">
+        <source xml:lang="en">Run all dependsOn tasks in sequence.</source>
+        <target state="translated">すべての dependsOn タスクを連続で実行します。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOrder">
+        <source xml:lang="en">Determines the order of the dependsOn tasks for this task. Note that this property is not recursive.</source>
+        <target state="translated">このタスクの dependsOn タスクの順序を指定します。このプロパティは再帰的ではないことに注意してください。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.detail">
+        <source xml:lang="en">An optional description of a task that shows in the Run Task quick pick as a detail.</source>
+        <target state="translated">[タスクの実行] クイック ピックに詳細として表示されるタスクの説明 (省略可能)。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation">
+        <source xml:lang="en">Configures the panel that is used to present the task's output and reads its input.</source>
+        <target state="translated">タスクの出力を表示し、その入力を読み取るためのパネルを構成します。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.echo">
+        <source xml:lang="en">Controls whether the executed command is echoed to the panel. Default is true.</source>
+        <target state="translated">実行されたコマンドがパネルにエコーされるかどうかを制御します。既定は trueです。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.focus">
+        <source xml:lang="en">Controls whether the panel takes focus. Default is false. If set to true the panel is revealed as well.</source>
+        <target state="translated">パネルがフォーカスされるかどうかを制御します。既定は false です。true に設定した場合、パネルも表示されます。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.revealProblems.always">
+        <source xml:lang="en">Always reveals the problems panel when this task is executed.</source>
+        <target state="translated">このタスクを実行したとき常に問題パネルを表示します。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.revealProblems.onProblem">
+        <source xml:lang="en">Only reveals the problems panel if a problem is found.</source>
+        <target state="translated">問題が見つかった場合のみ、問題パネルを表示します。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.revealProblems.never">
+        <source xml:lang="en">Never reveals the problems panel when this task is executed.</source>
+        <target state="translated">このタスクを実行するときに、問題パネルは表示されません。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.revealProblems">
+        <source xml:lang="en">Controls whether the problems panel is revealed when running this task or not. Takes precedence over option "reveal". Default is "never".</source>
+        <target state="translated">このタスクの実行時に問題パネルを表示するかどうかを制御します。オプションの "表示" より優先されます。既定値は "しない" です。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.reveal.always">
+        <source xml:lang="en">Always reveals the terminal when this task is executed.</source>
+        <target state="translated">タスクを実行したとき常にターミナルを表示します。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.reveal.silent">
+        <source xml:lang="en">Only reveals the terminal if the task exits with an error or the problem matcher finds an error.</source>
+        <target state="translated">タスクがエラーで終了するか、問題マッチャーがエラーを検出した場合にのみターミナルを表示します。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.reveal.never">
+        <source xml:lang="en">Never reveals the terminal when this task is executed.</source>
+        <target state="translated">このタスクを実行するときに、今後ターミナルを表示しません。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.reveal">
+        <source xml:lang="en">Controls whether the terminal running the task is revealed or not. May be overridden by option "revealProblems". Default is "always".</source>
+        <target state="translated">タスクを実行しているターミナルを表示するかどうかを制御します。オプション "revealProblems" によってオーバーライドされる可能性があります。既定値は "常時" です。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.instance">
+        <source xml:lang="en">Controls if the panel is shared between tasks, dedicated to this task or a new one is created on every run.</source>
+        <target state="translated">タスク間でパネルを共有するか、またはこのタスクで占有するか、実行ごとに新しいパネルを作成するかどうかを制御します。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.showReuseMessage">
+        <source xml:lang="en">Controls whether to show the `Terminal will be reused by tasks, press any key to close it` message.</source>
+        <target state="translated">「ターミナルはタスクで再利用されます、閉じるには任意のキーを押してください」メッセージを表示するかどうかを制御します。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.clear">
+        <source xml:lang="en">Controls whether the terminal is cleared before executing the task.</source>
+        <target state="translated">タスクを実行する前にターミナルをクリアするかどうかを制御します。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.group">
+        <source xml:lang="en">Controls whether the task is executed in a specific terminal group using split panes.</source>
+        <target state="translated">分割ウィンドウを使用して特定の端末グループでタスクを実行するかどうかを制御します。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.terminal">
+        <source xml:lang="en">The terminal property is deprecated. Use presentation instead</source>
+        <target state="translated">terminal プロパティは非推奨です。代わりに presentation をご使用ください</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.kind">
+        <source xml:lang="en">The task's execution group.</source>
+        <target state="translated">タスクの実行グループ。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.isDefault">
+        <source xml:lang="en">Defines if this task is the default task in the group.</source>
+        <target state="translated">このタスクがグループ内の既定のタスクであるかどうかを定義します。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.defaultBuild">
+        <source xml:lang="en">Marks the task as the default build task.</source>
+        <target state="translated">既定のビルド タスクとしてタスクをマークします。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.defaultTest">
+        <source xml:lang="en">Marks the task as the default test task.</source>
+        <target state="translated">タスクを既定のテスト タスクとしてマークします。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.build">
+        <source xml:lang="en">Marks the task as a build task accessible through the 'Run Build Task' command.</source>
+        <target state="translated">「ビルド タスクの実行」を介してアクセス可能なビルド タスクとしてタスクをマークします。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.test">
+        <source xml:lang="en">Marks the task as a test task accessible through the 'Run Test Task' command.</source>
+        <target state="translated">「テスト タスクの実行」を介してアクセス可能なテスト タスクとしてタスクをマークします。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.none">
+        <source xml:lang="en">Assigns the task to no group</source>
+        <target state="translated">タスクをグループに割り当てない</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group">
+        <source xml:lang="en">Defines to which execution group this task belongs to. It supports "build" to add it to the build group and "test" to add it to the test group.</source>
+        <target state="translated">このタスクが属する実行グループを定義します。ビルド グループに追加する "build" とテスト グループに追加する "test" をサポートしています。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.type">
+        <source xml:lang="en">Defines whether the task is run as a process or as a command inside a shell.</source>
+        <target state="translated">タスクをプロセスとして実行するか、またはシェル内部でコマンドとして実行するかどうかを定義します。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.commandArray">
+        <source xml:lang="en">The shell command to be executed. Array items will be joined using a space character</source>
+        <target state="translated">実行されるシェル コマンドです。配列の項目は空白文字を使用して結合されます。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.command.quotedString.value">
+        <source xml:lang="en">The actual command value</source>
+        <target state="translated">実際のコマンド値</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.quoting.escape">
+        <source xml:lang="en">Escapes characters using the shell's escape character (e.g. ` under PowerShell and \ under bash).</source>
+        <target state="translated">シェルのエスケープ文字を使用して文字をエスケープします (例: PowerShell の ` 、bash の \)。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.quoting.strong">
+        <source xml:lang="en">Quotes the argument using the shell's strong quote character (e.g. " under PowerShell and bash).</source>
+        <target state="translated">シェルの strong quote 文字を使用して引数を引用します (例: PowerShell や bash の下の ")。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.quoting.weak">
+        <source xml:lang="en">Quotes the argument using the shell's weak quote character (e.g. ' under PowerShell and bash).</source>
+        <target state="translated">シェルの weak quote 文字を使用して引数を引用します (例: PowerShell や bash の下の ')。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.command.quotesString.quote">
+        <source xml:lang="en">How the command value should be quoted.</source>
+        <target state="translated">どのようにコマンドの値を引用符で囲うかを制御します。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.command">
+        <source xml:lang="en">The command to be executed. Can be an external program or a shell command.</source>
+        <target state="translated">実行されるコマンド。外部プログラムかシェル コマンドです。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.args.quotedString.value">
+        <source xml:lang="en">The actual argument value</source>
+        <target state="translated">実際の引数値</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.args.quotesString.quote">
+        <source xml:lang="en">How the argument value should be quoted.</source>
+        <target state="translated">どのように引数の値を引用符で囲うかを制御します。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.args">
+        <source xml:lang="en">Arguments passed to the command when this task is invoked.</source>
+        <target state="translated">このタスクの起動時にコマンドに渡される引数。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.label">
+        <source xml:lang="en">The task's user interface label</source>
+        <target state="translated">タスクのユーザー インターフェイス ラベル</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.version">
+        <source xml:lang="en">The config's version number.</source>
+        <target state="translated">構成のバージョン番号</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.identifier">
+        <source xml:lang="en">A user defined identifier to reference the task in launch.json or a dependsOn clause.</source>
+        <target state="translated">launch.json または dependsOn 句のタスクを参照するユーザー定義の識別子。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.identifier.deprecated">
+        <source xml:lang="en">User defined identifiers are deprecated. For custom task use the name as a reference and for tasks provided by extensions use their defined task identifier.</source>
+        <target state="translated">ユーザー定義識別子は非推奨です。カスタム タスクには参照として名前が使用され、拡張機能から提供されるタスクには定義されたタスク識別子が使用されます。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.reevaluateOnRerun">
+        <source xml:lang="en">Whether to reevaluate task variables on rerun.</source>
+        <target state="translated">再実行時にタスク変数を再評価するかどうか。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.runOn">
+        <source xml:lang="en">Configures when the task should be run. If set to folderOpen, then the task will be run automatically when the folder is opened.</source>
+        <target state="translated">タスクを実行するときを構成します。folderOpen に設定すると、フォルダーを開いたときに自動的にタスクを実行します。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.instanceLimit">
+        <source xml:lang="en">The number of instances of the task that are allowed to run simultaneously.</source>
+        <target state="translated">同時に実行できるタスクのインスタンスの数。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.runOptions">
+        <source xml:lang="en">The task's run related options</source>
+        <target state="translated">タスクの実行に関するオプション</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.taskLabel">
+        <source xml:lang="en">The task's label</source>
+        <target state="translated">タスクのラベル</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.taskName">
+        <source xml:lang="en">The task's name</source>
+        <target state="translated">タスクの名前</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.taskName.deprecated">
+        <source xml:lang="en">The task's name property is deprecated. Use the label property instead.</source>
+        <target state="translated">タスクの name プロパティは非推奨です。代わりに label プロパティをご使用ください。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.background">
+        <source xml:lang="en">Whether the executed task is kept alive and is running in the background.</source>
+        <target state="translated">実行済みのタスクが維持され、バッググラウンドで実行されているかどうか。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.promptOnClose">
+        <source xml:lang="en">Whether the user is prompted when VS Code closes with a running task.</source>
+        <target state="translated">タスクの実行中に VS Code を閉じるときにユーザーにダイアログを表示するかどうか。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.matchers">
+        <source xml:lang="en">The problem matcher(s) to use. Can either be a string or a problem matcher definition or an array of strings and problem matchers.</source>
+        <target state="translated">使用する問題マッチャー。1 つの文字列または問題マッチャー定義か、文字列と問題マッチャーの配列です。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.customizations.customizes.type">
+        <source xml:lang="en">The task type to customize</source>
+        <target state="translated">カスタマイズするタスクの種類</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.customize.deprecated">
+        <source xml:lang="en">The customize property is deprecated. See the 1.14 release notes on how to migrate to the new task customization approach</source>
+        <target state="translated">customize プロパティは非推奨です。新しいタスクのカスタマイズ方法に移行する方法については 1.14 リリース ノートをご確認ください。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.showOutput.deprecated">
+        <source xml:lang="en">The property showOutput is deprecated. Use the reveal property inside the presentation property instead. See also the 1.14 release notes.</source>
+        <target state="translated">showOutputプロパティは非推奨です。代わりに presentation プロパティ内の reveal プロパティを使用してください。また 1.14 リリース ノートをご確認ください。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.echoCommand.deprecated">
+        <source xml:lang="en">The property echoCommand is deprecated. Use the echo property inside the presentation property instead. See also the 1.14 release notes.</source>
+        <target state="translated">echoCommand プロパティは使用されていません。代わりに presentation プロパティ内の echo プロパティを使用してください。また 1.14 リリース ノートをご確認ください。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.suppressTaskName.deprecated">
+        <source xml:lang="en">The property suppressTaskName is deprecated. Inline the command with its arguments into the task instead. See also the 1.14 release notes.</source>
+        <target state="translated">suppressTaskName プロパティは非推奨です。代わりに、その引数を含むコマンドをタスクにインライン展開してください。1.14 リリース ノートも参照してください。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.isBuildCommand.deprecated">
+        <source xml:lang="en">The property isBuildCommand is deprecated. Use the group property instead. See also the 1.14 release notes.</source>
+        <target state="translated">isBuildCommand プロパティは非推奨です。代わりに group プロパティを使用してください。また 1.14 リリース ノートをご確認ください。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.isTestCommand.deprecated">
+        <source xml:lang="en">The property isTestCommand is deprecated. Use the group property instead. See also the 1.14 release notes.</source>
+        <target state="translated">isTestCommand プロパティは非推奨です。代わりに group プロパティを使用してください。また 1.14 リリース ノートをご確認ください。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.taskSelector.deprecated">
+        <source xml:lang="en">The property taskSelector is deprecated. Inline the command with its arguments into the task instead. See also the 1.14 release notes.</source>
+        <target state="translated">taskSelector プロパティは非推奨です。代わりに、その引数を含むコマンドをタスクにインライン展開してください。1.14 リリース ノートも参照してください。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.windows">
+        <source xml:lang="en">Windows specific command configuration</source>
+        <target state="translated">Windows 固有のコマンド構成</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.mac">
+        <source xml:lang="en">Mac specific command configuration</source>
+        <target state="translated">Mac 固有のコマンド構成</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.linux">
+        <source xml:lang="en">Linux specific command configuration</source>
+        <target state="translated">Linux 固有のコマンド構成</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/jsonSchemaCommon" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="JsonSchema.options">
+        <source xml:lang="en">Additional command options</source>
+        <target state="translated">追加のコマンド オプション</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.options.cwd">
+        <source xml:lang="en">The current working directory of the executed program or script. If omitted Code's current workspace root is used.</source>
+        <target state="translated">実行されるプログラムまたはスクリプトの現在の作業ディレクトリ。省略すると、Code の現在のワークスペースのルートが使用されます。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.options.env">
+        <source xml:lang="en">The environment of the executed program or shell. If omitted the parent process' environment is used.</source>
+        <target state="translated">実行されるプログラムまたはシェルの環境。省略すると、親プロセスの環境が使用されます。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.shellConfiguration">
+        <source xml:lang="en">Configures the shell to be used.</source>
+        <target state="translated">使用するシェルを構成します。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.shell.executable">
+        <source xml:lang="en">The shell to be used.</source>
+        <target state="translated">使用するシェル。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.shell.args">
+        <source xml:lang="en">The shell arguments.</source>
+        <target state="translated">シェル引数。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.command">
+        <source xml:lang="en">The command to be executed. Can be an external program or a shell command.</source>
+        <target state="translated">実行されるコマンド。外部プログラムかシェル コマンドです。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.args">
+        <source xml:lang="en">Arguments passed to the command when this task is invoked.</source>
+        <target state="translated">このタスクの起動時にコマンドに渡される引数。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.taskName">
+        <source xml:lang="en">The task's name</source>
+        <target state="translated">タスクの名前</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.windows">
+        <source xml:lang="en">Windows specific command configuration</source>
+        <target state="translated">Windows 固有のコマンド構成</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.matchers">
+        <source xml:lang="en">The problem matcher(s) to use. Can either be a string or a problem matcher definition or an array of strings and problem matchers.</source>
+        <target state="translated">使用する問題マッチャー。1 つの文字列または問題マッチャー定義か、文字列と問題マッチャーの配列です。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.mac">
+        <source xml:lang="en">Mac specific command configuration</source>
+        <target state="translated">Mac 固有のコマンド構成</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.linux">
+        <source xml:lang="en">Linux specific command configuration</source>
+        <target state="translated">Linux 固有のコマンド構成</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.suppressTaskName">
+        <source xml:lang="en">Controls whether the task name is added as an argument to the command. If omitted the globally defined value is used.</source>
+        <target state="translated">タスク名を引数としてコマンドに追加するかどうかを制御します。省略すると、グローバルに定義された値が使用されます。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.showOutput">
+        <source xml:lang="en">Controls whether the output of the running task is shown or not. If omitted the globally defined value is used.</source>
+        <target state="translated">実行中のタスクの出力が表示されるかどうかを制御します。省略すると、グローバルに定義された値が使用されます。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.echoCommand">
+        <source xml:lang="en">Controls whether the executed command is echoed to the output. Default is false.</source>
+        <target state="translated">実行されるコマンドが出力にエコーされるかどうかを制御します。既定は false です。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.watching.deprecation">
+        <source xml:lang="en">Deprecated. Use isBackground instead.</source>
+        <target state="translated">使用しないでください。代わりに isBackground をご使用ください。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.watching">
+        <source xml:lang="en">Whether the executed task is kept alive and is watching the file system.</source>
+        <target state="translated">実行済みのタスクが維持され、ファイル システムをウォッチしているかどうか。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.background">
+        <source xml:lang="en">Whether the executed task is kept alive and is running in the background.</source>
+        <target state="translated">実行済みのタスクが維持され、バッググラウンドで実行されているかどうか。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.promptOnClose">
+        <source xml:lang="en">Whether the user is prompted when VS Code closes with a running task.</source>
+        <target state="translated">タスクの実行中に VS Code を閉じるときにユーザーにダイアログを表示するかどうか。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.build">
+        <source xml:lang="en">Maps this task to Code's default build command.</source>
+        <target state="translated">このタスクを Code の既定のビルド コマンドにマップします。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.test">
+        <source xml:lang="en">Maps this task to Code's default test command.</source>
+        <target state="translated">このタスクを Code の既定のテスト コマンドにマップします。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.args">
+        <source xml:lang="en">Additional arguments passed to the command.</source>
+        <target state="translated">さらにコマンドに渡される引数。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.showOutput">
+        <source xml:lang="en">Controls whether the output of the running task is shown or not. If omitted 'always' is used.</source>
+        <target state="translated">実行中のタスクの出力が表示されるかどうかを制御します。省略すると、'always' が使用されます。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.watching.deprecation">
+        <source xml:lang="en">Deprecated. Use isBackground instead.</source>
+        <target state="translated">使用しないでください。代わりに isBackground をご使用ください。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.watching">
+        <source xml:lang="en">Whether the executed task is kept alive and is watching the file system.</source>
+        <target state="translated">実行済みのタスクが維持され、ファイル システムをウォッチしているかどうか。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.background">
+        <source xml:lang="en">Whether the executed task is kept alive and is running in the background.</source>
+        <target state="translated">実行済みのタスクが維持され、バッググラウンドで実行されているかどうか。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.promptOnClose">
+        <source xml:lang="en">Whether the user is prompted when VS Code closes with a running background task.</source>
+        <target state="translated">バックグラウンド タスクの実行中に VS Code を閉じる時に、ユーザーに対してプロンプトが表示されるかどうか。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.suppressTaskName">
+        <source xml:lang="en">Controls whether the task name is added as an argument to the command. Default is false.</source>
+        <target state="translated">タスク名を引数としてコマンドに追加するかどうかを制御します。既定は false です。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.taskSelector">
+        <source xml:lang="en">Prefix to indicate that an argument is task.</source>
+        <target state="translated">引数がタスクであることを示すプレフィックス。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.matchers">
+        <source xml:lang="en">The problem matcher(s) to use. Can either be a string or a problem matcher definition or an array of strings and problem matchers.</source>
+        <target state="translated">使用する問題マッチャー。1 つの文字列または問題マッチャー定義か、文字列と問題マッチャーの配列です。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks">
+        <source xml:lang="en">The task configurations. Usually these are enrichments of task already defined in the external task runner.</source>
+        <target state="translated">タスクの構成。普通は外部タスク ランナーで既に定義されているタスクのエンリッチメントです。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/problemMatcher" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="ProblemPatternParser.problemPattern.missingRegExp">
+        <source xml:lang="en">The problem pattern is missing a regular expression.</source>
+        <target state="translated">問題パターンに正規表現がありません。</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternParser.loopProperty.notLast">
+        <source xml:lang="en">The loop property is only supported on the last line matcher.</source>
+        <target state="translated">ループ プロパティは、最終行マッチャーでのみサポートされています。</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternParser.problemPattern.kindProperty.notFirst">
+        <source xml:lang="en">The problem pattern is invalid. The kind property must be provided only in the first element</source>
+        <target state="translated">問題のパターンが正しくありません。kind プロパティは最初の要素のみで指定される必要があります。</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternParser.problemPattern.missingProperty">
+        <source xml:lang="en">The problem pattern is invalid. It must have at least have a file and a message.</source>
+        <target state="translated">問題のパターンが正しくありません。少なくとも、file と message が必要です</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternParser.problemPattern.missingLocation">
+        <source xml:lang="en">The problem pattern is invalid. It must either have kind: "file" or have a line or location match group.</source>
+        <target state="translated">問題のパターンが正しくありません。kind: "file" または line や location の一致グループのいずれかが必要です。</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternParser.invalidRegexp">
+        <source xml:lang="en">Error: The string {0} is not a valid regular expression.
+</source>
+        <target state="translated">エラー: 文字列 {0} は、有効な正規表現ではありません。
+</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.regexp">
+        <source xml:lang="en">The regular expression to find an error, warning or info in the output.</source>
+        <target state="translated">出力のエラー、警告、または情報を検索する正規表現。</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.kind">
+        <source xml:lang="en">whether the pattern matches a location (file and line) or only a file.</source>
+        <target state="translated">パターンがロケーション (ファイルと行) またはファイルのみに一致するかどうか。</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.file">
+        <source xml:lang="en">The match group index of the filename. If omitted 1 is used.</source>
+        <target state="translated">ファイル名の一致グループ インデックス。省略すると、1 が使用されます。</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.location">
+        <source xml:lang="en">The match group index of the problem's location. Valid location patterns are: (line), (line,column) and (startLine,startColumn,endLine,endColumn). If omitted (line,column) is assumed.</source>
+        <target state="translated">問題の場所の一致グループ インデックス。有効な場所のパターンは (line)、(line,column)、(startLine,startColumn,endLine,endColumn) です。省略すると、 (line,column) が想定されます。</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.line">
+        <source xml:lang="en">The match group index of the problem's line. Defaults to 2</source>
+        <target state="translated">問題の行の一致グループ インデックス。既定は 2 です</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.column">
+        <source xml:lang="en">The match group index of the problem's line character. Defaults to 3</source>
+        <target state="translated">問題の行の文字の一致グループ インデックス。既定は 3 です</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.endLine">
+        <source xml:lang="en">The match group index of the problem's end line. Defaults to undefined</source>
+        <target state="translated">問題の最終行の一致グループ インデックス。既定は undefined です</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.endColumn">
+        <source xml:lang="en">The match group index of the problem's end line character. Defaults to undefined</source>
+        <target state="translated">問題の最終行の文字の一致グループ インデックス。既定は undefined です</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.severity">
+        <source xml:lang="en">The match group index of the problem's severity. Defaults to undefined</source>
+        <target state="translated">問題の重大度の一致グループ インデックス。既定は undefined です</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.code">
+        <source xml:lang="en">The match group index of the problem's code. Defaults to undefined</source>
+        <target state="translated">問題のコードの一致グループ インデックス。既定は undefined です</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.message">
+        <source xml:lang="en">The match group index of the message. If omitted it defaults to 4 if location is specified. Otherwise it defaults to 5.</source>
+        <target state="translated">メッセージの一致グループ インデックス。省略した場合、場所を指定すると既定は 4 で、場所を指定しないと既定は 5 です。</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.loop">
+        <source xml:lang="en">In a multi line matcher loop indicated whether this pattern is executed in a loop as long as it matches. Can only specified on a last pattern in a multi line pattern.</source>
+        <target state="translated">複数行マッチャー ループは、このパターンが一致する限りループで実行されるかどうかを示します。複数行パターン内の最後のパターンでのみ指定できます。</target>
+      </trans-unit>
+      <trans-unit id="NamedProblemPatternSchema.name">
+        <source xml:lang="en">The name of the problem pattern.</source>
+        <target state="translated">問題パターンの名前。</target>
+      </trans-unit>
+      <trans-unit id="NamedMultiLineProblemPatternSchema.name">
+        <source xml:lang="en">The name of the problem multi line problem pattern.</source>
+        <target state="translated">複数行の問題パターンの名前。</target>
+      </trans-unit>
+      <trans-unit id="NamedMultiLineProblemPatternSchema.patterns">
+        <source xml:lang="en">The actual patterns.</source>
+        <target state="translated">実際のパターン。</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternExtPoint">
+        <source xml:lang="en">Contributes problem patterns</source>
+        <target state="translated">問題パターンを提供</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternRegistry.error">
+        <source xml:lang="en">Invalid problem pattern. The pattern will be ignored.</source>
+        <target state="translated">無効な問題パターンです。パターンは無視されます。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noProblemMatcher">
+        <source xml:lang="en">Error: the description can't be converted into a problem matcher:
+{0}
+</source>
+        <target state="translated">エラー: 説明を問題マッチャーに変換することができません:
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noProblemPattern">
+        <source xml:lang="en">Error: the description doesn't define a valid problem pattern:
+{0}
+</source>
+        <target state="translated">エラー: 説明に有効な問題パターンが定義されていません:
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noOwner">
+        <source xml:lang="en">Error: the description doesn't define an owner:
+{0}
+</source>
+        <target state="translated">エラー: 説明に所有者が定義されていません:
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noFileLocation">
+        <source xml:lang="en">Error: the description doesn't define a file location:
+{0}
+</source>
+        <target state="translated">エラー: 説明にファイルの場所が定義されていません:
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.unknownSeverity">
+        <source xml:lang="en">Info: unknown severity {0}. Valid values are error, warning and info.
+</source>
+        <target state="translated">情報: 不明な重大度 {0}。有効な値は、error、warning、info です。
+</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noDefinedPatter">
+        <source xml:lang="en">Error: the pattern with the identifier {0} doesn't exist.</source>
+        <target state="translated">エラー: 識別子 {0} のパターンは存在しません。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noIdentifier">
+        <source xml:lang="en">Error: the pattern property refers to an empty identifier.</source>
+        <target state="translated">エラー: パターン プロパティが空の識別子を参照しています。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noValidIdentifier">
+        <source xml:lang="en">Error: the pattern property {0} is not a valid pattern variable name.</source>
+        <target state="translated">エラー: パターン プロパティ {0} は有効なパターン変数名ではありません。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.problemPattern.watchingMatcher">
+        <source xml:lang="en">A problem matcher must define both a begin pattern and an end pattern for watching.</source>
+        <target state="translated">問題マッチャーは、ウォッチ対象の開始パターンと終了パターンの両方を定義する必要があります。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.invalidRegexp">
+        <source xml:lang="en">Error: The string {0} is not a valid regular expression.
+</source>
+        <target state="translated">エラー: 文字列 {0} は、有効な正規表現ではありません。
+</target>
+      </trans-unit>
+      <trans-unit id="WatchingPatternSchema.regexp">
+        <source xml:lang="en">The regular expression to detect the begin or end of a background task.</source>
+        <target state="translated">バックグラウンド タスクの開始または終了を検出する正規表現。</target>
+      </trans-unit>
+      <trans-unit id="WatchingPatternSchema.file">
+        <source xml:lang="en">The match group index of the filename. Can be omitted.</source>
+        <target state="translated">ファイル名の一致グループ インデックス。省略できます。</target>
+      </trans-unit>
+      <trans-unit id="PatternTypeSchema.name">
+        <source xml:lang="en">The name of a contributed or predefined pattern</source>
+        <target state="translated">提供されたか事前定義された問題パターンの名前</target>
+      </trans-unit>
+      <trans-unit id="PatternTypeSchema.description">
+        <source xml:lang="en">A problem pattern or the name of a contributed or predefined problem pattern. Can be omitted if base is specified.</source>
+        <target state="translated">問題パターン、あるいは提供されたか事前定義された問題パターンの名前。基本問題パターンが指定されている場合は省略できます。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.base">
+        <source xml:lang="en">The name of a base problem matcher to use.</source>
+        <target state="translated">使用する基本問題マッチャーの名前。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.owner">
+        <source xml:lang="en">The owner of the problem inside Code. Can be omitted if base is specified. Defaults to 'external' if omitted and base is not specified.</source>
+        <target state="translated">Code 内の問題の所有者。base を指定すると省略できます。省略して base を指定しない場合、既定は 'external' になります。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.source">
+        <source xml:lang="en">A human-readable string describing the source of this diagnostic, e.g. 'typescript' or 'super lint'.</source>
+        <target state="translated">'typescript' または 'super lint' のような、この診断のソースを記述する解読可能な文字列</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.severity">
+        <source xml:lang="en">The default severity for captures problems. Is used if the pattern doesn't define a match group for severity.</source>
+        <target state="translated">キャプチャされた問題の既定の重大度。パターンが重要度の一致グループを定義していない場合に使用されます。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.applyTo">
+        <source xml:lang="en">Controls if a problem reported on a text document is applied only to open, closed or all documents.</source>
+        <target state="translated">テキスト ドキュメントで報告された問題が、開いているドキュメントのみ、閉じられたドキュメントのみ、すべてのドキュメントのいずれに適用されるかを制御します。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.fileLocation">
+        <source xml:lang="en">Defines how file names reported in a problem pattern should be interpreted.</source>
+        <target state="translated">問題パターンで報告されたファイル名を解釈する方法を定義します。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.background">
+        <source xml:lang="en">Patterns to track the begin and end of a matcher active on a background task.</source>
+        <target state="translated">バックグラウンド タスクでアクティブなマッチャーの開始と終了を追跡するパターン。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.background.activeOnStart">
+        <source xml:lang="en">If set to true the background monitor is in active mode when the task starts. This is equals of issuing a line that matches the beginsPattern</source>
+        <target state="translated">true に設定すると、タスクの起動時にバックグラウンド モニターがアクティブ モードになります。これは beginsPattern に一致する行を発行するのと同じです。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.background.beginsPattern">
+        <source xml:lang="en">If matched in the output the start of a background task is signaled.</source>
+        <target state="translated">出力内で一致すると、バックグラウンド タスクの開始が通知されます。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.background.endsPattern">
+        <source xml:lang="en">If matched in the output the end of a background task is signaled.</source>
+        <target state="translated">出力内で一致すると、バックグラウンド タスクの終了が通知されます。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.watching.deprecated">
+        <source xml:lang="en">The watching property is deprecated. Use background instead.</source>
+        <target state="translated">watching プロパティは使用されなくなりました。代わりに background をご使用ください。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.watching">
+        <source xml:lang="en">Patterns to track the begin and end of a watching matcher.</source>
+        <target state="translated">監視パターンの開始と終了を追跡するマッチャー。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.watching.activeOnStart">
+        <source xml:lang="en">If set to true the watcher is in active mode when the task starts. This is equals of issuing a line that matches the beginPattern</source>
+        <target state="translated">true に設定すると、タスクの開始時にウォッチャーがアクティブ モードになります。これは beginPattern と一致する行の発行と同等です。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.watching.beginsPattern">
+        <source xml:lang="en">If matched in the output the start of a watching task is signaled.</source>
+        <target state="translated">出力内で一致すると、ウォッチ中のタスクの開始が通知されます。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.watching.endsPattern">
+        <source xml:lang="en">If matched in the output the end of a watching task is signaled.</source>
+        <target state="translated">出力内で一致すると、ウォッチ中のタスクの終了が通知されます。</target>
+      </trans-unit>
+      <trans-unit id="LegacyProblemMatcherSchema.watchedBegin.deprecated">
+        <source xml:lang="en">This property is deprecated. Use the watching property instead.</source>
+        <target state="translated">このプロパティは非推奨です。代わりに watching プロパティをご使用ください。</target>
+      </trans-unit>
+      <trans-unit id="LegacyProblemMatcherSchema.watchedBegin">
+        <source xml:lang="en">A regular expression signaling that a watched tasks begins executing triggered through file watching.</source>
+        <target state="translated">ファイル ウォッチでトリガーされた ウォッチ対象タスクの実行が開始されたことを伝達する正規表現。</target>
+      </trans-unit>
+      <trans-unit id="LegacyProblemMatcherSchema.watchedEnd.deprecated">
+        <source xml:lang="en">This property is deprecated. Use the watching property instead.</source>
+        <target state="translated">このプロパティは非推奨です。代わりに watching プロパティを使用してください。</target>
+      </trans-unit>
+      <trans-unit id="LegacyProblemMatcherSchema.watchedEnd">
+        <source xml:lang="en">A regular expression signaling that a watched tasks ends executing.</source>
+        <target state="translated">ウォッチ対象タスクの実行が終了したことを伝達する正規表現。</target>
+      </trans-unit>
+      <trans-unit id="NamedProblemMatcherSchema.name">
+        <source xml:lang="en">The name of the problem matcher used to refer to it.</source>
+        <target state="translated">これを参照するのに使用する問題マッチャーの名前。</target>
+      </trans-unit>
+      <trans-unit id="NamedProblemMatcherSchema.label">
+        <source xml:lang="en">A human readable label of the problem matcher.</source>
+        <target state="translated">問題マッチャーの判読できるラベル。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherExtPoint">
+        <source xml:lang="en">Contributes problem matchers</source>
+        <target state="translated">問題マッチャーを提供</target>
+      </trans-unit>
+      <trans-unit id="msCompile">
+        <source xml:lang="en">Microsoft compiler problems</source>
+        <target state="translated">Microsoft コンパイラの問題</target>
+      </trans-unit>
+      <trans-unit id="lessCompile">
+        <source xml:lang="en">Less problems</source>
+        <target state="translated">Less の問題</target>
+      </trans-unit>
+      <trans-unit id="gulp-tsc">
+        <source xml:lang="en">Gulp TSC Problems</source>
+        <target state="translated">Gulp TSC の問題</target>
+      </trans-unit>
+      <trans-unit id="jshint">
+        <source xml:lang="en">JSHint problems</source>
+        <target state="translated">JSHint の問題</target>
+      </trans-unit>
+      <trans-unit id="jshint-stylish">
+        <source xml:lang="en">JSHint stylish problems</source>
+        <target state="translated">JSHint の問題 (stylish)</target>
+      </trans-unit>
+      <trans-unit id="eslint-compact">
+        <source xml:lang="en">ESLint compact problems</source>
+        <target state="translated">ESLint の問題 (compact)</target>
+      </trans-unit>
+      <trans-unit id="eslint-stylish">
+        <source xml:lang="en">ESLint stylish problems</source>
+        <target state="translated">ESLint の問題 (stylish)</target>
+      </trans-unit>
+      <trans-unit id="go">
+        <source xml:lang="en">Go problems</source>
+        <target state="translated">Go の問題</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/abstractTaskService" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="ConfigureTaskRunnerAction.label">
+        <source xml:lang="en">Configure Task</source>
+        <target state="translated">タスクの構成</target>
+      </trans-unit>
+      <trans-unit id="tasks">
+        <source xml:lang="en">Tasks</source>
+        <target state="translated">タスク</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.noHotSwap">
+        <source xml:lang="en">Changing the task execution engine with an active task running requires to reload the Window</source>
+        <target state="translated">アクティブなタスクを実行しているタスク実行エンジンを変更するには、ウィンドウの再読み込みが必要です</target>
+      </trans-unit>
+      <trans-unit id="reloadWindow">
+        <source xml:lang="en">Reload Window</source>
+        <target state="translated">ウィンドウの再読み込み</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickBuildTaskForLabel">
+        <source xml:lang="en">Select the build task (there is no default build task defined)</source>
+        <target state="translated">ビルド タスクを選択します (既定のビルド タスクが定義されていません)</target>
+      </trans-unit>
+      <trans-unit id="taskServiceOutputPrompt">
+        <source xml:lang="en">There are task errors. See the output for details.</source>
+        <target state="translated">タスク エラーがあります。詳細は出力をご覧ください。</target>
+      </trans-unit>
+      <trans-unit id="showOutput">
+        <source xml:lang="en">Show output</source>
+        <target state="translated">出力の表示</target>
+      </trans-unit>
+      <trans-unit id="TaskServer.folderIgnored">
+        <source xml:lang="en">The folder {0} is ignored since it uses task version 0.1.0</source>
+        <target state="translated">{0} フォルダーはタスク バージョン 0.1.0  を使用しているために無視されます</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noBuildTask1">
+        <source xml:lang="en">No build task defined. Mark a task with 'isBuildCommand' in the tasks.json file.</source>
+        <target state="translated">ビルド タスクが定義されていません。tasks.json ファイルでタスクに 'isBuildCommand' というマークを付けてください。</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noBuildTask2">
+        <source xml:lang="en">No build task defined. Mark a task with as a 'build' group in the tasks.json file.</source>
+        <target state="translated">ビルド タスクが定義されていません。tasks.json ファイルでタスクに 'build' グループとしてマークを付けてください。</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noTestTask1">
+        <source xml:lang="en">No test task defined. Mark a task with 'isTestCommand' in the tasks.json file.</source>
+        <target state="translated">テスト タスクが定義されていません。tasks.json ファイルでタスクに 'isTestCommand' というマークを付けてください。</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noTestTask2">
+        <source xml:lang="en">No test task defined. Mark a task with as a 'test' group in the tasks.json file.</source>
+        <target state="translated">テスト タスクが定義されていません。tasks.json ファイルでタスクに 'test' グループとしてマークを付けてください。</target>
+      </trans-unit>
+      <trans-unit id="TaskServer.noTask">
+        <source xml:lang="en">Task to execute is undefined</source>
+        <target state="translated">実行するタスクが定義されていません。</target>
+      </trans-unit>
+      <trans-unit id="TaskService.associate">
+        <source xml:lang="en">associate</source>
+        <target state="translated">関連付け</target>
+      </trans-unit>
+      <trans-unit id="TaskService.attachProblemMatcher.continueWithout">
+        <source xml:lang="en">Continue without scanning the task output</source>
+        <target state="translated">タスクの出力をスキャンせずに続行</target>
+      </trans-unit>
+      <trans-unit id="TaskService.attachProblemMatcher.never">
+        <source xml:lang="en">Never scan the task output for this task</source>
+        <target state="translated">このタスクのタスク出力をスキャンしない</target>
+      </trans-unit>
+      <trans-unit id="TaskService.attachProblemMatcher.neverType">
+        <source xml:lang="en">Never scan the task output for {0} tasks</source>
+        <target state="translated">{0} タスクのタスク出力をスキャンしない</target>
+      </trans-unit>
+      <trans-unit id="TaskService.attachProblemMatcher.learnMoreAbout">
+        <source xml:lang="en">Learn more about scanning the task output</source>
+        <target state="translated">タスク出力のスキャンについての詳細</target>
+      </trans-unit>
+      <trans-unit id="selectProblemMatcher">
+        <source xml:lang="en">Select for which kind of errors and warnings to scan the task output</source>
+        <target state="translated">スキャンするタスク出力のエラーと警告の種類を選択</target>
+      </trans-unit>
+      <trans-unit id="customizeParseErrors">
+        <source xml:lang="en">The current task configuration has errors. Please fix the errors first before customizing a task.</source>
+        <target state="translated">現在のタスクの構成にはエラーがあります。タスクをカスタマイズする前にエラーを修正してください。</target>
+      </trans-unit>
+      <trans-unit id="tasksJsonComment">
+        <source xml:lang="en">	// See https://go.microsoft.com/fwlink/?LinkId=733558 
+	// for the documentation about the tasks.json format</source>
+        <target state="translated">// tasks.json 形式の詳細についての資料は、
+	// https://go.microsoft.com/fwlink/?LinkId=733558 をご覧ください</target>
+      </trans-unit>
+      <trans-unit id="moreThanOneBuildTask">
+        <source xml:lang="en">There are many build tasks defined in the tasks.json. Executing the first one.
+</source>
+        <target state="translated">tasks.json で複数のビルド タスクが定義されています。最初のタスクのみを実行します。\n</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.activeSame.noBackground">
+        <source xml:lang="en">The task '{0}' is already active.</source>
+        <target state="translated">タスク '{0}' は既にアクティブです。</target>
+      </trans-unit>
+      <trans-unit id="terminateTask">
+        <source xml:lang="en">Terminate Task</source>
+        <target state="translated">タスクの終了</target>
+      </trans-unit>
+      <trans-unit id="restartTask">
+        <source xml:lang="en">Restart Task</source>
+        <target state="translated">タスクの再開</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.active">
+        <source xml:lang="en">There is already a task running. Terminate it first before executing another task.</source>
+        <target state="translated">既に実行中のタスクがあります。まずこのタスクを終了してから、別のタスクを実行してください。</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.restartFailed">
+        <source xml:lang="en">Failed to terminate and restart task {0}</source>
+        <target state="translated">タスク {0} を終了して再開できませんでした</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noConfiguration">
+        <source xml:lang="en">Error: The {0} task detection didn't contribute a task for the following configuration:
+{1}
+The task will be ignored.
+</source>
+        <target state="translated">エラー: {0} タスク検出は次の構成に対してタスクを提供していません:
+{1}
+このタスクは無視されます。
+</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.configurationErrors">
+        <source xml:lang="en">Error: the provided task configuration has validation errors and can't not be used. Please correct the errors first.</source>
+        <target state="translated">エラー: 指定したタスク構成に検証エラーがあり、使用できません。最初にエラーを修正してください。</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.invalidTaskJsonOther">
+        <source xml:lang="en">Error: The content of the tasks json in {0} has syntax errors. Please correct them before executing a task.
+</source>
+        <target state="translated">エラー: {0} の tasks.json の内容に構文エラーがあります。訂正してからタスクを実行してください。</target>
+      </trans-unit>
+      <trans-unit id="TasksSystem.locationWorkspaceConfig">
+        <source xml:lang="en">workspace file</source>
+        <target state="translated">ワークスペース ファイル</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.versionWorkspaceFile">
+        <source xml:lang="en">Only tasks version 2.0.0 permitted in .codeworkspace.</source>
+        <target state="translated">タスク バージョン 2.0.0 のみが .codeworkspace で許可されています。</target>
+      </trans-unit>
+      <trans-unit id="TasksSystem.locationUserConfig">
+        <source xml:lang="en">user settings</source>
+        <target state="translated">ユーザー設定</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.versionSettings">
+        <source xml:lang="en">Only tasks version 2.0.0 permitted in user settings.</source>
+        <target state="translated">タスク バージョン 2.0.0 のみがユーザ設定で許可されています。</target>
+      </trans-unit>
+      <trans-unit id="taskService.ignoreingFolder">
+        <source xml:lang="en">Ignoring task configurations for workspace folder {0}. Multi folder workspace task support requires that all folders use task version 2.0.0
+</source>
+        <target state="translated">ワークスペース フォルダー {0} のタスク構成を無視します。マルチ フォルダー ワークスペース タスクのサポートには、すべてのフォルダーがタスク バージョン 2.0.0 を使用する必要があります。
+</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.invalidTaskJson">
+        <source xml:lang="en">Error: The content of the tasks.json file has syntax errors. Please correct them before executing a task.
+</source>
+        <target state="translated">エラー: tasks.json ファイルの内容に構文エラーがあります。訂正してからタスクを実行してください。
+</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.runningTask">
+        <source xml:lang="en">There is a task running. Do you want to terminate it?</source>
+        <target state="translated">実行中のタスクがあります。終了しますか?</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.terminateTask">
+        <source xml:lang="en">&amp;&amp;Terminate Task</source>
+        <target state="translated">タスクの終了(&amp;&amp;T)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="TaskSystem.noProcess">
+        <source xml:lang="en">The launched task doesn't exist anymore. If the task spawned background processes exiting VS Code might result in orphaned processes. To avoid this start the last background process with a wait flag.</source>
+        <target state="translated">起動したタスクは既に存在しません。タスクを起動したバックグラウンド プロセスが VS コードで終了すると、プロセスが孤立することがあります。これを回避するには、待機フラグを設定して最後のバックグラウンド プロセスを開始します。</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.exitAnyways">
+        <source xml:lang="en">&amp;&amp;Exit Anyways</source>
+        <target state="translated">常に終了(&amp;&amp;E)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="TerminateAction.label">
+        <source xml:lang="en">Terminate Task</source>
+        <target state="translated">タスクの終了</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.unknownError">
+        <source xml:lang="en">An error has occurred while running a task. See task log for details.</source>
+        <target state="translated">タスクの実行中にエラーが発生しました。詳細については、タスク ログを参照してください。</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noWorkspace">
+        <source xml:lang="en">Tasks are only available on a workspace folder.</source>
+        <target state="translated">タスクはワークスペース フォルダーでのみ利用可能です。</target>
+      </trans-unit>
+      <trans-unit id="TaskService.learnMore">
+        <source xml:lang="en">Learn More</source>
+        <target state="translated">詳細を表示</target>
+      </trans-unit>
+      <trans-unit id="configureTask">
+        <source xml:lang="en">Configure Task</source>
+        <target state="translated">タスクの構成</target>
+      </trans-unit>
+      <trans-unit id="recentlyUsed">
+        <source xml:lang="en">recently used tasks</source>
+        <target state="translated">最近使用したタスク</target>
+      </trans-unit>
+      <trans-unit id="configured">
+        <source xml:lang="en">configured tasks</source>
+        <target state="translated">構成済みのタスク</target>
+      </trans-unit>
+      <trans-unit id="detected">
+        <source xml:lang="en">detected tasks</source>
+        <target state="translated">検出されたタスク</target>
+      </trans-unit>
+      <trans-unit id="pickProgressManager.description">
+        <source xml:lang="en">Detecting tasks ({0} of {1}): {2} in progress</source>
+        <target state="translated">タスクの検出中 ({0}/{1}): {2} が進行中</target>
+      </trans-unit>
+      <trans-unit id="taskQuickPick.cancel">
+        <source xml:lang="en">Stop detecting</source>
+        <target state="translated">検出を停止する</target>
+      </trans-unit>
+      <trans-unit id="TaskService.ignoredFolder">
+        <source xml:lang="en">The following workspace folders are ignored since they use task version 0.1.0: {0}</source>
+        <target state="translated">次のワークスペース フォルダーはタスク バージョン 0.1.0 を使用しているため無視されます: {0}</target>
+      </trans-unit>
+      <trans-unit id="TaskService.notAgain">
+        <source xml:lang="en">Don't Show Again</source>
+        <target state="translated">今後表示しない</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickRunTask">
+        <source xml:lang="en">Select the task to run</source>
+        <target state="translated">実行するタスクを選択してください</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noEntryToRun">
+        <source xml:lang="en">No task to run found. Configure Tasks...</source>
+        <target state="translated">実行するタスクがありません。タスクを構成する...</target>
+      </trans-unit>
+      <trans-unit id="TaskService.fetchingBuildTasks">
+        <source xml:lang="en">Fetching build tasks...</source>
+        <target state="translated">ビルド タスクをフェッチしています...</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickBuildTask">
+        <source xml:lang="en">Select the build task to run</source>
+        <target state="translated">実行するビルド タスクを選択</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noBuildTask">
+        <source xml:lang="en">No build task to run found. Configure Build Task...</source>
+        <target state="translated">実行するビルド タスクがありません。ビルド タスクを構成する...</target>
+      </trans-unit>
+      <trans-unit id="TaskService.fetchingTestTasks">
+        <source xml:lang="en">Fetching test tasks...</source>
+        <target state="translated">テスト タスクをフェッチしています...</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickTestTask">
+        <source xml:lang="en">Select the test task to run</source>
+        <target state="translated">実行するテスト タスクを選択してください</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noTestTaskTerminal">
+        <source xml:lang="en">No test task to run found. Configure Tasks...</source>
+        <target state="translated">実行するテスト タスクがありません。タスクを構成する... </target>
+      </trans-unit>
+      <trans-unit id="TaskService.taskToTerminate">
+        <source xml:lang="en">Select a task to terminate</source>
+        <target state="translated">終了するタスクを選択</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noTaskRunning">
+        <source xml:lang="en">No task is currently running</source>
+        <target state="translated">現在実行中のタスクはありません</target>
+      </trans-unit>
+      <trans-unit id="TaskService.terminateAllRunningTasks">
+        <source xml:lang="en">All Running Tasks</source>
+        <target state="translated">すべての実行中のタスク</target>
+      </trans-unit>
+      <trans-unit id="TerminateAction.noProcess">
+        <source xml:lang="en">The launched process doesn't exist anymore. If the task spawned background tasks exiting VS Code might result in orphaned processes.</source>
+        <target state="translated">起動したプロセスは既に存在しません。タスクを起動したバックグラウンド タスクが VS コードで終了すると、プロセスが孤立することがあります。</target>
+      </trans-unit>
+      <trans-unit id="TerminateAction.failed">
+        <source xml:lang="en">Failed to terminate running task</source>
+        <target state="translated">実行中のタスクの終了に失敗しました</target>
+      </trans-unit>
+      <trans-unit id="TaskService.taskToRestart">
+        <source xml:lang="en">Select the task to restart</source>
+        <target state="translated">再起動するタスクを選択してください</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noTaskToRestart">
+        <source xml:lang="en">No task to restart</source>
+        <target state="translated">再起動するタスクがありません</target>
+      </trans-unit>
+      <trans-unit id="TaskService.template">
+        <source xml:lang="en">Select a Task Template</source>
+        <target state="translated">タスク テンプレートを選択</target>
+      </trans-unit>
+      <trans-unit id="taskQuickPick.userSettings">
+        <source xml:lang="en">User Settings</source>
+        <target state="translated">ユーザー設定</target>
+      </trans-unit>
+      <trans-unit id="TaskService.createJsonFile">
+        <source xml:lang="en">Create tasks.json file from template</source>
+        <target state="translated">テンプレートから tasks.json を生成</target>
+      </trans-unit>
+      <trans-unit id="TaskService.openJsonFile">
+        <source xml:lang="en">Open tasks.json file</source>
+        <target state="translated">tasks.json ファイルを開く</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickTask">
+        <source xml:lang="en">Select a task to configure</source>
+        <target state="translated">構成するタスクを選択</target>
+      </trans-unit>
+      <trans-unit id="TaskService.defaultBuildTaskExists">
+        <source xml:lang="en">{0} is already marked as the default build task</source>
+        <target state="translated">{0} は既に既定のビルド タスクとしてマークされています</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickDefaultBuildTask">
+        <source xml:lang="en">Select the task to be used as the default build task</source>
+        <target state="translated">既定のビルド タスクとして使用するタスクを選択</target>
+      </trans-unit>
+      <trans-unit id="TaskService.defaultTestTaskExists">
+        <source xml:lang="en">{0} is already marked as the default test task.</source>
+        <target state="translated">{0} は既に既定のテスト タスクとしてマークされています。</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickDefaultTestTask">
+        <source xml:lang="en">Select the task to be used as the default test task</source>
+        <target state="translated">既定のテスト タスクとして使用するタスクを選択</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickShowTask">
+        <source xml:lang="en">Select the task to show its output</source>
+        <target state="translated">出力を表示するタスクを選択</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noTaskIsRunning">
+        <source xml:lang="en">No task is running</source>
+        <target state="translated">実行中のタスクはありません</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/taskTemplates" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="dotnetCore">
+        <source xml:lang="en">Executes .NET Core build command</source>
+        <target state="translated">.NET Core ビルド コマンドの実行</target>
+      </trans-unit>
+      <trans-unit id="msbuild">
+        <source xml:lang="en">Executes the build target</source>
+        <target state="translated">ビルド ターゲットを実行</target>
+      </trans-unit>
+      <trans-unit id="externalCommand">
+        <source xml:lang="en">Example to run an arbitrary external command</source>
+        <target state="translated">任意の外部コマンドを実行する例</target>
+      </trans-unit>
+      <trans-unit id="Maven">
+        <source xml:lang="en">Executes common maven commands</source>
+        <target state="translated">共通の maven コマンドを実行する</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/terminalTaskSystem" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="TerminalTaskSystem.unknownError">
+        <source xml:lang="en">A unknown error has occurred while executing a task. See task output log for details.</source>
+        <target state="translated">タスクの実行中に不明なエラーが発生しました。詳細については、タスク出力ログを参照してください。</target>
+      </trans-unit>
+      <trans-unit id="dependencyFailed">
+        <source xml:lang="en">Couldn't resolve dependent task '{0}' in workspace folder '{1}'</source>
+        <target state="translated">ワークスペース フォルダー '{1}' 内で依存タスクの '{0}' を解決できませんでした</target>
+      </trans-unit>
+      <trans-unit id="TerminalTaskSystem.nonWatchingMatcher">
+        <source xml:lang="en">Task {0} is a background task but uses a problem matcher without a background pattern</source>
+        <target state="translated">タスク {0} はバックグラウンド タスクですが、背景パターンのない問題マッチャーを使用します</target>
+      </trans-unit>
+      <trans-unit id="TerminalTaskSystem.terminalName">
+        <source xml:lang="en">Task - {0}</source>
+        <target state="translated">タスク - {0}</target>
+      </trans-unit>
+      <trans-unit id="closeTerminal">
+        <source xml:lang="en">Press any key to close the terminal.</source>
+        <target state="translated">任意のキーを押してターミナルを終了します。</target>
+      </trans-unit>
+      <trans-unit id="reuseTerminal">
+        <source xml:lang="en">Terminal will be reused by tasks, press any key to close it.</source>
+        <target state="translated">ターミナルはタスクで再利用されます、閉じるには任意のキーを押してください。</target>
+      </trans-unit>
+      <trans-unit id="TerminalTaskSystem">
+        <source xml:lang="en">Can't execute a shell command on an UNC drive using cmd.exe.</source>
+        <target state="translated">cmd.exe を使用して UNC ドライブ上でシェル コマンドを実行できません。</target>
+      </trans-unit>
+      <trans-unit id="unknownProblemMatcher">
+        <source xml:lang="en">Problem matcher {0} can't be resolved. The matcher will be ignored</source>
+        <target state="translated">問題マッチャー {0} は解決できませんでした。マッチャーは無視されます</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

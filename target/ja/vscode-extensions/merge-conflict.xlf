@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="extensions/merge-conflict/package" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="displayName">
+        <source xml:lang="en">Merge Conflict</source>
+        <target state="translated">マージの競合</target>
+      </trans-unit>
+      <trans-unit id="description">
+        <source xml:lang="en">Highlighting and commands for inline merge conflicts.</source>
+        <target state="translated">行内マージ競合のハイライト、コマンドを提供します。</target>
+      </trans-unit>
+      <trans-unit id="command.category">
+        <source xml:lang="en">Merge Conflict</source>
+        <target state="translated">マージの競合</target>
+      </trans-unit>
+      <trans-unit id="command.accept.all-current">
+        <source xml:lang="en">Accept All Current</source>
+        <target state="translated">現在の方をすべて取り込む</target>
+      </trans-unit>
+      <trans-unit id="command.accept.all-incoming">
+        <source xml:lang="en">Accept All Incoming</source>
+        <target state="translated">入力側のすべてを取り込む</target>
+      </trans-unit>
+      <trans-unit id="command.accept.all-both">
+        <source xml:lang="en">Accept All Both</source>
+        <target state="translated">両方をすべて取り込む</target>
+      </trans-unit>
+      <trans-unit id="command.accept.current">
+        <source xml:lang="en">Accept Current</source>
+        <target state="translated">現在の方を取り込む</target>
+      </trans-unit>
+      <trans-unit id="command.accept.incoming">
+        <source xml:lang="en">Accept Incoming</source>
+        <target state="translated">入力側を取り込む</target>
+      </trans-unit>
+      <trans-unit id="command.accept.selection">
+        <source xml:lang="en">Accept Selection</source>
+        <target state="translated">選択項目を取り込む</target>
+      </trans-unit>
+      <trans-unit id="command.accept.both">
+        <source xml:lang="en">Accept Both</source>
+        <target state="translated">両方を取り込む</target>
+      </trans-unit>
+      <trans-unit id="command.next">
+        <source xml:lang="en">Next Conflict</source>
+        <target state="translated">次の競合</target>
+      </trans-unit>
+      <trans-unit id="command.previous">
+        <source xml:lang="en">Previous Conflict</source>
+        <target state="translated">前の競合</target>
+      </trans-unit>
+      <trans-unit id="command.compare">
+        <source xml:lang="en">Compare Current Conflict</source>
+        <target state="translated">現在の競合を比較</target>
+      </trans-unit>
+      <trans-unit id="config.title">
+        <source xml:lang="en">Merge Conflict</source>
+        <target state="translated">マージの競合</target>
+      </trans-unit>
+      <trans-unit id="config.autoNavigateNextConflictEnabled">
+        <source xml:lang="en">Whether to automatically navigate to the next merge conflict after resolving a merge conflict.</source>
+        <target state="translated">マージ競合を解決した後で、次のマージの競合に自動的に移動するかどうか。</target>
+      </trans-unit>
+      <trans-unit id="config.codeLensEnabled">
+        <source xml:lang="en">Create a Code Lens for merge conflict blocks within editor.</source>
+        <target state="translated">エディター内のマージ競合ブロックのコード レンズを作成します。</target>
+      </trans-unit>
+      <trans-unit id="config.decoratorsEnabled">
+        <source xml:lang="en">Create decorators for merge conflict blocks within editor.</source>
+        <target state="translated">エディター内のマージ競合ブロック用デコレータを作成します。</target>
+      </trans-unit>
+      <trans-unit id="config.diffViewPosition">
+        <source xml:lang="en">Controls where the diff view should be opened when comparing changes in merge conflicts.</source>
+        <target state="translated">マージの競合の変更を比較するときに、差分ビューを開く場所を制御します。</target>
+      </trans-unit>
+      <trans-unit id="config.diffViewPosition.current">
+        <source xml:lang="en">Open the diff view in the current editor group.</source>
+        <target state="translated">現在のエディター グループで差分ビューを開きます。</target>
+      </trans-unit>
+      <trans-unit id="config.diffViewPosition.beside">
+        <source xml:lang="en">Open the diff view next to the current editor group.</source>
+        <target state="translated">現在のエディター グループの隣に差分ビューを開きます。</target>
+      </trans-unit>
+      <trans-unit id="config.diffViewPosition.below">
+        <source xml:lang="en">Open the diff view below the current editor group.</source>
+        <target state="translated">現在のエディター グループの下にある差分ビューを開きます。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/merge-conflict/dist/codelensProvider" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="acceptCurrentChange">
+        <source xml:lang="en">Accept Current Change</source>
+        <target state="translated">現在の変更を取り込む</target>
+      </trans-unit>
+      <trans-unit id="acceptIncomingChange">
+        <source xml:lang="en">Accept Incoming Change</source>
+        <target state="translated">入力側の変更を取り込む</target>
+      </trans-unit>
+      <trans-unit id="acceptBothChanges">
+        <source xml:lang="en">Accept Both Changes</source>
+        <target state="translated">両方の変更を取り込む</target>
+      </trans-unit>
+      <trans-unit id="compareChanges">
+        <source xml:lang="en">Compare Changes</source>
+        <target state="translated">変更の比較</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/merge-conflict/dist/commandHandler" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="cursorNotInConflict">
+        <source xml:lang="en">Editor cursor is not within a merge conflict</source>
+        <target state="translated">エディターのカーソルがマージの競合の範囲内にありません</target>
+      </trans-unit>
+      <trans-unit id="compareChangesTitle">
+        <source xml:lang="en">{0}: Current Changes ⟷ Incoming Changes</source>
+        <target state="translated">{0}: 現在の変更 ⟷ 入力側の変更</target>
+      </trans-unit>
+      <trans-unit id="cursorOnCommonAncestorsRange">
+        <source xml:lang="en">Editor cursor is within the common ancestors block, please move it to either the "current" or "incoming" block</source>
+        <target state="translated">エディターのカーソルが共通の祖先ブロック内にあります。”現在” または "入力側" のいずれかのブロックに移動してください</target>
+      </trans-unit>
+      <trans-unit id="cursorOnSplitterRange">
+        <source xml:lang="en">Editor cursor is within the merge conflict splitter, please move it to either the "current" or "incoming" block</source>
+        <target state="translated">エディターのカーソルがマージ コンフリクトのスプリッター内にあります。”現在” または "入力側" のいずれかのブロックに移動してください</target>
+      </trans-unit>
+      <trans-unit id="noConflicts">
+        <source xml:lang="en">No merge conflicts found in this file</source>
+        <target state="translated">このファイルにマージの競合は存在しません</target>
+      </trans-unit>
+      <trans-unit id="noOtherConflictsInThisFile">
+        <source xml:lang="en">No other merge conflicts within this file</source>
+        <target state="translated">このファイルに他のマージの競合は存在しません</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/merge-conflict/dist/mergeDecorator" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="currentChange">
+        <source xml:lang="en">(Current Change)</source>
+        <target state="translated">(現在の変更)</target>
+      </trans-unit>
+      <trans-unit id="incomingChange">
+        <source xml:lang="en">(Incoming Change)</source>
+        <target state="translated">(入力側の変更)</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

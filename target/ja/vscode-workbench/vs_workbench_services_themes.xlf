@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/workbench/services/themes/common/colorExtensionPoint" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="contributes.color">
+        <source xml:lang="en">Contributes extension defined themable colors</source>
+        <target state="translated">拡張機能でテーマ設定の可能な配色を提供します</target>
+      </trans-unit>
+      <trans-unit id="contributes.color.id">
+        <source xml:lang="en">The identifier of the themable color</source>
+        <target state="translated">テーマ設定可能な配色の識別子</target>
+      </trans-unit>
+      <trans-unit id="contributes.color.id.format">
+        <source xml:lang="en">Identifiers should be in the form aa[.bb]*</source>
+        <target state="translated">識別子は aa[.bb]* の形式にする必要があります</target>
+      </trans-unit>
+      <trans-unit id="contributes.color.description">
+        <source xml:lang="en">The description of the themable color</source>
+        <target state="translated">テーマ設定可能な配色の説明</target>
+      </trans-unit>
+      <trans-unit id="contributes.defaults.light">
+        <source xml:lang="en">The default color for light themes. Either a color value in hex (#RRGGBB[AA]) or the identifier of a themable color which provides the default.</source>
+        <target state="translated">light テーマの既定の配色。配色の値は 16 進数(#RRGGBB[AA]) 、または 既定で提供されているテーマ設定可能な配色の識別子の既定値のいずれか。</target>
+      </trans-unit>
+      <trans-unit id="contributes.defaults.dark">
+        <source xml:lang="en">The default color for dark themes. Either a color value in hex (#RRGGBB[AA]) or the identifier of a themable color which provides the default.</source>
+        <target state="translated">dark テーマの既定の配色。配色の値は 16 進数(#RRGGBB[AA]) 、または 既定で提供されているテーマ設定可能な配色の識別子の既定値のいずれか。</target>
+      </trans-unit>
+      <trans-unit id="contributes.defaults.highContrast">
+        <source xml:lang="en">The default color for high contrast themes. Either a color value in hex (#RRGGBB[AA]) or the identifier of a themable color which provides the default.</source>
+        <target state="translated">high contrast テーマの既定の配色。配色の値は 16 進数(#RRGGBB[AA]) 、または 既定で提供されているテーマ設定可能な配色の識別子の既定値のいずれか。</target>
+      </trans-unit>
+      <trans-unit id="invalid.colorConfiguration">
+        <source xml:lang="en">'configuration.colors' must be a array</source>
+        <target state="translated">'configuration.colors' は配列である必要があります</target>
+      </trans-unit>
+      <trans-unit id="invalid.default.colorType">
+        <source xml:lang="en">{0} must be either a color value in hex (#RRGGBB[AA] or #RGB[A]) or the identifier of a themable color which provides the default.</source>
+        <target state="translated">{0} は 16 進数(#RRGGBB[AA] または  #RGB[A]) 、または 既定で提供されているテーマ設定可能な配色の識別子の既定値のいずれかでなければなりません。</target>
+      </trans-unit>
+      <trans-unit id="invalid.id">
+        <source xml:lang="en">'configuration.colors.id' must be defined and can not be empty</source>
+        <target state="translated">'configuration.colors.id' を定義してください。空にはできません。</target>
+      </trans-unit>
+      <trans-unit id="invalid.id.format">
+        <source xml:lang="en">'configuration.colors.id' must follow the word[.word]*</source>
+        <target state="translated">'configuration.colors.id' は word[.word]* の形式である必要があります</target>
+      </trans-unit>
+      <trans-unit id="invalid.description">
+        <source xml:lang="en">'configuration.colors.description' must be defined and can not be empty</source>
+        <target state="translated">'configuration.colors.description' を定義してください。空にはできません。</target>
+      </trans-unit>
+      <trans-unit id="invalid.defaults">
+        <source xml:lang="en">'configuration.colors.defaults' must be defined and must contain 'light', 'dark' and 'highContrast'</source>
+        <target state="translated">'configuration.colors.defaults' は定義する必要があります。'light' か 'dark'、'highContrast' を含める必要があります。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/common/tokenClassificationExtensionPoint" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="contributes.semanticTokenTypes">
+        <source xml:lang="en">Contributes semantic token types.</source>
+        <target state="translated">セマンティック トークンの種類を提供します。</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenTypes.id">
+        <source xml:lang="en">The identifier of the semantic token type</source>
+        <target state="translated">セマンティック トークンの種類の識別子</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenTypes.id.format">
+        <source xml:lang="en">Identifiers should be in the form letterOrDigit[_-letterOrDigit]*</source>
+        <target state="translated">識別子は、letterOrDigit[_-letterOrDigit]* の形式である必要があります</target>
+      </trans-unit>
+      <trans-unit id="contributes.color.description">
+        <source xml:lang="en">The description of the semantic token type</source>
+        <target state="translated">セマンティック トークンの種類の説明</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenModifiers">
+        <source xml:lang="en">Contributes semantic token modifiers.</source>
+        <target state="translated">セマンティック トークン修飾子を提供します。</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenModifiers.id">
+        <source xml:lang="en">The identifier of the semantic token modifier</source>
+        <target state="translated">セマンティック トークン修飾子の識別子</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenModifiers.id.format">
+        <source xml:lang="en">Identifiers should be in the form letterOrDigit[_-letterOrDigit]*</source>
+        <target state="translated">識別子は、letterOrDigit[_-letterOrDigit]* の形式である必要があります</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenModifiers.description">
+        <source xml:lang="en">The description of the semantic token modifier</source>
+        <target state="translated">セマンティック トークン修飾子の説明</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenStyleDefaults">
+        <source xml:lang="en">Contributes semantic token style defaults.</source>
+        <target state="translated">セマンティック トークン スタイルの既定値を提供します。</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenStyleDefaults.selector">
+        <source xml:lang="en">The selector matching token types and modifiers.</source>
+        <target state="translated">トークンの種類と修飾子が一致するセレクター。</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenStyleDefaults.selector.format">
+        <source xml:lang="en">Selectors should be in the form (type|*)(.modifier)*</source>
+        <target state="translated">セレクターは (type|*)(.modifier)* の形式にする必要があります</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenStyleDefaults.scope">
+        <source xml:lang="en">A TextMate scope against the current color theme is matched to find the style for the given selector</source>
+        <target state="translated">指定されたセレクターのスタイルを見つけるための、現在のカラー テーマに対する TextMate スコープに一致します。</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenStyleDefaults.light">
+        <source xml:lang="en">The default style used for light themes</source>
+        <target state="translated">明るいテーマに使用される既定のスタイル</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenStyleDefaults.dark">
+        <source xml:lang="en">The default style used for dark themes</source>
+        <target state="translated">暗いテーマに使用される既定のスタイル</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenStyleDefaults.hc">
+        <source xml:lang="en">The default style used for high contrast themes</source>
+        <target state="translated">ハイ コントラスト テーマに使用される既定のスタイル</target>
+      </trans-unit>
+      <trans-unit id="invalid.id">
+        <source xml:lang="en">'configuration.{0}.id' must be defined and can not be empty</source>
+        <target state="translated">'configuration.{0}.id' は定義する必要があり、空にすることができません</target>
+      </trans-unit>
+      <trans-unit id="invalid.id.format">
+        <source xml:lang="en">'configuration.{0}.id' must follow the pattern letterOrDigit[-_letterOrDigit]*</source>
+        <target state="translated">'configuration.{0}.id' は、letterOrDigit[-_letterOrDigit]* のパターンに従う必要があります</target>
+      </trans-unit>
+      <trans-unit id="invalid.superType.format">
+        <source xml:lang="en">'configuration.{0}.superType' must follow the pattern letterOrDigit[-_letterOrDigit]*</source>
+        <target state="translated">'configuration.{0}.superType' は letterOrDigit[-_letterOrDigit]* というパターンに従う必要があります</target>
+      </trans-unit>
+      <trans-unit id="invalid.description">
+        <source xml:lang="en">'configuration.{0}.description' must be defined and can not be empty</source>
+        <target state="translated">'configuration.{0}.description' を定義する必要があり、空にすることはできません</target>
+      </trans-unit>
+      <trans-unit id="invalid.color">
+        <source xml:lang="en">'configuration.{0}.foreground'  must follow the pattern #RRGGBB[AA]</source>
+        <target state="translated">'configuration.{0}.foreground' はパターン #RRGGBB[AA] に従う必要があります</target>
+      </trans-unit>
+      <trans-unit id="invalid.fontStyle">
+        <source xml:lang="en">'configuration.{0}.fontStyle'  must be one or a combination of  'italic', 'bold' or 'underline' or the empty string</source>
+        <target state="translated">'configuration.{0}.fontStyle' は、'italic'、'bold、'underline'、空の文字列のいずれか 1 つまたはその組み合わせでなければなりません</target>
+      </trans-unit>
+      <trans-unit id="invalid.semanticTokenTypeConfiguration">
+        <source xml:lang="en">'configuration.semanticTokenType' must be an array</source>
+        <target state="translated">'configuration.semanticTokenType' は配列である必要があります</target>
+      </trans-unit>
+      <trans-unit id="invalid.semanticTokenModifierConfiguration">
+        <source xml:lang="en">'configuration.semanticTokenModifier' must be an array</source>
+        <target state="translated">'configuration.semanticTokenModifier' は配列である必要があります</target>
+      </trans-unit>
+      <trans-unit id="invalid.semanticTokenStyleDefaultConfiguration">
+        <source xml:lang="en">'configuration.semanticTokenStyleDefaults' must be an array</source>
+        <target state="translated">'configuration.semanticTokenStyleDefaults' は配列である必要があります</target>
+      </trans-unit>
+      <trans-unit id="invalid.selector">
+        <source xml:lang="en">'configuration.semanticTokenStyleDefaults.selector' must be defined and can not be empty</source>
+        <target state="translated">'configuration.semanticTokenStyleDefaults.selector' は、定義する必要があり、空にすることはできません。</target>
+      </trans-unit>
+      <trans-unit id="invalid.selector.format">
+        <source xml:lang="en">'configuration.semanticTokenStyleDefaults.selector' must be in the form (type|*)(.modifier)*</source>
+        <target state="translated">'configuration.semanticTokenStyleDefaults.selector' は (type|*)(.modifier)* の形式である必要があります</target>
+      </trans-unit>
+      <trans-unit id="invalid.scope">
+        <source xml:lang="en">If defined, 'configuration.semanticTokenStyleDefaults.scope' must be an array of strings</source>
+        <target state="translated">定義されている場合、'configuration.semanticTokenStyleDefaults.scope' は文字列の配列にする必要があります。</target>
+      </trans-unit>
+      <trans-unit id="invalid.selector.parsing">
+        <source xml:lang="en">configuration.semanticTokenStyleDefaults.selector': Problems parsing {0}.</source>
+        <target state="translated">configuration.semanticTokenStyleDefaults.selector': {0} の解析で問題が発生しました。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/browser/workbenchThemeService" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="error.cannotloadtheme">
+        <source xml:lang="en">Unable to load {0}: {1}</source>
+        <target state="translated">{0} を読み込むことができません: {1}</target>
+      </trans-unit>
+      <trans-unit id="colorTheme">
+        <source xml:lang="en">Specifies the color theme used in the workbench.</source>
+        <target state="translated">ワークベンチで使用される配色テーマを指定します。</target>
+      </trans-unit>
+      <trans-unit id="colorThemeError">
+        <source xml:lang="en">Theme is unknown or not installed.</source>
+        <target state="translated">テーマが不明、またはインストールされていません。</target>
+      </trans-unit>
+      <trans-unit id="preferredDarkColorTheme">
+        <source xml:lang="en">Specifies the preferred color theme for dark OS appearance when '{0}' is enabled.</source>
+        <target state="translated">'{0}' が有効な場合に、暗い OS の外観に適した色のテーマを指定します。</target>
+      </trans-unit>
+      <trans-unit id="preferredLightColorTheme">
+        <source xml:lang="en">Specifies the preferred color theme for light OS appearance when '{0}' is enabled.</source>
+        <target state="translated">'{0}' が有効な場合に、ライトな OS の外観に適した色のテーマを指定します。</target>
+      </trans-unit>
+      <trans-unit id="preferredHCColorTheme">
+        <source xml:lang="en">Specifies the preferred color theme used in high contrast mode when '{0}' is enabled.</source>
+        <target state="translated">'{0}' が有効な場合に、ハイ コントラスト モードに適した色のテーマを指定します。</target>
+      </trans-unit>
+      <trans-unit id="detectColorScheme">
+        <source xml:lang="en">If set, automatically switch to the preferred color theme based on the OS appearance.</source>
+        <target state="translated">設定されている場合は、OS の外観に基づいて自動的に優先の配色テーマに切り替わります。</target>
+      </trans-unit>
+      <trans-unit id="iconTheme">
+        <source xml:lang="en">Specifies the icon theme used in the workbench or 'null' to not show any file icons.</source>
+        <target state="translated">ワークベンチで使用するアイコンのテーマを指定します。'null' を指定するとファイル アイコンが表示されなくなります。</target>
+      </trans-unit>
+      <trans-unit id="noIconThemeDesc">
+        <source xml:lang="en">No file icons</source>
+        <target state="translated">ファイル アイコンがありません</target>
+      </trans-unit>
+      <trans-unit id="iconThemeError">
+        <source xml:lang="en">File icon theme is unknown or not installed.</source>
+        <target state="translated">ファイルのアイコン テーマが不明またはインストールされていません。</target>
+      </trans-unit>
+      <trans-unit id="workbenchColors">
+        <source xml:lang="en">Overrides colors from the currently selected color theme.</source>
+        <target state="translated">現在選択している配色テーマで配色を上書きします。</target>
+      </trans-unit>
+      <trans-unit id="editorColors.comments">
+        <source xml:lang="en">Sets the colors and styles for comments</source>
+        <target state="translated">コメントの色とスタイルを設定します</target>
+      </trans-unit>
+      <trans-unit id="editorColors.strings">
+        <source xml:lang="en">Sets the colors and styles for strings literals.</source>
+        <target state="translated">文字列リテラルの色とスタイルを設定します。</target>
+      </trans-unit>
+      <trans-unit id="editorColors.keywords">
+        <source xml:lang="en">Sets the colors and styles for keywords.</source>
+        <target state="translated">キーワードの色とスタイルを設定します。</target>
+      </trans-unit>
+      <trans-unit id="editorColors.numbers">
+        <source xml:lang="en">Sets the colors and styles for number literals.</source>
+        <target state="translated">数値リテラルの色とスタイルを設定します。</target>
+      </trans-unit>
+      <trans-unit id="editorColors.types">
+        <source xml:lang="en">Sets the colors and styles for type declarations and references.</source>
+        <target state="translated">型定義と参照の色とスタイルを設定します。</target>
+      </trans-unit>
+      <trans-unit id="editorColors.functions">
+        <source xml:lang="en">Sets the colors and styles for functions declarations and references.</source>
+        <target state="translated">関数定義と参照の色とスタイルを設定します。</target>
+      </trans-unit>
+      <trans-unit id="editorColors.variables">
+        <source xml:lang="en">Sets the colors and styles for variables declarations and references.</source>
+        <target state="translated">変数定義と参照の色とスタイルを設定します。</target>
+      </trans-unit>
+      <trans-unit id="editorColors.textMateRules">
+        <source xml:lang="en">Sets colors and styles using textmate theming rules (advanced).</source>
+        <target state="translated">textmate テーマ規則 (高度) を使っての色とスタイルを設定します。</target>
+      </trans-unit>
+      <trans-unit id="editorColors">
+        <source xml:lang="en">Overrides editor colors and font style from the currently selected color theme.</source>
+        <target state="translated">現在選択している配色テーマで配色とフォント スタイルを上書きします。</target>
+      </trans-unit>
+      <trans-unit id="editorColorsTokenStyles">
+        <source xml:lang="en">Overrides token color and styles from the currently selected color theme.</source>
+        <target state="translated">現在選択されている色テーマからトークンの色とスタイルをオーバーライドします。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/common/colorThemeSchema" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="schema.token.settings">
+        <source xml:lang="en">Colors and styles for the token.</source>
+        <target state="translated">トークンの色とスタイル。</target>
+      </trans-unit>
+      <trans-unit id="schema.token.foreground">
+        <source xml:lang="en">Foreground color for the token.</source>
+        <target state="translated">トークンの前景色。</target>
+      </trans-unit>
+      <trans-unit id="schema.token.background.warning">
+        <source xml:lang="en">Token background colors are currently not supported.</source>
+        <target state="translated">トークンの背景色は、現在サポートされていません。</target>
+      </trans-unit>
+      <trans-unit id="schema.token.fontStyle">
+        <source xml:lang="en">Font style of the rule: 'italic', 'bold' or 'underline' or a combination. The empty string unsets inherited settings.</source>
+        <target state="translated">ルールのフォント スタイル:  'italic'、'bold'、'underline' のいずれかまたはこれらの組み合わせです。空の文字列は継承された設定を解除します。</target>
+      </trans-unit>
+      <trans-unit id="schema.fontStyle.error">
+        <source xml:lang="en">Font style must be 'italic', 'bold' or 'underline' or a combination or the empty string.</source>
+        <target state="translated">フォント スタイルは 'italic'、'bold'、'underline' もしくはこれらの組み合わせ、または空の文字列である必要があります。</target>
+      </trans-unit>
+      <trans-unit id="schema.token.fontStyle.none">
+        <source xml:lang="en">None (clear inherited style)</source>
+        <target state="translated">なし (継承したスタイルを解除)</target>
+      </trans-unit>
+      <trans-unit id="schema.properties.name">
+        <source xml:lang="en">Description of the rule.</source>
+        <target state="translated">ルールの説明。</target>
+      </trans-unit>
+      <trans-unit id="schema.properties.scope">
+        <source xml:lang="en">Scope selector against which this rule matches.</source>
+        <target state="translated">このルールに一致するスコープ セレクター。</target>
+      </trans-unit>
+      <trans-unit id="schema.workbenchColors">
+        <source xml:lang="en">Colors in the workbench</source>
+        <target state="translated">ワークベンチの色</target>
+      </trans-unit>
+      <trans-unit id="schema.tokenColors.path">
+        <source xml:lang="en">Path to a tmTheme file (relative to the current file).</source>
+        <target state="translated">tmTheme ファイルへのパス (現在のファイルとの相対パス)。</target>
+      </trans-unit>
+      <trans-unit id="schema.colors">
+        <source xml:lang="en">Colors for syntax highlighting</source>
+        <target state="translated">構文の強調表示をする色</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/browser/fileIconThemeStore" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="vscode.extension.contributes.iconThemes">
+        <source xml:lang="en">Contributes file icon themes.</source>
+        <target state="translated">ファイル アイコンのテーマを提供します。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.iconThemes.id">
+        <source xml:lang="en">Id of the icon theme as used in the user settings.</source>
+        <target state="translated">ユーザー設定で使用されるアイコン テーマの ID。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.iconThemes.label">
+        <source xml:lang="en">Label of the icon theme as shown in the UI.</source>
+        <target state="translated">UI に表示されるアイコン テーマのラベル。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.iconThemes.path">
+        <source xml:lang="en">Path of the icon theme definition file. The path is relative to the extension folder and is typically './icons/awesome-icon-theme.json'.</source>
+        <target state="translated">アイコン テーマの定義ファイルのパス。このパスは拡張フォルダーの相対パスであり、通常は './icons/awesome-icon-theme.json' です。</target>
+      </trans-unit>
+      <trans-unit id="reqarray">
+        <source xml:lang="en">Extension point `{0}` must be an array.</source>
+        <target state="translated">拡張点`{0}` は配列でなければなりません。</target>
+      </trans-unit>
+      <trans-unit id="reqpath">
+        <source xml:lang="en">Expected string in `contributes.{0}.path`. Provided value: {1}</source>
+        <target state="translated">`contributes.{0}.path` に文字列が必要です。提供された値: {1}</target>
+      </trans-unit>
+      <trans-unit id="reqid">
+        <source xml:lang="en">Expected string in `contributes.{0}.id`. Provided value: {1}</source>
+        <target state="translated">`contributes.{0}.id` で想定される文字列。指定された値: {1}</target>
+      </trans-unit>
+      <trans-unit id="invalid.path.1">
+        <source xml:lang="en">Expected `contributes.{0}.path` ({1}) to be included inside extension's folder ({2}). This might make the extension non-portable.</source>
+        <target state="translated">拡張機能のフォルダー ({2}) の中に `contributes.{0}.path` ({1}) が含まれている必要があります。これにより拡張を移植できなくなる可能性があります。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/common/colorThemeStore" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="vscode.extension.contributes.themes">
+        <source xml:lang="en">Contributes textmate color themes.</source>
+        <target state="translated">TextMate の配色テーマを提供します。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.id">
+        <source xml:lang="en">Id of the icon theme as used in the user settings.</source>
+        <target state="translated">ユーザー設定で使用されるアイコン テーマの ID。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.label">
+        <source xml:lang="en">Label of the color theme as shown in the UI.</source>
+        <target state="translated">UI で表示される配色テーマのラベル。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.uiTheme">
+        <source xml:lang="en">Base theme defining the colors around the editor: 'vs' is the light color theme, 'vs-dark' is the dark color theme. 'hc-black' is the dark high contrast theme.</source>
+        <target state="translated">エディターの周囲の色を定義する基本テーマ: 'vs' は明るい色のテーマで、'vs-dark' は濃い色のテーマです。'hc-black' は濃い色のハイ コントラストのテーマです。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.path">
+        <source xml:lang="en">Path of the tmTheme file. The path is relative to the extension folder and is typically './themes/themeFile.tmTheme'.</source>
+        <target state="translated">tmTheme ファイルのパス。拡張機能フォルダーに対する相対パスで、通常 './themes/themeFile.tmTheme' です。</target>
+      </trans-unit>
+      <trans-unit id="reqarray">
+        <source xml:lang="en">Extension point `{0}` must be an array.</source>
+        <target state="translated">拡張点`{0}` は配列でなければなりません。</target>
+      </trans-unit>
+      <trans-unit id="reqpath">
+        <source xml:lang="en">Expected string in `contributes.{0}.path`. Provided value: {1}</source>
+        <target state="translated">`contributes.{0}.path` に文字列が必要です。提供された値: {1}</target>
+      </trans-unit>
+      <trans-unit id="invalid.path.1">
+        <source xml:lang="en">Expected `contributes.{0}.path` ({1}) to be included inside extension's folder ({2}). This might make the extension non-portable.</source>
+        <target state="translated">拡張機能のフォルダー ({2}) の中に `contributes.{0}.path` ({1}) が含まれている必要があります。これにより拡張を移植できなくなる可能性があります。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/browser/fileIconThemeData" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="error.cannotparseicontheme">
+        <source xml:lang="en">Problems parsing file icons file: {0}</source>
+        <target state="translated">アイコン ファイルの解析中に問題が発生しました: {0}</target>
+      </trans-unit>
+      <trans-unit id="error.invalidformat">
+        <source xml:lang="en">Invalid format for file icons theme file: Object expected.</source>
+        <target state="translated">ファイル アイコン テーマ ファイルの形式が無効です。オブジェクトが必要です。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/common/fileIconThemeSchema" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="schema.folderExpanded">
+        <source xml:lang="en">The folder icon for expanded folders. The expanded folder icon is optional. If not set, the icon defined for folder will be shown.</source>
+        <target state="translated">折りたたんだフォルダーのフォルダー アイコン。展開したフォルダー アイコンは省略可能です。設定していない場合は、フォルダーに定義したアイコンが表示されます。</target>
+      </trans-unit>
+      <trans-unit id="schema.folder">
+        <source xml:lang="en">The folder icon for collapsed folders, and if folderExpanded is not set, also for expanded folders.</source>
+        <target state="translated">折りたたんだフォルダー、または folderExpanded が設定されていない場合は展開したフォルダーのフォルダー アイコン。</target>
+      </trans-unit>
+      <trans-unit id="schema.file">
+        <source xml:lang="en">The default file icon, shown for all files that don't match any extension, filename or language id.</source>
+        <target state="translated">どの拡張子、ファイル名、または言語 ID とも一致しないファイルすべてに表示される既定のファイル アイコン。</target>
+      </trans-unit>
+      <trans-unit id="schema.folderNames">
+        <source xml:lang="en">Associates folder names to icons. The object key is the folder name, not including any path segments. No patterns or wildcards are allowed. Folder name matching is case insensitive.</source>
+        <target state="translated">フォルダー名をアイコンに関連付けます。オブジェクト キーはフォルダー名ですが、パスの部分は含みません。パターンやワイルドカードは使用できません。フォルダー名の一致では大文字と小文字を区別しません。</target>
+      </trans-unit>
+      <trans-unit id="schema.folderName">
+        <source xml:lang="en">The ID of the icon definition for the association.</source>
+        <target state="translated">関連付けのためのアイコン定義の ID。</target>
+      </trans-unit>
+      <trans-unit id="schema.folderNamesExpanded">
+        <source xml:lang="en">Associates folder names to icons for expanded folders. The object key is the folder name, not including any path segments. No patterns or wildcards are allowed. Folder name matching is case insensitive.</source>
+        <target state="translated">フォルダー名を展開したフォルダーのアイコンに関連付けます。オブジェクト キーはフォルダー名ですが、パスの部分は含みません。パターンやワイルドカードは使用できません。フォルダー名の一致では大文字と小文字を区別しません。</target>
+      </trans-unit>
+      <trans-unit id="schema.folderNameExpanded">
+        <source xml:lang="en">The ID of the icon definition for the association.</source>
+        <target state="translated">関連付けのためのアイコン定義の ID。</target>
+      </trans-unit>
+      <trans-unit id="schema.fileExtensions">
+        <source xml:lang="en">Associates file extensions to icons. The object key is the file extension name. The extension name is the last segment of a file name after the last dot (not including the dot). Extensions are compared case insensitive.</source>
+        <target state="translated">ファイル拡張子をアイコンに関連付けます。オブジェクト キーはファイル拡張子名です。拡張子名は、最後のドットに続くファイル名の最後の部分です (ドットは含みません)。拡張子の比較は大文字と小文字が区別しないで行われます。</target>
+      </trans-unit>
+      <trans-unit id="schema.fileExtension">
+        <source xml:lang="en">The ID of the icon definition for the association.</source>
+        <target state="translated">関連付けのためのアイコン定義の ID。</target>
+      </trans-unit>
+      <trans-unit id="schema.fileNames">
+        <source xml:lang="en">Associates file names to icons. The object key is the full file name, but not including any path segments. File name can include dots and a possible file extension. No patterns or wildcards are allowed. File name matching is case insensitive.</source>
+        <target state="translated">ファイル名をアイコンに関連付けます。オブジェクト キーは完全なファイル名ですが、パスの部分は含みません。ファイル名にはドットおよび可能なファイル拡張子が含まれる場合があります。パターンやワイルドカードは使用できません。ファイル名の一致では大文字と小文字を区別しません。</target>
+      </trans-unit>
+      <trans-unit id="schema.fileName">
+        <source xml:lang="en">The ID of the icon definition for the association.</source>
+        <target state="translated">関連付けのためのアイコン定義の ID。</target>
+      </trans-unit>
+      <trans-unit id="schema.languageIds">
+        <source xml:lang="en">Associates languages to icons. The object key is the language id as defined in the language contribution point.</source>
+        <target state="translated">言語をアイコンに関連付けます。オブジェクト キーは言語のコントリビューション ポイントで定義された言語 ID です。</target>
+      </trans-unit>
+      <trans-unit id="schema.languageId">
+        <source xml:lang="en">The ID of the icon definition for the association.</source>
+        <target state="translated">関連付けのためのアイコン定義の ID。</target>
+      </trans-unit>
+      <trans-unit id="schema.fonts">
+        <source xml:lang="en">Fonts that are used in the icon definitions.</source>
+        <target state="translated">アイコンの定義に使用されるフォント。</target>
+      </trans-unit>
+      <trans-unit id="schema.id">
+        <source xml:lang="en">The ID of the font.</source>
+        <target state="translated">フォントの ID。</target>
+      </trans-unit>
+      <trans-unit id="schema.src">
+        <source xml:lang="en">The location of the font.</source>
+        <target state="translated">フォントの場所。</target>
+      </trans-unit>
+      <trans-unit id="schema.font-path">
+        <source xml:lang="en">The font path, relative to the current icon theme file.</source>
+        <target state="translated">現在のアイコン テーマ ファイルへのフォントの相対パス。</target>
+      </trans-unit>
+      <trans-unit id="schema.font-format">
+        <source xml:lang="en">The format of the font.</source>
+        <target state="translated">The format of the font.</target>
+      </trans-unit>
+      <trans-unit id="schema.font-weight">
+        <source xml:lang="en">The weight of the font.</source>
+        <target state="translated">フォントの太さ。</target>
+      </trans-unit>
+      <trans-unit id="schema.font-sstyle">
+        <source xml:lang="en">The style of the font.</source>
+        <target state="translated">フォント スタイル。</target>
+      </trans-unit>
+      <trans-unit id="schema.font-size">
+        <source xml:lang="en">The default size of the font.</source>
+        <target state="translated">フォントの既定サイズ。</target>
+      </trans-unit>
+      <trans-unit id="schema.iconDefinitions">
+        <source xml:lang="en">Description of all icons that can be used when associating files to icons.</source>
+        <target state="translated">アイコンにファイルを関連付けるときに使用できるすべてのアイコンの説明です。</target>
+      </trans-unit>
+      <trans-unit id="schema.iconDefinition">
+        <source xml:lang="en">An icon definition. The object key is the ID of the definition.</source>
+        <target state="translated">アイコンの定義です。オブジェクト キーは定義の ID です。</target>
+      </trans-unit>
+      <trans-unit id="schema.iconPath">
+        <source xml:lang="en">When using a SVG or PNG: The path to the image. The path is relative to the icon set file.</source>
+        <target state="translated">SVG または PNG を使用する場合: イメージへのパス。アイコン設定ファイルへの相対パスです。</target>
+      </trans-unit>
+      <trans-unit id="schema.fontCharacter">
+        <source xml:lang="en">When using a glyph font: The character in the font to use.</source>
+        <target state="translated">グリフ フォントを使用する場合: 使用するフォントの文字。</target>
+      </trans-unit>
+      <trans-unit id="schema.fontColor">
+        <source xml:lang="en">When using a glyph font: The color to use.</source>
+        <target state="translated">グリフ フォントを使用する場合: 使用する色。</target>
+      </trans-unit>
+      <trans-unit id="schema.fontSize">
+        <source xml:lang="en">When using a font: The font size in percentage to the text font. If not set, defaults to the size in the font definition.</source>
+        <target state="translated">フォントを使用する場合: テキスト フォントに対するフォント サイズの割合。設定されていない場合、既定値はフォント定義のサイズになります。</target>
+      </trans-unit>
+      <trans-unit id="schema.fontId">
+        <source xml:lang="en">When using a font: The id of the font. If not set, defaults to the first font definition.</source>
+        <target state="translated">フォントを使用する場合: フォントの ID。設定されていない場合、最初のフォント定義が既定で設定されます。</target>
+      </trans-unit>
+      <trans-unit id="schema.light">
+        <source xml:lang="en">Optional associations for file icons in light color themes.</source>
+        <target state="translated">明るい配色テーマでのファイル アイコンの任意の関連付け。</target>
+      </trans-unit>
+      <trans-unit id="schema.highContrast">
+        <source xml:lang="en">Optional associations for file icons in high contrast color themes.</source>
+        <target state="translated">ハイ コントラスト配色テーマでのファイル アイコンの任意の関連付け。</target>
+      </trans-unit>
+      <trans-unit id="schema.hidesExplorerArrows">
+        <source xml:lang="en">Configures whether the file explorer's arrows should be hidden when this theme is active.</source>
+        <target state="translated">このテーマがアクティブな時に、エクスプローラーの矢印を非表示にするかどうかを構成します。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/common/colorThemeData" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="error.cannotparsejson">
+        <source xml:lang="en">Problems parsing JSON theme file: {0}</source>
+        <target state="translated">JSON テーマ ファイルの解析中に問題が発生しました: {0}</target>
+      </trans-unit>
+      <trans-unit id="error.invalidformat">
+        <source xml:lang="en">Invalid format for JSON theme file: Object expected.</source>
+        <target state="translated">JSON テーマ ファイルの形式が無効です。オブジェクトが必要です。</target>
+      </trans-unit>
+      <trans-unit id="error.invalidformat.colors">
+        <source xml:lang="en">Problem parsing color theme file: {0}. Property 'colors' is not of type 'object'.</source>
+        <target state="translated">配色テーマ ファイルの解析中に問題が発生しました: {0}。'colors' プロパティは 'object' 型ではありません。</target>
+        <note>{0} will be replaced by a path. Values in quotes should not be translated.</note>
+      </trans-unit>
+      <trans-unit id="error.invalidformat.tokenColors">
+        <source xml:lang="en">Problem parsing color theme file: {0}. Property 'tokenColors' should be either an array specifying colors or a path to a TextMate theme file</source>
+        <target state="translated">配色テーマ ファイルを解析中に問題が発生しました:  {0}。'tokenColors' プロパティには配色を指定した配列、または TextMate テーマ ファイルへのパスを指定してください。</target>
+        <note>{0} will be replaced by a path. Values in quotes should not be translated.</note>
+      </trans-unit>
+      <trans-unit id="error.plist.invalidformat">
+        <source xml:lang="en">Problem parsing tmTheme file: {0}. 'settings' is not array.</source>
+        <target state="translated">tmTheme ファイルの解析中に問題が発生しました: {0}。'settings' は配列ではありません。</target>
+      </trans-unit>
+      <trans-unit id="error.cannotparse">
+        <source xml:lang="en">Problems parsing tmTheme file: {0}</source>
+        <target state="translated">tmTheme ファイルの解析中に問題が発生しました: {0}</target>
+      </trans-unit>
+      <trans-unit id="error.cannotload">
+        <source xml:lang="en">Problems loading tmTheme file {0}: {1}</source>
+        <target state="translated">tmTheme ファイル {0} の読み込み中に問題が発生しました: {1}</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

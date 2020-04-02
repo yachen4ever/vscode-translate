@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="extensions/debug-server-ready/package" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="displayName">
+        <source xml:lang="en">Server Ready Action</source>
+        <target state="translated">Действие при готовности сервера</target>
+      </trans-unit>
+      <trans-unit id="description">
+        <source xml:lang="en">Open URI in browser if server under debugging is ready.</source>
+        <target state="translated">Открыть URI в браузере, если сервер в режиме отладки готов.</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.serverReadyAction.description">
+        <source xml:lang="en">Act upon a URI when a server program under debugging is ready (indicated by sending output of the form 'listening on port 3000' or 'Now listening on: https://localhost:5001' to the debug console.)</source>
+        <target state="translated">Обращается к URI, когда серверное приложение, проходящее отладку, готово (обозначается посредством отправки выходных данных в форме "прослушивается порт 3000" или "сейчас прослушивается: https://localhost:5001" в консоль отладки.)</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.action.description">
+        <source xml:lang="en">What to do with the URI when the server is ready.</source>
+        <target state="translated">Что делать с URI, когда сервер готов.</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.action.openExternally.description">
+        <source xml:lang="en">Open URI externally with the default application.</source>
+        <target state="translated">Открывает URI во внешнем приложении по умолчанию.</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.action.debugWithChrome.description">
+        <source xml:lang="en">Start debugging with the 'Debugger for Chrome'.</source>
+        <target state="translated">Начните отладку с помощью функции "Отладчик для Chrome".</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.pattern.description">
+        <source xml:lang="en">Server is ready if this pattern appears on the debug console. The first capture group must include a URI or a port number.</source>
+        <target state="translated">Сервер готов, если этот шаблон отображается в консоли отладки. Первая группа записи должна включать URI или номер порта.</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.uriFormat.description">
+        <source xml:lang="en">A format string used when constructing the URI from a port number. The first '%s' is substituted with the port number.</source>
+        <target state="translated">Строка формата, используемая при создании URI из номера порта. Первый элемент "%s" заменяется номером порта.</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.webRoot.description">
+        <source xml:lang="en">Value passed to the debug configuration for the 'Debugger for Chrome'.</source>
+        <target state="translated">Значение, передаваемое в конфигурацию отладки для параметра "Отладчик для Chrome".</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/debug-server-ready/dist/extension" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="server.ready.nocapture.error">
+        <source xml:lang="en">Format uri ('{0}') uses a substitution placeholder but pattern did not capture anything.</source>
+        <target state="translated">В URI формата ("{0}") используется заполнитель подстановки, но шаблон ничего не захватил.</target>
+      </trans-unit>
+      <trans-unit id="server.ready.placeholder.error">
+        <source xml:lang="en">Format uri ('{0}') must contain exactly one substitution placeholder.</source>
+        <target state="translated">Формат URI ("{0}") должен содержать ровно один заполнитель подстановки.</target>
+      </trans-unit>
+      <trans-unit id="server.ready.chrome.not.installed">
+        <source xml:lang="en">The action '{0}' requires the '{1}' extension.</source>
+        <target state="translated">Для действия "{0}" требуется расширение "{1}".</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

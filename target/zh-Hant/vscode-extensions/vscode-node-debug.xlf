@@ -1,0 +1,669 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="package" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="extension.description">
+        <source xml:lang="en">Node.js debugging support (versions &lt; 8.0)</source>
+        <target state="translated">Node.js 偵錯支援 (版本 &lt; 8.0)</target>
+      </trans-unit>
+      <trans-unit id="node.label">
+        <source xml:lang="en">Node.js</source>
+        <target state="translated">Node.js</target>
+      </trans-unit>
+      <trans-unit id="open.loaded.script">
+        <source xml:lang="en">Open Loaded Script</source>
+        <target state="translated">開啟已載入的指令碼</target>
+      </trans-unit>
+      <trans-unit id="attach.node.process">
+        <source xml:lang="en">Attach to Node Process</source>
+        <target state="translated">連結到節點處理序</target>
+      </trans-unit>
+      <trans-unit id="toggle.skipping.this.file">
+        <source xml:lang="en">Toggle Skipping this File</source>
+        <target state="translated">略過此檔案</target>
+      </trans-unit>
+      <trans-unit id="start.with.stop.on.entry">
+        <source xml:lang="en">Start Debugging and Stop on Entry</source>
+        <target state="translated">啟動偵錯並停止在進入點</target>
+      </trans-unit>
+      <trans-unit id="smartStep.description">
+        <source xml:lang="en">Automatically step through generated code that cannot be mapped back to the original source.</source>
+        <target state="translated">自動逐步所執行產生無法對應回原始碼的程式碼。</target>
+      </trans-unit>
+      <trans-unit id="skipFiles.description">
+        <source xml:lang="en">An array of glob patterns for files to skip when debugging. The pattern `&lt;node_internals&gt;/**` matches all internal Node.js modules.</source>
+        <target state="translated">偵錯時要跳過的檔案 Glob 模式陣列。該模式 `&lt;node_internals&gt;/**` 會比對所有內部 Node.js 模組。</target>
+      </trans-unit>
+      <trans-unit id="outFiles.description">
+        <source xml:lang="en">If source maps are enabled, these glob patterns specify the generated JavaScript files. If a pattern starts with '!' the files are excluded. If not specified, the generated code is expected in the same directory as its source.  Example: ["${workspaceFolder}/out/**/*.js"]</source>
+        <target state="translated">如果啟用來源對應，這些 Glob 模式會指定產生的 JavaScript 檔案。如果模式以 '!' 開頭，則會排除檔案。如果未指定，產生的程式碼預期會與其來源位於相同目錄中。範例: ["${workspaceFolder}/out/**/*.js"]</target>
+      </trans-unit>
+      <trans-unit id="outDir.deprecationMessage">
+        <source xml:lang="en">Attribute 'outDir' is deprecated, use 'outFiles' instead.</source>
+        <target state="translated">屬性 'outDir' 已取代，請改用 'outFiles'。</target>
+      </trans-unit>
+      <trans-unit id="trace.description">
+        <source xml:lang="en">Produce diagnostic output. Instead of setting this to true you can list one or more selectors separated with commas. The 'verbose' selector enables very detailed output.</source>
+        <target state="translated">產生診斷輸出。您可列出一或多個選取器，並以逗號分隔，而非將此項設為 true。「詳細資訊」選取器可提供非常詳細的輸出。</target>
+      </trans-unit>
+      <trans-unit id="launch.args.description">
+        <source xml:lang="en">Command line arguments passed to the program.</source>
+        <target state="translated">傳遞給程式的命令列引數。</target>
+      </trans-unit>
+      <trans-unit id="debug.node.showUseWslIsDeprecatedWarning.description">
+        <source xml:lang="en">Controls whether to show a warning when the 'useWSL' attribute is used.</source>
+        <target state="translated">控制是否要在 'useWSL' 屬性受到使用時顯示警告。</target>
+      </trans-unit>
+      <trans-unit id="debug.node.useV3.description">
+        <source xml:lang="en">[Experimental] Controls whether to delegate "node"-type launch configs to the js-debug extension.</source>
+        <target state="translated">[實驗性] 控制是否要將 "node"-type 啟動組態委派給 js-debug 延伸模組。</target>
+      </trans-unit>
+      <trans-unit id="node.protocol.description">
+        <source xml:lang="en">Node.js debug protocol to use.</source>
+        <target state="translated">要使用的 Node.js 偵錯通訊協定。</target>
+      </trans-unit>
+      <trans-unit id="node.protocol.auto.description">
+        <source xml:lang="en">Try to detect the best protocol automatically, selecting 'inspector' for launching Node 8.0+</source>
+        <target state="translated">嘗試自動偵測最佳通訊協定，選取 'Inspector' 以啟動 Node 8.0+</target>
+      </trans-unit>
+      <trans-unit id="node.protocol.inspector.description">
+        <source xml:lang="en">New protocol supported by Node.js versions &gt;= 6.3</source>
+        <target state="translated">Node.js 版本 &gt;= 6.3 支援的新通訊協定</target>
+      </trans-unit>
+      <trans-unit id="node.protocol.legacy.description">
+        <source xml:lang="en">Old protocol supported by Node.js versions &lt; 8.0</source>
+        <target state="translated">Node.js 版本 &lt; 8.0 支援的舊通訊協定</target>
+      </trans-unit>
+      <trans-unit id="node.sourceMaps.description">
+        <source xml:lang="en">Use JavaScript source maps (if they exist).</source>
+        <target state="translated">使用 JavaScript 來源對應 (如果存在)。</target>
+      </trans-unit>
+      <trans-unit id="node.stopOnEntry.description">
+        <source xml:lang="en">Automatically stop program after launch.</source>
+        <target state="translated">在啟動後自動停止程式。</target>
+      </trans-unit>
+      <trans-unit id="node.port.description">
+        <source xml:lang="en">Debug port to attach to. Default is 5858.</source>
+        <target state="translated">要附加到的目標偵錯連接埠。預設值為 5858。</target>
+      </trans-unit>
+      <trans-unit id="node.address.description">
+        <source xml:lang="en">TCP/IP address of process to be debugged (for Node.js &gt;= 5.0 only). Default is 'localhost'.</source>
+        <target state="translated">要偵錯的處理序 TCP/IP 位址 (僅限 Node.js &gt;= 5.0)。預設為 'localhost'。</target>
+      </trans-unit>
+      <trans-unit id="node.timeout.description">
+        <source xml:lang="en">Retry for this number of milliseconds to connect to Node.js. Default is 10000 ms.</source>
+        <target state="translated">重試連接到 Node.js 前要等待的毫秒數。預設值為 10000 毫秒。</target>
+      </trans-unit>
+      <trans-unit id="node.restart.description">
+        <source xml:lang="en">Restart session after Node.js has terminated.</source>
+        <target state="translated">在 Node.js 終止後重新啟動工作階段。</target>
+      </trans-unit>
+      <trans-unit id="node.localRoot.description">
+        <source xml:lang="en">Path to the local directory containing the program.</source>
+        <target state="translated">包含程式的本機目錄路徑。</target>
+      </trans-unit>
+      <trans-unit id="node.remoteRoot.description">
+        <source xml:lang="en">Absolute path to the remote directory containing the program.</source>
+        <target state="translated">包含程式的遠端目錄絕對路徑。</target>
+      </trans-unit>
+      <trans-unit id="node.showAsyncStacks.description">
+        <source xml:lang="en">Show the async calls that led to the current call stack. 'inspector' protocol only.</source>
+        <target state="translated">顯示導致目前呼叫堆疊的非同步呼叫。僅限 'inspector' 通訊協定。</target>
+      </trans-unit>
+      <trans-unit id="node.sourceMapPathOverrides.description">
+        <source xml:lang="en">A set of mappings for rewriting the locations of source files from what the sourcemap says, to their locations on disk.</source>
+        <target state="translated">依據 sourcemap 指示重新寫入一組來源檔案位置對應至磁碟上的位置。</target>
+      </trans-unit>
+      <trans-unit id="node.disableOptimisticBPs.description">
+        <source xml:lang="en">Don't set breakpoints in any file until a sourcemap has been loaded for that file.</source>
+        <target state="translated">在任何檔案載入 sourcemap 之前，不要在該檔案中設定中斷點。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.program.description">
+        <source xml:lang="en">Absolute path to the program. Generated value is guessed by looking at package.json and opened files. Edit this attribute.</source>
+        <target state="translated">程式的絕對路徑。透過查看 package.json 及開啟的檔案猜測產生的值。編輯此屬性。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.externalConsole.deprecationMessage">
+        <source xml:lang="en">Attribute 'externalConsole' is deprecated, use 'console' instead.</source>
+        <target state="translated">屬性 'externalConsole' 已取代，請改用 'console'。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.console.description">
+        <source xml:lang="en">Where to launch the debug target.</source>
+        <target state="translated">啟動偵錯目標的位置。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.console.internalConsole.description">
+        <source xml:lang="en">VS Code Debug Console (which doesn't support to read input from a program)</source>
+        <target state="translated">VS Code 偵錯主控台 (無法從程式讀取輸入)</target>
+      </trans-unit>
+      <trans-unit id="node.launch.console.integratedTerminal.description">
+        <source xml:lang="en">VS Code's integrated terminal</source>
+        <target state="translated">VS Code 的整合式終端機</target>
+      </trans-unit>
+      <trans-unit id="node.launch.console.externalTerminal.description">
+        <source xml:lang="en">External terminal that can be configured via user settings</source>
+        <target state="translated">可透過使用者設定進行外部終端機的設定。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.cwd.description">
+        <source xml:lang="en">Absolute path to the working directory of the program being debugged.</source>
+        <target state="translated">程式工作目錄的絕對路徑 (該程式正在進行偵錯)。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.runtimeExecutable.description">
+        <source xml:lang="en">Runtime to use. Either an absolute path or the name of a runtime available on the PATH. If omitted `node` is assumed.</source>
+        <target state="translated">要使用的執行階段。可以是 PATH 上可用執行階段的絕對路徑或名稱。若省略，即假設為 `node`。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.runtimeArgs.description">
+        <source xml:lang="en">Optional arguments passed to the runtime executable.</source>
+        <target state="translated">傳遞給執行階段可執行檔的選擇性引數。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.runtimeVersion.description">
+        <source xml:lang="en">Version of `node` runtime to use. Requires `nvm`.</source>
+        <target state="translated">'node' 版本的執行階段使用中。需要 `nvm`。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.env.description">
+        <source xml:lang="en">Environment variables passed to the program. The value `null` removes the variable from the environment.</source>
+        <target state="translated">已將環境變數傳遞到程式。值 `null` 從環境變數中移除變數。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.envFile.description">
+        <source xml:lang="en">Absolute path to a file containing environment variable definitions.</source>
+        <target state="translated">包含環境變數定義之檔案的絕對路徑。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.useWSL.description">
+        <source xml:lang="en">Use Windows Subsystem for Linux.</source>
+        <target state="translated">使用 Windows 子系統 Linux 版。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.useWSL.deprecation">
+        <source xml:lang="en">'useWSL' is deprecated and support for it will be dropped. Use the 'Remote - WSL' extension instead.</source>
+        <target state="translated">'useWSL' 已淘汰且其支援將受到捨棄。請改為使用 'Remote - WSL' 延伸模組。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.outputCapture.description">
+        <source xml:lang="en">From where to capture output messages: The debug API, or stdout/stderr streams.</source>
+        <target state="translated">從該處擷取輸出訊息: 偵錯 API 或 StdOut/STDERR 資料流。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.autoAttachChildProcesses.description">
+        <source xml:lang="en">Attach debugger to new child processes automatically.</source>
+        <target state="translated">自動附加偵錯工具至新的子處理序。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.config.name">
+        <source xml:lang="en">Launch</source>
+        <target state="translated">啟動</target>
+      </trans-unit>
+      <trans-unit id="node.attach.processId.description">
+        <source xml:lang="en">ID of process to attach to.</source>
+        <target state="translated">要附加的處理序識別碼。</target>
+      </trans-unit>
+      <trans-unit id="node.attach.config.name">
+        <source xml:lang="en">Attach</source>
+        <target state="translated">附加</target>
+      </trans-unit>
+      <trans-unit id="node.processattach.config.name">
+        <source xml:lang="en">Attach to Process</source>
+        <target state="translated">附加至處理序</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.launch.label">
+        <source xml:lang="en">Node.js: Launch Program</source>
+        <target state="translated">Node.js: 啟動程式</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.launch.description">
+        <source xml:lang="en">Launch a node program in debug mode</source>
+        <target state="translated">在偵錯模式中啟動節點程式</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.npm.label">
+        <source xml:lang="en">Node.js: Launch via NPM</source>
+        <target state="translated">Node.js: 透過 NPM 啟動</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.npm.description">
+        <source xml:lang="en">Launch a node program through an npm `debug` script</source>
+        <target state="translated">透過 npm `debug` 指令碼啟動節點程式</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.attach.label">
+        <source xml:lang="en">Node.js: Attach</source>
+        <target state="translated">Node.js: 附加</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.attach.description">
+        <source xml:lang="en">Attach to a running node program</source>
+        <target state="translated">附加至Node處理程序</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.remoteattach.label">
+        <source xml:lang="en">Node.js: Attach to Remote Program</source>
+        <target state="translated">Node.js: 附加到遠端程式</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.remoteattach.description">
+        <source xml:lang="en">Attach to the debug port of a remote node program</source>
+        <target state="translated">附加到遠端節點程式的偵錯連接埠</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.attachProcess.label">
+        <source xml:lang="en">Node.js: Attach to Process</source>
+        <target state="translated">Node.js: 連結到處理序</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.attachProcess.description">
+        <source xml:lang="en">Open process picker to select node process to attach to</source>
+        <target state="translated">開啟處理序選擇器以選取要連結的目標節點處理序</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.nodemon.label">
+        <source xml:lang="en">Node.js: Nodemon Setup</source>
+        <target state="translated">Node.js: Nodemon 設定</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.nodemon.description">
+        <source xml:lang="en">Use nodemon to relaunch a debug session on source changes</source>
+        <target state="translated">使用 nodemon 在來源變更時重新啟動偵錯工作階段</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.mocha.label">
+        <source xml:lang="en">Node.js: Mocha Tests</source>
+        <target state="translated">Node.js: Mocha 測試</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.mocha.description">
+        <source xml:lang="en">Debug mocha tests</source>
+        <target state="translated">對 mocha 測試偵錯</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.yo.label">
+        <source xml:lang="en">Node.js: Yeoman generator</source>
+        <target state="translated">Node.js: Yeoman 產生器</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.yo.description">
+        <source xml:lang="en">Debug yeoman generator (install by running `npm link` in project folder)</source>
+        <target state="translated">偵錯 Yeoman 產生器 (透過執行專案資料夾中的 `npm link` 進行安裝)</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.gulp.label">
+        <source xml:lang="en">Node.js: Gulp task</source>
+        <target state="translated">Node.js: Gulp 工作</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.gulp.description">
+        <source xml:lang="en">Debug gulp task (make sure to have a local gulp installed in your project)</source>
+        <target state="translated">對 Gulp 工作偵錯 (確認您的專案中已安裝本機 Gulp)</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.electron.label">
+        <source xml:lang="en">Node.js: Electron Main</source>
+        <target state="translated">Node.js: Electron 主要</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.electron.description">
+        <source xml:lang="en">Debug the Electron main process</source>
+        <target state="translated">對 Electron 主要處理序偵錯</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="dist/node/nodeDebug" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="setVariable.error">
+        <source xml:lang="en">Setting value not supported</source>
+        <target state="translated">不支援設定值</target>
+      </trans-unit>
+      <trans-unit id="exception.paused.promise.rejection">
+        <source xml:lang="en">Paused on Promise Rejection</source>
+        <target state="translated">承諾(Promise)拒絕時暫停</target>
+      </trans-unit>
+      <trans-unit id="exception.promise.rejection.text">
+        <source xml:lang="en">Promise Rejection ({0})</source>
+        <target state="translated">承諾 (Promise) 拒絕 ({0})</target>
+      </trans-unit>
+      <trans-unit id="exception.promise.rejection">
+        <source xml:lang="en">Promise Rejection</source>
+        <target state="translated">承諾 (Promise) 拒絕</target>
+      </trans-unit>
+      <trans-unit id="reason.description.step">
+        <source xml:lang="en">Paused on step</source>
+        <target state="translated">已在步驟時暫停</target>
+      </trans-unit>
+      <trans-unit id="reason.description.breakpoint">
+        <source xml:lang="en">Paused on breakpoint</source>
+        <target state="translated">已在中斷點暫停</target>
+      </trans-unit>
+      <trans-unit id="reason.description.exception">
+        <source xml:lang="en">Paused on exception</source>
+        <target state="translated">已在發生例外狀況時暫停</target>
+      </trans-unit>
+      <trans-unit id="reason.description.user_request">
+        <source xml:lang="en">Paused on user request</source>
+        <target state="translated">已在使用者要求時暫停</target>
+      </trans-unit>
+      <trans-unit id="reason.description.entry">
+        <source xml:lang="en">Paused on entry</source>
+        <target state="translated">已在輸入時暫停</target>
+      </trans-unit>
+      <trans-unit id="reason.description.debugger_statement">
+        <source xml:lang="en">Paused on debugger statement</source>
+        <target state="translated">已在偵錯工具陳述式暫停</target>
+      </trans-unit>
+      <trans-unit id="reason.description.restart">
+        <source xml:lang="en">Paused on frame entry</source>
+        <target state="translated">已在框架輸入時暫停</target>
+      </trans-unit>
+      <trans-unit id="exceptions.all">
+        <source xml:lang="en">All Exceptions</source>
+        <target state="translated">所有例外狀況</target>
+      </trans-unit>
+      <trans-unit id="exceptions.uncaught">
+        <source xml:lang="en">Uncaught Exceptions</source>
+        <target state="translated">未攔截的例外狀況</target>
+      </trans-unit>
+      <trans-unit id="exceptions.rejects">
+        <source xml:lang="en">Promise Rejects</source>
+        <target state="translated">承諾 (Promise) 拒絕</target>
+      </trans-unit>
+      <trans-unit id="VSND2028">
+        <source xml:lang="en">Unknown console type '{0}'.</source>
+        <target state="translated">未知的主控台類型 '{0}'。</target>
+      </trans-unit>
+      <trans-unit id="attribute.wls.not.exist">
+        <source xml:lang="en">Cannot find Windows Subsystem Linux installation</source>
+        <target state="translated">找不到 Windows Subsystem Linux 安裝</target>
+      </trans-unit>
+      <trans-unit id="VSND2001">
+        <source xml:lang="en">Cannot find runtime '{0}' on PATH. Make sure to have '{0}' installed.</source>
+        <target state="translated">在 PATH 找不到執行階段 '{0}'.請確認{0}是否已安裝.</target>
+      </trans-unit>
+      <trans-unit id="program.path.case.mismatch.warning">
+        <source xml:lang="en">Program path uses differently cased character as file on disk; this might result in breakpoints not being hit.</source>
+        <target state="translated">程式路徑使用大小寫相異的字元作為磁碟上的文件，這可能導致無法叫用中斷點。</target>
+      </trans-unit>
+      <trans-unit id="VSND2002">
+        <source xml:lang="en">Cannot launch program '{0}'; configuring source maps might help.</source>
+        <target state="translated">無法啟動程式 '{0}'; 設定來源對應可有所幫助。</target>
+      </trans-unit>
+      <trans-unit id="VSND2009">
+        <source xml:lang="en">Cannot launch program '{0}' because corresponding JavaScript cannot be found.</source>
+        <target state="translated">因為找不到對應的 JavaScript，所以無法啟動程式 '{0}'。</target>
+      </trans-unit>
+      <trans-unit id="VSND2003">
+        <source xml:lang="en">Cannot launch program '{0}'; setting the '{1}' attribute might help.</source>
+        <target state="translated">無法啟動程式 '{0}'。設定 '{1}' 屬性可能會有幫助。</target>
+      </trans-unit>
+      <trans-unit id="VSND2029">
+        <source xml:lang="en">Can't load environment variables from file ({0}).</source>
+        <target state="translated">無法從檔案 ({0}) 載入環境變數。</target>
+      </trans-unit>
+      <trans-unit id="node.console.title">
+        <source xml:lang="en">Node Debug Console</source>
+        <target state="translated">節點偵錯主控台</target>
+      </trans-unit>
+      <trans-unit id="VSND2011">
+        <source xml:lang="en">Cannot launch debug target in terminal ({0}).</source>
+        <target state="translated">無法在終端機 ({0}) 啟動偵錯目標。</target>
+      </trans-unit>
+      <trans-unit id="VSND2017">
+        <source xml:lang="en">Cannot launch debug target ({0}).</source>
+        <target state="translated">無法啟動偵錯目標 ({0})。</target>
+      </trans-unit>
+      <trans-unit id="VSND2010">
+        <source xml:lang="en">Cannot connect to runtime process (reason: {0}).</source>
+        <target state="translated">無法連接至執行階段流程 (原因: {0})。</target>
+      </trans-unit>
+      <trans-unit id="VSND2033">
+        <source xml:lang="en">Cannot connect to runtime; make sure that runtime is in 'legacy' debug mode.</source>
+        <target state="translated">無法連線至執行階段; 請確定執行階段處於 'legacy' 偵錯模式。 </target>
+      </trans-unit>
+      <trans-unit id="VSND2034">
+        <source xml:lang="en">Cannot connect to runtime via 'legacy' protocol; try to use 'inspector' protocol.</source>
+        <target state="translated">無法透過 'legacy' 通訊協定連線到執行階段; 嘗試使用 'inspector' 通訊協定 。</target>
+      </trans-unit>
+      <trans-unit id="file.on.disk.changed">
+        <source xml:lang="en">Unverified because file on disk has changed. Please restart debug session.</source>
+        <target state="translated">因為磁碟上的檔案已變更，所以未驗證。請重新啟動偵錯工作階段。</target>
+      </trans-unit>
+      <trans-unit id="VSND2019">
+        <source xml:lang="en">Internal module {0} not found.</source>
+        <target state="translated">找不到內部模組 {0}。</target>
+      </trans-unit>
+      <trans-unit id="sourcemapping.fail.message">
+        <source xml:lang="en">Breakpoint ignored because generated code not found (source map problem?).</source>
+        <target state="translated">因為找不到產生的程式碼 (來源對應問題?)，所以忽略中斷點。</target>
+      </trans-unit>
+      <trans-unit id="VSND2022">
+        <source xml:lang="en">No call stack because program paused outside of JavaScript.</source>
+        <target state="translated">程式在 JavaScript 外部暫停，因此沒有呼叫堆疊。</target>
+      </trans-unit>
+      <trans-unit id="VSND2023">
+        <source xml:lang="en">No call stack available.</source>
+        <target state="translated">沒有可用的呼叫堆疊。</target>
+      </trans-unit>
+      <trans-unit id="VSND2018">
+        <source xml:lang="en">No call stack available ({_command}: {_error}).</source>
+        <target state="translated">沒有可用的呼叫堆疊 ({_command}: {_error})。</target>
+      </trans-unit>
+      <trans-unit id="origin.from.node">
+        <source xml:lang="en">read-only content from Node.js</source>
+        <target state="translated">Node.js 中的唯讀內容</target>
+      </trans-unit>
+      <trans-unit id="origin.from.remote.node">
+        <source xml:lang="en">read-only content from remote Node.js</source>
+        <target state="translated">遠端 Node.js 中的唯讀內容</target>
+      </trans-unit>
+      <trans-unit id="origin.core.module">
+        <source xml:lang="en">read-only core module</source>
+        <target state="translated">唯讀核心模組</target>
+      </trans-unit>
+      <trans-unit id="source.skipFiles">
+        <source xml:lang="en">skipped due to 'skipFiles'</source>
+        <target state="translated">因為 'skipFiles' 而跳過</target>
+      </trans-unit>
+      <trans-unit id="source.smartstep">
+        <source xml:lang="en">skipped due to 'smartStep'</source>
+        <target state="translated">因為 'smartStep' 而跳過</target>
+      </trans-unit>
+      <trans-unit id="origin.inlined.source.map">
+        <source xml:lang="en">read-only inlined content from source map</source>
+        <target state="translated">來源地圖中的唯讀內嵌內容</target>
+      </trans-unit>
+      <trans-unit id="anonymous.function">
+        <source xml:lang="en">(anonymous function)</source>
+        <target state="translated">(匿名函式)</target>
+      </trans-unit>
+      <trans-unit id="scope.local.with.count">
+        <source xml:lang="en">Local ({0} of {1})</source>
+        <target state="translated">本機 ({0} / {1})</target>
+        <note>https://github.com/Microsoft/vscode/issues/4569</note>
+      </trans-unit>
+      <trans-unit id="scope.unknown">
+        <source xml:lang="en">Unknown Scope Type: {0}</source>
+        <target state="translated">未知的範圍類型: {0}</target>
+      </trans-unit>
+      <trans-unit id="scope.exception">
+        <source xml:lang="en">Exception</source>
+        <target state="translated">例外狀況</target>
+        <note>https://github.com/Microsoft/vscode/issues/4569</note>
+      </trans-unit>
+      <trans-unit id="eval.not.available">
+        <source xml:lang="en">not available</source>
+        <target state="translated">無法使用</target>
+      </trans-unit>
+      <trans-unit id="eval.invalid.expression">
+        <source xml:lang="en">invalid expression: {0}</source>
+        <target state="translated">運算式無效: {0}</target>
+      </trans-unit>
+      <trans-unit id="source.not.found">
+        <source xml:lang="en">Could not retrieve content.</source>
+        <target state="translated">無法擷取內容。</target>
+      </trans-unit>
+      <trans-unit id="attribute.path.not.exist">
+        <source xml:lang="en">Attribute '{0}' does not exist ('{1}').</source>
+        <target state="translated">屬性 '{0}' 不存在 ('{1}')。</target>
+      </trans-unit>
+      <trans-unit id="attribute.path.not.absolute">
+        <source xml:lang="en">Attribute '{0}' is not absolute ('{1}'); consider adding '{2}' as a prefix to make it absolute.</source>
+        <target state="translated">屬性 '{0}' 非絕對值 ('{1}')，請考慮加入 '{2}' 作為前置詞，使其成為絕對值。</target>
+      </trans-unit>
+      <trans-unit id="more.information">
+        <source xml:lang="en">More Information</source>
+        <target state="translated">詳細資訊</target>
+      </trans-unit>
+      <trans-unit id="VSND2015">
+        <source xml:lang="en">Request '{_request}' was cancelled because Node.js is unresponsive.</source>
+        <target state="translated">已取消要求 '{_request}'，因為 Node.js 沒有回應。</target>
+      </trans-unit>
+      <trans-unit id="VSND2016">
+        <source xml:lang="en">Node.js did not respond to request '{_request}' in a reasonable amount of time.</source>
+        <target state="translated">Node.js 未在合理時間內回應要求 '{_request}'。</target>
+      </trans-unit>
+      <trans-unit id="scope.global">
+        <source xml:lang="en">Global</source>
+        <target state="translated">GLOBAL</target>
+        <note>https://github.com/Microsoft/vscode/issues/4569</note>
+      </trans-unit>
+      <trans-unit id="scope.local">
+        <source xml:lang="en">Local</source>
+        <target state="translated">LOCAL</target>
+        <note>https://github.com/Microsoft/vscode/issues/4569</note>
+      </trans-unit>
+      <trans-unit id="scope.with">
+        <source xml:lang="en">With</source>
+        <target state="translated">與</target>
+        <note>https://github.com/Microsoft/vscode/issues/4569</note>
+      </trans-unit>
+      <trans-unit id="scope.closure">
+        <source xml:lang="en">Closure</source>
+        <target state="translated">關閉</target>
+        <note>https://github.com/Microsoft/vscode/issues/4569</note>
+      </trans-unit>
+      <trans-unit id="scope.catch">
+        <source xml:lang="en">Catch</source>
+        <target state="translated">Catch</target>
+        <note>https://github.com/Microsoft/vscode/issues/4569</note>
+      </trans-unit>
+      <trans-unit id="scope.block">
+        <source xml:lang="en">Block</source>
+        <target state="translated">區塊</target>
+        <note>https://github.com/Microsoft/vscode/issues/4569</note>
+      </trans-unit>
+      <trans-unit id="scope.script">
+        <source xml:lang="en">Script</source>
+        <target state="translated">指令碼</target>
+        <note>https://github.com/Microsoft/vscode/issues/4569</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="dist/node/nodeV8Protocol" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="not.connected">
+        <source xml:lang="en">not connected to runtime</source>
+        <target state="translated">未連接至執行階段</target>
+      </trans-unit>
+      <trans-unit id="runtime.unresponsive">
+        <source xml:lang="en">cancelled because Node.js is unresponsive</source>
+        <target state="translated">已取消，因為 Node.js 沒有回應</target>
+      </trans-unit>
+      <trans-unit id="runtime.timeout">
+        <source xml:lang="en">timeout after {0} ms</source>
+        <target state="translated">{0} 毫秒後逾時</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="dist/node/extension/autoAttach" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="process.with.pid.label">
+        <source xml:lang="en">Auto attached ({0})</source>
+        <target state="translated">已自動附加 ({0})</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="dist/node/extension/cluster" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="child.process.with.pid.label">
+        <source xml:lang="en">Child process {0}</source>
+        <target state="translated">子處理序 {0}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="dist/node/extension/configurationProvider" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="program.not.found.message">
+        <source xml:lang="en">Cannot find a program to debug</source>
+        <target state="translated">找不到要偵錯的程式</target>
+      </trans-unit>
+      <trans-unit id="useWslDeprecationWarning.title">
+        <source xml:lang="en">Attribute 'useWSL' is deprecated. Please use the 'Remote WSL' extension instead. Click [here]({0}) to learn more.</source>
+        <target state="translated">已取代屬性 'useWSL'。請改用 'Remote WSL' 延伸模組。若要深入了解，請按一下 [這裡]({0})。</target>
+      </trans-unit>
+      <trans-unit id="useWslDeprecationWarning.doNotShowAgain">
+        <source xml:lang="en">Don't Show Again</source>
+        <target state="translated">不要再顯示</target>
+      </trans-unit>
+      <trans-unit id="NVS_HOME.not.found.message">
+        <source xml:lang="en">Attribute 'runtimeVersion' requires Node.js version manager 'nvs'.</source>
+        <target state="translated">屬性 'runtimeVersion' 需要 Node.js 版本管理員 'nvs'。</target>
+      </trans-unit>
+      <trans-unit id="NVM_HOME.not.found.message">
+        <source xml:lang="en">Attribute 'runtimeVersion' requires Node.js version manager 'nvm-windows' or 'nvs'.</source>
+        <target state="translated">屬性 'runtimeVersion' 需要 Node.js 版本管理員 'nvm-windows' 或 'nvs'。</target>
+      </trans-unit>
+      <trans-unit id="NVM_DIR.not.found.message">
+        <source xml:lang="en">Attribute 'runtimeVersion' requires Node.js version manager 'nvm' or 'nvs'.</source>
+        <target state="translated">屬性 'runtimeVersion' 需要 Node.js 版本管理員 'nvm' 或 'nvs'。</target>
+      </trans-unit>
+      <trans-unit id="runtime.version.not.found.message">
+        <source xml:lang="en">Node.js version '{0}' not installed for '{1}'.</source>
+        <target state="translated">未為 '{1}' 安裝 Node.js '{0}' 版。</target>
+      </trans-unit>
+      <trans-unit id="node.launch.config.name">
+        <source xml:lang="en">Launch Program</source>
+        <target state="translated">啟動程式</target>
+      </trans-unit>
+      <trans-unit id="mern.starter.explanation">
+        <source xml:lang="en">Launch configuration for '{0}' project created.</source>
+        <target state="translated">為建立的 '{0}' 專案啟動組態。</target>
+        <note>argument contains product name without translation</note>
+      </trans-unit>
+      <trans-unit id="program.guessed.from.package.json.explanation">
+        <source xml:lang="en">Launch configuration created based on 'package.json'.</source>
+        <target state="translated">根據 'package.json' 啟動建立的組態。</target>
+      </trans-unit>
+      <trans-unit id="outFiles.explanation">
+        <source xml:lang="en">Adjust glob pattern(s) in the 'outFiles' attribute so that they cover the generated JavaScript.</source>
+        <target state="translated">調整 'outFiles' 屬性中的 Glob 模式，讓模式涵蓋所產生的 JavaScript。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="dist/node/extension/processPicker" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="pid.error">
+        <source xml:lang="en">Attach to process: cannot put process '{0}' in debug mode.</source>
+        <target state="translated">附加至處理序: 無法在偵錯模式下放入處理序 "{0}"。</target>
+      </trans-unit>
+      <trans-unit id="process.id.error">
+        <source xml:lang="en">Attach to process: '{0}' doesn't look like a process id.</source>
+        <target state="translated">附加至處理序: '{0}' 看起來不像處理序識別碼。</target>
+      </trans-unit>
+      <trans-unit id="pickNodeProcess">
+        <source xml:lang="en">Pick the node.js process to attach to</source>
+        <target state="translated">挑選附加目標 node.js 處理序</target>
+      </trans-unit>
+      <trans-unit id="process.picker.error">
+        <source xml:lang="en">Process picker failed ({0})</source>
+        <target state="translated">處理序選擇器失敗 ({0})</target>
+      </trans-unit>
+      <trans-unit id="process.id.port">
+        <source xml:lang="en">process id: {0}, debug port: {1}</source>
+        <target state="translated">處理序 id: {0}, 偵錯埠: {1}</target>
+      </trans-unit>
+      <trans-unit id="process.id.port.legacy">
+        <source xml:lang="en">process id: {0}, debug port: {1} (legacy protocol)</source>
+        <target state="translated">處理序 id: {0}, 偵錯埠: {1} (傳統通訊協定)</target>
+      </trans-unit>
+      <trans-unit id="process.id.port.signal">
+        <source xml:lang="en">process id: {0}, debug port: {1} ({2})</source>
+        <target state="translated">處理序 id: {0}, 偵錯埠: {1} ({2})</target>
+      </trans-unit>
+      <trans-unit id="process.id.signal">
+        <source xml:lang="en">process id: {0} ({1})</source>
+        <target state="translated">處理序 id: {0} ({1})</target>
+      </trans-unit>
+      <trans-unit id="cannot.enable.debug.mode.error">
+        <source xml:lang="en">Attach to process: cannot enable debug mode for process '{0}' ({1}).</source>
+        <target state="translated">附加至處理序: 無法啟用處理序 '{0}' ({1}) 的偵錯模式。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="dist/node/extension/protocolDetection" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="protocol.switch.legacy.detected">
+        <source xml:lang="en">Debugging with legacy protocol because it was detected.</source>
+        <target state="translated">因為偵測到了舊版通訊協定，所以使用該通訊協定進行偵錯。</target>
+      </trans-unit>
+      <trans-unit id="protocol.switch.unknown.error">
+        <source xml:lang="en">Debugging with inspector protocol because Node.js version could not be determined ({0})</source>
+        <target state="translated">因為無法判斷 Node.js 版本 ({0})，所以正在以檢查通訊協定偵錯</target>
+      </trans-unit>
+      <trans-unit id="protocol.switch.legacy.version">
+        <source xml:lang="en">Debugging with legacy protocol because Node.js {0} was detected.</source>
+        <target state="translated">因為偵測到 Node.js {0}，所以使用傳統通訊協定進行偵錯。</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

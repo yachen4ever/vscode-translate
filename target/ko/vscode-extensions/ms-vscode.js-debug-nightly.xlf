@@ -1,0 +1,560 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="extensions/ms-vscode.js-debug-nightly/package" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="add.browser.breakpoint">
+        <source xml:lang="en">Add Browser Breakpoint</source>
+        <target state="translated">브라우저 중단점 추가</target>
+      </trans-unit>
+      <trans-unit id="attach.node.process">
+        <source xml:lang="en">Attach to Node Process (preview)</source>
+        <target state="translated">노드 프로세스에 연결(미리 보기)</target>
+      </trans-unit>
+      <trans-unit id="browser.address.description">
+        <source xml:lang="en">TCP/IP address of debug port</source>
+        <target state="translated">디버깅 포트에 대한 TCP/IP 주소</target>
+      </trans-unit>
+      <trans-unit id="browser.baseUrl.description">
+        <source xml:lang="en">Base URL to resolve paths baseUrl. baseURL is trimmed when mapping URLs to the files on disk. Defaults to the launch URL domain.</source>
+        <target state="translated">경로 baseUrl을 확인할 기본 URL입니다. 디스크의 파일에 URL을 매핑할 때 baseURL이 잘립니다. 기본값은 시작 URL 도메인입니다.</target>
+      </trans-unit>
+      <trans-unit id="browser.cwd.description">
+        <source xml:lang="en">Optional working directory for the runtime executable.</source>
+        <target state="translated">런타임 실행 파일에 대한 선택적 작업 디렉터리입니다.</target>
+      </trans-unit>
+      <trans-unit id="browser.disableNetworkCache.description">
+        <source xml:lang="en">Controls whether to skip the network cache for each request</source>
+        <target state="translated">매 요청에 대해 네트워크 캐시를 건너뛸지를 제어합니다.</target>
+      </trans-unit>
+      <trans-unit id="browser.env.description">
+        <source xml:lang="en">Optional dictionary of environment key/value pairs for the browser.</source>
+        <target state="translated">브라우저용 환경 키/값 쌍의 선택적 사전입니다.</target>
+      </trans-unit>
+      <trans-unit id="browser.file.description">
+        <source xml:lang="en">A local html file to open in the browser</source>
+        <target state="translated">브라우저에서 열 로컬 html 파일</target>
+      </trans-unit>
+      <trans-unit id="browser.inspectUri.description">
+        <source xml:lang="en">Format to use to rewrite the inspectUri: It's a template string that interpolates keys in `{curlyBraces}`. Available keys are:
+ - `url.*` is the parsed address of the running application. For instance, `{url.port}`, `{url.hostname}`
+ - `port` is the debug port that Chrome is listening on.
+ - `browserInspectUri` is the inspector URI on the launched browser
+ - `wsProtocol` is the hinted websocket protocol. This is set to `wss` if the original URL is `https`, or `ws` otherwise.
+</source>
+        <target state="translated">inspectUri를 재작성하는 데 사용할 형식: `{curlyBraces}`의 키를 보간하는 템플릿 문자열입니다. 사용 가능한 키는 다음과 같습니다.
+ - `url.*`는 실행 중인 애플리케이션의 구문 분석된 주소입니다. 예: `{url.port}`, `{url.hostname}`
+ - `port`는 Chrome에서 수신하는 디버그 포트입니다.
+ - `browserInspectUri`는 시작된 브라우저의 검사기 URI입니다.
+ - `wsProtocol`은 힌트 WebSocket 프로토콜입니다. 원래 URL이 `https`인 경우 `wss`로 설정되고, 그렇지 않은 경우 `ws`로 설정됩니다.</target>
+      </trans-unit>
+      <trans-unit id="browser.pathMapping.description">
+        <source xml:lang="en">A mapping of URLs/paths to local folders, to resolve scripts in the Browser to scripts on disk</source>
+        <target state="translated">로컬 폴더의 URL/경로 매핑, 브라우저에서 스크립트를 디스크의 스크립트로 확인</target>
+      </trans-unit>
+      <trans-unit id="browser.port.description">
+        <source xml:lang="en">Port to use for remote debugging the browser.</source>
+        <target state="translated">브라우저를 원격 디버그하는 데 사용하는 포트입니다.</target>
+      </trans-unit>
+      <trans-unit id="browser.runtimeArgs.description">
+        <source xml:lang="en">Optional arguments passed to the runtime executable.</source>
+        <target state="translated">선택적 인수가 런타임 실행 파일에 전달되었습니다.</target>
+      </trans-unit>
+      <trans-unit id="browser.runtimeExecutable.description">
+        <source xml:lang="en">Either 'canary', 'stable', 'custom' or path to the browser executable. Custom means a custom wrapper, custom build or CHROME_PATH environment variable.</source>
+        <target state="translated">'canary', 'stable', 'custom', 브라우저 실행 파일의 경로 중 하나입니다. 사용자 지정은 사용자 지정 래퍼, 사용자 지정 빌드 또는 CHROME_PATH 환경 변수를 의미합니다.</target>
+      </trans-unit>
+      <trans-unit id="browser.server.description">
+        <source xml:lang="en">Configures a web server to start up. Takes the same configuration as the 'node' launch task.</source>
+        <target state="translated">시작할 웹 서버를 구성합니다. '노드' 시작 작업과 동일한 구성을 수행합니다.</target>
+      </trans-unit>
+      <trans-unit id="browser.skipFiles.description">
+        <source xml:lang="en">An array of file or folder names, or path globs, to skip when debugging.</source>
+        <target state="translated">디버그할 때 건너뛸 파일이나 폴더 이름 또는 경로 GLOB의 배열입니다.</target>
+      </trans-unit>
+      <trans-unit id="browser.smartStep.description">
+        <source xml:lang="en">Automatically step through unmapped lines in sourcemapped files. For example, code that TypeScript produces automatically when downcompiling async/await or other features.</source>
+        <target state="translated">소스 매핑된 파일에서 매핑되지 않은 줄을 단계별로 자동 실행합니다. 예를 들어 비동기/대기 또는 기타 기능을 다운 컴파일할 때 TypeScript가 자동으로 생성하는 코드입니다.</target>
+      </trans-unit>
+      <trans-unit id="browser.sourceMapPathOverrides.description">
+        <source xml:lang="en">A set of mappings for rewriting the locations of source files from what the sourcemap says, to their locations on disk. See README for details.</source>
+        <target state="translated">소스맵의 정보로부터 디스크의 위치로 소스 파일 위치를 다시 쓰기 위한 매핑 세트입니다. README에서 자세한 정보를 참조하세요.</target>
+      </trans-unit>
+      <trans-unit id="browser.sourceMaps.description">
+        <source xml:lang="en">Use JavaScript source maps (if they exist).</source>
+        <target state="translated">JavaScript 소스 맵을 사용합니다(있는 경우에만).</target>
+      </trans-unit>
+      <trans-unit id="browser.timeout.description">
+        <source xml:lang="en">Retry for this number of milliseconds to connect to the browser. Default is 10000 ms.</source>
+        <target state="translated">이 밀리초 동안 브라우저에 연결을 다시 시도합니다. 기본값은 10000ms입니다.</target>
+      </trans-unit>
+      <trans-unit id="browser.url.description">
+        <source xml:lang="en">Will search for a tab with this exact url and attach to it, if found</source>
+        <target state="translated">이 정확한 URL이 있는 탭을 검색하고 탭을 찾으면 연결합니다.</target>
+      </trans-unit>
+      <trans-unit id="browser.urlFilter.description">
+        <source xml:lang="en">Will search for a page with this url and attach to it, if found. Can have * wildcards.</source>
+        <target state="translated">이 url로 페이지를 검색하고 찾는 경우 연결합니다. * 와일드카드를 사용할 수 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="browser.userDataDir.description">
+        <source xml:lang="en">By default, the browser is launched with a separate user profile in a temp folder. Use this option to override it. Set to false to launch with your default user profile.</source>
+        <target state="translated">기본적으로 브라우저는 임시 폴더에 있는 별도의 사용자 프로필을 사용하여 시작됩니다. 재정의하려면 이 옵션을 사용합니다. 기본 사용자 프로필을 사용하여 시작하려면 [false]로 설정합니다.</target>
+      </trans-unit>
+      <trans-unit id="browser.webRoot.description">
+        <source xml:lang="en">This specifies the workspace absolute path to the webserver root. Used to resolve paths like `/app.js` to files on disk. Shorthand for a pathMapping for "/"</source>
+        <target state="translated">웹 서버 루트의 작업 영역 절대 경로를 지정합니다. 디스크의 파일에 대한 `/app.js` 와 같은 경로를 확인하는 데 사용합니다. "/"에 대한 pathMapping의 줄임 표기입니다.</target>
+      </trans-unit>
+      <trans-unit id="chrome.attach.description">
+        <source xml:lang="en">Attach to an instance of Chrome already in debug mode</source>
+        <target state="translated">이미 디버그 모드인 Chrome 인스턴스에 연결</target>
+      </trans-unit>
+      <trans-unit id="chrome.attach.label">
+        <source xml:lang="en">Chrome: Attach</source>
+        <target state="translated">Chrome: 연결</target>
+      </trans-unit>
+      <trans-unit id="chrome.label">
+        <source xml:lang="en">Chrome (preview)</source>
+        <target state="translated">Chrome(미리보기)</target>
+      </trans-unit>
+      <trans-unit id="chrome.launch.description">
+        <source xml:lang="en">Launch Chrome to debug a URL</source>
+        <target state="translated">Chrome을 시작하여 URL 디버그</target>
+      </trans-unit>
+      <trans-unit id="chrome.launch.label">
+        <source xml:lang="en">Chrome: Launch</source>
+        <target state="translated">Chrome: 시작</target>
+      </trans-unit>
+      <trans-unit id="configuration.npmScriptLensLocation">
+        <source xml:lang="en">Where a "Run" and "Debug" code lens should be shown in your npm scripts. It may be on "all", scripts, on "top" of the script section, or "never".</source>
+        <target state="translated">npm 스크립트에 "실행" 및 "디버그" 코드 렌즈가 표시되어야 하는 위치입니다. "all", 스크립트, 스크립트 섹션의 "top" 또는 "never"일 수 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="configuration.suggestPrettyPrinting">
+        <source xml:lang="en">Whether to suggest pretty printing JavaScript code that looks minified when you step into it.</source>
+        <target state="translated">시작할 때 축소되어 보이는 경우 JavaScript 코드 자동 서식 지정을 제안할 지 여부입니다.</target>
+      </trans-unit>
+      <trans-unit id="configuration.terminalOptions">
+        <source xml:lang="en">Default launch options for the JavaScript debug terminal and npm scripts.</source>
+        <target state="translated">JavaScript 디버그 터미널 및 npm 스크립트에 대한 기본 시작 옵션입니다.</target>
+      </trans-unit>
+      <trans-unit id="configuration.usePreview">
+        <source xml:lang="en">Use the new in-preview JavaScript debugger for Node.js and Chrome.</source>
+        <target state="translated">Node.js 및 Chrome을 위한 새로운 미리 보기 JavaScript 디버거를 사용합니다.</target>
+      </trans-unit>
+      <trans-unit id="configuration.warnOnLongPrediction">
+        <source xml:lang="en">Whether a loading prompt should be shown if breakpoint prediction takes a while.</source>
+        <target state="translated">중단점 예측에 시간이 걸리는 경우 로드 프롬프트를 표시할지 여부입니다.</target>
+      </trans-unit>
+      <trans-unit id="debug.npm.edit">
+        <source xml:lang="en">Edit package.json</source>
+        <target state="translated">package.json 편집</target>
+      </trans-unit>
+      <trans-unit id="debug.npm.noScripts">
+        <source xml:lang="en">No npm scripts found in your package.json</source>
+        <target state="translated">package.json에서 npm 스크립트를 찾을 수 없습니다.</target>
+      </trans-unit>
+      <trans-unit id="debug.npm.noWorkspaceFolder">
+        <source xml:lang="en">You need to open a workspace folder to debug npm scripts.</source>
+        <target state="translated">npm 스크립트를 디버그하려면 작업 영역 폴더를 열어야 합니다.</target>
+      </trans-unit>
+      <trans-unit id="debug.npm.parseError">
+        <source xml:lang="en">Could not read {0}: {1}</source>
+        <target state="translated">{0}을(를) 읽을 수 없습니다. {1}</target>
+      </trans-unit>
+      <trans-unit id="debug.npm.script">
+        <source xml:lang="en">Debug NPM Script</source>
+        <target state="translated">NPM 스크립트 디버그</target>
+      </trans-unit>
+      <trans-unit id="debug.terminal.label">
+        <source xml:lang="en">Create JavaScript Debug Terminal</source>
+        <target state="translated">JavaScript 디버그 터미널 만들기</target>
+      </trans-unit>
+      <trans-unit id="debug.terminal.program.description">
+        <source xml:lang="en">Command to run in the launched terminal. If not provided, the terminal will open without launching a program.</source>
+        <target state="translated">시작된 터미널에서 실행할 명령입니다. 제공되지 않으면 프로그램을 시작하지 않고 터미널이 열립니다.</target>
+      </trans-unit>
+      <trans-unit id="debug.terminal.snippet.label">
+        <source xml:lang="en">Run "npm start" in a debug terminal</source>
+        <target state="translated">디버그 터미널에서 "npm start" 실행</target>
+      </trans-unit>
+      <trans-unit id="edge.attach.description">
+        <source xml:lang="en">Attach to an instance of Edge already in debug mode</source>
+        <target state="translated">이미 디버그 모드에 있는 Edge 인스턴스에 연결</target>
+      </trans-unit>
+      <trans-unit id="edge.attach.label">
+        <source xml:lang="en">Edge: Attach</source>
+        <target state="translated">Edge: 연결</target>
+      </trans-unit>
+      <trans-unit id="edge.label">
+        <source xml:lang="en">Edge (preview)</source>
+        <target state="translated">Edge(미리 보기)</target>
+      </trans-unit>
+      <trans-unit id="edge.launch.description">
+        <source xml:lang="en">Launch Edge to debug a URL</source>
+        <target state="translated">Edge를 시작하여 URL 디버그</target>
+      </trans-unit>
+      <trans-unit id="edge.launch.label">
+        <source xml:lang="en">Edge: Launch</source>
+        <target state="translated">Edge: 시작</target>
+      </trans-unit>
+      <trans-unit id="edge.useWebView.description">
+        <source xml:lang="en">(Edge (Chromium) only) When 'true', the debugger will treat the runtime executable as a host application that contains a WebView allowing you to debug the WebView script content.</source>
+        <target state="translated">(Microsoft Edge(Chromium) 전용) 'true'이면 디버거는 런타임 실행 파일을 WebView가 포함된 호스트 애플리케이션으로 취급하여 WebView 스크립트 콘텐츠를 디버그할 수 있도록 합니다.</target>
+      </trans-unit>
+      <trans-unit id="errors.timeout">
+        <source xml:lang="en">{0}: timeout after {1}ms</source>
+        <target state="translated">{0}: {1}ms 후 시간 초과</target>
+      </trans-unit>
+      <trans-unit id="extension.description">
+        <source xml:lang="en">An extension for debugging Node.js programs and Chrome.</source>
+        <target state="translated">Node.js 프로그램 및 Chrome 디버깅을 위한 확장입니다.</target>
+      </trans-unit>
+      <trans-unit id="extensionHost.label">
+        <source xml:lang="en">VS Code Extension Development (preview)</source>
+        <target state="translated">VS Code 확장 개발(미리 보기)</target>
+      </trans-unit>
+      <trans-unit id="extensionHost.launch.config.name">
+        <source xml:lang="en">Launch Extension</source>
+        <target state="translated">확장 시작</target>
+      </trans-unit>
+      <trans-unit id="extensionHost.launch.env.description">
+        <source xml:lang="en">Environment variables passed to the extension host.</source>
+        <target state="translated">확장 호스트에 전달된 환경 변수입니다.</target>
+      </trans-unit>
+      <trans-unit id="extensionHost.launch.runtimeExecutable.description">
+        <source xml:lang="en">Absolute path to VS Code.</source>
+        <target state="translated">VS Code의 절대 경로입니다.</target>
+      </trans-unit>
+      <trans-unit id="extensionHost.launch.stopOnEntry.description">
+        <source xml:lang="en">Automatically stop the extension host after launch.</source>
+        <target state="translated">시작한 후 자동으로 확장 호스트를 중지합니다.</target>
+      </trans-unit>
+      <trans-unit id="extensionHost.snippet.launch.description">
+        <source xml:lang="en">Launch a VS Code extension in debug mode</source>
+        <target state="translated">디버그 모드에서 VS Code 확장 시작</target>
+      </trans-unit>
+      <trans-unit id="extensionHost.snippet.launch.label">
+        <source xml:lang="en">VS Code Extension Development</source>
+        <target state="translated">VS Code 확장 개발</target>
+      </trans-unit>
+      <trans-unit id="longPredictionWarning.disable">
+        <source xml:lang="en">Don't show again</source>
+        <target state="translated">다시 표시 안 함</target>
+      </trans-unit>
+      <trans-unit id="longPredictionWarning.message">
+        <source xml:lang="en">It's taking a while to configure your breakpoints. You can speed this up by updating the 'outFiles' in your launch.json.</source>
+        <target state="translated">중단점을 구성하는 데 다소 시간이 소요됩니다. launch.json에서 'outFiles'를 업데이트하여 이 속도를 높일 수 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="longPredictionWarning.noFolder">
+        <source xml:lang="en">No workspace folder open.</source>
+        <target state="translated">열려 있는 작업 영역 폴더가 없습니다.</target>
+      </trans-unit>
+      <trans-unit id="longPredictionWarning.open">
+        <source xml:lang="en">Open launch.json</source>
+        <target state="translated">launch.json 열기</target>
+      </trans-unit>
+      <trans-unit id="node.address.description">
+        <source xml:lang="en">TCP/IP address of process to be debugged. Default is 'localhost'.</source>
+        <target state="translated">디버그할 프로세스의 TCP/IP 주소입니다. 기본값은 'localhost'입니다.</target>
+      </trans-unit>
+      <trans-unit id="node.attach.attachExistingChildren.description">
+        <source xml:lang="en">Whether to attempt to attach to already-spawned child processes.</source>
+        <target state="translated">이미 생성된 자식 프로세스에 연결하려고 할지 여부입니다.</target>
+      </trans-unit>
+      <trans-unit id="node.attach.attachSpawnedProcesses.description">
+        <source xml:lang="en">Whether to set environment variables in the attached process to track spawned children.</source>
+        <target state="translated">연결된 프로세스에서 환경 변수를 설정하여 생성된 자식을 추적할지 여부입니다.</target>
+      </trans-unit>
+      <trans-unit id="node.attach.config.name">
+        <source xml:lang="en">Attach</source>
+        <target state="translated">연결</target>
+      </trans-unit>
+      <trans-unit id="node.attach.continueOnAttach">
+        <source xml:lang="en">If true, we'll automatically resume programs launched and waiting on `--inspect-brk`</source>
+        <target state="translated">true이면 시작되어 `--inspect-brk`를 기다리는 프로그램을 자동으로 다시 시작합니다.</target>
+      </trans-unit>
+      <trans-unit id="node.attach.processId.description">
+        <source xml:lang="en">ID of process to attach to.</source>
+        <target state="translated">연결할 프로세스 ID입니다.</target>
+      </trans-unit>
+      <trans-unit id="node.attach.restart.description">
+        <source xml:lang="en">Try to reconnect to the program if we lose connection.</source>
+        <target state="translated">연결이 끊어지면 프로그램에 다시 연결해 보세요.</target>
+      </trans-unit>
+      <trans-unit id="node.console.title">
+        <source xml:lang="en">Node Debug Console</source>
+        <target state="translated">노드 디버그 콘솔</target>
+      </trans-unit>
+      <trans-unit id="node.disableOptimisticBPs.description">
+        <source xml:lang="en">Don't set breakpoints in any file until a sourcemap has been loaded for that file.</source>
+        <target state="translated">소스 맵이 해당 파일에 대해 로드될 때까지 파일에 중단점을 설정하지 않습니다.</target>
+      </trans-unit>
+      <trans-unit id="node.label">
+        <source xml:lang="en">Node.js (preview)</source>
+        <target state="translated">Node.js(미리 보기)</target>
+      </trans-unit>
+      <trans-unit id="node.launch.args.description">
+        <source xml:lang="en">Command line arguments passed to the program.</source>
+        <target state="translated">프로그램에 전달된 명령줄 인수입니다.</target>
+      </trans-unit>
+      <trans-unit id="node.launch.autoAttachChildProcesses.description">
+        <source xml:lang="en">Attach debugger to new child processes automatically.</source>
+        <target state="translated">디버거를 새로 생성된 자식 프로세스에 자동으로 연결합니다.</target>
+      </trans-unit>
+      <trans-unit id="node.launch.config.name">
+        <source xml:lang="en">Launch</source>
+        <target state="translated">시작</target>
+      </trans-unit>
+      <trans-unit id="node.launch.console.description">
+        <source xml:lang="en">Where to launch the debug target.</source>
+        <target state="translated">디버그 대상을 시작할 위치입니다.</target>
+      </trans-unit>
+      <trans-unit id="node.launch.console.externalTerminal.description">
+        <source xml:lang="en">External terminal that can be configured via user settings</source>
+        <target state="translated">사용자 설정을 통해 구성 가능한 외부 터미널</target>
+      </trans-unit>
+      <trans-unit id="node.launch.console.integratedTerminal.description">
+        <source xml:lang="en">VS Code's integrated terminal</source>
+        <target state="translated">VS Code의 통합 터미널</target>
+      </trans-unit>
+      <trans-unit id="node.launch.console.internalConsole.description">
+        <source xml:lang="en">VS Code Debug Console (which doesn't support to read input from a program)</source>
+        <target state="translated">VS Code 디버그 콘솔(프로그램에서 입력 읽기를 지원하지 않음)</target>
+      </trans-unit>
+      <trans-unit id="node.launch.cwd.description">
+        <source xml:lang="en">Absolute path to the working directory of the program being debugged.</source>
+        <target state="translated">디버그 중인 프로그램의 작업 디렉터리의 절대 경로입니다.</target>
+      </trans-unit>
+      <trans-unit id="node.launch.env.description">
+        <source xml:lang="en">Environment variables passed to the program. The value `null` removes the variable from the environment.</source>
+        <target state="translated">프로그램에 전달된 환경 변수입니다. 'null' 값으로 설정하면 변수가 환경에서 제거됩니다.</target>
+      </trans-unit>
+      <trans-unit id="node.launch.envFile.description">
+        <source xml:lang="en">Absolute path to a file containing environment variable definitions.</source>
+        <target state="translated">환경 변수 정의가 포함된 파일의 절대 경로입니다.</target>
+      </trans-unit>
+      <trans-unit id="node.launch.logging">
+        <source xml:lang="en">Logging configuration</source>
+        <target state="translated">로깅 구성</target>
+      </trans-unit>
+      <trans-unit id="node.launch.logging.cdp">
+        <source xml:lang="en">Path to the log file for Chrome DevTools Protocol messages</source>
+        <target state="translated">Chrome DevTools 프로토콜 메시지에 대한 로그 파일 경로</target>
+      </trans-unit>
+      <trans-unit id="node.launch.logging.dap">
+        <source xml:lang="en">Path to the log file for Debug Adapter Protocol messages</source>
+        <target state="translated">디버그 어댑터 프로토콜 메시지에 대한 로그 파일 경로</target>
+      </trans-unit>
+      <trans-unit id="node.launch.outputCapture.description">
+        <source xml:lang="en">From where to capture output messages: The debug API, or stdout/stderr streams.</source>
+        <target state="translated">출력 메시지를 캡처하는 위치: 디버그 API 또는 stdout/stderr 스트림</target>
+      </trans-unit>
+      <trans-unit id="node.launch.program.description">
+        <source xml:lang="en">Absolute path to the program. Generated value is guessed by looking at package.json and opened files. Edit this attribute.</source>
+        <target state="translated">프로그램의 절대 경로입니다. 생성된 값은 package.json 및 열린 파일을 보고 추측한 것입니다. 이 특성을 편집하세요.</target>
+      </trans-unit>
+      <trans-unit id="node.launch.restart.description">
+        <source xml:lang="en">Try to restart the program if it exits with a non-zero exit code.</source>
+        <target state="translated">0이 아닌 종료 코드로 종료되는 경우 프로그램을 다시 시작해 보세요.</target>
+      </trans-unit>
+      <trans-unit id="node.launch.runtimeArgs.description">
+        <source xml:lang="en">Optional arguments passed to the runtime executable.</source>
+        <target state="translated">선택적 인수가 런타임 실행 파일에 전달되었습니다.</target>
+      </trans-unit>
+      <trans-unit id="node.launch.runtimeExecutable.description">
+        <source xml:lang="en">Runtime to use. Either an absolute path or the name of a runtime available on the PATH. If omitted `node` is assumed.</source>
+        <target state="translated">사용할 런타임입니다. PATH에서 사용할 수 있는 런타임의 이름 또는 절대 경로입니다. 생략하면 `node`로 간주합니다.</target>
+      </trans-unit>
+      <trans-unit id="node.launch.runtimeVersion.description">
+        <source xml:lang="en">Version of `node` runtime to use. Requires `nvm`.</source>
+        <target state="translated">사용할 `node` 런타임의 버전입니다. `nvm`이 필요합니다.</target>
+      </trans-unit>
+      <trans-unit id="node.launch.useWSL.deprecation">
+        <source xml:lang="en">'useWSL' is deprecated and support for it will be dropped. Use the 'Remote - WSL' extension instead.</source>
+        <target state="translated">'useWSL'은 사용되지 않으며 지원이 중단됩니다. 대신 '원격 - WSL' 확장을 사용하세요.</target>
+      </trans-unit>
+      <trans-unit id="node.launch.useWSL.description">
+        <source xml:lang="en">Use Windows Subsystem for Linux.</source>
+        <target state="translated">Linux용 Windows 하위 시스템을 사용합니다.</target>
+      </trans-unit>
+      <trans-unit id="node.localRoot.description">
+        <source xml:lang="en">Path to the local directory containing the program.</source>
+        <target state="translated">프로그램이 포함된 로컬 디렉터리의 경로입니다.</target>
+      </trans-unit>
+      <trans-unit id="node.pauseForSourceMap.description">
+        <source xml:lang="en">Whether to wait for source maps to load for each incoming script. This has a performance overhead, and might be safely disabled when running off of disk, so long as `rootPath` is not disabled.</source>
+        <target state="translated">들어오는 각 스크립트에 대해 소스 맵이 로드될 때까지 기다릴지 여부입니다. 이 작업에는 성능 오버헤드가 발생하며 'rootPath'를 사용하도록 설정하는 경우 디스크에서 실행될 때 사용하지 않도록 설정해도 됩니다.</target>
+      </trans-unit>
+      <trans-unit id="node.port.description">
+        <source xml:lang="en">Debug port to attach to. Default is 5858.</source>
+        <target state="translated">연결할 디버그 포트입니다. 기본값은 5858입니다.</target>
+      </trans-unit>
+      <trans-unit id="node.processattach.config.name">
+        <source xml:lang="en">Attach to Process</source>
+        <target state="translated">프로세스에 연결</target>
+      </trans-unit>
+      <trans-unit id="node.remoteRoot.description">
+        <source xml:lang="en">Absolute path to the remote directory containing the program.</source>
+        <target state="translated">프로그램이 포함된 원격 디렉터리의 절대 경로입니다.</target>
+      </trans-unit>
+      <trans-unit id="node.resolveSourceMapLocations.description">
+        <source xml:lang="en">A list of minimatch patterns for locations (folders and URLs) in which source maps can be used to resolve local files. This can be used to avoid incorrectly breaking in external source mapped code. Patterns can be prefixed with "!" to exclude them. May be set to an empty array or null to avoid restriction.</source>
+        <target state="translated">소스 맵을 사용하여 로컬 파일을 확인할 수 있는 위치(폴더 및 URL)에 대한 minimatch 패턴 목록입니다. 외부 소스 매핑 코드에서 잘못 중단되지 않도록 하는 데 사용할 수 있습니다. 패턴은 "!" 접두사를 붙여 제외할 수 있습니다. 제한을 피하기 위해 빈 배열 또는 null로 설정할 수 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="node.showAsyncStacks.description">
+        <source xml:lang="en">Show the async calls that led to the current call stack.</source>
+        <target state="translated">현재 호출 스택을 발생시킨 비동기 호출을 표시합니다.</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.attach.description">
+        <source xml:lang="en">Attach to a running node program</source>
+        <target state="translated">실행 중인 노드 프로그램에 연결</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.attach.label">
+        <source xml:lang="en">Node.js: Attach</source>
+        <target state="translated">Node.js: 연결</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.attachProcess.description">
+        <source xml:lang="en">Open process picker to select node process to attach to</source>
+        <target state="translated">프로세스 선택기를 열어 연결할 Node 프로세스 선택 </target>
+      </trans-unit>
+      <trans-unit id="node.snippet.attachProcess.label">
+        <source xml:lang="en">Node.js: Attach to Process</source>
+        <target state="translated">Node.js: 프로세스에 연결</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.electron.description">
+        <source xml:lang="en">Debug the Electron main process</source>
+        <target state="translated">Electron 주 프로세스 디버그</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.electron.label">
+        <source xml:lang="en">Node.js: Electron Main</source>
+        <target state="translated">Node.js: Electron 주</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.gulp.description">
+        <source xml:lang="en">Debug gulp task (make sure to have a local gulp installed in your project)</source>
+        <target state="translated">Gulp 작업 디버그(프로젝트에 로컬 Gulp가 설치되어 있는지 확인하세요.)</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.gulp.label">
+        <source xml:lang="en">Node.js: Gulp task</source>
+        <target state="translated">Node.js: Gulp 작업</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.launch.description">
+        <source xml:lang="en">Launch a node program in debug mode</source>
+        <target state="translated">디버그 모드에서 노드 프로그램 시작</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.launch.label">
+        <source xml:lang="en">Node.js: Launch Program</source>
+        <target state="translated">Node.js: 프로그램 실행</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.mocha.description">
+        <source xml:lang="en">Debug mocha tests</source>
+        <target state="translated">Mocha 테스트 디버그</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.mocha.label">
+        <source xml:lang="en">Node.js: Mocha Tests</source>
+        <target state="translated">Node.js: Mocha 테스트</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.nodemon.description">
+        <source xml:lang="en">Use nodemon to relaunch a debug session on source changes</source>
+        <target state="translated">nodemon을 사용하여 소스 변경 내용에 대한 디버그 세션 다시 시작</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.nodemon.label">
+        <source xml:lang="en">Node.js: Nodemon Setup</source>
+        <target state="translated">Node.js: Nodemon 설정</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.npm.description">
+        <source xml:lang="en">Launch a node program through an npm `debug` script</source>
+        <target state="translated">npm 'debug' 스크립트를 통해 노드 프로그램 시작</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.npm.label">
+        <source xml:lang="en">Node.js: Launch via NPM</source>
+        <target state="translated">Node.js: NPM을 통해 시작</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.remoteattach.description">
+        <source xml:lang="en">Attach to the debug port of a remote node program</source>
+        <target state="translated">원격 노드 프로그램의 디버그 포트에 연결합니다.</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.remoteattach.label">
+        <source xml:lang="en">Node.js: Attach to Remote Program</source>
+        <target state="translated">Node.js: 원격 프로그램에 연결</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.yo.description">
+        <source xml:lang="en">Debug yeoman generator (install by running `npm link` in project folder)</source>
+        <target state="translated">yeoman 생성기 디버그(프로젝트 폴더에서 `npm link`를 실행하여 설치)</target>
+      </trans-unit>
+      <trans-unit id="node.snippet.yo.label">
+        <source xml:lang="en">Node.js: Yeoman generator</source>
+        <target state="translated">Node.js: Yeoman 생성기</target>
+      </trans-unit>
+      <trans-unit id="node.sourceMapPathOverrides.description">
+        <source xml:lang="en">A set of mappings for rewriting the locations of source files from what the sourcemap says, to their locations on disk.</source>
+        <target state="translated">소스맵의 정보로부터 디스크의 위치로 소스 파일 위치를 다시 쓰기 위한 매핑 집합입니다.</target>
+      </trans-unit>
+      <trans-unit id="node.sourceMaps.description">
+        <source xml:lang="en">Use JavaScript source maps (if they exist).</source>
+        <target state="translated">JavaScript 소스 맵을 사용합니다(있는 경우에만).</target>
+      </trans-unit>
+      <trans-unit id="node.stopOnEntry.description">
+        <source xml:lang="en">Automatically stop program after launch.</source>
+        <target state="translated">시작한 후 자동으로 프로그램을 중지합니다.</target>
+      </trans-unit>
+      <trans-unit id="node.timeout.description">
+        <source xml:lang="en">Retry for this number of milliseconds to connect to Node.js. Default is 10000 ms.</source>
+        <target state="translated">이 시간(밀리초) 동안 Node.js에 연결하려고 다시 시도합니다. 기본값은 10000ms입니다.</target>
+      </trans-unit>
+      <trans-unit id="outFiles.description">
+        <source xml:lang="en">If source maps are enabled, these glob patterns specify the generated JavaScript files. If a pattern starts with `!` the files are excluded. If not specified, the generated code is expected in the same directory as its source.</source>
+        <target state="translated">소스 맵이 사용되는 경우 이러한 GLOB 패턴은 생성된 JavaScript 파일을 지정합니다. 패턴이 '!'로 시작하면 파일이 제외됩니다. 지정하지 않으면 생성된 코드가 소스와 동일한 디렉터리에 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="pretty.print.script">
+        <source xml:lang="en">Pretty print for debugging</source>
+        <target state="translated">디버그를 위한 예쁜 인쇄</target>
+      </trans-unit>
+      <trans-unit id="remove.browser.breakpoint">
+        <source xml:lang="en">Remove Browser Breakpoint</source>
+        <target state="translated">브라우저 중단점 제거</target>
+      </trans-unit>
+      <trans-unit id="remove.browser.breakpoint.all">
+        <source xml:lang="en">Remove All Browser Breakpoints</source>
+        <target state="translated">모든 브라우저 중단점 제거</target>
+      </trans-unit>
+      <trans-unit id="skipFiles.description">
+        <source xml:lang="en">An array of glob patterns for files to skip when debugging. The pattern `&lt;node_internals&gt;/**` matches all internal Node.js modules.</source>
+        <target state="translated">디버그할 때 건너뛰는 파일의 GLOB 패턴 배열입니다. `&lt;node_internals&gt;/**` 패턴은 모든 내부 Node.js 모듈과 일치합니다.</target>
+      </trans-unit>
+      <trans-unit id="smartStep.description">
+        <source xml:lang="en">Automatically step through generated code that cannot be mapped back to the original source.</source>
+        <target state="translated">생성된 코드 중 원래 소스로 다시 매핑할 수 없는 코드를 단계별로 자동 실행합니다.</target>
+      </trans-unit>
+      <trans-unit id="start.with.stop.on.entry">
+        <source xml:lang="en">Start Debugging and Stop on Entry</source>
+        <target state="translated">디버깅 시작 및 항목에서 중지</target>
+      </trans-unit>
+      <trans-unit id="toggle.skipping.this.file">
+        <source xml:lang="en">Toggle Skipping this File</source>
+        <target state="translated">이 파일에 대한 건너뛰기 토글</target>
+      </trans-unit>
+      <trans-unit id="trace.boolean.description">
+        <source xml:lang="en">Trace may be set to 'true' to write diagnostic logs to the disk.</source>
+        <target state="translated">추적을 'true'로 설정하여 디스크에 진단 로그를 쓸 수 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="trace.console.description">
+        <source xml:lang="en">Configures whether logs are also returned to the debug console.</source>
+        <target state="translated">로그가 디버그 콘솔로 반환되는지 여부를 구성합니다.</target>
+      </trans-unit>
+      <trans-unit id="trace.description">
+        <source xml:lang="en">Configures what diagnostic output is produced.</source>
+        <target state="translated">생성되는 진단 출력을 구성합니다.</target>
+      </trans-unit>
+      <trans-unit id="trace.level.description">
+        <source xml:lang="en">Configures the level of logs recorded.</source>
+        <target state="translated">기록된 로그 수준을 구성합니다.</target>
+      </trans-unit>
+      <trans-unit id="trace.logFile.description">
+        <source xml:lang="en">Configures where on disk logs are written.</source>
+        <target state="translated">온디스크 로그가 기록되는 위치를 구성합니다.</target>
+      </trans-unit>
+      <trans-unit id="trace.tags.description">
+        <source xml:lang="en">Configures what types of logs are recorded.</source>
+        <target state="translated">기록되는 로그 유형을 구성합니다.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="extensions/debug-server-ready/package" source-language="en" target-language="fr" datatype="plaintext">
+    <body>
+      <trans-unit id="displayName">
+        <source xml:lang="en">Server Ready Action</source>
+        <target state="translated">Action de serveur prêt</target>
+      </trans-unit>
+      <trans-unit id="description">
+        <source xml:lang="en">Open URI in browser if server under debugging is ready.</source>
+        <target state="translated">Ouvrez l'URI dans le navigateur si le serveur en cours de débogage est prêt.</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.serverReadyAction.description">
+        <source xml:lang="en">Act upon a URI when a server program under debugging is ready (indicated by sending output of the form 'listening on port 3000' or 'Now listening on: https://localhost:5001' to the debug console.)</source>
+        <target state="translated">Traiter un URI quand un programme de serveur en cours de débogage est prêt (indiqué par l'envoi d'une sortie sous la forme 'écoute sur le port 3000' ou 'Écoute en cours sur : https://localhost:5001' dans la console de débogage.)</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.action.description">
+        <source xml:lang="en">What to do with the URI when the server is ready.</source>
+        <target state="translated">Utilisation de l'URI quand le serveur est prêt.</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.action.openExternally.description">
+        <source xml:lang="en">Open URI externally with the default application.</source>
+        <target state="translated">Ouvrez l'URI en externe avec l'application par défaut.</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.action.debugWithChrome.description">
+        <source xml:lang="en">Start debugging with the 'Debugger for Chrome'.</source>
+        <target state="translated">Démarrez le débogage avec le 'Débogueur pour Chrome'.</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.pattern.description">
+        <source xml:lang="en">Server is ready if this pattern appears on the debug console. The first capture group must include a URI or a port number.</source>
+        <target state="translated">Le serveur est prêt si ce modèle apparaît dans la console de débogage. Le premier groupe de captures doit inclure un URI ou un numéro de port.</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.uriFormat.description">
+        <source xml:lang="en">A format string used when constructing the URI from a port number. The first '%s' is substituted with the port number.</source>
+        <target state="translated">Chaîne de format utilisée pour construire l'URI à partir d'un numéro de port. Le premier '%s' est remplacé par le numéro de port.</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.webRoot.description">
+        <source xml:lang="en">Value passed to the debug configuration for the 'Debugger for Chrome'.</source>
+        <target state="translated">Valeur passée à la configuration de débogage pour le 'Débogueur pour Chrome'.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/debug-server-ready/dist/extension" source-language="en" target-language="fr" datatype="plaintext">
+    <body>
+      <trans-unit id="server.ready.nocapture.error">
+        <source xml:lang="en">Format uri ('{0}') uses a substitution placeholder but pattern did not capture anything.</source>
+        <target state="translated">L'URI de format ('{0}') utilise un espace réservé de remplacement, mais le modèle n'a rien capturé.</target>
+      </trans-unit>
+      <trans-unit id="server.ready.placeholder.error">
+        <source xml:lang="en">Format uri ('{0}') must contain exactly one substitution placeholder.</source>
+        <target state="translated">L'URI de mise en forme ('{0}') doit contenir exactement un espace réservé de remplacement.</target>
+      </trans-unit>
+      <trans-unit id="server.ready.chrome.not.installed">
+        <source xml:lang="en">The action '{0}' requires the '{1}' extension.</source>
+        <target state="translated">L'action '{0}' nécessite l'extension '{1}'.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

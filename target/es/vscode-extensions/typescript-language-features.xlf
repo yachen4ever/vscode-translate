@@ -1,0 +1,847 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="extensions/typescript-language-features/package" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="displayName">
+        <source xml:lang="en">TypeScript and JavaScript Language Features</source>
+        <target state="translated">Características del lenguaje JavaScript y TypeScript</target>
+      </trans-unit>
+      <trans-unit id="description">
+        <source xml:lang="en">Provides rich language support for JavaScript and TypeScript.</source>
+        <target state="translated">Proporciona soporte de lenguaje enriquecido para JavaScript y TypeScript.</target>
+      </trans-unit>
+      <trans-unit id="reloadProjects.title">
+        <source xml:lang="en">Reload Project</source>
+        <target state="translated">Volver a cargar el proyecto</target>
+      </trans-unit>
+      <trans-unit id="configuration.typescript">
+        <source xml:lang="en">TypeScript</source>
+        <target state="translated">TypeScript</target>
+      </trans-unit>
+      <trans-unit id="configuration.suggest.completeFunctionCalls">
+        <source xml:lang="en">Complete functions with their parameter signature.</source>
+        <target state="translated">Complete las funciones con la signatura de parámetro.</target>
+      </trans-unit>
+      <trans-unit id="configuration.suggest.includeAutomaticOptionalChainCompletions">
+        <source xml:lang="en">Enable/disable showing completions on potentially undefined values that insert an optional chain call. Requires TS 3.7+ and strict null checks to be enabled.</source>
+        <target state="translated">Habilite/deshabilite la visualización de terminaciones en valores potencialmente indefinidos que insertan una llamada en cadena opcional. Requiere TS 3.7+ y que las comprobaciones estrictas de elementos nulos.estén habilitadas.</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsdk.desc">
+        <source xml:lang="en">Specifies the folder path to the tsserver and lib*.d.ts files under a TypeScript install to use for IntelliSense, for example: `./node_modules/typescript/lib`.
+
+- When specified as a user setting, the TypeScript version from `typescript.tsdk` automatically replaces the built-in TypeScript version.
+- When specified as a workspace setting, `typescript.tsdk` allows you to switch to use that workspace version of TypeScript for IntelliSense with the `TypeScript: Select TypeScript version` command.
+
+See the [TypeScript documentation](https://code.visualstudio.com/docs/typescript/typescript-compiling#_using-newer-typescript-versions) for more detail about managing TypeScript versions.</source>
+        <target state="translated">Especifica la ruta de acceso de carpeta a los archivos tsserver y lib*.d.ts en una instalación de TypeScript que se usará para IntelliSense, por ejemplo: "./node_modules/typescript/lib".
+
+- Cuando se especifica como una configuración de usuario, la versión TypeScript de "typescript.tsdk" reemplaza automáticamente la versión integrada de TypeScript.
+- Cuando se especifica como una configuración de área de trabajo, "typescript.tsd" le permite cambiar para usar esa versión del área de trabajo de TypeScript para IntelliSense con el comando "TypeScript: Select TypeScript version".
+
+Consulte la [documentación de TypeScript](https://code.visualstudio.com/docs/typescript/typescript-compiling_using-newer-typescript-versions) para obtener más detalles sobre la administración de versiones de TypeScript.</target>
+      </trans-unit>
+      <trans-unit id="typescript.disableAutomaticTypeAcquisition">
+        <source xml:lang="en">Disables automatic type acquisition. Automatic type acquisition fetches `@types` packages from npm to improve IntelliSense for external libraries.</source>
+        <target state="translated">Deshabilita la adquisición automática de tipos, que busca paquetes "@types" de npm con el fin de mejorar IntelliSense para las bibliotecas externas.</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsserver.log">
+        <source xml:lang="en">Enables logging of the TS server to a file. This log can be used to diagnose TS Server issues. The log may contain file paths, source code, and other potentially sensitive information from your project.</source>
+        <target state="translated">Habilita los registros del servidor TS a un archivo. Este registro se puede utilizar para diagnosticar problemas en el servidor TS. Este registro puede contener rutas de acceso, código fuente y posiblemente otra información sensitiva acerca del proyecto.</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsserver.pluginPaths">
+        <source xml:lang="en">Additional paths to discover TypeScript Language Service plugins. Requires using TypeScript 2.3.0 or newer in the workspace.</source>
+        <target state="translated">Rutas de acceso adicionales para detectar complementos del Servicio de lenguaje Typescript. Requiere el uso de TypeScript 2.3.0 o posterior en el área de trabajo.</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsserver.pluginPaths.item">
+        <source xml:lang="en">Either an absolute or relative path. Relative path will be resolved against workspace folder(s).</source>
+        <target state="translated">Ruta relativa o absoluta. La ruta de acceso relativa se resolverá contra las carpetas del área de trabajo.</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsserver.trace">
+        <source xml:lang="en">Enables tracing of messages sent to the TS server. This trace can be used to diagnose TS Server issues. The trace may contain file paths, source code, and other potentially sensitive information from your project.</source>
+        <target state="translated">Habilita el seguimiento de mensajes al servidor TS. Este seguimiento se puede utilizar para diagnosticar problemas en el servidor TS. Este seguimiento puede contener rutas de acceso, código fuente y posiblemente otra información sensitiva acerca del proyecto.</target>
+      </trans-unit>
+      <trans-unit id="typescript.validate.enable">
+        <source xml:lang="en">Enable/disable TypeScript validation.</source>
+        <target state="translated">Habilita o deshabilita la validación de TypeScript.</target>
+      </trans-unit>
+      <trans-unit id="typescript.format.enable">
+        <source xml:lang="en">Enable/disable default TypeScript formatter.</source>
+        <target state="translated">Habilita o deshabilita el formateador predeterminado de TypeScript.</target>
+      </trans-unit>
+      <trans-unit id="javascript.format.enable">
+        <source xml:lang="en">Enable/disable default JavaScript formatter.</source>
+        <target state="translated">Habilita o deshabilita el formateador predeterminado de JavaScript.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterCommaDelimiter">
+        <source xml:lang="en">Defines space handling after a comma delimiter.</source>
+        <target state="translated">Define el tratamiento del espacio después de un delimitador de coma.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterConstructor">
+        <source xml:lang="en">Defines space handling after the constructor keyword. Requires using TypeScript 2.3.0 or newer in the workspace.</source>
+        <target state="translated">Define el tratamiento del espacio después de la palabra clave constructor. Requiere el uso de TypeScript 2.3.0 o posterior en el área de trabajo.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterSemicolonInForStatements">
+        <source xml:lang="en">Defines space handling after a semicolon in a for statement.</source>
+        <target state="translated"> Define el tratamiento del espacio después de punto y coma en una instrucción for.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceBeforeAndAfterBinaryOperators">
+        <source xml:lang="en">Defines space handling after a binary operator.</source>
+        <target state="translated">Define el tratamiento del espacio después de un operador binario.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterKeywordsInControlFlowStatements">
+        <source xml:lang="en">Defines space handling after keywords in a control flow statement.</source>
+        <target state="translated">Define el tratamiento del espacio después de las palabras clave en una instrucción de flujo de control.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterFunctionKeywordForAnonymousFunctions">
+        <source xml:lang="en">Defines space handling after function keyword for anonymous functions.</source>
+        <target state="translated">Define el tratamiento del espacio después de la palabra clave function para las funciones anónimas.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceBeforeFunctionParenthesis">
+        <source xml:lang="en">Defines space handling before function argument parentheses.</source>
+        <target state="translated">Define el tratamiento del espacio antes de los paréntesis de argumentos de función.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis">
+        <source xml:lang="en">Defines space handling after opening and before closing non-empty parenthesis.</source>
+        <target state="translated">Define el manejo del espacio después de abrir y antes de cerrar paréntesis no vacíos.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets">
+        <source xml:lang="en">Defines space handling after opening and before closing non-empty brackets.</source>
+        <target state="translated">Define el manejo del espacio después de abrir y antes de cerrar los soportes no vacíos.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces">
+        <source xml:lang="en">Defines space handling after opening and before closing non-empty braces. Requires using TypeScript 2.3.0 or newer in the workspace.</source>
+        <target state="translated">Define el tratamiento del espacio después de la llave de apertura y antes de la llave de cierre de instrucciones no vacías. Requiere el uso de TypeScript 2.3.0 o posterior en el área de trabajo.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces">
+        <source xml:lang="en">Defines space handling after opening and before closing template string braces.</source>
+        <target state="translated">Define el tratamiento del espacio después de la llave de apertura y antes de la llave de cierre de cadenas de plantilla.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces">
+        <source xml:lang="en">Defines space handling after opening and before closing JSX expression braces.</source>
+        <target state="translated">Define el tratamiento del espacio después de la llave de apertura y antes de la llave de cierre de expresiones JSX.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterTypeAssertion">
+        <source xml:lang="en">Defines space handling after type assertions in TypeScript. Requires using TypeScript 2.4 or newer in the workspace.</source>
+        <target state="translated">Define el tratamiento del espacio después de las aserciones de tipos en TypeScript. Requiere el uso de TypeScript 2.4 o posterior en el área de trabajo.</target>
+      </trans-unit>
+      <trans-unit id="format.placeOpenBraceOnNewLineForFunctions">
+        <source xml:lang="en">Defines whether an open brace is put onto a new line for functions or not.</source>
+        <target state="translated">Define si una llave de apertura se incluye en una nueva línea para las funciones o no.</target>
+      </trans-unit>
+      <trans-unit id="format.placeOpenBraceOnNewLineForControlBlocks">
+        <source xml:lang="en">Defines whether an open brace is put onto a new line for control blocks or not.</source>
+        <target state="translated">Define si una llave de apertura se incluye en una nueva línea para los bloques de control o no.</target>
+      </trans-unit>
+      <trans-unit id="format.semicolons">
+        <source xml:lang="en">Defines handling of optional semicolons. Requires using TypeScript 3.7 or newer in the workspace.</source>
+        <target state="translated">Define el control de punto y coma opcional. Requiere el uso de TypeScript 3.7 o posterior en el área de trabajo.</target>
+      </trans-unit>
+      <trans-unit id="format.semicolons.ignore">
+        <source xml:lang="en">Don't insert or remove any semicolons.</source>
+        <target state="translated">No inserte ni quite los puntos y comas.</target>
+      </trans-unit>
+      <trans-unit id="format.semicolons.insert">
+        <source xml:lang="en">Insert semicolons at statement ends.</source>
+        <target state="translated">Inserte punto y coma en los extremos de la instrucción.</target>
+      </trans-unit>
+      <trans-unit id="format.semicolons.remove">
+        <source xml:lang="en">Remove unnecessary semicolons.</source>
+        <target state="translated">Elimine los puntos y comas innecesarios.</target>
+      </trans-unit>
+      <trans-unit id="javascript.validate.enable">
+        <source xml:lang="en">Enable/disable JavaScript validation.</source>
+        <target state="translated">Habilita o deshabilita la validación de JavaScript.</target>
+      </trans-unit>
+      <trans-unit id="goToProjectConfig.title">
+        <source xml:lang="en">Go to Project Configuration</source>
+        <target state="translated">Ir a configuración del proyecto</target>
+      </trans-unit>
+      <trans-unit id="javascript.referencesCodeLens.enabled">
+        <source xml:lang="en">Enable/disable references CodeLens in JavaScript files.</source>
+        <target state="translated">Habilitar/deshabilitar las referencias de CodeLens en los archivos de JavaScript.</target>
+      </trans-unit>
+      <trans-unit id="javascript.referencesCodeLens.showOnAllFunctions">
+        <source xml:lang="en">Enable/disable references CodeLens on all functions in JavaScript files.</source>
+        <target state="translated">Habilitar o deshabilitar CodeLens de referencias en todas las funciones de los archivos de JavaScript.</target>
+      </trans-unit>
+      <trans-unit id="typescript.referencesCodeLens.enabled">
+        <source xml:lang="en">Enable/disable references CodeLens in TypeScript files.</source>
+        <target state="translated">Habilita o deshabilita CodeLens de referencias en archivos de TypeScript.</target>
+      </trans-unit>
+      <trans-unit id="typescript.referencesCodeLens.showOnAllFunctions">
+        <source xml:lang="en">Enable/disable references CodeLens on all functions in TypeScript files.</source>
+        <target state="translated">Habilitar/deshabilitar referencias CodeLens en todas las funciones en archivos TypeScript.</target>
+      </trans-unit>
+      <trans-unit id="typescript.implementationsCodeLens.enabled">
+        <source xml:lang="en">Enable/disable implementations CodeLens. This CodeLens shows the implementers of an interface.</source>
+        <target state="translated">Habilite o deshabilite las implementaciones de CodeLens. Esta instancia de CodeLens muestra los implementadores de una interfaz.</target>
+      </trans-unit>
+      <trans-unit id="typescript.openTsServerLog.title">
+        <source xml:lang="en">Open TS Server log</source>
+        <target state="translated">Abrir registro del servidor de TS</target>
+      </trans-unit>
+      <trans-unit id="typescript.restartTsServer">
+        <source xml:lang="en">Restart TS server</source>
+        <target state="translated">Reiniciar servidor TS</target>
+      </trans-unit>
+      <trans-unit id="typescript.selectTypeScriptVersion.title">
+        <source xml:lang="en">Select TypeScript Version...</source>
+        <target state="translated">Seleccione la versión de TypeScript...</target>
+      </trans-unit>
+      <trans-unit id="typescript.reportStyleChecksAsWarnings">
+        <source xml:lang="en">Report style checks as warnings.</source>
+        <target state="translated">Notifique las comprobaciones de estilo como advertencias.</target>
+      </trans-unit>
+      <trans-unit id="javascript.implicitProjectConfig.checkJs">
+        <source xml:lang="en">Enable/disable semantic checking of JavaScript files. Existing jsconfig.json or tsconfig.json files override this setting. Requires using TypeScript 2.3.1 or newer in the workspace.</source>
+        <target state="translated">Habilita o deshabilita la comprobación semántica de archivos de JavaScript. Los archivos jsconfig.json o tsconfig.json invalidan esta opción. Requiere el uso de TypeScript 2.3.1 o posterior en el área de trabajo.</target>
+      </trans-unit>
+      <trans-unit id="typescript.npm">
+        <source xml:lang="en">Specifies the path to the npm executable used for Automatic Type Acquisition. Requires using TypeScript 2.3.4 or newer in the workspace.</source>
+        <target state="translated">Especifica la ruta de acceso al archivo ejecutable de NPM que se usa para la adquisición de tipos automática. Requiere el uso de TypeScript 2.3.4 o posterior en el área de trabajo.</target>
+      </trans-unit>
+      <trans-unit id="typescript.check.npmIsInstalled">
+        <source xml:lang="en">Check if npm is installed for Automatic Type Acquisition.</source>
+        <target state="translated">Compruebe si NPM está instalado para la adquisición automática de tipos.</target>
+      </trans-unit>
+      <trans-unit id="configuration.suggest.names">
+        <source xml:lang="en">Enable/disable including unique names from the file in JavaScript suggestions. Note that name suggestions are always disabled in JavaScript code that is semantically checked using `@ts-check` or `checkJs`.</source>
+        <target state="translated">Habilite/deshabilite la inclusión de nombres únicos del archivo en las sugerencias de JavaScript. Tenga en cuenta que las sugerencias de nombre siempre están deshabilitadas en el código JavaScript que se comprueba semánticamente mediante "@ts-check" o "checkJs".</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsc.autoDetect">
+        <source xml:lang="en">Controls auto detection of tsc tasks.</source>
+        <target state="translated">Controla la detección automática de las tareas TSC.</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsc.autoDetect.off">
+        <source xml:lang="en">Disable this feature.</source>
+        <target state="translated">Deshabilite esta característica.</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsc.autoDetect.on">
+        <source xml:lang="en">Create both build and watch tasks.</source>
+        <target state="translated">Cree tanto tareas de compilación como de inspección.</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsc.autoDetect.build">
+        <source xml:lang="en">Only create single run compile tasks.</source>
+        <target state="translated">Cree únicamente tareas de compilación de una sola ejecución.</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsc.autoDetect.watch">
+        <source xml:lang="en">Only create compile and watch tasks.</source>
+        <target state="translated">Cree únicamente tareas de compilación y de inspección.</target>
+      </trans-unit>
+      <trans-unit id="typescript.problemMatchers.tsc.label">
+        <source xml:lang="en">TypeScript problems</source>
+        <target state="translated">Problemas de TypeScript</target>
+      </trans-unit>
+      <trans-unit id="typescript.problemMatchers.tscWatch.label">
+        <source xml:lang="en">TypeScript problems (watch mode)</source>
+        <target state="translated">Problemas de TypeScript (modo de inspección)</target>
+      </trans-unit>
+      <trans-unit id="configuration.suggest.paths">
+        <source xml:lang="en">Enable/disable suggestions for paths in import statements and require calls.</source>
+        <target state="translated">Habilite/deshabilite las sugerencias para rutas de acceso en instrucciones de importación y requiera llamadas.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.useSeparateSyntaxServer">
+        <source xml:lang="en">Enable/disable spawning a separate TypeScript server that can more quickly respond to syntax related operations, such as calculating folding or computing document symbols. Requires using TypeScript 3.4.0 or newer in the workspace.</source>
+        <target state="translated">Habilite o deshabilite la generación de un servidor TypeScript independiente que pueda responder más rápidamente a las operaciones relacionadas con la sintaxis, como el cálculo de los símbolos de documento de plegado o de proceso. Requiere el uso de TypeScript 3.4.0 o posterior en el área de trabajo.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.maxTsServerMemory">
+        <source xml:lang="en">Set the maximum amount of memory (in MB) to allocate to the TypeScript server process</source>
+        <target state="translated">Establezca la cantidad máxima de memoria (en MB) que se asignará al proceso del servidor TypeScript</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.experimental.enableProjectDiagnostics">
+        <source xml:lang="en">(Experimental) Enables project wide error reporting.</source>
+        <target state="translated">(Experimental) Habilita los informes de errores de todo el proyecto.</target>
+      </trans-unit>
+      <trans-unit id="typescript.locale">
+        <source xml:lang="en">Sets the locale used to report JavaScript and TypeScript errors. Requires using TypeScript 2.6.0 or newer in the workspace. Default of `null` uses VS Code's locale.</source>
+        <target state="translated">Establece la configuración regional que se usa para notificar errores de JavaScript y TypeScript. Requiere el uso de TypeScript 2.6.0 o posterior en el área de trabajo. Con el valor predeterminado "null", se usa la configuración regional de VS Code.</target>
+      </trans-unit>
+      <trans-unit id="javascript.implicitProjectConfig.experimentalDecorators">
+        <source xml:lang="en">Enable/disable `experimentalDecorators` for JavaScript files that are not part of a project. Existing jsconfig.json or tsconfig.json files override this setting. Requires using TypeScript 2.3.1 or newer in the workspace.</source>
+        <target state="translated">Habilite o deshabilite "experimentalDecorators" para los archivos de JavaScript que no forman parte de un proyecto. Los archivos jsconfig.json o tsconfig.json existentes invalidan este valor. Requiere el uso de TypeScript 2.3.1 o posterior en el área de trabajo.</target>
+      </trans-unit>
+      <trans-unit id="configuration.suggest.autoImports">
+        <source xml:lang="en">Enable/disable auto import suggestions. Requires using TypeScript 2.6.1 or newer in the workspace.</source>
+        <target state="translated">Habilita o deshabilita las sugerencias de importación automáticas. Requiere el uso de TypeScript 2.6.1 o posterior en el área de trabajo.</target>
+      </trans-unit>
+      <trans-unit id="taskDefinition.tsconfig.description">
+        <source xml:lang="en">The tsconfig file that defines the TS build.</source>
+        <target state="translated">Archivo tsconfig que define la compilación de TS.</target>
+      </trans-unit>
+      <trans-unit id="javascript.suggestionActions.enabled">
+        <source xml:lang="en">Enable/disable suggestion diagnostics for JavaScript files in the editor. Requires using TypeScript 2.8 or newer in the workspace.</source>
+        <target state="translated">Habilita o deshabilita el diagnóstico de sugerencia para archivos de JavaScript en el editor. Requiere el uso de TypeScript 2.8 o posterior en el área de trabajo.</target>
+      </trans-unit>
+      <trans-unit id="typescript.suggestionActions.enabled">
+        <source xml:lang="en">Enable/disable suggestion diagnostics for TypeScript files in the editor. Requires using TypeScript 2.8 or newer in the workspace.</source>
+        <target state="translated">Habilita o deshabilita el diagnóstico de sugerencia para archivos de TypeScript en el editor. Requiere el uso de TypeScript 2.8 o posterior en el área de trabajo.</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.quoteStyle">
+        <source xml:lang="en">Preferred quote style to use for quick fixes: `single` quotes, `double` quotes, or `auto` infer quote type from existing imports. Requires using TypeScript 2.9 or newer in the workspace.</source>
+        <target state="translated">Estilo de comillas preferido para correcciones rápidas: "single" (comillas sencillas), "double" (comillas dobles) o "auto" (inferir automáticamente el tipo de comillas a partir de las importaciones actuales). Requiere el uso de TypeScript 2.9 o posterior en el área de trabajo.</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifier">
+        <source xml:lang="en">Preferred path style for auto imports.</source>
+        <target state="translated">Estilo de ruta de acceso preferido para las importaciones automáticas.</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifier.auto">
+        <source xml:lang="en">Automatically select import path style. Prefers using a relative import if `baseUrl` is configured and the relative path has fewer segments than the non-relative import.</source>
+        <target state="translated">Seleccione automáticamente el estilo de ruta de importación. Prefiere usar una importación relativa si "baseUrl" está configurado y la ruta relativa tiene menos segmentos que la importación no relativa.</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifier.relative">
+        <source xml:lang="en">Relative to the file location.</source>
+        <target state="translated">Relativo a la ubicación del archivo.</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifier.nonRelative">
+        <source xml:lang="en">Based on the `baseUrl` configured in your `jsconfig.json` / `tsconfig.json`.</source>
+        <target state="translated">Se basa en el valor "baseUrl" configurado en su "jsconfig.json" o "tsconfig.json".</target>
+      </trans-unit>
+      <trans-unit id="typescript.updateImportsOnFileMove.enabled">
+        <source xml:lang="en">Enable/disable automatic updating of import paths when you rename or move a file in VS Code. Requires using TypeScript 2.9 or newer in the workspace.</source>
+        <target state="translated">Habilite o deshabilite la actualización automática de las rutas de acceso de importación al cambiar de nombre un archivo o moverlo en VS Code. Requiere el uso de TypeScript 2.9 o posterior en el área de trabajo.</target>
+      </trans-unit>
+      <trans-unit id="typescript.updateImportsOnFileMove.enabled.prompt">
+        <source xml:lang="en">Prompt on each rename.</source>
+        <target state="translated">Preguntar cada vez que se cambie de nombre.</target>
+      </trans-unit>
+      <trans-unit id="typescript.updateImportsOnFileMove.enabled.always">
+        <source xml:lang="en">Always update paths automatically.</source>
+        <target state="translated">Actualizar siempre las rutas de acceso automáticamente.</target>
+      </trans-unit>
+      <trans-unit id="typescript.updateImportsOnFileMove.enabled.never">
+        <source xml:lang="en">Never rename paths and don't prompt.</source>
+        <target state="translated">No cambiar nunca el nombre de las rutas de acceso y no preguntar.</target>
+      </trans-unit>
+      <trans-unit id="typescript.autoClosingTags">
+        <source xml:lang="en">Enable/disable automatic closing of JSX tags. Requires using TypeScript 3.0 or newer in the workspace.</source>
+        <target state="translated">Activar/desactivar el cierre automático de etiquetas JSX. Requiere el uso de TypeScript 3.0 o más reciente en el área de trabajo.</target>
+      </trans-unit>
+      <trans-unit id="typescript.suggest.enabled">
+        <source xml:lang="en">Enabled/disable autocomplete suggestions.</source>
+        <target state="translated">Sugerencias de Autocomplete habilitadas/deshabilitadas.</target>
+      </trans-unit>
+      <trans-unit id="configuration.surveys.enabled">
+        <source xml:lang="en">Enabled/disable occasional surveys that help us improve VS Code's JavaScript and TypeScript support.</source>
+        <target state="translated">Habilitar/deshabilitar las encuestas ocasionales que nos ayudan a mejorar la compatibilidad de JavaScript y TypeScript en VS Code.</target>
+      </trans-unit>
+      <trans-unit id="configuration.suggest.completeJSDocs">
+        <source xml:lang="en">Enable/disable suggestion to complete JSDoc comments.</source>
+        <target state="translated">Habilitar/deshabilitar sugerencia para completar comentarios JSDoc.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions">
+        <source xml:lang="en">Configure which watching strategies should be used to keep track of files and directories. Requires using TypeScript 3.8+ in the workspace.</source>
+        <target state="translated">Configure qué estrategias de observación se deben utilizar para realizar un seguimiento de los archivos y directorios. Requiere el uso de TypeScript 3.8+ en el área de trabajo.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchFile">
+        <source xml:lang="en">Strategy for how individual files are watched.</source>
+        <target state="translated">Estrategia de cómo se ven los archivos individuales.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchFile.fixedPollingInterval">
+        <source xml:lang="en">Check every file for changes several times a second at a fixed interval.</source>
+        <target state="translated">Compruebe cada archivo en busca de cambios varias veces por segundo en un intervalo fijo.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchFile.priorityPollingInterval">
+        <source xml:lang="en">Check every file for changes several times a second, but use heuristics to check certain types of files less frequently than others.</source>
+        <target state="translated">Compruebe cada archivo en busca de cambios varias veces por segundo, pero utilice la heurística para comprobar ciertos tipos de archivos con menos frecuencia que otros.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchFile.dynamicPriorityPolling">
+        <source xml:lang="en">Use a dynamic queue where less-frequently modified files will be checked less often.</source>
+        <target state="translated">Utilice una cola dinámica en la que los archivos modificados con menos frecuencia se comprueben con menos frecuencia.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchFile.useFsEvents">
+        <source xml:lang="en">Attempt to use the operating system/file system’s native events for file changes.</source>
+        <target state="translated">Intente utilizar los eventos nativos del sistema operativo/sistema de archivos para los cambios de archivo.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchFile.useFsEventsOnParentDirectory">
+        <source xml:lang="en">Attempt to use the operating system/file system’s native events to listen for changes on a file’s containing directories. This can use fewer file watchers, but might be less accurate.</source>
+        <target state="translated">Intente utilizar los eventos nativos del sistema operativo/sistema de archivos para escuchar los cambios en los directorios que contienen un archivo. Puede utilizar menos observadores de archivos, pero puede ser menos preciso.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchDirectory">
+        <source xml:lang="en">Strategy for how entire directory trees are watched under systems that lack recursive file-watching functionality.</source>
+        <target state="translated">Estrategia de cómo se observan árboles de directorios completos en sistemas que carecen de funcionalidad recursiva de observación de archivos.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchDirectory.fixedPollingInterval">
+        <source xml:lang="en">Check every directory for changes several times a second at a fixed interval.</source>
+        <target state="translated">Compruebe cada directorio en busca de cambios varias veces por segundo en un intervalo fijo.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchDirectory.dynamicPriorityPolling">
+        <source xml:lang="en">Use a dynamic queue where less-frequently modified directories will be checked less often.</source>
+        <target state="translated">Utilice una cola dinámica en la que los directorios modificados con menos frecuencia se comprueben con menos frecuencia.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchDirectory.useFsEvents">
+        <source xml:lang="en">Attempt to use the operating system/file system’s native events for directory changes.</source>
+        <target state="translated">Intente utilizar los eventos nativos del sistema operativo/sistema de archivos para los cambios de directorio.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.fallbackPolling">
+        <source xml:lang="en">When using file system events, this option specifies the polling strategy that gets used when the system runs out of native file watchers and/or doesn’t support native file watchers.</source>
+        <target state="translated">Cuando se utilizan eventos del sistema de archivos, esta opción especifica la estrategia de sondeo que se utiliza cuando el sistema se queda sin monitores de archivos nativos o no admite monitores de archivos nativos.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.fallbackPolling.fixedPollingInterval">
+        <source xml:lang="en">Check every file for changes several times a second at a fixed interval.</source>
+        <target state="translated">Compruebe cada archivo en busca de cambios varias veces por segundo en un intervalo fijo.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.fallbackPolling.priorityPollingInterval">
+        <source xml:lang="en">Check every file for changes several times a second, but use heuristics to check certain types of files less frequently than others.</source>
+        <target state="translated">Compruebe cada archivo en busca de cambios varias veces por segundo, pero utilice la heurística para comprobar ciertos tipos de archivos con menos frecuencia que otros.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.fallbackPolling.dynamicPriorityPolling ">
+        <source xml:lang="en">Use a dynamic queue where less-frequently modified files will be checked less often.</source>
+        <target state="translated">Utilice una cola dinámica en la que los archivos modificados con menos frecuencia se comprueben con menos frecuencia.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.synchronousWatchDirectory">
+        <source xml:lang="en">Disable deferred watching on directories. Deferred watching is useful when lots of file changes might occur at once (e.g. a change in node_modules from running npm install), but you might want to disable it with this flag for some less-common setups.</source>
+        <target state="translated">Deshabilite la observación diferida en directorios. La observación diferida es útil cuando pueden producirse muchos cambios en los archivos a la vez (por ejemplo, un cambio en node_modules de ejecutar npm install), pero es posible que desee deshabilitarla con esta marca para algunas configuraciones menos comunes.</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.renameShorthandProperties">
+        <source xml:lang="en">Enable/disable introducing aliases for object shorthand properties during renames. Requires using TypeScript 3.4 or newer in the workspace.</source>
+        <target state="translated">Habilita/deshabilita la introducción de alias para propiedades de objeto al renombrar. Requiere utilizar TypeScript 3.4 o superior en el área de trabajo.</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.extract.constant.title">
+        <source xml:lang="en">Extract constant</source>
+        <target state="translated">Extraer constante</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.extract.constant.description">
+        <source xml:lang="en">Extract expression to constant.</source>
+        <target state="translated">Extraiga la expresión en constante.</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.extract.function.title">
+        <source xml:lang="en">Extract function</source>
+        <target state="translated">Extraer función</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.extract.function.description">
+        <source xml:lang="en">Extract expression to method or function.</source>
+        <target state="translated">Extraiga la expresión al método o a la función.</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.extract.type.title">
+        <source xml:lang="en">Extract type</source>
+        <target state="translated">Extraer tipo</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.extract.type.description">
+        <source xml:lang="en">Extract type to a type alias.</source>
+        <target state="translated">Extraer tipo en un alias de tipo.</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.extract.interface.title">
+        <source xml:lang="en">Extract interface</source>
+        <target state="translated">Extraer interfaz</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.extract.interface.description">
+        <source xml:lang="en">Extract type to an interface.</source>
+        <target state="translated">Extraer el tipo a una interfaz.</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.import.title">
+        <source xml:lang="en">Convert import</source>
+        <target state="translated">Convertir importación</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.import.description">
+        <source xml:lang="en">Convert between named imports and namespace imports.</source>
+        <target state="translated">Convertir entre importaciones con nombre e importaciones del espacio de nombres.</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.export.title">
+        <source xml:lang="en">Convert export</source>
+        <target state="translated">Convertir exportación</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.export.description">
+        <source xml:lang="en">Convert between default export and named export.</source>
+        <target state="translated">Convierta entre la exportación predeterminada y la exportación con nombre.</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.move.newFile.title">
+        <source xml:lang="en">Move to a new file</source>
+        <target state="translated">Mover a un nuevo archivo</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.move.newFile.description">
+        <source xml:lang="en">Move the expression to a new file.</source>
+        <target state="translated">Mover la expresión a un nuevo archivo.</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.arrow.braces.title">
+        <source xml:lang="en">Rewrite arrow braces</source>
+        <target state="translated">Reescribir llaves de flecha</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.arrow.braces.description">
+        <source xml:lang="en">Add or remove braces in an arrow function.</source>
+        <target state="translated">Agregar o quitar llaves en una función de flecha.</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.parameters.toDestructured.title">
+        <source xml:lang="en">Convert parameters to destructured object</source>
+        <target state="translated">Convertir parámetros en objetos desestructurados</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.property.generateAccessors.title">
+        <source xml:lang="en">Generate accessors</source>
+        <target state="translated">Generar descriptores de acceso</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.property.generateAccessors.description">
+        <source xml:lang="en">Generate 'get' and 'set' accessors</source>
+        <target state="translated">Generar descriptores de acceso "get" y "set"</target>
+      </trans-unit>
+      <trans-unit id="codeActions.source.organizeImports.title">
+        <source xml:lang="en">Organize imports</source>
+        <target state="translated">Organizar Importaciones</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/utils/api" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="invalidVersion">
+        <source xml:lang="en">invalid version</source>
+        <target state="translated">versión inválida</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/baseCodeLensProvider" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="referenceErrorLabel">
+        <source xml:lang="en">Could not determine references</source>
+        <target state="translated">No se pudieron determinar las referencias</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/commands/goToProjectConfiguration" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="typescript.projectConfigNoWorkspace">
+        <source xml:lang="en">Please open a folder in VS Code to use a TypeScript or JavaScript project</source>
+        <target state="translated">Abra una carpeta en VS Code para usar un proyecto de TypeScript o JavaScript</target>
+      </trans-unit>
+      <trans-unit id="typescript.projectConfigUnsupportedFile">
+        <source xml:lang="en">Could not determine TypeScript or JavaScript project. Unsupported file type</source>
+        <target state="translated">No se pudo determinar el proyecto de TypeScript o JavaScript. Tipo de archivo no compatible</target>
+      </trans-unit>
+      <trans-unit id="typescript.projectConfigCouldNotGetInfo">
+        <source xml:lang="en">Could not determine TypeScript or JavaScript project</source>
+        <target state="translated">No se pudo determinar el proyecto de TypeScript o JavaScript</target>
+      </trans-unit>
+      <trans-unit id="typescript.noTypeScriptProjectConfig">
+        <source xml:lang="en">File is not part of a TypeScript project. Click [here]({0}) to learn more.</source>
+        <target state="translated">El archivo no forma parte de un proyecto de TypeScript. Haga clic [aquí]({0}) para obtener más información.</target>
+      </trans-unit>
+      <trans-unit id="typescript.noJavaScriptProjectConfig">
+        <source xml:lang="en">File is not part of a JavaScript project Click [here]({0}) to learn more.</source>
+        <target state="translated">El archivo no forma parte de un proyecto de JavaScript. Haga clic [aquí]({0}) para obtener más información.</target>
+      </trans-unit>
+      <trans-unit id="typescript.configureTsconfigQuickPick">
+        <source xml:lang="en">Configure tsconfig.json</source>
+        <target state="translated">Configurar tsconfig.json</target>
+      </trans-unit>
+      <trans-unit id="typescript.configureJsconfigQuickPick">
+        <source xml:lang="en">Configure jsconfig.json</source>
+        <target state="translated">Configurar jsconfig.json</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/completions" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="selectCodeAction">
+        <source xml:lang="en">Select code action to apply</source>
+        <target state="translated">Seleccione acción de código para aplicar</target>
+      </trans-unit>
+      <trans-unit id="acquiringTypingsLabel">
+        <source xml:lang="en">Acquiring typings...</source>
+        <target state="translated">Adquiriendo typings...</target>
+        <note>Typings refers to the *.d.ts typings files that power our IntelliSense. It should not be localized</note>
+      </trans-unit>
+      <trans-unit id="acquiringTypingsDetail">
+        <source xml:lang="en">Acquiring typings definitions for IntelliSense.</source>
+        <target state="translated">Adquiriendo definiciones de typings para IntelliSense.</target>
+        <note>Typings refers to the *.d.ts typings files that power our IntelliSense. It should not be localized</note>
+      </trans-unit>
+      <trans-unit id="autoImportLabel">
+        <source xml:lang="en">Auto import from {0}</source>
+        <target state="translated">Importar automáticamente desde {0}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/directiveCommentCompletions" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="ts-check">
+        <source xml:lang="en">Enables semantic checking in a JavaScript file. Must be at the top of a file.</source>
+        <target state="translated">Habilita la verificación semántica en un archivo de JavaScript. Debe estar al principio del archivo.</target>
+      </trans-unit>
+      <trans-unit id="ts-nocheck">
+        <source xml:lang="en">Disables semantic checking in a JavaScript file. Must be at the top of a file.</source>
+        <target state="translated">Deshabilita la verificación semántica en un archivo de JavaScript. Debe estar al principio del archivo.</target>
+      </trans-unit>
+      <trans-unit id="ts-ignore">
+        <source xml:lang="en">Suppresses @ts-check errors on the next line of a file.</source>
+        <target state="translated">Suprime los errores @ts-check en la siguiente línea de un archivo. </target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/implementationsCodeLens" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="oneImplementationLabel">
+        <source xml:lang="en">1 implementation</source>
+        <target state="translated">1 implementación</target>
+      </trans-unit>
+      <trans-unit id="manyImplementationLabel">
+        <source xml:lang="en">{0} implementations</source>
+        <target state="translated">{0} implementaciones</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/jsDocCompletions" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="typescript.jsDocCompletionItem.documentation">
+        <source xml:lang="en">JSDoc comment</source>
+        <target state="translated">Comentario de JSDoc</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/organizeImports" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="organizeImportsAction.title">
+        <source xml:lang="en">Organize Imports</source>
+        <target state="translated">Organizar Importaciones</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/quickFix" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="fixAllInFileLabel">
+        <source xml:lang="en">{0} (Fix all in file)</source>
+        <target state="translated">{0} (Corregir todo en el archivo)</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/fixAll" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="autoFix.label">
+        <source xml:lang="en">Auto fix</source>
+        <target state="translated">Corrección automática</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/refactor" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="refactoringFailed">
+        <source xml:lang="en">Could not apply refactoring</source>
+        <target state="translated">No se pudo aplicar la refactorización</target>
+      </trans-unit>
+      <trans-unit id="extractConstant.disabled.title">
+        <source xml:lang="en">Extract to constant</source>
+        <target state="translated">Extraer a una constante</target>
+      </trans-unit>
+      <trans-unit id="extractConstant.disabled.reason">
+        <source xml:lang="en">The current selection cannot be extracted</source>
+        <target state="translated">No se puede extraer la selección actual</target>
+      </trans-unit>
+      <trans-unit id="extractFunction.disabled.title">
+        <source xml:lang="en">Extract to function</source>
+        <target state="translated">Extraer a función</target>
+      </trans-unit>
+      <trans-unit id="extractFunction.disabled.reason">
+        <source xml:lang="en">The current selection cannot be extracted</source>
+        <target state="translated">No se puede extraer la selección actual</target>
+      </trans-unit>
+      <trans-unit id="refactor.documentation.title">
+        <source xml:lang="en">Learn more about JS/TS refactorings</source>
+        <target state="translated">Más información sobre las refactorizaciones JS/TS</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/referencesCodeLens" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="oneReferenceLabel">
+        <source xml:lang="en">1 reference</source>
+        <target state="translated">1 referencia</target>
+      </trans-unit>
+      <trans-unit id="manyReferenceLabel">
+        <source xml:lang="en">{0} references</source>
+        <target state="translated">{0} referencias</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/rename" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="fileRenameFail">
+        <source xml:lang="en">An error occurred while renaming file</source>
+        <target state="translated">Error al cambiar el nombre del archivo</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/typescriptServiceClient" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="noServerFound">
+        <source xml:lang="en">The path {0} doesn't point to a valid tsserver install. Falling back to bundled TypeScript version.</source>
+        <target state="translated">La ruta de acceso {0} no apunta a una instalación válida de tsserver. Se usará la versión de TypeScript del paquete.</target>
+      </trans-unit>
+      <trans-unit id="serverExitedWithError">
+        <source xml:lang="en">TypeScript language server exited with error. Error message is: {0}</source>
+        <target state="translated">El servidor de lenguaje TypeScript terminó con error. Mensaje de error: {0}</target>
+      </trans-unit>
+      <trans-unit id="typescript.openTsServerLog.loggingNotEnabled">
+        <source xml:lang="en">TS Server logging is off. Please set `typescript.tsserver.log` and restart the TS server to enable logging</source>
+        <target state="translated">Los registros del servidor TS están desconectados. Establezca "typescript.tsserver.log" y reinicie el servidor TS para activar los registros.</target>
+      </trans-unit>
+      <trans-unit id="typescript.openTsServerLog.enableAndReloadOption">
+        <source xml:lang="en">Enable logging and restart TS server</source>
+        <target state="translated">Habilite el registro y reinicie el servidor TS</target>
+      </trans-unit>
+      <trans-unit id="typescript.openTsServerLog.noLogFile">
+        <source xml:lang="en">TS Server has not started logging.</source>
+        <target state="translated">El servidor de TS no ha iniciado el registro.</target>
+      </trans-unit>
+      <trans-unit id="openTsServerLog.openFileFailedFailed">
+        <source xml:lang="en">Could not open TS Server log file</source>
+        <target state="translated">No se puede abrir el archivo de registro del servidor de TS</target>
+      </trans-unit>
+      <trans-unit id="serverDiedAfterStart">
+        <source xml:lang="en">The TypeScript language service died 5 times right after it got started. The service will not be restarted.</source>
+        <target state="translated">El servicio de lenguaje TypeScript finalizó de forma inesperada cinco veces después de haberse iniciado y no se reiniciará.</target>
+      </trans-unit>
+      <trans-unit id="serverDiedReportIssue">
+        <source xml:lang="en">Report Issue</source>
+        <target state="translated">Notificar problema</target>
+      </trans-unit>
+      <trans-unit id="serverDied">
+        <source xml:lang="en">The TypeScript language service died unexpectedly 5 times in the last 5 Minutes.</source>
+        <target state="translated">El servicio de lenguaje Typescript finalizó de forma inesperada cinco veces en los últimos cinco minutos.</target>
+      </trans-unit>
+      <trans-unit id="serverLoading.progress">
+        <source xml:lang="en">Initializing JS/TS language features</source>
+        <target state="translated">Inicialización de características del lenguaje JS/TS</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/utils/logger" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="channelName">
+        <source xml:lang="en">TypeScript</source>
+        <target state="translated">TypeScript</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/utils/versionPicker" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="useVSCodeVersionOption">
+        <source xml:lang="en">Use VS Code's Version</source>
+        <target state="translated">Utilizar la versión de VS Code</target>
+      </trans-unit>
+      <trans-unit id="useWorkspaceVersionOption">
+        <source xml:lang="en">Use Workspace Version</source>
+        <target state="translated">Usar versión del área de trabajo</target>
+      </trans-unit>
+      <trans-unit id="learnMore">
+        <source xml:lang="en">Learn More</source>
+        <target state="translated">Más información</target>
+      </trans-unit>
+      <trans-unit id="selectTsVersion">
+        <source xml:lang="en">Select the TypeScript version used for JavaScript and TypeScript language features</source>
+        <target state="translated">Seleccionar la versión de TypeScript usada para las características del lenguaje de JavaScript y TypeScript</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/utils/versionProvider" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="couldNotLoadTsVersion">
+        <source xml:lang="en">Could not load the TypeScript version at this path</source>
+        <target state="translated">No se pudo cargar la versión de TypeScript en esta ruta</target>
+      </trans-unit>
+      <trans-unit id="noBundledServerFound">
+        <source xml:lang="en">VS Code's tsserver was deleted by another application such as a misbehaving virus detection tool. Please reinstall VS Code.</source>
+        <target state="translated">Otra aplicación (por ejemplo, una herramienta de detección de virus con un comportamiento erróneo) eliminó el tsserver de VSCode. Debe reinstalar el VS Code.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/utils/typingsStatus" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="installingPackages">
+        <source xml:lang="en">Fetching data for better TypeScript IntelliSense</source>
+        <target state="translated">Recuperando cambios en los datos para un mejor rendimiento de TypeScript IntelliSense</target>
+      </trans-unit>
+      <trans-unit id="typesInstallerInitializationFailed.title">
+        <source xml:lang="en">Could not install typings files for JavaScript language features. Please ensure that NPM is installed or configure 'typescript.npm' in your user settings. Click [here]({0}) to learn more.</source>
+        <target state="translated">No se pudieron instalar archivos de términos para las características de lenguaje de JavaScript. Asegúrese de que NPM está instalado o configure "typescript.npm" en la configuración de usuario. Haga clic [aquí]({0}) para obtener más información.</target>
+      </trans-unit>
+      <trans-unit id="typesInstallerInitializationFailed.doNotCheckAgain">
+        <source xml:lang="en">Don't Show Again</source>
+        <target state="translated">No mostrar de nuevo</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/utils/versionStatus" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="typescriptVersion">
+        <source xml:lang="en">TypeScript: Version</source>
+        <target state="translated">TypeScript: Versión</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/updatePathsOnRename" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="renameProgress.title">
+        <source xml:lang="en">Checking for update of JS/TS imports</source>
+        <target state="translated">Comprobación de actualización de importaciones de JS/TS</target>
+      </trans-unit>
+      <trans-unit id="prompt">
+        <source xml:lang="en">Update imports for '{0}'?</source>
+        <target state="translated">¿Actualizar las importaciones para "{0}"?</target>
+      </trans-unit>
+      <trans-unit id="promptMoreThanOne">
+        <source xml:lang="en">Update imports for the following {0} files?</source>
+        <target state="translated">¿Actualizar importaciones para los siguientes {0} archivos?</target>
+      </trans-unit>
+      <trans-unit id="reject.title">
+        <source xml:lang="en">No</source>
+        <target state="translated">No</target>
+      </trans-unit>
+      <trans-unit id="accept.title">
+        <source xml:lang="en">Yes</source>
+        <target state="translated">Sí</target>
+      </trans-unit>
+      <trans-unit id="always.title">
+        <source xml:lang="en">Always automatically update imports</source>
+        <target state="translated">Actualizar siempre las importaciones automáticamente</target>
+      </trans-unit>
+      <trans-unit id="never.title">
+        <source xml:lang="en">Never automatically update imports</source>
+        <target state="translated">No actualizar nunca las importaciones automáticamente</target>
+      </trans-unit>
+      <trans-unit id="moreFile">
+        <source xml:lang="en">...1 additional file not shown</source>
+        <target state="translated">...1 archivo más que no se muestra</target>
+      </trans-unit>
+      <trans-unit id="moreFiles">
+        <source xml:lang="en">...{0} additional files not shown</source>
+        <target state="translated">...{0} archivos más que no se muestran</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/utils/projectStatus" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="statusExclude">
+        <source xml:lang="en">TypeScript: Configure Excludes</source>
+        <target state="translated">TypeScript: configurar Excludes</target>
+      </trans-unit>
+      <trans-unit id="hintExclude">
+        <source xml:lang="en">To enable project-wide JavaScript/TypeScript language features, exclude folders with many files, like: {0}</source>
+        <target state="translated">Para habilitar las características de lenguaje de JavaScript/TypeScript en todo el proyecto, excluya las carpetas con muchos archivos, como: {0}</target>
+      </trans-unit>
+      <trans-unit id="hintExclude.generic">
+        <source xml:lang="en">To enable project-wide JavaScript/TypeScript language features, exclude large folders with source files that you do not work on.</source>
+        <target state="translated">Para habilitar las características de idioma de JavaScript/TypeScript IntelliSense en todo el proyecto, excluya las carpetas de tamaño grande con archivos de origen en los que no trabaje.</target>
+      </trans-unit>
+      <trans-unit id="large.label">
+        <source xml:lang="en">Configure Excludes</source>
+        <target state="translated">Configurar exclusiones</target>
+      </trans-unit>
+      <trans-unit id="hintExclude.tooltip">
+        <source xml:lang="en">To enable project-wide JavaScript/TypeScript language features, exclude large folders with source files that you do not work on.</source>
+        <target state="translated">Para habilitar las características de idioma de JavaScript/TypeScript IntelliSense en todo el proyecto, excluya las carpetas de tamaño grande con archivos de origen en los que no trabaje.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/task" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="badTsConfig">
+        <source xml:lang="en">TypeScript Task in tasks.json contains "\\". TypeScript tasks tsconfig must use "/"</source>
+        <target state="translated">La tarea Typescript en tasks.json contiene "\\". Las tareas de Typescript tsconfig deben usar "/"</target>
+      </trans-unit>
+      <trans-unit id="buildTscLabel">
+        <source xml:lang="en">build - {0}</source>
+        <target state="translated">compilación: {0}</target>
+      </trans-unit>
+      <trans-unit id="buildAndWatchTscLabel">
+        <source xml:lang="en">watch - {0}</source>
+        <target state="translated">seguir - {0}</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

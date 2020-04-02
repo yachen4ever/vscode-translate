@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/workbench/services/themes/common/colorExtensionPoint" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="contributes.color">
+        <source xml:lang="en">Contributes extension defined themable colors</source>
+        <target state="translated">Добавляет цвета тем, определяемые расширением </target>
+      </trans-unit>
+      <trans-unit id="contributes.color.id">
+        <source xml:lang="en">The identifier of the themable color</source>
+        <target state="translated">Идентификатор цвета темы</target>
+      </trans-unit>
+      <trans-unit id="contributes.color.id.format">
+        <source xml:lang="en">Identifiers should be in the form aa[.bb]*</source>
+        <target state="translated">Идентификаторы необходимо указывать в форме aa [.bb]*</target>
+      </trans-unit>
+      <trans-unit id="contributes.color.description">
+        <source xml:lang="en">The description of the themable color</source>
+        <target state="translated">Описание цвета темы</target>
+      </trans-unit>
+      <trans-unit id="contributes.defaults.light">
+        <source xml:lang="en">The default color for light themes. Either a color value in hex (#RRGGBB[AA]) or the identifier of a themable color which provides the default.</source>
+        <target state="translated">Цвет по умолчанию для светлых тем. Укажите значение цвета в шестнадцатеричном формате (#RRGGBB[AA]) или идентификатор цвета темы.</target>
+      </trans-unit>
+      <trans-unit id="contributes.defaults.dark">
+        <source xml:lang="en">The default color for dark themes. Either a color value in hex (#RRGGBB[AA]) or the identifier of a themable color which provides the default.</source>
+        <target state="translated">Цвет по умолчанию для темных тем. Укажите значение цвета в шестнадцатеричном формате (#RRGGBB[AA]) или идентификатор цвета темы.</target>
+      </trans-unit>
+      <trans-unit id="contributes.defaults.highContrast">
+        <source xml:lang="en">The default color for high contrast themes. Either a color value in hex (#RRGGBB[AA]) or the identifier of a themable color which provides the default.</source>
+        <target state="translated">Цвет по умолчанию для тем с высоким контрастом. Укажите значение цвета в шестнадцатеричном формате (#RRGGBB[AA]) или идентификатор цвета темы.</target>
+      </trans-unit>
+      <trans-unit id="invalid.colorConfiguration">
+        <source xml:lang="en">'configuration.colors' must be a array</source>
+        <target state="translated">'configuration.colors' должен быть массивом</target>
+      </trans-unit>
+      <trans-unit id="invalid.default.colorType">
+        <source xml:lang="en">{0} must be either a color value in hex (#RRGGBB[AA] or #RGB[A]) or the identifier of a themable color which provides the default.</source>
+        <target state="translated">{0} должен представлять собой значение цвета в шестнадцатеричном формате (#RRGGBB[AA] или #RGB[A]) или идентификатор цвета темы.</target>
+      </trans-unit>
+      <trans-unit id="invalid.id">
+        <source xml:lang="en">'configuration.colors.id' must be defined and can not be empty</source>
+        <target state="translated">Параметр 'configuration.colors.id' должен быть указан и не может быть пустым</target>
+      </trans-unit>
+      <trans-unit id="invalid.id.format">
+        <source xml:lang="en">'configuration.colors.id' must follow the word[.word]*</source>
+        <target state="translated">Параметр 'configuration.colors.id' должен следовать за word[.word]*</target>
+      </trans-unit>
+      <trans-unit id="invalid.description">
+        <source xml:lang="en">'configuration.colors.description' must be defined and can not be empty</source>
+        <target state="translated">Параметр 'configuration.colors.description' должен быть указан и не может быть пустым</target>
+      </trans-unit>
+      <trans-unit id="invalid.defaults">
+        <source xml:lang="en">'configuration.colors.defaults' must be defined and must contain 'light', 'dark' and 'highContrast'</source>
+        <target state="translated">'configuration.colors.defaults' может быть указан и может содержать значения 'light', 'dark' и 'highContrast'</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/common/tokenClassificationExtensionPoint" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="contributes.semanticTokenTypes">
+        <source xml:lang="en">Contributes semantic token types.</source>
+        <target state="translated">Добавляет типы семантических токенов.</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenTypes.id">
+        <source xml:lang="en">The identifier of the semantic token type</source>
+        <target state="translated">Идентификатор типа семантического токена</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenTypes.id.format">
+        <source xml:lang="en">Identifiers should be in the form letterOrDigit[_-letterOrDigit]*</source>
+        <target state="translated">Идентификаторы должны иметь форму буква_или_цифра[_-буква_или_цифра]*</target>
+      </trans-unit>
+      <trans-unit id="contributes.color.description">
+        <source xml:lang="en">The description of the semantic token type</source>
+        <target state="translated">Описание типа семантического маркера</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenModifiers">
+        <source xml:lang="en">Contributes semantic token modifiers.</source>
+        <target state="translated">Добавляет модификаторы семантических токенов.</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenModifiers.id">
+        <source xml:lang="en">The identifier of the semantic token modifier</source>
+        <target state="translated">Идентификатор модификатора семантического токена</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenModifiers.id.format">
+        <source xml:lang="en">Identifiers should be in the form letterOrDigit[_-letterOrDigit]*</source>
+        <target state="translated">Идентификаторы должны иметь форму буква_или_цифра[_-буква_или_цифра]*</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenModifiers.description">
+        <source xml:lang="en">The description of the semantic token modifier</source>
+        <target state="translated">Описание модификатора семантического токена</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenStyleDefaults">
+        <source xml:lang="en">Contributes semantic token style defaults.</source>
+        <target state="translated">Добавляет значения по умолчанию для стиля семантического токена.</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenStyleDefaults.selector">
+        <source xml:lang="en">The selector matching token types and modifiers.</source>
+        <target state="translated">Селектор, сопоставляющий типы токенов и модификаторы.</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenStyleDefaults.selector.format">
+        <source xml:lang="en">Selectors should be in the form (type|*)(.modifier)*</source>
+        <target state="translated">Селекторы должны иметь форму (тип|*)(.модификатор)*</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenStyleDefaults.scope">
+        <source xml:lang="en">A TextMate scope against the current color theme is matched to find the style for the given selector</source>
+        <target state="translated">Область TextMate сравнивается с текущей цветовой темой, чтобы определить стиль для заданного селектора</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenStyleDefaults.light">
+        <source xml:lang="en">The default style used for light themes</source>
+        <target state="translated">Стиль по умолчанию, используемый для светлых тем</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenStyleDefaults.dark">
+        <source xml:lang="en">The default style used for dark themes</source>
+        <target state="translated">Стиль по умолчанию для темных тем</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenStyleDefaults.hc">
+        <source xml:lang="en">The default style used for high contrast themes</source>
+        <target state="translated">Стиль по умолчанию, используемый для высококонтрастных тем</target>
+      </trans-unit>
+      <trans-unit id="invalid.id">
+        <source xml:lang="en">'configuration.{0}.id' must be defined and can not be empty</source>
+        <target state="translated">"configuration.{0}.id" должен быть определен и не может быть пустым</target>
+      </trans-unit>
+      <trans-unit id="invalid.id.format">
+        <source xml:lang="en">'configuration.{0}.id' must follow the pattern letterOrDigit[-_letterOrDigit]*</source>
+        <target state="translated">"configuration.{0}.id" должен следовать шаблону буква_или_цифра[-_буква_или_цифра]*</target>
+      </trans-unit>
+      <trans-unit id="invalid.superType.format">
+        <source xml:lang="en">'configuration.{0}.superType' must follow the pattern letterOrDigit[-_letterOrDigit]*</source>
+        <target state="translated">"'configuration.{0}.superType" должен следовать шаблону букваИлиЦифра[-_букваИлиЦифра]*</target>
+      </trans-unit>
+      <trans-unit id="invalid.description">
+        <source xml:lang="en">'configuration.{0}.description' must be defined and can not be empty</source>
+        <target state="translated">"configuration.{0}.description" должен быть определен и не может быть пустым</target>
+      </trans-unit>
+      <trans-unit id="invalid.color">
+        <source xml:lang="en">'configuration.{0}.foreground'  must follow the pattern #RRGGBB[AA]</source>
+        <target state="translated">"configuration.{0}.foreground"  должен следовать шаблону #RRGGBB[AA]</target>
+      </trans-unit>
+      <trans-unit id="invalid.fontStyle">
+        <source xml:lang="en">'configuration.{0}.fontStyle'  must be one or a combination of  'italic', 'bold' or 'underline' or the empty string</source>
+        <target state="translated">"configuration.{0}.fontStyle" должен представлять собой "italic", "bold" или "underline", их сочетание или пустую строку</target>
+      </trans-unit>
+      <trans-unit id="invalid.semanticTokenTypeConfiguration">
+        <source xml:lang="en">'configuration.semanticTokenType' must be an array</source>
+        <target state="translated">"configuration.semanticTokenType" должен быть массивом</target>
+      </trans-unit>
+      <trans-unit id="invalid.semanticTokenModifierConfiguration">
+        <source xml:lang="en">'configuration.semanticTokenModifier' must be an array</source>
+        <target state="translated">"configuration.semanticTokenModifier" должен быть массивом</target>
+      </trans-unit>
+      <trans-unit id="invalid.semanticTokenStyleDefaultConfiguration">
+        <source xml:lang="en">'configuration.semanticTokenStyleDefaults' must be an array</source>
+        <target state="translated">"configuration.semanticTokenStyleDefaults" должен быть массивом</target>
+      </trans-unit>
+      <trans-unit id="invalid.selector">
+        <source xml:lang="en">'configuration.semanticTokenStyleDefaults.selector' must be defined and can not be empty</source>
+        <target state="translated">"configuration.semanticTokenStyleDefaults.selector" должен быть определен и не может быть пустым</target>
+      </trans-unit>
+      <trans-unit id="invalid.selector.format">
+        <source xml:lang="en">'configuration.semanticTokenStyleDefaults.selector' must be in the form (type|*)(.modifier)*</source>
+        <target state="translated">"configuration.semanticTokenStyleDefaults.selector" должен иметь форму (тип|*)(.модификатор)*</target>
+      </trans-unit>
+      <trans-unit id="invalid.scope">
+        <source xml:lang="en">If defined, 'configuration.semanticTokenStyleDefaults.scope' must be an array of strings</source>
+        <target state="translated">Если объект "configuration.semanticTokenStyleDefaults.scope" указан, то он должен быть массивом строк</target>
+      </trans-unit>
+      <trans-unit id="invalid.selector.parsing">
+        <source xml:lang="en">configuration.semanticTokenStyleDefaults.selector': Problems parsing {0}.</source>
+        <target state="translated">configuration.semanticTokenStyleDefaults.selector': проблемы с анализом {0}.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/browser/workbenchThemeService" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="error.cannotloadtheme">
+        <source xml:lang="en">Unable to load {0}: {1}</source>
+        <target state="translated">Не удалось загрузить {0}: {1}</target>
+      </trans-unit>
+      <trans-unit id="colorTheme">
+        <source xml:lang="en">Specifies the color theme used in the workbench.</source>
+        <target state="translated">Указывает цветовую тему, используемую на рабочем месте.</target>
+      </trans-unit>
+      <trans-unit id="colorThemeError">
+        <source xml:lang="en">Theme is unknown or not installed.</source>
+        <target state="translated">Тема неизвестна или не установлена.</target>
+      </trans-unit>
+      <trans-unit id="preferredDarkColorTheme">
+        <source xml:lang="en">Specifies the preferred color theme for dark OS appearance when '{0}' is enabled.</source>
+        <target state="translated">Определяет предпочтительную цветовую тему для темного внешнего вида ОС, когда включен "{0}".</target>
+      </trans-unit>
+      <trans-unit id="preferredLightColorTheme">
+        <source xml:lang="en">Specifies the preferred color theme for light OS appearance when '{0}' is enabled.</source>
+        <target state="translated">Определяет предпочтительную цветовую тему для светлого внешнего вида ОС, когда включен "{0}".</target>
+      </trans-unit>
+      <trans-unit id="preferredHCColorTheme">
+        <source xml:lang="en">Specifies the preferred color theme used in high contrast mode when '{0}' is enabled.</source>
+        <target state="translated">Определяет предпочтительную цветовую тему, используемую в высококонтрастном режиме, когда включен "{0}".</target>
+      </trans-unit>
+      <trans-unit id="detectColorScheme">
+        <source xml:lang="en">If set, automatically switch to the preferred color theme based on the OS appearance.</source>
+        <target state="translated">Если параметр задан, выполняется автоматическое переключение на предпочтительную цветовую тему в зависимости от внешнего вида ОС.</target>
+      </trans-unit>
+      <trans-unit id="iconTheme">
+        <source xml:lang="en">Specifies the icon theme used in the workbench or 'null' to not show any file icons.</source>
+        <target state="translated">Указывает тему значков, используемую в рабочей области. Чтобы значки файлов не отображались, используйте значение 'null'.</target>
+      </trans-unit>
+      <trans-unit id="noIconThemeDesc">
+        <source xml:lang="en">No file icons</source>
+        <target state="translated">Нет значков файлов</target>
+      </trans-unit>
+      <trans-unit id="iconThemeError">
+        <source xml:lang="en">File icon theme is unknown or not installed.</source>
+        <target state="translated">Тема значков файлов неизвестна или не установлена.</target>
+      </trans-unit>
+      <trans-unit id="workbenchColors">
+        <source xml:lang="en">Overrides colors from the currently selected color theme.</source>
+        <target state="translated">Переопределяет цвета из выбранной цветовой темы.</target>
+      </trans-unit>
+      <trans-unit id="editorColors.comments">
+        <source xml:lang="en">Sets the colors and styles for comments</source>
+        <target state="translated">Задает цвета и стили для комментариев</target>
+      </trans-unit>
+      <trans-unit id="editorColors.strings">
+        <source xml:lang="en">Sets the colors and styles for strings literals.</source>
+        <target state="translated">Задает цвета и стили для строковых литералов.</target>
+      </trans-unit>
+      <trans-unit id="editorColors.keywords">
+        <source xml:lang="en">Sets the colors and styles for keywords.</source>
+        <target state="translated">Задает цвета и стили для ключевых слов.</target>
+      </trans-unit>
+      <trans-unit id="editorColors.numbers">
+        <source xml:lang="en">Sets the colors and styles for number literals.</source>
+        <target state="translated">Задает цвета и стили для числовых литералов. </target>
+      </trans-unit>
+      <trans-unit id="editorColors.types">
+        <source xml:lang="en">Sets the colors and styles for type declarations and references.</source>
+        <target state="translated">Задает цвета и стили для объявлений типов и ссылок. </target>
+      </trans-unit>
+      <trans-unit id="editorColors.functions">
+        <source xml:lang="en">Sets the colors and styles for functions declarations and references.</source>
+        <target state="translated">Задает цвета и стили для объявлений функций и ссылок. </target>
+      </trans-unit>
+      <trans-unit id="editorColors.variables">
+        <source xml:lang="en">Sets the colors and styles for variables declarations and references.</source>
+        <target state="translated">Задает цвета и стили для объявлений переменных и для ссылок. </target>
+      </trans-unit>
+      <trans-unit id="editorColors.textMateRules">
+        <source xml:lang="en">Sets colors and styles using textmate theming rules (advanced).</source>
+        <target state="translated">Задает цвета и стили с использованием правил оформления textmate (расширенный параметр).</target>
+      </trans-unit>
+      <trans-unit id="editorColors">
+        <source xml:lang="en">Overrides editor colors and font style from the currently selected color theme.</source>
+        <target state="translated">Переопределяет цвета редактора и стиль шрифта из текущей выбранной цветовой темы.</target>
+      </trans-unit>
+      <trans-unit id="editorColorsTokenStyles">
+        <source xml:lang="en">Overrides token color and styles from the currently selected color theme.</source>
+        <target state="translated">Переопределяет цвет и стили токенов из выбранной цветовой темы.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/common/colorThemeSchema" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="schema.token.settings">
+        <source xml:lang="en">Colors and styles for the token.</source>
+        <target state="translated">Цвета и стили для токена.</target>
+      </trans-unit>
+      <trans-unit id="schema.token.foreground">
+        <source xml:lang="en">Foreground color for the token.</source>
+        <target state="translated">Цвет переднего плана для токена.</target>
+      </trans-unit>
+      <trans-unit id="schema.token.background.warning">
+        <source xml:lang="en">Token background colors are currently not supported.</source>
+        <target state="translated">Цвет фона маркера сейчас не поддерживается.</target>
+      </trans-unit>
+      <trans-unit id="schema.token.fontStyle">
+        <source xml:lang="en">Font style of the rule: 'italic', 'bold' or 'underline' or a combination. The empty string unsets inherited settings.</source>
+        <target state="translated">Стиль шрифта для правила: 'italic', 'bold', 'underline' или их сочетание. Если указана пустая строка, то унаследованные настройки отменяются.</target>
+      </trans-unit>
+      <trans-unit id="schema.fontStyle.error">
+        <source xml:lang="en">Font style must be 'italic', 'bold' or 'underline' or a combination or the empty string.</source>
+        <target state="translated">Стиль шрифта может иметь значения 'italic', 'bold' и 'underline', сочетание этих свойств или содержать пустую строку.</target>
+      </trans-unit>
+      <trans-unit id="schema.token.fontStyle.none">
+        <source xml:lang="en">None (clear inherited style)</source>
+        <target state="translated">Нет (очистить унаследованный стиль)</target>
+      </trans-unit>
+      <trans-unit id="schema.properties.name">
+        <source xml:lang="en">Description of the rule.</source>
+        <target state="translated">Описание правила.</target>
+      </trans-unit>
+      <trans-unit id="schema.properties.scope">
+        <source xml:lang="en">Scope selector against which this rule matches.</source>
+        <target state="translated">Переключатель области, для которой проверяется это правило.</target>
+      </trans-unit>
+      <trans-unit id="schema.workbenchColors">
+        <source xml:lang="en">Colors in the workbench</source>
+        <target state="translated">Цвета в workbench</target>
+      </trans-unit>
+      <trans-unit id="schema.tokenColors.path">
+        <source xml:lang="en">Path to a tmTheme file (relative to the current file).</source>
+        <target state="translated">Путь к файлу tmTheme (относительно текущего файла).</target>
+      </trans-unit>
+      <trans-unit id="schema.colors">
+        <source xml:lang="en">Colors for syntax highlighting</source>
+        <target state="translated">Цвета для выделения синтаксических конструкций</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/browser/fileIconThemeStore" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="vscode.extension.contributes.iconThemes">
+        <source xml:lang="en">Contributes file icon themes.</source>
+        <target state="translated">Добавляет темы значков файлов.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.iconThemes.id">
+        <source xml:lang="en">Id of the icon theme as used in the user settings.</source>
+        <target state="translated">Идентификатор темы значка, как используется в параметрах пользователя.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.iconThemes.label">
+        <source xml:lang="en">Label of the icon theme as shown in the UI.</source>
+        <target state="translated">Метка темы значка, как отображается в пользовательском интерфейсе.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.iconThemes.path">
+        <source xml:lang="en">Path of the icon theme definition file. The path is relative to the extension folder and is typically './icons/awesome-icon-theme.json'.</source>
+        <target state="translated">Путь к файлу определения темы значка. Путь задается относительно папки расширения и, как правило, имеет следующий вид: "./icons/awesome-icon-theme.json".</target>
+      </trans-unit>
+      <trans-unit id="reqarray">
+        <source xml:lang="en">Extension point `{0}` must be an array.</source>
+        <target state="translated">Точка расширения "{0}" должна быть массивом.</target>
+      </trans-unit>
+      <trans-unit id="reqpath">
+        <source xml:lang="en">Expected string in `contributes.{0}.path`. Provided value: {1}</source>
+        <target state="translated">В contributes.{0}.path требуется строка. Указанное значение: {1}</target>
+      </trans-unit>
+      <trans-unit id="reqid">
+        <source xml:lang="en">Expected string in `contributes.{0}.id`. Provided value: {1}</source>
+        <target state="translated">Ожидалась строка в "contributes.{0}.id". Указанное значение: {1}</target>
+      </trans-unit>
+      <trans-unit id="invalid.path.1">
+        <source xml:lang="en">Expected `contributes.{0}.path` ({1}) to be included inside extension's folder ({2}). This might make the extension non-portable.</source>
+        <target state="translated">Следует включить contributes.{0}.path ({1}) в папку расширения ({2}). От этого расширение может стать непереносимым.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/common/colorThemeStore" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="vscode.extension.contributes.themes">
+        <source xml:lang="en">Contributes textmate color themes.</source>
+        <target state="translated">Добавляет цветовые темы TextMate.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.id">
+        <source xml:lang="en">Id of the icon theme as used in the user settings.</source>
+        <target state="translated">Идентификатор темы значка, как используется в параметрах пользователя.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.label">
+        <source xml:lang="en">Label of the color theme as shown in the UI.</source>
+        <target state="translated">Метка цветовой схемы, отображаемая в пользовательском интерфейсе.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.uiTheme">
+        <source xml:lang="en">Base theme defining the colors around the editor: 'vs' is the light color theme, 'vs-dark' is the dark color theme. 'hc-black' is the dark high contrast theme.</source>
+        <target state="translated">Базовая тема, определяющая цвета оформления редактора: "vs" — светлая цветовая тема, "vs-dark" — темная цветовая тема. "hc-black" — темная высококонтрастная тема.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.path">
+        <source xml:lang="en">Path of the tmTheme file. The path is relative to the extension folder and is typically './themes/themeFile.tmTheme'.</source>
+        <target state="translated">Путь к файлу tmTheme. Путь указывается относительно папки расширения и имеет вид "./themes/themeFile.tmTheme".</target>
+      </trans-unit>
+      <trans-unit id="reqarray">
+        <source xml:lang="en">Extension point `{0}` must be an array.</source>
+        <target state="translated">Точка расширения "{0}" должна быть массивом.</target>
+      </trans-unit>
+      <trans-unit id="reqpath">
+        <source xml:lang="en">Expected string in `contributes.{0}.path`. Provided value: {1}</source>
+        <target state="translated">В contributes.{0}.path требуется строка. Указанное значение: {1}</target>
+      </trans-unit>
+      <trans-unit id="invalid.path.1">
+        <source xml:lang="en">Expected `contributes.{0}.path` ({1}) to be included inside extension's folder ({2}). This might make the extension non-portable.</source>
+        <target state="translated">Следует включить contributes.{0}.path ({1}) в папку расширения ({2}). От этого расширение может стать непереносимым.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/browser/fileIconThemeData" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="error.cannotparseicontheme">
+        <source xml:lang="en">Problems parsing file icons file: {0}</source>
+        <target state="translated">Проблемы при синтаксическом анализе значков файлов: {0}</target>
+      </trans-unit>
+      <trans-unit id="error.invalidformat">
+        <source xml:lang="en">Invalid format for file icons theme file: Object expected.</source>
+        <target state="translated">Недопустимый формат файла темы для значков файлов: ожидается объект.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/common/fileIconThemeSchema" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="schema.folderExpanded">
+        <source xml:lang="en">The folder icon for expanded folders. The expanded folder icon is optional. If not set, the icon defined for folder will be shown.</source>
+        <target state="translated">Значок папки для развернутых папок. Значок развернутой папки используется по желанию. Если он не задан, будет отображаться значок, заданный для папки.</target>
+      </trans-unit>
+      <trans-unit id="schema.folder">
+        <source xml:lang="en">The folder icon for collapsed folders, and if folderExpanded is not set, also for expanded folders.</source>
+        <target state="translated">Значок папки для свернутых папок, а если folderExpanded не задан, то и для развернутых папок.</target>
+      </trans-unit>
+      <trans-unit id="schema.file">
+        <source xml:lang="en">The default file icon, shown for all files that don't match any extension, filename or language id.</source>
+        <target state="translated">Значок файла по умолчанию, отображаемый для всех файлов, которые не соответствуют известному расширению, имени файла или коду языка.</target>
+      </trans-unit>
+      <trans-unit id="schema.folderNames">
+        <source xml:lang="en">Associates folder names to icons. The object key is the folder name, not including any path segments. No patterns or wildcards are allowed. Folder name matching is case insensitive.</source>
+        <target state="translated">Сопоставляет имена папок со значками. Ключ объекта — имя папки, не включая сегменты пути. Не допускается использование шаблонов или подстановочных знаков. Имена папок сопоставляются без учета регистра.</target>
+      </trans-unit>
+      <trans-unit id="schema.folderName">
+        <source xml:lang="en">The ID of the icon definition for the association.</source>
+        <target state="translated">Идентификатор определения значка для сопоставления.</target>
+      </trans-unit>
+      <trans-unit id="schema.folderNamesExpanded">
+        <source xml:lang="en">Associates folder names to icons for expanded folders. The object key is the folder name, not including any path segments. No patterns or wildcards are allowed. Folder name matching is case insensitive.</source>
+        <target state="translated">Сопоставляет имена папок со значками для развернутых папок. Ключ объекта — имя папки, не включая сегменты пути. Не допускается использование шаблонов или подстановочных знаков. Имена папок сопоставляются без учета регистра.</target>
+      </trans-unit>
+      <trans-unit id="schema.folderNameExpanded">
+        <source xml:lang="en">The ID of the icon definition for the association.</source>
+        <target state="translated">Идентификатор определения значка для сопоставления.</target>
+      </trans-unit>
+      <trans-unit id="schema.fileExtensions">
+        <source xml:lang="en">Associates file extensions to icons. The object key is the file extension name. The extension name is the last segment of a file name after the last dot (not including the dot). Extensions are compared case insensitive.</source>
+        <target state="translated">Сопоставляет расширения файлов со значками. Ключ объекта — имя расширения файла. Имя расширения представляет собой последний сегмент имени файла после последней точки (не включая точку). Расширения сопоставляются без учета регистра.</target>
+      </trans-unit>
+      <trans-unit id="schema.fileExtension">
+        <source xml:lang="en">The ID of the icon definition for the association.</source>
+        <target state="translated">Идентификатор определения значка для сопоставления.</target>
+      </trans-unit>
+      <trans-unit id="schema.fileNames">
+        <source xml:lang="en">Associates file names to icons. The object key is the full file name, but not including any path segments. File name can include dots and a possible file extension. No patterns or wildcards are allowed. File name matching is case insensitive.</source>
+        <target state="translated">Сопоставляет имена файлов со значками. Ключ объекта — полное имя файла, не включая сегменты пути. Имя файла может содержать точки и возможное расширение файла. Не допускается использование шаблонов или подстановочных знаков. Имена файлов сопоставляются без учета регистра.</target>
+      </trans-unit>
+      <trans-unit id="schema.fileName">
+        <source xml:lang="en">The ID of the icon definition for the association.</source>
+        <target state="translated">Идентификатор определения значка для сопоставления.</target>
+      </trans-unit>
+      <trans-unit id="schema.languageIds">
+        <source xml:lang="en">Associates languages to icons. The object key is the language id as defined in the language contribution point.</source>
+        <target state="translated">Сопоставляет языки и значки. Ключ объекта — идентификатор языка, как определено в точке публикации для языка.</target>
+      </trans-unit>
+      <trans-unit id="schema.languageId">
+        <source xml:lang="en">The ID of the icon definition for the association.</source>
+        <target state="translated">Идентификатор определения значка для сопоставления.</target>
+      </trans-unit>
+      <trans-unit id="schema.fonts">
+        <source xml:lang="en">Fonts that are used in the icon definitions.</source>
+        <target state="translated">Шрифты, используемые в определениях значков.</target>
+      </trans-unit>
+      <trans-unit id="schema.id">
+        <source xml:lang="en">The ID of the font.</source>
+        <target state="translated">Идентификатор шрифта.</target>
+      </trans-unit>
+      <trans-unit id="schema.src">
+        <source xml:lang="en">The location of the font.</source>
+        <target state="translated">Расположение шрифта.</target>
+      </trans-unit>
+      <trans-unit id="schema.font-path">
+        <source xml:lang="en">The font path, relative to the current icon theme file.</source>
+        <target state="translated">Путь к шрифту относительно текущего файла темы значка.</target>
+      </trans-unit>
+      <trans-unit id="schema.font-format">
+        <source xml:lang="en">The format of the font.</source>
+        <target state="translated">The format of the font.</target>
+      </trans-unit>
+      <trans-unit id="schema.font-weight">
+        <source xml:lang="en">The weight of the font.</source>
+        <target state="translated">Насыщенность шрифта.</target>
+      </trans-unit>
+      <trans-unit id="schema.font-sstyle">
+        <source xml:lang="en">The style of the font.</source>
+        <target state="translated">Стиль шрифта.</target>
+      </trans-unit>
+      <trans-unit id="schema.font-size">
+        <source xml:lang="en">The default size of the font.</source>
+        <target state="translated">Размер по умолчанию для шрифта.</target>
+      </trans-unit>
+      <trans-unit id="schema.iconDefinitions">
+        <source xml:lang="en">Description of all icons that can be used when associating files to icons.</source>
+        <target state="translated">Описание всех значков, которые могут использоваться при сопоставлении файлов со значками.</target>
+      </trans-unit>
+      <trans-unit id="schema.iconDefinition">
+        <source xml:lang="en">An icon definition. The object key is the ID of the definition.</source>
+        <target state="translated">Определение значка. Ключ объекта — идентификатор определения.</target>
+      </trans-unit>
+      <trans-unit id="schema.iconPath">
+        <source xml:lang="en">When using a SVG or PNG: The path to the image. The path is relative to the icon set file.</source>
+        <target state="translated">При использовании SVG или PNG: путь к изображению. Путь задается относительно файла набора значков.</target>
+      </trans-unit>
+      <trans-unit id="schema.fontCharacter">
+        <source xml:lang="en">When using a glyph font: The character in the font to use.</source>
+        <target state="translated">При использовании шрифта с глифами: используемый символ в шрифте.</target>
+      </trans-unit>
+      <trans-unit id="schema.fontColor">
+        <source xml:lang="en">When using a glyph font: The color to use.</source>
+        <target state="translated">При использовании шрифта с глифами: используемый цвет.</target>
+      </trans-unit>
+      <trans-unit id="schema.fontSize">
+        <source xml:lang="en">When using a font: The font size in percentage to the text font. If not set, defaults to the size in the font definition.</source>
+        <target state="translated">При использовании шрифта: размер шрифта в процентах от шрифта текста. Если не задан, по умолчанию используется размер в определении шрифта.</target>
+      </trans-unit>
+      <trans-unit id="schema.fontId">
+        <source xml:lang="en">When using a font: The id of the font. If not set, defaults to the first font definition.</source>
+        <target state="translated">При использовании шрифта: идентификатор шрифта. Если не задан, по умолчанию используется первое определение шрифта.</target>
+      </trans-unit>
+      <trans-unit id="schema.light">
+        <source xml:lang="en">Optional associations for file icons in light color themes.</source>
+        <target state="translated">Дополнительные сопоставления для значков файлов в светлых цветных темах.</target>
+      </trans-unit>
+      <trans-unit id="schema.highContrast">
+        <source xml:lang="en">Optional associations for file icons in high contrast color themes.</source>
+        <target state="translated">Дополнительные сопоставления для значков файлов в высококонтрастных цветовых темах.</target>
+      </trans-unit>
+      <trans-unit id="schema.hidesExplorerArrows">
+        <source xml:lang="en">Configures whether the file explorer's arrows should be hidden when this theme is active.</source>
+        <target state="translated">Определяет, следует ли скрыть стрелки проводника, если эта тема активна.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/common/colorThemeData" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="error.cannotparsejson">
+        <source xml:lang="en">Problems parsing JSON theme file: {0}</source>
+        <target state="translated">Проблемы при синтаксическом анализе файла темы JSON: {0}</target>
+      </trans-unit>
+      <trans-unit id="error.invalidformat">
+        <source xml:lang="en">Invalid format for JSON theme file: Object expected.</source>
+        <target state="translated">Недопустимый формат файла темы для JSON: ожидается объект.</target>
+      </trans-unit>
+      <trans-unit id="error.invalidformat.colors">
+        <source xml:lang="en">Problem parsing color theme file: {0}. Property 'colors' is not of type 'object'.</source>
+        <target state="translated">Ошибка при анализе файла цветовой темы: {0}. Свойство 'colors' не имеет тип 'object'.</target>
+        <note>{0} will be replaced by a path. Values in quotes should not be translated.</note>
+      </trans-unit>
+      <trans-unit id="error.invalidformat.tokenColors">
+        <source xml:lang="en">Problem parsing color theme file: {0}. Property 'tokenColors' should be either an array specifying colors or a path to a TextMate theme file</source>
+        <target state="translated">Ошибка при анализе файла цветовой темы: {0}. Свойство 'tokenColors' должно содержать массив цветов или путь к файлу темы TextMate</target>
+        <note>{0} will be replaced by a path. Values in quotes should not be translated.</note>
+      </trans-unit>
+      <trans-unit id="error.plist.invalidformat">
+        <source xml:lang="en">Problem parsing tmTheme file: {0}. 'settings' is not array.</source>
+        <target state="translated">Ошибка при анализе файла tmTheme: {0}. 'settings' не является массивом.</target>
+      </trans-unit>
+      <trans-unit id="error.cannotparse">
+        <source xml:lang="en">Problems parsing tmTheme file: {0}</source>
+        <target state="translated">Ошибка при анализе файла tmTheme: {0}</target>
+      </trans-unit>
+      <trans-unit id="error.cannotload">
+        <source xml:lang="en">Problems loading tmTheme file {0}: {1}</source>
+        <target state="translated">Ошибка при загрузке файла tmTheme {0}: {1}</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

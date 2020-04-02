@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/workbench/services/extensions/electron-browser/extensionService" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="extensionsDisabled">
+        <source xml:lang="en">All installed extensions are temporarily disabled. Reload the window to return to the previous state.</source>
+        <target state="translated">所有已安裝的延伸模組都會暫時停用。請重新載入視窗以回到上一個狀態。</target>
+      </trans-unit>
+      <trans-unit id="Reload">
+        <source xml:lang="en">Reload</source>
+        <target state="translated">重新載入</target>
+      </trans-unit>
+      <trans-unit id="looping">
+        <source xml:lang="en">The following extensions contain dependency loops and have been disabled: {0}</source>
+        <target state="translated">下列延伸模組包含相依性迴圈並已停用: {0}</target>
+      </trans-unit>
+      <trans-unit id="extensionService.versionMismatchCrash">
+        <source xml:lang="en">Extension host cannot start: version mismatch.</source>
+        <target state="translated">延伸模組主機無法啟動: 版本不相符。</target>
+      </trans-unit>
+      <trans-unit id="relaunch">
+        <source xml:lang="en">Relaunch VS Code</source>
+        <target state="translated">重新啟動 VS Code</target>
+      </trans-unit>
+      <trans-unit id="extensionService.crash">
+        <source xml:lang="en">Extension host terminated unexpectedly.</source>
+        <target state="translated">延伸主機意外終止。</target>
+      </trans-unit>
+      <trans-unit id="devTools">
+        <source xml:lang="en">Open Developer Tools</source>
+        <target state="translated">開啟開發人員工具</target>
+      </trans-unit>
+      <trans-unit id="restart">
+        <source xml:lang="en">Restart Extension Host</source>
+        <target state="translated">重新啟動延伸主機</target>
+      </trans-unit>
+      <trans-unit id="resolveAuthorityFailure">
+        <source xml:lang="en">Resolving the authority `{0}` failed</source>
+        <target state="translated">無法解析授權單位 `{0}`。</target>
+      </trans-unit>
+      <trans-unit id="getEnvironmentFailure">
+        <source xml:lang="en">Could not fetch remote environment</source>
+        <target state="translated">無法擷取遠端環境</target>
+      </trans-unit>
+      <trans-unit id="enableResolver">
+        <source xml:lang="en">Extension '{0}' is required to open the remote window.
+Ok to enable?</source>
+        <target state="translated">需要擴充 '{0}' 才能開啟遠端視窗。
+確定要啟用嗎?</target>
+      </trans-unit>
+      <trans-unit id="enable">
+        <source xml:lang="en">Enable and Reload</source>
+        <target state="translated">啟用並重新載入</target>
+      </trans-unit>
+      <trans-unit id="installResolver">
+        <source xml:lang="en">Extension '{0}' is required to open the remote window.
+Ok to install?</source>
+        <target state="translated">需要擴充 '{0}' 才能開啟遠端視窗。
+確定要安裝嗎?</target>
+      </trans-unit>
+      <trans-unit id="install">
+        <source xml:lang="en">Install and Reload</source>
+        <target state="translated">安裝並重新載入</target>
+      </trans-unit>
+      <trans-unit id="resolverExtensionNotFound">
+        <source xml:lang="en">`{0}` not found on marketplace</source>
+        <target state="translated">在市集上找不到 `{0}`</target>
+      </trans-unit>
+      <trans-unit id="restartExtensionHost">
+        <source xml:lang="en">Developer: Restart Extension Host</source>
+        <target state="translated">開發人員: 重新啟動延伸模組主機</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/electron-browser/remoteExtensionManagementIpc" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="incompatible">
+        <source xml:lang="en">Unable to install extension '{0}' as it is not compatible with VS Code '{1}'.</source>
+        <target state="translated">因為延伸模組為 ‘{1}’ 的延伸模組 ‘{0}’ 與 VS Code 不相容，所以無法安裝。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/common/extensionsRegistry" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="ui">
+        <source xml:lang="en">UI extension kind. In a remote window, such extensions are enabled only when available on the local machine.</source>
+        <target state="translated">UI 延伸模組類型。在遠端視窗中，這類延伸模組只有在可於本機電腦上使用時才會啟用。</target>
+      </trans-unit>
+      <trans-unit id="workspace">
+        <source xml:lang="en">Workspace extension kind. In a remote window, such extensions are enabled only when available on the remote.</source>
+        <target state="translated">工作區延伸模組類型。在遠端視窗中，這類延伸模組只有在可於遠端上使用時才會啟用。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.engines">
+        <source xml:lang="en">Engine compatibility.</source>
+        <target state="translated">引擎相容性。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.engines.vscode">
+        <source xml:lang="en">For VS Code extensions, specifies the VS Code version that the extension is compatible with. Cannot be *. For example: ^0.10.5 indicates compatibility with a minimum VS Code version of 0.10.5.</source>
+        <target state="translated">若是 VS Code 延伸模組，則指定與延伸模組相容的 VS Code 版本。不得為 *。例如: ^0.10.5 表示與最低 VS Code 版本 0.10.5 相容。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.publisher">
+        <source xml:lang="en">The publisher of the VS Code extension.</source>
+        <target state="translated">VS Code 延伸模組的發行者。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.displayName">
+        <source xml:lang="en">The display name for the extension used in the VS Code gallery.</source>
+        <target state="translated">VS Code 資源庫中使用的延伸模組顯示名稱。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.categories">
+        <source xml:lang="en">The categories used by the VS Code gallery to categorize the extension.</source>
+        <target state="translated">VS Code 資源庫用來將延伸模組歸類的分類。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.category.languages.deprecated">
+        <source xml:lang="en">Use 'Programming  Languages' instead</source>
+        <target state="translated">使用 '程式語言' 代替</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.galleryBanner">
+        <source xml:lang="en">Banner used in the VS Code marketplace.</source>
+        <target state="translated">用於 VS Code Marketplace 的橫幅。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.galleryBanner.color">
+        <source xml:lang="en">The banner color on the VS Code marketplace page header.</source>
+        <target state="translated">VS Code Marketplace 頁首的橫幅色彩。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.galleryBanner.theme">
+        <source xml:lang="en">The color theme for the font used in the banner.</source>
+        <target state="translated">橫幅中使用的字型色彩佈景主題。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes">
+        <source xml:lang="en">All contributions of the VS Code extension represented by this package.</source>
+        <target state="translated">此封裝所代表的所有 VS Code 延伸模組比重。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.preview">
+        <source xml:lang="en">Sets the extension to be flagged as a Preview in the Marketplace.</source>
+        <target state="translated">將延伸模組設為在 Marketplace 中標幟為 [預覽]。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents">
+        <source xml:lang="en">Activation events for the VS Code extension.</source>
+        <target state="translated">VS Code 延伸模組的啟用事件。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onLanguage">
+        <source xml:lang="en">An activation event emitted whenever a file that resolves to the specified language gets opened.</source>
+        <target state="translated">當指定語言檔案開啟時激發該事件</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onCommand">
+        <source xml:lang="en">An activation event emitted whenever the specified command gets invoked.</source>
+        <target state="translated">當指定的命令被調用時激發該事件</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onDebug">
+        <source xml:lang="en">An activation event emitted whenever a user is about to start debugging or about to setup debug configurations.</source>
+        <target state="translated">當使用者正要開始偵錯或是設定偵錯組態時激發該事件</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onDebugInitialConfigurations">
+        <source xml:lang="en">An activation event emitted whenever a "launch.json" needs to be created (and all provideDebugConfigurations methods need to be called).</source>
+        <target state="translated">需要建立 "launch.json" 來觸發啟動事件 (並且需要呼叫所有 provideDebugConfigurations 方法)。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onDebugResolve">
+        <source xml:lang="en">An activation event emitted whenever a debug session with the specific type is about to be launched (and a corresponding resolveDebugConfiguration method needs to be called).</source>
+        <target state="translated">需要特定類型偵錯工作階段啟動來觸發啟動事件 (並且呼叫相對應 resolveDebugConfiguration 方法)</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onDebugAdapterProtocolTracker">
+        <source xml:lang="en">An activation event emitted whenever a debug session with the specific type is about to be launched and a debug protocol tracker might be needed.</source>
+        <target state="translated">每次即將啟動具有特定類型偵錯工作階段，而且可能需要偵錯通訊協定追蹤器時，都會發出啟動事件。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.workspaceContains">
+        <source xml:lang="en">An activation event emitted whenever a folder is opened that contains at least a file matching the specified glob pattern.</source>
+        <target state="translated">當開啟指定的文件夾包含glob模式匹配的文件時激發該事件</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onFileSystem">
+        <source xml:lang="en">An activation event emitted whenever a file or folder is accessed with the given scheme.</source>
+        <target state="translated">在每次透過指定的配置存取檔案或資料夾時，所發出的啟用事件。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onSearch">
+        <source xml:lang="en">An activation event emitted whenever a search is started in the folder with the given scheme.</source>
+        <target state="translated">在每次透過指定的配置於資料夾中開始搜尋時，所發出的啟用事件。 </target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onView">
+        <source xml:lang="en">An activation event emitted whenever the specified view is expanded.</source>
+        <target state="translated">當指定的檢視被擴展時激發該事件</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onIdentity">
+        <source xml:lang="en">An activation event emitted whenever the specified user identity.</source>
+        <target state="translated">每次指定使用者身分識別時發出的啟用事件。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onUri">
+        <source xml:lang="en">An activation event emitted whenever a system-wide Uri directed towards this extension is open.</source>
+        <target state="translated">每當指向此延伸模組的全系統 URI 開啟時，都會發出啟動事件。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.star">
+        <source xml:lang="en">An activation event emitted on VS Code startup. To ensure a great end user experience, please use this activation event in your extension only when no other activation events combination works in your use-case.</source>
+        <target state="translated">當VS Code啟動時激發該事件，為了確保最好的使用者體驗，當您的延伸模組沒有其他組合作業時,請激活此事件。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.badges">
+        <source xml:lang="en">Array of badges to display in the sidebar of the Marketplace's extension page.</source>
+        <target state="translated">要顯示於 Marketplace 擴充頁面資訊看板的徽章陣列。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.badges.url">
+        <source xml:lang="en">Badge image URL.</source>
+        <target state="translated">徽章映像 URL。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.badges.href">
+        <source xml:lang="en">Badge link.</source>
+        <target state="translated">徽章連結。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.badges.description">
+        <source xml:lang="en">Badge description.</source>
+        <target state="translated">徽章描述。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.markdown">
+        <source xml:lang="en">Controls the Markdown rendering engine used in the Marketplace. Either github (default) or standard.</source>
+        <target state="translated">控制使用市集中的 Markdown 轉譯引擎。可為 github (預設) 或標準。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.qna">
+        <source xml:lang="en">Controls the Q&amp;A link in the Marketplace. Set to marketplace to enable the default Marketplace Q &amp; A site. Set to a string to provide the URL of a custom Q &amp; A site. Set to false to disable Q &amp; A altogether.</source>
+        <target state="translated">控制 Marketplace 中的問與答連結。設定為 Marketplace 可啟用預設 Marketplace 問與答網站。設定為字串可提供自訂問與答網站的 URL。設定為 false 可停用所有問與答。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.extensionDependencies">
+        <source xml:lang="en">Dependencies to other extensions. The identifier of an extension is always ${publisher}.${name}. For example: vscode.csharp.</source>
+        <target state="translated">其它延伸模組的相依性。延伸模組的識別碼一律為 ${publisher}.${name}。例如: vscode.csharp。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.extensionPack">
+        <source xml:lang="en">A set of extensions that can be installed together. The identifier of an extension is always ${publisher}.${name}. For example: vscode.csharp.</source>
+        <target state="translated">可以一併安裝的一組延伸模組。延伸模組的識別碼一律為 ${publisher}.${name}。例如: vscode.csharp。</target>
+      </trans-unit>
+      <trans-unit id="extensionKind">
+        <source xml:lang="en">Define the kind of an extension. `ui` extensions are installed and run on the local machine while `workspace` extensions run on the remote.</source>
+        <target state="translated">定義延伸模組的種類。`ui` 延伸模組會於本機電腦安裝並執行，而 `workspace` 延伸模組則會在遠端執行。</target>
+      </trans-unit>
+      <trans-unit id="extensionKind.ui">
+        <source xml:lang="en">Define an extension which can run only on the local machine when connected to remote window.</source>
+        <target state="translated">定義連線至遠端視窗時只能在本機電腦上執行的延伸模組。</target>
+      </trans-unit>
+      <trans-unit id="extensionKind.workspace">
+        <source xml:lang="en">Define an extension which can run only on the remote machine when connected remote window.</source>
+        <target state="translated">定義連線至遠端視窗時，只能在遠端電腦上執行的延伸模組。</target>
+      </trans-unit>
+      <trans-unit id="extensionKind.ui-workspace">
+        <source xml:lang="en">Define an extension which can run on either side, with a preference towards running on the local machine.</source>
+        <target state="translated">定義可在任一端執行的延伸模組，偏好在本機電腦上執行。</target>
+      </trans-unit>
+      <trans-unit id="extensionKind.workspace-ui">
+        <source xml:lang="en">Define an extension which can run on either side, with a preference towards running on the remote machine.</source>
+        <target state="translated">定義可在任一端執行的延伸模組，偏好在遠端電腦上執行。</target>
+      </trans-unit>
+      <trans-unit id="extensionKind.empty">
+        <source xml:lang="en">Define an extension which cannot run in a remote context, neither on the local, nor on the remote machine.</source>
+        <target state="translated">定義無法在遠端內容中執行的延伸模組 (既不在本機，也不在遠端電腦上)。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.scripts.prepublish">
+        <source xml:lang="en">Script executed before the package is published as a VS Code extension.</source>
+        <target state="translated">在封裝作為 VS Code 延伸模組發行前所執行的指令碼。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.scripts.uninstall">
+        <source xml:lang="en">Uninstall hook for VS Code extension. Script that gets executed when the extension is completely uninstalled from VS Code which is when VS Code is restarted (shutdown and start) after the extension is uninstalled. Only Node scripts are supported.</source>
+        <target state="translated">VS Code 延伸模組的解除安裝勾點。當延伸模組完全從 VS Code 解除安裝時，會在延伸模組解除安裝並重新啟動 (關機並啟動) 時執行的程式碼。僅支援 Node 指令碼。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.icon">
+        <source xml:lang="en">The path to a 128x128 pixel icon.</source>
+        <target state="translated">128 x 128 像素圖示的路徑。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/browser/extensionUrlHandler" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="confirmUrl">
+        <source xml:lang="en">Allow an extension to open this URI?</source>
+        <target state="translated">要允許延伸模組開啟此 URI 嗎?</target>
+      </trans-unit>
+      <trans-unit id="rememberConfirmUrl">
+        <source xml:lang="en">Don't ask again for this extension.</source>
+        <target state="translated">不要再要求此延伸模組。</target>
+      </trans-unit>
+      <trans-unit id="open">
+        <source xml:lang="en">&amp;&amp;Open</source>
+        <target state="translated">開啟(&amp;&amp;O)</target>
+      </trans-unit>
+      <trans-unit id="reloadAndHandle">
+        <source xml:lang="en">Extension '{0}' is not loaded. Would you like to reload the window to load the extension and open the URL?</source>
+        <target state="translated">未載入延伸模組 '{0}'。要重新載入視窗以載入延伸模組並開啟 URL 嗎?</target>
+      </trans-unit>
+      <trans-unit id="reloadAndOpen">
+        <source xml:lang="en">&amp;&amp;Reload Window and Open</source>
+        <target state="translated">重新載入視窗並開啟(&amp;&amp;R)</target>
+      </trans-unit>
+      <trans-unit id="enableAndHandle">
+        <source xml:lang="en">Extension '{0}' is disabled. Would you like to enable the extension and reload the window to open the URL?</source>
+        <target state="translated">延伸模組 '{0}' 已停用。要啟用延伸模組並重新載入視窗以開啟 URL 嗎?</target>
+      </trans-unit>
+      <trans-unit id="enableAndReload">
+        <source xml:lang="en">&amp;&amp;Enable and Open</source>
+        <target state="translated">啟用並開啟(&amp;&amp;E)</target>
+      </trans-unit>
+      <trans-unit id="installAndHandle">
+        <source xml:lang="en">Extension '{0}' is not installed. Would you like to install the extension and reload the window to open this URL?</source>
+        <target state="translated">延伸模組 '{0}' 未安裝。要安裝延伸模組並重新載入視窗以開啟 URL 嗎?</target>
+      </trans-unit>
+      <trans-unit id="install">
+        <source xml:lang="en">&amp;&amp;Install</source>
+        <target state="translated">安裝(&amp;&amp;I)</target>
+      </trans-unit>
+      <trans-unit id="Installing">
+        <source xml:lang="en">Installing Extension '{0}'...</source>
+        <target state="translated">正在安裝延伸模組 '{0}'...</target>
+      </trans-unit>
+      <trans-unit id="reload">
+        <source xml:lang="en">Would you like to reload the window and open the URL '{0}'?</source>
+        <target state="translated">要重新載入視窗並開啟 URL '{0}' 嗎?</target>
+      </trans-unit>
+      <trans-unit id="Reload">
+        <source xml:lang="en">Reload Window and Open</source>
+        <target state="translated">重新載入視窗並開啟</target>
+      </trans-unit>
+      <trans-unit id="manage">
+        <source xml:lang="en">Manage Authorized Extension URIs...</source>
+        <target state="translated">管理授權的延伸模組 URI...</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/common/remoteExtensionHostClient" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="remote extension host Log">
+        <source xml:lang="en">Remote Extension Host</source>
+        <target state="translated">遠端延伸主機</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/electron-browser/cachedExtensionScanner" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="overwritingExtension">
+        <source xml:lang="en">Overwriting extension {0} with {1}.</source>
+        <target state="translated">正在以 {1} 覆寫延伸模組 {0}。</target>
+      </trans-unit>
+      <trans-unit id="extensionUnderDevelopment">
+        <source xml:lang="en">Loading development extension at {0}</source>
+        <target state="translated">正在載入位於 {0} 的開發延伸模組</target>
+      </trans-unit>
+      <trans-unit id="extensionCache.invalid">
+        <source xml:lang="en">Extensions have been modified on disk. Please reload the window.</source>
+        <target state="translated">延伸模組在磁碟上已修改。請重新載入視窗。</target>
+      </trans-unit>
+      <trans-unit id="reloadWindow">
+        <source xml:lang="en">Reload Window</source>
+        <target state="translated">重新載入視窗</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/common/extensionHostProcessManager" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="measureExtHostLatency">
+        <source xml:lang="en">Measure Extension Host Latency</source>
+        <target state="translated">測量延伸主機延遲</target>
+      </trans-unit>
+      <trans-unit id="developer">
+        <source xml:lang="en">Developer</source>
+        <target state="translated">開發人員</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/electron-browser/extensionHost" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="extensionHost.startupFailDebug">
+        <source xml:lang="en">Extension host did not start in 10 seconds, it might be stopped on the first line and needs a debugger to continue.</source>
+        <target state="translated">延伸主機未於 10 秒內開始，可能在第一行就已停止，並需要偵錯工具才能繼續。</target>
+      </trans-unit>
+      <trans-unit id="extensionHost.startupFail">
+        <source xml:lang="en">Extension host did not start in 10 seconds, that might be a problem.</source>
+        <target state="translated">延伸主機未在 10 秒內啟動，可能發生了問題。</target>
+      </trans-unit>
+      <trans-unit id="reloadWindow">
+        <source xml:lang="en">Reload Window</source>
+        <target state="translated">重新載入視窗</target>
+      </trans-unit>
+      <trans-unit id="extension host Log">
+        <source xml:lang="en">Extension Host</source>
+        <target state="translated">延伸主機</target>
+      </trans-unit>
+      <trans-unit id="extensionHost.error">
+        <source xml:lang="en">Error from the extension host: {0}</source>
+        <target state="translated">延伸主機發生錯誤: {0}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/node/extensionPoints" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="jsonParseFail">
+        <source xml:lang="en">Failed to parse {0}: [{1}, {2}] {3}.</source>
+        <target state="translated">無法剖析 {0}: [{1}, {2}] {3}。</target>
+      </trans-unit>
+      <trans-unit id="fileReadFail">
+        <source xml:lang="en">Cannot read file {0}: {1}.</source>
+        <target state="translated">無法讀取檔案 {0}: {1}。</target>
+      </trans-unit>
+      <trans-unit id="jsonsParseReportErrors">
+        <source xml:lang="en">Failed to parse {0}: {1}.</source>
+        <target state="translated">無法剖析 {0}: {1}。</target>
+      </trans-unit>
+      <trans-unit id="jsonInvalidFormat">
+        <source xml:lang="en">Invalid format {0}: JSON object expected.</source>
+        <target state="translated">格式 {0} 無效: 必須是 JSON 物件。</target>
+      </trans-unit>
+      <trans-unit id="missingNLSKey">
+        <source xml:lang="en">Couldn't find message for key {0}.</source>
+        <target state="translated">找不到金鑰 {0} 的訊息。</target>
+      </trans-unit>
+      <trans-unit id="notSemver">
+        <source xml:lang="en">Extension version is not semver compatible.</source>
+        <target state="translated">延伸模組版本與 semver 不相容。</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.empty">
+        <source xml:lang="en">Got empty extension description</source>
+        <target state="translated">得到空白延伸模組描述</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.publisher">
+        <source xml:lang="en">property publisher must be of type `string`.</source>
+        <target state="translated">屬性發行者必須屬於 `string` 類型。</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.name">
+        <source xml:lang="en">property `{0}` is mandatory and must be of type `string`</source>
+        <target state="translated">屬性 '{0}' 為強制項目且必須屬於 `string` 類型</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.version">
+        <source xml:lang="en">property `{0}` is mandatory and must be of type `string`</source>
+        <target state="translated">屬性 '{0}' 為強制項目且必須屬於 `string` 類型</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.engines">
+        <source xml:lang="en">property `{0}` is mandatory and must be of type `object`</source>
+        <target state="translated">屬性 '{0}' 為強制項目且必須屬於 `object` 類型</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.engines.vscode">
+        <source xml:lang="en">property `{0}` is mandatory and must be of type `string`</source>
+        <target state="translated">屬性 '{0}' 為強制項目且必須屬於 `string` 類型</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.extensionDependencies">
+        <source xml:lang="en">property `{0}` can be omitted or must be of type `string[]`</source>
+        <target state="translated">屬性 `{0}` 可以省略或必須屬於 `string[]` 類型</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.activationEvents1">
+        <source xml:lang="en">property `{0}` can be omitted or must be of type `string[]`</source>
+        <target state="translated">屬性 `{0}` 可以省略或必須屬於 `string[]` 類型</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.activationEvents2">
+        <source xml:lang="en">properties `{0}` and `{1}` must both be specified or must both be omitted</source>
+        <target state="translated">屬性 `{0}` 和 `{1}` 必須同時指定或同時忽略</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.main1">
+        <source xml:lang="en">property `{0}` can be omitted or must be of type `string`</source>
+        <target state="translated">屬性 `{0}` 可以省略或必須屬於 `string` 類型</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.main2">
+        <source xml:lang="en">Expected `main` ({0}) to be included inside extension's folder ({1}). This might make the extension non-portable.</source>
+        <target state="translated">`main` ({0}) 必須包含在延伸模組的資料夾 ({1}) 中。這可能會使延伸模組無法移植。</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.main3">
+        <source xml:lang="en">properties `{0}` and `{1}` must both be specified or must both be omitted</source>
+        <target state="translated">屬性 `{0}` 和 `{1}` 必須同時指定或同時忽略</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

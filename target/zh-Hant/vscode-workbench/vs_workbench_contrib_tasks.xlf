@@ -1,0 +1,1549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/workbench/contrib/tasks/node/processRunnerDetector" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="TaskSystemDetector.noGulpTasks">
+        <source xml:lang="en">Running gulp --tasks-simple didn't list any tasks. Did you run npm install?</source>
+        <target state="translated">執行 Gulp --tasks-simple 未列出任何工作。是否已執行 npm 安裝?</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noJakeTasks">
+        <source xml:lang="en">Running jake --tasks didn't list any tasks. Did you run npm install?</source>
+        <target state="translated">執行 Jake --tasks 未列出任何工作。是否已執行 npm 安裝?</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noGulpProgram">
+        <source xml:lang="en">Gulp is not installed on your system. Run npm install -g gulp to install it.</source>
+        <target state="translated">您的系統尚未安裝 Gulp。請執行 npm install -g gulp 進行安裝。</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noJakeProgram">
+        <source xml:lang="en">Jake is not installed on your system. Run npm install -g jake to install it.</source>
+        <target state="translated">您的系統尚未安裝 Jake。請執行 npm install -g jake 進行安裝。</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noGruntProgram">
+        <source xml:lang="en">Grunt is not installed on your system. Run npm install -g grunt to install it.</source>
+        <target state="translated">您的系統尚未安裝 Grunt。請執行 npm install -g grunt 進行安裝。</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noProgram">
+        <source xml:lang="en">Program {0} was not found. Message is {1}</source>
+        <target state="translated">找不到程式 {0}。訊息為 {1}</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.buildTaskDetected">
+        <source xml:lang="en">Build task named '{0}' detected.</source>
+        <target state="translated">偵測到名為 '{0}' 的建置工作。</target>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.testTaskDetected">
+        <source xml:lang="en">Test task named '{0}' detected.</source>
+        <target state="translated">偵測到名為 '{0}' 的測試工作。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/node/processTaskSystem" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="version1_0">
+        <source xml:lang="en">The task system is configured for version 0.1.0 (see tasks.json file), which can only execute custom tasks. Upgrade to version 2.0.0 to run the task: {0}</source>
+        <target state="translated">工作系統已設定為 0.1.0 版 (請參考 tasks.json 檔案)，其只能執行自訂工作。請升級至 2.0.0 以執行工作: {0} </target>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.unknownError">
+        <source xml:lang="en">A unknown error has occurred while executing a task. See task output log for details.</source>
+        <target state="translated">執行工作時發生不明錯誤。如需詳細資訊，請參閱工作輸出記錄檔。</target>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.watchingBuildTaskFinished">
+        <source xml:lang="en">
+Watching build tasks has finished.</source>
+        <target state="translated">
+監看建置工作已完成。</target>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.childProcessError">
+        <source xml:lang="en">Failed to launch external program {0} {1}.</source>
+        <target state="translated">無法啟動外部程式 {0} {1}。</target>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.cancelRequested">
+        <source xml:lang="en">
+The task '{0}' was terminated per user request.</source>
+        <target state="translated">
+根據使用者要求已終止工作 '{0}'。</target>
+      </trans-unit>
+      <trans-unit id="unknownProblemMatcher">
+        <source xml:lang="en">Problem matcher {0} can't be resolved. The matcher will be ignored</source>
+        <target state="translated">問題比對器 {0} 無法解析，比對器將予忽略。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/task.contribution" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="tasksCategory">
+        <source xml:lang="en">Tasks</source>
+        <target state="translated">工作</target>
+      </trans-unit>
+      <trans-unit id="building">
+        <source xml:lang="en">Building...</source>
+        <target state="translated">正在建置...</target>
+      </trans-unit>
+      <trans-unit id="runningTasks">
+        <source xml:lang="en">Show Running Tasks</source>
+        <target state="translated">顯示執行中的工作</target>
+      </trans-unit>
+      <trans-unit id="status.runningTasks">
+        <source xml:lang="en">Running Tasks</source>
+        <target state="translated">正在執行工作</target>
+      </trans-unit>
+      <trans-unit id="miRunTask">
+        <source xml:lang="en">&amp;&amp;Run Task...</source>
+        <target state="translated">執行工作(&amp;&amp;R)...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miBuildTask">
+        <source xml:lang="en">Run &amp;&amp;Build Task...</source>
+        <target state="translated">執行建置工作(&amp;&amp;B)…</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miRunningTask">
+        <source xml:lang="en">Show Runnin&amp;&amp;g Tasks...</source>
+        <target state="translated">顯示正在執行的工作(&amp;&amp;G)...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miRestartTask">
+        <source xml:lang="en">R&amp;&amp;estart Running Task...</source>
+        <target state="translated">重新啟動正在執行的工作(&amp;&amp;E)...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miTerminateTask">
+        <source xml:lang="en">&amp;&amp;Terminate Task...</source>
+        <target state="translated">終止工作(&amp;&amp;T)...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miConfigureTask">
+        <source xml:lang="en">&amp;&amp;Configure Tasks...</source>
+        <target state="translated">設定工作(&amp;&amp;C)...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miConfigureBuildTask">
+        <source xml:lang="en">Configure De&amp;&amp;fault Build Task...</source>
+        <target state="translated">設定預設建置工作(&amp;&amp;F)...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.openWorkspaceFileTasks">
+        <source xml:lang="en">Open Workspace Tasks</source>
+        <target state="translated">開啟工作區工作</target>
+      </trans-unit>
+      <trans-unit id="ShowLogAction.label">
+        <source xml:lang="en">Show Task Log</source>
+        <target state="translated">顯示工作記錄檔</target>
+      </trans-unit>
+      <trans-unit id="RunTaskAction.label">
+        <source xml:lang="en">Run Task</source>
+        <target state="translated">執行工作</target>
+      </trans-unit>
+      <trans-unit id="ReRunTaskAction.label">
+        <source xml:lang="en">Rerun Last Task</source>
+        <target state="translated">重新執行上次工作</target>
+      </trans-unit>
+      <trans-unit id="RestartTaskAction.label">
+        <source xml:lang="en">Restart Running Task</source>
+        <target state="translated">重新開始執行工作</target>
+      </trans-unit>
+      <trans-unit id="ShowTasksAction.label">
+        <source xml:lang="en">Show Running Tasks</source>
+        <target state="translated">顯示執行中的工作</target>
+      </trans-unit>
+      <trans-unit id="TerminateAction.label">
+        <source xml:lang="en">Terminate Task</source>
+        <target state="translated">終止工作</target>
+      </trans-unit>
+      <trans-unit id="BuildAction.label">
+        <source xml:lang="en">Run Build Task</source>
+        <target state="translated">執行建置工作</target>
+      </trans-unit>
+      <trans-unit id="TestAction.label">
+        <source xml:lang="en">Run Test Task</source>
+        <target state="translated">執行測試工作</target>
+      </trans-unit>
+      <trans-unit id="ConfigureDefaultBuildTask.label">
+        <source xml:lang="en">Configure Default Build Task</source>
+        <target state="translated">設定預設組建工作</target>
+      </trans-unit>
+      <trans-unit id="ConfigureDefaultTestTask.label">
+        <source xml:lang="en">Configure Default Test Task</source>
+        <target state="translated">設定預設測試工作</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.openUserTasks">
+        <source xml:lang="en">Open User Tasks</source>
+        <target state="translated">開啟使用者工作</target>
+      </trans-unit>
+      <trans-unit id="quickOpen.task">
+        <source xml:lang="en">Run Task</source>
+        <target state="translated">執行工作</target>
+      </trans-unit>
+      <trans-unit id="tasksConfigurationTitle">
+        <source xml:lang="en">Tasks</source>
+        <target state="translated">工作</target>
+      </trans-unit>
+      <trans-unit id="task.problemMatchers.neverPrompt">
+        <source xml:lang="en">Configures whether to show the problem matcher prompt when running a task. Set to `true` to never prompt, or use a dictionary of task types to turn off prompting only for specific task types.</source>
+        <target state="translated">設定執行工作時是否要顯示問題比對器提示。設定為 `true` 會永不提示，或是使用工作類型的字典來僅針對特定工作類型關閉提示。</target>
+      </trans-unit>
+      <trans-unit id="task.problemMatchers.neverPrompt.boolean">
+        <source xml:lang="en">Sets problem matcher prompting behavior for all tasks.</source>
+        <target state="translated">為所有工作設定問題比對器提示行為。</target>
+      </trans-unit>
+      <trans-unit id="task.problemMatchers.neverPrompt.array">
+        <source xml:lang="en">An object containing task type-boolean pairs to never prompt for problem matchers on.</source>
+        <target state="translated">包含工作類型-布林值配對的物件，永不提示啟用問題比對器。</target>
+      </trans-unit>
+      <trans-unit id="task.autoDetect">
+        <source xml:lang="en">Controls enablement of `provideTasks` for all task provider extension. If the Tasks: Run Task command is slow, disabling auto detect for task providers may help. Individual extensions may also provide settings that disable auto detection.</source>
+        <target state="translated">控制所有工作提供者擴充的 `provideTasks` 啟用。如果 Tasks: Run Task 命令太慢，停用工作提供者的自動偵測可能有所幫助。個別擴充可能會提供停用自動偵測的設定。</target>
+      </trans-unit>
+      <trans-unit id="task.slowProviderWarning">
+        <source xml:lang="en">Configures whether a warning is shown when a provider is slow</source>
+        <target state="translated">設定是否在提供者很慢時顯示警告</target>
+      </trans-unit>
+      <trans-unit id="task.slowProviderWarning.boolean">
+        <source xml:lang="en">Sets the slow provider warning for all tasks.</source>
+        <target state="translated">為所有工作設定慢速提供者警告。</target>
+      </trans-unit>
+      <trans-unit id="task.slowProviderWarning.array">
+        <source xml:lang="en">An array of task types to never show the slow provider warning.</source>
+        <target state="translated">永不顯示慢速提供者警告的工作類型陣列。</target>
+      </trans-unit>
+      <trans-unit id="task.quickOpen.history">
+        <source xml:lang="en">Controls the number of recent items tracked in task quick open dialog.</source>
+        <target state="translated">控制工作快速開啟對話方塊中所追蹤最近使用的項目數。</target>
+      </trans-unit>
+      <trans-unit id="task.quickOpen.detail">
+        <source xml:lang="en">Controls whether to show the task detail for task that have a detail in the Run Task quick pick.</source>
+        <target state="translated">控制是否顯示在 [執行工作] 快選中具有詳細資料之工作的工作詳細資料。</target>
+      </trans-unit>
+      <trans-unit id="task.quickOpen.skip">
+        <source xml:lang="en">Controls whether the task quick pick is skipped when there is only one task to pick from.</source>
+        <target state="translated">控制當只有一個工作可供選取時是否跳過工作快選。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/tasks" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="TaskDefinition.missingRequiredProperty">
+        <source xml:lang="en">Error: the task identifier '{0}' is missing the required property '{1}'. The task identifier will be ignored.</source>
+        <target state="translated">錯誤: 工作識別碼 '{0}' 缺少必要屬性 '{1}'。將忽略工作識別碼。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/taskQuickOpen" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="tasksAriaLabel">
+        <source xml:lang="en">Type the name of a task to run</source>
+        <target state="translated">輸入要執行的工作名稱</target>
+      </trans-unit>
+      <trans-unit id="noTasksMatching">
+        <source xml:lang="en">No tasks matching</source>
+        <target state="translated">沒有相符的工作</target>
+      </trans-unit>
+      <trans-unit id="noTasksFound">
+        <source xml:lang="en">No tasks found</source>
+        <target state="translated">找不到工作</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/jsonSchema_v1" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="JsonSchema.version.deprecated">
+        <source xml:lang="en">Task version 0.1.0 is deprecated. Please use 2.0.0</source>
+        <target state="translated">工作版本 0.1.0 已取代。請使用 2.0.0</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.version">
+        <source xml:lang="en">The config's version number</source>
+        <target state="translated">組態的版本號碼</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema._runner">
+        <source xml:lang="en">The runner has graduated. Use the offical runner property</source>
+        <target state="translated">執行器已結束支援.請參考官方執行器屬性</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.runner">
+        <source xml:lang="en">Defines whether the task is executed as a process and the output is shown in the output window or inside the terminal.</source>
+        <target state="translated">定義工作是否作為處理程序執行，以及輸出會顯示在輸出視窗或終端機內。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.windows">
+        <source xml:lang="en">Windows specific command configuration</source>
+        <target state="translated">Windows 特定命令組態</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.mac">
+        <source xml:lang="en">Mac specific command configuration</source>
+        <target state="translated">Mac 特定命令組態</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.linux">
+        <source xml:lang="en">Linux specific command configuration</source>
+        <target state="translated">Linux 特定命令組態</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.shell">
+        <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
+        <target state="translated">指定此命令是殼層命令或外部程式。如果省略，預設為 False。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/taskDefinitionRegistry" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="TaskDefinition.description">
+        <source xml:lang="en">The actual task type. Please note that types starting with a '$' are reserved for internal usage.</source>
+        <target state="translated">實際工作類型。請注意以 '$' 作為開頭的類型皆為內部使用保留。</target>
+      </trans-unit>
+      <trans-unit id="TaskDefinition.properties">
+        <source xml:lang="en">Additional properties of the task type</source>
+        <target state="translated">工作類型的其他屬性</target>
+      </trans-unit>
+      <trans-unit id="TaskTypeConfiguration.noType">
+        <source xml:lang="en">The task type configuration is missing the required 'taskType' property</source>
+        <target state="translated">工作類型組態遺失需要的 'taskType' 屬性</target>
+      </trans-unit>
+      <trans-unit id="TaskDefinitionExtPoint">
+        <source xml:lang="en">Contributes task kinds</source>
+        <target state="translated">提供工作種類</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/runAutomaticTasks" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="tasks.run.allowAutomatic">
+        <source xml:lang="en">This folder has tasks ({0}) defined in 'tasks.json' that run automatically when you open this folder. Do you allow automatic tasks to run when you open this folder?</source>
+        <target state="translated">在此資料夾內，工作 ({0}) 定義在 'tasks.json' 中，並會在您開啟此資料夾時自動執行。要允許自動工作在您開啟此資料夾時執行嗎?</target>
+      </trans-unit>
+      <trans-unit id="allow">
+        <source xml:lang="en">Allow and run</source>
+        <target state="translated">允許並執行</target>
+      </trans-unit>
+      <trans-unit id="disallow">
+        <source xml:lang="en">Disallow</source>
+        <target state="translated">不允許</target>
+      </trans-unit>
+      <trans-unit id="openTasks">
+        <source xml:lang="en">Open tasks.json</source>
+        <target state="translated">開啟 tasks.json</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.manageAutomaticRunning">
+        <source xml:lang="en">Manage Automatic Tasks in Folder</source>
+        <target state="translated">管理資料夾中的自動工作</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.allowAutomaticTasks">
+        <source xml:lang="en">Allow Automatic Tasks in Folder</source>
+        <target state="translated">允許資料中的自動工作</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.disallowAutomaticTasks">
+        <source xml:lang="en">Disallow Automatic Tasks in Folder</source>
+        <target state="translated">不允許資料夾中的自動工作</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/quickOpen" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="entryAriaLabel">
+        <source xml:lang="en">{0}, tasks</source>
+        <target state="translated">{0}, tasks</target>
+      </trans-unit>
+      <trans-unit id="recentlyUsed">
+        <source xml:lang="en">recently used tasks</source>
+        <target state="translated">最近使用的工作</target>
+      </trans-unit>
+      <trans-unit id="configured">
+        <source xml:lang="en">configured tasks</source>
+        <target state="translated">設定的工作</target>
+      </trans-unit>
+      <trans-unit id="detected">
+        <source xml:lang="en">detected tasks</source>
+        <target state="translated">偵測到的工作</target>
+      </trans-unit>
+      <trans-unit id="customizeTask">
+        <source xml:lang="en">Configure Task</source>
+        <target state="translated">設定工作</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/taskConfiguration" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="ConfigurationParser.invalidCWD">
+        <source xml:lang="en">Warning: options.cwd must be of type string. Ignoring value {0}
+</source>
+        <target state="translated">警告: options.cwd 必須屬於字串類型。即將忽略值 {0}。</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.inValidArg">
+        <source xml:lang="en">Error: command argument must either be a string or a quoted string. Provided value is:
+{0}</source>
+        <target state="translated">錯誤: 命令參數必須是字串或帶引號的字串。提供的值為:
+{0}</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.noShell">
+        <source xml:lang="en">Warning: shell configuration is only supported when executing tasks in the terminal.</source>
+        <target state="translated">警告: 只有在終端機中執行工作時才支援殼層組態。</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.noName">
+        <source xml:lang="en">Error: Problem Matcher in declare scope must have a name:
+{0}
+</source>
+        <target state="translated">錯誤: 宣告範圍中的問題比對器必須有名稱:
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.unknownMatcherKind">
+        <source xml:lang="en">Warning: the defined problem matcher is unknown. Supported types are string | ProblemMatcher | Array&lt;string | ProblemMatcher&gt;.
+{0}
+</source>
+        <target state="translated">警告: 定義的問題比對器未知。支援的類型為 string | ProblemMatcher | Array&lt;string | ProblemMatcher&gt;。{0}</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.invalidVariableReference">
+        <source xml:lang="en">Error: Invalid problemMatcher reference: {0}
+</source>
+        <target state="translated">錯誤: problemMatcher 參考無效: {0}
+</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.noTaskType">
+        <source xml:lang="en">Error: tasks configuration must have a type property. The configuration will be ignored.
+{0}
+</source>
+        <target state="translated">錯誤: 工作組態必須具有型別屬性。將會忽略該組態。
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.noTypeDefinition">
+        <source xml:lang="en">Error: there is no registered task type '{0}'. Did you miss to install an extension that provides a corresponding task provider?</source>
+        <target state="translated">錯誤: 沒有已註冊工作類型 '{0}'。您是否忘記安裝提供相應工作提供者的延伸模組?</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.missingType">
+        <source xml:lang="en">Error: the task configuration '{0}' is missing the required property 'type'. The task configuration will be ignored.</source>
+        <target state="translated">錯誤: 工作組態 '{0}' 缺少必要屬性 'type'。將忽略工作組態。</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.incorrectType">
+        <source xml:lang="en">Error: the task configuration '{0}' is using an unknown type. The task configuration will be ignored.</source>
+        <target state="translated">錯誤: 工作組態 '{0}' 目前使用未知的類型。將忽略工作組態。</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.notCustom">
+        <source xml:lang="en">Error: tasks is not declared as a custom task. The configuration will be ignored.
+{0}
+</source>
+        <target state="translated">錯誤: 未將工作宣告為自訂工作。將會忽略該組態。
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.noTaskName">
+        <source xml:lang="en">Error: a task must provide a label property. The task will be ignored.
+{0}
+</source>
+        <target state="translated">錯誤: 一項工作必須提供標籤屬性。即將忽略此工作。
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="taskConfiguration.noCommandOrDependsOn">
+        <source xml:lang="en">Error: the task '{0}' neither specifies a command nor a dependsOn property. The task will be ignored. Its definition is:
+{1}</source>
+        <target state="translated">錯誤: 工作 '{0}' 未指定命令與 dependsOn 屬性。將會略過該工作。其定義為: 
+{1}</target>
+      </trans-unit>
+      <trans-unit id="taskConfiguration.noCommand">
+        <source xml:lang="en">Error: the task '{0}' doesn't define a command. The task will be ignored. Its definition is:
+{1}</source>
+        <target state="translated">錯誤: 工作 '{0}' 未定義命令。即將略過該工作。其定義為:
+{1}</target>
+      </trans-unit>
+      <trans-unit id="TaskParse.noOsSpecificGlobalTasks">
+        <source xml:lang="en">Task version 2.0.0 doesn't support global OS specific tasks. Convert them to a task with a OS specific command. Affected tasks are:
+{0}</source>
+        <target state="translated">工作版本 2.0.0 不支援全域 OS 特定工作。請使用 OS 特定命令來轉換這些工作。受影響的工作為:
+{0}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/jsonSchema_v2" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="JsonSchema.shell">
+        <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
+        <target state="translated">指定此命令是殼層命令或外部程式。如果省略，預設為 False。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.isShellCommand.deprecated">
+        <source xml:lang="en">The property isShellCommand is deprecated. Use the type property of the task and the shell property in the options instead. See also the 1.14 release notes.</source>
+        <target state="translated">已淘汰屬性 isShellCommand。請改為在 [選項] 中使用型別屬性及殼層屬性。此外也請參閱 1.14 版本資訊。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOn.identifier">
+        <source xml:lang="en">The task identifier.</source>
+        <target state="translated">工作識別碼。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOn.string">
+        <source xml:lang="en">Another task this task depends on.</source>
+        <target state="translated">此工作相依的另一個工作。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOn.array">
+        <source xml:lang="en">The other tasks this task depends on.</source>
+        <target state="translated">此工作相依的其他工作。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOn">
+        <source xml:lang="en">Either a string representing another task or an array of other tasks that this task depends on.</source>
+        <target state="translated">代表另一個工作的字串或此工作相依的其他工作陣列。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOrder.parallel">
+        <source xml:lang="en">Run all dependsOn tasks in parallel.</source>
+        <target state="translated">並行執行所有 dependsOn 工作。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOrder.sequence">
+        <source xml:lang="en">Run all dependsOn tasks in sequence.</source>
+        <target state="translated">按順序執行所有 dependsOn 工作。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOrder">
+        <source xml:lang="en">Determines the order of the dependsOn tasks for this task. Note that this property is not recursive.</source>
+        <target state="translated">決定此工作的 dependsOn 工作順序。請注意，這個屬性不會遞迴。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.detail">
+        <source xml:lang="en">An optional description of a task that shows in the Run Task quick pick as a detail.</source>
+        <target state="translated">工作的選擇性描述，在 [執行工作] 快選中顯示為詳細資料。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation">
+        <source xml:lang="en">Configures the panel that is used to present the task's output and reads its input.</source>
+        <target state="translated">設定要用來顯示工作輸出和讀取工作輸入的面板。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.echo">
+        <source xml:lang="en">Controls whether the executed command is echoed to the panel. Default is true.</source>
+        <target state="translated">控制是否會將執行的命令回應給面板。預設為 true。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.focus">
+        <source xml:lang="en">Controls whether the panel takes focus. Default is false. If set to true the panel is revealed as well.</source>
+        <target state="translated">控制面板是否要接受焦點。預設為 true。若設定為 true，也會使顯示面板。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.revealProblems.always">
+        <source xml:lang="en">Always reveals the problems panel when this task is executed.</source>
+        <target state="translated">在執行此工作時，永遠顯示問題面板。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.revealProblems.onProblem">
+        <source xml:lang="en">Only reveals the problems panel if a problem is found.</source>
+        <target state="translated">只在發現問題時才顯示問題面板。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.revealProblems.never">
+        <source xml:lang="en">Never reveals the problems panel when this task is executed.</source>
+        <target state="translated">執行此任務時，永不顯示問題面板。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.revealProblems">
+        <source xml:lang="en">Controls whether the problems panel is revealed when running this task or not. Takes precedence over option "reveal". Default is "never".</source>
+        <target state="translated">控制執行此工作時是否顯示問題面板。優先於選項 "reveal"。預設為 "never"。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.reveal.always">
+        <source xml:lang="en">Always reveals the terminal when this task is executed.</source>
+        <target state="translated">執行此工作時，一律顯示終端機。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.reveal.silent">
+        <source xml:lang="en">Only reveals the terminal if the task exits with an error or the problem matcher finds an error.</source>
+        <target state="translated">只有在工作結束發生錯誤或問題比對器發現問題時才顯示終端機。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.reveal.never">
+        <source xml:lang="en">Never reveals the terminal when this task is executed.</source>
+        <target state="translated">執行此工作時，永不顯示終端機。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.reveal">
+        <source xml:lang="en">Controls whether the terminal running the task is revealed or not. May be overridden by option "revealProblems". Default is "always".</source>
+        <target state="translated">控制是否顯示執行工作的終端機。可透過選項 "revealProblems” 予以覆寫。預設為 "always"。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.instance">
+        <source xml:lang="en">Controls if the panel is shared between tasks, dedicated to this task or a new one is created on every run.</source>
+        <target state="translated">控制面板是否會在工作之間共用、專屬於此工作或是在每個回合建立一個新的面板。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.showReuseMessage">
+        <source xml:lang="en">Controls whether to show the `Terminal will be reused by tasks, press any key to close it` message.</source>
+        <target state="translated">控制是否顯示「工作將重新使用終端機，請按任意鍵將其關閉」訊息。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.clear">
+        <source xml:lang="en">Controls whether the terminal is cleared before executing the task.</source>
+        <target state="translated">控制在執行工作前是否清除終端機。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.group">
+        <source xml:lang="en">Controls whether the task is executed in a specific terminal group using split panes.</source>
+        <target state="translated">控制是否使用分割窗格在特定的終端機群組中執行工作。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.terminal">
+        <source xml:lang="en">The terminal property is deprecated. Use presentation instead</source>
+        <target state="translated">已淘汰終端機屬性。請改用簡報</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.kind">
+        <source xml:lang="en">The task's execution group.</source>
+        <target state="translated">該工作的執行群組。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.isDefault">
+        <source xml:lang="en">Defines if this task is the default task in the group.</source>
+        <target state="translated">定義此工作在群組中是否為預設工作。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.defaultBuild">
+        <source xml:lang="en">Marks the task as the default build task.</source>
+        <target state="translated">將工作標記為預設組建工作。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.defaultTest">
+        <source xml:lang="en">Marks the task as the default test task.</source>
+        <target state="translated">將工作標記為預設測試工作。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.build">
+        <source xml:lang="en">Marks the task as a build task accessible through the 'Run Build Task' command.</source>
+        <target state="translated">將工作標記為可透過 'Run Build Task' 命令存取的組建工作。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.test">
+        <source xml:lang="en">Marks the task as a test task accessible through the 'Run Test Task' command.</source>
+        <target state="translated">將工作標記為可透過 'Run Test Task' 命令存取的測試工作。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.none">
+        <source xml:lang="en">Assigns the task to no group</source>
+        <target state="translated">指派工作到沒有群組</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group">
+        <source xml:lang="en">Defines to which execution group this task belongs to. It supports "build" to add it to the build group and "test" to add it to the test group.</source>
+        <target state="translated">定義工作屬於哪個執行群組。支援將 「組建」新增到組建群組，以及將「測試」新增到測試群組。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.type">
+        <source xml:lang="en">Defines whether the task is run as a process or as a command inside a shell.</source>
+        <target state="translated">定義工作在殼層中會作為處理程序或命令來執行。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.commandArray">
+        <source xml:lang="en">The shell command to be executed. Array items will be joined using a space character</source>
+        <target state="translated">要執行的 shell 命令。陣列項目會以空白字元連接</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.command.quotedString.value">
+        <source xml:lang="en">The actual command value</source>
+        <target state="translated">實際命令值</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.quoting.escape">
+        <source xml:lang="en">Escapes characters using the shell's escape character (e.g. ` under PowerShell and \ under bash).</source>
+        <target state="translated">使用殼層逸出字元的逸出字元 (例如  ` under PowerShell 與 \ under bash)。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.quoting.strong">
+        <source xml:lang="en">Quotes the argument using the shell's strong quote character (e.g. " under PowerShell and bash).</source>
+        <target state="translated">使用殼層的強式引號字元將引數括住 (例如 PowerShell 及 Bash 下的 ")。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.quoting.weak">
+        <source xml:lang="en">Quotes the argument using the shell's weak quote character (e.g. ' under PowerShell and bash).</source>
+        <target state="translated">使用殼層的弱式引號字元將引數括住 (例如 PowerShell 及 Bash 下的 ')</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.command.quotesString.quote">
+        <source xml:lang="en">How the command value should be quoted.</source>
+        <target state="translated">應如何引用命令值。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.command">
+        <source xml:lang="en">The command to be executed. Can be an external program or a shell command.</source>
+        <target state="translated">要執行的命令。可以是外部程式或殼層命令。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.args.quotedString.value">
+        <source xml:lang="en">The actual argument value</source>
+        <target state="translated">實際引數值</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.args.quotesString.quote">
+        <source xml:lang="en">How the argument value should be quoted.</source>
+        <target state="translated">如何引用參數值。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.args">
+        <source xml:lang="en">Arguments passed to the command when this task is invoked.</source>
+        <target state="translated">叫用此工作時，傳遞至命令的引數。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.label">
+        <source xml:lang="en">The task's user interface label</source>
+        <target state="translated">工作的使用者介面標籤</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.version">
+        <source xml:lang="en">The config's version number.</source>
+        <target state="translated">組態版本號碼</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.identifier">
+        <source xml:lang="en">A user defined identifier to reference the task in launch.json or a dependsOn clause.</source>
+        <target state="translated">用以參考在 launch.json 或 dependsOn 子句中工作的使用者定義識別碼。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.identifier.deprecated">
+        <source xml:lang="en">User defined identifiers are deprecated. For custom task use the name as a reference and for tasks provided by extensions use their defined task identifier.</source>
+        <target state="translated">使用者定義的身分識別已淘汰。請為自訂工作使用名稱作為參考，並為延伸模組提供的工作使用其已定義的工作身分識別。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.reevaluateOnRerun">
+        <source xml:lang="en">Whether to reevaluate task variables on rerun.</source>
+        <target state="translated">是否要在重新執行時重新評估工作變數。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.runOn">
+        <source xml:lang="en">Configures when the task should be run. If set to folderOpen, then the task will be run automatically when the folder is opened.</source>
+        <target state="translated">設定工作應何時執行。若設定為 folderOpen，則會在開啟資料夾時，自動執行工作。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.instanceLimit">
+        <source xml:lang="en">The number of instances of the task that are allowed to run simultaneously.</source>
+        <target state="translated">允許同時執行的工作執行個體數。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.runOptions">
+        <source xml:lang="en">The task's run related options</source>
+        <target state="translated">工作的執行相關選項</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.taskLabel">
+        <source xml:lang="en">The task's label</source>
+        <target state="translated">工作的標籤</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.taskName">
+        <source xml:lang="en">The task's name</source>
+        <target state="translated">工作的名稱</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.taskName.deprecated">
+        <source xml:lang="en">The task's name property is deprecated. Use the label property instead.</source>
+        <target state="translated">已淘汰工作的名稱屬性。請改用標籤屬性。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.background">
+        <source xml:lang="en">Whether the executed task is kept alive and is running in the background.</source>
+        <target state="translated">執行的工作是否保持運作且正在背景執行。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.promptOnClose">
+        <source xml:lang="en">Whether the user is prompted when VS Code closes with a running task.</source>
+        <target state="translated">是否在 VS Code 有執行中工作的狀態下關閉時提示使用者。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.matchers">
+        <source xml:lang="en">The problem matcher(s) to use. Can either be a string or a problem matcher definition or an array of strings and problem matchers.</source>
+        <target state="translated">要使用的問題比對器。可以是字串或問題比對器定義，或是字串和問題比對器陣列。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.customizations.customizes.type">
+        <source xml:lang="en">The task type to customize</source>
+        <target state="translated">要自訂的工作類型</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.customize.deprecated">
+        <source xml:lang="en">The customize property is deprecated. See the 1.14 release notes on how to migrate to the new task customization approach</source>
+        <target state="translated">已淘汰自訂屬性。請參閱 1.14 版本資訊，以了解如何遷移到新的工作自訂方法</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.showOutput.deprecated">
+        <source xml:lang="en">The property showOutput is deprecated. Use the reveal property inside the presentation property instead. See also the 1.14 release notes.</source>
+        <target state="translated">已淘汰屬性 showOutput。請改用簡報屬性中的顯示屬性。此外也請參閱 1.14 版本資訊。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.echoCommand.deprecated">
+        <source xml:lang="en">The property echoCommand is deprecated. Use the echo property inside the presentation property instead. See also the 1.14 release notes.</source>
+        <target state="translated">已淘汰屬性 echoCommand。請改用簡報屬性中的回應屬性。此外也請參閱 1.14 版本資訊。 </target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.suppressTaskName.deprecated">
+        <source xml:lang="en">The property suppressTaskName is deprecated. Inline the command with its arguments into the task instead. See also the 1.14 release notes.</source>
+        <target state="translated">屬性 suppressTaskName 已淘汰。請改為將命令與其引數內嵌至工作。另請參閱 1.14 版本資訊。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.isBuildCommand.deprecated">
+        <source xml:lang="en">The property isBuildCommand is deprecated. Use the group property instead. See also the 1.14 release notes.</source>
+        <target state="translated">已淘汰屬性 isBuildCommand。請改用群組屬性。此外也請參閱 1.14 版本資訊。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.isTestCommand.deprecated">
+        <source xml:lang="en">The property isTestCommand is deprecated. Use the group property instead. See also the 1.14 release notes.</source>
+        <target state="translated">已淘汰屬性 isTestCommand。請改用群組屬性。此外也請參閱 1.14 版本資訊。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.taskSelector.deprecated">
+        <source xml:lang="en">The property taskSelector is deprecated. Inline the command with its arguments into the task instead. See also the 1.14 release notes.</source>
+        <target state="translated">屬性 taskSelector 已淘汰。請改為將命令與其引數內嵌至工作。另請參閱 1.14 版本資訊。 </target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.windows">
+        <source xml:lang="en">Windows specific command configuration</source>
+        <target state="translated">Windows 特定命令組態</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.mac">
+        <source xml:lang="en">Mac specific command configuration</source>
+        <target state="translated">Mac 特定命令組態</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.linux">
+        <source xml:lang="en">Linux specific command configuration</source>
+        <target state="translated">Linux 特定命令組態</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/jsonSchemaCommon" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="JsonSchema.options">
+        <source xml:lang="en">Additional command options</source>
+        <target state="translated">其他命令選項</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.options.cwd">
+        <source xml:lang="en">The current working directory of the executed program or script. If omitted Code's current workspace root is used.</source>
+        <target state="translated">所執行程式或指令碼的目前工作目錄。如果省略，則會使用 Code 的目前工作區根目錄。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.options.env">
+        <source xml:lang="en">The environment of the executed program or shell. If omitted the parent process' environment is used.</source>
+        <target state="translated">所執行程式或殼層的環境。如果省略，則會使用父處理程序的環境。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.shellConfiguration">
+        <source xml:lang="en">Configures the shell to be used.</source>
+        <target state="translated">設定要使用的殼層。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.shell.executable">
+        <source xml:lang="en">The shell to be used.</source>
+        <target state="translated">要使用的殼層。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.shell.args">
+        <source xml:lang="en">The shell arguments.</source>
+        <target state="translated">殼層引數。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.command">
+        <source xml:lang="en">The command to be executed. Can be an external program or a shell command.</source>
+        <target state="translated">要執行的命令。可以是外部程式或殼層命令。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.args">
+        <source xml:lang="en">Arguments passed to the command when this task is invoked.</source>
+        <target state="translated">叫用此工作時，傳遞至命令的引數。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.taskName">
+        <source xml:lang="en">The task's name</source>
+        <target state="translated">工作的名稱</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.windows">
+        <source xml:lang="en">Windows specific command configuration</source>
+        <target state="translated">Windows 特定命令組態</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.matchers">
+        <source xml:lang="en">The problem matcher(s) to use. Can either be a string or a problem matcher definition or an array of strings and problem matchers.</source>
+        <target state="translated">要使用的問題比對器。可以是字串或問題比對器定義，或是字串和問題比對器陣列。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.mac">
+        <source xml:lang="en">Mac specific command configuration</source>
+        <target state="translated">Mac 特定命令組態</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.linux">
+        <source xml:lang="en">Linux specific command configuration</source>
+        <target state="translated">Linux 特定命令組態</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.suppressTaskName">
+        <source xml:lang="en">Controls whether the task name is added as an argument to the command. If omitted the globally defined value is used.</source>
+        <target state="translated">控制是否將工作名稱當做引數加入命令中。如果省略，則會使用全域定義的值。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.showOutput">
+        <source xml:lang="en">Controls whether the output of the running task is shown or not. If omitted the globally defined value is used.</source>
+        <target state="translated">控制是否顯示執行中工作的輸出。如果省略，則會使用全域定義的值。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.echoCommand">
+        <source xml:lang="en">Controls whether the executed command is echoed to the output. Default is false.</source>
+        <target state="translated">控制是否將執行的命令傳到輸出。預設為 False。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.watching.deprecation">
+        <source xml:lang="en">Deprecated. Use isBackground instead.</source>
+        <target state="translated">已被取代。請改用 isBackground。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.watching">
+        <source xml:lang="en">Whether the executed task is kept alive and is watching the file system.</source>
+        <target state="translated">執行的工作是否保持運作且正在監看檔案系統。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.background">
+        <source xml:lang="en">Whether the executed task is kept alive and is running in the background.</source>
+        <target state="translated">執行的工作是否保持運作且正在背景執行。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.promptOnClose">
+        <source xml:lang="en">Whether the user is prompted when VS Code closes with a running task.</source>
+        <target state="translated">是否在 VS Code 有執行中工作的狀態下關閉時提示使用者。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.build">
+        <source xml:lang="en">Maps this task to Code's default build command.</source>
+        <target state="translated">將此工作對應至 Code 的預設建置命令。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.test">
+        <source xml:lang="en">Maps this task to Code's default test command.</source>
+        <target state="translated">將此工作對應至 Code 的預設測試命令。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.args">
+        <source xml:lang="en">Additional arguments passed to the command.</source>
+        <target state="translated">傳遞至命令的其他引數。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.showOutput">
+        <source xml:lang="en">Controls whether the output of the running task is shown or not. If omitted 'always' is used.</source>
+        <target state="translated">控制是否顯示執行中工作的輸出。如果省略，則會使用 [永遠]。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.watching.deprecation">
+        <source xml:lang="en">Deprecated. Use isBackground instead.</source>
+        <target state="translated">已被取代。請改用 isBackground。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.watching">
+        <source xml:lang="en">Whether the executed task is kept alive and is watching the file system.</source>
+        <target state="translated">執行的工作是否保持運作且正在監看檔案系統。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.background">
+        <source xml:lang="en">Whether the executed task is kept alive and is running in the background.</source>
+        <target state="translated">執行的工作是否保持運作且正在背景執行。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.promptOnClose">
+        <source xml:lang="en">Whether the user is prompted when VS Code closes with a running background task.</source>
+        <target state="translated">是否在 VSCode 以執行中的背景工作關閉時提示使用者。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.suppressTaskName">
+        <source xml:lang="en">Controls whether the task name is added as an argument to the command. Default is false.</source>
+        <target state="translated">控制是否將工作名稱當做引數加入命令中。預設為 False。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.taskSelector">
+        <source xml:lang="en">Prefix to indicate that an argument is task.</source>
+        <target state="translated">前置詞，表示引數是工作。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.matchers">
+        <source xml:lang="en">The problem matcher(s) to use. Can either be a string or a problem matcher definition or an array of strings and problem matchers.</source>
+        <target state="translated">要使用的問題比對器。可以是字串或問題比對器定義，或是字串和問題比對器陣列。</target>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks">
+        <source xml:lang="en">The task configurations. Usually these are enrichments of task already defined in the external task runner.</source>
+        <target state="translated">工作組態。這些通常是在外部工作執行器中已定義的工作擴充。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/problemMatcher" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="ProblemPatternParser.problemPattern.missingRegExp">
+        <source xml:lang="en">The problem pattern is missing a regular expression.</source>
+        <target state="translated">此問題模式缺少規則運算式。</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternParser.loopProperty.notLast">
+        <source xml:lang="en">The loop property is only supported on the last line matcher.</source>
+        <target state="translated">只有最後一行比對器才支援迴圈屬性。</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternParser.problemPattern.kindProperty.notFirst">
+        <source xml:lang="en">The problem pattern is invalid. The kind property must be provided only in the first element</source>
+        <target state="translated">問題模式無效。 這類屬性只能在第一個元素中提供</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternParser.problemPattern.missingProperty">
+        <source xml:lang="en">The problem pattern is invalid. It must have at least have a file and a message.</source>
+        <target state="translated">問題模式無效。其必須至少有一個檔案及訊息。</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternParser.problemPattern.missingLocation">
+        <source xml:lang="en">The problem pattern is invalid. It must either have kind: "file" or have a line or location match group.</source>
+        <target state="translated">問題模式無效。其必須有任一類型: "檔案" 或者是有行或位置符合群組。 </target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternParser.invalidRegexp">
+        <source xml:lang="en">Error: The string {0} is not a valid regular expression.
+</source>
+        <target state="translated">錯誤: 字串 {0} 不是有效的規則運算式。
+</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.regexp">
+        <source xml:lang="en">The regular expression to find an error, warning or info in the output.</source>
+        <target state="translated">規則運算式，用來在輸出中尋找錯誤、警告或資訊。</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.kind">
+        <source xml:lang="en">whether the pattern matches a location (file and line) or only a file.</source>
+        <target state="translated">該模式是否符合位置 (檔案和行) 或僅符合檔案。</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.file">
+        <source xml:lang="en">The match group index of the filename. If omitted 1 is used.</source>
+        <target state="translated">檔案名稱的符合群組索引。如果省略，則會使用 1。</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.location">
+        <source xml:lang="en">The match group index of the problem's location. Valid location patterns are: (line), (line,column) and (startLine,startColumn,endLine,endColumn). If omitted (line,column) is assumed.</source>
+        <target state="translated">問題之位置的符合群組索引。有效的位置模式為: (line)、(line,column) 和 (startLine,startColumn,endLine,endColumn)。如果省略，則會假設 (line,column)。</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.line">
+        <source xml:lang="en">The match group index of the problem's line. Defaults to 2</source>
+        <target state="translated">問題之行的符合群組索引。預設為 2</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.column">
+        <source xml:lang="en">The match group index of the problem's line character. Defaults to 3</source>
+        <target state="translated">問題行中字元的符合群組索引。預設為 3</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.endLine">
+        <source xml:lang="en">The match group index of the problem's end line. Defaults to undefined</source>
+        <target state="translated">問題之結尾行的符合群組索引。預設為未定義</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.endColumn">
+        <source xml:lang="en">The match group index of the problem's end line character. Defaults to undefined</source>
+        <target state="translated">問題之結尾行字元的符合群組索引。預設為未定義</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.severity">
+        <source xml:lang="en">The match group index of the problem's severity. Defaults to undefined</source>
+        <target state="translated">問題之嚴重性的符合群組索引。預設為未定義</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.code">
+        <source xml:lang="en">The match group index of the problem's code. Defaults to undefined</source>
+        <target state="translated">問題之代碼的符合群組索引。預設為未定義</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.message">
+        <source xml:lang="en">The match group index of the message. If omitted it defaults to 4 if location is specified. Otherwise it defaults to 5.</source>
+        <target state="translated">訊息的符合群組索引。如果省略並指定位置，預設為 4。否則預設為 5。</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternSchema.loop">
+        <source xml:lang="en">In a multi line matcher loop indicated whether this pattern is executed in a loop as long as it matches. Can only specified on a last pattern in a multi line pattern.</source>
+        <target state="translated">在多行比對器迴圈中，指出此模式是否只要相符就會以迴圈執行。只能在多行模式中的最後一個模式指定。</target>
+      </trans-unit>
+      <trans-unit id="NamedProblemPatternSchema.name">
+        <source xml:lang="en">The name of the problem pattern.</source>
+        <target state="translated">問題模式的名稱。</target>
+      </trans-unit>
+      <trans-unit id="NamedMultiLineProblemPatternSchema.name">
+        <source xml:lang="en">The name of the problem multi line problem pattern.</source>
+        <target state="translated">多行問題模式的名稱。</target>
+      </trans-unit>
+      <trans-unit id="NamedMultiLineProblemPatternSchema.patterns">
+        <source xml:lang="en">The actual patterns.</source>
+        <target state="translated">實際的模式。</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternExtPoint">
+        <source xml:lang="en">Contributes problem patterns</source>
+        <target state="translated">提供問題模式</target>
+      </trans-unit>
+      <trans-unit id="ProblemPatternRegistry.error">
+        <source xml:lang="en">Invalid problem pattern. The pattern will be ignored.</source>
+        <target state="translated">問題模式無效。此模式將予忽略。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noProblemMatcher">
+        <source xml:lang="en">Error: the description can't be converted into a problem matcher:
+{0}
+</source>
+        <target state="translated">錯誤: 無法將描述轉換成問題比對器:
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noProblemPattern">
+        <source xml:lang="en">Error: the description doesn't define a valid problem pattern:
+{0}
+</source>
+        <target state="translated">錯誤: 描述未定義有效的問題樣式:
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noOwner">
+        <source xml:lang="en">Error: the description doesn't define an owner:
+{0}
+</source>
+        <target state="translated">錯誤: 描述未定義擁有者:
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noFileLocation">
+        <source xml:lang="en">Error: the description doesn't define a file location:
+{0}
+</source>
+        <target state="translated">錯誤: 描述未定義檔案位置:
+{0}
+</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.unknownSeverity">
+        <source xml:lang="en">Info: unknown severity {0}. Valid values are error, warning and info.
+</source>
+        <target state="translated">資訊: 嚴重性 {0} 不明。有效值為錯誤、警告和資訊。
+</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noDefinedPatter">
+        <source xml:lang="en">Error: the pattern with the identifier {0} doesn't exist.</source>
+        <target state="translated">錯誤: 沒有識別碼為 {0} 的樣式。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noIdentifier">
+        <source xml:lang="en">Error: the pattern property refers to an empty identifier.</source>
+        <target state="translated">錯誤: 樣式屬性參考了空的識別碼。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.noValidIdentifier">
+        <source xml:lang="en">Error: the pattern property {0} is not a valid pattern variable name.</source>
+        <target state="translated">錯誤: 樣式屬性 {0} 不是有效的樣式變數名稱。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.problemPattern.watchingMatcher">
+        <source xml:lang="en">A problem matcher must define both a begin pattern and an end pattern for watching.</source>
+        <target state="translated">問題比對器必須同時定義監控的開始模式和結束模式。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherParser.invalidRegexp">
+        <source xml:lang="en">Error: The string {0} is not a valid regular expression.
+</source>
+        <target state="translated">錯誤: 字串 {0} 不是有效的規則運算式。
+</target>
+      </trans-unit>
+      <trans-unit id="WatchingPatternSchema.regexp">
+        <source xml:lang="en">The regular expression to detect the begin or end of a background task.</source>
+        <target state="translated">用來查看偵測背景工作開始或結束的正規表達式.</target>
+      </trans-unit>
+      <trans-unit id="WatchingPatternSchema.file">
+        <source xml:lang="en">The match group index of the filename. Can be omitted.</source>
+        <target state="translated">檔案名稱的符合群組索引。可以省略。</target>
+      </trans-unit>
+      <trans-unit id="PatternTypeSchema.name">
+        <source xml:lang="en">The name of a contributed or predefined pattern</source>
+        <target state="translated">所提供或預先定義之模式的名稱</target>
+      </trans-unit>
+      <trans-unit id="PatternTypeSchema.description">
+        <source xml:lang="en">A problem pattern or the name of a contributed or predefined problem pattern. Can be omitted if base is specified.</source>
+        <target state="translated">問題模式或所提供或預先定義之問題模式的名稱。如有指定基底，即可發出。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.base">
+        <source xml:lang="en">The name of a base problem matcher to use.</source>
+        <target state="translated">要使用之基底問題比對器的名稱。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.owner">
+        <source xml:lang="en">The owner of the problem inside Code. Can be omitted if base is specified. Defaults to 'external' if omitted and base is not specified.</source>
+        <target state="translated">Code 內的問題擁有者。如果指定基底，則可以省略。如果省略且未指定基底，預設為 [外部]。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.source">
+        <source xml:lang="en">A human-readable string describing the source of this diagnostic, e.g. 'typescript' or 'super lint'.</source>
+        <target state="translated">可供人們閱讀的診斷描述來源，例如 'typescript' 或 'super lint'。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.severity">
+        <source xml:lang="en">The default severity for captures problems. Is used if the pattern doesn't define a match group for severity.</source>
+        <target state="translated">擷取項目問題的預設嚴重性。如果模式未定義嚴重性的符合群組，就會加以使用。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.applyTo">
+        <source xml:lang="en">Controls if a problem reported on a text document is applied only to open, closed or all documents.</source>
+        <target state="translated">控制文字文件上所回報的問題僅會套用至開啟的文件、關閉的文件或所有文件。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.fileLocation">
+        <source xml:lang="en">Defines how file names reported in a problem pattern should be interpreted.</source>
+        <target state="translated">定義問題模式中所回報檔案名稱的解譯方式。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.background">
+        <source xml:lang="en">Patterns to track the begin and end of a matcher active on a background task.</source>
+        <target state="translated">偵測後台任務中匹配程序模式的開始與結束.</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.background.activeOnStart">
+        <source xml:lang="en">If set to true the background monitor is in active mode when the task starts. This is equals of issuing a line that matches the beginsPattern</source>
+        <target state="translated">若設為 true，則背景監視器會在工作開始時處於主動模式。這相當於發出與 beginsPattern 相符的行</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.background.beginsPattern">
+        <source xml:lang="en">If matched in the output the start of a background task is signaled.</source>
+        <target state="translated">如果於輸出中相符，則會指示背景程式開始。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.background.endsPattern">
+        <source xml:lang="en">If matched in the output the end of a background task is signaled.</source>
+        <target state="translated">如果於輸出中相符，則會指示背景程式結束。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.watching.deprecated">
+        <source xml:lang="en">The watching property is deprecated. Use background instead.</source>
+        <target state="translated">關注屬性已被淘汰，請改用背景取代。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.watching">
+        <source xml:lang="en">Patterns to track the begin and end of a watching matcher.</source>
+        <target state="translated">追蹤匹配程序的開始與結束。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.watching.activeOnStart">
+        <source xml:lang="en">If set to true the watcher is in active mode when the task starts. This is equals of issuing a line that matches the beginPattern</source>
+        <target state="translated">如果設定為 True，監控程式在工作啟動時處於主動模式。這相當於發出符合 beginPattern 的行</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.watching.beginsPattern">
+        <source xml:lang="en">If matched in the output the start of a watching task is signaled.</source>
+        <target state="translated">如果在輸出中相符，則會指示監看工作開始。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherSchema.watching.endsPattern">
+        <source xml:lang="en">If matched in the output the end of a watching task is signaled.</source>
+        <target state="translated">如果在輸出中相符，則會指示監看工作結束。</target>
+      </trans-unit>
+      <trans-unit id="LegacyProblemMatcherSchema.watchedBegin.deprecated">
+        <source xml:lang="en">This property is deprecated. Use the watching property instead.</source>
+        <target state="translated">此屬性即將淘汰。請改用關注的屬性。</target>
+      </trans-unit>
+      <trans-unit id="LegacyProblemMatcherSchema.watchedBegin">
+        <source xml:lang="en">A regular expression signaling that a watched tasks begins executing triggered through file watching.</source>
+        <target state="translated">規則運算式，指示監看的工作開始執行 (透過檔案監看觸發)。</target>
+      </trans-unit>
+      <trans-unit id="LegacyProblemMatcherSchema.watchedEnd.deprecated">
+        <source xml:lang="en">This property is deprecated. Use the watching property instead.</source>
+        <target state="translated">此屬性即將淘汰。請改用關注的屬性。</target>
+      </trans-unit>
+      <trans-unit id="LegacyProblemMatcherSchema.watchedEnd">
+        <source xml:lang="en">A regular expression signaling that a watched tasks ends executing.</source>
+        <target state="translated">規則運算式，指示監看的工作結束執行。</target>
+      </trans-unit>
+      <trans-unit id="NamedProblemMatcherSchema.name">
+        <source xml:lang="en">The name of the problem matcher used to refer to it.</source>
+        <target state="translated">用來參考其問題比對器的名稱。</target>
+      </trans-unit>
+      <trans-unit id="NamedProblemMatcherSchema.label">
+        <source xml:lang="en">A human readable label of the problem matcher.</source>
+        <target state="translated">易讀的問題比對器標籤。</target>
+      </trans-unit>
+      <trans-unit id="ProblemMatcherExtPoint">
+        <source xml:lang="en">Contributes problem matchers</source>
+        <target state="translated">提供問題比對器</target>
+      </trans-unit>
+      <trans-unit id="msCompile">
+        <source xml:lang="en">Microsoft compiler problems</source>
+        <target state="translated">Microsoft  編譯器問題 </target>
+      </trans-unit>
+      <trans-unit id="lessCompile">
+        <source xml:lang="en">Less problems</source>
+        <target state="translated">較少的問題</target>
+      </trans-unit>
+      <trans-unit id="gulp-tsc">
+        <source xml:lang="en">Gulp TSC Problems</source>
+        <target state="translated">Gulp TSC 問題</target>
+      </trans-unit>
+      <trans-unit id="jshint">
+        <source xml:lang="en">JSHint problems</source>
+        <target state="translated">JSHint 問題</target>
+      </trans-unit>
+      <trans-unit id="jshint-stylish">
+        <source xml:lang="en">JSHint stylish problems</source>
+        <target state="translated">JSHint 樣式問題</target>
+      </trans-unit>
+      <trans-unit id="eslint-compact">
+        <source xml:lang="en">ESLint compact problems</source>
+        <target state="translated">ESLint 壓縮問題</target>
+      </trans-unit>
+      <trans-unit id="eslint-stylish">
+        <source xml:lang="en">ESLint stylish problems</source>
+        <target state="translated">ESLint 樣式問題</target>
+      </trans-unit>
+      <trans-unit id="go">
+        <source xml:lang="en">Go problems</source>
+        <target state="translated">前往問題</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/abstractTaskService" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="ConfigureTaskRunnerAction.label">
+        <source xml:lang="en">Configure Task</source>
+        <target state="translated">設定工作</target>
+      </trans-unit>
+      <trans-unit id="tasks">
+        <source xml:lang="en">Tasks</source>
+        <target state="translated">工作</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.noHotSwap">
+        <source xml:lang="en">Changing the task execution engine with an active task running requires to reload the Window</source>
+        <target state="translated">必須重新載入視窗才可變更執行使用中工作的工作執行引擎</target>
+      </trans-unit>
+      <trans-unit id="reloadWindow">
+        <source xml:lang="en">Reload Window</source>
+        <target state="translated">重新載入視窗</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickBuildTaskForLabel">
+        <source xml:lang="en">Select the build task (there is no default build task defined)</source>
+        <target state="translated">選取建置工作 (未定義預設建置工作)</target>
+      </trans-unit>
+      <trans-unit id="taskServiceOutputPrompt">
+        <source xml:lang="en">There are task errors. See the output for details.</source>
+        <target state="translated">具有工作錯誤。如需詳細資料，請參閱輸出。</target>
+      </trans-unit>
+      <trans-unit id="showOutput">
+        <source xml:lang="en">Show output</source>
+        <target state="translated">顯示輸出</target>
+      </trans-unit>
+      <trans-unit id="TaskServer.folderIgnored">
+        <source xml:lang="en">The folder {0} is ignored since it uses task version 0.1.0</source>
+        <target state="translated">因為資料夾 {0} 使用工作版本 0.1.0，所以已將其忽略</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noBuildTask1">
+        <source xml:lang="en">No build task defined. Mark a task with 'isBuildCommand' in the tasks.json file.</source>
+        <target state="translated">未定義任何建置工作。請使用 'isBuildCommand' 標記 tasks.json 檔案中的工作。</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noBuildTask2">
+        <source xml:lang="en">No build task defined. Mark a task with as a 'build' group in the tasks.json file.</source>
+        <target state="translated">未定義任何組建工作，請在 tasks.json 檔案中將工作標記為 'build' 群組。</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noTestTask1">
+        <source xml:lang="en">No test task defined. Mark a task with 'isTestCommand' in the tasks.json file.</source>
+        <target state="translated">未定義任何建置工作。請使用 'isTestCommand' 標記 tasks.json 檔案中的工作。</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noTestTask2">
+        <source xml:lang="en">No test task defined. Mark a task with as a 'test' group in the tasks.json file.</source>
+        <target state="translated">未定義任何測試工作，請在 tasks.json 檔案中將工作標記為 'test' 群組。</target>
+      </trans-unit>
+      <trans-unit id="TaskServer.noTask">
+        <source xml:lang="en">Task to execute is undefined</source>
+        <target state="translated">未定義要執行的工作</target>
+      </trans-unit>
+      <trans-unit id="TaskService.associate">
+        <source xml:lang="en">associate</source>
+        <target state="translated">關聯</target>
+      </trans-unit>
+      <trans-unit id="TaskService.attachProblemMatcher.continueWithout">
+        <source xml:lang="en">Continue without scanning the task output</source>
+        <target state="translated">在不掃描工作輸出的情況下繼續</target>
+      </trans-unit>
+      <trans-unit id="TaskService.attachProblemMatcher.never">
+        <source xml:lang="en">Never scan the task output for this task</source>
+        <target state="translated">永不掃描此工作的工作輸出</target>
+      </trans-unit>
+      <trans-unit id="TaskService.attachProblemMatcher.neverType">
+        <source xml:lang="en">Never scan the task output for {0} tasks</source>
+        <target state="translated">永不掃描 {0} 工作的工作輸出</target>
+      </trans-unit>
+      <trans-unit id="TaskService.attachProblemMatcher.learnMoreAbout">
+        <source xml:lang="en">Learn more about scanning the task output</source>
+        <target state="translated">深入了解掃描工作輸出</target>
+      </trans-unit>
+      <trans-unit id="selectProblemMatcher">
+        <source xml:lang="en">Select for which kind of errors and warnings to scan the task output</source>
+        <target state="translated">選取錯誤和警告的種類以掃描工作輸出</target>
+      </trans-unit>
+      <trans-unit id="customizeParseErrors">
+        <source xml:lang="en">The current task configuration has errors. Please fix the errors first before customizing a task.</source>
+        <target state="translated">當前的工作組態存在錯誤.請更正錯誤再執行工作.</target>
+      </trans-unit>
+      <trans-unit id="tasksJsonComment">
+        <source xml:lang="en">	// See https://go.microsoft.com/fwlink/?LinkId=733558 
+	// for the documentation about the tasks.json format</source>
+        <target state="translated">// 如需 tasks.json 格式的文件， 
+	// 請參閱 https://go.microsoft.com/fwlink/?LinkId=733558</target>
+      </trans-unit>
+      <trans-unit id="moreThanOneBuildTask">
+        <source xml:lang="en">There are many build tasks defined in the tasks.json. Executing the first one.
+</source>
+        <target state="translated">定義了很多建置工作於tasks.json.執行第一個.</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.activeSame.noBackground">
+        <source xml:lang="en">The task '{0}' is already active.</source>
+        <target state="translated">工作 '{0}' 已在使用中。</target>
+      </trans-unit>
+      <trans-unit id="terminateTask">
+        <source xml:lang="en">Terminate Task</source>
+        <target state="translated">終止工作</target>
+      </trans-unit>
+      <trans-unit id="restartTask">
+        <source xml:lang="en">Restart Task</source>
+        <target state="translated">重新啟動工作</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.active">
+        <source xml:lang="en">There is already a task running. Terminate it first before executing another task.</source>
+        <target state="translated">已有工作在執行。請先終止該工作，然後再執行其他工作。</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.restartFailed">
+        <source xml:lang="en">Failed to terminate and restart task {0}</source>
+        <target state="translated">無法終止再重新啟動工作 {0}</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noConfiguration">
+        <source xml:lang="en">Error: The {0} task detection didn't contribute a task for the following configuration:
+{1}
+The task will be ignored.
+</source>
+        <target state="translated">錯誤: {0} 工作偵測未替下列組態提供工作:
+{1}
+將會忽略該工作。
+</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.configurationErrors">
+        <source xml:lang="en">Error: the provided task configuration has validation errors and can't not be used. Please correct the errors first.</source>
+        <target state="translated">錯誤: 提供的工作組態具有驗證錯誤而無法使用。請先更正這些錯誤。</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.invalidTaskJsonOther">
+        <source xml:lang="en">Error: The content of the tasks json in {0} has syntax errors. Please correct them before executing a task.
+</source>
+        <target state="translated">錯誤: {0} 中的工作 json 內容有語法錯誤。請先予以更正，再執行工作。</target>
+      </trans-unit>
+      <trans-unit id="TasksSystem.locationWorkspaceConfig">
+        <source xml:lang="en">workspace file</source>
+        <target state="translated">工作區檔案</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.versionWorkspaceFile">
+        <source xml:lang="en">Only tasks version 2.0.0 permitted in .codeworkspace.</source>
+        <target state="translated">.codeworkspace 中只允許工作版本 2.0.0。</target>
+      </trans-unit>
+      <trans-unit id="TasksSystem.locationUserConfig">
+        <source xml:lang="en">user settings</source>
+        <target state="translated">使用者設定</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.versionSettings">
+        <source xml:lang="en">Only tasks version 2.0.0 permitted in user settings.</source>
+        <target state="translated">使用者設定中只允許工作版本 2.0.0。</target>
+      </trans-unit>
+      <trans-unit id="taskService.ignoreingFolder">
+        <source xml:lang="en">Ignoring task configurations for workspace folder {0}. Multi folder workspace task support requires that all folders use task version 2.0.0
+</source>
+        <target state="translated">略過工作區資料夾 {0} 的工作組態。所有的資料夾都必須使用工作版本 2.0.0 才可使用多資料夾工作區工作支援
+</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.invalidTaskJson">
+        <source xml:lang="en">Error: The content of the tasks.json file has syntax errors. Please correct them before executing a task.
+</source>
+        <target state="translated">錯誤: tasks.json 檔案的內容具有語法錯誤。請更正錯誤，再執行工作
+</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.runningTask">
+        <source xml:lang="en">There is a task running. Do you want to terminate it?</source>
+        <target state="translated">有一個工作正在執行。要終止工作嗎?</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.terminateTask">
+        <source xml:lang="en">&amp;&amp;Terminate Task</source>
+        <target state="translated">終止工作(&amp;&amp;T)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="TaskSystem.noProcess">
+        <source xml:lang="en">The launched task doesn't exist anymore. If the task spawned background processes exiting VS Code might result in orphaned processes. To avoid this start the last background process with a wait flag.</source>
+        <target state="translated">啟動的工作已不存在。如果工作繁衍的背景處理程序結束，VS Code 可能會產生孤立的處理程序。若要避免此情況，請啟動有等候旗標的最後一個背景處理程序。</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.exitAnyways">
+        <source xml:lang="en">&amp;&amp;Exit Anyways</source>
+        <target state="translated">仍要結束(&amp;&amp;E)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="TerminateAction.label">
+        <source xml:lang="en">Terminate Task</source>
+        <target state="translated">終止工作</target>
+      </trans-unit>
+      <trans-unit id="TaskSystem.unknownError">
+        <source xml:lang="en">An error has occurred while running a task. See task log for details.</source>
+        <target state="translated">執行工作時發生錯誤。如需詳細資訊，請參閱工作記錄檔。</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noWorkspace">
+        <source xml:lang="en">Tasks are only available on a workspace folder.</source>
+        <target state="translated">這些工作只會出現在工作區資料夾中。</target>
+      </trans-unit>
+      <trans-unit id="TaskService.learnMore">
+        <source xml:lang="en">Learn More</source>
+        <target state="translated">深入了解</target>
+      </trans-unit>
+      <trans-unit id="configureTask">
+        <source xml:lang="en">Configure Task</source>
+        <target state="translated">設定工作</target>
+      </trans-unit>
+      <trans-unit id="recentlyUsed">
+        <source xml:lang="en">recently used tasks</source>
+        <target state="translated">最近使用的工作</target>
+      </trans-unit>
+      <trans-unit id="configured">
+        <source xml:lang="en">configured tasks</source>
+        <target state="translated">設定的工作</target>
+      </trans-unit>
+      <trans-unit id="detected">
+        <source xml:lang="en">detected tasks</source>
+        <target state="translated">偵測到的工作</target>
+      </trans-unit>
+      <trans-unit id="pickProgressManager.description">
+        <source xml:lang="en">Detecting tasks ({0} of {1}): {2} in progress</source>
+        <target state="translated">偵測工作 ({0}/{1}): {2} 正在進行</target>
+      </trans-unit>
+      <trans-unit id="taskQuickPick.cancel">
+        <source xml:lang="en">Stop detecting</source>
+        <target state="translated">停止偵測</target>
+      </trans-unit>
+      <trans-unit id="TaskService.ignoredFolder">
+        <source xml:lang="en">The following workspace folders are ignored since they use task version 0.1.0: {0}</source>
+        <target state="translated">因為下列工作區資料夾使用工作版本 0.1.0，所以已略過: {0}</target>
+      </trans-unit>
+      <trans-unit id="TaskService.notAgain">
+        <source xml:lang="en">Don't Show Again</source>
+        <target state="translated">不要再顯示</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickRunTask">
+        <source xml:lang="en">Select the task to run</source>
+        <target state="translated">請選取要執行的工作</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noEntryToRun">
+        <source xml:lang="en">No task to run found. Configure Tasks...</source>
+        <target state="translated">找不到任何要執行的工作。請設定工作...</target>
+      </trans-unit>
+      <trans-unit id="TaskService.fetchingBuildTasks">
+        <source xml:lang="en">Fetching build tasks...</source>
+        <target state="translated">正在擷取組建工作...</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickBuildTask">
+        <source xml:lang="en">Select the build task to run</source>
+        <target state="translated">請選取要執行的組建工作</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noBuildTask">
+        <source xml:lang="en">No build task to run found. Configure Build Task...</source>
+        <target state="translated">找不到任何要執行的組建工作。請設定建置工作...</target>
+      </trans-unit>
+      <trans-unit id="TaskService.fetchingTestTasks">
+        <source xml:lang="en">Fetching test tasks...</source>
+        <target state="translated">正在擷取測試工作...</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickTestTask">
+        <source xml:lang="en">Select the test task to run</source>
+        <target state="translated">請選取要執行的測試工作</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noTestTaskTerminal">
+        <source xml:lang="en">No test task to run found. Configure Tasks...</source>
+        <target state="translated">找不到任何要執行的測試工作。請設定工作...</target>
+      </trans-unit>
+      <trans-unit id="TaskService.taskToTerminate">
+        <source xml:lang="en">Select a task to terminate</source>
+        <target state="translated">選擇要終止的工作</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noTaskRunning">
+        <source xml:lang="en">No task is currently running</source>
+        <target state="translated">目前未執行任何工作</target>
+      </trans-unit>
+      <trans-unit id="TaskService.terminateAllRunningTasks">
+        <source xml:lang="en">All Running Tasks</source>
+        <target state="translated">所有正在執行的工作</target>
+      </trans-unit>
+      <trans-unit id="TerminateAction.noProcess">
+        <source xml:lang="en">The launched process doesn't exist anymore. If the task spawned background tasks exiting VS Code might result in orphaned processes.</source>
+        <target state="translated">啟動的處理序已不存在。如果工作繁衍的背景工作結束，VS Code 可能會產生孤立的處理序。</target>
+      </trans-unit>
+      <trans-unit id="TerminateAction.failed">
+        <source xml:lang="en">Failed to terminate running task</source>
+        <target state="translated">無法終止執行中的工作</target>
+      </trans-unit>
+      <trans-unit id="TaskService.taskToRestart">
+        <source xml:lang="en">Select the task to restart</source>
+        <target state="translated">請選取要重新啟動的工作</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noTaskToRestart">
+        <source xml:lang="en">No task to restart</source>
+        <target state="translated">沒有要重新啟動的工作</target>
+      </trans-unit>
+      <trans-unit id="TaskService.template">
+        <source xml:lang="en">Select a Task Template</source>
+        <target state="translated">選取工作範本</target>
+      </trans-unit>
+      <trans-unit id="taskQuickPick.userSettings">
+        <source xml:lang="en">User Settings</source>
+        <target state="translated">使用者設定</target>
+      </trans-unit>
+      <trans-unit id="TaskService.createJsonFile">
+        <source xml:lang="en">Create tasks.json file from template</source>
+        <target state="translated">從範本建立 tasks.json 檔案</target>
+      </trans-unit>
+      <trans-unit id="TaskService.openJsonFile">
+        <source xml:lang="en">Open tasks.json file</source>
+        <target state="translated">開啟 tasks.json 檔案</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickTask">
+        <source xml:lang="en">Select a task to configure</source>
+        <target state="translated">選取要設定的工作</target>
+      </trans-unit>
+      <trans-unit id="TaskService.defaultBuildTaskExists">
+        <source xml:lang="en">{0} is already marked as the default build task</source>
+        <target state="translated">已經將 {0} 標記為預設組建工作</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickDefaultBuildTask">
+        <source xml:lang="en">Select the task to be used as the default build task</source>
+        <target state="translated">請選取要用作預設組建工作的工作</target>
+      </trans-unit>
+      <trans-unit id="TaskService.defaultTestTaskExists">
+        <source xml:lang="en">{0} is already marked as the default test task.</source>
+        <target state="translated">已經將 {0} 標記為預設測試工作。</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickDefaultTestTask">
+        <source xml:lang="en">Select the task to be used as the default test task</source>
+        <target state="translated">請選取要用作預設測試工作的工作</target>
+      </trans-unit>
+      <trans-unit id="TaskService.pickShowTask">
+        <source xml:lang="en">Select the task to show its output</source>
+        <target state="translated">選取要顯示輸出的工作</target>
+      </trans-unit>
+      <trans-unit id="TaskService.noTaskIsRunning">
+        <source xml:lang="en">No task is running</source>
+        <target state="translated">未執行任何工作</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/taskTemplates" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="dotnetCore">
+        <source xml:lang="en">Executes .NET Core build command</source>
+        <target state="translated">執行 .NET Core 建置命令</target>
+      </trans-unit>
+      <trans-unit id="msbuild">
+        <source xml:lang="en">Executes the build target</source>
+        <target state="translated">執行建置目標</target>
+      </trans-unit>
+      <trans-unit id="externalCommand">
+        <source xml:lang="en">Example to run an arbitrary external command</source>
+        <target state="translated">執行任意外部命令的範例</target>
+      </trans-unit>
+      <trans-unit id="Maven">
+        <source xml:lang="en">Executes common maven commands</source>
+        <target state="translated">執行一般 maven 命令</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/terminalTaskSystem" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="TerminalTaskSystem.unknownError">
+        <source xml:lang="en">A unknown error has occurred while executing a task. See task output log for details.</source>
+        <target state="translated">執行工作時發生不明錯誤。如需詳細資訊，請參閱工作輸出記錄檔。</target>
+      </trans-unit>
+      <trans-unit id="dependencyFailed">
+        <source xml:lang="en">Couldn't resolve dependent task '{0}' in workspace folder '{1}'</source>
+        <target state="translated">無法解決在工作區資料夾 '{1}' 中的相依工作 '{0}'</target>
+      </trans-unit>
+      <trans-unit id="TerminalTaskSystem.nonWatchingMatcher">
+        <source xml:lang="en">Task {0} is a background task but uses a problem matcher without a background pattern</source>
+        <target state="translated">工作 {0} 是背景工作，但使用沒有背景圖樣的問題比對器</target>
+      </trans-unit>
+      <trans-unit id="TerminalTaskSystem.terminalName">
+        <source xml:lang="en">Task - {0}</source>
+        <target state="translated">工作 - {0}</target>
+      </trans-unit>
+      <trans-unit id="closeTerminal">
+        <source xml:lang="en">Press any key to close the terminal.</source>
+        <target state="translated">按任意鍵關閉終端機。</target>
+      </trans-unit>
+      <trans-unit id="reuseTerminal">
+        <source xml:lang="en">Terminal will be reused by tasks, press any key to close it.</source>
+        <target state="translated">工作將被重新啟用.按任意鍵關閉.</target>
+      </trans-unit>
+      <trans-unit id="TerminalTaskSystem">
+        <source xml:lang="en">Can't execute a shell command on an UNC drive using cmd.exe.</source>
+        <target state="translated">無法使用 cmd.exe 在 UNC 磁碟機上執行殼層命令。</target>
+      </trans-unit>
+      <trans-unit id="unknownProblemMatcher">
+        <source xml:lang="en">Problem matcher {0} can't be resolved. The matcher will be ignored</source>
+        <target state="translated">問題比對器 {0} 無法解析，比對器將予忽略。</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/workbench/services/keybinding/electron-browser/keybinding.contribution" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="keyboardConfigurationTitle">
+        <source xml:lang="en">Keyboard</source>
+        <target state="translated">Клавиатура</target>
+      </trans-unit>
+      <trans-unit id="touchbar.enabled">
+        <source xml:lang="en">Enables the macOS touchbar buttons on the keyboard if available.</source>
+        <target state="translated">Включает кнопки сенсорной панели macOS на клавиатуре, если они доступны.</target>
+      </trans-unit>
+      <trans-unit id="touchbar.ignored">
+        <source xml:lang="en">A set of identifiers for entries in the touchbar that should not show up (for example `workbench.action.navigateBack`.</source>
+        <target state="translated">Набор идентификаторов для записей на сенсорной панели, которые не должны отображаться (например, "workbench.action.navigateBack").</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/keybinding/common/keybindingEditing" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="errorKeybindingsFileDirty">
+        <source xml:lang="en">Unable to write because the keybindings configuration file is dirty. Please save it first and then try again.</source>
+        <target state="translated">Не удается записать файл конфигурации сочетаний клавиш, так как файл был изменен. Сохраните файл и повторите попытку.</target>
+      </trans-unit>
+      <trans-unit id="parseErrors">
+        <source xml:lang="en">Unable to write to the keybindings configuration file. Please open it to correct errors/warnings in the file and try again.</source>
+        <target state="translated">Не удается записать файл конфигурации сочетаний клавиш. Откройте файл, исправьте ошибки и предупреждения и повторите попытку.</target>
+      </trans-unit>
+      <trans-unit id="errorInvalidConfiguration">
+        <source xml:lang="en">Unable to write to the keybindings configuration file. It has an object which is not of type Array. Please open the file to clean up and try again.</source>
+        <target state="translated">Не удалось записать файл конфигурации сочетаний клавиш. Этот файл содержит объект, тип которого отличен от Array. Откройте файл, удалите этот объект и повторите попытку.</target>
+      </trans-unit>
+      <trans-unit id="emptyKeybindingsHeader">
+        <source xml:lang="en">Place your key bindings in this file to override the defaults</source>
+        <target state="translated">Поместите настраиваемые сочетания клавиш в этот файл, чтобы переопределить сочетания клавиш по умолчанию.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/keybinding/browser/keybindingService" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="nonempty">
+        <source xml:lang="en">expected non-empty value.</source>
+        <target state="translated">требуется непустое значение.</target>
+      </trans-unit>
+      <trans-unit id="requirestring">
+        <source xml:lang="en">property `{0}` is mandatory and must be of type `string`</source>
+        <target state="translated">свойство "{0}" является обязательным и должно иметь тип string</target>
+      </trans-unit>
+      <trans-unit id="optstring">
+        <source xml:lang="en">property `{0}` can be omitted or must be of type `string`</source>
+        <target state="translated">свойство "{0}" может быть опущено или должно иметь тип string</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.keybindings.command">
+        <source xml:lang="en">Identifier of the command to run when keybinding is triggered.</source>
+        <target state="translated">Идентификатор команды, выполняемой при нажатии настраиваемого сочетания клавиш.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.keybindings.args">
+        <source xml:lang="en">Arguments to pass to the command to execute.</source>
+        <target state="translated">Аргументы, передаваемые в выполняемую команду.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.keybindings.key">
+        <source xml:lang="en">Key or key sequence (separate keys with plus-sign and sequences with space, e.g. Ctrl+O and Ctrl+L L for a chord).</source>
+        <target state="translated">Клавиша или сочетание клавиш (отдельные клавиши со знаком "плюс" и сочетания через пробел, например CTRL+O и CTRL+L L для аккорда).</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.keybindings.mac">
+        <source xml:lang="en">Mac specific key or key sequence.</source>
+        <target state="translated">Клавиша или последовательность клавиш для Mac.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.keybindings.linux">
+        <source xml:lang="en">Linux specific key or key sequence.</source>
+        <target state="translated">Клавиша или последовательность клавиш для Linux.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.keybindings.win">
+        <source xml:lang="en">Windows specific key or key sequence.</source>
+        <target state="translated">Клавиша или последовательность клавиш для Windows.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.keybindings.when">
+        <source xml:lang="en">Condition when the key is active.</source>
+        <target state="translated">Условие, когда клавиша нажата.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.keybindings">
+        <source xml:lang="en">Contributes keybindings.</source>
+        <target state="translated">Добавляет настраиваемые сочетания клавиш.</target>
+      </trans-unit>
+      <trans-unit id="invalid.keybindings">
+        <source xml:lang="en">Invalid `contributes.{0}`: {1}</source>
+        <target state="translated">Недопустимое значение "contributes.{0}": {1}</target>
+      </trans-unit>
+      <trans-unit id="unboundCommands">
+        <source xml:lang="en">Here are other available commands: </source>
+        <target state="translated">Доступные команды: </target>
+      </trans-unit>
+      <trans-unit id="keybindings.json.title">
+        <source xml:lang="en">Keybindings configuration</source>
+        <target state="translated">Настройка настраиваемых сочетаний клавиш</target>
+      </trans-unit>
+      <trans-unit id="keybindings.json.key">
+        <source xml:lang="en">Key or key sequence (separated by space)</source>
+        <target state="translated">Клавиша или последовательность клавиш (через пробел)</target>
+      </trans-unit>
+      <trans-unit id="keybindings.json.command">
+        <source xml:lang="en">Name of the command to execute</source>
+        <target state="translated">Имя выполняемой команды</target>
+      </trans-unit>
+      <trans-unit id="keybindings.json.when">
+        <source xml:lang="en">Condition when the key is active.</source>
+        <target state="translated">Условие, когда клавиша нажата.</target>
+      </trans-unit>
+      <trans-unit id="keybindings.json.args">
+        <source xml:lang="en">Arguments to pass to the command to execute.</source>
+        <target state="translated">Аргументы, передаваемые в выполняемую команду.</target>
+      </trans-unit>
+      <trans-unit id="keyboardConfigurationTitle">
+        <source xml:lang="en">Keyboard</source>
+        <target state="translated">Клавиатура</target>
+      </trans-unit>
+      <trans-unit id="dispatch">
+        <source xml:lang="en">Controls the dispatching logic for key presses to use either `code` (recommended) or `keyCode`.</source>
+        <target state="translated">Управляет логикой диспетчеризации для нажатий клавиш "code" (рекомендуется) или "keyCode".</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/workbench/contrib/remote/electron-browser/remote.contribution" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="remote.category">
+        <source xml:lang="en">Remote</source>
+        <target state="translated">원격</target>
+      </trans-unit>
+      <trans-unit id="remote.showMenu">
+        <source xml:lang="en">Show Remote Menu</source>
+        <target state="translated">원격 메뉴 표시</target>
+      </trans-unit>
+      <trans-unit id="remote.close">
+        <source xml:lang="en">Close Remote Connection</source>
+        <target state="translated">원격 연결 닫기</target>
+      </trans-unit>
+      <trans-unit id="host.open">
+        <source xml:lang="en">Opening Remote...</source>
+        <target state="translated">원격 열기...</target>
+      </trans-unit>
+      <trans-unit id="miCloseRemote">
+        <source xml:lang="en">Close Re&amp;&amp;mote Connection</source>
+        <target state="translated">원격 연결 종료(&amp;&amp;M)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="host.tooltip">
+        <source xml:lang="en">Editing on {0}</source>
+        <target state="translated">{0}에서 편집하는 중</target>
+      </trans-unit>
+      <trans-unit id="disconnectedFrom">
+        <source xml:lang="en">Disconnected from</source>
+        <target state="translated">다음에서 분리됨</target>
+      </trans-unit>
+      <trans-unit id="host.tooltipDisconnected">
+        <source xml:lang="en">Disconnected from {0}</source>
+        <target state="translated">{0}에서 연결이 끊어졌습니다.</target>
+      </trans-unit>
+      <trans-unit id="noHost.tooltip">
+        <source xml:lang="en">Open a remote window</source>
+        <target state="translated">원격 창 열기</target>
+      </trans-unit>
+      <trans-unit id="status.host">
+        <source xml:lang="en">Remote Host</source>
+        <target state="translated">원격 호스트</target>
+      </trans-unit>
+      <trans-unit id="cat.title">
+        <source xml:lang="en">{0}: {1}</source>
+        <target state="translated">{0}: {1}</target>
+      </trans-unit>
+      <trans-unit id="closeRemote.title">
+        <source xml:lang="en">Close Remote Connection</source>
+        <target state="translated">원격 연결 닫기</target>
+      </trans-unit>
+      <trans-unit id="remote">
+        <source xml:lang="en">Remote</source>
+        <target state="translated">원격</target>
+      </trans-unit>
+      <trans-unit id="remote.downloadExtensionsLocally">
+        <source xml:lang="en">When enabled extensions are downloaded locally and installed on remote.</source>
+        <target state="translated">활성화된 확장이 로컬로 다운로드되고 원격으로 설치됩니다.</target>
+      </trans-unit>
+      <trans-unit id="remote.restoreForwardedPorts">
+        <source xml:lang="en">Restores the ports you forwarded in a workspace.</source>
+        <target state="translated">작업 영역에서 전달한 포트를 복원합니다.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/remote/common/remote.contribution" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="remoteExtensionLog">
+        <source xml:lang="en">Remote Server</source>
+        <target state="translated">원격 서버</target>
+      </trans-unit>
+      <trans-unit id="ui">
+        <source xml:lang="en">UI extension kind. In a remote window, such extensions are enabled only when available on the local machine.</source>
+        <target state="translated">UI 확장 종류입니다. 원격 창에서, 이러한 확장은 로컬 머신에서 사용 가능한 경우에만 사용할 수 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="workspace">
+        <source xml:lang="en">Workspace extension kind. In a remote window, such extensions are enabled only when available on the remote.</source>
+        <target state="translated">작업 영역 확장 종류입니다. 원격 창에서, 이러한 확장은 원격에서 사용 가능한 경우에만 사용할 수 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="remote">
+        <source xml:lang="en">Remote</source>
+        <target state="translated">원격</target>
+      </trans-unit>
+      <trans-unit id="remote.extensionKind">
+        <source xml:lang="en">Override the kind of an extension. `ui` extensions are installed and run on the local machine while `workspace` extensions are run on the remote. By overriding an extension's default kind using this setting, you specify if that extension should be installed and enabled locally or remotely.</source>
+        <target state="translated">확장 종류를 재정의합니다. 'ui' 확장은 로컬 머신에 설치되고 실행되며, 'workspace' 확장은 원격 머신에서 실행됩니다. 이 설정을 사용하여 확장의 기본 종류를 재정의함으로써 해당 확장이 로컬 머신에 설치되고 활성화되는지 원격 머신에 설치되고 활성화되는지 여부를 지정합니다.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/remote/browser/remote" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="RemoteHelpInformationExtPoint">
+        <source xml:lang="en">Contributes help information for Remote</source>
+        <target state="translated">원격에 대한 도움말 정보 제공</target>
+      </trans-unit>
+      <trans-unit id="RemoteHelpInformationExtPoint.getStarted">
+        <source xml:lang="en">The url to your project's Getting Started page</source>
+        <target state="translated">프로젝트 시작 페이지의 URL</target>
+      </trans-unit>
+      <trans-unit id="RemoteHelpInformationExtPoint.documentation">
+        <source xml:lang="en">The url to your project's documentation page</source>
+        <target state="translated">프로젝트 문서 페이지의 URL</target>
+      </trans-unit>
+      <trans-unit id="RemoteHelpInformationExtPoint.feedback">
+        <source xml:lang="en">The url to your project's feedback reporter</source>
+        <target state="translated">프로젝트 피드백 보고자의 URL</target>
+      </trans-unit>
+      <trans-unit id="RemoteHelpInformationExtPoint.issues">
+        <source xml:lang="en">The url to your project's issues list</source>
+        <target state="translated">프로젝트 문제점 목록의 URL</target>
+      </trans-unit>
+      <trans-unit id="remote.help.getStarted">
+        <source xml:lang="en">Get Started</source>
+        <target state="translated">시작하기</target>
+      </trans-unit>
+      <trans-unit id="remote.help.documentation">
+        <source xml:lang="en">Read Documentation</source>
+        <target state="translated">설명서 읽기</target>
+      </trans-unit>
+      <trans-unit id="remote.help.feedback">
+        <source xml:lang="en">Provide Feedback</source>
+        <target state="translated">피드백 제공</target>
+      </trans-unit>
+      <trans-unit id="remote.help.issues">
+        <source xml:lang="en">Review Issues</source>
+        <target state="translated">문제 검토</target>
+      </trans-unit>
+      <trans-unit id="remote.help.report">
+        <source xml:lang="en">Report Issue</source>
+        <target state="translated">문제 신고</target>
+      </trans-unit>
+      <trans-unit id="pickRemoteExtension">
+        <source xml:lang="en">Select url to open</source>
+        <target state="translated">열 URL 선택</target>
+      </trans-unit>
+      <trans-unit id="remote.help">
+        <source xml:lang="en">Help and feedback</source>
+        <target state="translated">도움말 및 피드백</target>
+      </trans-unit>
+      <trans-unit id="remote.explorer">
+        <source xml:lang="en">Remote Explorer</source>
+        <target state="translated">원격 탐색기</target>
+      </trans-unit>
+      <trans-unit id="toggleRemoteViewlet">
+        <source xml:lang="en">Show Remote Explorer</source>
+        <target state="translated">원격 탐색기 표시</target>
+      </trans-unit>
+      <trans-unit id="view">
+        <source xml:lang="en">View</source>
+        <target state="translated">보기</target>
+      </trans-unit>
+      <trans-unit id="reconnectNow">
+        <source xml:lang="en">Reconnect Now</source>
+        <target state="translated">지금 다시 연결</target>
+      </trans-unit>
+      <trans-unit id="reloadWindow">
+        <source xml:lang="en">Reload Window</source>
+        <target state="translated">창 다시 로드</target>
+      </trans-unit>
+      <trans-unit id="connectionLost">
+        <source xml:lang="en">Connection Lost</source>
+        <target state="translated">연결이 끊어졌습니다.</target>
+      </trans-unit>
+      <trans-unit id="reconnectionRunning">
+        <source xml:lang="en">Attempting to reconnect...</source>
+        <target state="translated">다시 연결 시도 중...</target>
+      </trans-unit>
+      <trans-unit id="reconnectionPermanentFailure">
+        <source xml:lang="en">Cannot reconnect. Please reload the window.</source>
+        <target state="translated">다시 연결할 수 없습니다. 창을 다시 로드하세요.</target>
+      </trans-unit>
+      <trans-unit id="cancel">
+        <source xml:lang="en">Cancel</source>
+        <target state="translated">취소</target>
+      </trans-unit>
+      <trans-unit id="reconnectionWaitOne">
+        <source xml:lang="en">Attempting to reconnect in {0} second...</source>
+        <target state="translated">{0}초 후 다시 연결 시도...</target>
+      </trans-unit>
+      <trans-unit id="reconnectionWaitMany">
+        <source xml:lang="en">Attempting to reconnect in {0} seconds...</source>
+        <target state="translated">{0}초 후에 다시 연결 시도...</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/remote/browser/explorerViewItems" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="remotes">
+        <source xml:lang="en">Switch Remote</source>
+        <target state="translated">원격 전환</target>
+      </trans-unit>
+      <trans-unit id="remote.explorer.switch">
+        <source xml:lang="en">Switch Remote</source>
+        <target state="translated">원격 전환</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/remote/browser/tunnelView" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="remote.tunnelsView.add">
+        <source xml:lang="en">Forward a Port...</source>
+        <target state="translated">포트 전달...</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnelsView.forwarded">
+        <source xml:lang="en">Forwarded</source>
+        <target state="translated">전달됨</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnelsView.detected">
+        <source xml:lang="en">Existing Tunnels</source>
+        <target state="translated">기존 터널</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnelsView.candidates">
+        <source xml:lang="en">Not Forwarded</source>
+        <target state="translated">전달되지 않음</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnelsView.input">
+        <source xml:lang="en">Press Enter to confirm or Escape to cancel.</source>
+        <target state="translated">Enter를 눌러 확인하거나 Esc로 취소합니다.</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnelsView.forwardedPortLabel0">
+        <source xml:lang="en">{0}</source>
+        <target state="translated">{0}</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnelsView.forwardedPortLabel2">
+        <source xml:lang="en">{0}:{1} → {2}</source>
+        <target state="translated">{0}:{1} → {2}</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnelsView.forwardedPortLabel3">
+        <source xml:lang="en">{0} → {1}</source>
+        <target state="translated">{0} → {1}</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnelsView.forwardedPortLabel4">
+        <source xml:lang="en">{0}:{1}</source>
+        <target state="translated">{0}:{1}</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnelsView.forwardedPortLabel5">
+        <source xml:lang="en">{0}</source>
+        <target state="translated">{0}</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnelsView.forwardedPortDescription0">
+        <source xml:lang="en">{0} to {1}</source>
+        <target state="translated">{1}에 {0}</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnel">
+        <source xml:lang="en">Forwarded Ports</source>
+        <target state="translated">전달된 포트</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnel.label">
+        <source xml:lang="en">Set Label</source>
+        <target state="translated">레이블 설정</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnelsView.labelPlaceholder">
+        <source xml:lang="en">Port label</source>
+        <target state="translated">포트 레이블</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnelsView.portNumberValid">
+        <source xml:lang="en">Forwarded port is invalid.</source>
+        <target state="translated">전달된 포트가 잘못되었습니다.</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnelsView.portNumberToHigh">
+        <source xml:lang="en">Port number must be ≥ 0 and &lt; {0}.</source>
+        <target state="translated">포트 번호는 0 이상 {0} 미만이어야 합니다.</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnel.forward">
+        <source xml:lang="en">Forward a Port</source>
+        <target state="translated">포트 전달</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnel.forwardItem">
+        <source xml:lang="en">Forward Port</source>
+        <target state="translated">포워드 포트</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnel.forwardPrompt">
+        <source xml:lang="en">Port number or address (eg. 3000 or 10.10.10.10:2000).</source>
+        <target state="translated">포트 번호 또는 주소(예: 3000 또는 10.10.10.10:2000).</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnel.forwardError">
+        <source xml:lang="en">Unable to forward {0}:{1}. The host may not be available or that remote port may already be forwarded</source>
+        <target state="translated">{0}:{1}을(를) 전달할 수 없습니다. 호스트를 사용할 수 없거나 원격 포트를 이미 전달했을 수 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnel.closeNoPorts">
+        <source xml:lang="en">No ports currently forwarded. Try running the {0} command</source>
+        <target state="translated">현재 전달된 포트가 없습니다. {0} 명령을 실행해 보세요.</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnel.close">
+        <source xml:lang="en">Stop Forwarding Port</source>
+        <target state="translated">포트 전달 중지</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnel.closePlaceholder">
+        <source xml:lang="en">Choose a port to stop forwarding</source>
+        <target state="translated">전달을 중지할 포트 선택</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnel.open">
+        <source xml:lang="en">Open in Browser</source>
+        <target state="translated">브라우저에서 열기</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnel.copyAddressInline">
+        <source xml:lang="en">Copy Address</source>
+        <target state="translated">주소 복사</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnel.copyAddressCommandPalette">
+        <source xml:lang="en">Copy Forwarded Port Address</source>
+        <target state="translated">전달된 포트 주소 복사</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnel.copyAddressPlaceholdter">
+        <source xml:lang="en">Choose a forwarded port</source>
+        <target state="translated">전달된 포트 선택</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnel.refreshView">
+        <source xml:lang="en">Refresh</source>
+        <target state="translated">새로 고침</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnel.changeLocalPort">
+        <source xml:lang="en">Change Local Port</source>
+        <target state="translated">로컬 포트 변경</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnel.changeLocalPortNumber">
+        <source xml:lang="en">The local port {0} is not available. Port number {1} has been used instead</source>
+        <target state="translated">로컬 포트 {0}을(를) 사용할 수 없습니다. 포트 번호 {1}이(가) 대신 사용되었습니다.</target>
+      </trans-unit>
+      <trans-unit id="remote.tunnelsView.changePort">
+        <source xml:lang="en">New local port</source>
+        <target state="translated">새 로컬 포트</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,1831 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/platform/environment/node/argvHelper" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="unknownOption">
+        <source xml:lang="en">Warning: '{0}' is not in the list of known options, but still passed to Electron/Chromium.</source>
+        <target state="translated">Внимание! "{0}" не входит в список известных вариантов, но все равно передается в Electron/Chromium.</target>
+      </trans-unit>
+      <trans-unit id="multipleValues">
+        <source xml:lang="en">Option '{0}' is defined more than once. Using value '{1}.'</source>
+        <target state="translated">Параметр "{0}" определен несколько раз. Используется значение "{1}".</target>
+      </trans-unit>
+      <trans-unit id="gotoValidation">
+        <source xml:lang="en">Arguments in `--goto` mode should be in the format of `FILE(:LINE(:CHARACTER))`.</source>
+        <target state="translated">Аргументы в режиме "--goto" должны быть в формате "ФАЙЛ(:СТРОКА(:СИМВОЛ))".</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="extensions">
+        <source xml:lang="en">Extensions</source>
+        <target state="translated">Расширения</target>
+      </trans-unit>
+      <trans-unit id="preferences">
+        <source xml:lang="en">Preferences</source>
+        <target state="translated">Параметры</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/extensionManagement/node/extensionManagementUtil" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="invalidManifest">
+        <source xml:lang="en">VSIX invalid: package.json is not a JSON file.</source>
+        <target state="translated">Недопустимый VSIX: файл package.json не является файлом JSON.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="telemetryConfigurationTitle">
+        <source xml:lang="en">Telemetry</source>
+        <target state="translated">Телеметрия</target>
+      </trans-unit>
+      <trans-unit id="telemetry.enableTelemetry">
+        <source xml:lang="en">Enable usage data and errors to be sent to a Microsoft online service.</source>
+        <target state="translated">Разрешить отправку сведений об использовании и ошибках в веб-службу Майкрософт.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/request/common/request" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="httpConfigurationTitle">
+        <source xml:lang="en">HTTP</source>
+        <target state="translated">HTTP</target>
+      </trans-unit>
+      <trans-unit id="proxy">
+        <source xml:lang="en">The proxy setting to use. If not set, will be inherited from the `http_proxy` and `https_proxy` environment variables.</source>
+        <target state="translated">Параметр используемого прокси-сервера. Если не установлен, он будет унаследовать от переменных среды "http_proxy" и "https_proxy".</target>
+      </trans-unit>
+      <trans-unit id="strictSSL">
+        <source xml:lang="en">Controls whether the proxy server certificate should be verified against the list of supplied CAs.</source>
+        <target state="translated">Управляет тем, должен ли сертификат прокси-сервера проверяться по списку предоставленных ЦС.</target>
+      </trans-unit>
+      <trans-unit id="proxyAuthorization">
+        <source xml:lang="en">The value to send as the `Proxy-Authorization` header for every network request.</source>
+        <target state="translated">Значение, которое будет отправляться в качестве заголовка "Proxy-Authorization" для каждого сетевого запроса.</target>
+      </trans-unit>
+      <trans-unit id="proxySupportOff">
+        <source xml:lang="en">Disable proxy support for extensions.</source>
+        <target state="translated">Отключить поддержку прокси-сервера для расширений.</target>
+      </trans-unit>
+      <trans-unit id="proxySupportOn">
+        <source xml:lang="en">Enable proxy support for extensions.</source>
+        <target state="translated">Включить поддержку прокси-сервера для расширений.</target>
+      </trans-unit>
+      <trans-unit id="proxySupportOverride">
+        <source xml:lang="en">Enable proxy support for extensions, override request options.</source>
+        <target state="translated">Включает поддержку прокси для расширений, переопределяет параметры запроса.</target>
+      </trans-unit>
+      <trans-unit id="proxySupport">
+        <source xml:lang="en">Use the proxy support for extensions.</source>
+        <target state="translated">Используйте поддержку прокси-сервера для расширений.</target>
+      </trans-unit>
+      <trans-unit id="systemCertificates">
+        <source xml:lang="en">Controls whether CA certificates should be loaded from the OS. (On Windows and macOS a reload of the window is required after turning this off.)</source>
+        <target state="translated">Определяет, нужно ли загружать сертификаты ЦС из ОС. (В Windows и macOS после отключения этой функции требуется перезагрузить окно.)</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/update/common/update.config.contribution" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="updateConfigurationTitle">
+        <source xml:lang="en">Update</source>
+        <target state="translated">Обновить</target>
+      </trans-unit>
+      <trans-unit id="updateMode">
+        <source xml:lang="en">Configure whether you receive automatic updates. Requires a restart after change. The updates are fetched from a Microsoft online service.</source>
+        <target state="translated">Укажите, нужно ли вам получать автоматические обновления. После изменения требуется перезагрузка. Для получения обновлений используется веб-служба Майкрософт.</target>
+      </trans-unit>
+      <trans-unit id="none">
+        <source xml:lang="en">Disable updates.</source>
+        <target state="translated">Отключите обновления.</target>
+      </trans-unit>
+      <trans-unit id="manual">
+        <source xml:lang="en">Disable automatic background update checks. Updates will be available if you manually check for updates.</source>
+        <target state="translated">Отключение автоматических фоновых проверок на наличие обновлений. Обновления будут доступны, если вы вручную проверите их наличие.</target>
+      </trans-unit>
+      <trans-unit id="start">
+        <source xml:lang="en">Check for updates only on startup. Disable automatic background update checks.</source>
+        <target state="translated">Проверять наличие обновлений только при запуске. Отключить автоматическую проверку обновлений в фоновом режиме.</target>
+      </trans-unit>
+      <trans-unit id="default">
+        <source xml:lang="en">Enable automatic update checks. Code will check for updates automatically and periodically.</source>
+        <target state="translated">Включение автоматических проверок обновлений. Code будет периодически проверять наличие обновлений в автоматическом режиме.</target>
+      </trans-unit>
+      <trans-unit id="deprecated">
+        <source xml:lang="en">This setting is deprecated, please use '{0}' instead.</source>
+        <target state="translated">Этот параметр объявлен нерекомендуемым, используйте вместо него "{0}".</target>
+      </trans-unit>
+      <trans-unit id="enableWindowsBackgroundUpdatesTitle">
+        <source xml:lang="en">Enable Background Updates on Windows</source>
+        <target state="translated">Включить фоновые обновления в Windows</target>
+      </trans-unit>
+      <trans-unit id="enableWindowsBackgroundUpdates">
+        <source xml:lang="en">Enable to download and install new VS Code Versions in the background on Windows</source>
+        <target state="translated">Включите, чтобы скачивать и устанавливать новые версии VS Code в Windows в фоновом режиме</target>
+      </trans-unit>
+      <trans-unit id="showReleaseNotes">
+        <source xml:lang="en">Show Release Notes after an update. The Release Notes are fetched from a Microsoft online service.</source>
+        <target state="translated">Показать примечания к выпуску после обновления. Примечания к выпуску передаются веб-службой Майкрософт.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="binFailed">
+        <source xml:lang="en">Failed to move '{0}' to the recycle bin</source>
+        <target state="translated">Не удалось переместить "{0}" в корзину</target>
+      </trans-unit>
+      <trans-unit id="trashFailed">
+        <source xml:lang="en">Failed to move '{0}' to the trash</source>
+        <target state="translated">Не удалось переместить "{0}" в корзину.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/environment/node/argv" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="optionsUpperCase">
+        <source xml:lang="en">Options</source>
+        <target state="translated">Параметры</target>
+      </trans-unit>
+      <trans-unit id="extensionsManagement">
+        <source xml:lang="en">Extensions Management</source>
+        <target state="translated">Управление расширениями</target>
+      </trans-unit>
+      <trans-unit id="troubleshooting">
+        <source xml:lang="en">Troubleshooting</source>
+        <target state="translated">Устранение неполадок</target>
+      </trans-unit>
+      <trans-unit id="diff">
+        <source xml:lang="en">Compare two files with each other.</source>
+        <target state="translated">Сравнение двух файлов друг с другом</target>
+      </trans-unit>
+      <trans-unit id="add">
+        <source xml:lang="en">Add folder(s) to the last active window.</source>
+        <target state="translated">Добавление папок в последнее активное окно.</target>
+      </trans-unit>
+      <trans-unit id="goto">
+        <source xml:lang="en">Open a file at the path on the specified line and character position.</source>
+        <target state="translated">Открытие файла по указанному пути с выделением указанного символа в указанной строке.</target>
+      </trans-unit>
+      <trans-unit id="newWindow">
+        <source xml:lang="en">Force to open a new window.</source>
+        <target state="translated">Принудительно открыть новое окно.</target>
+      </trans-unit>
+      <trans-unit id="reuseWindow">
+        <source xml:lang="en">Force to open a file or folder in an already opened window.</source>
+        <target state="translated">Принудительно открыть файл или папку в уже открытом окне.</target>
+      </trans-unit>
+      <trans-unit id="wait">
+        <source xml:lang="en">Wait for the files to be closed before returning.</source>
+        <target state="translated">Дождаться закрытия файлов перед возвратом.</target>
+      </trans-unit>
+      <trans-unit id="locale">
+        <source xml:lang="en">The locale to use (e.g. en-US or zh-TW).</source>
+        <target state="translated">Языковой стандарт, который следует использовать (например, en-US или zh-TW).</target>
+      </trans-unit>
+      <trans-unit id="userDataDir">
+        <source xml:lang="en">Specifies the directory that user data is kept in. Can be used to open multiple distinct instances of Code.</source>
+        <target state="translated">Указывает каталог, в котором хранятся данные пользователей. Может использоваться для открытия нескольких отдельных экземпляров Code.</target>
+      </trans-unit>
+      <trans-unit id="version">
+        <source xml:lang="en">Print version.</source>
+        <target state="translated">Печать версии.</target>
+      </trans-unit>
+      <trans-unit id="help">
+        <source xml:lang="en">Print usage.</source>
+        <target state="translated">Распечатать данные об использовании.</target>
+      </trans-unit>
+      <trans-unit id="telemetry">
+        <source xml:lang="en">Shows all telemetry events which VS code collects.</source>
+        <target state="translated">Отображает все события телеметрии, которые собирает VS Code.</target>
+      </trans-unit>
+      <trans-unit id="folderUri">
+        <source xml:lang="en">Opens a window with given folder uri(s)</source>
+        <target state="translated">Открывает окно с указанными URI-идентификаторами папок</target>
+      </trans-unit>
+      <trans-unit id="fileUri">
+        <source xml:lang="en">Opens a window with given file uri(s)</source>
+        <target state="translated">Открывает окно с заданными URI файлов</target>
+      </trans-unit>
+      <trans-unit id="extensionHomePath">
+        <source xml:lang="en">Set the root path for extensions.</source>
+        <target state="translated">Задайте корневой путь для расширений.</target>
+      </trans-unit>
+      <trans-unit id="listExtensions">
+        <source xml:lang="en">List the installed extensions.</source>
+        <target state="translated">Перечислить существующие расширения.</target>
+      </trans-unit>
+      <trans-unit id="showVersions">
+        <source xml:lang="en">Show versions of installed extensions, when using --list-extension.</source>
+        <target state="translated">Показать версии установленных расширений при указании параметра --list-extension.</target>
+      </trans-unit>
+      <trans-unit id="category">
+        <source xml:lang="en">Filters installed extensions by provided category, when using --list-extension.</source>
+        <target state="translated">Фильтрация установленных расширений по указанной категории при использовании параметра --list-extension.</target>
+      </trans-unit>
+      <trans-unit id="installExtension">
+        <source xml:lang="en">Installs or updates the extension. Use `--force` argument to avoid prompts.</source>
+        <target state="translated">Устанавливает или обновляет расширение. Используйте аргумент "--force", чтобы не выводить предупреждения.</target>
+      </trans-unit>
+      <trans-unit id="uninstallExtension">
+        <source xml:lang="en">Uninstalls an extension.</source>
+        <target state="translated">Удаляет расширение.</target>
+      </trans-unit>
+      <trans-unit id="experimentalApis">
+        <source xml:lang="en">Enables proposed API features for extensions. Can receive one or more extension IDs to enable individually.</source>
+        <target state="translated">Включает предложенные функции API для расширений. Может принимать один или несколько идентификаторов для включения отдельных расширений.</target>
+      </trans-unit>
+      <trans-unit id="verbose">
+        <source xml:lang="en">Print verbose output (implies --wait).</source>
+        <target state="translated">Печать подробного вывода (подразумевает использование параметра "--wait").</target>
+      </trans-unit>
+      <trans-unit id="log">
+        <source xml:lang="en">Log level to use. Default is 'info'. Allowed values are 'critical', 'error', 'warn', 'info', 'debug', 'trace', 'off'.</source>
+        <target state="translated">Используемый уровень ведения журнала. Значение по умолчанию — "info". Допустимые значения: "critical", "error", "warn", "info", "debug", "trace", "off".</target>
+      </trans-unit>
+      <trans-unit id="status">
+        <source xml:lang="en">Print process usage and diagnostics information.</source>
+        <target state="translated">Выводить сведения об использовании процесса и диагностическую информацию.</target>
+      </trans-unit>
+      <trans-unit id="prof-startup">
+        <source xml:lang="en">Run CPU profiler during startup</source>
+        <target state="translated">Запустить профилировщик ЦП при запуске</target>
+      </trans-unit>
+      <trans-unit id="disableExtensions">
+        <source xml:lang="en">Disable all installed extensions.</source>
+        <target state="translated">Отключить все установленные расширения.</target>
+      </trans-unit>
+      <trans-unit id="disableExtension">
+        <source xml:lang="en">Disable an extension.</source>
+        <target state="translated">Отключить расширение.</target>
+      </trans-unit>
+      <trans-unit id="inspect-extensions">
+        <source xml:lang="en">Allow debugging and profiling of extensions. Check the developer tools for the connection URI.</source>
+        <target state="translated">Разрешить отладку и профилирование расширений. Проверьте URI подключения для инструментов разработчика.</target>
+      </trans-unit>
+      <trans-unit id="inspect-brk-extensions">
+        <source xml:lang="en">Allow debugging and profiling of extensions with the extension host being paused after start. Check the developer tools for the connection URI.</source>
+        <target state="translated">Разрешить отладку и профилирование расширений, когда узел расширения приостановлен после запуска. Проверьте URI подключения для инструментов разработчика. </target>
+      </trans-unit>
+      <trans-unit id="disableGPU">
+        <source xml:lang="en">Disable GPU hardware acceleration.</source>
+        <target state="translated">Отключить аппаратное ускорение GPU.</target>
+      </trans-unit>
+      <trans-unit id="maxMemory">
+        <source xml:lang="en">Max memory size for a window (in Mbytes).</source>
+        <target state="translated">Максимальный размер памяти для окна (в МБ).</target>
+      </trans-unit>
+      <trans-unit id="usage">
+        <source xml:lang="en">Usage</source>
+        <target state="translated">Использование</target>
+      </trans-unit>
+      <trans-unit id="options">
+        <source xml:lang="en">options</source>
+        <target state="translated">Параметры</target>
+      </trans-unit>
+      <trans-unit id="paths">
+        <source xml:lang="en">paths</source>
+        <target state="translated">пути</target>
+      </trans-unit>
+      <trans-unit id="stdinWindows">
+        <source xml:lang="en">To read output from another program, append '-' (e.g. 'echo Hello World | {0} -')</source>
+        <target state="translated">Чтобы прочитать вывод другой программы, добавьте '-' (например 'echo Hello World | {0} -')</target>
+      </trans-unit>
+      <trans-unit id="stdinUnix">
+        <source xml:lang="en">To read from stdin, append '-' (e.g. 'ps aux | grep code | {0} -')</source>
+        <target state="translated">Чтобы получить данные с stdin, добавьте '-' (например, 'ps aux | grep code | {0} -')
+</target>
+      </trans-unit>
+      <trans-unit id="unknownVersion">
+        <source xml:lang="en">Unknown version</source>
+        <target state="translated">Неизвестная версия</target>
+      </trans-unit>
+      <trans-unit id="unknownCommit">
+        <source xml:lang="en">Unknown commit</source>
+        <target state="translated">Неизвестная фиксация</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/label/common/label" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="untitledWorkspace">
+        <source xml:lang="en">Untitled (Workspace)</source>
+        <target state="translated">(Рабочая область) без названия</target>
+      </trans-unit>
+      <trans-unit id="workspaceName">
+        <source xml:lang="en">{0} (Workspace)</source>
+        <target state="translated">{0} (рабочая область)</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/userDataSync" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="sync">
+        <source xml:lang="en">Sync</source>
+        <target state="translated">Синхронизация</target>
+      </trans-unit>
+      <trans-unit id="sync.keybindingsPerPlatform">
+        <source xml:lang="en">Synchronize keybindings per platform.</source>
+        <target state="translated">Синхронизировать привязки клавиш для каждой платформы.</target>
+      </trans-unit>
+      <trans-unit id="sync.ignoredExtensions">
+        <source xml:lang="en">List of extensions to be ignored while synchronizing. The identifier of an extension is always ${publisher}.${name}. For example: vscode.csharp.</source>
+        <target state="translated">Список расширений, которые следует игнорировать при синхронизации. Идентификатор расширения всегда имеет вид ${publisher}.${name}. Например, vscode.csharp.</target>
+      </trans-unit>
+      <trans-unit id="sync.ignoredSettings">
+        <source xml:lang="en">Configure settings to be ignored while synchronizing.</source>
+        <target state="translated">Настройка параметров, которые следует игнорировать при синхронизации.</target>
+      </trans-unit>
+      <trans-unit id="app.extension.identifier.errorMessage">
+        <source xml:lang="en">Expected format '${publisher}.${name}'. Example: 'vscode.csharp'.</source>
+        <target state="translated">Ожидается формат "${publisher}.${name}". Пример: "vscode.csharp".</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/common/files" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="unknownError">
+        <source xml:lang="en">Unknown Error</source>
+        <target state="translated">Неизвестная ошибка</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/userDataSyncService" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="turned off">
+        <source xml:lang="en">Cannot sync because syncing is turned off in the cloud</source>
+        <target state="translated">Не удается синхронизировать, так как синхронизация отключена в облаке</target>
+      </trans-unit>
+      <trans-unit id="session expired">
+        <source xml:lang="en">Cannot sync because current session is expired</source>
+        <target state="translated">Не удается синхронизировать, так как истек срок действия текущего сеанса</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/dialogs/common/dialogs" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="moreFile">
+        <source xml:lang="en">...1 additional file not shown</source>
+        <target state="translated">...1 дополнительный файл не показан</target>
+      </trans-unit>
+      <trans-unit id="moreFiles">
+        <source xml:lang="en">...{0} additional files not shown</source>
+        <target state="translated">...не показано дополнительных файлов: {0}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/markers/common/markers" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="sev.error">
+        <source xml:lang="en">Error</source>
+        <target state="translated">Ошибка</target>
+      </trans-unit>
+      <trans-unit id="sev.warning">
+        <source xml:lang="en">Warning</source>
+        <target state="translated">Предупреждение</target>
+      </trans-unit>
+      <trans-unit id="sev.info">
+        <source xml:lang="en">Info</source>
+        <target state="translated">Информация</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/workspaces/common/workspaces" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="codeWorkspace">
+        <source xml:lang="en">Code Workspace</source>
+        <target state="translated">Рабочая область кода</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="errorInvalidSettings">
+        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
+        <target state="translated">Не удалось синхронизировать параметры, так как имеются ошибки/предупреждения в файле параметров.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/configuration/common/configurationRegistry" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="defaultConfigurations.title">
+        <source xml:lang="en">Default Configuration Overrides</source>
+        <target state="translated">Переопределения конфигурации по умолчанию</target>
+      </trans-unit>
+      <trans-unit id="overrideSettings.description">
+        <source xml:lang="en">Configure editor settings to be overridden for {0} language.</source>
+        <target state="translated">Настройка переопределяемых параметров редактора для языка {0}.</target>
+      </trans-unit>
+      <trans-unit id="overrideSettings.defaultDescription">
+        <source xml:lang="en">Configure editor settings to be overridden for a language.</source>
+        <target state="translated">Настройка параметров редактора, переопределяемых для языка.</target>
+      </trans-unit>
+      <trans-unit id="overrideSettings.errorMessage">
+        <source xml:lang="en">This setting does not support per-language configuration.</source>
+        <target state="translated">Этот параметр не поддерживает настройку для отдельных языков.</target>
+      </trans-unit>
+      <trans-unit id="config.property.languageDefault">
+        <source xml:lang="en">Cannot register '{0}'. This matches property pattern '\\[.*\\]$' for describing language specific editor settings. Use 'configurationDefaults' contribution.</source>
+        <target state="translated">Невозможно зарегистрировать "{0}". Оно соответствует шаблону свойства '\\[.*\\]$' для описания параметров редактора, определяемых языком. Используйте участие configurationDefaults.</target>
+      </trans-unit>
+      <trans-unit id="config.property.duplicate">
+        <source xml:lang="en">Cannot register '{0}'. This property is already registered.</source>
+        <target state="translated">Невозможно зарегистрировать "{0}". Это свойство уже зарегистрировано.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/node/diskFileSystemProvider" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="fileExists">
+        <source xml:lang="en">File already exists</source>
+        <target state="translated">Файл уже существует.</target>
+      </trans-unit>
+      <trans-unit id="fileNotExists">
+        <source xml:lang="en">File does not exist</source>
+        <target state="translated">Файл не существует</target>
+      </trans-unit>
+      <trans-unit id="moveError">
+        <source xml:lang="en">Unable to move '{0}' into '{1}' ({2}).</source>
+        <target state="translated">Не удалось переместить "{0}" в "{1}" ({2}).</target>
+      </trans-unit>
+      <trans-unit id="copyError">
+        <source xml:lang="en">Unable to copy '{0}' into '{1}' ({2}).</source>
+        <target state="translated">Не удалось скопировать "{0}" в "{1}" ({2}).</target>
+      </trans-unit>
+      <trans-unit id="fileCopyErrorPathCase">
+        <source xml:lang="en">'File cannot be copied to same path with different path case</source>
+        <target state="translated">'Файл не может быть скопирован по тому же пути с другим регистром пути</target>
+      </trans-unit>
+      <trans-unit id="fileCopyErrorExists">
+        <source xml:lang="en">File at target already exists</source>
+        <target state="translated">Файл в целевом расположении уже существует</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/undoRedo/common/undoRedoService" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="externalRemoval">
+        <source xml:lang="en">The following files have been closed: {0}.</source>
+        <target state="translated">Были закрыты следующие файлы: {0}.</target>
+      </trans-unit>
+      <trans-unit id="noParallelUniverses">
+        <source xml:lang="en">The following files have been modified in an incompatible way: {0}.</source>
+        <target state="translated">Следующие файлы были изменены несовместимым образом: {0}.</target>
+      </trans-unit>
+      <trans-unit id="cannotWorkspaceUndo">
+        <source xml:lang="en">Could not undo '{0}' across all files. {1}</source>
+        <target state="translated">Не удалось отменить "{0}" для всех файлов. {1}</target>
+      </trans-unit>
+      <trans-unit id="cannotWorkspaceUndoDueToChanges">
+        <source xml:lang="en">Could not undo '{0}' across all files because changes were made to {1}</source>
+        <target state="translated">Не удалось отменить операцию "{0}" для всех файлов, так как были внесены изменения в {1}</target>
+      </trans-unit>
+      <trans-unit id="confirmWorkspace">
+        <source xml:lang="en">Would you like to undo '{0}' across all files?</source>
+        <target state="translated">Вы хотите отменить "{0}" для всех файлов?</target>
+      </trans-unit>
+      <trans-unit id="ok">
+        <source xml:lang="en">Undo in {0} files.</source>
+        <target state="translated">Отмена в файлах: {0}.</target>
+      </trans-unit>
+      <trans-unit id="nok">
+        <source xml:lang="en">Undo this file.</source>
+        <target state="translated">Отмена для этого файла.</target>
+      </trans-unit>
+      <trans-unit id="cancel">
+        <source xml:lang="en">Cancel</source>
+        <target state="translated">Отмена</target>
+      </trans-unit>
+      <trans-unit id="cannotWorkspaceRedo">
+        <source xml:lang="en">Could not redo '{0}' across all files. {1}</source>
+        <target state="translated">Не удалось повторить операцию "{0}" для всех файлов. {1}</target>
+      </trans-unit>
+      <trans-unit id="cannotWorkspaceRedoDueToChanges">
+        <source xml:lang="en">Could not redo '{0}' across all files because changes were made to {1}</source>
+        <target state="translated">Не удалось повторить операцию "{0}" для всех файлов, так как были внесены изменения в {1}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/list/browser/listService" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="workbenchConfigurationTitle">
+        <source xml:lang="en">Workbench</source>
+        <target state="translated">Рабочее место</target>
+      </trans-unit>
+      <trans-unit id="multiSelectModifier.ctrlCmd">
+        <source xml:lang="en">Maps to `Control` on Windows and Linux and to `Command` on macOS.</source>
+        <target state="translated">Соответствует клавише CTRL в Windows и Linux и клавише COMMAND в macOS.</target>
+      </trans-unit>
+      <trans-unit id="multiSelectModifier.alt">
+        <source xml:lang="en">Maps to `Alt` on Windows and Linux and to `Option` on macOS.</source>
+        <target state="translated">Соответствует клавише ALT в Windows и Linux и клавише OPTION в macOS.</target>
+      </trans-unit>
+      <trans-unit id="multiSelectModifier">
+        <source xml:lang="en">The modifier to be used to add an item in trees and lists to a multi-selection with the mouse (for example in the explorer, open editors and scm view). The 'Open to Side' mouse gestures - if supported - will adapt such that they do not conflict with the multiselect modifier.</source>
+        <target state="translated">Модификатор, который будет использоваться для добавления элементов в деревьях и списках в элемент множественного выбора с помощью мыши (например, в проводнике, в открытых редакторах и в представлении scm). Жесты мыши  "Открыть сбоку" (если они поддерживаются) будут изменены таким образом, чтобы они не конфликтовали с модификатором элемента множественного выбора.</target>
+        <note>- `ctrlCmd` refers to a value the setting can take and should not be localized.
+- `Control` and `Command` refer to the modifier keys Ctrl or Cmd on the keyboard and can be localized.</note>
+      </trans-unit>
+      <trans-unit id="openModeModifier">
+        <source xml:lang="en">Controls how to open items in trees and lists using the mouse (if supported). For parents with children in trees, this setting will control if a single click expands the parent or a double click. Note that some trees and lists might choose to ignore this setting if it is not applicable. </source>
+        <target state="translated">Управляет тем, как открывать элементы в деревьях и списках с помощью мыши (если поддерживается). Для родительских элементов с дочерними элементами в деревьях этот параметр управляет тем, будет ли родительский элемент разворачиваться по одинарному или по двойному щелчку мыши. Обратите внимание, что этот параметр может игнорироваться в некоторых деревьях и списках, если он не применяется к ним. </target>
+        <note>`singleClick` and `doubleClick` refers to a value the setting can take and should not be localized.</note>
+      </trans-unit>
+      <trans-unit id="horizontalScrolling setting">
+        <source xml:lang="en">Controls whether lists and trees support horizontal scrolling in the workbench.</source>
+        <target state="translated">Определяет, поддерживают ли списки и деревья горизонтальную прокрутку в Workbench.</target>
+      </trans-unit>
+      <trans-unit id="tree horizontalScrolling setting">
+        <source xml:lang="en">Controls whether trees support horizontal scrolling in the workbench.</source>
+        <target state="translated">Определяет, поддерживают ли древа горизонтальную прокрутку в рабочей области.</target>
+      </trans-unit>
+      <trans-unit id="deprecated">
+        <source xml:lang="en">This setting is deprecated, please use '{0}' instead.</source>
+        <target state="translated">Этот параметр объявлен нерекомендуемым, используйте вместо него "{0}".</target>
+      </trans-unit>
+      <trans-unit id="tree indent setting">
+        <source xml:lang="en">Controls tree indentation in pixels.</source>
+        <target state="translated">Определяет отступ для дерева в пикселях.</target>
+      </trans-unit>
+      <trans-unit id="render tree indent guides">
+        <source xml:lang="en">Controls whether the tree should render indent guides.</source>
+        <target state="translated">Определяет, нужно ли в дереве отображать направляющие отступа.</target>
+      </trans-unit>
+      <trans-unit id="keyboardNavigationSettingKey.simple">
+        <source xml:lang="en">Simple keyboard navigation focuses elements which match the keyboard input. Matching is done only on prefixes.</source>
+        <target state="translated">Про простой навигации с клавиатуры выбираются элементы, соответствующие вводимым с клавиатуры данным. Сопоставление осуществляется только по префиксам.</target>
+      </trans-unit>
+      <trans-unit id="keyboardNavigationSettingKey.highlight">
+        <source xml:lang="en">Highlight keyboard navigation highlights elements which match the keyboard input. Further up and down navigation will traverse only the highlighted elements.</source>
+        <target state="translated">Функция подсветки навигации с клавиатуры выделяет элементы, соответствующие вводимым с клавиатуры данным. При дальнейшей навигации вверх и вниз выполняется обход только выделенных элементов.</target>
+      </trans-unit>
+      <trans-unit id="keyboardNavigationSettingKey.filter">
+        <source xml:lang="en">Filter keyboard navigation will filter out and hide all the elements which do not match the keyboard input.</source>
+        <target state="translated">Фильтр навигации с клавиатуры позволяет отфильтровать и скрыть все элементы, не соответствующие вводимым с клавиатуры данным.</target>
+      </trans-unit>
+      <trans-unit id="keyboardNavigationSettingKey">
+        <source xml:lang="en">Controls the keyboard navigation style for lists and trees in the workbench. Can be simple, highlight and filter.</source>
+        <target state="translated">Управляет стилем навигации с клавиатуры для списков и деревьев в Workbench. Доступен простой режим, режим выделения и режим фильтрации.</target>
+      </trans-unit>
+      <trans-unit id="automatic keyboard navigation setting">
+        <source xml:lang="en">Controls whether keyboard navigation in lists and trees is automatically triggered simply by typing. If set to `false`, keyboard navigation is only triggered when executing the `list.toggleKeyboardNavigation` command, for which you can assign a keyboard shortcut.</source>
+        <target state="translated">Указывает, активируется ли навигация с помощью клавиатуры в списках и деревьях автоматически простым вводом. Если задано значение "false", навигация с клавиатуры активируется только при выполнении команды "list.toggleKeyboardNavigation", для которой можно назначить сочетание клавиш.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/common/fileService" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="invalidPath">
+        <source xml:lang="en">Unable to resolve filesystem provider with relative file path '{0}'</source>
+        <target state="translated">Не удалось разрешить поставщик файловой системы с относительным путем к файлу "{0}"</target>
+      </trans-unit>
+      <trans-unit id="noProviderFound">
+        <source xml:lang="en">No file system provider found for resource '{0}'</source>
+        <target state="translated">Не найден поставщик файловой системы для ресурса "{0}"</target>
+      </trans-unit>
+      <trans-unit id="fileNotFoundError">
+        <source xml:lang="en">Unable to resolve non-existing file '{0}'</source>
+        <target state="translated">Не удается решить несуществующий файл "{0}"</target>
+      </trans-unit>
+      <trans-unit id="fileExists">
+        <source xml:lang="en">Unable to create file '{0}' that already exists when overwrite flag is not set</source>
+        <target state="translated">Не удалось создать файл "{0}", который уже существует, когда не установлен флаг перезаписи</target>
+      </trans-unit>
+      <trans-unit id="err.write">
+        <source xml:lang="en">Unable to write file '{0}' ({1})</source>
+        <target state="translated">Не удается записать файл "{0}" ({1})</target>
+      </trans-unit>
+      <trans-unit id="fileIsDirectoryWriteError">
+        <source xml:lang="en">Unable to write file '{0}' that is actually a directory</source>
+        <target state="translated">Не удается записать файл "{0}", который на самом деле является каталогом</target>
+      </trans-unit>
+      <trans-unit id="fileModifiedError">
+        <source xml:lang="en">File Modified Since</source>
+        <target state="translated">Файл изменен с</target>
+      </trans-unit>
+      <trans-unit id="err.read">
+        <source xml:lang="en">Unable to read file '{0}' ({1})</source>
+        <target state="translated">Не удалось считать файл "{0}" ({1})</target>
+      </trans-unit>
+      <trans-unit id="fileIsDirectoryReadError">
+        <source xml:lang="en">Unable to read file '{0}' that is actually a directory</source>
+        <target state="translated">Не удалось считать файл "{0}", который на самом деле является каталогом</target>
+      </trans-unit>
+      <trans-unit id="fileNotModifiedError">
+        <source xml:lang="en">File not modified since</source>
+        <target state="translated">undefined</target>
+      </trans-unit>
+      <trans-unit id="fileTooLargeError">
+        <source xml:lang="en">Unable to read file '{0}' that is too large to open</source>
+        <target state="translated">Не удалось считать файл "{0}", который слишком большой для открытия</target>
+      </trans-unit>
+      <trans-unit id="unableToMoveCopyError1">
+        <source xml:lang="en">Unable to copy when source '{0}' is same as target '{1}' with different path case on a case insensitive file system</source>
+        <target state="translated">Не удается скопировать, когда исходный "{0}" совпадает с целевым "{1}" с другим регистром пути в файловой системе, нечувствительной к регистру</target>
+      </trans-unit>
+      <trans-unit id="unableToMoveCopyError2">
+        <source xml:lang="en">Unable to move/copy when source '{0}' is parent of target '{1}'.</source>
+        <target state="translated">Не удалось выполнить перемещение или копирование, когда исходный "{0}" является родительским объектом целевого "{1}".</target>
+      </trans-unit>
+      <trans-unit id="unableToMoveCopyError3">
+        <source xml:lang="en">Unable to move/copy '{0}' because target '{1}' already exists at destination.</source>
+        <target state="translated">Не удалось выполнить перемещение/копирование "{0}", так как целевой "{1}" уже существует в месте назначения.</target>
+      </trans-unit>
+      <trans-unit id="unableToMoveCopyError4">
+        <source xml:lang="en">Unable to move/copy '{0}' into '{1}' since a file would replace the folder it is contained in.</source>
+        <target state="translated">Не удается переместить/скопировать "{0}" в "{1}", так как файл заменит содержащую его папку.</target>
+      </trans-unit>
+      <trans-unit id="mkdirExistsError">
+        <source xml:lang="en">Unable to create folder '{0}' that already exists but is not a directory</source>
+        <target state="translated">Не удалось создать папку "{0}", которая уже существует, но не является каталогом</target>
+      </trans-unit>
+      <trans-unit id="deleteFailedTrashUnsupported">
+        <source xml:lang="en">Unable to delete file '{0}' via trash because provider does not support it.</source>
+        <target state="translated">Не удалось удалить файл "{0}" через корзину, так как что поставщик не поддерживает это.</target>
+      </trans-unit>
+      <trans-unit id="deleteFailedNotFound">
+        <source xml:lang="en">Unable to delete non-existing file '{0}'</source>
+        <target state="translated">Не удалось удалить несуществующий файл "{0}"</target>
+      </trans-unit>
+      <trans-unit id="deleteFailedNonEmptyFolder">
+        <source xml:lang="en">Unable to delete non-empty folder '{0}'.</source>
+        <target state="translated">Не удалось удалить непустую папку "{0}".</target>
+      </trans-unit>
+      <trans-unit id="err.readonly">
+        <source xml:lang="en">Unable to modify readonly file '{0}'</source>
+        <target state="translated">Не удается изменить файл "{0}", доступный только для чтения</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/extensionManagement/node/extensionManagementService" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="invalidManifest">
+        <source xml:lang="en">Extension invalid: package.json is not a JSON file.</source>
+        <target state="translated">Недопустимое расширение: package.json не является файлом JSON.</target>
+      </trans-unit>
+      <trans-unit id="incompatible">
+        <source xml:lang="en">Unable to install extension '{0}' as it is not compatible with VS Code '{1}'.</source>
+        <target state="translated">Не удалось установить расширение '{0}', так как оно не совместимо с VS Code '{1}'.</target>
+      </trans-unit>
+      <trans-unit id="restartCode">
+        <source xml:lang="en">Please restart VS Code before reinstalling {0}.</source>
+        <target state="translated">Перезапустите VS Code перед повторной установкой {0}.</target>
+      </trans-unit>
+      <trans-unit id="MarketPlaceDisabled">
+        <source xml:lang="en">Marketplace is not enabled</source>
+        <target state="translated">Marketplace не включен</target>
+      </trans-unit>
+      <trans-unit id="malicious extension">
+        <source xml:lang="en">Can't install extension since it was reported to be problematic.</source>
+        <target state="translated">Не удается установить расширение, так как оно помечено как проблемное.</target>
+      </trans-unit>
+      <trans-unit id="notFoundCompatibleDependency">
+        <source xml:lang="en">Unable to install '{0}' extension because it is not compatible with the current version of VS Code (version {1}).</source>
+        <target state="translated">Не удалось установить расширение "{0}", так как оно несовместимо с текущей версией VS Code (версия {1}).</target>
+      </trans-unit>
+      <trans-unit id="removeError">
+        <source xml:lang="en">Error while removing the extension: {0}. Please Quit and Start VS Code before trying again.</source>
+        <target state="translated">Ошибка при удалении расширения: {0}. Закройте и снова откройте VS Code, затем повторите попытку.</target>
+      </trans-unit>
+      <trans-unit id="Not a Marketplace extension">
+        <source xml:lang="en">Only Marketplace Extensions can be reinstalled</source>
+        <target state="translated">Можно переустановить только расширения из Marketplace</target>
+      </trans-unit>
+      <trans-unit id="quitCode">
+        <source xml:lang="en">Unable to install the extension. Please Quit and Start VS Code before reinstalling.</source>
+        <target state="translated">Невозможно установить расширение. Пожалуйста, выйдите и зайдите в VS Code перед переустановкой.</target>
+      </trans-unit>
+      <trans-unit id="exitCode">
+        <source xml:lang="en">Unable to install the extension. Please Exit and Start VS Code before reinstalling.</source>
+        <target state="translated">Невозможно установить расширение. Пожалуйста, выйдите и зайдите в VS Code перед переустановкой.</target>
+      </trans-unit>
+      <trans-unit id="errorDeleting">
+        <source xml:lang="en">Unable to delete the existing folder '{0}' while installing the extension '{1}'. Please delete the folder manually and try again</source>
+        <target state="translated">Не удается удалить существующую папку "{0}" при установке расширения "{1}". Удалите папку вручную и повторите попытку</target>
+      </trans-unit>
+      <trans-unit id="cannot read">
+        <source xml:lang="en">Cannot read the extension from {0}</source>
+        <target state="translated">Не удается прочитать расширение из {0}</target>
+      </trans-unit>
+      <trans-unit id="renameError">
+        <source xml:lang="en">Unknown error while renaming {0} to {1}</source>
+        <target state="translated">Неизвестная ошибка при переименовании {0} в {1}</target>
+      </trans-unit>
+      <trans-unit id="notInstalled">
+        <source xml:lang="en">Extension '{0}' is not installed.</source>
+        <target state="translated">Расширение "{0}" не установлено.</target>
+      </trans-unit>
+      <trans-unit id="singleDependentError">
+        <source xml:lang="en">Cannot uninstall extension '{0}'. Extension '{1}' depends on this.</source>
+        <target state="translated">Не удается удалить расширение "{0}". От него зависит расширение "{1}".</target>
+      </trans-unit>
+      <trans-unit id="twoDependentsError">
+        <source xml:lang="en">Cannot uninstall extension '{0}'. Extensions '{1}' and '{2}' depend on this.</source>
+        <target state="translated">Не удается удалить расширение "{0}". От него зависят расширения "{1}" и "{2}".</target>
+      </trans-unit>
+      <trans-unit id="multipleDependentsError">
+        <source xml:lang="en">Cannot uninstall extension '{0}'. Extensions '{1}', '{2}' and others depend on this.</source>
+        <target state="translated">Не удается удалить расширение "{0}". От него зависят расширения "{1}", "{2}" и другие.</target>
+      </trans-unit>
+      <trans-unit id="notExists">
+        <source xml:lang="en">Could not find extension</source>
+        <target state="translated">Не удалось найти расширение</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/theme/common/colorRegistry" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="foreground">
+        <source xml:lang="en">Overall foreground color. This color is only used if not overridden by a component.</source>
+        <target state="translated">Общий цвет переднего плана. Этот цвет используется, только если его не переопределит компонент.</target>
+      </trans-unit>
+      <trans-unit id="errorForeground">
+        <source xml:lang="en">Overall foreground color for error messages. This color is only used if not overridden by a component.</source>
+        <target state="translated">Общий цвет переднего плана для сообщений об ошибках. Этот цвет используется только если его не переопределяет компонент.</target>
+      </trans-unit>
+      <trans-unit id="descriptionForeground">
+        <source xml:lang="en">Foreground color for description text providing additional information, for example for a label.</source>
+        <target state="translated">Цвет текста элемента, содержащего пояснения, например, для метки.</target>
+      </trans-unit>
+      <trans-unit id="iconForeground">
+        <source xml:lang="en">The default color for icons in the workbench.</source>
+        <target state="translated">Цвет по умолчанию для значков на рабочем месте.</target>
+      </trans-unit>
+      <trans-unit id="focusBorder">
+        <source xml:lang="en">Overall border color for focused elements. This color is only used if not overridden by a component.</source>
+        <target state="translated">Общий цвет границ для элементов с фокусом. Этот цвет используется только в том случае, если не переопределен в компоненте.</target>
+      </trans-unit>
+      <trans-unit id="contrastBorder">
+        <source xml:lang="en">An extra border around elements to separate them from others for greater contrast.</source>
+        <target state="translated">Дополнительная граница вокруг элементов, которая отделяет их от других элементов для улучшения контраста.</target>
+      </trans-unit>
+      <trans-unit id="activeContrastBorder">
+        <source xml:lang="en">An extra border around active elements to separate them from others for greater contrast.</source>
+        <target state="translated">Дополнительная граница вокруг активных элементов, которая отделяет их от других элементов для улучшения контраста.</target>
+      </trans-unit>
+      <trans-unit id="selectionBackground">
+        <source xml:lang="en">The background color of text selections in the workbench (e.g. for input fields or text areas). Note that this does not apply to selections within the editor.</source>
+        <target state="translated">Цвет фона выделенного текста в рабочей области (например, в полях ввода или в текстовых полях). Не применяется к выделенному тексту в редакторе.</target>
+      </trans-unit>
+      <trans-unit id="textSeparatorForeground">
+        <source xml:lang="en">Color for text separators.</source>
+        <target state="translated">Цвет для разделителей текста.</target>
+      </trans-unit>
+      <trans-unit id="textLinkForeground">
+        <source xml:lang="en">Foreground color for links in text.</source>
+        <target state="translated">Цвет переднего плана для ссылок в тексте.</target>
+      </trans-unit>
+      <trans-unit id="textLinkActiveForeground">
+        <source xml:lang="en">Foreground color for links in text when clicked on and on mouse hover.</source>
+        <target state="translated">Цвет переднего плана для ссылок в тексте при щелчке и при наведении курсора мыши.</target>
+      </trans-unit>
+      <trans-unit id="textPreformatForeground">
+        <source xml:lang="en">Foreground color for preformatted text segments.</source>
+        <target state="translated">Цвет текста фиксированного формата.</target>
+      </trans-unit>
+      <trans-unit id="textBlockQuoteBackground">
+        <source xml:lang="en">Background color for block quotes in text.</source>
+        <target state="translated">Цвет фона для блоков с цитатами в тексте.</target>
+      </trans-unit>
+      <trans-unit id="textBlockQuoteBorder">
+        <source xml:lang="en">Border color for block quotes in text.</source>
+        <target state="translated">Цвет границ для блоков с цитатами в тексте.</target>
+      </trans-unit>
+      <trans-unit id="textCodeBlockBackground">
+        <source xml:lang="en">Background color for code blocks in text.</source>
+        <target state="translated">Цвет фона для программного кода в тексте.</target>
+      </trans-unit>
+      <trans-unit id="widgetShadow">
+        <source xml:lang="en">Shadow color of widgets such as find/replace inside the editor.</source>
+        <target state="translated">Цвет тени мини-приложений редактора, таких как "Найти/заменить".</target>
+      </trans-unit>
+      <trans-unit id="inputBoxBackground">
+        <source xml:lang="en">Input box background.</source>
+        <target state="translated">Фон поля ввода.</target>
+      </trans-unit>
+      <trans-unit id="inputBoxForeground">
+        <source xml:lang="en">Input box foreground.</source>
+        <target state="translated">Передний план поля ввода.</target>
+      </trans-unit>
+      <trans-unit id="inputBoxBorder">
+        <source xml:lang="en">Input box border.</source>
+        <target state="translated">Граница поля ввода.</target>
+      </trans-unit>
+      <trans-unit id="inputBoxActiveOptionBorder">
+        <source xml:lang="en">Border color of activated options in input fields.</source>
+        <target state="translated">Цвет границ активированных параметров в полях ввода.</target>
+      </trans-unit>
+      <trans-unit id="inputOption.activeBackground">
+        <source xml:lang="en">Background color of activated options in input fields.</source>
+        <target state="translated">Цвет фона активированных параметров в полях ввода.</target>
+      </trans-unit>
+      <trans-unit id="inputPlaceholderForeground">
+        <source xml:lang="en">Input box foreground color for placeholder text.</source>
+        <target state="translated">Цвет фона поясняющего текста в элементе ввода.</target>
+      </trans-unit>
+      <trans-unit id="inputValidationInfoBackground">
+        <source xml:lang="en">Input validation background color for information severity.</source>
+        <target state="translated">Фоновый цвет проверки ввода для уровня серьезности "Сведения".</target>
+      </trans-unit>
+      <trans-unit id="inputValidationInfoForeground">
+        <source xml:lang="en">Input validation foreground color for information severity.</source>
+        <target state="translated">Цвет переднего плана области проверки ввода для уровня серьезности "Сведения".</target>
+      </trans-unit>
+      <trans-unit id="inputValidationInfoBorder">
+        <source xml:lang="en">Input validation border color for information severity.</source>
+        <target state="translated">Цвет границы проверки ввода для уровня серьезности "Сведения".</target>
+      </trans-unit>
+      <trans-unit id="inputValidationWarningBackground">
+        <source xml:lang="en">Input validation background color for warning severity.</source>
+        <target state="translated">Фоновый цвет проверки ввода для уровня серьезности "Предупреждение".</target>
+      </trans-unit>
+      <trans-unit id="inputValidationWarningForeground">
+        <source xml:lang="en">Input validation foreground color for warning severity.</source>
+        <target state="translated">Цвет переднего плана области проверки ввода для уровня серьезности "Предупреждение".</target>
+      </trans-unit>
+      <trans-unit id="inputValidationWarningBorder">
+        <source xml:lang="en">Input validation border color for warning severity.</source>
+        <target state="translated">Цвет границы проверки ввода для уровня серьезности "Предупреждение".</target>
+      </trans-unit>
+      <trans-unit id="inputValidationErrorBackground">
+        <source xml:lang="en">Input validation background color for error severity.</source>
+        <target state="translated">Фоновый цвет проверки ввода для уровня серьезности "Ошибка".</target>
+      </trans-unit>
+      <trans-unit id="inputValidationErrorForeground">
+        <source xml:lang="en">Input validation foreground color for error severity.</source>
+        <target state="translated">Цвет переднего плана области проверки ввода для уровня серьезности "Ошибка".</target>
+      </trans-unit>
+      <trans-unit id="inputValidationErrorBorder">
+        <source xml:lang="en">Input validation border color for error severity.</source>
+        <target state="translated">Цвет границы проверки ввода для уровня серьезности "Ошибка".</target>
+      </trans-unit>
+      <trans-unit id="dropdownBackground">
+        <source xml:lang="en">Dropdown background.</source>
+        <target state="translated">Фон раскрывающегося списка.</target>
+      </trans-unit>
+      <trans-unit id="dropdownListBackground">
+        <source xml:lang="en">Dropdown list background.</source>
+        <target state="translated">Цвет фона раскрывающегося списка.</target>
+      </trans-unit>
+      <trans-unit id="dropdownForeground">
+        <source xml:lang="en">Dropdown foreground.</source>
+        <target state="translated">Передний план раскрывающегося списка.</target>
+      </trans-unit>
+      <trans-unit id="dropdownBorder">
+        <source xml:lang="en">Dropdown border.</source>
+        <target state="translated">Граница раскрывающегося списка.</target>
+      </trans-unit>
+      <trans-unit id="checkbox.background">
+        <source xml:lang="en">Background color of checkbox widget.</source>
+        <target state="translated">Цвет фона мини-приложения флажка.</target>
+      </trans-unit>
+      <trans-unit id="checkbox.foreground">
+        <source xml:lang="en">Foreground color of checkbox widget.</source>
+        <target state="translated">Цвет переднего плана мини-приложения флажка.</target>
+      </trans-unit>
+      <trans-unit id="checkbox.border">
+        <source xml:lang="en">Border color of checkbox widget.</source>
+        <target state="translated">Цвет границы мини-приложения флажка.</target>
+      </trans-unit>
+      <trans-unit id="pickerGroupForeground">
+        <source xml:lang="en">Quick picker color for grouping labels.</source>
+        <target state="translated">Цвет средства быстрого выбора для группировки меток.</target>
+      </trans-unit>
+      <trans-unit id="pickerGroupBorder">
+        <source xml:lang="en">Quick picker color for grouping borders.</source>
+        <target state="translated">Цвет средства быстрого выбора для группировки границ.</target>
+      </trans-unit>
+      <trans-unit id="buttonForeground">
+        <source xml:lang="en">Button foreground color.</source>
+        <target state="translated">Цвет переднего плана кнопки.</target>
+      </trans-unit>
+      <trans-unit id="buttonBackground">
+        <source xml:lang="en">Button background color.</source>
+        <target state="translated">Цвет фона кнопки.</target>
+      </trans-unit>
+      <trans-unit id="buttonHoverBackground">
+        <source xml:lang="en">Button background color when hovering.</source>
+        <target state="translated">Цвет фона кнопки при наведении.</target>
+      </trans-unit>
+      <trans-unit id="badgeBackground">
+        <source xml:lang="en">Badge background color. Badges are small information labels, e.g. for search results count.</source>
+        <target state="translated">Цвет фона бэджа. Бэджи - небольшие информационные элементы,  отображающие количество, например, результатов поиска.</target>
+      </trans-unit>
+      <trans-unit id="badgeForeground">
+        <source xml:lang="en">Badge foreground color. Badges are small information labels, e.g. for search results count.</source>
+        <target state="translated">Цвет текста бэджа. Бэджи - небольшие информационные элементы, отображающие количество, например, результатов поиска.</target>
+      </trans-unit>
+      <trans-unit id="scrollbarShadow">
+        <source xml:lang="en">Scrollbar shadow to indicate that the view is scrolled.</source>
+        <target state="translated">Цвет тени полосы прокрутки, которая свидетельствует о том, что содержимое прокручивается.</target>
+      </trans-unit>
+      <trans-unit id="scrollbarSliderBackground">
+        <source xml:lang="en">Scrollbar slider background color.</source>
+        <target state="translated">Цвет фона для ползунка полосы прокрутки.</target>
+      </trans-unit>
+      <trans-unit id="scrollbarSliderHoverBackground">
+        <source xml:lang="en">Scrollbar slider background color when hovering.</source>
+        <target state="translated">Цвет фона ползунка полосы прокрутки при наведении курсора.</target>
+      </trans-unit>
+      <trans-unit id="scrollbarSliderActiveBackground">
+        <source xml:lang="en">Scrollbar slider background color when clicked on.</source>
+        <target state="translated">Цвет фона ползунка полосы прокрутки при щелчке по нему.</target>
+      </trans-unit>
+      <trans-unit id="progressBarBackground">
+        <source xml:lang="en">Background color of the progress bar that can show for long running operations.</source>
+        <target state="translated">Цвет фона индикатора выполнения, который может отображаться для длительных операций.</target>
+      </trans-unit>
+      <trans-unit id="editorError.foreground">
+        <source xml:lang="en">Foreground color of error squigglies in the editor.</source>
+        <target state="translated">Цвет волнистой линии для выделения ошибок в редакторе.</target>
+      </trans-unit>
+      <trans-unit id="errorBorder">
+        <source xml:lang="en">Border color of error boxes in the editor.</source>
+        <target state="translated">Цвет границы для окон ошибок в редакторе.</target>
+      </trans-unit>
+      <trans-unit id="editorWarning.foreground">
+        <source xml:lang="en">Foreground color of warning squigglies in the editor.</source>
+        <target state="translated">Цвет волнистой линии для выделения предупреждений в редакторе.</target>
+      </trans-unit>
+      <trans-unit id="warningBorder">
+        <source xml:lang="en">Border color of warning boxes in the editor.</source>
+        <target state="translated">Цвет границы для окон предупреждений в редакторе.</target>
+      </trans-unit>
+      <trans-unit id="editorInfo.foreground">
+        <source xml:lang="en">Foreground color of info squigglies in the editor.</source>
+        <target state="translated">Цвет волнистой линии для выделения информационных сообщений в редакторе.</target>
+      </trans-unit>
+      <trans-unit id="infoBorder">
+        <source xml:lang="en">Border color of info boxes in the editor.</source>
+        <target state="translated">Цвет границы для окон сведений в редакторе.</target>
+      </trans-unit>
+      <trans-unit id="editorHint.foreground">
+        <source xml:lang="en">Foreground color of hint squigglies in the editor.</source>
+        <target state="translated">Цвет волнистой линии для выделения подсказок в редакторе.</target>
+      </trans-unit>
+      <trans-unit id="hintBorder">
+        <source xml:lang="en">Border color of hint boxes in the editor.</source>
+        <target state="translated">Цвет границы для окон указаний в редакторе.</target>
+      </trans-unit>
+      <trans-unit id="editorBackground">
+        <source xml:lang="en">Editor background color.</source>
+        <target state="translated">Цвет фона редактора.</target>
+      </trans-unit>
+      <trans-unit id="editorForeground">
+        <source xml:lang="en">Editor default foreground color.</source>
+        <target state="translated">Цвет переднего плана редактора по умолчанию.</target>
+      </trans-unit>
+      <trans-unit id="editorWidgetBackground">
+        <source xml:lang="en">Background color of editor widgets, such as find/replace.</source>
+        <target state="translated">Цвет фона виджетов редактора, таких как найти/заменить.</target>
+      </trans-unit>
+      <trans-unit id="editorWidgetForeground">
+        <source xml:lang="en">Foreground color of editor widgets, such as find/replace.</source>
+        <target state="translated">Цвет переднего плана мини-приложений редактора, таких как "Поиск/замена".</target>
+      </trans-unit>
+      <trans-unit id="editorWidgetBorder">
+        <source xml:lang="en">Border color of editor widgets. The color is only used if the widget chooses to have a border and if the color is not overridden by a widget.</source>
+        <target state="translated">Цвет границы мини-приложений редактора. Этот цвет используется только в том случае, если у мини-приложения есть граница и если этот цвет не переопределен мини-приложением.</target>
+      </trans-unit>
+      <trans-unit id="editorWidgetResizeBorder">
+        <source xml:lang="en">Border color of the resize bar of editor widgets. The color is only used if the widget chooses to have a resize border and if the color is not overridden by a widget.</source>
+        <target state="translated">Цвет границы панели изменения размера мини-приложений редактора. Этот цвет используется только в том случае, если у мини-приложения есть граница для изменения размера и если этот цвет не переопределен мини-приложением.</target>
+      </trans-unit>
+      <trans-unit id="editorSelectionBackground">
+        <source xml:lang="en">Color of the editor selection.</source>
+        <target state="translated">Цвет выделения редактора.</target>
+      </trans-unit>
+      <trans-unit id="editorSelectionForeground">
+        <source xml:lang="en">Color of the selected text for high contrast.</source>
+        <target state="translated">Цвет выделенного текста в режиме высокого контраста.</target>
+      </trans-unit>
+      <trans-unit id="editorInactiveSelection">
+        <source xml:lang="en">Color of the selection in an inactive editor. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">Цвет выделения в неактивном редакторе. Цвет не должен быть непрозрачным, чтобы не скрыть расположенные ниже элементы оформления.</target>
+      </trans-unit>
+      <trans-unit id="editorSelectionHighlight">
+        <source xml:lang="en">Color for regions with the same content as the selection. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">Цвет для областей, содержимое которых совпадает с выбранным фрагментом. Цвет не должен быть непрозрачным, чтобы не скрыть расположенные ниже элементы оформления.</target>
+      </trans-unit>
+      <trans-unit id="editorSelectionHighlightBorder">
+        <source xml:lang="en">Border color for regions with the same content as the selection.</source>
+        <target state="translated">Цвет границы регионов с тем же содержимым, что и в выделении.</target>
+      </trans-unit>
+      <trans-unit id="editorFindMatch">
+        <source xml:lang="en">Color of the current search match.</source>
+        <target state="translated">Цвет текущего поиска совпадений.</target>
+      </trans-unit>
+      <trans-unit id="findMatchHighlight">
+        <source xml:lang="en">Color of the other search matches. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">Цвет других совпадений при поиске. Цвет не должен быть непрозрачным, чтобы не скрыть расположенные ниже элементы оформления.</target>
+      </trans-unit>
+      <trans-unit id="findRangeHighlight">
+        <source xml:lang="en">Color of the range limiting the search. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">Цвет диапазона, ограничивающего поиск. Цвет не должен быть непрозрачным, чтобы не скрыть расположенные ниже элементы оформления.</target>
+      </trans-unit>
+      <trans-unit id="editorFindMatchBorder">
+        <source xml:lang="en">Border color of the current search match.</source>
+        <target state="translated">Цвет границы текущего результата поиска.</target>
+      </trans-unit>
+      <trans-unit id="findMatchHighlightBorder">
+        <source xml:lang="en">Border color of the other search matches.</source>
+        <target state="translated">Цвет границы других результатов поиска.</target>
+      </trans-unit>
+      <trans-unit id="findRangeHighlightBorder">
+        <source xml:lang="en">Border color of the range limiting the search. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">Цвет границы для диапазона, ограничивающего поиск. Цвет не должен быть непрозрачным, чтобы не скрыть расположенные ниже элементы оформления.</target>
+      </trans-unit>
+      <trans-unit id="searchEditor.queryMatch">
+        <source xml:lang="en">Color of the Search Editor query matches.</source>
+        <target state="translated">Цвет соответствий для запроса в редакторе поиска.</target>
+      </trans-unit>
+      <trans-unit id="searchEditor.editorFindMatchBorder">
+        <source xml:lang="en">Border color of the Search Editor query matches.</source>
+        <target state="translated">Цвет границы для соответствующих запросов в редакторе поиска.</target>
+      </trans-unit>
+      <trans-unit id="hoverHighlight">
+        <source xml:lang="en">Highlight below the word for which a hover is shown. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">Выделение под словом, для которого отображается меню при наведении курсора. Цвет не должен быть непрозрачным, чтобы не скрыть расположенные ниже элементы оформления.</target>
+      </trans-unit>
+      <trans-unit id="hoverBackground">
+        <source xml:lang="en">Background color of the editor hover.</source>
+        <target state="translated">Цвет фона при наведении указателя на редактор.</target>
+      </trans-unit>
+      <trans-unit id="hoverForeground">
+        <source xml:lang="en">Foreground color of the editor hover.</source>
+        <target state="translated">Цвет переднего плана для наведения указателя на редактор.</target>
+      </trans-unit>
+      <trans-unit id="hoverBorder">
+        <source xml:lang="en">Border color of the editor hover.</source>
+        <target state="translated">Цвет границ при наведении указателя на редактор.</target>
+      </trans-unit>
+      <trans-unit id="statusBarBackground">
+        <source xml:lang="en">Background color of the editor hover status bar.</source>
+        <target state="translated">Цвет фона строки состояния при наведении в редакторе.</target>
+      </trans-unit>
+      <trans-unit id="activeLinkForeground">
+        <source xml:lang="en">Color of active links.</source>
+        <target state="translated">Цвет активных ссылок.</target>
+      </trans-unit>
+      <trans-unit id="editorLightBulbForeground">
+        <source xml:lang="en">The color used for the lightbulb actions icon.</source>
+        <target state="translated">Цвет, используемый для значка действий в меню лампочки.</target>
+      </trans-unit>
+      <trans-unit id="editorLightBulbAutoFixForeground">
+        <source xml:lang="en">The color used for the lightbulb auto fix actions icon.</source>
+        <target state="translated">Цвет, используемый для значка действий автоматического исправления в меню лампочки.</target>
+      </trans-unit>
+      <trans-unit id="diffEditorInserted">
+        <source xml:lang="en">Background color for text that got inserted. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">Цвет фона для вставленного текста. Цвет не должен быть непрозрачным, чтобы не скрыть расположенные ниже элементы оформления.</target>
+      </trans-unit>
+      <trans-unit id="diffEditorRemoved">
+        <source xml:lang="en">Background color for text that got removed. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">Цвет фона для удаленного текста. Цвет не должен быть непрозрачным, чтобы не скрыть расположенные ниже элементы оформления.</target>
+      </trans-unit>
+      <trans-unit id="diffEditorInsertedOutline">
+        <source xml:lang="en">Outline color for the text that got inserted.</source>
+        <target state="translated">Цвет контура для добавленных строк.</target>
+      </trans-unit>
+      <trans-unit id="diffEditorRemovedOutline">
+        <source xml:lang="en">Outline color for text that got removed.</source>
+        <target state="translated">Цвет контура для удаленных строк.</target>
+      </trans-unit>
+      <trans-unit id="diffEditorBorder">
+        <source xml:lang="en">Border color between the two text editors.</source>
+        <target state="translated">Цвет границы между двумя текстовыми редакторами.</target>
+      </trans-unit>
+      <trans-unit id="listFocusBackground">
+        <source xml:lang="en">List/Tree background color for the focused item when the list/tree is active. An active list/tree has keyboard focus, an inactive does not.</source>
+        <target state="translated">Фоновый цвет находящегося в фокусе элемента List/Tree, когда элемент List/Tree активен. На активном элементе List/Tree есть фокус клавиатуры, на неактивном — нет.</target>
+      </trans-unit>
+      <trans-unit id="listFocusForeground">
+        <source xml:lang="en">List/Tree foreground color for the focused item when the list/tree is active. An active list/tree has keyboard focus, an inactive does not.</source>
+        <target state="translated">Цвет переднего плана находящегося в фокусе элемента List/Tree, когда элемент List/Tree активен. На активном элементе List/Tree есть фокус клавиатуры, на неактивном — нет.</target>
+      </trans-unit>
+      <trans-unit id="listActiveSelectionBackground">
+        <source xml:lang="en">List/Tree background color for the selected item when the list/tree is active. An active list/tree has keyboard focus, an inactive does not.</source>
+        <target state="translated">Фоновый цвет выбранного элемента List/Tree, когда элемент List/Tree активен. На активном элементе List/Tree есть фокус клавиатуры, на неактивном — нет.</target>
+      </trans-unit>
+      <trans-unit id="listActiveSelectionForeground">
+        <source xml:lang="en">List/Tree foreground color for the selected item when the list/tree is active. An active list/tree has keyboard focus, an inactive does not.</source>
+        <target state="translated">Цвет переднего плана выбранного элемента List/Tree, когда элемент List/Tree активен. На активном элементе List/Tree есть фокус клавиатуры, на неактивном — нет.</target>
+      </trans-unit>
+      <trans-unit id="listInactiveSelectionBackground">
+        <source xml:lang="en">List/Tree background color for the selected item when the list/tree is inactive. An active list/tree has keyboard focus, an inactive does not.</source>
+        <target state="translated">Фоновый цвет выбранного элемента List/Tree, когда элемент List/Tree неактивен. На активном элементе List/Tree есть фокус клавиатуры, на неактивном — нет.</target>
+      </trans-unit>
+      <trans-unit id="listInactiveSelectionForeground">
+        <source xml:lang="en">List/Tree foreground color for the selected item when the list/tree is inactive. An active list/tree has keyboard focus, an inactive does not.</source>
+        <target state="translated">Цвет текста выбранного элемента List/Tree, когда элемент List/Tree неактивен. На активном элементе List/Tree есть фокус клавиатуры, на неактивном — нет.</target>
+      </trans-unit>
+      <trans-unit id="listInactiveFocusBackground">
+        <source xml:lang="en">List/Tree background color for the focused item when the list/tree is inactive. An active list/tree has keyboard focus, an inactive does not.</source>
+        <target state="translated">Фоновый цвет находящегося в фокусе элемента List/Tree, когда элемент List/Tree не активен. На активном элементе List/Tree есть фокус клавиатуры, на неактивном — нет.</target>
+      </trans-unit>
+      <trans-unit id="listHoverBackground">
+        <source xml:lang="en">List/Tree background when hovering over items using the mouse.</source>
+        <target state="translated">Фоновый цвет элементов List/Tree при наведении курсора мыши.</target>
+      </trans-unit>
+      <trans-unit id="listHoverForeground">
+        <source xml:lang="en">List/Tree foreground when hovering over items using the mouse.</source>
+        <target state="translated">Цвет переднего плана элементов List/Tree при наведении курсора мыши.</target>
+      </trans-unit>
+      <trans-unit id="listDropBackground">
+        <source xml:lang="en">List/Tree drag and drop background when moving items around using the mouse.</source>
+        <target state="translated">Фоновый цвет элементов List/Tree при перемещении с помощью мыши.</target>
+      </trans-unit>
+      <trans-unit id="highlight">
+        <source xml:lang="en">List/Tree foreground color of the match highlights when searching inside the list/tree.</source>
+        <target state="translated">Цвет переднего плана для выделения соответствия при поиске по элементу List/Tree.</target>
+      </trans-unit>
+      <trans-unit id="invalidItemForeground">
+        <source xml:lang="en">List/Tree foreground color for invalid items, for example an unresolved root in explorer.</source>
+        <target state="translated">Цвет переднего плана списка/дерева для недопустимых элементов, например, для неразрешенного корневого узла в проводнике.</target>
+      </trans-unit>
+      <trans-unit id="listErrorForeground">
+        <source xml:lang="en">Foreground color of list items containing errors.</source>
+        <target state="translated">Цвет переднего плана элементов списка, содержащих ошибки.</target>
+      </trans-unit>
+      <trans-unit id="listWarningForeground">
+        <source xml:lang="en">Foreground color of list items containing warnings.</source>
+        <target state="translated">Цвет переднего плана элементов списка, содержащих предупреждения.</target>
+      </trans-unit>
+      <trans-unit id="listFilterWidgetBackground">
+        <source xml:lang="en">Background color of the type filter widget in lists and trees.</source>
+        <target state="translated">Цвет фона для мини-приложения фильтра типов в списках и деревьях.</target>
+      </trans-unit>
+      <trans-unit id="listFilterWidgetOutline">
+        <source xml:lang="en">Outline color of the type filter widget in lists and trees.</source>
+        <target state="translated">Цвет контура для мини-приложения фильтра типов в списках и деревьях.</target>
+      </trans-unit>
+      <trans-unit id="listFilterWidgetNoMatchesOutline">
+        <source xml:lang="en">Outline color of the type filter widget in lists and trees, when there are no matches.</source>
+        <target state="translated">Цвет контура для мини-приложения фильтра типов в списках и деревьях при отсутствии совпадений.</target>
+      </trans-unit>
+      <trans-unit id="listFilterMatchHighlight">
+        <source xml:lang="en">Background color of the filtered match.</source>
+        <target state="translated">Цвет фона для отфильтрованного совпадения.</target>
+      </trans-unit>
+      <trans-unit id="listFilterMatchHighlightBorder">
+        <source xml:lang="en">Border color of the filtered match.</source>
+        <target state="translated">Цвет границы для отфильтрованного совпадения.</target>
+      </trans-unit>
+      <trans-unit id="treeIndentGuidesStroke">
+        <source xml:lang="en">Tree stroke color for the indentation guides.</source>
+        <target state="translated">Цвет штриха дерева для направляющих отступа.</target>
+      </trans-unit>
+      <trans-unit id="menuBorder">
+        <source xml:lang="en">Border color of menus.</source>
+        <target state="translated">Цвет границ меню.</target>
+      </trans-unit>
+      <trans-unit id="menuForeground">
+        <source xml:lang="en">Foreground color of menu items.</source>
+        <target state="translated">Цвет переднего плана пунктов меню.</target>
+      </trans-unit>
+      <trans-unit id="menuBackground">
+        <source xml:lang="en">Background color of menu items.</source>
+        <target state="translated">Цвет фона пунктов меню.</target>
+      </trans-unit>
+      <trans-unit id="menuSelectionForeground">
+        <source xml:lang="en">Foreground color of the selected menu item in menus.</source>
+        <target state="translated">Цвет переднего плана выбранного пункта меню в меню.</target>
+      </trans-unit>
+      <trans-unit id="menuSelectionBackground">
+        <source xml:lang="en">Background color of the selected menu item in menus.</source>
+        <target state="translated">Цвет фона для выбранного пункта в меню.</target>
+      </trans-unit>
+      <trans-unit id="menuSelectionBorder">
+        <source xml:lang="en">Border color of the selected menu item in menus.</source>
+        <target state="translated">Цвет границы для выбранного пункта в меню.</target>
+      </trans-unit>
+      <trans-unit id="menuSeparatorBackground">
+        <source xml:lang="en">Color of a separator menu item in menus.</source>
+        <target state="translated">Цвет разделителя меню в меню.</target>
+      </trans-unit>
+      <trans-unit id="snippetTabstopHighlightBackground">
+        <source xml:lang="en">Highlight background color of a snippet tabstop.</source>
+        <target state="translated">Цвет фона выделения в позиции табуляции фрагмента.</target>
+      </trans-unit>
+      <trans-unit id="snippetTabstopHighlightBorder">
+        <source xml:lang="en">Highlight border color of a snippet tabstop.</source>
+        <target state="translated">Цвет границы выделения в позиции табуляции фрагмента.</target>
+      </trans-unit>
+      <trans-unit id="snippetFinalTabstopHighlightBackground">
+        <source xml:lang="en">Highlight background color of the final tabstop of a snippet.</source>
+        <target state="translated">Цвет фона выделения в последней позиции табуляции фрагмента.</target>
+      </trans-unit>
+      <trans-unit id="snippetFinalTabstopHighlightBorder">
+        <source xml:lang="en">Highlight border color of the final stabstop of a snippet.</source>
+        <target state="translated">Цвет границы выделения в последней позиции табуляции фрагмента. </target>
+      </trans-unit>
+      <trans-unit id="breadcrumbsFocusForeground">
+        <source xml:lang="en">Color of focused breadcrumb items.</source>
+        <target state="translated">Цвет элементов навигации, находящихся в фокусе.</target>
+      </trans-unit>
+      <trans-unit id="breadcrumbsBackground">
+        <source xml:lang="en">Background color of breadcrumb items.</source>
+        <target state="translated">Фоновый цвет элементов навигации.</target>
+      </trans-unit>
+      <trans-unit id="breadcrumbsSelectedForegound">
+        <source xml:lang="en">Color of selected breadcrumb items.</source>
+        <target state="translated">Цвет выделенных элементов навигации.</target>
+      </trans-unit>
+      <trans-unit id="breadcrumbsSelectedBackground">
+        <source xml:lang="en">Background color of breadcrumb item picker.</source>
+        <target state="translated">Фоновый цвет средства выбора элементов навигации.</target>
+      </trans-unit>
+      <trans-unit id="mergeCurrentHeaderBackground">
+        <source xml:lang="en">Current header background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">Текущий цвет фона заголовка при внутренних конфликтах слияния. Цвет не должен быть непрозрачным, чтобы не скрыть расположенные ниже элементы оформления.</target>
+      </trans-unit>
+      <trans-unit id="mergeCurrentContentBackground">
+        <source xml:lang="en">Current content background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">Фон текущего содержимого при внутренних конфликтах слияния. Цвет не должен быть непрозрачным, чтобы не скрыть расположенные ниже элементы оформления.</target>
+      </trans-unit>
+      <trans-unit id="mergeIncomingHeaderBackground">
+        <source xml:lang="en">Incoming header background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">Фон входящего заголовка при внутренних конфликтах объединения. Цвет не должен быть непрозрачным, чтобы не скрыть расположенные ниже элементы оформления.</target>
+      </trans-unit>
+      <trans-unit id="mergeIncomingContentBackground">
+        <source xml:lang="en">Incoming content background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">Фон входящего содержимого при внутренних конфликтах слияния. Цвет не должен быть непрозрачным, чтобы не скрыть расположенные ниже элементы оформления.</target>
+      </trans-unit>
+      <trans-unit id="mergeCommonHeaderBackground">
+        <source xml:lang="en">Common ancestor header background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">Фон заголовка общего предка во внутренних конфликтах слияния. Цвет не должен быть непрозрачным, чтобы не скрыть расположенные ниже элементы оформления.</target>
+      </trans-unit>
+      <trans-unit id="mergeCommonContentBackground">
+        <source xml:lang="en">Common ancestor content background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">Фон содержимого общего предка во внутренних конфликтах слияния. Цвет не должен быть непрозрачным, чтобы не скрыть расположенные ниже элементы оформления.</target>
+      </trans-unit>
+      <trans-unit id="mergeBorder">
+        <source xml:lang="en">Border color on headers and the splitter in inline merge-conflicts.</source>
+        <target state="translated">Цвет границы заголовков и разделителя во внутренних конфликтах слияния.</target>
+      </trans-unit>
+      <trans-unit id="overviewRulerCurrentContentForeground">
+        <source xml:lang="en">Current overview ruler foreground for inline merge-conflicts.</source>
+        <target state="translated">Цвет переднего плана линейки текущего окна во внутренних конфликтах слияния.</target>
+      </trans-unit>
+      <trans-unit id="overviewRulerIncomingContentForeground">
+        <source xml:lang="en">Incoming overview ruler foreground for inline merge-conflicts.</source>
+        <target state="translated">Цвет переднего плана линейки входящего окна во внутренних конфликтах слияния.</target>
+      </trans-unit>
+      <trans-unit id="overviewRulerCommonContentForeground">
+        <source xml:lang="en">Common ancestor overview ruler foreground for inline merge-conflicts.</source>
+        <target state="translated">Цвет переднего плана для обзорной линейки для общего предка во внутренних конфликтах слияния. </target>
+      </trans-unit>
+      <trans-unit id="overviewRulerFindMatchForeground">
+        <source xml:lang="en">Overview ruler marker color for find matches. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">Цвет маркера обзорной линейки для совпадений при поиске. Цвет не должен быть непрозрачным, чтобы не скрыть расположенные ниже элементы оформления.</target>
+      </trans-unit>
+      <trans-unit id="overviewRulerSelectionHighlightForeground">
+        <source xml:lang="en">Overview ruler marker color for selection highlights. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">Маркер обзорной линейки для выделения выбранного фрагмента. Цвет не должен быть непрозрачным, чтобы не скрыть расположенные ниже элементы оформления.</target>
+      </trans-unit>
+      <trans-unit id="minimapFindMatchHighlight">
+        <source xml:lang="en">Minimap marker color for find matches.</source>
+        <target state="translated">Цвет маркера мини-карты для поиска совпадений.</target>
+      </trans-unit>
+      <trans-unit id="minimapSelectionHighlight">
+        <source xml:lang="en">Minimap marker color for the editor selection.</source>
+        <target state="translated">Цвет маркера мини-карты для выбора редактора.</target>
+      </trans-unit>
+      <trans-unit id="minimapError">
+        <source xml:lang="en">Minimap marker color for errors.</source>
+        <target state="translated">Цвет маркера миникарты для ошибок.</target>
+      </trans-unit>
+      <trans-unit id="overviewRuleWarning">
+        <source xml:lang="en">Minimap marker color for warnings.</source>
+        <target state="translated">Цвет маркера миникарты для предупреждений.</target>
+      </trans-unit>
+      <trans-unit id="minimapBackground">
+        <source xml:lang="en">Minimap background color.</source>
+        <target state="translated">Цвет фона мини-карты.</target>
+      </trans-unit>
+      <trans-unit id="minimapSliderBackground">
+        <source xml:lang="en">Minimap slider background color.</source>
+        <target state="translated">Цвет фона ползунка мини-карты.</target>
+      </trans-unit>
+      <trans-unit id="minimapSliderHoverBackground">
+        <source xml:lang="en">Minimap slider background color when hovering.</source>
+        <target state="translated">Цвет фона ползунка мини-карты при наведении на него указателя.</target>
+      </trans-unit>
+      <trans-unit id="minimapSliderActiveBackground">
+        <source xml:lang="en">Minimap slider background color when clicked on.</source>
+        <target state="translated">Цвет фона ползунка мини-карты при его щелчке.</target>
+      </trans-unit>
+      <trans-unit id="problemsErrorIconForeground">
+        <source xml:lang="en">The color used for the problems error icon.</source>
+        <target state="translated">Цвет, используемый для значка ошибки, указывающего на наличие проблем.</target>
+      </trans-unit>
+      <trans-unit id="problemsWarningIconForeground">
+        <source xml:lang="en">The color used for the problems warning icon.</source>
+        <target state="translated">Цвет, используемый для предупреждающего значка, указывающего на наличие проблем.</target>
+      </trans-unit>
+      <trans-unit id="problemsInfoIconForeground">
+        <source xml:lang="en">The color used for the problems info icon.</source>
+        <target state="translated">Цвет, используемый для информационного значка, указывающего на наличие проблем.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/extensionsSync" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="skip extension">
+        <source xml:lang="en">Skipped synchronizing extension {0}</source>
+        <target state="translated">Пропущена синхронизация расширения {0}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="errorInvalidSettings">
+        <source xml:lang="en">Unable to sync keybindings as there are errors/warning in keybindings file.</source>
+        <target state="translated">Не удалось синхронизировать настраиваемые сочетания клавиш, так как в файле настраиваемых сочетаний клавиш имеются ошибки/предупреждения.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/common/io" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="fileTooLargeForHeapError">
+        <source xml:lang="en">To open a file of this size, you need to restart and allow it to use more memory</source>
+        <target state="translated">Чтобы открыть файл такого размера, нужно выполнить перезапуск и позволить ему использовать больше памяти</target>
+      </trans-unit>
+      <trans-unit id="fileTooLargeError">
+        <source xml:lang="en">File is too large to open</source>
+        <target state="translated">Файл слишком велик для открытия</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/actions/browser/menuEntryActionViewItem" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="titleAndKb">
+        <source xml:lang="en">{0} ({1})</source>
+        <target state="translated">{0} ({1})</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/abstractSynchronizer" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="incompatible">
+        <source xml:lang="en">Cannot sync {0} as its version {1} is not compatible with cloud {2}</source>
+        <target state="translated">Не удается синхронизировать {0}, так как его версия {1} несовместима с облачным {2}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/extensions/common/extensionValidator" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="versionSyntax">
+        <source xml:lang="en">Could not parse `engines.vscode` value {0}. Please use, for example: ^1.22.0, ^1.22.x, etc.</source>
+        <target state="translated">Не удалось проанализировать значение engines.vscode {0}. Используйте такие значения как ^1.22.0, ^1.22.x и т.д.</target>
+      </trans-unit>
+      <trans-unit id="versionSpecificity1">
+        <source xml:lang="en">Version specified in `engines.vscode` ({0}) is not specific enough. For vscode versions before 1.0.0, please define at a minimum the major and minor desired version. E.g. ^0.10.0, 0.10.x, 0.11.0, etc.</source>
+        <target state="translated">Версия, указанная в engines.vscode ({0}), недостаточно конкретная. Для версий vscode до 1.0.0 укажите по крайней мере основной и дополнительный номер версии. Например, 0.10.0, 0.10.x, 0.11.0 и т. д.</target>
+      </trans-unit>
+      <trans-unit id="versionSpecificity2">
+        <source xml:lang="en">Version specified in `engines.vscode` ({0}) is not specific enough. For vscode versions after 1.0.0, please define at a minimum the major desired version. E.g. ^1.10.0, 1.10.x, 1.x.x, 2.x.x, etc.</source>
+        <target state="translated">Версия, указанная в engines.vscode ({0}), недостаточно конкретная. Для версий vscode после 1.0.0 укажите по крайней мере основной номер версии. Например, 1.10.0, 1.10.x, 1.x.x, 2.x.x и т. д.</target>
+      </trans-unit>
+      <trans-unit id="versionMismatch">
+        <source xml:lang="en">Extension is not compatible with Code {0}. Extension requires: {1}.</source>
+        <target state="translated">Расширение несовместимо с кодом "{0}". Расширению требуется: {1}.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/dialogs/electron-main/dialogs" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="open">
+        <source xml:lang="en">Open</source>
+        <target state="translated">Открыто</target>
+      </trans-unit>
+      <trans-unit id="openFolder">
+        <source xml:lang="en">Open Folder</source>
+        <target state="translated">Открыть папку</target>
+      </trans-unit>
+      <trans-unit id="openFile">
+        <source xml:lang="en">Open File</source>
+        <target state="translated">Открыть файл</target>
+      </trans-unit>
+      <trans-unit id="openWorkspaceTitle">
+        <source xml:lang="en">Open Workspace</source>
+        <target state="translated">Открыть рабочую область</target>
+      </trans-unit>
+      <trans-unit id="openWorkspace">
+        <source xml:lang="en">&amp;&amp;Open</source>
+        <target state="translated">&amp;&amp;Открыть</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/keybinding/common/abstractKeybindingService" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="first.chord">
+        <source xml:lang="en">({0}) was pressed. Waiting for second key of chord...</source>
+        <target state="translated">Была нажата клавиша ({0}). Ожидание нажатия второй клавиши сочетания...</target>
+      </trans-unit>
+      <trans-unit id="missing.chord">
+        <source xml:lang="en">The key combination ({0}, {1}) is not a command.</source>
+        <target state="translated">Сочетание клавиш ({0} и {1}) не является командой.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/workspaces/electron-main/workspacesMainService" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="ok">
+        <source xml:lang="en">OK</source>
+        <target state="translated">ОК</target>
+      </trans-unit>
+      <trans-unit id="workspaceOpenedMessage">
+        <source xml:lang="en">Unable to save workspace '{0}'</source>
+        <target state="translated">Не удается сохранить рабочую область '{0}'</target>
+      </trans-unit>
+      <trans-unit id="workspaceOpenedDetail">
+        <source xml:lang="en">The workspace is already opened in another window. Please close that window first and then try again.</source>
+        <target state="translated">Эта рабочая область уже открыта в другом окне. Закройте это окно и повторите попытку.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/workspaces/electron-main/workspacesHistoryMainService" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="newWindow">
+        <source xml:lang="en">New Window</source>
+        <target state="translated">Новое окно</target>
+      </trans-unit>
+      <trans-unit id="newWindowDesc">
+        <source xml:lang="en">Opens a new window</source>
+        <target state="translated">Открывает новое окно</target>
+      </trans-unit>
+      <trans-unit id="recentFolders">
+        <source xml:lang="en">Recent Workspaces</source>
+        <target state="translated">Последние рабочие области</target>
+      </trans-unit>
+      <trans-unit id="folderDesc">
+        <source xml:lang="en">{0} {1}</source>
+        <target state="translated">{0} {1}</target>
+      </trans-unit>
+      <trans-unit id="workspaceDesc">
+        <source xml:lang="en">{0} {1}</source>
+        <target state="translated">{0} {1}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/issue/electron-main/issueMainService" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="local">
+        <source xml:lang="en">Local</source>
+        <target state="translated">LOCAL</target>
+      </trans-unit>
+      <trans-unit id="issueReporterWriteToClipboard">
+        <source xml:lang="en">There is too much data to send to GitHub directly. The data will be copied to the clipboard, please paste it into the GitHub issue page that is opened.</source>
+        <target state="translated">Слишком много данных для отправки напрямую в GitHub. Данные будут скопированы в буфер обмена, вставьте их на открытой странице вопроса GitHub.</target>
+      </trans-unit>
+      <trans-unit id="ok">
+        <source xml:lang="en">OK</source>
+        <target state="translated">ОК</target>
+      </trans-unit>
+      <trans-unit id="cancel">
+        <source xml:lang="en">Cancel</source>
+        <target state="translated">Отмена</target>
+      </trans-unit>
+      <trans-unit id="confirmCloseIssueReporter">
+        <source xml:lang="en">Your input will not be saved. Are you sure you want to close this window?</source>
+        <target state="translated">Введенные данные не будут сохранены. Вы действительно хотите закрыть это окно?</target>
+      </trans-unit>
+      <trans-unit id="yes">
+        <source xml:lang="en">Yes</source>
+        <target state="translated">Да</target>
+      </trans-unit>
+      <trans-unit id="issueReporter">
+        <source xml:lang="en">Issue Reporter</source>
+        <target state="translated">Средство создания отчетов о неполадках</target>
+      </trans-unit>
+      <trans-unit id="processExplorer">
+        <source xml:lang="en">Process Explorer</source>
+        <target state="translated">Обозреватель процессов</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/theme/common/tokenClassificationRegistry" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="schema.token.settings">
+        <source xml:lang="en">Colors and styles for the token.</source>
+        <target state="translated">Цвета и стили для токена.</target>
+      </trans-unit>
+      <trans-unit id="schema.token.foreground">
+        <source xml:lang="en">Foreground color for the token.</source>
+        <target state="translated">Цвет переднего плана для токена.</target>
+      </trans-unit>
+      <trans-unit id="schema.token.background.warning">
+        <source xml:lang="en">Token background colors are currently not supported.</source>
+        <target state="translated">Цвет фона маркера сейчас не поддерживается.</target>
+      </trans-unit>
+      <trans-unit id="schema.token.fontStyle">
+        <source xml:lang="en">Font style of the rule: 'italic', 'bold' or 'underline' or a combination. The empty string unsets inherited settings.</source>
+        <target state="translated">Стиль шрифта для правила: 'italic', 'bold', 'underline' или их сочетание. Если указана пустая строка, то унаследованные настройки отменяются.</target>
+      </trans-unit>
+      <trans-unit id="schema.fontStyle.error">
+        <source xml:lang="en">Font style must be 'italic', 'bold' or 'underline' or a combination. The empty string unsets all styles.</source>
+        <target state="translated">Стиль шрифта должен иметь атрибут "italic", "bold" или "underline" либо их сочетание. Пустая строка сбрасывает все стили.</target>
+      </trans-unit>
+      <trans-unit id="schema.token.fontStyle.none">
+        <source xml:lang="en">None (clear inherited style)</source>
+        <target state="translated">Нет (очистить унаследованный стиль)</target>
+      </trans-unit>
+      <trans-unit id="comment">
+        <source xml:lang="en">Style for comments.</source>
+        <target state="translated">Стиль для комментариев.</target>
+      </trans-unit>
+      <trans-unit id="string">
+        <source xml:lang="en">Style for strings.</source>
+        <target state="translated">Стиль для строк.</target>
+      </trans-unit>
+      <trans-unit id="keyword">
+        <source xml:lang="en">Style for keywords.</source>
+        <target state="translated">Стиль для ключевых слов.</target>
+      </trans-unit>
+      <trans-unit id="number">
+        <source xml:lang="en">Style for numbers.</source>
+        <target state="translated">Стиль для чисел.</target>
+      </trans-unit>
+      <trans-unit id="regexp">
+        <source xml:lang="en">Style for expressions.</source>
+        <target state="translated">Стиль для выражений.</target>
+      </trans-unit>
+      <trans-unit id="operator">
+        <source xml:lang="en">Style for operators.</source>
+        <target state="translated">Стиль для операторов.</target>
+      </trans-unit>
+      <trans-unit id="namespace">
+        <source xml:lang="en">Style for namespaces.</source>
+        <target state="translated">Стиль для пространств имен.</target>
+      </trans-unit>
+      <trans-unit id="type">
+        <source xml:lang="en">Style for types.</source>
+        <target state="translated">Стиль для типов.</target>
+      </trans-unit>
+      <trans-unit id="struct">
+        <source xml:lang="en">Style for structs.</source>
+        <target state="translated">Стиль для структур.</target>
+      </trans-unit>
+      <trans-unit id="class">
+        <source xml:lang="en">Style for classes.</source>
+        <target state="translated">Стиль для классов.</target>
+      </trans-unit>
+      <trans-unit id="interface">
+        <source xml:lang="en">Style for interfaces.</source>
+        <target state="translated">Стиль для интерфейсов.</target>
+      </trans-unit>
+      <trans-unit id="enum">
+        <source xml:lang="en">Style for enums.</source>
+        <target state="translated">Стиль для перечислений.</target>
+      </trans-unit>
+      <trans-unit id="typeParameter">
+        <source xml:lang="en">Style for type parameters.</source>
+        <target state="translated">Стиль для параметров типа.</target>
+      </trans-unit>
+      <trans-unit id="function">
+        <source xml:lang="en">Style for functions</source>
+        <target state="translated">Стиль для функций</target>
+      </trans-unit>
+      <trans-unit id="member">
+        <source xml:lang="en">Style for member</source>
+        <target state="translated">Стиль для члена</target>
+      </trans-unit>
+      <trans-unit id="macro">
+        <source xml:lang="en">Style for macros.</source>
+        <target state="translated">Стиль для макросов.</target>
+      </trans-unit>
+      <trans-unit id="variable">
+        <source xml:lang="en">Style for variables.</source>
+        <target state="translated">Стиль для переменных.</target>
+      </trans-unit>
+      <trans-unit id="parameter">
+        <source xml:lang="en">Style for parameters.</source>
+        <target state="translated">Стиль для параметров.</target>
+      </trans-unit>
+      <trans-unit id="property">
+        <source xml:lang="en">Style for properties.</source>
+        <target state="translated">Стиль для свойств.</target>
+      </trans-unit>
+      <trans-unit id="enumMember">
+        <source xml:lang="en">Style for enum members.</source>
+        <target state="translated">Стиль для членов перечисления.</target>
+      </trans-unit>
+      <trans-unit id="event">
+        <source xml:lang="en">Style for events.</source>
+        <target state="translated">Стиль для событий.</target>
+      </trans-unit>
+      <trans-unit id="labels">
+        <source xml:lang="en">Style for labels. </source>
+        <target state="translated">Стиль для меток.</target>
+      </trans-unit>
+      <trans-unit id="declaration">
+        <source xml:lang="en">Style for all symbol declarations.</source>
+        <target state="translated">Стиль для всех объявлений символов.</target>
+      </trans-unit>
+      <trans-unit id="documentation">
+        <source xml:lang="en">Style to use for references in documentation.</source>
+        <target state="translated">Стиль, используемый для ссылок в документации.</target>
+      </trans-unit>
+      <trans-unit id="static">
+        <source xml:lang="en">Style to use for symbols that are static.</source>
+        <target state="translated">Стиль для символов, которые являются статическими.</target>
+      </trans-unit>
+      <trans-unit id="abstract">
+        <source xml:lang="en">Style to use for symbols that are abstract.</source>
+        <target state="translated">Стиль для символов, которые являются абстрактными.</target>
+      </trans-unit>
+      <trans-unit id="deprecated">
+        <source xml:lang="en">Style to use for symbols that are deprecated.</source>
+        <target state="translated">Стиль для символов, которые не рекомендованы к использованию.</target>
+      </trans-unit>
+      <trans-unit id="modification">
+        <source xml:lang="en">Style to use for write accesses.</source>
+        <target state="translated">Стиль для доступа на запись.</target>
+      </trans-unit>
+      <trans-unit id="async">
+        <source xml:lang="en">Style to use for symbols that are async.</source>
+        <target state="translated">Стиль для символов, которые являются асинхронными.</target>
+      </trans-unit>
+      <trans-unit id="readonly">
+        <source xml:lang="en">Style to use for symbols that are readonly.</source>
+        <target state="translated">Стиль, используемый для символов, доступных только для чтения.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/menubar/electron-main/menubar" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="miNewWindow">
+        <source xml:lang="en">New &amp;&amp;Window</source>
+        <target state="translated">&amp;&amp;Новое окно</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mFile">
+        <source xml:lang="en">&amp;&amp;File</source>
+        <target state="translated">&amp;&amp;Файл</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mEdit">
+        <source xml:lang="en">&amp;&amp;Edit</source>
+        <target state="translated">&amp;&amp;Правка</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mSelection">
+        <source xml:lang="en">&amp;&amp;Selection</source>
+        <target state="translated">&amp;&amp;Выделение</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mView">
+        <source xml:lang="en">&amp;&amp;View</source>
+        <target state="translated">&amp;&amp;Вид</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mGoto">
+        <source xml:lang="en">&amp;&amp;Go</source>
+        <target state="translated">&amp;&amp;Переход</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mRun">
+        <source xml:lang="en">&amp;&amp;Run</source>
+        <target state="translated">&amp;&amp;Выполнить</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mTerminal">
+        <source xml:lang="en">&amp;&amp;Terminal</source>
+        <target state="translated">&amp;&amp;Терминал</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mWindow">
+        <source xml:lang="en">Window</source>
+        <target state="translated">Окно</target>
+      </trans-unit>
+      <trans-unit id="mHelp">
+        <source xml:lang="en">&amp;&amp;Help</source>
+        <target state="translated">&amp;&amp;Справка</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mAbout">
+        <source xml:lang="en">About {0}</source>
+        <target state="translated">О программе {0}</target>
+      </trans-unit>
+      <trans-unit id="miPreferences">
+        <source xml:lang="en">&amp;&amp;Preferences</source>
+        <target state="translated">&amp;&amp;Параметры</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mServices">
+        <source xml:lang="en">Services</source>
+        <target state="translated">Службы</target>
+      </trans-unit>
+      <trans-unit id="mHide">
+        <source xml:lang="en">Hide {0}</source>
+        <target state="translated">Скрыть {0}</target>
+      </trans-unit>
+      <trans-unit id="mHideOthers">
+        <source xml:lang="en">Hide Others</source>
+        <target state="translated">Скрыть другие</target>
+      </trans-unit>
+      <trans-unit id="mShowAll">
+        <source xml:lang="en">Show All</source>
+        <target state="translated">Показать все</target>
+      </trans-unit>
+      <trans-unit id="miQuit">
+        <source xml:lang="en">Quit {0}</source>
+        <target state="translated">Выйти из {0}</target>
+      </trans-unit>
+      <trans-unit id="mMinimize">
+        <source xml:lang="en">Minimize</source>
+        <target state="translated">Свернуть</target>
+      </trans-unit>
+      <trans-unit id="mZoom">
+        <source xml:lang="en">Zoom</source>
+        <target state="translated">Изменить масштаб</target>
+      </trans-unit>
+      <trans-unit id="mBringToFront">
+        <source xml:lang="en">Bring All to Front</source>
+        <target state="translated">Переместить все на передний план</target>
+      </trans-unit>
+      <trans-unit id="miSwitchWindow">
+        <source xml:lang="en">Switch &amp;&amp;Window...</source>
+        <target state="translated">Переключить &amp;&amp;окно...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mNewTab">
+        <source xml:lang="en">New Tab</source>
+        <target state="translated">Создать вкладку</target>
+      </trans-unit>
+      <trans-unit id="mShowPreviousTab">
+        <source xml:lang="en">Show Previous Tab</source>
+        <target state="translated">Перейти на предыдущую вкладку</target>
+      </trans-unit>
+      <trans-unit id="mShowNextTab">
+        <source xml:lang="en">Show Next Tab</source>
+        <target state="translated">Перейти на следующую вкладку</target>
+      </trans-unit>
+      <trans-unit id="mMoveTabToNewWindow">
+        <source xml:lang="en">Move Tab to New Window</source>
+        <target state="translated">Переместить вкладку в новое окно</target>
+      </trans-unit>
+      <trans-unit id="mMergeAllWindows">
+        <source xml:lang="en">Merge All Windows</source>
+        <target state="translated">Объединить все окна</target>
+      </trans-unit>
+      <trans-unit id="miCheckForUpdates">
+        <source xml:lang="en">Check for &amp;&amp;Updates...</source>
+        <target state="translated">Проверить наличие &amp;&amp;обновлений...</target>
+      </trans-unit>
+      <trans-unit id="miCheckingForUpdates">
+        <source xml:lang="en">Checking for Updates...</source>
+        <target state="translated">Идет проверка наличия обновлений...</target>
+      </trans-unit>
+      <trans-unit id="miDownloadUpdate">
+        <source xml:lang="en">D&amp;&amp;ownload Available Update</source>
+        <target state="translated">С&amp;&amp;качать доступное обновление</target>
+      </trans-unit>
+      <trans-unit id="miDownloadingUpdate">
+        <source xml:lang="en">Downloading Update...</source>
+        <target state="translated">Скачивается обновление...</target>
+      </trans-unit>
+      <trans-unit id="miInstallUpdate">
+        <source xml:lang="en">Install &amp;&amp;Update...</source>
+        <target state="translated">Установить &amp;&amp;обновление...</target>
+      </trans-unit>
+      <trans-unit id="miInstallingUpdate">
+        <source xml:lang="en">Installing Update...</source>
+        <target state="translated">Идет установка обновления...</target>
+      </trans-unit>
+      <trans-unit id="miRestartToUpdate">
+        <source xml:lang="en">Restart to &amp;&amp;Update</source>
+        <target state="translated">Перезапустить для &amp;&amp;обновления</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/windows/electron-main/windowsMainService" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="pathNotExistTitle">
+        <source xml:lang="en">Path does not exist</source>
+        <target state="translated">Путь не существует.</target>
+      </trans-unit>
+      <trans-unit id="pathNotExistDetail">
+        <source xml:lang="en">The path '{0}' does not seem to exist anymore on disk.</source>
+        <target state="translated">Путь "{0}" больше не существует на диске.</target>
+      </trans-unit>
+      <trans-unit id="uriInvalidTitle">
+        <source xml:lang="en">URI can not be opened</source>
+        <target state="translated">Не удается открыть URI</target>
+      </trans-unit>
+      <trans-unit id="uriInvalidDetail">
+        <source xml:lang="en">The URI '{0}' is not valid and can not be opened.</source>
+        <target state="translated">URI "{0}" является недопустимым и не может быть открыт.</target>
+      </trans-unit>
+      <trans-unit id="ok">
+        <source xml:lang="en">OK</source>
+        <target state="translated">ОК</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

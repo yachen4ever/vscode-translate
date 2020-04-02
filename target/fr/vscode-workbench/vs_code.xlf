@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/code/electron-browser/processExplorer/processExplorerMain" source-language="en" target-language="fr" datatype="plaintext">
+    <body>
+      <trans-unit id="cpu">
+        <source xml:lang="en">CPU %</source>
+        <target state="translated">% PROCESSEUR</target>
+      </trans-unit>
+      <trans-unit id="memory">
+        <source xml:lang="en">Memory (MB)</source>
+        <target state="translated">Mémoire (Mo)</target>
+      </trans-unit>
+      <trans-unit id="pid">
+        <source xml:lang="en">pid</source>
+        <target state="translated">pid</target>
+      </trans-unit>
+      <trans-unit id="name">
+        <source xml:lang="en">Name</source>
+        <target state="translated">Nom </target>
+      </trans-unit>
+      <trans-unit id="killProcess">
+        <source xml:lang="en">Kill Process</source>
+        <target state="translated">Terminer le processus</target>
+      </trans-unit>
+      <trans-unit id="forceKillProcess">
+        <source xml:lang="en">Force Kill Process</source>
+        <target state="translated">Forcer la suppression du processus</target>
+      </trans-unit>
+      <trans-unit id="copy">
+        <source xml:lang="en">Copy</source>
+        <target state="translated">Copier</target>
+      </trans-unit>
+      <trans-unit id="copyAll">
+        <source xml:lang="en">Copy All</source>
+        <target state="translated">Copier tout</target>
+      </trans-unit>
+      <trans-unit id="debug">
+        <source xml:lang="en">Debug</source>
+        <target state="translated">déboguer</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/code/node/cliProcessMain" source-language="en" target-language="fr" datatype="plaintext">
+    <body>
+      <trans-unit id="notFound">
+        <source xml:lang="en">Extension '{0}' not found.</source>
+        <target state="translated">Extension '{0}' introuvable.</target>
+      </trans-unit>
+      <trans-unit id="notInstalled">
+        <source xml:lang="en">Extension '{0}' is not installed.</source>
+        <target state="translated">L'extension '{0}' n'est pas installée.</target>
+      </trans-unit>
+      <trans-unit id="useId">
+        <source xml:lang="en">Make sure you use the full extension ID, including the publisher, e.g.: {0}</source>
+        <target state="translated">Vérifiez que vous utilisez l'ID d'extension complet, y compris l'éditeur, par ex. : {0}</target>
+      </trans-unit>
+      <trans-unit id="installingExtensions">
+        <source xml:lang="en">Installing extensions...</source>
+        <target state="translated">Installation des extensions...</target>
+      </trans-unit>
+      <trans-unit id="installation failed">
+        <source xml:lang="en">Failed Installing Extensions: {0}</source>
+        <target state="translated">Échec d'installation des extensions : {0}</target>
+      </trans-unit>
+      <trans-unit id="successVsixInstall">
+        <source xml:lang="en">Extension '{0}' was successfully installed.</source>
+        <target state="translated">L'extension '{0}' a été installée.</target>
+      </trans-unit>
+      <trans-unit id="cancelVsixInstall">
+        <source xml:lang="en">Cancelled installing extension '{0}'.</source>
+        <target state="translated">Installation annulée de l'Extension '{0}'.</target>
+      </trans-unit>
+      <trans-unit id="alreadyInstalled">
+        <source xml:lang="en">Extension '{0}' is already installed.</source>
+        <target state="translated">L'extension '{0}' est déjà installée.</target>
+      </trans-unit>
+      <trans-unit id="forceUpdate">
+        <source xml:lang="en">Extension '{0}' v{1} is already installed, but a newer version {2} is available in the marketplace. Use '--force' option to update to newer version.</source>
+        <target state="translated">L'extension '{0}' v{1} est déjà installée, mais une version plus récente {2} est disponible dans la place de marché. Utilisez l'option '--force' pour passer à la version plus récente.</target>
+      </trans-unit>
+      <trans-unit id="updateMessage">
+        <source xml:lang="en">Updating the extension '{0}' to the version {1}</source>
+        <target state="translated">Mise à jour de l'extension '{0}' vers la version {1}</target>
+      </trans-unit>
+      <trans-unit id="forceDowngrade">
+        <source xml:lang="en">A newer version of extension '{0}' v{1} is already installed. Use '--force' option to downgrade to older version.</source>
+        <target state="translated">Une version plus récente de l'extension '{0}' v{1} est déjà installée. Utilisez l'option '--force' pour passer à une version antérieure.</target>
+      </trans-unit>
+      <trans-unit id="installing">
+        <source xml:lang="en">Installing extension '{0}' v{1}...</source>
+        <target state="translated">Installation de l'extension '{0}' v{1}...</target>
+      </trans-unit>
+      <trans-unit id="successInstall">
+        <source xml:lang="en">Extension '{0}' v{1} was successfully installed.</source>
+        <target state="translated">L'extension '{0}' v{1} a été installée.</target>
+      </trans-unit>
+      <trans-unit id="uninstalling">
+        <source xml:lang="en">Uninstalling {0}...</source>
+        <target state="translated">Désinstallation de {0}...</target>
+      </trans-unit>
+      <trans-unit id="successUninstall">
+        <source xml:lang="en">Extension '{0}' was successfully uninstalled!</source>
+        <target state="translated">L'extension '{0}' a été correctement désinstallée !</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/code/electron-main/main" source-language="en" target-language="fr" datatype="plaintext">
+    <body>
+      <trans-unit id="secondInstanceAdmin">
+        <source xml:lang="en">A second instance of {0} is already running as administrator.</source>
+        <target state="translated">Une seconde instance de {0} est déjà en cours d'exécution en tant qu'administrateur.</target>
+      </trans-unit>
+      <trans-unit id="secondInstanceAdminDetail">
+        <source xml:lang="en">Please close the other instance and try again.</source>
+        <target state="translated">Veuillez s'il vous plaît fermer l'autre instance et réessayer à nouveau.</target>
+      </trans-unit>
+      <trans-unit id="secondInstanceNoResponse">
+        <source xml:lang="en">Another instance of {0} is running but not responding</source>
+        <target state="translated">Une autre instance de {0} est déjà en cours d'exécution mais ne répond pas</target>
+      </trans-unit>
+      <trans-unit id="secondInstanceNoResponseDetail">
+        <source xml:lang="en">Please close all other instances and try again.</source>
+        <target state="translated">Veuillez s'il vous plaît fermer toutes les autres instances et réessayer à nouveau.</target>
+      </trans-unit>
+      <trans-unit id="startupDataDirError">
+        <source xml:lang="en">Unable to write program user data.</source>
+        <target state="translated">Impossible d'écrire les données utilisateur du programme.</target>
+      </trans-unit>
+      <trans-unit id="startupUserDataAndExtensionsDirErrorDetail">
+        <source xml:lang="en">Please make sure the following directories are writeable:
+
+{0}</source>
+        <target state="translated">Vérifiez que les répertoires suivants sont accessibles en écriture :
+
+{0}</target>
+      </trans-unit>
+      <trans-unit id="close">
+        <source xml:lang="en">&amp;&amp;Close</source>
+        <target state="translated">&amp;&amp;Fermer</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/code/electron-browser/issue/issueReporterMain" source-language="en" target-language="fr" datatype="plaintext">
+    <body>
+      <trans-unit id="hide">
+        <source xml:lang="en">hide</source>
+        <target state="translated">Masquer</target>
+      </trans-unit>
+      <trans-unit id="show">
+        <source xml:lang="en">show</source>
+        <target state="translated">Afficher</target>
+      </trans-unit>
+      <trans-unit id="previewOnGitHub">
+        <source xml:lang="en">Preview on GitHub</source>
+        <target state="translated">Prévisualiser sur GitHub</target>
+      </trans-unit>
+      <trans-unit id="loadingData">
+        <source xml:lang="en">Loading data...</source>
+        <target state="translated">Chargement des données en cours...</target>
+      </trans-unit>
+      <trans-unit id="rateLimited">
+        <source xml:lang="en">GitHub query limit exceeded. Please wait.</source>
+        <target state="translated">Limite de requête GitHub dépassée. Veuillez patienter.</target>
+      </trans-unit>
+      <trans-unit id="similarIssues">
+        <source xml:lang="en">Similar issues</source>
+        <target state="translated">Problèmes similaires</target>
+      </trans-unit>
+      <trans-unit id="open">
+        <source xml:lang="en">Open</source>
+        <target state="translated">Ouvrir </target>
+      </trans-unit>
+      <trans-unit id="closed">
+        <source xml:lang="en">Closed</source>
+        <target state="translated">Fermé</target>
+      </trans-unit>
+      <trans-unit id="noSimilarIssues">
+        <source xml:lang="en">No similar issues found</source>
+        <target state="translated">Aucun problème similaire trouvé</target>
+      </trans-unit>
+      <trans-unit id="settingsSearchIssue">
+        <source xml:lang="en">Settings Search Issue</source>
+        <target state="translated">Problème de paramètres de recherche</target>
+      </trans-unit>
+      <trans-unit id="bugReporter">
+        <source xml:lang="en">Bug Report</source>
+        <target state="translated">Rapporteur de bogue</target>
+      </trans-unit>
+      <trans-unit id="featureRequest">
+        <source xml:lang="en">Feature Request</source>
+        <target state="translated">Demande de fonctionnalité</target>
+      </trans-unit>
+      <trans-unit id="performanceIssue">
+        <source xml:lang="en">Performance Issue</source>
+        <target state="translated">Problème de performance</target>
+      </trans-unit>
+      <trans-unit id="selectSource">
+        <source xml:lang="en">Select source</source>
+        <target state="translated">Sélectionner la source</target>
+      </trans-unit>
+      <trans-unit id="vscode">
+        <source xml:lang="en">Visual Studio Code</source>
+        <target state="translated">Visual Studio Code</target>
+      </trans-unit>
+      <trans-unit id="extension">
+        <source xml:lang="en">An extension</source>
+        <target state="translated">Extension</target>
+      </trans-unit>
+      <trans-unit id="unknown">
+        <source xml:lang="en">Don't Know</source>
+        <target state="translated">Je ne sais pas</target>
+      </trans-unit>
+      <trans-unit id="stepsToReproduce">
+        <source xml:lang="en">Steps to Reproduce</source>
+        <target state="translated">Étapes à reproduire</target>
+      </trans-unit>
+      <trans-unit id="bugDescription">
+        <source xml:lang="en">Share the steps needed to reliably reproduce the problem. Please include actual and expected results. We support GitHub-flavored Markdown. You will be able to edit your issue and add screenshots when we preview it on GitHub.</source>
+        <target state="translated">Partagez les étapes nécessaires pour reproduire fidèlement le problème. Veuillez inclure les résultats réels et prévus. Nous prenons en charge la syntaxe GitHub Markdown. Vous pourrez éditer votre problème et ajouter des captures d'écran lorsque nous le prévisualiserons sur GitHub.</target>
+      </trans-unit>
+      <trans-unit id="performanceIssueDesciption">
+        <source xml:lang="en">When did this performance issue happen? Does it occur on startup or after a specific series of actions? We support GitHub-flavored Markdown. You will be able to edit your issue and add screenshots when we preview it on GitHub.</source>
+        <target state="translated">Quand ce problème de performance s'est-il produit ? Se produit-il au démarrage ou après une série d'actions spécifiques ? Nous prenons en charge la syntaxe Markdown de GitHub. Vous pourrez éditer votre problème et ajouter des captures d'écran lorsque nous le prévisualiserons sur GitHub.</target>
+      </trans-unit>
+      <trans-unit id="description">
+        <source xml:lang="en">Description</source>
+        <target state="translated">Description</target>
+      </trans-unit>
+      <trans-unit id="featureRequestDescription">
+        <source xml:lang="en">Please describe the feature you would like to see. We support GitHub-flavored Markdown. You will be able to edit your issue and add screenshots when we preview it on GitHub.</source>
+        <target state="translated">Veuillez décrire la fonctionnalité que vous voulez voir. Nous supportons la syntaxe GitHub Markdown. Vous pourrez modifier votre problème et ajouter des captures d’écran lorsque nous la prévisualiserons sur GitHub.</target>
+      </trans-unit>
+      <trans-unit id="expectedResults">
+        <source xml:lang="en">Expected Results</source>
+        <target state="translated">Résultats attendus</target>
+      </trans-unit>
+      <trans-unit id="settingsSearchResultsDescription">
+        <source xml:lang="en">Please list the results that you were expecting to see when you searched with this query. We support GitHub-flavored Markdown. You will be able to edit your issue and add screenshots when we preview it on GitHub.</source>
+        <target state="translated">Listez les résultats attendus quand vous exécutez cette requête. Nous prenons en charge la syntaxe GitHub Markdown. Vous pouvez modifier votre question et ajouter des captures d’écran quand nous en affichons un aperçu sur GitHub.</target>
+      </trans-unit>
+      <trans-unit id="pasteData">
+        <source xml:lang="en">We have written the needed data into your clipboard because it was too large to send. Please paste.</source>
+        <target state="translated">Nous avons écrit les données nécessaires dans votre presse-papiers, car elles étaient trop volumineuses à envoyer. Veuillez les coller.</target>
+      </trans-unit>
+      <trans-unit id="disabledExtensions">
+        <source xml:lang="en">Extensions are disabled</source>
+        <target state="translated">Les extensions sont désactivées</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/code/electron-browser/issue/issueReporterPage" source-language="en" target-language="fr" datatype="plaintext">
+    <body>
+      <trans-unit id="completeInEnglish">
+        <source xml:lang="en">Please complete the form in English.</source>
+        <target state="translated">Remplissez le formulaire en anglais.</target>
+      </trans-unit>
+      <trans-unit id="issueTypeLabel">
+        <source xml:lang="en">This is a</source>
+        <target state="translated">Ceci est un </target>
+      </trans-unit>
+      <trans-unit id="issueSourceLabel">
+        <source xml:lang="en">File on</source>
+        <target state="translated">Fichier sur</target>
+      </trans-unit>
+      <trans-unit id="disableExtensionsLabelText">
+        <source xml:lang="en">Try to reproduce the problem after {0}. If the problem only reproduces when extensions are active, it is likely an issue with an extension.</source>
+        <target state="translated">Essayez de reproduire le problème au bout de {0}. Si le problème se reproduit uniquement quand les extensions sont actives, il s'agit probablement d'un problème d'extension.</target>
+      </trans-unit>
+      <trans-unit id="disableExtensions">
+        <source xml:lang="en">disabling all extensions and reloading the window</source>
+        <target state="translated">en désactivant toutes les extensions et en rechargeant la fenêtre</target>
+      </trans-unit>
+      <trans-unit id="chooseExtension">
+        <source xml:lang="en">Extension</source>
+        <target state="translated">Extension</target>
+      </trans-unit>
+      <trans-unit id="extensionWithNonstandardBugsUrl">
+        <source xml:lang="en">The issue reporter is unable to create issues for this extension. Please visit {0} to report an issue.</source>
+        <target state="translated">Le rapporteur de problèmes ne peut pas créer de problèmes pour cette extension. Accédez à {0} pour signaler un problème.</target>
+      </trans-unit>
+      <trans-unit id="extensionWithNoBugsUrl">
+        <source xml:lang="en">The issue reporter is unable to create issues for this extension, as it does not specify a URL for reporting issues. Please check the marketplace page of this extension to see if other instructions are available.</source>
+        <target state="translated">Le rapporteur de problèmes ne peut pas créer de problèmes pour cette extension, car elle ne spécifie pas d'URL pour signaler les problèmes. Consultez la page de la Place de marché de cette extension pour voir si d'autres instructions sont disponibles.</target>
+      </trans-unit>
+      <trans-unit id="issueTitleLabel">
+        <source xml:lang="en">Title</source>
+        <target state="translated">Titre</target>
+      </trans-unit>
+      <trans-unit id="issueTitleRequired">
+        <source xml:lang="en">Please enter a title.</source>
+        <target state="translated">Veuillez s’il vous plaît entrer un titre.</target>
+      </trans-unit>
+      <trans-unit id="titleLengthValidation">
+        <source xml:lang="en">The title is too long.</source>
+        <target state="translated">Le titre est trop long.</target>
+      </trans-unit>
+      <trans-unit id="details">
+        <source xml:lang="en">Please enter details.</source>
+        <target state="translated">Entrez les détails.</target>
+      </trans-unit>
+      <trans-unit id="sendSystemInfo">
+        <source xml:lang="en">Include my system information ({0})</source>
+        <target state="translated">Inclure des informations sur mon système ({0})</target>
+        <note>{0} is either "show" or "hide" and is a button to toggle the visibility of the system information</note>
+      </trans-unit>
+      <trans-unit id="show">
+        <source xml:lang="en">show</source>
+        <target state="translated">Afficher</target>
+      </trans-unit>
+      <trans-unit id="sendProcessInfo">
+        <source xml:lang="en">Include my currently running processes ({0})</source>
+        <target state="translated">Inclure mes processus en cours d’exécution ({0})</target>
+        <note>{0} is either "show" or "hide" and is a button to toggle the visibility of the process info</note>
+      </trans-unit>
+      <trans-unit id="sendWorkspaceInfo">
+        <source xml:lang="en">Include my workspace metadata ({0})</source>
+        <target state="translated">Inclure des métadonnées sur mon espace de travail ({0})</target>
+        <note>{0} is either "show" or "hide" and is a button to toggle the visibility of the workspace information</note>
+      </trans-unit>
+      <trans-unit id="sendExtensions">
+        <source xml:lang="en">Include my enabled extensions ({0})</source>
+        <target state="translated">Inclure mes extensions activées ({0})</target>
+        <note>{0} is either "show" or "hide" and is a button to toggle the visibility of the enabled extensions list</note>
+      </trans-unit>
+      <trans-unit id="sendSearchedExtensions">
+        <source xml:lang="en">Send searched extensions ({0})</source>
+        <target state="translated">Envoyer les extensions recherchées ({0})</target>
+        <note>{0} is either "show" or "hide" and is a button to toggle the visibility of the searched extensions</note>
+      </trans-unit>
+      <trans-unit id="sendSettingsSearchDetails">
+        <source xml:lang="en">Send settings search details ({0})</source>
+        <target state="translated">Envoyer les détails de recherche des paramètres ({0})</target>
+        <note>{0} is either "show" or "hide" and is a button to toggle the visibility of the search details</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/code/electron-main/app" source-language="en" target-language="fr" datatype="plaintext">
+    <body>
+      <trans-unit id="trace.message">
+        <source xml:lang="en">Successfully created trace.</source>
+        <target state="translated">Trace créée avec succès.</target>
+      </trans-unit>
+      <trans-unit id="trace.detail">
+        <source xml:lang="en">Please create an issue and manually attach the following file:
+{0}</source>
+        <target state="translated">Veuillez créer un problème et joindre manuellement le fichier suivant : {0}</target>
+      </trans-unit>
+      <trans-unit id="trace.ok">
+        <source xml:lang="en">Ok</source>
+        <target state="translated">OK</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/code/electron-main/auth" source-language="en" target-language="fr" datatype="plaintext">
+    <body>
+      <trans-unit id="authRequire">
+        <source xml:lang="en">Proxy Authentication Required</source>
+        <target state="translated">Authentification du proxy obligatoire</target>
+      </trans-unit>
+      <trans-unit id="proxyauth">
+        <source xml:lang="en">The proxy {0} requires authentication.</source>
+        <target state="translated">Le proxy {0} nécessite une authentification.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/code/electron-main/window" source-language="en" target-language="fr" datatype="plaintext">
+    <body>
+      <trans-unit id="reopen">
+        <source xml:lang="en">&amp;&amp;Reopen</source>
+        <target state="translated">&amp;&amp;Rouvrir</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="wait">
+        <source xml:lang="en">&amp;&amp;Keep Waiting</source>
+        <target state="translated">&amp;&amp;Continuer à attendre</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="close">
+        <source xml:lang="en">&amp;&amp;Close</source>
+        <target state="translated">&amp;&amp;Fermer</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="appStalled">
+        <source xml:lang="en">The window is no longer responding</source>
+        <target state="translated">La fenêtre ne répond plus</target>
+      </trans-unit>
+      <trans-unit id="appStalledDetail">
+        <source xml:lang="en">You can reopen or close the window or keep waiting.</source>
+        <target state="translated">Vous pouvez rouvrir ou fermer la fenêtre, ou continuer à patienter.</target>
+      </trans-unit>
+      <trans-unit id="appCrashed">
+        <source xml:lang="en">The window has crashed</source>
+        <target state="translated">La fenêtre s'est bloquée</target>
+      </trans-unit>
+      <trans-unit id="appCrashedDetail">
+        <source xml:lang="en">We are sorry for the inconvenience! You can reopen the window to continue where you left off.</source>
+        <target state="translated">Nous vous prions de nous excuser pour ce désagrément. Vous pouvez rouvrir la fenêtre pour reprendre l'action au moment où elle a été interrompue.</target>
+      </trans-unit>
+      <trans-unit id="hiddenMenuBar">
+        <source xml:lang="en">You can still access the menu bar by pressing the Alt-key.</source>
+        <target state="translated">Vous pouvez toujours accéder à la barre de menus en appuyant sur la touche Alt.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

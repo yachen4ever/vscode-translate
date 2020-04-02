@@ -1,0 +1,847 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="extensions/typescript-language-features/package" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="displayName">
+        <source xml:lang="en">TypeScript and JavaScript Language Features</source>
+        <target state="translated">TypeScript 和 JavaScript 語言功能</target>
+      </trans-unit>
+      <trans-unit id="description">
+        <source xml:lang="en">Provides rich language support for JavaScript and TypeScript.</source>
+        <target state="translated">為 JavaScript 和 TypeScript 提供豐富的語言支援。</target>
+      </trans-unit>
+      <trans-unit id="reloadProjects.title">
+        <source xml:lang="en">Reload Project</source>
+        <target state="translated">重新載入專案</target>
+      </trans-unit>
+      <trans-unit id="configuration.typescript">
+        <source xml:lang="en">TypeScript</source>
+        <target state="translated">TypeScript</target>
+      </trans-unit>
+      <trans-unit id="configuration.suggest.completeFunctionCalls">
+        <source xml:lang="en">Complete functions with their parameter signature.</source>
+        <target state="translated">使用其參數簽章完成函式。</target>
+      </trans-unit>
+      <trans-unit id="configuration.suggest.includeAutomaticOptionalChainCompletions">
+        <source xml:lang="en">Enable/disable showing completions on potentially undefined values that insert an optional chain call. Requires TS 3.7+ and strict null checks to be enabled.</source>
+        <target state="translated">啟用/停用顯示插入選擇性鏈結呼叫之潛在未定義值的自動完成。需要啟用 TS 3.7+ 和嚴格 Null 檢查。</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsdk.desc">
+        <source xml:lang="en">Specifies the folder path to the tsserver and lib*.d.ts files under a TypeScript install to use for IntelliSense, for example: `./node_modules/typescript/lib`.
+
+- When specified as a user setting, the TypeScript version from `typescript.tsdk` automatically replaces the built-in TypeScript version.
+- When specified as a workspace setting, `typescript.tsdk` allows you to switch to use that workspace version of TypeScript for IntelliSense with the `TypeScript: Select TypeScript version` command.
+
+See the [TypeScript documentation](https://code.visualstudio.com/docs/typescript/typescript-compiling#_using-newer-typescript-versions) for more detail about managing TypeScript versions.</source>
+        <target state="translated">指定 TypeScript 安裝下要用於 IntelliSense 之 tsserver 與 lib*.d.ts 檔案的資料夾路徑，例如: `./node_modules/typescript/lib`。
+
+- 若指定為使用者設定，來自 `typescript.tsdk` 的 TypeScript 版本會自動取代內建的 TypeScript 版本。
+- 若指定為工作區設定，`typescript.tsdk` 可讓您以 `TypeScript: Select TypeScript version` 命令，切換為對 IntelliSense 使用 TypeScript 的工作區版本。
+
+如需如何管理 TypeScript 版本的詳細資料，請參閱 [TypeScript 文件](https://code.visualstudio.com/docs/typescript/typescript-compiling#_using-newer-typescript-versions)。</target>
+      </trans-unit>
+      <trans-unit id="typescript.disableAutomaticTypeAcquisition">
+        <source xml:lang="en">Disables automatic type acquisition. Automatic type acquisition fetches `@types` packages from npm to improve IntelliSense for external libraries.</source>
+        <target state="translated">停用自動類型擷取。自動類型擷取會從 npm 擷取 `@types` 套件，來改進外部程式庫的 IntelliSense。</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsserver.log">
+        <source xml:lang="en">Enables logging of the TS server to a file. This log can be used to diagnose TS Server issues. The log may contain file paths, source code, and other potentially sensitive information from your project.</source>
+        <target state="translated">允許 TS 伺服器記錄到檔案。此記錄可用來診斷 TS 伺服器問題。記錄可能包含檔案路徑、原始程式碼及您專案中可能具有敏感性的其他資訊。</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsserver.pluginPaths">
+        <source xml:lang="en">Additional paths to discover TypeScript Language Service plugins. Requires using TypeScript 2.3.0 or newer in the workspace.</source>
+        <target state="translated">探索 Typescript 語言服務外掛程式的其他路徑。需要在工作區使用 TypeScript 2.3.0 或更新版。</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsserver.pluginPaths.item">
+        <source xml:lang="en">Either an absolute or relative path. Relative path will be resolved against workspace folder(s).</source>
+        <target state="translated">無論是絕對路徑或是相對路徑。相對路徑將會根據工作區資料夾進行解析。</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsserver.trace">
+        <source xml:lang="en">Enables tracing of messages sent to the TS server. This trace can be used to diagnose TS Server issues. The trace may contain file paths, source code, and other potentially sensitive information from your project.</source>
+        <target state="translated">允許將訊息追蹤傳送到 TS 伺服器。此追蹤可用來診斷 TS 伺服器問題。追蹤可能包含檔案路徑、原始程式碼及您專案中可能具有敏感性的其他資訊。</target>
+      </trans-unit>
+      <trans-unit id="typescript.validate.enable">
+        <source xml:lang="en">Enable/disable TypeScript validation.</source>
+        <target state="translated">啟用/停用 TypeScript 驗證。</target>
+      </trans-unit>
+      <trans-unit id="typescript.format.enable">
+        <source xml:lang="en">Enable/disable default TypeScript formatter.</source>
+        <target state="translated">啟用/停用預設 TypeScript 格式器。</target>
+      </trans-unit>
+      <trans-unit id="javascript.format.enable">
+        <source xml:lang="en">Enable/disable default JavaScript formatter.</source>
+        <target state="translated">啟用/停用預設 JavaScript 格式器。</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterCommaDelimiter">
+        <source xml:lang="en">Defines space handling after a comma delimiter.</source>
+        <target state="translated">定義逗號分隔符號後的空格處理。</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterConstructor">
+        <source xml:lang="en">Defines space handling after the constructor keyword. Requires using TypeScript 2.3.0 or newer in the workspace.</source>
+        <target state="translated">定義建構函式關鍵字後的空格處理。需要在工作區中使用 TypeScript 2.3.0 或更新版。</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterSemicolonInForStatements">
+        <source xml:lang="en">Defines space handling after a semicolon in a for statement.</source>
+        <target state="translated">定義 for 陳述式內分號後的空格處理。</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceBeforeAndAfterBinaryOperators">
+        <source xml:lang="en">Defines space handling after a binary operator.</source>
+        <target state="translated">定義二元運算子後的空格處理。</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterKeywordsInControlFlowStatements">
+        <source xml:lang="en">Defines space handling after keywords in a control flow statement.</source>
+        <target state="translated">定義控制流程陳述式內關鍵字後的空格處理方式。</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterFunctionKeywordForAnonymousFunctions">
+        <source xml:lang="en">Defines space handling after function keyword for anonymous functions.</source>
+        <target state="translated">定義匿名函式之函式關鍵字後的空格處理。</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceBeforeFunctionParenthesis">
+        <source xml:lang="en">Defines space handling before function argument parentheses.</source>
+        <target state="translated">定義函式引數括號之前的空格處理。</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis">
+        <source xml:lang="en">Defines space handling after opening and before closing non-empty parenthesis.</source>
+        <target state="translated">定義左右非空白括弧間的空格處理。</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets">
+        <source xml:lang="en">Defines space handling after opening and before closing non-empty brackets.</source>
+        <target state="translated">定義左右非空白括弧間的空格處理。</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces">
+        <source xml:lang="en">Defines space handling after opening and before closing non-empty braces. Requires using TypeScript 2.3.0 or newer in the workspace.</source>
+        <target state="translated">定義開啟非空白大括號後和將其關閉前的空格處理。需要在工作區中使用 TypeScript 2.3.0 或更新版。</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces">
+        <source xml:lang="en">Defines space handling after opening and before closing template string braces.</source>
+        <target state="translated">定義開啟範本字串大括號後和將其關閉前的空格處理。 </target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces">
+        <source xml:lang="en">Defines space handling after opening and before closing JSX expression braces.</source>
+        <target state="translated">定義開啟 JSX 運算式大括號後和將其關閉前的空格處理。</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterTypeAssertion">
+        <source xml:lang="en">Defines space handling after type assertions in TypeScript. Requires using TypeScript 2.4 or newer in the workspace.</source>
+        <target state="translated">定義 TypeScript 中類型判斷提示後的空格處理。需要在工作區中使用 TypeScript 2.4 或更新版。</target>
+      </trans-unit>
+      <trans-unit id="format.placeOpenBraceOnNewLineForFunctions">
+        <source xml:lang="en">Defines whether an open brace is put onto a new line for functions or not.</source>
+        <target state="translated">定義是否將左大括弧放入函式的新行。</target>
+      </trans-unit>
+      <trans-unit id="format.placeOpenBraceOnNewLineForControlBlocks">
+        <source xml:lang="en">Defines whether an open brace is put onto a new line for control blocks or not.</source>
+        <target state="translated">定義是否將左大括弧放入控制區塊的新行。</target>
+      </trans-unit>
+      <trans-unit id="format.semicolons">
+        <source xml:lang="en">Defines handling of optional semicolons. Requires using TypeScript 3.7 or newer in the workspace.</source>
+        <target state="translated">定義選用分號的處理。需要在工作區中使用 TypeScript 3.7 或更新版本。</target>
+      </trans-unit>
+      <trans-unit id="format.semicolons.ignore">
+        <source xml:lang="en">Don't insert or remove any semicolons.</source>
+        <target state="translated">不要插入或移除任何分號。</target>
+      </trans-unit>
+      <trans-unit id="format.semicolons.insert">
+        <source xml:lang="en">Insert semicolons at statement ends.</source>
+        <target state="translated">在陳述式結尾插入分號。</target>
+      </trans-unit>
+      <trans-unit id="format.semicolons.remove">
+        <source xml:lang="en">Remove unnecessary semicolons.</source>
+        <target state="translated">移除不必要的分號。</target>
+      </trans-unit>
+      <trans-unit id="javascript.validate.enable">
+        <source xml:lang="en">Enable/disable JavaScript validation.</source>
+        <target state="translated">啟用/停用 JavaScript 驗證。</target>
+      </trans-unit>
+      <trans-unit id="goToProjectConfig.title">
+        <source xml:lang="en">Go to Project Configuration</source>
+        <target state="translated">移至專案組態</target>
+      </trans-unit>
+      <trans-unit id="javascript.referencesCodeLens.enabled">
+        <source xml:lang="en">Enable/disable references CodeLens in JavaScript files.</source>
+        <target state="translated">在 JavaScript 檔案啟用/停用參考 CodeLens。</target>
+      </trans-unit>
+      <trans-unit id="javascript.referencesCodeLens.showOnAllFunctions">
+        <source xml:lang="en">Enable/disable references CodeLens on all functions in JavaScript files.</source>
+        <target state="translated">啟用/停用 JavaScript 檔案中所有函式的參考 CodeLens。</target>
+      </trans-unit>
+      <trans-unit id="typescript.referencesCodeLens.enabled">
+        <source xml:lang="en">Enable/disable references CodeLens in TypeScript files.</source>
+        <target state="translated">在 TypeScript 檔案中啟用/停用參考 CodeLens。</target>
+      </trans-unit>
+      <trans-unit id="typescript.referencesCodeLens.showOnAllFunctions">
+        <source xml:lang="en">Enable/disable references CodeLens on all functions in TypeScript files.</source>
+        <target state="translated">啟用/停用 TypeScript 檔案中所有函式的參考 CodeLens。</target>
+      </trans-unit>
+      <trans-unit id="typescript.implementationsCodeLens.enabled">
+        <source xml:lang="en">Enable/disable implementations CodeLens. This CodeLens shows the implementers of an interface.</source>
+        <target state="translated">啟用/停用實作 CodeLens。此 CodeLens 會顯示介面的實作。</target>
+      </trans-unit>
+      <trans-unit id="typescript.openTsServerLog.title">
+        <source xml:lang="en">Open TS Server log</source>
+        <target state="translated">開啟 TS 伺服器記錄</target>
+      </trans-unit>
+      <trans-unit id="typescript.restartTsServer">
+        <source xml:lang="en">Restart TS server</source>
+        <target state="translated">重新啟動TS伺服器</target>
+      </trans-unit>
+      <trans-unit id="typescript.selectTypeScriptVersion.title">
+        <source xml:lang="en">Select TypeScript Version...</source>
+        <target state="translated">選取 TypeScript 版本…</target>
+      </trans-unit>
+      <trans-unit id="typescript.reportStyleChecksAsWarnings">
+        <source xml:lang="en">Report style checks as warnings.</source>
+        <target state="translated">將樣式檢查回報為警告。</target>
+      </trans-unit>
+      <trans-unit id="javascript.implicitProjectConfig.checkJs">
+        <source xml:lang="en">Enable/disable semantic checking of JavaScript files. Existing jsconfig.json or tsconfig.json files override this setting. Requires using TypeScript 2.3.1 or newer in the workspace.</source>
+        <target state="translated">啟用/停用 JavaScript 檔案的語意檢查。現有的 jsconfig.json 或 tsconfig.json 檔案會覆寫此設定。需要在工作區中使用 TypeScript 2.3.1 或更新版。</target>
+      </trans-unit>
+      <trans-unit id="typescript.npm">
+        <source xml:lang="en">Specifies the path to the npm executable used for Automatic Type Acquisition. Requires using TypeScript 2.3.4 or newer in the workspace.</source>
+        <target state="translated">指定用於擷取自動類型的 NPM 可執行檔路徑。需要在工作區中使用 TypeScript 2.3.4 或更新版。</target>
+      </trans-unit>
+      <trans-unit id="typescript.check.npmIsInstalled">
+        <source xml:lang="en">Check if npm is installed for Automatic Type Acquisition.</source>
+        <target state="translated">檢查是否已安裝NPM用以取得自動類型擷取.</target>
+      </trans-unit>
+      <trans-unit id="configuration.suggest.names">
+        <source xml:lang="en">Enable/disable including unique names from the file in JavaScript suggestions. Note that name suggestions are always disabled in JavaScript code that is semantically checked using `@ts-check` or `checkJs`.</source>
+        <target state="translated">啟用/停用在 JavaScript 建議中包含檔案的唯一名稱。請注意，在使用 `@ts-check` 或 `checkJs` 進行語意檢查的 JavaScript 程式碼中，一律會停用名稱建議。</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsc.autoDetect">
+        <source xml:lang="en">Controls auto detection of tsc tasks.</source>
+        <target state="translated">控制 tsc 工作的自動偵測。</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsc.autoDetect.off">
+        <source xml:lang="en">Disable this feature.</source>
+        <target state="translated">停用此功能。</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsc.autoDetect.on">
+        <source xml:lang="en">Create both build and watch tasks.</source>
+        <target state="translated">同時建立建置及監看工作。</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsc.autoDetect.build">
+        <source xml:lang="en">Only create single run compile tasks.</source>
+        <target state="translated">僅建立單一執行編譯工作。</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsc.autoDetect.watch">
+        <source xml:lang="en">Only create compile and watch tasks.</source>
+        <target state="translated">僅建立編譯及監看工作。</target>
+      </trans-unit>
+      <trans-unit id="typescript.problemMatchers.tsc.label">
+        <source xml:lang="en">TypeScript problems</source>
+        <target state="translated">TypeScript 問題</target>
+      </trans-unit>
+      <trans-unit id="typescript.problemMatchers.tscWatch.label">
+        <source xml:lang="en">TypeScript problems (watch mode)</source>
+        <target state="translated"> TypeScript 問題 (監看模式)</target>
+      </trans-unit>
+      <trans-unit id="configuration.suggest.paths">
+        <source xml:lang="en">Enable/disable suggestions for paths in import statements and require calls.</source>
+        <target state="translated">啟用/停用匯入陳述式和要求呼叫中的路徑建議。</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.useSeparateSyntaxServer">
+        <source xml:lang="en">Enable/disable spawning a separate TypeScript server that can more quickly respond to syntax related operations, such as calculating folding or computing document symbols. Requires using TypeScript 3.4.0 or newer in the workspace.</source>
+        <target state="translated">啟用/停用繁衍可更快回應語法相關作業 (例如計算摺疊或計算文件符號) 的獨立 TypeScript 伺服器。必須在工作區中使用 TypeScript 3.4.0 或更新版本。</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.maxTsServerMemory">
+        <source xml:lang="en">Set the maximum amount of memory (in MB) to allocate to the TypeScript server process</source>
+        <target state="translated">設定要配置給 TypeScript 伺服器處理序的最大記憶體數量 (MB)</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.experimental.enableProjectDiagnostics">
+        <source xml:lang="en">(Experimental) Enables project wide error reporting.</source>
+        <target state="translated">(實驗性) 啟用適用全專案的錯誤回報。</target>
+      </trans-unit>
+      <trans-unit id="typescript.locale">
+        <source xml:lang="en">Sets the locale used to report JavaScript and TypeScript errors. Requires using TypeScript 2.6.0 or newer in the workspace. Default of `null` uses VS Code's locale.</source>
+        <target state="translated">進行用以回報 JavaScript 和 TypeScript 錯誤的地區設定。需要在工作區中使用 TypeScript 2.6.0 或更新版。預設的 `null` 會使用 VS Code 的地區設定。</target>
+      </trans-unit>
+      <trans-unit id="javascript.implicitProjectConfig.experimentalDecorators">
+        <source xml:lang="en">Enable/disable `experimentalDecorators` for JavaScript files that are not part of a project. Existing jsconfig.json or tsconfig.json files override this setting. Requires using TypeScript 2.3.1 or newer in the workspace.</source>
+        <target state="translated">為不屬於專案的 JavaScript 檔案啟用/停用 'experimentalDecorators'。現有的 jsconfig.json 或 tsconfig.json 檔案會覆寫此設定。需要在工作區中使用 TypeScript 2.3.1 或更新版。</target>
+      </trans-unit>
+      <trans-unit id="configuration.suggest.autoImports">
+        <source xml:lang="en">Enable/disable auto import suggestions. Requires using TypeScript 2.6.1 or newer in the workspace.</source>
+        <target state="translated">啟用/停用自動匯入建議。需要在工作區中使用 TypeScript 2.6.1 或更新版。</target>
+      </trans-unit>
+      <trans-unit id="taskDefinition.tsconfig.description">
+        <source xml:lang="en">The tsconfig file that defines the TS build.</source>
+        <target state="translated">定義 TS 組建的 tsconfig 檔案。</target>
+      </trans-unit>
+      <trans-unit id="javascript.suggestionActions.enabled">
+        <source xml:lang="en">Enable/disable suggestion diagnostics for JavaScript files in the editor. Requires using TypeScript 2.8 or newer in the workspace.</source>
+        <target state="translated">在編輯器中為 JavaScript 檔案啟用/停用建議診斷。需要在工作區中使用 TypeScript 2.8 或更新版。</target>
+      </trans-unit>
+      <trans-unit id="typescript.suggestionActions.enabled">
+        <source xml:lang="en">Enable/disable suggestion diagnostics for TypeScript files in the editor. Requires using TypeScript 2.8 or newer in the workspace.</source>
+        <target state="translated">在編輯器中為 TypeScript 檔案啟用/停用建議診斷。需要在工作區中使用 TypeScript 2.8 或更新版。</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.quoteStyle">
+        <source xml:lang="en">Preferred quote style to use for quick fixes: `single` quotes, `double` quotes, or `auto` infer quote type from existing imports. Requires using TypeScript 2.9 or newer in the workspace.</source>
+        <target state="translated">建議用於快速修正的引號樣式: `single` 單引號、`double` 雙引號或 `auto` 從現有匯入自動推斷引號類型。需要在工作區中使用 TypeScript 2.9 或更新版。</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifier">
+        <source xml:lang="en">Preferred path style for auto imports.</source>
+        <target state="translated">自動匯入的偏好路徑樣式。</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifier.auto">
+        <source xml:lang="en">Automatically select import path style. Prefers using a relative import if `baseUrl` is configured and the relative path has fewer segments than the non-relative import.</source>
+        <target state="translated">自動選取匯入路徑樣式。如果已設定 `baseUrl` 且相對路徑的區段數較非相對匯入少，則偏好使用相對匯入。</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifier.relative">
+        <source xml:lang="en">Relative to the file location.</source>
+        <target state="translated">相對於檔案位置。</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifier.nonRelative">
+        <source xml:lang="en">Based on the `baseUrl` configured in your `jsconfig.json` / `tsconfig.json`.</source>
+        <target state="translated">以 `jsconfig.json` / `tsconfig.json` 中設定的 `baseUrl` 為基礎。</target>
+      </trans-unit>
+      <trans-unit id="typescript.updateImportsOnFileMove.enabled">
+        <source xml:lang="en">Enable/disable automatic updating of import paths when you rename or move a file in VS Code. Requires using TypeScript 2.9 or newer in the workspace.</source>
+        <target state="translated">當在 VS Code 重新命名或移動檔案時，啟用/停用自動更新匯入路徑。必須在工作區中使用 TypeScript 2.9 或更新版本。</target>
+      </trans-unit>
+      <trans-unit id="typescript.updateImportsOnFileMove.enabled.prompt">
+        <source xml:lang="en">Prompt on each rename.</source>
+        <target state="translated">在每次重新命名時提示。</target>
+      </trans-unit>
+      <trans-unit id="typescript.updateImportsOnFileMove.enabled.always">
+        <source xml:lang="en">Always update paths automatically.</source>
+        <target state="translated">一律自動更新路徑。</target>
+      </trans-unit>
+      <trans-unit id="typescript.updateImportsOnFileMove.enabled.never">
+        <source xml:lang="en">Never rename paths and don't prompt.</source>
+        <target state="translated">一律不為路徑重新命名，也不提示。</target>
+      </trans-unit>
+      <trans-unit id="typescript.autoClosingTags">
+        <source xml:lang="en">Enable/disable automatic closing of JSX tags. Requires using TypeScript 3.0 or newer in the workspace.</source>
+        <target state="translated">啟用/停用自動關閉 JSX 標記。需要在工作區中使用 TypeScript 3.0 或更新版。</target>
+      </trans-unit>
+      <trans-unit id="typescript.suggest.enabled">
+        <source xml:lang="en">Enabled/disable autocomplete suggestions.</source>
+        <target state="translated">啟用/停用自動完成建議。</target>
+      </trans-unit>
+      <trans-unit id="configuration.surveys.enabled">
+        <source xml:lang="en">Enabled/disable occasional surveys that help us improve VS Code's JavaScript and TypeScript support.</source>
+        <target state="translated">啟用/停用可協助我們改進 VS Code JavaScript 和 TypeScript 支援的不定期調查。</target>
+      </trans-unit>
+      <trans-unit id="configuration.suggest.completeJSDocs">
+        <source xml:lang="en">Enable/disable suggestion to complete JSDoc comments.</source>
+        <target state="translated">啟用/停用完成 JSDoc 註解的建議。</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions">
+        <source xml:lang="en">Configure which watching strategies should be used to keep track of files and directories. Requires using TypeScript 3.8+ in the workspace.</source>
+        <target state="translated">設定要用來追蹤檔案與目錄的監視策略。需要在工作區使用 TypeScript 3.8+。</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchFile">
+        <source xml:lang="en">Strategy for how individual files are watched.</source>
+        <target state="translated">監視個別檔案的策略。</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchFile.fixedPollingInterval">
+        <source xml:lang="en">Check every file for changes several times a second at a fixed interval.</source>
+        <target state="translated">以固定間隔每秒檢查所有檔案的變更數次。</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchFile.priorityPollingInterval">
+        <source xml:lang="en">Check every file for changes several times a second, but use heuristics to check certain types of files less frequently than others.</source>
+        <target state="translated">每秒檢查所有檔案的變更數次，但使用啟發學習法檢查特定類型的檔案 (頻率較其他類型低)。</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchFile.dynamicPriorityPolling">
+        <source xml:lang="en">Use a dynamic queue where less-frequently modified files will be checked less often.</source>
+        <target state="translated">使用動態佇列，使較少修改的檔案檢查頻率較低。</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchFile.useFsEvents">
+        <source xml:lang="en">Attempt to use the operating system/file system’s native events for file changes.</source>
+        <target state="translated">請嘗試使用作業系統/檔案系統的原生事件，來進行檔案變更。</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchFile.useFsEventsOnParentDirectory">
+        <source xml:lang="en">Attempt to use the operating system/file system’s native events to listen for changes on a file’s containing directories. This can use fewer file watchers, but might be less accurate.</source>
+        <target state="translated">嘗試使用作業系統/檔案系統的原生事件來接聽檔案包含目錄的變更。這使用的檔案監看員較少，但可能較不精確。</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchDirectory">
+        <source xml:lang="en">Strategy for how entire directory trees are watched under systems that lack recursive file-watching functionality.</source>
+        <target state="translated">在缺乏遞迴檔案監視功能的系統下，監視整個目錄樹狀的策略。</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchDirectory.fixedPollingInterval">
+        <source xml:lang="en">Check every directory for changes several times a second at a fixed interval.</source>
+        <target state="translated">以固定間隔每秒檢查所有目錄的變更數次。</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchDirectory.dynamicPriorityPolling">
+        <source xml:lang="en">Use a dynamic queue where less-frequently modified directories will be checked less often.</source>
+        <target state="translated">使用動態佇列，使較少修改的目錄檢查頻率較低。</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchDirectory.useFsEvents">
+        <source xml:lang="en">Attempt to use the operating system/file system’s native events for directory changes.</source>
+        <target state="translated">請嘗試使用作業系統/檔案系統的原生事件，來進行目錄變更。</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.fallbackPolling">
+        <source xml:lang="en">When using file system events, this option specifies the polling strategy that gets used when the system runs out of native file watchers and/or doesn’t support native file watchers.</source>
+        <target state="translated">使用檔案系統事件時，此選項會指定系統用完原生檔案監看員且 (或) 不支援原生檔案監看員時，所要使用的輪詢策略。</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.fallbackPolling.fixedPollingInterval">
+        <source xml:lang="en">Check every file for changes several times a second at a fixed interval.</source>
+        <target state="translated">以固定間隔每秒檢查所有檔案的變更數次。</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.fallbackPolling.priorityPollingInterval">
+        <source xml:lang="en">Check every file for changes several times a second, but use heuristics to check certain types of files less frequently than others.</source>
+        <target state="translated">每秒檢查所有檔案的變更數次，但使用啟發學習法檢查特定類型的檔案 (頻率較其他類型低)。</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.fallbackPolling.dynamicPriorityPolling ">
+        <source xml:lang="en">Use a dynamic queue where less-frequently modified files will be checked less often.</source>
+        <target state="translated">使用動態佇列，使較少修改的檔案檢查頻率較低。</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.synchronousWatchDirectory">
+        <source xml:lang="en">Disable deferred watching on directories. Deferred watching is useful when lots of file changes might occur at once (e.g. a change in node_modules from running npm install), but you might want to disable it with this flag for some less-common setups.</source>
+        <target state="translated">停用目錄的延遲監視。如果有大量檔案變更可能同時發生時 (例如執行 npm install 的 node_modules 變更)，延遲監視相當實用，但建議您使用此旗標予以停用以執行某些不太常見的設定。</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.renameShorthandProperties">
+        <source xml:lang="en">Enable/disable introducing aliases for object shorthand properties during renames. Requires using TypeScript 3.4 or newer in the workspace.</source>
+        <target state="translated">啟用/停用在重新命名期間為物件速記屬性引入別名。必須在工作區中使用 TypeScript 3.4 或更新版本。</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.extract.constant.title">
+        <source xml:lang="en">Extract constant</source>
+        <target state="translated">擷取常數</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.extract.constant.description">
+        <source xml:lang="en">Extract expression to constant.</source>
+        <target state="translated">將運算式擷取為常數。</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.extract.function.title">
+        <source xml:lang="en">Extract function</source>
+        <target state="translated">擷取函式</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.extract.function.description">
+        <source xml:lang="en">Extract expression to method or function.</source>
+        <target state="translated">將運算式擷取到方法或函式。</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.extract.type.title">
+        <source xml:lang="en">Extract type</source>
+        <target state="translated">擷取類型</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.extract.type.description">
+        <source xml:lang="en">Extract type to a type alias.</source>
+        <target state="translated">將類型擷取為類型別名。</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.extract.interface.title">
+        <source xml:lang="en">Extract interface</source>
+        <target state="translated">擷取介面</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.extract.interface.description">
+        <source xml:lang="en">Extract type to an interface.</source>
+        <target state="translated">擷取類型到介面。</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.import.title">
+        <source xml:lang="en">Convert import</source>
+        <target state="translated">轉換匯入</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.import.description">
+        <source xml:lang="en">Convert between named imports and namespace imports.</source>
+        <target state="translated">在具名匯入和命名空間匯入之間轉換。</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.export.title">
+        <source xml:lang="en">Convert export</source>
+        <target state="translated">轉換匯出</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.export.description">
+        <source xml:lang="en">Convert between default export and named export.</source>
+        <target state="translated">在預設匯出和具名匯出之間轉換。</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.move.newFile.title">
+        <source xml:lang="en">Move to a new file</source>
+        <target state="translated">移至新檔案</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.move.newFile.description">
+        <source xml:lang="en">Move the expression to a new file.</source>
+        <target state="translated">將運算式移至新檔案。</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.arrow.braces.title">
+        <source xml:lang="en">Rewrite arrow braces</source>
+        <target state="translated">重寫箭頭括號</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.arrow.braces.description">
+        <source xml:lang="en">Add or remove braces in an arrow function.</source>
+        <target state="translated">新增或移除箭號函式中的大括號。</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.parameters.toDestructured.title">
+        <source xml:lang="en">Convert parameters to destructured object</source>
+        <target state="translated">將參數轉換為已解構的物件</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.property.generateAccessors.title">
+        <source xml:lang="en">Generate accessors</source>
+        <target state="translated">產生存取子</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.property.generateAccessors.description">
+        <source xml:lang="en">Generate 'get' and 'set' accessors</source>
+        <target state="translated">產生 'get' 和 'set' 存取子</target>
+      </trans-unit>
+      <trans-unit id="codeActions.source.organizeImports.title">
+        <source xml:lang="en">Organize imports</source>
+        <target state="translated">組織匯入</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/utils/api" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="invalidVersion">
+        <source xml:lang="en">invalid version</source>
+        <target state="translated">無效的版本</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/baseCodeLensProvider" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="referenceErrorLabel">
+        <source xml:lang="en">Could not determine references</source>
+        <target state="translated">無法判斷參考</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/commands/goToProjectConfiguration" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="typescript.projectConfigNoWorkspace">
+        <source xml:lang="en">Please open a folder in VS Code to use a TypeScript or JavaScript project</source>
+        <target state="translated">請在 VS Code 中開啟資料夾，以使用 TypeScript 或 JavaScript 專案</target>
+      </trans-unit>
+      <trans-unit id="typescript.projectConfigUnsupportedFile">
+        <source xml:lang="en">Could not determine TypeScript or JavaScript project. Unsupported file type</source>
+        <target state="translated">無法判斷 TypeScript 或 JavaScript 專案。不支援的檔案類型</target>
+      </trans-unit>
+      <trans-unit id="typescript.projectConfigCouldNotGetInfo">
+        <source xml:lang="en">Could not determine TypeScript or JavaScript project</source>
+        <target state="translated">無法判斷 TypeScript 或 JavaScript 專案</target>
+      </trans-unit>
+      <trans-unit id="typescript.noTypeScriptProjectConfig">
+        <source xml:lang="en">File is not part of a TypeScript project. Click [here]({0}) to learn more.</source>
+        <target state="translated">檔案不屬於 TypeScript 專案。若要深入了解，請按一下[這裡]({0})。</target>
+      </trans-unit>
+      <trans-unit id="typescript.noJavaScriptProjectConfig">
+        <source xml:lang="en">File is not part of a JavaScript project Click [here]({0}) to learn more.</source>
+        <target state="translated">檔案不屬於 JavaScript 專案。若要深入了解，請按一下[這裡]({0})。</target>
+      </trans-unit>
+      <trans-unit id="typescript.configureTsconfigQuickPick">
+        <source xml:lang="en">Configure tsconfig.json</source>
+        <target state="translated">設定 tsconfig.json</target>
+      </trans-unit>
+      <trans-unit id="typescript.configureJsconfigQuickPick">
+        <source xml:lang="en">Configure jsconfig.json</source>
+        <target state="translated">設定 jsconfig.json</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/completions" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="selectCodeAction">
+        <source xml:lang="en">Select code action to apply</source>
+        <target state="translated">選擇要套用的程式碼動作</target>
+      </trans-unit>
+      <trans-unit id="acquiringTypingsLabel">
+        <source xml:lang="en">Acquiring typings...</source>
+        <target state="translated">正在擷取 typings...</target>
+        <note>Typings refers to the *.d.ts typings files that power our IntelliSense. It should not be localized</note>
+      </trans-unit>
+      <trans-unit id="acquiringTypingsDetail">
+        <source xml:lang="en">Acquiring typings definitions for IntelliSense.</source>
+        <target state="translated">正在為 IntelliSense 擷取 typings 定義。</target>
+        <note>Typings refers to the *.d.ts typings files that power our IntelliSense. It should not be localized</note>
+      </trans-unit>
+      <trans-unit id="autoImportLabel">
+        <source xml:lang="en">Auto import from {0}</source>
+        <target state="translated">自動從 {0} 匯入</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/directiveCommentCompletions" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="ts-check">
+        <source xml:lang="en">Enables semantic checking in a JavaScript file. Must be at the top of a file.</source>
+        <target state="translated">啟用 JavaScript 檔案的語意檢查。必須在檔案的最上面。</target>
+      </trans-unit>
+      <trans-unit id="ts-nocheck">
+        <source xml:lang="en">Disables semantic checking in a JavaScript file. Must be at the top of a file.</source>
+        <target state="translated">停用 JavaScript 檔案的語意檢查。必須在檔案的最上面。</target>
+      </trans-unit>
+      <trans-unit id="ts-ignore">
+        <source xml:lang="en">Suppresses @ts-check errors on the next line of a file.</source>
+        <target state="translated">隱藏下一行@ts-check 的錯誤警告。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/implementationsCodeLens" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="oneImplementationLabel">
+        <source xml:lang="en">1 implementation</source>
+        <target state="translated">1 個實作</target>
+      </trans-unit>
+      <trans-unit id="manyImplementationLabel">
+        <source xml:lang="en">{0} implementations</source>
+        <target state="translated">{0} 個實作</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/jsDocCompletions" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="typescript.jsDocCompletionItem.documentation">
+        <source xml:lang="en">JSDoc comment</source>
+        <target state="translated">JSDoc 註解</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/organizeImports" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="organizeImportsAction.title">
+        <source xml:lang="en">Organize Imports</source>
+        <target state="translated">組織匯入</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/quickFix" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="fixAllInFileLabel">
+        <source xml:lang="en">{0} (Fix all in file)</source>
+        <target state="translated">{0} (檔案中修復全部)</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/fixAll" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="autoFix.label">
+        <source xml:lang="en">Auto fix</source>
+        <target state="translated">自動修正</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/refactor" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="refactoringFailed">
+        <source xml:lang="en">Could not apply refactoring</source>
+        <target state="translated">無法套用重構</target>
+      </trans-unit>
+      <trans-unit id="extractConstant.disabled.title">
+        <source xml:lang="en">Extract to constant</source>
+        <target state="translated">擷取至常數</target>
+      </trans-unit>
+      <trans-unit id="extractConstant.disabled.reason">
+        <source xml:lang="en">The current selection cannot be extracted</source>
+        <target state="translated">無法擷取目前的選取</target>
+      </trans-unit>
+      <trans-unit id="extractFunction.disabled.title">
+        <source xml:lang="en">Extract to function</source>
+        <target state="translated">擷取至函式</target>
+      </trans-unit>
+      <trans-unit id="extractFunction.disabled.reason">
+        <source xml:lang="en">The current selection cannot be extracted</source>
+        <target state="translated">無法擷取目前的選取</target>
+      </trans-unit>
+      <trans-unit id="refactor.documentation.title">
+        <source xml:lang="en">Learn more about JS/TS refactorings</source>
+        <target state="translated">深入了解 JS/TS 重構</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/referencesCodeLens" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="oneReferenceLabel">
+        <source xml:lang="en">1 reference</source>
+        <target state="translated">1 個參考</target>
+      </trans-unit>
+      <trans-unit id="manyReferenceLabel">
+        <source xml:lang="en">{0} references</source>
+        <target state="translated">{0} 個參考</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/rename" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="fileRenameFail">
+        <source xml:lang="en">An error occurred while renaming file</source>
+        <target state="translated">重新命名檔案時發生錯誤</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/typescriptServiceClient" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="noServerFound">
+        <source xml:lang="en">The path {0} doesn't point to a valid tsserver install. Falling back to bundled TypeScript version.</source>
+        <target state="translated">路徑 {0} 未指向有效的 tsserver 安裝。即將回復為配套的 TypeScript 版本。</target>
+      </trans-unit>
+      <trans-unit id="serverExitedWithError">
+        <source xml:lang="en">TypeScript language server exited with error. Error message is: {0}</source>
+        <target state="translated">TypeScript 語言伺服器因發生錯誤而結束。錯誤訊息為: {0}</target>
+      </trans-unit>
+      <trans-unit id="typescript.openTsServerLog.loggingNotEnabled">
+        <source xml:lang="en">TS Server logging is off. Please set `typescript.tsserver.log` and restart the TS server to enable logging</source>
+        <target state="translated">TS 伺服器記錄功能已關閉。請設定 `typescript.tsserver.log` 並重新啟動 TS 伺服器，以啟用記錄功能</target>
+      </trans-unit>
+      <trans-unit id="typescript.openTsServerLog.enableAndReloadOption">
+        <source xml:lang="en">Enable logging and restart TS server</source>
+        <target state="translated">啟用記錄功能並重新啟動 TS 伺服器</target>
+      </trans-unit>
+      <trans-unit id="typescript.openTsServerLog.noLogFile">
+        <source xml:lang="en">TS Server has not started logging.</source>
+        <target state="translated">TS 伺服器尚未開始記錄。</target>
+      </trans-unit>
+      <trans-unit id="openTsServerLog.openFileFailedFailed">
+        <source xml:lang="en">Could not open TS Server log file</source>
+        <target state="translated">無法開啟 TS 伺服器記錄檔</target>
+      </trans-unit>
+      <trans-unit id="serverDiedAfterStart">
+        <source xml:lang="en">The TypeScript language service died 5 times right after it got started. The service will not be restarted.</source>
+        <target state="translated">TypeScript 語言服務在啟動後立即中止 5 次。服務將不會重新啟動。</target>
+      </trans-unit>
+      <trans-unit id="serverDiedReportIssue">
+        <source xml:lang="en">Report Issue</source>
+        <target state="translated">回報問題</target>
+      </trans-unit>
+      <trans-unit id="serverDied">
+        <source xml:lang="en">The TypeScript language service died unexpectedly 5 times in the last 5 Minutes.</source>
+        <target state="translated">TypeScript 語言服務在過去 5 分鐘內意外中止 5 次。</target>
+      </trans-unit>
+      <trans-unit id="serverLoading.progress">
+        <source xml:lang="en">Initializing JS/TS language features</source>
+        <target state="translated">正在初始化 JS/TS 語言功能</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/utils/logger" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="channelName">
+        <source xml:lang="en">TypeScript</source>
+        <target state="translated">TypeScript</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/utils/versionPicker" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="useVSCodeVersionOption">
+        <source xml:lang="en">Use VS Code's Version</source>
+        <target state="translated">使用 VS Code 的版本</target>
+      </trans-unit>
+      <trans-unit id="useWorkspaceVersionOption">
+        <source xml:lang="en">Use Workspace Version</source>
+        <target state="translated">使用工作區版本</target>
+      </trans-unit>
+      <trans-unit id="learnMore">
+        <source xml:lang="en">Learn More</source>
+        <target state="translated">深入了解</target>
+      </trans-unit>
+      <trans-unit id="selectTsVersion">
+        <source xml:lang="en">Select the TypeScript version used for JavaScript and TypeScript language features</source>
+        <target state="translated">選取 JavaScript 與 TypeScript 功能使用的 TypeScript 版本</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/utils/versionProvider" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="couldNotLoadTsVersion">
+        <source xml:lang="en">Could not load the TypeScript version at this path</source>
+        <target state="translated">無法在此路徑載入 TypeScript 版本</target>
+      </trans-unit>
+      <trans-unit id="noBundledServerFound">
+        <source xml:lang="en">VS Code's tsserver was deleted by another application such as a misbehaving virus detection tool. Please reinstall VS Code.</source>
+        <target state="translated">其他應用程式已刪除了 VS Code 的 tsserver，例如行為不當的病毒偵測工具。請重新安裝 VS Code。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/utils/typingsStatus" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="installingPackages">
+        <source xml:lang="en">Fetching data for better TypeScript IntelliSense</source>
+        <target state="translated">正在擷取資料以改善 TypeScript IntelliSense</target>
+      </trans-unit>
+      <trans-unit id="typesInstallerInitializationFailed.title">
+        <source xml:lang="en">Could not install typings files for JavaScript language features. Please ensure that NPM is installed or configure 'typescript.npm' in your user settings. Click [here]({0}) to learn more.</source>
+        <target state="translated">無法為 JavaScript 語言功能安裝 typings 檔案。請確認已安裝 NPM，或在使用者設定中設定 'typescript.npm'。若要深入了解，請按一下[這裡]({0})。</target>
+      </trans-unit>
+      <trans-unit id="typesInstallerInitializationFailed.doNotCheckAgain">
+        <source xml:lang="en">Don't Show Again</source>
+        <target state="translated">不要再顯示</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/utils/versionStatus" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="typescriptVersion">
+        <source xml:lang="en">TypeScript: Version</source>
+        <target state="translated">TypeScript: 版本</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/updatePathsOnRename" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="renameProgress.title">
+        <source xml:lang="en">Checking for update of JS/TS imports</source>
+        <target state="translated">正在檢查 JS/TS 匯入的更新</target>
+      </trans-unit>
+      <trans-unit id="prompt">
+        <source xml:lang="en">Update imports for '{0}'?</source>
+        <target state="translated">是否更新 '{0}' 的匯入?</target>
+      </trans-unit>
+      <trans-unit id="promptMoreThanOne">
+        <source xml:lang="en">Update imports for the following {0} files?</source>
+        <target state="translated">是否更新下列 {0} 檔案的匯入?</target>
+      </trans-unit>
+      <trans-unit id="reject.title">
+        <source xml:lang="en">No</source>
+        <target state="translated">否</target>
+      </trans-unit>
+      <trans-unit id="accept.title">
+        <source xml:lang="en">Yes</source>
+        <target state="translated">是</target>
+      </trans-unit>
+      <trans-unit id="always.title">
+        <source xml:lang="en">Always automatically update imports</source>
+        <target state="translated">一律自動更新匯入</target>
+      </trans-unit>
+      <trans-unit id="never.title">
+        <source xml:lang="en">Never automatically update imports</source>
+        <target state="translated">一律不自動更新匯入</target>
+      </trans-unit>
+      <trans-unit id="moreFile">
+        <source xml:lang="en">...1 additional file not shown</source>
+        <target state="translated">...另外 1 個檔案未顯示</target>
+      </trans-unit>
+      <trans-unit id="moreFiles">
+        <source xml:lang="en">...{0} additional files not shown</source>
+        <target state="translated">...另外 {0} 個檔案未顯示</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/utils/projectStatus" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="statusExclude">
+        <source xml:lang="en">TypeScript: Configure Excludes</source>
+        <target state="translated">TypeScript: 組態排除</target>
+      </trans-unit>
+      <trans-unit id="hintExclude">
+        <source xml:lang="en">To enable project-wide JavaScript/TypeScript language features, exclude folders with many files, like: {0}</source>
+        <target state="translated">若要讓整個專案都能使用 JavaScript/TypeScript 語言功能，請排除內含許多檔案的資料夾，例如: {0}</target>
+      </trans-unit>
+      <trans-unit id="hintExclude.generic">
+        <source xml:lang="en">To enable project-wide JavaScript/TypeScript language features, exclude large folders with source files that you do not work on.</source>
+        <target state="translated">若要讓整個專案都能使用 JavaScript/TypeScript 語言功能，請排除內含您未使用之來源檔案的大型資料夾。</target>
+      </trans-unit>
+      <trans-unit id="large.label">
+        <source xml:lang="en">Configure Excludes</source>
+        <target state="translated">設定排除項目</target>
+      </trans-unit>
+      <trans-unit id="hintExclude.tooltip">
+        <source xml:lang="en">To enable project-wide JavaScript/TypeScript language features, exclude large folders with source files that you do not work on.</source>
+        <target state="translated">若要讓整個專案都能使用 JavaScript/TypeScript 語言功能，請排除內含您未使用之來源檔案的大型資料夾。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/task" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="badTsConfig">
+        <source xml:lang="en">TypeScript Task in tasks.json contains "\\". TypeScript tasks tsconfig must use "/"</source>
+        <target state="translated">tasks.json 中的 TypeScript 工作含有 "\\"。TypeScript 工作 tsconfig 必須使用 "/"</target>
+      </trans-unit>
+      <trans-unit id="buildTscLabel">
+        <source xml:lang="en">build - {0}</source>
+        <target state="translated">建置 - {0}</target>
+      </trans-unit>
+      <trans-unit id="buildAndWatchTscLabel">
+        <source xml:lang="en">watch - {0}</source>
+        <target state="translated">監看 - {0}</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

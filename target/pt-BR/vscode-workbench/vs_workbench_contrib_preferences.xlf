@@ -1,0 +1,935 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/workbench/contrib/preferences/browser/keybindingsEditorContribution" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="defineKeybinding.start">
+        <source xml:lang="en">Define Keybinding</source>
+        <target state="translated">Definir Keybinding</target>
+      </trans-unit>
+      <trans-unit id="defineKeybinding.kbLayoutErrorMessage">
+        <source xml:lang="en">You won't be able to produce this key combination under your current keyboard layout.</source>
+        <target state="translated">Você não será capaz de produzir esta combinação de teclas sob seu layout de teclado atual.</target>
+      </trans-unit>
+      <trans-unit id="defineKeybinding.kbLayoutLocalAndUSMessage">
+        <source xml:lang="en">**{0}** for your current keyboard layout (**{1}** for US standard).</source>
+        <target state="translated">**{0}** para o seu layout de teclado atual (**{1}** para US padrão).</target>
+        <note>Please translate maintaining the stars (*) around the placeholders such that they will be rendered in bold.
+The placeholders will contain a keyboard combination e.g. Ctrl+Shift+/</note>
+      </trans-unit>
+      <trans-unit id="defineKeybinding.kbLayoutLocalMessage">
+        <source xml:lang="en">**{0}** for your current keyboard layout.</source>
+        <target state="translated">**{0}** para o seu layout de teclado atual.</target>
+        <note>Please translate maintaining the stars (*) around the placeholder such that it will be rendered in bold.
+The placeholder will contain a keyboard combination e.g. Ctrl+Shift+/</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/preferences/browser/preferences.contribution" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="defaultPreferencesEditor">
+        <source xml:lang="en">Default Preferences Editor</source>
+        <target state="translated">Editor de Preferências Padrão</target>
+      </trans-unit>
+      <trans-unit id="settingsEditor2">
+        <source xml:lang="en">Settings Editor 2</source>
+        <target state="translated">Editor de configurações 2</target>
+      </trans-unit>
+      <trans-unit id="keybindingsEditor">
+        <source xml:lang="en">Keybindings Editor</source>
+        <target state="translated">Editor de Keybindings</target>
+      </trans-unit>
+      <trans-unit id="preferences">
+        <source xml:lang="en">Preferences</source>
+        <target state="translated">Preferências</target>
+      </trans-unit>
+      <trans-unit id="openRemoteSettings">
+        <source xml:lang="en">Open Remote Settings ({0})</source>
+        <target state="translated">Abrir Configurações Remotas ({0})</target>
+      </trans-unit>
+      <trans-unit id="preferencesCategory">
+        <source xml:lang="en">Preferences</source>
+        <target state="translated">Preferências</target>
+      </trans-unit>
+      <trans-unit id="showDefaultKeybindings">
+        <source xml:lang="en">Show Default Keybindings</source>
+        <target state="translated">Mostrar Combinações de Teclas Padrão</target>
+      </trans-unit>
+      <trans-unit id="showUserKeybindings">
+        <source xml:lang="en">Show User Keybindings</source>
+        <target state="translated">Mostrar Combinações de Teclas do Usuário</target>
+      </trans-unit>
+      <trans-unit id="settings.focusSearch">
+        <source xml:lang="en">Focus settings search</source>
+        <target state="new">Focus settings search</target>
+      </trans-unit>
+      <trans-unit id="settings.clearResults">
+        <source xml:lang="en">Clear settings search results</source>
+        <target state="new">Clear settings search results</target>
+      </trans-unit>
+      <trans-unit id="settings.focusFile">
+        <source xml:lang="en">Focus settings file</source>
+        <target state="new">Focus settings file</target>
+      </trans-unit>
+      <trans-unit id="settings.focusNextSetting">
+        <source xml:lang="en">Focus next setting</source>
+        <target state="new">Focus next setting</target>
+      </trans-unit>
+      <trans-unit id="settings.focusPreviousSetting">
+        <source xml:lang="en">Focus previous setting</source>
+        <target state="new">Focus previous setting</target>
+      </trans-unit>
+      <trans-unit id="settings.editFocusedSetting">
+        <source xml:lang="en">Edit focused setting</source>
+        <target state="new">Edit focused setting</target>
+      </trans-unit>
+      <trans-unit id="settings.focusSettingsList">
+        <source xml:lang="en">Focus settings list</source>
+        <target state="new">Focus settings list</target>
+      </trans-unit>
+      <trans-unit id="settings.showContextMenu">
+        <source xml:lang="en">Show context menu</source>
+        <target state="translated">Mostrar menu de contexto</target>
+      </trans-unit>
+      <trans-unit id="miPreferences">
+        <source xml:lang="en">&amp;&amp;Preferences</source>
+        <target state="translated">&amp;&amp;Preferências</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miOpenSettings">
+        <source xml:lang="en">&amp;&amp;Settings</source>
+        <target state="translated">&amp;&amp;Configurações</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="settings">
+        <source xml:lang="en">Settings</source>
+        <target state="translated">Configurações</target>
+      </trans-unit>
+      <trans-unit id="miOpenOnlineSettings">
+        <source xml:lang="en">&amp;&amp;Online Services Settings</source>
+        <target state="translated">&amp;&amp;Configurações dos Serviços Online</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="onlineServices">
+        <source xml:lang="en">Online Services Settings</source>
+        <target state="translated">Configurações de serviços online</target>
+      </trans-unit>
+      <trans-unit id="miOpenKeymap">
+        <source xml:lang="en">&amp;&amp;Keyboard Shortcuts</source>
+        <target state="translated">&amp;&amp;Atalhos de Teclado</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="keyboardShortcuts">
+        <source xml:lang="en">Keyboard Shortcuts</source>
+        <target state="translated">Atalhos de Teclado</target>
+      </trans-unit>
+      <trans-unit id="openSettingsJson">
+        <source xml:lang="en">Open Settings (JSON)</source>
+        <target state="translated">Abrir configurações (JSON)</target>
+      </trans-unit>
+      <trans-unit id="filterModifiedLabel">
+        <source xml:lang="en">Show modified settings</source>
+        <target state="translated">Mostrar configurações modificadas</target>
+      </trans-unit>
+      <trans-unit id="filterOnlineServicesLabel">
+        <source xml:lang="en">Show settings for online services</source>
+        <target state="translated">Mostrar configurações de serviços online</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/preferences/browser/keybindingWidgets" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="defineKeybinding.initial">
+        <source xml:lang="en">Press desired key combination and then press ENTER.</source>
+        <target state="translated">Pressione a combinação de teclas desejada e pressione ENTER.</target>
+      </trans-unit>
+      <trans-unit id="defineKeybinding.oneExists">
+        <source xml:lang="en">1 existing command has this keybinding</source>
+        <target state="translated">1 comando existente tem essa combinação de teclas</target>
+      </trans-unit>
+      <trans-unit id="defineKeybinding.existing">
+        <source xml:lang="en">{0} existing commands have this keybinding</source>
+        <target state="translated">{0} comandos existentes têm essa combinação de teclas</target>
+      </trans-unit>
+      <trans-unit id="defineKeybinding.chordsTo">
+        <source xml:lang="en">chord to</source>
+        <target state="translated">Acorde para</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/preferences/browser/preferencesActions" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="openRawDefaultSettings">
+        <source xml:lang="en">Open Default Settings (JSON)</source>
+        <target state="translated">Abrir configurações padrão (JSON)</target>
+      </trans-unit>
+      <trans-unit id="openSettings2">
+        <source xml:lang="en">Open Settings (UI)</source>
+        <target state="translated">Abrir configurações (IU)</target>
+      </trans-unit>
+      <trans-unit id="openSettingsJson">
+        <source xml:lang="en">Open Settings (JSON)</source>
+        <target state="translated">Abrir configurações (JSON)</target>
+      </trans-unit>
+      <trans-unit id="openGlobalSettings">
+        <source xml:lang="en">Open User Settings</source>
+        <target state="translated">Abra as Configurações de Usuário</target>
+      </trans-unit>
+      <trans-unit id="openGlobalKeybindings">
+        <source xml:lang="en">Open Keyboard Shortcuts</source>
+        <target state="translated">Abrir Atalhos de Teclado</target>
+      </trans-unit>
+      <trans-unit id="openGlobalKeybindingsFile">
+        <source xml:lang="en">Open Keyboard Shortcuts (JSON)</source>
+        <target state="translated">Abrir Atalhos de Teclado (JSON)</target>
+      </trans-unit>
+      <trans-unit id="openDefaultKeybindingsFile">
+        <source xml:lang="en">Open Default Keyboard Shortcuts (JSON)</source>
+        <target state="translated">Abrir Teclas de Atalho Padrões (JSON)</target>
+      </trans-unit>
+      <trans-unit id="openWorkspaceSettings">
+        <source xml:lang="en">Open Workspace Settings</source>
+        <target state="translated">Abrir as configurações do espaço de trabalho</target>
+      </trans-unit>
+      <trans-unit id="openFolderSettings">
+        <source xml:lang="en">Open Folder Settings</source>
+        <target state="translated">Abrir configurações da pasta</target>
+      </trans-unit>
+      <trans-unit id="configureLanguageBasedSettings">
+        <source xml:lang="en">Configure Language Specific Settings...</source>
+        <target state="translated">Definir Configurações Específicas de Linguagem...</target>
+      </trans-unit>
+      <trans-unit id="languageDescriptionConfigured">
+        <source xml:lang="en">({0})</source>
+        <target state="translated">({0})</target>
+      </trans-unit>
+      <trans-unit id="pickLanguage">
+        <source xml:lang="en">Select Language</source>
+        <target state="translated">Selecionar Linguagem</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/preferences/common/preferencesContribution" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="enableNaturalLanguageSettingsSearch">
+        <source xml:lang="en">Controls whether to enable the natural language search mode for settings. The natural language search is provided by a Microsoft online service.</source>
+        <target state="translated">Controla se deve habilitar o modo de pesquisa de linguagem natural para as configurações. A pesquisa de linguagem natural é fornecida por um serviço online da Microsoft.</target>
+      </trans-unit>
+      <trans-unit id="settingsSearchTocBehavior.hide">
+        <source xml:lang="en">Hide the Table of Contents while searching.</source>
+        <target state="translated">Ocultar o Sumário durante a pesquisa.</target>
+      </trans-unit>
+      <trans-unit id="settingsSearchTocBehavior.filter">
+        <source xml:lang="en">Filter the Table of Contents to just categories that have matching settings. Clicking a category will filter the results to that category.</source>
+        <target state="translated">Filtre o Sumário para apenas as categorias que possuem as configurações correspondentes. Clicando em uma categoria filtrará os resultados para essa categoria.</target>
+      </trans-unit>
+      <trans-unit id="settingsSearchTocBehavior">
+        <source xml:lang="en">Controls the behavior of the settings editor Table of Contents while searching.</source>
+        <target state="translated">Controla o comportamento do editor de configurações do Sumário durante a pesquisa.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/preferences/browser/keybindingsEditor" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="recordKeysLabel">
+        <source xml:lang="en">Record Keys</source>
+        <target state="translated">Gravar Teclas</target>
+      </trans-unit>
+      <trans-unit id="recordKeysLabelWithKeybinding">
+        <source xml:lang="en">{0} ({1})</source>
+        <target state="translated">{0} ({1})</target>
+      </trans-unit>
+      <trans-unit id="sortByPrecedeneLabel">
+        <source xml:lang="en">Sort by Precedence</source>
+        <target state="translated">Ordenar por precedência</target>
+      </trans-unit>
+      <trans-unit id="sortByPrecedeneLabelWithKeybinding">
+        <source xml:lang="en">{0} ({1})</source>
+        <target state="translated">{0} ({1})</target>
+      </trans-unit>
+      <trans-unit id="SearchKeybindings.FullTextSearchPlaceholder">
+        <source xml:lang="en">Type to search in keybindings</source>
+        <target state="translated">Digite para pesquisar nos atalhos de teclado</target>
+      </trans-unit>
+      <trans-unit id="SearchKeybindings.KeybindingsSearchPlaceholder">
+        <source xml:lang="en">Recording Keys. Press Escape to exit</source>
+        <target state="translated">Registrando teclas. Aperte Esc para sair</target>
+      </trans-unit>
+      <trans-unit id="clearInput">
+        <source xml:lang="en">Clear Keybindings Search Input</source>
+        <target state="translated">Limpar pesquisa de combinações de teclas de entrada</target>
+      </trans-unit>
+      <trans-unit id="recording">
+        <source xml:lang="en">Recording Keys</source>
+        <target state="translated">Teclas de gravação</target>
+      </trans-unit>
+      <trans-unit id="command">
+        <source xml:lang="en">Command</source>
+        <target state="translated">Comando</target>
+      </trans-unit>
+      <trans-unit id="keybinding">
+        <source xml:lang="en">Keybinding</source>
+        <target state="translated">KeyBinding</target>
+      </trans-unit>
+      <trans-unit id="when">
+        <source xml:lang="en">When</source>
+        <target state="translated">Quando</target>
+      </trans-unit>
+      <trans-unit id="source">
+        <source xml:lang="en">Source</source>
+        <target state="translated">Fonte</target>
+      </trans-unit>
+      <trans-unit id="keybindingsLabel">
+        <source xml:lang="en">Keybindings</source>
+        <target state="translated">Keybindings</target>
+      </trans-unit>
+      <trans-unit id="show sorted keybindings">
+        <source xml:lang="en">Showing {0} Keybindings in precedence order</source>
+        <target state="translated">Mostrando {0} combinações de teclas em ordem de precedência</target>
+      </trans-unit>
+      <trans-unit id="show keybindings">
+        <source xml:lang="en">Showing {0} Keybindings in alphabetical order</source>
+        <target state="translated">Mostrando {0} associações de tecla em ordem alfabética</target>
+      </trans-unit>
+      <trans-unit id="changeLabel">
+        <source xml:lang="en">Change Keybinding</source>
+        <target state="translated">Alterar Keybinding</target>
+      </trans-unit>
+      <trans-unit id="addLabel">
+        <source xml:lang="en">Add Keybinding</source>
+        <target state="translated">Adicionar Keybinding</target>
+      </trans-unit>
+      <trans-unit id="editWhen">
+        <source xml:lang="en">Change When Expression</source>
+        <target state="translated">Mudar Quando Expressão</target>
+      </trans-unit>
+      <trans-unit id="removeLabel">
+        <source xml:lang="en">Remove Keybinding</source>
+        <target state="translated">Remover Keybinding</target>
+      </trans-unit>
+      <trans-unit id="resetLabel">
+        <source xml:lang="en">Reset Keybinding</source>
+        <target state="translated">Redefinir Keybinding</target>
+      </trans-unit>
+      <trans-unit id="showSameKeybindings">
+        <source xml:lang="en">Show Same Keybindings</source>
+        <target state="translated">Mostras as Mesmas Keybindings</target>
+      </trans-unit>
+      <trans-unit id="copyLabel">
+        <source xml:lang="en">Copy</source>
+        <target state="translated">Copiar</target>
+      </trans-unit>
+      <trans-unit id="copyCommandLabel">
+        <source xml:lang="en">Copy Command ID</source>
+        <target state="translated">Copiar ID de comando</target>
+      </trans-unit>
+      <trans-unit id="error">
+        <source xml:lang="en">Error '{0}' while editing the keybinding. Please open 'keybindings.json' file and check for errors.</source>
+        <target state="translated">Erro '{0}' ao editar o keybinding. Por favor, abra o arquivo 'keybindings.json' e verifique se há erros.</target>
+      </trans-unit>
+      <trans-unit id="editKeybindingLabelWithKey">
+        <source xml:lang="en">Change Keybinding {0}</source>
+        <target state="translated">Alterar Keybinding {0}</target>
+      </trans-unit>
+      <trans-unit id="editKeybindingLabel">
+        <source xml:lang="en">Change Keybinding</source>
+        <target state="translated">Alterar Keybinding</target>
+      </trans-unit>
+      <trans-unit id="addKeybindingLabelWithKey">
+        <source xml:lang="en">Add Keybinding {0}</source>
+        <target state="translated">Adicionar Keybinding {0}</target>
+      </trans-unit>
+      <trans-unit id="addKeybindingLabel">
+        <source xml:lang="en">Add Keybinding</source>
+        <target state="translated">Adicionar Keybinding</target>
+      </trans-unit>
+      <trans-unit id="title">
+        <source xml:lang="en">{0} ({1})</source>
+        <target state="translated">{0} ({1})</target>
+      </trans-unit>
+      <trans-unit id="commandAriaLabel">
+        <source xml:lang="en">Command is {0}.</source>
+        <target state="translated">Comando é {0}.</target>
+      </trans-unit>
+      <trans-unit id="keybindingAriaLabel">
+        <source xml:lang="en">Keybinding is {0}.</source>
+        <target state="translated">KeyBinding é {0}.</target>
+      </trans-unit>
+      <trans-unit id="noKeybinding">
+        <source xml:lang="en">No Keybinding assigned.</source>
+        <target state="translated">Nenhum Keybinding atribuído.</target>
+      </trans-unit>
+      <trans-unit id="sourceAriaLabel">
+        <source xml:lang="en">Source is {0}.</source>
+        <target state="translated">Fonte é {0}.</target>
+      </trans-unit>
+      <trans-unit id="whenContextInputAriaLabel">
+        <source xml:lang="en">Type when context. Press Enter to confirm or Escape to cancel.</source>
+        <target state="translated">Digite quando contextualizar. Pressione Enter para confirmar ou Esc para cancelar.</target>
+      </trans-unit>
+      <trans-unit id="whenAriaLabel">
+        <source xml:lang="en">When is {0}.</source>
+        <target state="translated">Quando é {0}.</target>
+      </trans-unit>
+      <trans-unit id="noWhen">
+        <source xml:lang="en">No when context.</source>
+        <target state="translated">Sem contexto Quando.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/preferences/browser/preferencesWidgets" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="defaultSettings">
+        <source xml:lang="en">Place your settings in the right hand side editor to override.</source>
+        <target state="translated">Coloque suas configurações no editor do lado direito para substituir.</target>
+      </trans-unit>
+      <trans-unit id="noSettingsFound">
+        <source xml:lang="en">No Settings Found.</source>
+        <target state="translated">Não há configurações encontradas.</target>
+      </trans-unit>
+      <trans-unit id="settingsSwitcherBarAriaLabel">
+        <source xml:lang="en">Settings Switcher</source>
+        <target state="translated">Chave de Configurações</target>
+      </trans-unit>
+      <trans-unit id="userSettings">
+        <source xml:lang="en">User</source>
+        <target state="translated">Usuário</target>
+      </trans-unit>
+      <trans-unit id="userSettingsRemote">
+        <source xml:lang="en">Remote</source>
+        <target state="translated">Remoto</target>
+      </trans-unit>
+      <trans-unit id="workspaceSettings">
+        <source xml:lang="en">Workspace</source>
+        <target state="translated">Espaço de Trabalho</target>
+      </trans-unit>
+      <trans-unit id="folderSettings">
+        <source xml:lang="en">Folder</source>
+        <target state="translated">pasta</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/preferences/browser/settingsEditor2" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="settingsContextMenuAriaShortcut">
+        <source xml:lang="en">For more actions, Press {0}.</source>
+        <target state="translated">Para mais ações, Pressione {0}.</target>
+      </trans-unit>
+      <trans-unit id="clearInput">
+        <source xml:lang="en">Clear Settings Search Input</source>
+        <target state="new">Clear Settings Search Input</target>
+      </trans-unit>
+      <trans-unit id="SearchSettings.AriaLabel">
+        <source xml:lang="en">Search settings</source>
+        <target state="translated">Configurações de Pesquisa</target>
+      </trans-unit>
+      <trans-unit id="noResults">
+        <source xml:lang="en">No Settings Found</source>
+        <target state="translated">Nenhuma configuração encontrada</target>
+      </trans-unit>
+      <trans-unit id="clearSearchFilters">
+        <source xml:lang="en">Clear Filters</source>
+        <target state="translated">Limpar filtros</target>
+      </trans-unit>
+      <trans-unit id="settingsNoSaveNeeded">
+        <source xml:lang="en">Your changes are automatically saved as you edit.</source>
+        <target state="translated">Suas alterações são salvas automaticamente enquanto você edita.</target>
+      </trans-unit>
+      <trans-unit id="oneResult">
+        <source xml:lang="en">1 Setting Found</source>
+        <target state="translated">1 Configuração Encontrada</target>
+      </trans-unit>
+      <trans-unit id="moreThanOneResult">
+        <source xml:lang="en">{0} Settings Found</source>
+        <target state="translated">{0} Configurações Encontradas</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/preferences/browser/preferencesEditor" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="SearchSettingsWidget.AriaLabel">
+        <source xml:lang="en">Search settings</source>
+        <target state="translated">Configurações de Pesquisa</target>
+      </trans-unit>
+      <trans-unit id="SearchSettingsWidget.Placeholder">
+        <source xml:lang="en">Search Settings</source>
+        <target state="translated">Configurações de Pesquisa</target>
+      </trans-unit>
+      <trans-unit id="noSettingsFound">
+        <source xml:lang="en">No Settings Found</source>
+        <target state="translated">Nenhuma configuração encontrada</target>
+      </trans-unit>
+      <trans-unit id="oneSettingFound">
+        <source xml:lang="en">1 Setting Found</source>
+        <target state="translated">1 Configuração Encontrada</target>
+      </trans-unit>
+      <trans-unit id="settingsFound">
+        <source xml:lang="en">{0} Settings Found</source>
+        <target state="translated">{0} Configurações Encontradas</target>
+      </trans-unit>
+      <trans-unit id="totalSettingsMessage">
+        <source xml:lang="en">Total {0} Settings</source>
+        <target state="translated">Total {0} Configurações</target>
+      </trans-unit>
+      <trans-unit id="nlpResult">
+        <source xml:lang="en">Natural Language Results</source>
+        <target state="translated">Resultados da Linguagem Natural</target>
+      </trans-unit>
+      <trans-unit id="filterResult">
+        <source xml:lang="en">Filtered Results</source>
+        <target state="translated">Resultados Filtrados</target>
+      </trans-unit>
+      <trans-unit id="defaultSettings">
+        <source xml:lang="en">Default Settings</source>
+        <target state="translated">Configurações padrão</target>
+      </trans-unit>
+      <trans-unit id="defaultUserSettings">
+        <source xml:lang="en">Default User Settings</source>
+        <target state="translated">Configurações padrão do usuário</target>
+      </trans-unit>
+      <trans-unit id="defaultWorkspaceSettings">
+        <source xml:lang="en">Default Workspace Settings</source>
+        <target state="translated">Configurações padrão do espaço de trabalho</target>
+      </trans-unit>
+      <trans-unit id="defaultFolderSettings">
+        <source xml:lang="en">Default Folder Settings</source>
+        <target state="translated">Configuração Padrão da Pasta</target>
+      </trans-unit>
+      <trans-unit id="defaultEditorReadonly">
+        <source xml:lang="en">Edit in the right hand side editor to override defaults.</source>
+        <target state="translated">Editar no editor do lado direito para substituir os padrões.</target>
+      </trans-unit>
+      <trans-unit id="preferencesAriaLabel">
+        <source xml:lang="en">Default preferences. Readonly editor.</source>
+        <target state="translated">Preferências padrão. Editor somente leitura.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/preferences/browser/settingsLayout" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="commonlyUsed">
+        <source xml:lang="en">Commonly Used</source>
+        <target state="translated">Comumente Utilizado</target>
+      </trans-unit>
+      <trans-unit id="textEditor">
+        <source xml:lang="en">Text Editor</source>
+        <target state="translated">Editor de Texto</target>
+      </trans-unit>
+      <trans-unit id="cursor">
+        <source xml:lang="en">Cursor</source>
+        <target state="translated">Cursor</target>
+      </trans-unit>
+      <trans-unit id="find">
+        <source xml:lang="en">Find</source>
+        <target state="translated">Encontrar</target>
+      </trans-unit>
+      <trans-unit id="font">
+        <source xml:lang="en">Font</source>
+        <target state="translated">Fonte</target>
+      </trans-unit>
+      <trans-unit id="formatting">
+        <source xml:lang="en">Formatting</source>
+        <target state="translated">Formatação</target>
+      </trans-unit>
+      <trans-unit id="diffEditor">
+        <source xml:lang="en">Diff Editor</source>
+        <target state="translated">Editor de diffs</target>
+      </trans-unit>
+      <trans-unit id="minimap">
+        <source xml:lang="en">Minimap</source>
+        <target state="translated">Minimapa</target>
+      </trans-unit>
+      <trans-unit id="suggestions">
+        <source xml:lang="en">Suggestions</source>
+        <target state="translated">Sugestões</target>
+      </trans-unit>
+      <trans-unit id="files">
+        <source xml:lang="en">Files</source>
+        <target state="translated">Arquivos</target>
+      </trans-unit>
+      <trans-unit id="workbench">
+        <source xml:lang="en">Workbench</source>
+        <target state="translated">Área de Trabalho</target>
+      </trans-unit>
+      <trans-unit id="appearance">
+        <source xml:lang="en">Appearance</source>
+        <target state="translated">Aparência</target>
+      </trans-unit>
+      <trans-unit id="breadcrumbs">
+        <source xml:lang="en">Breadcrumbs</source>
+        <target state="translated">Breadcrumbs</target>
+      </trans-unit>
+      <trans-unit id="editorManagement">
+        <source xml:lang="en">Editor Management</source>
+        <target state="translated">Gestão do editor</target>
+      </trans-unit>
+      <trans-unit id="settings">
+        <source xml:lang="en">Settings Editor</source>
+        <target state="translated">Editor de configurações</target>
+      </trans-unit>
+      <trans-unit id="zenMode">
+        <source xml:lang="en">Zen Mode</source>
+        <target state="translated">Modo Zen</target>
+      </trans-unit>
+      <trans-unit id="screencastMode">
+        <source xml:lang="en">Screencast Mode</source>
+        <target state="translated">Modo screencast</target>
+      </trans-unit>
+      <trans-unit id="window">
+        <source xml:lang="en">Window</source>
+        <target state="translated">Janela</target>
+      </trans-unit>
+      <trans-unit id="newWindow">
+        <source xml:lang="en">New Window</source>
+        <target state="translated">Nova Janela</target>
+      </trans-unit>
+      <trans-unit id="features">
+        <source xml:lang="en">Features</source>
+        <target state="translated">Funcionalidades</target>
+      </trans-unit>
+      <trans-unit id="fileExplorer">
+        <source xml:lang="en">Explorer</source>
+        <target state="translated">Explorador</target>
+      </trans-unit>
+      <trans-unit id="search">
+        <source xml:lang="en">Search</source>
+        <target state="translated">Pesquisar</target>
+      </trans-unit>
+      <trans-unit id="debug">
+        <source xml:lang="en">Debug</source>
+        <target state="translated">depurar</target>
+      </trans-unit>
+      <trans-unit id="scm">
+        <source xml:lang="en">SCM</source>
+        <target state="translated">SCM</target>
+      </trans-unit>
+      <trans-unit id="extensions">
+        <source xml:lang="en">Extensions</source>
+        <target state="translated">Extensões</target>
+      </trans-unit>
+      <trans-unit id="terminal">
+        <source xml:lang="en">Terminal</source>
+        <target state="translated">Terminal</target>
+      </trans-unit>
+      <trans-unit id="task">
+        <source xml:lang="en">Task</source>
+        <target state="translated">Tarefa</target>
+      </trans-unit>
+      <trans-unit id="problems">
+        <source xml:lang="en">Problems</source>
+        <target state="translated">Problemas</target>
+      </trans-unit>
+      <trans-unit id="comments">
+        <source xml:lang="en">Comments</source>
+        <target state="translated">Comentários</target>
+      </trans-unit>
+      <trans-unit id="remote">
+        <source xml:lang="en">Remote</source>
+        <target state="translated">Remoto</target>
+      </trans-unit>
+      <trans-unit id="timeline">
+        <source xml:lang="en">Timeline</source>
+        <target state="translated">Linha do tempo</target>
+      </trans-unit>
+      <trans-unit id="application">
+        <source xml:lang="en">Application</source>
+        <target state="translated">Aplicativo</target>
+      </trans-unit>
+      <trans-unit id="proxy">
+        <source xml:lang="en">Proxy</source>
+        <target state="translated">Proxy</target>
+      </trans-unit>
+      <trans-unit id="keyboard">
+        <source xml:lang="en">Keyboard</source>
+        <target state="translated">Teclado</target>
+      </trans-unit>
+      <trans-unit id="update">
+        <source xml:lang="en">Update</source>
+        <target state="translated">Atualização</target>
+      </trans-unit>
+      <trans-unit id="telemetry">
+        <source xml:lang="en">Telemetry</source>
+        <target state="translated">Telemetria</target>
+      </trans-unit>
+      <trans-unit id="sync">
+        <source xml:lang="en">Sync</source>
+        <target state="translated">Sincronizar</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/preferences/browser/tocTree" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="groupRowAriaLabel">
+        <source xml:lang="en">{0}, group</source>
+        <target state="translated">{0}, grupo</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/preferences/browser/settingsTreeModels" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="workspace">
+        <source xml:lang="en">Workspace</source>
+        <target state="translated">Espaço de Trabalho</target>
+      </trans-unit>
+      <trans-unit id="remote">
+        <source xml:lang="en">Remote</source>
+        <target state="translated">Remoto</target>
+      </trans-unit>
+      <trans-unit id="user">
+        <source xml:lang="en">User</source>
+        <target state="translated">Usuário</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/preferences/browser/settingsWidgets" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="headerForeground">
+        <source xml:lang="en">The foreground color for a section header or active title.</source>
+        <target state="translated">A cor do primeiro plano para um cabeçalho de seção ou título ativo.</target>
+      </trans-unit>
+      <trans-unit id="modifiedItemForeground">
+        <source xml:lang="en">The color of the modified setting indicator.</source>
+        <target state="translated">A cor do indicador de configuração modificada.</target>
+      </trans-unit>
+      <trans-unit id="settingsDropdownBackground">
+        <source xml:lang="en">Settings editor dropdown background.</source>
+        <target state="new">Settings editor dropdown background.</target>
+      </trans-unit>
+      <trans-unit id="settingsDropdownForeground">
+        <source xml:lang="en">Settings editor dropdown foreground.</source>
+        <target state="translated">Configurações do primeiro plano do editor de menu suspenso.</target>
+      </trans-unit>
+      <trans-unit id="settingsDropdownBorder">
+        <source xml:lang="en">Settings editor dropdown border.</source>
+        <target state="translated">Borda de menu suspenso do editor de configurações.</target>
+      </trans-unit>
+      <trans-unit id="settingsDropdownListBorder">
+        <source xml:lang="en">Settings editor dropdown list border. This surrounds the options and separates the options from the description.</source>
+        <target state="new">Settings editor dropdown list border. This surrounds the options and separates the options from the description.</target>
+      </trans-unit>
+      <trans-unit id="settingsCheckboxBackground">
+        <source xml:lang="en">Settings editor checkbox background.</source>
+        <target state="new">Settings editor checkbox background.</target>
+      </trans-unit>
+      <trans-unit id="settingsCheckboxForeground">
+        <source xml:lang="en">Settings editor checkbox foreground.</source>
+        <target state="translated">Caixa de seleção do editor de configurações em primeiro plano.</target>
+      </trans-unit>
+      <trans-unit id="settingsCheckboxBorder">
+        <source xml:lang="en">Settings editor checkbox border.</source>
+        <target state="translated">Configurações da borda do editor de caixa de seleção.</target>
+      </trans-unit>
+      <trans-unit id="textInputBoxBackground">
+        <source xml:lang="en">Settings editor text input box background.</source>
+        <target state="translated">Configurações de fundo do editor de caixa de entrada de texto.</target>
+      </trans-unit>
+      <trans-unit id="textInputBoxForeground">
+        <source xml:lang="en">Settings editor text input box foreground.</source>
+        <target state="new">Settings editor text input box foreground.</target>
+      </trans-unit>
+      <trans-unit id="textInputBoxBorder">
+        <source xml:lang="en">Settings editor text input box border.</source>
+        <target state="new">Settings editor text input box border.</target>
+      </trans-unit>
+      <trans-unit id="numberInputBoxBackground">
+        <source xml:lang="en">Settings editor number input box background.</source>
+        <target state="new">Settings editor number input box background.</target>
+      </trans-unit>
+      <trans-unit id="numberInputBoxForeground">
+        <source xml:lang="en">Settings editor number input box foreground.</source>
+        <target state="new">Settings editor number input box foreground.</target>
+      </trans-unit>
+      <trans-unit id="numberInputBoxBorder">
+        <source xml:lang="en">Settings editor number input box border.</source>
+        <target state="translated">Borda da caixa de entrada de número do editor de configurações.</target>
+      </trans-unit>
+      <trans-unit id="removeItem">
+        <source xml:lang="en">Remove Item</source>
+        <target state="translated">Remover item</target>
+      </trans-unit>
+      <trans-unit id="editItem">
+        <source xml:lang="en">Edit Item</source>
+        <target state="translated">Editar item</target>
+      </trans-unit>
+      <trans-unit id="editItemInSettingsJson">
+        <source xml:lang="en">Edit Item in settings.json</source>
+        <target state="translated">Editar item em settings.json</target>
+      </trans-unit>
+      <trans-unit id="addItem">
+        <source xml:lang="en">Add Item</source>
+        <target state="translated">Adicionar item</target>
+      </trans-unit>
+      <trans-unit id="itemInputPlaceholder">
+        <source xml:lang="en">String Item...</source>
+        <target state="translated">Item de cadeia de caracteres...</target>
+      </trans-unit>
+      <trans-unit id="listSiblingInputPlaceholder">
+        <source xml:lang="en">Sibling...</source>
+        <target state="translated">Irmão...</target>
+      </trans-unit>
+      <trans-unit id="listValueHintLabel">
+        <source xml:lang="en">List item `{0}`</source>
+        <target state="translated">Item da lista '{0}'</target>
+      </trans-unit>
+      <trans-unit id="listSiblingHintLabel">
+        <source xml:lang="en">List item `{0}` with sibling `${1}`</source>
+        <target state="translated">Item da lista '{0}' com irmão '$ {1}'</target>
+      </trans-unit>
+      <trans-unit id="okButton">
+        <source xml:lang="en">OK</source>
+        <target state="translated">OK</target>
+      </trans-unit>
+      <trans-unit id="cancelButton">
+        <source xml:lang="en">Cancel</source>
+        <target state="translated">Cancelar</target>
+      </trans-unit>
+      <trans-unit id="removeExcludeItem">
+        <source xml:lang="en">Remove Exclude Item</source>
+        <target state="translated">Remover Item de Exclusão</target>
+      </trans-unit>
+      <trans-unit id="editExcludeItem">
+        <source xml:lang="en">Edit Exclude Item</source>
+        <target state="translated">Editar Item de Exclusão</target>
+      </trans-unit>
+      <trans-unit id="editExcludeItemInSettingsJson">
+        <source xml:lang="en">Edit Exclude Item in settings.json</source>
+        <target state="translated">Editar item de exclusão em settings.json</target>
+      </trans-unit>
+      <trans-unit id="addPattern">
+        <source xml:lang="en">Add Pattern</source>
+        <target state="translated">Adicionar Padrão</target>
+      </trans-unit>
+      <trans-unit id="excludePatternInputPlaceholder">
+        <source xml:lang="en">Exclude Pattern...</source>
+        <target state="translated">Exclui Padrão...</target>
+      </trans-unit>
+      <trans-unit id="excludeSiblingInputPlaceholder">
+        <source xml:lang="en">When Pattern Is Present...</source>
+        <target state="translated">Quando o Padrão Estiver Presente...</target>
+      </trans-unit>
+      <trans-unit id="excludePatternHintLabel">
+        <source xml:lang="en">Exclude files matching `{0}`</source>
+        <target state="translated">Excluir arquivos correspondentes '{0}'</target>
+      </trans-unit>
+      <trans-unit id="excludeSiblingHintLabel">
+        <source xml:lang="en">Exclude files matching `{0}`, only when a file matching `{1}` is present</source>
+        <target state="translated">Excluir arquivos correspondentes '{0}', somente quando um arquivo de correspondência '{1}' está presente</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/preferences/browser/preferencesRenderers" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="emptyUserSettingsHeader">
+        <source xml:lang="en">Place your settings here to override the Default Settings.</source>
+        <target state="translated">Coloque aqui suas configurações para substituir os atuais padrões de configurações.</target>
+      </trans-unit>
+      <trans-unit id="emptyWorkspaceSettingsHeader">
+        <source xml:lang="en">Place your settings here to override the User Settings.</source>
+        <target state="translated">Coloque aqui suas configurações para substituir as Configurações de Usuário.</target>
+      </trans-unit>
+      <trans-unit id="emptyFolderSettingsHeader">
+        <source xml:lang="en">Place your folder settings here to override those from the Workspace Settings.</source>
+        <target state="translated">Coloque aqui suas configurações de pasta para substituir as configurações do workspace.</target>
+      </trans-unit>
+      <trans-unit id="editTtile">
+        <source xml:lang="en">Edit</source>
+        <target state="translated">Editar</target>
+      </trans-unit>
+      <trans-unit id="replaceDefaultValue">
+        <source xml:lang="en">Replace in Settings</source>
+        <target state="translated">Substituir nas Configurações</target>
+      </trans-unit>
+      <trans-unit id="copyDefaultValue">
+        <source xml:lang="en">Copy to Settings</source>
+        <target state="translated">Copiar para Configurações</target>
+      </trans-unit>
+      <trans-unit id="unknown configuration setting">
+        <source xml:lang="en">Unknown Configuration Setting</source>
+        <target state="translated">Definição de configuração desconhecida</target>
+      </trans-unit>
+      <trans-unit id="unsupportedRemoteMachineSetting">
+        <source xml:lang="en">This setting cannot be applied in this window. It will be applied when you open local window.</source>
+        <target state="translated">Esta configuração não pode ser aplicada nesta janela. Ele será aplicado quando você abrir a janela local.</target>
+      </trans-unit>
+      <trans-unit id="unsupportedWindowSetting">
+        <source xml:lang="en">This setting cannot be applied in this workspace. It will be applied when you open the containing workspace folder directly.</source>
+        <target state="translated">Esta configuração não pode ser aplicada neste workspace. Ele será aplicado quando você abrir a pasta contendo um workspace diretamente.</target>
+      </trans-unit>
+      <trans-unit id="unsupportedApplicationSetting">
+        <source xml:lang="en">This setting can be applied only in application user settings</source>
+        <target state="translated">Essa configuração pode ser aplicada somente em configurações de usuário de aplicativo</target>
+      </trans-unit>
+      <trans-unit id="unsupportedMachineSetting">
+        <source xml:lang="en">This setting can only be applied in user settings in local window or in remote settings in remote window.</source>
+        <target state="translated">Essa configuração só pode ser aplicada em configurações do usuário na janela local ou em configurações remotas na janela remota.</target>
+      </trans-unit>
+      <trans-unit id="unsupportedProperty">
+        <source xml:lang="en">Unsupported Property</source>
+        <target state="new">Unsupported Property</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/preferences/browser/settingsTree" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="extensions">
+        <source xml:lang="en">Extensions</source>
+        <target state="translated">Extensões</target>
+      </trans-unit>
+      <trans-unit id="modified">
+        <source xml:lang="en">Modified</source>
+        <target state="translated">Modificada</target>
+      </trans-unit>
+      <trans-unit id="settingsContextMenuTitle">
+        <source xml:lang="en">More Actions... </source>
+        <target state="translated">Mais Ações...</target>
+      </trans-unit>
+      <trans-unit id="alsoConfiguredIn">
+        <source xml:lang="en">Also modified in</source>
+        <target state="translated">Também modificado em</target>
+      </trans-unit>
+      <trans-unit id="configuredIn">
+        <source xml:lang="en">Modified in</source>
+        <target state="translated">Modificado em</target>
+      </trans-unit>
+      <trans-unit id="settings.Modified">
+        <source xml:lang="en"> Modified. </source>
+        <target state="translated"> Modificado. </target>
+      </trans-unit>
+      <trans-unit id="newExtensionsButtonLabel">
+        <source xml:lang="en">Show matching extensions</source>
+        <target state="translated">Mostrar extensões correspondentes</target>
+      </trans-unit>
+      <trans-unit id="editInSettingsJson">
+        <source xml:lang="en">Edit in settings.json</source>
+        <target state="translated">Editar no settings.json</target>
+      </trans-unit>
+      <trans-unit id="settings.Default">
+        <source xml:lang="en">{0}</source>
+        <target state="translated">{0}</target>
+      </trans-unit>
+      <trans-unit id="resetSettingLabel">
+        <source xml:lang="en">Reset Setting</source>
+        <target state="translated">Redefinir configuração</target>
+      </trans-unit>
+      <trans-unit id="validationError">
+        <source xml:lang="en">Validation Error.</source>
+        <target state="translated">Erro de validação.</target>
+      </trans-unit>
+      <trans-unit id="treeAriaLabel">
+        <source xml:lang="en">Settings</source>
+        <target state="translated">Configurações</target>
+      </trans-unit>
+      <trans-unit id="copySettingIdLabel">
+        <source xml:lang="en">Copy Setting ID</source>
+        <target state="translated">Copiar ID da configuração</target>
+      </trans-unit>
+      <trans-unit id="copySettingAsJSONLabel">
+        <source xml:lang="en">Copy Setting as JSON</source>
+        <target state="translated">Copiar configuração como JSON</target>
+      </trans-unit>
+      <trans-unit id="stopSyncingSetting">
+        <source xml:lang="en">Sync This Setting</source>
+        <target state="new">Sync This Setting</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

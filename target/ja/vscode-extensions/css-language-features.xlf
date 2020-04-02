@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="extensions/css-language-features/package" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="displayName">
+        <source xml:lang="en">CSS Language Features</source>
+        <target state="translated">CSS 言語機能</target>
+      </trans-unit>
+      <trans-unit id="description">
+        <source xml:lang="en">Provides rich language support for CSS, LESS and SCSS files.</source>
+        <target state="translated">CSS、LESS、SCSS ファイルに豊富な言語サポートを提供。</target>
+      </trans-unit>
+      <trans-unit id="css.title">
+        <source xml:lang="en">CSS</source>
+        <target state="translated">CSS</target>
+      </trans-unit>
+      <trans-unit id="css.customData.desc">
+        <source xml:lang="en">A list of relative file paths pointing to JSON files following the [custom data format](https://github.com/Microsoft/vscode-css-languageservice/blob/master/docs/customData.md).
+
+VS Code loads custom data on startup to enhance its CSS support for the custom CSS properties, at directives, pseudo classes and pseudo elements you specify in the JSON files.
+
+The file paths are relative to workspace and only workspace folder settings are considered.</source>
+        <target state="translated">[カスタムデータ形式](https://github.com/Microsoft/vscode-css-languageservice/blob/master/docs/customData.md)に続く JSON ファイルを指す相対ファイル パスのリスト。
+
+VS Code は、JSON ファイルで指定したディレクティブ、擬似クラス、および擬似要素で、カスタム CSS プロパティの CSS サポートを強化するために、スタートアップ時にカスタム データを読み込みます。
+
+ファイル パスはワークスペースに対して相対的であり、ワークスペース フォルダーの設定のみが考慮されます。</target>
+      </trans-unit>
+      <trans-unit id="css.completion.triggerPropertyValueCompletion.desc">
+        <source xml:lang="en">By default, VS Code triggers property value completion after selecting a CSS property. Use this setting to disable this behavior.</source>
+        <target state="translated">既定では、VS Codeは CSS プロパティが選択されるとプロパティ値の補完をトリガーします。この設定を使うことで、この動作は無効にできます。</target>
+      </trans-unit>
+      <trans-unit id="css.completion.completePropertyWithSemicolon.desc">
+        <source xml:lang="en">Insert semicolon at end of line when completing CSS properties</source>
+        <target state="translated">CSS プロパティの完了時に行末にセミコロンを挿入する</target>
+      </trans-unit>
+      <trans-unit id="css.lint.argumentsInColorFunction.desc">
+        <source xml:lang="en">Invalid number of parameters.</source>
+        <target state="translated">無効なパラメーター数値です。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.boxModel.desc">
+        <source xml:lang="en">Do not use `width` or `height` when using `padding` or `border`.</source>
+        <target state="translated">`padding` や `border` を使用するときに `width` や `height` を使用しないでください</target>
+      </trans-unit>
+      <trans-unit id="css.lint.compatibleVendorPrefixes.desc">
+        <source xml:lang="en">When using a vendor-specific prefix make sure to also include all other vendor-specific properties.</source>
+        <target state="translated">ベンダー プレフィックス を使用するときは、他すべてのベンダー プレフィックスも必ず含めてください。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.duplicateProperties.desc">
+        <source xml:lang="en">Do not use duplicate style definitions.</source>
+        <target state="translated">重複するスタイル定義を使用しないでください。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.emptyRules.desc">
+        <source xml:lang="en">Do not use empty rulesets.</source>
+        <target state="translated">空の規則セットを使用しないでください。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.float.desc">
+        <source xml:lang="en">Avoid using `float`. Floats lead to fragile CSS that is easy to break if one aspect of the layout changes.</source>
+        <target state="translated">`float` の使用を避けてください。float は脆弱な CSS につながり、レイアウトの一部が変更されたときに CSS が破損しやすくなります。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.fontFaceProperties.desc">
+        <source xml:lang="en">`@font-face` rule must define `src` and `font-family` properties.</source>
+        <target state="translated">`@font-face` 規則で `src` プロパティと `font-family` プロパティを定義する必要があります。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.hexColorLength.desc">
+        <source xml:lang="en">Hex colors must consist of three or six hex numbers.</source>
+        <target state="translated">Hex には 3 つまたは 6 つの 16 進数が含まれる必要があります。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.idSelector.desc">
+        <source xml:lang="en">Selectors should not contain IDs because these rules are too tightly coupled with the HTML.</source>
+        <target state="translated">セレクターには ID を含めないでください。これらの規則と HTML の結合が密接すぎます。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.ieHack.desc">
+        <source xml:lang="en">IE hacks are only necessary when supporting IE7 and older.</source>
+        <target state="translated">IE ハックは、IE7 以前をサポートする場合にのみ必要です。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.important.desc">
+        <source xml:lang="en">Avoid using `!important`. It is an indication that the specificity of the entire CSS has gotten out of control and needs to be refactored.</source>
+        <target state="translated">`!important` の使用を避けてください。これは CSS 全体の特定性が制御不能になり、リファクタリングが必要になります。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.importStatement.desc">
+        <source xml:lang="en">Import statements do not load in parallel.</source>
+        <target state="translated">複数の Import ステートメントを同時に読み込むことはできません。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.propertyIgnoredDueToDisplay.desc">
+        <source xml:lang="en">Property is ignored due to the display. E.g. with `display: inline`, the `width`, `height`, `margin-top`, `margin-bottom`, and `float` properties have no effect.</source>
+        <target state="translated">display によってプロパティを無視します。例: `display: inline` の場合、`width`、`height`、`margin-top`、`margin-bottom`、`float` プロパティには効果がありません。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.universalSelector.desc">
+        <source xml:lang="en">The universal selector (`*`) is known to be slow.</source>
+        <target state="translated">ユニバーサル セレクター (`*`) を使用すると処理速度が低下することが知られています。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.unknownAtRules.desc">
+        <source xml:lang="en">Unknown at-rule.</source>
+        <target state="translated">不明な @ 規則。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.unknownProperties.desc">
+        <source xml:lang="en">Unknown property.</source>
+        <target state="translated">不明なプロパティ。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.validProperties.desc">
+        <source xml:lang="en">A list of properties that are not validated against the `unknownProperties` rule.</source>
+        <target state="translated">`UnknownProperties` ルールに対して検証されていないプロパティの一覧です。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.unknownVendorSpecificProperties.desc">
+        <source xml:lang="en">Unknown vendor specific property.</source>
+        <target state="translated">不明なベンダー固有のプロパティ。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.vendorPrefix.desc">
+        <source xml:lang="en">When using a vendor-specific prefix, also include the standard property.</source>
+        <target state="translated">ベンダー プレフィックスを使用するとき、標準のプロパティーも含めます。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.zeroUnits.desc">
+        <source xml:lang="en">No unit for zero needed.</source>
+        <target state="translated">0 に単位は必要ありません。</target>
+      </trans-unit>
+      <trans-unit id="css.trace.server.desc">
+        <source xml:lang="en">Traces the communication between VS Code and the CSS language server.</source>
+        <target state="translated">VS Code と CSS 言語サーバー間の通信をトレースします。</target>
+      </trans-unit>
+      <trans-unit id="css.validate.title">
+        <source xml:lang="en">Controls CSS validation and problem severities.</source>
+        <target state="translated">CSS の検証と問題の重大度を制御します。</target>
+      </trans-unit>
+      <trans-unit id="css.validate.desc">
+        <source xml:lang="en">Enables or disables all validations.</source>
+        <target state="translated">すべての検証を有効または無効にします。</target>
+      </trans-unit>
+      <trans-unit id="less.title">
+        <source xml:lang="en">LESS</source>
+        <target state="translated">LESS</target>
+      </trans-unit>
+      <trans-unit id="less.completion.triggerPropertyValueCompletion.desc">
+        <source xml:lang="en">By default, VS Code triggers property value completion after selecting a CSS property. Use this setting to disable this behavior.</source>
+        <target state="translated">既定では、VS Codeは CSS プロパティが選択されるとプロパティ値の補完をトリガーします。この設定を使うことで、この動作は無効にできます。</target>
+      </trans-unit>
+      <trans-unit id="less.completion.completePropertyWithSemicolon.desc">
+        <source xml:lang="en">Insert semicolon at end of line when completing CSS properties</source>
+        <target state="translated">CSS プロパティの完了時に行末にセミコロンを挿入する</target>
+      </trans-unit>
+      <trans-unit id="less.lint.argumentsInColorFunction.desc">
+        <source xml:lang="en">Invalid number of parameters.</source>
+        <target state="translated">無効なパラメーター数値です。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.boxModel.desc">
+        <source xml:lang="en">Do not use `width` or `height` when using `padding` or `border`.</source>
+        <target state="translated">`padding` や `border` を使用するときに `width` や `height` を使用しないでください</target>
+      </trans-unit>
+      <trans-unit id="less.lint.compatibleVendorPrefixes.desc">
+        <source xml:lang="en">When using a vendor-specific prefix make sure to also include all other vendor-specific properties.</source>
+        <target state="translated">ベンダー プレフィックス を使用するときは、他すべてのベンダー プレフィックスも必ず含めてください。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.duplicateProperties.desc">
+        <source xml:lang="en">Do not use duplicate style definitions.</source>
+        <target state="translated">重複するスタイル定義を使用しないでください。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.emptyRules.desc">
+        <source xml:lang="en">Do not use empty rulesets.</source>
+        <target state="translated">空の規則セットを使用しないでください。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.float.desc">
+        <source xml:lang="en">Avoid using `float`. Floats lead to fragile CSS that is easy to break if one aspect of the layout changes.</source>
+        <target state="translated">`float` の使用を避けてください。float は脆弱な CSS につながり、レイアウトの一部が変更されたときに CSS が破損しやすくなります。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.fontFaceProperties.desc">
+        <source xml:lang="en">`@font-face` rule must define `src` and `font-family` properties.</source>
+        <target state="translated">`@font-face` 規則で `src` プロパティと `font-family` プロパティを定義する必要があります。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.hexColorLength.desc">
+        <source xml:lang="en">Hex colors must consist of three or six hex numbers.</source>
+        <target state="translated">Hex には 3 つまたは 6 つの 16 進数が含まれる必要があります。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.idSelector.desc">
+        <source xml:lang="en">Selectors should not contain IDs because these rules are too tightly coupled with the HTML.</source>
+        <target state="translated">セレクターには ID を含めないでください。これらの規則と HTML の結合が密接すぎます。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.ieHack.desc">
+        <source xml:lang="en">IE hacks are only necessary when supporting IE7 and older.</source>
+        <target state="translated">IE ハックは、IE7 以前をサポートする場合にのみ必要です。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.important.desc">
+        <source xml:lang="en">Avoid using `!important`. It is an indication that the specificity of the entire CSS has gotten out of control and needs to be refactored.</source>
+        <target state="translated">`!important` の使用を避けてください。これは CSS 全体の特定性が制御不能になり、リファクタリングが必要になります。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.importStatement.desc">
+        <source xml:lang="en">Import statements do not load in parallel.</source>
+        <target state="translated">複数の Import ステートメントを同時に読み込むことはできません。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.propertyIgnoredDueToDisplay.desc">
+        <source xml:lang="en">Property is ignored due to the display. E.g. with `display: inline`, the `width`, `height`, `margin-top`, `margin-bottom`, and `float` properties have no effect.</source>
+        <target state="translated">display によってプロパティを無視します。例: `display: inline` の場合、`width`、`height`、`margin-top`、`margin-bottom`、`float` プロパティには効果がありません。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.universalSelector.desc">
+        <source xml:lang="en">The universal selector (`*`) is known to be slow.</source>
+        <target state="translated">ユニバーサル セレクター (`*`) を使用すると処理速度が低下することが知られています。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.unknownAtRules.desc">
+        <source xml:lang="en">Unknown at-rule.</source>
+        <target state="translated">不明な @ 規則。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.unknownProperties.desc">
+        <source xml:lang="en">Unknown property.</source>
+        <target state="translated">不明なプロパティ。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.validProperties.desc">
+        <source xml:lang="en">A list of properties that are not validated against the `unknownProperties` rule.</source>
+        <target state="translated">`UnknownProperties` ルールに対して検証されていないプロパティの一覧です。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.unknownVendorSpecificProperties.desc">
+        <source xml:lang="en">Unknown vendor specific property.</source>
+        <target state="translated">不明なベンダー固有のプロパティ。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.vendorPrefix.desc">
+        <source xml:lang="en">When using a vendor-specific prefix, also include the standard property.</source>
+        <target state="translated">ベンダー プレフィックスを使用するとき、標準のプロパティーも含めます。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.zeroUnits.desc">
+        <source xml:lang="en">No unit for zero needed.</source>
+        <target state="translated">0 に単位は必要ありません。</target>
+      </trans-unit>
+      <trans-unit id="less.validate.title">
+        <source xml:lang="en">Controls LESS validation and problem severities.</source>
+        <target state="translated">LESS の検証と問題の重大度を制御します。</target>
+      </trans-unit>
+      <trans-unit id="less.validate.desc">
+        <source xml:lang="en">Enables or disables all validations.</source>
+        <target state="translated">すべての検証を有効または無効にします。</target>
+      </trans-unit>
+      <trans-unit id="scss.title">
+        <source xml:lang="en">SCSS (Sass)</source>
+        <target state="translated">SCSS (Sass)</target>
+      </trans-unit>
+      <trans-unit id="scss.completion.triggerPropertyValueCompletion.desc">
+        <source xml:lang="en">By default, VS Code triggers property value completion after selecting a CSS property. Use this setting to disable this behavior.</source>
+        <target state="translated">既定では、VS Codeは CSS プロパティが選択されるとプロパティ値の補完をトリガーします。この設定を使うことで、この動作は無効にできます。</target>
+      </trans-unit>
+      <trans-unit id="scss.completion.completePropertyWithSemicolon.desc">
+        <source xml:lang="en">Insert semicolon at end of line when completing CSS properties</source>
+        <target state="translated">CSS プロパティの完了時に行末にセミコロンを挿入する</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.argumentsInColorFunction.desc">
+        <source xml:lang="en">Invalid number of parameters.</source>
+        <target state="translated">無効なパラメーター数値です。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.boxModel.desc">
+        <source xml:lang="en">Do not use `width` or `height` when using `padding` or `border`.</source>
+        <target state="translated">`padding` や `border` を使用するときに `width` や `height` を使用しないでください</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.compatibleVendorPrefixes.desc">
+        <source xml:lang="en">When using a vendor-specific prefix make sure to also include all other vendor-specific properties.</source>
+        <target state="translated">ベンダー プレフィックス を使用するときは、他すべてのベンダー プレフィックスも必ず含めてください。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.duplicateProperties.desc">
+        <source xml:lang="en">Do not use duplicate style definitions.</source>
+        <target state="translated">重複するスタイル定義を使用しないでください。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.emptyRules.desc">
+        <source xml:lang="en">Do not use empty rulesets.</source>
+        <target state="translated">空の規則セットを使用しないでください。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.float.desc">
+        <source xml:lang="en">Avoid using `float`. Floats lead to fragile CSS that is easy to break if one aspect of the layout changes.</source>
+        <target state="translated">`float` の使用を避けてください。float は脆弱な CSS につながり、レイアウトの一部が変更されたときに CSS が破損しやすくなります。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.fontFaceProperties.desc">
+        <source xml:lang="en">`@font-face` rule must define `src` and `font-family` properties.</source>
+        <target state="translated">`@font-face` 規則で `src` プロパティと `font-family` プロパティを定義する必要があります。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.hexColorLength.desc">
+        <source xml:lang="en">Hex colors must consist of three or six hex numbers.</source>
+        <target state="translated">Hex には 3 つまたは 6 つの 16 進数が含まれる必要があります。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.idSelector.desc">
+        <source xml:lang="en">Selectors should not contain IDs because these rules are too tightly coupled with the HTML.</source>
+        <target state="translated">セレクターには ID を含めないでください。これらの規則と HTML の結合が密接すぎます。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.ieHack.desc">
+        <source xml:lang="en">IE hacks are only necessary when supporting IE7 and older.</source>
+        <target state="translated">IE ハックは、IE7 以前をサポートする場合にのみ必要です。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.important.desc">
+        <source xml:lang="en">Avoid using `!important`. It is an indication that the specificity of the entire CSS has gotten out of control and needs to be refactored.</source>
+        <target state="translated">`!important` の使用を避けてください。これは CSS 全体の特定性が制御不能になり、リファクタリングが必要になります。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.importStatement.desc">
+        <source xml:lang="en">Import statements do not load in parallel.</source>
+        <target state="translated">複数の Import ステートメントを同時に読み込むことはできません。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.propertyIgnoredDueToDisplay.desc">
+        <source xml:lang="en">Property is ignored due to the display. E.g. with `display: inline`, the `width`, `height`, `margin-top`, `margin-bottom`, and `float` properties have no effect.</source>
+        <target state="translated">display によってプロパティを無視します。例: `display: inline` の場合、`width`、`height`、`margin-top`、`margin-bottom`、`float` プロパティには効果がありません。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.universalSelector.desc">
+        <source xml:lang="en">The universal selector (`*`) is known to be slow.</source>
+        <target state="translated">ユニバーサル セレクター (`*`) を使用すると処理速度が低下することが知られています。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.unknownAtRules.desc">
+        <source xml:lang="en">Unknown at-rule.</source>
+        <target state="translated">不明な @ 規則。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.unknownProperties.desc">
+        <source xml:lang="en">Unknown property.</source>
+        <target state="translated">不明なプロパティ。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.validProperties.desc">
+        <source xml:lang="en">A list of properties that are not validated against the `unknownProperties` rule.</source>
+        <target state="translated">`UnknownProperties` ルールに対して検証されていないプロパティの一覧です。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.unknownVendorSpecificProperties.desc">
+        <source xml:lang="en">Unknown vendor specific property.</source>
+        <target state="translated">不明なベンダー固有のプロパティ。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.vendorPrefix.desc">
+        <source xml:lang="en">When using a vendor-specific prefix, also include the standard property.</source>
+        <target state="translated">ベンダー プレフィックスを使用するとき、標準のプロパティーも含めます。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.zeroUnits.desc">
+        <source xml:lang="en">No unit for zero needed.</source>
+        <target state="translated">0 に単位は必要ありません。</target>
+      </trans-unit>
+      <trans-unit id="scss.validate.title">
+        <source xml:lang="en">Controls SCSS validation and problem severities.</source>
+        <target state="translated">SCSS の検証と問題の重大度を制御します。</target>
+      </trans-unit>
+      <trans-unit id="scss.validate.desc">
+        <source xml:lang="en">Enables or disables all validations.</source>
+        <target state="translated">すべての検証を有効または無効にします。</target>
+      </trans-unit>
+      <trans-unit id="css.colorDecorators.enable.deprecationMessage">
+        <source xml:lang="en">The setting `css.colorDecorators.enable` has been deprecated in favor of `editor.colorDecorators`.</source>
+        <target state="translated">設定 `css.colorDecorators.enable` は使用されなくなりました。`editor.colorDecorators` を使用してください。</target>
+      </trans-unit>
+      <trans-unit id="scss.colorDecorators.enable.deprecationMessage">
+        <source xml:lang="en">The setting `scss.colorDecorators.enable` has been deprecated in favor of `editor.colorDecorators`.</source>
+        <target state="translated">設定 `scss.colorDecorators.enable` は使用されなくなりました。`editor.colorDecorators` を使用してください。</target>
+      </trans-unit>
+      <trans-unit id="less.colorDecorators.enable.deprecationMessage">
+        <source xml:lang="en">The setting `less.colorDecorators.enable` has been deprecated in favor of `editor.colorDecorators`.</source>
+        <target state="translated">設定 `less.colorDecorators.enable` は使用されなくなりました。`editor.colorDecorators` を使用してください。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/css-language-features/client\dist/cssMain" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="cssserver.name">
+        <source xml:lang="en">CSS Language Server</source>
+        <target state="translated">CSS 言語サーバー</target>
+      </trans-unit>
+      <trans-unit id="folding.start">
+        <source xml:lang="en">Folding Region Start</source>
+        <target state="translated">折りたたみ領域の開始</target>
+      </trans-unit>
+      <trans-unit id="folding.end">
+        <source xml:lang="en">Folding Region End</source>
+        <target state="translated">折りたたみ領域の終了</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

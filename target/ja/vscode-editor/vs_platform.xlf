@@ -1,0 +1,1830 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/platform/environment/node/argvHelper" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="unknownOption">
+        <source xml:lang="en">Warning: '{0}' is not in the list of known options, but still passed to Electron/Chromium.</source>
+        <target state="translated">警告: '{0}' は既知のオプションのリストにはありませんが、引き続き Electron または Chromium に渡されます。</target>
+      </trans-unit>
+      <trans-unit id="multipleValues">
+        <source xml:lang="en">Option '{0}' is defined more than once. Using value '{1}.'</source>
+        <target state="translated">オプション '{0}' は複数回定義されています。値 '{1}' を使用します。</target>
+      </trans-unit>
+      <trans-unit id="gotoValidation">
+        <source xml:lang="en">Arguments in `--goto` mode should be in the format of `FILE(:LINE(:CHARACTER))`.</source>
+        <target state="translated">`--goto` モードの引数は `FILE(:LINE(:CHARACTER))` の形式にする必要があります。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="extensions">
+        <source xml:lang="en">Extensions</source>
+        <target state="translated">拡張機能</target>
+      </trans-unit>
+      <trans-unit id="preferences">
+        <source xml:lang="en">Preferences</source>
+        <target state="translated">基本設定</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/extensionManagement/node/extensionManagementUtil" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="invalidManifest">
+        <source xml:lang="en">VSIX invalid: package.json is not a JSON file.</source>
+        <target state="translated">正しくない VSIX: package.json は JSON ファイルではありません。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="telemetryConfigurationTitle">
+        <source xml:lang="en">Telemetry</source>
+        <target state="translated">テレメトリ</target>
+      </trans-unit>
+      <trans-unit id="telemetry.enableTelemetry">
+        <source xml:lang="en">Enable usage data and errors to be sent to a Microsoft online service.</source>
+        <target state="translated">利用状況データとエラーを Microsoft のオンライン サービスに送信できるようにします。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/request/common/request" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="httpConfigurationTitle">
+        <source xml:lang="en">HTTP</source>
+        <target state="translated">HTTP</target>
+      </trans-unit>
+      <trans-unit id="proxy">
+        <source xml:lang="en">The proxy setting to use. If not set, will be inherited from the `http_proxy` and `https_proxy` environment variables.</source>
+        <target state="translated">使用するプロキシ設定。設定されていない場合は、'http_proxy' および 'https_proxy' の環境変数から継承されます。</target>
+      </trans-unit>
+      <trans-unit id="strictSSL">
+        <source xml:lang="en">Controls whether the proxy server certificate should be verified against the list of supplied CAs.</source>
+        <target state="translated">提供された CA の一覧と照らしてプロキシ サーバーの証明書を確認するかどうか制御します。</target>
+      </trans-unit>
+      <trans-unit id="proxyAuthorization">
+        <source xml:lang="en">The value to send as the `Proxy-Authorization` header for every network request.</source>
+        <target state="translated">すべてのネットワーク要求に対して 'Proxy-Authorization' ヘッダーとして送信する値。</target>
+      </trans-unit>
+      <trans-unit id="proxySupportOff">
+        <source xml:lang="en">Disable proxy support for extensions.</source>
+        <target state="translated">拡張機能のプロキシ サポートを無効にします。</target>
+      </trans-unit>
+      <trans-unit id="proxySupportOn">
+        <source xml:lang="en">Enable proxy support for extensions.</source>
+        <target state="translated">拡張機能のプロキシ サポートを有効にします。</target>
+      </trans-unit>
+      <trans-unit id="proxySupportOverride">
+        <source xml:lang="en">Enable proxy support for extensions, override request options.</source>
+        <target state="translated">拡張機能のプロキシ サポートを有効にします。リクエスト オプションを上書きします。</target>
+      </trans-unit>
+      <trans-unit id="proxySupport">
+        <source xml:lang="en">Use the proxy support for extensions.</source>
+        <target state="translated">拡張機能プロキシ サポートを使用します。</target>
+      </trans-unit>
+      <trans-unit id="systemCertificates">
+        <source xml:lang="en">Controls whether CA certificates should be loaded from the OS. (On Windows and macOS a reload of the window is required after turning this off.)</source>
+        <target state="translated">CA 証明書を OS から読み込む必要があるかどうかを制御します (Windows および macOS でオフにするには、ウィンドウを再度読み込まなければなりません)。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/update/common/update.config.contribution" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="updateConfigurationTitle">
+        <source xml:lang="en">Update</source>
+        <target state="translated">更新</target>
+      </trans-unit>
+      <trans-unit id="updateMode">
+        <source xml:lang="en">Configure whether you receive automatic updates. Requires a restart after change. The updates are fetched from a Microsoft online service.</source>
+        <target state="translated">自動更新を受け取るかどうかを構成します。変更後に再起動が必要です。更新プログラムは Microsoft のオンライン サービスから取得されます。</target>
+      </trans-unit>
+      <trans-unit id="none">
+        <source xml:lang="en">Disable updates.</source>
+        <target state="translated">更新を無効にします。</target>
+      </trans-unit>
+      <trans-unit id="manual">
+        <source xml:lang="en">Disable automatic background update checks. Updates will be available if you manually check for updates.</source>
+        <target state="translated">バックグラウンドでの自動更新の確認を無効にします。更新を手動で確認すると、更新を利用できます。</target>
+      </trans-unit>
+      <trans-unit id="start">
+        <source xml:lang="en">Check for updates only on startup. Disable automatic background update checks.</source>
+        <target state="translated">起動時にのみ更新プログラムを確認します。バックグラウンドの自動更新チェックを無効にします。</target>
+      </trans-unit>
+      <trans-unit id="default">
+        <source xml:lang="en">Enable automatic update checks. Code will check for updates automatically and periodically.</source>
+        <target state="translated">自動更新の確認を有効にします。Code は自動的かつ定期的に更新を確認します。</target>
+      </trans-unit>
+      <trans-unit id="deprecated">
+        <source xml:lang="en">This setting is deprecated, please use '{0}' instead.</source>
+        <target state="translated">この設定は推奨されていません。代わりに '{0}' を使用してください。</target>
+      </trans-unit>
+      <trans-unit id="enableWindowsBackgroundUpdatesTitle">
+        <source xml:lang="en">Enable Background Updates on Windows</source>
+        <target state="translated">Windows でバックグラウンド更新を有効にする</target>
+      </trans-unit>
+      <trans-unit id="enableWindowsBackgroundUpdates">
+        <source xml:lang="en">Enable to download and install new VS Code Versions in the background on Windows</source>
+        <target state="translated">Windows で新しい VS Code バージョンをバックグラウンドでダウンロードしてインストールできるようにします</target>
+      </trans-unit>
+      <trans-unit id="showReleaseNotes">
+        <source xml:lang="en">Show Release Notes after an update. The Release Notes are fetched from a Microsoft online service.</source>
+        <target state="translated">更新後にリリース ノートを表示します。リリース ノートは Micorosft のオンライン サービスから取得されます。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="binFailed">
+        <source xml:lang="en">Failed to move '{0}' to the recycle bin</source>
+        <target state="translated">'{0}' をごみ箱に移動できませんでした</target>
+      </trans-unit>
+      <trans-unit id="trashFailed">
+        <source xml:lang="en">Failed to move '{0}' to the trash</source>
+        <target state="translated">'{0}' をごみ箱に移動できませんでした</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/environment/node/argv" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="optionsUpperCase">
+        <source xml:lang="en">Options</source>
+        <target state="translated">オプション</target>
+      </trans-unit>
+      <trans-unit id="extensionsManagement">
+        <source xml:lang="en">Extensions Management</source>
+        <target state="translated">拡張機能の管理</target>
+      </trans-unit>
+      <trans-unit id="troubleshooting">
+        <source xml:lang="en">Troubleshooting</source>
+        <target state="translated">トラブルシューティング</target>
+      </trans-unit>
+      <trans-unit id="diff">
+        <source xml:lang="en">Compare two files with each other.</source>
+        <target state="translated">2 つのファイルを比較します。</target>
+      </trans-unit>
+      <trans-unit id="add">
+        <source xml:lang="en">Add folder(s) to the last active window.</source>
+        <target state="translated">最後にアクティブだったウィンドウにフォルダーを追加します。</target>
+      </trans-unit>
+      <trans-unit id="goto">
+        <source xml:lang="en">Open a file at the path on the specified line and character position.</source>
+        <target state="translated">指定した行と文字の位置にあるパスでファイルを開きます。</target>
+      </trans-unit>
+      <trans-unit id="newWindow">
+        <source xml:lang="en">Force to open a new window.</source>
+        <target state="translated">強制的に新しいウィンドウを開きます。</target>
+      </trans-unit>
+      <trans-unit id="reuseWindow">
+        <source xml:lang="en">Force to open a file or folder in an already opened window.</source>
+        <target state="translated">強制的に既に開いているウィンドウ内でファイルかフォルダーを開きます。</target>
+      </trans-unit>
+      <trans-unit id="wait">
+        <source xml:lang="en">Wait for the files to be closed before returning.</source>
+        <target state="translated">現在のファイルが閉じられるまで待機します。</target>
+      </trans-unit>
+      <trans-unit id="locale">
+        <source xml:lang="en">The locale to use (e.g. en-US or zh-TW).</source>
+        <target state="translated">使用する国と地域 (例:en-US や zh-TW など)。</target>
+      </trans-unit>
+      <trans-unit id="userDataDir">
+        <source xml:lang="en">Specifies the directory that user data is kept in. Can be used to open multiple distinct instances of Code.</source>
+        <target state="translated">ユーザー データが保持されるディレクトリを指定します。複数の異なる Code のインスタンスを開くために使用できます。</target>
+      </trans-unit>
+      <trans-unit id="version">
+        <source xml:lang="en">Print version.</source>
+        <target state="translated">バージョンを表示します。</target>
+      </trans-unit>
+      <trans-unit id="help">
+        <source xml:lang="en">Print usage.</source>
+        <target state="translated">使用法を印刷します。</target>
+      </trans-unit>
+      <trans-unit id="telemetry">
+        <source xml:lang="en">Shows all telemetry events which VS code collects.</source>
+        <target state="translated">VS Code が収集するすべてのテレメトリ イベントを表示します。</target>
+      </trans-unit>
+      <trans-unit id="folderUri">
+        <source xml:lang="en">Opens a window with given folder uri(s)</source>
+        <target state="translated">指定したフォルダーの uri でウィンドウを開く</target>
+      </trans-unit>
+      <trans-unit id="fileUri">
+        <source xml:lang="en">Opens a window with given file uri(s)</source>
+        <target state="translated">指定されたファイル URI でウィンドウを開きます</target>
+      </trans-unit>
+      <trans-unit id="extensionHomePath">
+        <source xml:lang="en">Set the root path for extensions.</source>
+        <target state="translated">拡張機能のルート パスを設定します。</target>
+      </trans-unit>
+      <trans-unit id="listExtensions">
+        <source xml:lang="en">List the installed extensions.</source>
+        <target state="translated">インストールされている拡張機能を一覧表示します。</target>
+      </trans-unit>
+      <trans-unit id="showVersions">
+        <source xml:lang="en">Show versions of installed extensions, when using --list-extension.</source>
+        <target state="translated">--list-extension と使用するとき、インストールされている拡張機能のバージョンを表示します。</target>
+      </trans-unit>
+      <trans-unit id="category">
+        <source xml:lang="en">Filters installed extensions by provided category, when using --list-extension.</source>
+        <target state="translated">--list-extension を使用する場合、指定されたカテゴリ別にインストール済み拡張機能をフィルター処理します。</target>
+      </trans-unit>
+      <trans-unit id="installExtension">
+        <source xml:lang="en">Installs or updates the extension. Use `--force` argument to avoid prompts.</source>
+        <target state="translated">拡張機能をインストールまたは更新します。確認工程を避けるには `--force` 引数を使用してください。</target>
+      </trans-unit>
+      <trans-unit id="uninstallExtension">
+        <source xml:lang="en">Uninstalls an extension.</source>
+        <target state="translated">拡張機能をアンインストールします。</target>
+      </trans-unit>
+      <trans-unit id="experimentalApis">
+        <source xml:lang="en">Enables proposed API features for extensions. Can receive one or more extension IDs to enable individually.</source>
+        <target state="translated">拡張機能の Proposed API 機能を有効にします。個々に有効にする 1 つ以上の拡張機能 ID を指定できます。</target>
+      </trans-unit>
+      <trans-unit id="verbose">
+        <source xml:lang="en">Print verbose output (implies --wait).</source>
+        <target state="translated">詳細出力を表示します (--wait を含みます)。</target>
+      </trans-unit>
+      <trans-unit id="log">
+        <source xml:lang="en">Log level to use. Default is 'info'. Allowed values are 'critical', 'error', 'warn', 'info', 'debug', 'trace', 'off'.</source>
+        <target state="translated">使用するログレベル。既定値は 'info' です。利用可能な値は 'critical', 'error', 'warn', 'info', 'debug', 'trace', 'off' です。</target>
+      </trans-unit>
+      <trans-unit id="status">
+        <source xml:lang="en">Print process usage and diagnostics information.</source>
+        <target state="translated">プロセスの使用状況や診断情報を印刷します。</target>
+      </trans-unit>
+      <trans-unit id="prof-startup">
+        <source xml:lang="en">Run CPU profiler during startup</source>
+        <target state="translated">起動中に CPU プロファイラーを実行する</target>
+      </trans-unit>
+      <trans-unit id="disableExtensions">
+        <source xml:lang="en">Disable all installed extensions.</source>
+        <target state="translated">インストールされたすべての拡張機能を無効にします。</target>
+      </trans-unit>
+      <trans-unit id="disableExtension">
+        <source xml:lang="en">Disable an extension.</source>
+        <target state="translated">拡張機能を無効にします。</target>
+      </trans-unit>
+      <trans-unit id="inspect-extensions">
+        <source xml:lang="en">Allow debugging and profiling of extensions. Check the developer tools for the connection URI.</source>
+        <target state="translated">拡張機能のデバッグとプロファイリングを許可します。connection URI を開発者ツールで確認します。</target>
+      </trans-unit>
+      <trans-unit id="inspect-brk-extensions">
+        <source xml:lang="en">Allow debugging and profiling of extensions with the extension host being paused after start. Check the developer tools for the connection URI.</source>
+        <target state="translated">起動後に一時停止されている拡張ホストとの拡張機能のデバッグとプロファイリングを許可します。connection URI を開発者ツールで確認ます。</target>
+      </trans-unit>
+      <trans-unit id="disableGPU">
+        <source xml:lang="en">Disable GPU hardware acceleration.</source>
+        <target state="translated">GPU ハードウェア アクセラレータを無効にします。</target>
+      </trans-unit>
+      <trans-unit id="maxMemory">
+        <source xml:lang="en">Max memory size for a window (in Mbytes).</source>
+        <target state="translated">ウィンドウの最大メモリ サイズ (バイト単位)。</target>
+      </trans-unit>
+      <trans-unit id="usage">
+        <source xml:lang="en">Usage</source>
+        <target state="translated">使用法</target>
+      </trans-unit>
+      <trans-unit id="options">
+        <source xml:lang="en">options</source>
+        <target state="translated">オプション</target>
+      </trans-unit>
+      <trans-unit id="paths">
+        <source xml:lang="en">paths</source>
+        <target state="translated">パス</target>
+      </trans-unit>
+      <trans-unit id="stdinWindows">
+        <source xml:lang="en">To read output from another program, append '-' (e.g. 'echo Hello World | {0} -')</source>
+        <target state="translated">別のプログラムから出力を読み取るには、'-' を付け足してください (例: 'echo Hello World | {0} -')</target>
+      </trans-unit>
+      <trans-unit id="stdinUnix">
+        <source xml:lang="en">To read from stdin, append '-' (e.g. 'ps aux | grep code | {0} -')</source>
+        <target state="translated">stdin から読み取るには、'-' を付け足してください (例: 'ps aux | grep code | {0} -')</target>
+      </trans-unit>
+      <trans-unit id="unknownVersion">
+        <source xml:lang="en">Unknown version</source>
+        <target state="translated">不明なバージョン</target>
+      </trans-unit>
+      <trans-unit id="unknownCommit">
+        <source xml:lang="en">Unknown commit</source>
+        <target state="translated">不明なコミット</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/label/common/label" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="untitledWorkspace">
+        <source xml:lang="en">Untitled (Workspace)</source>
+        <target state="translated">未設定 (ワークスペース)</target>
+      </trans-unit>
+      <trans-unit id="workspaceName">
+        <source xml:lang="en">{0} (Workspace)</source>
+        <target state="translated">{0} (ワークスペース)</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/userDataSync" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="sync">
+        <source xml:lang="en">Sync</source>
+        <target state="translated">同期</target>
+      </trans-unit>
+      <trans-unit id="sync.keybindingsPerPlatform">
+        <source xml:lang="en">Synchronize keybindings per platform.</source>
+        <target state="translated">プラットフォームごとにキー バインドを同期します。</target>
+      </trans-unit>
+      <trans-unit id="sync.ignoredExtensions">
+        <source xml:lang="en">List of extensions to be ignored while synchronizing. The identifier of an extension is always ${publisher}.${name}. For example: vscode.csharp.</source>
+        <target state="translated">同期中に無視される拡張機能の一覧です。拡張機能の識別子は常に ${publisher}.${name} です。たとえば、vscode.csharp です。</target>
+      </trans-unit>
+      <trans-unit id="sync.ignoredSettings">
+        <source xml:lang="en">Configure settings to be ignored while synchronizing.</source>
+        <target state="translated">同期中に無視される設定を構成します。</target>
+      </trans-unit>
+      <trans-unit id="app.extension.identifier.errorMessage">
+        <source xml:lang="en">Expected format '${publisher}.${name}'. Example: 'vscode.csharp'.</source>
+        <target state="translated">予期される形式 '${publisher}.${name}'。例: 'vscode.csharp'。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/common/files" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="unknownError">
+        <source xml:lang="en">Unknown Error</source>
+        <target state="translated">不明なエラー</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/userDataSyncService" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="turned off">
+        <source xml:lang="en">Cannot sync because syncing is turned off in the cloud</source>
+        <target state="translated">クラウドで同期がオフになっているため、同期できません</target>
+      </trans-unit>
+      <trans-unit id="session expired">
+        <source xml:lang="en">Cannot sync because current session is expired</source>
+        <target state="translated">現在のセッションの有効期限が切れているため、同期できません</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/dialogs/common/dialogs" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="moreFile">
+        <source xml:lang="en">...1 additional file not shown</source>
+        <target state="translated">...1 つの追加ファイルが表示されていません</target>
+      </trans-unit>
+      <trans-unit id="moreFiles">
+        <source xml:lang="en">...{0} additional files not shown</source>
+        <target state="translated">...{0} 個の追加ファイルが表示されていません</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/markers/common/markers" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="sev.error">
+        <source xml:lang="en">Error</source>
+        <target state="translated">エラー</target>
+      </trans-unit>
+      <trans-unit id="sev.warning">
+        <source xml:lang="en">Warning</source>
+        <target state="translated">警告</target>
+      </trans-unit>
+      <trans-unit id="sev.info">
+        <source xml:lang="en">Info</source>
+        <target state="translated">情報</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/workspaces/common/workspaces" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="codeWorkspace">
+        <source xml:lang="en">Code Workspace</source>
+        <target state="translated">コード ワークスペース</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="errorInvalidSettings">
+        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
+        <target state="translated">設定ファイルにエラーまたは警告があるため、設定を同期できません。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/configuration/common/configurationRegistry" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="defaultConfigurations.title">
+        <source xml:lang="en">Default Configuration Overrides</source>
+        <target state="translated">既定の構成オーバーライド</target>
+      </trans-unit>
+      <trans-unit id="overrideSettings.description">
+        <source xml:lang="en">Configure editor settings to be overridden for {0} language.</source>
+        <target state="translated">{0} 言語に対して上書きされるエディター設定を構成します。</target>
+      </trans-unit>
+      <trans-unit id="overrideSettings.defaultDescription">
+        <source xml:lang="en">Configure editor settings to be overridden for a language.</source>
+        <target state="translated">言語に対して上書きされるエディター設定を構成します。</target>
+      </trans-unit>
+      <trans-unit id="overrideSettings.errorMessage">
+        <source xml:lang="en">This setting does not support per-language configuration.</source>
+        <target state="translated">この設定では、言語ごとの構成はサポートされていません。</target>
+      </trans-unit>
+      <trans-unit id="config.property.languageDefault">
+        <source xml:lang="en">Cannot register '{0}'. This matches property pattern '\\[.*\\]$' for describing language specific editor settings. Use 'configurationDefaults' contribution.</source>
+        <target state="translated">'{0}' を登録できません。これは、言語固有のエディター設定を記述するプロパティ パターン '\\[.*\\]$' に一致しています。'configurationDefaults' コントリビューションを使用してください。</target>
+      </trans-unit>
+      <trans-unit id="config.property.duplicate">
+        <source xml:lang="en">Cannot register '{0}'. This property is already registered.</source>
+        <target state="translated">'{0}' を登録できません。このプロパティは既に登録されています。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/node/diskFileSystemProvider" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="fileExists">
+        <source xml:lang="en">File already exists</source>
+        <target state="translated">ファイルは既に存在します</target>
+      </trans-unit>
+      <trans-unit id="fileNotExists">
+        <source xml:lang="en">File does not exist</source>
+        <target state="translated">ファイルが存在しません。</target>
+      </trans-unit>
+      <trans-unit id="moveError">
+        <source xml:lang="en">Unable to move '{0}' into '{1}' ({2}).</source>
+        <target state="translated">'{0}' を '{1}' に移動することができません ({2})。</target>
+      </trans-unit>
+      <trans-unit id="copyError">
+        <source xml:lang="en">Unable to copy '{0}' into '{1}' ({2}).</source>
+        <target state="translated">'{0}' を '{1}' にコピーできません ({2})。</target>
+      </trans-unit>
+      <trans-unit id="fileCopyErrorPathCase">
+        <source xml:lang="en">'File cannot be copied to same path with different path case</source>
+        <target state="translated">'ファイルは、同じパスであるものの、大文字と小文字が異なるパスにコピーできません</target>
+      </trans-unit>
+      <trans-unit id="fileCopyErrorExists">
+        <source xml:lang="en">File at target already exists</source>
+        <target state="translated">ファイルは対象の場所に既に存在します</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/undoRedo/common/undoRedoService" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="externalRemoval">
+        <source xml:lang="en">The following files have been closed: {0}.</source>
+        <target state="translated">次のファイルが閉じられました: {0}。</target>
+      </trans-unit>
+      <trans-unit id="noParallelUniverses">
+        <source xml:lang="en">The following files have been modified in an incompatible way: {0}.</source>
+        <target state="translated">以下のファイルは互換性のない方法で変更されました: {0}。</target>
+      </trans-unit>
+      <trans-unit id="cannotWorkspaceUndo">
+        <source xml:lang="en">Could not undo '{0}' across all files. {1}</source>
+        <target state="translated">すべてのファイルで '{0}' を元に戻せませんでした。{1}</target>
+      </trans-unit>
+      <trans-unit id="cannotWorkspaceUndoDueToChanges">
+        <source xml:lang="en">Could not undo '{0}' across all files because changes were made to {1}</source>
+        <target state="translated">{1} に変更が加えられたため、すべてのファイルで '{0}' を元に戻せませんでした</target>
+      </trans-unit>
+      <trans-unit id="confirmWorkspace">
+        <source xml:lang="en">Would you like to undo '{0}' across all files?</source>
+        <target state="translated">すべてのファイルで '{0}' を元に戻しますか?</target>
+      </trans-unit>
+      <trans-unit id="ok">
+        <source xml:lang="en">Undo in {0} files.</source>
+        <target state="translated">{0} 個のファイルで元に戻します。</target>
+      </trans-unit>
+      <trans-unit id="nok">
+        <source xml:lang="en">Undo this file.</source>
+        <target state="translated">このファイルを元に戻します。</target>
+      </trans-unit>
+      <trans-unit id="cancel">
+        <source xml:lang="en">Cancel</source>
+        <target state="translated">キャンセル</target>
+      </trans-unit>
+      <trans-unit id="cannotWorkspaceRedo">
+        <source xml:lang="en">Could not redo '{0}' across all files. {1}</source>
+        <target state="translated">すべてのファイルで '{0}' をやり直しできませんでした。{1}</target>
+      </trans-unit>
+      <trans-unit id="cannotWorkspaceRedoDueToChanges">
+        <source xml:lang="en">Could not redo '{0}' across all files because changes were made to {1}</source>
+        <target state="translated">{1} に変更が加えられたため、すべてのファイルで '{0}' を再実行できませんでした</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/list/browser/listService" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="workbenchConfigurationTitle">
+        <source xml:lang="en">Workbench</source>
+        <target state="translated">ワークベンチ</target>
+      </trans-unit>
+      <trans-unit id="multiSelectModifier.ctrlCmd">
+        <source xml:lang="en">Maps to `Control` on Windows and Linux and to `Command` on macOS.</source>
+        <target state="translated">Windows および Linux 上の `Control` キーと macOS 上の `Command` キーに割り当てます。</target>
+      </trans-unit>
+      <trans-unit id="multiSelectModifier.alt">
+        <source xml:lang="en">Maps to `Alt` on Windows and Linux and to `Option` on macOS.</source>
+        <target state="translated">Windows および Linux 上の `Alt` キーと macOS 上の `Option` キーに割り当てます。</target>
+      </trans-unit>
+      <trans-unit id="multiSelectModifier">
+        <source xml:lang="en">The modifier to be used to add an item in trees and lists to a multi-selection with the mouse (for example in the explorer, open editors and scm view). The 'Open to Side' mouse gestures - if supported - will adapt such that they do not conflict with the multiselect modifier.</source>
+        <target state="translated">マウスを使用して項目を複数選択するときに使用する修飾キーです (たとえば、エクスプローラーでエディターと scm ビューを開くなど)。'横に並べて開く' マウス ジェスチャー (がサポートされている場合) は、複数選択の修飾キーと競合しないように調整されます。</target>
+        <note>- `ctrlCmd` refers to a value the setting can take and should not be localized.
+- `Control` and `Command` refer to the modifier keys Ctrl or Cmd on the keyboard and can be localized.</note>
+      </trans-unit>
+      <trans-unit id="openModeModifier">
+        <source xml:lang="en">Controls how to open items in trees and lists using the mouse (if supported). For parents with children in trees, this setting will control if a single click expands the parent or a double click. Note that some trees and lists might choose to ignore this setting if it is not applicable. </source>
+        <target state="translated">マウスを使用して、ツリー リスト内の項目を開く方法を制御します (サポートされている場合)。ツリー内の子を持つ親項目で、この設定は親項目をシングル クリックで展開するか、ダブル クリックで展開するかどうかを制御します。この設定の選択 (適応するかどうか) を無視するツリー リストがあることに注意してください。</target>
+        <note>`singleClick` and `doubleClick` refers to a value the setting can take and should not be localized.</note>
+      </trans-unit>
+      <trans-unit id="horizontalScrolling setting">
+        <source xml:lang="en">Controls whether lists and trees support horizontal scrolling in the workbench.</source>
+        <target state="translated">リストやツリーがワークベンチの水平スクロールをサポートするかどうかを制御します。</target>
+      </trans-unit>
+      <trans-unit id="tree horizontalScrolling setting">
+        <source xml:lang="en">Controls whether trees support horizontal scrolling in the workbench.</source>
+        <target state="translated">ワークベンチでツリーが水平スクロールをサポートするかどうかを制御します。</target>
+      </trans-unit>
+      <trans-unit id="deprecated">
+        <source xml:lang="en">This setting is deprecated, please use '{0}' instead.</source>
+        <target state="translated">この設定は推奨されていません。代わりに '{0}' を使用してください。</target>
+      </trans-unit>
+      <trans-unit id="tree indent setting">
+        <source xml:lang="en">Controls tree indentation in pixels.</source>
+        <target state="translated">ツリーのインデントをピクセル単位で制御します。</target>
+      </trans-unit>
+      <trans-unit id="render tree indent guides">
+        <source xml:lang="en">Controls whether the tree should render indent guides.</source>
+        <target state="translated">ツリーでインシデントのガイドを表示する必要があるかどうかを制御します。</target>
+      </trans-unit>
+      <trans-unit id="keyboardNavigationSettingKey.simple">
+        <source xml:lang="en">Simple keyboard navigation focuses elements which match the keyboard input. Matching is done only on prefixes.</source>
+        <target state="translated">簡単なキーボード ナビゲーションは、キーボード入力に一致する要素に焦点を当てます。一致処理はプレフィックスでのみ実行されます。</target>
+      </trans-unit>
+      <trans-unit id="keyboardNavigationSettingKey.highlight">
+        <source xml:lang="en">Highlight keyboard navigation highlights elements which match the keyboard input. Further up and down navigation will traverse only the highlighted elements.</source>
+        <target state="translated">キーボード ナビゲーションの強調表示を使用すると、キーボード入力に一致する要素が強調表示されます。上および下への移動は、強調表示されている要素のみを移動します。</target>
+      </trans-unit>
+      <trans-unit id="keyboardNavigationSettingKey.filter">
+        <source xml:lang="en">Filter keyboard navigation will filter out and hide all the elements which do not match the keyboard input.</source>
+        <target state="translated">キーボード ナビゲーションのフィルターでは、キーボード入力に一致しないすべての要素がフィルター処理され、非表示になります。</target>
+      </trans-unit>
+      <trans-unit id="keyboardNavigationSettingKey">
+        <source xml:lang="en">Controls the keyboard navigation style for lists and trees in the workbench. Can be simple, highlight and filter.</source>
+        <target state="translated">ワークベンチのリストおよびツリーのキーボード ナビゲーション スタイルを制御します。単純、強調表示、フィルターを指定できます。</target>
+      </trans-unit>
+      <trans-unit id="automatic keyboard navigation setting">
+        <source xml:lang="en">Controls whether keyboard navigation in lists and trees is automatically triggered simply by typing. If set to `false`, keyboard navigation is only triggered when executing the `list.toggleKeyboardNavigation` command, for which you can assign a keyboard shortcut.</source>
+        <target state="translated">リストやツリーでのキーボード ナビゲーションを、単に入力するだけで自動的にトリガーするかどうかを制御します。`false` に設定した場合、キーボード ナビゲーションは `list.toggleKeyboardNavigation` コマンドを実行したときにのみトリガーされます。これに対してキーボード ショートカットを割り当てることができます。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/common/fileService" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="invalidPath">
+        <source xml:lang="en">Unable to resolve filesystem provider with relative file path '{0}'</source>
+        <target state="translated">相対ファイル パス '{0}' の filesystem プロバイダーを解決できません</target>
+      </trans-unit>
+      <trans-unit id="noProviderFound">
+        <source xml:lang="en">No file system provider found for resource '{0}'</source>
+        <target state="translated">リソース '{0}' のファイル システム プロバイダーが見つかりません</target>
+      </trans-unit>
+      <trans-unit id="fileNotFoundError">
+        <source xml:lang="en">Unable to resolve non-existing file '{0}'</source>
+        <target state="translated">存在しないファイル '{0}' を解決できません</target>
+      </trans-unit>
+      <trans-unit id="fileExists">
+        <source xml:lang="en">Unable to create file '{0}' that already exists when overwrite flag is not set</source>
+        <target state="translated">上書きフラグが設定されていない場合、既に存在するファイル '{0}' を作成できません</target>
+      </trans-unit>
+      <trans-unit id="err.write">
+        <source xml:lang="en">Unable to write file '{0}' ({1})</source>
+        <target state="translated">ファイル '{0}' を書き込むことができません ({1})</target>
+      </trans-unit>
+      <trans-unit id="fileIsDirectoryWriteError">
+        <source xml:lang="en">Unable to write file '{0}' that is actually a directory</source>
+        <target state="translated">ファイル '{0}' は実際にはディレクトリであるため、書き込むことができませんでした</target>
+      </trans-unit>
+      <trans-unit id="fileModifiedError">
+        <source xml:lang="en">File Modified Since</source>
+        <target state="translated">ファイルは次の時点以後に更新されました:</target>
+      </trans-unit>
+      <trans-unit id="err.read">
+        <source xml:lang="en">Unable to read file '{0}' ({1})</source>
+        <target state="translated">ファイル '{0}' を読み取れません ({1})</target>
+      </trans-unit>
+      <trans-unit id="fileIsDirectoryReadError">
+        <source xml:lang="en">Unable to read file '{0}' that is actually a directory</source>
+        <target state="translated">実際にはディレクトリであるファイル '{0}' を読み取れません</target>
+      </trans-unit>
+      <trans-unit id="fileNotModifiedError">
+        <source xml:lang="en">File not modified since</source>
+        <target state="translated">ファイルは次の時点以後に変更されていません:</target>
+      </trans-unit>
+      <trans-unit id="fileTooLargeError">
+        <source xml:lang="en">Unable to read file '{0}' that is too large to open</source>
+        <target state="translated">ファイル '{0}' は大きすぎて開くことができないため、読み取れません</target>
+      </trans-unit>
+      <trans-unit id="unableToMoveCopyError1">
+        <source xml:lang="en">Unable to copy when source '{0}' is same as target '{1}' with different path case on a case insensitive file system</source>
+        <target state="translated">ソース '{0}' が、大文字と小文字を区別しないファイルシステム上の異なるパスのターゲット '{1}' と同じである場合にはコピーできません。</target>
+      </trans-unit>
+      <trans-unit id="unableToMoveCopyError2">
+        <source xml:lang="en">Unable to move/copy when source '{0}' is parent of target '{1}'.</source>
+        <target state="translated">ソース '{0}' がターゲット '{1}' の親である場合、移動およびコピーはできません。</target>
+      </trans-unit>
+      <trans-unit id="unableToMoveCopyError3">
+        <source xml:lang="en">Unable to move/copy '{0}' because target '{1}' already exists at destination.</source>
+        <target state="translated">ターゲット '{1}' が移動先に既に存在するため、'{0}' を移動またはコピーできません。</target>
+      </trans-unit>
+      <trans-unit id="unableToMoveCopyError4">
+        <source xml:lang="en">Unable to move/copy '{0}' into '{1}' since a file would replace the folder it is contained in.</source>
+        <target state="translated">特定のファイルがそのファイルを含むフォルダーを置き換えるため、'{0}' を '{1}' に移動またはコピーすることができません。</target>
+      </trans-unit>
+      <trans-unit id="mkdirExistsError">
+        <source xml:lang="en">Unable to create folder '{0}' that already exists but is not a directory</source>
+        <target state="translated">フォルダー '{0}' は、既に存在していますがディレクトリではないため、作成できません。</target>
+      </trans-unit>
+      <trans-unit id="deleteFailedTrashUnsupported">
+        <source xml:lang="en">Unable to delete file '{0}' via trash because provider does not support it.</source>
+        <target state="translated">プロバイダがサポートしていないため、ゴミ箱経由でファイル '{0}' を削除できません。</target>
+      </trans-unit>
+      <trans-unit id="deleteFailedNotFound">
+        <source xml:lang="en">Unable to delete non-existing file '{0}'</source>
+        <target state="translated">存在しないファイル '{0}' を削除できません</target>
+      </trans-unit>
+      <trans-unit id="deleteFailedNonEmptyFolder">
+        <source xml:lang="en">Unable to delete non-empty folder '{0}'.</source>
+        <target state="translated">空でないフォルダー '{0}' を削除できません。</target>
+      </trans-unit>
+      <trans-unit id="err.readonly">
+        <source xml:lang="en">Unable to modify readonly file '{0}'</source>
+        <target state="translated">読み取り専用ファイル '{0}' を変更できません</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/extensionManagement/node/extensionManagementService" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="invalidManifest">
+        <source xml:lang="en">Extension invalid: package.json is not a JSON file.</source>
+        <target state="translated">正しくない拡張機能: package.json は JSON ファイルではありません。</target>
+      </trans-unit>
+      <trans-unit id="incompatible">
+        <source xml:lang="en">Unable to install extension '{0}' as it is not compatible with VS Code '{1}'.</source>
+        <target state="translated">VS Code '{1}' と互換性のない拡張機能 '{0}' をインストールできません。</target>
+      </trans-unit>
+      <trans-unit id="restartCode">
+        <source xml:lang="en">Please restart VS Code before reinstalling {0}.</source>
+        <target state="translated">{0} を再インストールする前に、VS Code を再起動してください。</target>
+      </trans-unit>
+      <trans-unit id="MarketPlaceDisabled">
+        <source xml:lang="en">Marketplace is not enabled</source>
+        <target state="translated">Marketplace が有効になっていません</target>
+      </trans-unit>
+      <trans-unit id="malicious extension">
+        <source xml:lang="en">Can't install extension since it was reported to be problematic.</source>
+        <target state="translated">問題が報告されたので、拡張機能をインストールできません。</target>
+      </trans-unit>
+      <trans-unit id="notFoundCompatibleDependency">
+        <source xml:lang="en">Unable to install '{0}' extension because it is not compatible with the current version of VS Code (version {1}).</source>
+        <target state="translated">'{0}' 拡張機能は、現在のバージョンの VS Code (バージョン {1}) と互換性がないため、インストールできません。</target>
+      </trans-unit>
+      <trans-unit id="removeError">
+        <source xml:lang="en">Error while removing the extension: {0}. Please Quit and Start VS Code before trying again.</source>
+        <target state="translated">拡張機能の削除中にエラーが発生しました: {0}。もう一度やり直す前に、VS Code の終了と起動を実施してください。</target>
+      </trans-unit>
+      <trans-unit id="Not a Marketplace extension">
+        <source xml:lang="en">Only Marketplace Extensions can be reinstalled</source>
+        <target state="translated">Marketplace の拡張機能のみ再インストールできます</target>
+      </trans-unit>
+      <trans-unit id="quitCode">
+        <source xml:lang="en">Unable to install the extension. Please Quit and Start VS Code before reinstalling.</source>
+        <target state="translated">拡張機能をインストールできません。再インストールの前に VS Code の終了と起動を実施してください。</target>
+      </trans-unit>
+      <trans-unit id="exitCode">
+        <source xml:lang="en">Unable to install the extension. Please Exit and Start VS Code before reinstalling.</source>
+        <target state="translated">拡張機能をインストールできません。再インストールの前に VS Code の終了と起動を実施してください。</target>
+      </trans-unit>
+      <trans-unit id="errorDeleting">
+        <source xml:lang="en">Unable to delete the existing folder '{0}' while installing the extension '{1}'. Please delete the folder manually and try again</source>
+        <target state="translated">拡張機能 '{1}' のインストール中に既存のフォルダー '{0}' を削除できません。フォルダーを手動で削除してもう一度お試しください</target>
+      </trans-unit>
+      <trans-unit id="cannot read">
+        <source xml:lang="en">Cannot read the extension from {0}</source>
+        <target state="translated">{0} から拡張機能を読み取ることができません</target>
+      </trans-unit>
+      <trans-unit id="renameError">
+        <source xml:lang="en">Unknown error while renaming {0} to {1}</source>
+        <target state="translated">{0} から {1} に名前変更中に不明なエラーが発生しました</target>
+      </trans-unit>
+      <trans-unit id="notInstalled">
+        <source xml:lang="en">Extension '{0}' is not installed.</source>
+        <target state="translated">拡張機能 '{0}' がインストールされていません。</target>
+      </trans-unit>
+      <trans-unit id="singleDependentError">
+        <source xml:lang="en">Cannot uninstall extension '{0}'. Extension '{1}' depends on this.</source>
+        <target state="translated">拡張機能 '{0}' をアンインストールできません。拡張機能 '{1}' がこの拡張機能に依存しています。</target>
+      </trans-unit>
+      <trans-unit id="twoDependentsError">
+        <source xml:lang="en">Cannot uninstall extension '{0}'. Extensions '{1}' and '{2}' depend on this.</source>
+        <target state="translated">拡張機能 '{0}' をアンインストールできません。拡張機能 '{1}' と '{2}' がこの拡張機能に依存しています。</target>
+      </trans-unit>
+      <trans-unit id="multipleDependentsError">
+        <source xml:lang="en">Cannot uninstall extension '{0}'. Extensions '{1}', '{2}' and others depend on this.</source>
+        <target state="translated">拡張機能 '{0}' をアンインストールできません。拡張機能 '{1}'、'{2}'、その他がこの拡張機能に依存しています。</target>
+      </trans-unit>
+      <trans-unit id="notExists">
+        <source xml:lang="en">Could not find extension</source>
+        <target state="translated">拡張機能を見つけられませんでした</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/theme/common/colorRegistry" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="foreground">
+        <source xml:lang="en">Overall foreground color. This color is only used if not overridden by a component.</source>
+        <target state="translated">全体の前景色。この色は、コンポーネントによってオーバーライドされていない場合にのみ使用されます。</target>
+      </trans-unit>
+      <trans-unit id="errorForeground">
+        <source xml:lang="en">Overall foreground color for error messages. This color is only used if not overridden by a component.</source>
+        <target state="translated">エラー メッセージ全体の前景色。この色は、コンポーネントによって上書きされていない場合にのみ使用されます。</target>
+      </trans-unit>
+      <trans-unit id="descriptionForeground">
+        <source xml:lang="en">Foreground color for description text providing additional information, for example for a label.</source>
+        <target state="translated">追加情報を提供する説明文の前景色、例:ラベル。</target>
+      </trans-unit>
+      <trans-unit id="iconForeground">
+        <source xml:lang="en">The default color for icons in the workbench.</source>
+        <target state="translated">ワークベンチのアイコンの既定の色。</target>
+      </trans-unit>
+      <trans-unit id="focusBorder">
+        <source xml:lang="en">Overall border color for focused elements. This color is only used if not overridden by a component.</source>
+        <target state="translated">フォーカスされた要素の境界線全体の色。この色はコンポーネントによって上書きされていない場合にのみ使用されます。</target>
+      </trans-unit>
+      <trans-unit id="contrastBorder">
+        <source xml:lang="en">An extra border around elements to separate them from others for greater contrast.</source>
+        <target state="translated">コントラストを強めるために、他の要素と隔てる追加の境界線。</target>
+      </trans-unit>
+      <trans-unit id="activeContrastBorder">
+        <source xml:lang="en">An extra border around active elements to separate them from others for greater contrast.</source>
+        <target state="translated">コントラストを強めるために、アクティブな他要素と隔てる追加の境界線。</target>
+      </trans-unit>
+      <trans-unit id="selectionBackground">
+        <source xml:lang="en">The background color of text selections in the workbench (e.g. for input fields or text areas). Note that this does not apply to selections within the editor.</source>
+        <target state="translated">ワークベンチ内のテキスト選択の背景色 (例: 入力フィールドやテキストエリア)。エディター内の選択には適用されないことに注意してください。</target>
+      </trans-unit>
+      <trans-unit id="textSeparatorForeground">
+        <source xml:lang="en">Color for text separators.</source>
+        <target state="translated">テキストの区切り文字の色。</target>
+      </trans-unit>
+      <trans-unit id="textLinkForeground">
+        <source xml:lang="en">Foreground color for links in text.</source>
+        <target state="translated">テキスト内のリンクの前景色。</target>
+      </trans-unit>
+      <trans-unit id="textLinkActiveForeground">
+        <source xml:lang="en">Foreground color for links in text when clicked on and on mouse hover.</source>
+        <target state="translated">クリックされたときとマウスをホバーしたときのテキスト内のリンクの前景色。</target>
+      </trans-unit>
+      <trans-unit id="textPreformatForeground">
+        <source xml:lang="en">Foreground color for preformatted text segments.</source>
+        <target state="translated">フォーマット済みテキスト セグメントの前景色。</target>
+      </trans-unit>
+      <trans-unit id="textBlockQuoteBackground">
+        <source xml:lang="en">Background color for block quotes in text.</source>
+        <target state="translated">テキスト内のブロック引用の背景色。</target>
+      </trans-unit>
+      <trans-unit id="textBlockQuoteBorder">
+        <source xml:lang="en">Border color for block quotes in text.</source>
+        <target state="translated">テキスト内のブロック引用の境界線色。</target>
+      </trans-unit>
+      <trans-unit id="textCodeBlockBackground">
+        <source xml:lang="en">Background color for code blocks in text.</source>
+        <target state="translated">テキスト内のコード ブロックの背景色。</target>
+      </trans-unit>
+      <trans-unit id="widgetShadow">
+        <source xml:lang="en">Shadow color of widgets such as find/replace inside the editor.</source>
+        <target state="translated">エディター内の検索/置換窓など、エディター ウィジェットの影の色。</target>
+      </trans-unit>
+      <trans-unit id="inputBoxBackground">
+        <source xml:lang="en">Input box background.</source>
+        <target state="translated">入力ボックスの背景。</target>
+      </trans-unit>
+      <trans-unit id="inputBoxForeground">
+        <source xml:lang="en">Input box foreground.</source>
+        <target state="translated">入力ボックスの前景。</target>
+      </trans-unit>
+      <trans-unit id="inputBoxBorder">
+        <source xml:lang="en">Input box border.</source>
+        <target state="translated">入力ボックスの境界線。</target>
+      </trans-unit>
+      <trans-unit id="inputBoxActiveOptionBorder">
+        <source xml:lang="en">Border color of activated options in input fields.</source>
+        <target state="translated">入力フィールドのアクティブ オプションの境界線の色。</target>
+      </trans-unit>
+      <trans-unit id="inputOption.activeBackground">
+        <source xml:lang="en">Background color of activated options in input fields.</source>
+        <target state="translated">入力フィールドでアクティブ化されたオプションの背景色。</target>
+      </trans-unit>
+      <trans-unit id="inputPlaceholderForeground">
+        <source xml:lang="en">Input box foreground color for placeholder text.</source>
+        <target state="translated">入力ボックスのプレースホルダー テキストの前景色。</target>
+      </trans-unit>
+      <trans-unit id="inputValidationInfoBackground">
+        <source xml:lang="en">Input validation background color for information severity.</source>
+        <target state="translated">情報の重大度を示す入力検証の背景色。</target>
+      </trans-unit>
+      <trans-unit id="inputValidationInfoForeground">
+        <source xml:lang="en">Input validation foreground color for information severity.</source>
+        <target state="translated">情報の重大度を示す入力検証の前景色。</target>
+      </trans-unit>
+      <trans-unit id="inputValidationInfoBorder">
+        <source xml:lang="en">Input validation border color for information severity.</source>
+        <target state="translated">情報の重大度を示す入力検証の境界線色。</target>
+      </trans-unit>
+      <trans-unit id="inputValidationWarningBackground">
+        <source xml:lang="en">Input validation background color for warning severity.</source>
+        <target state="translated">警告の重大度を示す入力検証の背景色。</target>
+      </trans-unit>
+      <trans-unit id="inputValidationWarningForeground">
+        <source xml:lang="en">Input validation foreground color for warning severity.</source>
+        <target state="translated">警告の重大度を示す入力検証の前景色。</target>
+      </trans-unit>
+      <trans-unit id="inputValidationWarningBorder">
+        <source xml:lang="en">Input validation border color for warning severity.</source>
+        <target state="translated">警告の重大度を示す入力検証の境界線色。</target>
+      </trans-unit>
+      <trans-unit id="inputValidationErrorBackground">
+        <source xml:lang="en">Input validation background color for error severity.</source>
+        <target state="translated">エラーの重大度を示す入力検証の背景色。</target>
+      </trans-unit>
+      <trans-unit id="inputValidationErrorForeground">
+        <source xml:lang="en">Input validation foreground color for error severity.</source>
+        <target state="translated">エラーの重大度を示す入力検証の前景色。</target>
+      </trans-unit>
+      <trans-unit id="inputValidationErrorBorder">
+        <source xml:lang="en">Input validation border color for error severity.</source>
+        <target state="translated">エラーの重大度を示す入力検証の境界線色。</target>
+      </trans-unit>
+      <trans-unit id="dropdownBackground">
+        <source xml:lang="en">Dropdown background.</source>
+        <target state="translated">ドロップダウンの背景。</target>
+      </trans-unit>
+      <trans-unit id="dropdownListBackground">
+        <source xml:lang="en">Dropdown list background.</source>
+        <target state="translated">ドロップダウン リストの背景色。</target>
+      </trans-unit>
+      <trans-unit id="dropdownForeground">
+        <source xml:lang="en">Dropdown foreground.</source>
+        <target state="translated">ドロップダウンの前景。</target>
+      </trans-unit>
+      <trans-unit id="dropdownBorder">
+        <source xml:lang="en">Dropdown border.</source>
+        <target state="translated">ドロップダウンの境界線。</target>
+      </trans-unit>
+      <trans-unit id="checkbox.background">
+        <source xml:lang="en">Background color of checkbox widget.</source>
+        <target state="translated">チェックボックス ウィジェットの背景色。</target>
+      </trans-unit>
+      <trans-unit id="checkbox.foreground">
+        <source xml:lang="en">Foreground color of checkbox widget.</source>
+        <target state="translated">チェックボックス ウィジェットの前景色。</target>
+      </trans-unit>
+      <trans-unit id="checkbox.border">
+        <source xml:lang="en">Border color of checkbox widget.</source>
+        <target state="translated">チェックボックス ウィジェットの境界線の色。</target>
+      </trans-unit>
+      <trans-unit id="pickerGroupForeground">
+        <source xml:lang="en">Quick picker color for grouping labels.</source>
+        <target state="translated">ラベルをグループ化するためのクリック選択の色。</target>
+      </trans-unit>
+      <trans-unit id="pickerGroupBorder">
+        <source xml:lang="en">Quick picker color for grouping borders.</source>
+        <target state="translated">境界線をグループ化するためのクイック選択の色。</target>
+      </trans-unit>
+      <trans-unit id="buttonForeground">
+        <source xml:lang="en">Button foreground color.</source>
+        <target state="translated">ボタンの前景色。</target>
+      </trans-unit>
+      <trans-unit id="buttonBackground">
+        <source xml:lang="en">Button background color.</source>
+        <target state="translated">ボタンの背景色。</target>
+      </trans-unit>
+      <trans-unit id="buttonHoverBackground">
+        <source xml:lang="en">Button background color when hovering.</source>
+        <target state="translated">ホバー時のボタン背景色。</target>
+      </trans-unit>
+      <trans-unit id="badgeBackground">
+        <source xml:lang="en">Badge background color. Badges are small information labels, e.g. for search results count.</source>
+        <target state="translated">バッジの背景色。バッジとは小さな情報ラベルのことです。例:検索結果の数</target>
+      </trans-unit>
+      <trans-unit id="badgeForeground">
+        <source xml:lang="en">Badge foreground color. Badges are small information labels, e.g. for search results count.</source>
+        <target state="translated">バッジの前景色。バッジとは小さな情報ラベルのことです。例:検索結果の数</target>
+      </trans-unit>
+      <trans-unit id="scrollbarShadow">
+        <source xml:lang="en">Scrollbar shadow to indicate that the view is scrolled.</source>
+        <target state="translated">ビューがスクロールされたことを示すスクロール バーの影。</target>
+      </trans-unit>
+      <trans-unit id="scrollbarSliderBackground">
+        <source xml:lang="en">Scrollbar slider background color.</source>
+        <target state="translated">スクロール バーのスライダーの背景色。</target>
+      </trans-unit>
+      <trans-unit id="scrollbarSliderHoverBackground">
+        <source xml:lang="en">Scrollbar slider background color when hovering.</source>
+        <target state="translated">ホバー時のスクロール バー スライダー背景色。</target>
+      </trans-unit>
+      <trans-unit id="scrollbarSliderActiveBackground">
+        <source xml:lang="en">Scrollbar slider background color when clicked on.</source>
+        <target state="translated">クリック時のスクロール バー スライダー背景色。</target>
+      </trans-unit>
+      <trans-unit id="progressBarBackground">
+        <source xml:lang="en">Background color of the progress bar that can show for long running operations.</source>
+        <target state="translated">時間のかかる操作で表示するプログレス バーの背景色。</target>
+      </trans-unit>
+      <trans-unit id="editorError.foreground">
+        <source xml:lang="en">Foreground color of error squigglies in the editor.</source>
+        <target state="translated">エディターでエラーを示す波線の前景色。</target>
+      </trans-unit>
+      <trans-unit id="errorBorder">
+        <source xml:lang="en">Border color of error boxes in the editor.</source>
+        <target state="translated">エディター内のエラー ボックスの境界線の色です。</target>
+      </trans-unit>
+      <trans-unit id="editorWarning.foreground">
+        <source xml:lang="en">Foreground color of warning squigglies in the editor.</source>
+        <target state="translated">エディターで警告を示す波線の前景色。</target>
+      </trans-unit>
+      <trans-unit id="warningBorder">
+        <source xml:lang="en">Border color of warning boxes in the editor.</source>
+        <target state="translated">エディターでの警告ボックスの境界線の色です。</target>
+      </trans-unit>
+      <trans-unit id="editorInfo.foreground">
+        <source xml:lang="en">Foreground color of info squigglies in the editor.</source>
+        <target state="translated">エディターで情報を示す波線の前景色。</target>
+      </trans-unit>
+      <trans-unit id="infoBorder">
+        <source xml:lang="en">Border color of info boxes in the editor.</source>
+        <target state="translated">エディター内の情報ボックスの境界線の色です。</target>
+      </trans-unit>
+      <trans-unit id="editorHint.foreground">
+        <source xml:lang="en">Foreground color of hint squigglies in the editor.</source>
+        <target state="translated">エディターでヒントを示す波線の前景色。</target>
+      </trans-unit>
+      <trans-unit id="hintBorder">
+        <source xml:lang="en">Border color of hint boxes in the editor.</source>
+        <target state="translated">エディター内のヒント ボックスの境界線の色。</target>
+      </trans-unit>
+      <trans-unit id="editorBackground">
+        <source xml:lang="en">Editor background color.</source>
+        <target state="translated">エディターの背景色。</target>
+      </trans-unit>
+      <trans-unit id="editorForeground">
+        <source xml:lang="en">Editor default foreground color.</source>
+        <target state="translated">エディターの既定の前景色。</target>
+      </trans-unit>
+      <trans-unit id="editorWidgetBackground">
+        <source xml:lang="en">Background color of editor widgets, such as find/replace.</source>
+        <target state="translated">検索/置換窓など、エディター ウィジェットの背景色。</target>
+      </trans-unit>
+      <trans-unit id="editorWidgetForeground">
+        <source xml:lang="en">Foreground color of editor widgets, such as find/replace.</source>
+        <target state="translated">検索/置換などを行うエディター ウィジェットの前景色。</target>
+      </trans-unit>
+      <trans-unit id="editorWidgetBorder">
+        <source xml:lang="en">Border color of editor widgets. The color is only used if the widget chooses to have a border and if the color is not overridden by a widget.</source>
+        <target state="translated">エディター ウィジェットの境界線色。ウィジェットに境界線があり、ウィジェットによって配色を上書きされていない場合でのみこの配色は使用されます。</target>
+      </trans-unit>
+      <trans-unit id="editorWidgetResizeBorder">
+        <source xml:lang="en">Border color of the resize bar of editor widgets. The color is only used if the widget chooses to have a resize border and if the color is not overridden by a widget.</source>
+        <target state="translated">エディター ウィジェットのサイズ変更バーの境界線色。ウィジェットにサイズ変更の境界線があり、ウィジェットによって配色を上書きされていない場合でのみこの配色は使用されます。</target>
+      </trans-unit>
+      <trans-unit id="editorSelectionBackground">
+        <source xml:lang="en">Color of the editor selection.</source>
+        <target state="translated">エディターの選択範囲の色。</target>
+      </trans-unit>
+      <trans-unit id="editorSelectionForeground">
+        <source xml:lang="en">Color of the selected text for high contrast.</source>
+        <target state="translated">ハイ コントラストの選択済みテキストの色。</target>
+      </trans-unit>
+      <trans-unit id="editorInactiveSelection">
+        <source xml:lang="en">Color of the selection in an inactive editor. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">非アクティブなエディターの選択範囲の色。この色は、基本装飾が非表示にならないよう不透明にすることはできません。</target>
+      </trans-unit>
+      <trans-unit id="editorSelectionHighlight">
+        <source xml:lang="en">Color for regions with the same content as the selection. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">選択範囲の同じコンテンツの領域の色。この色は、基本装飾が非表示にならないよう不透明にすることはできません。</target>
+      </trans-unit>
+      <trans-unit id="editorSelectionHighlightBorder">
+        <source xml:lang="en">Border color for regions with the same content as the selection.</source>
+        <target state="translated">選択範囲と同じコンテンツの境界線の色。</target>
+      </trans-unit>
+      <trans-unit id="editorFindMatch">
+        <source xml:lang="en">Color of the current search match.</source>
+        <target state="translated">現在の検索一致項目の色。</target>
+      </trans-unit>
+      <trans-unit id="findMatchHighlight">
+        <source xml:lang="en">Color of the other search matches. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">その他の検索条件に一致する項目の色。この色は、基本装飾が非表示にならないよう不透明にすることはできません。</target>
+      </trans-unit>
+      <trans-unit id="findRangeHighlight">
+        <source xml:lang="en">Color of the range limiting the search. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">検索を制限する範囲の色。この色は、基本装飾が非表示にならないよう不透明にすることはできません。</target>
+      </trans-unit>
+      <trans-unit id="editorFindMatchBorder">
+        <source xml:lang="en">Border color of the current search match.</source>
+        <target state="translated">現在の検索一致項目の境界線の色。</target>
+      </trans-unit>
+      <trans-unit id="findMatchHighlightBorder">
+        <source xml:lang="en">Border color of the other search matches.</source>
+        <target state="translated">他の検索一致項目の境界線の色。</target>
+      </trans-unit>
+      <trans-unit id="findRangeHighlightBorder">
+        <source xml:lang="en">Border color of the range limiting the search. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">検索を制限する範囲の境界線色。この色は、基本装飾が非表示にならないよう不透明にすることはできません。</target>
+      </trans-unit>
+      <trans-unit id="searchEditor.queryMatch">
+        <source xml:lang="en">Color of the Search Editor query matches.</source>
+        <target state="translated">検索エディターのクエリの色が一致します。</target>
+      </trans-unit>
+      <trans-unit id="searchEditor.editorFindMatchBorder">
+        <source xml:lang="en">Border color of the Search Editor query matches.</source>
+        <target state="translated">検索エディター クエリの境界線の色が一致します。</target>
+      </trans-unit>
+      <trans-unit id="hoverHighlight">
+        <source xml:lang="en">Highlight below the word for which a hover is shown. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">ホバーが表示されている語の下を強調表示します。この色は、基本装飾が非表示にならないよう不透明にすることはできません。</target>
+      </trans-unit>
+      <trans-unit id="hoverBackground">
+        <source xml:lang="en">Background color of the editor hover.</source>
+        <target state="translated">エディター ホバーの背景色。</target>
+      </trans-unit>
+      <trans-unit id="hoverForeground">
+        <source xml:lang="en">Foreground color of the editor hover.</source>
+        <target state="translated">エディター ホバーの前景色。</target>
+      </trans-unit>
+      <trans-unit id="hoverBorder">
+        <source xml:lang="en">Border color of the editor hover.</source>
+        <target state="translated">エディター ホバーの境界線の色。</target>
+      </trans-unit>
+      <trans-unit id="statusBarBackground">
+        <source xml:lang="en">Background color of the editor hover status bar.</source>
+        <target state="translated">エディターのホバーのステータス バーの背景色。</target>
+      </trans-unit>
+      <trans-unit id="activeLinkForeground">
+        <source xml:lang="en">Color of active links.</source>
+        <target state="translated">アクティブなリンクの色。</target>
+      </trans-unit>
+      <trans-unit id="editorLightBulbForeground">
+        <source xml:lang="en">The color used for the lightbulb actions icon.</source>
+        <target state="translated">電球アクション アイコンに使用する色。</target>
+      </trans-unit>
+      <trans-unit id="editorLightBulbAutoFixForeground">
+        <source xml:lang="en">The color used for the lightbulb auto fix actions icon.</source>
+        <target state="translated">自動修正の電球アクション アイコンとして使用される色。</target>
+      </trans-unit>
+      <trans-unit id="diffEditorInserted">
+        <source xml:lang="en">Background color for text that got inserted. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">挿入されたテキストの背景色。この色は、基本装飾が非表示にならないよう不透明にすることはできません。</target>
+      </trans-unit>
+      <trans-unit id="diffEditorRemoved">
+        <source xml:lang="en">Background color for text that got removed. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">削除したテキストの背景色。この色は、基本装飾が非表示にならないよう不透明にすることはできません。</target>
+      </trans-unit>
+      <trans-unit id="diffEditorInsertedOutline">
+        <source xml:lang="en">Outline color for the text that got inserted.</source>
+        <target state="translated">挿入されたテキストの輪郭の色。</target>
+      </trans-unit>
+      <trans-unit id="diffEditorRemovedOutline">
+        <source xml:lang="en">Outline color for text that got removed.</source>
+        <target state="translated">削除されたテキストの輪郭の色。</target>
+      </trans-unit>
+      <trans-unit id="diffEditorBorder">
+        <source xml:lang="en">Border color between the two text editors.</source>
+        <target state="translated">2 つのテキスト エディターの間の境界線の色。</target>
+      </trans-unit>
+      <trans-unit id="listFocusBackground">
+        <source xml:lang="en">List/Tree background color for the focused item when the list/tree is active. An active list/tree has keyboard focus, an inactive does not.</source>
+        <target state="translated">ツリーリストがアクティブのとき、フォーカスされた項目のツリーリスト背景色。アクティブなツリーリストはキーボード フォーカスがあり、非アクティブではこれがありません。</target>
+      </trans-unit>
+      <trans-unit id="listFocusForeground">
+        <source xml:lang="en">List/Tree foreground color for the focused item when the list/tree is active. An active list/tree has keyboard focus, an inactive does not.</source>
+        <target state="translated">ツリーリストがアクティブのとき、フォーカスされた項目のツリーリスト前景色。アクティブなツリーリストはキーボード フォーカスがあり、非アクティブではこれがありません。</target>
+      </trans-unit>
+      <trans-unit id="listActiveSelectionBackground">
+        <source xml:lang="en">List/Tree background color for the selected item when the list/tree is active. An active list/tree has keyboard focus, an inactive does not.</source>
+        <target state="translated">ツリーリストが非アクティブのとき、選択された項目のツリーリスト背景色。アクティブなツリーリストはキーボード フォーカスがあり、非アクティブではこれがありません。</target>
+      </trans-unit>
+      <trans-unit id="listActiveSelectionForeground">
+        <source xml:lang="en">List/Tree foreground color for the selected item when the list/tree is active. An active list/tree has keyboard focus, an inactive does not.</source>
+        <target state="translated">ツリーリストがアクティブのとき、選択された項目のツリーリスト前景色。アクティブなツリーリストはキーボード フォーカスがあり、非アクティブではこれがありません。</target>
+      </trans-unit>
+      <trans-unit id="listInactiveSelectionBackground">
+        <source xml:lang="en">List/Tree background color for the selected item when the list/tree is inactive. An active list/tree has keyboard focus, an inactive does not.</source>
+        <target state="translated">ツリーリストが非アクティブのとき、選択された項目のツリーリスト背景色。アクティブなツリーリストはキーボード フォーカスがあり、非アクティブではこれがありません。</target>
+      </trans-unit>
+      <trans-unit id="listInactiveSelectionForeground">
+        <source xml:lang="en">List/Tree foreground color for the selected item when the list/tree is inactive. An active list/tree has keyboard focus, an inactive does not.</source>
+        <target state="translated">ツリーリストが非アクティブのとき、選択された項目のツリーリスト前景色。アクティブなツリーリストはキーボード フォーカスがあり、非アクティブではこれがありません。</target>
+      </trans-unit>
+      <trans-unit id="listInactiveFocusBackground">
+        <source xml:lang="en">List/Tree background color for the focused item when the list/tree is inactive. An active list/tree has keyboard focus, an inactive does not.</source>
+        <target state="translated">ツリーリストが非アクティブのとき、フォーカスされた項目のツリーリスト背景色。アクティブなツリーリストはキーボード フォーカスがあり、非アクティブではこれがありません。</target>
+      </trans-unit>
+      <trans-unit id="listHoverBackground">
+        <source xml:lang="en">List/Tree background when hovering over items using the mouse.</source>
+        <target state="translated">マウス操作で項目をホバーするときのツリーリスト背景。</target>
+      </trans-unit>
+      <trans-unit id="listHoverForeground">
+        <source xml:lang="en">List/Tree foreground when hovering over items using the mouse.</source>
+        <target state="translated">マウス操作で項目をホバーするときのツリーリスト前景。</target>
+      </trans-unit>
+      <trans-unit id="listDropBackground">
+        <source xml:lang="en">List/Tree drag and drop background when moving items around using the mouse.</source>
+        <target state="translated">マウス操作で項目を移動するときのツリーリスト ドラッグ アンド ドロップの背景。</target>
+      </trans-unit>
+      <trans-unit id="highlight">
+        <source xml:lang="en">List/Tree foreground color of the match highlights when searching inside the list/tree.</source>
+        <target state="translated">ツリーリスト内を検索しているとき、一致した強調のツリーリスト前景色。</target>
+      </trans-unit>
+      <trans-unit id="invalidItemForeground">
+        <source xml:lang="en">List/Tree foreground color for invalid items, for example an unresolved root in explorer.</source>
+        <target state="translated">無効な項目のツリーリストの前景色。たとえばエクスプローラーの未解決なルート。</target>
+      </trans-unit>
+      <trans-unit id="listErrorForeground">
+        <source xml:lang="en">Foreground color of list items containing errors.</source>
+        <target state="translated">エラーを含むリスト項目の前景色。</target>
+      </trans-unit>
+      <trans-unit id="listWarningForeground">
+        <source xml:lang="en">Foreground color of list items containing warnings.</source>
+        <target state="translated">警告が含まれるリスト項目の前景色。</target>
+      </trans-unit>
+      <trans-unit id="listFilterWidgetBackground">
+        <source xml:lang="en">Background color of the type filter widget in lists and trees.</source>
+        <target state="translated">リストおよびツリーの型フィルター ウェジェットの背景色。</target>
+      </trans-unit>
+      <trans-unit id="listFilterWidgetOutline">
+        <source xml:lang="en">Outline color of the type filter widget in lists and trees.</source>
+        <target state="translated">リストおよびツリーの型フィルター ウィジェットのアウトライン色。</target>
+      </trans-unit>
+      <trans-unit id="listFilterWidgetNoMatchesOutline">
+        <source xml:lang="en">Outline color of the type filter widget in lists and trees, when there are no matches.</source>
+        <target state="translated">一致項目がない場合の、リストおよびツリーの型フィルター ウィジェットのアウトライン色。</target>
+      </trans-unit>
+      <trans-unit id="listFilterMatchHighlight">
+        <source xml:lang="en">Background color of the filtered match.</source>
+        <target state="translated">フィルタリングされた一致の背景色。</target>
+      </trans-unit>
+      <trans-unit id="listFilterMatchHighlightBorder">
+        <source xml:lang="en">Border color of the filtered match.</source>
+        <target state="translated">フィルタリングされた一致の境界線の色。</target>
+      </trans-unit>
+      <trans-unit id="treeIndentGuidesStroke">
+        <source xml:lang="en">Tree stroke color for the indentation guides.</source>
+        <target state="translated">インデント ガイドのツリー ストロークの色。</target>
+      </trans-unit>
+      <trans-unit id="menuBorder">
+        <source xml:lang="en">Border color of menus.</source>
+        <target state="translated">メニューの境界線色。</target>
+      </trans-unit>
+      <trans-unit id="menuForeground">
+        <source xml:lang="en">Foreground color of menu items.</source>
+        <target state="translated">メニュー項目の前景色。</target>
+      </trans-unit>
+      <trans-unit id="menuBackground">
+        <source xml:lang="en">Background color of menu items.</source>
+        <target state="translated">メニュー項目の背景色。</target>
+      </trans-unit>
+      <trans-unit id="menuSelectionForeground">
+        <source xml:lang="en">Foreground color of the selected menu item in menus.</source>
+        <target state="translated">メニューで選択されたメニュー項目の前景色。</target>
+      </trans-unit>
+      <trans-unit id="menuSelectionBackground">
+        <source xml:lang="en">Background color of the selected menu item in menus.</source>
+        <target state="translated">メニューで選択されたメニュー項目の背景色。</target>
+      </trans-unit>
+      <trans-unit id="menuSelectionBorder">
+        <source xml:lang="en">Border color of the selected menu item in menus.</source>
+        <target state="translated">メニューで選択されたメニュー項目の境界線色。</target>
+      </trans-unit>
+      <trans-unit id="menuSeparatorBackground">
+        <source xml:lang="en">Color of a separator menu item in menus.</source>
+        <target state="translated">メニュー内のメニュー項目の境界線色。</target>
+      </trans-unit>
+      <trans-unit id="snippetTabstopHighlightBackground">
+        <source xml:lang="en">Highlight background color of a snippet tabstop.</source>
+        <target state="translated">スニペット tabstop の背景色を強調表示します。</target>
+      </trans-unit>
+      <trans-unit id="snippetTabstopHighlightBorder">
+        <source xml:lang="en">Highlight border color of a snippet tabstop.</source>
+        <target state="translated">スニペット tabstop の境界線の色を強調表示します。</target>
+      </trans-unit>
+      <trans-unit id="snippetFinalTabstopHighlightBackground">
+        <source xml:lang="en">Highlight background color of the final tabstop of a snippet.</source>
+        <target state="translated">スニペットの最後の tabstop の背景色を強調表示します。</target>
+      </trans-unit>
+      <trans-unit id="snippetFinalTabstopHighlightBorder">
+        <source xml:lang="en">Highlight border color of the final stabstop of a snippet.</source>
+        <target state="translated">スニペットの最後の tabstop の境界線の色を強調表示します。</target>
+      </trans-unit>
+      <trans-unit id="breadcrumbsFocusForeground">
+        <source xml:lang="en">Color of focused breadcrumb items.</source>
+        <target state="translated">フォーカスされた階層リンクの項目の色。</target>
+      </trans-unit>
+      <trans-unit id="breadcrumbsBackground">
+        <source xml:lang="en">Background color of breadcrumb items.</source>
+        <target state="translated">階層リンクの項目の背景色。</target>
+      </trans-unit>
+      <trans-unit id="breadcrumbsSelectedForegound">
+        <source xml:lang="en">Color of selected breadcrumb items.</source>
+        <target state="translated">選択された階層リンクの項目の色。</target>
+      </trans-unit>
+      <trans-unit id="breadcrumbsSelectedBackground">
+        <source xml:lang="en">Background color of breadcrumb item picker.</source>
+        <target state="translated">階層項目ピッカーの背景色。</target>
+      </trans-unit>
+      <trans-unit id="mergeCurrentHeaderBackground">
+        <source xml:lang="en">Current header background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">インライン マージ競合の現在のヘッダーの背景。この色は、基本装飾が非表示にならないよう不透明にすることはできません。</target>
+      </trans-unit>
+      <trans-unit id="mergeCurrentContentBackground">
+        <source xml:lang="en">Current content background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">インライン マージ競合の現在のコンテンツ背景。この色は、基本装飾が非表示にならないよう不透明にすることはできません。</target>
+      </trans-unit>
+      <trans-unit id="mergeIncomingHeaderBackground">
+        <source xml:lang="en">Incoming header background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">インライン マージ競合の着信ヘッダーの背景。この色は、基本装飾が非表示にならないよう不透明にすることはできません。</target>
+      </trans-unit>
+      <trans-unit id="mergeIncomingContentBackground">
+        <source xml:lang="en">Incoming content background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">インライン マージ競合の着信コンテンツの背景。この色は、基本装飾が非表示にならないよう不透明にすることはできません。</target>
+      </trans-unit>
+      <trans-unit id="mergeCommonHeaderBackground">
+        <source xml:lang="en">Common ancestor header background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">インライン マージ競合の共通の先祖のヘッダー背景。この色は、基本装飾が非表示にならないよう不透明にすることはできません。</target>
+      </trans-unit>
+      <trans-unit id="mergeCommonContentBackground">
+        <source xml:lang="en">Common ancestor content background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">インライン マージ競合の共通の先祖のコンテンツ背景。この色は、基本装飾が非表示にならないよう不透明にすることはできません。</target>
+      </trans-unit>
+      <trans-unit id="mergeBorder">
+        <source xml:lang="en">Border color on headers and the splitter in inline merge-conflicts.</source>
+        <target state="translated">行内マージ競合のヘッダーとスプリッターの境界線の色。</target>
+      </trans-unit>
+      <trans-unit id="overviewRulerCurrentContentForeground">
+        <source xml:lang="en">Current overview ruler foreground for inline merge-conflicts.</source>
+        <target state="translated">行内マージ競合の現在の概要ルーラー前景色。</target>
+      </trans-unit>
+      <trans-unit id="overviewRulerIncomingContentForeground">
+        <source xml:lang="en">Incoming overview ruler foreground for inline merge-conflicts.</source>
+        <target state="translated">行内マージ競合の入力側の概要ルーラー前景色。</target>
+      </trans-unit>
+      <trans-unit id="overviewRulerCommonContentForeground">
+        <source xml:lang="en">Common ancestor overview ruler foreground for inline merge-conflicts.</source>
+        <target state="translated">行内マージ競合の共通の祖先概要ルーラー前景色。</target>
+      </trans-unit>
+      <trans-unit id="overviewRulerFindMatchForeground">
+        <source xml:lang="en">Overview ruler marker color for find matches. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">検出された一致項目の概要ルーラー マーカーの色。この色は、基本装飾が非表示にならないよう不透明にすることはできません。</target>
+      </trans-unit>
+      <trans-unit id="overviewRulerSelectionHighlightForeground">
+        <source xml:lang="en">Overview ruler marker color for selection highlights. The color must not be opaque so as not to hide underlying decorations.</source>
+        <target state="translated">選択範囲を強調表示するための概要ルーラー マーカーの色。この色は、基本装飾が非表示にならないよう不透明にすることはできません。</target>
+      </trans-unit>
+      <trans-unit id="minimapFindMatchHighlight">
+        <source xml:lang="en">Minimap marker color for find matches.</source>
+        <target state="translated">一致を検索するためのミニマップ マーカーの色。</target>
+      </trans-unit>
+      <trans-unit id="minimapSelectionHighlight">
+        <source xml:lang="en">Minimap marker color for the editor selection.</source>
+        <target state="translated">エディターの選択範囲のミニマップ マーカーの色。</target>
+      </trans-unit>
+      <trans-unit id="minimapError">
+        <source xml:lang="en">Minimap marker color for errors.</source>
+        <target state="translated">エラーのミニマップ マーカーの色。</target>
+      </trans-unit>
+      <trans-unit id="overviewRuleWarning">
+        <source xml:lang="en">Minimap marker color for warnings.</source>
+        <target state="translated">警告のミニマップ マーカーの色。</target>
+      </trans-unit>
+      <trans-unit id="minimapBackground">
+        <source xml:lang="en">Minimap background color.</source>
+        <target state="translated">ミニマップの背景色。</target>
+      </trans-unit>
+      <trans-unit id="minimapSliderBackground">
+        <source xml:lang="en">Minimap slider background color.</source>
+        <target state="translated">ミニマップ スライダーの背景色。</target>
+      </trans-unit>
+      <trans-unit id="minimapSliderHoverBackground">
+        <source xml:lang="en">Minimap slider background color when hovering.</source>
+        <target state="translated">ホバーリング時のミニマップ スライダーの背景色。</target>
+      </trans-unit>
+      <trans-unit id="minimapSliderActiveBackground">
+        <source xml:lang="en">Minimap slider background color when clicked on.</source>
+        <target state="translated">クリックしたときのミニマップ スライダーの背景色。</target>
+      </trans-unit>
+      <trans-unit id="problemsErrorIconForeground">
+        <source xml:lang="en">The color used for the problems error icon.</source>
+        <target state="translated">問題のエラー アイコンに使用される色。</target>
+      </trans-unit>
+      <trans-unit id="problemsWarningIconForeground">
+        <source xml:lang="en">The color used for the problems warning icon.</source>
+        <target state="translated">問題の警告アイコンに使用される色。</target>
+      </trans-unit>
+      <trans-unit id="problemsInfoIconForeground">
+        <source xml:lang="en">The color used for the problems info icon.</source>
+        <target state="translated">問題情報アイコンに使用される色。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/extensionsSync" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="skip extension">
+        <source xml:lang="en">Skipped synchronizing extension {0}</source>
+        <target state="translated">拡張機能 {0} の同期をスキップしました</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="errorInvalidSettings">
+        <source xml:lang="en">Unable to sync keybindings as there are errors/warning in keybindings file.</source>
+        <target state="translated">キーバインド ファイルにエラーまたは警告が含まれているので、キーバインドを同期できません。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/common/io" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="fileTooLargeForHeapError">
+        <source xml:lang="en">To open a file of this size, you need to restart and allow it to use more memory</source>
+        <target state="translated">このサイズのファイルを開くには、再起動して、より多くのメモリを利用可能にする必要があります</target>
+      </trans-unit>
+      <trans-unit id="fileTooLargeError">
+        <source xml:lang="en">File is too large to open</source>
+        <target state="translated">ファイルが大きすぎて開けません</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/actions/browser/menuEntryActionViewItem" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="titleAndKb">
+        <source xml:lang="en">{0} ({1})</source>
+        <target state="translated">{0} ({1})</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/abstractSynchronizer" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="incompatible">
+        <source xml:lang="en">Cannot sync {0} as its version {1} is not compatible with cloud {2}</source>
+        <target state="translated">{1} のバージョン {0} がクラウド {2} と互換性がないため、その同期ができません</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/extensions/common/extensionValidator" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="versionSyntax">
+        <source xml:lang="en">Could not parse `engines.vscode` value {0}. Please use, for example: ^1.22.0, ^1.22.x, etc.</source>
+        <target state="translated">`engines.vscode` の値 {0} を解析できませんでした。使用可能な値の例: ^1.22.0、^1.22.x など。</target>
+      </trans-unit>
+      <trans-unit id="versionSpecificity1">
+        <source xml:lang="en">Version specified in `engines.vscode` ({0}) is not specific enough. For vscode versions before 1.0.0, please define at a minimum the major and minor desired version. E.g. ^0.10.0, 0.10.x, 0.11.0, etc.</source>
+        <target state="translated">`engines.vscode` ({0}) で指定されたバージョンが十分に特定されていません。1.0.0 より前の vscode バージョンの場合は、少なくとも想定されているメジャー バージョンとマイナー バージョンを定義してください。例 ^0.10.0、0.10.x、0.11.0 など。</target>
+      </trans-unit>
+      <trans-unit id="versionSpecificity2">
+        <source xml:lang="en">Version specified in `engines.vscode` ({0}) is not specific enough. For vscode versions after 1.0.0, please define at a minimum the major desired version. E.g. ^1.10.0, 1.10.x, 1.x.x, 2.x.x, etc.</source>
+        <target state="translated">`engines.vscode` ({0}) で指定されたバージョンが明確ではありません。1.0.0 より後のバージョンの vscode の場合は、少なくとも、想定されているメジャー バージョンを定義してください。例 ^1.10.0、1.10.x、1.x.x、2.x.x など。</target>
+      </trans-unit>
+      <trans-unit id="versionMismatch">
+        <source xml:lang="en">Extension is not compatible with Code {0}. Extension requires: {1}.</source>
+        <target state="translated">拡張機能が Code {0} と互換性がありません。拡張機能に必要なバージョン: {1}。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/dialogs/electron-main/dialogs" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="open">
+        <source xml:lang="en">Open</source>
+        <target state="translated">開く</target>
+      </trans-unit>
+      <trans-unit id="openFolder">
+        <source xml:lang="en">Open Folder</source>
+        <target state="translated">フォルダーを開く</target>
+      </trans-unit>
+      <trans-unit id="openFile">
+        <source xml:lang="en">Open File</source>
+        <target state="translated">ファイルを開く</target>
+      </trans-unit>
+      <trans-unit id="openWorkspaceTitle">
+        <source xml:lang="en">Open Workspace</source>
+        <target state="translated">ワークスペースを開く</target>
+      </trans-unit>
+      <trans-unit id="openWorkspace">
+        <source xml:lang="en">&amp;&amp;Open</source>
+        <target state="translated">開く(&amp;&amp;O)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/keybinding/common/abstractKeybindingService" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="first.chord">
+        <source xml:lang="en">({0}) was pressed. Waiting for second key of chord...</source>
+        <target state="translated">({0}) が押されました。2 番目のキーを待っています...</target>
+      </trans-unit>
+      <trans-unit id="missing.chord">
+        <source xml:lang="en">The key combination ({0}, {1}) is not a command.</source>
+        <target state="translated">キーの組み合わせ ({0}、{1}) はコマンドではありません。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/workspaces/electron-main/workspacesMainService" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="ok">
+        <source xml:lang="en">OK</source>
+        <target state="translated">OK</target>
+      </trans-unit>
+      <trans-unit id="workspaceOpenedMessage">
+        <source xml:lang="en">Unable to save workspace '{0}'</source>
+        <target state="translated">ワークスペース '{0}' を保存できません</target>
+      </trans-unit>
+      <trans-unit id="workspaceOpenedDetail">
+        <source xml:lang="en">The workspace is already opened in another window. Please close that window first and then try again.</source>
+        <target state="translated">ワークスペースは既に別のウィンドウで開いています。最初にそのウィンドウを閉じててから、もう一度やり直してください。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/workspaces/electron-main/workspacesHistoryMainService" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="newWindow">
+        <source xml:lang="en">New Window</source>
+        <target state="translated">新しいウィンドウ</target>
+      </trans-unit>
+      <trans-unit id="newWindowDesc">
+        <source xml:lang="en">Opens a new window</source>
+        <target state="translated">新しいウィンドウを開く</target>
+      </trans-unit>
+      <trans-unit id="recentFolders">
+        <source xml:lang="en">Recent Workspaces</source>
+        <target state="translated">最近使ったワークスペース</target>
+      </trans-unit>
+      <trans-unit id="folderDesc">
+        <source xml:lang="en">{0} {1}</source>
+        <target state="translated">{0} {1}</target>
+      </trans-unit>
+      <trans-unit id="workspaceDesc">
+        <source xml:lang="en">{0} {1}</source>
+        <target state="translated">{0} {1}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/issue/electron-main/issueMainService" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="local">
+        <source xml:lang="en">Local</source>
+        <target state="translated">LOCAL</target>
+      </trans-unit>
+      <trans-unit id="issueReporterWriteToClipboard">
+        <source xml:lang="en">There is too much data to send to GitHub directly. The data will be copied to the clipboard, please paste it into the GitHub issue page that is opened.</source>
+        <target state="translated">データが多すぎて、GitHub に直接送信することができませんでした。データはクリップボードにコピーされます。開かれる GitHub 問題ページに貼り付けてください。</target>
+      </trans-unit>
+      <trans-unit id="ok">
+        <source xml:lang="en">OK</source>
+        <target state="translated">OK</target>
+      </trans-unit>
+      <trans-unit id="cancel">
+        <source xml:lang="en">Cancel</source>
+        <target state="translated">キャンセル</target>
+      </trans-unit>
+      <trans-unit id="confirmCloseIssueReporter">
+        <source xml:lang="en">Your input will not be saved. Are you sure you want to close this window?</source>
+        <target state="translated">入力した内容は保存されません。このウィンドウを閉じますか?</target>
+      </trans-unit>
+      <trans-unit id="yes">
+        <source xml:lang="en">Yes</source>
+        <target state="translated">はい</target>
+      </trans-unit>
+      <trans-unit id="issueReporter">
+        <source xml:lang="en">Issue Reporter</source>
+        <target state="translated">問題のレポーター</target>
+      </trans-unit>
+      <trans-unit id="processExplorer">
+        <source xml:lang="en">Process Explorer</source>
+        <target state="translated">プロセス エクスプローラー</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/theme/common/tokenClassificationRegistry" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="schema.token.settings">
+        <source xml:lang="en">Colors and styles for the token.</source>
+        <target state="translated">トークンの色とスタイル。</target>
+      </trans-unit>
+      <trans-unit id="schema.token.foreground">
+        <source xml:lang="en">Foreground color for the token.</source>
+        <target state="translated">トークンの前景色。</target>
+      </trans-unit>
+      <trans-unit id="schema.token.background.warning">
+        <source xml:lang="en">Token background colors are currently not supported.</source>
+        <target state="translated">トークンの背景色は、現在サポートされていません。</target>
+      </trans-unit>
+      <trans-unit id="schema.token.fontStyle">
+        <source xml:lang="en">Font style of the rule: 'italic', 'bold' or 'underline' or a combination. The empty string unsets inherited settings.</source>
+        <target state="translated">ルールのフォント スタイル:  'italic'、'bold'、'underline' のいずれかまたはこれらの組み合わせです。空の文字列は継承された設定を解除します。</target>
+      </trans-unit>
+      <trans-unit id="schema.fontStyle.error">
+        <source xml:lang="en">Font style must be 'italic', 'bold' or 'underline' or a combination. The empty string unsets all styles.</source>
+        <target state="translated">フォント スタイルは、'斜体'、'太字'、'下線' かこれらを組み合わせたものである必要があります。空の文字列は、すべてのスタイルの設定を解除します。</target>
+      </trans-unit>
+      <trans-unit id="schema.token.fontStyle.none">
+        <source xml:lang="en">None (clear inherited style)</source>
+        <target state="translated">なし (継承したスタイルを解除)</target>
+      </trans-unit>
+      <trans-unit id="comment">
+        <source xml:lang="en">Style for comments.</source>
+        <target state="translated">コメントのスタイル。</target>
+      </trans-unit>
+      <trans-unit id="string">
+        <source xml:lang="en">Style for strings.</source>
+        <target state="translated">文字列のスタイル。</target>
+      </trans-unit>
+      <trans-unit id="keyword">
+        <source xml:lang="en">Style for keywords.</source>
+        <target state="translated">キーワードのスタイル。</target>
+      </trans-unit>
+      <trans-unit id="number">
+        <source xml:lang="en">Style for numbers.</source>
+        <target state="translated">数値のスタイル。</target>
+      </trans-unit>
+      <trans-unit id="regexp">
+        <source xml:lang="en">Style for expressions.</source>
+        <target state="translated">式のスタイル。</target>
+      </trans-unit>
+      <trans-unit id="operator">
+        <source xml:lang="en">Style for operators.</source>
+        <target state="translated">演算子のスタイル。</target>
+      </trans-unit>
+      <trans-unit id="namespace">
+        <source xml:lang="en">Style for namespaces.</source>
+        <target state="translated">名前空間のスタイル。</target>
+      </trans-unit>
+      <trans-unit id="type">
+        <source xml:lang="en">Style for types.</source>
+        <target state="translated">型のスタイル。</target>
+      </trans-unit>
+      <trans-unit id="struct">
+        <source xml:lang="en">Style for structs.</source>
+        <target state="translated">構造体のスタイル。</target>
+      </trans-unit>
+      <trans-unit id="class">
+        <source xml:lang="en">Style for classes.</source>
+        <target state="translated">クラスのスタイル。</target>
+      </trans-unit>
+      <trans-unit id="interface">
+        <source xml:lang="en">Style for interfaces.</source>
+        <target state="translated">インターフェイスのスタイル。</target>
+      </trans-unit>
+      <trans-unit id="enum">
+        <source xml:lang="en">Style for enums.</source>
+        <target state="translated">列挙型のスタイル。</target>
+      </trans-unit>
+      <trans-unit id="typeParameter">
+        <source xml:lang="en">Style for type parameters.</source>
+        <target state="translated">型パラメーターのスタイル。</target>
+      </trans-unit>
+      <trans-unit id="function">
+        <source xml:lang="en">Style for functions</source>
+        <target state="translated">関数のスタイル</target>
+      </trans-unit>
+      <trans-unit id="member">
+        <source xml:lang="en">Style for member</source>
+        <target state="translated">メンバーのスタイル</target>
+      </trans-unit>
+      <trans-unit id="macro">
+        <source xml:lang="en">Style for macros.</source>
+        <target state="translated">マクロのスタイル。</target>
+      </trans-unit>
+      <trans-unit id="variable">
+        <source xml:lang="en">Style for variables.</source>
+        <target state="translated">変数のスタイル。</target>
+      </trans-unit>
+      <trans-unit id="parameter">
+        <source xml:lang="en">Style for parameters.</source>
+        <target state="translated">パラメーターのスタイル。</target>
+      </trans-unit>
+      <trans-unit id="property">
+        <source xml:lang="en">Style for properties.</source>
+        <target state="translated">プロパティのスタイル。</target>
+      </trans-unit>
+      <trans-unit id="enumMember">
+        <source xml:lang="en">Style for enum members.</source>
+        <target state="translated">列挙型メンバーのスタイル。</target>
+      </trans-unit>
+      <trans-unit id="event">
+        <source xml:lang="en">Style for events.</source>
+        <target state="translated">イベントのスタイル。</target>
+      </trans-unit>
+      <trans-unit id="labels">
+        <source xml:lang="en">Style for labels. </source>
+        <target state="translated">ラベルのスタイル。</target>
+      </trans-unit>
+      <trans-unit id="declaration">
+        <source xml:lang="en">Style for all symbol declarations.</source>
+        <target state="translated">すべての記号の宣言のスタイル。</target>
+      </trans-unit>
+      <trans-unit id="documentation">
+        <source xml:lang="en">Style to use for references in documentation.</source>
+        <target state="translated">ドキュメント内の参照に使用するスタイル。</target>
+      </trans-unit>
+      <trans-unit id="static">
+        <source xml:lang="en">Style to use for symbols that are static.</source>
+        <target state="translated">静的記号に使用するスタイル。</target>
+      </trans-unit>
+      <trans-unit id="abstract">
+        <source xml:lang="en">Style to use for symbols that are abstract.</source>
+        <target state="translated">抽象記号に使用するスタイル。</target>
+      </trans-unit>
+      <trans-unit id="deprecated">
+        <source xml:lang="en">Style to use for symbols that are deprecated.</source>
+        <target state="translated">非推奨の記号に使用するスタイル。</target>
+      </trans-unit>
+      <trans-unit id="modification">
+        <source xml:lang="en">Style to use for write accesses.</source>
+        <target state="translated">書き込みアクセスに使用するスタイル。</target>
+      </trans-unit>
+      <trans-unit id="async">
+        <source xml:lang="en">Style to use for symbols that are async.</source>
+        <target state="translated">非同期の記号に使用するスタイル。</target>
+      </trans-unit>
+      <trans-unit id="readonly">
+        <source xml:lang="en">Style to use for symbols that are readonly.</source>
+        <target state="translated">読み取り専用のシンボルに使用するスタイル。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/menubar/electron-main/menubar" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="miNewWindow">
+        <source xml:lang="en">New &amp;&amp;Window</source>
+        <target state="translated">新しいウィンドウ(&amp;&amp;W)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mFile">
+        <source xml:lang="en">&amp;&amp;File</source>
+        <target state="translated">ファイル(&amp;&amp;F)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mEdit">
+        <source xml:lang="en">&amp;&amp;Edit</source>
+        <target state="translated">編集(&amp;&amp;E)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mSelection">
+        <source xml:lang="en">&amp;&amp;Selection</source>
+        <target state="translated">選択(&amp;&amp;S)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mView">
+        <source xml:lang="en">&amp;&amp;View</source>
+        <target state="translated">表示(&amp;&amp;V)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mGoto">
+        <source xml:lang="en">&amp;&amp;Go</source>
+        <target state="translated">移動(&amp;&amp;G)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mRun">
+        <source xml:lang="en">&amp;&amp;Run</source>
+        <target state="translated">実行(&amp;&amp;R)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mTerminal">
+        <source xml:lang="en">&amp;&amp;Terminal</source>
+        <target state="translated">ターミナル(&amp;&amp;T)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mWindow">
+        <source xml:lang="en">Window</source>
+        <target state="translated">ウィンドウ</target>
+      </trans-unit>
+      <trans-unit id="mHelp">
+        <source xml:lang="en">&amp;&amp;Help</source>
+        <target state="translated">ヘルプ(&amp;&amp;H)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mAbout">
+        <source xml:lang="en">About {0}</source>
+        <target state="translated">{0} のバージョン情報</target>
+      </trans-unit>
+      <trans-unit id="miPreferences">
+        <source xml:lang="en">&amp;&amp;Preferences</source>
+        <target state="translated">基本設定(&amp;&amp;P)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mServices">
+        <source xml:lang="en">Services</source>
+        <target state="translated">サービス</target>
+      </trans-unit>
+      <trans-unit id="mHide">
+        <source xml:lang="en">Hide {0}</source>
+        <target state="translated">{0} を非表示にする</target>
+      </trans-unit>
+      <trans-unit id="mHideOthers">
+        <source xml:lang="en">Hide Others</source>
+        <target state="translated">その他を非表示にする</target>
+      </trans-unit>
+      <trans-unit id="mShowAll">
+        <source xml:lang="en">Show All</source>
+        <target state="translated">すべて表示</target>
+      </trans-unit>
+      <trans-unit id="miQuit">
+        <source xml:lang="en">Quit {0}</source>
+        <target state="translated">{0} を終了</target>
+      </trans-unit>
+      <trans-unit id="mMinimize">
+        <source xml:lang="en">Minimize</source>
+        <target state="translated">最小化</target>
+      </trans-unit>
+      <trans-unit id="mZoom">
+        <source xml:lang="en">Zoom</source>
+        <target state="translated">ズーム</target>
+      </trans-unit>
+      <trans-unit id="mBringToFront">
+        <source xml:lang="en">Bring All to Front</source>
+        <target state="translated">すべてを前面に配置</target>
+      </trans-unit>
+      <trans-unit id="miSwitchWindow">
+        <source xml:lang="en">Switch &amp;&amp;Window...</source>
+        <target state="translated">ウィンドウの切り替え(&amp;&amp;W)...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mNewTab">
+        <source xml:lang="en">New Tab</source>
+        <target state="translated">新しいタブ</target>
+      </trans-unit>
+      <trans-unit id="mShowPreviousTab">
+        <source xml:lang="en">Show Previous Tab</source>
+        <target state="translated">前のタブを表示</target>
+      </trans-unit>
+      <trans-unit id="mShowNextTab">
+        <source xml:lang="en">Show Next Tab</source>
+        <target state="translated">次のタブを表示</target>
+      </trans-unit>
+      <trans-unit id="mMoveTabToNewWindow">
+        <source xml:lang="en">Move Tab to New Window</source>
+        <target state="translated">タブを新しいウィンドウに移動</target>
+      </trans-unit>
+      <trans-unit id="mMergeAllWindows">
+        <source xml:lang="en">Merge All Windows</source>
+        <target state="translated">すべてのウィンドウを統合</target>
+      </trans-unit>
+      <trans-unit id="miCheckForUpdates">
+        <source xml:lang="en">Check for &amp;&amp;Updates...</source>
+        <target state="translated">更新の確認(&amp;&amp;U)...</target>
+      </trans-unit>
+      <trans-unit id="miCheckingForUpdates">
+        <source xml:lang="en">Checking for Updates...</source>
+        <target state="translated">更新を確認しています...</target>
+      </trans-unit>
+      <trans-unit id="miDownloadUpdate">
+        <source xml:lang="en">D&amp;&amp;ownload Available Update</source>
+        <target state="translated">利用可能な更新をダウンロード(&amp;&amp;O)</target>
+      </trans-unit>
+      <trans-unit id="miDownloadingUpdate">
+        <source xml:lang="en">Downloading Update...</source>
+        <target state="translated">更新をダウンロードしています...</target>
+      </trans-unit>
+      <trans-unit id="miInstallUpdate">
+        <source xml:lang="en">Install &amp;&amp;Update...</source>
+        <target state="translated">更新のインストール(&amp;&amp;U)...</target>
+      </trans-unit>
+      <trans-unit id="miInstallingUpdate">
+        <source xml:lang="en">Installing Update...</source>
+        <target state="translated">更新プログラムをインストールしています...</target>
+      </trans-unit>
+      <trans-unit id="miRestartToUpdate">
+        <source xml:lang="en">Restart to &amp;&amp;Update</source>
+        <target state="translated">再起動して更新(&amp;&amp;U)</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/windows/electron-main/windowsMainService" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="pathNotExistTitle">
+        <source xml:lang="en">Path does not exist</source>
+        <target state="translated">パスが存在しません</target>
+      </trans-unit>
+      <trans-unit id="pathNotExistDetail">
+        <source xml:lang="en">The path '{0}' does not seem to exist anymore on disk.</source>
+        <target state="translated">パス '{0}' はディスクに存在しなくなったようです。</target>
+      </trans-unit>
+      <trans-unit id="uriInvalidTitle">
+        <source xml:lang="en">URI can not be opened</source>
+        <target state="translated">URI を開くことができません</target>
+      </trans-unit>
+      <trans-unit id="uriInvalidDetail">
+        <source xml:lang="en">The URI '{0}' is not valid and can not be opened.</source>
+        <target state="translated">URI '{0}' が有効ではなく、開くことができません。</target>
+      </trans-unit>
+      <trans-unit id="ok">
+        <source xml:lang="en">OK</source>
+        <target state="translated">OK</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

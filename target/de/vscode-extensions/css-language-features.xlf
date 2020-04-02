@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="extensions/css-language-features/package" source-language="en" target-language="de" datatype="plaintext">
+    <body>
+      <trans-unit id="displayName">
+        <source xml:lang="en">CSS Language Features</source>
+        <target state="translated">CSS-Sprachfeatures</target>
+      </trans-unit>
+      <trans-unit id="description">
+        <source xml:lang="en">Provides rich language support for CSS, LESS and SCSS files.</source>
+        <target state="translated">Bietet umfangreiche Sprachunterstützung für CSS-, LESS- und SCSS-Dateien.</target>
+      </trans-unit>
+      <trans-unit id="css.title">
+        <source xml:lang="en">CSS</source>
+        <target state="translated">CSS</target>
+      </trans-unit>
+      <trans-unit id="css.customData.desc">
+        <source xml:lang="en">A list of relative file paths pointing to JSON files following the [custom data format](https://github.com/Microsoft/vscode-css-languageservice/blob/master/docs/customData.md).
+
+VS Code loads custom data on startup to enhance its CSS support for the custom CSS properties, at directives, pseudo classes and pseudo elements you specify in the JSON files.
+
+The file paths are relative to workspace and only workspace folder settings are considered.</source>
+        <target state="translated">Eine Liste relativer Dateipfade, die gemäß dem [benutzerdefinierten Datenformat](https://github.com/Microsoft/vscode-html-languageservice/blob/master/docs/customData.md) auf JSON-Dateien verweisen.
+
+VS Code lädt benutzerdefinierte Daten beim Start, um die CSS-Unterstützung für die benutzerdefinierten CSS-Eigenschaften für Anweisungen, Pseudoklassen und Pseudoelemente zu verbessern, die Sie in den JSON-Dateien angeben.
+
+Die Dateipfade sind relativ zum Arbeitsbereich, und es werden nur Arbeitsbereichsordner-Einstellungen berücksichtigt.</target>
+      </trans-unit>
+      <trans-unit id="css.completion.triggerPropertyValueCompletion.desc">
+        <source xml:lang="en">By default, VS Code triggers property value completion after selecting a CSS property. Use this setting to disable this behavior.</source>
+        <target state="translated">VS Code löst die Vervollständigung des Eigenschaftswerts standardmäßig aus, nachdem eine CSS-Eigenschaft ausgewählt wurde. Mit dieser Einstellung deaktivieren Sie dieses Verhalten.</target>
+      </trans-unit>
+      <trans-unit id="css.completion.completePropertyWithSemicolon.desc">
+        <source xml:lang="en">Insert semicolon at end of line when completing CSS properties</source>
+        <target state="translated">Semikolon am Zeilenende einfügen, wenn CSS-Eigenschaften vervollständigt werden</target>
+      </trans-unit>
+      <trans-unit id="css.lint.argumentsInColorFunction.desc">
+        <source xml:lang="en">Invalid number of parameters.</source>
+        <target state="translated">Ungültige Parameteranzahl.</target>
+      </trans-unit>
+      <trans-unit id="css.lint.boxModel.desc">
+        <source xml:lang="en">Do not use `width` or `height` when using `padding` or `border`.</source>
+        <target state="translated">"width" oder "height" nicht verwenden, wenn "padding" oder "border" genutzt werden.</target>
+      </trans-unit>
+      <trans-unit id="css.lint.compatibleVendorPrefixes.desc">
+        <source xml:lang="en">When using a vendor-specific prefix make sure to also include all other vendor-specific properties.</source>
+        <target state="translated">Beim Verwenden eines anbieterspezifischen Präfixes sicherstellen, dass alle anderen anbieterspezifischen Eigenschaften einbezogen werden.</target>
+      </trans-unit>
+      <trans-unit id="css.lint.duplicateProperties.desc">
+        <source xml:lang="en">Do not use duplicate style definitions.</source>
+        <target state="translated">Keine doppelten Formatdefinitionen verwenden.</target>
+      </trans-unit>
+      <trans-unit id="css.lint.emptyRules.desc">
+        <source xml:lang="en">Do not use empty rulesets.</source>
+        <target state="translated">Keine leeren Regelsätze verwenden.</target>
+      </trans-unit>
+      <trans-unit id="css.lint.float.desc">
+        <source xml:lang="en">Avoid using `float`. Floats lead to fragile CSS that is easy to break if one aspect of the layout changes.</source>
+        <target state="translated">Die Verwendung von "float" vermeiden. float-Eigenschaften führen leicht dazu, dass CSS nicht mehr funktioniert, wenn sich ein Aspekt des Layouts ändert.</target>
+      </trans-unit>
+      <trans-unit id="css.lint.fontFaceProperties.desc">
+        <source xml:lang="en">`@font-face` rule must define `src` and `font-family` properties.</source>
+        <target state="translated">`@font-face`-Regel muss Eigenschaften `src` und `font-family` definieren.</target>
+      </trans-unit>
+      <trans-unit id="css.lint.hexColorLength.desc">
+        <source xml:lang="en">Hex colors must consist of three or six hex numbers.</source>
+        <target state="translated">Farben im Hexadezimalformat müssen aus drei oder sechs Hexadezimalzahlen bestehen.</target>
+      </trans-unit>
+      <trans-unit id="css.lint.idSelector.desc">
+        <source xml:lang="en">Selectors should not contain IDs because these rules are too tightly coupled with the HTML.</source>
+        <target state="translated">Selektoren sollten keine IDs enthalten, da diese Regeln zu eng mit HTML verknüpft sind.</target>
+      </trans-unit>
+      <trans-unit id="css.lint.ieHack.desc">
+        <source xml:lang="en">IE hacks are only necessary when supporting IE7 and older.</source>
+        <target state="translated">IE-Hacks sind nur für die Unterstützung von IE7 und niedriger erforderlich.</target>
+      </trans-unit>
+      <trans-unit id="css.lint.important.desc">
+        <source xml:lang="en">Avoid using `!important`. It is an indication that the specificity of the entire CSS has gotten out of control and needs to be refactored.</source>
+        <target state="translated">Verwendung von "!important" vermeiden. Damit wird angegeben, dass es mit der Spezifität des gesamten CSS-Codes Probleme gibt und eine Umgestaltung erforderlich ist.</target>
+      </trans-unit>
+      <trans-unit id="css.lint.importStatement.desc">
+        <source xml:lang="en">Import statements do not load in parallel.</source>
+        <target state="translated">Import-Anweisungen werden nicht parallel geladen.</target>
+      </trans-unit>
+      <trans-unit id="css.lint.propertyIgnoredDueToDisplay.desc">
+        <source xml:lang="en">Property is ignored due to the display. E.g. with `display: inline`, the `width`, `height`, `margin-top`, `margin-bottom`, and `float` properties have no effect.</source>
+        <target state="translated">Die Eigenschaft wird aufgrund der Anzeige ignoriert. Durch die Angabe "display: inline" haben beispielsweise die Eigenschaften "width", "height", "margin-top", "margin-bottom" und "float" keine Auswirkung.</target>
+      </trans-unit>
+      <trans-unit id="css.lint.universalSelector.desc">
+        <source xml:lang="en">The universal selector (`*`) is known to be slow.</source>
+        <target state="translated">Der Universalselektor (*) ist bekanntermaßen langsam.</target>
+      </trans-unit>
+      <trans-unit id="css.lint.unknownAtRules.desc">
+        <source xml:lang="en">Unknown at-rule.</source>
+        <target state="translated">Unbekannte at-Regel.</target>
+      </trans-unit>
+      <trans-unit id="css.lint.unknownProperties.desc">
+        <source xml:lang="en">Unknown property.</source>
+        <target state="translated">Unbekannte Eigenschaft.</target>
+      </trans-unit>
+      <trans-unit id="css.lint.validProperties.desc">
+        <source xml:lang="en">A list of properties that are not validated against the `unknownProperties` rule.</source>
+        <target state="translated">Eine Liste der Eigenschaften, die nicht auf Übereinstimmung mit der Regel "unknownProperties" überprüft werden.</target>
+      </trans-unit>
+      <trans-unit id="css.lint.unknownVendorSpecificProperties.desc">
+        <source xml:lang="en">Unknown vendor specific property.</source>
+        <target state="translated">Unbekannte anbieterspezifische Eigenschaft.</target>
+      </trans-unit>
+      <trans-unit id="css.lint.vendorPrefix.desc">
+        <source xml:lang="en">When using a vendor-specific prefix, also include the standard property.</source>
+        <target state="translated">Beim Verwenden eines anbieterspezifischen Präfixes auch die Standardeigenschaft einbeziehen.</target>
+      </trans-unit>
+      <trans-unit id="css.lint.zeroUnits.desc">
+        <source xml:lang="en">No unit for zero needed.</source>
+        <target state="translated">Keine Einheit für Null erforderlich.</target>
+      </trans-unit>
+      <trans-unit id="css.trace.server.desc">
+        <source xml:lang="en">Traces the communication between VS Code and the CSS language server.</source>
+        <target state="translated">Verfolgt die Kommunikation zwischen VS Code und dem CSS-Sprachserver.</target>
+      </trans-unit>
+      <trans-unit id="css.validate.title">
+        <source xml:lang="en">Controls CSS validation and problem severities.</source>
+        <target state="translated">Steuert die CSS-Validierung und Problemschweregrade.</target>
+      </trans-unit>
+      <trans-unit id="css.validate.desc">
+        <source xml:lang="en">Enables or disables all validations.</source>
+        <target state="translated">Aktiviert oder deaktiviert alle Überprüfungen.</target>
+      </trans-unit>
+      <trans-unit id="less.title">
+        <source xml:lang="en">LESS</source>
+        <target state="translated">LESS</target>
+      </trans-unit>
+      <trans-unit id="less.completion.triggerPropertyValueCompletion.desc">
+        <source xml:lang="en">By default, VS Code triggers property value completion after selecting a CSS property. Use this setting to disable this behavior.</source>
+        <target state="translated">VS Code löst die Vervollständigung des Eigenschaftswerts standardmäßig aus, nachdem eine CSS-Eigenschaft ausgewählt wurde. Mit dieser Einstellung deaktivieren Sie dieses Verhalten.</target>
+      </trans-unit>
+      <trans-unit id="less.completion.completePropertyWithSemicolon.desc">
+        <source xml:lang="en">Insert semicolon at end of line when completing CSS properties</source>
+        <target state="translated">Semikolon am Zeilenende einfügen, wenn CSS-Eigenschaften vervollständigt werden</target>
+      </trans-unit>
+      <trans-unit id="less.lint.argumentsInColorFunction.desc">
+        <source xml:lang="en">Invalid number of parameters.</source>
+        <target state="translated">Ungültige Parameteranzahl.</target>
+      </trans-unit>
+      <trans-unit id="less.lint.boxModel.desc">
+        <source xml:lang="en">Do not use `width` or `height` when using `padding` or `border`.</source>
+        <target state="translated">"width" oder "height" nicht verwenden, wenn "padding" oder "border" genutzt werden.</target>
+      </trans-unit>
+      <trans-unit id="less.lint.compatibleVendorPrefixes.desc">
+        <source xml:lang="en">When using a vendor-specific prefix make sure to also include all other vendor-specific properties.</source>
+        <target state="translated">Beim Verwenden eines anbieterspezifischen Präfixes sicherstellen, dass alle anderen anbieterspezifischen Eigenschaften einbezogen werden.</target>
+      </trans-unit>
+      <trans-unit id="less.lint.duplicateProperties.desc">
+        <source xml:lang="en">Do not use duplicate style definitions.</source>
+        <target state="translated">Keine doppelten Formatdefinitionen verwenden.</target>
+      </trans-unit>
+      <trans-unit id="less.lint.emptyRules.desc">
+        <source xml:lang="en">Do not use empty rulesets.</source>
+        <target state="translated">Keine leeren Regelsätze verwenden.</target>
+      </trans-unit>
+      <trans-unit id="less.lint.float.desc">
+        <source xml:lang="en">Avoid using `float`. Floats lead to fragile CSS that is easy to break if one aspect of the layout changes.</source>
+        <target state="translated">Die Verwendung von "float" vermeiden. float-Eigenschaften führen leicht dazu, dass CSS nicht mehr funktioniert, wenn sich ein Aspekt des Layouts ändert.</target>
+      </trans-unit>
+      <trans-unit id="less.lint.fontFaceProperties.desc">
+        <source xml:lang="en">`@font-face` rule must define `src` and `font-family` properties.</source>
+        <target state="translated">`@font-face`-Regel muss Eigenschaften `src` und `font-family` definieren.</target>
+      </trans-unit>
+      <trans-unit id="less.lint.hexColorLength.desc">
+        <source xml:lang="en">Hex colors must consist of three or six hex numbers.</source>
+        <target state="translated">Farben im Hexadezimalformat müssen aus drei oder sechs Hexadezimalzahlen bestehen.</target>
+      </trans-unit>
+      <trans-unit id="less.lint.idSelector.desc">
+        <source xml:lang="en">Selectors should not contain IDs because these rules are too tightly coupled with the HTML.</source>
+        <target state="translated">Selektoren sollten keine IDs enthalten, da diese Regeln zu eng mit HTML verknüpft sind.</target>
+      </trans-unit>
+      <trans-unit id="less.lint.ieHack.desc">
+        <source xml:lang="en">IE hacks are only necessary when supporting IE7 and older.</source>
+        <target state="translated">IE-Hacks sind nur für die Unterstützung von IE7 und niedriger erforderlich.</target>
+      </trans-unit>
+      <trans-unit id="less.lint.important.desc">
+        <source xml:lang="en">Avoid using `!important`. It is an indication that the specificity of the entire CSS has gotten out of control and needs to be refactored.</source>
+        <target state="translated">Verwendung von "!important" vermeiden. Damit wird angegeben, dass es mit der Spezifität des gesamten CSS-Codes Probleme gibt und eine Umgestaltung erforderlich ist.</target>
+      </trans-unit>
+      <trans-unit id="less.lint.importStatement.desc">
+        <source xml:lang="en">Import statements do not load in parallel.</source>
+        <target state="translated">Import-Anweisungen werden nicht parallel geladen.</target>
+      </trans-unit>
+      <trans-unit id="less.lint.propertyIgnoredDueToDisplay.desc">
+        <source xml:lang="en">Property is ignored due to the display. E.g. with `display: inline`, the `width`, `height`, `margin-top`, `margin-bottom`, and `float` properties have no effect.</source>
+        <target state="translated">Die Eigenschaft wird aufgrund der Anzeige ignoriert. Durch die Angabe "display: inline" haben beispielsweise die Eigenschaften "width", "height", "margin-top", "margin-bottom" und "float" keine Auswirkung.</target>
+      </trans-unit>
+      <trans-unit id="less.lint.universalSelector.desc">
+        <source xml:lang="en">The universal selector (`*`) is known to be slow.</source>
+        <target state="translated">Der Universalselektor (*) ist bekanntermaßen langsam.</target>
+      </trans-unit>
+      <trans-unit id="less.lint.unknownAtRules.desc">
+        <source xml:lang="en">Unknown at-rule.</source>
+        <target state="translated">Unbekannte at-Regel.</target>
+      </trans-unit>
+      <trans-unit id="less.lint.unknownProperties.desc">
+        <source xml:lang="en">Unknown property.</source>
+        <target state="translated">Unbekannte Eigenschaft.</target>
+      </trans-unit>
+      <trans-unit id="less.lint.validProperties.desc">
+        <source xml:lang="en">A list of properties that are not validated against the `unknownProperties` rule.</source>
+        <target state="translated">Eine Liste der Eigenschaften, die nicht auf Übereinstimmung mit der Regel "unknownProperties" überprüft werden.</target>
+      </trans-unit>
+      <trans-unit id="less.lint.unknownVendorSpecificProperties.desc">
+        <source xml:lang="en">Unknown vendor specific property.</source>
+        <target state="translated">Unbekannte anbieterspezifische Eigenschaft.</target>
+      </trans-unit>
+      <trans-unit id="less.lint.vendorPrefix.desc">
+        <source xml:lang="en">When using a vendor-specific prefix, also include the standard property.</source>
+        <target state="translated">Beim Verwenden eines anbieterspezifischen Präfixes auch die Standardeigenschaft einbeziehen.</target>
+      </trans-unit>
+      <trans-unit id="less.lint.zeroUnits.desc">
+        <source xml:lang="en">No unit for zero needed.</source>
+        <target state="translated">Keine Einheit für Null erforderlich.</target>
+      </trans-unit>
+      <trans-unit id="less.validate.title">
+        <source xml:lang="en">Controls LESS validation and problem severities.</source>
+        <target state="translated">Steuert die LESS-Validierung und Problemschweregrade.</target>
+      </trans-unit>
+      <trans-unit id="less.validate.desc">
+        <source xml:lang="en">Enables or disables all validations.</source>
+        <target state="translated">Aktiviert oder deaktiviert alle Überprüfungen.</target>
+      </trans-unit>
+      <trans-unit id="scss.title">
+        <source xml:lang="en">SCSS (Sass)</source>
+        <target state="translated">SCSS (SASS)</target>
+      </trans-unit>
+      <trans-unit id="scss.completion.triggerPropertyValueCompletion.desc">
+        <source xml:lang="en">By default, VS Code triggers property value completion after selecting a CSS property. Use this setting to disable this behavior.</source>
+        <target state="translated">VS Code löst die Vervollständigung des Eigenschaftswerts standardmäßig aus, nachdem eine CSS-Eigenschaft ausgewählt wurde. Mit dieser Einstellung deaktivieren Sie dieses Verhalten.</target>
+      </trans-unit>
+      <trans-unit id="scss.completion.completePropertyWithSemicolon.desc">
+        <source xml:lang="en">Insert semicolon at end of line when completing CSS properties</source>
+        <target state="translated">Semikolon am Zeilenende einfügen, wenn CSS-Eigenschaften vervollständigt werden</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.argumentsInColorFunction.desc">
+        <source xml:lang="en">Invalid number of parameters.</source>
+        <target state="translated">Ungültige Parameteranzahl.</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.boxModel.desc">
+        <source xml:lang="en">Do not use `width` or `height` when using `padding` or `border`.</source>
+        <target state="translated">"width" oder "height" nicht verwenden, wenn "padding" oder "border" genutzt werden.</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.compatibleVendorPrefixes.desc">
+        <source xml:lang="en">When using a vendor-specific prefix make sure to also include all other vendor-specific properties.</source>
+        <target state="translated">Beim Verwenden eines anbieterspezifischen Präfixes sicherstellen, dass alle anderen anbieterspezifischen Eigenschaften einbezogen werden.</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.duplicateProperties.desc">
+        <source xml:lang="en">Do not use duplicate style definitions.</source>
+        <target state="translated">Keine doppelten Formatdefinitionen verwenden.</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.emptyRules.desc">
+        <source xml:lang="en">Do not use empty rulesets.</source>
+        <target state="translated">Keine leeren Regelsätze verwenden.</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.float.desc">
+        <source xml:lang="en">Avoid using `float`. Floats lead to fragile CSS that is easy to break if one aspect of the layout changes.</source>
+        <target state="translated">Die Verwendung von "float" vermeiden. float-Eigenschaften führen leicht dazu, dass CSS nicht mehr funktioniert, wenn sich ein Aspekt des Layouts ändert.</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.fontFaceProperties.desc">
+        <source xml:lang="en">`@font-face` rule must define `src` and `font-family` properties.</source>
+        <target state="translated">`@font-face`-Regel muss Eigenschaften `src` und `font-family` definieren.</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.hexColorLength.desc">
+        <source xml:lang="en">Hex colors must consist of three or six hex numbers.</source>
+        <target state="translated">Farben im Hexadezimalformat müssen aus drei oder sechs Hexadezimalzahlen bestehen.</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.idSelector.desc">
+        <source xml:lang="en">Selectors should not contain IDs because these rules are too tightly coupled with the HTML.</source>
+        <target state="translated">Selektoren sollten keine IDs enthalten, da diese Regeln zu eng mit HTML verknüpft sind.</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.ieHack.desc">
+        <source xml:lang="en">IE hacks are only necessary when supporting IE7 and older.</source>
+        <target state="translated">IE-Hacks sind nur für die Unterstützung von IE7 und niedriger erforderlich.</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.important.desc">
+        <source xml:lang="en">Avoid using `!important`. It is an indication that the specificity of the entire CSS has gotten out of control and needs to be refactored.</source>
+        <target state="translated">Verwendung von "!important" vermeiden. Damit wird angegeben, dass es mit der Spezifität des gesamten CSS-Codes Probleme gibt und eine Umgestaltung erforderlich ist.</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.importStatement.desc">
+        <source xml:lang="en">Import statements do not load in parallel.</source>
+        <target state="translated">Import-Anweisungen werden nicht parallel geladen.</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.propertyIgnoredDueToDisplay.desc">
+        <source xml:lang="en">Property is ignored due to the display. E.g. with `display: inline`, the `width`, `height`, `margin-top`, `margin-bottom`, and `float` properties have no effect.</source>
+        <target state="translated">Die Eigenschaft wird aufgrund der Anzeige ignoriert. Durch die Angabe "display: inline" haben beispielsweise die Eigenschaften "width", "height", "margin-top", "margin-bottom" und "float" keine Auswirkung.</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.universalSelector.desc">
+        <source xml:lang="en">The universal selector (`*`) is known to be slow.</source>
+        <target state="translated">Der Universalselektor (*) ist bekanntermaßen langsam.</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.unknownAtRules.desc">
+        <source xml:lang="en">Unknown at-rule.</source>
+        <target state="translated">Unbekannte at-Regel.</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.unknownProperties.desc">
+        <source xml:lang="en">Unknown property.</source>
+        <target state="translated">Unbekannte Eigenschaft.</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.validProperties.desc">
+        <source xml:lang="en">A list of properties that are not validated against the `unknownProperties` rule.</source>
+        <target state="translated">Eine Liste der Eigenschaften, die nicht auf Übereinstimmung mit der Regel "unknownProperties" überprüft werden.</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.unknownVendorSpecificProperties.desc">
+        <source xml:lang="en">Unknown vendor specific property.</source>
+        <target state="translated">Unbekannte anbieterspezifische Eigenschaft.</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.vendorPrefix.desc">
+        <source xml:lang="en">When using a vendor-specific prefix, also include the standard property.</source>
+        <target state="translated">Beim Verwenden eines anbieterspezifischen Präfixes auch die Standardeigenschaft einbeziehen.</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.zeroUnits.desc">
+        <source xml:lang="en">No unit for zero needed.</source>
+        <target state="translated">Keine Einheit für Null erforderlich.</target>
+      </trans-unit>
+      <trans-unit id="scss.validate.title">
+        <source xml:lang="en">Controls SCSS validation and problem severities.</source>
+        <target state="translated">Steuert die SCSS-Überprüfung und Problemschweregrade.</target>
+      </trans-unit>
+      <trans-unit id="scss.validate.desc">
+        <source xml:lang="en">Enables or disables all validations.</source>
+        <target state="translated">Aktiviert oder deaktiviert alle Überprüfungen.</target>
+      </trans-unit>
+      <trans-unit id="css.colorDecorators.enable.deprecationMessage">
+        <source xml:lang="en">The setting `css.colorDecorators.enable` has been deprecated in favor of `editor.colorDecorators`.</source>
+        <target state="translated">Die Einstellung "css.colorDecorators.enable" ist veraltet und wurde durch "editor.colorDecorators" ersetzt.</target>
+      </trans-unit>
+      <trans-unit id="scss.colorDecorators.enable.deprecationMessage">
+        <source xml:lang="en">The setting `scss.colorDecorators.enable` has been deprecated in favor of `editor.colorDecorators`.</source>
+        <target state="translated">Die Einstellung "scss.colorDecorators.enable" ist veraltet und wurde durch "editor.colorDecorators" ersetzt.</target>
+      </trans-unit>
+      <trans-unit id="less.colorDecorators.enable.deprecationMessage">
+        <source xml:lang="en">The setting `less.colorDecorators.enable` has been deprecated in favor of `editor.colorDecorators`.</source>
+        <target state="translated">Die Einstellung "less.colorDecorators.enable" ist veraltet und wurde durch "editor.colorDecorators" ersetzt.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/css-language-features/client\dist/cssMain" source-language="en" target-language="de" datatype="plaintext">
+    <body>
+      <trans-unit id="cssserver.name">
+        <source xml:lang="en">CSS Language Server</source>
+        <target state="translated">CSS-Sprachserver</target>
+      </trans-unit>
+      <trans-unit id="folding.start">
+        <source xml:lang="en">Folding Region Start</source>
+        <target state="translated">Regionsanfang wird gefaltet</target>
+      </trans-unit>
+      <trans-unit id="folding.end">
+        <source xml:lang="en">Folding Region End</source>
+        <target state="translated">Regionsende wird gefaltet</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/workbench/services/themes/common/colorExtensionPoint" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="contributes.color">
+        <source xml:lang="en">Contributes extension defined themable colors</source>
+        <target state="translated">提供延伸模組定義的可設定佈景主題色彩</target>
+      </trans-unit>
+      <trans-unit id="contributes.color.id">
+        <source xml:lang="en">The identifier of the themable color</source>
+        <target state="translated">可設定佈景主題色彩的識別碼 </target>
+      </trans-unit>
+      <trans-unit id="contributes.color.id.format">
+        <source xml:lang="en">Identifiers should be in the form aa[.bb]*</source>
+        <target state="translated">識別碼的格式應為 aa[.bb]*</target>
+      </trans-unit>
+      <trans-unit id="contributes.color.description">
+        <source xml:lang="en">The description of the themable color</source>
+        <target state="translated">可設定佈景主題色彩的描述 </target>
+      </trans-unit>
+      <trans-unit id="contributes.defaults.light">
+        <source xml:lang="en">The default color for light themes. Either a color value in hex (#RRGGBB[AA]) or the identifier of a themable color which provides the default.</source>
+        <target state="translated">淺色佈景主題的預設色彩。應為十六進位 (#RRGGBB[AA]) 的色彩值，或提供預設的可設定佈景主題色彩。</target>
+      </trans-unit>
+      <trans-unit id="contributes.defaults.dark">
+        <source xml:lang="en">The default color for dark themes. Either a color value in hex (#RRGGBB[AA]) or the identifier of a themable color which provides the default.</source>
+        <target state="translated">深色佈景主題的預設色彩。應為十六進位 (#RRGGBB[AA]) 的色彩值，或提供預設的可設定佈景主題色彩。 </target>
+      </trans-unit>
+      <trans-unit id="contributes.defaults.highContrast">
+        <source xml:lang="en">The default color for high contrast themes. Either a color value in hex (#RRGGBB[AA]) or the identifier of a themable color which provides the default.</source>
+        <target state="translated">高對比佈景主題的預設色彩。應為十六進位 (#RRGGBB[AA]) 的色彩值，或提供預設的可設定佈景主題色彩。</target>
+      </trans-unit>
+      <trans-unit id="invalid.colorConfiguration">
+        <source xml:lang="en">'configuration.colors' must be a array</source>
+        <target state="translated">'configuration.colors' 必須是陣列</target>
+      </trans-unit>
+      <trans-unit id="invalid.default.colorType">
+        <source xml:lang="en">{0} must be either a color value in hex (#RRGGBB[AA] or #RGB[A]) or the identifier of a themable color which provides the default.</source>
+        <target state="translated">{0} 必須是十六進位 (#RRGGBB[AA] or #RGB[A]) 的色彩值，或是提供預設的可設定佈景主題色彩之識別碼。</target>
+      </trans-unit>
+      <trans-unit id="invalid.id">
+        <source xml:lang="en">'configuration.colors.id' must be defined and can not be empty</source>
+        <target state="translated">'configuration.colors.id' 必須定義且不得為空白</target>
+      </trans-unit>
+      <trans-unit id="invalid.id.format">
+        <source xml:lang="en">'configuration.colors.id' must follow the word[.word]*</source>
+        <target state="translated">'configuration.colors.id' 必須依照 word[.word]*</target>
+      </trans-unit>
+      <trans-unit id="invalid.description">
+        <source xml:lang="en">'configuration.colors.description' must be defined and can not be empty</source>
+        <target state="translated">'configuration.colors.description' 必須定義且不得為空白</target>
+      </trans-unit>
+      <trans-unit id="invalid.defaults">
+        <source xml:lang="en">'configuration.colors.defaults' must be defined and must contain 'light', 'dark' and 'highContrast'</source>
+        <target state="translated">'configuration.colors.defaults' 必須定義，且必須包含 'light'、'dark' 及 'highContrast'</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/common/tokenClassificationExtensionPoint" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="contributes.semanticTokenTypes">
+        <source xml:lang="en">Contributes semantic token types.</source>
+        <target state="translated">提供語意語彙基元類型。</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenTypes.id">
+        <source xml:lang="en">The identifier of the semantic token type</source>
+        <target state="translated">語意式權杖類型的識別碼</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenTypes.id.format">
+        <source xml:lang="en">Identifiers should be in the form letterOrDigit[_-letterOrDigit]*</source>
+        <target state="translated">識別碼的格式應為 letterOrDigit[_-letterOrDigit]*</target>
+      </trans-unit>
+      <trans-unit id="contributes.color.description">
+        <source xml:lang="en">The description of the semantic token type</source>
+        <target state="translated">語意式權杖類型的描述</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenModifiers">
+        <source xml:lang="en">Contributes semantic token modifiers.</source>
+        <target state="translated">提供語意語彙基元修飾詞。</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenModifiers.id">
+        <source xml:lang="en">The identifier of the semantic token modifier</source>
+        <target state="translated">語意式權杖修飾詞的識別碼</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenModifiers.id.format">
+        <source xml:lang="en">Identifiers should be in the form letterOrDigit[_-letterOrDigit]*</source>
+        <target state="translated">識別碼的格式應為 letterOrDigit[_-letterOrDigit]*</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenModifiers.description">
+        <source xml:lang="en">The description of the semantic token modifier</source>
+        <target state="translated">語意式權杖修飾詞的描述</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenStyleDefaults">
+        <source xml:lang="en">Contributes semantic token style defaults.</source>
+        <target state="translated">貢獻語意式權杖樣式預設。</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenStyleDefaults.selector">
+        <source xml:lang="en">The selector matching token types and modifiers.</source>
+        <target state="translated">與選取器相符的語彙基元類型和修飾詞。</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenStyleDefaults.selector.format">
+        <source xml:lang="en">Selectors should be in the form (type|*)(.modifier)*</source>
+        <target state="translated">選取器的格式必須是 (類型|*)(.修飾詞)*</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenStyleDefaults.scope">
+        <source xml:lang="en">A TextMate scope against the current color theme is matched to find the style for the given selector</source>
+        <target state="translated">已向目前的色彩佈景主題比對 TextMate 範圍，以尋找指定選取器的樣式</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenStyleDefaults.light">
+        <source xml:lang="en">The default style used for light themes</source>
+        <target state="translated">用於淺色佈景主題的預設樣式</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenStyleDefaults.dark">
+        <source xml:lang="en">The default style used for dark themes</source>
+        <target state="translated">用於深色主題的預設樣式</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenStyleDefaults.hc">
+        <source xml:lang="en">The default style used for high contrast themes</source>
+        <target state="translated">用於高對比佈景主題的預設樣式</target>
+      </trans-unit>
+      <trans-unit id="invalid.id">
+        <source xml:lang="en">'configuration.{0}.id' must be defined and can not be empty</source>
+        <target state="translated">必須定義 'configuration.{0}.id'，不能留空</target>
+      </trans-unit>
+      <trans-unit id="invalid.id.format">
+        <source xml:lang="en">'configuration.{0}.id' must follow the pattern letterOrDigit[-_letterOrDigit]*</source>
+        <target state="translated">'configuration.{0}.id' 必須遵循模式 letterOrDigit[-_letterOrDigit]*</target>
+      </trans-unit>
+      <trans-unit id="invalid.superType.format">
+        <source xml:lang="en">'configuration.{0}.superType' must follow the pattern letterOrDigit[-_letterOrDigit]*</source>
+        <target state="translated">'configuration.{0}.superType' 必須遵循 letterOrDigit[-_letterOrDigit]* 模式</target>
+      </trans-unit>
+      <trans-unit id="invalid.description">
+        <source xml:lang="en">'configuration.{0}.description' must be defined and can not be empty</source>
+        <target state="translated">必須定義 'configuration.{0}.description'，不能留空</target>
+      </trans-unit>
+      <trans-unit id="invalid.color">
+        <source xml:lang="en">'configuration.{0}.foreground'  must follow the pattern #RRGGBB[AA]</source>
+        <target state="translated">'configuration.{0}.foreground' 必須遵循模式 #RRGGBB[AA]</target>
+      </trans-unit>
+      <trans-unit id="invalid.fontStyle">
+        <source xml:lang="en">'configuration.{0}.fontStyle'  must be one or a combination of  'italic', 'bold' or 'underline' or the empty string</source>
+        <target state="translated">'configuration.{0}.fontStyle' 必須是 'italic'、'bold' 或 'underline' 或空白字串的單一字串或組合</target>
+      </trans-unit>
+      <trans-unit id="invalid.semanticTokenTypeConfiguration">
+        <source xml:lang="en">'configuration.semanticTokenType' must be an array</source>
+        <target state="translated">'configuration.semanticTokenType' 必須是陣列</target>
+      </trans-unit>
+      <trans-unit id="invalid.semanticTokenModifierConfiguration">
+        <source xml:lang="en">'configuration.semanticTokenModifier' must be an array</source>
+        <target state="translated">'configuration.semanticTokenModifier' 必須是陣列</target>
+      </trans-unit>
+      <trans-unit id="invalid.semanticTokenStyleDefaultConfiguration">
+        <source xml:lang="en">'configuration.semanticTokenStyleDefaults' must be an array</source>
+        <target state="translated">'configuration.semanticTokenStyleDefaults' 必須是陣列</target>
+      </trans-unit>
+      <trans-unit id="invalid.selector">
+        <source xml:lang="en">'configuration.semanticTokenStyleDefaults.selector' must be defined and can not be empty</source>
+        <target state="translated">'configuration.semanticTokenStyleDefaults.selector' 必須已經定義且不得為空白</target>
+      </trans-unit>
+      <trans-unit id="invalid.selector.format">
+        <source xml:lang="en">'configuration.semanticTokenStyleDefaults.selector' must be in the form (type|*)(.modifier)*</source>
+        <target state="translated">'configuration.semanticTokenStyleDefaults.selector' 的格式必須為 (type|*)(.modifier)*</target>
+      </trans-unit>
+      <trans-unit id="invalid.scope">
+        <source xml:lang="en">If defined, 'configuration.semanticTokenStyleDefaults.scope' must be an array of strings</source>
+        <target state="translated">如果已定義，則 'configuration.semanticTokenStyleDefaults.scope' 必須是字串的陣列</target>
+      </trans-unit>
+      <trans-unit id="invalid.selector.parsing">
+        <source xml:lang="en">configuration.semanticTokenStyleDefaults.selector': Problems parsing {0}.</source>
+        <target state="translated">configuration.semanticTokenStyleDefaults.selector': 剖析 {0} 時發生問題。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/browser/workbenchThemeService" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="error.cannotloadtheme">
+        <source xml:lang="en">Unable to load {0}: {1}</source>
+        <target state="translated">無法載入 {0}: {1}</target>
+      </trans-unit>
+      <trans-unit id="colorTheme">
+        <source xml:lang="en">Specifies the color theme used in the workbench.</source>
+        <target state="translated">指定要在工作台中使用的色彩佈景主題。</target>
+      </trans-unit>
+      <trans-unit id="colorThemeError">
+        <source xml:lang="en">Theme is unknown or not installed.</source>
+        <target state="translated">佈景主題未知或未安裝。</target>
+      </trans-unit>
+      <trans-unit id="preferredDarkColorTheme">
+        <source xml:lang="en">Specifies the preferred color theme for dark OS appearance when '{0}' is enabled.</source>
+        <target state="translated">指定 '{0}' 啟用時，深色 OS 外觀的偏好色彩佈景主題。</target>
+      </trans-unit>
+      <trans-unit id="preferredLightColorTheme">
+        <source xml:lang="en">Specifies the preferred color theme for light OS appearance when '{0}' is enabled.</source>
+        <target state="translated">指定 '{0}' 啟用時，淺色 OS 外觀的偏好色彩佈景主題。</target>
+      </trans-unit>
+      <trans-unit id="preferredHCColorTheme">
+        <source xml:lang="en">Specifies the preferred color theme used in high contrast mode when '{0}' is enabled.</source>
+        <target state="translated">指定在 '{0}' 啟用後，要在高對比模式使用的偏好色彩佈景主題。</target>
+      </trans-unit>
+      <trans-unit id="detectColorScheme">
+        <source xml:lang="en">If set, automatically switch to the preferred color theme based on the OS appearance.</source>
+        <target state="translated">如果設定，會根據 OS 外觀切換至偏好的色彩佈景主題。</target>
+      </trans-unit>
+      <trans-unit id="iconTheme">
+        <source xml:lang="en">Specifies the icon theme used in the workbench or 'null' to not show any file icons.</source>
+        <target state="translated">指定在工作台中使用的圖示主題，或設定為 'null' 不顯示任何檔案圖示。</target>
+      </trans-unit>
+      <trans-unit id="noIconThemeDesc">
+        <source xml:lang="en">No file icons</source>
+        <target state="translated">沒有檔案圖示</target>
+      </trans-unit>
+      <trans-unit id="iconThemeError">
+        <source xml:lang="en">File icon theme is unknown or not installed.</source>
+        <target state="translated">檔案圖示佈景主題未知或未安裝。</target>
+      </trans-unit>
+      <trans-unit id="workbenchColors">
+        <source xml:lang="en">Overrides colors from the currently selected color theme.</source>
+        <target state="translated">依目前選擇的彩色佈景主題覆寫顏色</target>
+      </trans-unit>
+      <trans-unit id="editorColors.comments">
+        <source xml:lang="en">Sets the colors and styles for comments</source>
+        <target state="translated">設定註解的色彩與樣式</target>
+      </trans-unit>
+      <trans-unit id="editorColors.strings">
+        <source xml:lang="en">Sets the colors and styles for strings literals.</source>
+        <target state="translated">設定字串常值的色彩與樣式。</target>
+      </trans-unit>
+      <trans-unit id="editorColors.keywords">
+        <source xml:lang="en">Sets the colors and styles for keywords.</source>
+        <target state="translated">設定關鍵字的色彩與樣式。</target>
+      </trans-unit>
+      <trans-unit id="editorColors.numbers">
+        <source xml:lang="en">Sets the colors and styles for number literals.</source>
+        <target state="translated">設定數字常值的色彩與樣式。</target>
+      </trans-unit>
+      <trans-unit id="editorColors.types">
+        <source xml:lang="en">Sets the colors and styles for type declarations and references.</source>
+        <target state="translated">設定型別宣告與參考的色彩與樣式。</target>
+      </trans-unit>
+      <trans-unit id="editorColors.functions">
+        <source xml:lang="en">Sets the colors and styles for functions declarations and references.</source>
+        <target state="translated">設定函式宣告與參考的色彩與樣式。</target>
+      </trans-unit>
+      <trans-unit id="editorColors.variables">
+        <source xml:lang="en">Sets the colors and styles for variables declarations and references.</source>
+        <target state="translated">設定變數宣告與參考的色彩與樣式。</target>
+      </trans-unit>
+      <trans-unit id="editorColors.textMateRules">
+        <source xml:lang="en">Sets colors and styles using textmate theming rules (advanced).</source>
+        <target state="translated">使用 TextMate 佈景主題規則設定色彩與樣式 (進階)。</target>
+      </trans-unit>
+      <trans-unit id="editorColors">
+        <source xml:lang="en">Overrides editor colors and font style from the currently selected color theme.</source>
+        <target state="translated">依目前選取的色彩佈景主題覆寫編輯器色彩與字型樣式。</target>
+      </trans-unit>
+      <trans-unit id="editorColorsTokenStyles">
+        <source xml:lang="en">Overrides token color and styles from the currently selected color theme.</source>
+        <target state="translated">覆寫目前選取之色彩佈景主題中的權杖色彩和樣式。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/common/colorThemeSchema" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="schema.token.settings">
+        <source xml:lang="en">Colors and styles for the token.</source>
+        <target state="translated">權杖的色彩與樣式。</target>
+      </trans-unit>
+      <trans-unit id="schema.token.foreground">
+        <source xml:lang="en">Foreground color for the token.</source>
+        <target state="translated">權杖的前景色彩。</target>
+      </trans-unit>
+      <trans-unit id="schema.token.background.warning">
+        <source xml:lang="en">Token background colors are currently not supported.</source>
+        <target state="translated">目前不支援權杖背景色彩。</target>
+      </trans-unit>
+      <trans-unit id="schema.token.fontStyle">
+        <source xml:lang="en">Font style of the rule: 'italic', 'bold' or 'underline' or a combination. The empty string unsets inherited settings.</source>
+        <target state="translated">字體格式規則: 'italic', 'bold' 或 'underline' 或是組合。空白字串取消繼承設定。</target>
+      </trans-unit>
+      <trans-unit id="schema.fontStyle.error">
+        <source xml:lang="en">Font style must be 'italic', 'bold' or 'underline' or a combination or the empty string.</source>
+        <target state="translated">字體格式必需是 'italic', 'bold' 或 'underline' 或是組合，或是空白字串。</target>
+      </trans-unit>
+      <trans-unit id="schema.token.fontStyle.none">
+        <source xml:lang="en">None (clear inherited style)</source>
+        <target state="translated">None (清除繼承格式)</target>
+      </trans-unit>
+      <trans-unit id="schema.properties.name">
+        <source xml:lang="en">Description of the rule.</source>
+        <target state="translated">規則的描述。</target>
+      </trans-unit>
+      <trans-unit id="schema.properties.scope">
+        <source xml:lang="en">Scope selector against which this rule matches.</source>
+        <target state="translated">針對此規則符合的範圍選取器。</target>
+      </trans-unit>
+      <trans-unit id="schema.workbenchColors">
+        <source xml:lang="en">Colors in the workbench</source>
+        <target state="translated">Workbench 中的色彩</target>
+      </trans-unit>
+      <trans-unit id="schema.tokenColors.path">
+        <source xml:lang="en">Path to a tmTheme file (relative to the current file).</source>
+        <target state="translated">tmTheme 檔案的路徑 (相對於目前檔案)。</target>
+      </trans-unit>
+      <trans-unit id="schema.colors">
+        <source xml:lang="en">Colors for syntax highlighting</source>
+        <target state="translated">反白顯示語法時的色彩</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/browser/fileIconThemeStore" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="vscode.extension.contributes.iconThemes">
+        <source xml:lang="en">Contributes file icon themes.</source>
+        <target state="translated">提供檔案圖示佈景主題。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.iconThemes.id">
+        <source xml:lang="en">Id of the icon theme as used in the user settings.</source>
+        <target state="translated">用在使用者設定中的圖示佈景主題識別碼。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.iconThemes.label">
+        <source xml:lang="en">Label of the icon theme as shown in the UI.</source>
+        <target state="translated">以 UI 顯示的圖示佈景主題標籤。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.iconThemes.path">
+        <source xml:lang="en">Path of the icon theme definition file. The path is relative to the extension folder and is typically './icons/awesome-icon-theme.json'.</source>
+        <target state="translated">圖示佈景主題定義檔案的路徑。這是延伸模組資料夾的相對路徑，通常為 './icons/awesome-icon-theme.json’。</target>
+      </trans-unit>
+      <trans-unit id="reqarray">
+        <source xml:lang="en">Extension point `{0}` must be an array.</source>
+        <target state="translated">擴充點 `{0}` 必須為陣列。</target>
+      </trans-unit>
+      <trans-unit id="reqpath">
+        <source xml:lang="en">Expected string in `contributes.{0}.path`. Provided value: {1}</source>
+        <target state="translated">`contributes.{0}.path` 中的預期字串。提供的值: {1}</target>
+      </trans-unit>
+      <trans-unit id="reqid">
+        <source xml:lang="en">Expected string in `contributes.{0}.id`. Provided value: {1}</source>
+        <target state="translated">`contributes.{0}.id` 中的預期字串。提供的值: {1}</target>
+      </trans-unit>
+      <trans-unit id="invalid.path.1">
+        <source xml:lang="en">Expected `contributes.{0}.path` ({1}) to be included inside extension's folder ({2}). This might make the extension non-portable.</source>
+        <target state="translated">擴充功能資料夾 ({2}) 應包含 'contributes.{0}.path' ({1})。這可能會導致擴充功能無法移植。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/common/colorThemeStore" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="vscode.extension.contributes.themes">
+        <source xml:lang="en">Contributes textmate color themes.</source>
+        <target state="translated">提供 Textmate 彩色佈景主題。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.id">
+        <source xml:lang="en">Id of the icon theme as used in the user settings.</source>
+        <target state="translated">用在使用者設定中的圖示佈景主題識別碼。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.label">
+        <source xml:lang="en">Label of the color theme as shown in the UI.</source>
+        <target state="translated">如 UI 中所示的彩色佈景主題標籤。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.uiTheme">
+        <source xml:lang="en">Base theme defining the colors around the editor: 'vs' is the light color theme, 'vs-dark' is the dark color theme. 'hc-black' is the dark high contrast theme.</source>
+        <target state="translated">基底佈景主題定義編輯器的色彩: 'vs' 是淺色佈景主題，'vs-dark' 是深色佈景主題。'hc-black' 是深色高對比佈景主題。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.path">
+        <source xml:lang="en">Path of the tmTheme file. The path is relative to the extension folder and is typically './themes/themeFile.tmTheme'.</source>
+        <target state="translated">tmTheme 檔案的路徑。此路徑是延伸模組資料夾的相對路徑，通常為 './themes/themeFile.tmTheme'。</target>
+      </trans-unit>
+      <trans-unit id="reqarray">
+        <source xml:lang="en">Extension point `{0}` must be an array.</source>
+        <target state="translated">擴充點 `{0}` 必須為陣列。</target>
+      </trans-unit>
+      <trans-unit id="reqpath">
+        <source xml:lang="en">Expected string in `contributes.{0}.path`. Provided value: {1}</source>
+        <target state="translated">`contributes.{0}.path` 中的預期字串。提供的值: {1}</target>
+      </trans-unit>
+      <trans-unit id="invalid.path.1">
+        <source xml:lang="en">Expected `contributes.{0}.path` ({1}) to be included inside extension's folder ({2}). This might make the extension non-portable.</source>
+        <target state="translated">擴充功能資料夾 ({2}) 應包含 'contributes.{0}.path' ({1})。這可能會導致擴充功能無法移植。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/browser/fileIconThemeData" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="error.cannotparseicontheme">
+        <source xml:lang="en">Problems parsing file icons file: {0}</source>
+        <target state="translated">解析檔案圖示檔案時發生問題: {0}</target>
+      </trans-unit>
+      <trans-unit id="error.invalidformat">
+        <source xml:lang="en">Invalid format for file icons theme file: Object expected.</source>
+        <target state="translated">檔案圖示主題檔案的格式無效: 必須是物件。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/common/fileIconThemeSchema" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="schema.folderExpanded">
+        <source xml:lang="en">The folder icon for expanded folders. The expanded folder icon is optional. If not set, the icon defined for folder will be shown.</source>
+        <target state="translated">展開資料夾的資料夾圖示。展開資料夾圖示是選擇性的。如果未設定，即顯示為資料夾定義的圖示。</target>
+      </trans-unit>
+      <trans-unit id="schema.folder">
+        <source xml:lang="en">The folder icon for collapsed folders, and if folderExpanded is not set, also for expanded folders.</source>
+        <target state="translated">摺疊資料夾的資料夾圖示，如果未設定 folderExpanded，就也是展開資料夾的圖示。</target>
+      </trans-unit>
+      <trans-unit id="schema.file">
+        <source xml:lang="en">The default file icon, shown for all files that don't match any extension, filename or language id.</source>
+        <target state="translated">預設檔案圖示，顯示於所有不符合任何副檔名、檔案名稱或語言識別碼的檔案。</target>
+      </trans-unit>
+      <trans-unit id="schema.folderNames">
+        <source xml:lang="en">Associates folder names to icons. The object key is the folder name, not including any path segments. No patterns or wildcards are allowed. Folder name matching is case insensitive.</source>
+        <target state="translated">建立資料夾名稱與圖示的關聯。物件索引鍵為資料夾名稱，但不包括任何路徑區段。不允許任何模式或萬用字元。資料夾名稱比對不區分大小寫。 </target>
+      </trans-unit>
+      <trans-unit id="schema.folderName">
+        <source xml:lang="en">The ID of the icon definition for the association.</source>
+        <target state="translated">關聯的圖示定義識別碼。</target>
+      </trans-unit>
+      <trans-unit id="schema.folderNamesExpanded">
+        <source xml:lang="en">Associates folder names to icons for expanded folders. The object key is the folder name, not including any path segments. No patterns or wildcards are allowed. Folder name matching is case insensitive.</source>
+        <target state="translated">為展開的資料夾建立資料夾名稱與圖示的關聯。物件索引鍵為資料夾名稱，但不包括任何路徑區段。不允許任何模式或萬用字元。資料夾名稱比對不區分大小寫。</target>
+      </trans-unit>
+      <trans-unit id="schema.folderNameExpanded">
+        <source xml:lang="en">The ID of the icon definition for the association.</source>
+        <target state="translated">關聯的圖示定義識別碼。</target>
+      </trans-unit>
+      <trans-unit id="schema.fileExtensions">
+        <source xml:lang="en">Associates file extensions to icons. The object key is the file extension name. The extension name is the last segment of a file name after the last dot (not including the dot). Extensions are compared case insensitive.</source>
+        <target state="translated">建立副檔名與圖示的關聯。物件索引鍵為副檔名。副檔名為檔案名稱最後一個點以後的最後一個區段 (不含點)。比較副檔名時不區分大小寫。</target>
+      </trans-unit>
+      <trans-unit id="schema.fileExtension">
+        <source xml:lang="en">The ID of the icon definition for the association.</source>
+        <target state="translated">關聯的圖示定義識別碼。</target>
+      </trans-unit>
+      <trans-unit id="schema.fileNames">
+        <source xml:lang="en">Associates file names to icons. The object key is the full file name, but not including any path segments. File name can include dots and a possible file extension. No patterns or wildcards are allowed. File name matching is case insensitive.</source>
+        <target state="translated">建立檔案名稱與圖示的關聯。物件索引鍵為完整檔案名稱，但不包括任何路徑區段。檔案名稱可包含點與可能的副檔名。不允許任何模式或萬用字元。檔案名稱比對不區分大小寫。</target>
+      </trans-unit>
+      <trans-unit id="schema.fileName">
+        <source xml:lang="en">The ID of the icon definition for the association.</source>
+        <target state="translated">關聯的圖示定義識別碼。</target>
+      </trans-unit>
+      <trans-unit id="schema.languageIds">
+        <source xml:lang="en">Associates languages to icons. The object key is the language id as defined in the language contribution point.</source>
+        <target state="translated">關聯語言與圖示。物件索引鍵為語言貢獻點中定義的語言識別碼。</target>
+      </trans-unit>
+      <trans-unit id="schema.languageId">
+        <source xml:lang="en">The ID of the icon definition for the association.</source>
+        <target state="translated">關聯的圖示定義識別碼。</target>
+      </trans-unit>
+      <trans-unit id="schema.fonts">
+        <source xml:lang="en">Fonts that are used in the icon definitions.</source>
+        <target state="translated">用在圖示定義中的字型。</target>
+      </trans-unit>
+      <trans-unit id="schema.id">
+        <source xml:lang="en">The ID of the font.</source>
+        <target state="translated">字型識別碼。</target>
+      </trans-unit>
+      <trans-unit id="schema.src">
+        <source xml:lang="en">The location of the font.</source>
+        <target state="translated">字型的位置。</target>
+      </trans-unit>
+      <trans-unit id="schema.font-path">
+        <source xml:lang="en">The font path, relative to the current icon theme file.</source>
+        <target state="translated">字型路徑，相對於目前的圖示佈景主題檔案。</target>
+      </trans-unit>
+      <trans-unit id="schema.font-format">
+        <source xml:lang="en">The format of the font.</source>
+        <target state="translated">字型格式。</target>
+      </trans-unit>
+      <trans-unit id="schema.font-weight">
+        <source xml:lang="en">The weight of the font.</source>
+        <target state="translated">字型粗細。</target>
+      </trans-unit>
+      <trans-unit id="schema.font-sstyle">
+        <source xml:lang="en">The style of the font.</source>
+        <target state="translated">字型樣式。</target>
+      </trans-unit>
+      <trans-unit id="schema.font-size">
+        <source xml:lang="en">The default size of the font.</source>
+        <target state="translated">字型預設大小。</target>
+      </trans-unit>
+      <trans-unit id="schema.iconDefinitions">
+        <source xml:lang="en">Description of all icons that can be used when associating files to icons.</source>
+        <target state="translated">建立檔案與圖示關聯時可使用的所有圖示描述。</target>
+      </trans-unit>
+      <trans-unit id="schema.iconDefinition">
+        <source xml:lang="en">An icon definition. The object key is the ID of the definition.</source>
+        <target state="translated">圖示定義。物件索引鍵為定義識別碼。</target>
+      </trans-unit>
+      <trans-unit id="schema.iconPath">
+        <source xml:lang="en">When using a SVG or PNG: The path to the image. The path is relative to the icon set file.</source>
+        <target state="translated">使用 SVG 或 PNG 時: 影像路徑。路徑相對於圖示集檔案。</target>
+      </trans-unit>
+      <trans-unit id="schema.fontCharacter">
+        <source xml:lang="en">When using a glyph font: The character in the font to use.</source>
+        <target state="translated">使用字符字型時: 字型中要使用的字元。</target>
+      </trans-unit>
+      <trans-unit id="schema.fontColor">
+        <source xml:lang="en">When using a glyph font: The color to use.</source>
+        <target state="translated">使用字符字型時: 要使用的色彩。</target>
+      </trans-unit>
+      <trans-unit id="schema.fontSize">
+        <source xml:lang="en">When using a font: The font size in percentage to the text font. If not set, defaults to the size in the font definition.</source>
+        <target state="translated">使用字型時: 文字字型的字型大小 (百分比)。如果未設定，預設為字型定義中的大小。</target>
+      </trans-unit>
+      <trans-unit id="schema.fontId">
+        <source xml:lang="en">When using a font: The id of the font. If not set, defaults to the first font definition.</source>
+        <target state="translated">使用字型時: 字型識別碼。如果未設定，預設為第一個字型定義。</target>
+      </trans-unit>
+      <trans-unit id="schema.light">
+        <source xml:lang="en">Optional associations for file icons in light color themes.</source>
+        <target state="translated">以淺色色彩佈景主題顯示檔案圖示的選擇性關聯。</target>
+      </trans-unit>
+      <trans-unit id="schema.highContrast">
+        <source xml:lang="en">Optional associations for file icons in high contrast color themes.</source>
+        <target state="translated">以高對比色彩佈景主題顯示檔案圖示的選擇性關聯。</target>
+      </trans-unit>
+      <trans-unit id="schema.hidesExplorerArrows">
+        <source xml:lang="en">Configures whether the file explorer's arrows should be hidden when this theme is active.</source>
+        <target state="translated">設定當此佈景主題在使用中時，是否該隱藏檔案總管的箭號。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/common/colorThemeData" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="error.cannotparsejson">
+        <source xml:lang="en">Problems parsing JSON theme file: {0}</source>
+        <target state="translated">剖析 JSON 佈景主題檔案時發生問題: {0}</target>
+      </trans-unit>
+      <trans-unit id="error.invalidformat">
+        <source xml:lang="en">Invalid format for JSON theme file: Object expected.</source>
+        <target state="translated">JSON 主題檔案的格式無效: 必須是物件。</target>
+      </trans-unit>
+      <trans-unit id="error.invalidformat.colors">
+        <source xml:lang="en">Problem parsing color theme file: {0}. Property 'colors' is not of type 'object'.</source>
+        <target state="translated">剖析彩色佈景主題檔案 {0} 時出現問題。屬性 'settings' 不是 'object' 類型。</target>
+        <note>{0} will be replaced by a path. Values in quotes should not be translated.</note>
+      </trans-unit>
+      <trans-unit id="error.invalidformat.tokenColors">
+        <source xml:lang="en">Problem parsing color theme file: {0}. Property 'tokenColors' should be either an array specifying colors or a path to a TextMate theme file</source>
+        <target state="translated">剖析色彩佈景主題檔案 {0} 時發生問題。屬性 'tokenColors' 應是指定色彩的陣列或是 TextMate 佈景主題檔案的路徑。</target>
+        <note>{0} will be replaced by a path. Values in quotes should not be translated.</note>
+      </trans-unit>
+      <trans-unit id="error.plist.invalidformat">
+        <source xml:lang="en">Problem parsing tmTheme file: {0}. 'settings' is not array.</source>
+        <target state="translated">剖析 tmTheme 檔案 {0} 時出現問題。'settings' 不是陣列。</target>
+      </trans-unit>
+      <trans-unit id="error.cannotparse">
+        <source xml:lang="en">Problems parsing tmTheme file: {0}</source>
+        <target state="translated">剖析 tmTheme 檔案 {0} 時發生問題</target>
+      </trans-unit>
+      <trans-unit id="error.cannotload">
+        <source xml:lang="en">Problems loading tmTheme file {0}: {1}</source>
+        <target state="translated">載入 tmTheme 檔案 {0} 時發生問題: {1}</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/workbench/services/extensions/electron-browser/extensionService" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="extensionsDisabled">
+        <source xml:lang="en">All installed extensions are temporarily disabled. Reload the window to return to the previous state.</source>
+        <target state="translated">インストール済みのすべての拡張機能が一時的に無効になっています。元の状態に戻すにはウィンドウを再読み込みしてください。</target>
+      </trans-unit>
+      <trans-unit id="Reload">
+        <source xml:lang="en">Reload</source>
+        <target state="translated">再読み込み</target>
+      </trans-unit>
+      <trans-unit id="looping">
+        <source xml:lang="en">The following extensions contain dependency loops and have been disabled: {0}</source>
+        <target state="translated">次の拡張機能には循環参照が存在するため、無効になっています。: {0}</target>
+      </trans-unit>
+      <trans-unit id="extensionService.versionMismatchCrash">
+        <source xml:lang="en">Extension host cannot start: version mismatch.</source>
+        <target state="translated">拡張機能のホストを開始できません。バージョンが一致しません。</target>
+      </trans-unit>
+      <trans-unit id="relaunch">
+        <source xml:lang="en">Relaunch VS Code</source>
+        <target state="translated">VS Code を再起動</target>
+      </trans-unit>
+      <trans-unit id="extensionService.crash">
+        <source xml:lang="en">Extension host terminated unexpectedly.</source>
+        <target state="translated">拡張機能のホストが予期せずに終了しました。</target>
+      </trans-unit>
+      <trans-unit id="devTools">
+        <source xml:lang="en">Open Developer Tools</source>
+        <target state="translated">開発者ツールを開く</target>
+      </trans-unit>
+      <trans-unit id="restart">
+        <source xml:lang="en">Restart Extension Host</source>
+        <target state="translated">拡張機能のホストを再起動</target>
+      </trans-unit>
+      <trans-unit id="resolveAuthorityFailure">
+        <source xml:lang="en">Resolving the authority `{0}` failed</source>
+        <target state="translated">権限 `{0}` の解決に失敗しました</target>
+      </trans-unit>
+      <trans-unit id="getEnvironmentFailure">
+        <source xml:lang="en">Could not fetch remote environment</source>
+        <target state="translated">リモート環境をフェッチできませんでした</target>
+      </trans-unit>
+      <trans-unit id="enableResolver">
+        <source xml:lang="en">Extension '{0}' is required to open the remote window.
+Ok to enable?</source>
+        <target state="translated">リモート ウィンドウを開くには、拡張機能 '{0}' が必要です。
+有効にしますか?</target>
+      </trans-unit>
+      <trans-unit id="enable">
+        <source xml:lang="en">Enable and Reload</source>
+        <target state="translated">有効にしてリロード</target>
+      </trans-unit>
+      <trans-unit id="installResolver">
+        <source xml:lang="en">Extension '{0}' is required to open the remote window.
+Ok to install?</source>
+        <target state="translated">リモート ウィンドウを開くには、拡張機能 '{0}' が必要です。
+インストールしますか?</target>
+      </trans-unit>
+      <trans-unit id="install">
+        <source xml:lang="en">Install and Reload</source>
+        <target state="translated">インストールしてリロードする</target>
+      </trans-unit>
+      <trans-unit id="resolverExtensionNotFound">
+        <source xml:lang="en">`{0}` not found on marketplace</source>
+        <target state="translated">`{0}` がマーケットプレイスで見つからない</target>
+      </trans-unit>
+      <trans-unit id="restartExtensionHost">
+        <source xml:lang="en">Developer: Restart Extension Host</source>
+        <target state="translated">開発者: 拡張機能ホストの再起動</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/electron-browser/remoteExtensionManagementIpc" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="incompatible">
+        <source xml:lang="en">Unable to install extension '{0}' as it is not compatible with VS Code '{1}'.</source>
+        <target state="translated">VS Code '{1}' と互換性のない拡張機能 '{0}' をインストールできません。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/common/extensionsRegistry" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="ui">
+        <source xml:lang="en">UI extension kind. In a remote window, such extensions are enabled only when available on the local machine.</source>
+        <target state="translated">UI 拡張機能の種類。リモート ウィンドウでは、これらの拡張機能はローカル マシンで使用可能な場合にのみ有効になります。</target>
+      </trans-unit>
+      <trans-unit id="workspace">
+        <source xml:lang="en">Workspace extension kind. In a remote window, such extensions are enabled only when available on the remote.</source>
+        <target state="translated">ワークスペースの拡張子の種類。リモート ウィンドウでは、これらの拡張機能はリモートで使用可能な場合にのみ有効になります。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.engines">
+        <source xml:lang="en">Engine compatibility.</source>
+        <target state="translated">エンジンの互換性。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.engines.vscode">
+        <source xml:lang="en">For VS Code extensions, specifies the VS Code version that the extension is compatible with. Cannot be *. For example: ^0.10.5 indicates compatibility with a minimum VS Code version of 0.10.5.</source>
+        <target state="translated">VS Code 拡張機能の場合、拡張機能と互換性のある VS Code バージョンを指定します。* を指定することはできません。たとえば、^0.10.5 は最小の VS Code バージョン 0.10.5 との互換性を示します。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.publisher">
+        <source xml:lang="en">The publisher of the VS Code extension.</source>
+        <target state="translated">VS Code 拡張機能の公開元。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.displayName">
+        <source xml:lang="en">The display name for the extension used in the VS Code gallery.</source>
+        <target state="translated">VS Code ギャラリーで使用される拡張機能の表示名。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.categories">
+        <source xml:lang="en">The categories used by the VS Code gallery to categorize the extension.</source>
+        <target state="translated">VS Code ギャラリーで拡張機能の分類に使用されるカテゴリ。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.category.languages.deprecated">
+        <source xml:lang="en">Use 'Programming  Languages' instead</source>
+        <target state="translated">代わりに 'Programming Languages' を使用してください</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.galleryBanner">
+        <source xml:lang="en">Banner used in the VS Code marketplace.</source>
+        <target state="translated">VS Code マーケットプレースで使用されるバナー。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.galleryBanner.color">
+        <source xml:lang="en">The banner color on the VS Code marketplace page header.</source>
+        <target state="translated">VS Code マーケットプレース ページ ヘッダー上のバナーの色。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.galleryBanner.theme">
+        <source xml:lang="en">The color theme for the font used in the banner.</source>
+        <target state="translated">バナーで使用されるフォントの配色テーマ。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes">
+        <source xml:lang="en">All contributions of the VS Code extension represented by this package.</source>
+        <target state="translated">このパッケージで表される VS Code 拡張機能のすべてのコントリビューション。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.preview">
+        <source xml:lang="en">Sets the extension to be flagged as a Preview in the Marketplace.</source>
+        <target state="translated">Marketplace で Preview としてフラグが付けられるように拡張機能を設定します。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents">
+        <source xml:lang="en">Activation events for the VS Code extension.</source>
+        <target state="translated">VS Code 拡張機能のアクティブ化イベント。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onLanguage">
+        <source xml:lang="en">An activation event emitted whenever a file that resolves to the specified language gets opened.</source>
+        <target state="translated">指定された言語を解決するファイルが開かれるたびにアクティブ化イベントが発行されます。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onCommand">
+        <source xml:lang="en">An activation event emitted whenever the specified command gets invoked.</source>
+        <target state="translated">指定したコマンドが呼び出されるたびにアクティブ化イベントが発行されます。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onDebug">
+        <source xml:lang="en">An activation event emitted whenever a user is about to start debugging or about to setup debug configurations.</source>
+        <target state="translated">デバッグの開始またはデバッグ構成がセットアップされるたびにアクティブ化イベントが発行されます。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onDebugInitialConfigurations">
+        <source xml:lang="en">An activation event emitted whenever a "launch.json" needs to be created (and all provideDebugConfigurations methods need to be called).</source>
+        <target state="translated">"launch.json" を作成する必要があるたびに (または、すべての provideDebugConfiguration メソッドを呼び出す必要があるたびに) アクティブ化イベントを発行します。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onDebugResolve">
+        <source xml:lang="en">An activation event emitted whenever a debug session with the specific type is about to be launched (and a corresponding resolveDebugConfiguration method needs to be called).</source>
+        <target state="translated">特定のタイプのデバッグ セッションが起動されるたびに（または、対応する resolveDebugConfiguration メソッドを呼び出す必要があるたびに）、アクティブ化イベントを発行します。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onDebugAdapterProtocolTracker">
+        <source xml:lang="en">An activation event emitted whenever a debug session with the specific type is about to be launched and a debug protocol tracker might be needed.</source>
+        <target state="translated">特定の種類のデバッグ セッションが開始され、デバッグ プロトコル トラッカーが必要な場合はいつでも、アクティブ化イベントが発行されます。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.workspaceContains">
+        <source xml:lang="en">An activation event emitted whenever a folder is opened that contains at least a file matching the specified glob pattern.</source>
+        <target state="translated">指定した glob パターンに一致するファイルを少なくとも 1 つ以上含むフォルダーを開くたびにアクティブ化イベントが発行されます。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onFileSystem">
+        <source xml:lang="en">An activation event emitted whenever a file or folder is accessed with the given scheme.</source>
+        <target state="translated">指定されたスキーマにファイルかフォルダーが関連付けられるたびにアクティブ化イベントが発行されます。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onSearch">
+        <source xml:lang="en">An activation event emitted whenever a search is started in the folder with the given scheme.</source>
+        <target state="translated">指定されたスキームを使用してフォルダーでの検索が開始されるたびにアクティブ化イベントが発行されます。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onView">
+        <source xml:lang="en">An activation event emitted whenever the specified view is expanded.</source>
+        <target state="translated">指定したビューを展開するたびにアクティブ化イベントが発行されます。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onIdentity">
+        <source xml:lang="en">An activation event emitted whenever the specified user identity.</source>
+        <target state="translated">指定されたユーザー ID の場合に生成されるアクティブ化イベント。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onUri">
+        <source xml:lang="en">An activation event emitted whenever a system-wide Uri directed towards this extension is open.</source>
+        <target state="translated">この拡張機能用のシステム全体の URI が開かれるたびにアクティブ化イベントが発行されます。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.star">
+        <source xml:lang="en">An activation event emitted on VS Code startup. To ensure a great end user experience, please use this activation event in your extension only when no other activation events combination works in your use-case.</source>
+        <target state="translated">VS Code 起動時にアクティブ化イベントを発行します。優れたエンドユーザー エクスペリエンスを確保するために、他のアクティブ化イベントの組み合わせでは望む動作にならないときのみ使用してください。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.badges">
+        <source xml:lang="en">Array of badges to display in the sidebar of the Marketplace's extension page.</source>
+        <target state="translated">Marketplace の拡張機能ページのサイドバーに表示されるバッジの配列。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.badges.url">
+        <source xml:lang="en">Badge image URL.</source>
+        <target state="translated">バッジのイメージ URL。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.badges.href">
+        <source xml:lang="en">Badge link.</source>
+        <target state="translated">バッジのリンク。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.badges.description">
+        <source xml:lang="en">Badge description.</source>
+        <target state="translated">バッジの説明。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.markdown">
+        <source xml:lang="en">Controls the Markdown rendering engine used in the Marketplace. Either github (default) or standard.</source>
+        <target state="translated">Marketplace で使用される Markdown レンダリング エンジンを制御します。github (既定) か standard のいずれかを指定できます。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.qna">
+        <source xml:lang="en">Controls the Q&amp;A link in the Marketplace. Set to marketplace to enable the default Marketplace Q &amp; A site. Set to a string to provide the URL of a custom Q &amp; A site. Set to false to disable Q &amp; A altogether.</source>
+        <target state="translated">Marketplase の Q&amp;A リンクを制御します。既定の Marketplace Q&amp;A サイトを有効にするには、[marketplace] に設定します。カスタムの Q&amp;A サイトの URL を提供するには、その文字列に設定します。Q&amp;A を無効にする場合は、[false] に設定します。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.extensionDependencies">
+        <source xml:lang="en">Dependencies to other extensions. The identifier of an extension is always ${publisher}.${name}. For example: vscode.csharp.</source>
+        <target state="translated">他の拡張機能に対する依存関係。拡張機能の識別子は常に ${publisher}.${name} です。例: vscode.csharp。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.extensionPack">
+        <source xml:lang="en">A set of extensions that can be installed together. The identifier of an extension is always ${publisher}.${name}. For example: vscode.csharp.</source>
+        <target state="translated">一緒にインストールすることができる拡張機能のセット。拡張機能の ID は常に ${publisher}.${name} です。例: 'vscode.csharp'。</target>
+      </trans-unit>
+      <trans-unit id="extensionKind">
+        <source xml:lang="en">Define the kind of an extension. `ui` extensions are installed and run on the local machine while `workspace` extensions run on the remote.</source>
+        <target state="translated">拡張機能の種類を定義します。'ui' 拡張機能はローカル マシンにインストールされて実行されますが、'workspace' 拡張機能はリモート上で実行されます。</target>
+      </trans-unit>
+      <trans-unit id="extensionKind.ui">
+        <source xml:lang="en">Define an extension which can run only on the local machine when connected to remote window.</source>
+        <target state="translated">リモート ウィンドウが接続されている場合にローカル マシンでのみ実行できる拡張機能を定義します。</target>
+      </trans-unit>
+      <trans-unit id="extensionKind.workspace">
+        <source xml:lang="en">Define an extension which can run only on the remote machine when connected remote window.</source>
+        <target state="translated">リモート ウィンドウが接続されている場合にリモート マシンでのみ実行できる拡張機能を定義します。</target>
+      </trans-unit>
+      <trans-unit id="extensionKind.ui-workspace">
+        <source xml:lang="en">Define an extension which can run on either side, with a preference towards running on the local machine.</source>
+        <target state="translated">どちらの側でも実行できる拡張機能を定義します。ローカル マシンで実行することが推奨されています。</target>
+      </trans-unit>
+      <trans-unit id="extensionKind.workspace-ui">
+        <source xml:lang="en">Define an extension which can run on either side, with a preference towards running on the remote machine.</source>
+        <target state="translated">どちらの側でも実行できる拡張機能を定義します。リモート マシンで実行することが推奨されています。</target>
+      </trans-unit>
+      <trans-unit id="extensionKind.empty">
+        <source xml:lang="en">Define an extension which cannot run in a remote context, neither on the local, nor on the remote machine.</source>
+        <target state="translated">ローカルとリモート マシンのいずれのリモート コンテキストでも実行できない拡張機能を定義します。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.scripts.prepublish">
+        <source xml:lang="en">Script executed before the package is published as a VS Code extension.</source>
+        <target state="translated">パッケージが VS Code 拡張機能として公開される前に実行されるスクリプト。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.scripts.uninstall">
+        <source xml:lang="en">Uninstall hook for VS Code extension. Script that gets executed when the extension is completely uninstalled from VS Code which is when VS Code is restarted (shutdown and start) after the extension is uninstalled. Only Node scripts are supported.</source>
+        <target state="translated">VS コード拡張機能のフックをアンインストールします。 VS コードから拡張機能を完全にアンインストールした時に実行されるスクリプトです。スクリプトは、拡張機能をアンインストールした後に VS コードを再起動 (シャット ダウンしてから起動) したときに実行されます。Node スクリプトのみがサポートされます。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.icon">
+        <source xml:lang="en">The path to a 128x128 pixel icon.</source>
+        <target state="translated">128x128 ピクセルのアイコンへのパス。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/browser/extensionUrlHandler" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="confirmUrl">
+        <source xml:lang="en">Allow an extension to open this URI?</source>
+        <target state="translated">拡張機能がこの URI を開くことを許可しますか?</target>
+      </trans-unit>
+      <trans-unit id="rememberConfirmUrl">
+        <source xml:lang="en">Don't ask again for this extension.</source>
+        <target state="translated">この拡張機能を再度表示しません。</target>
+      </trans-unit>
+      <trans-unit id="open">
+        <source xml:lang="en">&amp;&amp;Open</source>
+        <target state="translated">開く(&amp;&amp;O)</target>
+      </trans-unit>
+      <trans-unit id="reloadAndHandle">
+        <source xml:lang="en">Extension '{0}' is not loaded. Would you like to reload the window to load the extension and open the URL?</source>
+        <target state="translated">拡張機能 '{0}' は読み込まれていません。拡張機能を読み込んで URL を開くためにウィンドウを再読み込みしますか?</target>
+      </trans-unit>
+      <trans-unit id="reloadAndOpen">
+        <source xml:lang="en">&amp;&amp;Reload Window and Open</source>
+        <target state="translated">ウィンドウを再読み込みして開く(&amp;&amp;R)</target>
+      </trans-unit>
+      <trans-unit id="enableAndHandle">
+        <source xml:lang="en">Extension '{0}' is disabled. Would you like to enable the extension and reload the window to open the URL?</source>
+        <target state="translated">拡張機能 '{0}' は無効です。拡張機能を有効にして、URL を開くためにウィンドウを再読み込みしますか?</target>
+      </trans-unit>
+      <trans-unit id="enableAndReload">
+        <source xml:lang="en">&amp;&amp;Enable and Open</source>
+        <target state="translated">有効にして開く(&amp;&amp;E)</target>
+      </trans-unit>
+      <trans-unit id="installAndHandle">
+        <source xml:lang="en">Extension '{0}' is not installed. Would you like to install the extension and reload the window to open this URL?</source>
+        <target state="translated">拡張機能 '{0}' がインストールされていません。拡張機能をインストールして、この URL を開くためにウィンドウを再読み込みしますか?</target>
+      </trans-unit>
+      <trans-unit id="install">
+        <source xml:lang="en">&amp;&amp;Install</source>
+        <target state="translated">インストール(&amp;&amp;I)</target>
+      </trans-unit>
+      <trans-unit id="Installing">
+        <source xml:lang="en">Installing Extension '{0}'...</source>
+        <target state="translated">拡張機能 '{0}' をインストールしています...</target>
+      </trans-unit>
+      <trans-unit id="reload">
+        <source xml:lang="en">Would you like to reload the window and open the URL '{0}'?</source>
+        <target state="translated">ウィンドウを再読み込みし、URL '{0}' を開きますか?</target>
+      </trans-unit>
+      <trans-unit id="Reload">
+        <source xml:lang="en">Reload Window and Open</source>
+        <target state="translated">ウィンドウを再読み込みして開く</target>
+      </trans-unit>
+      <trans-unit id="manage">
+        <source xml:lang="en">Manage Authorized Extension URIs...</source>
+        <target state="translated">承認された拡張 URI を管理します...</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/common/remoteExtensionHostClient" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="remote extension host Log">
+        <source xml:lang="en">Remote Extension Host</source>
+        <target state="translated">リモート拡張ホスト</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/electron-browser/cachedExtensionScanner" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="overwritingExtension">
+        <source xml:lang="en">Overwriting extension {0} with {1}.</source>
+        <target state="translated">拡張機能 {0} を {1} で上書きしています。</target>
+      </trans-unit>
+      <trans-unit id="extensionUnderDevelopment">
+        <source xml:lang="en">Loading development extension at {0}</source>
+        <target state="translated">開発の拡張機能を {0} に読み込んでいます</target>
+      </trans-unit>
+      <trans-unit id="extensionCache.invalid">
+        <source xml:lang="en">Extensions have been modified on disk. Please reload the window.</source>
+        <target state="translated">拡張機能がディスク上で変更されています。ウィンドウを再読み込みしてください。</target>
+      </trans-unit>
+      <trans-unit id="reloadWindow">
+        <source xml:lang="en">Reload Window</source>
+        <target state="translated">ウィンドウの再読み込み</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/common/extensionHostProcessManager" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="measureExtHostLatency">
+        <source xml:lang="en">Measure Extension Host Latency</source>
+        <target state="translated">拡張機能ホストの待ち時間を測定</target>
+      </trans-unit>
+      <trans-unit id="developer">
+        <source xml:lang="en">Developer</source>
+        <target state="translated">開発者</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/electron-browser/extensionHost" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="extensionHost.startupFailDebug">
+        <source xml:lang="en">Extension host did not start in 10 seconds, it might be stopped on the first line and needs a debugger to continue.</source>
+        <target state="translated">拡張機能ホストが 10 秒以内に開始されませんでした。先頭行で停止している可能性があり、続行するにはデバッガーが必要です。</target>
+      </trans-unit>
+      <trans-unit id="extensionHost.startupFail">
+        <source xml:lang="en">Extension host did not start in 10 seconds, that might be a problem.</source>
+        <target state="translated">拡張機能ホストが 10 秒以内に開始されませんでした。問題が発生している可能性があります。</target>
+      </trans-unit>
+      <trans-unit id="reloadWindow">
+        <source xml:lang="en">Reload Window</source>
+        <target state="translated">ウィンドウの再読み込み</target>
+      </trans-unit>
+      <trans-unit id="extension host Log">
+        <source xml:lang="en">Extension Host</source>
+        <target state="translated">拡張機能ホスト</target>
+      </trans-unit>
+      <trans-unit id="extensionHost.error">
+        <source xml:lang="en">Error from the extension host: {0}</source>
+        <target state="translated">拡張機能ホストからのエラー: {0}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/node/extensionPoints" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="jsonParseFail">
+        <source xml:lang="en">Failed to parse {0}: [{1}, {2}] {3}.</source>
+        <target state="translated">{0}: [{1}, {2}] {3}の解析に失敗しました。</target>
+      </trans-unit>
+      <trans-unit id="fileReadFail">
+        <source xml:lang="en">Cannot read file {0}: {1}.</source>
+        <target state="translated">ファイル {0} を読み取れません: {1}。</target>
+      </trans-unit>
+      <trans-unit id="jsonsParseReportErrors">
+        <source xml:lang="en">Failed to parse {0}: {1}.</source>
+        <target state="translated">{0} を解析できません: {1}。</target>
+      </trans-unit>
+      <trans-unit id="jsonInvalidFormat">
+        <source xml:lang="en">Invalid format {0}: JSON object expected.</source>
+        <target state="translated">無効な形式 {0}: JSON オブジェクトが必要です。</target>
+      </trans-unit>
+      <trans-unit id="missingNLSKey">
+        <source xml:lang="en">Couldn't find message for key {0}.</source>
+        <target state="translated">キー {0} のメッセージが見つかりませんでした。</target>
+      </trans-unit>
+      <trans-unit id="notSemver">
+        <source xml:lang="en">Extension version is not semver compatible.</source>
+        <target state="translated">拡張機能のバージョンが semver と互換性がありません。</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.empty">
+        <source xml:lang="en">Got empty extension description</source>
+        <target state="translated">空の拡張機能の説明を入手しました</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.publisher">
+        <source xml:lang="en">property publisher must be of type `string`.</source>
+        <target state="translated">publisher プロパティは `string` 型でなければなりません。</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.name">
+        <source xml:lang="en">property `{0}` is mandatory and must be of type `string`</source>
+        <target state="translated">プロパティ `{0}` は必須で、型 `string` でなければなりません</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.version">
+        <source xml:lang="en">property `{0}` is mandatory and must be of type `string`</source>
+        <target state="translated">プロパティ `{0}` は必須で、型 `string` でなければなりません</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.engines">
+        <source xml:lang="en">property `{0}` is mandatory and must be of type `object`</source>
+        <target state="translated">`{0}` プロパティは必須で、`string` 型でなければなりません</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.engines.vscode">
+        <source xml:lang="en">property `{0}` is mandatory and must be of type `string`</source>
+        <target state="translated">プロパティ `{0}` は必須で、型 `string` でなければなりません</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.extensionDependencies">
+        <source xml:lang="en">property `{0}` can be omitted or must be of type `string[]`</source>
+        <target state="translated">プロパティ `{0}` は省略するか、型 `string[]` にする必要があります</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.activationEvents1">
+        <source xml:lang="en">property `{0}` can be omitted or must be of type `string[]`</source>
+        <target state="translated">プロパティ `{0}` は省略するか、型 `string[]` にする必要があります</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.activationEvents2">
+        <source xml:lang="en">properties `{0}` and `{1}` must both be specified or must both be omitted</source>
+        <target state="translated">プロパティ `{0}` と `{1}` は、両方とも指定するか両方とも省略しなければなりません</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.main1">
+        <source xml:lang="en">property `{0}` can be omitted or must be of type `string`</source>
+        <target state="translated">`{0}` プロパティは省略するか、`string` 型にする必要があります</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.main2">
+        <source xml:lang="en">Expected `main` ({0}) to be included inside extension's folder ({1}). This might make the extension non-portable.</source>
+        <target state="translated">拡張機能のフォルダー ({1}) の中に `main` ({0}) が含まれることが予期されます。これにより拡張機能を移植できなくなる可能性があります。</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.main3">
+        <source xml:lang="en">properties `{0}` and `{1}` must both be specified or must both be omitted</source>
+        <target state="translated">プロパティ `{0}` と `{1}` は、両方とも指定するか両方とも省略しなければなりません</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

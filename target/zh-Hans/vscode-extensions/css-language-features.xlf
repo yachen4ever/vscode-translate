@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="extensions/css-language-features/package" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <body>
+      <trans-unit id="displayName">
+        <source xml:lang="en">CSS Language Features</source>
+        <target state="translated">CSS 语言功能</target>
+      </trans-unit>
+      <trans-unit id="description">
+        <source xml:lang="en">Provides rich language support for CSS, LESS and SCSS files.</source>
+        <target state="translated">为 CSS、LESS 和 SCSS 文件提供丰富的语言支持。</target>
+      </trans-unit>
+      <trans-unit id="css.title">
+        <source xml:lang="en">CSS</source>
+        <target state="translated">CSS</target>
+      </trans-unit>
+      <trans-unit id="css.customData.desc">
+        <source xml:lang="en">A list of relative file paths pointing to JSON files following the [custom data format](https://github.com/Microsoft/vscode-css-languageservice/blob/master/docs/customData.md).
+
+VS Code loads custom data on startup to enhance its CSS support for the custom CSS properties, at directives, pseudo classes and pseudo elements you specify in the JSON files.
+
+The file paths are relative to workspace and only workspace folder settings are considered.</source>
+        <target state="translated">指向 JSON 文件的相对文件路径的列表，这些路径采用[自定义数据格式](https://github.com/Microsoft/vscode-css-languageservice/blob/master/docs/customData.md)。
+
+VS Code 在启动时加载自定义数据，从而增强它对你在 JSON 文件中指定的指令、伪类和伪元素中的自定义 CSS 属性的 CSS 支持。
+
+这些文件路径与工作区相对，且只考虑工作区文件夹设置。</target>
+      </trans-unit>
+      <trans-unit id="css.completion.triggerPropertyValueCompletion.desc">
+        <source xml:lang="en">By default, VS Code triggers property value completion after selecting a CSS property. Use this setting to disable this behavior.</source>
+        <target state="translated">默认情况下，VS Code 在选择 CSS 属性后触发属性值完成。使用此设置可禁用此行为。</target>
+      </trans-unit>
+      <trans-unit id="css.completion.completePropertyWithSemicolon.desc">
+        <source xml:lang="en">Insert semicolon at end of line when completing CSS properties</source>
+        <target state="translated">补全CSS属性时在行尾插入分号</target>
+      </trans-unit>
+      <trans-unit id="css.lint.argumentsInColorFunction.desc">
+        <source xml:lang="en">Invalid number of parameters.</source>
+        <target state="translated">参数数目无效。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.boxModel.desc">
+        <source xml:lang="en">Do not use `width` or `height` when using `padding` or `border`.</source>
+        <target state="translated">在使用 `padding` 或 `border` 时，不要使用 `width` 或 `height`。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.compatibleVendorPrefixes.desc">
+        <source xml:lang="en">When using a vendor-specific prefix make sure to also include all other vendor-specific properties.</source>
+        <target state="translated">使用厂商特定的前缀时，同时添加所有其他厂商特定的属性。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.duplicateProperties.desc">
+        <source xml:lang="en">Do not use duplicate style definitions.</source>
+        <target state="translated">不要使用重复的样式定义。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.emptyRules.desc">
+        <source xml:lang="en">Do not use empty rulesets.</source>
+        <target state="translated">不要使用空规则集。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.float.desc">
+        <source xml:lang="en">Avoid using `float`. Floats lead to fragile CSS that is easy to break if one aspect of the layout changes.</source>
+        <target state="translated">避免使用 `float`。浮动会使 CSS 变得脆弱。即使只更改了一部分布局，也很容易造成破坏。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.fontFaceProperties.desc">
+        <source xml:lang="en">`@font-face` rule must define `src` and `font-family` properties.</source>
+        <target state="translated">`@font-face` 规则必须定义 `src` 和 `font-family` 属性。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.hexColorLength.desc">
+        <source xml:lang="en">Hex colors must consist of three or six hex numbers.</source>
+        <target state="translated">十六进制颜色必须由三个或六个十六进制数字组成。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.idSelector.desc">
+        <source xml:lang="en">Selectors should not contain IDs because these rules are too tightly coupled with the HTML.</source>
+        <target state="translated">选择器不应包含 ID，因为这些规则与 HTML 的耦合过于紧密。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.ieHack.desc">
+        <source xml:lang="en">IE hacks are only necessary when supporting IE7 and older.</source>
+        <target state="translated">仅在需要支持 IE7 及更低版本时，才需要 IE hack。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.important.desc">
+        <source xml:lang="en">Avoid using `!important`. It is an indication that the specificity of the entire CSS has gotten out of control and needs to be refactored.</source>
+        <target state="translated">避免使用 `!important`。它表明整个 CSS 的优先级已经失去控制且需要进行重构。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.importStatement.desc">
+        <source xml:lang="en">Import statements do not load in parallel.</source>
+        <target state="translated">import 语句没有并行加载。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.propertyIgnoredDueToDisplay.desc">
+        <source xml:lang="en">Property is ignored due to the display. E.g. with `display: inline`, the `width`, `height`, `margin-top`, `margin-bottom`, and `float` properties have no effect.</source>
+        <target state="translated">由于 `display` 属性值，属性被忽略。例如，使用 `display: inline` 时，`width`、`height`、`margin-top`、`margin-bottom` 和 `float` 属性将不起作用。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.universalSelector.desc">
+        <source xml:lang="en">The universal selector (`*`) is known to be slow.</source>
+        <target state="translated">通配选择符 (`*`) 的运行效率低。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.unknownAtRules.desc">
+        <source xml:lang="en">Unknown at-rule.</source>
+        <target state="translated">未知的 @ 规则。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.unknownProperties.desc">
+        <source xml:lang="en">Unknown property.</source>
+        <target state="translated">未知的属性。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.validProperties.desc">
+        <source xml:lang="en">A list of properties that are not validated against the `unknownProperties` rule.</source>
+        <target state="translated">不根据 "unknownProperties" 规则进行验证的属性列表。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.unknownVendorSpecificProperties.desc">
+        <source xml:lang="en">Unknown vendor specific property.</source>
+        <target state="translated">未知的供应商特定属性。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.vendorPrefix.desc">
+        <source xml:lang="en">When using a vendor-specific prefix, also include the standard property.</source>
+        <target state="translated">使用厂商特定的前缀时，同时添加标准属性。</target>
+      </trans-unit>
+      <trans-unit id="css.lint.zeroUnits.desc">
+        <source xml:lang="en">No unit for zero needed.</source>
+        <target state="translated">零不需要单位。</target>
+      </trans-unit>
+      <trans-unit id="css.trace.server.desc">
+        <source xml:lang="en">Traces the communication between VS Code and the CSS language server.</source>
+        <target state="translated">跟踪 VS Code 与 CSS 语言服务器之间的通信。</target>
+      </trans-unit>
+      <trans-unit id="css.validate.title">
+        <source xml:lang="en">Controls CSS validation and problem severities.</source>
+        <target state="translated">控制 CSS 验证和问题严重性。</target>
+      </trans-unit>
+      <trans-unit id="css.validate.desc">
+        <source xml:lang="en">Enables or disables all validations.</source>
+        <target state="translated">启用或禁用所有验证。</target>
+      </trans-unit>
+      <trans-unit id="less.title">
+        <source xml:lang="en">LESS</source>
+        <target state="translated">LESS</target>
+      </trans-unit>
+      <trans-unit id="less.completion.triggerPropertyValueCompletion.desc">
+        <source xml:lang="en">By default, VS Code triggers property value completion after selecting a CSS property. Use this setting to disable this behavior.</source>
+        <target state="translated">默认情况下，VS Code 在选择 CSS 属性后触发属性值完成。使用此设置可禁用此行为。</target>
+      </trans-unit>
+      <trans-unit id="less.completion.completePropertyWithSemicolon.desc">
+        <source xml:lang="en">Insert semicolon at end of line when completing CSS properties</source>
+        <target state="translated">补全CSS属性时在行尾插入分号</target>
+      </trans-unit>
+      <trans-unit id="less.lint.argumentsInColorFunction.desc">
+        <source xml:lang="en">Invalid number of parameters.</source>
+        <target state="translated">参数数目无效。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.boxModel.desc">
+        <source xml:lang="en">Do not use `width` or `height` when using `padding` or `border`.</source>
+        <target state="translated">在使用 `padding` 或 `border` 时，不要使用 `width` 或 `height`。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.compatibleVendorPrefixes.desc">
+        <source xml:lang="en">When using a vendor-specific prefix make sure to also include all other vendor-specific properties.</source>
+        <target state="translated">使用厂商特定的前缀时，同时添加所有其他厂商特定的属性。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.duplicateProperties.desc">
+        <source xml:lang="en">Do not use duplicate style definitions.</source>
+        <target state="translated">不要使用重复的样式定义。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.emptyRules.desc">
+        <source xml:lang="en">Do not use empty rulesets.</source>
+        <target state="translated">不要使用空规则集。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.float.desc">
+        <source xml:lang="en">Avoid using `float`. Floats lead to fragile CSS that is easy to break if one aspect of the layout changes.</source>
+        <target state="translated">避免使用 `float`。浮动会使 CSS 变得脆弱。即使只更改了一部分布局，也很容易造成破坏。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.fontFaceProperties.desc">
+        <source xml:lang="en">`@font-face` rule must define `src` and `font-family` properties.</source>
+        <target state="translated">`@font-face` 规则必须定义 `src` 和 `font-family` 属性。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.hexColorLength.desc">
+        <source xml:lang="en">Hex colors must consist of three or six hex numbers.</source>
+        <target state="translated">十六进制颜色必须由三个或六个十六进制数字组成。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.idSelector.desc">
+        <source xml:lang="en">Selectors should not contain IDs because these rules are too tightly coupled with the HTML.</source>
+        <target state="translated">选择器不应包含 ID，因为这些规则与 HTML 的耦合过于紧密。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.ieHack.desc">
+        <source xml:lang="en">IE hacks are only necessary when supporting IE7 and older.</source>
+        <target state="translated">仅在需要支持 IE7 及更低版本时，才需要 IE hack。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.important.desc">
+        <source xml:lang="en">Avoid using `!important`. It is an indication that the specificity of the entire CSS has gotten out of control and needs to be refactored.</source>
+        <target state="translated">避免使用 `!important`。它表明整个 CSS 的优先级已经失去控制且需要进行重构。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.importStatement.desc">
+        <source xml:lang="en">Import statements do not load in parallel.</source>
+        <target state="translated">import 语句没有并行加载。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.propertyIgnoredDueToDisplay.desc">
+        <source xml:lang="en">Property is ignored due to the display. E.g. with `display: inline`, the `width`, `height`, `margin-top`, `margin-bottom`, and `float` properties have no effect.</source>
+        <target state="translated">由于 `display` 属性值，属性被忽略。例如，使用 `display: inline` 时，`width`、`height`、`margin-top`、`margin-bottom` 和 `float` 属性将不起作用。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.universalSelector.desc">
+        <source xml:lang="en">The universal selector (`*`) is known to be slow.</source>
+        <target state="translated">通配选择符 (`*`) 的运行效率低。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.unknownAtRules.desc">
+        <source xml:lang="en">Unknown at-rule.</source>
+        <target state="translated">未知的 @ 规则。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.unknownProperties.desc">
+        <source xml:lang="en">Unknown property.</source>
+        <target state="translated">未知的属性。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.validProperties.desc">
+        <source xml:lang="en">A list of properties that are not validated against the `unknownProperties` rule.</source>
+        <target state="translated">不根据 "unknownProperties" 规则进行验证的属性列表。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.unknownVendorSpecificProperties.desc">
+        <source xml:lang="en">Unknown vendor specific property.</source>
+        <target state="translated">未知的供应商特定属性。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.vendorPrefix.desc">
+        <source xml:lang="en">When using a vendor-specific prefix, also include the standard property.</source>
+        <target state="translated">使用厂商特定的前缀时，同时添加标准属性。</target>
+      </trans-unit>
+      <trans-unit id="less.lint.zeroUnits.desc">
+        <source xml:lang="en">No unit for zero needed.</source>
+        <target state="translated">零不需要单位。</target>
+      </trans-unit>
+      <trans-unit id="less.validate.title">
+        <source xml:lang="en">Controls LESS validation and problem severities.</source>
+        <target state="translated">控制 LESS 验证和问题严重性。</target>
+      </trans-unit>
+      <trans-unit id="less.validate.desc">
+        <source xml:lang="en">Enables or disables all validations.</source>
+        <target state="translated">启用或禁用所有验证。</target>
+      </trans-unit>
+      <trans-unit id="scss.title">
+        <source xml:lang="en">SCSS (Sass)</source>
+        <target state="translated">SCSS (Sass)</target>
+      </trans-unit>
+      <trans-unit id="scss.completion.triggerPropertyValueCompletion.desc">
+        <source xml:lang="en">By default, VS Code triggers property value completion after selecting a CSS property. Use this setting to disable this behavior.</source>
+        <target state="translated">默认情况下，VS Code 在选择 CSS 属性后触发属性值完成。使用此设置可禁用此行为。</target>
+      </trans-unit>
+      <trans-unit id="scss.completion.completePropertyWithSemicolon.desc">
+        <source xml:lang="en">Insert semicolon at end of line when completing CSS properties</source>
+        <target state="translated">补全CSS属性时在行尾插入分号</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.argumentsInColorFunction.desc">
+        <source xml:lang="en">Invalid number of parameters.</source>
+        <target state="translated">参数数目无效。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.boxModel.desc">
+        <source xml:lang="en">Do not use `width` or `height` when using `padding` or `border`.</source>
+        <target state="translated">在使用 `padding` 或 `border` 时，不要使用 `width` 或 `height`。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.compatibleVendorPrefixes.desc">
+        <source xml:lang="en">When using a vendor-specific prefix make sure to also include all other vendor-specific properties.</source>
+        <target state="translated">使用厂商特定的前缀时，同时添加所有其他厂商特定的属性。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.duplicateProperties.desc">
+        <source xml:lang="en">Do not use duplicate style definitions.</source>
+        <target state="translated">不要使用重复的样式定义。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.emptyRules.desc">
+        <source xml:lang="en">Do not use empty rulesets.</source>
+        <target state="translated">不要使用空规则集。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.float.desc">
+        <source xml:lang="en">Avoid using `float`. Floats lead to fragile CSS that is easy to break if one aspect of the layout changes.</source>
+        <target state="translated">避免使用 `float`。浮动会使 CSS 变得脆弱。即使只更改了一部分布局，也很容易造成破坏。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.fontFaceProperties.desc">
+        <source xml:lang="en">`@font-face` rule must define `src` and `font-family` properties.</source>
+        <target state="translated">`@font-face` 规则必须定义 `src` 和 `font-family` 属性。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.hexColorLength.desc">
+        <source xml:lang="en">Hex colors must consist of three or six hex numbers.</source>
+        <target state="translated">十六进制颜色必须由三个或六个十六进制数字组成。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.idSelector.desc">
+        <source xml:lang="en">Selectors should not contain IDs because these rules are too tightly coupled with the HTML.</source>
+        <target state="translated">选择器不应包含 ID，因为这些规则与 HTML 的耦合过于紧密。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.ieHack.desc">
+        <source xml:lang="en">IE hacks are only necessary when supporting IE7 and older.</source>
+        <target state="translated">仅在需要支持 IE7 及更低版本时，才需要 IE hack。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.important.desc">
+        <source xml:lang="en">Avoid using `!important`. It is an indication that the specificity of the entire CSS has gotten out of control and needs to be refactored.</source>
+        <target state="translated">避免使用 `!important`。它表明整个 CSS 的优先级已经失去控制且需要进行重构。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.importStatement.desc">
+        <source xml:lang="en">Import statements do not load in parallel.</source>
+        <target state="translated">import 语句没有并行加载。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.propertyIgnoredDueToDisplay.desc">
+        <source xml:lang="en">Property is ignored due to the display. E.g. with `display: inline`, the `width`, `height`, `margin-top`, `margin-bottom`, and `float` properties have no effect.</source>
+        <target state="translated">由于 `display` 属性值，属性被忽略。例如，使用 `display: inline` 时，`width`、`height`、`margin-top`、`margin-bottom` 和 `float` 属性将不起作用。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.universalSelector.desc">
+        <source xml:lang="en">The universal selector (`*`) is known to be slow.</source>
+        <target state="translated">通配选择符 (`*`) 的运行效率低。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.unknownAtRules.desc">
+        <source xml:lang="en">Unknown at-rule.</source>
+        <target state="translated">未知的 @ 规则。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.unknownProperties.desc">
+        <source xml:lang="en">Unknown property.</source>
+        <target state="translated">未知的属性。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.validProperties.desc">
+        <source xml:lang="en">A list of properties that are not validated against the `unknownProperties` rule.</source>
+        <target state="translated">不根据 "unknownProperties" 规则进行验证的属性列表。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.unknownVendorSpecificProperties.desc">
+        <source xml:lang="en">Unknown vendor specific property.</source>
+        <target state="translated">未知的供应商特定属性。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.vendorPrefix.desc">
+        <source xml:lang="en">When using a vendor-specific prefix, also include the standard property.</source>
+        <target state="translated">使用厂商特定的前缀时，同时添加标准属性。</target>
+      </trans-unit>
+      <trans-unit id="scss.lint.zeroUnits.desc">
+        <source xml:lang="en">No unit for zero needed.</source>
+        <target state="translated">零不需要单位。</target>
+      </trans-unit>
+      <trans-unit id="scss.validate.title">
+        <source xml:lang="en">Controls SCSS validation and problem severities.</source>
+        <target state="translated">控制 SCSS 验证和问题严重性。</target>
+      </trans-unit>
+      <trans-unit id="scss.validate.desc">
+        <source xml:lang="en">Enables or disables all validations.</source>
+        <target state="translated">启用或禁用所有验证。</target>
+      </trans-unit>
+      <trans-unit id="css.colorDecorators.enable.deprecationMessage">
+        <source xml:lang="en">The setting `css.colorDecorators.enable` has been deprecated in favor of `editor.colorDecorators`.</source>
+        <target state="translated">已弃用设置 "css.colorDecorators.enable"，请改用 "editor.colorDecorators"。</target>
+      </trans-unit>
+      <trans-unit id="scss.colorDecorators.enable.deprecationMessage">
+        <source xml:lang="en">The setting `scss.colorDecorators.enable` has been deprecated in favor of `editor.colorDecorators`.</source>
+        <target state="translated">已弃用设置 "scss.colorDecorators.enable"，请改用 "editor.colorDecorators"。</target>
+      </trans-unit>
+      <trans-unit id="less.colorDecorators.enable.deprecationMessage">
+        <source xml:lang="en">The setting `less.colorDecorators.enable` has been deprecated in favor of `editor.colorDecorators`.</source>
+        <target state="translated">已弃用设置 "less.colorDecorators.enable"，请改用 "editor.colorDecorators"。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/css-language-features/client\dist/cssMain" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <body>
+      <trans-unit id="cssserver.name">
+        <source xml:lang="en">CSS Language Server</source>
+        <target state="translated">CSS 语言服务器</target>
+      </trans-unit>
+      <trans-unit id="folding.start">
+        <source xml:lang="en">Folding Region Start</source>
+        <target state="translated">折叠区域开始</target>
+      </trans-unit>
+      <trans-unit id="folding.end">
+        <source xml:lang="en">Folding Region End</source>
+        <target state="translated">折叠区域结束</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

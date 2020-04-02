@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="extensions/debug-server-ready/package" source-language="en" target-language="de" datatype="plaintext">
+    <body>
+      <trans-unit id="displayName">
+        <source xml:lang="en">Server Ready Action</source>
+        <target state="translated">Aktion "Server bereit"</target>
+      </trans-unit>
+      <trans-unit id="description">
+        <source xml:lang="en">Open URI in browser if server under debugging is ready.</source>
+        <target state="translated">URI in Browser öffnen, wenn der Server bereit ist, für den ein Debugging durchgeführt wird.</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.serverReadyAction.description">
+        <source xml:lang="en">Act upon a URI when a server program under debugging is ready (indicated by sending output of the form 'listening on port 3000' or 'Now listening on: https://localhost:5001' to the debug console.)</source>
+        <target state="translated">Reagieren Sie auf einen URI, wenn ein Serverprogramm beim Debugging bereit ist (wird durch Senden einer Meldung wie "Port 3000 wird überwacht" oder "https://localhost:5001 wird gerade überwacht" an die Debugging-Konsole signalisiert.)</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.action.description">
+        <source xml:lang="en">What to do with the URI when the server is ready.</source>
+        <target state="translated">Verwendung des URI, wenn der Server bereit ist.</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.action.openExternally.description">
+        <source xml:lang="en">Open URI externally with the default application.</source>
+        <target state="translated">URI mit der Standardanwendung extern öffnen.</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.action.debugWithChrome.description">
+        <source xml:lang="en">Start debugging with the 'Debugger for Chrome'.</source>
+        <target state="translated">Das Debuggen mit dem "Debugger für Chrome" beginnen.</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.pattern.description">
+        <source xml:lang="en">Server is ready if this pattern appears on the debug console. The first capture group must include a URI or a port number.</source>
+        <target state="translated">Der Server ist bereit, wenn dieses Muster auf der Debugging-Konsole erscheint. Die erste Erfassungsgruppe muss einen URI oder eine Portnummer enthalten.</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.uriFormat.description">
+        <source xml:lang="en">A format string used when constructing the URI from a port number. The first '%s' is substituted with the port number.</source>
+        <target state="translated">Eine Formatzeichenfolge, die beim Erstellen des URI über eine Portnummer verwendet wird. Das erste '%s' wird durch die Portnummer ersetzt.</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.webRoot.description">
+        <source xml:lang="en">Value passed to the debug configuration for the 'Debugger for Chrome'.</source>
+        <target state="translated">Der an die Debugkonfiguration für den "Debugger für Chrome" übermittelte Wert.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/debug-server-ready/dist/extension" source-language="en" target-language="de" datatype="plaintext">
+    <body>
+      <trans-unit id="server.ready.nocapture.error">
+        <source xml:lang="en">Format uri ('{0}') uses a substitution placeholder but pattern did not capture anything.</source>
+        <target state="translated">URI-Format ('{0}') verwendet einen Ersatzplatzhalter, aber das Muster hat nichts erfasst.</target>
+      </trans-unit>
+      <trans-unit id="server.ready.placeholder.error">
+        <source xml:lang="en">Format uri ('{0}') must contain exactly one substitution placeholder.</source>
+        <target state="translated">Das Format des URI ('{0}') muss genau einen Ersatzplatzhalter enthalten.</target>
+      </trans-unit>
+      <trans-unit id="server.ready.chrome.not.installed">
+        <source xml:lang="en">The action '{0}' requires the '{1}' extension.</source>
+        <target state="translated">Für die Aktion "{0}" ist die Erweiterung "{1}" erforderlich.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

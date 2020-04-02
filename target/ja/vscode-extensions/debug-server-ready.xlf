@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="extensions/debug-server-ready/package" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="displayName">
+        <source xml:lang="en">Server Ready Action</source>
+        <target state="translated">サーバーの準備完了アクション</target>
+      </trans-unit>
+      <trans-unit id="description">
+        <source xml:lang="en">Open URI in browser if server under debugging is ready.</source>
+        <target state="translated">デバッグ対象のサーバーが準備完了になったら、URI をブラウザーで開きます。</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.serverReadyAction.description">
+        <source xml:lang="en">Act upon a URI when a server program under debugging is ready (indicated by sending output of the form 'listening on port 3000' or 'Now listening on: https://localhost:5001' to the debug console.)</source>
+        <target state="translated">デバッグ中のサーバー プログラムの準備ができたら URI に対して実行します (準備が整うと 'listening on port 3000' または 'Now listening on: https://localhost:5001' の形式でデバッグ コンソールに出力が送信されます)。</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.action.description">
+        <source xml:lang="en">What to do with the URI when the server is ready.</source>
+        <target state="translated">サーバーの準備が整ったときにURIをどうするか。</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.action.openExternally.description">
+        <source xml:lang="en">Open URI externally with the default application.</source>
+        <target state="translated">既定のアプリケーションで外部 URI を開きます。</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.action.debugWithChrome.description">
+        <source xml:lang="en">Start debugging with the 'Debugger for Chrome'.</source>
+        <target state="translated">'Chrome用のデバッガー' でデバッグを開始します。</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.pattern.description">
+        <source xml:lang="en">Server is ready if this pattern appears on the debug console. The first capture group must include a URI or a port number.</source>
+        <target state="translated">このパターンがデバッグコンソールに表示される場合、サーバーは準備完了です。最初のキャプチャーグループはURIまたはポート番号を含める必要があります。</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.uriFormat.description">
+        <source xml:lang="en">A format string used when constructing the URI from a port number. The first '%s' is substituted with the port number.</source>
+        <target state="translated">ポート番号から URI を構築するときに使用する書式設定文字列。最初の '%s' は、ポート番号に置き換えられます。</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.webRoot.description">
+        <source xml:lang="en">Value passed to the debug configuration for the 'Debugger for Chrome'.</source>
+        <target state="translated">'Chrome用デバッガー' のデバッグ構成に値が渡されます。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/debug-server-ready/dist/extension" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="server.ready.nocapture.error">
+        <source xml:lang="en">Format uri ('{0}') uses a substitution placeholder but pattern did not capture anything.</source>
+        <target state="translated">URI ('{0}') 形式では代入プレースホルダーを使用していますが、パターンによって何も取り込まれませんでした。</target>
+      </trans-unit>
+      <trans-unit id="server.ready.placeholder.error">
+        <source xml:lang="en">Format uri ('{0}') must contain exactly one substitution placeholder.</source>
+        <target state="translated">URI ('{0}') 形式には代入プレースホルダーを 1 つだけ含める必要があります。</target>
+      </trans-unit>
+      <trans-unit id="server.ready.chrome.not.installed">
+        <source xml:lang="en">The action '{0}' requires the '{1}' extension.</source>
+        <target state="translated">アクション '{0}'  には拡張機能 '{1}' が必要です。</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

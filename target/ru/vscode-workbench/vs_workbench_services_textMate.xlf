@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/workbench/services/textMate/browser/abstractTextMateService" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="invalid.language">
+        <source xml:lang="en">Unknown language in `contributes.{0}.language`. Provided value: {1}</source>
+        <target state="translated">Неизвестный язык в contributes.{0}.language. Указанное значение: {1}</target>
+      </trans-unit>
+      <trans-unit id="invalid.scopeName">
+        <source xml:lang="en">Expected string in `contributes.{0}.scopeName`. Provided value: {1}</source>
+        <target state="translated">В contributes.{0}.scopeName требуется строка. Указанное значение: {1}</target>
+      </trans-unit>
+      <trans-unit id="invalid.path.0">
+        <source xml:lang="en">Expected string in `contributes.{0}.path`. Provided value: {1}</source>
+        <target state="translated">В contributes.{0}.path требуется строка. Указанное значение: {1}</target>
+      </trans-unit>
+      <trans-unit id="invalid.injectTo">
+        <source xml:lang="en">Invalid value in `contributes.{0}.injectTo`. Must be an array of language scope names. Provided value: {1}</source>
+        <target state="translated">Недопустимое значение в "contributes.{0}.injectTo". Должен быть задан массив имен языковых областей. Указанное значение: {1}</target>
+      </trans-unit>
+      <trans-unit id="invalid.embeddedLanguages">
+        <source xml:lang="en">Invalid value in `contributes.{0}.embeddedLanguages`. Must be an object map from scope name to language. Provided value: {1}</source>
+        <target state="translated">Недопустимое значение в "contributes.{0}.embeddedLanguages". Оно должно быть сопоставлением объекта между именем области и языком. Указанное значение: {1}.</target>
+      </trans-unit>
+      <trans-unit id="invalid.tokenTypes">
+        <source xml:lang="en">Invalid value in `contributes.{0}.tokenTypes`. Must be an object map from scope name to token type. Provided value: {1}</source>
+        <target state="translated">Недопустимое значение в "contributes.{0}.tokenTypes". Необходимо указать сопоставление объекта между именем объекта и типом маркера. Указанное значение: {1}.</target>
+      </trans-unit>
+      <trans-unit id="invalid.path.1">
+        <source xml:lang="en">Expected `contributes.{0}.path` ({1}) to be included inside extension's folder ({2}). This might make the extension non-portable.</source>
+        <target state="translated">Следует включить contributes.{0}.path ({1}) в папку расширения ({2}). От этого расширение может стать непереносимым.</target>
+      </trans-unit>
+      <trans-unit id="too many characters">
+        <source xml:lang="en">Tokenization is skipped for long lines for performance reasons. The length of a long line can be configured via `editor.maxTokenizationLineLength`.</source>
+        <target state="translated">Разметка пропускается для длинных строк из соображений производительности. Длину длинной строки можно настроить с помощью "editor.maxTokenizationLineLength".</target>
+      </trans-unit>
+      <trans-unit id="neverAgain">
+        <source xml:lang="en">Don't Show Again</source>
+        <target state="translated">Больше не показывать</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/textMate/common/TMGrammarFactory" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="no-tm-grammar">
+        <source xml:lang="en">No TM Grammar registered for this language.</source>
+        <target state="translated">Нет грамматики TM, зарегистрированной для этого языка.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/textMate/common/TMGrammars" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="vscode.extension.contributes.grammars">
+        <source xml:lang="en">Contributes textmate tokenizers.</source>
+        <target state="translated">Добавляет разметчики TextMate.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.grammars.language">
+        <source xml:lang="en">Language identifier for which this syntax is contributed to.</source>
+        <target state="translated">Идентификатор языка, для которого добавляется этот синтаксис.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.grammars.scopeName">
+        <source xml:lang="en">Textmate scope name used by the tmLanguage file.</source>
+        <target state="translated">Имя области TextMate, используемое в файле tmLanguage.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.grammars.path">
+        <source xml:lang="en">Path of the tmLanguage file. The path is relative to the extension folder and typically starts with './syntaxes/'.</source>
+        <target state="translated">Путь к файлу tmLanguage. Путь указывается относительно папки расширения и обычно начинается с "./syntaxes/".</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.grammars.embeddedLanguages">
+        <source xml:lang="en">A map of scope name to language id if this grammar contains embedded languages.</source>
+        <target state="translated">Сопоставление имени области и идентификатора языка, если грамматика содержит внедренные языки.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.grammars.tokenTypes">
+        <source xml:lang="en">A map of scope name to token types.</source>
+        <target state="translated">Сопоставление имени области с типами маркеров.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.grammars.injectTo">
+        <source xml:lang="en">List of language scope names to which this grammar is injected to.</source>
+        <target state="translated">Список имен языковых областей, в которые вставляется эта грамматика.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

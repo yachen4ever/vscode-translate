@@ -1,0 +1,847 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="extensions/typescript-language-features/package" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="displayName">
+        <source xml:lang="en">TypeScript and JavaScript Language Features</source>
+        <target state="translated">Возможности языков TypeScript и JavaScript</target>
+      </trans-unit>
+      <trans-unit id="description">
+        <source xml:lang="en">Provides rich language support for JavaScript and TypeScript.</source>
+        <target state="translated">Предоставляет широкую поддержку языка для JavaScript и TypeScript.</target>
+      </trans-unit>
+      <trans-unit id="reloadProjects.title">
+        <source xml:lang="en">Reload Project</source>
+        <target state="translated">Перезагрузить проект</target>
+      </trans-unit>
+      <trans-unit id="configuration.typescript">
+        <source xml:lang="en">TypeScript</source>
+        <target state="translated">TypeScript</target>
+      </trans-unit>
+      <trans-unit id="configuration.suggest.completeFunctionCalls">
+        <source xml:lang="en">Complete functions with their parameter signature.</source>
+        <target state="translated">Дополните функции сигнатурами их параметров.</target>
+      </trans-unit>
+      <trans-unit id="configuration.suggest.includeAutomaticOptionalChainCompletions">
+        <source xml:lang="en">Enable/disable showing completions on potentially undefined values that insert an optional chain call. Requires TS 3.7+ and strict null checks to be enabled.</source>
+        <target state="translated">Включение/отключение отображения завершений для потенциально неопределенных значений, вставляющих необязательный вызов по цепочке. Требует наличие TS 3.7+ и включение строгих проверок на NULL.</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsdk.desc">
+        <source xml:lang="en">Specifies the folder path to the tsserver and lib*.d.ts files under a TypeScript install to use for IntelliSense, for example: `./node_modules/typescript/lib`.
+
+- When specified as a user setting, the TypeScript version from `typescript.tsdk` automatically replaces the built-in TypeScript version.
+- When specified as a workspace setting, `typescript.tsdk` allows you to switch to use that workspace version of TypeScript for IntelliSense with the `TypeScript: Select TypeScript version` command.
+
+See the [TypeScript documentation](https://code.visualstudio.com/docs/typescript/typescript-compiling#_using-newer-typescript-versions) for more detail about managing TypeScript versions.</source>
+        <target state="translated">Указывает путь к файлам tsserver и lib*.d.ts в установке TypeScript, используемой для IntelliSense, например: "./node_modules/typescript/lib".
+
+– При указании в качестве пользовательского параметра версия TypeScript из файла "typescript.tsdk" автоматически заменяет встроенную версию TypeScript.
+– При указании в качестве параметра рабочей области "typescript.tsdk" позволяет переключиться на использование этой версии рабочей области TypeScript для IntelliSense с помощью команды "TypeScript: Выберите версию TypeScript".
+
+Дополнительные сведения об управлении версиями TypeScript см. в [документации по TypeScript](https://code.visualstudio.com/docs/typescript/typescript-compiling#_using-newer-typescript-versions).</target>
+      </trans-unit>
+      <trans-unit id="typescript.disableAutomaticTypeAcquisition">
+        <source xml:lang="en">Disables automatic type acquisition. Automatic type acquisition fetches `@types` packages from npm to improve IntelliSense for external libraries.</source>
+        <target state="translated">Отключает автоматическое получение типа. При автоматическом получении типа выполняется получение пакетов "@types" из npm для улучшения работы IntelliSense для внешних библиотек.</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsserver.log">
+        <source xml:lang="en">Enables logging of the TS server to a file. This log can be used to diagnose TS Server issues. The log may contain file paths, source code, and other potentially sensitive information from your project.</source>
+        <target state="translated">Включает ведение журнала для сервера TS. Этот журнал можно использовать для диагностики проблем сервера TS. В журнале могут содержаться пути к файлам, исходный код и другие сведения из вашего проекта, в том числе носящие конфиденциальный характер.</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsserver.pluginPaths">
+        <source xml:lang="en">Additional paths to discover TypeScript Language Service plugins. Requires using TypeScript 2.3.0 or newer in the workspace.</source>
+        <target state="translated">Дополнительные пути для обнаружения подключаемых модулей языковой службы TypeScript. Требуется TypeScript версии 2.3.0 или более поздней версии в рабочей области.</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsserver.pluginPaths.item">
+        <source xml:lang="en">Either an absolute or relative path. Relative path will be resolved against workspace folder(s).</source>
+        <target state="translated">Абсолютный или относительный путь. Относительный путь должен быть указан относительно папок рабочей области.</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsserver.trace">
+        <source xml:lang="en">Enables tracing of messages sent to the TS server. This trace can be used to diagnose TS Server issues. The trace may contain file paths, source code, and other potentially sensitive information from your project.</source>
+        <target state="translated">Включает трассировку сообщений, отправляемых на сервер TS. Эту трассировку можно использовать для диагностики проблем сервера TS. Трассировка может содержать пути к файлам, исходный код и другие сведения из вашего проекта, в том числе конфиденциальные данные.</target>
+      </trans-unit>
+      <trans-unit id="typescript.validate.enable">
+        <source xml:lang="en">Enable/disable TypeScript validation.</source>
+        <target state="translated">Включение или отключение проверки TypeScript.</target>
+      </trans-unit>
+      <trans-unit id="typescript.format.enable">
+        <source xml:lang="en">Enable/disable default TypeScript formatter.</source>
+        <target state="translated">Включение или отключение модуля форматирования TypeScript по умолчанию.</target>
+      </trans-unit>
+      <trans-unit id="javascript.format.enable">
+        <source xml:lang="en">Enable/disable default JavaScript formatter.</source>
+        <target state="translated">Включение или отключение модуля форматирования JavaScript по умолчанию.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterCommaDelimiter">
+        <source xml:lang="en">Defines space handling after a comma delimiter.</source>
+        <target state="translated">Определяет метод обработки пробелов после разделителя-запятой.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterConstructor">
+        <source xml:lang="en">Defines space handling after the constructor keyword. Requires using TypeScript 2.3.0 or newer in the workspace.</source>
+        <target state="translated">Определяет метод обработки пробелов после ключевого слова constructor. Требуется TypeScript 2.3.0 или более поздней версии в рабочей области.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterSemicolonInForStatements">
+        <source xml:lang="en">Defines space handling after a semicolon in a for statement.</source>
+        <target state="translated"> Определяет метод обработки пробелов после точки с запятой в операторе for.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceBeforeAndAfterBinaryOperators">
+        <source xml:lang="en">Defines space handling after a binary operator.</source>
+        <target state="translated">Определяет метод обработки пробелов после двоичного оператора.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterKeywordsInControlFlowStatements">
+        <source xml:lang="en">Defines space handling after keywords in a control flow statement.</source>
+        <target state="translated">Определяет метод обработки пробелов после ключевых слов в операторе управления потоком выполнения.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterFunctionKeywordForAnonymousFunctions">
+        <source xml:lang="en">Defines space handling after function keyword for anonymous functions.</source>
+        <target state="translated">Определяет метод обработки пробелов после ключевого слова function у анонимных функций.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceBeforeFunctionParenthesis">
+        <source xml:lang="en">Defines space handling before function argument parentheses.</source>
+        <target state="translated">Определяет метод обработки пробелов перед скобками аргумента функции.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis">
+        <source xml:lang="en">Defines space handling after opening and before closing non-empty parenthesis.</source>
+        <target state="translated">Определяет метод обработки пробелов после открытия и до закрытия непустых круглых скобок.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets">
+        <source xml:lang="en">Defines space handling after opening and before closing non-empty brackets.</source>
+        <target state="translated">Определяет метод обработки пробелов после открытия и до закрытия непустых квадратных скобок.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces">
+        <source xml:lang="en">Defines space handling after opening and before closing non-empty braces. Requires using TypeScript 2.3.0 or newer in the workspace.</source>
+        <target state="translated">Определяет метод обработки пробелов после открытия и до закрытия непустых квадратных скобок. Требуется TypeScript 2.3.0 или более поздней версии в рабочей области.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces">
+        <source xml:lang="en">Defines space handling after opening and before closing template string braces.</source>
+        <target state="translated">Определяет метод обработки пробелов после открытия и до закрытия скобок в строке шаблона.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces">
+        <source xml:lang="en">Defines space handling after opening and before closing JSX expression braces.</source>
+        <target state="translated">Определяет метод обработки пробелов после открытия и до закрытия скобок выражения JSX.</target>
+      </trans-unit>
+      <trans-unit id="format.insertSpaceAfterTypeAssertion">
+        <source xml:lang="en">Defines space handling after type assertions in TypeScript. Requires using TypeScript 2.4 or newer in the workspace.</source>
+        <target state="translated">Определяет метод обработки пробелов после утверждений типа в TypeScript. Требуется TypeScript 2.4 или более поздней версии в рабочей области.</target>
+      </trans-unit>
+      <trans-unit id="format.placeOpenBraceOnNewLineForFunctions">
+        <source xml:lang="en">Defines whether an open brace is put onto a new line for functions or not.</source>
+        <target state="translated">Определяет, ставится ли открывающая фигурная скобка с новой строки в функциях.</target>
+      </trans-unit>
+      <trans-unit id="format.placeOpenBraceOnNewLineForControlBlocks">
+        <source xml:lang="en">Defines whether an open brace is put onto a new line for control blocks or not.</source>
+        <target state="translated">Определяет, ставится ли открывающая фигурная скобка с новой строки в блоках управления.</target>
+      </trans-unit>
+      <trans-unit id="format.semicolons">
+        <source xml:lang="en">Defines handling of optional semicolons. Requires using TypeScript 3.7 or newer in the workspace.</source>
+        <target state="translated">Определяет обработку необязательных точек с запятой. Требует использования TypeScript 3.7 или более новой версии в рабочей области.</target>
+      </trans-unit>
+      <trans-unit id="format.semicolons.ignore">
+        <source xml:lang="en">Don't insert or remove any semicolons.</source>
+        <target state="translated">Не вставлять и не удалять точки с запятой.</target>
+      </trans-unit>
+      <trans-unit id="format.semicolons.insert">
+        <source xml:lang="en">Insert semicolons at statement ends.</source>
+        <target state="translated">Вставка запятых в конце оператора.</target>
+      </trans-unit>
+      <trans-unit id="format.semicolons.remove">
+        <source xml:lang="en">Remove unnecessary semicolons.</source>
+        <target state="translated">Удалите ненужные запятые.</target>
+      </trans-unit>
+      <trans-unit id="javascript.validate.enable">
+        <source xml:lang="en">Enable/disable JavaScript validation.</source>
+        <target state="translated">Включение или отключение проверки JavaScript.</target>
+      </trans-unit>
+      <trans-unit id="goToProjectConfig.title">
+        <source xml:lang="en">Go to Project Configuration</source>
+        <target state="translated">Перейти к конфигурации проекта</target>
+      </trans-unit>
+      <trans-unit id="javascript.referencesCodeLens.enabled">
+        <source xml:lang="en">Enable/disable references CodeLens in JavaScript files.</source>
+        <target state="translated">Включить/отключить ссылки CodeLens для файлов JavaScript.</target>
+      </trans-unit>
+      <trans-unit id="javascript.referencesCodeLens.showOnAllFunctions">
+        <source xml:lang="en">Enable/disable references CodeLens on all functions in JavaScript files.</source>
+        <target state="translated">Включить/отключить ссылки CodeLens для всех функций в файлах JavaScript.</target>
+      </trans-unit>
+      <trans-unit id="typescript.referencesCodeLens.enabled">
+        <source xml:lang="en">Enable/disable references CodeLens in TypeScript files.</source>
+        <target state="translated">Включить/отключить ссылки CodeLens для файлов TypeScript.</target>
+      </trans-unit>
+      <trans-unit id="typescript.referencesCodeLens.showOnAllFunctions">
+        <source xml:lang="en">Enable/disable references CodeLens on all functions in TypeScript files.</source>
+        <target state="translated">Включить/отключить ссылки CodeLens для всех функций в файлах TypeScript.</target>
+      </trans-unit>
+      <trans-unit id="typescript.implementationsCodeLens.enabled">
+        <source xml:lang="en">Enable/disable implementations CodeLens. This CodeLens shows the implementers of an interface.</source>
+        <target state="translated">Включить или отключить CodeLens для реализаций. В этом CodeLens отображаются реализации интерфейса.</target>
+      </trans-unit>
+      <trans-unit id="typescript.openTsServerLog.title">
+        <source xml:lang="en">Open TS Server log</source>
+        <target state="translated">Открыть журнал сервера TS</target>
+      </trans-unit>
+      <trans-unit id="typescript.restartTsServer">
+        <source xml:lang="en">Restart TS server</source>
+        <target state="translated">Перезапустить сервер TS</target>
+      </trans-unit>
+      <trans-unit id="typescript.selectTypeScriptVersion.title">
+        <source xml:lang="en">Select TypeScript Version...</source>
+        <target state="translated">Выберите версию TypeScript...</target>
+      </trans-unit>
+      <trans-unit id="typescript.reportStyleChecksAsWarnings">
+        <source xml:lang="en">Report style checks as warnings.</source>
+        <target state="translated">Отображать ошибки при проверке стиля в виде предупреждений.</target>
+      </trans-unit>
+      <trans-unit id="javascript.implicitProjectConfig.checkJs">
+        <source xml:lang="en">Enable/disable semantic checking of JavaScript files. Existing jsconfig.json or tsconfig.json files override this setting. Requires using TypeScript 2.3.1 or newer in the workspace.</source>
+        <target state="translated">Включает/отключает семантическую проверку файлов JavaScript. Этот параметр может переопределяться в файле jsconfig.json или tsconfig.json. Требуется TypeScript 2.3.1 или более поздней версии в рабочей области.</target>
+      </trans-unit>
+      <trans-unit id="typescript.npm">
+        <source xml:lang="en">Specifies the path to the npm executable used for Automatic Type Acquisition. Requires using TypeScript 2.3.4 or newer in the workspace.</source>
+        <target state="translated">Указывает путь к исполняемому файлу NPM, используемому для автоматического получения типа. Требуется TypeScript версии 2.3.4 или более поздней версии в рабочей области.</target>
+      </trans-unit>
+      <trans-unit id="typescript.check.npmIsInstalled">
+        <source xml:lang="en">Check if npm is installed for Automatic Type Acquisition.</source>
+        <target state="translated">Проверяет, установлен ли NPM для автоматического получения типов.</target>
+      </trans-unit>
+      <trans-unit id="configuration.suggest.names">
+        <source xml:lang="en">Enable/disable including unique names from the file in JavaScript suggestions. Note that name suggestions are always disabled in JavaScript code that is semantically checked using `@ts-check` or `checkJs`.</source>
+        <target state="translated">Включение/отключение добавления уникальных имен из файла в предложения JavaScript. Обратите внимание, что предложения имен всегда отключены в коде JavaScript, семантика которого проверяется с помощью "@ts-check" или "checkJs".</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsc.autoDetect">
+        <source xml:lang="en">Controls auto detection of tsc tasks.</source>
+        <target state="translated">Управляет автоматическим обнаружением заданий tsc.</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsc.autoDetect.off">
+        <source xml:lang="en">Disable this feature.</source>
+        <target state="translated">Отключить эту функцию.</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsc.autoDetect.on">
+        <source xml:lang="en">Create both build and watch tasks.</source>
+        <target state="translated">Создавать задачи сборки и просмотра.</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsc.autoDetect.build">
+        <source xml:lang="en">Only create single run compile tasks.</source>
+        <target state="translated">Создавать только задачи компиляции для однократного запуска.</target>
+      </trans-unit>
+      <trans-unit id="typescript.tsc.autoDetect.watch">
+        <source xml:lang="en">Only create compile and watch tasks.</source>
+        <target state="translated">Создавать только задачи компиляции и просмотра.</target>
+      </trans-unit>
+      <trans-unit id="typescript.problemMatchers.tsc.label">
+        <source xml:lang="en">TypeScript problems</source>
+        <target state="translated">Проблемы TypeScript</target>
+      </trans-unit>
+      <trans-unit id="typescript.problemMatchers.tscWatch.label">
+        <source xml:lang="en">TypeScript problems (watch mode)</source>
+        <target state="translated">Проблемы TypeScript (режим наблюдения)</target>
+      </trans-unit>
+      <trans-unit id="configuration.suggest.paths">
+        <source xml:lang="en">Enable/disable suggestions for paths in import statements and require calls.</source>
+        <target state="translated">Включить/отключить предложения для путей в выражениях импорта и в вызовах.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.useSeparateSyntaxServer">
+        <source xml:lang="en">Enable/disable spawning a separate TypeScript server that can more quickly respond to syntax related operations, such as calculating folding or computing document symbols. Requires using TypeScript 3.4.0 or newer in the workspace.</source>
+        <target state="translated">Включение/отключение порождения отдельного сервера TypeScript, который может оперативнее реагировать на операции, связанные с синтаксисом, такие как вычисление свертывания или символов документа. Требует, чтобы в рабочей области использовался TypeScript 3.4.0 или более новой версии.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.maxTsServerMemory">
+        <source xml:lang="en">Set the maximum amount of memory (in MB) to allocate to the TypeScript server process</source>
+        <target state="translated">Задайте максимальный объем памяти (в МБ), выделяемый для процесса сервера TypeScript</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.experimental.enableProjectDiagnostics">
+        <source xml:lang="en">(Experimental) Enables project wide error reporting.</source>
+        <target state="translated">(Экспериментальная функция) Включает ведение отчетов об ошибках в масштабе всего проекта.</target>
+      </trans-unit>
+      <trans-unit id="typescript.locale">
+        <source xml:lang="en">Sets the locale used to report JavaScript and TypeScript errors. Requires using TypeScript 2.6.0 or newer in the workspace. Default of `null` uses VS Code's locale.</source>
+        <target state="translated">Устанавливает языковой стандарт, используемый для сообщений об ошибках JavaScript и TypeScript. Требуется TypeScript 2.6.0 или более поздней версии в рабочей области. Значение по умолчанию — 'null'. При указании значения null используется языковой стандарт VS Code.</target>
+      </trans-unit>
+      <trans-unit id="javascript.implicitProjectConfig.experimentalDecorators">
+        <source xml:lang="en">Enable/disable `experimentalDecorators` for JavaScript files that are not part of a project. Existing jsconfig.json or tsconfig.json files override this setting. Requires using TypeScript 2.3.1 or newer in the workspace.</source>
+        <target state="translated">Включает/отключает параметр 'experimentalDecorators' для файлов JavaScript, которые не являются частью проекта. Этот параметр может переопределяться в файле jsconfig.json или tsconfig.json. Требуется TypeScript 2.3.1 или более поздней версии в рабочей области.</target>
+      </trans-unit>
+      <trans-unit id="configuration.suggest.autoImports">
+        <source xml:lang="en">Enable/disable auto import suggestions. Requires using TypeScript 2.6.1 or newer in the workspace.</source>
+        <target state="translated">Включить/отключить предложения автоматического импорта. Требуется TypeScript 2.6.1 или более поздней версии в рабочей области.</target>
+      </trans-unit>
+      <trans-unit id="taskDefinition.tsconfig.description">
+        <source xml:lang="en">The tsconfig file that defines the TS build.</source>
+        <target state="translated">Файл tsconfig, который определяет сборку TS.</target>
+      </trans-unit>
+      <trans-unit id="javascript.suggestionActions.enabled">
+        <source xml:lang="en">Enable/disable suggestion diagnostics for JavaScript files in the editor. Requires using TypeScript 2.8 or newer in the workspace.</source>
+        <target state="translated">Включить/отключить предложения диагностики для файлов JavaScript в редакторе. Требуется TypeScript версии 2.8 или более поздней версии в рабочей области.</target>
+      </trans-unit>
+      <trans-unit id="typescript.suggestionActions.enabled">
+        <source xml:lang="en">Enable/disable suggestion diagnostics for TypeScript files in the editor. Requires using TypeScript 2.8 or newer in the workspace.</source>
+        <target state="translated">Включить/отключить предложения диагностики для файлов TypeScript в редакторе. Требуется TypeScript версии 2.8 или более поздней версии в рабочей области.</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.quoteStyle">
+        <source xml:lang="en">Preferred quote style to use for quick fixes: `single` quotes, `double` quotes, or `auto` infer quote type from existing imports. Requires using TypeScript 2.9 or newer in the workspace.</source>
+        <target state="translated">Предпочтительный стиль кавычек для быстрых исправлений. Допустимые значения: 'single' (одинарные кавычки), 'double' (двойные кавычки) и 'auto' (использовать тип кавычек из предыдущих операций импорта). Требуется TypeScript версии 2.9 или более поздней версии в рабочей области.</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifier">
+        <source xml:lang="en">Preferred path style for auto imports.</source>
+        <target state="translated">Предпочтительный стиль пути для автоматического импорта.</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifier.auto">
+        <source xml:lang="en">Automatically select import path style. Prefers using a relative import if `baseUrl` is configured and the relative path has fewer segments than the non-relative import.</source>
+        <target state="translated">Автоматический выбор стиля пути импорта. Предпочтение отдается относительному импорту, если настроен "baseUrl", а относительный путь содержит меньше сегментов, чем безотносительный импорт.</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifier.relative">
+        <source xml:lang="en">Relative to the file location.</source>
+        <target state="translated">Относительно расположения файла.</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifier.nonRelative">
+        <source xml:lang="en">Based on the `baseUrl` configured in your `jsconfig.json` / `tsconfig.json`.</source>
+        <target state="translated">На основе параметра baseUrl, заданного в файле jsconfig.json или tsconfig.json.</target>
+      </trans-unit>
+      <trans-unit id="typescript.updateImportsOnFileMove.enabled">
+        <source xml:lang="en">Enable/disable automatic updating of import paths when you rename or move a file in VS Code. Requires using TypeScript 2.9 or newer in the workspace.</source>
+        <target state="translated">Включить/отключить автоматическое обновление путей импорта при переименовании или перемещении файла в VS Code. Требуется TypeScript версии 2.9 или более поздней версии в рабочей области.</target>
+      </trans-unit>
+      <trans-unit id="typescript.updateImportsOnFileMove.enabled.prompt">
+        <source xml:lang="en">Prompt on each rename.</source>
+        <target state="translated">Выдавать запрос при каждом переименовании.</target>
+      </trans-unit>
+      <trans-unit id="typescript.updateImportsOnFileMove.enabled.always">
+        <source xml:lang="en">Always update paths automatically.</source>
+        <target state="translated">Всегда обновлять пути автоматически.</target>
+      </trans-unit>
+      <trans-unit id="typescript.updateImportsOnFileMove.enabled.never">
+        <source xml:lang="en">Never rename paths and don't prompt.</source>
+        <target state="translated">Никогда не переименовывать пути и не выдавать запрос на переименование.</target>
+      </trans-unit>
+      <trans-unit id="typescript.autoClosingTags">
+        <source xml:lang="en">Enable/disable automatic closing of JSX tags. Requires using TypeScript 3.0 or newer in the workspace.</source>
+        <target state="translated">Включить/отключить автоматическое закрытие тегов JSX. Требуется TypeScript 3.0 или более поздней версии в рабочей области.</target>
+      </trans-unit>
+      <trans-unit id="typescript.suggest.enabled">
+        <source xml:lang="en">Enabled/disable autocomplete suggestions.</source>
+        <target state="translated">Включить/отключить предложения автозаполнения.</target>
+      </trans-unit>
+      <trans-unit id="configuration.surveys.enabled">
+        <source xml:lang="en">Enabled/disable occasional surveys that help us improve VS Code's JavaScript and TypeScript support.</source>
+        <target state="translated">Включить/отключить периодические опросы, которые помогают нам улучшить поддержку JavaScript и TypeScript в VS Code.</target>
+      </trans-unit>
+      <trans-unit id="configuration.suggest.completeJSDocs">
+        <source xml:lang="en">Enable/disable suggestion to complete JSDoc comments.</source>
+        <target state="translated">Включить/отключить предложение для завершения комментариев JSDoc.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions">
+        <source xml:lang="en">Configure which watching strategies should be used to keep track of files and directories. Requires using TypeScript 3.8+ in the workspace.</source>
+        <target state="translated">Настройка того, какие стратегии наблюдения следует использовать для отслеживания файлов и каталогов. Требует использования TypeScript 3.8+ в рабочей области.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchFile">
+        <source xml:lang="en">Strategy for how individual files are watched.</source>
+        <target state="translated">Стратегия просмотра отдельных файлов.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchFile.fixedPollingInterval">
+        <source xml:lang="en">Check every file for changes several times a second at a fixed interval.</source>
+        <target state="translated">Проверка каждого файла на предмет изменений несколько раз в секунду с фиксированным интервалом.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchFile.priorityPollingInterval">
+        <source xml:lang="en">Check every file for changes several times a second, but use heuristics to check certain types of files less frequently than others.</source>
+        <target state="translated">Проверка каждого файла на наличие изменений несколько раз в секунду, но с использованием эвристики, чтобы проверять определенные типы файлов реже, чем другие.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchFile.dynamicPriorityPolling">
+        <source xml:lang="en">Use a dynamic queue where less-frequently modified files will be checked less often.</source>
+        <target state="translated">Используйте динамическую очередь, где чем реже изменяются файлы, тем реже они проверяются.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchFile.useFsEvents">
+        <source xml:lang="en">Attempt to use the operating system/file system’s native events for file changes.</source>
+        <target state="translated">Попытка использовать собственные события операционной или файловой системы для изменений файлов.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchFile.useFsEventsOnParentDirectory">
+        <source xml:lang="en">Attempt to use the operating system/file system’s native events to listen for changes on a file’s containing directories. This can use fewer file watchers, but might be less accurate.</source>
+        <target state="translated">Попытка использования собственных событий операционной системы/файловой системы для наблюдения каталогов, содержащих файл, на предмет изменений. Такой подход позволяет использовать меньше наблюдателей файлов, но может оказаться менее точным.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchDirectory">
+        <source xml:lang="en">Strategy for how entire directory trees are watched under systems that lack recursive file-watching functionality.</source>
+        <target state="translated">Стратегия того, как все деревья каталога отображаются в системах, где нет рекурсивной функции просмотра файлов.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchDirectory.fixedPollingInterval">
+        <source xml:lang="en">Check every directory for changes several times a second at a fixed interval.</source>
+        <target state="translated">Проверка каждого каталога на наличие изменений несколько раз в секунду с фиксированным интервалом.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchDirectory.dynamicPriorityPolling">
+        <source xml:lang="en">Use a dynamic queue where less-frequently modified directories will be checked less often.</source>
+        <target state="translated">Используйте динамическую очередь, где чем реже изменяются каталоги, тем реже они проверяются.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.watchDirectory.useFsEvents">
+        <source xml:lang="en">Attempt to use the operating system/file system’s native events for directory changes.</source>
+        <target state="translated">Попытка использовать собственные события операционной или файловой системы для изменения каталога.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.fallbackPolling">
+        <source xml:lang="en">When using file system events, this option specifies the polling strategy that gets used when the system runs out of native file watchers and/or doesn’t support native file watchers.</source>
+        <target state="translated">При использовании событий файловой системы этот параметр указывает стратегию опроса, используемую, когда система исчерпывает запас собственных наблюдателей файлов и (или) не поддерживает собственные наблюдатели файлов.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.fallbackPolling.fixedPollingInterval">
+        <source xml:lang="en">Check every file for changes several times a second at a fixed interval.</source>
+        <target state="translated">Проверка каждого файла на наличие изменений несколько раз в секунду с фиксированным интервалом.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.fallbackPolling.priorityPollingInterval">
+        <source xml:lang="en">Check every file for changes several times a second, but use heuristics to check certain types of files less frequently than others.</source>
+        <target state="translated">Проверка каждого файла на наличие изменений несколько раз в секунду, но с использованием эвристики, чтобы проверять определенные типы файлов реже, чем другие.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.fallbackPolling.dynamicPriorityPolling ">
+        <source xml:lang="en">Use a dynamic queue where less-frequently modified files will be checked less often.</source>
+        <target state="translated">Используйте динамическую очередь, где чем реже изменяются файлы, тем реже они проверяются.</target>
+      </trans-unit>
+      <trans-unit id="configuration.tsserver.watchOptions.synchronousWatchDirectory">
+        <source xml:lang="en">Disable deferred watching on directories. Deferred watching is useful when lots of file changes might occur at once (e.g. a change in node_modules from running npm install), but you might want to disable it with this flag for some less-common setups.</source>
+        <target state="translated">Отключение отложенного наблюдения за каталогами. Отложенное наблюдение удобно, когда одновременно может иметь место множество изменений (например, изменение node_modules из запущенной установки npm), однако для некоторых менее распространенных вариантов настройки этот флаг может потребоваться отключить.</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.renameShorthandProperties">
+        <source xml:lang="en">Enable/disable introducing aliases for object shorthand properties during renames. Requires using TypeScript 3.4 or newer in the workspace.</source>
+        <target state="translated">Включить/отключить введение псевдонимов для собирательных свойств при переименованиях. Требуется использование TypeScript 3.4 или более новой версии в рабочей области.</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.extract.constant.title">
+        <source xml:lang="en">Extract constant</source>
+        <target state="translated">Извлечь константу</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.extract.constant.description">
+        <source xml:lang="en">Extract expression to constant.</source>
+        <target state="translated">Извлечь выражение в константу.</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.extract.function.title">
+        <source xml:lang="en">Extract function</source>
+        <target state="translated">Извлечь функцию</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.extract.function.description">
+        <source xml:lang="en">Extract expression to method or function.</source>
+        <target state="translated">Извлечь выражение в метод или функцию.</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.extract.type.title">
+        <source xml:lang="en">Extract type</source>
+        <target state="translated">Извлечь тип</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.extract.type.description">
+        <source xml:lang="en">Extract type to a type alias.</source>
+        <target state="translated">Извлечь тип в псевдоним типа.</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.extract.interface.title">
+        <source xml:lang="en">Extract interface</source>
+        <target state="translated">Извлечь интерфейс</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.extract.interface.description">
+        <source xml:lang="en">Extract type to an interface.</source>
+        <target state="translated">Извлечь тип в интерфейс.</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.import.title">
+        <source xml:lang="en">Convert import</source>
+        <target state="translated">Преобразовать импорт</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.import.description">
+        <source xml:lang="en">Convert between named imports and namespace imports.</source>
+        <target state="translated">Преобразование между именованными импортами и импортами пространств имен.</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.export.title">
+        <source xml:lang="en">Convert export</source>
+        <target state="translated">Преобразовать экспорт</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.export.description">
+        <source xml:lang="en">Convert between default export and named export.</source>
+        <target state="translated">Преобразовать между экспортом по умолчанию и именованным экспортом.</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.move.newFile.title">
+        <source xml:lang="en">Move to a new file</source>
+        <target state="translated">Переместить в новый файл</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.move.newFile.description">
+        <source xml:lang="en">Move the expression to a new file.</source>
+        <target state="translated">Переместить выражение в новый файл.</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.arrow.braces.title">
+        <source xml:lang="en">Rewrite arrow braces</source>
+        <target state="translated">Перезаписать угловые скобки</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.arrow.braces.description">
+        <source xml:lang="en">Add or remove braces in an arrow function.</source>
+        <target state="translated">Добавить или удалить скобки в функции стрелки.</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.parameters.toDestructured.title">
+        <source xml:lang="en">Convert parameters to destructured object</source>
+        <target state="translated">Преобразовать параметры в деструктурированный объект</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.property.generateAccessors.title">
+        <source xml:lang="en">Generate accessors</source>
+        <target state="translated">Создать методы доступа</target>
+      </trans-unit>
+      <trans-unit id="codeActions.refactor.rewrite.property.generateAccessors.description">
+        <source xml:lang="en">Generate 'get' and 'set' accessors</source>
+        <target state="translated">Создать методы доступа "get" и "set"</target>
+      </trans-unit>
+      <trans-unit id="codeActions.source.organizeImports.title">
+        <source xml:lang="en">Organize imports</source>
+        <target state="translated">Организация импортов</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/utils/api" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="invalidVersion">
+        <source xml:lang="en">invalid version</source>
+        <target state="translated">Недопустимая версия</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/baseCodeLensProvider" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="referenceErrorLabel">
+        <source xml:lang="en">Could not determine references</source>
+        <target state="translated">Не удалось определить ссылки.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/commands/goToProjectConfiguration" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="typescript.projectConfigNoWorkspace">
+        <source xml:lang="en">Please open a folder in VS Code to use a TypeScript or JavaScript project</source>
+        <target state="translated">Откройте папку в VS Code, чтобы использовать проект JavaScript или TypeScript.</target>
+      </trans-unit>
+      <trans-unit id="typescript.projectConfigUnsupportedFile">
+        <source xml:lang="en">Could not determine TypeScript or JavaScript project. Unsupported file type</source>
+        <target state="translated">Не удалось определить проект TypeScript или JavaScript. Неподдерживаемый тип файла</target>
+      </trans-unit>
+      <trans-unit id="typescript.projectConfigCouldNotGetInfo">
+        <source xml:lang="en">Could not determine TypeScript or JavaScript project</source>
+        <target state="translated">Не удалось определить проект TypeScript или JavaScript.</target>
+      </trans-unit>
+      <trans-unit id="typescript.noTypeScriptProjectConfig">
+        <source xml:lang="en">File is not part of a TypeScript project. Click [here]({0}) to learn more.</source>
+        <target state="translated">Файл не является частью проекта TypeScript. Дополнительные сведения см. [здесь]({0}).</target>
+      </trans-unit>
+      <trans-unit id="typescript.noJavaScriptProjectConfig">
+        <source xml:lang="en">File is not part of a JavaScript project Click [here]({0}) to learn more.</source>
+        <target state="translated">Файл не является частью проекта JavaScript. Дополнительные сведения см. [здесь]({0}).</target>
+      </trans-unit>
+      <trans-unit id="typescript.configureTsconfigQuickPick">
+        <source xml:lang="en">Configure tsconfig.json</source>
+        <target state="translated">Настроить tsconfig.json</target>
+      </trans-unit>
+      <trans-unit id="typescript.configureJsconfigQuickPick">
+        <source xml:lang="en">Configure jsconfig.json</source>
+        <target state="translated">Настроить jsconfig.json</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/completions" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="selectCodeAction">
+        <source xml:lang="en">Select code action to apply</source>
+        <target state="translated">Выберите применяемое действие кода</target>
+      </trans-unit>
+      <trans-unit id="acquiringTypingsLabel">
+        <source xml:lang="en">Acquiring typings...</source>
+        <target state="translated">Получение typings...</target>
+        <note>Typings refers to the *.d.ts typings files that power our IntelliSense. It should not be localized</note>
+      </trans-unit>
+      <trans-unit id="acquiringTypingsDetail">
+        <source xml:lang="en">Acquiring typings definitions for IntelliSense.</source>
+        <target state="translated">Получение определений typings для IntelliSense.</target>
+        <note>Typings refers to the *.d.ts typings files that power our IntelliSense. It should not be localized</note>
+      </trans-unit>
+      <trans-unit id="autoImportLabel">
+        <source xml:lang="en">Auto import from {0}</source>
+        <target state="translated">Автоматический импорт из {0}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/directiveCommentCompletions" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="ts-check">
+        <source xml:lang="en">Enables semantic checking in a JavaScript file. Must be at the top of a file.</source>
+        <target state="translated">Включает семантическую проверку в JavaScript файле. Необходимо расположить в самом начале файла.</target>
+      </trans-unit>
+      <trans-unit id="ts-nocheck">
+        <source xml:lang="en">Disables semantic checking in a JavaScript file. Must be at the top of a file.</source>
+        <target state="translated">Отключает семантическую проверку в JavaScript файле. Необходимо расположить в самом начале файла.</target>
+      </trans-unit>
+      <trans-unit id="ts-ignore">
+        <source xml:lang="en">Suppresses @ts-check errors on the next line of a file.</source>
+        <target state="translated">Отключает вывод ошибок @ts-check для следующей строки файла.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/implementationsCodeLens" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="oneImplementationLabel">
+        <source xml:lang="en">1 implementation</source>
+        <target state="translated">1 реализация</target>
+      </trans-unit>
+      <trans-unit id="manyImplementationLabel">
+        <source xml:lang="en">{0} implementations</source>
+        <target state="translated">Реализации {0}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/jsDocCompletions" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="typescript.jsDocCompletionItem.documentation">
+        <source xml:lang="en">JSDoc comment</source>
+        <target state="translated">Комментарий JSDoc</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/organizeImports" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="organizeImportsAction.title">
+        <source xml:lang="en">Organize Imports</source>
+        <target state="translated">Организация импортов</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/quickFix" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="fixAllInFileLabel">
+        <source xml:lang="en">{0} (Fix all in file)</source>
+        <target state="translated">{0} (Исправить все в файле)</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/fixAll" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="autoFix.label">
+        <source xml:lang="en">Auto fix</source>
+        <target state="translated">Автоисправление</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/refactor" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="refactoringFailed">
+        <source xml:lang="en">Could not apply refactoring</source>
+        <target state="translated">Не удалось применить рефакторинг</target>
+      </trans-unit>
+      <trans-unit id="extractConstant.disabled.title">
+        <source xml:lang="en">Extract to constant</source>
+        <target state="translated">Извлечь в константу</target>
+      </trans-unit>
+      <trans-unit id="extractConstant.disabled.reason">
+        <source xml:lang="en">The current selection cannot be extracted</source>
+        <target state="translated">Невозможно извлечь выбранные параметры</target>
+      </trans-unit>
+      <trans-unit id="extractFunction.disabled.title">
+        <source xml:lang="en">Extract to function</source>
+        <target state="translated">Извлечь в функцию</target>
+      </trans-unit>
+      <trans-unit id="extractFunction.disabled.reason">
+        <source xml:lang="en">The current selection cannot be extracted</source>
+        <target state="translated">Невозможно извлечь выбранные параметры</target>
+      </trans-unit>
+      <trans-unit id="refactor.documentation.title">
+        <source xml:lang="en">Learn more about JS/TS refactorings</source>
+        <target state="translated">Дополнительные сведения о рефакторингах JS/TS</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/referencesCodeLens" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="oneReferenceLabel">
+        <source xml:lang="en">1 reference</source>
+        <target state="translated">1 ссылка</target>
+      </trans-unit>
+      <trans-unit id="manyReferenceLabel">
+        <source xml:lang="en">{0} references</source>
+        <target state="translated">Ссылок: {0}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/rename" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="fileRenameFail">
+        <source xml:lang="en">An error occurred while renaming file</source>
+        <target state="translated">Ошибка при переименовании файла</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/typescriptServiceClient" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="noServerFound">
+        <source xml:lang="en">The path {0} doesn't point to a valid tsserver install. Falling back to bundled TypeScript version.</source>
+        <target state="translated">Путь {0} не указывает на допустимый файл программы установки tsserver. Выполняется откат до пакетной версии TypeScript.</target>
+      </trans-unit>
+      <trans-unit id="serverExitedWithError">
+        <source xml:lang="en">TypeScript language server exited with error. Error message is: {0}</source>
+        <target state="translated">Языковой сервер TypeScript завершил работу с ошибкой. Сообщение об ошибке: "{0}".</target>
+      </trans-unit>
+      <trans-unit id="typescript.openTsServerLog.loggingNotEnabled">
+        <source xml:lang="en">TS Server logging is off. Please set `typescript.tsserver.log` and restart the TS server to enable logging</source>
+        <target state="translated">Вход в TS Server отключен. Задайте "typescript.tsserver.log" и перезагрузите VS Code, чтобы включить ведение журнала</target>
+      </trans-unit>
+      <trans-unit id="typescript.openTsServerLog.enableAndReloadOption">
+        <source xml:lang="en">Enable logging and restart TS server</source>
+        <target state="translated">Войдите и перезагрузите TS server</target>
+      </trans-unit>
+      <trans-unit id="typescript.openTsServerLog.noLogFile">
+        <source xml:lang="en">TS Server has not started logging.</source>
+        <target state="translated">Сервер TS не начал ведение журнала.</target>
+      </trans-unit>
+      <trans-unit id="openTsServerLog.openFileFailedFailed">
+        <source xml:lang="en">Could not open TS Server log file</source>
+        <target state="translated">Не удалось открыть файл журнала сервера TS</target>
+      </trans-unit>
+      <trans-unit id="serverDiedAfterStart">
+        <source xml:lang="en">The TypeScript language service died 5 times right after it got started. The service will not be restarted.</source>
+        <target state="translated">Языковая служба TypeScript пять раз завершила работу сразу после запуска. Служба не будет перезапущена.</target>
+      </trans-unit>
+      <trans-unit id="serverDiedReportIssue">
+        <source xml:lang="en">Report Issue</source>
+        <target state="translated">Сообщить об ошибке</target>
+      </trans-unit>
+      <trans-unit id="serverDied">
+        <source xml:lang="en">The TypeScript language service died unexpectedly 5 times in the last 5 Minutes.</source>
+        <target state="translated">Языковая служба TypeScript пять раз непредвиденно завершила работу за последние пять минут.</target>
+      </trans-unit>
+      <trans-unit id="serverLoading.progress">
+        <source xml:lang="en">Initializing JS/TS language features</source>
+        <target state="translated">Инициализация компонентов языка JS/TS</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/utils/logger" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="channelName">
+        <source xml:lang="en">TypeScript</source>
+        <target state="translated">TypeScript</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/utils/versionPicker" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="useVSCodeVersionOption">
+        <source xml:lang="en">Use VS Code's Version</source>
+        <target state="translated">Использовать версию VS Code</target>
+      </trans-unit>
+      <trans-unit id="useWorkspaceVersionOption">
+        <source xml:lang="en">Use Workspace Version</source>
+        <target state="translated">Использовать версию рабочей области</target>
+      </trans-unit>
+      <trans-unit id="learnMore">
+        <source xml:lang="en">Learn More</source>
+        <target state="translated">Дополнительные сведения</target>
+      </trans-unit>
+      <trans-unit id="selectTsVersion">
+        <source xml:lang="en">Select the TypeScript version used for JavaScript and TypeScript language features</source>
+        <target state="translated">Выберите версию TypeScript, используемую для языковых функций JavaScript и TypeScript.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/utils/versionProvider" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="couldNotLoadTsVersion">
+        <source xml:lang="en">Could not load the TypeScript version at this path</source>
+        <target state="translated">Не удалось загрузить версию TypeScript по этому пути</target>
+      </trans-unit>
+      <trans-unit id="noBundledServerFound">
+        <source xml:lang="en">VS Code's tsserver was deleted by another application such as a misbehaving virus detection tool. Please reinstall VS Code.</source>
+        <target state="translated">Файл tsserver VSCode был удален другим приложением, например, в результате ошибочного срабатывания средства обнаружения вирусов. Переустановите VSCode.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/utils/typingsStatus" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="installingPackages">
+        <source xml:lang="en">Fetching data for better TypeScript IntelliSense</source>
+        <target state="translated">Получение данных для повышения эффективности IntelliSense TypeScript</target>
+      </trans-unit>
+      <trans-unit id="typesInstallerInitializationFailed.title">
+        <source xml:lang="en">Could not install typings files for JavaScript language features. Please ensure that NPM is installed or configure 'typescript.npm' in your user settings. Click [here]({0}) to learn more.</source>
+        <target state="translated">Не удалось установить файлы типизации для языка JavaScript. Убедитесь, что NPM установлен или укажите путь к файлу 'typescript.npm' в параметрах среды пользователя. Дополнительные сведения см. [здесь]({0}).</target>
+      </trans-unit>
+      <trans-unit id="typesInstallerInitializationFailed.doNotCheckAgain">
+        <source xml:lang="en">Don't Show Again</source>
+        <target state="translated">Больше не показывать</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/utils/versionStatus" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="typescriptVersion">
+        <source xml:lang="en">TypeScript: Version</source>
+        <target state="translated">TypeScript: версия</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/updatePathsOnRename" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="renameProgress.title">
+        <source xml:lang="en">Checking for update of JS/TS imports</source>
+        <target state="translated">Проверка обновления для импортируемых данных JS/TS</target>
+      </trans-unit>
+      <trans-unit id="prompt">
+        <source xml:lang="en">Update imports for '{0}'?</source>
+        <target state="translated">Обновить импорты для "{0}"?</target>
+      </trans-unit>
+      <trans-unit id="promptMoreThanOne">
+        <source xml:lang="en">Update imports for the following {0} files?</source>
+        <target state="translated">Обновить импорты для следующих файлов ({0})?</target>
+      </trans-unit>
+      <trans-unit id="reject.title">
+        <source xml:lang="en">No</source>
+        <target state="translated">Нет</target>
+      </trans-unit>
+      <trans-unit id="accept.title">
+        <source xml:lang="en">Yes</source>
+        <target state="translated">Да</target>
+      </trans-unit>
+      <trans-unit id="always.title">
+        <source xml:lang="en">Always automatically update imports</source>
+        <target state="translated">Всегда обновлять импорты автоматически</target>
+      </trans-unit>
+      <trans-unit id="never.title">
+        <source xml:lang="en">Never automatically update imports</source>
+        <target state="translated">Никогда не обновлять импорты автоматически</target>
+      </trans-unit>
+      <trans-unit id="moreFile">
+        <source xml:lang="en">...1 additional file not shown</source>
+        <target state="translated">...1 дополнительный файл не показан</target>
+      </trans-unit>
+      <trans-unit id="moreFiles">
+        <source xml:lang="en">...{0} additional files not shown</source>
+        <target state="translated">...не показано дополнительных файлов: {0}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/utils/projectStatus" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="statusExclude">
+        <source xml:lang="en">TypeScript: Configure Excludes</source>
+        <target state="translated">TypeScript: настройка исключений</target>
+      </trans-unit>
+      <trans-unit id="hintExclude">
+        <source xml:lang="en">To enable project-wide JavaScript/TypeScript language features, exclude folders with many files, like: {0}</source>
+        <target state="translated">Чтобы включить языковые функции JavaScript/TypeScript IntelliSense во всем проекте, исключите папки с большим числом файлов, например: {0}.</target>
+      </trans-unit>
+      <trans-unit id="hintExclude.generic">
+        <source xml:lang="en">To enable project-wide JavaScript/TypeScript language features, exclude large folders with source files that you do not work on.</source>
+        <target state="translated">Чтобы включить языковые функции JavaScript/TypeScript IntelliSense во всем проекте, исключите большие папки с исходными файлами, с которыми вы не работаете.</target>
+      </trans-unit>
+      <trans-unit id="large.label">
+        <source xml:lang="en">Configure Excludes</source>
+        <target state="translated">Настройка исключений</target>
+      </trans-unit>
+      <trans-unit id="hintExclude.tooltip">
+        <source xml:lang="en">To enable project-wide JavaScript/TypeScript language features, exclude large folders with source files that you do not work on.</source>
+        <target state="translated">Чтобы включить языковые функции JavaScript/TypeScript IntelliSense во всем проекте, исключите большие папки с исходными файлами, с которыми вы не работаете.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/task" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="badTsConfig">
+        <source xml:lang="en">TypeScript Task in tasks.json contains "\\". TypeScript tasks tsconfig must use "/"</source>
+        <target state="translated">Задача TypeScript в файле tasks.json содержит "\\". В конфигурации tsconfig задач TypeScript необходимо использовать "/"</target>
+      </trans-unit>
+      <trans-unit id="buildTscLabel">
+        <source xml:lang="en">build - {0}</source>
+        <target state="translated">сборка – {0}</target>
+      </trans-unit>
+      <trans-unit id="buildAndWatchTscLabel">
+        <source xml:lang="en">watch - {0}</source>
+        <target state="translated">отслеживание – {0}</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

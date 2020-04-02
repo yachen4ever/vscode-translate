@@ -1,0 +1,853 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/workbench/contrib/terminal/common/terminalShellConfig" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="terminalIntegratedConfigurationTitle">
+        <source xml:lang="en">Integrated Terminal</source>
+        <target state="translated">통합 터미널</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.shell.linux">
+        <source xml:lang="en">The path of the shell that the terminal uses on Linux (default: {0}). [Read more about configuring the shell](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</source>
+        <target state="translated">터미널이 Linux에서 사용하는 셸의 경로(기본값: {0}). [셸 구성에 대해 자세히 알아보기](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.shell.linux.noDefault">
+        <source xml:lang="en">The path of the shell that the terminal uses on Linux. [Read more about configuring the shell](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</source>
+        <target state="translated">Linux에서 터미널이 사용하는 셸의 경로입니다. [셸 구성에 대한 자세한 정보](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.shell.osx">
+        <source xml:lang="en">The path of the shell that the terminal uses on macOS (default: {0}). [Read more about configuring the shell](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</source>
+        <target state="translated">터미널이 macOS에서 사용하는 셸의 경로(기본값: {0}). [셸 구성에 대해 자세히 알아보기](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.shell.osx.noDefault">
+        <source xml:lang="en">The path of the shell that the terminal uses on macOS. [Read more about configuring the shell](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</source>
+        <target state="translated">macOS에서 터미널이 사용하는 셸의 경로입니다. [셸 구성에 대한 자세한 정보](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.shell.windows">
+        <source xml:lang="en">The path of the shell that the terminal uses on Windows (default: {0}). [Read more about configuring the shell](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</source>
+        <target state="translated">터미널이 Windows에서 사용하는 셸의 경로(기본값: {0}). [셸 구성에 대해 자세히 알아보기](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.shell.windows.noDefault">
+        <source xml:lang="en">The path of the shell that the terminal uses on Windows. [Read more about configuring the shell](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</source>
+        <target state="translated">Windows에서 터미널이 사용하는 셸의 경로입니다. [셸 구성에 대한 자세한 정보](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalQuickOpen" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="termEntryAriaLabel">
+        <source xml:lang="en">{0}, terminal picker</source>
+        <target state="translated">{0}, 터미널 선택기</target>
+      </trans-unit>
+      <trans-unit id="termCreateEntryAriaLabel">
+        <source xml:lang="en">{0}, create new terminal</source>
+        <target state="translated">{0}, 새 터미널 만들기</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.newplus">
+        <source xml:lang="en">Create New Integrated Terminal</source>
+        <target state="translated">새 통합 터미널 만들기</target>
+      </trans-unit>
+      <trans-unit id="noTerminalsMatching">
+        <source xml:lang="en">No terminals matching</source>
+        <target state="translated">일치하는 터미널 없음</target>
+      </trans-unit>
+      <trans-unit id="noTerminalsFound">
+        <source xml:lang="en">No terminals open</source>
+        <target state="translated">열린 터미널 없음</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/terminal/common/terminal" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="terminalCategory">
+        <source xml:lang="en">Terminal</source>
+        <target state="translated">터미널</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalView" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="terminal.useMonospace">
+        <source xml:lang="en">Use 'monospace'</source>
+        <target state="translated">'고정 폭' 사용</target>
+      </trans-unit>
+      <trans-unit id="terminal.monospaceOnly">
+        <source xml:lang="en">The terminal only supports monospace fonts. Be sure to restart VS Code if this is a newly installed font.</source>
+        <target state="translated">터미널은 고정 폭 글꼴만 지원합니다. 새로 설치한 글꼴인 경우 VS Code를 다시 시작해야 합니다.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/terminal/electron-browser/terminalRemote" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="workbench.action.terminal.newLocal">
+        <source xml:lang="en">Create New Integrated Terminal (Local)</source>
+        <target state="translated">새 통합 터미널 만들기(로컬)</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminal.contribution" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="quickOpen.terminal">
+        <source xml:lang="en">Show All Opened Terminals</source>
+        <target state="translated">모든 열려 있는 터미널 표시</target>
+      </trans-unit>
+      <trans-unit id="terminalIntegratedConfigurationTitle">
+        <source xml:lang="en">Integrated Terminal</source>
+        <target state="translated">통합 터미널</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.automationShell.linux">
+        <source xml:lang="en">A path that when set will override {0} and ignore {1} values for automation-related terminal usage like tasks and debug.</source>
+        <target state="translated">설정 시 {0}을(를) 재정의하고 작업 및 디버그와 같은 자동화 관련 터미널 사용을 위한 {1} 값을 무시하는 경로입니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.automationShell.osx">
+        <source xml:lang="en">A path that when set will override {0} and ignore {1} values for automation-related terminal usage like tasks and debug.</source>
+        <target state="translated">설정 시 {0}을(를) 재정의하고 작업 및 디버그와 같은 자동화 관련 터미널 사용을 위한 {1} 값을 무시하는 경로입니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.automationShell.windows">
+        <source xml:lang="en">A path that when set will override {0} and ignore {1} values for automation-related terminal usage like tasks and debug.</source>
+        <target state="translated">설정 시 {0}을(를) 재정의하고 작업 및 디버그와 같은 자동화 관련 터미널 사용을 위한 {1} 값을 무시하는 경로입니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.shellArgs.linux">
+        <source xml:lang="en">The command line arguments to use when on the Linux terminal. [Read more about configuring the shell](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</source>
+        <target state="translated">Linux 터미널에 있을 때 사용할 명령줄 인수입니다. [셸 구성에 대한 자세한 정보](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.shellArgs.osx">
+        <source xml:lang="en">The command line arguments to use when on the macOS terminal. [Read more about configuring the shell](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</source>
+        <target state="translated">macOS 터미널에 있을 때 사용할 명령줄 인수입니다. [셸 구성에 대한 자세한 정보](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.shellArgs.windows">
+        <source xml:lang="en">The command line arguments to use when on the Windows terminal. [Read more about configuring the shell](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</source>
+        <target state="translated">Windows 터미널에 있을 때 사용할 명령줄 인수입니다. [셸 구성에 대한 자세한 정보](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.shellArgs.windows.string">
+        <source xml:lang="en">The command line arguments in [command-line format](https://msdn.microsoft.com/en-au/08dfcab2-eb6e-49a4-80eb-87d4076c98c6) to use when on the Windows terminal. [Read more about configuring the shell](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</source>
+        <target state="translated">Windows 터미널에 있을 때 사용할 명령줄 인수입니다[명령줄 형식] (https://msdn.microsoft.com/en-au/08dfcab2-eb6e-49a4-80eb-87d4076c98c6). [셸 구성에 대한 자세한 정보](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.macOptionIsMeta">
+        <source xml:lang="en">Controls whether to treat the option key as the meta key in the terminal on macOS.</source>
+        <target state="translated">macOS의 터미널에서 &lt;option&gt; 키를 메타 키로 처리할지 여부를 제어합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.macOptionClickForcesSelection">
+        <source xml:lang="en">Controls whether to force selection when using Option+click on macOS. This will force a regular (line) selection and disallow the use of column selection mode. This enables copying and pasting using the regular terminal selection, for example, when mouse mode is enabled in tmux.</source>
+        <target state="translated">macOS에서 &lt;option&gt; 키를 누른 채 클릭할 때 강제로 선택할지 여부를 제어합니다. 이 경우 일반(줄) 선택이 사용되고 열 선택 모드 사용은 허용되지 않습니다. 따라서 일반 터미널 선택을 사용하여 복사 및 붙여넣을 수 있습니다. tmux에서 마우스 모드를 사용할 수 있는 경우를 예로 들 수 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.copyOnSelection">
+        <source xml:lang="en">Controls whether text selected in the terminal will be copied to the clipboard.</source>
+        <target state="translated">터미널에서 선택한 텍스트가 클립보드로 복사되는지 여부를 제어합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.drawBoldTextInBrightColors">
+        <source xml:lang="en">Controls whether bold text in the terminal will always use the "bright" ANSI color variant.</source>
+        <target state="translated">터미널의 굵은 텍스트에서 "밝게" ANSI 색 변형을 항상 사용하는지 여부를 제어합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.fontFamily">
+        <source xml:lang="en">Controls the font family of the terminal, this defaults to `#editor.fontFamily#`'s value.</source>
+        <target state="translated">터미널의 글꼴 패밀리를 제어하며, 기본값은 `#editor.fontFamily#의 값입니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.fontSize">
+        <source xml:lang="en">Controls the font size in pixels of the terminal.</source>
+        <target state="translated">터미널의 글꼴 크기(픽셀)를 제어합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.letterSpacing">
+        <source xml:lang="en">Controls the letter spacing of the terminal, this is an integer value which represents the amount of additional pixels to add between characters.</source>
+        <target state="translated">터미널의 문자 간격을 제어하며, 문자  사이에 추가할 픽셀의 양을 나타내는 정수 값입니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.lineHeight">
+        <source xml:lang="en">Controls the line height of the terminal, this number is multiplied by the terminal font size to get the actual line-height in pixels.</source>
+        <target state="translated">터미널의 줄 높이를 제어합니다. 이 숫자에 터미널 글꼴 크기를 곱해 실제 줄 높이(픽셀)를 얻습니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.minimumContrastRatio">
+        <source xml:lang="en">When set the foreground color of each cell will change to try meet the contrast ratio specified. Example values:
+
+- 1: The default, do nothing.
+- 4.5: [WCAG AA compliance (minimum)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html).
+- 7: [WCAG AAA compliance (enhanced)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html).
+- 21: White on black or black on white.</source>
+        <target state="translated">설정하면 각 셀의 전경색이 지정된 명암비에 맞게 변경됩니다. 예제 값:
+
+- 1: 기본값으로, 아무 작업도 수행하지 않습니다.
+- 4.5: [WCAG AA 규격(최소)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
+- 7: [WCAG AAA 규격(강화)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html)
+- 21: 검은색 배경에 흰색 또는 흰색 배경에 검은색</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.fastScrollSensitivity">
+        <source xml:lang="en">Scrolling speed multiplier when pressing `Alt`.</source>
+        <target state="translated">'Alt' 키를 누를 때 스크롤 속도 승수입니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.mouseWheelScrollSensitivity">
+        <source xml:lang="en">A multiplier to be used on the `deltaY` of mouse wheel scroll events.</source>
+        <target state="translated">마우스 휠 스크롤 이벤트의 'deltaY'에 사용할 승수입니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.fontWeight">
+        <source xml:lang="en">The font weight to use within the terminal for non-bold text.</source>
+        <target state="translated">터미널 내에서 굵은 글꼴이 아닌 텍스트에 사용할 글꼴 두께입니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.fontWeightBold">
+        <source xml:lang="en">The font weight to use within the terminal for bold text.</source>
+        <target state="translated">터미널 내에서 굵은 글꼴 텍스트에 사용할 글꼴 두께입니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.cursorBlinking">
+        <source xml:lang="en">Controls whether the terminal cursor blinks.</source>
+        <target state="translated">터미널 커서 깜박임 여부를 제어합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.cursorStyle">
+        <source xml:lang="en">Controls the style of terminal cursor.</source>
+        <target state="translated">터미널 커서의 스타일을 제어합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.cursorWidth">
+        <source xml:lang="en">Controls the width of the cursor when `#terminal.integrated.cursorStyle#` is set to `line`.</source>
+        <target state="translated">'#terminal.integrated.cursorStyle#'이 'line'으로 설정된 경우 커서의 너비를 제어합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.scrollback">
+        <source xml:lang="en">Controls the maximum amount of lines the terminal keeps in its buffer.</source>
+        <target state="translated">터미널에서 버퍼에 유지하는 최대 줄 수를 제어합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.detectLocale">
+        <source xml:lang="en">Controls whether to detect and set the `$LANG` environment variable to a UTF-8 compliant option since VS Code's terminal only supports UTF-8 encoded data coming from the shell.</source>
+        <target state="translated">VS Code의 터메널이 셸에서 유입되는 UTF-8 인코딩된 데이터만 지원하므로 `$LANG` 환경 변수를 검색하고 UTF-8 호환 옵션으로 설정할지 여부를 제어합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.detectLocale.auto">
+        <source xml:lang="en">Set the `$LANG` environment variable if the existing variable does not exist or it does not end in `'.UTF-8'`.</source>
+        <target state="translated">기존 변수가 존재하지 않거나 `'.UTF-8'`로 끝나지 않는 경우 `$LANG` 환경 변수를 설정합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.detectLocale.off">
+        <source xml:lang="en">Do not set the `$LANG` environment variable.</source>
+        <target state="translated">'$LANG' 환경 변수를 설정하지 마세요.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.detectLocale.on">
+        <source xml:lang="en">Always set the `$LANG` environment variable.</source>
+        <target state="translated">항상 `$LANG` 환경 변수를 설정합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.rendererType.auto">
+        <source xml:lang="en">Let VS Code guess which renderer to use.</source>
+        <target state="translated">VS Code에서 사용할 렌더러를 추측하게 합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.rendererType.canvas">
+        <source xml:lang="en">Use the standard GPU/canvas-based renderer.</source>
+        <target state="translated">표준 GPU/캔버스 기반 렌더러를 사용합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.rendererType.dom">
+        <source xml:lang="en">Use the fallback DOM-based renderer.</source>
+        <target state="translated">대체 DOM 기반 렌더러를 사용합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.rendererType.experimentalWebgl">
+        <source xml:lang="en">Use the experimental webgl-based renderer. Note that this has some [known issues](https://github.com/xtermjs/xterm.js/issues?q=is%3Aopen+is%3Aissue+label%3Aarea%2Faddon%2Fwebgl) and this will only be enabled for new terminals (not hot swappable like the other renderers).</source>
+        <target state="translated">실험용 webgl 기반 렌더러를 사용합니다. 이 렌더러에는 몇 가지 [알려진 문제](https://github.com/xtermjs/xterm.js/issues?q=is%3Aopen+is%3Aissue+label%3Aarea%2Faddon%2Fwebgl)가 있으며 새 터미널에 대해서만 사용할 수 있습니다(다른 렌더러와 핫 스왑 가능하지 않음).</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.rendererType">
+        <source xml:lang="en">Controls how the terminal is rendered.</source>
+        <target state="translated">터미널을 렌더링하는 방법을 제어합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.rightClickBehavior.default">
+        <source xml:lang="en">Show the context menu.</source>
+        <target state="translated">상황에 맞는 메뉴를 표시합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.rightClickBehavior.copyPaste">
+        <source xml:lang="en">Copy when there is a selection, otherwise paste.</source>
+        <target state="translated">선택 항목이 있으면 복사하고 그렇지 않으면 붙여넣습니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.rightClickBehavior.paste">
+        <source xml:lang="en">Paste on right click.</source>
+        <target state="translated">마우스 오른쪽 단추를 클릭하여 붙여넣습니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.rightClickBehavior.selectWord">
+        <source xml:lang="en">Select the word under the cursor and show the context menu.</source>
+        <target state="translated">커서 아래에 있는 단어를 선택하고 상황에 맞는 메뉴를 표시합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.rightClickBehavior">
+        <source xml:lang="en">Controls how terminal reacts to right click.</source>
+        <target state="translated">터미널이 마우스 오른쪽 단추 클릭에 반능하는 방법을 제어합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.cwd">
+        <source xml:lang="en">An explicit start path where the terminal will be launched, this is used as the current working directory (cwd) for the shell process. This may be particularly useful in workspace settings if the root directory is not a convenient cwd.</source>
+        <target state="translated">터미널이 시작될 명시적 시작 경로입니다. 셸 프로세스의 현재 작업 디렉터리(cwd)로 사용됩니다. 루트 디렉터리가 편리한 cwd가 아닌 경우 작업 영역 설정에서 특히 유용하게 사용할 수 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.confirmOnExit">
+        <source xml:lang="en">Controls whether to confirm on exit if there are active terminal sessions.</source>
+        <target state="translated">끝낼 때 활성 터미널 세션이 있는지 확인할지 여부를 제어합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.enableBell">
+        <source xml:lang="en">Controls whether the terminal bell is enabled.</source>
+        <target state="translated">터미널 벨을 사용하도록 설정할지 여부를 제어합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.commandsToSkipShell">
+        <source xml:lang="en">A set of command IDs whose keybindings will not be sent to the shell and instead always be handled by Code. This allows the use of keybindings that would normally be consumed by the shell to act the same as when the terminal is not focused, for example ctrl+p to launch Quick Open.
+Default Skipped Commands:
+
+{0}</source>
+        <target state="translated">키 바인딩이 셸에 전송되지 않고 항상 Code에서 처리되는 명령 ID 집합입니다. 따라서 셸에서 정상적으로 사용되어 터미널에 포커스가 없을 때와 동일하게 작동하는 키 바인딩을 사용할 수 있습니다(예: &lt;Ctrl+P&gt;를 사용하여 Quick Open 시작).
+기본적으로 건너뛰는 명령:
+
+{0}</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.allowChords">
+        <source xml:lang="en">Whether or not to allow chord keybindings in the terminal. Note that when this is true and the keystroke results in a chord it will bypass `#terminal.integrated.commandsToSkipShell#`, setting this to false is particularly useful when you want ctrl+k to go to your shell (not VS Code).</source>
+        <target state="translated">터미널에서 코드 키 바인딩을 허용할지 여부입니다. 이것이 true이고 키 입력이 코드로 생성되면 '#terminal.integrated.commandsToSkipShell #'을 우회하므로 Ctrl+k가 셸(VS Code가 아님)로 이동하도록 하려는 경우에는 이 설정을 false로 설정하는 것이 특히 유용합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.inheritEnv">
+        <source xml:lang="en">Whether new shells should inherit their environment from VS Code. This is not supported on Windows.</source>
+        <target state="translated">새 셸이 VS Code에서 해당 환경을 상속해야 하는지 여부. Windows에서는 이 기능이 지원되지 않습니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.env.osx">
+        <source xml:lang="en">Object with environment variables that will be added to the VS Code process to be used by the terminal on macOS. Set to `null` to delete the environment variable.</source>
+        <target state="translated">macOS의 터미널에서 사용할 VS Code 프로세스에 추가되는 환경 변수를 포함한 개체입니다. 환경 변수를 삭제하려면 'null'로 설정합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.env.linux">
+        <source xml:lang="en">Object with environment variables that will be added to the VS Code process to be used by the terminal on Linux. Set to `null` to delete the environment variable.</source>
+        <target state="translated">Linux의 터미널에서 사용할 VS Code 프로세스에 추가되는 환경 변수를 포함한 개체입니다. 환경 변수를 삭제하려면 'null'로 설정합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.env.windows">
+        <source xml:lang="en">Object with environment variables that will be added to the VS Code process to be used by the terminal on Windows. Set to `null` to delete the environment variable.</source>
+        <target state="translated">Windows의 터미널에서 사용할 VS Code 프로세스에 추가되는 환경 변수를 포함한 개체입니다. 환경 변수를 삭제하려면 'null'로 설정합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.showExitAlert">
+        <source xml:lang="en">Controls whether to show the alert "The terminal process terminated with exit code" when exit code is non-zero.</source>
+        <target state="translated">종료 코드가 0이 아닌 경우 "터미널 프로세스가 종료 코드로 종료되었습니다" 경고를 표시할지 여부를 제어합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.splitCwd">
+        <source xml:lang="en">Controls the working directory a split terminal starts with.</source>
+        <target state="translated">분할 터미널이 시작되는 작업 디렉터리를 제어합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.splitCwd.workspaceRoot">
+        <source xml:lang="en">A new split terminal will use the workspace root as the working directory. In a multi-root workspace a choice for which root folder to use is offered.</source>
+        <target state="translated">새로운 분할 터미널에서는 작업 영역 루트를 작업 디렉터리로 사용합니다. 여러 루트 작업 영역에서는 사용할 루트 폴더를 선택할 수 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.splitCwd.initial">
+        <source xml:lang="en">A new split terminal will use the working directory that the parent terminal started with.</source>
+        <target state="translated">새 분할 터미널에서는 부모 터미널이 시작된 작업 디렉터리를 사용합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.splitCwd.inherited">
+        <source xml:lang="en">On macOS and Linux, a new split terminal will use the working directory of the parent terminal. On Windows, this behaves the same as initial.</source>
+        <target state="translated">macOS 및 Linux에서는 새 분할 터미널이 부모 터미널의 작업 디렉터리를 사용합니다. Windows에서는 처음처럼  동작합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.windowsEnableConpty">
+        <source xml:lang="en">Whether to use ConPTY for Windows terminal process communication (requires Windows 10 build number 18309+). Winpty will be used if this is false.</source>
+        <target state="translated">Windows 터미널 프로세스 통신에 ConPTY를 사용할 것인지 여부입니다(Windows 10 빌드 번호 18309 이상이 필요함). false인 경우 Winpty가 사용됩니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.experimentalUseTitleEvent">
+        <source xml:lang="en">An experimental setting that will use the terminal title event for the dropdown title. This setting will only apply to new terminals.</source>
+        <target state="translated">드롭다운 제목에 터미널 제목 이벤트를 사용하는 실험 설정입니다. 이 설정은 새 터미널에만 적용됩니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.enableFileLinks">
+        <source xml:lang="en">Whether to enable file links in the terminal. Links can be slow when working on a network drive in particular because each file link is verified against the file system.</source>
+        <target state="translated">터미널에서 파일 링크를 활성화할지 여부입니다. 특히 네트워크 드라이브에서 작업할 때 파일 시스템에 대해 각 파일 링크가 확인되므로 링크가 느려질 수 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.unicodeVersion.six">
+        <source xml:lang="en">Version 6 of unicode, this is an older version which should work better on older systems.</source>
+        <target state="translated">유니코드 버전 6은 이전 시스템에서 더 잘 작동하는 이전 버전입니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.unicodeVersion.eleven">
+        <source xml:lang="en">Version 11 of unicode, this version provides better support on modern systems that use modern versions of unicode.</source>
+        <target state="translated">유니코드 버전 11은 최신 버전의 유니코드를 사용하는 최신 시스템에 대한 더 나은 지원을 제공합니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.unicodeVersion">
+        <source xml:lang="en">Controls what version of unicode to use when evaluating the width of characters in the terminal. If you experience emoji or other wide characters not taking up the right amount of space or backspace either deleting too much or too little then you may want to try tweaking this setting.</source>
+        <target state="translated">터미널에서 문자의 너비를 계산할 때 사용하는 유니코드의 버전을 제어합니다. 이모지나 다른 와이드 문자가 적절한 공간이나 백스페이스를 차지하지 않는 경우 너무 많거나 적게 삭제하면 이 설정을 조정할 수 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal">
+        <source xml:lang="en">Terminal</source>
+        <target state="translated">터미널</target>
+      </trans-unit>
+      <trans-unit id="viewCategory">
+        <source xml:lang="en">View</source>
+        <target state="translated">보기</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/terminal/common/terminalColorRegistry" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="terminal.background">
+        <source xml:lang="en">The background color of the terminal, this allows coloring the terminal differently to the panel.</source>
+        <target state="translated">터미널의 배경색입니다. 이 설정을 사용하면 터미널
+ 색을 패널과 다르게 지정할 수 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.foreground">
+        <source xml:lang="en">The foreground color of the terminal.</source>
+        <target state="translated">터미널의 전경색입니다.</target>
+      </trans-unit>
+      <trans-unit id="terminalCursor.foreground">
+        <source xml:lang="en">The foreground color of the terminal cursor.</source>
+        <target state="translated">터미널 커서 전경색입니다.</target>
+      </trans-unit>
+      <trans-unit id="terminalCursor.background">
+        <source xml:lang="en">The background color of the terminal cursor. Allows customizing the color of a character overlapped by a block cursor.</source>
+        <target state="translated">터미널 커서의 배경색입니다. 블록 커서와 겹친 문자의 색상을 사용자 정의할 수 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.selectionBackground">
+        <source xml:lang="en">The selection background color of the terminal.</source>
+        <target state="translated">터미널의 선택 영역 배경색입니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.border">
+        <source xml:lang="en">The color of the border that separates split panes within the terminal. This defaults to panel.border.</source>
+        <target state="translated">터미널 내의 분할 창을 구분하는 테두리의 색입니다. 기본값은 panel.border입니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.ansiColor">
+        <source xml:lang="en">'{0}' ANSI color in the terminal.</source>
+        <target state="translated">터미널의 '{0}' ANSI 색상</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/terminal/common/terminalMenu" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="miToggleIntegratedTerminal">
+        <source xml:lang="en">&amp;&amp;Terminal</source>
+        <target state="translated">터미널(&amp;&amp;T)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miNewTerminal">
+        <source xml:lang="en">&amp;&amp;New Terminal</source>
+        <target state="translated">새 터미널(&amp;&amp;N)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miSplitTerminal">
+        <source xml:lang="en">&amp;&amp;Split Terminal</source>
+        <target state="translated">터미널 분할(&amp;&amp;S)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miRunActiveFile">
+        <source xml:lang="en">Run &amp;&amp;Active File</source>
+        <target state="translated">활성 파일 실행(&amp;&amp;A)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miRunSelectedText">
+        <source xml:lang="en">Run &amp;&amp;Selected Text</source>
+        <target state="translated">선택한 텍스트 실행(&amp;&amp;S)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalService" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="workbench.action.terminal.allowWorkspaceShell">
+        <source xml:lang="en">Allow Workspace Shell Configuration</source>
+        <target state="translated">작업 영역 셸 구성 허용</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.disallowWorkspaceShell">
+        <source xml:lang="en">Disallow Workspace Shell Configuration</source>
+        <target state="translated">작업 영역 셸 구성 허용 안 함</target>
+      </trans-unit>
+      <trans-unit id="terminalService.terminalCloseConfirmationSingular">
+        <source xml:lang="en">There is an active terminal session, do you want to kill it?</source>
+        <target state="translated">활성 터미널 세션이 있습니다. 종료할까요?</target>
+      </trans-unit>
+      <trans-unit id="terminalService.terminalCloseConfirmationPlural">
+        <source xml:lang="en">There are {0} active terminal sessions, do you want to kill them?</source>
+        <target state="translated">{0}개의 활성 터미널 세션이 있습니다. 종료할까요?</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.chooseWindowsShell">
+        <source xml:lang="en">Select your preferred terminal shell, you can change this later in your settings</source>
+        <target state="translated">기본으로 설정할 터미널 셸을 선택하세요. 나중에 설정에서 이 셸을 변경할 수 있습니다.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalActions" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="workbench.action.terminal.newWorkspacePlaceholder">
+        <source xml:lang="en">Select current working directory for new terminal</source>
+        <target state="translated">새 터미널의 현재 작업 디렉토리를 선택합니다.</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.toggleTerminal">
+        <source xml:lang="en">Toggle Integrated Terminal</source>
+        <target state="translated">통합 터미널 설정/해제</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.kill">
+        <source xml:lang="en">Kill the Active Terminal Instance</source>
+        <target state="translated">활성 터미널 인스턴스 종료</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.kill.short">
+        <source xml:lang="en">Kill Terminal</source>
+        <target state="translated">터미널 종료</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.quickKill">
+        <source xml:lang="en">Kill Terminal Instance</source>
+        <target state="translated">터미널 인스턴스 종료</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.copySelection">
+        <source xml:lang="en">Copy Selection</source>
+        <target state="translated">선택 영역 복사</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.copySelection.short">
+        <source xml:lang="en">Copy</source>
+        <target state="translated">복사</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.selectAll">
+        <source xml:lang="en">Select All</source>
+        <target state="translated">모두 선택</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.deleteWordLeft">
+        <source xml:lang="en">Delete Word Left</source>
+        <target state="translated">왼쪽 단어 삭제</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.deleteWordRight">
+        <source xml:lang="en">Delete Word Right</source>
+        <target state="translated">오른쪽 단어 삭제</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.deleteToLineStart">
+        <source xml:lang="en">Delete To Line Start</source>
+        <target state="translated">줄 시작까지 삭제</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.moveToLineStart">
+        <source xml:lang="en">Move To Line Start</source>
+        <target state="translated">줄 시작으로 이동</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.moveToLineEnd">
+        <source xml:lang="en">Move To Line End</source>
+        <target state="translated">줄 끝으로 이동</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.sendSequence">
+        <source xml:lang="en">Send Custom Sequence To Terminal</source>
+        <target state="translated">터미널에 사용자 지정 시퀀스 보내기</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.newWithCwd">
+        <source xml:lang="en">Create New Integrated Terminal Starting in a Custom Working Directory</source>
+        <target state="translated">사용자 지정 작업 디렉터리에서 시작하는 새 통합 터미널 만들기</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.newWithCwd.cwd">
+        <source xml:lang="en">The directory to start the terminal at</source>
+        <target state="translated">터미널을 시작하는 디렉터리</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.new">
+        <source xml:lang="en">Create New Integrated Terminal</source>
+        <target state="translated">새 통합 터미널 만들기</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.new.short">
+        <source xml:lang="en">New Terminal</source>
+        <target state="translated">새 터미널</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.newInActiveWorkspace">
+        <source xml:lang="en">Create New Integrated Terminal (In Active Workspace)</source>
+        <target state="translated">새 통합 터미널 만들기(활성 작업 영역에)</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.split">
+        <source xml:lang="en">Split Terminal</source>
+        <target state="translated">터미널 분할</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.split.short">
+        <source xml:lang="en">Split</source>
+        <target state="translated">Split</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.splitInActiveWorkspace">
+        <source xml:lang="en">Split Terminal (In Active Workspace)</source>
+        <target state="translated">터미널 분할(활성 작업 영역에서)</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.focusPreviousPane">
+        <source xml:lang="en">Focus Previous Pane</source>
+        <target state="translated">이전 창에 포커스</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.focusNextPane">
+        <source xml:lang="en">Focus Next Pane</source>
+        <target state="translated">다음 창에 포커스</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.resizePaneLeft">
+        <source xml:lang="en">Resize Pane Left</source>
+        <target state="translated">창 왼쪽 크기 조정</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.resizePaneRight">
+        <source xml:lang="en">Resize Pane Right</source>
+        <target state="translated">창 오른쪽 크기 조정</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.resizePaneUp">
+        <source xml:lang="en">Resize Pane Up</source>
+        <target state="translated">창 위쪽 크기 조정</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.resizePaneDown">
+        <source xml:lang="en">Resize Pane Down</source>
+        <target state="translated">창 아래쪽 크기 조정</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.focus">
+        <source xml:lang="en">Focus Terminal</source>
+        <target state="translated">터미널에 포커스</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.focusNext">
+        <source xml:lang="en">Focus Next Terminal</source>
+        <target state="translated">다음 터미널에 포커스</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.focusPrevious">
+        <source xml:lang="en">Focus Previous Terminal</source>
+        <target state="translated">이전 터미널에 포커스</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.paste">
+        <source xml:lang="en">Paste into Active Terminal</source>
+        <target state="translated">활성 터미널에 붙여넣기</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.paste.short">
+        <source xml:lang="en">Paste</source>
+        <target state="translated">붙여넣기</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.selectDefaultShell">
+        <source xml:lang="en">Select Default Shell</source>
+        <target state="translated">기본 셸 선택</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.runSelectedText">
+        <source xml:lang="en">Run Selected Text In Active Terminal</source>
+        <target state="translated">활성 터미널에서 선택한 텍스트 실행</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.runActiveFile">
+        <source xml:lang="en">Run Active File In Active Terminal</source>
+        <target state="translated">활성 터미널에서 활성 파일 실행</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.runActiveFile.noFile">
+        <source xml:lang="en">Only files on disk can be run in the terminal</source>
+        <target state="translated">디스크의 파일만 터미널에서 실행할 수 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.switchTerminal">
+        <source xml:lang="en">Switch Terminal</source>
+        <target state="translated">터미널 전환</target>
+      </trans-unit>
+      <trans-unit id="terminals">
+        <source xml:lang="en">Open Terminals.</source>
+        <target state="translated">터미널을 엽니다.</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.scrollDown">
+        <source xml:lang="en">Scroll Down (Line)</source>
+        <target state="translated">아래로 스크롤(줄)</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.scrollDownPage">
+        <source xml:lang="en">Scroll Down (Page)</source>
+        <target state="translated">아래로 스크롤(페이지)</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.scrollToBottom">
+        <source xml:lang="en">Scroll to Bottom</source>
+        <target state="translated">맨 아래로 스크롤</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.scrollUp">
+        <source xml:lang="en">Scroll Up (Line)</source>
+        <target state="translated">위로 스크롤(줄)</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.scrollUpPage">
+        <source xml:lang="en">Scroll Up (Page)</source>
+        <target state="translated">위로 스크롤(페이지)</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.scrollToTop">
+        <source xml:lang="en">Scroll to Top</source>
+        <target state="translated">맨 위로 스크롤</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.navigationModeExit">
+        <source xml:lang="en">Exit Navigation Mode</source>
+        <target state="translated">탐색 모드 종료</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.navigationModeFocusPrevious">
+        <source xml:lang="en">Focus Previous Line (Navigation Mode)</source>
+        <target state="translated">포커스 이전 줄(탐색 모드)</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.navigationModeFocusNext">
+        <source xml:lang="en">Focus Next Line (Navigation Mode)</source>
+        <target state="translated">포커스 다음 줄(탐색 모드)</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.clear">
+        <source xml:lang="en">Clear</source>
+        <target state="translated">지우기</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.clearSelection">
+        <source xml:lang="en">Clear Selection</source>
+        <target state="translated">선택 영역 지우기</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.manageWorkspaceShellPermissions">
+        <source xml:lang="en">Manage Workspace Shell Permissions</source>
+        <target state="translated">작업 영역 셸 권한 관리</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.rename">
+        <source xml:lang="en">Rename</source>
+        <target state="translated">이름 바꾸기</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.rename.prompt">
+        <source xml:lang="en">Enter terminal name</source>
+        <target state="translated">터미널 이름 입력</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.renameWithArg">
+        <source xml:lang="en">Rename the Currently Active Terminal</source>
+        <target state="translated">현재 활성 터미널의 이름 바꾸기</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.renameWithArg.name">
+        <source xml:lang="en">The new name for the terminal</source>
+        <target state="translated">터미널의 새 이름</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.renameWithArg.noTerminal">
+        <source xml:lang="en">No active terminal to rename</source>
+        <target state="translated">이름을 바꿀 활성 터미널이 없습니다.</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.renameWithArg.noName">
+        <source xml:lang="en">No name argument provided</source>
+        <target state="translated">이름 인수가 제공되지 않음</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.focusFindWidget">
+        <source xml:lang="en">Focus Find Widget</source>
+        <target state="translated">파인드 위젯 포커스</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.hideFindWidget">
+        <source xml:lang="en">Hide Find Widget</source>
+        <target state="translated">파인드 위젯 숨기기</target>
+      </trans-unit>
+      <trans-unit id="quickOpenTerm">
+        <source xml:lang="en">Switch Active Terminal</source>
+        <target state="translated">활성 터미널 전환</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.scrollToPreviousCommand">
+        <source xml:lang="en">Scroll To Previous Command</source>
+        <target state="translated">이전 명령으로 스크롤</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.scrollToNextCommand">
+        <source xml:lang="en">Scroll To Next Command</source>
+        <target state="translated">다음 명령으로 스크롤</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.selectToPreviousCommand">
+        <source xml:lang="en">Select To Previous Command</source>
+        <target state="translated">이전 명령까지 선택</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.selectToNextCommand">
+        <source xml:lang="en">Select To Next Command</source>
+        <target state="translated">다음 명령까지 선택</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.selectToPreviousLine">
+        <source xml:lang="en">Select To Previous Line</source>
+        <target state="translated">이전 줄까지 선택</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.selectToNextLine">
+        <source xml:lang="en">Select To Next Line</source>
+        <target state="translated">다음 줄까지 선택</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.toggleEscapeSequenceLogging">
+        <source xml:lang="en">Toggle Escape Sequence Logging</source>
+        <target state="translated">이스케이프 시퀀스 로깅 설정/해제</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.toggleFindRegex">
+        <source xml:lang="en">Toggle find using regex</source>
+        <target state="translated">regex를 사용하여 찾기 설정/해제</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.toggleFindWholeWord">
+        <source xml:lang="en">Toggle find using whole word</source>
+        <target state="translated">전체 단어를 사용하여 찾기 설정/해제</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.toggleFindCaseSensitive">
+        <source xml:lang="en">Toggle find using case sensitive</source>
+        <target state="translated">대/소문자 구분을 사용하여 찾가 설정/해제</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.findNext">
+        <source xml:lang="en">Find next</source>
+        <target state="translated">다음 찾기</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.findPrevious">
+        <source xml:lang="en">Find previous</source>
+        <target state="translated">이전 찾기</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalTab" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="terminalFocus">
+        <source xml:lang="en">Terminal {0}</source>
+        <target state="translated">{0} 터미널</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalConfigHelper" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="terminal.integrated.allowWorkspaceShell">
+        <source xml:lang="en">Do you allow this workspace to modify your terminal shell? {0}</source>
+        <target state="translated">이 작업 영역이 터미널 셸을 수정하도록 허용하나요? {0}</target>
+      </trans-unit>
+      <trans-unit id="allow">
+        <source xml:lang="en">Allow</source>
+        <target state="translated">허용</target>
+      </trans-unit>
+      <trans-unit id="disallow">
+        <source xml:lang="en">Disallow</source>
+        <target state="translated">허용 안 함</target>
+      </trans-unit>
+      <trans-unit id="useWslExtension.title">
+        <source xml:lang="en">The '{0}' extension is recommended for opening a terminal in WSL.</source>
+        <target state="translated">WSL에서 터미널을 여는 경우 '{0}' 확장명을 권장합니다.</target>
+      </trans-unit>
+      <trans-unit id="install">
+        <source xml:lang="en">Install</source>
+        <target state="translated">설치</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalInstance" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="terminal.integrated.a11yPromptLabel">
+        <source xml:lang="en">Terminal input</source>
+        <target state="translated">터미널 입력</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.a11yTooMuchOutput">
+        <source xml:lang="en">Too much output to announce, navigate to rows manually to read</source>
+        <target state="translated">발표할 출력이 너무 많음, 읽을 행으로 수동 이동</target>
+      </trans-unit>
+      <trans-unit id="yes">
+        <source xml:lang="en">Yes</source>
+        <target state="translated">예</target>
+      </trans-unit>
+      <trans-unit id="no">
+        <source xml:lang="en">No</source>
+        <target state="translated">아니요</target>
+      </trans-unit>
+      <trans-unit id="dontShowAgain">
+        <source xml:lang="en">Don't Show Again</source>
+        <target state="translated">다시 표시 안 함</target>
+      </trans-unit>
+      <trans-unit id="terminal.slowRendering">
+        <source xml:lang="en">The standard renderer for the integrated terminal appears to be slow on your computer. Would you like to switch to the alternative DOM-based renderer which may improve performance? [Read more about terminal settings](https://code.visualstudio.com/docs/editor/integrated-terminal#_changing-how-the-terminal-is-rendered).</source>
+        <target state="translated">통합 터미널의 표준 렌더러가 컴퓨터에서 느린 것 같습니다. 성능을 향상할 수 있는 대체 DOM 기반 렌더러로 전환하시겠습니까? [터미널 설정에 대한 자세한 정보](https://code.visualstudio.com/docs/editor/integrated-terminal#_changing-how-the-terminal-is-rendered)</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.copySelection.noSelection">
+        <source xml:lang="en">The terminal has no selection to copy</source>
+        <target state="translated">터미널에 복사할 선택 항목이 없음</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.exitedWithInvalidPath">
+        <source xml:lang="en">The terminal shell path "{0}" does not exist</source>
+        <target state="translated">터미널 셸 경로 "{0}"이(가) 존재하지 않습니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.exitedWithInvalidPathDirectory">
+        <source xml:lang="en">The terminal shell path "{0}" is a directory</source>
+        <target state="translated">터미널 셸 경로 "{0}"은(는) 디렉터리입니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.exitedWithInvalidCWD">
+        <source xml:lang="en">The terminal shell CWD "{0}" does not exist</source>
+        <target state="translated">터미널 셸 CWD "{0}"이(가) 존재하지 않습니다.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.legacyConsoleModeError">
+        <source xml:lang="en">The terminal failed to launch properly because your system has legacy console mode enabled, uncheck "Use legacy console" cmd.exe's properties to fix this.</source>
+        <target state="translated">시스템에 레거시 콘솔 모드가 사용하도록 설정되어 있기 때문에 터미널을 제대로 실행하지 못했습니다. 이 문제를 해결하려면 cmd.exe의 "레거시 콘솔 사용" 속성을 선택 취소하세요.</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.launchFailed">
+        <source xml:lang="en">The terminal process command '{0}{1}' failed to launch (exit code: {2})</source>
+        <target state="translated">터미널 프로세스 명령 '{0}{1}'을(를) 실행하지 못했습니다(종료 코드: {2}).</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.launchFailedExtHost">
+        <source xml:lang="en">The terminal process failed to launch (exit code: {0})</source>
+        <target state="translated">터미널 프로세스를 시작하지 못했습니다(종료 코드: {0}).</target>
+      </trans-unit>
+      <trans-unit id="terminal.integrated.exitedWithCode">
+        <source xml:lang="en">The terminal process terminated with exit code: {0}</source>
+        <target state="translated">터미널 프로세스가 종료 코드 {0}(으)로 종료되었습니다.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalLinkHandler" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="terminalLinkHandler.followLinkAlt.mac">
+        <source xml:lang="en">Option + click</source>
+        <target state="translated">Option+클릭</target>
+      </trans-unit>
+      <trans-unit id="terminalLinkHandler.followLinkAlt">
+        <source xml:lang="en">Alt + click</source>
+        <target state="translated">Alt+클릭</target>
+      </trans-unit>
+      <trans-unit id="terminalLinkHandler.followLinkCmd">
+        <source xml:lang="en">Cmd + click</source>
+        <target state="translated">Cmd+클릭</target>
+      </trans-unit>
+      <trans-unit id="terminalLinkHandler.followLinkCtrl">
+        <source xml:lang="en">Ctrl + click</source>
+        <target state="translated">Ctrl+클릭</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalProcessExtHostProxy" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="terminal.integrated.starting">
+        <source xml:lang="en">Starting...</source>
+        <target state="translated">시작하고 있습니다...</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

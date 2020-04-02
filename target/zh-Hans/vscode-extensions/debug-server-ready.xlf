@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="extensions/debug-server-ready/package" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <body>
+      <trans-unit id="displayName">
+        <source xml:lang="en">Server Ready Action</source>
+        <target state="translated">服务器就绪操作</target>
+      </trans-unit>
+      <trans-unit id="description">
+        <source xml:lang="en">Open URI in browser if server under debugging is ready.</source>
+        <target state="translated">如果正在调试的服务器已准备就绪，在浏览器中打开 URI。</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.serverReadyAction.description">
+        <source xml:lang="en">Act upon a URI when a server program under debugging is ready (indicated by sending output of the form 'listening on port 3000' or 'Now listening on: https://localhost:5001' to the debug console.)</source>
+        <target state="translated">当正在调试的服务器程序准备就绪时，执行URI (通过 "listening on port 3000" 或 "Now listening on: https://localhost:5001" 的形式发送至调试控制台 )。</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.action.description">
+        <source xml:lang="en">What to do with the URI when the server is ready.</source>
+        <target state="translated">当服务器准备就绪时，如何处理 URI。</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.action.openExternally.description">
+        <source xml:lang="en">Open URI externally with the default application.</source>
+        <target state="translated">使用默认应用程序在外部打开 URI。</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.action.debugWithChrome.description">
+        <source xml:lang="en">Start debugging with the 'Debugger for Chrome'.</source>
+        <target state="translated">开始使用 "Debugger for Chrome" 进行调试。</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.pattern.description">
+        <source xml:lang="en">Server is ready if this pattern appears on the debug console. The first capture group must include a URI or a port number.</source>
+        <target state="translated">此模式出现在调试控制台上表示服务器已准备就绪。首个捕获组必须包含一个 URI 或端口号。</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.uriFormat.description">
+        <source xml:lang="en">A format string used when constructing the URI from a port number. The first '%s' is substituted with the port number.</source>
+        <target state="translated">从端口号构造 URI 时使用的格式字符串。第一个 "%s" 将替换为端口号。</target>
+      </trans-unit>
+      <trans-unit id="debug.server.ready.webRoot.description">
+        <source xml:lang="en">Value passed to the debug configuration for the 'Debugger for Chrome'.</source>
+        <target state="translated">传递给 "Debugger for Chrome" 调试配置的值。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/debug-server-ready/dist/extension" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <body>
+      <trans-unit id="server.ready.nocapture.error">
+        <source xml:lang="en">Format uri ('{0}') uses a substitution placeholder but pattern did not capture anything.</source>
+        <target state="translated">格式 uri ("{0}") 使用替换占位符, 但模式没有捕获任何内容。</target>
+      </trans-unit>
+      <trans-unit id="server.ready.placeholder.error">
+        <source xml:lang="en">Format uri ('{0}') must contain exactly one substitution placeholder.</source>
+        <target state="translated">格式 uri ("{0}") 只能包含一个替换占位符。</target>
+      </trans-unit>
+      <trans-unit id="server.ready.chrome.not.installed">
+        <source xml:lang="en">The action '{0}' requires the '{1}' extension.</source>
+        <target state="translated">操作“{0}”需要“{1}”扩展。</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

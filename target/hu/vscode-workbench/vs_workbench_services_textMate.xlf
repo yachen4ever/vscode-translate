@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/workbench/services/textMate/browser/abstractTextMateService" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="invalid.language">
+        <source xml:lang="en">Unknown language in `contributes.{0}.language`. Provided value: {1}</source>
+        <target state="translated">Ismeretlen nyelv található a következőben: `contributes.{0}.language`. A megadott érték: {1}</target>
+      </trans-unit>
+      <trans-unit id="invalid.scopeName">
+        <source xml:lang="en">Expected string in `contributes.{0}.scopeName`. Provided value: {1}</source>
+        <target state="translated">Hiányzó karakterlánc a `contributes.{0}.scopeName`-ben. A megadott érték: {1}</target>
+      </trans-unit>
+      <trans-unit id="invalid.path.0">
+        <source xml:lang="en">Expected string in `contributes.{0}.path`. Provided value: {1}</source>
+        <target state="translated">Hiányzó karakterlánc a `contributes.{0}.path`-ban. A megadott érték: {1}</target>
+      </trans-unit>
+      <trans-unit id="invalid.injectTo">
+        <source xml:lang="en">Invalid value in `contributes.{0}.injectTo`. Must be an array of language scope names. Provided value: {1}</source>
+        <target state="translated">A `contributes.{0}.injectTo` értéke érvénytelen. Az értéke egy tömb lehet, ami nyelvhatókörök neveit tartalmazza. A megadott érték: {1}</target>
+      </trans-unit>
+      <trans-unit id="invalid.embeddedLanguages">
+        <source xml:lang="en">Invalid value in `contributes.{0}.embeddedLanguages`. Must be an object map from scope name to language. Provided value: {1}</source>
+        <target state="translated">A `contributes.{0}.embeddedLanguages` értéke érvénytelen. Az értéke egy hatókörnév-nyelv kulcs-érték párokat tartalmazó objektum lehet. A megadott érték: {1}</target>
+      </trans-unit>
+      <trans-unit id="invalid.tokenTypes">
+        <source xml:lang="en">Invalid value in `contributes.{0}.tokenTypes`. Must be an object map from scope name to token type. Provided value: {1}</source>
+        <target state="translated">A `contributes.{0}.tokenTypes` értéke érvénytelen. Az értéke egy hatókörnév-tokentípus kulcs-érték párokat tartalmazó objektum lehet. A megadott érték: {1}</target>
+      </trans-unit>
+      <trans-unit id="invalid.path.1">
+        <source xml:lang="en">Expected `contributes.{0}.path` ({1}) to be included inside extension's folder ({2}). This might make the extension non-portable.</source>
+        <target state="translated">A `contributes.{0}.path` ({1}) nem a kiegészítő mappáján belül található ({2}). Emiatt előfordulhat, hogy a kiegészítő nem lesz hordozható.</target>
+      </trans-unit>
+      <trans-unit id="too many characters">
+        <source xml:lang="en">Tokenization is skipped for long lines for performance reasons. The length of a long line can be configured via `editor.maxTokenizationLineLength`.</source>
+        <target state="new">Tokenization is skipped for long lines for performance reasons. The length of a long line can be configured via `editor.maxTokenizationLineLength`.</target>
+      </trans-unit>
+      <trans-unit id="neverAgain">
+        <source xml:lang="en">Don't Show Again</source>
+        <target state="translated">Ne jelenítse meg újra</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/textMate/common/TMGrammarFactory" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="no-tm-grammar">
+        <source xml:lang="en">No TM Grammar registered for this language.</source>
+        <target state="translated">Nincs TM Grammar regisztrálva ehhez a nyelvhez.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/textMate/common/TMGrammars" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="vscode.extension.contributes.grammars">
+        <source xml:lang="en">Contributes textmate tokenizers.</source>
+        <target state="translated">TextMate-tokenizálókat szolgáltat.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.grammars.language">
+        <source xml:lang="en">Language identifier for which this syntax is contributed to.</source>
+        <target state="translated">Annak a nyelvnek az azonosítója, amely számára szolgáltatva van ez a szintaxis.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.grammars.scopeName">
+        <source xml:lang="en">Textmate scope name used by the tmLanguage file.</source>
+        <target state="translated">A tmLanguage-fájl által használt TextMate-hatókör neve.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.grammars.path">
+        <source xml:lang="en">Path of the tmLanguage file. The path is relative to the extension folder and typically starts with './syntaxes/'.</source>
+        <target state="translated">A tmLanguage-fájl elérési útja. Az elérési út relatív a kiegészítő mappájához képest, és általában './syntaxes/'-zal kezdődik.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.grammars.embeddedLanguages">
+        <source xml:lang="en">A map of scope name to language id if this grammar contains embedded languages.</source>
+        <target state="translated">Hatókörnév-nyelvazonosító kulcs-érték párokat tartalmazó objektum, ha a nyelvtan tartalmaz beágyazott nyelveket.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.grammars.tokenTypes">
+        <source xml:lang="en">A map of scope name to token types.</source>
+        <target state="translated">Hatókörnevek leképezése tokentípusokra.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.grammars.injectTo">
+        <source xml:lang="en">List of language scope names to which this grammar is injected to.</source>
+        <target state="translated">Azon nyelvi hatókörök nevei, ahová be lesz ágyazva ez a nyelvtan.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

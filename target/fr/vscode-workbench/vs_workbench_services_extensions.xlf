@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/workbench/services/extensions/electron-browser/extensionService" source-language="en" target-language="fr" datatype="plaintext">
+    <body>
+      <trans-unit id="extensionsDisabled">
+        <source xml:lang="en">All installed extensions are temporarily disabled. Reload the window to return to the previous state.</source>
+        <target state="translated">Toutes les extensions installées sont temporairement désactivées. Rechargez la fenêtre pour retourner à l’état précédent.</target>
+      </trans-unit>
+      <trans-unit id="Reload">
+        <source xml:lang="en">Reload</source>
+        <target state="translated">recharger</target>
+      </trans-unit>
+      <trans-unit id="looping">
+        <source xml:lang="en">The following extensions contain dependency loops and have been disabled: {0}</source>
+        <target state="translated">Les extensions suivantes contiennent des boucles de dépendance et ont été désactivées : {0}</target>
+      </trans-unit>
+      <trans-unit id="extensionService.versionMismatchCrash">
+        <source xml:lang="en">Extension host cannot start: version mismatch.</source>
+        <target state="translated">L'hôte de l’extension ne peut pas démarrer : incompatibilité de version.</target>
+      </trans-unit>
+      <trans-unit id="relaunch">
+        <source xml:lang="en">Relaunch VS Code</source>
+        <target state="translated">Relancer VS Code</target>
+      </trans-unit>
+      <trans-unit id="extensionService.crash">
+        <source xml:lang="en">Extension host terminated unexpectedly.</source>
+        <target state="translated">L'hôte d’extension s'est arrêté de manière inattendue.</target>
+      </trans-unit>
+      <trans-unit id="devTools">
+        <source xml:lang="en">Open Developer Tools</source>
+        <target state="translated">Ouvrir les outils de développement</target>
+      </trans-unit>
+      <trans-unit id="restart">
+        <source xml:lang="en">Restart Extension Host</source>
+        <target state="translated">Redémarrer l’hôte d'extension</target>
+      </trans-unit>
+      <trans-unit id="resolveAuthorityFailure">
+        <source xml:lang="en">Resolving the authority `{0}` failed</source>
+        <target state="translated">La résolution de l'autorité '{0}' a échoué</target>
+      </trans-unit>
+      <trans-unit id="getEnvironmentFailure">
+        <source xml:lang="en">Could not fetch remote environment</source>
+        <target state="translated">Impossible de récupérer l'environnement à distance</target>
+      </trans-unit>
+      <trans-unit id="enableResolver">
+        <source xml:lang="en">Extension '{0}' is required to open the remote window.
+Ok to enable?</source>
+        <target state="translated">L'extension '{0}' est nécessaire pour ouvrir la fenêtre distante.
+OK pour l'activer ?</target>
+      </trans-unit>
+      <trans-unit id="enable">
+        <source xml:lang="en">Enable and Reload</source>
+        <target state="translated">Activer et recharger</target>
+      </trans-unit>
+      <trans-unit id="installResolver">
+        <source xml:lang="en">Extension '{0}' is required to open the remote window.
+Ok to install?</source>
+        <target state="translated">L'extension '{0}' est nécessaire pour ouvrir la fenêtre distante.
+OK pour l'installer ?</target>
+      </trans-unit>
+      <trans-unit id="install">
+        <source xml:lang="en">Install and Reload</source>
+        <target state="translated">Installer et recharger</target>
+      </trans-unit>
+      <trans-unit id="resolverExtensionNotFound">
+        <source xml:lang="en">`{0}` not found on marketplace</source>
+        <target state="translated">'{0}' introuvable dans la Place de marché</target>
+      </trans-unit>
+      <trans-unit id="restartExtensionHost">
+        <source xml:lang="en">Developer: Restart Extension Host</source>
+        <target state="translated">Développeur : Redémarrer l'hôte d'extension</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/electron-browser/remoteExtensionManagementIpc" source-language="en" target-language="fr" datatype="plaintext">
+    <body>
+      <trans-unit id="incompatible">
+        <source xml:lang="en">Unable to install extension '{0}' as it is not compatible with VS Code '{1}'.</source>
+        <target state="translated">Impossible d'installer l'extension '{0}', car elle n'est pas compatible avec VS Code '{1}'.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/common/extensionsRegistry" source-language="en" target-language="fr" datatype="plaintext">
+    <body>
+      <trans-unit id="ui">
+        <source xml:lang="en">UI extension kind. In a remote window, such extensions are enabled only when available on the local machine.</source>
+        <target state="translated">Extension de type interface utilisateur. Dans une fenêtre distante, ce type d'extension est activé seulement s'il est disponible sur la machine locale.</target>
+      </trans-unit>
+      <trans-unit id="workspace">
+        <source xml:lang="en">Workspace extension kind. In a remote window, such extensions are enabled only when available on the remote.</source>
+        <target state="translated">Extension de type espace de travail. Dans une fenêtre distante, ce type d'extension est activé seulement s'il est disponible sur la machine distante.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.engines">
+        <source xml:lang="en">Engine compatibility.</source>
+        <target state="translated">Moteur de compatibilité.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.engines.vscode">
+        <source xml:lang="en">For VS Code extensions, specifies the VS Code version that the extension is compatible with. Cannot be *. For example: ^0.10.5 indicates compatibility with a minimum VS Code version of 0.10.5.</source>
+        <target state="translated">Pour les extensions VS Code, spécifie la version de VS Code avec laquelle l'extension est compatible. Ne peut pas être *. Exemple : ^0.10.5 indique une compatibilité avec la version minimale 0.10.5 de VS Code.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.publisher">
+        <source xml:lang="en">The publisher of the VS Code extension.</source>
+        <target state="translated">Éditeur de l'extension VS Code.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.displayName">
+        <source xml:lang="en">The display name for the extension used in the VS Code gallery.</source>
+        <target state="translated">Nom d'affichage de l'extension utilisée dans la galerie VS Code.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.categories">
+        <source xml:lang="en">The categories used by the VS Code gallery to categorize the extension.</source>
+        <target state="translated">Catégories utilisées par la galerie VS Code pour catégoriser l'extension.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.category.languages.deprecated">
+        <source xml:lang="en">Use 'Programming  Languages' instead</source>
+        <target state="translated">Utiliser 'Langages de programmation' à la place</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.galleryBanner">
+        <source xml:lang="en">Banner used in the VS Code marketplace.</source>
+        <target state="translated">Bannière utilisée dans le marketplace VS Code.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.galleryBanner.color">
+        <source xml:lang="en">The banner color on the VS Code marketplace page header.</source>
+        <target state="translated">Couleur de la bannière de l'en-tête de page du marketplace VS Code.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.galleryBanner.theme">
+        <source xml:lang="en">The color theme for the font used in the banner.</source>
+        <target state="translated">Thème de couleur de la police utilisée dans la bannière.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes">
+        <source xml:lang="en">All contributions of the VS Code extension represented by this package.</source>
+        <target state="translated">Toutes les contributions de l'extension VS Code représentées par ce package.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.preview">
+        <source xml:lang="en">Sets the extension to be flagged as a Preview in the Marketplace.</source>
+        <target state="translated">Définit l'extension à marquer en tant que préversion dans Marketplace.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents">
+        <source xml:lang="en">Activation events for the VS Code extension.</source>
+        <target state="translated">Événements d'activation pour l'extension VS Code.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onLanguage">
+        <source xml:lang="en">An activation event emitted whenever a file that resolves to the specified language gets opened.</source>
+        <target state="translated">Événement d'activation envoyé quand un fichier résolu dans le langage spécifié est ouvert.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onCommand">
+        <source xml:lang="en">An activation event emitted whenever the specified command gets invoked.</source>
+        <target state="translated">Événement d'activation envoyé quand la commande spécifiée est appelée.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onDebug">
+        <source xml:lang="en">An activation event emitted whenever a user is about to start debugging or about to setup debug configurations.</source>
+        <target state="translated">Un événement d’activation émis chaque fois qu’un utilisateur est sur le point de démarrer le débogage ou sur le point de la déboguer des configurations.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onDebugInitialConfigurations">
+        <source xml:lang="en">An activation event emitted whenever a "launch.json" needs to be created (and all provideDebugConfigurations methods need to be called).</source>
+        <target state="translated">Événement d'activation envoyé chaque fois qu’un "launch.json" doit être créé (et toutes les méthodes de provideDebugConfigurations doivent être appelées).</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onDebugResolve">
+        <source xml:lang="en">An activation event emitted whenever a debug session with the specific type is about to be launched (and a corresponding resolveDebugConfiguration method needs to be called).</source>
+        <target state="translated">Événement d'activation envoyé quand une session de débogage du type spécifié est sur le point d’être lancée (et une méthode resolveDebugConfiguration correspondante doit être appelée).</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onDebugAdapterProtocolTracker">
+        <source xml:lang="en">An activation event emitted whenever a debug session with the specific type is about to be launched and a debug protocol tracker might be needed.</source>
+        <target state="translated">Événement d'activation émis chaque fois qu'une session de débogage avec le type spécifique est sur le point d'être lancée et qu'un traqueur de protocole de débogage peut être nécessaire.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.workspaceContains">
+        <source xml:lang="en">An activation event emitted whenever a folder is opened that contains at least a file matching the specified glob pattern.</source>
+        <target state="translated">Événement d'activation envoyé quand un dossier ouvert contient au moins un fichier correspondant au modèle glob spécifié.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onFileSystem">
+        <source xml:lang="en">An activation event emitted whenever a file or folder is accessed with the given scheme.</source>
+        <target state="translated">Un événement d’activation est émis chaque fois qu'un fichier ou un dossier fait l'objet d'un accès avec le schéma donné.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onSearch">
+        <source xml:lang="en">An activation event emitted whenever a search is started in the folder with the given scheme.</source>
+        <target state="translated">Un événement d’activation est émis chaque fois qu'une recherche est lancée dans le dossier avec le schéma donné. </target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onView">
+        <source xml:lang="en">An activation event emitted whenever the specified view is expanded.</source>
+        <target state="translated">Événement d'activation envoyé quand la vue spécifiée est développée.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onIdentity">
+        <source xml:lang="en">An activation event emitted whenever the specified user identity.</source>
+        <target state="translated">Événement d'activation envoyé chaque fois que l'identité utilisateur spécifiée est utilisée.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onUri">
+        <source xml:lang="en">An activation event emitted whenever a system-wide Uri directed towards this extension is open.</source>
+        <target state="translated">Événement d'activation envoyé quand un URI système dirigé vers cette extension est ouvert.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.star">
+        <source xml:lang="en">An activation event emitted on VS Code startup. To ensure a great end user experience, please use this activation event in your extension only when no other activation events combination works in your use-case.</source>
+        <target state="translated">Événement d'activation envoyé au démarrage de VS Code. Pour garantir la qualité de l'expérience utilisateur, utilisez cet événement d'activation dans votre extension uniquement quand aucune autre combinaison d'événements d'activation ne fonctionne dans votre cas d'utilisation.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.badges">
+        <source xml:lang="en">Array of badges to display in the sidebar of the Marketplace's extension page.</source>
+        <target state="translated">Ensemble de badges à afficher dans la barre latérale de la page d'extensions de Marketplace.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.badges.url">
+        <source xml:lang="en">Badge image URL.</source>
+        <target state="translated">URL de l'image du badge.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.badges.href">
+        <source xml:lang="en">Badge link.</source>
+        <target state="translated">Lien du badge.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.badges.description">
+        <source xml:lang="en">Badge description.</source>
+        <target state="translated">Description du badge.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.markdown">
+        <source xml:lang="en">Controls the Markdown rendering engine used in the Marketplace. Either github (default) or standard.</source>
+        <target state="translated">Contrôle le moteur de rendu de Markdown utilisé sur le marché. Github (par défaut) ou standard.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.qna">
+        <source xml:lang="en">Controls the Q&amp;A link in the Marketplace. Set to marketplace to enable the default Marketplace Q &amp; A site. Set to a string to provide the URL of a custom Q &amp; A site. Set to false to disable Q &amp; A altogether.</source>
+        <target state="translated">Contrôle le lien Questions et réponses dans le Marketplace. Définissez sur marketplace pour activer le site Questions et réponses par défaut du Marketplace. Définissez sur une chaîne pour fournir l'URL d'un site Questions et réponses personnalisé. Définissez sur false pour désactiver les Questions et réponses.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.extensionDependencies">
+        <source xml:lang="en">Dependencies to other extensions. The identifier of an extension is always ${publisher}.${name}. For example: vscode.csharp.</source>
+        <target state="translated">Dépendances envers d'autres extensions. L'identificateur d'une extension est toujours ${publisher}.${name}. Exemple : vscode.csharp.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.extensionPack">
+        <source xml:lang="en">A set of extensions that can be installed together. The identifier of an extension is always ${publisher}.${name}. For example: vscode.csharp.</source>
+        <target state="translated">Ensemble d’extensions pouvant être installées ensemble. L’identificateur d’une extension est toujours ${publisher}.${name}. Par exemple : vscode.csharp.</target>
+      </trans-unit>
+      <trans-unit id="extensionKind">
+        <source xml:lang="en">Define the kind of an extension. `ui` extensions are installed and run on the local machine while `workspace` extensions run on the remote.</source>
+        <target state="translated">Définissez le type d'une extension. Les extensions 'ui' sont installées et exécutées sur la machine locale tandis que les extensions 'workspace' s'exécutent sur la machine distante.</target>
+      </trans-unit>
+      <trans-unit id="extensionKind.ui">
+        <source xml:lang="en">Define an extension which can run only on the local machine when connected to remote window.</source>
+        <target state="translated">Définissez une extension pouvant s'exécuter uniquement sur la machine locale quand elle est connectée à la fenêtre distante.</target>
+      </trans-unit>
+      <trans-unit id="extensionKind.workspace">
+        <source xml:lang="en">Define an extension which can run only on the remote machine when connected remote window.</source>
+        <target state="translated">Définissez une extension pouvant s'exécuter uniquement sur la machine distante quand elle est connectée à la fenêtre distante.</target>
+      </trans-unit>
+      <trans-unit id="extensionKind.ui-workspace">
+        <source xml:lang="en">Define an extension which can run on either side, with a preference towards running on the local machine.</source>
+        <target state="translated">Définissez une extension pouvant s'exécuter de chaque côté, avec une préférence pour l'exécution sur la machine locale.</target>
+      </trans-unit>
+      <trans-unit id="extensionKind.workspace-ui">
+        <source xml:lang="en">Define an extension which can run on either side, with a preference towards running on the remote machine.</source>
+        <target state="translated">Définissez une extension pouvant s'exécuter de chaque côté, avec une préférence pour l'exécution sur la machine distante.</target>
+      </trans-unit>
+      <trans-unit id="extensionKind.empty">
+        <source xml:lang="en">Define an extension which cannot run in a remote context, neither on the local, nor on the remote machine.</source>
+        <target state="translated">Définissez une extension qui ne peut pas s'exécuter dans un contexte distant, ni sur la machine locale, ni sur la machine distante.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.scripts.prepublish">
+        <source xml:lang="en">Script executed before the package is published as a VS Code extension.</source>
+        <target state="translated">Le script exécuté avant le package est publié en tant qu'extension VS Code.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.scripts.uninstall">
+        <source xml:lang="en">Uninstall hook for VS Code extension. Script that gets executed when the extension is completely uninstalled from VS Code which is when VS Code is restarted (shutdown and start) after the extension is uninstalled. Only Node scripts are supported.</source>
+        <target state="translated">Désinstallez le crochet pour l'extension VS Code. Script exécuté quand l'extension est complètement désinstallée dans VS Code et au redémarrage de VS Code (arrêt, puis démarrage). Seuls les scripts Node sont pris en charge.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.icon">
+        <source xml:lang="en">The path to a 128x128 pixel icon.</source>
+        <target state="translated">Chemin d'une icône de 128 x 128 pixels.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/browser/extensionUrlHandler" source-language="en" target-language="fr" datatype="plaintext">
+    <body>
+      <trans-unit id="confirmUrl">
+        <source xml:lang="en">Allow an extension to open this URI?</source>
+        <target state="translated">Autoriser une extension pour ouvrir cet URI ?</target>
+      </trans-unit>
+      <trans-unit id="rememberConfirmUrl">
+        <source xml:lang="en">Don't ask again for this extension.</source>
+        <target state="translated">Ne plus demander cette extension.</target>
+      </trans-unit>
+      <trans-unit id="open">
+        <source xml:lang="en">&amp;&amp;Open</source>
+        <target state="translated">&amp;&amp;Ouvrir</target>
+      </trans-unit>
+      <trans-unit id="reloadAndHandle">
+        <source xml:lang="en">Extension '{0}' is not loaded. Would you like to reload the window to load the extension and open the URL?</source>
+        <target state="translated">L'extension '{0}' n’est pas chargée. Souhaitez-vous recharger la fenêtre afin de charger l’extension et ouvrir l’URL ?</target>
+      </trans-unit>
+      <trans-unit id="reloadAndOpen">
+        <source xml:lang="en">&amp;&amp;Reload Window and Open</source>
+        <target state="translated">&amp;&amp;Recharger la fenêtre et ouvrir</target>
+      </trans-unit>
+      <trans-unit id="enableAndHandle">
+        <source xml:lang="en">Extension '{0}' is disabled. Would you like to enable the extension and reload the window to open the URL?</source>
+        <target state="translated">L'extension '{0}' est désactivée. Souhaitez-vous activer l’extension et recharger la fenêtre pour ouvrir l’URL ?</target>
+      </trans-unit>
+      <trans-unit id="enableAndReload">
+        <source xml:lang="en">&amp;&amp;Enable and Open</source>
+        <target state="translated">&amp;&amp;Activer et ouvrir</target>
+      </trans-unit>
+      <trans-unit id="installAndHandle">
+        <source xml:lang="en">Extension '{0}' is not installed. Would you like to install the extension and reload the window to open this URL?</source>
+        <target state="translated">L'extension '{0}' n’est pas installée. Souhaitez-vous installer l’extension et recharger la fenêtre pour ouvrir cette URL ?</target>
+      </trans-unit>
+      <trans-unit id="install">
+        <source xml:lang="en">&amp;&amp;Install</source>
+        <target state="translated">&amp;&amp;Installer</target>
+      </trans-unit>
+      <trans-unit id="Installing">
+        <source xml:lang="en">Installing Extension '{0}'...</source>
+        <target state="translated">Installation de l'extension '{0}'...</target>
+      </trans-unit>
+      <trans-unit id="reload">
+        <source xml:lang="en">Would you like to reload the window and open the URL '{0}'?</source>
+        <target state="translated">Souhaitez-vous recharger la fenêtre et ouvrir l’URL '{0}' ?</target>
+      </trans-unit>
+      <trans-unit id="Reload">
+        <source xml:lang="en">Reload Window and Open</source>
+        <target state="translated">Recharger la fenêtre et ouvrir</target>
+      </trans-unit>
+      <trans-unit id="manage">
+        <source xml:lang="en">Manage Authorized Extension URIs...</source>
+        <target state="translated">Gérer les URI d'extension autorisés...</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/common/remoteExtensionHostClient" source-language="en" target-language="fr" datatype="plaintext">
+    <body>
+      <trans-unit id="remote extension host Log">
+        <source xml:lang="en">Remote Extension Host</source>
+        <target state="translated">Hôte de l'extension distante</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/electron-browser/cachedExtensionScanner" source-language="en" target-language="fr" datatype="plaintext">
+    <body>
+      <trans-unit id="overwritingExtension">
+        <source xml:lang="en">Overwriting extension {0} with {1}.</source>
+        <target state="translated">Remplacement de l'extension {0} par {1}.</target>
+      </trans-unit>
+      <trans-unit id="extensionUnderDevelopment">
+        <source xml:lang="en">Loading development extension at {0}</source>
+        <target state="translated">Chargement de l'extension de développement sur {0}</target>
+      </trans-unit>
+      <trans-unit id="extensionCache.invalid">
+        <source xml:lang="en">Extensions have been modified on disk. Please reload the window.</source>
+        <target state="translated">Des extensions ont été modifiées sur le disque. Veuillez recharger la fenêtre.</target>
+      </trans-unit>
+      <trans-unit id="reloadWindow">
+        <source xml:lang="en">Reload Window</source>
+        <target state="translated">Recharger la fenêtre</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/common/extensionHostProcessManager" source-language="en" target-language="fr" datatype="plaintext">
+    <body>
+      <trans-unit id="measureExtHostLatency">
+        <source xml:lang="en">Measure Extension Host Latency</source>
+        <target state="translated">Mesurer la latence de l'hôte d'extension</target>
+      </trans-unit>
+      <trans-unit id="developer">
+        <source xml:lang="en">Developer</source>
+        <target state="translated">Développeur</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/electron-browser/extensionHost" source-language="en" target-language="fr" datatype="plaintext">
+    <body>
+      <trans-unit id="extensionHost.startupFailDebug">
+        <source xml:lang="en">Extension host did not start in 10 seconds, it might be stopped on the first line and needs a debugger to continue.</source>
+        <target state="translated">L'hôte d'extension n'a pas démarré en moins de 10 secondes. Il est peut-être arrêté à la première ligne et a besoin d'un débogueur pour continuer.</target>
+      </trans-unit>
+      <trans-unit id="extensionHost.startupFail">
+        <source xml:lang="en">Extension host did not start in 10 seconds, that might be a problem.</source>
+        <target state="translated">L'hôte d'extension n'a pas démarré en moins de 10 secondes. Il existe peut-être un problème.</target>
+      </trans-unit>
+      <trans-unit id="reloadWindow">
+        <source xml:lang="en">Reload Window</source>
+        <target state="translated">Recharger la fenêtre</target>
+      </trans-unit>
+      <trans-unit id="extension host Log">
+        <source xml:lang="en">Extension Host</source>
+        <target state="translated">Hôte d'extension</target>
+      </trans-unit>
+      <trans-unit id="extensionHost.error">
+        <source xml:lang="en">Error from the extension host: {0}</source>
+        <target state="translated">Erreur de l'hôte d'extension : {0}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/node/extensionPoints" source-language="en" target-language="fr" datatype="plaintext">
+    <body>
+      <trans-unit id="jsonParseFail">
+        <source xml:lang="en">Failed to parse {0}: [{1}, {2}] {3}.</source>
+        <target state="translated">Échec d'analyse de {0} : [{1}, {2}] {3}.</target>
+      </trans-unit>
+      <trans-unit id="fileReadFail">
+        <source xml:lang="en">Cannot read file {0}: {1}.</source>
+        <target state="translated">Impossible de lire le fichier {0} : {1}.</target>
+      </trans-unit>
+      <trans-unit id="jsonsParseReportErrors">
+        <source xml:lang="en">Failed to parse {0}: {1}.</source>
+        <target state="translated">Échec de l'analyse de {0} : {1}.</target>
+      </trans-unit>
+      <trans-unit id="jsonInvalidFormat">
+        <source xml:lang="en">Invalid format {0}: JSON object expected.</source>
+        <target state="translated">Format non valide {0} : objet JSON attendu.</target>
+      </trans-unit>
+      <trans-unit id="missingNLSKey">
+        <source xml:lang="en">Couldn't find message for key {0}.</source>
+        <target state="translated">Le message est introuvable pour la clé {0}.</target>
+      </trans-unit>
+      <trans-unit id="notSemver">
+        <source xml:lang="en">Extension version is not semver compatible.</source>
+        <target state="translated">La version de l'extension n'est pas compatible avec SemVer.</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.empty">
+        <source xml:lang="en">Got empty extension description</source>
+        <target state="translated">Description d'extension vide obtenue</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.publisher">
+        <source xml:lang="en">property publisher must be of type `string`.</source>
+        <target state="translated">l'éditeur de propriété doit être de type 'string'.</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.name">
+        <source xml:lang="en">property `{0}` is mandatory and must be of type `string`</source>
+        <target state="translated">la propriété '{0}' est obligatoire et doit être de type 'string'</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.version">
+        <source xml:lang="en">property `{0}` is mandatory and must be of type `string`</source>
+        <target state="translated">la propriété '{0}' est obligatoire et doit être de type 'string'</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.engines">
+        <source xml:lang="en">property `{0}` is mandatory and must be of type `object`</source>
+        <target state="translated">la propriété '{0}' est obligatoire et doit être de type 'object'</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.engines.vscode">
+        <source xml:lang="en">property `{0}` is mandatory and must be of type `string`</source>
+        <target state="translated">la propriété '{0}' est obligatoire et doit être de type 'string'</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.extensionDependencies">
+        <source xml:lang="en">property `{0}` can be omitted or must be of type `string[]`</source>
+        <target state="translated">la propriété '{0}' peut être omise ou doit être de type 'string[]'</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.activationEvents1">
+        <source xml:lang="en">property `{0}` can be omitted or must be of type `string[]`</source>
+        <target state="translated">la propriété '{0}' peut être omise ou doit être de type 'string[]'</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.activationEvents2">
+        <source xml:lang="en">properties `{0}` and `{1}` must both be specified or must both be omitted</source>
+        <target state="translated">les propriétés '{0}' et '{1}' doivent être toutes les deux spécifiées ou toutes les deux omises</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.main1">
+        <source xml:lang="en">property `{0}` can be omitted or must be of type `string`</source>
+        <target state="translated">La propriété '{0}' peut être omise ou doit être de type 'string'</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.main2">
+        <source xml:lang="en">Expected `main` ({0}) to be included inside extension's folder ({1}). This might make the extension non-portable.</source>
+        <target state="translated">'main' ({0}) est censé être inclus dans le dossier ({1}) de l'extension. Cela risque de rendre l'extension non portable.</target>
+      </trans-unit>
+      <trans-unit id="extensionDescription.main3">
+        <source xml:lang="en">properties `{0}` and `{1}` must both be specified or must both be omitted</source>
+        <target state="translated">les propriétés '{0}' et '{1}' doivent être toutes les deux spécifiées ou toutes les deux omises</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
