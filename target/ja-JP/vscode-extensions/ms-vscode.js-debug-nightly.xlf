@@ -34,6 +34,10 @@
         <source xml:lang="en">A local html file to open in the browser</source>
         <target state="translated">ブラウザーで開くローカル HTML ファイル</target>
       </trans-unit>
+      <trans-unit id="browser.includeDefaultArgs.description">
+        <source xml:lang="en">Whether default browser launch arguments (to disable features that may make debugging harder) will be included in the launch.</source>
+        <target state="translated">(デバッグを困難にする可能性のある機能を無効にする) 既定のブラウザー起動引数を起動に含めるかどうか。</target>
+      </trans-unit>
       <trans-unit id="browser.inspectUri.description">
         <source xml:lang="en">Format to use to rewrite the inspectUri: It's a template string that interpolates keys in `{curlyBraces}`. Available keys are:
  - `url.*` is the parsed address of the running application. For instance, `{url.port}`, `{url.hostname}`
@@ -123,6 +127,14 @@
         <source xml:lang="en">Chrome: Launch</source>
         <target state="translated">Chrome: 起動</target>
       </trans-unit>
+      <trans-unit id="configuration.automaticallyTunnelRemoteServer">
+        <source xml:lang="en">When debugging a remote web app, configures whether to automatically tunnel the remote server to your local machine.</source>
+        <target state="translated">リモート Web アプリをデバッグするときに、リモート サーバーを自動的にローカル マシンにトンネルするかどうかを構成します。</target>
+      </trans-unit>
+      <trans-unit id="configuration.debugByLinkOptions">
+        <source xml:lang="en">Options used when debugging open links clicked from inside the debug terminal. Can be set to "false" to disable this behavior.</source>
+        <target state="translated">デバッグ時に使用したオプションによって、デバッグ ターミナル内からクリックしたリンクが開きます。"false" に設定にすると、この動作を無効にできます。</target>
+      </trans-unit>
       <trans-unit id="configuration.npmScriptLensLocation">
         <source xml:lang="en">Where a "Run" and "Debug" code lens should be shown in your npm scripts. It may be on "all", scripts, on "top" of the script section, or "never".</source>
         <target state="translated">npm スクリプトで "実行" と "デバッグ" のコード レンズが表示される場所。"すべて" のスクリプトまたはスクリプト セクションの "上" に表示するか、"表示しない" を指定できます。</target>
@@ -174,6 +186,14 @@
       <trans-unit id="debug.terminal.snippet.label">
         <source xml:lang="en">Run "npm start" in a debug terminal</source>
         <target state="translated">デバッグ ターミナルで "npm start" を実行する</target>
+      </trans-unit>
+      <trans-unit id="debug.terminal.welcome">
+        <source xml:lang="en">[Node.js Debug Terminal](command:extension.pwa-node-debug.createDebuggerTerminal)
+
+You can use the Node.js Debug Terminal to instantly debug JavaScript you run from the command line.</source>
+        <target state="translated">[Node.js デバッグ ターミナル](command:extension.pwa-node-debug.createDebuggerTerminal)
+
+Node.js デバッグ ターミナルを使用して、コマンド ラインから実行する JavaScript をすばやくデバッグできます。</target>
       </trans-unit>
       <trans-unit id="edge.attach.description">
         <source xml:lang="en">Attach to an instance of Edge already in debug mode</source>
@@ -507,6 +527,14 @@
         <source xml:lang="en">Pretty print for debugging</source>
         <target state="translated">デバッグ用の整形出力</target>
       </trans-unit>
+      <trans-unit id="profile.start">
+        <source xml:lang="en">Take Performance Profile</source>
+        <target state="translated">パフォーマンス プロファイルの取得</target>
+      </trans-unit>
+      <trans-unit id="profile.stop">
+        <source xml:lang="en">Stop Performance Profile</source>
+        <target state="translated">パフォーマンス プロファイルの停止</target>
+      </trans-unit>
       <trans-unit id="remove.browser.breakpoint">
         <source xml:lang="en">Remove Browser Breakpoint</source>
         <target state="translated">ブラウザー ブレークポイントの削除</target>
@@ -550,6 +578,10 @@
       <trans-unit id="trace.logFile.description">
         <source xml:lang="en">Configures where on disk logs are written.</source>
         <target state="translated">ディスク上のログが書き込まれる場所を構成します。</target>
+      </trans-unit>
+      <trans-unit id="trace.stdio.description">
+        <source xml:lang="en">Whether to return trace data from the launched application or browser.</source>
+        <target state="translated">起動したアプリケーションまたはブラウザーからトレース データを返すかどうか。</target>
       </trans-unit>
       <trans-unit id="trace.tags.description">
         <source xml:lang="en">Configures what types of logs are recorded.</source>

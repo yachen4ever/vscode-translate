@@ -8,19 +8,20 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/inspectKeybindings" source-language="en" target-language="ru" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/codeEditor/browser/largeFileOptimizations" source-language="en" target-language="ru" datatype="plaintext">
     <body>
-      <trans-unit id="workbench.action.inspectKeyMap">
-        <source xml:lang="en">Developer: Inspect Key Mappings</source>
-        <target state="translated">Разработчик: исследование сопоставлений ключей</target>
+      <trans-unit id="largeFile">
+        <source xml:lang="en">{0}: tokenization, wrapping and folding have been turned off for this large file in order to reduce memory usage and avoid freezing or crashing.</source>
+        <target state="translated">{0}: этот файл имеет слишком большой размер, поэтому для него были отключены разметка, перенос и свертывание, чтобы уменьшить объем используемой памяти и предотвратить зависание или неожиданное завершение работы программы.</target>
+        <note>Variable 0 will be a file name.</note>
       </trans-unit>
-      <trans-unit id="workbench.action.inspectKeyMapJSON">
-        <source xml:lang="en">Inspect Key Mappings (JSON)</source>
-        <target state="translated">Проверка сопоставлений клавиш (JSON)</target>
+      <trans-unit id="removeOptimizations">
+        <source xml:lang="en">Forcefully enable features</source>
+        <target state="translated">Принудительно включить функции</target>
       </trans-unit>
-      <trans-unit id="developer">
-        <source xml:lang="en">Developer</source>
-        <target state="translated">Разработчик</target>
+      <trans-unit id="reopenFilePrompt">
+        <source xml:lang="en">Please reopen file in order for this setting to take effect.</source>
+        <target state="translated">Откройте файл повторно, чтобы изменение этого параметра вступило в силу.</target>
       </trans-unit>
     </body>
   </file>
@@ -37,6 +38,66 @@
       <trans-unit id="hintWhitespace">
         <source xml:lang="en">Show Whitespace Differences</source>
         <target state="translated">Показать различия пробелов</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/inspectKeybindings" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="workbench.action.inspectKeyMap">
+        <source xml:lang="en">Developer: Inspect Key Mappings</source>
+        <target state="translated">Разработчик: исследование сопоставлений ключей</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.inspectKeyMapJSON">
+        <source xml:lang="en">Inspect Key Mappings (JSON)</source>
+        <target state="translated">Проверка сопоставлений клавиш (JSON)</target>
+      </trans-unit>
+      <trans-unit id="developer">
+        <source xml:lang="en">Developer</source>
+        <target state="translated">Разработчик</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/toggleColumnSelection" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="toggleColumnSelection">
+        <source xml:lang="en">Toggle Column Selection Mode</source>
+        <target state="translated">Переключение режима выбора столбца</target>
+      </trans-unit>
+      <trans-unit id="miColumnSelection">
+        <source xml:lang="en">Column &amp;&amp;Selection Mode</source>
+        <target state="translated">Режим &amp;&amp;выбора столбцов</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/toggleMinimap" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="toggleMinimap">
+        <source xml:lang="en">Toggle Minimap</source>
+        <target state="translated">Переключить мини-карту</target>
+      </trans-unit>
+      <trans-unit id="view">
+        <source xml:lang="en">View</source>
+        <target state="translated">Вид</target>
+      </trans-unit>
+      <trans-unit id="miShowMinimap">
+        <source xml:lang="en">Show &amp;&amp;Minimap</source>
+        <target state="translated">Показать &amp;&amp;мини-карту</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/semanticTokensHelp" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="semanticTokensHelp">
+        <source xml:lang="en">Code coloring of '{0}' has been updated as the theme '{1}' has [semantic highlighting](https://go.microsoft.com/fwlink/?linkid=2122588) enabled.</source>
+        <target state="translated">Раскраска кода для "{0}" была изменена, так как для темы "{1}" включено [выделение семантики](https://go.microsoft.com/fwlink/?linkid=2122588).</target>
+        <note>Variable 0 will be a file name.
+Variable 1 will be a theme name.</note>
+      </trans-unit>
+      <trans-unit id="learnMoreButton">
+        <source xml:lang="en">Learn More</source>
+        <target state="translated">Дополнительные сведения</target>
       </trans-unit>
     </body>
   </file>
@@ -60,37 +121,19 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/toggleMinimap" source-language="en" target-language="ru" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/codeEditor/browser/quickaccess/gotoLineQuickAccess" source-language="en" target-language="ru" datatype="plaintext">
     <body>
-      <trans-unit id="toggleMinimap">
-        <source xml:lang="en">Toggle Minimap</source>
-        <target state="translated">Переключить мини-карту</target>
+      <trans-unit id="gotoLineQuickAccessPlaceholder">
+        <source xml:lang="en">Type the line number and optional column to go to (e.g. 42:5 for line 42 and column 5).</source>
+        <target state="translated">Введите номер строки и опционально столбец для перехода (например, 42:5 для строки 42 и столбца 5).</target>
       </trans-unit>
-      <trans-unit id="view">
-        <source xml:lang="en">View</source>
-        <target state="translated">Вид</target>
+      <trans-unit id="gotoLineQuickAccess">
+        <source xml:lang="en">Go to Line/Column</source>
+        <target state="translated">Перейти к строке/столбцу</target>
       </trans-unit>
-      <trans-unit id="miShowMinimap">
-        <source xml:lang="en">Show &amp;&amp;Minimap</source>
-        <target state="translated">Показать &amp;&amp;мини-карту</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/toggleColumnSelection" source-language="en" target-language="ru" datatype="plaintext">
-    <body>
-      <trans-unit id="toggleColumnSelection">
-        <source xml:lang="en">Toggle Column Selection Mode</source>
-        <target state="translated">Переключение режима выбора столбца</target>
-      </trans-unit>
-      <trans-unit id="view">
-        <source xml:lang="en">View</source>
-        <target state="translated">Вид</target>
-      </trans-unit>
-      <trans-unit id="miColumnSelection">
-        <source xml:lang="en">Column &amp;&amp;Selection Mode</source>
-        <target state="translated">Режим &amp;&amp;выбора столбцов</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
+      <trans-unit id="gotoLine">
+        <source xml:lang="en">Go to Line/Column...</source>
+        <target state="translated">Перейти к строке/столбцу...</target>
       </trans-unit>
     </body>
   </file>
@@ -111,23 +154,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/largeFileOptimizations" source-language="en" target-language="ru" datatype="plaintext">
-    <body>
-      <trans-unit id="largeFile">
-        <source xml:lang="en">{0}: tokenization, wrapping and folding have been turned off for this large file in order to reduce memory usage and avoid freezing or crashing.</source>
-        <target state="translated">{0}: этот файл имеет слишком большой размер, поэтому для него были отключены разметка, перенос и свертывание, чтобы уменьшить объем используемой памяти и предотвратить зависание или неожиданное завершение работы программы.</target>
-        <note>Variable 0 will be a file name.</note>
-      </trans-unit>
-      <trans-unit id="removeOptimizations">
-        <source xml:lang="en">Forcefully enable features</source>
-        <target state="translated">Принудительно включить функции</target>
-      </trans-unit>
-      <trans-unit id="reopenFilePrompt">
-        <source xml:lang="en">Please reopen file in order for this setting to take effect.</source>
-        <target state="translated">Откройте файл повторно, чтобы изменение этого параметра вступило в силу.</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/codeEditor/browser/toggleRenderWhitespace" source-language="en" target-language="ru" datatype="plaintext">
     <body>
       <trans-unit id="toggleRenderWhitespace">
@@ -142,6 +168,26 @@
         <source xml:lang="en">&amp;&amp;Render Whitespace</source>
         <target state="translated">&amp;&amp;Отображать пробелы</target>
         <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/quickaccess/gotoSymbolQuickAccess" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="gotoSymbolQuickAccessPlaceholder">
+        <source xml:lang="en">Type the name of a symbol to go to.</source>
+        <target state="translated">Введите имя символа, к которому нужно перейти.</target>
+      </trans-unit>
+      <trans-unit id="gotoSymbolQuickAccess">
+        <source xml:lang="en">Go to Symbol in Editor</source>
+        <target state="translated">Перейти к символу в редакторе</target>
+      </trans-unit>
+      <trans-unit id="gotoSymbolByCategoryQuickAccess">
+        <source xml:lang="en">Go to Symbol in Editor by Category</source>
+        <target state="translated">Перейти к символу в редакторе по категории</target>
+      </trans-unit>
+      <trans-unit id="gotoSymbol">
+        <source xml:lang="en">Go to Symbol in Editor...</source>
+        <target state="translated">Перейти к символу в редакторе...</target>
       </trans-unit>
     </body>
   </file>
@@ -262,7 +308,7 @@
       </trans-unit>
       <trans-unit id="codeaction.get">
         <source xml:lang="en">Getting code actions from '{0}' ([configure](command:workbench.action.openSettings?%5B%22editor.codeActionsOnSave%22%5D)).</source>
-        <target state="translated">Получение действий кода из "{0}" ([настроить](команда:workbench.action.openSettings?%5B%22editor.codeActionsOnSave%22%5D)).</target>
+        <target state="translated">Получение действий кода из "{0}" ([настроить](command:workbench.action.openSettings?%5B%22editor.codeActionsOnSave%22%5D)).</target>
       </trans-unit>
       <trans-unit id="codeAction.apply">
         <source xml:lang="en">Applying code action '{0}'.</source>
@@ -467,6 +513,50 @@
       <trans-unit id="label.closeButton">
         <source xml:lang="en">Close</source>
         <target state="translated">Закрыть</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/find/simpleFindReplaceWidget" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="label.find">
+        <source xml:lang="en">Find</source>
+        <target state="translated">Найти</target>
+      </trans-unit>
+      <trans-unit id="placeholder.find">
+        <source xml:lang="en">Find</source>
+        <target state="translated">Найти</target>
+      </trans-unit>
+      <trans-unit id="label.previousMatchButton">
+        <source xml:lang="en">Previous match</source>
+        <target state="translated">Предыдущее соответствие</target>
+      </trans-unit>
+      <trans-unit id="label.nextMatchButton">
+        <source xml:lang="en">Next match</source>
+        <target state="translated">Следующее соответствие</target>
+      </trans-unit>
+      <trans-unit id="label.closeButton">
+        <source xml:lang="en">Close</source>
+        <target state="translated">Закрыть</target>
+      </trans-unit>
+      <trans-unit id="label.toggleReplaceButton">
+        <source xml:lang="en">Toggle Replace mode</source>
+        <target state="translated">Режим "Переключение замены"</target>
+      </trans-unit>
+      <trans-unit id="label.replace">
+        <source xml:lang="en">Replace</source>
+        <target state="translated">Заменить</target>
+      </trans-unit>
+      <trans-unit id="placeholder.replace">
+        <source xml:lang="en">Replace</source>
+        <target state="translated">Заменить</target>
+      </trans-unit>
+      <trans-unit id="label.replaceButton">
+        <source xml:lang="en">Replace</source>
+        <target state="translated">Заменить</target>
+      </trans-unit>
+      <trans-unit id="label.replaceAllButton">
+        <source xml:lang="en">Replace All</source>
+        <target state="translated">Заменить все</target>
       </trans-unit>
     </body>
   </file>

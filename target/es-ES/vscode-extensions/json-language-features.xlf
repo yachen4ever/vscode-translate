@@ -19,8 +19,8 @@
         <target state="translated">Una dirección URL a un esquema o una ruta de acceso relativa a un esquema en el directorio actual</target>
       </trans-unit>
       <trans-unit id="json.schemas.fileMatch.desc">
-        <source xml:lang="en">An array of file patterns to match against when resolving JSON files to schemas.</source>
-        <target state="translated">Una matriz de patrones de archivo con los cuales coincidir cuando los archivos JSON se resuelvan en esquemas.</target>
+        <source xml:lang="en">An array of file patterns to match against when resolving JSON files to schemas. `*` can be used as a wildcard. Exclusion patterns can also be defined and start with '!'. A file matches when there at least one matching pattern and the last matching pattern is not an exclusion pattern.</source>
+        <target state="translated">Una matriz de patrones de archivo con los que buscar correspondencia al resolver archivos JSON en esquemas. "*" se puede utilizar como comodín. Los patrones de exclusión también se pueden definir y comenzar con "!". Un archivo coincide cuando hay al menos un patrón coincidente y el último patrón coincidente no es un patrón de exclusión.</target>
       </trans-unit>
       <trans-unit id="json.schemas.fileMatch.item.desc">
         <source xml:lang="en">A file pattern that can contain '*' to match against when resolving JSON files to schemas.</source>
@@ -77,6 +77,10 @@
       <trans-unit id="jsonserver.name">
         <source xml:lang="en">JSON Language Server</source>
         <target state="translated">Servidor de lenguaje JSON</target>
+      </trans-unit>
+      <trans-unit id="untitled.schema">
+        <source xml:lang="en">Unable to load {0}</source>
+        <target state="translated">Unable to load {0}</target>
       </trans-unit>
     </body>
   </file>

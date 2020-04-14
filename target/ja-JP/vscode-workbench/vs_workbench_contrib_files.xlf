@@ -1,13 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file original="src/vs/workbench/contrib/files/electron-browser/files.contribution" source-language="en" target-language="ja" datatype="plaintext">
-    <body>
-      <trans-unit id="textFileEditor">
-        <source xml:lang="en">Text File Editor</source>
-        <target state="translated">テキスト ファイル エディター</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/files/electron-browser/fileActions.contribution" source-language="en" target-language="ja" datatype="plaintext">
     <body>
       <trans-unit id="revealInWindows">
@@ -28,6 +20,22 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/files/electron-browser/files.contribution" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="textFileEditor">
+        <source xml:lang="en">Text File Editor</source>
+        <target state="translated">テキスト ファイル エディター</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/files/electron-browser/fileCommands" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="openFileToReveal">
+        <source xml:lang="en">Open a file first to reveal</source>
+        <target state="translated">最初にファイルを開いて表示する</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/files/electron-browser/textFileEditor" source-language="en" target-language="ja" datatype="plaintext">
     <body>
       <trans-unit id="fileTooLargeForHeapError">
@@ -41,14 +49,6 @@
       <trans-unit id="configureMemoryLimit">
         <source xml:lang="en">Configure Memory Limit</source>
         <target state="translated">メモリ制限を構成する</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/files/electron-browser/fileCommands" source-language="en" target-language="ja" datatype="plaintext">
-    <body>
-      <trans-unit id="openFileToReveal">
-        <source xml:lang="en">Open a file first to reveal</source>
-        <target state="translated">最初にファイルを開いて表示する</target>
       </trans-unit>
     </body>
   </file>
@@ -83,16 +83,16 @@
         <target state="translated">バイナリ ファイル エディター</target>
       </trans-unit>
       <trans-unit id="hotExit.off">
-        <source xml:lang="en">Disable hot exit.</source>
-        <target state="translated">Hot Exit を無効にします。</target>
+        <source xml:lang="en">Disable hot exit. A prompt will show when attempting to close a window with dirty files.</source>
+        <target state="translated">Hot Exit を無効にします。ダーティ ファイルを含むウィンドウを閉じようとすると、プロンプトが表示されます。</target>
       </trans-unit>
       <trans-unit id="hotExit.onExit">
-        <source xml:lang="en">Hot exit will be triggered when the last window is closed on Windows/Linux or when the `workbench.action.quit` command is triggered (command palette, keybinding, menu). All windows with backups will be restored upon next launch.</source>
-        <target state="translated">Windows/Linux で最後のウィンドウが閉じるとき、または `workbench.action.quit` コマンドがトリガーされるとき (コマンド パレット、キー バインド、メニュー)、Hot Exit がトリガーされます。バックアップされているすべてのウィンドウは、次の起動時に復元されます。</target>
+        <source xml:lang="en">Hot exit will be triggered when the last window is closed on Windows/Linux or when the `workbench.action.quit` command is triggered (command palette, keybinding, menu). All windows without folders opened will be restored upon next launch. A list of workspaces with unsaved files can be accessed via `File &gt; Open Recent &gt; More...`</source>
+        <target state="translated">Windows/Linux で最後のウィンドウが閉じるとき、または 'workbench.action.quit' コマンドがトリガーされるとき (コマンド パレット、キー バインド、メニュー)、Hot Exit がトリガーされます。フォルダーが開かれていないウィンドウはすべて、次回の起動時に復元されます。保存されていないファイルが含まれるワークスペースのリストは、[ファイル]、[最近使用したファイル]、[詳細...] と移動すると表示できます。</target>
       </trans-unit>
       <trans-unit id="hotExit.onExitAndWindowClose">
-        <source xml:lang="en">Hot exit will be triggered when the last window is closed on Windows/Linux or when the `workbench.action.quit` command is triggered (command palette, keybinding, menu), and also for any window with a folder opened regardless of whether it's the last window. All windows without folders opened will be restored upon next launch. To restore folder windows as they were before shutdown set `#window.restoreWindows#` to `all`.</source>
-        <target state="translated">Windows/Linux で最後のウィンドウが閉じるとき、または `workbench.action.quit` コマンドがトリガーするとき (コマンド パレット、キー バインド、メニュー)、Hot Exit がトリガーされます。また、フォルダーが開かれているウィンドウについても、それが最後のウィンドウかどうかに関係なく、Hot Exit がトリガーされます。フォルダーが開かれていないウィンドウはすべて、次回の起動時に復元されます。フォルダーのウィンドウをシャットダウン前と同じ状態に復元するには、`#window.restoreWindows#` を `all` に設定します。</target>
+        <source xml:lang="en">Hot exit will be triggered when the last window is closed on Windows/Linux or when the `workbench.action.quit` command is triggered (command palette, keybinding, menu), and also for any window with a folder opened regardless of whether it's the last window. All windows without folders opened will be restored upon next launch. A list of workspaces with unsaved files can be accessed via `File &gt; Open Recent &gt; More...`</source>
+        <target state="translated">Windows/Linux で最後のウィンドウが閉じるとき、または 'workbench.action.quit' コマンドがトリガーされるとき (コマンド パレット、キー バインド、メニュー)、またフォルダーが開かれているウィンドウについても、それが最後のウィンドウかどうかに関係なく、Hot Exit がトリガーされます。フォルダーが開かれていないウィンドウはすべて、次回の起動時に復元されます。保存されていないファイルが含まれるワークスペースのリストは、[ファイル]、[最近使用したファイル]、[詳細...] と移動して確認できます。</target>
       </trans-unit>
       <trans-unit id="hotExit">
         <source xml:lang="en">Controls whether unsaved files are remembered between sessions, allowing the save prompt when exiting the editor to be skipped.</source>
@@ -107,8 +107,8 @@
         <target state="translated">ファイル</target>
       </trans-unit>
       <trans-unit id="exclude">
-        <source xml:lang="en">Configure glob patterns for excluding files and folders. For example, the files explorer decides which files and folders to show or hide based on this setting. Read more about glob patterns [here](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).</source>
-        <target state="translated">ファイルとフォルダーを除外するための glob パターンを構成します。たとえば、ファイル エクスプローラーではこの設定に基づいてファイルとフォルダーの表示や非表示を決定します。glob パターンについての詳細は [こちら](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options) を参照してください。</target>
+        <source xml:lang="en">Configure glob patterns for excluding files and folders. For example, the files explorer decides which files and folders to show or hide based on this setting. Refer to the `#search.exclude#` setting to define search specific excludes. Read more about glob patterns [here](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).</source>
+        <target state="translated">ファイルとフォルダーを除外するために glob パターンを構成します。たとえば、ファイル エクスプローラーは、この設定に基づいて、表示または非表示にするファイルとフォルダーを決定します。検索固有の除外を定義するには、'#search.exclude#' 設定を参照してください。glob パターンの詳細については、[こちら](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options) をご覧ください。</target>
       </trans-unit>
       <trans-unit id="files.exclude.boolean">
         <source xml:lang="en">The glob pattern to match file paths against. Set to true or false to enable or disable the pattern.</source>
@@ -193,7 +193,7 @@
         <note>This is the description for a setting. Values surrounded by single quotes are not to be translated.</note>
       </trans-unit>
       <trans-unit id="watcherExclude">
-        <source xml:lang="en">Configure glob patterns of file paths to exclude from file watching. Patterns must match on absolute paths (i.e. prefix with ** or the full path to match properly). Changing this setting requires a restart. When you experience Code consuming lots of cpu time on startup, you can exclude large folders to reduce the initial load.</source>
+        <source xml:lang="en">Configure glob patterns of file paths to exclude from file watching. Patterns must match on absolute paths (i.e. prefix with ** or the full path to match properly). Changing this setting requires a restart. When you experience Code consuming lots of CPU time on startup, you can exclude large folders to reduce the initial load.</source>
         <target state="translated">ファイル監視から除外するファイル パスの glob パターンを設定します。パターンは絶対パスで一致する必要があります (つまり、適切に一致するには、プレフィックス ** を指定するか、完全パスを指定します
 )。この設定を変更した場合は、再起動が必要になります。始動時に Code が消費する CPU 時間が多い場合は、大きいフォルダーを除外すれば初期の負荷を減らすことができます。</target>
       </trans-unit>
@@ -307,24 +307,6 @@
   </file>
   <file original="src/vs/workbench/contrib/files/browser/explorerViewlet" source-language="en" target-language="ja" datatype="plaintext">
     <body>
-      <trans-unit id="noWorkspaceHelp">
-        <source xml:lang="en">You have not yet added a folder to the workspace.
-[Add Folder](command:{0})</source>
-        <target state="translated">ワークスペースにフォルダーをまだ追加していません。
-[フォルダーの追加](command:{0})</target>
-      </trans-unit>
-      <trans-unit id="remoteNoFolderHelp">
-        <source xml:lang="en">Connected to remote.
-[Open Folder](command:{0})</source>
-        <target state="translated">リモートに接続されています。
-[フォルダーを開く](command:{0})</target>
-      </trans-unit>
-      <trans-unit id="noFolderHelp">
-        <source xml:lang="en">You have not yet opened a folder.
-[Open Folder](command:{0})</source>
-        <target state="translated">フォルダーをまだ開いていません。
-[フォルダーを開く](command:{0})</target>
-      </trans-unit>
       <trans-unit id="folders">
         <source xml:lang="en">Folders</source>
         <target state="translated">フォルダー</target>
@@ -332,6 +314,27 @@
       <trans-unit id="explore">
         <source xml:lang="en">Explorer</source>
         <target state="translated">エクスプローラー</target>
+      </trans-unit>
+      <trans-unit id="noWorkspaceHelp">
+        <source xml:lang="en">You have not yet added a folder to the workspace.
+[Add Folder](command:{0})</source>
+        <target state="translated">ワークスペースにフォルダーをまだ追加していません。
+[フォルダーの追加](command:{0})</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
+      </trans-unit>
+      <trans-unit id="remoteNoFolderHelp">
+        <source xml:lang="en">Connected to remote.
+[Open Folder](command:{0})</source>
+        <target state="translated">リモートに接続されています。
+[フォルダーを開く](command:{0})</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
+      </trans-unit>
+      <trans-unit id="noFolderHelp">
+        <source xml:lang="en">You have not yet opened a folder.
+[Open Folder](command:{0})</source>
+        <target state="translated">フォルダーをまだ開いていません。
+[フォルダーを開く](command:{0})</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
       </trans-unit>
     </body>
   </file>
@@ -551,26 +554,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/files/common/dirtyFilesIndicator" source-language="en" target-language="ja" datatype="plaintext">
-    <body>
-      <trans-unit id="dirtyFile">
-        <source xml:lang="en">1 unsaved file</source>
-        <target state="translated">1 つの未保存のファイル</target>
-      </trans-unit>
-      <trans-unit id="dirtyFiles">
-        <source xml:lang="en">{0} unsaved files</source>
-        <target state="translated">{0} 個の未保存のファイル</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/files/browser/editors/binaryFileEditor" source-language="en" target-language="ja" datatype="plaintext">
-    <body>
-      <trans-unit id="binaryFileEditor">
-        <source xml:lang="en">Binary File Viewer</source>
-        <target state="translated">バイナリ ファイル ビューアー</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/files/common/workspaceWatcher" source-language="en" target-language="ja" datatype="plaintext">
     <body>
       <trans-unit id="netVersionError">
@@ -588,6 +571,26 @@
       <trans-unit id="learnMore">
         <source xml:lang="en">Instructions</source>
         <target state="translated">説明書</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/files/browser/editors/binaryFileEditor" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="binaryFileEditor">
+        <source xml:lang="en">Binary File Viewer</source>
+        <target state="translated">バイナリ ファイル ビューアー</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/files/common/dirtyFilesIndicator" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="dirtyFile">
+        <source xml:lang="en">1 unsaved file</source>
+        <target state="translated">1 つの未保存のファイル</target>
+      </trans-unit>
+      <trans-unit id="dirtyFiles">
+        <source xml:lang="en">{0} unsaved files</source>
+        <target state="translated">{0} 個の未保存のファイル</target>
       </trans-unit>
     </body>
   </file>
@@ -973,6 +976,10 @@
       <trans-unit id="invalidFileNameError">
         <source xml:lang="en">The name **{0}** is not valid as a file or folder name. Please choose a different name.</source>
         <target state="translated">名前 **{0}** がファイル名またはフォルダー名として無効です。別の名前を指定してください。</target>
+      </trans-unit>
+      <trans-unit id="fileNameWhitespaceWarning">
+        <source xml:lang="en">Leading or trailing whitespace detected in file or folder name.</source>
+        <target state="translated">ファイル名またはフォルダー名の先頭または末尾に空白文字が検出されました。</target>
       </trans-unit>
       <trans-unit id="compareWithClipboard">
         <source xml:lang="en">Compare Active File with Clipboard</source>

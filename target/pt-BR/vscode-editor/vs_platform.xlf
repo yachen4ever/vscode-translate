@@ -1,5 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="extensions">
+        <source xml:lang="en">Extensions</source>
+        <target state="translated">Extensões</target>
+      </trans-unit>
+      <trans-unit id="preferences">
+        <source xml:lang="en">Preferences</source>
+        <target state="translated">Preferências</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/environment/node/argvHelper" source-language="en" target-language="pt-BR" datatype="plaintext">
     <body>
       <trans-unit id="unknownOption">
@@ -16,35 +28,11 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="extensions">
-        <source xml:lang="en">Extensions</source>
-        <target state="translated">Extensões</target>
-      </trans-unit>
-      <trans-unit id="preferences">
-        <source xml:lang="en">Preferences</source>
-        <target state="translated">Preferências</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/extensionManagement/node/extensionManagementUtil" source-language="en" target-language="pt-BR" datatype="plaintext">
     <body>
       <trans-unit id="invalidManifest">
         <source xml:lang="en">VSIX invalid: package.json is not a JSON file.</source>
         <target state="translated">VSIX inválido: package.json não é um arquivo JSON.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="telemetryConfigurationTitle">
-        <source xml:lang="en">Telemetry</source>
-        <target state="translated">Telemetria</target>
-      </trans-unit>
-      <trans-unit id="telemetry.enableTelemetry">
-        <source xml:lang="en">Enable usage data and errors to be sent to a Microsoft online service.</source>
-        <target state="translated">Permite que os dados de uso e erros sejam enviados para um serviço online da Microsoft.</target>
       </trans-unit>
     </body>
   </file>
@@ -132,6 +120,30 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="telemetryConfigurationTitle">
+        <source xml:lang="en">Telemetry</source>
+        <target state="translated">Telemetria</target>
+      </trans-unit>
+      <trans-unit id="telemetry.enableTelemetry">
+        <source xml:lang="en">Enable usage data and errors to be sent to a Microsoft online service.</source>
+        <target state="translated">Permite que os dados de uso e erros sejam enviados para um serviço online da Microsoft.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/label/common/label" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="untitledWorkspace">
+        <source xml:lang="en">Untitled (Workspace)</source>
+        <target state="translated">Sem título (Espaço de Trabalho)</target>
+      </trans-unit>
+      <trans-unit id="workspaceName">
+        <source xml:lang="en">{0} (Workspace)</source>
+        <target state="translated">{0} (Espaço de trabalho) </target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" target-language="pt-BR" datatype="plaintext">
     <body>
       <trans-unit id="binFailed">
@@ -141,6 +153,14 @@
       <trans-unit id="trashFailed">
         <source xml:lang="en">Failed to move '{0}' to the trash</source>
         <target state="translated">Falha em mover '{0}' para a lixeira</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/common/files" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="unknownError">
+        <source xml:lang="en">Unknown Error</source>
+        <target state="translated">Erro Desconhecido</target>
       </trans-unit>
     </body>
   </file>
@@ -178,6 +198,14 @@
         <source xml:lang="en">Force to open a file or folder in an already opened window.</source>
         <target state="translated">Força a abertura de um arquivo ou pasta em uma janela já aberta.</target>
       </trans-unit>
+      <trans-unit id="folderUri">
+        <source xml:lang="en">Opens a window with given folder uri(s)</source>
+        <target state="translated">Abre uma janela com dada a pasta uri(s)</target>
+      </trans-unit>
+      <trans-unit id="fileUri">
+        <source xml:lang="en">Opens a window with given file uri(s)</source>
+        <target state="translated">Abre uma janela com os URIs de arquivo fornecidos</target>
+      </trans-unit>
       <trans-unit id="wait">
         <source xml:lang="en">Wait for the files to be closed before returning.</source>
         <target state="translated">Espere pelos arquivos a serem fechados antes de retornar.</target>
@@ -190,25 +218,9 @@
         <source xml:lang="en">Specifies the directory that user data is kept in. Can be used to open multiple distinct instances of Code.</source>
         <target state="translated">Especifica o diretório em que os dados do usuário são mantidos. Pode ser usado para abrir várias instâncias distintas do Code.</target>
       </trans-unit>
-      <trans-unit id="version">
-        <source xml:lang="en">Print version.</source>
-        <target state="translated">Versão de impressão</target>
-      </trans-unit>
       <trans-unit id="help">
         <source xml:lang="en">Print usage.</source>
         <target state="translated">Uso de impressão.</target>
-      </trans-unit>
-      <trans-unit id="telemetry">
-        <source xml:lang="en">Shows all telemetry events which VS code collects.</source>
-        <target state="translated">Mostra todos os eventos de telemetria que o código do VS coleta.</target>
-      </trans-unit>
-      <trans-unit id="folderUri">
-        <source xml:lang="en">Opens a window with given folder uri(s)</source>
-        <target state="translated">Abre uma janela com dada a pasta uri(s)</target>
-      </trans-unit>
-      <trans-unit id="fileUri">
-        <source xml:lang="en">Opens a window with given file uri(s)</source>
-        <target state="translated">Abre uma janela com os URIs de arquivo fornecidos</target>
       </trans-unit>
       <trans-unit id="extensionHomePath">
         <source xml:lang="en">Set the root path for extensions.</source>
@@ -238,6 +250,10 @@
         <source xml:lang="en">Enables proposed API features for extensions. Can receive one or more extension IDs to enable individually.</source>
         <target state="translated">Habilita recursos propostos a API para extensões. Pode receber uma ou mais IDs de extensão serem habilitados individualmente.</target>
       </trans-unit>
+      <trans-unit id="version">
+        <source xml:lang="en">Print version.</source>
+        <target state="translated">Versão de impressão</target>
+      </trans-unit>
       <trans-unit id="verbose">
         <source xml:lang="en">Print verbose output (implies --wait).</source>
         <target state="translated">Imprimir a saída detalhada (Implica -- esperar).</target>
@@ -262,6 +278,10 @@
         <source xml:lang="en">Disable an extension.</source>
         <target state="translated">Desabilite uma extensão.</target>
       </trans-unit>
+      <trans-unit id="turn sync">
+        <source xml:lang="en">Turn sync on or off</source>
+        <target state="new">Turn sync on or off</target>
+      </trans-unit>
       <trans-unit id="inspect-extensions">
         <source xml:lang="en">Allow debugging and profiling of extensions. Check the developer tools for the connection URI.</source>
         <target state="translated">Permite a depuração e profiling de extensões. Verifique as ferramentas de desenvolvedor para obter o URI da conexão.</target>
@@ -277,6 +297,10 @@
       <trans-unit id="maxMemory">
         <source xml:lang="en">Max memory size for a window (in Mbytes).</source>
         <target state="translated">Tamanho máximo de memória para uma janela (em Mbytes).</target>
+      </trans-unit>
+      <trans-unit id="telemetry">
+        <source xml:lang="en">Shows all telemetry events which VS code collects.</source>
+        <target state="translated">Mostra todos os eventos de telemetria que o código do VS coleta.</target>
       </trans-unit>
       <trans-unit id="usage">
         <source xml:lang="en">Usage</source>
@@ -308,74 +332,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/label/common/label" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="untitledWorkspace">
-        <source xml:lang="en">Untitled (Workspace)</source>
-        <target state="translated">Sem título (Espaço de Trabalho)</target>
-      </trans-unit>
-      <trans-unit id="workspaceName">
-        <source xml:lang="en">{0} (Workspace)</source>
-        <target state="translated">{0} (Espaço de trabalho) </target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/userDataSync" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="sync">
-        <source xml:lang="en">Sync</source>
-        <target state="translated">Sincronizar</target>
-      </trans-unit>
-      <trans-unit id="sync.keybindingsPerPlatform">
-        <source xml:lang="en">Synchronize keybindings per platform.</source>
-        <target state="new">Synchronize keybindings per platform.</target>
-      </trans-unit>
-      <trans-unit id="sync.ignoredExtensions">
-        <source xml:lang="en">List of extensions to be ignored while synchronizing. The identifier of an extension is always ${publisher}.${name}. For example: vscode.csharp.</source>
-        <target state="new">List of extensions to be ignored while synchronizing. The identifier of an extension is always ${publisher}.${name}. For example: vscode.csharp.</target>
-      </trans-unit>
-      <trans-unit id="sync.ignoredSettings">
-        <source xml:lang="en">Configure settings to be ignored while synchronizing.</source>
-        <target state="new">Configure settings to be ignored while synchronizing.</target>
-      </trans-unit>
-      <trans-unit id="app.extension.identifier.errorMessage">
-        <source xml:lang="en">Expected format '${publisher}.${name}'. Example: 'vscode.csharp'.</source>
-        <target state="translated">Formato esperado '${editor}.${nome}'. Exemplo: 'vscode.csharp'.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/files/common/files" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="unknownError">
-        <source xml:lang="en">Unknown Error</source>
-        <target state="translated">Erro Desconhecido</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/userDataSyncService" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="turned off">
-        <source xml:lang="en">Cannot sync because syncing is turned off in the cloud</source>
-        <target state="new">Cannot sync because syncing is turned off in the cloud</target>
-      </trans-unit>
-      <trans-unit id="session expired">
-        <source xml:lang="en">Cannot sync because current session is expired</source>
-        <target state="new">Cannot sync because current session is expired</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/dialogs/common/dialogs" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="moreFile">
-        <source xml:lang="en">...1 additional file not shown</source>
-        <target state="translated">... 1 arquivo adicional não está mostrado</target>
-      </trans-unit>
-      <trans-unit id="moreFiles">
-        <source xml:lang="en">...{0} additional files not shown</source>
-        <target state="translated">... {0} arquivos adicionais não estão mostrados</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/markers/common/markers" source-language="en" target-language="pt-BR" datatype="plaintext">
     <body>
       <trans-unit id="sev.error">
@@ -392,47 +348,39 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/workspaces/common/workspaces" source-language="en" target-language="pt-BR" datatype="plaintext">
+  <file original="src/vs/platform/dialogs/common/dialogs" source-language="en" target-language="pt-BR" datatype="plaintext">
     <body>
-      <trans-unit id="codeWorkspace">
-        <source xml:lang="en">Code Workspace</source>
-        <target state="translated">Área de Trabalho de Código</target>
+      <trans-unit id="moreFile">
+        <source xml:lang="en">...1 additional file not shown</source>
+        <target state="translated">... 1 arquivo adicional não está mostrado</target>
+      </trans-unit>
+      <trans-unit id="moreFiles">
+        <source xml:lang="en">...{0} additional files not shown</source>
+        <target state="translated">... {0} arquivos adicionais não estão mostrados</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" target-language="pt-BR" datatype="plaintext">
+  <file original="src/vs/platform/userDataSync/common/userDataSync" source-language="en" target-language="pt-BR" datatype="plaintext">
     <body>
-      <trans-unit id="errorInvalidSettings">
-        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
-        <target state="new">Unable to sync settings as there are errors/warning in settings file.</target>
+      <trans-unit id="sync">
+        <source xml:lang="en">Sync</source>
+        <target state="translated">Sincronizar</target>
       </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/configuration/common/configurationRegistry" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="defaultConfigurations.title">
-        <source xml:lang="en">Default Configuration Overrides</source>
-        <target state="translated">Sobreposições da Configuração Padrão</target>
+      <trans-unit id="sync.keybindingsPerPlatform">
+        <source xml:lang="en">Synchronize keybindings per platform.</source>
+        <target state="translated">Sincronizar os atalhos por plataforma.</target>
       </trans-unit>
-      <trans-unit id="overrideSettings.description">
-        <source xml:lang="en">Configure editor settings to be overridden for {0} language.</source>
-        <target state="translated">Definir que configurações do editor sejam substituídas para idioma {0}.</target>
+      <trans-unit id="sync.ignoredExtensions">
+        <source xml:lang="en">List of extensions to be ignored while synchronizing. The identifier of an extension is always ${publisher}.${name}. For example: vscode.csharp.</source>
+        <target state="translated">Lista de extensões a serem ignoradas durante a sincronização. O identificador de uma extensão é sempre ${publisher}.${name}. Por exemplo: vscode.csharp.</target>
       </trans-unit>
-      <trans-unit id="overrideSettings.defaultDescription">
-        <source xml:lang="en">Configure editor settings to be overridden for a language.</source>
-        <target state="translated">Definir que configurações do editor sejam substituídas para um idioma.</target>
+      <trans-unit id="sync.ignoredSettings">
+        <source xml:lang="en">Configure settings to be ignored while synchronizing.</source>
+        <target state="translated">Configurar as configurações a serem ignoradas durante a sincronização.</target>
       </trans-unit>
-      <trans-unit id="overrideSettings.errorMessage">
-        <source xml:lang="en">This setting does not support per-language configuration.</source>
-        <target state="translated">Esta configuração não suporta configurações por linguagem.</target>
-      </trans-unit>
-      <trans-unit id="config.property.languageDefault">
-        <source xml:lang="en">Cannot register '{0}'. This matches property pattern '\\[.*\\]$' for describing language specific editor settings. Use 'configurationDefaults' contribution.</source>
-        <target state="translated">Não é possível registrar '{0}'. Isto corresponde a propriedade padrão '\\[.*\\]$' para descrever configurações do editor específico de linguagem. Use a contribuição 'configurationDefaults'.</target>
-      </trans-unit>
-      <trans-unit id="config.property.duplicate">
-        <source xml:lang="en">Cannot register '{0}'. This property is already registered.</source>
-        <target state="translated">Não é possível registrar '{0}'. Esta propriedade já está registrada.</target>
+      <trans-unit id="app.extension.identifier.errorMessage">
+        <source xml:lang="en">Expected format '${publisher}.${name}'. Example: 'vscode.csharp'.</source>
+        <target state="translated">Formato esperado '${editor}.${nome}'. Exemplo: 'vscode.csharp'.</target>
       </trans-unit>
     </body>
   </file>
@@ -464,35 +412,83 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/configuration/common/configurationRegistry" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="defaultConfigurations.title">
+        <source xml:lang="en">Default Configuration Overrides</source>
+        <target state="translated">Sobreposições da Configuração Padrão</target>
+      </trans-unit>
+      <trans-unit id="overrideSettings.description">
+        <source xml:lang="en">Configure editor settings to be overridden for {0} language.</source>
+        <target state="translated">Definir que configurações do editor sejam substituídas para idioma {0}.</target>
+      </trans-unit>
+      <trans-unit id="overrideSettings.defaultDescription">
+        <source xml:lang="en">Configure editor settings to be overridden for a language.</source>
+        <target state="translated">Definir que configurações do editor sejam substituídas para um idioma.</target>
+      </trans-unit>
+      <trans-unit id="overrideSettings.errorMessage">
+        <source xml:lang="en">This setting does not support per-language configuration.</source>
+        <target state="translated">Esta configuração não suporta configurações por linguagem.</target>
+      </trans-unit>
+      <trans-unit id="config.property.languageDefault">
+        <source xml:lang="en">Cannot register '{0}'. This matches property pattern '\\[.*\\]$' for describing language specific editor settings. Use 'configurationDefaults' contribution.</source>
+        <target state="translated">Não é possível registrar '{0}'. Isto corresponde a propriedade padrão '\\[.*\\]$' para descrever configurações do editor específico de linguagem. Use a contribuição 'configurationDefaults'.</target>
+      </trans-unit>
+      <trans-unit id="config.property.duplicate">
+        <source xml:lang="en">Cannot register '{0}'. This property is already registered.</source>
+        <target state="translated">Não é possível registrar '{0}'. Esta propriedade já está registrada.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/workspaces/common/workspaces" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="codeWorkspace">
+        <source xml:lang="en">Code Workspace</source>
+        <target state="translated">Área de Trabalho de Código</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/userDataSyncService" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="turned off">
+        <source xml:lang="en">Cannot sync because syncing is turned off in the cloud</source>
+        <target state="translated">Não foi possível sincronizar porque a sincronização está desativada na nuvem</target>
+      </trans-unit>
+      <trans-unit id="session expired">
+        <source xml:lang="en">Cannot sync because current session is expired</source>
+        <target state="translated">Não é possível sincronizar porque a sessão atual expirou</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/undoRedo/common/undoRedoService" source-language="en" target-language="pt-BR" datatype="plaintext">
     <body>
       <trans-unit id="externalRemoval">
         <source xml:lang="en">The following files have been closed: {0}.</source>
-        <target state="new">The following files have been closed: {0}.</target>
+        <target state="translated">Os seguintes arquivos foram fechados: {0}.</target>
       </trans-unit>
       <trans-unit id="noParallelUniverses">
         <source xml:lang="en">The following files have been modified in an incompatible way: {0}.</source>
-        <target state="new">The following files have been modified in an incompatible way: {0}.</target>
+        <target state="translated">Os seguintes arquivos foram modificados de forma incompatível: {0}.</target>
       </trans-unit>
       <trans-unit id="cannotWorkspaceUndo">
         <source xml:lang="en">Could not undo '{0}' across all files. {1}</source>
-        <target state="new">Could not undo '{0}' across all files. {1}</target>
+        <target state="translated">Não poderia desfazer '{0}' em todos os arquivos. {1}</target>
       </trans-unit>
       <trans-unit id="cannotWorkspaceUndoDueToChanges">
         <source xml:lang="en">Could not undo '{0}' across all files because changes were made to {1}</source>
-        <target state="new">Could not undo '{0}' across all files because changes were made to {1}</target>
+        <target state="translated">Não foi possível desfazer '{0}' em todos os arquivos porque foram feitas alterações em {1}</target>
       </trans-unit>
       <trans-unit id="confirmWorkspace">
         <source xml:lang="en">Would you like to undo '{0}' across all files?</source>
         <target state="new">Would you like to undo '{0}' across all files?</target>
       </trans-unit>
       <trans-unit id="ok">
-        <source xml:lang="en">Undo in {0} files.</source>
-        <target state="new">Undo in {0} files.</target>
+        <source xml:lang="en">Undo in {0} Files</source>
+        <target state="new">Undo in {0} Files</target>
       </trans-unit>
       <trans-unit id="nok">
-        <source xml:lang="en">Undo this file.</source>
-        <target state="new">Undo this file.</target>
+        <source xml:lang="en">Undo this File</source>
+        <target state="new">Undo this File</target>
       </trans-unit>
       <trans-unit id="cancel">
         <source xml:lang="en">Cancel</source>
@@ -505,6 +501,106 @@
       <trans-unit id="cannotWorkspaceRedoDueToChanges">
         <source xml:lang="en">Could not redo '{0}' across all files because changes were made to {1}</source>
         <target state="new">Could not redo '{0}' across all files because changes were made to {1}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/common/fileService" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="invalidPath">
+        <source xml:lang="en">Unable to resolve filesystem provider with relative file path '{0}'</source>
+        <target state="translated">Não foi possível resolver o provedor do sistema de arquivos com o caminho relativo do arquivo '{0}'</target>
+      </trans-unit>
+      <trans-unit id="noProviderFound">
+        <source xml:lang="en">No file system provider found for resource '{0}'</source>
+        <target state="translated">Nenhum provedor de sistema de arquivos encontrado para o recurso '{0}'</target>
+      </trans-unit>
+      <trans-unit id="fileNotFoundError">
+        <source xml:lang="en">Unable to resolve non-existing file '{0}'</source>
+        <target state="translated">Não foi possível resolver o arquivo não existente '{0}'</target>
+      </trans-unit>
+      <trans-unit id="fileExists">
+        <source xml:lang="en">Unable to create file '{0}' that already exists when overwrite flag is not set</source>
+        <target state="translated">Não foi possível criar o arquivo '{0}' que já existe quando o sinalizador de substituição não está definido</target>
+      </trans-unit>
+      <trans-unit id="err.write">
+        <source xml:lang="en">Unable to write file '{0}' ({1})</source>
+        <target state="translated">Não foi possível escrever o arquivo '{0}' ({1})</target>
+      </trans-unit>
+      <trans-unit id="fileIsDirectoryWriteError">
+        <source xml:lang="en">Unable to write file '{0}' that is actually a directory</source>
+        <target state="translated">Incapaz de escrever arquivo '{0}' que é na realidade um diretório</target>
+      </trans-unit>
+      <trans-unit id="fileModifiedError">
+        <source xml:lang="en">File Modified Since</source>
+        <target state="translated">Arquivo Modificado Desde</target>
+      </trans-unit>
+      <trans-unit id="err.read">
+        <source xml:lang="en">Unable to read file '{0}' ({1})</source>
+        <target state="translated">Não é possível ler o arquivo '{0}' ({1})</target>
+      </trans-unit>
+      <trans-unit id="fileIsDirectoryReadError">
+        <source xml:lang="en">Unable to read file '{0}' that is actually a directory</source>
+        <target state="translated">Não foi possível ler o arquivo '{0}' que na verdade é um diretório</target>
+      </trans-unit>
+      <trans-unit id="fileNotModifiedError">
+        <source xml:lang="en">File not modified since</source>
+        <target state="translated">Arquivo não modificado desde</target>
+      </trans-unit>
+      <trans-unit id="fileTooLargeError">
+        <source xml:lang="en">Unable to read file '{0}' that is too large to open</source>
+        <target state="new">Unable to read file '{0}' that is too large to open</target>
+      </trans-unit>
+      <trans-unit id="unableToMoveCopyError1">
+        <source xml:lang="en">Unable to copy when source '{0}' is same as target '{1}' with different path case on a case insensitive file system</source>
+        <target state="translated">Não é possível copiar quando a origem '{0}' é igual ao destino '{1}' com caso de caminho diferente em um sistema de arquivos que não diferencia maiúsculas de minúsculas</target>
+      </trans-unit>
+      <trans-unit id="unableToMoveCopyError2">
+        <source xml:lang="en">Unable to move/copy when source '{0}' is parent of target '{1}'.</source>
+        <target state="translated">Não é possível mover/copiar quando a fonte '{0}' é pai do alvo '{1}'.</target>
+      </trans-unit>
+      <trans-unit id="unableToMoveCopyError3">
+        <source xml:lang="en">Unable to move/copy '{0}' because target '{1}' already exists at destination.</source>
+        <target state="new">Unable to move/copy '{0}' because target '{1}' already exists at destination.</target>
+      </trans-unit>
+      <trans-unit id="unableToMoveCopyError4">
+        <source xml:lang="en">Unable to move/copy '{0}' into '{1}' since a file would replace the folder it is contained in.</source>
+        <target state="translated">Incapaz de mover/copiar '{0}' em '{1}' uma vez que um arquivo substituiria a pasta em que está contido.</target>
+      </trans-unit>
+      <trans-unit id="mkdirExistsError">
+        <source xml:lang="en">Unable to create folder '{0}' that already exists but is not a directory</source>
+        <target state="translated">Não foi possível criar a pasta '{0}' que já existe, mas não é um diretório</target>
+      </trans-unit>
+      <trans-unit id="deleteFailedTrashUnsupported">
+        <source xml:lang="en">Unable to delete file '{0}' via trash because provider does not support it.</source>
+        <target state="new">Unable to delete file '{0}' via trash because provider does not support it.</target>
+      </trans-unit>
+      <trans-unit id="deleteFailedNotFound">
+        <source xml:lang="en">Unable to delete non-existing file '{0}'</source>
+        <target state="translated">Não foi possível excluir o arquivo inexistente '{0}'</target>
+      </trans-unit>
+      <trans-unit id="deleteFailedNonEmptyFolder">
+        <source xml:lang="en">Unable to delete non-empty folder '{0}'.</source>
+        <target state="translated">Não é possível excluir uma pasta que não está vazia '{0}'.</target>
+      </trans-unit>
+      <trans-unit id="err.readonly">
+        <source xml:lang="en">Unable to modify readonly file '{0}'</source>
+        <target state="translated">Não foi possível modificar o arquivo somente leitura '{0}'</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/quickinput/browser/helpQuickAccess" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="globalCommands">
+        <source xml:lang="en">global commands</source>
+        <target state="translated">comandos globais</target>
+      </trans-unit>
+      <trans-unit id="editorCommands">
+        <source xml:lang="en">editor commands</source>
+        <target state="translated">comandos do editor</target>
+      </trans-unit>
+      <trans-unit id="helpPickAriaLabel">
+        <source xml:lang="en">{0}, {1}</source>
+        <target state="translated">{0}, {1}</target>
       </trans-unit>
     </body>
   </file>
@@ -534,8 +630,8 @@
         <note>`singleClick` and `doubleClick` refers to a value the setting can take and should not be localized.</note>
       </trans-unit>
       <trans-unit id="horizontalScrolling setting">
-        <source xml:lang="en">Controls whether lists and trees support horizontal scrolling in the workbench.</source>
-        <target state="translated">Controla se a listas e árvores suportam a rolagem horizontal no workbench.</target>
+        <source xml:lang="en">Controls whether lists and trees support horizontal scrolling in the workbench. Warning: turning on this setting has a performance implication.</source>
+        <target state="translated">Controla se listas e árvores suportam rolagem horizontal na bancada. Atenção: ligar esta configuração tem uma implicação de desempenho.</target>
       </trans-unit>
       <trans-unit id="tree horizontalScrolling setting">
         <source xml:lang="en">Controls whether trees support horizontal scrolling in the workbench.</source>
@@ -575,87 +671,15 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/files/common/fileService" source-language="en" target-language="pt-BR" datatype="plaintext">
+  <file original="src/vs/platform/files/common/io" source-language="en" target-language="pt-BR" datatype="plaintext">
     <body>
-      <trans-unit id="invalidPath">
-        <source xml:lang="en">Unable to resolve filesystem provider with relative file path '{0}'</source>
-        <target state="translated">Não foi possível resolver o provedor do sistema de arquivos com o caminho relativo do arquivo '{0}'</target>
-      </trans-unit>
-      <trans-unit id="noProviderFound">
-        <source xml:lang="en">No file system provider found for resource '{0}'</source>
-        <target state="translated">Nenhum provedor de sistema de arquivos encontrado para o recurso '{0}'</target>
-      </trans-unit>
-      <trans-unit id="fileNotFoundError">
-        <source xml:lang="en">Unable to resolve non-existing file '{0}'</source>
-        <target state="translated">Não foi possível resolver o arquivo não existente '{0}'</target>
-      </trans-unit>
-      <trans-unit id="fileExists">
-        <source xml:lang="en">Unable to create file '{0}' that already exists when overwrite flag is not set</source>
-        <target state="translated">Não foi possível criar o arquivo '{0}' que já existe quando o sinalizador de substituição não está definido</target>
-      </trans-unit>
-      <trans-unit id="err.write">
-        <source xml:lang="en">Unable to write file '{0}' ({1})</source>
-        <target state="translated">Não foi possível escrever o arquivo '{0}' ({1})</target>
-      </trans-unit>
-      <trans-unit id="fileIsDirectoryWriteError">
-        <source xml:lang="en">Unable to write file '{0}' that is actually a directory</source>
-        <target state="new">Unable to write file '{0}' that is actually a directory</target>
-      </trans-unit>
-      <trans-unit id="fileModifiedError">
-        <source xml:lang="en">File Modified Since</source>
-        <target state="translated">Arquivo Modificado Desde</target>
-      </trans-unit>
-      <trans-unit id="err.read">
-        <source xml:lang="en">Unable to read file '{0}' ({1})</source>
-        <target state="translated">Não é possível ler o arquivo '{0}' ({1})</target>
-      </trans-unit>
-      <trans-unit id="fileIsDirectoryReadError">
-        <source xml:lang="en">Unable to read file '{0}' that is actually a directory</source>
-        <target state="translated">Não foi possível ler o arquivo '{0}' que na verdade é um diretório</target>
-      </trans-unit>
-      <trans-unit id="fileNotModifiedError">
-        <source xml:lang="en">File not modified since</source>
-        <target state="translated">Arquivo não modificado desde</target>
+      <trans-unit id="fileTooLargeForHeapError">
+        <source xml:lang="en">To open a file of this size, you need to restart and allow it to use more memory</source>
+        <target state="translated">Para abrir um arquivo deste tamanho, você precisa reiniciar e permitir que ele use mais memória</target>
       </trans-unit>
       <trans-unit id="fileTooLargeError">
-        <source xml:lang="en">Unable to read file '{0}' that is too large to open</source>
-        <target state="new">Unable to read file '{0}' that is too large to open</target>
-      </trans-unit>
-      <trans-unit id="unableToMoveCopyError1">
-        <source xml:lang="en">Unable to copy when source '{0}' is same as target '{1}' with different path case on a case insensitive file system</source>
-        <target state="translated">Não é possível copiar quando a origem '{0}' é igual ao destino '{1}' com caso de caminho diferente em um sistema de arquivos que não diferencia maiúsculas de minúsculas</target>
-      </trans-unit>
-      <trans-unit id="unableToMoveCopyError2">
-        <source xml:lang="en">Unable to move/copy when source '{0}' is parent of target '{1}'.</source>
-        <target state="translated">Não é possível mover/copiar quando a fonte '{0}' é pai do alvo '{1}'.</target>
-      </trans-unit>
-      <trans-unit id="unableToMoveCopyError3">
-        <source xml:lang="en">Unable to move/copy '{0}' because target '{1}' already exists at destination.</source>
-        <target state="new">Unable to move/copy '{0}' because target '{1}' already exists at destination.</target>
-      </trans-unit>
-      <trans-unit id="unableToMoveCopyError4">
-        <source xml:lang="en">Unable to move/copy '{0}' into '{1}' since a file would replace the folder it is contained in.</source>
-        <target state="new">Unable to move/copy '{0}' into '{1}' since a file would replace the folder it is contained in.</target>
-      </trans-unit>
-      <trans-unit id="mkdirExistsError">
-        <source xml:lang="en">Unable to create folder '{0}' that already exists but is not a directory</source>
-        <target state="translated">Não foi possível criar a pasta '{0}' que já existe, mas não é um diretório</target>
-      </trans-unit>
-      <trans-unit id="deleteFailedTrashUnsupported">
-        <source xml:lang="en">Unable to delete file '{0}' via trash because provider does not support it.</source>
-        <target state="new">Unable to delete file '{0}' via trash because provider does not support it.</target>
-      </trans-unit>
-      <trans-unit id="deleteFailedNotFound">
-        <source xml:lang="en">Unable to delete non-existing file '{0}'</source>
-        <target state="new">Unable to delete non-existing file '{0}'</target>
-      </trans-unit>
-      <trans-unit id="deleteFailedNonEmptyFolder">
-        <source xml:lang="en">Unable to delete non-empty folder '{0}'.</source>
-        <target state="translated">Não é possível excluir uma pasta que não está vazia '{0}'.</target>
-      </trans-unit>
-      <trans-unit id="err.readonly">
-        <source xml:lang="en">Unable to modify readonly file '{0}'</source>
-        <target state="translated">Não foi possível modificar o arquivo somente leitura '{0}'</target>
+        <source xml:lang="en">File is too large to open</source>
+        <target state="translated">Arquivo é muito grande para abrir</target>
       </trans-unit>
     </body>
   </file>
@@ -732,6 +756,14 @@
       <trans-unit id="notExists">
         <source xml:lang="en">Could not find extension</source>
         <target state="translated">Não foi possível encontrar a extensão</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/actions/browser/menuEntryActionViewItem" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="titleAndKb">
+        <source xml:lang="en">{0} ({1})</source>
+        <target state="translated">{0} ({1})</target>
       </trans-unit>
     </body>
   </file>
@@ -889,14 +921,6 @@
         <source xml:lang="en">Border color of checkbox widget.</source>
         <target state="translated">Cor da borda do widget de caixa de seleção.</target>
       </trans-unit>
-      <trans-unit id="pickerGroupForeground">
-        <source xml:lang="en">Quick picker color for grouping labels.</source>
-        <target state="translated">Seletor rápido de cor para rótulos de agrupamento.</target>
-      </trans-unit>
-      <trans-unit id="pickerGroupBorder">
-        <source xml:lang="en">Quick picker color for grouping borders.</source>
-        <target state="translated">Seletor rápido de cor para bordas de agrupamentos.</target>
-      </trans-unit>
       <trans-unit id="buttonForeground">
         <source xml:lang="en">Button foreground color.</source>
         <target state="translated">Cor de primeiro plano do botão.</target>
@@ -992,6 +1016,26 @@
       <trans-unit id="editorWidgetResizeBorder">
         <source xml:lang="en">Border color of the resize bar of editor widgets. The color is only used if the widget chooses to have a resize border and if the color is not overridden by a widget.</source>
         <target state="translated">Cor da borda da barra de redimensionamento das ferramentas do editor. A cor será usada apenas se a ferramenta optar por ter uma borda de redimensionamento e se a cor não tiver sido substituída por uma ferramenta.</target>
+      </trans-unit>
+      <trans-unit id="pickerBackground">
+        <source xml:lang="en">Quick picker background color. The quick picker widget is the container for pickers like the command palette.</source>
+        <target state="translated">Cor de fundo do seletor rápido. O widget de seleção rápida é o contêiner para seletores como a paleta de comando.</target>
+      </trans-unit>
+      <trans-unit id="pickerForeground">
+        <source xml:lang="en">Quick picker foreground color. The quick picker widget is the container for pickers like the command palette.</source>
+        <target state="translated">Cor do primeiro plano do seletor rápido. O widget de seleção rápida é o contêiner para seletores como a paleta de comandos.</target>
+      </trans-unit>
+      <trans-unit id="pickerTitleBackground">
+        <source xml:lang="en">Quick picker title background color. The quick picker widget is the container for pickers like the command palette.</source>
+        <target state="translated">Cor de fundo do título do seletor rápido. O widget de seleção rápida é o contêiner para seletores como a paleta de comando.</target>
+      </trans-unit>
+      <trans-unit id="pickerGroupForeground">
+        <source xml:lang="en">Quick picker color for grouping labels.</source>
+        <target state="translated">Seletor rápido de cor para rótulos de agrupamento.</target>
+      </trans-unit>
+      <trans-unit id="pickerGroupBorder">
+        <source xml:lang="en">Quick picker color for grouping borders.</source>
+        <target state="translated">Seletor rápido de cor para bordas de agrupamentos.</target>
       </trans-unit>
       <trans-unit id="editorSelectionBackground">
         <source xml:lang="en">Color of the editor selection.</source>
@@ -1177,6 +1221,10 @@
         <source xml:lang="en">Tree stroke color for the indentation guides.</source>
         <target state="translated">Cor do traço da árvore das guias de recuo.</target>
       </trans-unit>
+      <trans-unit id="listDeemphasizedForeground">
+        <source xml:lang="en">List/Tree foreground color for items that are deemphasized. </source>
+        <target state="translated">Cor do primeiro plano para itens da lista/árvore que estão desenfatizados</target>
+      </trans-unit>
       <trans-unit id="menuBorder">
         <source xml:lang="en">Border color of menus.</source>
         <target state="translated">Cor da borda dos menus.</target>
@@ -1303,7 +1351,7 @@
       </trans-unit>
       <trans-unit id="minimapBackground">
         <source xml:lang="en">Minimap background color.</source>
-        <target state="new">Minimap background color.</target>
+        <target state="translated">Cor de fundo do minimapa.</target>
       </trans-unit>
       <trans-unit id="minimapSliderBackground">
         <source xml:lang="en">Minimap slider background color.</source>
@@ -1311,11 +1359,11 @@
       </trans-unit>
       <trans-unit id="minimapSliderHoverBackground">
         <source xml:lang="en">Minimap slider background color when hovering.</source>
-        <target state="new">Minimap slider background color when hovering.</target>
+        <target state="translated">Cor do plano de fundo do controle deslizante do minimapa ao passar o mouse.</target>
       </trans-unit>
       <trans-unit id="minimapSliderActiveBackground">
         <source xml:lang="en">Minimap slider background color when clicked on.</source>
-        <target state="new">Minimap slider background color when clicked on.</target>
+        <target state="translated">Cor do plano de fundo do controle deslizante do minimapa quando clicada.</target>
       </trans-unit>
       <trans-unit id="problemsErrorIconForeground">
         <source xml:lang="en">The color used for the problems error icon.</source>
@@ -1328,50 +1376,6 @@
       <trans-unit id="problemsInfoIconForeground">
         <source xml:lang="en">The color used for the problems info icon.</source>
         <target state="translated">A cor usada para o ícone de informações de problemas.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/extensionsSync" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="skip extension">
-        <source xml:lang="en">Skipped synchronizing extension {0}</source>
-        <target state="new">Skipped synchronizing extension {0}</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="errorInvalidSettings">
-        <source xml:lang="en">Unable to sync keybindings as there are errors/warning in keybindings file.</source>
-        <target state="new">Unable to sync keybindings as there are errors/warning in keybindings file.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/files/common/io" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="fileTooLargeForHeapError">
-        <source xml:lang="en">To open a file of this size, you need to restart and allow it to use more memory</source>
-        <target state="translated">Para abrir um arquivo deste tamanho, você precisa reiniciar e permitir que ele use mais memória</target>
-      </trans-unit>
-      <trans-unit id="fileTooLargeError">
-        <source xml:lang="en">File is too large to open</source>
-        <target state="translated">Arquivo é muito grande para abrir</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/actions/browser/menuEntryActionViewItem" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="titleAndKb">
-        <source xml:lang="en">{0} ({1})</source>
-        <target state="translated">{0} ({1})</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/abstractSynchronizer" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="incompatible">
-        <source xml:lang="en">Cannot sync {0} as its version {1} is not compatible with cloud {2}</source>
-        <target state="new">Cannot sync {0} as its version {1} is not compatible with cloud {2}</target>
       </trans-unit>
     </body>
   </file>
@@ -1392,6 +1396,38 @@
       <trans-unit id="versionMismatch">
         <source xml:lang="en">Extension is not compatible with Code {0}. Extension requires: {1}.</source>
         <target state="translated">Extensão não é compatível com Code {0}. A extensão requer: {1}.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="errorInvalidSettings">
+        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
+        <target state="new">Unable to sync settings as there are errors/warning in settings file.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="errorInvalidSettings">
+        <source xml:lang="en">Unable to sync keybindings as there are errors/warning in keybindings file.</source>
+        <target state="new">Unable to sync keybindings as there are errors/warning in keybindings file.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/workspaces/electron-main/workspacesMainService" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="ok">
+        <source xml:lang="en">OK</source>
+        <target state="translated">OK</target>
+      </trans-unit>
+      <trans-unit id="workspaceOpenedMessage">
+        <source xml:lang="en">Unable to save workspace '{0}'</source>
+        <target state="translated">Não é possível salvar o workspace '{0}'</target>
+      </trans-unit>
+      <trans-unit id="workspaceOpenedDetail">
+        <source xml:lang="en">The workspace is already opened in another window. Please close that window first and then try again.</source>
+        <target state="translated">O espaço de trabalho já está aberto em outra janela. Por favor, feche a janela primeiro e tente novamente.</target>
       </trans-unit>
     </body>
   </file>
@@ -1432,46 +1468,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/workspaces/electron-main/workspacesMainService" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="ok">
-        <source xml:lang="en">OK</source>
-        <target state="translated">OK</target>
-      </trans-unit>
-      <trans-unit id="workspaceOpenedMessage">
-        <source xml:lang="en">Unable to save workspace '{0}'</source>
-        <target state="translated">Não é possível salvar o workspace '{0}'</target>
-      </trans-unit>
-      <trans-unit id="workspaceOpenedDetail">
-        <source xml:lang="en">The workspace is already opened in another window. Please close that window first and then try again.</source>
-        <target state="translated">O espaço de trabalho já está aberto em outra janela. Por favor, feche a janela primeiro e tente novamente.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/workspaces/electron-main/workspacesHistoryMainService" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="newWindow">
-        <source xml:lang="en">New Window</source>
-        <target state="translated">Nova Janela</target>
-      </trans-unit>
-      <trans-unit id="newWindowDesc">
-        <source xml:lang="en">Opens a new window</source>
-        <target state="translated">Abrir uma nova janela</target>
-      </trans-unit>
-      <trans-unit id="recentFolders">
-        <source xml:lang="en">Recent Workspaces</source>
-        <target state="translated">Espaços de trabalho recentes</target>
-      </trans-unit>
-      <trans-unit id="folderDesc">
-        <source xml:lang="en">{0} {1}</source>
-        <target state="translated">{0} {1}</target>
-      </trans-unit>
-      <trans-unit id="workspaceDesc">
-        <source xml:lang="en">{0} {1}</source>
-        <target state="translated">{0} {1}</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/issue/electron-main/issueMainService" source-language="en" target-language="pt-BR" datatype="plaintext">
     <body>
       <trans-unit id="local">
@@ -1505,6 +1501,50 @@
       <trans-unit id="processExplorer">
         <source xml:lang="en">Process Explorer</source>
         <target state="translated">Explorador de Processos</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/workspaces/electron-main/workspacesHistoryMainService" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="newWindow">
+        <source xml:lang="en">New Window</source>
+        <target state="translated">Nova Janela</target>
+      </trans-unit>
+      <trans-unit id="newWindowDesc">
+        <source xml:lang="en">Opens a new window</source>
+        <target state="translated">Abrir uma nova janela</target>
+      </trans-unit>
+      <trans-unit id="recentFolders">
+        <source xml:lang="en">Recent Workspaces</source>
+        <target state="translated">Espaços de trabalho recentes</target>
+      </trans-unit>
+      <trans-unit id="folderDesc">
+        <source xml:lang="en">{0} {1}</source>
+        <target state="translated">{0} {1}</target>
+      </trans-unit>
+      <trans-unit id="workspaceDesc">
+        <source xml:lang="en">{0} {1}</source>
+        <target state="translated">{0} {1}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/quickinput/browser/commandsQuickAccess" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="commandPickAriaLabelWithKeybinding">
+        <source xml:lang="en">{0}, {1}</source>
+        <target state="translated">{0}, {1}</target>
+      </trans-unit>
+      <trans-unit id="recentlyUsed">
+        <source xml:lang="en">recently used</source>
+        <target state="translated">usados recentemente</target>
+      </trans-unit>
+      <trans-unit id="morecCommands">
+        <source xml:lang="en">other commands</source>
+        <target state="translated">outros comandos</target>
+      </trans-unit>
+      <trans-unit id="canNotRun">
+        <source xml:lang="en">Command '{0}' resulted in an error ({1})</source>
+        <target state="translated">Comando '{0}' resultou em um erro ({1})</target>
       </trans-unit>
     </body>
   </file>
@@ -1584,7 +1624,7 @@
       </trans-unit>
       <trans-unit id="typeParameter">
         <source xml:lang="en">Style for type parameters.</source>
-        <target state="new">Style for type parameters.</target>
+        <target state="translated">Estilo para parâmetros do tipo.</target>
       </trans-unit>
       <trans-unit id="function">
         <source xml:lang="en">Style for functions</source>
@@ -1612,11 +1652,11 @@
       </trans-unit>
       <trans-unit id="enumMember">
         <source xml:lang="en">Style for enum members.</source>
-        <target state="new">Style for enum members.</target>
+        <target state="translated">Estilo para membros da enum.</target>
       </trans-unit>
       <trans-unit id="event">
         <source xml:lang="en">Style for events.</source>
-        <target state="new">Style for events.</target>
+        <target state="translated">Estilo para eventos.</target>
       </trans-unit>
       <trans-unit id="labels">
         <source xml:lang="en">Style for labels. </source>
@@ -1624,7 +1664,7 @@
       </trans-unit>
       <trans-unit id="declaration">
         <source xml:lang="en">Style for all symbol declarations.</source>
-        <target state="new">Style for all symbol declarations.</target>
+        <target state="translated">Estilo para todas as declarações símbolo.</target>
       </trans-unit>
       <trans-unit id="documentation">
         <source xml:lang="en">Style to use for references in documentation.</source>
@@ -1653,6 +1693,14 @@
       <trans-unit id="readonly">
         <source xml:lang="en">Style to use for symbols that are readonly.</source>
         <target state="translated">Estilo a ser usado para símbolos que são somente leitura.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/abstractSynchronizer" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="incompatible">
+        <source xml:lang="en">Cannot sync {0} as its version {1} is not compatible with cloud {2}</source>
+        <target state="translated">Não é possível sincronizar {0}, pois sua versão {1} não é compatível com {2} da nuvem</target>
       </trans-unit>
     </body>
   </file>
@@ -1690,7 +1738,7 @@
       </trans-unit>
       <trans-unit id="mRun">
         <source xml:lang="en">&amp;&amp;Run</source>
-        <target state="new">&amp;&amp;Run</target>
+        <target state="translated">&amp;&amp;Executar</target>
         <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
       <trans-unit id="mTerminal">
@@ -1800,6 +1848,1598 @@
       <trans-unit id="miRestartToUpdate">
         <source xml:lang="en">Restart to &amp;&amp;Update</source>
         <target state="translated">Reinicie para &amp;&amp;Atualizar</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/theme/common/iconRegistry" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="add">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="plus">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="gist-new">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="repo-create">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="lightbulb">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="light-bulb">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="repo">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="repo-delete">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="gist-fork">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="repo-forked">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="git-pull-request">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="git-pull-request-abandoned">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="record-keys">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="keyboard">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="tag">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="tag-add">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="tag-remove">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="person">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="person-add">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="person-follow">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="person-outline">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="person-filled">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="git-branch">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="git-branch-create">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="git-branch-delete">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="source-control">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="mirror">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="mirror-public">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="star">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="star-add">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="star-delete">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="star-empty">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="comment">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="comment-add">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="alert">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="warning">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="search">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="search-save">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="log-out">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="sign-out">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="log-in">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="sign-in">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="eye">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="eye-unwatch">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="eye-watch">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="circle-filled">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="primitive-dot">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="close-dirty">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-disabled">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-hint">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="primitive-square">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="edit">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="pencil">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="info">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="issue-opened">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="gist-private">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="git-fork-private">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="lock">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="mirror-private">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="close">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="remove-close">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="x">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="repo-sync">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="sync">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="clone">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="desktop-download">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="beaker">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="microscope">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="vm">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="device-desktop">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file-text">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="more">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="ellipsis">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="kebab-horizontal">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="mail-reply">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="reply">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="organization">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="organization-filled">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="organization-outline">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="new-file">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file-add">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="new-folder">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file-directory-create">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="trash">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="trashcan">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="history">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="clock">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="folder">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file-directory">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-folder">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="logo-github">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="mark-github">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="github">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="terminal">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="console">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="repl">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="zap">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-event">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="error">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="stop">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="variable">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-variable">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="array">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-array">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-module">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-package">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-namespace">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-object">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-method">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-function">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-constructor">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-boolean">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-null">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-numeric">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-number">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-structure">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-struct">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-parameter">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-type-parameter">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-key">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-text">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-reference">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="go-to-file">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-enum">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-value">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-ruler">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-unit">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="activate-breakpoints">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="archive">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="arrow-both">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="arrow-down">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="arrow-left">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="arrow-right">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="arrow-small-down">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="arrow-small-left">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="arrow-small-right">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="arrow-small-up">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="arrow-up">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="bell">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="bold">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="book">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="bookmark">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-conditional-unverified">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-conditional">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-conditional-disabled">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-data-unverified">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-data">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-data-disabled">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-log-unverified">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-log">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-log-disabled">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="briefcase">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="broadcast">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="browser">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="bug">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="calendar">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="case-sensitive">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="check">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="checklist">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="chevron-down">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="chevron-left">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="chevron-right">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="chevron-up">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="chrome-close">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="chrome-maximize">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="chrome-minimize">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="chrome-restore">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="circle-outline">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-unverified">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="circle-slash">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="circuit-board">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="clear-all">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="clippy">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="close-all">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="cloud-download">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="cloud-upload">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="code">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="collapse-all">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="color-mode">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="comment-discussion">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="compare-changes">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="credit-card">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="dash">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="dashboard">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="database">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-continue">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-disconnect">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-pause">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-restart">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-start">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-step-into">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-step-out">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-step-over">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-stop">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="device-camera-video">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="device-camera">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="device-mobile">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="diff-added">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="diff-ignored">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="diff-modified">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="diff-removed">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="diff-renamed">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="diff">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="discard">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="editor-layout">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="empty-window">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="exclude">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="extensions">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="eye-closed">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file-binary">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file-code">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file-media">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file-pdf">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file-submodule">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file-symlink-directory">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file-symlink-file">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file-zip">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="files">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="filter">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="flame">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="fold-down">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="fold-up">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="fold">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="folder-active">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="folder-opened">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="gear">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="gift">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="gist-secret">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="gist">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="git-commit">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="git-compare">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="git-merge">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="github-action">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="github-alt">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="globe">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="grabber">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="graph">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="gripper">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="heart">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="home">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="horizontal-rule">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="hubot">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="inbox">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="issue-closed">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="issue-reopened">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="issues">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="italic">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="jersey">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="json">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="kebab-vertical">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="key">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="law">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="lightbulb-autofix">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="link-external">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="link">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="list-ordered">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="list-unordered">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="live-share">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="loading">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="location">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="mail-read">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="mail">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="markdown">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="megaphone">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="mention">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="milestone">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="mortar-board">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="move">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="multiple-windows">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="mute">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="no-newline">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="note">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="octoface">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="open-preview">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="package">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="paintcan">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="pin">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="play">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="run">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="plug">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="preserve-case">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="preview">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="project">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="pulse">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="question">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="quote">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="radio-tower">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="reactions">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="references">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="refresh">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="regex">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="remote-explorer">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="remote">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="remove">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="replace-all">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="replace">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="repo-clone">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="repo-force-push">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="repo-pull">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="repo-push">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="report">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="request-changes">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="rocket">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="root-folder-opened">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="root-folder">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="rss">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="ruby">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="save-all">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="save-as">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="save">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="screen-full">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="screen-normal">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="search-stop">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="server">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="settings-gear">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="settings">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="shield">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="smiley">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="sort-precedence">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="split-horizontal">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="split-vertical">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="squirrel">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="star-full">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="star-half">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-class">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-color">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-constant">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-enum-member">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-field">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-file">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-interface">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-keyword">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-misc">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-operator">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-property">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="wrench">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="wrench-subaction">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-snippet">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="tasklist">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="telescope">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="text-size">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="three-bars">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="thumbsdown">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="thumbsup">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="tools">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="triangle-down">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="triangle-left">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="triangle-right">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="triangle-up">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="twitter">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="unfold">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="unlock">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="unmute">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="unverified">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="verified">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="versions">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="vm-active">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="vm-outline">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="vm-running">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="watch">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="whitespace">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="whole-word">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="window">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="word-wrap">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="zoom-in">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="zoom-out">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="list-filter">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="list-flat">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="list-selection">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="selection">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="list-tree">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-function-unverified">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-function">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-function-disabled">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-stackframe-active">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-stackframe-dot">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-stackframe">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-stackframe-focused">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-unsupported">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-string">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-reverse-continue">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-step-back">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-restart-frame">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-alternate">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="call-incoming">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="call-outgoing">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="menu">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="expand-all">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="feedback">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="group-by-ref-type">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="ungroup-by-ref-type">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="bell-dot">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-alt-2">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-alt">
+        <source xml:lang="en">
+        </source>
       </trans-unit>
     </body>
   </file>

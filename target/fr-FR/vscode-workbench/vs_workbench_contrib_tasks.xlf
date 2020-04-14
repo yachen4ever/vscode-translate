@@ -168,7 +168,11 @@ The task '{0}' was terminated per user request.</source>
         <source xml:lang="en">Open User Tasks</source>
         <target state="translated">Ouvrir les tâches utilisateur</target>
       </trans-unit>
-      <trans-unit id="quickOpen.task">
+      <trans-unit id="tasksQuickAccessPlaceholder">
+        <source xml:lang="en">Type the name of a task to run.</source>
+        <target state="translated">Tapez le nom d'une tâche à exécuter.</target>
+      </trans-unit>
+      <trans-unit id="tasksQuickAccessHelp">
         <source xml:lang="en">Run Task</source>
         <target state="translated">Exécuter la tâche</target>
       </trans-unit>
@@ -226,22 +230,6 @@ The task '{0}' was terminated per user request.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/taskQuickOpen" source-language="en" target-language="fr" datatype="plaintext">
-    <body>
-      <trans-unit id="tasksAriaLabel">
-        <source xml:lang="en">Type the name of a task to run</source>
-        <target state="translated">Tapez le nom d'une tâche à exécuter</target>
-      </trans-unit>
-      <trans-unit id="noTasksMatching">
-        <source xml:lang="en">No tasks matching</source>
-        <target state="translated">Aucune tâche correspondante</target>
-      </trans-unit>
-      <trans-unit id="noTasksFound">
-        <source xml:lang="en">No tasks found</source>
-        <target state="translated">Tâches introuvables</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/tasks/common/jsonSchema_v1" source-language="en" target-language="fr" datatype="plaintext">
     <body>
       <trans-unit id="JsonSchema.version.deprecated">
@@ -275,6 +263,14 @@ The task '{0}' was terminated per user request.</source>
       <trans-unit id="JsonSchema.shell">
         <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
         <target state="translated">Spécifie si la commande est une commande d'interpréteur de commandes ou un programme externe. La valeur par défaut est false, en cas d'omission.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/tasksQuickAccess" source-language="en" target-language="fr" datatype="plaintext">
+    <body>
+      <trans-unit id="TaskService.pickRunTask">
+        <source xml:lang="en">Select the task to run</source>
+        <target state="translated">Sélectionner la tâche à exécuter</target>
       </trans-unit>
     </body>
   </file>
@@ -327,30 +323,6 @@ The task '{0}' was terminated per user request.</source>
       <trans-unit id="workbench.action.tasks.disallowAutomaticTasks">
         <source xml:lang="en">Disallow Automatic Tasks in Folder</source>
         <target state="translated">Interdire les tâches automatiques dans le dossier</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/quickOpen" source-language="en" target-language="fr" datatype="plaintext">
-    <body>
-      <trans-unit id="entryAriaLabel">
-        <source xml:lang="en">{0}, tasks</source>
-        <target state="translated">{0}, tasks</target>
-      </trans-unit>
-      <trans-unit id="recentlyUsed">
-        <source xml:lang="en">recently used tasks</source>
-        <target state="translated">tâches récemment utilisées</target>
-      </trans-unit>
-      <trans-unit id="configured">
-        <source xml:lang="en">configured tasks</source>
-        <target state="translated">tâches configurées</target>
-      </trans-unit>
-      <trans-unit id="detected">
-        <source xml:lang="en">detected tasks</source>
-        <target state="translated">tâches détectées</target>
-      </trans-unit>
-      <trans-unit id="customizeTask">
-        <source xml:lang="en">Configure Task</source>
-        <target state="translated">Configurer une tâche</target>
       </trans-unit>
     </body>
   </file>
@@ -864,6 +836,38 @@ The task '{0}' was terminated per user request.</source>
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/taskQuickPick" source-language="en" target-language="fr" datatype="plaintext">
+    <body>
+      <trans-unit id="taskQuickPick.showAll">
+        <source xml:lang="en">Show All Tasks...</source>
+        <target state="translated">Afficher toutes les tâches...</target>
+      </trans-unit>
+      <trans-unit id="configureTask">
+        <source xml:lang="en">Configure Task</source>
+        <target state="translated">Configurer une tâche</target>
+      </trans-unit>
+      <trans-unit id="contributedTasks">
+        <source xml:lang="en">contributed</source>
+        <target state="translated">ajouté</target>
+      </trans-unit>
+      <trans-unit id="recentlyUsed">
+        <source xml:lang="en">recently used</source>
+        <target state="translated">récemment utilisées</target>
+      </trans-unit>
+      <trans-unit id="configured">
+        <source xml:lang="en">configured</source>
+        <target state="translated">configuré</target>
+      </trans-unit>
+      <trans-unit id="TaskQuickPick.goBack">
+        <source xml:lang="en">Go back ↩</source>
+        <target state="translated">Retour ↩</target>
+      </trans-unit>
+      <trans-unit id="TaskQuickPick.noTasksForType">
+        <source xml:lang="en">No {0} tasks found. Go back ↩</source>
+        <target state="translated">Aucune tâche {0}. Retour ↩</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/tasks/common/problemMatcher" source-language="en" target-language="fr" datatype="plaintext">
     <body>
       <trans-unit id="ProblemPatternParser.problemPattern.missingRegExp">
@@ -1367,14 +1371,6 @@ The task will be ignored.
         <source xml:lang="en">detected tasks</source>
         <target state="translated">tâches détectées</target>
       </trans-unit>
-      <trans-unit id="pickProgressManager.description">
-        <source xml:lang="en">Detecting tasks ({0} of {1}): {2} in progress</source>
-        <target state="translated">Détection de tâches ({0} sur {1}) : {2} en cours</target>
-      </trans-unit>
-      <trans-unit id="taskQuickPick.cancel">
-        <source xml:lang="en">Stop detecting</source>
-        <target state="translated">Arrêter la détection</target>
-      </trans-unit>
       <trans-unit id="TaskService.ignoredFolder">
         <source xml:lang="en">The following workspace folders are ignored since they use task version 0.1.0: {0}</source>
         <target state="translated">Les dossiers d’espace de travail suivants sont ignorés car ils utilisent task version 0.1.0 : {0}</target>
@@ -1388,8 +1384,8 @@ The task will be ignored.
         <target state="translated">Sélectionner la tâche à exécuter</target>
       </trans-unit>
       <trans-unit id="TaskService.noEntryToRun">
-        <source xml:lang="en">No task to run found. Configure Tasks...</source>
-        <target state="translated">Aucune tâche à exécuter n'a été trouvée. Configurer les tâches...</target>
+        <source xml:lang="en">No configured tasks. Configure Tasks...</source>
+        <target state="translated">Aucune tâche configurée. Configurez des tâches ...</target>
       </trans-unit>
       <trans-unit id="TaskService.fetchingBuildTasks">
         <source xml:lang="en">Fetching build tasks...</source>

@@ -1,13 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file original="src/vs/workbench/contrib/files/electron-browser/files.contribution" source-language="en" target-language="ru" datatype="plaintext">
-    <body>
-      <trans-unit id="textFileEditor">
-        <source xml:lang="en">Text File Editor</source>
-        <target state="translated">Редактор текстовых файлов</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/files/electron-browser/fileActions.contribution" source-language="en" target-language="ru" datatype="plaintext">
     <body>
       <trans-unit id="revealInWindows">
@@ -28,6 +20,22 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/files/electron-browser/files.contribution" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="textFileEditor">
+        <source xml:lang="en">Text File Editor</source>
+        <target state="translated">Редактор текстовых файлов</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/files/electron-browser/fileCommands" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="openFileToReveal">
+        <source xml:lang="en">Open a file first to reveal</source>
+        <target state="translated">Сначала откройте файл для просмотра</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/files/electron-browser/textFileEditor" source-language="en" target-language="ru" datatype="plaintext">
     <body>
       <trans-unit id="fileTooLargeForHeapError">
@@ -41,14 +49,6 @@
       <trans-unit id="configureMemoryLimit">
         <source xml:lang="en">Configure Memory Limit</source>
         <target state="translated">Настроить ограничение памяти</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/files/electron-browser/fileCommands" source-language="en" target-language="ru" datatype="plaintext">
-    <body>
-      <trans-unit id="openFileToReveal">
-        <source xml:lang="en">Open a file first to reveal</source>
-        <target state="translated">Сначала откройте файл для просмотра</target>
       </trans-unit>
     </body>
   </file>
@@ -83,16 +83,16 @@
         <target state="translated">Редактор двоичных файлов</target>
       </trans-unit>
       <trans-unit id="hotExit.off">
-        <source xml:lang="en">Disable hot exit.</source>
-        <target state="translated">Отключите "горячий" выход.</target>
+        <source xml:lang="en">Disable hot exit. A prompt will show when attempting to close a window with dirty files.</source>
+        <target state="translated">Отключение горячего выхода. При попытке закрыть окно с грязными файлами будет отображаться запрос.</target>
       </trans-unit>
       <trans-unit id="hotExit.onExit">
-        <source xml:lang="en">Hot exit will be triggered when the last window is closed on Windows/Linux or when the `workbench.action.quit` command is triggered (command palette, keybinding, menu). All windows with backups will be restored upon next launch.</source>
-        <target state="translated">Функция "горячий выход" будет активирована при закрытии последнего окна в Windows или Linux или при активации команды "workbench.action.quit" (палитра команд, настраиваемое сочетание клавиш, меню). Все окна с резервными копиями будут восстановлены при следующем запуске. </target>
+        <source xml:lang="en">Hot exit will be triggered when the last window is closed on Windows/Linux or when the `workbench.action.quit` command is triggered (command palette, keybinding, menu). All windows without folders opened will be restored upon next launch. A list of workspaces with unsaved files can be accessed via `File &gt; Open Recent &gt; More...`</source>
+        <target state="translated">Горячий выход будет активирован при закрытии последнего окна в Windows/Linux или активации команды "workbench.action.quit" (палитра команд, настраиваемое сочетание клавиш, меню). Все окна без открытых папок будут восстановлены при следующем запуске. Список рабочих пространств с несохраненными файлами можно получить через меню "Файл" &gt; "Открыть последние" &gt; "Дополнительно..."</target>
       </trans-unit>
       <trans-unit id="hotExit.onExitAndWindowClose">
-        <source xml:lang="en">Hot exit will be triggered when the last window is closed on Windows/Linux or when the `workbench.action.quit` command is triggered (command palette, keybinding, menu), and also for any window with a folder opened regardless of whether it's the last window. All windows without folders opened will be restored upon next launch. To restore folder windows as they were before shutdown set `#window.restoreWindows#` to `all`.</source>
-        <target state="translated">Функция "горячий выход" будет активирована при закрытии последнего окна в Windows или Linux или при активации команды "workbench.action.quit" (с помощью палитры команд, настраиваемого сочетания клавиш или пункта меню), а также для любых окон с открытыми папками независимо от того, является ли это окно последним. Все окна без открытых папок будут восстановлены при следующем запуске. Чтобы восстановить исходное состояние окон с папками, установите параметр "#window.restoreWindows#" в значение "all".</target>
+        <source xml:lang="en">Hot exit will be triggered when the last window is closed on Windows/Linux or when the `workbench.action.quit` command is triggered (command palette, keybinding, menu), and also for any window with a folder opened regardless of whether it's the last window. All windows without folders opened will be restored upon next launch. A list of workspaces with unsaved files can be accessed via `File &gt; Open Recent &gt; More...`</source>
+        <target state="translated">Горячий выход будет активирован при закрытии последнего окна в Windows/Linux или активации команды "workbench.action.quit" (палитра команд, настраиваемое сочетание клавиш, меню), а также для любого окна с открытой папкой, независимо от того, является ли оно последним. Все окна без открытых папок будут восстановлены при следующем запуске. Список рабочих пространств с несохраненными файлами можно получить через меню "Файл" &gt; "Открыть последние" &gt; "Дополнительно..."</target>
       </trans-unit>
       <trans-unit id="hotExit">
         <source xml:lang="en">Controls whether unsaved files are remembered between sessions, allowing the save prompt when exiting the editor to be skipped.</source>
@@ -107,8 +107,8 @@
         <target state="translated">Файлы</target>
       </trans-unit>
       <trans-unit id="exclude">
-        <source xml:lang="en">Configure glob patterns for excluding files and folders. For example, the files explorer decides which files and folders to show or hide based on this setting. Read more about glob patterns [here](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).</source>
-        <target state="translated">Настройте стандартные маски для исключения файлов и папок. Этот параметр используется, например, проводником для отображения или скрытия файлов и папок. Дополнительные сведения о стандартных масках см. [здесь] (https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).</target>
+        <source xml:lang="en">Configure glob patterns for excluding files and folders. For example, the files explorer decides which files and folders to show or hide based on this setting. Refer to the `#search.exclude#` setting to define search specific excludes. Read more about glob patterns [here](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).</source>
+        <target state="translated">Настройка стандартных масок для исключения файлов и папок. Например, на основе этого параметра проводник решает, какие файлы и папки показать или скрыть. См. описание параметра "#search.exclude#", чтобы определить исключения специально для поиска. Дополнительные сведения о стандартных масках см. [здесь](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).</target>
       </trans-unit>
       <trans-unit id="files.exclude.boolean">
         <source xml:lang="en">The glob pattern to match file paths against. Set to true or false to enable or disable the pattern.</source>
@@ -193,7 +193,7 @@
         <note>This is the description for a setting. Values surrounded by single quotes are not to be translated.</note>
       </trans-unit>
       <trans-unit id="watcherExclude">
-        <source xml:lang="en">Configure glob patterns of file paths to exclude from file watching. Patterns must match on absolute paths (i.e. prefix with ** or the full path to match properly). Changing this setting requires a restart. When you experience Code consuming lots of cpu time on startup, you can exclude large folders to reduce the initial load.</source>
+        <source xml:lang="en">Configure glob patterns of file paths to exclude from file watching. Patterns must match on absolute paths (i.e. prefix with ** or the full path to match properly). Changing this setting requires a restart. When you experience Code consuming lots of CPU time on startup, you can exclude large folders to reduce the initial load.</source>
         <target state="translated">Настройте стандартные маски путей файлов, которые следует исключить из списка отслеживаемых файлов. Пути должны соответствовать полным путям (т.е. для правильного сопоставления необходимо указывать ** в начале неполного пути или указывать полные пути). После изменения этого параметра потребуется перезагрузка. Если отображается сообщение "Код потребляет большое количество процессорного времени при запуске" можно исключить большие папки, чтобы уменьшить начальную нагрузку.</target>
       </trans-unit>
       <trans-unit id="defaultLanguage">
@@ -306,24 +306,6 @@
   </file>
   <file original="src/vs/workbench/contrib/files/browser/explorerViewlet" source-language="en" target-language="ru" datatype="plaintext">
     <body>
-      <trans-unit id="noWorkspaceHelp">
-        <source xml:lang="en">You have not yet added a folder to the workspace.
-[Add Folder](command:{0})</source>
-        <target state="translated">Вы еще не добавили папку в рабочую область.
-[Добавить папку](command:{0})</target>
-      </trans-unit>
-      <trans-unit id="remoteNoFolderHelp">
-        <source xml:lang="en">Connected to remote.
-[Open Folder](command:{0})</source>
-        <target state="translated">Подключено к удаленному.
-[Открыть папку](command:{0})</target>
-      </trans-unit>
-      <trans-unit id="noFolderHelp">
-        <source xml:lang="en">You have not yet opened a folder.
-[Open Folder](command:{0})</source>
-        <target state="translated">Вы еще не открыли папку.
-[Открыть папку](command:{0})</target>
-      </trans-unit>
       <trans-unit id="folders">
         <source xml:lang="en">Folders</source>
         <target state="translated">Папки</target>
@@ -331,6 +313,27 @@
       <trans-unit id="explore">
         <source xml:lang="en">Explorer</source>
         <target state="translated">Проводник</target>
+      </trans-unit>
+      <trans-unit id="noWorkspaceHelp">
+        <source xml:lang="en">You have not yet added a folder to the workspace.
+[Add Folder](command:{0})</source>
+        <target state="translated">Вы еще не добавили папку в рабочую область.
+[Добавить папку](command:{0})</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
+      </trans-unit>
+      <trans-unit id="remoteNoFolderHelp">
+        <source xml:lang="en">Connected to remote.
+[Open Folder](command:{0})</source>
+        <target state="translated">Подключено к удаленному.
+[Открыть папку](command:{0})</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
+      </trans-unit>
+      <trans-unit id="noFolderHelp">
+        <source xml:lang="en">You have not yet opened a folder.
+[Open Folder](command:{0})</source>
+        <target state="translated">Вы еще не открыли папку.
+[Открыть папку](command:{0})</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
       </trans-unit>
     </body>
   </file>
@@ -550,26 +553,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/files/common/dirtyFilesIndicator" source-language="en" target-language="ru" datatype="plaintext">
-    <body>
-      <trans-unit id="dirtyFile">
-        <source xml:lang="en">1 unsaved file</source>
-        <target state="translated">1 несохраненный файл</target>
-      </trans-unit>
-      <trans-unit id="dirtyFiles">
-        <source xml:lang="en">{0} unsaved files</source>
-        <target state="translated">Несохраненных файлов: {0}</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/files/browser/editors/binaryFileEditor" source-language="en" target-language="ru" datatype="plaintext">
-    <body>
-      <trans-unit id="binaryFileEditor">
-        <source xml:lang="en">Binary File Viewer</source>
-        <target state="translated">Средство просмотра двоичных файлов</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/files/common/workspaceWatcher" source-language="en" target-language="ru" datatype="plaintext">
     <body>
       <trans-unit id="netVersionError">
@@ -587,6 +570,26 @@
       <trans-unit id="learnMore">
         <source xml:lang="en">Instructions</source>
         <target state="translated">Инструкции</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/files/browser/editors/binaryFileEditor" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="binaryFileEditor">
+        <source xml:lang="en">Binary File Viewer</source>
+        <target state="translated">Средство просмотра двоичных файлов</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/files/common/dirtyFilesIndicator" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="dirtyFile">
+        <source xml:lang="en">1 unsaved file</source>
+        <target state="translated">1 несохраненный файл</target>
+      </trans-unit>
+      <trans-unit id="dirtyFiles">
+        <source xml:lang="en">{0} unsaved files</source>
+        <target state="translated">Несохраненных файлов: {0}</target>
       </trans-unit>
     </body>
   </file>
@@ -972,6 +975,10 @@
       <trans-unit id="invalidFileNameError">
         <source xml:lang="en">The name **{0}** is not valid as a file or folder name. Please choose a different name.</source>
         <target state="translated">Имя **{0}** недопустимо для файла или папки. Выберите другое имя.</target>
+      </trans-unit>
+      <trans-unit id="fileNameWhitespaceWarning">
+        <source xml:lang="en">Leading or trailing whitespace detected in file or folder name.</source>
+        <target state="translated">В имени файла или папки обнаружен начальный или конечный пробел.</target>
       </trans-unit>
       <trans-unit id="compareWithClipboard">
         <source xml:lang="en">Compare Active File with Clipboard</source>

@@ -32,30 +32,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/terminal/browser/terminalQuickOpen" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="termEntryAriaLabel">
-        <source xml:lang="en">{0}, terminal picker</source>
-        <target state="translated">{0}, seletor de terminal</target>
-      </trans-unit>
-      <trans-unit id="termCreateEntryAriaLabel">
-        <source xml:lang="en">{0}, create new terminal</source>
-        <target state="translated">{0}, criar novo terminal</target>
-      </trans-unit>
-      <trans-unit id="workbench.action.terminal.newplus">
-        <source xml:lang="en">Create New Integrated Terminal</source>
-        <target state="translated">Criar Novo Terminal Integrado</target>
-      </trans-unit>
-      <trans-unit id="noTerminalsMatching">
-        <source xml:lang="en">No terminals matching</source>
-        <target state="translated">Não há terminais correspondentes</target>
-      </trans-unit>
-      <trans-unit id="noTerminalsFound">
-        <source xml:lang="en">No terminals open</source>
-        <target state="translated">Não há terminais abertos</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/terminal/common/terminal" source-language="en" target-language="pt-BR" datatype="plaintext">
     <body>
       <trans-unit id="terminalCategory">
@@ -86,7 +62,11 @@
   </file>
   <file original="src/vs/workbench/contrib/terminal/browser/terminal.contribution" source-language="en" target-language="pt-BR" datatype="plaintext">
     <body>
-      <trans-unit id="quickOpen.terminal">
+      <trans-unit id="tasksQuickAccessPlaceholder">
+        <source xml:lang="en">Type the name of a terminal to open.</source>
+        <target state="translated">Digite o nome de um terminal para abrir.</target>
+      </trans-unit>
+      <trans-unit id="tasksQuickAccessHelp">
         <source xml:lang="en">Show All Opened Terminals</source>
         <target state="translated">Mostrar Todos os Terminais Abertos</target>
       </trans-unit>
@@ -280,6 +260,10 @@ Padrão ignorada comandos: {0}</target>
         <source xml:lang="en">Whether or not to allow chord keybindings in the terminal. Note that when this is true and the keystroke results in a chord it will bypass `#terminal.integrated.commandsToSkipShell#`, setting this to false is particularly useful when you want ctrl+k to go to your shell (not VS Code).</source>
         <target state="translated">Permitir ou não atalhos de acordes no terminal. Observe que quando isso for verdadeiro e o pressionamento de tecla resultar em um acorde, ele ignorará `# terminal.integrated.commandsToSkipShell #`, defini-lo como false é particularmente útil quando você deseja que o ctrl + k vá para o seu shell (não VS Code).</target>
       </trans-unit>
+      <trans-unit id="terminal.integrated.allowMnemonics">
+        <source xml:lang="en">Whether to allow menubar mnemonics (eg. alt+f) to trigger the open the menubar. Note that this will cause all alt keystrokes will skip the shell when true. This does nothing on macOS.</source>
+        <target state="new">Whether to allow menubar mnemonics (eg. alt+f) to trigger the open the menubar. Note that this will cause all alt keystrokes will skip the shell when true. This does nothing on macOS.</target>
+      </trans-unit>
       <trans-unit id="terminal.integrated.inheritEnv">
         <source xml:lang="en">Whether new shells should inherit their environment from VS Code. This is not supported on Windows.</source>
         <target state="translated">Se novos shells devem herdar seu ambiente do VS Code. Isso não é suportado no Windows.</target>
@@ -330,15 +314,15 @@ Padrão ignorada comandos: {0}</target>
       </trans-unit>
       <trans-unit id="terminal.integrated.unicodeVersion.six">
         <source xml:lang="en">Version 6 of unicode, this is an older version which should work better on older systems.</source>
-        <target state="new">Version 6 of unicode, this is an older version which should work better on older systems.</target>
+        <target state="translated">Versão 6 do unicode, esta é uma versão mais antiga que deve funcionar melhor em sistemas mais antigos.</target>
       </trans-unit>
       <trans-unit id="terminal.integrated.unicodeVersion.eleven">
         <source xml:lang="en">Version 11 of unicode, this version provides better support on modern systems that use modern versions of unicode.</source>
-        <target state="new">Version 11 of unicode, this version provides better support on modern systems that use modern versions of unicode.</target>
+        <target state="translated">Versão 11 do Unicode, esta versão oferece melhor suporte em sistemas modernos que usam versões modernas do unicode.</target>
       </trans-unit>
       <trans-unit id="terminal.integrated.unicodeVersion">
         <source xml:lang="en">Controls what version of unicode to use when evaluating the width of characters in the terminal. If you experience emoji or other wide characters not taking up the right amount of space or backspace either deleting too much or too little then you may want to try tweaking this setting.</source>
-        <target state="new">Controls what version of unicode to use when evaluating the width of characters in the terminal. If you experience emoji or other wide characters not taking up the right amount of space or backspace either deleting too much or too little then you may want to try tweaking this setting.</target>
+        <target state="translated">Controla qual versão do unicode usar ao avaliar a largura dos caracteres no terminal. Se você tiver emoticons ou outros caracteres largos que não ocupam a quantidade certa de espaço ou o backspace, excluindo muito ou pouco, poderá tentar ajustar essa configuração.</target>
       </trans-unit>
       <trans-unit id="terminal">
         <source xml:lang="en">Terminal</source>
@@ -411,6 +395,22 @@ Padrão ignorada comandos: {0}</target>
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalsQuickAccess" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="renameTerminal">
+        <source xml:lang="en">Rename Terminal</source>
+        <target state="translated">Renomear terminal</target>
+      </trans-unit>
+      <trans-unit id="killTerminal">
+        <source xml:lang="en">Kill Terminal Instance</source>
+        <target state="translated">Finalizar a instância do Terminal</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.newplus">
+        <source xml:lang="en">Create New Integrated Terminal</source>
+        <target state="translated">Criar Novo Terminal Integrado</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/terminal/browser/terminalService" source-language="en" target-language="pt-BR" datatype="plaintext">
     <body>
       <trans-unit id="workbench.action.terminal.allowWorkspaceShell">
@@ -452,10 +452,6 @@ Padrão ignorada comandos: {0}</target>
       <trans-unit id="workbench.action.terminal.kill.short">
         <source xml:lang="en">Kill Terminal</source>
         <target state="translated">Encerrar Terminal</target>
-      </trans-unit>
-      <trans-unit id="workbench.action.terminal.quickKill">
-        <source xml:lang="en">Kill Terminal Instance</source>
-        <target state="translated">Finalizar a instância do Terminal</target>
       </trans-unit>
       <trans-unit id="workbench.action.terminal.copySelection">
         <source xml:lang="en">Copy Selection</source>
@@ -651,7 +647,7 @@ Padrão ignorada comandos: {0}</target>
       </trans-unit>
       <trans-unit id="workbench.action.terminal.renameWithArg">
         <source xml:lang="en">Rename the Currently Active Terminal</source>
-        <target state="new">Rename the Currently Active Terminal</target>
+        <target state="translated">Renomear o terminal ativo atualmente</target>
       </trans-unit>
       <trans-unit id="workbench.action.terminal.renameWithArg.name">
         <source xml:lang="en">The new name for the terminal</source>
@@ -673,7 +669,7 @@ Padrão ignorada comandos: {0}</target>
         <source xml:lang="en">Hide Find Widget</source>
         <target state="translated">Ocultar Ferramenta de Pesquisa</target>
       </trans-unit>
-      <trans-unit id="quickOpenTerm">
+      <trans-unit id="quickAccessTerminal">
         <source xml:lang="en">Switch Active Terminal</source>
         <target state="translated">Alternar o Terminal Ativo</target>
       </trans-unit>
@@ -724,38 +720,6 @@ Padrão ignorada comandos: {0}</target>
       <trans-unit id="workbench.action.terminal.findPrevious">
         <source xml:lang="en">Find previous</source>
         <target state="translated">Localizar anterior</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/terminal/browser/terminalTab" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="terminalFocus">
-        <source xml:lang="en">Terminal {0}</source>
-        <target state="translated">Terminal {0}</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/terminal/browser/terminalConfigHelper" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="terminal.integrated.allowWorkspaceShell">
-        <source xml:lang="en">Do you allow this workspace to modify your terminal shell? {0}</source>
-        <target state="translated">Você permite que este espaço de trabalho modifique o processador de comandos do seu terminal? {0}</target>
-      </trans-unit>
-      <trans-unit id="allow">
-        <source xml:lang="en">Allow</source>
-        <target state="translated">Permitir</target>
-      </trans-unit>
-      <trans-unit id="disallow">
-        <source xml:lang="en">Disallow</source>
-        <target state="translated">Não permitir</target>
-      </trans-unit>
-      <trans-unit id="useWslExtension.title">
-        <source xml:lang="en">The '{0}' extension is recommended for opening a terminal in WSL.</source>
-        <target state="translated">A extensão ' {0} ' é recomendada para abrir um terminal no WSL.</target>
-      </trans-unit>
-      <trans-unit id="install">
-        <source xml:lang="en">Install</source>
-        <target state="translated">Instalar</target>
       </trans-unit>
     </body>
   </file>
@@ -816,6 +780,38 @@ Padrão ignorada comandos: {0}</target>
       <trans-unit id="terminal.integrated.exitedWithCode">
         <source xml:lang="en">The terminal process terminated with exit code: {0}</source>
         <target state="translated">O processo terminal encerrado com código de saída: {0}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalConfigHelper" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="terminal.integrated.allowWorkspaceShell">
+        <source xml:lang="en">Do you allow this workspace to modify your terminal shell? {0}</source>
+        <target state="translated">Você permite que este espaço de trabalho modifique o processador de comandos do seu terminal? {0}</target>
+      </trans-unit>
+      <trans-unit id="allow">
+        <source xml:lang="en">Allow</source>
+        <target state="translated">Permitir</target>
+      </trans-unit>
+      <trans-unit id="disallow">
+        <source xml:lang="en">Disallow</source>
+        <target state="translated">Não permitir</target>
+      </trans-unit>
+      <trans-unit id="useWslExtension.title">
+        <source xml:lang="en">The '{0}' extension is recommended for opening a terminal in WSL.</source>
+        <target state="translated">A extensão ' {0} ' é recomendada para abrir um terminal no WSL.</target>
+      </trans-unit>
+      <trans-unit id="install">
+        <source xml:lang="en">Install</source>
+        <target state="translated">Instalar</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalTab" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="terminalFocus">
+        <source xml:lang="en">Terminal {0}</source>
+        <target state="translated">Terminal {0}</target>
       </trans-unit>
     </body>
   </file>

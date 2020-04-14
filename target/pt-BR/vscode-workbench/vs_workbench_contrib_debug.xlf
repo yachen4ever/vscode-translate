@@ -8,34 +8,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/debugQuickOpen" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="entryAriaLabel">
-        <source xml:lang="en">{0}, debug</source>
-        <target state="translated">depurar {0}</target>
-      </trans-unit>
-      <trans-unit id="debugAriaLabel">
-        <source xml:lang="en">Type a name of a launch configuration to run.</source>
-        <target state="translated">Digite um nome de uma configuração de lançamento para ser executado.</target>
-      </trans-unit>
-      <trans-unit id="addConfigTo">
-        <source xml:lang="en">Add Config ({0})...</source>
-        <target state="translated">Adicionar Configuração ({0})...</target>
-      </trans-unit>
-      <trans-unit id="addConfiguration">
-        <source xml:lang="en">Add Configuration...</source>
-        <target state="translated">Adicionar Configuração...</target>
-      </trans-unit>
-      <trans-unit id="noConfigurationsMatching">
-        <source xml:lang="en">No debug configurations matching</source>
-        <target state="translated">Não há configurações de depuração correspondentes</target>
-      </trans-unit>
-      <trans-unit id="noConfigurationsFound">
-        <source xml:lang="en">No debug configurations found. Please create a 'launch.json' file.</source>
-        <target state="translated">Configurações de depuração não encontradas. Por favor, crie um arquivo 'launch.json'.</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/browser/callStackEditorContribution" source-language="en" target-language="pt-BR" datatype="plaintext">
     <body>
       <trans-unit id="topStackFrameLineHighlight">
@@ -212,7 +184,7 @@
     <body>
       <trans-unit id="toggleDebugViewlet">
         <source xml:lang="en">Show Run and Debug</source>
-        <target state="new">Show Run and Debug</target>
+        <target state="translated">Mostrar Executar e Depurar</target>
       </trans-unit>
       <trans-unit id="run">
         <source xml:lang="en">Run</source>
@@ -272,17 +244,13 @@
         <source xml:lang="en">Inline Breakpoint</source>
         <target state="translated">Ponto de interrupção em linha</target>
       </trans-unit>
-      <trans-unit id="debugCommands">
-        <source xml:lang="en">Debug Configuration</source>
-        <target state="translated">Configuração do Depurador</target>
-      </trans-unit>
       <trans-unit id="startDebugPlaceholder">
         <source xml:lang="en">Type the name of a launch configuration to run.</source>
-        <target state="new">Type the name of a launch configuration to run.</target>
+        <target state="translated">Digite o nome de uma configuração de lançamento para executar.</target>
       </trans-unit>
-      <trans-unit id="startDebugHelp">
-        <source xml:lang="en">Start Debug Configurations</source>
-        <target state="new">Start Debug Configurations</target>
+      <trans-unit id="startDebuggingHelp">
+        <source xml:lang="en">Start Debugging</source>
+        <target state="translated">Iniciar Depuração</target>
       </trans-unit>
       <trans-unit id="debugConfigurationTitle">
         <source xml:lang="en">Debug</source>
@@ -420,7 +388,7 @@
       </trans-unit>
       <trans-unit id="miViewRun">
         <source xml:lang="en">&amp;&amp;Run</source>
-        <target state="new">&amp;&amp;Run</target>
+        <target state="translated">&amp;&amp;Executar</target>
         <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
       <trans-unit id="miToggleDebugConsole">
@@ -592,18 +560,22 @@
       <trans-unit id="openAFileWhichCanBeDebugged">
         <source xml:lang="en">[Open a file](command:{0}) which can be debugged or run.</source>
         <target state="new">[Open a file](command:{0}) which can be debugged or run.</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
       </trans-unit>
       <trans-unit id="runAndDebugAction">
         <source xml:lang="en">[Run and Debug{0}](command:{1})</source>
         <target state="new">[Run and Debug{0}](command:{1})</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
       </trans-unit>
       <trans-unit id="customizeRunAndDebug">
         <source xml:lang="en">To customize Run and Debug [create a launch.json file](command:{0}).</source>
-        <target state="new">To customize Run and Debug [create a launch.json file](command:{0}).</target>
+        <target state="translated">Para personalizar Executar e Depurar [crie um arquivo launch.json](comando:{0}).</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
       </trans-unit>
       <trans-unit id="customizeRunAndDebugOpenFolder">
         <source xml:lang="en">To customize Run and Debug, [open a folder](command:{0}) and create a launch.json file.</source>
         <target state="new">To customize Run and Debug, [open a folder](command:{0}) and create a launch.json file.</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
       </trans-unit>
     </body>
   </file>
@@ -628,6 +600,26 @@
       <trans-unit id="debugSession">
         <source xml:lang="en">Debug Session</source>
         <target state="translated">Sessão de Depuração</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/exceptionWidget" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="debugExceptionWidgetBorder">
+        <source xml:lang="en">Exception widget border color.</source>
+        <target state="translated">Cor da borda da ferramenta de exceção.</target>
+      </trans-unit>
+      <trans-unit id="debugExceptionWidgetBackground">
+        <source xml:lang="en">Exception widget background color.</source>
+        <target state="translated">Cor de fundo da ferramenta de exceção.</target>
+      </trans-unit>
+      <trans-unit id="exceptionThrownWithId">
+        <source xml:lang="en">Exception has occurred: {0}</source>
+        <target state="translated">Ocorreu exceção: {0}</target>
+      </trans-unit>
+      <trans-unit id="exceptionThrown">
+        <source xml:lang="en">Exception has occurred.</source>
+        <target state="translated">Ocorreu exceção.</target>
       </trans-unit>
     </body>
   </file>
@@ -680,6 +672,78 @@
       <trans-unit id="debugIcon.stepBackForeground">
         <source xml:lang="en">Debug toolbar icon for step back.</source>
         <target state="translated">Ícone da barra de ferramentas de depuração para um passo atrás.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/statusbarColorProvider" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="statusBarDebuggingBackground">
+        <source xml:lang="en">Status bar background color when a program is being debugged. The status bar is shown in the bottom of the window</source>
+        <target state="translated">Cor de fundo da barra de status quando um programa está sendo depurado. A barra de status é mostrada na parte inferior da janela</target>
+      </trans-unit>
+      <trans-unit id="statusBarDebuggingForeground">
+        <source xml:lang="en">Status bar foreground color when a program is being debugged. The status bar is shown in the bottom of the window</source>
+        <target state="translated">Cor de primeiro plano da barra de status quando um programa está sendo depurado. A barra de status é mostrada na parte inferior da janela</target>
+      </trans-unit>
+      <trans-unit id="statusBarDebuggingBorder">
+        <source xml:lang="en">Status bar border color separating to the sidebar and editor when a program is being debugged. The status bar is shown in the bottom of the window</source>
+        <target state="translated">Cor da borda da barra de status separando para a barra lateral e editor quando um programa está sendo depurado. A barra de status é mostrada na parte inferior da janela</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/common/debugContentProvider" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="unable">
+        <source xml:lang="en">Unable to resolve the resource without a debug session</source>
+        <target state="translated">Não é possível resolver o recurso sem uma sessão de depuração</target>
+      </trans-unit>
+      <trans-unit id="canNotResolveSourceWithError">
+        <source xml:lang="en">Could not load source '{0}': {1}.</source>
+        <target state="translated">Não foi possível carregar fonte '{0}': {1}.</target>
+      </trans-unit>
+      <trans-unit id="canNotResolveSource">
+        <source xml:lang="en">Could not load source '{0}'.</source>
+        <target state="translated">Não foi possível carregar a fonte '{0}'.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/debugStatus" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="status.debug">
+        <source xml:lang="en">Debug</source>
+        <target state="translated">depurar</target>
+      </trans-unit>
+      <trans-unit id="selectAndStartDebug">
+        <source xml:lang="en">Select and start debug configuration</source>
+        <target state="translated">Selecionar e Iniciar a Configuração do Depurador</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/debugQuickAccess" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="customizeLaunchConfig">
+        <source xml:lang="en">Configure Launch Configuration</source>
+        <target state="translated">Configurar Configuração de Lançamento</target>
+      </trans-unit>
+      <trans-unit id="addConfigTo">
+        <source xml:lang="en">Add Config ({0})...</source>
+        <target state="translated">Adicionar Configuração ({0})...</target>
+      </trans-unit>
+      <trans-unit id="addConfiguration">
+        <source xml:lang="en">Add Configuration...</source>
+        <target state="translated">Adicionar Configuração...</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/debugHover" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="treeAriaLabel">
+        <source xml:lang="en">Debug Hover</source>
+        <target state="translated">Depurar passando o mouse por cima</target>
+      </trans-unit>
+      <trans-unit id="variableAriaLabel">
+        <source xml:lang="en">{0} value {1}, variables, debug</source>
+        <target state="translated">{0} valor {1}, variáveis, depuração</target>
       </trans-unit>
     </body>
   </file>
@@ -763,102 +827,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/exceptionWidget" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="debugExceptionWidgetBorder">
-        <source xml:lang="en">Exception widget border color.</source>
-        <target state="translated">Cor da borda da ferramenta de exceção.</target>
-      </trans-unit>
-      <trans-unit id="debugExceptionWidgetBackground">
-        <source xml:lang="en">Exception widget background color.</source>
-        <target state="translated">Cor de fundo da ferramenta de exceção.</target>
-      </trans-unit>
-      <trans-unit id="exceptionThrownWithId">
-        <source xml:lang="en">Exception has occurred: {0}</source>
-        <target state="translated">Ocorreu exceção: {0}</target>
-      </trans-unit>
-      <trans-unit id="exceptionThrown">
-        <source xml:lang="en">Exception has occurred.</source>
-        <target state="translated">Ocorreu exceção.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/statusbarColorProvider" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="statusBarDebuggingBackground">
-        <source xml:lang="en">Status bar background color when a program is being debugged. The status bar is shown in the bottom of the window</source>
-        <target state="translated">Cor de fundo da barra de status quando um programa está sendo depurado. A barra de status é mostrada na parte inferior da janela</target>
-      </trans-unit>
-      <trans-unit id="statusBarDebuggingForeground">
-        <source xml:lang="en">Status bar foreground color when a program is being debugged. The status bar is shown in the bottom of the window</source>
-        <target state="translated">Cor de primeiro plano da barra de status quando um programa está sendo depurado. A barra de status é mostrada na parte inferior da janela</target>
-      </trans-unit>
-      <trans-unit id="statusBarDebuggingBorder">
-        <source xml:lang="en">Status bar border color separating to the sidebar and editor when a program is being debugged. The status bar is shown in the bottom of the window</source>
-        <target state="translated">Cor da borda da barra de status separando para a barra lateral e editor quando um programa está sendo depurado. A barra de status é mostrada na parte inferior da janela</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/debugStatus" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="status.debug">
-        <source xml:lang="en">Debug</source>
-        <target state="translated">depurar</target>
-      </trans-unit>
-      <trans-unit id="selectAndStartDebug">
-        <source xml:lang="en">Select and start debug configuration</source>
-        <target state="translated">Selecionar e Iniciar a Configuração do Depurador</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/common/debugContentProvider" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="unable">
-        <source xml:lang="en">Unable to resolve the resource without a debug session</source>
-        <target state="translated">Não é possível resolver o recurso sem uma sessão de depuração</target>
-      </trans-unit>
-      <trans-unit id="canNotResolveSourceWithError">
-        <source xml:lang="en">Could not load source '{0}': {1}.</source>
-        <target state="translated">Não foi possível carregar fonte '{0}': {1}.</target>
-      </trans-unit>
-      <trans-unit id="canNotResolveSource">
-        <source xml:lang="en">Could not load source '{0}'.</source>
-        <target state="translated">Não foi possível carregar a fonte '{0}'.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/debugQuickAccess" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="entryAriaLabel">
-        <source xml:lang="en">{0}, debug</source>
-        <target state="translated">depurar {0}</target>
-      </trans-unit>
-      <trans-unit id="customizeTask">
-        <source xml:lang="en">Configure Launch Configuration</source>
-        <target state="new">Configure Launch Configuration</target>
-      </trans-unit>
-      <trans-unit id="addConfigTo">
-        <source xml:lang="en">Add Config ({0})...</source>
-        <target state="translated">Adicionar Configuração ({0})...</target>
-      </trans-unit>
-      <trans-unit id="addConfiguration">
-        <source xml:lang="en">Add Configuration...</source>
-        <target state="translated">Adicionar Configuração...</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/debugHover" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="treeAriaLabel">
-        <source xml:lang="en">Debug Hover</source>
-        <target state="translated">Depurar passando o mouse por cima</target>
-      </trans-unit>
-      <trans-unit id="variableAriaLabel">
-        <source xml:lang="en">{0} value {1}, variables, debug</source>
-        <target state="translated">{0} valor {1}, variáveis, depuração</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/browser/debugEditorActions" source-language="en" target-language="pt-BR" datatype="plaintext">
     <body>
       <trans-unit id="toggleBreakpointAction">
@@ -896,42 +864,6 @@
       <trans-unit id="goToPreviousBreakpoint">
         <source xml:lang="en">Debug: Go To Previous Breakpoint</source>
         <target state="translated">Depuração: Ir para o Ponto de Interrupção Anterior</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/variablesView" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="variablesAriaTreeLabel">
-        <source xml:lang="en">Debug Variables</source>
-        <target state="translated">Variáveis de Depuração</target>
-      </trans-unit>
-      <trans-unit id="setValue">
-        <source xml:lang="en">Set Value</source>
-        <target state="translated">Definir Valor</target>
-      </trans-unit>
-      <trans-unit id="copyAsExpression">
-        <source xml:lang="en">Copy as Expression</source>
-        <target state="translated">Copiar como Expressão</target>
-      </trans-unit>
-      <trans-unit id="addToWatchExpressions">
-        <source xml:lang="en">Add to Watch</source>
-        <target state="translated">Adicionar ao monitoramento</target>
-      </trans-unit>
-      <trans-unit id="breakWhenValueChanges">
-        <source xml:lang="en">Break When Value Changes</source>
-        <target state="translated">Interromper quando o valor for alterado</target>
-      </trans-unit>
-      <trans-unit id="variableValueAriaLabel">
-        <source xml:lang="en">Type new variable value</source>
-        <target state="translated">Digite o novo valor da variável</target>
-      </trans-unit>
-      <trans-unit id="variableScopeAriaLabel">
-        <source xml:lang="en">Scope {0}, variables, debug</source>
-        <target state="translated">Escopo {0}, variáveis, depuração</target>
-      </trans-unit>
-      <trans-unit id="variableAriaLabel">
-        <source xml:lang="en">{0} value {1}, variables, debug</source>
-        <target state="translated">{0} valor {1}, variáveis, depuração</target>
       </trans-unit>
     </body>
   </file>
@@ -1021,6 +953,42 @@
       <trans-unit id="watchVariableAriaLabel">
         <source xml:lang="en">{0} value {1}, watch, debug</source>
         <target state="translated">{0} valor {1}, monitorar, depuração</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/variablesView" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="variablesAriaTreeLabel">
+        <source xml:lang="en">Debug Variables</source>
+        <target state="translated">Variáveis de Depuração</target>
+      </trans-unit>
+      <trans-unit id="setValue">
+        <source xml:lang="en">Set Value</source>
+        <target state="translated">Definir Valor</target>
+      </trans-unit>
+      <trans-unit id="copyAsExpression">
+        <source xml:lang="en">Copy as Expression</source>
+        <target state="translated">Copiar como Expressão</target>
+      </trans-unit>
+      <trans-unit id="addToWatchExpressions">
+        <source xml:lang="en">Add to Watch</source>
+        <target state="translated">Adicionar ao monitoramento</target>
+      </trans-unit>
+      <trans-unit id="breakWhenValueChanges">
+        <source xml:lang="en">Break When Value Changes</source>
+        <target state="translated">Interromper quando o valor for alterado</target>
+      </trans-unit>
+      <trans-unit id="variableValueAriaLabel">
+        <source xml:lang="en">Type new variable value</source>
+        <target state="translated">Digite o novo valor da variável</target>
+      </trans-unit>
+      <trans-unit id="variableScopeAriaLabel">
+        <source xml:lang="en">Scope {0}, variables, debug</source>
+        <target state="translated">Escopo {0}, variáveis, depuração</target>
+      </trans-unit>
+      <trans-unit id="variableAriaLabel">
+        <source xml:lang="en">{0} value {1}, variables, debug</source>
+        <target state="translated">{0} valor {1}, variáveis, depuração</target>
       </trans-unit>
     </body>
   </file>
@@ -1445,7 +1413,7 @@
       </trans-unit>
       <trans-unit id="preLaunchTaskTerminated">
         <source xml:lang="en">The preLaunchTask '{0}' terminated.</source>
-        <target state="new">The preLaunchTask '{0}' terminated.</target>
+        <target state="translated">O preLaunchTask '{0}' terminou.</target>
       </trans-unit>
       <trans-unit id="debugAnyway">
         <source xml:lang="en">Debug Anyway</source>
@@ -1515,6 +1483,10 @@
   </file>
   <file original="src/vs/workbench/contrib/debug/browser/debugSession" source-language="en" target-language="pt-BR" datatype="plaintext">
     <body>
+      <trans-unit id="noDebugAdapter">
+        <source xml:lang="en">No debug adapter, can not send '{0}'</source>
+        <target state="translated">Sem adaptador de depuração, não pode enviar '{0}'</target>
+      </trans-unit>
       <trans-unit id="sessionNotReadyForBreakpoints">
         <source xml:lang="en">Session is not ready for breakpoints</source>
         <target state="translated">A sessão não está pronta para pontos de interrupção</target>
@@ -1526,6 +1498,86 @@
       <trans-unit id="debuggingStopped">
         <source xml:lang="en">Debugging stopped.</source>
         <target state="translated">Depuração parada.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/common/debugger" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="cannot.find.da">
+        <source xml:lang="en">Cannot find debug adapter for type '{0}'.</source>
+        <target state="translated">Não consigo encontrar o adaptador de depuração para o tipo '{0}'.</target>
+      </trans-unit>
+      <trans-unit id="launch.config.comment1">
+        <source xml:lang="en">Use IntelliSense to learn about possible attributes.</source>
+        <target state="translated">Use o IntelliSense para aprender sobre possíveis atributos.</target>
+      </trans-unit>
+      <trans-unit id="launch.config.comment2">
+        <source xml:lang="en">Hover to view descriptions of existing attributes.</source>
+        <target state="translated">Passe o mouse para ver as descrições dos atributos existentes.</target>
+      </trans-unit>
+      <trans-unit id="launch.config.comment3">
+        <source xml:lang="en">For more information, visit: {0}</source>
+        <target state="translated">Para obter mais informações, visite: {0}</target>
+      </trans-unit>
+      <trans-unit id="debugType">
+        <source xml:lang="en">Type of configuration.</source>
+        <target state="translated">Tipo de configuração.</target>
+      </trans-unit>
+      <trans-unit id="debugTypeNotRecognised">
+        <source xml:lang="en">The debug type is not recognized. Make sure that you have a corresponding debug extension installed and that it is enabled.</source>
+        <target state="translated">O tipo de depuração não é reconhecido. Certifique-se de que você tem uma extensão de depuração correspondente instalada e que ela está habilitada.</target>
+      </trans-unit>
+      <trans-unit id="node2NotSupported">
+        <source xml:lang="en">"node2" is no longer supported, use "node" instead and set the "protocol" attribute to "inspector".</source>
+        <target state="translated">"node2" não é mais suportado, use "node" ao invés e defina o atributo "protocol" para "inspector".</target>
+      </trans-unit>
+      <trans-unit id="debugName">
+        <source xml:lang="en">Name of configuration; appears in the launch configuration dropdown menu.</source>
+        <target state="translated">Nome da configuração; aparece no menu suspenso de configuração de inicialização.</target>
+      </trans-unit>
+      <trans-unit id="debugRequest">
+        <source xml:lang="en">Request type of configuration. Can be "launch" or "attach".</source>
+        <target state="translated">Requer o tipo de configuração. Pode ser "launch" ou "attach".</target>
+      </trans-unit>
+      <trans-unit id="debugServer">
+        <source xml:lang="en">For debug extension development only: if a port is specified VS Code tries to connect to a debug adapter running in server mode</source>
+        <target state="translated">Somente para o desenvolvimento de extensão de depuração: se uma porta é especificada, o VS Code tenta se conectar a um adaptador de depuração executando em modo de servidor</target>
+      </trans-unit>
+      <trans-unit id="debugPrelaunchTask">
+        <source xml:lang="en">Task to run before debug session starts.</source>
+        <target state="translated">Tarefa para ser executada antes de começar a sessão de depuração.</target>
+      </trans-unit>
+      <trans-unit id="debugPostDebugTask">
+        <source xml:lang="en">Task to run after debug session ends.</source>
+        <target state="translated">Tarefa para ser executada após término da sessão de debug.</target>
+      </trans-unit>
+      <trans-unit id="debugWindowsConfiguration">
+        <source xml:lang="en">Windows specific launch configuration attributes.</source>
+        <target state="translated">Atributos de configuração de lançamento específicos do Windows.</target>
+      </trans-unit>
+      <trans-unit id="debugOSXConfiguration">
+        <source xml:lang="en">OS X specific launch configuration attributes.</source>
+        <target state="translated">Atributos de configuração de lançamento específicos do OS X.</target>
+      </trans-unit>
+      <trans-unit id="debugLinuxConfiguration">
+        <source xml:lang="en">Linux specific launch configuration attributes.</source>
+        <target state="translated">Atributos de configuração de lançamento específicos do Linux.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/rawDebugSession" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="noDebugAdapterStart">
+        <source xml:lang="en">No debug adapter, can not start debug session.</source>
+        <target state="translated">Sem adaptador de depuração, não é possível iniciar a sessão de depuração.</target>
+      </trans-unit>
+      <trans-unit id="noDebugAdapter">
+        <source xml:lang="en">No debug adapter found. Can not send '{0}'.</source>
+        <target state="translated">Nenhum adaptador de depuração encontrado. Não é possível enviar '{0}'.</target>
+      </trans-unit>
+      <trans-unit id="moreInfo">
+        <source xml:lang="en">More Info</source>
+        <target state="translated">Mais Informações</target>
       </trans-unit>
     </body>
   </file>
@@ -1661,83 +1713,7 @@
       </trans-unit>
       <trans-unit id="compoundPrelaunchTask">
         <source xml:lang="en">Task to run before any of the compound configurations start.</source>
-        <target state="new">Task to run before any of the compound configurations start.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/common/debugger" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="cannot.find.da">
-        <source xml:lang="en">Cannot find debug adapter for type '{0}'.</source>
-        <target state="translated">Não consigo encontrar o adaptador de depuração para o tipo '{0}'.</target>
-      </trans-unit>
-      <trans-unit id="launch.config.comment1">
-        <source xml:lang="en">Use IntelliSense to learn about possible attributes.</source>
-        <target state="translated">Use o IntelliSense para aprender sobre possíveis atributos.</target>
-      </trans-unit>
-      <trans-unit id="launch.config.comment2">
-        <source xml:lang="en">Hover to view descriptions of existing attributes.</source>
-        <target state="translated">Passe o mouse para ver as descrições dos atributos existentes.</target>
-      </trans-unit>
-      <trans-unit id="launch.config.comment3">
-        <source xml:lang="en">For more information, visit: {0}</source>
-        <target state="translated">Para obter mais informações, visite: {0}</target>
-      </trans-unit>
-      <trans-unit id="debugType">
-        <source xml:lang="en">Type of configuration.</source>
-        <target state="translated">Tipo de configuração.</target>
-      </trans-unit>
-      <trans-unit id="debugTypeNotRecognised">
-        <source xml:lang="en">The debug type is not recognized. Make sure that you have a corresponding debug extension installed and that it is enabled.</source>
-        <target state="translated">O tipo de depuração não é reconhecido. Certifique-se de que você tem uma extensão de depuração correspondente instalada e que ela está habilitada.</target>
-      </trans-unit>
-      <trans-unit id="node2NotSupported">
-        <source xml:lang="en">"node2" is no longer supported, use "node" instead and set the "protocol" attribute to "inspector".</source>
-        <target state="translated">"node2" não é mais suportado, use "node" ao invés e defina o atributo "protocol" para "inspector".</target>
-      </trans-unit>
-      <trans-unit id="debugName">
-        <source xml:lang="en">Name of configuration; appears in the launch configuration dropdown menu.</source>
-        <target state="translated">Nome da configuração; aparece no menu suspenso de configuração de inicialização.</target>
-      </trans-unit>
-      <trans-unit id="debugRequest">
-        <source xml:lang="en">Request type of configuration. Can be "launch" or "attach".</source>
-        <target state="translated">Requer o tipo de configuração. Pode ser "launch" ou "attach".</target>
-      </trans-unit>
-      <trans-unit id="debugServer">
-        <source xml:lang="en">For debug extension development only: if a port is specified VS Code tries to connect to a debug adapter running in server mode</source>
-        <target state="translated">Somente para o desenvolvimento de extensão de depuração: se uma porta é especificada, o VS Code tenta se conectar a um adaptador de depuração executando em modo de servidor</target>
-      </trans-unit>
-      <trans-unit id="debugPrelaunchTask">
-        <source xml:lang="en">Task to run before debug session starts.</source>
-        <target state="translated">Tarefa para ser executada antes de começar a sessão de depuração.</target>
-      </trans-unit>
-      <trans-unit id="debugPostDebugTask">
-        <source xml:lang="en">Task to run after debug session ends.</source>
-        <target state="translated">Tarefa para ser executada após término da sessão de debug.</target>
-      </trans-unit>
-      <trans-unit id="debugWindowsConfiguration">
-        <source xml:lang="en">Windows specific launch configuration attributes.</source>
-        <target state="translated">Atributos de configuração de lançamento específicos do Windows.</target>
-      </trans-unit>
-      <trans-unit id="debugOSXConfiguration">
-        <source xml:lang="en">OS X specific launch configuration attributes.</source>
-        <target state="translated">Atributos de configuração de lançamento específicos do OS X.</target>
-      </trans-unit>
-      <trans-unit id="debugLinuxConfiguration">
-        <source xml:lang="en">Linux specific launch configuration attributes.</source>
-        <target state="translated">Atributos de configuração de lançamento específicos do Linux.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/rawDebugSession" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="noDebugAdapter">
-        <source xml:lang="en">No debug adapter found. Can not send '{0}'.</source>
-        <target state="new">No debug adapter found. Can not send '{0}'.</target>
-      </trans-unit>
-      <trans-unit id="moreInfo">
-        <source xml:lang="en">More Info</source>
-        <target state="translated">Mais Informações</target>
+        <target state="translated">Tarefa a ser executada antes do início de qualquer configuração composta.</target>
       </trans-unit>
     </body>
   </file>

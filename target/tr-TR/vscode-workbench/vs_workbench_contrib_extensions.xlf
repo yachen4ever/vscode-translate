@@ -11,24 +11,11 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/extensions/browser/extensionsQuickOpen" source-language="en" target-language="tr" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/extensions/electron-browser/runtimeExtensionsInput" source-language="en" target-language="tr" datatype="plaintext">
     <body>
-      <trans-unit id="manage">
-        <source xml:lang="en">Press Enter to manage your extensions.</source>
-      </trans-unit>
-      <trans-unit id="notfound">
-        <source xml:lang="en">Extension '{0}' not found in the Marketplace.</source>
-      </trans-unit>
-      <trans-unit id="install">
-        <source xml:lang="en">Press Enter to install '{0}' from the Marketplace.</source>
-      </trans-unit>
-      <trans-unit id="searchFor">
-        <source xml:lang="en">Press Enter to search for '{0}' in the Marketplace.</source>
-        <target state="translated">Markette '{0}' için arama yapmak için Enter'a basın.</target>
-      </trans-unit>
-      <trans-unit id="noExtensionsToInstall">
-        <source xml:lang="en">Type an extension name</source>
-        <target state="translated">Bir eklenti adı girin</target>
+      <trans-unit id="extensionsInputName">
+        <source xml:lang="en">Running Extensions</source>
+        <target state="translated">Eklentiler Çalıştırılıyor</target>
       </trans-unit>
     </body>
   </file>
@@ -37,13 +24,6 @@
       <trans-unit id="openExtensionsFolder">
         <source xml:lang="en">Open Extensions Folder</source>
         <target state="translated">Eklentiler Klasörünü Aç</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/extensions/electron-browser/runtimeExtensionsInput" source-language="en" target-language="tr" datatype="plaintext">
-    <body>
-      <trans-unit id="extensionsInputName">
-        <source xml:lang="en">Running Extensions</source>
       </trans-unit>
     </body>
   </file>
@@ -67,15 +47,19 @@
       </trans-unit>
       <trans-unit id="restart1">
         <source xml:lang="en">Profile Extensions</source>
+        <target state="translated">Eklentileri Ayrımla</target>
       </trans-unit>
       <trans-unit id="restart2">
         <source xml:lang="en">In order to profile extensions a restart is required. Do you want to restart '{0}' now?</source>
+        <target state="translated">Eklentileri ayrımlamak için yeniden başlatma gereklidir. '{0}'u yeniden başlatmak istiyor musunuz?</target>
       </trans-unit>
       <trans-unit id="restart3">
         <source xml:lang="en">Restart</source>
+        <target state="translated">Yeniden Başlat</target>
       </trans-unit>
       <trans-unit id="cancel">
         <source xml:lang="en">Cancel</source>
+        <target state="translated">İptal</target>
       </trans-unit>
     </body>
   </file>
@@ -93,9 +77,11 @@
   </file>
   <file original="src/vs/workbench/contrib/extensions/browser/extensions.contribution" source-language="en" target-language="tr" datatype="plaintext">
     <body>
-      <trans-unit id="extensionsCommands">
+      <trans-unit id="manageExtensionsQuickAccessPlaceholder">
+        <source xml:lang="en">Press Enter to manage extensions.</source>
+      </trans-unit>
+      <trans-unit id="manageExtensionsHelp">
         <source xml:lang="en">Manage Extensions</source>
-        <target state="translated">Eklentileri Yönet</target>
       </trans-unit>
       <trans-unit id="extension">
         <source xml:lang="en">Extension</source>
@@ -103,6 +89,7 @@
       </trans-unit>
       <trans-unit id="extensions">
         <source xml:lang="en">Extensions</source>
+        <target state="translated">Eklentiler</target>
       </trans-unit>
       <trans-unit id="view">
         <source xml:lang="en">View</source>
@@ -147,6 +134,7 @@
       </trans-unit>
       <trans-unit id="notFound">
         <source xml:lang="en">Extension '{0}' not found.</source>
+        <target state="translated">'{0}' eklentisi bulunamadı.</target>
       </trans-unit>
       <trans-unit id="workbench.extensions.uninstallExtension.description">
         <source xml:lang="en">Uninstall the given extension</source>
@@ -233,9 +221,11 @@
         <source xml:lang="en">Sync This Extension</source>
         <target state="new">Sync This Extension</target>
       </trans-unit>
-      <trans-unit id="galleryExtensionsCommands">
-        <source xml:lang="en">Install Gallery Extensions</source>
-        <target state="translated">Galeri Eklentileri Yükle</target>
+      <trans-unit id="installExtensionQuickAccessPlaceholder">
+        <source xml:lang="en">Type the name of an extension to install or search.</source>
+      </trans-unit>
+      <trans-unit id="installExtensionQuickAccessHelp">
+        <source xml:lang="en">Install or Search Extensions</source>
       </trans-unit>
     </body>
   </file>
@@ -296,15 +286,19 @@
       </trans-unit>
       <trans-unit id="restart1">
         <source xml:lang="en">Profile Extensions</source>
+        <target state="translated">Eklentileri Ayrımla</target>
       </trans-unit>
       <trans-unit id="restart2">
         <source xml:lang="en">In order to profile extensions a restart is required. Do you want to restart '{0}' now?</source>
+        <target state="translated">Eklentileri ayrımlamak için yeniden başlatma gereklidir. '{0}'u yeniden başlatmak istiyor musunuz?</target>
       </trans-unit>
       <trans-unit id="restart3">
         <source xml:lang="en">Restart</source>
+        <target state="translated">Yeniden Başlat</target>
       </trans-unit>
       <trans-unit id="cancel">
         <source xml:lang="en">Cancel</source>
+        <target state="translated">İptal</target>
       </trans-unit>
       <trans-unit id="debugExtensionHost.launch.name">
         <source xml:lang="en">Attach Extension Host</source>
@@ -371,6 +365,7 @@
       </trans-unit>
       <trans-unit id="installed">
         <source xml:lang="en">Installed</source>
+        <target state="translated">Yüklü</target>
       </trans-unit>
       <trans-unit id="outdated">
         <source xml:lang="en">Outdated</source>
@@ -409,6 +404,11 @@
       </trans-unit>
       <trans-unit id="suggestProxyError">
         <source xml:lang="en">Marketplace returned 'ECONNREFUSED'. Please check the 'http.proxy' setting.</source>
+        <target state="translated">Market, 'ECONNREFUSED' döndürdü. Lütfen 'http.proxy' ayarını kontrol edin.</target>
+      </trans-unit>
+      <trans-unit id="open user settings">
+        <source xml:lang="en">Open User Settings</source>
+        <target state="translated">Kullanıcı Ayarlarını Aç</target>
       </trans-unit>
       <trans-unit id="outdatedExtensions">
         <source xml:lang="en">{0} Outdated Extensions</source>
@@ -440,6 +440,7 @@
       </trans-unit>
       <trans-unit id="ok">
         <source xml:lang="en">OK</source>
+        <target state="translated">Tamam</target>
       </trans-unit>
       <trans-unit id="attach.msg">
         <source xml:lang="en">This is a reminder to make sure that you have not forgotten to attach '{0}' to the issue you have just created.</source>
@@ -452,28 +453,6 @@
       <trans-unit id="attach.msg2">
         <source xml:lang="en">This is a reminder to make sure that you have not forgotten to attach '{0}' to an existing performance issue.</source>
         <target state="new">This is a reminder to make sure that you have not forgotten to attach '{0}' to an existing performance issue.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/extensions/common/extensionsUtils" source-language="en" target-language="tr" datatype="plaintext">
-    <body>
-      <trans-unit id="disableOtherKeymapsConfirmation">
-        <source xml:lang="en">Disable other keymaps ({0}) to avoid conflicts between keybindings?</source>
-        <target state="translated">Tuş bağlamlarında çakışmalardan kaçınmak için diğer tuş haritaları ({0}) devre dışı bırakılsın mı?</target>
-      </trans-unit>
-      <trans-unit id="yes">
-        <source xml:lang="en">Yes</source>
-        <target state="translated">Evet</target>
-      </trans-unit>
-      <trans-unit id="no">
-        <source xml:lang="en">No</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/extensions/common/extensionsInput" source-language="en" target-language="tr" datatype="plaintext">
-    <body>
-      <trans-unit id="extensionsInputName">
-        <source xml:lang="en">Extension: {0}</source>
       </trans-unit>
     </body>
   </file>
@@ -497,11 +476,37 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/extensions/browser/extensionsActivationProgress" source-language="en" target-language="tr" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/extensions/browser/remoteExtensionsInstaller" source-language="en" target-language="tr" datatype="plaintext">
     <body>
-      <trans-unit id="activation">
-        <source xml:lang="en">Activating Extensions...</source>
-        <target state="new">Activating Extensions...</target>
+      <trans-unit id="remote">
+        <source xml:lang="en">Remote</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/extensions/common/extensionsInput" source-language="en" target-language="tr" datatype="plaintext">
+    <body>
+      <trans-unit id="extensionsInputName">
+        <source xml:lang="en">Extension: {0}</source>
+        <target state="translated">Eklenti: {0}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/extensions/browser/extensionsQuickAccess" source-language="en" target-language="tr" datatype="plaintext">
+    <body>
+      <trans-unit id="type">
+        <source xml:lang="en">Type an extension name to install or search.</source>
+      </trans-unit>
+      <trans-unit id="searchFor">
+        <source xml:lang="en">Press Enter to search for extension '{0}'.</source>
+        <target state="new">Press Enter to search for extension '{0}'.</target>
+      </trans-unit>
+      <trans-unit id="install">
+        <source xml:lang="en">Press Enter to install extension '{0}'.</source>
+        <target state="new">Press Enter to install extension '{0}'.</target>
+      </trans-unit>
+      <trans-unit id="manage">
+        <source xml:lang="en">Press Enter to manage your extensions.</source>
+        <target state="translated">Eklentilerinizi yönetmek için Enter'a basın.</target>
       </trans-unit>
     </body>
   </file>
@@ -509,6 +514,7 @@
     <body>
       <trans-unit id="extensions">
         <source xml:lang="en">Extensions</source>
+        <target state="translated">Eklentiler</target>
       </trans-unit>
       <trans-unit id="auto install missing deps">
         <source xml:lang="en">Install Missing Dependencies</source>
@@ -518,16 +524,34 @@
       </trans-unit>
       <trans-unit id="reload">
         <source xml:lang="en">Reload Window</source>
+        <target state="translated">Pencereyi Yeniden Yükle</target>
       </trans-unit>
       <trans-unit id="no missing deps">
         <source xml:lang="en">There are no missing dependencies to install.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/extensions/browser/remoteExtensionsInstaller" source-language="en" target-language="tr" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/extensions/browser/extensionsActivationProgress" source-language="en" target-language="tr" datatype="plaintext">
     <body>
-      <trans-unit id="remote">
-        <source xml:lang="en">Remote</source>
+      <trans-unit id="activation">
+        <source xml:lang="en">Activating Extensions...</source>
+        <target state="new">Activating Extensions...</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/extensions/common/extensionsUtils" source-language="en" target-language="tr" datatype="plaintext">
+    <body>
+      <trans-unit id="disableOtherKeymapsConfirmation">
+        <source xml:lang="en">Disable other keymaps ({0}) to avoid conflicts between keybindings?</source>
+        <target state="translated">Tuş bağlamlarında çakışmalardan kaçınmak için diğer tuş haritaları ({0}) devre dışı bırakılsın mı?</target>
+      </trans-unit>
+      <trans-unit id="yes">
+        <source xml:lang="en">Yes</source>
+        <target state="translated">Evet</target>
+      </trans-unit>
+      <trans-unit id="no">
+        <source xml:lang="en">No</source>
+        <target state="translated">Hayır</target>
       </trans-unit>
     </body>
   </file>
@@ -539,6 +563,7 @@
       </trans-unit>
       <trans-unit id="malicious">
         <source xml:lang="en">This extension is reported to be problematic.</source>
+        <target state="translated">Bu eklentinin sorunlu olduğu bildirildi.</target>
       </trans-unit>
       <trans-unit id="uninstallingExtension">
         <source xml:lang="en">Uninstalling extension....</source>
@@ -616,14 +641,6 @@
         <source xml:lang="en">Extension details, rendered from the extension's 'README.md' file</source>
         <target state="translated">Eklenti detayları, eklentinin 'README.md' dosyası işlenerek oluşturulur</target>
       </trans-unit>
-      <trans-unit id="extensionPack">
-        <source xml:lang="en">Extension Pack</source>
-        <target state="translated">Eklenti paketi</target>
-      </trans-unit>
-      <trans-unit id="extensionsPack">
-        <source xml:lang="en">Set of extensions that can be installed together</source>
-        <target state="new">Set of extensions that can be installed together</target>
-      </trans-unit>
       <trans-unit id="contributions">
         <source xml:lang="en">Feature Contributions</source>
         <target state="translated">Eklemeler</target>
@@ -655,6 +672,9 @@
       <trans-unit id="noReadme">
         <source xml:lang="en">No README available.</source>
         <target state="translated">README dosyası yok.</target>
+      </trans-unit>
+      <trans-unit id="extension pack">
+        <source xml:lang="en">Extension Pack ({0})</source>
       </trans-unit>
       <trans-unit id="noChangelog">
         <source xml:lang="en">No Changelog available.</source>
@@ -870,27 +890,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/extensions/browser/extensionsViews" source-language="en" target-language="tr" datatype="plaintext">
-    <body>
-      <trans-unit id="extensions">
-        <source xml:lang="en">Extensions</source>
-      </trans-unit>
-      <trans-unit id="galleryError">
-        <source xml:lang="en">We cannot connect to the Extensions Marketplace at this time, please try again later.</source>
-        <target state="new">We cannot connect to the Extensions Marketplace at this time, please try again later.</target>
-      </trans-unit>
-      <trans-unit id="error">
-        <source xml:lang="en">Error while loading extensions. {0}</source>
-      </trans-unit>
-      <trans-unit id="no extensions found">
-        <source xml:lang="en">No extensions found.</source>
-        <target state="translated">Eklenti yok.</target>
-      </trans-unit>
-      <trans-unit id="suggestProxyError">
-        <source xml:lang="en">Marketplace returned 'ECONNREFUSED'. Please check the 'http.proxy' setting.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/extensions/browser/extensionTipsService" source-language="en" target-language="tr" datatype="plaintext">
     <body>
       <trans-unit id="neverShowAgain">
@@ -935,6 +934,7 @@
       </trans-unit>
       <trans-unit id="install">
         <source xml:lang="en">Install</source>
+        <target state="translated">Yükle</target>
       </trans-unit>
       <trans-unit id="ignoreExtensionRecommendations">
         <source xml:lang="en">Do you want to ignore all extension recommendations?</source>
@@ -946,6 +946,7 @@
       </trans-unit>
       <trans-unit id="no">
         <source xml:lang="en">No</source>
+        <target state="translated">Hayır</target>
       </trans-unit>
       <trans-unit id="reallyRecommended2">
         <source xml:lang="en">The '{0}' extension is recommended for this file type.</source>
@@ -965,10 +966,39 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/extensions/browser/extensionsViews" source-language="en" target-language="tr" datatype="plaintext">
+    <body>
+      <trans-unit id="extensions">
+        <source xml:lang="en">Extensions</source>
+        <target state="translated">Eklentiler</target>
+      </trans-unit>
+      <trans-unit id="galleryError">
+        <source xml:lang="en">We cannot connect to the Extensions Marketplace at this time, please try again later.</source>
+        <target state="new">We cannot connect to the Extensions Marketplace at this time, please try again later.</target>
+      </trans-unit>
+      <trans-unit id="error">
+        <source xml:lang="en">Error while loading extensions. {0}</source>
+        <target state="new">Error while loading extensions. {0}</target>
+      </trans-unit>
+      <trans-unit id="no extensions found">
+        <source xml:lang="en">No extensions found.</source>
+        <target state="translated">Eklenti yok.</target>
+      </trans-unit>
+      <trans-unit id="suggestProxyError">
+        <source xml:lang="en">Marketplace returned 'ECONNREFUSED'. Please check the 'http.proxy' setting.</source>
+        <target state="translated">Market, 'ECONNREFUSED' döndürdü. Lütfen 'http.proxy' ayarını kontrol edin.</target>
+      </trans-unit>
+      <trans-unit id="open user settings">
+        <source xml:lang="en">Open User Settings</source>
+        <target state="translated">Kullanıcı Ayarlarını Aç</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/extensions/browser/extensionsViewer" source-language="en" target-language="tr" datatype="plaintext">
     <body>
       <trans-unit id="error">
         <source xml:lang="en">Error</source>
+        <target state="translated">Hata</target>
       </trans-unit>
       <trans-unit id="Unknown Extension">
         <source xml:lang="en">Unknown Extension:</source>
@@ -1052,6 +1082,7 @@
       </trans-unit>
       <trans-unit id="install">
         <source xml:lang="en">Install</source>
+        <target state="translated">Yükle</target>
       </trans-unit>
       <trans-unit id="installing">
         <source xml:lang="en">Installing</source>
@@ -1117,6 +1148,7 @@
       </trans-unit>
       <trans-unit id="manage">
         <source xml:lang="en">Manage</source>
+        <target state="new">Manage</target>
       </trans-unit>
       <trans-unit id="ManageExtensionAction.uninstallingTooltip">
         <source xml:lang="en">Uninstalling</source>
@@ -1168,6 +1200,7 @@
       </trans-unit>
       <trans-unit id="ok">
         <source xml:lang="en">OK</source>
+        <target state="translated">Tamam</target>
       </trans-unit>
       <trans-unit id="singleUpdateAvailable">
         <source xml:lang="en">An extension update is available.</source>
@@ -1243,6 +1276,14 @@
         <source xml:lang="en">Select File Icon Theme</source>
         <target state="translated">Dosya Simgesi Teması Seç</target>
       </trans-unit>
+      <trans-unit id="product icon theme">
+        <source xml:lang="en">Set Product Icon Theme</source>
+        <target state="new">Set Product Icon Theme</target>
+      </trans-unit>
+      <trans-unit id="select product icon theme">
+        <source xml:lang="en">Select Product Icon Theme</source>
+        <target state="new">Select Product Icon Theme</target>
+      </trans-unit>
       <trans-unit id="toggleExtensionsViewlet">
         <source xml:lang="en">Show Extensions</source>
         <target state="translated">Eklentileri Göster</target>
@@ -1313,6 +1354,7 @@
       </trans-unit>
       <trans-unit id="extensions">
         <source xml:lang="en">Extensions</source>
+        <target state="translated">Eklentiler</target>
       </trans-unit>
       <trans-unit id="OpenExtensionsFile.failed">
         <source xml:lang="en">Unable to create 'extensions.json' file inside the '.vscode' folder ({0}).</source>
@@ -1396,6 +1438,7 @@
       </trans-unit>
       <trans-unit id="installed">
         <source xml:lang="en">Installed</source>
+        <target state="translated">Yüklü</target>
       </trans-unit>
       <trans-unit id="uninstalled">
         <source xml:lang="en">Uninstalled</source>
@@ -1415,6 +1458,11 @@
       </trans-unit>
       <trans-unit id="malicious">
         <source xml:lang="en">Malicious</source>
+        <target state="new">Malicious</target>
+      </trans-unit>
+      <trans-unit id="syncingore.label">
+        <source xml:lang="en">This extension is ignored during sync.</source>
+        <target state="new">This extension is ignored during sync.</target>
       </trans-unit>
       <trans-unit id="extension enabled on remote">
         <source xml:lang="en">Extension is enabled on '{0}'</source>
@@ -1551,6 +1599,7 @@
       </trans-unit>
       <trans-unit id="reload">
         <source xml:lang="en">Reload Window</source>
+        <target state="translated">Pencereyi Yeniden Yükle</target>
       </trans-unit>
       <trans-unit id="extensionButtonProminentBackground">
         <source xml:lang="en">Button background color for actions extension that stand out (e.g. install button).</source>

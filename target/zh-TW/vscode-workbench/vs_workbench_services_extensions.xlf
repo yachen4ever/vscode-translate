@@ -34,17 +34,13 @@
         <source xml:lang="en">Restart Extension Host</source>
         <target state="translated">重新啟動延伸主機</target>
       </trans-unit>
-      <trans-unit id="resolveAuthorityFailure">
-        <source xml:lang="en">Resolving the authority `{0}` failed</source>
-        <target state="translated">無法解析授權單位 `{0}`。</target>
-      </trans-unit>
       <trans-unit id="getEnvironmentFailure">
         <source xml:lang="en">Could not fetch remote environment</source>
         <target state="translated">無法擷取遠端環境</target>
       </trans-unit>
       <trans-unit id="enableResolver">
         <source xml:lang="en">Extension '{0}' is required to open the remote window.
-Ok to enable?</source>
+OK to enable?</source>
         <target state="translated">需要擴充 '{0}' 才能開啟遠端視窗。
 確定要啟用嗎?</target>
       </trans-unit>
@@ -54,9 +50,9 @@ Ok to enable?</source>
       </trans-unit>
       <trans-unit id="installResolver">
         <source xml:lang="en">Extension '{0}' is required to open the remote window.
-Ok to install?</source>
-        <target state="translated">需要擴充 '{0}' 才能開啟遠端視窗。
-確定要安裝嗎?</target>
+nOK to install?</source>
+        <target state="translated">需要有延伸模組 '{0}'，才可開啟遠端視窗。
+n[確定] 要安裝?</target>
       </trans-unit>
       <trans-unit id="install">
         <source xml:lang="en">Install and Reload</source>
@@ -67,8 +63,12 @@ Ok to install?</source>
         <target state="translated">在市集上找不到 `{0}`</target>
       </trans-unit>
       <trans-unit id="restartExtensionHost">
-        <source xml:lang="en">Developer: Restart Extension Host</source>
-        <target state="translated">開發人員: 重新啟動延伸模組主機</target>
+        <source xml:lang="en">Restart Extension Host</source>
+        <target state="translated">重新啟動延伸主機</target>
+      </trans-unit>
+      <trans-unit id="developer">
+        <source xml:lang="en">Developer</source>
+        <target state="translated">開發人員</target>
       </trans-unit>
     </body>
   </file>
@@ -77,6 +77,62 @@ Ok to install?</source>
       <trans-unit id="incompatible">
         <source xml:lang="en">Unable to install extension '{0}' as it is not compatible with VS Code '{1}'.</source>
         <target state="translated">因為延伸模組為 ‘{1}’ 的延伸模組 ‘{0}’ 與 VS Code 不相容，所以無法安裝。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/browser/extensionUrlHandler" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="confirmUrl">
+        <source xml:lang="en">Allow an extension to open this URI?</source>
+        <target state="translated">要允許延伸模組開啟此 URI 嗎?</target>
+      </trans-unit>
+      <trans-unit id="rememberConfirmUrl">
+        <source xml:lang="en">Don't ask again for this extension.</source>
+        <target state="translated">不要再要求此延伸模組。</target>
+      </trans-unit>
+      <trans-unit id="open">
+        <source xml:lang="en">&amp;&amp;Open</source>
+        <target state="translated">開啟(&amp;&amp;O)</target>
+      </trans-unit>
+      <trans-unit id="reloadAndHandle">
+        <source xml:lang="en">Extension '{0}' is not loaded. Would you like to reload the window to load the extension and open the URL?</source>
+        <target state="translated">未載入延伸模組 '{0}'。要重新載入視窗以載入延伸模組並開啟 URL 嗎?</target>
+      </trans-unit>
+      <trans-unit id="reloadAndOpen">
+        <source xml:lang="en">&amp;&amp;Reload Window and Open</source>
+        <target state="translated">重新載入視窗並開啟(&amp;&amp;R)</target>
+      </trans-unit>
+      <trans-unit id="enableAndHandle">
+        <source xml:lang="en">Extension '{0}' is disabled. Would you like to enable the extension and reload the window to open the URL?</source>
+        <target state="translated">延伸模組 '{0}' 已停用。要啟用延伸模組並重新載入視窗以開啟 URL 嗎?</target>
+      </trans-unit>
+      <trans-unit id="enableAndReload">
+        <source xml:lang="en">&amp;&amp;Enable and Open</source>
+        <target state="translated">啟用並開啟(&amp;&amp;E)</target>
+      </trans-unit>
+      <trans-unit id="installAndHandle">
+        <source xml:lang="en">Extension '{0}' is not installed. Would you like to install the extension and reload the window to open this URL?</source>
+        <target state="translated">延伸模組 '{0}' 未安裝。要安裝延伸模組並重新載入視窗以開啟 URL 嗎?</target>
+      </trans-unit>
+      <trans-unit id="install">
+        <source xml:lang="en">&amp;&amp;Install</source>
+        <target state="translated">安裝(&amp;&amp;I)</target>
+      </trans-unit>
+      <trans-unit id="Installing">
+        <source xml:lang="en">Installing Extension '{0}'...</source>
+        <target state="translated">正在安裝延伸模組 '{0}'...</target>
+      </trans-unit>
+      <trans-unit id="reload">
+        <source xml:lang="en">Would you like to reload the window and open the URL '{0}'?</source>
+        <target state="translated">要重新載入視窗並開啟 URL '{0}' 嗎?</target>
+      </trans-unit>
+      <trans-unit id="Reload">
+        <source xml:lang="en">Reload Window and Open</source>
+        <target state="translated">重新載入視窗並開啟</target>
+      </trans-unit>
+      <trans-unit id="manage">
+        <source xml:lang="en">Manage Authorized Extension URIs...</source>
+        <target state="translated">管理授權的延伸模組 URI...</target>
       </trans-unit>
     </body>
   </file>
@@ -186,6 +242,10 @@ Ok to install?</source>
         <source xml:lang="en">An activation event emitted whenever a system-wide Uri directed towards this extension is open.</source>
         <target state="translated">每當指向此延伸模組的全系統 URI 開啟時，都會發出啟動事件。</target>
       </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onCustomEditor">
+        <source xml:lang="en">An activation event emitted whenever the specified custom editor becomes visible.</source>
+        <target state="translated">只要出現指定的自訂編輯器，就會發出啟用事件。</target>
+      </trans-unit>
       <trans-unit id="vscode.extension.activationEvents.star">
         <source xml:lang="en">An activation event emitted on VS Code startup. To ensure a great end user experience, please use this activation event in your extension only when no other activation events combination works in your use-case.</source>
         <target state="translated">當VS Code啟動時激發該事件，為了確保最好的使用者體驗，當您的延伸模組沒有其他組合作業時,請激活此事件。</target>
@@ -260,67 +320,23 @@ Ok to install?</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/services/extensions/browser/extensionUrlHandler" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="confirmUrl">
-        <source xml:lang="en">Allow an extension to open this URI?</source>
-        <target state="translated">要允許延伸模組開啟此 URI 嗎?</target>
-      </trans-unit>
-      <trans-unit id="rememberConfirmUrl">
-        <source xml:lang="en">Don't ask again for this extension.</source>
-        <target state="translated">不要再要求此延伸模組。</target>
-      </trans-unit>
-      <trans-unit id="open">
-        <source xml:lang="en">&amp;&amp;Open</source>
-        <target state="translated">開啟(&amp;&amp;O)</target>
-      </trans-unit>
-      <trans-unit id="reloadAndHandle">
-        <source xml:lang="en">Extension '{0}' is not loaded. Would you like to reload the window to load the extension and open the URL?</source>
-        <target state="translated">未載入延伸模組 '{0}'。要重新載入視窗以載入延伸模組並開啟 URL 嗎?</target>
-      </trans-unit>
-      <trans-unit id="reloadAndOpen">
-        <source xml:lang="en">&amp;&amp;Reload Window and Open</source>
-        <target state="translated">重新載入視窗並開啟(&amp;&amp;R)</target>
-      </trans-unit>
-      <trans-unit id="enableAndHandle">
-        <source xml:lang="en">Extension '{0}' is disabled. Would you like to enable the extension and reload the window to open the URL?</source>
-        <target state="translated">延伸模組 '{0}' 已停用。要啟用延伸模組並重新載入視窗以開啟 URL 嗎?</target>
-      </trans-unit>
-      <trans-unit id="enableAndReload">
-        <source xml:lang="en">&amp;&amp;Enable and Open</source>
-        <target state="translated">啟用並開啟(&amp;&amp;E)</target>
-      </trans-unit>
-      <trans-unit id="installAndHandle">
-        <source xml:lang="en">Extension '{0}' is not installed. Would you like to install the extension and reload the window to open this URL?</source>
-        <target state="translated">延伸模組 '{0}' 未安裝。要安裝延伸模組並重新載入視窗以開啟 URL 嗎?</target>
-      </trans-unit>
-      <trans-unit id="install">
-        <source xml:lang="en">&amp;&amp;Install</source>
-        <target state="translated">安裝(&amp;&amp;I)</target>
-      </trans-unit>
-      <trans-unit id="Installing">
-        <source xml:lang="en">Installing Extension '{0}'...</source>
-        <target state="translated">正在安裝延伸模組 '{0}'...</target>
-      </trans-unit>
-      <trans-unit id="reload">
-        <source xml:lang="en">Would you like to reload the window and open the URL '{0}'?</source>
-        <target state="translated">要重新載入視窗並開啟 URL '{0}' 嗎?</target>
-      </trans-unit>
-      <trans-unit id="Reload">
-        <source xml:lang="en">Reload Window and Open</source>
-        <target state="translated">重新載入視窗並開啟</target>
-      </trans-unit>
-      <trans-unit id="manage">
-        <source xml:lang="en">Manage Authorized Extension URIs...</source>
-        <target state="translated">管理授權的延伸模組 URI...</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/services/extensions/common/remoteExtensionHostClient" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
       <trans-unit id="remote extension host Log">
         <source xml:lang="en">Remote Extension Host</source>
         <target state="translated">遠端延伸主機</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/common/extensionHostProcessManager" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="measureExtHostLatency">
+        <source xml:lang="en">Measure Extension Host Latency</source>
+        <target state="translated">測量延伸主機延遲</target>
+      </trans-unit>
+      <trans-unit id="developer">
+        <source xml:lang="en">Developer</source>
+        <target state="translated">開發人員</target>
       </trans-unit>
     </body>
   </file>
@@ -341,18 +357,6 @@ Ok to install?</source>
       <trans-unit id="reloadWindow">
         <source xml:lang="en">Reload Window</source>
         <target state="translated">重新載入視窗</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/services/extensions/common/extensionHostProcessManager" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="measureExtHostLatency">
-        <source xml:lang="en">Measure Extension Host Latency</source>
-        <target state="translated">測量延伸主機延遲</target>
-      </trans-unit>
-      <trans-unit id="developer">
-        <source xml:lang="en">Developer</source>
-        <target state="translated">開發人員</target>
       </trans-unit>
     </body>
   </file>

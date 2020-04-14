@@ -32,30 +32,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/terminal/browser/terminalQuickOpen" source-language="en" target-language="ja" datatype="plaintext">
-    <body>
-      <trans-unit id="termEntryAriaLabel">
-        <source xml:lang="en">{0}, terminal picker</source>
-        <target state="translated">{0}、ターミナル ピッカー</target>
-      </trans-unit>
-      <trans-unit id="termCreateEntryAriaLabel">
-        <source xml:lang="en">{0}, create new terminal</source>
-        <target state="translated">{0} 、新しいターミナルの作成</target>
-      </trans-unit>
-      <trans-unit id="workbench.action.terminal.newplus">
-        <source xml:lang="en">Create New Integrated Terminal</source>
-        <target state="translated">新しい統合ターミナルの作成</target>
-      </trans-unit>
-      <trans-unit id="noTerminalsMatching">
-        <source xml:lang="en">No terminals matching</source>
-        <target state="translated">一致するターミナルがありません</target>
-      </trans-unit>
-      <trans-unit id="noTerminalsFound">
-        <source xml:lang="en">No terminals open</source>
-        <target state="translated">開いているターミナルがありません</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/terminal/common/terminal" source-language="en" target-language="ja" datatype="plaintext">
     <body>
       <trans-unit id="terminalCategory">
@@ -86,7 +62,11 @@
   </file>
   <file original="src/vs/workbench/contrib/terminal/browser/terminal.contribution" source-language="en" target-language="ja" datatype="plaintext">
     <body>
-      <trans-unit id="quickOpen.terminal">
+      <trans-unit id="tasksQuickAccessPlaceholder">
+        <source xml:lang="en">Type the name of a terminal to open.</source>
+        <target state="translated">開く端末名を入力します。</target>
+      </trans-unit>
+      <trans-unit id="tasksQuickAccessHelp">
         <source xml:lang="en">Show All Opened Terminals</source>
         <target state="translated">開いているすべてのターミナルを表示</target>
       </trans-unit>
@@ -281,6 +261,10 @@ Default Skipped Commands:
         <source xml:lang="en">Whether or not to allow chord keybindings in the terminal. Note that when this is true and the keystroke results in a chord it will bypass `#terminal.integrated.commandsToSkipShell#`, setting this to false is particularly useful when you want ctrl+k to go to your shell (not VS Code).</source>
         <target state="translated">ターミナルでコード キーバインドを許可するかどうか。この設定が true で、キーボード操作によってコードが返される場合、`#terminal.integrated.commandsToSkipShell#` をバイパスします。この設定を false にすると、Ctrl+K によってシェルに移動するのに役立ちます (VS Code ではありません)。</target>
       </trans-unit>
+      <trans-unit id="terminal.integrated.allowMnemonics">
+        <source xml:lang="en">Whether to allow menubar mnemonics (eg. alt+f) to trigger the open the menubar. Note that this will cause all alt keystrokes will skip the shell when true. This does nothing on macOS.</source>
+        <target state="translated">メニューバーのニーモニック (Alt+F など) によってメニューバーを開くことを許可するかどうか。true の場合、すべての Alt キーストロークにより、シェルがスキップされます。macOS では効果がありません。</target>
+      </trans-unit>
       <trans-unit id="terminal.integrated.inheritEnv">
         <source xml:lang="en">Whether new shells should inherit their environment from VS Code. This is not supported on Windows.</source>
         <target state="translated">新しいシェルが VS Code から環境継承する必要があるかどうか。これは Windows 環境ではサポートされていません。</target>
@@ -412,6 +396,22 @@ Default Skipped Commands:
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalsQuickAccess" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="renameTerminal">
+        <source xml:lang="en">Rename Terminal</source>
+        <target state="translated">端末の名前変更</target>
+      </trans-unit>
+      <trans-unit id="killTerminal">
+        <source xml:lang="en">Kill Terminal Instance</source>
+        <target state="translated">ターミナル インスタンスの停止</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.newplus">
+        <source xml:lang="en">Create New Integrated Terminal</source>
+        <target state="translated">新しい統合ターミナルの作成</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/terminal/browser/terminalService" source-language="en" target-language="ja" datatype="plaintext">
     <body>
       <trans-unit id="workbench.action.terminal.allowWorkspaceShell">
@@ -453,10 +453,6 @@ Default Skipped Commands:
       <trans-unit id="workbench.action.terminal.kill.short">
         <source xml:lang="en">Kill Terminal</source>
         <target state="translated">ターミナルの強制終了</target>
-      </trans-unit>
-      <trans-unit id="workbench.action.terminal.quickKill">
-        <source xml:lang="en">Kill Terminal Instance</source>
-        <target state="translated">ターミナル インスタンスの停止</target>
       </trans-unit>
       <trans-unit id="workbench.action.terminal.copySelection">
         <source xml:lang="en">Copy Selection</source>
@@ -674,7 +670,7 @@ Default Skipped Commands:
         <source xml:lang="en">Hide Find Widget</source>
         <target state="translated">検索ウィジェットを非表示にする</target>
       </trans-unit>
-      <trans-unit id="quickOpenTerm">
+      <trans-unit id="quickAccessTerminal">
         <source xml:lang="en">Switch Active Terminal</source>
         <target state="translated">アクティブなターミナルの切り替え</target>
       </trans-unit>
@@ -725,38 +721,6 @@ Default Skipped Commands:
       <trans-unit id="workbench.action.terminal.findPrevious">
         <source xml:lang="en">Find previous</source>
         <target state="translated">前を検索</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/terminal/browser/terminalTab" source-language="en" target-language="ja" datatype="plaintext">
-    <body>
-      <trans-unit id="terminalFocus">
-        <source xml:lang="en">Terminal {0}</source>
-        <target state="translated">ターミナル {0}</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/terminal/browser/terminalConfigHelper" source-language="en" target-language="ja" datatype="plaintext">
-    <body>
-      <trans-unit id="terminal.integrated.allowWorkspaceShell">
-        <source xml:lang="en">Do you allow this workspace to modify your terminal shell? {0}</source>
-        <target state="translated">このワークスペースによるターミナル シェルの変更を許可しますか? {0}</target>
-      </trans-unit>
-      <trans-unit id="allow">
-        <source xml:lang="en">Allow</source>
-        <target state="translated">許可</target>
-      </trans-unit>
-      <trans-unit id="disallow">
-        <source xml:lang="en">Disallow</source>
-        <target state="translated">許可しない</target>
-      </trans-unit>
-      <trans-unit id="useWslExtension.title">
-        <source xml:lang="en">The '{0}' extension is recommended for opening a terminal in WSL.</source>
-        <target state="translated">WSL のターミナルを開くには、'{0}' 拡張機能をお勧めします。</target>
-      </trans-unit>
-      <trans-unit id="install">
-        <source xml:lang="en">Install</source>
-        <target state="translated">インストール</target>
       </trans-unit>
     </body>
   </file>
@@ -817,6 +781,38 @@ Default Skipped Commands:
       <trans-unit id="terminal.integrated.exitedWithCode">
         <source xml:lang="en">The terminal process terminated with exit code: {0}</source>
         <target state="translated">ターミナルの処理が終了しました (終了コード: {0})</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalConfigHelper" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="terminal.integrated.allowWorkspaceShell">
+        <source xml:lang="en">Do you allow this workspace to modify your terminal shell? {0}</source>
+        <target state="translated">このワークスペースによるターミナル シェルの変更を許可しますか? {0}</target>
+      </trans-unit>
+      <trans-unit id="allow">
+        <source xml:lang="en">Allow</source>
+        <target state="translated">許可</target>
+      </trans-unit>
+      <trans-unit id="disallow">
+        <source xml:lang="en">Disallow</source>
+        <target state="translated">許可しない</target>
+      </trans-unit>
+      <trans-unit id="useWslExtension.title">
+        <source xml:lang="en">The '{0}' extension is recommended for opening a terminal in WSL.</source>
+        <target state="translated">WSL のターミナルを開くには、'{0}' 拡張機能をお勧めします。</target>
+      </trans-unit>
+      <trans-unit id="install">
+        <source xml:lang="en">Install</source>
+        <target state="translated">インストール</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalTab" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="terminalFocus">
+        <source xml:lang="en">Terminal {0}</source>
+        <target state="translated">ターミナル {0}</target>
       </trans-unit>
     </body>
   </file>

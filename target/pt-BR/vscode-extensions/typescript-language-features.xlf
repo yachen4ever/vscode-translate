@@ -295,6 +295,26 @@ Consulte a [documentação do TypeScript] (https://code.visualstudio.com/docs/ty
         <source xml:lang="en">Based on the `baseUrl` configured in your `jsconfig.json` / `tsconfig.json`.</source>
         <target state="translated">Baseado na 'baseUrl' configurada em seu 'jsconfig.json' / 'tsconfig.json'.</target>
       </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifierEnding">
+        <source xml:lang="en">Preferred path ending for auto imports.</source>
+        <target state="new">Preferred path ending for auto imports.</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifierEnding.auto">
+        <source xml:lang="en">Use project settings to select a default.</source>
+        <target state="translated">Use as configurações do projeto para selecionar um padrão.</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifierEnding.minimal">
+        <source xml:lang="en">Shorten `./component/index.js` to `./component`.</source>
+        <target state="new">Shorten `./component/index.js` to `./component`.</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifierEnding.index">
+        <source xml:lang="en">Shorten `./component/index.js` to `./component/index`</source>
+        <target state="translated">Encurtar `./component/index.js` para `./component/index`</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifierEnding.js">
+        <source xml:lang="en">Do not shorten path endings; include the `.js` extension.</source>
+        <target state="translated">Não encurtar as terminações de caminho; incluir a extensão `.js`.</target>
+      </trans-unit>
       <trans-unit id="typescript.updateImportsOnFileMove.enabled">
         <source xml:lang="en">Enable/disable automatic updating of import paths when you rename or move a file in VS Code. Requires using TypeScript 2.9 or newer in the workspace.</source>
         <target state="translated">Ativar/desativar a atualização automática de caminhos de importação quando você renomear ou move um arquivo no VS Code. Requer o uso de TypeScript 2.9 ou mais recente na área de trabalho.</target>
@@ -333,7 +353,7 @@ Consulte a [documentação do TypeScript] (https://code.visualstudio.com/docs/ty
       </trans-unit>
       <trans-unit id="configuration.tsserver.watchOptions.watchFile">
         <source xml:lang="en">Strategy for how individual files are watched.</source>
-        <target state="new">Strategy for how individual files are watched.</target>
+        <target state="translated">Estratégia de como arquivos individuais são observados.</target>
       </trans-unit>
       <trans-unit id="configuration.tsserver.watchOptions.watchFile.fixedPollingInterval">
         <source xml:lang="en">Check every file for changes several times a second at a fixed interval.</source>
@@ -357,7 +377,7 @@ Consulte a [documentação do TypeScript] (https://code.visualstudio.com/docs/ty
       </trans-unit>
       <trans-unit id="configuration.tsserver.watchOptions.watchDirectory">
         <source xml:lang="en">Strategy for how entire directory trees are watched under systems that lack recursive file-watching functionality.</source>
-        <target state="new">Strategy for how entire directory trees are watched under systems that lack recursive file-watching functionality.</target>
+        <target state="translated">Estratégia de como toda as árvores de diretórios são observadas em sistemas que não possuem funcionalidade de observação de arquivos recursiva.</target>
       </trans-unit>
       <trans-unit id="configuration.tsserver.watchOptions.watchDirectory.fixedPollingInterval">
         <source xml:lang="en">Check every directory for changes several times a second at a fixed interval.</source>
@@ -365,15 +385,15 @@ Consulte a [documentação do TypeScript] (https://code.visualstudio.com/docs/ty
       </trans-unit>
       <trans-unit id="configuration.tsserver.watchOptions.watchDirectory.dynamicPriorityPolling">
         <source xml:lang="en">Use a dynamic queue where less-frequently modified directories will be checked less often.</source>
-        <target state="new">Use a dynamic queue where less-frequently modified directories will be checked less often.</target>
+        <target state="translated">Use uma fila dinâmica onde diretórios modificados com menos frequência serão verificados com menos frequência.</target>
       </trans-unit>
       <trans-unit id="configuration.tsserver.watchOptions.watchDirectory.useFsEvents">
         <source xml:lang="en">Attempt to use the operating system/file system’s native events for directory changes.</source>
-        <target state="new">Attempt to use the operating system/file system’s native events for directory changes.</target>
+        <target state="translated">Tente usar os eventos nativos do sistema operacional/sistema de arquivos para mudanças no diretório.</target>
       </trans-unit>
       <trans-unit id="configuration.tsserver.watchOptions.fallbackPolling">
         <source xml:lang="en">When using file system events, this option specifies the polling strategy that gets used when the system runs out of native file watchers and/or doesn’t support native file watchers.</source>
-        <target state="new">When using file system events, this option specifies the polling strategy that gets used when the system runs out of native file watchers and/or doesn’t support native file watchers.</target>
+        <target state="translated">Ao usar eventos do sistema de arquivos, esta opção especifica a estratégia de votação que é usada quando o sistema fica sem observadores de arquivos nativos e/ou não suporta observadores nativos de arquivos.</target>
       </trans-unit>
       <trans-unit id="configuration.tsserver.watchOptions.fallbackPolling.fixedPollingInterval">
         <source xml:lang="en">Check every file for changes several times a second at a fixed interval.</source>
@@ -381,7 +401,7 @@ Consulte a [documentação do TypeScript] (https://code.visualstudio.com/docs/ty
       </trans-unit>
       <trans-unit id="configuration.tsserver.watchOptions.fallbackPolling.priorityPollingInterval">
         <source xml:lang="en">Check every file for changes several times a second, but use heuristics to check certain types of files less frequently than others.</source>
-        <target state="new">Check every file for changes several times a second, but use heuristics to check certain types of files less frequently than others.</target>
+        <target state="translated">Checar todos os arquivos por alterações várias vezes por segundo, mas usando heurísticas para verificar certos tipos de arquivos com menos frequência do que outros.</target>
       </trans-unit>
       <trans-unit id="configuration.tsserver.watchOptions.fallbackPolling.dynamicPriorityPolling ">
         <source xml:lang="en">Use a dynamic queue where less-frequently modified files will be checked less often.</source>
@@ -405,7 +425,7 @@ Consulte a [documentação do TypeScript] (https://code.visualstudio.com/docs/ty
       </trans-unit>
       <trans-unit id="codeActions.refactor.extract.function.title">
         <source xml:lang="en">Extract function</source>
-        <target state="new">Extract function</target>
+        <target state="translated">Extrair função</target>
       </trans-unit>
       <trans-unit id="codeActions.refactor.extract.function.description">
         <source xml:lang="en">Extract expression to method or function.</source>
@@ -485,16 +505,24 @@ Consulte a [documentação do TypeScript] (https://code.visualstudio.com/docs/ty
       </trans-unit>
     </body>
   </file>
-  <file original="extensions/typescript-language-features/dist/features/baseCodeLensProvider" source-language="en" target-language="pt-BR" datatype="plaintext">
+  <file original="extensions/typescript-language-features/dist/utils/tsconfig" source-language="en" target-language="pt-BR" datatype="plaintext">
     <body>
-      <trans-unit id="referenceErrorLabel">
-        <source xml:lang="en">Could not determine references</source>
-        <target state="translated">Não foi possível determinar as referências</target>
+      <trans-unit id="typescript.configureTsconfigQuickPick">
+        <source xml:lang="en">Configure tsconfig.json</source>
+        <target state="translated">Configurar tsconfig.json</target>
       </trans-unit>
-    </body>
-  </file>
-  <file original="extensions/typescript-language-features/dist/commands/goToProjectConfiguration" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
+      <trans-unit id="typescript.configureJsconfigQuickPick">
+        <source xml:lang="en">Configure jsconfig.json</source>
+        <target state="translated">Configurar jsconfig.json</target>
+      </trans-unit>
+      <trans-unit id="typescript.noTypeScriptProjectConfig">
+        <source xml:lang="en">File is not part of a TypeScript project. Click [here]({0}) to learn more.</source>
+        <target state="translated">O arquivo não é parte do projeto TypeScript. Clique [aqui]({0}) para mais informações.</target>
+      </trans-unit>
+      <trans-unit id="typescript.noJavaScriptProjectConfig">
+        <source xml:lang="en">File is not part of a JavaScript project Click [here]({0}) to learn more.</source>
+        <target state="translated">O arquivo não é parte do projeto JavaScript. Clique [aqui]({0}) para mais informações.</target>
+      </trans-unit>
       <trans-unit id="typescript.projectConfigNoWorkspace">
         <source xml:lang="en">Please open a folder in VS Code to use a TypeScript or JavaScript project</source>
         <target state="translated">Favor abrir uma pasta no VS Code para usar um projeto TypeScript ou JavaScript</target>
@@ -507,21 +535,13 @@ Consulte a [documentação do TypeScript] (https://code.visualstudio.com/docs/ty
         <source xml:lang="en">Could not determine TypeScript or JavaScript project</source>
         <target state="translated">Não foi possível determinar o projeto TypeScript ou JavaScript</target>
       </trans-unit>
-      <trans-unit id="typescript.noTypeScriptProjectConfig">
-        <source xml:lang="en">File is not part of a TypeScript project. Click [here]({0}) to learn more.</source>
-        <target state="translated">O arquivo não é parte do projeto TypeScript. Clique [aqui]({0}) para mais informações.</target>
-      </trans-unit>
-      <trans-unit id="typescript.noJavaScriptProjectConfig">
-        <source xml:lang="en">File is not part of a JavaScript project Click [here]({0}) to learn more.</source>
-        <target state="translated">O arquivo não é parte do projeto JavaScript. Clique [aqui]({0}) para mais informações.</target>
-      </trans-unit>
-      <trans-unit id="typescript.configureTsconfigQuickPick">
-        <source xml:lang="en">Configure tsconfig.json</source>
-        <target state="translated">Configurar tsconfig.json</target>
-      </trans-unit>
-      <trans-unit id="typescript.configureJsconfigQuickPick">
-        <source xml:lang="en">Configure jsconfig.json</source>
-        <target state="translated">Configurar jsconfig.json</target>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/baseCodeLensProvider" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="referenceErrorLabel">
+        <source xml:lang="en">Could not determine references</source>
+        <target state="translated">Não foi possível determinar as referências</target>
       </trans-unit>
     </body>
   </file>
@@ -560,6 +580,10 @@ Consulte a [documentação do TypeScript] (https://code.visualstudio.com/docs/ty
       <trans-unit id="ts-ignore">
         <source xml:lang="en">Suppresses @ts-check errors on the next line of a file.</source>
         <target state="translated">Suprime erros de @ts-check na próxima linha de um arquivo.</target>
+      </trans-unit>
+      <trans-unit id="ts-expect-error">
+        <source xml:lang="en">Suppresses @ts-check errors on the next line of a file, expecting at least one to exist.</source>
+        <target state="translated">Suprime erros de verificação de @ts-check na próxima linha de um arquivo, esperando que pelo menos um exista.</target>
       </trans-unit>
     </body>
   </file>
@@ -631,7 +655,7 @@ Consulte a [documentação do TypeScript] (https://code.visualstudio.com/docs/ty
       </trans-unit>
       <trans-unit id="refactor.documentation.title">
         <source xml:lang="en">Learn more about JS/TS refactorings</source>
-        <target state="new">Learn more about JS/TS refactorings</target>
+        <target state="translated">Saiba mais sobre refatoramentos JS/TS</target>
       </trans-unit>
     </body>
   </file>
@@ -681,17 +705,21 @@ Consulte a [documentação do TypeScript] (https://code.visualstudio.com/docs/ty
         <source xml:lang="en">Could not open TS Server log file</source>
         <target state="translated">Não foi possível abrir o arquivo de log do TS Server</target>
       </trans-unit>
-      <trans-unit id="serverDiedAfterStart">
-        <source xml:lang="en">The TypeScript language service died 5 times right after it got started. The service will not be restarted.</source>
-        <target state="translated">O serviço de linguagem TypeScript morreu 5 vezes depois que começou. O serviço não será reiniciado.</target>
-      </trans-unit>
       <trans-unit id="serverDiedReportIssue">
         <source xml:lang="en">Report Issue</source>
         <target state="translated">Informar problema</target>
       </trans-unit>
+      <trans-unit id="serverDiedAfterStart">
+        <source xml:lang="en">The TypeScript language service died 5 times right after it got started. The service will not be restarted.</source>
+        <target state="translated">O serviço de linguagem TypeScript morreu 5 vezes depois que começou. O serviço não será reiniciado.</target>
+      </trans-unit>
       <trans-unit id="serverDied">
         <source xml:lang="en">The TypeScript language service died unexpectedly 5 times in the last 5 Minutes.</source>
         <target state="translated">O serviço TypeScript morreu inesperadamente 5 vezes nos últimos 5 minutos.</target>
+      </trans-unit>
+      <trans-unit id="serverDiedOnce">
+        <source xml:lang="en">The TypeScript language service died unexpectedly.</source>
+        <target state="translated">O serviço de linguagem TypeScript morreu inesperadamente.</target>
       </trans-unit>
       <trans-unit id="serverLoading.progress">
         <source xml:lang="en">Initializing JS/TS language features</source>
@@ -707,8 +735,12 @@ Consulte a [documentação do TypeScript] (https://code.visualstudio.com/docs/ty
       </trans-unit>
     </body>
   </file>
-  <file original="extensions/typescript-language-features/dist/utils/versionPicker" source-language="en" target-language="pt-BR" datatype="plaintext">
+  <file original="extensions/typescript-language-features/dist/utils/versionManager" source-language="en" target-language="pt-BR" datatype="plaintext">
     <body>
+      <trans-unit id="selectTsVersion">
+        <source xml:lang="en">Select the TypeScript version used for JavaScript and TypeScript language features</source>
+        <target state="translated">Selecione a versão do TypeScript usada para os recursos de linguagem JavaScript e TypeScript</target>
+      </trans-unit>
       <trans-unit id="useVSCodeVersionOption">
         <source xml:lang="en">Use VS Code's Version</source>
         <target state="translated">Use a versão do VS Code</target>
@@ -718,12 +750,8 @@ Consulte a [documentação do TypeScript] (https://code.visualstudio.com/docs/ty
         <target state="translated">Use a versão de área de trabalho</target>
       </trans-unit>
       <trans-unit id="learnMore">
-        <source xml:lang="en">Learn More</source>
-        <target state="translated">Saiba mais</target>
-      </trans-unit>
-      <trans-unit id="selectTsVersion">
-        <source xml:lang="en">Select the TypeScript version used for JavaScript and TypeScript language features</source>
-        <target state="translated">Selecione a versão do TypeScript usada para os recursos de linguagem JavaScript e TypeScript</target>
+        <source xml:lang="en">Learn more about managing TypeScript versions</source>
+        <target state="translated">Saiba mais sobre o gerenciamento de versões do TypeScript</target>
       </trans-unit>
     </body>
   </file>
@@ -757,9 +785,33 @@ Consulte a [documentação do TypeScript] (https://code.visualstudio.com/docs/ty
   </file>
   <file original="extensions/typescript-language-features/dist/utils/versionStatus" source-language="en" target-language="pt-BR" datatype="plaintext">
     <body>
-      <trans-unit id="typescriptVersion">
-        <source xml:lang="en">TypeScript: Version</source>
-        <target state="translated">TypeScript: versão</target>
+      <trans-unit id="projectQuickPick.placeholder">
+        <source xml:lang="en">TypeScript Project Info</source>
+        <target state="translated">Informações do projeto TypeScript</target>
+      </trans-unit>
+      <trans-unit id="projectQuickPick.version.label">
+        <source xml:lang="en">Select TypeScript Version...</source>
+        <target state="translated">Selecione a Versão do TypeScript...</target>
+      </trans-unit>
+      <trans-unit id="projectQuickPick.project.create">
+        <source xml:lang="en">Create tsconfig</source>
+        <target state="translated">Criar tsconfig</target>
+      </trans-unit>
+      <trans-unit id="projectQuickPick.project.create.description">
+        <source xml:lang="en">This file is currently not part of a tsconfig/jsconfig project</source>
+        <target state="translated">Este arquivo não faz parte de um projeto tsconfig/jsconfig</target>
+      </trans-unit>
+      <trans-unit id="projectQuickPick.version.goProjectConfig">
+        <source xml:lang="en">Open tsconfig</source>
+        <target state="translated">Abrir Tsconfig</target>
+      </trans-unit>
+      <trans-unit id="projectQuickPick.help">
+        <source xml:lang="en">TypeScript help</source>
+        <target state="translated">Ajuda do TypeScript</target>
+      </trans-unit>
+      <trans-unit id="projectInfo.name">
+        <source xml:lang="en">TypeScript: Project Info</source>
+        <target state="translated">TypeScript: Informações do Projeto</target>
       </trans-unit>
     </body>
   </file>
@@ -803,7 +855,7 @@ Consulte a [documentação do TypeScript] (https://code.visualstudio.com/docs/ty
       </trans-unit>
     </body>
   </file>
-  <file original="extensions/typescript-language-features/dist/utils/projectStatus" source-language="en" target-language="pt-BR" datatype="plaintext">
+  <file original="extensions/typescript-language-features/dist/utils/largeProjectStatus" source-language="en" target-language="pt-BR" datatype="plaintext">
     <body>
       <trans-unit id="statusExclude">
         <source xml:lang="en">TypeScript: Configure Excludes</source>

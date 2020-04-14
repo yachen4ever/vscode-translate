@@ -1,17 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file original="src/vs/workbench/contrib/search/browser/openAnythingHandler" source-language="en" target-language="hu" datatype="plaintext">
-    <body>
-      <trans-unit id="fileAndTypeResults">
-        <source xml:lang="en">file and symbol results</source>
-        <target state="translated">fájl- és szimbólumkeresés eredménye</target>
-      </trans-unit>
-      <trans-unit id="fileResults">
-        <source xml:lang="en">file results</source>
-        <target state="translated">fájlkeresés eredménye</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/search/browser/search.contribution" source-language="en" target-language="hu" datatype="plaintext">
     <body>
       <trans-unit id="search">
@@ -76,11 +64,19 @@
         <target state="new">Replace &amp;&amp;in Files</target>
         <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
-      <trans-unit id="openAnythingHandlerDescription">
+      <trans-unit id="anythingQuickAccessPlaceholder">
+        <source xml:lang="en">Search files by name (append {0} to go to line or {1} to go to symbol)</source>
+        <target state="new">Search files by name (append {0} to go to line or {1} to go to symbol)</target>
+      </trans-unit>
+      <trans-unit id="anythingQuickAccess">
         <source xml:lang="en">Go to File</source>
         <target state="translated">Ugrás fájlhoz</target>
       </trans-unit>
-      <trans-unit id="openSymbolDescriptionNormal">
+      <trans-unit id="symbolsQuickAccessPlaceholder">
+        <source xml:lang="en">Type the name of a symbol to open.</source>
+        <target state="new">Type the name of a symbol to open.</target>
+      </trans-unit>
+      <trans-unit id="symbolsQuickAccess">
         <source xml:lang="en">Go to Symbol in Workspace</source>
         <target state="translated">Ugrás szimbólumhoz a munkaterületen</target>
       </trans-unit>
@@ -89,8 +85,8 @@
         <target state="translated">Keresés</target>
       </trans-unit>
       <trans-unit id="exclude">
-        <source xml:lang="en">Configure glob patterns for excluding files and folders in searches. Inherits all glob patterns from the `#files.exclude#` setting. Read more about glob patterns [here](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).</source>
-        <target state="translated">Globális minták konfigurálása fájlok és mappák keresésből való kizárásához. Örökli az összes globális mintát a `#files.exclude#` beállításból. A globális mintákról [itt](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options) talál további információkat.</target>
+        <source xml:lang="en">Configure glob patterns for excluding files and folders in fulltext searches and quick open. Inherits all glob patterns from the `#files.exclude#` setting. Read more about glob patterns [here](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).</source>
+        <target state="new">Configure glob patterns for excluding files and folders in fulltext searches and quick open. Inherits all glob patterns from the `#files.exclude#` setting. Read more about glob patterns [here](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).</target>
       </trans-unit>
       <trans-unit id="exclude.boolean">
         <source xml:lang="en">The glob pattern to match file paths against. Set to true or false to enable or disable the pattern.</source>
@@ -128,6 +124,18 @@
         <source xml:lang="en">Whether to include results from recently opened files in the file results for Quick Open.</source>
         <target state="translated">Meghatározza, hogy a fájlok gyors megnyitásánál megjelenjenek-e a legutóbb megnyitott fájlok.</target>
       </trans-unit>
+      <trans-unit id="filterSortOrder.default">
+        <source xml:lang="en">History entries are sorted by relevance based on the filter value used. More relevant entries appear first.</source>
+        <target state="new">History entries are sorted by relevance based on the filter value used. More relevant entries appear first.</target>
+      </trans-unit>
+      <trans-unit id="filterSortOrder.recency">
+        <source xml:lang="en">History entries are sorted by recency. More recently opened entries appear first.</source>
+        <target state="new">History entries are sorted by recency. More recently opened entries appear first.</target>
+      </trans-unit>
+      <trans-unit id="filterSortOrder">
+        <source xml:lang="en">Controls sorting order of editor history in quick open when filtering.</source>
+        <target state="new">Controls sorting order of editor history in quick open when filtering.</target>
+      </trans-unit>
       <trans-unit id="search.followSymlinks">
         <source xml:lang="en">Controls whether to follow symlinks while searching.</source>
         <target state="translated">Meghatározza, hogy keresés során követve legyenek-e a szimbolikus linkek.</target>
@@ -147,6 +155,10 @@
       <trans-unit id="search.location.deprecationMessage">
         <source xml:lang="en">This setting is deprecated. Please use the search view's context menu instead.</source>
         <target state="new">This setting is deprecated. Please use the search view's context menu instead.</target>
+      </trans-unit>
+      <trans-unit id="search.collapseResults.auto">
+        <source xml:lang="en">Files with less than 10 results are expanded. Others are collapsed.</source>
+        <target state="new">Files with less than 10 results are expanded. Others are collapsed.</target>
       </trans-unit>
       <trans-unit id="search.collapseAllResults">
         <source xml:lang="en">Controls whether the search results will be collapsed or expanded.</source>
@@ -244,35 +256,23 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/search/browser/openSymbolHandler" source-language="en" target-language="hu" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/search/browser/symbolsQuickAccess" source-language="en" target-language="hu" datatype="plaintext">
     <body>
-      <trans-unit id="entryAriaLabel">
-        <source xml:lang="en">{0}, symbols picker</source>
-        <target state="translated">{0}, szimbólumválasztó</target>
+      <trans-unit id="openToSide">
+        <source xml:lang="en">Open to the Side</source>
+        <target state="translated">Megnyitás oldalt</target>
       </trans-unit>
-      <trans-unit id="symbols">
-        <source xml:lang="en">symbol results</source>
-        <target state="translated">szimbólumkeresési eredmények</target>
-      </trans-unit>
-      <trans-unit id="noSymbolsMatching">
-        <source xml:lang="en">No symbols matching</source>
-        <target state="translated">Nincs illeszkedő szimbólum</target>
-      </trans-unit>
-      <trans-unit id="noSymbolsWithoutInput">
-        <source xml:lang="en">Type to search for symbols</source>
-        <target state="translated">Adja meg a keresett szimbólumot</target>
+      <trans-unit id="openToBottom">
+        <source xml:lang="en">Open to the Bottom</source>
+        <target state="new">Open to the Bottom</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/search/browser/openFileHandler" source-language="en" target-language="hu" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/search/common/queryBuilder" source-language="en" target-language="hu" datatype="plaintext">
     <body>
-      <trans-unit id="entryAriaLabel">
-        <source xml:lang="en">{0}, file picker</source>
-        <target state="translated">{0}, fájlválasztó</target>
-      </trans-unit>
-      <trans-unit id="searchResults">
-        <source xml:lang="en">search results</source>
-        <target state="translated">keresési eredmények</target>
+      <trans-unit id="search.noWorkspaceWithName">
+        <source xml:lang="en">No folder in workspace with name: {0}</source>
+        <target state="translated">Nincs {0} nevű mappa a munkaterületen</target>
       </trans-unit>
     </body>
   </file>
@@ -281,10 +281,6 @@
       <trans-unit id="searchCanceled">
         <source xml:lang="en">Search was canceled before any results could be found - </source>
         <target state="translated">A keresés meg lett szakítva, mielőtt eredményt hozott volna –</target>
-      </trans-unit>
-      <trans-unit id="searchView">
-        <source xml:lang="en">Search</source>
-        <target state="translated">Keresés</target>
       </trans-unit>
       <trans-unit id="moreSearch">
         <source xml:lang="en">Toggle Search Details</source>
@@ -464,14 +460,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/search/common/queryBuilder" source-language="en" target-language="hu" datatype="plaintext">
-    <body>
-      <trans-unit id="search.noWorkspaceWithName">
-        <source xml:lang="en">No folder in workspace with name: {0}</source>
-        <target state="translated">Nincs {0} nevű mappa a munkaterületen</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/search/browser/searchWidget" source-language="en" target-language="hu" datatype="plaintext">
     <body>
       <trans-unit id="search.action.replaceAll.disabled.label">
@@ -568,6 +556,14 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/search/browser/replaceService" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="fileReplaceChanges">
+        <source xml:lang="en">{0} ↔ {1} (Replace Preview)</source>
+        <target state="translated">{0} ↔ {1} (csere előnézete)</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/search/browser/patternInputWidget" source-language="en" target-language="hu" datatype="plaintext">
     <body>
       <trans-unit id="defaultLabel">
@@ -580,11 +576,35 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/search/browser/replaceService" source-language="en" target-language="hu" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/search/browser/anythingQuickAccess" source-language="en" target-language="hu" datatype="plaintext">
     <body>
-      <trans-unit id="fileReplaceChanges">
-        <source xml:lang="en">{0} ↔ {1} (Replace Preview)</source>
-        <target state="translated">{0} ↔ {1} (csere előnézete)</target>
+      <trans-unit id="recentlyOpenedSeparator">
+        <source xml:lang="en">recently opened</source>
+        <target state="translated">legutóbb megnyitott</target>
+      </trans-unit>
+      <trans-unit id="fileAndSymbolResultsSeparator">
+        <source xml:lang="en">file and symbol results</source>
+        <target state="translated">fájl- és szimbólumkeresés eredménye</target>
+      </trans-unit>
+      <trans-unit id="fileResultsSeparator">
+        <source xml:lang="en">file results</source>
+        <target state="translated">fájlkeresés eredménye</target>
+      </trans-unit>
+      <trans-unit id="filePickAriaLabelDirty">
+        <source xml:lang="en">{0}, dirty</source>
+        <target state="new">{0}, dirty</target>
+      </trans-unit>
+      <trans-unit id="openToSide">
+        <source xml:lang="en">Open to the Side</source>
+        <target state="translated">Megnyitás oldalt</target>
+      </trans-unit>
+      <trans-unit id="openToBottom">
+        <source xml:lang="en">Open to the Bottom</source>
+        <target state="new">Open to the Bottom</target>
+      </trans-unit>
+      <trans-unit id="closeEditor">
+        <source xml:lang="en">Remove from Recently Opened</source>
+        <target state="translated">Eltávolítás a legutóbb megnyitottak listájáról</target>
       </trans-unit>
     </body>
   </file>

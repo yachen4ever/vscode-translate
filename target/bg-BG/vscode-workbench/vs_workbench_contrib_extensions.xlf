@@ -8,39 +8,6 @@
       </trans-unit>
       <trans-unit id="developer">
         <source xml:lang="en">Developer</source>
-        <target state="translated">Разработчик</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/extensions/browser/extensionsQuickOpen" source-language="en" target-language="bg" datatype="plaintext">
-    <body>
-      <trans-unit id="manage">
-        <source xml:lang="en">Press Enter to manage your extensions.</source>
-        <target state="translated">Натиснете „Enter“ за достъп до управлението на разширенията.</target>
-      </trans-unit>
-      <trans-unit id="notfound">
-        <source xml:lang="en">Extension '{0}' not found in the Marketplace.</source>
-        <target state="translated">Разширението „{0}“ не е намерено в магазина.</target>
-      </trans-unit>
-      <trans-unit id="install">
-        <source xml:lang="en">Press Enter to install '{0}' from the Marketplace.</source>
-        <target state="translated">Натиснете „Enter“, за да инсталирате „{0}“ от магазина.</target>
-      </trans-unit>
-      <trans-unit id="searchFor">
-        <source xml:lang="en">Press Enter to search for '{0}' in the Marketplace.</source>
-        <target state="translated">Натиснете „Enter“, за да потърсите „{0}“ в магазина.</target>
-      </trans-unit>
-      <trans-unit id="noExtensionsToInstall">
-        <source xml:lang="en">Type an extension name</source>
-        <target state="new">Type an extension name</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/extensions/electron-browser/extensionsActions" source-language="en" target-language="bg" datatype="plaintext">
-    <body>
-      <trans-unit id="openExtensionsFolder">
-        <source xml:lang="en">Open Extensions Folder</source>
-        <target state="translated">Отваряне на папката с разширенията</target>
       </trans-unit>
     </body>
   </file>
@@ -52,10 +19,19 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/extensions/electron-browser/extensionsActions" source-language="en" target-language="bg" datatype="plaintext">
+    <body>
+      <trans-unit id="openExtensionsFolder">
+        <source xml:lang="en">Open Extensions Folder</source>
+        <target state="translated">Отваряне на папката с разширенията</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/extensions/electron-browser/extensionProfileService" source-language="en" target-language="bg" datatype="plaintext">
     <body>
       <trans-unit id="profilingExtensionHost">
         <source xml:lang="en">Profiling Extension Host</source>
+        <target state="new">Profiling Extension Host</target>
       </trans-unit>
       <trans-unit id="selectAndStartDebug">
         <source xml:lang="en">Click to stop profiling.</source>
@@ -63,9 +39,11 @@
       </trans-unit>
       <trans-unit id="profilingExtensionHostTime">
         <source xml:lang="en">Profiling Extension Host ({0} sec)</source>
+        <target state="new">Profiling Extension Host ({0} sec)</target>
       </trans-unit>
       <trans-unit id="status.profiler">
         <source xml:lang="en">Extension Profiler</source>
+        <target state="new">Extension Profiler</target>
       </trans-unit>
       <trans-unit id="restart1">
         <source xml:lang="en">Profile Extensions</source>
@@ -99,9 +77,11 @@
   </file>
   <file original="src/vs/workbench/contrib/extensions/browser/extensions.contribution" source-language="en" target-language="bg" datatype="plaintext">
     <body>
-      <trans-unit id="extensionsCommands">
+      <trans-unit id="manageExtensionsQuickAccessPlaceholder">
+        <source xml:lang="en">Press Enter to manage extensions.</source>
+      </trans-unit>
+      <trans-unit id="manageExtensionsHelp">
         <source xml:lang="en">Manage Extensions</source>
-        <target state="translated">Управление на разширенията</target>
       </trans-unit>
       <trans-unit id="extension">
         <source xml:lang="en">Extension</source>
@@ -117,7 +97,6 @@
       </trans-unit>
       <trans-unit id="developer">
         <source xml:lang="en">Developer</source>
-        <target state="translated">Разработчик</target>
       </trans-unit>
       <trans-unit id="extensionsConfigurationTitle">
         <source xml:lang="en">Extensions</source>
@@ -145,14 +124,13 @@
       </trans-unit>
       <trans-unit id="handleUriConfirmedExtensions">
         <source xml:lang="en">When an extension is listed here, a confirmation prompt will not be shown when that extension handles a URI.</source>
+        <target state="new">When an extension is listed here, a confirmation prompt will not be shown when that extension handles a URI.</target>
       </trans-unit>
       <trans-unit id="workbench.extensions.installExtension.description">
         <source xml:lang="en">Install the given extension</source>
-        <target state="new">Install the given extension</target>
       </trans-unit>
       <trans-unit id="workbench.extensions.installExtension.arg.name">
         <source xml:lang="en">Extension id or VSIX resource uri</source>
-        <target state="new">Extension id or VSIX resource uri</target>
       </trans-unit>
       <trans-unit id="notFound">
         <source xml:lang="en">Extension '{0}' not found.</source>
@@ -160,21 +138,27 @@
       </trans-unit>
       <trans-unit id="workbench.extensions.uninstallExtension.description">
         <source xml:lang="en">Uninstall the given extension</source>
+        <target state="new">Uninstall the given extension</target>
       </trans-unit>
       <trans-unit id="workbench.extensions.uninstallExtension.arg.name">
         <source xml:lang="en">Id of the extension to uninstall</source>
+        <target state="new">Id of the extension to uninstall</target>
       </trans-unit>
       <trans-unit id="id required">
         <source xml:lang="en">Extension id required.</source>
+        <target state="new">Extension id required.</target>
       </trans-unit>
       <trans-unit id="notInstalled">
         <source xml:lang="en">Extension '{0}' is not installed. Make sure you use the full extension ID, including the publisher, e.g.: ms-vscode.csharp.</source>
+        <target state="new">Extension '{0}' is not installed. Make sure you use the full extension ID, including the publisher, e.g.: ms-vscode.csharp.</target>
       </trans-unit>
       <trans-unit id="workbench.extensions.search.description">
         <source xml:lang="en">Search for a specific extension</source>
+        <target state="new">Search for a specific extension</target>
       </trans-unit>
       <trans-unit id="workbench.extensions.search.arg.name">
         <source xml:lang="en">Query to use in search</source>
+        <target state="new">Query to use in search</target>
       </trans-unit>
       <trans-unit id="miOpenKeymapExtensions">
         <source xml:lang="en">&amp;&amp;Keymaps</source>
@@ -183,6 +167,7 @@
       </trans-unit>
       <trans-unit id="miOpenKeymapExtensions2">
         <source xml:lang="en">Keymaps</source>
+        <target state="translated">Набори от клавишни комбинации</target>
       </trans-unit>
       <trans-unit id="miPreferencesExtensions">
         <source xml:lang="en">&amp;&amp;Extensions</source>
@@ -196,10 +181,10 @@
       </trans-unit>
       <trans-unit id="showExtensions">
         <source xml:lang="en">Extensions</source>
+        <target state="translated">Разширения</target>
       </trans-unit>
       <trans-unit id="workbench.extensions.action.copyExtension">
         <source xml:lang="en">Copy</source>
-        <target state="translated">Копиране</target>
       </trans-unit>
       <trans-unit id="extensionInfoName">
         <source xml:lang="en">Name: {0}</source>
@@ -227,17 +212,20 @@
       </trans-unit>
       <trans-unit id="workbench.extensions.action.copyExtensionId">
         <source xml:lang="en">Copy Extension Id</source>
-        <target state="new">Copy Extension Id</target>
       </trans-unit>
       <trans-unit id="workbench.extensions.action.configure">
         <source xml:lang="en">Extension Settings</source>
+        <target state="new">Extension Settings</target>
       </trans-unit>
       <trans-unit id="workbench.extensions.action.toggleIgnoreExtension">
         <source xml:lang="en">Sync This Extension</source>
+        <target state="new">Sync This Extension</target>
       </trans-unit>
-      <trans-unit id="galleryExtensionsCommands">
-        <source xml:lang="en">Install Gallery Extensions</source>
-        <target state="translated">Инсталиране на разширения от магазина</target>
+      <trans-unit id="installExtensionQuickAccessPlaceholder">
+        <source xml:lang="en">Type the name of an extension to install or search.</source>
+      </trans-unit>
+      <trans-unit id="installExtensionQuickAccessHelp">
+        <source xml:lang="en">Install or Search Extensions</source>
       </trans-unit>
     </body>
   </file>
@@ -245,30 +233,26 @@
     <body>
       <trans-unit id="starActivation">
         <source xml:lang="en">Activated by {0} on start-up</source>
-        <target state="new">Activated by {0} on start-up</target>
       </trans-unit>
       <trans-unit id="workspaceContainsGlobActivation">
         <source xml:lang="en">Activated by {1} because a file matching {1} exists in your workspace</source>
-        <target state="new">Activated by {1} because a file matching {1} exists in your workspace</target>
+        <target state="translated">Активирано, тъй като в работното място има файл отговарящ на {0}</target>
         <note>{0} will be a glob pattern</note>
       </trans-unit>
       <trans-unit id="workspaceContainsFileActivation">
         <source xml:lang="en">Activated by {1} because file {0} exists in your workspace</source>
-        <target state="new">Activated by {1} because file {0} exists in your workspace</target>
+        <target state="translated">Активирано, тъй като в работното място има файл {0}</target>
         <note>{0} will be a file name</note>
       </trans-unit>
       <trans-unit id="workspaceContainsTimeout">
         <source xml:lang="en">Activated by {1} because searching for {0} took too long</source>
-        <target state="new">Activated by {1} because searching for {0} took too long</target>
         <note>{0} will be a glob pattern</note>
       </trans-unit>
       <trans-unit id="languageActivation">
         <source xml:lang="en">Activated by {1} because you opened a {0} file</source>
-        <target state="translated">Активирано, тъй като сте отворили файл {0}</target>
       </trans-unit>
       <trans-unit id="workspaceGenericActivation">
         <source xml:lang="en">Activated by {1} on {0}</source>
-        <target state="translated">Активирано при {0}</target>
         <note>The {0} placeholder will be an activation event, like e.g. 'language:typescript', 'debug', etc.</note>
       </trans-unit>
       <trans-unit id="unresponsive.title">
@@ -377,7 +361,6 @@
       </trans-unit>
       <trans-unit id="syncedExtensions">
         <source xml:lang="en">My Account</source>
-        <target state="new">My Account</target>
       </trans-unit>
       <trans-unit id="installed">
         <source xml:lang="en">Installed</source>
@@ -385,7 +368,6 @@
       </trans-unit>
       <trans-unit id="outdated">
         <source xml:lang="en">Outdated</source>
-        <target state="new">Outdated</target>
       </trans-unit>
       <trans-unit id="searchExtensions">
         <source xml:lang="en">Search Extensions in Marketplace</source>
@@ -423,6 +405,10 @@
         <source xml:lang="en">Marketplace returned 'ECONNREFUSED'. Please check the 'http.proxy' setting.</source>
         <target state="translated">Магазинът върна резултат „ECONNREFUSED“. Моля, проверете настройката „http.proxy“.</target>
       </trans-unit>
+      <trans-unit id="open user settings">
+        <source xml:lang="en">Open User Settings</source>
+        <target state="translated">Отваряне на потребителските настройки</target>
+      </trans-unit>
       <trans-unit id="outdatedExtensions">
         <source xml:lang="en">{0} Outdated Extensions</source>
         <target state="new">{0} Outdated Extensions</target>
@@ -441,12 +427,15 @@
     <body>
       <trans-unit id="cmd.reportOrShow">
         <source xml:lang="en">Performance Issue</source>
+        <target state="translated">Проблем с производителността</target>
       </trans-unit>
       <trans-unit id="cmd.report">
         <source xml:lang="en">Report Issue</source>
+        <target state="translated">Докладване на проблем</target>
       </trans-unit>
       <trans-unit id="attach.title">
         <source xml:lang="en">Did you attach the CPU-Profile?</source>
+        <target state="new">Did you attach the CPU-Profile?</target>
       </trans-unit>
       <trans-unit id="ok">
         <source xml:lang="en">OK</source>
@@ -454,36 +443,15 @@
       </trans-unit>
       <trans-unit id="attach.msg">
         <source xml:lang="en">This is a reminder to make sure that you have not forgotten to attach '{0}' to the issue you have just created.</source>
+        <target state="new">This is a reminder to make sure that you have not forgotten to attach '{0}' to the issue you have just created.</target>
       </trans-unit>
       <trans-unit id="cmd.show">
         <source xml:lang="en">Show Issues</source>
+        <target state="new">Show Issues</target>
       </trans-unit>
       <trans-unit id="attach.msg2">
         <source xml:lang="en">This is a reminder to make sure that you have not forgotten to attach '{0}' to an existing performance issue.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/extensions/common/extensionsUtils" source-language="en" target-language="bg" datatype="plaintext">
-    <body>
-      <trans-unit id="disableOtherKeymapsConfirmation">
-        <source xml:lang="en">Disable other keymaps ({0}) to avoid conflicts between keybindings?</source>
-        <target state="translated">Искате ли да изключите другите набори от клавишни комбинации ({0}), за да избегнете конфликтите?</target>
-      </trans-unit>
-      <trans-unit id="yes">
-        <source xml:lang="en">Yes</source>
-        <target state="translated">Да</target>
-      </trans-unit>
-      <trans-unit id="no">
-        <source xml:lang="en">No</source>
-        <target state="translated">Не</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/extensions/common/extensionsInput" source-language="en" target-language="bg" datatype="plaintext">
-    <body>
-      <trans-unit id="extensionsInputName">
-        <source xml:lang="en">Extension: {0}</source>
-        <target state="new">Extension: {0}</target>
+        <target state="new">This is a reminder to make sure that you have not forgotten to attach '{0}' to an existing performance issue.</target>
       </trans-unit>
     </body>
   </file>
@@ -507,11 +475,37 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/extensions/browser/extensionsActivationProgress" source-language="en" target-language="bg" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/extensions/browser/remoteExtensionsInstaller" source-language="en" target-language="bg" datatype="plaintext">
     <body>
-      <trans-unit id="activation">
-        <source xml:lang="en">Activating Extensions...</source>
-        <target state="translated">Включване на разширенията…</target>
+      <trans-unit id="remote">
+        <source xml:lang="en">Remote</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/extensions/common/extensionsInput" source-language="en" target-language="bg" datatype="plaintext">
+    <body>
+      <trans-unit id="extensionsInputName">
+        <source xml:lang="en">Extension: {0}</source>
+        <target state="new">Extension: {0}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/extensions/browser/extensionsQuickAccess" source-language="en" target-language="bg" datatype="plaintext">
+    <body>
+      <trans-unit id="type">
+        <source xml:lang="en">Type an extension name to install or search.</source>
+      </trans-unit>
+      <trans-unit id="searchFor">
+        <source xml:lang="en">Press Enter to search for extension '{0}'.</source>
+        <target state="new">Press Enter to search for extension '{0}'.</target>
+      </trans-unit>
+      <trans-unit id="install">
+        <source xml:lang="en">Press Enter to install extension '{0}'.</source>
+        <target state="new">Press Enter to install extension '{0}'.</target>
+      </trans-unit>
+      <trans-unit id="manage">
+        <source xml:lang="en">Press Enter to manage your extensions.</source>
+        <target state="translated">Натиснете „Enter“ за достъп до управлението на разширенията.</target>
       </trans-unit>
     </body>
   </file>
@@ -523,11 +517,9 @@
       </trans-unit>
       <trans-unit id="auto install missing deps">
         <source xml:lang="en">Install Missing Dependencies</source>
-        <target state="new">Install Missing Dependencies</target>
       </trans-unit>
       <trans-unit id="finished installing missing deps">
         <source xml:lang="en">Finished installing missing dependencies. Please reload the window now.</source>
-        <target state="new">Finished installing missing dependencies. Please reload the window now.</target>
       </trans-unit>
       <trans-unit id="reload">
         <source xml:lang="en">Reload Window</source>
@@ -535,15 +527,30 @@
       </trans-unit>
       <trans-unit id="no missing deps">
         <source xml:lang="en">There are no missing dependencies to install.</source>
-        <target state="new">There are no missing dependencies to install.</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/extensions/browser/remoteExtensionsInstaller" source-language="en" target-language="bg" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/extensions/browser/extensionsActivationProgress" source-language="en" target-language="bg" datatype="plaintext">
     <body>
-      <trans-unit id="remote">
-        <source xml:lang="en">Remote</source>
-        <target state="new">Remote</target>
+      <trans-unit id="activation">
+        <source xml:lang="en">Activating Extensions...</source>
+        <target state="translated">Включване на разширенията…</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/extensions/common/extensionsUtils" source-language="en" target-language="bg" datatype="plaintext">
+    <body>
+      <trans-unit id="disableOtherKeymapsConfirmation">
+        <source xml:lang="en">Disable other keymaps ({0}) to avoid conflicts between keybindings?</source>
+        <target state="translated">Искате ли да изключите другите набори от клавишни комбинации ({0}), за да избегнете конфликтите?</target>
+      </trans-unit>
+      <trans-unit id="yes">
+        <source xml:lang="en">Yes</source>
+        <target state="translated">Да</target>
+      </trans-unit>
+      <trans-unit id="no">
+        <source xml:lang="en">No</source>
+        <target state="translated">Не</target>
       </trans-unit>
     </body>
   </file>
@@ -633,17 +640,9 @@
         <source xml:lang="en">Extension details, rendered from the extension's 'README.md' file</source>
         <target state="translated">Подробности за разширението, извлечени от файла „README.md“ на разширението</target>
       </trans-unit>
-      <trans-unit id="extensionPack">
-        <source xml:lang="en">Extension Pack</source>
-        <target state="translated">Пакет с разширения</target>
-      </trans-unit>
-      <trans-unit id="extensionsPack">
-        <source xml:lang="en">Set of extensions that can be installed together</source>
-        <target state="new">Set of extensions that can be installed together</target>
-      </trans-unit>
       <trans-unit id="contributions">
         <source xml:lang="en">Feature Contributions</source>
-        <target state="translated">Добавки</target>
+        <target state="new">Feature Contributions</target>
       </trans-unit>
       <trans-unit id="contributionstooltip">
         <source xml:lang="en">Lists contributions to VS Code by this extension</source>
@@ -672,6 +671,9 @@
       <trans-unit id="noReadme">
         <source xml:lang="en">No README available.</source>
         <target state="translated">Липсва файл README.</target>
+      </trans-unit>
+      <trans-unit id="extension pack">
+        <source xml:lang="en">Extension Pack ({0})</source>
       </trans-unit>
       <trans-unit id="noChangelog">
         <source xml:lang="en">No Changelog available.</source>
@@ -763,34 +765,35 @@
       </trans-unit>
       <trans-unit id="customEditors">
         <source xml:lang="en">Custom Editors ({0})</source>
-        <target state="new">Custom Editors ({0})</target>
       </trans-unit>
       <trans-unit id="customEditors view type">
         <source xml:lang="en">View Type</source>
-        <target state="new">View Type</target>
       </trans-unit>
       <trans-unit id="customEditors priority">
         <source xml:lang="en">Priority</source>
-        <target state="new">Priority</target>
       </trans-unit>
       <trans-unit id="customEditors filenamePattern">
         <source xml:lang="en">Filename Pattern</source>
-        <target state="new">Filename Pattern</target>
       </trans-unit>
       <trans-unit id="codeActions">
         <source xml:lang="en">Code Actions ({0})</source>
+        <target state="new">Code Actions ({0})</target>
       </trans-unit>
       <trans-unit id="codeActions.title">
         <source xml:lang="en">Title</source>
+        <target state="new">Title</target>
       </trans-unit>
       <trans-unit id="codeActions.kind">
         <source xml:lang="en">Kind</source>
+        <target state="new">Kind</target>
       </trans-unit>
       <trans-unit id="codeActions.description">
         <source xml:lang="en">Description</source>
+        <target state="new">Description</target>
       </trans-unit>
       <trans-unit id="codeActions.languages">
         <source xml:lang="en">Languages</source>
+        <target state="new">Languages</target>
       </trans-unit>
       <trans-unit id="colorThemes">
         <source xml:lang="en">Color Themes ({0})</source>
@@ -874,36 +877,15 @@
       </trans-unit>
       <trans-unit id="find">
         <source xml:lang="en">Find</source>
+        <target state="translated">Търсене</target>
       </trans-unit>
       <trans-unit id="find next">
         <source xml:lang="en">Find Next</source>
+        <target state="translated">Търсене на следващо съвпадение</target>
       </trans-unit>
       <trans-unit id="find previous">
         <source xml:lang="en">Find Previous</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/extensions/browser/extensionsViews" source-language="en" target-language="bg" datatype="plaintext">
-    <body>
-      <trans-unit id="extensions">
-        <source xml:lang="en">Extensions</source>
-        <target state="translated">Разширения</target>
-      </trans-unit>
-      <trans-unit id="galleryError">
-        <source xml:lang="en">We cannot connect to the Extensions Marketplace at this time, please try again later.</source>
-        <target state="translated">В момента няма връзка с пазара за разширения. Моля, опитайте отново по-късно.</target>
-      </trans-unit>
-      <trans-unit id="error">
-        <source xml:lang="en">Error while loading extensions. {0}</source>
-        <target state="new">Error while loading extensions. {0}</target>
-      </trans-unit>
-      <trans-unit id="no extensions found">
-        <source xml:lang="en">No extensions found.</source>
-        <target state="translated">Няма открити разширения.</target>
-      </trans-unit>
-      <trans-unit id="suggestProxyError">
-        <source xml:lang="en">Marketplace returned 'ECONNREFUSED'. Please check the 'http.proxy' setting.</source>
-        <target state="translated">Магазинът върна резултат „ECONNREFUSED“. Моля, проверете настройката „http.proxy“.</target>
+        <target state="translated">Търсене на предишно съвпадение</target>
       </trans-unit>
     </body>
   </file>
@@ -947,6 +929,7 @@
       </trans-unit>
       <trans-unit id="exeRecommended">
         <source xml:lang="en">The '{0}' extension is recommended as you have {1} installed on your system.</source>
+        <target state="new">The '{0}' extension is recommended as you have {1} installed on your system.</target>
       </trans-unit>
       <trans-unit id="install">
         <source xml:lang="en">Install</source>
@@ -982,6 +965,34 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/extensions/browser/extensionsViews" source-language="en" target-language="bg" datatype="plaintext">
+    <body>
+      <trans-unit id="extensions">
+        <source xml:lang="en">Extensions</source>
+        <target state="translated">Разширения</target>
+      </trans-unit>
+      <trans-unit id="galleryError">
+        <source xml:lang="en">We cannot connect to the Extensions Marketplace at this time, please try again later.</source>
+        <target state="translated">В момента няма връзка с пазара за разширения. Моля, опитайте отново по-късно.</target>
+      </trans-unit>
+      <trans-unit id="error">
+        <source xml:lang="en">Error while loading extensions. {0}</source>
+        <target state="new">Error while loading extensions. {0}</target>
+      </trans-unit>
+      <trans-unit id="no extensions found">
+        <source xml:lang="en">No extensions found.</source>
+        <target state="translated">Няма открити разширения.</target>
+      </trans-unit>
+      <trans-unit id="suggestProxyError">
+        <source xml:lang="en">Marketplace returned 'ECONNREFUSED'. Please check the 'http.proxy' setting.</source>
+        <target state="translated">Магазинът върна резултат „ECONNREFUSED“. Моля, проверете настройката „http.proxy“.</target>
+      </trans-unit>
+      <trans-unit id="open user settings">
+        <source xml:lang="en">Open User Settings</source>
+        <target state="translated">Отваряне на потребителските настройки</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/extensions/browser/extensionsViewer" source-language="en" target-language="bg" datatype="plaintext">
     <body>
       <trans-unit id="error">
@@ -1010,6 +1021,7 @@
       </trans-unit>
       <trans-unit id="extension-arialabel">
         <source xml:lang="en">{0}. Press enter for extension details.</source>
+        <target state="new">{0}. Press enter for extension details.</target>
       </trans-unit>
       <trans-unit id="viewExtensionDetailsAria">
         <source xml:lang="en">{0}. Press enter for extension details.</source>
@@ -1077,7 +1089,6 @@
       </trans-unit>
       <trans-unit id="locally">
         <source xml:lang="en">Locally</source>
-        <target state="new">Locally</target>
       </trans-unit>
       <trans-unit id="installExtensionStart">
         <source xml:lang="en">Installing extension {0} started. An editor is now open with more details on this extension</source>
@@ -1093,10 +1104,10 @@
       </trans-unit>
       <trans-unit id="Install on Server">
         <source xml:lang="en">Install in {0}</source>
-        <target state="new">Install in {0}</target>
       </trans-unit>
       <trans-unit id="install locally">
         <source xml:lang="en">Install Locally</source>
+        <target state="new">Install Locally</target>
       </trans-unit>
       <trans-unit id="uninstallAction">
         <source xml:lang="en">Uninstall</source>
@@ -1240,15 +1251,13 @@
       </trans-unit>
       <trans-unit id="postUpdateTooltip">
         <source xml:lang="en">Please reload Visual Studio Code to enable the updated extension.</source>
-        <target state="translated">Моля, презаредете Visual Studio Code, за да завърши обновяването на това разширение.</target>
       </trans-unit>
       <trans-unit id="postEnableTooltip">
         <source xml:lang="en">Please reload Visual Studio Code to enable this extension.</source>
-        <target state="new">Please reload Visual Studio Code to enable this extension.</target>
+        <target state="translated">Моля, презаредете Visual Studio Code, за да завърши включването на това разширение.</target>
       </trans-unit>
       <trans-unit id="postDisableTooltip">
         <source xml:lang="en">Please reload Visual Studio Code to disable this extension.</source>
-        <target state="translated">Моля, презаредете Visual Studio Code, за да завърши изключването на това разширение.</target>
       </trans-unit>
       <trans-unit id="color theme">
         <source xml:lang="en">Set Color Theme</source>
@@ -1265,6 +1274,14 @@
       <trans-unit id="select file icon theme">
         <source xml:lang="en">Select File Icon Theme</source>
         <target state="translated">Изберете тема за иконките на файловете</target>
+      </trans-unit>
+      <trans-unit id="product icon theme">
+        <source xml:lang="en">Set Product Icon Theme</source>
+        <target state="new">Set Product Icon Theme</target>
+      </trans-unit>
+      <trans-unit id="select product icon theme">
+        <source xml:lang="en">Select Product Icon Theme</source>
+        <target state="new">Select Product Icon Theme</target>
       </trans-unit>
       <trans-unit id="toggleExtensionsViewlet">
         <source xml:lang="en">Show Extensions</source>
@@ -1442,47 +1459,44 @@
         <source xml:lang="en">Malicious</source>
         <target state="translated">Зловредно</target>
       </trans-unit>
+      <trans-unit id="syncingore.label">
+        <source xml:lang="en">This extension is ignored during sync.</source>
+        <target state="new">This extension is ignored during sync.</target>
+      </trans-unit>
       <trans-unit id="extension enabled on remote">
         <source xml:lang="en">Extension is enabled on '{0}'</source>
+        <target state="new">Extension is enabled on '{0}'</target>
       </trans-unit>
       <trans-unit id="globally enabled">
         <source xml:lang="en">This extension is enabled globally.</source>
-        <target state="new">This extension is enabled globally.</target>
       </trans-unit>
       <trans-unit id="workspace enabled">
         <source xml:lang="en">This extension is enabled for this workspace by the user.</source>
-        <target state="new">This extension is enabled for this workspace by the user.</target>
       </trans-unit>
       <trans-unit id="globally disabled">
         <source xml:lang="en">This extension is disabled globally by the user.</source>
-        <target state="new">This extension is disabled globally by the user.</target>
       </trans-unit>
       <trans-unit id="workspace disabled">
         <source xml:lang="en">This extension is disabled for this workspace by the user.</source>
-        <target state="new">This extension is disabled for this workspace by the user.</target>
       </trans-unit>
       <trans-unit id="Install language pack also in remote server">
         <source xml:lang="en">Install the language pack extension on '{0}' to enable it also there.</source>
-        <target state="new">Install the language pack extension on '{0}' to enable it also there.</target>
       </trans-unit>
       <trans-unit id="Install language pack also locally">
         <source xml:lang="en">Install the language pack extension locally to enable it also there.</source>
-        <target state="new">Install the language pack extension locally to enable it also there.</target>
       </trans-unit>
       <trans-unit id="Install in other server to enable">
         <source xml:lang="en">Install the extension on '{0}' to enable.</source>
-        <target state="new">Install the extension on '{0}' to enable.</target>
       </trans-unit>
       <trans-unit id="disabled because of extension kind">
         <source xml:lang="en">This extension has defined that it cannot run on the remote server</source>
+        <target state="new">This extension has defined that it cannot run on the remote server</target>
       </trans-unit>
       <trans-unit id="disabled locally">
         <source xml:lang="en">Extension is enabled on '{0}' and disabled locally.</source>
-        <target state="new">Extension is enabled on '{0}' and disabled locally.</target>
       </trans-unit>
       <trans-unit id="disabled remotely">
         <source xml:lang="en">Extension is enabled locally and disabled on '{0}'.</source>
-        <target state="new">Extension is enabled locally and disabled on '{0}'.</target>
       </trans-unit>
       <trans-unit id="disableAll">
         <source xml:lang="en">Disable All Installed Extensions</source>
@@ -1519,7 +1533,7 @@
       </trans-unit>
       <trans-unit id="InstallVSIXAction.success">
         <source xml:lang="en">Completed installing the extension {0}.</source>
-        <target state="new">Installing the extension {0} is completed.</target>
+        <target state="new">Completed installing the extension {0}.</target>
       </trans-unit>
       <trans-unit id="InstallVSIXAction.reloadNow">
         <source xml:lang="en">Reload Now</source>
@@ -1563,24 +1577,24 @@
       </trans-unit>
       <trans-unit id="select and install local extensions">
         <source xml:lang="en">Install Local Extensions in '{0}'...</source>
-        <target state="new">Install Local Extensions in '{0}'...</target>
       </trans-unit>
       <trans-unit id="install local extensions title">
         <source xml:lang="en">Install Local Extensions in '{0}'</source>
-        <target state="new">Install Local Extensions in '{0}'</target>
       </trans-unit>
       <trans-unit id="select extensions to install">
         <source xml:lang="en">Select extensions to install</source>
+        <target state="new">Select extensions to install</target>
       </trans-unit>
       <trans-unit id="no local extensions">
         <source xml:lang="en">There are no extensions to install.</source>
+        <target state="new">There are no extensions to install.</target>
       </trans-unit>
       <trans-unit id="installing extensions">
         <source xml:lang="en">Installing Extensions...</source>
+        <target state="new">Installing Extensions...</target>
       </trans-unit>
       <trans-unit id="finished installing">
         <source xml:lang="en">Successfully installed extensions in {0}. Please reload the window to enable them.</source>
-        <target state="new">Successfully installed extensions in {0}. Please reload the window to enable them.</target>
       </trans-unit>
       <trans-unit id="reload">
         <source xml:lang="en">Reload Window</source>

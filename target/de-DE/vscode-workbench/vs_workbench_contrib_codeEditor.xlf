@@ -8,19 +8,20 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/inspectKeybindings" source-language="en" target-language="de" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/codeEditor/browser/largeFileOptimizations" source-language="en" target-language="de" datatype="plaintext">
     <body>
-      <trans-unit id="workbench.action.inspectKeyMap">
-        <source xml:lang="en">Developer: Inspect Key Mappings</source>
-        <target state="translated">Entwickler: Wichtige Zuordnungen prüfen</target>
+      <trans-unit id="largeFile">
+        <source xml:lang="en">{0}: tokenization, wrapping and folding have been turned off for this large file in order to reduce memory usage and avoid freezing or crashing.</source>
+        <target state="translated">{0}: Tokenisierung, Umbruch und Faltung wurden für diese große Datei deaktiviert, um die Speicherauslastung zu verringern und ein Einfrieren oder einen Absturz zu vermeiden.</target>
+        <note>Variable 0 will be a file name.</note>
       </trans-unit>
-      <trans-unit id="workbench.action.inspectKeyMapJSON">
-        <source xml:lang="en">Inspect Key Mappings (JSON)</source>
-        <target state="translated">Schlüsselzuordnungen überprüfen (JSON)</target>
+      <trans-unit id="removeOptimizations">
+        <source xml:lang="en">Forcefully enable features</source>
+        <target state="translated">Aktivieren von Funktionen erzwingen</target>
       </trans-unit>
-      <trans-unit id="developer">
-        <source xml:lang="en">Developer</source>
-        <target state="translated">Entwickler</target>
+      <trans-unit id="reopenFilePrompt">
+        <source xml:lang="en">Please reopen file in order for this setting to take effect.</source>
+        <target state="translated">Öffnen Sie die Datei erneut, damit diese Einstellung wirksam wird.</target>
       </trans-unit>
     </body>
   </file>
@@ -37,6 +38,66 @@
       <trans-unit id="hintWhitespace">
         <source xml:lang="en">Show Whitespace Differences</source>
         <target state="translated">Unterschiede bei Leerzeichen anzeigen</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/inspectKeybindings" source-language="en" target-language="de" datatype="plaintext">
+    <body>
+      <trans-unit id="workbench.action.inspectKeyMap">
+        <source xml:lang="en">Developer: Inspect Key Mappings</source>
+        <target state="translated">Entwickler: Wichtige Zuordnungen prüfen</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.inspectKeyMapJSON">
+        <source xml:lang="en">Inspect Key Mappings (JSON)</source>
+        <target state="translated">Schlüsselzuordnungen überprüfen (JSON)</target>
+      </trans-unit>
+      <trans-unit id="developer">
+        <source xml:lang="en">Developer</source>
+        <target state="translated">Entwickler</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/toggleColumnSelection" source-language="en" target-language="de" datatype="plaintext">
+    <body>
+      <trans-unit id="toggleColumnSelection">
+        <source xml:lang="en">Toggle Column Selection Mode</source>
+        <target state="translated">Spaltenauswahlmodus umschalten</target>
+      </trans-unit>
+      <trans-unit id="miColumnSelection">
+        <source xml:lang="en">Column &amp;&amp;Selection Mode</source>
+        <target state="translated">&amp;&amp;Spaltenauswahlmodus</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/toggleMinimap" source-language="en" target-language="de" datatype="plaintext">
+    <body>
+      <trans-unit id="toggleMinimap">
+        <source xml:lang="en">Toggle Minimap</source>
+        <target state="translated">Minimap ein-/ausschalten</target>
+      </trans-unit>
+      <trans-unit id="view">
+        <source xml:lang="en">View</source>
+        <target state="translated">Sicht</target>
+      </trans-unit>
+      <trans-unit id="miShowMinimap">
+        <source xml:lang="en">Show &amp;&amp;Minimap</source>
+        <target state="translated">&amp;&amp;Minimap anzeigen</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/semanticTokensHelp" source-language="en" target-language="de" datatype="plaintext">
+    <body>
+      <trans-unit id="semanticTokensHelp">
+        <source xml:lang="en">Code coloring of '{0}' has been updated as the theme '{1}' has [semantic highlighting](https://go.microsoft.com/fwlink/?linkid=2122588) enabled.</source>
+        <target state="translated">Die Codefärbung von {0} wurde aktualisiert, da für das Design {1} [semantische Hervorhebungen](https://go.microsoft.com/fwlink/?linkid=2122588) aktiviert sind.</target>
+        <note>Variable 0 will be a file name.
+Variable 1 will be a theme name.</note>
+      </trans-unit>
+      <trans-unit id="learnMoreButton">
+        <source xml:lang="en">Learn More</source>
+        <target state="translated">Weitere Informationen</target>
       </trans-unit>
     </body>
   </file>
@@ -60,37 +121,19 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/toggleMinimap" source-language="en" target-language="de" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/codeEditor/browser/quickaccess/gotoLineQuickAccess" source-language="en" target-language="de" datatype="plaintext">
     <body>
-      <trans-unit id="toggleMinimap">
-        <source xml:lang="en">Toggle Minimap</source>
-        <target state="translated">Minimap ein-/ausschalten</target>
+      <trans-unit id="gotoLineQuickAccessPlaceholder">
+        <source xml:lang="en">Type the line number and optional column to go to (e.g. 42:5 for line 42 and column 5).</source>
+        <target state="translated">Geben Sie die Zeilennummer und optional die Spalte ein, zu der Sie wechseln möchten (z. B. 42:5 für Zeile 42 und Spalte 5).</target>
       </trans-unit>
-      <trans-unit id="view">
-        <source xml:lang="en">View</source>
-        <target state="translated">Sicht</target>
+      <trans-unit id="gotoLineQuickAccess">
+        <source xml:lang="en">Go to Line/Column</source>
+        <target state="translated">Gehe zu Zeile/Spalte</target>
       </trans-unit>
-      <trans-unit id="miShowMinimap">
-        <source xml:lang="en">Show &amp;&amp;Minimap</source>
-        <target state="translated">&amp;&amp;Minimap anzeigen</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/toggleColumnSelection" source-language="en" target-language="de" datatype="plaintext">
-    <body>
-      <trans-unit id="toggleColumnSelection">
-        <source xml:lang="en">Toggle Column Selection Mode</source>
-        <target state="translated">Spaltenauswahlmodus umschalten</target>
-      </trans-unit>
-      <trans-unit id="view">
-        <source xml:lang="en">View</source>
-        <target state="translated">Sicht</target>
-      </trans-unit>
-      <trans-unit id="miColumnSelection">
-        <source xml:lang="en">Column &amp;&amp;Selection Mode</source>
-        <target state="translated">&amp;&amp;Spaltenauswahlmodus</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
+      <trans-unit id="gotoLine">
+        <source xml:lang="en">Go to Line/Column...</source>
+        <target state="translated">Gehe zu Zeile/Spalte...</target>
       </trans-unit>
     </body>
   </file>
@@ -111,23 +154,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/largeFileOptimizations" source-language="en" target-language="de" datatype="plaintext">
-    <body>
-      <trans-unit id="largeFile">
-        <source xml:lang="en">{0}: tokenization, wrapping and folding have been turned off for this large file in order to reduce memory usage and avoid freezing or crashing.</source>
-        <target state="translated">{0}: Tokenisierung, Umbruch und Faltung wurden für diese große Datei deaktiviert, um die Speicherauslastung zu verringern und ein Einfrieren oder einen Absturz zu vermeiden.</target>
-        <note>Variable 0 will be a file name.</note>
-      </trans-unit>
-      <trans-unit id="removeOptimizations">
-        <source xml:lang="en">Forcefully enable features</source>
-        <target state="translated">Aktivieren von Funktionen erzwingen</target>
-      </trans-unit>
-      <trans-unit id="reopenFilePrompt">
-        <source xml:lang="en">Please reopen file in order for this setting to take effect.</source>
-        <target state="translated">Öffnen Sie die Datei erneut, damit diese Einstellung wirksam wird.</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/codeEditor/browser/toggleRenderWhitespace" source-language="en" target-language="de" datatype="plaintext">
     <body>
       <trans-unit id="toggleRenderWhitespace">
@@ -142,6 +168,26 @@
         <source xml:lang="en">&amp;&amp;Render Whitespace</source>
         <target state="translated">Leerraum &amp;&amp;rendern</target>
         <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/quickaccess/gotoSymbolQuickAccess" source-language="en" target-language="de" datatype="plaintext">
+    <body>
+      <trans-unit id="gotoSymbolQuickAccessPlaceholder">
+        <source xml:lang="en">Type the name of a symbol to go to.</source>
+        <target state="translated">Geben Sie den Namen eines Symbols ein, zu dem Sie wechseln möchten.</target>
+      </trans-unit>
+      <trans-unit id="gotoSymbolQuickAccess">
+        <source xml:lang="en">Go to Symbol in Editor</source>
+        <target state="translated">Gehe zu Symbol im Editor</target>
+      </trans-unit>
+      <trans-unit id="gotoSymbolByCategoryQuickAccess">
+        <source xml:lang="en">Go to Symbol in Editor by Category</source>
+        <target state="translated">Gehe zu Symbol im Editor nach Kategorie</target>
+      </trans-unit>
+      <trans-unit id="gotoSymbol">
+        <source xml:lang="en">Go to Symbol in Editor...</source>
+        <target state="translated">Gehe zu Symbol im Editor...</target>
       </trans-unit>
     </body>
   </file>
@@ -467,6 +513,50 @@
       <trans-unit id="label.closeButton">
         <source xml:lang="en">Close</source>
         <target state="translated">Schließen</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/find/simpleFindReplaceWidget" source-language="en" target-language="de" datatype="plaintext">
+    <body>
+      <trans-unit id="label.find">
+        <source xml:lang="en">Find</source>
+        <target state="translated">Suchen</target>
+      </trans-unit>
+      <trans-unit id="placeholder.find">
+        <source xml:lang="en">Find</source>
+        <target state="translated">Suchen</target>
+      </trans-unit>
+      <trans-unit id="label.previousMatchButton">
+        <source xml:lang="en">Previous match</source>
+        <target state="translated">Vorheriger Treffer</target>
+      </trans-unit>
+      <trans-unit id="label.nextMatchButton">
+        <source xml:lang="en">Next match</source>
+        <target state="translated">Nächste Übereinstimmung</target>
+      </trans-unit>
+      <trans-unit id="label.closeButton">
+        <source xml:lang="en">Close</source>
+        <target state="translated">Schließen</target>
+      </trans-unit>
+      <trans-unit id="label.toggleReplaceButton">
+        <source xml:lang="en">Toggle Replace mode</source>
+        <target state="translated">Ersetzen-Modus wechseln</target>
+      </trans-unit>
+      <trans-unit id="label.replace">
+        <source xml:lang="en">Replace</source>
+        <target state="translated">Ersetzen</target>
+      </trans-unit>
+      <trans-unit id="placeholder.replace">
+        <source xml:lang="en">Replace</source>
+        <target state="translated">Ersetzen</target>
+      </trans-unit>
+      <trans-unit id="label.replaceButton">
+        <source xml:lang="en">Replace</source>
+        <target state="translated">Ersetzen</target>
+      </trans-unit>
+      <trans-unit id="label.replaceAllButton">
+        <source xml:lang="en">Replace All</source>
+        <target state="translated">Alle ersetzen</target>
       </trans-unit>
     </body>
   </file>

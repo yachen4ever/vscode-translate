@@ -296,6 +296,26 @@ Per altri dettagli sulla gestione delle versioni di TypeScript, vedere la [docum
         <source xml:lang="en">Based on the `baseUrl` configured in your `jsconfig.json` / `tsconfig.json`.</source>
         <target state="translated">Basato sull'elemento 'baseUrl' configurato in 'jsconfig.json' / 'tsconfig.json'.</target>
       </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifierEnding">
+        <source xml:lang="en">Preferred path ending for auto imports.</source>
+        <target state="translated">Terminazione di percorso preferita per le istruzioni import automatiche.</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifierEnding.auto">
+        <source xml:lang="en">Use project settings to select a default.</source>
+        <target state="translated">Usa le impostazioni del progetto per selezionare un'impostazione predefinita.</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifierEnding.minimal">
+        <source xml:lang="en">Shorten `./component/index.js` to `./component`.</source>
+        <target state="translated">Abbrevia `./component/index.js` in `./component`.</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifierEnding.index">
+        <source xml:lang="en">Shorten `./component/index.js` to `./component/index`</source>
+        <target state="translated">Abbrevia `./component/index.js` in `./component/index`</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifierEnding.js">
+        <source xml:lang="en">Do not shorten path endings; include the `.js` extension.</source>
+        <target state="translated">Non abbreviare le terminazioni dei percorsi e includi l'estensione `.js`.</target>
+      </trans-unit>
       <trans-unit id="typescript.updateImportsOnFileMove.enabled">
         <source xml:lang="en">Enable/disable automatic updating of import paths when you rename or move a file in VS Code. Requires using TypeScript 2.9 or newer in the workspace.</source>
         <target state="translated">Abilita/disabilita l'aggiornamento automatico dei percorsi delle istruzioni import quando si rinomina o si sposta un file in VS Code. Richiede TypeScript 2.9 o versione successiva nell'area di lavoro.</target>
@@ -486,16 +506,24 @@ Per altri dettagli sulla gestione delle versioni di TypeScript, vedere la [docum
       </trans-unit>
     </body>
   </file>
-  <file original="extensions/typescript-language-features/dist/features/baseCodeLensProvider" source-language="en" target-language="it" datatype="plaintext">
+  <file original="extensions/typescript-language-features/dist/utils/tsconfig" source-language="en" target-language="it" datatype="plaintext">
     <body>
-      <trans-unit id="referenceErrorLabel">
-        <source xml:lang="en">Could not determine references</source>
-        <target state="translated">Non è stato possibile determinare i riferimenti</target>
+      <trans-unit id="typescript.configureTsconfigQuickPick">
+        <source xml:lang="en">Configure tsconfig.json</source>
+        <target state="translated">Configura tsconfig.json</target>
       </trans-unit>
-    </body>
-  </file>
-  <file original="extensions/typescript-language-features/dist/commands/goToProjectConfiguration" source-language="en" target-language="it" datatype="plaintext">
-    <body>
+      <trans-unit id="typescript.configureJsconfigQuickPick">
+        <source xml:lang="en">Configure jsconfig.json</source>
+        <target state="translated">Configura jsconfig.json</target>
+      </trans-unit>
+      <trans-unit id="typescript.noTypeScriptProjectConfig">
+        <source xml:lang="en">File is not part of a TypeScript project. Click [here]({0}) to learn more.</source>
+        <target state="translated">Il file non fa parte di un progetto TypeScript. Clicca [qui]({0}) per saperne di più.</target>
+      </trans-unit>
+      <trans-unit id="typescript.noJavaScriptProjectConfig">
+        <source xml:lang="en">File is not part of a JavaScript project Click [here]({0}) to learn more.</source>
+        <target state="translated">Il file non fa parte di un progetto JavaScript. Clicca [qui]({0}) per saperne di più.</target>
+      </trans-unit>
       <trans-unit id="typescript.projectConfigNoWorkspace">
         <source xml:lang="en">Please open a folder in VS Code to use a TypeScript or JavaScript project</source>
         <target state="translated">Aprire una cartella in Visual Studio Code per usare un progetto TypeScript o JavaScript</target>
@@ -508,21 +536,13 @@ Per altri dettagli sulla gestione delle versioni di TypeScript, vedere la [docum
         <source xml:lang="en">Could not determine TypeScript or JavaScript project</source>
         <target state="translated">Non è stato possibile determinare il progetto TypeScript o JavaScript</target>
       </trans-unit>
-      <trans-unit id="typescript.noTypeScriptProjectConfig">
-        <source xml:lang="en">File is not part of a TypeScript project. Click [here]({0}) to learn more.</source>
-        <target state="translated">Il file non fa parte di un progetto TypeScript. Clicca [qui]({0}) per saperne di più.</target>
-      </trans-unit>
-      <trans-unit id="typescript.noJavaScriptProjectConfig">
-        <source xml:lang="en">File is not part of a JavaScript project Click [here]({0}) to learn more.</source>
-        <target state="translated">Il file non fa parte di un progetto JavaScript. Clicca [qui]({0}) per saperne di più.</target>
-      </trans-unit>
-      <trans-unit id="typescript.configureTsconfigQuickPick">
-        <source xml:lang="en">Configure tsconfig.json</source>
-        <target state="translated">Configura tsconfig.json</target>
-      </trans-unit>
-      <trans-unit id="typescript.configureJsconfigQuickPick">
-        <source xml:lang="en">Configure jsconfig.json</source>
-        <target state="translated">Configura jsconfig.json</target>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/baseCodeLensProvider" source-language="en" target-language="it" datatype="plaintext">
+    <body>
+      <trans-unit id="referenceErrorLabel">
+        <source xml:lang="en">Could not determine references</source>
+        <target state="translated">Non è stato possibile determinare i riferimenti</target>
       </trans-unit>
     </body>
   </file>
@@ -561,6 +581,10 @@ Per altri dettagli sulla gestione delle versioni di TypeScript, vedere la [docum
       <trans-unit id="ts-ignore">
         <source xml:lang="en">Suppresses @ts-check errors on the next line of a file.</source>
         <target state="translated">Elimina errori di @ts-check sulla riga successiva di un file.</target>
+      </trans-unit>
+      <trans-unit id="ts-expect-error">
+        <source xml:lang="en">Suppresses @ts-check errors on the next line of a file, expecting at least one to exist.</source>
+        <target state="translated">Elimina gli errori di @ts-check sulla riga successiva di un file. Presuppone che ne esista almeno uno.</target>
       </trans-unit>
     </body>
   </file>
@@ -682,17 +706,21 @@ Per altri dettagli sulla gestione delle versioni di TypeScript, vedere la [docum
         <source xml:lang="en">Could not open TS Server log file</source>
         <target state="translated">Non è stato possibile aprire il file di log del server TypeScript</target>
       </trans-unit>
-      <trans-unit id="serverDiedAfterStart">
-        <source xml:lang="en">The TypeScript language service died 5 times right after it got started. The service will not be restarted.</source>
-        <target state="translated">Il servizio di linguaggio TypeScript è stato arrestato in modo imprevisto per cinque volte dopo che è stato avviato e non verrà riavviato.</target>
-      </trans-unit>
       <trans-unit id="serverDiedReportIssue">
         <source xml:lang="en">Report Issue</source>
         <target state="translated">Segnala problema</target>
       </trans-unit>
+      <trans-unit id="serverDiedAfterStart">
+        <source xml:lang="en">The TypeScript language service died 5 times right after it got started. The service will not be restarted.</source>
+        <target state="translated">Il servizio di linguaggio TypeScript è stato arrestato in modo imprevisto per cinque volte dopo che è stato avviato e non verrà riavviato.</target>
+      </trans-unit>
       <trans-unit id="serverDied">
         <source xml:lang="en">The TypeScript language service died unexpectedly 5 times in the last 5 Minutes.</source>
         <target state="translated">Il servizio di linguaggio Typescript è stato arrestato in modo imprevisto per cinque volte negli ultimi cinque minuti.</target>
+      </trans-unit>
+      <trans-unit id="serverDiedOnce">
+        <source xml:lang="en">The TypeScript language service died unexpectedly.</source>
+        <target state="translated">Il servizio di linguaggio TypeScript è stato arrestato in modo imprevisto.</target>
       </trans-unit>
       <trans-unit id="serverLoading.progress">
         <source xml:lang="en">Initializing JS/TS language features</source>
@@ -708,8 +736,12 @@ Per altri dettagli sulla gestione delle versioni di TypeScript, vedere la [docum
       </trans-unit>
     </body>
   </file>
-  <file original="extensions/typescript-language-features/dist/utils/versionPicker" source-language="en" target-language="it" datatype="plaintext">
+  <file original="extensions/typescript-language-features/dist/utils/versionManager" source-language="en" target-language="it" datatype="plaintext">
     <body>
+      <trans-unit id="selectTsVersion">
+        <source xml:lang="en">Select the TypeScript version used for JavaScript and TypeScript language features</source>
+        <target state="translated">Selezionare la versione di TypeScript usata per le funzionalità del linguaggio JavaScript e TypeScript</target>
+      </trans-unit>
       <trans-unit id="useVSCodeVersionOption">
         <source xml:lang="en">Use VS Code's Version</source>
         <target state="translated">Usa versione di VS Code</target>
@@ -719,12 +751,8 @@ Per altri dettagli sulla gestione delle versioni di TypeScript, vedere la [docum
         <target state="translated">Usa versione dell'area di lavoro</target>
       </trans-unit>
       <trans-unit id="learnMore">
-        <source xml:lang="en">Learn More</source>
-        <target state="translated">Altre informazioni</target>
-      </trans-unit>
-      <trans-unit id="selectTsVersion">
-        <source xml:lang="en">Select the TypeScript version used for JavaScript and TypeScript language features</source>
-        <target state="translated">Selezionare la versione di TypeScript usata per le funzionalità del linguaggio JavaScript e TypeScript</target>
+        <source xml:lang="en">Learn more about managing TypeScript versions</source>
+        <target state="translated">Altre informazioni sulla gestione delle versioni di TypeScript</target>
       </trans-unit>
     </body>
   </file>
@@ -758,9 +786,33 @@ Per altri dettagli sulla gestione delle versioni di TypeScript, vedere la [docum
   </file>
   <file original="extensions/typescript-language-features/dist/utils/versionStatus" source-language="en" target-language="it" datatype="plaintext">
     <body>
-      <trans-unit id="typescriptVersion">
-        <source xml:lang="en">TypeScript: Version</source>
-        <target state="translated">TypeScript: Versione</target>
+      <trans-unit id="projectQuickPick.placeholder">
+        <source xml:lang="en">TypeScript Project Info</source>
+        <target state="translated">Informazioni sul progetto TypeScript</target>
+      </trans-unit>
+      <trans-unit id="projectQuickPick.version.label">
+        <source xml:lang="en">Select TypeScript Version...</source>
+        <target state="translated">Seleziona la versione di TypeScript...</target>
+      </trans-unit>
+      <trans-unit id="projectQuickPick.project.create">
+        <source xml:lang="en">Create tsconfig</source>
+        <target state="translated">Crea tsconfig</target>
+      </trans-unit>
+      <trans-unit id="projectQuickPick.project.create.description">
+        <source xml:lang="en">This file is currently not part of a tsconfig/jsconfig project</source>
+        <target state="translated">Questo file non fa attualmente parte di un progetto tsconfig/jsconfig</target>
+      </trans-unit>
+      <trans-unit id="projectQuickPick.version.goProjectConfig">
+        <source xml:lang="en">Open tsconfig</source>
+        <target state="translated">Apri tsconfig</target>
+      </trans-unit>
+      <trans-unit id="projectQuickPick.help">
+        <source xml:lang="en">TypeScript help</source>
+        <target state="translated">Guida di TypeScript</target>
+      </trans-unit>
+      <trans-unit id="projectInfo.name">
+        <source xml:lang="en">TypeScript: Project Info</source>
+        <target state="translated">TypeScript: Informazioni sul progetto</target>
       </trans-unit>
     </body>
   </file>
@@ -804,7 +856,7 @@ Per altri dettagli sulla gestione delle versioni di TypeScript, vedere la [docum
       </trans-unit>
     </body>
   </file>
-  <file original="extensions/typescript-language-features/dist/utils/projectStatus" source-language="en" target-language="it" datatype="plaintext">
+  <file original="extensions/typescript-language-features/dist/utils/largeProjectStatus" source-language="en" target-language="it" datatype="plaintext">
     <body>
       <trans-unit id="statusExclude">
         <source xml:lang="en">TypeScript: Configure Excludes</source>

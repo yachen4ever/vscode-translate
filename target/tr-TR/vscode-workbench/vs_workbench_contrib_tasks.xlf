@@ -169,7 +169,11 @@ The task '{0}' was terminated per user request.</source>
         <source xml:lang="en">Open User Tasks</source>
         <target state="new">Open User Tasks</target>
       </trans-unit>
-      <trans-unit id="quickOpen.task">
+      <trans-unit id="tasksQuickAccessPlaceholder">
+        <source xml:lang="en">Type the name of a task to run.</source>
+        <target state="new">Type the name of a task to run.</target>
+      </trans-unit>
+      <trans-unit id="tasksQuickAccessHelp">
         <source xml:lang="en">Run Task</source>
         <target state="translated">Görevi Çalıştır</target>
       </trans-unit>
@@ -227,22 +231,6 @@ The task '{0}' was terminated per user request.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/taskQuickOpen" source-language="en" target-language="tr" datatype="plaintext">
-    <body>
-      <trans-unit id="tasksAriaLabel">
-        <source xml:lang="en">Type the name of a task to run</source>
-        <target state="translated">Çalıştırılacak görevin adını girin</target>
-      </trans-unit>
-      <trans-unit id="noTasksMatching">
-        <source xml:lang="en">No tasks matching</source>
-        <target state="translated">Eşleşen görev yok</target>
-      </trans-unit>
-      <trans-unit id="noTasksFound">
-        <source xml:lang="en">No tasks found</source>
-        <target state="translated">Görev bulunamadı</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/tasks/common/jsonSchema_v1" source-language="en" target-language="tr" datatype="plaintext">
     <body>
       <trans-unit id="JsonSchema.version.deprecated">
@@ -276,6 +264,14 @@ The task '{0}' was terminated per user request.</source>
       <trans-unit id="JsonSchema.shell">
         <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
         <target state="translated">Komutun bir kabuk komutu veya harici bir program olup olmadığını belirtir. Atlanırsa hayır olarak kabul edilir.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/tasksQuickAccess" source-language="en" target-language="tr" datatype="plaintext">
+    <body>
+      <trans-unit id="TaskService.pickRunTask">
+        <source xml:lang="en">Select the task to run</source>
+        <target state="translated">Çalıştırılacak görevi seçin</target>
       </trans-unit>
     </body>
   </file>
@@ -328,30 +324,6 @@ The task '{0}' was terminated per user request.</source>
       <trans-unit id="workbench.action.tasks.disallowAutomaticTasks">
         <source xml:lang="en">Disallow Automatic Tasks in Folder</source>
         <target state="translated">Klasördeki Otomatik Görevlere İzin Verme</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/quickOpen" source-language="en" target-language="tr" datatype="plaintext">
-    <body>
-      <trans-unit id="entryAriaLabel">
-        <source xml:lang="en">{0}, tasks</source>
-        <target state="translated">{0}, görevler</target>
-      </trans-unit>
-      <trans-unit id="recentlyUsed">
-        <source xml:lang="en">recently used tasks</source>
-        <target state="translated">yakınlarda kullanılan görevler</target>
-      </trans-unit>
-      <trans-unit id="configured">
-        <source xml:lang="en">configured tasks</source>
-        <target state="translated">yapılandırılmış görevler</target>
-      </trans-unit>
-      <trans-unit id="detected">
-        <source xml:lang="en">detected tasks</source>
-        <target state="translated">algılanan görevler</target>
-      </trans-unit>
-      <trans-unit id="customizeTask">
-        <source xml:lang="en">Configure Task</source>
-        <target state="translated">Görevi Yapılandır</target>
       </trans-unit>
     </body>
   </file>
@@ -867,6 +839,38 @@ The task '{0}' was terminated per user request.</source>
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/taskQuickPick" source-language="en" target-language="tr" datatype="plaintext">
+    <body>
+      <trans-unit id="taskQuickPick.showAll">
+        <source xml:lang="en">Show All Tasks...</source>
+        <target state="new">Show All Tasks...</target>
+      </trans-unit>
+      <trans-unit id="configureTask">
+        <source xml:lang="en">Configure Task</source>
+        <target state="translated">Görevi Yapılandır</target>
+      </trans-unit>
+      <trans-unit id="contributedTasks">
+        <source xml:lang="en">contributed</source>
+        <target state="new">contributed</target>
+      </trans-unit>
+      <trans-unit id="recentlyUsed">
+        <source xml:lang="en">recently used</source>
+        <target state="translated">yakınlarda kullanıldı</target>
+      </trans-unit>
+      <trans-unit id="configured">
+        <source xml:lang="en">configured</source>
+        <target state="new">configured</target>
+      </trans-unit>
+      <trans-unit id="TaskQuickPick.goBack">
+        <source xml:lang="en">Go back ↩</source>
+        <target state="new">Go back ↩</target>
+      </trans-unit>
+      <trans-unit id="TaskQuickPick.noTasksForType">
+        <source xml:lang="en">No {0} tasks found. Go back ↩</source>
+        <target state="new">No {0} tasks found. Go back ↩</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/tasks/common/problemMatcher" source-language="en" target-language="tr" datatype="plaintext">
     <body>
       <trans-unit id="ProblemPatternParser.problemPattern.missingRegExp">
@@ -1372,14 +1376,6 @@ Yapılandırma yok sayılacaktır.
         <source xml:lang="en">detected tasks</source>
         <target state="translated">algılanan görevler</target>
       </trans-unit>
-      <trans-unit id="pickProgressManager.description">
-        <source xml:lang="en">Detecting tasks ({0} of {1}): {2} in progress</source>
-        <target state="new">Detecting tasks ({0} of {1}): {2} in progress</target>
-      </trans-unit>
-      <trans-unit id="taskQuickPick.cancel">
-        <source xml:lang="en">Stop detecting</source>
-        <target state="new">Stop detecting</target>
-      </trans-unit>
       <trans-unit id="TaskService.ignoredFolder">
         <source xml:lang="en">The following workspace folders are ignored since they use task version 0.1.0: {0}</source>
         <target state="translated">0.1.0 görev sürümünü kullandıkları için şu çalışma alanı klasörleri yok sayıldı: {0}</target>
@@ -1393,8 +1389,8 @@ Yapılandırma yok sayılacaktır.
         <target state="translated">Çalıştırılacak görevi seçin</target>
       </trans-unit>
       <trans-unit id="TaskService.noEntryToRun">
-        <source xml:lang="en">No task to run found. Configure Tasks...</source>
-        <target state="translated">Çalıştırılacak hiçbir görev bulunamadı. Görevleri Yapılandır...</target>
+        <source xml:lang="en">No configured tasks. Configure Tasks...</source>
+        <target state="new">No configured tasks. Configure Tasks...</target>
       </trans-unit>
       <trans-unit id="TaskService.fetchingBuildTasks">
         <source xml:lang="en">Fetching build tasks...</source>

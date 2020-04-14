@@ -2,55 +2,6 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file original="src/vs/workbench/contrib/remote/electron-browser/remote.contribution" source-language="en" target-language="pt-BR" datatype="plaintext">
     <body>
-      <trans-unit id="remote.category">
-        <source xml:lang="en">Remote</source>
-        <target state="translated">Remoto</target>
-      </trans-unit>
-      <trans-unit id="remote.showMenu">
-        <source xml:lang="en">Show Remote Menu</source>
-        <target state="translated">Mostrar menu remoto</target>
-      </trans-unit>
-      <trans-unit id="remote.close">
-        <source xml:lang="en">Close Remote Connection</source>
-        <target state="translated">Fechar Conexão Remota</target>
-      </trans-unit>
-      <trans-unit id="host.open">
-        <source xml:lang="en">Opening Remote...</source>
-        <target state="translated">Abrindo Remoto...</target>
-      </trans-unit>
-      <trans-unit id="miCloseRemote">
-        <source xml:lang="en">Close Re&amp;&amp;mote Connection</source>
-        <target state="translated">Fechar Conexão Re&amp;&amp;mota</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="host.tooltip">
-        <source xml:lang="en">Editing on {0}</source>
-        <target state="translated">Edição em {0}</target>
-      </trans-unit>
-      <trans-unit id="disconnectedFrom">
-        <source xml:lang="en">Disconnected from</source>
-        <target state="translated">Desconectado de</target>
-      </trans-unit>
-      <trans-unit id="host.tooltipDisconnected">
-        <source xml:lang="en">Disconnected from {0}</source>
-        <target state="translated">Desconectado de {0}</target>
-      </trans-unit>
-      <trans-unit id="noHost.tooltip">
-        <source xml:lang="en">Open a remote window</source>
-        <target state="translated">Abrir uma janela remota</target>
-      </trans-unit>
-      <trans-unit id="status.host">
-        <source xml:lang="en">Remote Host</source>
-        <target state="translated">Host Remoto</target>
-      </trans-unit>
-      <trans-unit id="cat.title">
-        <source xml:lang="en">{0}: {1}</source>
-        <target state="translated">{0}: {1}</target>
-      </trans-unit>
-      <trans-unit id="closeRemote.title">
-        <source xml:lang="en">Close Remote Connection</source>
-        <target state="translated">Fechar Conexão Remota</target>
-      </trans-unit>
       <trans-unit id="remote">
         <source xml:lang="en">Remote</source>
         <target state="translated">Remoto</target>
@@ -151,6 +102,14 @@
         <source xml:lang="en">View</source>
         <target state="translated">Visão</target>
       </trans-unit>
+      <trans-unit id="reconnectionWaitOne">
+        <source xml:lang="en">Attempting to reconnect in {0} second...</source>
+        <target state="translated">Tentando reconectar em {0} segundos...</target>
+      </trans-unit>
+      <trans-unit id="reconnectionWaitMany">
+        <source xml:lang="en">Attempting to reconnect in {0} seconds...</source>
+        <target state="translated">Tentando reconectar em {0} segundos...</target>
+      </trans-unit>
       <trans-unit id="reconnectNow">
         <source xml:lang="en">Reconnect Now</source>
         <target state="translated">Reconectar agora</target>
@@ -175,14 +134,6 @@
         <source xml:lang="en">Cancel</source>
         <target state="translated">Cancelar</target>
       </trans-unit>
-      <trans-unit id="reconnectionWaitOne">
-        <source xml:lang="en">Attempting to reconnect in {0} second...</source>
-        <target state="translated">Tentando reconectar em {0} segundos...</target>
-      </trans-unit>
-      <trans-unit id="reconnectionWaitMany">
-        <source xml:lang="en">Attempting to reconnect in {0} seconds...</source>
-        <target state="translated">Tentando reconectar em {0} segundos...</target>
-      </trans-unit>
     </body>
   </file>
   <file original="src/vs/workbench/contrib/remote/browser/explorerViewItems" source-language="en" target-language="pt-BR" datatype="plaintext">
@@ -193,7 +144,60 @@
       </trans-unit>
       <trans-unit id="remote.explorer.switch">
         <source xml:lang="en">Switch Remote</source>
-        <target state="new">Switch Remote</target>
+        <target state="translated">Trocar remoto</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/remote/browser/remoteIndicator" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="remote.category">
+        <source xml:lang="en">Remote</source>
+        <target state="translated">Remoto</target>
+      </trans-unit>
+      <trans-unit id="remote.showMenu">
+        <source xml:lang="en">Show Remote Menu</source>
+        <target state="translated">Mostrar menu remoto</target>
+      </trans-unit>
+      <trans-unit id="remote.close">
+        <source xml:lang="en">Close Remote Connection</source>
+        <target state="translated">Fechar Conexão Remota</target>
+      </trans-unit>
+      <trans-unit id="miCloseRemote">
+        <source xml:lang="en">Close Re&amp;&amp;mote Connection</source>
+        <target state="translated">Fechar Conexão Re&amp;&amp;mota</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="host.open">
+        <source xml:lang="en">Opening Remote...</source>
+        <target state="translated">Abrindo Remoto...</target>
+      </trans-unit>
+      <trans-unit id="host.tooltip">
+        <source xml:lang="en">Editing on {0}</source>
+        <target state="translated">Edição em {0}</target>
+      </trans-unit>
+      <trans-unit id="disconnectedFrom">
+        <source xml:lang="en">Disconnected from</source>
+        <target state="translated">Desconectado de</target>
+      </trans-unit>
+      <trans-unit id="host.tooltipDisconnected">
+        <source xml:lang="en">Disconnected from {0}</source>
+        <target state="translated">Desconectado de {0}</target>
+      </trans-unit>
+      <trans-unit id="noHost.tooltip">
+        <source xml:lang="en">Open a remote window</source>
+        <target state="translated">Abrir uma janela remota</target>
+      </trans-unit>
+      <trans-unit id="status.host">
+        <source xml:lang="en">Remote Host</source>
+        <target state="translated">Host Remoto</target>
+      </trans-unit>
+      <trans-unit id="cat.title">
+        <source xml:lang="en">{0}: {1}</source>
+        <target state="translated">{0}: {1}</target>
+      </trans-unit>
+      <trans-unit id="closeRemote.title">
+        <source xml:lang="en">Close Remote Connection</source>
+        <target state="translated">Fechar Conexão Remota</target>
       </trans-unit>
     </body>
   </file>
@@ -253,7 +257,7 @@
       </trans-unit>
       <trans-unit id="remote.tunnelsView.labelPlaceholder">
         <source xml:lang="en">Port label</source>
-        <target state="new">Port label</target>
+        <target state="translated">Marcador da porta</target>
       </trans-unit>
       <trans-unit id="remote.tunnelsView.portNumberValid">
         <source xml:lang="en">Forwarded port is invalid.</source>
@@ -265,7 +269,7 @@
       </trans-unit>
       <trans-unit id="remote.tunnel.forward">
         <source xml:lang="en">Forward a Port</source>
-        <target state="new">Forward a Port</target>
+        <target state="translated">Encaminhar uma porta</target>
       </trans-unit>
       <trans-unit id="remote.tunnel.forwardItem">
         <source xml:lang="en">Forward Port</source>

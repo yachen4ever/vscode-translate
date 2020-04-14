@@ -1,17 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file original="src/vs/workbench/contrib/search/browser/openAnythingHandler" source-language="en" target-language="it" datatype="plaintext">
-    <body>
-      <trans-unit id="fileAndTypeResults">
-        <source xml:lang="en">file and symbol results</source>
-        <target state="translated">risultati per file e simboli</target>
-      </trans-unit>
-      <trans-unit id="fileResults">
-        <source xml:lang="en">file results</source>
-        <target state="translated">risultati dei file</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/search/browser/search.contribution" source-language="en" target-language="it" datatype="plaintext">
     <body>
       <trans-unit id="search">
@@ -76,11 +64,19 @@
         <target state="translated">Sostituisci nei &amp;&amp;file</target>
         <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
-      <trans-unit id="openAnythingHandlerDescription">
+      <trans-unit id="anythingQuickAccessPlaceholder">
+        <source xml:lang="en">Search files by name (append {0} to go to line or {1} to go to symbol)</source>
+        <target state="translated">Cerca i file per nome (aggiungere {0} per passare alla riga oppure {1} per passare al simbolo)</target>
+      </trans-unit>
+      <trans-unit id="anythingQuickAccess">
         <source xml:lang="en">Go to File</source>
         <target state="translated">Vai al file</target>
       </trans-unit>
-      <trans-unit id="openSymbolDescriptionNormal">
+      <trans-unit id="symbolsQuickAccessPlaceholder">
+        <source xml:lang="en">Type the name of a symbol to open.</source>
+        <target state="translated">Digitare il nome di un simbolo da aprire.</target>
+      </trans-unit>
+      <trans-unit id="symbolsQuickAccess">
         <source xml:lang="en">Go to Symbol in Workspace</source>
         <target state="translated">Vai al simbolo nell'area di lavoro</target>
       </trans-unit>
@@ -89,8 +85,8 @@
         <target state="translated">Cerca</target>
       </trans-unit>
       <trans-unit id="exclude">
-        <source xml:lang="en">Configure glob patterns for excluding files and folders in searches. Inherits all glob patterns from the `#files.exclude#` setting. Read more about glob patterns [here](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).</source>
-        <target state="translated">Consente di configurare i criteri GLOB per escludere file e cartelle nelle ricerche. Eredita tutti i criteri GLOB dall'impostazione `#files.exclude#`. Altre informazioni sui criteri GLOB [qui](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).</target>
+        <source xml:lang="en">Configure glob patterns for excluding files and folders in fulltext searches and quick open. Inherits all glob patterns from the `#files.exclude#` setting. Read more about glob patterns [here](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).</source>
+        <target state="translated">Consente di configurare i criteri GLOB per escludere file e cartelle nelle ricerche full-text e in Quick Open. Eredita tutti i criteri GLOB dall'impostazione `#files.exclude#`. Per altre informazioni sui criteri GLOB, fare clic [qui](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).</target>
       </trans-unit>
       <trans-unit id="exclude.boolean">
         <source xml:lang="en">The glob pattern to match file paths against. Set to true or false to enable or disable the pattern.</source>
@@ -128,6 +124,18 @@
         <source xml:lang="en">Whether to include results from recently opened files in the file results for Quick Open.</source>
         <target state="translated">Indica se includere i risultati di file aperti di recente nel file dei risultati per Quick Open.</target>
       </trans-unit>
+      <trans-unit id="filterSortOrder.default">
+        <source xml:lang="en">History entries are sorted by relevance based on the filter value used. More relevant entries appear first.</source>
+        <target state="translated">Le voci della cronologia sono ordinate per pertinenza in base al valore di filtro usato. Le voci più pertinenti vengono visualizzate per prime.</target>
+      </trans-unit>
+      <trans-unit id="filterSortOrder.recency">
+        <source xml:lang="en">History entries are sorted by recency. More recently opened entries appear first.</source>
+        <target state="translated">Le voci della cronologia sono ordinate in base alla data. Le voci aperte più di recente vengono visualizzate per prime.</target>
+      </trans-unit>
+      <trans-unit id="filterSortOrder">
+        <source xml:lang="en">Controls sorting order of editor history in quick open when filtering.</source>
+        <target state="translated">Controlla l'ordinamento della cronologia dell'editor in Quick Open quando viene applicato il filtro.</target>
+      </trans-unit>
       <trans-unit id="search.followSymlinks">
         <source xml:lang="en">Controls whether to follow symlinks while searching.</source>
         <target state="translated">Controlla se seguire i collegamenti simbolici durante la ricerca.</target>
@@ -147,6 +155,10 @@
       <trans-unit id="search.location.deprecationMessage">
         <source xml:lang="en">This setting is deprecated. Please use the search view's context menu instead.</source>
         <target state="translated">Questa impostazione è deprecata. Usare il menu di scelta rapida della visualizzazione di ricerca.</target>
+      </trans-unit>
+      <trans-unit id="search.collapseResults.auto">
+        <source xml:lang="en">Files with less than 10 results are expanded. Others are collapsed.</source>
+        <target state="translated">I file con meno di 10 risultati vengono espansi. Gli altri vengono compressi.</target>
       </trans-unit>
       <trans-unit id="search.collapseAllResults">
         <source xml:lang="en">Controls whether the search results will be collapsed or expanded.</source>
@@ -244,35 +256,23 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/search/browser/openSymbolHandler" source-language="en" target-language="it" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/search/browser/symbolsQuickAccess" source-language="en" target-language="it" datatype="plaintext">
     <body>
-      <trans-unit id="entryAriaLabel">
-        <source xml:lang="en">{0}, symbols picker</source>
-        <target state="translated">{0}, selezione simboli</target>
+      <trans-unit id="openToSide">
+        <source xml:lang="en">Open to the Side</source>
+        <target state="translated">Apri lateralmente</target>
       </trans-unit>
-      <trans-unit id="symbols">
-        <source xml:lang="en">symbol results</source>
-        <target state="translated">risultati per simboli</target>
-      </trans-unit>
-      <trans-unit id="noSymbolsMatching">
-        <source xml:lang="en">No symbols matching</source>
-        <target state="translated">Non ci sono simboli corrispondenti</target>
-      </trans-unit>
-      <trans-unit id="noSymbolsWithoutInput">
-        <source xml:lang="en">Type to search for symbols</source>
-        <target state="translated">Digitare per cercare i simboli</target>
+      <trans-unit id="openToBottom">
+        <source xml:lang="en">Open to the Bottom</source>
+        <target state="translated">Apri in basso</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/search/browser/openFileHandler" source-language="en" target-language="it" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/search/common/queryBuilder" source-language="en" target-language="it" datatype="plaintext">
     <body>
-      <trans-unit id="entryAriaLabel">
-        <source xml:lang="en">{0}, file picker</source>
-        <target state="translated">{0}, selezione file</target>
-      </trans-unit>
-      <trans-unit id="searchResults">
-        <source xml:lang="en">search results</source>
-        <target state="translated">risultati della ricerca</target>
+      <trans-unit id="search.noWorkspaceWithName">
+        <source xml:lang="en">No folder in workspace with name: {0}</source>
+        <target state="translated">Nell'area di lavoro non ci sono cartelle denominate {0}</target>
       </trans-unit>
     </body>
   </file>
@@ -281,10 +281,6 @@
       <trans-unit id="searchCanceled">
         <source xml:lang="en">Search was canceled before any results could be found - </source>
         <target state="translated">La ricerca è stata annullata prima della visualizzazione dei risultati - </target>
-      </trans-unit>
-      <trans-unit id="searchView">
-        <source xml:lang="en">Search</source>
-        <target state="translated">Cerca</target>
       </trans-unit>
       <trans-unit id="moreSearch">
         <source xml:lang="en">Toggle Search Details</source>
@@ -464,14 +460,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/search/common/queryBuilder" source-language="en" target-language="it" datatype="plaintext">
-    <body>
-      <trans-unit id="search.noWorkspaceWithName">
-        <source xml:lang="en">No folder in workspace with name: {0}</source>
-        <target state="translated">Nell'area di lavoro non ci sono cartelle denominate {0}</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/search/browser/searchWidget" source-language="en" target-language="it" datatype="plaintext">
     <body>
       <trans-unit id="search.action.replaceAll.disabled.label">
@@ -568,6 +556,14 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/search/browser/replaceService" source-language="en" target-language="it" datatype="plaintext">
+    <body>
+      <trans-unit id="fileReplaceChanges">
+        <source xml:lang="en">{0} ↔ {1} (Replace Preview)</source>
+        <target state="translated">{0} ↔ {1} (Anteprima sostituzione)</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/search/browser/patternInputWidget" source-language="en" target-language="it" datatype="plaintext">
     <body>
       <trans-unit id="defaultLabel">
@@ -580,11 +576,35 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/search/browser/replaceService" source-language="en" target-language="it" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/search/browser/anythingQuickAccess" source-language="en" target-language="it" datatype="plaintext">
     <body>
-      <trans-unit id="fileReplaceChanges">
-        <source xml:lang="en">{0} ↔ {1} (Replace Preview)</source>
-        <target state="translated">{0} ↔ {1} (Anteprima sostituzione)</target>
+      <trans-unit id="recentlyOpenedSeparator">
+        <source xml:lang="en">recently opened</source>
+        <target state="translated">aperti di recente</target>
+      </trans-unit>
+      <trans-unit id="fileAndSymbolResultsSeparator">
+        <source xml:lang="en">file and symbol results</source>
+        <target state="translated">risultati per file e simboli</target>
+      </trans-unit>
+      <trans-unit id="fileResultsSeparator">
+        <source xml:lang="en">file results</source>
+        <target state="translated">risultati dei file</target>
+      </trans-unit>
+      <trans-unit id="filePickAriaLabelDirty">
+        <source xml:lang="en">{0}, dirty</source>
+        <target state="translated">{0}, modificato ma non salvato</target>
+      </trans-unit>
+      <trans-unit id="openToSide">
+        <source xml:lang="en">Open to the Side</source>
+        <target state="translated">Apri lateralmente</target>
+      </trans-unit>
+      <trans-unit id="openToBottom">
+        <source xml:lang="en">Open to the Bottom</source>
+        <target state="translated">Apri in basso</target>
+      </trans-unit>
+      <trans-unit id="closeEditor">
+        <source xml:lang="en">Remove from Recently Opened</source>
+        <target state="translated">Rimuovi dagli elementi aperti di recente</target>
       </trans-unit>
     </body>
   </file>

@@ -10,26 +10,70 @@
         <source xml:lang="en">Log Viewer</source>
         <target state="translated">日志查看器</target>
       </trans-unit>
-      <trans-unit id="viewCategory">
-        <source xml:lang="en">View</source>
-        <target state="translated">视图</target>
-      </trans-unit>
-      <trans-unit id="developer">
-        <source xml:lang="en">Developer</source>
-        <target state="translated">开发人员</target>
+      <trans-unit id="switchToOutput.label">
+        <source xml:lang="en">Switch to Output</source>
+        <target state="translated">切换到输出</target>
       </trans-unit>
       <trans-unit id="clearOutput.label">
         <source xml:lang="en">Clear Output</source>
         <target state="translated">清除输出</target>
       </trans-unit>
+      <trans-unit id="viewCategory">
+        <source xml:lang="en">View</source>
+        <target state="translated">视图</target>
+      </trans-unit>
+      <trans-unit id="outputCleared">
+        <source xml:lang="en">Output was cleared</source>
+        <target state="translated">输出被清除</target>
+      </trans-unit>
+      <trans-unit id="toggleAutoScroll">
+        <source xml:lang="en">Toggle Auto Scrolling</source>
+        <target state="translated">切换自动滚动</target>
+      </trans-unit>
+      <trans-unit id="outputScrollOff">
+        <source xml:lang="en">Turn Auto Scrolling Off</source>
+        <target state="translated">关闭自动滚动</target>
+      </trans-unit>
+      <trans-unit id="outputScrollOn">
+        <source xml:lang="en">Turn Auto Scrolling On</source>
+        <target state="translated">打开自动滚动</target>
+      </trans-unit>
       <trans-unit id="openActiveLogOutputFile">
-        <source xml:lang="en">Open Active Log Output File</source>
-        <target state="translated">打开活动日志输出文件</target>
+        <source xml:lang="en">Open Log Output File</source>
+        <target state="translated">打开日志输出文件</target>
+      </trans-unit>
+      <trans-unit id="toggleOutput">
+        <source xml:lang="en">Toggle Output</source>
+        <target state="translated">切换输出</target>
+      </trans-unit>
+      <trans-unit id="developer">
+        <source xml:lang="en">Developer</source>
+        <target state="translated">开发人员</target>
+      </trans-unit>
+      <trans-unit id="showLogs">
+        <source xml:lang="en">Show Logs...</source>
+        <target state="translated">显示日志...</target>
+      </trans-unit>
+      <trans-unit id="selectlog">
+        <source xml:lang="en">Select Log</source>
+        <target state="translated">选择日志</target>
+      </trans-unit>
+      <trans-unit id="openLogFile">
+        <source xml:lang="en">Open Log File...</source>
+        <target state="translated">打开日志文件...</target>
+      </trans-unit>
+      <trans-unit id="selectlogFile">
+        <source xml:lang="en">Select Log file</source>
+        <target state="translated">选择日志文件</target>
       </trans-unit>
       <trans-unit id="miToggleOutput">
         <source xml:lang="en">&amp;&amp;Output</source>
         <target state="translated">输出(&amp;&amp;O)</target>
         <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="output.smartScroll.enabled">
+        <source xml:lang="en">Enable/disable the ability of smart scrolling in the output view. Smart scrolling allows you to lock scrolling automatically when you click in the output view and unlocks when you click in the last line.</source>
+        <target state="translated">在输出视图中启用或禁用「智能滚动」。「智能滚动」会自动在你点击输出视图时锁定滚动，并在你点击最后一行时解锁滚动。</target>
       </trans-unit>
     </body>
   </file>
@@ -55,47 +99,6 @@
         <source xml:lang="en">Output panel</source>
         <target state="translated">输出面板</target>
       </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/output/browser/logViewer" source-language="en" target-language="zh-Hans" datatype="plaintext">
-    <body>
-      <trans-unit id="logViewerAriaLabel">
-        <source xml:lang="en">Log viewer</source>
-        <target state="translated">日志查看器</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/output/browser/outputActions" source-language="en" target-language="zh-Hans" datatype="plaintext">
-    <body>
-      <trans-unit id="toggleOutput">
-        <source xml:lang="en">Toggle Output</source>
-        <target state="translated">切换输出</target>
-      </trans-unit>
-      <trans-unit id="clearOutput">
-        <source xml:lang="en">Clear Output</source>
-        <target state="translated">清除输出</target>
-      </trans-unit>
-      <trans-unit id="outputCleared">
-        <source xml:lang="en">Output was cleared</source>
-        <target state="translated">输出被清除</target>
-      </trans-unit>
-      <trans-unit id="toggleOutputScrollLock">
-        <source xml:lang="en">Toggle Output Scroll Lock</source>
-        <target state="translated">切换输出滚动锁定</target>
-        <note>Turn on / off automatic output scrolling</note>
-      </trans-unit>
-      <trans-unit id="outputScrollOn">
-        <source xml:lang="en">Turn Auto Scrolling On</source>
-        <target state="translated">打开自动滚动</target>
-      </trans-unit>
-      <trans-unit id="outputScrollOff">
-        <source xml:lang="en">Turn Auto Scrolling Off</source>
-        <target state="translated">关闭自动滚动</target>
-      </trans-unit>
-      <trans-unit id="switchToOutput.label">
-        <source xml:lang="en">Switch to Output</source>
-        <target state="translated">切换到输出</target>
-      </trans-unit>
       <trans-unit id="outputChannels">
         <source xml:lang="en">Output Channels.</source>
         <target state="translated">输出通道。</target>
@@ -104,25 +107,13 @@
         <source xml:lang="en">Log ({0})</source>
         <target state="translated">日志 ({0})</target>
       </trans-unit>
-      <trans-unit id="openInLogViewer">
-        <source xml:lang="en">Open Log File</source>
-        <target state="translated">打开日志文件</target>
-      </trans-unit>
-      <trans-unit id="showLogs">
-        <source xml:lang="en">Show Logs...</source>
-        <target state="translated">显示日志...</target>
-      </trans-unit>
-      <trans-unit id="selectlog">
-        <source xml:lang="en">Select Log</source>
-        <target state="translated">选择日志</target>
-      </trans-unit>
-      <trans-unit id="openLogFile">
-        <source xml:lang="en">Open Log File...</source>
-        <target state="translated">打开日志文件...</target>
-      </trans-unit>
-      <trans-unit id="selectlogFile">
-        <source xml:lang="en">Select Log file</source>
-        <target state="translated">选择日志文件</target>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/output/browser/logViewer" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <body>
+      <trans-unit id="logViewerAriaLabel">
+        <source xml:lang="en">Log viewer</source>
+        <target state="translated">日志查看器</target>
       </trans-unit>
     </body>
   </file>

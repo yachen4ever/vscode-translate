@@ -3,8 +3,44 @@
   <file original="src/vs/workbench/contrib/userDataSync/electron-browser/userDataSync.contribution" source-language="en" target-language="es" datatype="plaintext">
     <body>
       <trans-unit id="Open Backup folder">
-        <source xml:lang="en">Sync: Open Local Backups Folder</source>
-        <target state="translated">Sincronizar: Abrir carpeta de copias de seguridad locales</target>
+        <source xml:lang="en">Open Local Backups Folder</source>
+        <target state="translated">Abrir carpeta de copias de seguridad locales</target>
+      </trans-unit>
+      <trans-unit id="sync preferences">
+        <source xml:lang="en">Preferences Sync</source>
+        <target state="translated">Sincronización de preferencias</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/userDataSync/browser/userDataSyncView" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="sync preferences">
+        <source xml:lang="en">Preferences Sync</source>
+        <target state="translated">Sincronización de preferencias</target>
+      </trans-unit>
+      <trans-unit id="remote title">
+        <source xml:lang="en">Remote Backup</source>
+        <target state="translated">Copia de seguridad remota</target>
+      </trans-unit>
+      <trans-unit id="local title">
+        <source xml:lang="en">Local Backup</source>
+        <target state="translated">Copia de seguridad local</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.showSyncRemoteBackup">
+        <source xml:lang="en">Show Remote Backup</source>
+        <target state="translated">Mostrar copia de seguridad remota</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.showSyncLocalBackup">
+        <source xml:lang="en">Show Local Backup</source>
+        <target state="translated">Mostrar copia de seguridad local</target>
+      </trans-unit>
+      <trans-unit id="workbench.actions.sync.resolveResourceRef">
+        <source xml:lang="en">Show full content</source>
+        <target state="translated">Mostrar contenido completo</target>
+      </trans-unit>
+      <trans-unit id="workbench.actions.sync.commpareWithLocal">
+        <source xml:lang="en">Open Changes</source>
+        <target state="translated">Abrir cambios</target>
       </trans-unit>
     </body>
   </file>
@@ -15,8 +51,12 @@
         <target state="translated">Configuración</target>
       </trans-unit>
       <trans-unit id="keybindings">
-        <source xml:lang="en">Keybindings</source>
-        <target state="translated">Enlaces de teclado</target>
+        <source xml:lang="en">Keyboard Shortcuts</source>
+        <target state="translated">Métodos abreviados de teclado</target>
+      </trans-unit>
+      <trans-unit id="snippets">
+        <source xml:lang="en">User Snippets</source>
+        <target state="translated">Fragmentos de código de usuario</target>
       </trans-unit>
       <trans-unit id="extensions">
         <source xml:lang="en">Extensions</source>
@@ -35,36 +75,48 @@
         <target state="translated">{0} ({1} sincronizado)</target>
       </trans-unit>
       <trans-unit id="turn on sync with category">
-        <source xml:lang="en">Sync: Turn on Sync</source>
-        <target state="translated">Sincronizar: Activar la sincronización</target>
+        <source xml:lang="en">Preferences Sync: Turn on...</source>
+        <target state="translated">Sincronización de preferencias: activar...</target>
       </trans-unit>
       <trans-unit id="sign in">
-        <source xml:lang="en">Sync: Sign in to sync</source>
-        <target state="translated">Sincronizar: inicia sesión para sincronizar</target>
+        <source xml:lang="en">Preferences Sync: Sign in to sync</source>
+        <target state="translated">Sincronización de preferencias: inicie sesión para sincronizar</target>
       </trans-unit>
       <trans-unit id="stop sync">
-        <source xml:lang="en">Sync: Turn off Sync</source>
-        <target state="translated">Sincronización: desactivar la sincronización</target>
+        <source xml:lang="en">Preferences Sync: Turn Off</source>
+        <target state="translated">Sincronización de preferencias: desactivar</target>
       </trans-unit>
       <trans-unit id="showConflicts">
-        <source xml:lang="en">Sync: Show Settings Conflicts</source>
-        <target state="translated">Sincronizar: Mostrar conflictos de configuración</target>
+        <source xml:lang="en">Preferences Sync: Show Settings Conflicts</source>
+        <target state="translated">Sincronización de preferencias: Mostrar conflictos de configuración</target>
       </trans-unit>
       <trans-unit id="showKeybindingsConflicts">
-        <source xml:lang="en">Sync: Show Keybindings Conflicts</source>
-        <target state="translated">Sincronización: Mostrar conflictos de enlaces de teclas</target>
+        <source xml:lang="en">Preferences Sync: Show Keybindings Conflicts</source>
+        <target state="translated">Sincronización de preferencias: Mostrar conflictos de enlaces de teclas</target>
+      </trans-unit>
+      <trans-unit id="showSnippetsConflicts">
+        <source xml:lang="en">Preferences Sync: Show User Snippets Conflicts</source>
+        <target state="translated">Sincronización de preferencias: mostrar conflictos de fragmentos de usuario</target>
       </trans-unit>
       <trans-unit id="configure sync">
-        <source xml:lang="en">Sync: Configure</source>
-        <target state="translated">Sincronización: configurar</target>
+        <source xml:lang="en">Preferences Sync: Configure...</source>
+        <target state="translated">Sincronización de preferencias: configurar...</target>
       </trans-unit>
       <trans-unit id="show sync log">
-        <source xml:lang="en">Sync: Show Log</source>
-        <target state="translated">Sincronizar: Mostrar registro</target>
+        <source xml:lang="en">Preferences Sync: Show Log</source>
+        <target state="translated">Sincronización de preferencias: Mostrar registro</target>
       </trans-unit>
       <trans-unit id="sync settings">
-        <source xml:lang="en">Sync: Settings</source>
-        <target state="translated">Sincronización: Ajustes</target>
+        <source xml:lang="en">Preferences Sync: Show Settings</source>
+        <target state="translated">Sincronización de preferencias: Mostrar configuración</target>
+      </trans-unit>
+      <trans-unit id="chooseAccountTitle">
+        <source xml:lang="en">Preferences Sync: Choose Account</source>
+        <target state="translated">Sincronización de preferencias: elegir cuenta</target>
+      </trans-unit>
+      <trans-unit id="chooseAccount">
+        <source xml:lang="en">Choose an account you would like to use for preferences sync</source>
+        <target state="translated">Elija una cuenta que quiera usar para la sincronización de preferencias</target>
       </trans-unit>
       <trans-unit id="conflicts detected">
         <source xml:lang="en">Unable to sync due to conflicts in {0}. Please resolve them to continue.</source>
@@ -119,8 +171,8 @@
         <target state="translated">Iniciar sesión para sincronizar</target>
       </trans-unit>
       <trans-unit id="has conflicts">
-        <source xml:lang="en">Sync: Conflicts Detected</source>
-        <target state="translated">Sincronización: Conflictos detectados</target>
+        <source xml:lang="en">Preferences Sync: Conflicts Detected</source>
+        <target state="translated">Sincronización de preferencias: conflictos detectados</target>
       </trans-unit>
       <trans-unit id="sync preview message">
         <source xml:lang="en">Synchronizing your preferences is a preview feature, please read the documentation before turning it on.</source>
@@ -134,13 +186,17 @@
         <source xml:lang="en">Cancel</source>
         <target state="translated">Cancelar</target>
       </trans-unit>
-      <trans-unit id="turn on title">
-        <source xml:lang="en">Sync: Turn On</source>
-        <target state="translated">Sincronización: Activar</target>
+      <trans-unit id="turn on sync confirmation">
+        <source xml:lang="en">Do you want to turn on preferences sync?</source>
+        <target state="translated">¿Desea activar la sincronización de las preferencias?</target>
       </trans-unit>
       <trans-unit id="turn on">
         <source xml:lang="en">Turn On</source>
         <target state="translated">Activar</target>
+      </trans-unit>
+      <trans-unit id="turn on title">
+        <source xml:lang="en">Preferences Sync: Turn On</source>
+        <target state="translated">Sincronización de preferencias: activar</target>
       </trans-unit>
       <trans-unit id="sign in and turn on sync detail">
         <source xml:lang="en">Sign in with your {0} account to synchronize your data across devices.</source>
@@ -175,12 +231,8 @@
         <target state="translated">Usar otra cuenta</target>
       </trans-unit>
       <trans-unit id="sync turned on">
-        <source xml:lang="en">Sync will happen automatically from now on.</source>
-        <target state="translated">La sincronización se realizará automáticamente a partir de ahora.</target>
-      </trans-unit>
-      <trans-unit id="ui state description">
-        <source xml:lang="en">only 'Display Language' for now</source>
-        <target state="translated">solo "Display Language" por ahora</target>
+        <source xml:lang="en">Preferences sync is turned on</source>
+        <target state="translated">La sincronización de preferencias está activada</target>
       </trans-unit>
       <trans-unit id="firs time sync">
         <source xml:lang="en">Sync</source>
@@ -201,8 +253,8 @@ Would you like to merge or replace with the data from the cloud?</source>
 ¿Desea combinar o reemplazar con los datos de la nube?</target>
       </trans-unit>
       <trans-unit id="turn off sync confirmation">
-        <source xml:lang="en">Turn off Sync</source>
-        <target state="translated">Desactivar la sincronización</target>
+        <source xml:lang="en">Do you want to turn off sync?</source>
+        <target state="translated">¿Desea desactivar la sincronización?</target>
       </trans-unit>
       <trans-unit id="turn off sync detail">
         <source xml:lang="en">Your settings, keybindings, extensions and UI State will no longer be synced.</source>
@@ -228,44 +280,56 @@ Would you like to merge or replace with the data from the cloud?</source>
         <source xml:lang="en">Keybindings Conflicts (Remote ↔ Local)</source>
         <target state="translated">Conflictos de enlaces de teclas (Remoto ↔ Local)</target>
       </trans-unit>
+      <trans-unit id="snippets conflicts preview">
+        <source xml:lang="en">User Snippet Conflicts (Remote ↔ Local) - {0}</source>
+        <target state="translated">Conflictos de fragmentos de usuario (Remoto ↔ Local) - {0}</target>
+      </trans-unit>
       <trans-unit id="turn on failed">
         <source xml:lang="en">Error while starting Sync: {0}</source>
         <target state="translated">Error al iniciar la sincronización: {0}</target>
       </trans-unit>
       <trans-unit id="global activity turn on sync">
-        <source xml:lang="en">Turn on Sync...</source>
-        <target state="translated">Activar sincronización...</target>
+        <source xml:lang="en">Turn on Preferences Sync...</source>
+        <target state="translated">Activar la sincronización de preferencias...</target>
+      </trans-unit>
+      <trans-unit id="sign in 2">
+        <source xml:lang="en">Preferences Sync: Sign in to sync (1)</source>
+        <target state="translated">Sincronización de preferencias: iniciar sesión para sincronizar (1)</target>
       </trans-unit>
       <trans-unit id="resolveConflicts_global">
-        <source xml:lang="en">Sync: Show Settings Conflicts (1)</source>
-        <target state="translated">Sincronizar: Mostrar conflictos de configuración (1)</target>
+        <source xml:lang="en">Preferences Sync: Show Settings Conflicts (1)</source>
+        <target state="translated">Sincronización de preferencias: mostrar conflictos de configuración (1)</target>
       </trans-unit>
       <trans-unit id="resolveKeybindingsConflicts_global">
-        <source xml:lang="en">Sync: Show Keybindings Conflicts (1)</source>
-        <target state="translated">Sincronizar: Mostrar conflictos de enlaces de teclas (1)</target>
+        <source xml:lang="en">Preferences Sync: Show Keybindings Conflicts (1)</source>
+        <target state="translated">Sincronización de preferencias: Mostrar conflictos de enlaces de teclas (1)</target>
+      </trans-unit>
+      <trans-unit id="resolveSnippetsConflicts_global">
+        <source xml:lang="en">Preferences Sync: Show User Snippets Conflicts ({0})</source>
+        <target state="translated">Sincronización de preferencias: Mostrar conflictos de fragmentos de usuario ({0})</target>
       </trans-unit>
       <trans-unit id="sync is on">
-        <source xml:lang="en">Sync is on</source>
-        <target state="translated">La sincronización está activada</target>
+        <source xml:lang="en">Preferences Sync is On</source>
+        <target state="translated">La sincronización de preferencias está activa</target>
       </trans-unit>
       <trans-unit id="turn off failed">
         <source xml:lang="en">Error while turning off sync: {0}</source>
         <target state="translated">Error al desactivar la sincronización: {0}</target>
       </trans-unit>
       <trans-unit id="Sync accept remote">
-        <source xml:lang="en">Sync: {0}</source>
-        <target state="translated">Sincronización: {0}</target>
+        <source xml:lang="en">Preferences Sync: {0}</source>
+        <target state="translated">Sincronización de preferencias: {0}</target>
       </trans-unit>
       <trans-unit id="Sync accept local">
-        <source xml:lang="en">Sync: {0}</source>
-        <target state="translated">Sincronización: {0}</target>
+        <source xml:lang="en">Preferences Sync: {0}</source>
+        <target state="translated">Sincronización de preferencias: {0}</target>
       </trans-unit>
       <trans-unit id="confirm replace and overwrite local">
-        <source xml:lang="en">Would you like to accept Remote {0} and replace Local {1}?</source>
+        <source xml:lang="en">Would you like to accept remote {0} and replace local {1}?</source>
         <target state="translated">¿Desea aceptar {0} remoto y reemplazar {1} local?</target>
       </trans-unit>
       <trans-unit id="confirm replace and overwrite remote">
-        <source xml:lang="en">Would you like to accept Local {0} and replace Remote {1}?</source>
+        <source xml:lang="en">Would you like to accept local {0} and replace remote {1}?</source>
         <target state="translated">¿Desea aceptar {0} local y reemplazar {1} remoto?</target>
       </trans-unit>
       <trans-unit id="update conflicts">

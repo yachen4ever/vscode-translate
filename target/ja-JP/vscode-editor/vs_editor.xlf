@@ -1,5 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/editor/common/services/modelServiceImpl" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="undoRedoConfirm">
+        <source xml:lang="en">Keep the undo-redo stack for {0} in memory ({1} MB)?</source>
+        <target state="translated">メモリ ({1} MB) 内の {0} の元に戻す/やり直し履歴を保持しますか?</target>
+      </trans-unit>
+      <trans-unit id="nok">
+        <source xml:lang="en">Discard</source>
+        <target state="translated">破棄</target>
+      </trans-unit>
+      <trans-unit id="ok">
+        <source xml:lang="en">Keep</source>
+        <target state="translated">保持</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/common/standaloneStrings" source-language="en" target-language="ja" datatype="plaintext">
     <body>
       <trans-unit id="noSelection">
@@ -98,113 +114,33 @@
         <source xml:lang="en">Developer: Inspect Tokens</source>
         <target state="translated">開発者: トークンの検査</target>
       </trans-unit>
-      <trans-unit id="gotoLineLabelValidLineAndColumn">
-        <source xml:lang="en">Go to line {0} and character {1}</source>
-        <target state="translated">行 {0} 文字 {1} へ移動</target>
-      </trans-unit>
-      <trans-unit id="gotoLineLabelValidLine">
-        <source xml:lang="en">Go to line {0}</source>
-        <target state="translated">行 {0} へ移動</target>
-      </trans-unit>
-      <trans-unit id="gotoLineLabelEmptyWithLineLimit">
-        <source xml:lang="en">Type a line number between 1 and {0} to navigate to</source>
-        <target state="translated">移動先の行番号を 1 ～ {0} の範囲で入力してください</target>
-      </trans-unit>
-      <trans-unit id="gotoLineLabelEmptyWithLineAndColumnLimit">
-        <source xml:lang="en">Type a character between 1 and {0} to navigate to</source>
-        <target state="translated">移動先を 1 から {0} までの文字で入力</target>
-      </trans-unit>
-      <trans-unit id="gotoLineAriaLabel">
-        <source xml:lang="en">Current Line: {0}. Go to line {1}.</source>
-        <target state="translated">現在の行: {0}。 {1} 行目に移動。</target>
-      </trans-unit>
-      <trans-unit id="gotoLineActionInput">
-        <source xml:lang="en">Type a line number, followed by an optional colon and a character number to navigate to</source>
-        <target state="translated">移動先の行番号と、必要な場合はその後にコロンと文字番号を入力してください</target>
-      </trans-unit>
       <trans-unit id="gotoLineActionLabel">
-        <source xml:lang="en">Go to Line...</source>
-        <target state="translated">指定行へ移動...</target>
+        <source xml:lang="en">Go to Line/Column...</source>
+        <target state="translated">行/列に移動する...</target>
       </trans-unit>
-      <trans-unit id="ariaLabelEntryWithKey">
-        <source xml:lang="en">{0}, {1}, commands</source>
-        <target state="translated">{0}、{1}、コマンド</target>
-      </trans-unit>
-      <trans-unit id="ariaLabelEntry">
-        <source xml:lang="en">{0}, commands</source>
-        <target state="translated">{0}、コマンド</target>
-      </trans-unit>
-      <trans-unit id="quickCommandActionInput">
-        <source xml:lang="en">Type the name of an action you want to execute</source>
-        <target state="translated">実行するアクションの名前を入力</target>
+      <trans-unit id="helpQuickAccess">
+        <source xml:lang="en">Show all Quick Access Providers</source>
+        <target state="translated">すべてのクイック アクセス プロバイダーを表示</target>
       </trans-unit>
       <trans-unit id="quickCommandActionLabel">
         <source xml:lang="en">Command Palette</source>
         <target state="translated">コマンド パレット</target>
       </trans-unit>
-      <trans-unit id="entryAriaLabel">
-        <source xml:lang="en">{0}, symbols</source>
-        <target state="translated">{0}、シンボル</target>
-      </trans-unit>
-      <trans-unit id="quickOutlineActionInput">
-        <source xml:lang="en">Type the name of an identifier you wish to navigate to</source>
-        <target state="translated">移動先の識別子の名前を入力します</target>
+      <trans-unit id="quickCommandActionHelp">
+        <source xml:lang="en">Show And Run Commands</source>
+        <target state="translated">コマンドの表示と実行</target>
       </trans-unit>
       <trans-unit id="quickOutlineActionLabel">
         <source xml:lang="en">Go to Symbol...</source>
         <target state="translated">シンボルに移動...</target>
       </trans-unit>
-      <trans-unit id="symbols">
-        <source xml:lang="en">symbols ({0})</source>
-        <target state="translated">シンボル ({0})</target>
-      </trans-unit>
-      <trans-unit id="modules">
-        <source xml:lang="en">modules ({0})</source>
-        <target state="translated">モジュール ({0})</target>
-      </trans-unit>
-      <trans-unit id="class">
-        <source xml:lang="en">classes ({0})</source>
-        <target state="translated">クラス ({0})</target>
-      </trans-unit>
-      <trans-unit id="interface">
-        <source xml:lang="en">interfaces ({0})</source>
-        <target state="translated">インターフェイス ({0})</target>
-      </trans-unit>
-      <trans-unit id="method">
-        <source xml:lang="en">methods ({0})</source>
-        <target state="translated">メソッド ({0})</target>
-      </trans-unit>
-      <trans-unit id="function">
-        <source xml:lang="en">functions ({0})</source>
-        <target state="translated">関数 ({0})</target>
-      </trans-unit>
-      <trans-unit id="property">
-        <source xml:lang="en">properties ({0})</source>
-        <target state="translated">プロパティ ({0})</target>
-      </trans-unit>
-      <trans-unit id="variable">
-        <source xml:lang="en">variables ({0})</source>
-        <target state="translated">変数 ({0})</target>
-      </trans-unit>
-      <trans-unit id="variable2">
-        <source xml:lang="en">variables ({0})</source>
-        <target state="translated">変数 ({0})</target>
-      </trans-unit>
-      <trans-unit id="_constructor">
-        <source xml:lang="en">constructors ({0})</source>
-        <target state="translated">コンストラクター ({0})</target>
-      </trans-unit>
-      <trans-unit id="call">
-        <source xml:lang="en">calls ({0})</source>
-        <target state="translated">({0}) を呼び出す</target>
+      <trans-unit id="quickOutlineByCategoryActionLabel">
+        <source xml:lang="en">Go to Symbol by Category...</source>
+        <target state="translated">カテゴリ別のシンボルへ移動</target>
       </trans-unit>
       <trans-unit id="editorViewAccessibleLabel">
         <source xml:lang="en">Editor content</source>
         <target state="translated">エディターのコンテンツ</target>
-      </trans-unit>
-      <trans-unit id="accessibilityHelpMessageIE">
-        <source xml:lang="en">Press Ctrl+F1 for Accessibility Options.</source>
-        <target state="translated">アクセシビリティ オプションを表示するには Ctrl+F1 を押します。</target>
       </trans-unit>
       <trans-unit id="accessibilityHelpMessage">
         <source xml:lang="en">Press Alt+F1 for Accessibility Options.</source>
@@ -404,14 +340,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/browser/widget/codeEditorWidget" source-language="en" target-language="ja" datatype="plaintext">
-    <body>
-      <trans-unit id="cursors.maximum">
-        <source xml:lang="en">The number of cursors has been limited to {0}.</source>
-        <target state="translated">カーソルの数は {0} 個に制限されています。</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/browser/controller/coreCommands" source-language="en" target-language="ja" datatype="plaintext">
     <body>
       <trans-unit id="miSelectAll">
@@ -440,6 +368,14 @@
       <trans-unit id="redo">
         <source xml:lang="en">Redo</source>
         <target state="translated">やり直し</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/browser/widget/codeEditorWidget" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="cursors.maximum">
+        <source xml:lang="en">The number of cursors has been limited to {0}.</source>
+        <target state="translated">カーソルの数は {0} 個に制限されています。</target>
       </trans-unit>
     </body>
   </file>
@@ -534,8 +470,8 @@
         <target state="translated">明示的なフォント機能設定。</target>
       </trans-unit>
       <trans-unit id="fontLigaturesGeneral">
-        <source xml:lang="en">Configures font ligatures.</source>
-        <target state="translated">フォントの合字を構成します。</target>
+        <source xml:lang="en">Configures font ligatures or font features.</source>
+        <target state="translated">フォントの合字またはフォントの機能を構成します。</target>
       </trans-unit>
       <trans-unit id="fontSize">
         <source xml:lang="en">Controls the font size in pixels.</source>
@@ -621,21 +557,21 @@
         <source xml:lang="en">Controls whether the minimap is shown.</source>
         <target state="translated">ミニマップを表示するかどうかを制御します。</target>
       </trans-unit>
-      <trans-unit id="minimap.mode.actual">
-        <source xml:lang="en">The minimap will be displayed in its original size, so it might be higher than the editor.</source>
-        <target state="translated">ミニマップは元のサイズで表示されるため、エディターよりも高い可能性があります。</target>
+      <trans-unit id="minimap.size.proportional">
+        <source xml:lang="en">The minimap has the same size as the editor contents (and might scroll).</source>
+        <target state="translated">ミニマップのサイズは、エディターのコンテンツと同じです (スクロールする場合があります)。</target>
       </trans-unit>
-      <trans-unit id="minimap.mode.cover">
-        <source xml:lang="en">The minimap will always have the height of the editor and will stretch or shrink as necessary.</source>
-        <target state="translated">ミニマップは、常にエディターと同じ高さになり、必要に応じて拡大または縮小します。</target>
+      <trans-unit id="minimap.size.fill">
+        <source xml:lang="en">The minimap will stretch or shrink as necessary to fill the height of the editor (no scrolling).</source>
+        <target state="translated">ミニマップは、必要に応じて、エディターの高さを埋めるため、拡大または縮小します (スクロールしません)。</target>
       </trans-unit>
-      <trans-unit id="minimap.mode.contain">
-        <source xml:lang="en">The minimap will shrink as necessary to never be higher than the editor.</source>
-        <target state="translated">ミニマップは必要に応じて縮小し、エディターより高くなることはありません。</target>
+      <trans-unit id="minimap.size.fit">
+        <source xml:lang="en">The minimap will shrink as necessary to never be larger than the editor (no scrolling).</source>
+        <target state="translated">ミニマップは必要に応じて縮小し、エディターより大きくなることはありません (スクロールしません)。</target>
       </trans-unit>
-      <trans-unit id="minimap.mode">
-        <source xml:lang="en">Controls the rendering mode of the minimap.</source>
-        <target state="translated">ミニマップのレンダリング モードを制御します。</target>
+      <trans-unit id="minimap.size">
+        <source xml:lang="en">Controls the size of the minimap.</source>
+        <target state="translated">ミニマップのサイズを制御します。</target>
       </trans-unit>
       <trans-unit id="minimap.side">
         <source xml:lang="en">Controls the side where to render the minimap.</source>
@@ -646,8 +582,8 @@
         <target state="translated">ミニマップ スライダーを表示するタイミングを制御します。</target>
       </trans-unit>
       <trans-unit id="minimap.scale">
-        <source xml:lang="en">Scale of content drawn in the minimap.</source>
-        <target state="translated">ミニマップに描画されるコンテンツのスケール。</target>
+        <source xml:lang="en">Scale of content drawn in the minimap: 1, 2 or 3.</source>
+        <target state="translated">ミニマップに描画されるコンテンツのスケール: 1、2、または 3。</target>
       </trans-unit>
       <trans-unit id="minimap.renderCharacters">
         <source xml:lang="en">Render the actual characters on a line as opposed to color blocks.</source>
@@ -732,10 +668,6 @@
       <trans-unit id="suggest.insertMode">
         <source xml:lang="en">Controls whether words are overwritten when accepting completions. Note that this depends on extensions opting into this feature.</source>
         <target state="translated">入力候補を受け入れるときに単語を上書きするかどうかを制御します。これは、この機能の利用を選択する拡張機能に依存することにご注意ください。</target>
-      </trans-unit>
-      <trans-unit id="suggest.insertHighlight">
-        <source xml:lang="en">Controls whether unexpected text modifications while accepting completions should be highlighted, e.g `insertMode` is `replace` but the completion only supports `insert`.</source>
-        <target state="translated">入力候補を受け入れている間の予期しないテキストの変更を強調表示するかどうかを制御します。たとえば、`insertMode` は `replace` ですが、入力候補は `insert` のみをサポートしています。</target>
       </trans-unit>
       <trans-unit id="suggest.filterGraceful">
         <source xml:lang="en">Controls whether filtering and sorting suggestions accounts for small typos.</source>
@@ -869,7 +801,15 @@
         <source xml:lang="en">When enabled IntelliSense shows `snippet`-suggestions.</source>
         <target state="translated">有効にすると、IntelliSense に `スニペット` 候補が表示されます。</target>
       </trans-unit>
-      <trans-unit id="editor.suggest.hideStatusBar">
+      <trans-unit id="editor.suggest.showUsers">
+        <source xml:lang="en">When enabled IntelliSense shows `user`-suggestions.</source>
+        <target state="translated">有効な場合、IntelliSense によって 'ユーザー' 候補が示されます。</target>
+      </trans-unit>
+      <trans-unit id="editor.suggest.showIssues">
+        <source xml:lang="en">When enabled IntelliSense shows `issues`-suggestions.</source>
+        <target state="translated">有効にすると、IntelliSense によって '問題' 候補が示されます。</target>
+      </trans-unit>
+      <trans-unit id="editor.suggest.statusBar.visible">
         <source xml:lang="en">Controls the visibility of the status bar at the bottom of the suggest widget.</source>
         <target state="translated">候補ウィジェットの下部にあるステータス バーの表示を制御します。</target>
       </trans-unit>
@@ -1144,12 +1084,16 @@
         <target state="translated">ピーク ウィジェットのインライン エディターまたはツリーをフォーカスするかどうかを制御します。</target>
       </trans-unit>
       <trans-unit id="definitionLinkOpensInPeek">
-        <source xml:lang="en">Controls whether the definition link opens element in the peek widget.</source>
-        <target state="translated">定義リンクがピーク ウィジェット内の要素を開くかどうかを制御します。</target>
+        <source xml:lang="en">Controls whether the Go to Definition mouse gesture always opens the peek widget.</source>
+        <target state="translated">[定義へ移動] マウス ジェスチャーで、常にピーク ウィジェットを開くかどうかを制御します。</target>
       </trans-unit>
       <trans-unit id="quickSuggestionsDelay">
         <source xml:lang="en">Controls the delay in milliseconds after which quick suggestions will show up.</source>
         <target state="translated">クイック候補が表示されるまでのミリ秒を制御します。</target>
+      </trans-unit>
+      <trans-unit id="renameOnType">
+        <source xml:lang="en">Controls whether the editor auto renames on type.</source>
+        <target state="translated">エディターでの型の自動名前変更を制御します。</target>
       </trans-unit>
       <trans-unit id="renderControlCharacters">
         <source xml:lang="en">Controls whether the editor should render control characters.</source>
@@ -1170,6 +1114,10 @@
       <trans-unit id="renderLineHighlight">
         <source xml:lang="en">Controls how the editor should render the current line highlight.</source>
         <target state="translated">エディターが現在の行をどのように強調表示するかを制御します。</target>
+      </trans-unit>
+      <trans-unit id="renderLineHighlightOnlyWhenFocus">
+        <source xml:lang="en">Controls if the editor should render the current line highlight only when the editor is focused</source>
+        <target state="translated">エディターにフォーカスがある場合にのみ現在の行をエディターで強調表示する必要があるかどうかを制御します</target>
       </trans-unit>
       <trans-unit id="renderWhitespace.boundary">
         <source xml:lang="en">Render whitespace characters except for single spaces between words.</source>
@@ -1369,43 +1317,43 @@
         <source xml:lang="en">Close</source>
         <target state="translated">閉じる</target>
       </trans-unit>
-      <trans-unit id="no_lines">
-        <source xml:lang="en">no lines</source>
-        <target state="translated">行なし</target>
+      <trans-unit id="no_lines_changed">
+        <source xml:lang="en">no lines changed</source>
+        <target state="translated">変更された行はありません</target>
       </trans-unit>
-      <trans-unit id="one_line">
-        <source xml:lang="en">1 line</source>
-        <target state="translated">1 行</target>
+      <trans-unit id="one_line_changed">
+        <source xml:lang="en">1 line changed</source>
+        <target state="translated">1 行が変更されました</target>
       </trans-unit>
-      <trans-unit id="more_lines">
-        <source xml:lang="en">{0} lines</source>
-        <target state="translated">{0} 行</target>
+      <trans-unit id="more_lines_changed">
+        <source xml:lang="en">{0} lines changed</source>
+        <target state="translated">{0} 行が変更されました</target>
       </trans-unit>
       <trans-unit id="header">
-        <source xml:lang="en">Difference {0} of {1}: original {2}, {3}, modified {4}, {5}</source>
-        <target state="translated">{1} の差異 {0}: 変更前 {2}, {3}, 変更後 {4}, {5}</target>
+        <source xml:lang="en">Difference {0} of {1}: original line {2}, {3}, modified line {4}, {5}</source>
+        <target state="translated">相違 {0}/{1}: 元の行 {2}、{3}。変更された行 {4}、{5}</target>
         <note>This is the ARIA label for a git diff header.
 A git diff header looks like this: @@ -154,12 +159,39 @@.
 That encodes that at original line 154 (which is now line 159), 12 lines were removed/changed with 39 lines.
 Variables 0 and 1 refer to the diff index out of total number of diffs.
 Variables 2 and 4 will be numbers (a line number).
-Variables 3 and 5 will be "no lines", "1 line" or "X lines", localized separately.</note>
+Variables 3 and 5 will be "no lines changed", "1 line changed" or "X lines changed", localized separately.</note>
       </trans-unit>
       <trans-unit id="blankLine">
         <source xml:lang="en">blank</source>
         <target state="translated">空白</target>
       </trans-unit>
       <trans-unit id="equalLine">
-        <source xml:lang="en">original {0}, modified {1}: {2}</source>
-        <target state="translated">変更前の {0}、変更後の {1}: {2}</target>
+        <source xml:lang="en">{0} original line {1} modified line {2}</source>
+        <target state="translated">{0} 元の行 {1} 変更された行 {2}</target>
       </trans-unit>
       <trans-unit id="insertLine">
-        <source xml:lang="en">+ modified {0}: {1}</source>
-        <target state="translated">+ 変更後の {0}: {1}</target>
+        <source xml:lang="en">+ {0} modified line {1}</source>
+        <target state="translated">+ {0} 変更された行 {1}</target>
       </trans-unit>
       <trans-unit id="deleteLine">
-        <source xml:lang="en">- original {0}: {1}</source>
-        <target state="translated">- 変更前の {0}: {1}</target>
+        <source xml:lang="en">- {0} original line {1}</source>
+        <target state="translated">- {0} 元の行 {1}</target>
       </trans-unit>
       <trans-unit id="editor.action.diffReview.next">
         <source xml:lang="en">Go to Next Difference</source>
@@ -1420,8 +1368,8 @@ Variables 3 and 5 will be "no lines", "1 line" or "X lines", localized separatel
   <file original="src/vs/editor/browser/controller/textAreaHandler" source-language="en" target-language="ja" datatype="plaintext">
     <body>
       <trans-unit id="accessibilityOffAriaLabel">
-        <source xml:lang="en">The editor is not accessible at this time. Press Alt+F1 for options.</source>
-        <target state="translated">現在エディターにアクセスすることはできません。 Alt + F1 キーを押してオプションを選択します。</target>
+        <source xml:lang="en">The editor is not accessible at this time. Press {0} for options.</source>
+        <target state="translated">この時点では、エディターにアクセスできません。オプションを表示するには、{0} を押します。</target>
       </trans-unit>
     </body>
   </file>

@@ -8,18 +8,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/caretOperations/caretOperations" source-language="en" target-language="bg" datatype="plaintext">
-    <body>
-      <trans-unit id="caret.moveLeft">
-        <source xml:lang="en">Move Caret Left</source>
-        <target state="translated">Преместване на курсора наляво</target>
-      </trans-unit>
-      <trans-unit id="caret.moveRight">
-        <source xml:lang="en">Move Caret Right</source>
-        <target state="translated">Преместване на курсора надясно</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/cursorUndo/cursorUndo" source-language="en" target-language="bg" datatype="plaintext">
     <body>
       <trans-unit id="cursor.undo">
@@ -62,11 +50,15 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/tokenization/tokenization" source-language="en" target-language="bg" datatype="plaintext">
+  <file original="src/vs/editor/contrib/caretOperations/caretOperations" source-language="en" target-language="bg" datatype="plaintext">
     <body>
-      <trans-unit id="forceRetokenize">
-        <source xml:lang="en">Developer: Force Retokenize</source>
-        <target state="new">Developer: Force Retokenize</target>
+      <trans-unit id="caret.moveLeft">
+        <source xml:lang="en">Move Selected Text Left</source>
+        <target state="new">Move Selected Text Left</target>
+      </trans-unit>
+      <trans-unit id="caret.moveRight">
+        <source xml:lang="en">Move Selected Text Right</source>
+        <target state="new">Move Selected Text Right</target>
       </trans-unit>
     </body>
   </file>
@@ -94,6 +86,14 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/tokenization/tokenization" source-language="en" target-language="bg" datatype="plaintext">
+    <body>
+      <trans-unit id="forceRetokenize">
+        <source xml:lang="en">Developer: Force Retokenize</source>
+        <target state="new">Developer: Force Retokenize</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/toggleTabFocusMode/toggleTabFocusMode" source-language="en" target-language="bg" datatype="plaintext">
     <body>
       <trans-unit id="toggle.tabMovesFocus">
@@ -108,27 +108,6 @@
       <trans-unit id="toggle.tabMovesFocus.off">
         <source xml:lang="en">Pressing Tab will now insert the tab character</source>
         <target state="translated">Натискането на клавиша „Tab“ вече ще въвежда знак за табулация.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/bracketMatching/bracketMatching" source-language="en" target-language="bg" datatype="plaintext">
-    <body>
-      <trans-unit id="overviewRulerBracketMatchForeground">
-        <source xml:lang="en">Overview ruler marker color for matching brackets.</source>
-        <target state="translated">Цвят за отбелязване на съответстващите скоби в скалата за преглед.</target>
-      </trans-unit>
-      <trans-unit id="smartSelect.jumpBracket">
-        <source xml:lang="en">Go to Bracket</source>
-        <target state="translated">Към съответстващата скоба</target>
-      </trans-unit>
-      <trans-unit id="smartSelect.selectToBracket">
-        <source xml:lang="en">Select to Bracket</source>
-        <target state="translated">Избиране до съответстващата скоба</target>
-      </trans-unit>
-      <trans-unit id="miGoToBracket">
-        <source xml:lang="en">Go to &amp;&amp;Bracket</source>
-        <target state="new">Go to &amp;&amp;Bracket</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
     </body>
   </file>
@@ -167,14 +146,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/contextmenu/contextmenu" source-language="en" target-language="bg" datatype="plaintext">
-    <body>
-      <trans-unit id="action.showContextMenu.label">
-        <source xml:lang="en">Show Editor Context Menu</source>
-        <target state="translated">Показване на контекстното меню на редактора</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/format/formatActions" source-language="en" target-language="bg" datatype="plaintext">
     <body>
       <trans-unit id="formatDocument.label">
@@ -187,15 +158,11 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/inPlaceReplace/inPlaceReplace" source-language="en" target-language="bg" datatype="plaintext">
+  <file original="src/vs/editor/contrib/contextmenu/contextmenu" source-language="en" target-language="bg" datatype="plaintext">
     <body>
-      <trans-unit id="InPlaceReplaceAction.previous.label">
-        <source xml:lang="en">Replace with Previous Value</source>
-        <target state="translated">Замяна с предишната стойност</target>
-      </trans-unit>
-      <trans-unit id="InPlaceReplaceAction.next.label">
-        <source xml:lang="en">Replace with Next Value</source>
-        <target state="translated">Замяна със следващата стойност</target>
+      <trans-unit id="action.showContextMenu.label">
+        <source xml:lang="en">Show Editor Context Menu</source>
+        <target state="translated">Показване на контекстното меню на редактора</target>
       </trans-unit>
     </body>
   </file>
@@ -215,6 +182,18 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/inPlaceReplace/inPlaceReplace" source-language="en" target-language="bg" datatype="plaintext">
+    <body>
+      <trans-unit id="InPlaceReplaceAction.previous.label">
+        <source xml:lang="en">Replace with Previous Value</source>
+        <target state="translated">Замяна с предишната стойност</target>
+      </trans-unit>
+      <trans-unit id="InPlaceReplaceAction.next.label">
+        <source xml:lang="en">Replace with Next Value</source>
+        <target state="translated">Замяна със следващата стойност</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/rename/rename" source-language="en" target-language="bg" datatype="plaintext">
     <body>
       <trans-unit id="no result">
@@ -228,6 +207,10 @@ This allows for users to show the definition preview hover without using the mou
       <trans-unit id="label">
         <source xml:lang="en">Renaming '{0}'</source>
         <target state="new">Renaming '{0}'</target>
+      </trans-unit>
+      <trans-unit id="quotableLabel">
+        <source xml:lang="en">Renaming {0}</source>
+        <target state="new">Renaming {0}</target>
       </trans-unit>
       <trans-unit id="aria">
         <source xml:lang="en">Successfully renamed '{0}' to '{1}'. Summary: {2}</source>
@@ -270,6 +253,35 @@ This allows for users to show the definition preview hover without using the mou
         <source xml:lang="en">&amp;&amp;Shrink Selection</source>
         <target state="new">&amp;&amp;Shrink Selection</target>
         <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/bracketMatching/bracketMatching" source-language="en" target-language="bg" datatype="plaintext">
+    <body>
+      <trans-unit id="overviewRulerBracketMatchForeground">
+        <source xml:lang="en">Overview ruler marker color for matching brackets.</source>
+        <target state="translated">Цвят за отбелязване на съответстващите скоби в скалата за преглед.</target>
+      </trans-unit>
+      <trans-unit id="smartSelect.jumpBracket">
+        <source xml:lang="en">Go to Bracket</source>
+        <target state="translated">Към съответстващата скоба</target>
+      </trans-unit>
+      <trans-unit id="smartSelect.selectToBracket">
+        <source xml:lang="en">Select to Bracket</source>
+        <target state="translated">Избиране до съответстващата скоба</target>
+      </trans-unit>
+      <trans-unit id="miGoToBracket">
+        <source xml:lang="en">Go to &amp;&amp;Bracket</source>
+        <target state="new">Go to &amp;&amp;Bracket</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/codelens/codelensController" source-language="en" target-language="bg" datatype="plaintext">
+    <body>
+      <trans-unit id="showLensOnLine">
+        <source xml:lang="en">Show Code Lens Commands For Current Line</source>
+        <target state="new">Show Code Lens Commands For Current Line</target>
       </trans-unit>
     </body>
   </file>
@@ -348,6 +360,14 @@ This allows for users to show the definition preview hover without using the mou
         <source xml:lang="en">Previous &amp;&amp;Problem</source>
         <target state="new">Previous &amp;&amp;Problem</target>
         <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/rename/onTypeRename" source-language="en" target-language="bg" datatype="plaintext">
+    <body>
+      <trans-unit id="onTypeRename.label">
+        <source xml:lang="en">On Type Rename Symbol</source>
+        <target state="new">On Type Rename Symbol</target>
       </trans-unit>
     </body>
   </file>
@@ -564,6 +584,47 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/indentation/indentation" source-language="en" target-language="bg" datatype="plaintext">
+    <body>
+      <trans-unit id="indentationToSpaces">
+        <source xml:lang="en">Convert Indentation to Spaces</source>
+        <target state="translated">Преобразуване на отстъпа в интервали</target>
+      </trans-unit>
+      <trans-unit id="indentationToTabs">
+        <source xml:lang="en">Convert Indentation to Tabs</source>
+        <target state="translated">Преобразуване на отстъпа в табулации</target>
+      </trans-unit>
+      <trans-unit id="configuredTabSize">
+        <source xml:lang="en">Configured Tab Size</source>
+        <target state="translated">Зададен размер на табулацията</target>
+      </trans-unit>
+      <trans-unit id="selectTabWidth">
+        <source xml:lang="en">Select Tab Size for Current File</source>
+        <target state="translated">Изберете размер на табулацията за текущия файл</target>
+        <note>Tab corresponds to the tab key</note>
+      </trans-unit>
+      <trans-unit id="indentUsingTabs">
+        <source xml:lang="en">Indent Using Tabs</source>
+        <target state="translated">Отстъп чрез табулация</target>
+      </trans-unit>
+      <trans-unit id="indentUsingSpaces">
+        <source xml:lang="en">Indent Using Spaces</source>
+        <target state="translated">Отстъп чрез интервали</target>
+      </trans-unit>
+      <trans-unit id="detectIndentation">
+        <source xml:lang="en">Detect Indentation from Content</source>
+        <target state="translated">Разпознаване на вида на отстъпа от съдържанието</target>
+      </trans-unit>
+      <trans-unit id="editor.reindentlines">
+        <source xml:lang="en">Reindent Lines</source>
+        <target state="translated">Повторно прилагане на правилата за отстъп</target>
+      </trans-unit>
+      <trans-unit id="editor.reindentselectedlines">
+        <source xml:lang="en">Reindent Selected Lines</source>
+        <target state="translated">Повторно прилагане на правилата за отстъп върху избраните редове</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/wordHighlighter/wordHighlighter" source-language="en" target-language="bg" datatype="plaintext">
     <body>
       <trans-unit id="wordHighlight">
@@ -646,6 +707,65 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/suggest/suggestController" source-language="en" target-language="bg" datatype="plaintext">
+    <body>
+      <trans-unit id="arai.alert.snippet">
+        <source xml:lang="en">Accepting '{0}' made {1} additional edits</source>
+        <target state="new">Accepting '{0}' made {1} additional edits</target>
+      </trans-unit>
+      <trans-unit id="suggest.trigger.label">
+        <source xml:lang="en">Trigger Suggest</source>
+        <target state="translated">Превключване на предлагането</target>
+      </trans-unit>
+      <trans-unit id="accept.accept">
+        <source xml:lang="en">{0} to insert</source>
+        <target state="new">{0} to insert</target>
+        <note>{0} will be a keybinding, e.g "Enter to insert"</note>
+      </trans-unit>
+      <trans-unit id="accept.insert">
+        <source xml:lang="en">{0} to insert</source>
+        <target state="new">{0} to insert</target>
+        <note>{0} will be a keybinding, e.g "Enter to insert"</note>
+      </trans-unit>
+      <trans-unit id="accept.replace">
+        <source xml:lang="en">{0} to replace</source>
+        <target state="new">{0} to replace</target>
+        <note>{0} will be a keybinding, e.g "Enter to replace"</note>
+      </trans-unit>
+      <trans-unit id="detail.more">
+        <source xml:lang="en">show less</source>
+        <target state="new">show less</target>
+      </trans-unit>
+      <trans-unit id="detail.less">
+        <source xml:lang="en">show more</source>
+        <target state="new">show more</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/quickAccess/gotoLineQuickAccess" source-language="en" target-language="bg" datatype="plaintext">
+    <body>
+      <trans-unit id="cannotRunGotoLine">
+        <source xml:lang="en">Open a text editor first to go to a line.</source>
+        <target state="new">Open a text editor first to go to a line.</target>
+      </trans-unit>
+      <trans-unit id="gotoLineColumnLabel">
+        <source xml:lang="en">Go to line {0} and column {1}.</source>
+        <target state="new">Go to line {0} and column {1}.</target>
+      </trans-unit>
+      <trans-unit id="gotoLineLabel">
+        <source xml:lang="en">Go to line {0}.</source>
+        <target state="new">Go to line {0}.</target>
+      </trans-unit>
+      <trans-unit id="gotoLineLabelEmptyWithLimit">
+        <source xml:lang="en">Current Line: {0}, Character: {1}. Type a line number between 1 and {2} to navigate to.</source>
+        <target state="new">Current Line: {0}, Character: {1}. Type a line number between 1 and {2} to navigate to.</target>
+      </trans-unit>
+      <trans-unit id="gotoLineLabelEmpty">
+        <source xml:lang="en">Current Line: {0}, Character: {1}. Type a line number to navigate to.</source>
+        <target state="new">Current Line: {0}, Character: {1}. Type a line number to navigate to.</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/folding/folding" source-language="en" target-language="bg" datatype="plaintext">
     <body>
       <trans-unit id="unfoldAction.label">
@@ -695,41 +815,6 @@ This allows for users to show the definition preview hover without using the mou
       <trans-unit id="foldBackgroundBackground">
         <source xml:lang="en">Background color behind folded ranges. The color must not be opaque so as not to hide underlying decorations.</source>
         <target state="new">Background color behind folded ranges. The color must not be opaque so as not to hide underlying decorations.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/suggest/suggestController" source-language="en" target-language="bg" datatype="plaintext">
-    <body>
-      <trans-unit id="arai.alert.snippet">
-        <source xml:lang="en">Accepting '{0}' made {1} additional edits</source>
-        <target state="new">Accepting '{0}' made {1} additional edits</target>
-      </trans-unit>
-      <trans-unit id="suggest.trigger.label">
-        <source xml:lang="en">Trigger Suggest</source>
-        <target state="translated">Превключване на предлагането</target>
-      </trans-unit>
-      <trans-unit id="accept.accept">
-        <source xml:lang="en">{0} to insert</source>
-        <target state="new">{0} to insert</target>
-        <note>{0} will be a keybinding, e.g "Enter to insert"</note>
-      </trans-unit>
-      <trans-unit id="accept.insert">
-        <source xml:lang="en">{0} to insert</source>
-        <target state="new">{0} to insert</target>
-        <note>{0} will be a keybinding, e.g "Enter to insert"</note>
-      </trans-unit>
-      <trans-unit id="accept.replace">
-        <source xml:lang="en">{0} to replace</source>
-        <target state="new">{0} to replace</target>
-        <note>{0} will be a keybinding, e.g "Enter to replace"</note>
-      </trans-unit>
-      <trans-unit id="detail.more">
-        <source xml:lang="en">show less</source>
-        <target state="new">show less</target>
-      </trans-unit>
-      <trans-unit id="detail.less">
-        <source xml:lang="en">show more</source>
-        <target state="new">show more</target>
       </trans-unit>
     </body>
   </file>
@@ -920,34 +1005,6 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/parameterHints/parameterHintsWidget" source-language="en" target-language="bg" datatype="plaintext">
-    <body>
-      <trans-unit id="hint">
-        <source xml:lang="en">{0}, hint</source>
-        <target state="translated">{0}, подсказка</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/format/format" source-language="en" target-language="bg" datatype="plaintext">
-    <body>
-      <trans-unit id="hint11">
-        <source xml:lang="en">Made 1 formatting edit on line {0}</source>
-        <target state="translated">Извършена е 1 форматираща промяна на ред {0}</target>
-      </trans-unit>
-      <trans-unit id="hintn1">
-        <source xml:lang="en">Made {0} formatting edits on line {1}</source>
-        <target state="translated">Извършени са {0} форматиращи промени на ред {1}</target>
-      </trans-unit>
-      <trans-unit id="hint1n">
-        <source xml:lang="en">Made 1 formatting edit between lines {0} and {1}</source>
-        <target state="translated">Извършена е 1 форматираща промяна между редове {0} и {1}</target>
-      </trans-unit>
-      <trans-unit id="hintnn">
-        <source xml:lang="en">Made {0} formatting edits between lines {1} and {2}</source>
-        <target state="translated">Извършени са {0} форматиращи промени между редове {1} и {2}</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/codeAction/codeActionCommands" source-language="en" target-language="bg" datatype="plaintext">
     <body>
       <trans-unit id="args.schema.kind">
@@ -1080,11 +1137,143 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/parameterHints/parameterHintsWidget" source-language="en" target-language="bg" datatype="plaintext">
+    <body>
+      <trans-unit id="hint">
+        <source xml:lang="en">{0}, hint</source>
+        <target state="translated">{0}, подсказка</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/message/messageController" source-language="en" target-language="bg" datatype="plaintext">
     <body>
       <trans-unit id="editor.readonly">
         <source xml:lang="en">Cannot edit in read-only editor</source>
         <target state="translated">Редактирането е невъзможно в редактор, позволяващ само четене</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/quickAccess/gotoSymbolQuickAccess" source-language="en" target-language="bg" datatype="plaintext">
+    <body>
+      <trans-unit id="cannotRunGotoSymbolWithoutEditor">
+        <source xml:lang="en">To go to a symbol, first open a text editor with symbol information.</source>
+        <target state="new">To go to a symbol, first open a text editor with symbol information.</target>
+      </trans-unit>
+      <trans-unit id="cannotRunGotoSymbolWithoutSymbolProvider">
+        <source xml:lang="en">The active text editor does not provide symbol information.</source>
+        <target state="new">The active text editor does not provide symbol information.</target>
+      </trans-unit>
+      <trans-unit id="openToSide">
+        <source xml:lang="en">Open to the Side</source>
+        <target state="translated">Отваряне отстрани</target>
+      </trans-unit>
+      <trans-unit id="openToBottom">
+        <source xml:lang="en">Open to the Bottom</source>
+        <target state="new">Open to the Bottom</target>
+      </trans-unit>
+      <trans-unit id="symbols">
+        <source xml:lang="en">symbols ({0})</source>
+        <target state="translated">идентификатори ({0})</target>
+      </trans-unit>
+      <trans-unit id="property">
+        <source xml:lang="en">properties ({0})</source>
+        <target state="translated">свойства ({0})</target>
+      </trans-unit>
+      <trans-unit id="method">
+        <source xml:lang="en">methods ({0})</source>
+        <target state="translated">методи ({0})</target>
+      </trans-unit>
+      <trans-unit id="function">
+        <source xml:lang="en">functions ({0})</source>
+        <target state="translated">функции ({0})</target>
+      </trans-unit>
+      <trans-unit id="_constructor">
+        <source xml:lang="en">constructors ({0})</source>
+        <target state="translated">конструктори ({0})</target>
+      </trans-unit>
+      <trans-unit id="variable">
+        <source xml:lang="en">variables ({0})</source>
+        <target state="translated">променливи ({0})</target>
+      </trans-unit>
+      <trans-unit id="class">
+        <source xml:lang="en">classes ({0})</source>
+        <target state="translated">класове ({0})</target>
+      </trans-unit>
+      <trans-unit id="struct">
+        <source xml:lang="en">structs ({0})</source>
+        <target state="translated">структури ({0})</target>
+      </trans-unit>
+      <trans-unit id="event">
+        <source xml:lang="en">events ({0})</source>
+        <target state="new">events ({0})</target>
+      </trans-unit>
+      <trans-unit id="operator">
+        <source xml:lang="en">operators ({0})</source>
+        <target state="new">operators ({0})</target>
+      </trans-unit>
+      <trans-unit id="interface">
+        <source xml:lang="en">interfaces ({0})</source>
+        <target state="translated">интерфейси ({0})</target>
+      </trans-unit>
+      <trans-unit id="namespace">
+        <source xml:lang="en">namespaces ({0})</source>
+        <target state="translated">именни пространства ({0})</target>
+      </trans-unit>
+      <trans-unit id="package">
+        <source xml:lang="en">packages ({0})</source>
+        <target state="translated">пакети ({0})</target>
+      </trans-unit>
+      <trans-unit id="typeParameter">
+        <source xml:lang="en">type parameters ({0})</source>
+        <target state="translated">параметри за тип ({0})</target>
+      </trans-unit>
+      <trans-unit id="modules">
+        <source xml:lang="en">modules ({0})</source>
+        <target state="translated">модули ({0})</target>
+      </trans-unit>
+      <trans-unit id="enum">
+        <source xml:lang="en">enumerations ({0})</source>
+        <target state="translated">изброени типове ({0})</target>
+      </trans-unit>
+      <trans-unit id="enumMember">
+        <source xml:lang="en">enumeration members ({0})</source>
+        <target state="translated">стойности на изброен тип ({0})</target>
+      </trans-unit>
+      <trans-unit id="string">
+        <source xml:lang="en">strings ({0})</source>
+        <target state="translated">низове ({0})</target>
+      </trans-unit>
+      <trans-unit id="file">
+        <source xml:lang="en">files ({0})</source>
+        <target state="translated">файлове ({0})</target>
+      </trans-unit>
+      <trans-unit id="array">
+        <source xml:lang="en">arrays ({0})</source>
+        <target state="translated">масиви ({0})</target>
+      </trans-unit>
+      <trans-unit id="number">
+        <source xml:lang="en">numbers ({0})</source>
+        <target state="translated">числа ({0})</target>
+      </trans-unit>
+      <trans-unit id="boolean">
+        <source xml:lang="en">booleans ({0})</source>
+        <target state="translated">булеви ({0})</target>
+      </trans-unit>
+      <trans-unit id="object">
+        <source xml:lang="en">objects ({0})</source>
+        <target state="translated">обекти ({0})</target>
+      </trans-unit>
+      <trans-unit id="key">
+        <source xml:lang="en">keys ({0})</source>
+        <target state="translated">ключове ({0})</target>
+      </trans-unit>
+      <trans-unit id="field">
+        <source xml:lang="en">fields ({0})</source>
+        <target state="new">fields ({0})</target>
+      </trans-unit>
+      <trans-unit id="constant">
+        <source xml:lang="en">constants ({0})</source>
+        <target state="new">constants ({0})</target>
       </trans-unit>
     </body>
   </file>
@@ -1256,6 +1445,26 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/format/format" source-language="en" target-language="bg" datatype="plaintext">
+    <body>
+      <trans-unit id="hint11">
+        <source xml:lang="en">Made 1 formatting edit on line {0}</source>
+        <target state="translated">Извършена е 1 форматираща промяна на ред {0}</target>
+      </trans-unit>
+      <trans-unit id="hintn1">
+        <source xml:lang="en">Made {0} formatting edits on line {1}</source>
+        <target state="translated">Извършени са {0} форматиращи промени на ред {1}</target>
+      </trans-unit>
+      <trans-unit id="hint1n">
+        <source xml:lang="en">Made 1 formatting edit between lines {0} and {1}</source>
+        <target state="translated">Извършена е 1 форматираща промяна между редове {0} и {1}</target>
+      </trans-unit>
+      <trans-unit id="hintnn">
+        <source xml:lang="en">Made {0} formatting edits between lines {1} and {2}</source>
+        <target state="translated">Извършени са {0} форматиращи промени между редове {1} и {2}</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/gotoSymbol/referencesModel" source-language="en" target-language="bg" datatype="plaintext">
     <body>
       <trans-unit id="aria.oneReference">
@@ -1297,30 +1506,6 @@ This allows for users to show the definition preview hover without using the mou
       <trans-unit id="location">
         <source xml:lang="en">Symbol {0} of {1}</source>
         <target state="new">Symbol {0} of {1}</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/hover/modesContentHover" source-language="en" target-language="bg" datatype="plaintext">
-    <body>
-      <trans-unit id="modesContentHover.loading">
-        <source xml:lang="en">Loading...</source>
-        <target state="translated">Зареждане…</target>
-      </trans-unit>
-      <trans-unit id="peek problem">
-        <source xml:lang="en">Peek Problem</source>
-        <target state="new">Peek Problem</target>
-      </trans-unit>
-      <trans-unit id="checkingForQuickFixes">
-        <source xml:lang="en">Checking for quick fixes...</source>
-        <target state="new">Checking for quick fixes...</target>
-      </trans-unit>
-      <trans-unit id="noQuickFixes">
-        <source xml:lang="en">No quick fixes available</source>
-        <target state="new">No quick fixes available</target>
-      </trans-unit>
-      <trans-unit id="quick fixes">
-        <source xml:lang="en">Quick Fix...</source>
-        <target state="translated">Бърза поправка…</target>
       </trans-unit>
     </body>
   </file>
@@ -1369,6 +1554,34 @@ This allows for users to show the definition preview hover without using the mou
       <trans-unit id="editorMarkerNavigationBackground">
         <source xml:lang="en">Editor marker navigation widget background.</source>
         <target state="translated">Цвят за фона на елемента за навигация между отбелязаните неща в редактора.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/hover/modesContentHover" source-language="en" target-language="bg" datatype="plaintext">
+    <body>
+      <trans-unit id="modesContentHover.loading">
+        <source xml:lang="en">Loading...</source>
+        <target state="translated">Зареждане…</target>
+      </trans-unit>
+      <trans-unit id="peek problem">
+        <source xml:lang="en">Peek Problem</source>
+        <target state="new">Peek Problem</target>
+      </trans-unit>
+      <trans-unit id="titleAndKb">
+        <source xml:lang="en">{0} ({1})</source>
+        <target state="translated">{0} ({1})</target>
+      </trans-unit>
+      <trans-unit id="checkingForQuickFixes">
+        <source xml:lang="en">Checking for quick fixes...</source>
+        <target state="new">Checking for quick fixes...</target>
+      </trans-unit>
+      <trans-unit id="noQuickFixes">
+        <source xml:lang="en">No quick fixes available</source>
+        <target state="new">No quick fixes available</target>
+      </trans-unit>
+      <trans-unit id="quick fixes">
+        <source xml:lang="en">Quick Fix...</source>
+        <target state="translated">Бърза поправка…</target>
       </trans-unit>
     </body>
   </file>
@@ -1809,47 +2022,6 @@ This allows for users to show the definition preview hover without using the mou
       <trans-unit id="referenceCount">
         <source xml:lang="en">{0} reference</source>
         <target state="translated">{0} ползване</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/indentation/indentation" source-language="en" target-language="bg" datatype="plaintext">
-    <body>
-      <trans-unit id="indentationToSpaces">
-        <source xml:lang="en">Convert Indentation to Spaces</source>
-        <target state="translated">Преобразуване на отстъпа в интервали</target>
-      </trans-unit>
-      <trans-unit id="indentationToTabs">
-        <source xml:lang="en">Convert Indentation to Tabs</source>
-        <target state="translated">Преобразуване на отстъпа в табулации</target>
-      </trans-unit>
-      <trans-unit id="configuredTabSize">
-        <source xml:lang="en">Configured Tab Size</source>
-        <target state="translated">Зададен размер на табулацията</target>
-      </trans-unit>
-      <trans-unit id="selectTabWidth">
-        <source xml:lang="en">Select Tab Size for Current File</source>
-        <target state="translated">Изберете размер на табулацията за текущия файл</target>
-        <note>Tab corresponds to the tab key</note>
-      </trans-unit>
-      <trans-unit id="indentUsingTabs">
-        <source xml:lang="en">Indent Using Tabs</source>
-        <target state="translated">Отстъп чрез табулация</target>
-      </trans-unit>
-      <trans-unit id="indentUsingSpaces">
-        <source xml:lang="en">Indent Using Spaces</source>
-        <target state="translated">Отстъп чрез интервали</target>
-      </trans-unit>
-      <trans-unit id="detectIndentation">
-        <source xml:lang="en">Detect Indentation from Content</source>
-        <target state="translated">Разпознаване на вида на отстъпа от съдържанието</target>
-      </trans-unit>
-      <trans-unit id="editor.reindentlines">
-        <source xml:lang="en">Reindent Lines</source>
-        <target state="translated">Повторно прилагане на правилата за отстъп</target>
-      </trans-unit>
-      <trans-unit id="editor.reindentselectedlines">
-        <source xml:lang="en">Reindent Selected Lines</source>
-        <target state="translated">Повторно прилагане на правилата за отстъп върху избраните редове</target>
       </trans-unit>
     </body>
   </file>

@@ -1,5 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="extensions">
+        <source xml:lang="en">Extensions</source>
+        <target state="translated">확장</target>
+      </trans-unit>
+      <trans-unit id="preferences">
+        <source xml:lang="en">Preferences</source>
+        <target state="translated">기본 설정</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/environment/node/argvHelper" source-language="en" target-language="ko" datatype="plaintext">
     <body>
       <trans-unit id="unknownOption">
@@ -16,35 +28,11 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
-      <trans-unit id="extensions">
-        <source xml:lang="en">Extensions</source>
-        <target state="translated">확장</target>
-      </trans-unit>
-      <trans-unit id="preferences">
-        <source xml:lang="en">Preferences</source>
-        <target state="translated">기본 설정</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/extensionManagement/node/extensionManagementUtil" source-language="en" target-language="ko" datatype="plaintext">
     <body>
       <trans-unit id="invalidManifest">
         <source xml:lang="en">VSIX invalid: package.json is not a JSON file.</source>
         <target state="translated">VSIX가 올바르지 않습니다. package.json이 JSON 파일이 아닙니다.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
-      <trans-unit id="telemetryConfigurationTitle">
-        <source xml:lang="en">Telemetry</source>
-        <target state="translated">원격 분석</target>
-      </trans-unit>
-      <trans-unit id="telemetry.enableTelemetry">
-        <source xml:lang="en">Enable usage data and errors to be sent to a Microsoft online service.</source>
-        <target state="translated">사용자 데이터와 에러를 Microsoft 온라인 서비스로 보내는 것을 허용합니다.</target>
       </trans-unit>
     </body>
   </file>
@@ -132,6 +120,30 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="telemetryConfigurationTitle">
+        <source xml:lang="en">Telemetry</source>
+        <target state="translated">원격 분석</target>
+      </trans-unit>
+      <trans-unit id="telemetry.enableTelemetry">
+        <source xml:lang="en">Enable usage data and errors to be sent to a Microsoft online service.</source>
+        <target state="translated">사용자 데이터와 에러를 Microsoft 온라인 서비스로 보내는 것을 허용합니다.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/label/common/label" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="untitledWorkspace">
+        <source xml:lang="en">Untitled (Workspace)</source>
+        <target state="translated">제목 없음(작업 영역)</target>
+      </trans-unit>
+      <trans-unit id="workspaceName">
+        <source xml:lang="en">{0} (Workspace)</source>
+        <target state="translated">{0}(작업 영역)</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" target-language="ko" datatype="plaintext">
     <body>
       <trans-unit id="binFailed">
@@ -141,6 +153,14 @@
       <trans-unit id="trashFailed">
         <source xml:lang="en">Failed to move '{0}' to the trash</source>
         <target state="translated">'{0}'을(를) 휴지통으로 이동하지 못함</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/common/files" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="unknownError">
+        <source xml:lang="en">Unknown Error</source>
+        <target state="translated">알 수 없는 오류</target>
       </trans-unit>
     </body>
   </file>
@@ -178,6 +198,14 @@
         <source xml:lang="en">Force to open a file or folder in an already opened window.</source>
         <target state="translated">이미 열려 있는 창에서 파일 또는 폴더를 강제로 엽니다.</target>
       </trans-unit>
+      <trans-unit id="folderUri">
+        <source xml:lang="en">Opens a window with given folder uri(s)</source>
+        <target state="translated">지정한 폴더 URI를 사용하여 창을 엽니다.</target>
+      </trans-unit>
+      <trans-unit id="fileUri">
+        <source xml:lang="en">Opens a window with given file uri(s)</source>
+        <target state="translated">지정된 파일 URI로 창 열기</target>
+      </trans-unit>
       <trans-unit id="wait">
         <source xml:lang="en">Wait for the files to be closed before returning.</source>
         <target state="translated">파일이 닫힐 때 까지 기다린 후 돌아갑니다.</target>
@@ -190,25 +218,9 @@
         <source xml:lang="en">Specifies the directory that user data is kept in. Can be used to open multiple distinct instances of Code.</source>
         <target state="translated">사용자 데이터가 저장되는 디렉터리를 지정합니다. Code의 여러 고유 인스턴스를 여는 데 사용할 수 있습니다.</target>
       </trans-unit>
-      <trans-unit id="version">
-        <source xml:lang="en">Print version.</source>
-        <target state="translated">버전을 출력합니다.</target>
-      </trans-unit>
       <trans-unit id="help">
         <source xml:lang="en">Print usage.</source>
         <target state="translated">사용법을 출력합니다.</target>
-      </trans-unit>
-      <trans-unit id="telemetry">
-        <source xml:lang="en">Shows all telemetry events which VS code collects.</source>
-        <target state="translated">VS Code에서 수집하는 원격 분석 이벤트를 모두 표시합니다.</target>
-      </trans-unit>
-      <trans-unit id="folderUri">
-        <source xml:lang="en">Opens a window with given folder uri(s)</source>
-        <target state="translated">지정한 폴더 URI를 사용하여 창을 엽니다.</target>
-      </trans-unit>
-      <trans-unit id="fileUri">
-        <source xml:lang="en">Opens a window with given file uri(s)</source>
-        <target state="translated">지정된 파일 URI로 창 열기</target>
       </trans-unit>
       <trans-unit id="extensionHomePath">
         <source xml:lang="en">Set the root path for extensions.</source>
@@ -238,6 +250,10 @@
         <source xml:lang="en">Enables proposed API features for extensions. Can receive one or more extension IDs to enable individually.</source>
         <target state="translated">확장에 대해 제안된 API 기능을 사용하도록 설정합니다. 개별적으로 사용하도록 설정할 확장 ID를 하나 이상 수신할 수 있습니다.</target>
       </trans-unit>
+      <trans-unit id="version">
+        <source xml:lang="en">Print version.</source>
+        <target state="translated">버전을 출력합니다.</target>
+      </trans-unit>
       <trans-unit id="verbose">
         <source xml:lang="en">Print verbose output (implies --wait).</source>
         <target state="translated">자세한 정보 표시를 출력합니다(--wait를 의미).</target>
@@ -262,6 +278,10 @@
         <source xml:lang="en">Disable an extension.</source>
         <target state="translated">확장을 사용하지 않도록 설정합니다.</target>
       </trans-unit>
+      <trans-unit id="turn sync">
+        <source xml:lang="en">Turn sync on or off</source>
+        <target state="translated">동기화 켜기 또는 끄기</target>
+      </trans-unit>
       <trans-unit id="inspect-extensions">
         <source xml:lang="en">Allow debugging and profiling of extensions. Check the developer tools for the connection URI.</source>
         <target state="translated">디버깅 및 확장 프로파일링을 허용합니다. 연결 URI는 개발자 도구를 확인하세요.</target>
@@ -277,6 +297,10 @@
       <trans-unit id="maxMemory">
         <source xml:lang="en">Max memory size for a window (in Mbytes).</source>
         <target state="translated">윈도우에 대한 최대 메모리 크기 (단위 MB).</target>
+      </trans-unit>
+      <trans-unit id="telemetry">
+        <source xml:lang="en">Shows all telemetry events which VS code collects.</source>
+        <target state="translated">VS Code에서 수집하는 원격 분석 이벤트를 모두 표시합니다.</target>
       </trans-unit>
       <trans-unit id="usage">
         <source xml:lang="en">Usage</source>
@@ -308,15 +332,31 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/label/common/label" source-language="en" target-language="ko" datatype="plaintext">
+  <file original="src/vs/platform/markers/common/markers" source-language="en" target-language="ko" datatype="plaintext">
     <body>
-      <trans-unit id="untitledWorkspace">
-        <source xml:lang="en">Untitled (Workspace)</source>
-        <target state="translated">제목 없음(작업 영역)</target>
+      <trans-unit id="sev.error">
+        <source xml:lang="en">Error</source>
+        <target state="translated">오류</target>
       </trans-unit>
-      <trans-unit id="workspaceName">
-        <source xml:lang="en">{0} (Workspace)</source>
-        <target state="translated">{0}(작업 영역)</target>
+      <trans-unit id="sev.warning">
+        <source xml:lang="en">Warning</source>
+        <target state="translated">경고</target>
+      </trans-unit>
+      <trans-unit id="sev.info">
+        <source xml:lang="en">Info</source>
+        <target state="translated">정보</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/dialogs/common/dialogs" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="moreFile">
+        <source xml:lang="en">...1 additional file not shown</source>
+        <target state="translated">...1개의 추가 파일이 표시되지 않음</target>
+      </trans-unit>
+      <trans-unit id="moreFiles">
+        <source xml:lang="en">...{0} additional files not shown</source>
+        <target state="translated">...{0}개의 추가 파일이 표시되지 않음</target>
       </trans-unit>
     </body>
   </file>
@@ -341,98 +381,6 @@
       <trans-unit id="app.extension.identifier.errorMessage">
         <source xml:lang="en">Expected format '${publisher}.${name}'. Example: 'vscode.csharp'.</source>
         <target state="translated">필요한 형식은 '${publisher}.${name}'입니다. 예: 'vscode.csharp'</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/files/common/files" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
-      <trans-unit id="unknownError">
-        <source xml:lang="en">Unknown Error</source>
-        <target state="translated">알 수 없는 오류</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/userDataSyncService" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
-      <trans-unit id="turned off">
-        <source xml:lang="en">Cannot sync because syncing is turned off in the cloud</source>
-        <target state="translated">클라우드에서 동기화가 해제되어 있으므로 동기화할 수 없습니다.</target>
-      </trans-unit>
-      <trans-unit id="session expired">
-        <source xml:lang="en">Cannot sync because current session is expired</source>
-        <target state="translated">현재 세션이 만료되어 동기화할 수 없습니다.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/dialogs/common/dialogs" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
-      <trans-unit id="moreFile">
-        <source xml:lang="en">...1 additional file not shown</source>
-        <target state="translated">...1개의 추가 파일이 표시되지 않음</target>
-      </trans-unit>
-      <trans-unit id="moreFiles">
-        <source xml:lang="en">...{0} additional files not shown</source>
-        <target state="translated">...{0}개의 추가 파일이 표시되지 않음</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/markers/common/markers" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
-      <trans-unit id="sev.error">
-        <source xml:lang="en">Error</source>
-        <target state="translated">오류</target>
-      </trans-unit>
-      <trans-unit id="sev.warning">
-        <source xml:lang="en">Warning</source>
-        <target state="translated">경고</target>
-      </trans-unit>
-      <trans-unit id="sev.info">
-        <source xml:lang="en">Info</source>
-        <target state="translated">정보</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/workspaces/common/workspaces" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
-      <trans-unit id="codeWorkspace">
-        <source xml:lang="en">Code Workspace</source>
-        <target state="translated">코드 작업 영역</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
-      <trans-unit id="errorInvalidSettings">
-        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
-        <target state="translated">설정 파일에 오류/경고가 있으므로 설정을 동기화할 수 없습니다.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/configuration/common/configurationRegistry" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
-      <trans-unit id="defaultConfigurations.title">
-        <source xml:lang="en">Default Configuration Overrides</source>
-        <target state="translated">기본 구성 재정의</target>
-      </trans-unit>
-      <trans-unit id="overrideSettings.description">
-        <source xml:lang="en">Configure editor settings to be overridden for {0} language.</source>
-        <target state="translated">{0} 언어에 대해 재정의할 편집기 설정을 구성합니다.</target>
-      </trans-unit>
-      <trans-unit id="overrideSettings.defaultDescription">
-        <source xml:lang="en">Configure editor settings to be overridden for a language.</source>
-        <target state="translated">언어에 대해 재정의할 편집기 설정을 구성합니다.</target>
-      </trans-unit>
-      <trans-unit id="overrideSettings.errorMessage">
-        <source xml:lang="en">This setting does not support per-language configuration.</source>
-        <target state="translated">이 설정은 언어별 구성을 지원하지 않습니다.</target>
-      </trans-unit>
-      <trans-unit id="config.property.languageDefault">
-        <source xml:lang="en">Cannot register '{0}'. This matches property pattern '\\[.*\\]$' for describing language specific editor settings. Use 'configurationDefaults' contribution.</source>
-        <target state="translated">'{0}'을(를) 등록할 수 없습니다. 이는 언어별 편집기 설정을 설명하는 속성 패턴인 '\\[.*\\]$'과(와) 일치합니다. 'configurationDefaults' 기여를 사용하세요.</target>
-      </trans-unit>
-      <trans-unit id="config.property.duplicate">
-        <source xml:lang="en">Cannot register '{0}'. This property is already registered.</source>
-        <target state="translated">'{0}'을(를) 등록할 수 없습니다. 이 속성은 이미 등록되어 있습니다.</target>
       </trans-unit>
     </body>
   </file>
@@ -464,6 +412,54 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/configuration/common/configurationRegistry" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="defaultConfigurations.title">
+        <source xml:lang="en">Default Configuration Overrides</source>
+        <target state="translated">기본 구성 재정의</target>
+      </trans-unit>
+      <trans-unit id="overrideSettings.description">
+        <source xml:lang="en">Configure editor settings to be overridden for {0} language.</source>
+        <target state="translated">{0} 언어에 대해 재정의할 편집기 설정을 구성합니다.</target>
+      </trans-unit>
+      <trans-unit id="overrideSettings.defaultDescription">
+        <source xml:lang="en">Configure editor settings to be overridden for a language.</source>
+        <target state="translated">언어에 대해 재정의할 편집기 설정을 구성합니다.</target>
+      </trans-unit>
+      <trans-unit id="overrideSettings.errorMessage">
+        <source xml:lang="en">This setting does not support per-language configuration.</source>
+        <target state="translated">이 설정은 언어별 구성을 지원하지 않습니다.</target>
+      </trans-unit>
+      <trans-unit id="config.property.languageDefault">
+        <source xml:lang="en">Cannot register '{0}'. This matches property pattern '\\[.*\\]$' for describing language specific editor settings. Use 'configurationDefaults' contribution.</source>
+        <target state="translated">'{0}'을(를) 등록할 수 없습니다. 이는 언어별 편집기 설정을 설명하는 속성 패턴인 '\\[.*\\]$'과(와) 일치합니다. 'configurationDefaults' 기여를 사용하세요.</target>
+      </trans-unit>
+      <trans-unit id="config.property.duplicate">
+        <source xml:lang="en">Cannot register '{0}'. This property is already registered.</source>
+        <target state="translated">'{0}'을(를) 등록할 수 없습니다. 이 속성은 이미 등록되어 있습니다.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/workspaces/common/workspaces" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="codeWorkspace">
+        <source xml:lang="en">Code Workspace</source>
+        <target state="translated">코드 작업 영역</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/userDataSyncService" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="turned off">
+        <source xml:lang="en">Cannot sync because syncing is turned off in the cloud</source>
+        <target state="translated">클라우드에서 동기화가 해제되어 있으므로 동기화할 수 없습니다.</target>
+      </trans-unit>
+      <trans-unit id="session expired">
+        <source xml:lang="en">Cannot sync because current session is expired</source>
+        <target state="translated">현재 세션이 만료되어 동기화할 수 없습니다.</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/undoRedo/common/undoRedoService" source-language="en" target-language="ko" datatype="plaintext">
     <body>
       <trans-unit id="externalRemoval">
@@ -487,12 +483,12 @@
         <target state="translated">모든 파일에서 '{0}'을(를) 실행 취소하시겠습니까?</target>
       </trans-unit>
       <trans-unit id="ok">
-        <source xml:lang="en">Undo in {0} files.</source>
-        <target state="translated">{0}개 파일에서 실행 취소합니다.</target>
+        <source xml:lang="en">Undo in {0} Files</source>
+        <target state="translated">{0} 파일에서 실행 취소</target>
       </trans-unit>
       <trans-unit id="nok">
-        <source xml:lang="en">Undo this file.</source>
-        <target state="translated">이 파일을 실행 취소합니다.</target>
+        <source xml:lang="en">Undo this File</source>
+        <target state="translated">이 파일 실행 취소</target>
       </trans-unit>
       <trans-unit id="cancel">
         <source xml:lang="en">Cancel</source>
@@ -505,73 +501,6 @@
       <trans-unit id="cannotWorkspaceRedoDueToChanges">
         <source xml:lang="en">Could not redo '{0}' across all files because changes were made to {1}</source>
         <target state="translated">{1}에 변경 내용이 적용되었으므로 모든 파일에서 '{0}'을(를) 다시 실행할 수 없습니다.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/list/browser/listService" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
-      <trans-unit id="workbenchConfigurationTitle">
-        <source xml:lang="en">Workbench</source>
-        <target state="translated">워크벤치</target>
-      </trans-unit>
-      <trans-unit id="multiSelectModifier.ctrlCmd">
-        <source xml:lang="en">Maps to `Control` on Windows and Linux and to `Command` on macOS.</source>
-        <target state="translated">Windows와 Linux의 'Control'을 macOS의 'Command'로 매핑합니다.</target>
-      </trans-unit>
-      <trans-unit id="multiSelectModifier.alt">
-        <source xml:lang="en">Maps to `Alt` on Windows and Linux and to `Option` on macOS.</source>
-        <target state="translated">Windows와 Linux의 'Alt'를 macOS의 'Option'으로 매핑합니다.</target>
-      </trans-unit>
-      <trans-unit id="multiSelectModifier">
-        <source xml:lang="en">The modifier to be used to add an item in trees and lists to a multi-selection with the mouse (for example in the explorer, open editors and scm view). The 'Open to Side' mouse gestures - if supported - will adapt such that they do not conflict with the multiselect modifier.</source>
-        <target state="translated">마우스로 트리와 목록의 항목을 다중 선택에 추가할 때 사용할 한정자입니다(예를 들어 탐색기에서 편집기와 SCM 보기를 여는 경우). '옆에서 열기' 마우스 제스처(지원되는 경우)는 다중 선택 한정자와 충돌하지 않도록 조정됩니다.</target>
-        <note>- `ctrlCmd` refers to a value the setting can take and should not be localized.
-- `Control` and `Command` refer to the modifier keys Ctrl or Cmd on the keyboard and can be localized.</note>
-      </trans-unit>
-      <trans-unit id="openModeModifier">
-        <source xml:lang="en">Controls how to open items in trees and lists using the mouse (if supported). For parents with children in trees, this setting will control if a single click expands the parent or a double click. Note that some trees and lists might choose to ignore this setting if it is not applicable. </source>
-        <target state="translated">트리와 목록에서 마우스를 사용하여 항목을 여는 방법을 제어합니다(지원되는 경우). 트리에서 자식 항목이 있는 부모 항목의 경우 이 설정은 부모 항목을 한 번 클릭으로 확장할지 또는 두 번 클릭으로 확장할지 여부를 제어합니다. 일부 트리와 목록에서는 이 설정을 적용할 수 없는 경우  무시하도록 선택할 수 있습니다. </target>
-        <note>`singleClick` and `doubleClick` refers to a value the setting can take and should not be localized.</note>
-      </trans-unit>
-      <trans-unit id="horizontalScrolling setting">
-        <source xml:lang="en">Controls whether lists and trees support horizontal scrolling in the workbench.</source>
-        <target state="translated">Workbench에서 목록 및 트리가 가로 스크롤을 지원하는지 여부를 제어합니다.</target>
-      </trans-unit>
-      <trans-unit id="tree horizontalScrolling setting">
-        <source xml:lang="en">Controls whether trees support horizontal scrolling in the workbench.</source>
-        <target state="translated">워크벤치에서 수평 스크롤 지원 여부를 제어 합니다.</target>
-      </trans-unit>
-      <trans-unit id="deprecated">
-        <source xml:lang="en">This setting is deprecated, please use '{0}' instead.</source>
-        <target state="translated">이 설정은 사용되지 않습니다. 대신 '{0}'을(를) 사용하세요.</target>
-      </trans-unit>
-      <trans-unit id="tree indent setting">
-        <source xml:lang="en">Controls tree indentation in pixels.</source>
-        <target state="translated">트리 들여쓰기를 픽셀 단위로 제어합니다.</target>
-      </trans-unit>
-      <trans-unit id="render tree indent guides">
-        <source xml:lang="en">Controls whether the tree should render indent guides.</source>
-        <target state="translated">트리에서 들여쓰기 가이드를 렌더링할지 여부를 제어합니다.</target>
-      </trans-unit>
-      <trans-unit id="keyboardNavigationSettingKey.simple">
-        <source xml:lang="en">Simple keyboard navigation focuses elements which match the keyboard input. Matching is done only on prefixes.</source>
-        <target state="translated">간단한 키보드 탐색에서는 키보드 입력과 일치하는 요소에 집중합니다. 일치는 접두사에서만 수행됩니다.</target>
-      </trans-unit>
-      <trans-unit id="keyboardNavigationSettingKey.highlight">
-        <source xml:lang="en">Highlight keyboard navigation highlights elements which match the keyboard input. Further up and down navigation will traverse only the highlighted elements.</source>
-        <target state="translated">키보드 탐색 강조 표시에서는 키보드 입력과 일치하는 요소를 강조 표시합니다. 이후로 탐색에서 위 및 아래로 이동하는 경우 강조 표시된 요소만 트래버스합니다.</target>
-      </trans-unit>
-      <trans-unit id="keyboardNavigationSettingKey.filter">
-        <source xml:lang="en">Filter keyboard navigation will filter out and hide all the elements which do not match the keyboard input.</source>
-        <target state="translated">키보드 탐색 필터링에서는 키보드 입력과 일치하지 않는 요소를 모두 필터링하여 숨깁니다.</target>
-      </trans-unit>
-      <trans-unit id="keyboardNavigationSettingKey">
-        <source xml:lang="en">Controls the keyboard navigation style for lists and trees in the workbench. Can be simple, highlight and filter.</source>
-        <target state="translated">워크벤치의 목록 및 트리 키보드 탐색 스타일을 제어합니다. 간소화하고, 강조 표시하고, 필터링할 수 있습니다.</target>
-      </trans-unit>
-      <trans-unit id="automatic keyboard navigation setting">
-        <source xml:lang="en">Controls whether keyboard navigation in lists and trees is automatically triggered simply by typing. If set to `false`, keyboard navigation is only triggered when executing the `list.toggleKeyboardNavigation` command, for which you can assign a keyboard shortcut.</source>
-        <target state="translated">목록 및 트리에서 키보드 탐색이 입력만으로 자동 트리거되는지 여부를 제어합니다. 'false'로 설정하면 'list.toggleKeyboardNavigation' 명령을 실행할 때만 키보드 탐색이 트리거되어 바로 가기 키를 할당할 수 있습니다.</target>
       </trans-unit>
     </body>
   </file>
@@ -659,6 +588,101 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/quickinput/browser/helpQuickAccess" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="globalCommands">
+        <source xml:lang="en">global commands</source>
+        <target state="translated">전역 명령</target>
+      </trans-unit>
+      <trans-unit id="editorCommands">
+        <source xml:lang="en">editor commands</source>
+        <target state="translated">편집기 명령</target>
+      </trans-unit>
+      <trans-unit id="helpPickAriaLabel">
+        <source xml:lang="en">{0}, {1}</source>
+        <target state="translated">{0}, {1}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/list/browser/listService" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="workbenchConfigurationTitle">
+        <source xml:lang="en">Workbench</source>
+        <target state="translated">워크벤치</target>
+      </trans-unit>
+      <trans-unit id="multiSelectModifier.ctrlCmd">
+        <source xml:lang="en">Maps to `Control` on Windows and Linux and to `Command` on macOS.</source>
+        <target state="translated">Windows와 Linux의 'Control'을 macOS의 'Command'로 매핑합니다.</target>
+      </trans-unit>
+      <trans-unit id="multiSelectModifier.alt">
+        <source xml:lang="en">Maps to `Alt` on Windows and Linux and to `Option` on macOS.</source>
+        <target state="translated">Windows와 Linux의 'Alt'를 macOS의 'Option'으로 매핑합니다.</target>
+      </trans-unit>
+      <trans-unit id="multiSelectModifier">
+        <source xml:lang="en">The modifier to be used to add an item in trees and lists to a multi-selection with the mouse (for example in the explorer, open editors and scm view). The 'Open to Side' mouse gestures - if supported - will adapt such that they do not conflict with the multiselect modifier.</source>
+        <target state="translated">마우스로 트리와 목록의 항목을 다중 선택에 추가할 때 사용할 한정자입니다(예를 들어 탐색기에서 편집기와 SCM 보기를 여는 경우). '옆에서 열기' 마우스 제스처(지원되는 경우)는 다중 선택 한정자와 충돌하지 않도록 조정됩니다.</target>
+        <note>- `ctrlCmd` refers to a value the setting can take and should not be localized.
+- `Control` and `Command` refer to the modifier keys Ctrl or Cmd on the keyboard and can be localized.</note>
+      </trans-unit>
+      <trans-unit id="openModeModifier">
+        <source xml:lang="en">Controls how to open items in trees and lists using the mouse (if supported). For parents with children in trees, this setting will control if a single click expands the parent or a double click. Note that some trees and lists might choose to ignore this setting if it is not applicable. </source>
+        <target state="translated">트리와 목록에서 마우스를 사용하여 항목을 여는 방법을 제어합니다(지원되는 경우). 트리에서 자식 항목이 있는 부모 항목의 경우 이 설정은 부모 항목을 한 번 클릭으로 확장할지 또는 두 번 클릭으로 확장할지 여부를 제어합니다. 일부 트리와 목록에서는 이 설정을 적용할 수 없는 경우  무시하도록 선택할 수 있습니다. </target>
+        <note>`singleClick` and `doubleClick` refers to a value the setting can take and should not be localized.</note>
+      </trans-unit>
+      <trans-unit id="horizontalScrolling setting">
+        <source xml:lang="en">Controls whether lists and trees support horizontal scrolling in the workbench. Warning: turning on this setting has a performance implication.</source>
+        <target state="translated">워크벤치에서 목록 및 트리의 가로 스크롤 여부를 제어합니다. 경고: 이 설정을 켜면 성능에 영향을 미칩니다.</target>
+      </trans-unit>
+      <trans-unit id="tree horizontalScrolling setting">
+        <source xml:lang="en">Controls whether trees support horizontal scrolling in the workbench.</source>
+        <target state="translated">워크벤치에서 수평 스크롤 지원 여부를 제어 합니다.</target>
+      </trans-unit>
+      <trans-unit id="deprecated">
+        <source xml:lang="en">This setting is deprecated, please use '{0}' instead.</source>
+        <target state="translated">이 설정은 사용되지 않습니다. 대신 '{0}'을(를) 사용하세요.</target>
+      </trans-unit>
+      <trans-unit id="tree indent setting">
+        <source xml:lang="en">Controls tree indentation in pixels.</source>
+        <target state="translated">트리 들여쓰기를 픽셀 단위로 제어합니다.</target>
+      </trans-unit>
+      <trans-unit id="render tree indent guides">
+        <source xml:lang="en">Controls whether the tree should render indent guides.</source>
+        <target state="translated">트리에서 들여쓰기 가이드를 렌더링할지 여부를 제어합니다.</target>
+      </trans-unit>
+      <trans-unit id="keyboardNavigationSettingKey.simple">
+        <source xml:lang="en">Simple keyboard navigation focuses elements which match the keyboard input. Matching is done only on prefixes.</source>
+        <target state="translated">간단한 키보드 탐색에서는 키보드 입력과 일치하는 요소에 집중합니다. 일치는 접두사에서만 수행됩니다.</target>
+      </trans-unit>
+      <trans-unit id="keyboardNavigationSettingKey.highlight">
+        <source xml:lang="en">Highlight keyboard navigation highlights elements which match the keyboard input. Further up and down navigation will traverse only the highlighted elements.</source>
+        <target state="translated">키보드 탐색 강조 표시에서는 키보드 입력과 일치하는 요소를 강조 표시합니다. 이후로 탐색에서 위 및 아래로 이동하는 경우 강조 표시된 요소만 트래버스합니다.</target>
+      </trans-unit>
+      <trans-unit id="keyboardNavigationSettingKey.filter">
+        <source xml:lang="en">Filter keyboard navigation will filter out and hide all the elements which do not match the keyboard input.</source>
+        <target state="translated">키보드 탐색 필터링에서는 키보드 입력과 일치하지 않는 요소를 모두 필터링하여 숨깁니다.</target>
+      </trans-unit>
+      <trans-unit id="keyboardNavigationSettingKey">
+        <source xml:lang="en">Controls the keyboard navigation style for lists and trees in the workbench. Can be simple, highlight and filter.</source>
+        <target state="translated">워크벤치의 목록 및 트리 키보드 탐색 스타일을 제어합니다. 간소화하고, 강조 표시하고, 필터링할 수 있습니다.</target>
+      </trans-unit>
+      <trans-unit id="automatic keyboard navigation setting">
+        <source xml:lang="en">Controls whether keyboard navigation in lists and trees is automatically triggered simply by typing. If set to `false`, keyboard navigation is only triggered when executing the `list.toggleKeyboardNavigation` command, for which you can assign a keyboard shortcut.</source>
+        <target state="translated">목록 및 트리에서 키보드 탐색이 입력만으로 자동 트리거되는지 여부를 제어합니다. 'false'로 설정하면 'list.toggleKeyboardNavigation' 명령을 실행할 때만 키보드 탐색이 트리거되어 바로 가기 키를 할당할 수 있습니다.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/common/io" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="fileTooLargeForHeapError">
+        <source xml:lang="en">To open a file of this size, you need to restart and allow it to use more memory</source>
+        <target state="translated">이 크기의 파일을 열려면 다시 시작하여 더 많은 메모리를 사용하도록 허용해야 합니다</target>
+      </trans-unit>
+      <trans-unit id="fileTooLargeError">
+        <source xml:lang="en">File is too large to open</source>
+        <target state="translated">파일이 너무 커서 열 수 없습니다.</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/extensionManagement/node/extensionManagementService" source-language="en" target-language="ko" datatype="plaintext">
     <body>
       <trans-unit id="invalidManifest">
@@ -732,6 +756,14 @@
       <trans-unit id="notExists">
         <source xml:lang="en">Could not find extension</source>
         <target state="translated">확장을 찾을 수 없음</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/actions/browser/menuEntryActionViewItem" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="titleAndKb">
+        <source xml:lang="en">{0} ({1})</source>
+        <target state="translated">{0}({1})</target>
       </trans-unit>
     </body>
   </file>
@@ -889,14 +921,6 @@
         <source xml:lang="en">Border color of checkbox widget.</source>
         <target state="translated">확인란 위젯의 테두리 색입니다.</target>
       </trans-unit>
-      <trans-unit id="pickerGroupForeground">
-        <source xml:lang="en">Quick picker color for grouping labels.</source>
-        <target state="translated">그룹화 레이블에 대한 빠른 선택기 색입니다.</target>
-      </trans-unit>
-      <trans-unit id="pickerGroupBorder">
-        <source xml:lang="en">Quick picker color for grouping borders.</source>
-        <target state="translated">그룹화 테두리에 대한 빠른 선택기 색입니다.</target>
-      </trans-unit>
       <trans-unit id="buttonForeground">
         <source xml:lang="en">Button foreground color.</source>
         <target state="translated">단추 기본 전경색입니다.</target>
@@ -992,6 +1016,26 @@
       <trans-unit id="editorWidgetResizeBorder">
         <source xml:lang="en">Border color of the resize bar of editor widgets. The color is only used if the widget chooses to have a resize border and if the color is not overridden by a widget.</source>
         <target state="translated">편집기 위젯 크기 조정 막대의 테두리 색입니다. 이 색은 위젯에서 크기 조정 막대를 표시하도록 선택하고 위젯에서 색을 재지정하지 않는 경우에만 사용됩니다.</target>
+      </trans-unit>
+      <trans-unit id="pickerBackground">
+        <source xml:lang="en">Quick picker background color. The quick picker widget is the container for pickers like the command palette.</source>
+        <target state="translated">빠른 선택기 배경색. 빠른 선택기 위젯은 명령 팔레트와 같은 선택기를 위한 컨테이너입니다.</target>
+      </trans-unit>
+      <trans-unit id="pickerForeground">
+        <source xml:lang="en">Quick picker foreground color. The quick picker widget is the container for pickers like the command palette.</source>
+        <target state="translated">빠른 선택기 전경색. 이 빠른 선택기 위젯은 명령 팔레트와 같은 선택기를 위한 컨테이너입니다.</target>
+      </trans-unit>
+      <trans-unit id="pickerTitleBackground">
+        <source xml:lang="en">Quick picker title background color. The quick picker widget is the container for pickers like the command palette.</source>
+        <target state="translated">빠른 선택기 제목 배경색. 이 빠른 선택기 위젯은 명령 팔레트와 같은 선택기를 위한 컨테이너입니다.</target>
+      </trans-unit>
+      <trans-unit id="pickerGroupForeground">
+        <source xml:lang="en">Quick picker color for grouping labels.</source>
+        <target state="translated">그룹화 레이블에 대한 빠른 선택기 색입니다.</target>
+      </trans-unit>
+      <trans-unit id="pickerGroupBorder">
+        <source xml:lang="en">Quick picker color for grouping borders.</source>
+        <target state="translated">그룹화 테두리에 대한 빠른 선택기 색입니다.</target>
       </trans-unit>
       <trans-unit id="editorSelectionBackground">
         <source xml:lang="en">Color of the editor selection.</source>
@@ -1177,6 +1221,10 @@
         <source xml:lang="en">Tree stroke color for the indentation guides.</source>
         <target state="translated">들여쓰기 가이드의 트리 스트로크 색입니다.</target>
       </trans-unit>
+      <trans-unit id="listDeemphasizedForeground">
+        <source xml:lang="en">List/Tree foreground color for items that are deemphasized. </source>
+        <target state="translated">강조되지 않은 항목의 목록/트리 전경색.</target>
+      </trans-unit>
       <trans-unit id="menuBorder">
         <source xml:lang="en">Border color of menus.</source>
         <target state="translated">메뉴 테두리 색입니다.</target>
@@ -1331,50 +1379,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/userDataSync/common/extensionsSync" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
-      <trans-unit id="skip extension">
-        <source xml:lang="en">Skipped synchronizing extension {0}</source>
-        <target state="translated">건너뛴 동기화 확장 {0}</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
-      <trans-unit id="errorInvalidSettings">
-        <source xml:lang="en">Unable to sync keybindings as there are errors/warning in keybindings file.</source>
-        <target state="translated">키 바인딩 파일에 오류/경고가 있으므로 키 바인딩을 동기화할 수 없습니다.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/files/common/io" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
-      <trans-unit id="fileTooLargeForHeapError">
-        <source xml:lang="en">To open a file of this size, you need to restart and allow it to use more memory</source>
-        <target state="translated">이 크기의 파일을 열려면 다시 시작하여 더 많은 메모리를 사용하도록 허용해야 합니다</target>
-      </trans-unit>
-      <trans-unit id="fileTooLargeError">
-        <source xml:lang="en">File is too large to open</source>
-        <target state="translated">파일이 너무 커서 열 수 없습니다.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/actions/browser/menuEntryActionViewItem" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
-      <trans-unit id="titleAndKb">
-        <source xml:lang="en">{0} ({1})</source>
-        <target state="translated">{0}({1})</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/abstractSynchronizer" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
-      <trans-unit id="incompatible">
-        <source xml:lang="en">Cannot sync {0} as its version {1} is not compatible with cloud {2}</source>
-        <target state="translated">{1} 버전이 {2} 클라우드와 호환되지 않으므로 {0}을(를) 동기화할 수 없습니다.</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/extensions/common/extensionValidator" source-language="en" target-language="ko" datatype="plaintext">
     <body>
       <trans-unit id="versionSyntax">
@@ -1392,6 +1396,38 @@
       <trans-unit id="versionMismatch">
         <source xml:lang="en">Extension is not compatible with Code {0}. Extension requires: {1}.</source>
         <target state="translated">확장이 Code {0}과(와) 호환되지 않습니다. 확장에 {1}이(가) 필요합니다.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="errorInvalidSettings">
+        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
+        <target state="translated">설정 파일에 오류/경고가 있으므로 설정을 동기화할 수 없습니다.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="errorInvalidSettings">
+        <source xml:lang="en">Unable to sync keybindings as there are errors/warning in keybindings file.</source>
+        <target state="translated">키 바인딩 파일에 오류/경고가 있으므로 키 바인딩을 동기화할 수 없습니다.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/workspaces/electron-main/workspacesMainService" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="ok">
+        <source xml:lang="en">OK</source>
+        <target state="translated">확인</target>
+      </trans-unit>
+      <trans-unit id="workspaceOpenedMessage">
+        <source xml:lang="en">Unable to save workspace '{0}'</source>
+        <target state="translated">'{0}' 작업 영역을 저장할 수 없음</target>
+      </trans-unit>
+      <trans-unit id="workspaceOpenedDetail">
+        <source xml:lang="en">The workspace is already opened in another window. Please close that window first and then try again.</source>
+        <target state="translated">작업 영역이 이미 다른 창에 열렸습니다. 먼저 해당 창을 닫은 후 다시 시도하세요.</target>
       </trans-unit>
     </body>
   </file>
@@ -1432,46 +1468,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/workspaces/electron-main/workspacesMainService" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
-      <trans-unit id="ok">
-        <source xml:lang="en">OK</source>
-        <target state="translated">확인</target>
-      </trans-unit>
-      <trans-unit id="workspaceOpenedMessage">
-        <source xml:lang="en">Unable to save workspace '{0}'</source>
-        <target state="translated">'{0}' 작업 영역을 저장할 수 없음</target>
-      </trans-unit>
-      <trans-unit id="workspaceOpenedDetail">
-        <source xml:lang="en">The workspace is already opened in another window. Please close that window first and then try again.</source>
-        <target state="translated">작업 영역이 이미 다른 창에 열렸습니다. 먼저 해당 창을 닫은 후 다시 시도하세요.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/workspaces/electron-main/workspacesHistoryMainService" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
-      <trans-unit id="newWindow">
-        <source xml:lang="en">New Window</source>
-        <target state="translated">새 창</target>
-      </trans-unit>
-      <trans-unit id="newWindowDesc">
-        <source xml:lang="en">Opens a new window</source>
-        <target state="translated">새 창을 엽니다.</target>
-      </trans-unit>
-      <trans-unit id="recentFolders">
-        <source xml:lang="en">Recent Workspaces</source>
-        <target state="translated">최근 작업 영역</target>
-      </trans-unit>
-      <trans-unit id="folderDesc">
-        <source xml:lang="en">{0} {1}</source>
-        <target state="translated">{0} {1}</target>
-      </trans-unit>
-      <trans-unit id="workspaceDesc">
-        <source xml:lang="en">{0} {1}</source>
-        <target state="translated">{0} {1}</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/issue/electron-main/issueMainService" source-language="en" target-language="ko" datatype="plaintext">
     <body>
       <trans-unit id="local">
@@ -1505,6 +1501,50 @@
       <trans-unit id="processExplorer">
         <source xml:lang="en">Process Explorer</source>
         <target state="translated">프로세스 탐색기</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/workspaces/electron-main/workspacesHistoryMainService" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="newWindow">
+        <source xml:lang="en">New Window</source>
+        <target state="translated">새 창</target>
+      </trans-unit>
+      <trans-unit id="newWindowDesc">
+        <source xml:lang="en">Opens a new window</source>
+        <target state="translated">새 창을 엽니다.</target>
+      </trans-unit>
+      <trans-unit id="recentFolders">
+        <source xml:lang="en">Recent Workspaces</source>
+        <target state="translated">최근 작업 영역</target>
+      </trans-unit>
+      <trans-unit id="folderDesc">
+        <source xml:lang="en">{0} {1}</source>
+        <target state="translated">{0} {1}</target>
+      </trans-unit>
+      <trans-unit id="workspaceDesc">
+        <source xml:lang="en">{0} {1}</source>
+        <target state="translated">{0} {1}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/quickinput/browser/commandsQuickAccess" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="commandPickAriaLabelWithKeybinding">
+        <source xml:lang="en">{0}, {1}</source>
+        <target state="translated">{0}, {1}</target>
+      </trans-unit>
+      <trans-unit id="recentlyUsed">
+        <source xml:lang="en">recently used</source>
+        <target state="translated">최근에 사용한 항목</target>
+      </trans-unit>
+      <trans-unit id="morecCommands">
+        <source xml:lang="en">other commands</source>
+        <target state="translated">기타 명령</target>
+      </trans-unit>
+      <trans-unit id="canNotRun">
+        <source xml:lang="en">Command '{0}' resulted in an error ({1})</source>
+        <target state="translated">명령 '{0}'에서 오류({1})가 발생했습니다.</target>
       </trans-unit>
     </body>
   </file>
@@ -1656,6 +1696,14 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/userDataSync/common/abstractSynchronizer" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="incompatible">
+        <source xml:lang="en">Cannot sync {0} as its version {1} is not compatible with cloud {2}</source>
+        <target state="translated">{1} 버전이 {2} 클라우드와 호환되지 않으므로 {0}을(를) 동기화할 수 없습니다.</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/menubar/electron-main/menubar" source-language="en" target-language="ko" datatype="plaintext">
     <body>
       <trans-unit id="miNewWindow">
@@ -1690,7 +1738,7 @@
       </trans-unit>
       <trans-unit id="mRun">
         <source xml:lang="en">&amp;&amp;Run</source>
-        <target state="translated">실행(&amp;R)</target>
+        <target state="translated">실행(&amp;&amp;R)</target>
         <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
       <trans-unit id="mTerminal">
@@ -1799,7 +1847,1599 @@
       </trans-unit>
       <trans-unit id="miRestartToUpdate">
         <source xml:lang="en">Restart to &amp;&amp;Update</source>
-        <target state="translated">다시 시작 및 업데이트</target>
+        <target state="translated">다시 시작 및 업데이트(&amp;&amp;U)</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/theme/common/iconRegistry" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="add">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="plus">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="gist-new">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="repo-create">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="lightbulb">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="light-bulb">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="repo">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="repo-delete">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="gist-fork">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="repo-forked">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="git-pull-request">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="git-pull-request-abandoned">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="record-keys">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="keyboard">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="tag">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="tag-add">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="tag-remove">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="person">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="person-add">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="person-follow">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="person-outline">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="person-filled">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="git-branch">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="git-branch-create">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="git-branch-delete">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="source-control">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="mirror">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="mirror-public">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="star">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="star-add">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="star-delete">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="star-empty">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="comment">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="comment-add">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="alert">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="warning">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="search">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="search-save">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="log-out">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="sign-out">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="log-in">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="sign-in">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="eye">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="eye-unwatch">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="eye-watch">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="circle-filled">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="primitive-dot">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="close-dirty">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-disabled">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-hint">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="primitive-square">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="edit">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="pencil">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="info">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="issue-opened">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="gist-private">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="git-fork-private">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="lock">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="mirror-private">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="close">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="remove-close">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="x">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="repo-sync">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="sync">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="clone">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="desktop-download">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="beaker">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="microscope">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="vm">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="device-desktop">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file-text">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="more">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="ellipsis">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="kebab-horizontal">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="mail-reply">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="reply">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="organization">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="organization-filled">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="organization-outline">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="new-file">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file-add">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="new-folder">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file-directory-create">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="trash">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="trashcan">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="history">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="clock">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="folder">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file-directory">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-folder">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="logo-github">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="mark-github">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="github">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="terminal">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="console">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="repl">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="zap">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-event">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="error">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="stop">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="variable">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-variable">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="array">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-array">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-module">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-package">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-namespace">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-object">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-method">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-function">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-constructor">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-boolean">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-null">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-numeric">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-number">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-structure">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-struct">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-parameter">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-type-parameter">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-key">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-text">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-reference">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="go-to-file">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-enum">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-value">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-ruler">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-unit">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="activate-breakpoints">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="archive">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="arrow-both">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="arrow-down">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="arrow-left">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="arrow-right">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="arrow-small-down">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="arrow-small-left">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="arrow-small-right">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="arrow-small-up">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="arrow-up">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="bell">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="bold">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="book">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="bookmark">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-conditional-unverified">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-conditional">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-conditional-disabled">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-data-unverified">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-data">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-data-disabled">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-log-unverified">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-log">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-log-disabled">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="briefcase">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="broadcast">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="browser">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="bug">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="calendar">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="case-sensitive">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="check">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="checklist">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="chevron-down">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="chevron-left">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="chevron-right">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="chevron-up">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="chrome-close">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="chrome-maximize">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="chrome-minimize">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="chrome-restore">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="circle-outline">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-unverified">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="circle-slash">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="circuit-board">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="clear-all">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="clippy">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="close-all">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="cloud-download">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="cloud-upload">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="code">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="collapse-all">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="color-mode">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="comment-discussion">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="compare-changes">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="credit-card">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="dash">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="dashboard">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="database">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-continue">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-disconnect">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-pause">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-restart">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-start">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-step-into">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-step-out">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-step-over">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-stop">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="device-camera-video">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="device-camera">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="device-mobile">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="diff-added">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="diff-ignored">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="diff-modified">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="diff-removed">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="diff-renamed">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="diff">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="discard">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="editor-layout">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="empty-window">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="exclude">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="extensions">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="eye-closed">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file-binary">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file-code">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file-media">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file-pdf">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file-submodule">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file-symlink-directory">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file-symlink-file">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="file-zip">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="files">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="filter">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="flame">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="fold-down">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="fold-up">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="fold">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="folder-active">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="folder-opened">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="gear">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="gift">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="gist-secret">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="gist">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="git-commit">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="git-compare">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="git-merge">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="github-action">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="github-alt">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="globe">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="grabber">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="graph">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="gripper">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="heart">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="home">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="horizontal-rule">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="hubot">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="inbox">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="issue-closed">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="issue-reopened">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="issues">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="italic">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="jersey">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="json">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="kebab-vertical">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="key">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="law">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="lightbulb-autofix">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="link-external">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="link">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="list-ordered">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="list-unordered">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="live-share">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="loading">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="location">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="mail-read">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="mail">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="markdown">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="megaphone">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="mention">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="milestone">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="mortar-board">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="move">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="multiple-windows">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="mute">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="no-newline">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="note">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="octoface">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="open-preview">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="package">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="paintcan">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="pin">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="play">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="run">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="plug">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="preserve-case">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="preview">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="project">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="pulse">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="question">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="quote">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="radio-tower">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="reactions">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="references">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="refresh">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="regex">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="remote-explorer">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="remote">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="remove">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="replace-all">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="replace">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="repo-clone">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="repo-force-push">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="repo-pull">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="repo-push">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="report">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="request-changes">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="rocket">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="root-folder-opened">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="root-folder">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="rss">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="ruby">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="save-all">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="save-as">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="save">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="screen-full">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="screen-normal">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="search-stop">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="server">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="settings-gear">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="settings">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="shield">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="smiley">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="sort-precedence">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="split-horizontal">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="split-vertical">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="squirrel">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="star-full">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="star-half">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-class">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-color">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-constant">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-enum-member">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-field">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-file">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-interface">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-keyword">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-misc">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-operator">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-property">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="wrench">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="wrench-subaction">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-snippet">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="tasklist">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="telescope">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="text-size">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="three-bars">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="thumbsdown">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="thumbsup">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="tools">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="triangle-down">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="triangle-left">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="triangle-right">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="triangle-up">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="twitter">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="unfold">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="unlock">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="unmute">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="unverified">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="verified">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="versions">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="vm-active">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="vm-outline">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="vm-running">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="watch">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="whitespace">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="whole-word">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="window">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="word-wrap">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="zoom-in">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="zoom-out">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="list-filter">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="list-flat">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="list-selection">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="selection">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="list-tree">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-function-unverified">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-function">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-function-disabled">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-stackframe-active">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-stackframe-dot">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-stackframe">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-stackframe-focused">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-breakpoint-unsupported">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="symbol-string">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-reverse-continue">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-step-back">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-restart-frame">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-alternate">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="call-incoming">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="call-outgoing">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="menu">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="expand-all">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="feedback">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="group-by-ref-type">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="ungroup-by-ref-type">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="bell-dot">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-alt-2">
+        <source xml:lang="en">
+        </source>
+      </trans-unit>
+      <trans-unit id="debug-alt">
+        <source xml:lang="en">
+        </source>
       </trans-unit>
     </body>
   </file>

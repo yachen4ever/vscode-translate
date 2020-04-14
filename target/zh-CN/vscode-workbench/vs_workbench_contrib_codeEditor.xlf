@@ -8,19 +8,20 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/inspectKeybindings" source-language="en" target-language="zh-Hans" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/codeEditor/browser/largeFileOptimizations" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <body>
-      <trans-unit id="workbench.action.inspectKeyMap">
-        <source xml:lang="en">Developer: Inspect Key Mappings</source>
-        <target state="translated">开发人员: 检查按键映射</target>
+      <trans-unit id="largeFile">
+        <source xml:lang="en">{0}: tokenization, wrapping and folding have been turned off for this large file in order to reduce memory usage and avoid freezing or crashing.</source>
+        <target state="translated">{0}: 为减少内存使用并避免卡顿或崩溃，我们已关闭对此大型文件内容的标记、折行和折叠。</target>
+        <note>Variable 0 will be a file name.</note>
       </trans-unit>
-      <trans-unit id="workbench.action.inspectKeyMapJSON">
-        <source xml:lang="en">Inspect Key Mappings (JSON)</source>
-        <target state="translated">检查按键映射（JSON）</target>
+      <trans-unit id="removeOptimizations">
+        <source xml:lang="en">Forcefully enable features</source>
+        <target state="translated">强制启用功能</target>
       </trans-unit>
-      <trans-unit id="developer">
-        <source xml:lang="en">Developer</source>
-        <target state="translated">开发人员</target>
+      <trans-unit id="reopenFilePrompt">
+        <source xml:lang="en">Please reopen file in order for this setting to take effect.</source>
+        <target state="translated">请重新打开文件以使此设置生效。</target>
       </trans-unit>
     </body>
   </file>
@@ -37,6 +38,66 @@
       <trans-unit id="hintWhitespace">
         <source xml:lang="en">Show Whitespace Differences</source>
         <target state="translated">显示空白差异</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/inspectKeybindings" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <body>
+      <trans-unit id="workbench.action.inspectKeyMap">
+        <source xml:lang="en">Developer: Inspect Key Mappings</source>
+        <target state="translated">开发人员: 检查按键映射</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.inspectKeyMapJSON">
+        <source xml:lang="en">Inspect Key Mappings (JSON)</source>
+        <target state="translated">检查按键映射（JSON）</target>
+      </trans-unit>
+      <trans-unit id="developer">
+        <source xml:lang="en">Developer</source>
+        <target state="translated">开发人员</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/toggleColumnSelection" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <body>
+      <trans-unit id="toggleColumnSelection">
+        <source xml:lang="en">Toggle Column Selection Mode</source>
+        <target state="translated">切换列选择模式</target>
+      </trans-unit>
+      <trans-unit id="miColumnSelection">
+        <source xml:lang="en">Column &amp;&amp;Selection Mode</source>
+        <target state="translated">列和选择模式(&amp;&amp;S)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/toggleMinimap" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <body>
+      <trans-unit id="toggleMinimap">
+        <source xml:lang="en">Toggle Minimap</source>
+        <target state="translated">切换到迷你地图</target>
+      </trans-unit>
+      <trans-unit id="view">
+        <source xml:lang="en">View</source>
+        <target state="translated">视图</target>
+      </trans-unit>
+      <trans-unit id="miShowMinimap">
+        <source xml:lang="en">Show &amp;&amp;Minimap</source>
+        <target state="translated">显示迷你地图(&amp;&amp;M)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/semanticTokensHelp" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <body>
+      <trans-unit id="semanticTokensHelp">
+        <source xml:lang="en">Code coloring of '{0}' has been updated as the theme '{1}' has [semantic highlighting](https://go.microsoft.com/fwlink/?linkid=2122588) enabled.</source>
+        <target state="translated">“{0}”的代码着色已更新，因为主题“{1}”已启用[语义高亮](https://go.microsoft.com/fwlink/?linkid=2122588)。</target>
+        <note>Variable 0 will be a file name.
+Variable 1 will be a theme name.</note>
+      </trans-unit>
+      <trans-unit id="learnMoreButton">
+        <source xml:lang="en">Learn More</source>
+        <target state="translated">了解详细信息</target>
       </trans-unit>
     </body>
   </file>
@@ -60,37 +121,19 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/toggleMinimap" source-language="en" target-language="zh-Hans" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/codeEditor/browser/quickaccess/gotoLineQuickAccess" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <body>
-      <trans-unit id="toggleMinimap">
-        <source xml:lang="en">Toggle Minimap</source>
-        <target state="translated">切换到迷你地图</target>
+      <trans-unit id="gotoLineQuickAccessPlaceholder">
+        <source xml:lang="en">Type the line number and optional column to go to (e.g. 42:5 for line 42 and column 5).</source>
+        <target state="translated">键入要转到的行号和可选列（例如，42:5表示第 42 行和第 5 列）。</target>
       </trans-unit>
-      <trans-unit id="view">
-        <source xml:lang="en">View</source>
-        <target state="translated">视图</target>
+      <trans-unit id="gotoLineQuickAccess">
+        <source xml:lang="en">Go to Line/Column</source>
+        <target state="translated">转到行/列</target>
       </trans-unit>
-      <trans-unit id="miShowMinimap">
-        <source xml:lang="en">Show &amp;&amp;Minimap</source>
-        <target state="translated">显示迷你地图(&amp;&amp;M)</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/toggleColumnSelection" source-language="en" target-language="zh-Hans" datatype="plaintext">
-    <body>
-      <trans-unit id="toggleColumnSelection">
-        <source xml:lang="en">Toggle Column Selection Mode</source>
-        <target state="translated">切换列选择模式</target>
-      </trans-unit>
-      <trans-unit id="view">
-        <source xml:lang="en">View</source>
-        <target state="translated">视图</target>
-      </trans-unit>
-      <trans-unit id="miColumnSelection">
-        <source xml:lang="en">Column &amp;&amp;Selection Mode</source>
-        <target state="translated">列和选择模式(&amp;&amp;S)</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
+      <trans-unit id="gotoLine">
+        <source xml:lang="en">Go to Line/Column...</source>
+        <target state="translated">转到行/列...</target>
       </trans-unit>
     </body>
   </file>
@@ -111,23 +154,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/largeFileOptimizations" source-language="en" target-language="zh-Hans" datatype="plaintext">
-    <body>
-      <trans-unit id="largeFile">
-        <source xml:lang="en">{0}: tokenization, wrapping and folding have been turned off for this large file in order to reduce memory usage and avoid freezing or crashing.</source>
-        <target state="translated">{0}: 为减少内存使用并避免卡顿或崩溃，我们已关闭对此大型文件内容的标记、折行和折叠。</target>
-        <note>Variable 0 will be a file name.</note>
-      </trans-unit>
-      <trans-unit id="removeOptimizations">
-        <source xml:lang="en">Forcefully enable features</source>
-        <target state="translated">强制启用功能</target>
-      </trans-unit>
-      <trans-unit id="reopenFilePrompt">
-        <source xml:lang="en">Please reopen file in order for this setting to take effect.</source>
-        <target state="translated">请重新打开文件以使此设置生效。</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/codeEditor/browser/toggleRenderWhitespace" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <body>
       <trans-unit id="toggleRenderWhitespace">
@@ -142,6 +168,26 @@
         <source xml:lang="en">&amp;&amp;Render Whitespace</source>
         <target state="translated">渲染空格(&amp;&amp;R)</target>
         <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/quickaccess/gotoSymbolQuickAccess" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <body>
+      <trans-unit id="gotoSymbolQuickAccessPlaceholder">
+        <source xml:lang="en">Type the name of a symbol to go to.</source>
+        <target state="translated">键入要转到的符号的名称。</target>
+      </trans-unit>
+      <trans-unit id="gotoSymbolQuickAccess">
+        <source xml:lang="en">Go to Symbol in Editor</source>
+        <target state="translated">转到编辑器中的符号</target>
+      </trans-unit>
+      <trans-unit id="gotoSymbolByCategoryQuickAccess">
+        <source xml:lang="en">Go to Symbol in Editor by Category</source>
+        <target state="translated">按类别转到编辑器中的符号</target>
+      </trans-unit>
+      <trans-unit id="gotoSymbol">
+        <source xml:lang="en">Go to Symbol in Editor...</source>
+        <target state="translated">转到编辑器中的符号...</target>
       </trans-unit>
     </body>
   </file>
@@ -254,7 +300,7 @@
     <body>
       <trans-unit id="formatting">
         <source xml:lang="en">Running '{0}' Formatter ([configure](command:workbench.action.openSettings?%5B%22editor.formatOnSave%22%5D)).</source>
-        <target state="translated">正在运行“{0}”格式化程序([配置](命令: workbench.action.openSettings?%5B%22editor.formatOnSave%22%5D))。</target>
+        <target state="translated">正在运行“{0}”格式化程序([配置](command:workbench.action.openSettings?%5B%22editor.formatOnSave%22%5D))。</target>
       </trans-unit>
       <trans-unit id="codeaction">
         <source xml:lang="en">Quick Fixes</source>
@@ -262,7 +308,7 @@
       </trans-unit>
       <trans-unit id="codeaction.get">
         <source xml:lang="en">Getting code actions from '{0}' ([configure](command:workbench.action.openSettings?%5B%22editor.codeActionsOnSave%22%5D)).</source>
-        <target state="translated">正在从“{0}”获取代码操作([配置](命令: workbench.action.openSettings?%5B%22editor.codeActionsOnSave%22%5D))。</target>
+        <target state="translated">正在从“{0}”获取代码操作([配置](command:workbench.action.openSettings?%5B%22editor.codeActionsOnSave%22%5D))。</target>
       </trans-unit>
       <trans-unit id="codeAction.apply">
         <source xml:lang="en">Applying code action '{0}'.</source>
@@ -467,6 +513,50 @@
       <trans-unit id="label.closeButton">
         <source xml:lang="en">Close</source>
         <target state="translated">关闭</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/find/simpleFindReplaceWidget" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <body>
+      <trans-unit id="label.find">
+        <source xml:lang="en">Find</source>
+        <target state="translated">查找</target>
+      </trans-unit>
+      <trans-unit id="placeholder.find">
+        <source xml:lang="en">Find</source>
+        <target state="translated">查找</target>
+      </trans-unit>
+      <trans-unit id="label.previousMatchButton">
+        <source xml:lang="en">Previous match</source>
+        <target state="translated">上一个匹配项</target>
+      </trans-unit>
+      <trans-unit id="label.nextMatchButton">
+        <source xml:lang="en">Next match</source>
+        <target state="translated">下一个匹配项</target>
+      </trans-unit>
+      <trans-unit id="label.closeButton">
+        <source xml:lang="en">Close</source>
+        <target state="translated">关闭</target>
+      </trans-unit>
+      <trans-unit id="label.toggleReplaceButton">
+        <source xml:lang="en">Toggle Replace mode</source>
+        <target state="translated">切换替换模式</target>
+      </trans-unit>
+      <trans-unit id="label.replace">
+        <source xml:lang="en">Replace</source>
+        <target state="translated">替换</target>
+      </trans-unit>
+      <trans-unit id="placeholder.replace">
+        <source xml:lang="en">Replace</source>
+        <target state="translated">替换</target>
+      </trans-unit>
+      <trans-unit id="label.replaceButton">
+        <source xml:lang="en">Replace</source>
+        <target state="translated">替换</target>
+      </trans-unit>
+      <trans-unit id="label.replaceAllButton">
+        <source xml:lang="en">Replace All</source>
+        <target state="translated">全部替换</target>
       </trans-unit>
     </body>
   </file>

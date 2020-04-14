@@ -19,8 +19,8 @@
         <target state="translated">スキーマへの URL または現在のディレクトリのスキーマへの相対パス</target>
       </trans-unit>
       <trans-unit id="json.schemas.fileMatch.desc">
-        <source xml:lang="en">An array of file patterns to match against when resolving JSON files to schemas.</source>
-        <target state="translated">JSON ファイルをスキーマに解決する場合に一致するファイル パターンの配列です。</target>
+        <source xml:lang="en">An array of file patterns to match against when resolving JSON files to schemas. `*` can be used as a wildcard. Exclusion patterns can also be defined and start with '!'. A file matches when there at least one matching pattern and the last matching pattern is not an exclusion pattern.</source>
+        <target state="translated">JSON ファイルをスキーマに解決するときに照合するファイル パターンの配列。'*' はワイルドカードとして使用できます。除外パターンを定義して '!' で始めることもできます。一致するパターンが少なくとも 1 つあり、最後に一致するパターンが除外パターンでない場合、ファイルが一致します。</target>
       </trans-unit>
       <trans-unit id="json.schemas.fileMatch.item.desc">
         <source xml:lang="en">A file pattern that can contain '*' to match against when resolving JSON files to schemas.</source>
@@ -77,6 +77,10 @@
       <trans-unit id="jsonserver.name">
         <source xml:lang="en">JSON Language Server</source>
         <target state="translated">JSON 言語サーバー</target>
+      </trans-unit>
+      <trans-unit id="untitled.schema">
+        <source xml:lang="en">Unable to load {0}</source>
+        <target state="translated">Unable to load {0}</target>
       </trans-unit>
     </body>
   </file>

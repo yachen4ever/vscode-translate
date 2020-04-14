@@ -8,19 +8,20 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/inspectKeybindings" source-language="en" target-language="hu" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/codeEditor/browser/largeFileOptimizations" source-language="en" target-language="hu" datatype="plaintext">
     <body>
-      <trans-unit id="workbench.action.inspectKeyMap">
-        <source xml:lang="en">Developer: Inspect Key Mappings</source>
-        <target state="translated">Fejlesztői: Billentyűkiosztás vizsgálata</target>
+      <trans-unit id="largeFile">
+        <source xml:lang="en">{0}: tokenization, wrapping and folding have been turned off for this large file in order to reduce memory usage and avoid freezing or crashing.</source>
+        <target state="translated">{0}: ebben a nagy fájlban a memóriahasználat csökketése érdekében és a fagyások, valamint összeomlások megelőzése érdekében ki van kapcsolva a tokenizálás, a sortörés és a kódrészletek bezárása.</target>
+        <note>Variable 0 will be a file name.</note>
       </trans-unit>
-      <trans-unit id="workbench.action.inspectKeyMapJSON">
-        <source xml:lang="en">Inspect Key Mappings (JSON)</source>
-        <target state="new">Inspect Key Mappings (JSON)</target>
+      <trans-unit id="removeOptimizations">
+        <source xml:lang="en">Forcefully enable features</source>
+        <target state="translated">Funkciók engedélyezése mindenképp</target>
       </trans-unit>
-      <trans-unit id="developer">
-        <source xml:lang="en">Developer</source>
-        <target state="translated">Fejlesztői</target>
+      <trans-unit id="reopenFilePrompt">
+        <source xml:lang="en">Please reopen file in order for this setting to take effect.</source>
+        <target state="translated">Nyissa meg újra a fájlt a beállítás érvénybe lépéséhez!</target>
       </trans-unit>
     </body>
   </file>
@@ -37,6 +38,66 @@
       <trans-unit id="hintWhitespace">
         <source xml:lang="en">Show Whitespace Differences</source>
         <target state="new">Show Whitespace Differences</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/inspectKeybindings" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="workbench.action.inspectKeyMap">
+        <source xml:lang="en">Developer: Inspect Key Mappings</source>
+        <target state="translated">Fejlesztői: Billentyűkiosztás vizsgálata</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.inspectKeyMapJSON">
+        <source xml:lang="en">Inspect Key Mappings (JSON)</source>
+        <target state="new">Inspect Key Mappings (JSON)</target>
+      </trans-unit>
+      <trans-unit id="developer">
+        <source xml:lang="en">Developer</source>
+        <target state="translated">Fejlesztői</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/toggleColumnSelection" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="toggleColumnSelection">
+        <source xml:lang="en">Toggle Column Selection Mode</source>
+        <target state="new">Toggle Column Selection Mode</target>
+      </trans-unit>
+      <trans-unit id="miColumnSelection">
+        <source xml:lang="en">Column &amp;&amp;Selection Mode</source>
+        <target state="new">Column &amp;&amp;Selection Mode</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/toggleMinimap" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="toggleMinimap">
+        <source xml:lang="en">Toggle Minimap</source>
+        <target state="translated">Kódtérkép be- és kikapcsolása</target>
+      </trans-unit>
+      <trans-unit id="view">
+        <source xml:lang="en">View</source>
+        <target state="translated">Nézet</target>
+      </trans-unit>
+      <trans-unit id="miShowMinimap">
+        <source xml:lang="en">Show &amp;&amp;Minimap</source>
+        <target state="new">Show &amp;&amp;Minimap</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/semanticTokensHelp" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="semanticTokensHelp">
+        <source xml:lang="en">Code coloring of '{0}' has been updated as the theme '{1}' has [semantic highlighting](https://go.microsoft.com/fwlink/?linkid=2122588) enabled.</source>
+        <target state="new">Code coloring of '{0}' has been updated as the theme '{1}' has [semantic highlighting](https://go.microsoft.com/fwlink/?linkid=2122588) enabled.</target>
+        <note>Variable 0 will be a file name.
+Variable 1 will be a theme name.</note>
+      </trans-unit>
+      <trans-unit id="learnMoreButton">
+        <source xml:lang="en">Learn More</source>
+        <target state="translated">További információ</target>
       </trans-unit>
     </body>
   </file>
@@ -60,37 +121,19 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/toggleMinimap" source-language="en" target-language="hu" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/codeEditor/browser/quickaccess/gotoLineQuickAccess" source-language="en" target-language="hu" datatype="plaintext">
     <body>
-      <trans-unit id="toggleMinimap">
-        <source xml:lang="en">Toggle Minimap</source>
-        <target state="translated">Kódtérkép be- és kikapcsolása</target>
+      <trans-unit id="gotoLineQuickAccessPlaceholder">
+        <source xml:lang="en">Type the line number and optional column to go to (e.g. 42:5 for line 42 and column 5).</source>
+        <target state="new">Type the line number and optional column to go to (e.g. 42:5 for line 42 and column 5).</target>
       </trans-unit>
-      <trans-unit id="view">
-        <source xml:lang="en">View</source>
-        <target state="translated">Nézet</target>
+      <trans-unit id="gotoLineQuickAccess">
+        <source xml:lang="en">Go to Line/Column</source>
+        <target state="new">Go to Line/Column</target>
       </trans-unit>
-      <trans-unit id="miShowMinimap">
-        <source xml:lang="en">Show &amp;&amp;Minimap</source>
-        <target state="new">Show &amp;&amp;Minimap</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/toggleColumnSelection" source-language="en" target-language="hu" datatype="plaintext">
-    <body>
-      <trans-unit id="toggleColumnSelection">
-        <source xml:lang="en">Toggle Column Selection Mode</source>
-        <target state="new">Toggle Column Selection Mode</target>
-      </trans-unit>
-      <trans-unit id="view">
-        <source xml:lang="en">View</source>
-        <target state="translated">Nézet</target>
-      </trans-unit>
-      <trans-unit id="miColumnSelection">
-        <source xml:lang="en">Column &amp;&amp;Selection Mode</source>
-        <target state="new">Column &amp;&amp;Selection Mode</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
+      <trans-unit id="gotoLine">
+        <source xml:lang="en">Go to Line/Column...</source>
+        <target state="new">Go to Line/Column...</target>
       </trans-unit>
     </body>
   </file>
@@ -111,23 +154,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/largeFileOptimizations" source-language="en" target-language="hu" datatype="plaintext">
-    <body>
-      <trans-unit id="largeFile">
-        <source xml:lang="en">{0}: tokenization, wrapping and folding have been turned off for this large file in order to reduce memory usage and avoid freezing or crashing.</source>
-        <target state="translated">{0}: ebben a nagy fájlban a memóriahasználat csökketése érdekében és a fagyások, valamint összeomlások megelőzése érdekében ki van kapcsolva a tokenizálás, a sortörés és a kódrészletek bezárása.</target>
-        <note>Variable 0 will be a file name.</note>
-      </trans-unit>
-      <trans-unit id="removeOptimizations">
-        <source xml:lang="en">Forcefully enable features</source>
-        <target state="translated">Funkciók engedélyezése mindenképp</target>
-      </trans-unit>
-      <trans-unit id="reopenFilePrompt">
-        <source xml:lang="en">Please reopen file in order for this setting to take effect.</source>
-        <target state="translated">Nyissa meg újra a fájlt a beállítás érvénybe lépéséhez!</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/codeEditor/browser/toggleRenderWhitespace" source-language="en" target-language="hu" datatype="plaintext">
     <body>
       <trans-unit id="toggleRenderWhitespace">
@@ -142,6 +168,26 @@
         <source xml:lang="en">&amp;&amp;Render Whitespace</source>
         <target state="new">&amp;&amp;Render Whitespace</target>
         <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/quickaccess/gotoSymbolQuickAccess" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="gotoSymbolQuickAccessPlaceholder">
+        <source xml:lang="en">Type the name of a symbol to go to.</source>
+        <target state="new">Type the name of a symbol to go to.</target>
+      </trans-unit>
+      <trans-unit id="gotoSymbolQuickAccess">
+        <source xml:lang="en">Go to Symbol in Editor</source>
+        <target state="new">Go to Symbol in Editor</target>
+      </trans-unit>
+      <trans-unit id="gotoSymbolByCategoryQuickAccess">
+        <source xml:lang="en">Go to Symbol in Editor by Category</source>
+        <target state="new">Go to Symbol in Editor by Category</target>
+      </trans-unit>
+      <trans-unit id="gotoSymbol">
+        <source xml:lang="en">Go to Symbol in Editor...</source>
+        <target state="new">Go to Symbol in Editor...</target>
       </trans-unit>
     </body>
   </file>
@@ -467,6 +513,50 @@
       <trans-unit id="label.closeButton">
         <source xml:lang="en">Close</source>
         <target state="translated">Bezárás</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/find/simpleFindReplaceWidget" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="label.find">
+        <source xml:lang="en">Find</source>
+        <target state="translated">Keresés</target>
+      </trans-unit>
+      <trans-unit id="placeholder.find">
+        <source xml:lang="en">Find</source>
+        <target state="translated">Keresés</target>
+      </trans-unit>
+      <trans-unit id="label.previousMatchButton">
+        <source xml:lang="en">Previous match</source>
+        <target state="translated">Előző találat</target>
+      </trans-unit>
+      <trans-unit id="label.nextMatchButton">
+        <source xml:lang="en">Next match</source>
+        <target state="translated">Következő találat</target>
+      </trans-unit>
+      <trans-unit id="label.closeButton">
+        <source xml:lang="en">Close</source>
+        <target state="translated">Bezárás</target>
+      </trans-unit>
+      <trans-unit id="label.toggleReplaceButton">
+        <source xml:lang="en">Toggle Replace mode</source>
+        <target state="translated">Cseremód átváltása</target>
+      </trans-unit>
+      <trans-unit id="label.replace">
+        <source xml:lang="en">Replace</source>
+        <target state="translated">Csere</target>
+      </trans-unit>
+      <trans-unit id="placeholder.replace">
+        <source xml:lang="en">Replace</source>
+        <target state="translated">Csere</target>
+      </trans-unit>
+      <trans-unit id="label.replaceButton">
+        <source xml:lang="en">Replace</source>
+        <target state="translated">Csere</target>
+      </trans-unit>
+      <trans-unit id="label.replaceAllButton">
+        <source xml:lang="en">Replace All</source>
+        <target state="translated">Az összes cseréje</target>
       </trans-unit>
     </body>
   </file>

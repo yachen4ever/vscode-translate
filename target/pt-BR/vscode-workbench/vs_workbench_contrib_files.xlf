@@ -1,13 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file original="src/vs/workbench/contrib/files/electron-browser/files.contribution" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="textFileEditor">
-        <source xml:lang="en">Text File Editor</source>
-        <target state="translated">Editor de Arquivo de Texto</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/files/electron-browser/fileActions.contribution" source-language="en" target-language="pt-BR" datatype="plaintext">
     <body>
       <trans-unit id="revealInWindows">
@@ -28,6 +20,22 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/files/electron-browser/files.contribution" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="textFileEditor">
+        <source xml:lang="en">Text File Editor</source>
+        <target state="translated">Editor de Arquivo de Texto</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/files/electron-browser/fileCommands" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="openFileToReveal">
+        <source xml:lang="en">Open a file first to reveal</source>
+        <target state="translated">Abrir um arquivo primeiro para revelar</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/files/electron-browser/textFileEditor" source-language="en" target-language="pt-BR" datatype="plaintext">
     <body>
       <trans-unit id="fileTooLargeForHeapError">
@@ -41,14 +49,6 @@
       <trans-unit id="configureMemoryLimit">
         <source xml:lang="en">Configure Memory Limit</source>
         <target state="translated">Configurar Limite de Memória</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/files/electron-browser/fileCommands" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="openFileToReveal">
-        <source xml:lang="en">Open a file first to reveal</source>
-        <target state="translated">Abrir um arquivo primeiro para revelar</target>
       </trans-unit>
     </body>
   </file>
@@ -83,16 +83,16 @@
         <target state="translated">Editor de Arquivo Binário</target>
       </trans-unit>
       <trans-unit id="hotExit.off">
-        <source xml:lang="en">Disable hot exit.</source>
-        <target state="translated">Desabilitar a saída à quente.</target>
+        <source xml:lang="en">Disable hot exit. A prompt will show when attempting to close a window with dirty files.</source>
+        <target state="new">Disable hot exit. A prompt will show when attempting to close a window with dirty files.</target>
       </trans-unit>
       <trans-unit id="hotExit.onExit">
-        <source xml:lang="en">Hot exit will be triggered when the last window is closed on Windows/Linux or when the `workbench.action.quit` command is triggered (command palette, keybinding, menu). All windows with backups will be restored upon next launch.</source>
-        <target state="translated">Hot Exit será acionada quando a última janela for fechada no Windows/Linux ou quando o comando `workbench.action.quit` for acionado (paleta de comando, keybinding, menu). Todas as janelas com backups serão restauradas na próxima execução.</target>
+        <source xml:lang="en">Hot exit will be triggered when the last window is closed on Windows/Linux or when the `workbench.action.quit` command is triggered (command palette, keybinding, menu). All windows without folders opened will be restored upon next launch. A list of workspaces with unsaved files can be accessed via `File &gt; Open Recent &gt; More...`</source>
+        <target state="new">Hot exit will be triggered when the last window is closed on Windows/Linux or when the `workbench.action.quit` command is triggered (command palette, keybinding, menu). All windows without folders opened will be restored upon next launch. A list of workspaces with unsaved files can be accessed via `File &gt; Open Recent &gt; More...`</target>
       </trans-unit>
       <trans-unit id="hotExit.onExitAndWindowClose">
-        <source xml:lang="en">Hot exit will be triggered when the last window is closed on Windows/Linux or when the `workbench.action.quit` command is triggered (command palette, keybinding, menu), and also for any window with a folder opened regardless of whether it's the last window. All windows without folders opened will be restored upon next launch. To restore folder windows as they were before shutdown set `#window.restoreWindows#` to `all`.</source>
-        <target state="translated">A saída quente será acionada quando a última janela for fechada no Windows/Linux ou quando o comando 'workbench.action.quit' for disparado (paleta de comando, keybinding, menu), e também para qualquer janela com uma pasta aberta, independentemente de ser a última janela. Todas as janelas sem pastas abertas serão restauradas na próxima inicialização. Para restaurar janelas de pastas como eram antes do desligamento, defina '#window.restoreWindows#' para 'all'.</target>
+        <source xml:lang="en">Hot exit will be triggered when the last window is closed on Windows/Linux or when the `workbench.action.quit` command is triggered (command palette, keybinding, menu), and also for any window with a folder opened regardless of whether it's the last window. All windows without folders opened will be restored upon next launch. A list of workspaces with unsaved files can be accessed via `File &gt; Open Recent &gt; More...`</source>
+        <target state="new">Hot exit will be triggered when the last window is closed on Windows/Linux or when the `workbench.action.quit` command is triggered (command palette, keybinding, menu), and also for any window with a folder opened regardless of whether it's the last window. All windows without folders opened will be restored upon next launch. A list of workspaces with unsaved files can be accessed via `File &gt; Open Recent &gt; More...`</target>
       </trans-unit>
       <trans-unit id="hotExit">
         <source xml:lang="en">Controls whether unsaved files are remembered between sessions, allowing the save prompt when exiting the editor to be skipped.</source>
@@ -107,8 +107,8 @@
         <target state="translated">Arquivos</target>
       </trans-unit>
       <trans-unit id="exclude">
-        <source xml:lang="en">Configure glob patterns for excluding files and folders. For example, the files explorer decides which files and folders to show or hide based on this setting. Read more about glob patterns [here](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).</source>
-        <target state="translated">Configure padrões glob para excluir os arquivos e pastas. Por exemplo, o explorador de arquivos decide quais arquivos e pastas para mostrar ou ocultar baseiam essa configuração. Leia mais sobre padrões glob [aqui] (https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).</target>
+        <source xml:lang="en">Configure glob patterns for excluding files and folders. For example, the files explorer decides which files and folders to show or hide based on this setting. Refer to the `#search.exclude#` setting to define search specific excludes. Read more about glob patterns [here](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).</source>
+        <target state="new">Configure glob patterns for excluding files and folders. For example, the files explorer decides which files and folders to show or hide based on this setting. Refer to the `#search.exclude#` setting to define search specific excludes. Read more about glob patterns [here](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).</target>
       </trans-unit>
       <trans-unit id="files.exclude.boolean">
         <source xml:lang="en">The glob pattern to match file paths against. Set to true or false to enable or disable the pattern.</source>
@@ -184,16 +184,16 @@
       </trans-unit>
       <trans-unit id="autoSave">
         <source xml:lang="en">Controls auto save of dirty editors. Read more about autosave [here](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save).</source>
-        <target state="new">Controls auto save of dirty editors. Read more about autosave [here](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save).</target>
+        <target state="translated">Controla o salvamento automático de editores sujos. Leia mais sobre o salvamento automático [aqui](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save).</target>
         <note>This is the description for a setting. Values surrounded by single quotes are not to be translated.</note>
       </trans-unit>
       <trans-unit id="autoSaveDelay">
         <source xml:lang="en">Controls the delay in ms after which a dirty editor is saved automatically. Only applies when `#files.autoSave#` is set to `{0}`.</source>
-        <target state="new">Controls the delay in ms after which a dirty editor is saved automatically. Only applies when `#files.autoSave#` is set to `{0}`.</target>
+        <target state="translated">Controla o atraso em ms, após o qual um editor sujo é salvo automaticamente. Aplica-se apenas quando `#files.autoSave#` estiver definido como `{0}`.</target>
         <note>This is the description for a setting. Values surrounded by single quotes are not to be translated.</note>
       </trans-unit>
       <trans-unit id="watcherExclude">
-        <source xml:lang="en">Configure glob patterns of file paths to exclude from file watching. Patterns must match on absolute paths (i.e. prefix with ** or the full path to match properly). Changing this setting requires a restart. When you experience Code consuming lots of cpu time on startup, you can exclude large folders to reduce the initial load.</source>
+        <source xml:lang="en">Configure glob patterns of file paths to exclude from file watching. Patterns must match on absolute paths (i.e. prefix with ** or the full path to match properly). Changing this setting requires a restart. When you experience Code consuming lots of CPU time on startup, you can exclude large folders to reduce the initial load.</source>
         <target state="translated">Configure padrões glob de caminhos de arquivo para excluir do monitoramento de arquivo. Padrões devem corresponder a caminhos absolutos (ou seja, prefixo com ** ou o caminho completo para combinar corretamente). Alterar essa configuração requer uma reinicialização. Quando o Code estiver consumindo muito tempo de cpu na inicialização, você pode excluir pastas grandes para reduzir a carga inicial.</target>
       </trans-unit>
       <trans-unit id="defaultLanguage">
@@ -295,7 +295,7 @@
       </trans-unit>
       <trans-unit id="compressSingleChildFolders">
         <source xml:lang="en">Controls whether the explorer should render folders in a compact form. In such a form, single child folders will be compressed in a combined tree element. Useful for Java package structures, for example.</source>
-        <target state="new">Controls whether the explorer should render folders in a compact form. In such a form, single child folders will be compressed in a combined tree element. Useful for Java package structures, for example.</target>
+        <target state="translated">Controla se o explorador de arquivos deve renderizar pastas em um formato compacto. Nesse formato, as pastas com apenas um filho serão compactadas em um elemento combinado da árvore. Útil para estruturas de pacotes Java, por exemplo.</target>
       </trans-unit>
       <trans-unit id="miViewExplorer">
         <source xml:lang="en">&amp;&amp;Explorer</source>
@@ -306,24 +306,6 @@
   </file>
   <file original="src/vs/workbench/contrib/files/browser/explorerViewlet" source-language="en" target-language="pt-BR" datatype="plaintext">
     <body>
-      <trans-unit id="noWorkspaceHelp">
-        <source xml:lang="en">You have not yet added a folder to the workspace.
-[Add Folder](command:{0})</source>
-        <target state="new">You have not yet added a folder to the workspace.
-[Add Folder](command:{0})</target>
-      </trans-unit>
-      <trans-unit id="remoteNoFolderHelp">
-        <source xml:lang="en">Connected to remote.
-[Open Folder](command:{0})</source>
-        <target state="new">Connected to remote.
-[Open Folder](command:{0})</target>
-      </trans-unit>
-      <trans-unit id="noFolderHelp">
-        <source xml:lang="en">You have not yet opened a folder.
-[Open Folder](command:{0})</source>
-        <target state="new">You have not yet opened a folder.
-[Open Folder](command:{0})</target>
-      </trans-unit>
       <trans-unit id="folders">
         <source xml:lang="en">Folders</source>
         <target state="translated">Pastas</target>
@@ -331,6 +313,27 @@
       <trans-unit id="explore">
         <source xml:lang="en">Explorer</source>
         <target state="translated">Explorador</target>
+      </trans-unit>
+      <trans-unit id="noWorkspaceHelp">
+        <source xml:lang="en">You have not yet added a folder to the workspace.
+[Add Folder](command:{0})</source>
+        <target state="new">You have not yet added a folder to the workspace.
+[Add Folder](command:{0})</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
+      </trans-unit>
+      <trans-unit id="remoteNoFolderHelp">
+        <source xml:lang="en">Connected to remote.
+[Open Folder](command:{0})</source>
+        <target state="new">Connected to remote.
+[Open Folder](command:{0})</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
+      </trans-unit>
+      <trans-unit id="noFolderHelp">
+        <source xml:lang="en">You have not yet opened a folder.
+[Open Folder](command:{0})</source>
+        <target state="new">You have not yet opened a folder.
+[Open Folder](command:{0})</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
       </trans-unit>
     </body>
   </file>
@@ -550,26 +553,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/files/common/dirtyFilesIndicator" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="dirtyFile">
-        <source xml:lang="en">1 unsaved file</source>
-        <target state="translated">1 arquivo não salvo</target>
-      </trans-unit>
-      <trans-unit id="dirtyFiles">
-        <source xml:lang="en">{0} unsaved files</source>
-        <target state="translated">{0} arquivos não salvos</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/files/browser/editors/binaryFileEditor" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="binaryFileEditor">
-        <source xml:lang="en">Binary File Viewer</source>
-        <target state="translated">Visualizador de Arquivo Binário</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/files/common/workspaceWatcher" source-language="en" target-language="pt-BR" datatype="plaintext">
     <body>
       <trans-unit id="netVersionError">
@@ -587,6 +570,26 @@
       <trans-unit id="learnMore">
         <source xml:lang="en">Instructions</source>
         <target state="translated">Instruções</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/files/browser/editors/binaryFileEditor" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="binaryFileEditor">
+        <source xml:lang="en">Binary File Viewer</source>
+        <target state="translated">Visualizador de Arquivo Binário</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/files/common/dirtyFilesIndicator" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="dirtyFile">
+        <source xml:lang="en">1 unsaved file</source>
+        <target state="translated">1 arquivo não salvo</target>
+      </trans-unit>
+      <trans-unit id="dirtyFiles">
+        <source xml:lang="en">{0} unsaved files</source>
+        <target state="translated">{0} arquivos não salvos</target>
       </trans-unit>
     </body>
   </file>
@@ -973,6 +976,10 @@
         <source xml:lang="en">The name **{0}** is not valid as a file or folder name. Please choose a different name.</source>
         <target state="translated">O nome **{0}** não é válido como um nome de arquivo ou pasta. Por favor, escolha um nome diferente.</target>
       </trans-unit>
+      <trans-unit id="fileNameWhitespaceWarning">
+        <source xml:lang="en">Leading or trailing whitespace detected in file or folder name.</source>
+        <target state="new">Leading or trailing whitespace detected in file or folder name.</target>
+      </trans-unit>
       <trans-unit id="compareWithClipboard">
         <source xml:lang="en">Compare Active File with Clipboard</source>
         <target state="translated">Compare o Arquivo Ativo com a Área de Transferência</target>
@@ -1007,7 +1014,7 @@
     <body>
       <trans-unit id="canNotResolve">
         <source xml:lang="en">Unable to resolve workspace folder</source>
-        <target state="new">Unable to resolve workspace folder</target>
+        <target state="translated">Não foi possível resolver a pasta de espaço de trabalho</target>
       </trans-unit>
       <trans-unit id="symbolicLlink">
         <source xml:lang="en">Symbolic Link</source>

@@ -56,6 +56,14 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/services/themes/browser/workbenchThemeService" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="error.cannotloadtheme">
+        <source xml:lang="en">Unable to load {0}: {1}</source>
+        <target state="translated">{0}을(를) 로드할 수 없음: {1}</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/services/themes/common/tokenClassificationExtensionPoint" source-language="en" target-language="ko" datatype="plaintext">
     <body>
       <trans-unit id="contributes.semanticTokenTypes">
@@ -69,6 +77,14 @@
       <trans-unit id="contributes.semanticTokenTypes.id.format">
         <source xml:lang="en">Identifiers should be in the form letterOrDigit[_-letterOrDigit]*</source>
         <target state="translated">식별자는 letterOrDigit[_-letterOrDigit]* 형식이어야 합니다.</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenTypes.superType">
+        <source xml:lang="en">The super type of the semantic token type</source>
+        <target state="translated">의미 체계 토큰 형식의 상위 형식</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenTypes.superType.format">
+        <source xml:lang="en">Super types should be in the form letterOrDigit[_-letterOrDigit]*</source>
+        <target state="translated">상위 형식은 letterOrDigit[_-letterOrDigit]* 형식이어야 합니다.</target>
       </trans-unit>
       <trans-unit id="contributes.color.description">
         <source xml:lang="en">The description of the semantic token type</source>
@@ -90,33 +106,17 @@
         <source xml:lang="en">The description of the semantic token modifier</source>
         <target state="translated">의미 체계 토큰 수정자에 대한 설명</target>
       </trans-unit>
-      <trans-unit id="contributes.semanticTokenStyleDefaults">
-        <source xml:lang="en">Contributes semantic token style defaults.</source>
-        <target state="translated">의미 체계 토큰 스타일 기본값을 제공합니다.</target>
+      <trans-unit id="contributes.semanticTokenScopes">
+        <source xml:lang="en">Contributes semantic token scope maps.</source>
+        <target state="translated">의미 체계 토큰 범위 맵을 제공합니다.</target>
       </trans-unit>
-      <trans-unit id="contributes.semanticTokenStyleDefaults.selector">
-        <source xml:lang="en">The selector matching token types and modifiers.</source>
-        <target state="translated">선택기는 토큰 유형 및 수정자를 일치시킵니다.</target>
+      <trans-unit id="contributes.semanticTokenScopes.languages">
+        <source xml:lang="en">Lists the languge for which the defaults are.</source>
+        <target state="translated">기본값이 사용되는 언어를 나열합니다.</target>
       </trans-unit>
-      <trans-unit id="contributes.semanticTokenStyleDefaults.selector.format">
-        <source xml:lang="en">Selectors should be in the form (type|*)(.modifier)*</source>
-        <target state="translated">선택기는 (type|*)(.modifier)* 형식이어야 합니다.</target>
-      </trans-unit>
-      <trans-unit id="contributes.semanticTokenStyleDefaults.scope">
-        <source xml:lang="en">A TextMate scope against the current color theme is matched to find the style for the given selector</source>
-        <target state="translated">지정된 선택기의 스타일을 찾도록 현재 색 테마에 대한 TextMate 범위가 일치됩니다.</target>
-      </trans-unit>
-      <trans-unit id="contributes.semanticTokenStyleDefaults.light">
-        <source xml:lang="en">The default style used for light themes</source>
-        <target state="translated">밝은 테마에 사용되는 기본 스타일</target>
-      </trans-unit>
-      <trans-unit id="contributes.semanticTokenStyleDefaults.dark">
-        <source xml:lang="en">The default style used for dark themes</source>
-        <target state="translated">어두운 테마에 사용되는 기본 스타일</target>
-      </trans-unit>
-      <trans-unit id="contributes.semanticTokenStyleDefaults.hc">
-        <source xml:lang="en">The default style used for high contrast themes</source>
-        <target state="translated">고대비 테마에 사용되는 기본 스타일</target>
+      <trans-unit id="contributes.semanticTokenScopes.scopes">
+        <source xml:lang="en">Maps a semantic token (described by semantic token selector) to one or more textMate scopes used to represent that token.</source>
+        <target state="translated">의미 체계 토큰(의미 체계 토큰 선택기에서 설명됨)을 해당 토큰을 나타내는 데 사용되는 하나 이상의 textMate 범위에 매핑합니다.</target>
       </trans-unit>
       <trans-unit id="invalid.id">
         <source xml:lang="en">'configuration.{0}.id' must be defined and can not be empty</source>
@@ -134,14 +134,6 @@
         <source xml:lang="en">'configuration.{0}.description' must be defined and can not be empty</source>
         <target state="translated">'configuration.{0}.description'이 정의되어야 하며 비어 있을 수 없습니다.</target>
       </trans-unit>
-      <trans-unit id="invalid.color">
-        <source xml:lang="en">'configuration.{0}.foreground'  must follow the pattern #RRGGBB[AA]</source>
-        <target state="translated">'configuration.{0}.foreground'는 #RRGGBB[AA] 패턴을 따라야 합니다.</target>
-      </trans-unit>
-      <trans-unit id="invalid.fontStyle">
-        <source xml:lang="en">'configuration.{0}.fontStyle'  must be one or a combination of  'italic', 'bold' or 'underline' or the empty string</source>
-        <target state="translated">'configuration.{0}.fontStyle'은 '기울임꼴', '굵게' 또는 '밑줄' 중 하나이거나 이들의 조합이거나 빈 문자열이어야 합니다.</target>
-      </trans-unit>
       <trans-unit id="invalid.semanticTokenTypeConfiguration">
         <source xml:lang="en">'configuration.semanticTokenType' must be an array</source>
         <target state="translated">'configuration.semanticTokenType'은 배열이어야 함</target>
@@ -150,113 +142,45 @@
         <source xml:lang="en">'configuration.semanticTokenModifier' must be an array</source>
         <target state="translated">'configuration.semanticTokenModifier'는 배열이어야 함</target>
       </trans-unit>
-      <trans-unit id="invalid.semanticTokenStyleDefaultConfiguration">
-        <source xml:lang="en">'configuration.semanticTokenStyleDefaults' must be an array</source>
-        <target state="translated">'configuration.semanticTokenStyleDefaults'는 배열이어야 함</target>
+      <trans-unit id="invalid.semanticTokenScopes.configuration">
+        <source xml:lang="en">'configuration.semanticTokenScopes' must be an array</source>
+        <target state="translated">'configuration.semanticTokenScopes'는 배열이어야 합니다.</target>
       </trans-unit>
-      <trans-unit id="invalid.selector">
-        <source xml:lang="en">'configuration.semanticTokenStyleDefaults.selector' must be defined and can not be empty</source>
-        <target state="translated">'configuration.semanticTokenStyleDefaults.selector'는 정의해야 하며 비어 있을 수 없습니다.</target>
+      <trans-unit id="invalid.semanticTokenScopes.language">
+        <source xml:lang="en">'configuration.semanticTokenScopes.language' must be a string</source>
+        <target state="translated">'configuration.semanticTokenScopes.language'는 문자열이어야 합니다.</target>
       </trans-unit>
-      <trans-unit id="invalid.selector.format">
-        <source xml:lang="en">'configuration.semanticTokenStyleDefaults.selector' must be in the form (type|*)(.modifier)*</source>
-        <target state="translated">'configuration.semanticTokenStyleDefaults.selector'는 (type|*)(.modifier)* 형식이어야 합니다.</target>
+      <trans-unit id="invalid.semanticTokenScopes.scopes">
+        <source xml:lang="en">'configuration.semanticTokenScopes.scopes' must be defined as an object</source>
+        <target state="translated">'configuration.semanticTokenScopes.scopes'는 개체로 정의되어야 합니다.</target>
       </trans-unit>
-      <trans-unit id="invalid.scope">
-        <source xml:lang="en">If defined, 'configuration.semanticTokenStyleDefaults.scope' must be an array of strings</source>
-        <target state="translated">정의된 경우 'configuration.semanticTokenStyleDefaults.scope'는 문자열의 배열이어야 합니다.</target>
+      <trans-unit id="invalid.semanticTokenScopes.scopes.value">
+        <source xml:lang="en">'configuration.semanticTokenScopes.scopes' values must be an array of strings</source>
+        <target state="translated">'configuration.semanticTokenScopes.scopes' 값은 문자열의 배열이어야 합니다.</target>
       </trans-unit>
-      <trans-unit id="invalid.selector.parsing">
-        <source xml:lang="en">configuration.semanticTokenStyleDefaults.selector': Problems parsing {0}.</source>
-        <target state="translated">configuration.semanticTokenStyleDefaults.selector': {0}을(를) 구문 분석하는 중 문제 발생</target>
+      <trans-unit id="invalid.semanticTokenScopes.scopes.selector">
+        <source xml:lang="en">configuration.semanticTokenScopes.scopes': Problems parsing selector {0}.</source>
+        <target state="translated">configuration.semanticTokenScopes.scopes': 선택기 구문 분석 문제 {0}.</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/services/themes/browser/workbenchThemeService" source-language="en" target-language="ko" datatype="plaintext">
+  <file original="src/vs/workbench/services/themes/browser/productIconThemeData" source-language="en" target-language="ko" datatype="plaintext">
     <body>
-      <trans-unit id="error.cannotloadtheme">
-        <source xml:lang="en">Unable to load {0}: {1}</source>
-        <target state="translated">{0}을(를) 로드할 수 없음: {1}</target>
+      <trans-unit id="defaultTheme">
+        <source xml:lang="en">Default</source>
+        <target state="translated">기본값</target>
       </trans-unit>
-      <trans-unit id="colorTheme">
-        <source xml:lang="en">Specifies the color theme used in the workbench.</source>
-        <target state="translated">워크벤치에 사용할 색상 테마를 지정합니다.</target>
+      <trans-unit id="error.cannotparseicontheme">
+        <source xml:lang="en">Problems parsing product icons file: {0}</source>
+        <target state="translated">제품 아이콘 파일 구문 분석 문제: {0}</target>
       </trans-unit>
-      <trans-unit id="colorThemeError">
-        <source xml:lang="en">Theme is unknown or not installed.</source>
-        <target state="translated">테마가 알 수 없거나 설치되지 않았습니다.</target>
+      <trans-unit id="error.invalidformat">
+        <source xml:lang="en">Invalid format for product icons theme file: Object expected.</source>
+        <target state="translated">제품 아이콘 테마 파일 형식 오류: 개체 예상됨.</target>
       </trans-unit>
-      <trans-unit id="preferredDarkColorTheme">
-        <source xml:lang="en">Specifies the preferred color theme for dark OS appearance when '{0}' is enabled.</source>
-        <target state="translated">'{0}'을(를) 사용하도록 설정한 경우 어두운 OS 모양에 대해 기본 설정 색상 테마를 지정합니다.</target>
-      </trans-unit>
-      <trans-unit id="preferredLightColorTheme">
-        <source xml:lang="en">Specifies the preferred color theme for light OS appearance when '{0}' is enabled.</source>
-        <target state="translated">'{0}'을(를) 사용하도록 설정한 경우 밝은 OS 모양에 대해 기본 설정 색상 테마를 지정합니다.</target>
-      </trans-unit>
-      <trans-unit id="preferredHCColorTheme">
-        <source xml:lang="en">Specifies the preferred color theme used in high contrast mode when '{0}' is enabled.</source>
-        <target state="translated">'{0}'을(를) 사용하도록 설정할 때 고대비 모드에서 사용되는 기본 설정 색상 테마를 지정합니다.</target>
-      </trans-unit>
-      <trans-unit id="detectColorScheme">
-        <source xml:lang="en">If set, automatically switch to the preferred color theme based on the OS appearance.</source>
-        <target state="translated">설정된 경우 OS 모양에 따라 기본 설정 색상 테마로 자동 전환됩니다.</target>
-      </trans-unit>
-      <trans-unit id="iconTheme">
-        <source xml:lang="en">Specifies the icon theme used in the workbench or 'null' to not show any file icons.</source>
-        <target state="translated">워크벤치에서 사용되는 아이콘 테마를 지정합니다. 'null'로 지정하면 파일 아이콘을 표시하지 않습니다.</target>
-      </trans-unit>
-      <trans-unit id="noIconThemeDesc">
-        <source xml:lang="en">No file icons</source>
-        <target state="translated">파일 아이콘 없음</target>
-      </trans-unit>
-      <trans-unit id="iconThemeError">
-        <source xml:lang="en">File icon theme is unknown or not installed.</source>
-        <target state="translated">파일 아이콘 테마가 알 수 없거나 설치되지 않았습니다.</target>
-      </trans-unit>
-      <trans-unit id="workbenchColors">
-        <source xml:lang="en">Overrides colors from the currently selected color theme.</source>
-        <target state="translated">현재 선택한 색 테마에서 색을 재정의합니다.</target>
-      </trans-unit>
-      <trans-unit id="editorColors.comments">
-        <source xml:lang="en">Sets the colors and styles for comments</source>
-        <target state="translated">주석의 색 및 스타일을 설정합니다.</target>
-      </trans-unit>
-      <trans-unit id="editorColors.strings">
-        <source xml:lang="en">Sets the colors and styles for strings literals.</source>
-        <target state="translated">문자열 리터럴의 색 및 스타일을 설정합니다.</target>
-      </trans-unit>
-      <trans-unit id="editorColors.keywords">
-        <source xml:lang="en">Sets the colors and styles for keywords.</source>
-        <target state="translated">키워드의 색과 스타일을 설정합니다.</target>
-      </trans-unit>
-      <trans-unit id="editorColors.numbers">
-        <source xml:lang="en">Sets the colors and styles for number literals.</source>
-        <target state="translated">숫자 리터럴의 색과 스타일을 설정합니다.</target>
-      </trans-unit>
-      <trans-unit id="editorColors.types">
-        <source xml:lang="en">Sets the colors and styles for type declarations and references.</source>
-        <target state="translated">형식 선언 및 참조의 색 및 스타일을 설정합니다.</target>
-      </trans-unit>
-      <trans-unit id="editorColors.functions">
-        <source xml:lang="en">Sets the colors and styles for functions declarations and references.</source>
-        <target state="translated">함수 선언 및 참조의 색 및 스타일을 설정합니다.</target>
-      </trans-unit>
-      <trans-unit id="editorColors.variables">
-        <source xml:lang="en">Sets the colors and styles for variables declarations and references.</source>
-        <target state="translated">변수 선언 및 참조의 색 및 스타일을 설정합니다.</target>
-      </trans-unit>
-      <trans-unit id="editorColors.textMateRules">
-        <source xml:lang="en">Sets colors and styles using textmate theming rules (advanced).</source>
-        <target state="translated">textmate 테마 설정 규칙을 사용하여 색 및 스타일을 설정합니다(고급).</target>
-      </trans-unit>
-      <trans-unit id="editorColors">
-        <source xml:lang="en">Overrides editor colors and font style from the currently selected color theme.</source>
-        <target state="translated">현재 선택된 색 테마에서 편집기 색상과 글꼴 스타일을 재정의합니다.</target>
-      </trans-unit>
-      <trans-unit id="editorColorsTokenStyles">
-        <source xml:lang="en">Overrides token color and styles from the currently selected color theme.</source>
-        <target state="translated">현재 선택한 색상 테마에서 토큰 색상 및 스타일을 재정의합니다.</target>
+      <trans-unit id="error.missingProperties">
+        <source xml:lang="en">Invalid format for product icons theme file: Must contain iconDefinitions and fonts.</source>
+        <target state="translated">제품 아이콘 테마 파일 형식 오류: iconDefinitions 및 글꼴을 포함해야 합니다.</target>
       </trans-unit>
     </body>
   </file>
@@ -306,89 +230,53 @@
         <source xml:lang="en">Colors for syntax highlighting</source>
         <target state="translated">구문 강조 표시를 위한 색</target>
       </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/services/themes/browser/fileIconThemeStore" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
-      <trans-unit id="vscode.extension.contributes.iconThemes">
-        <source xml:lang="en">Contributes file icon themes.</source>
-        <target state="translated">파일 아이콘 테마를 적용합니다.</target>
+      <trans-unit id="schema.supportsSemanticHighlighting">
+        <source xml:lang="en">Whether semantic highlighting should be enabled for this theme.</source>
+        <target state="translated">이 테마에 의미 체계 강조 표시를 사용하도록 설정해야 하는지 여부.</target>
       </trans-unit>
-      <trans-unit id="vscode.extension.contributes.iconThemes.id">
-        <source xml:lang="en">Id of the icon theme as used in the user settings.</source>
-        <target state="translated">사용자 설정에 사용된 아이콘 테마의 ID입니다.</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.iconThemes.label">
-        <source xml:lang="en">Label of the icon theme as shown in the UI.</source>
-        <target state="translated">UI에 표시된 아이콘 테마의 레이블입니다.</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.iconThemes.path">
-        <source xml:lang="en">Path of the icon theme definition file. The path is relative to the extension folder and is typically './icons/awesome-icon-theme.json'.</source>
-        <target state="translated">아이콘 테마 정의 파일의 경로입니다. 확장 폴더의 상대 경로이며 일반적으로 './icons/awesome-icon-theme.json'입니다.</target>
-      </trans-unit>
-      <trans-unit id="reqarray">
-        <source xml:lang="en">Extension point `{0}` must be an array.</source>
-        <target state="translated">확장점 '{0}'은(는) 배열이어야 합니다.</target>
-      </trans-unit>
-      <trans-unit id="reqpath">
-        <source xml:lang="en">Expected string in `contributes.{0}.path`. Provided value: {1}</source>
-        <target state="translated">`contributes.{0}.path`에 문자열이 필요합니다. 제공된 값: {1}</target>
-      </trans-unit>
-      <trans-unit id="reqid">
-        <source xml:lang="en">Expected string in `contributes.{0}.id`. Provided value: {1}</source>
-        <target state="translated">`contributes.{0}.id`에 문자열이 필요합니다. 제공된 값: {1}</target>
-      </trans-unit>
-      <trans-unit id="invalid.path.1">
-        <source xml:lang="en">Expected `contributes.{0}.path` ({1}) to be included inside extension's folder ({2}). This might make the extension non-portable.</source>
-        <target state="translated">확장 폴더({2})에 포함할 `contributes.{0}.path`({1})가 필요합니다. 확장이 이식 불가능해질 수 있습니다.</target>
+      <trans-unit id="schema.semanticTokenColors">
+        <source xml:lang="en">Colors for semantic tokens</source>
+        <target state="translated">의미 체계 토큰의 색상</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/services/themes/common/colorThemeStore" source-language="en" target-language="ko" datatype="plaintext">
+  <file original="src/vs/workbench/services/themes/common/productIconThemeSchema" source-language="en" target-language="ko" datatype="plaintext">
     <body>
-      <trans-unit id="vscode.extension.contributes.themes">
-        <source xml:lang="en">Contributes textmate color themes.</source>
-        <target state="translated">Textmate 색상 테마를 제공합니다.</target>
+      <trans-unit id="schema.fonts">
+        <source xml:lang="en">Fonts that are used in the icon definitions.</source>
+        <target state="translated">아이콘 정의에 사용된 글꼴입니다.</target>
       </trans-unit>
-      <trans-unit id="vscode.extension.contributes.themes.id">
-        <source xml:lang="en">Id of the icon theme as used in the user settings.</source>
-        <target state="translated">사용자 설정에 사용된 아이콘 테마의 ID입니다.</target>
+      <trans-unit id="schema.id">
+        <source xml:lang="en">The ID of the font.</source>
+        <target state="translated">글꼴의 ID입니다.</target>
       </trans-unit>
-      <trans-unit id="vscode.extension.contributes.themes.label">
-        <source xml:lang="en">Label of the color theme as shown in the UI.</source>
-        <target state="translated">UI에 표시되는 색 테마의 레이블입니다.</target>
+      <trans-unit id="schema.src">
+        <source xml:lang="en">The location of the font.</source>
+        <target state="translated">글꼴 위치입니다.</target>
       </trans-unit>
-      <trans-unit id="vscode.extension.contributes.themes.uiTheme">
-        <source xml:lang="en">Base theme defining the colors around the editor: 'vs' is the light color theme, 'vs-dark' is the dark color theme. 'hc-black' is the dark high contrast theme.</source>
-        <target state="translated">편집기 주변의 색을 정의하는 기본 테마입니다. 'vs'는 밝은색 테마이고, 'vs-dark'는 어두운색 테마입니다. 'hc-black'은 어두운 고대비 테마입니다.</target>
+      <trans-unit id="schema.font-path">
+        <source xml:lang="en">The font path, relative to the current workbench icon theme file.</source>
+        <target state="translated">글꼴 경로, 현재 워크벤치 아이콘 테마 파일 기준.</target>
       </trans-unit>
-      <trans-unit id="vscode.extension.contributes.themes.path">
-        <source xml:lang="en">Path of the tmTheme file. The path is relative to the extension folder and is typically './themes/themeFile.tmTheme'.</source>
-        <target state="translated">tmTheme 파일의 경로입니다. 확장 폴더의 상대 경로이며 일반적으로 './themes/themeFile.tmTheme'입니다.</target>
+      <trans-unit id="schema.font-format">
+        <source xml:lang="en">The format of the font.</source>
+        <target state="translated">글꼴의 형식입니다.</target>
       </trans-unit>
-      <trans-unit id="reqarray">
-        <source xml:lang="en">Extension point `{0}` must be an array.</source>
-        <target state="translated">확장점 '{0}'은(는) 배열이어야 합니다.</target>
+      <trans-unit id="schema.font-weight">
+        <source xml:lang="en">The weight of the font.</source>
+        <target state="translated">글꼴의 두께입니다.</target>
       </trans-unit>
-      <trans-unit id="reqpath">
-        <source xml:lang="en">Expected string in `contributes.{0}.path`. Provided value: {1}</source>
-        <target state="translated">`contributes.{0}.path`에 문자열이 필요합니다. 제공된 값: {1}</target>
+      <trans-unit id="schema.font-sstyle">
+        <source xml:lang="en">The style of the font.</source>
+        <target state="translated">글꼴의 스타일입니다.</target>
       </trans-unit>
-      <trans-unit id="invalid.path.1">
-        <source xml:lang="en">Expected `contributes.{0}.path` ({1}) to be included inside extension's folder ({2}). This might make the extension non-portable.</source>
-        <target state="translated">확장 폴더({2})에 포함할 `contributes.{0}.path`({1})가 필요합니다. 확장이 이식 불가능해질 수 있습니다.</target>
+      <trans-unit id="schema.font-size">
+        <source xml:lang="en">The default size of the font.</source>
+        <target state="translated">글꼴의 기본 크기입니다.</target>
       </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/services/themes/browser/fileIconThemeData" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
-      <trans-unit id="error.cannotparseicontheme">
-        <source xml:lang="en">Problems parsing file icons file: {0}</source>
-        <target state="translated">파일 아이콘 파일 구문 분석 문제: {0}</target>
-      </trans-unit>
-      <trans-unit id="error.invalidformat">
-        <source xml:lang="en">Invalid format for file icons theme file: Object expected.</source>
-        <target state="translated">파일 아이콘 테마 파일의 형식이 잘못됨: 개체가 필요합니다.</target>
+      <trans-unit id="schema.iconDefinitions">
+        <source xml:lang="en">Assocation of icon name to a font character.</source>
+        <target state="translated">아이콘 이름과 글꼴 문자 연결.</target>
       </trans-unit>
     </body>
   </file>
@@ -520,6 +408,190 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/services/themes/browser/fileIconThemeData" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="error.cannotparseicontheme">
+        <source xml:lang="en">Problems parsing file icons file: {0}</source>
+        <target state="translated">파일 아이콘 파일 구문 분석 문제: {0}</target>
+      </trans-unit>
+      <trans-unit id="error.invalidformat">
+        <source xml:lang="en">Invalid format for file icons theme file: Object expected.</source>
+        <target state="translated">파일 아이콘 테마 파일의 형식이 잘못됨: 개체가 필요합니다.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/common/themeConfiguration" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="colorTheme">
+        <source xml:lang="en">Specifies the color theme used in the workbench.</source>
+        <target state="translated">워크벤치에 사용할 색상 테마를 지정합니다.</target>
+      </trans-unit>
+      <trans-unit id="colorThemeError">
+        <source xml:lang="en">Theme is unknown or not installed.</source>
+        <target state="translated">테마가 알 수 없거나 설치되지 않았습니다.</target>
+      </trans-unit>
+      <trans-unit id="preferredDarkColorTheme">
+        <source xml:lang="en">Specifies the preferred color theme for dark OS appearance when '{0}' is enabled.</source>
+        <target state="translated">'{0}'을(를) 사용하도록 설정한 경우 어두운 OS 모양에 대해 기본 설정 색상 테마를 지정합니다.</target>
+      </trans-unit>
+      <trans-unit id="preferredLightColorTheme">
+        <source xml:lang="en">Specifies the preferred color theme for light OS appearance when '{0}' is enabled.</source>
+        <target state="translated">'{0}'을(를) 사용하도록 설정한 경우 밝은 OS 모양에 대해 기본 설정 색상 테마를 지정합니다.</target>
+      </trans-unit>
+      <trans-unit id="preferredHCColorTheme">
+        <source xml:lang="en">Specifies the preferred color theme used in high contrast mode when '{0}' is enabled.</source>
+        <target state="translated">'{0}'을(를) 사용하도록 설정할 때 고대비 모드에서 사용되는 기본 설정 색상 테마를 지정합니다.</target>
+      </trans-unit>
+      <trans-unit id="detectColorScheme">
+        <source xml:lang="en">If set, automatically switch to the preferred color theme based on the OS appearance.</source>
+        <target state="translated">설정된 경우 OS 모양에 따라 기본 설정 색상 테마로 자동 전환됩니다.</target>
+      </trans-unit>
+      <trans-unit id="workbenchColors">
+        <source xml:lang="en">Overrides colors from the currently selected color theme.</source>
+        <target state="translated">현재 선택한 색 테마에서 색을 재정의합니다.</target>
+      </trans-unit>
+      <trans-unit id="iconTheme">
+        <source xml:lang="en">Specifies the file icon theme used in the workbench or 'null' to not show any file icons.</source>
+        <target state="translated">워크벤치에서 사용한 파일 아이콘 테마를 지정하거나, 파일 아이콘을 표시하지 않도록 'null'을 지정합니다.</target>
+      </trans-unit>
+      <trans-unit id="noIconThemeDesc">
+        <source xml:lang="en">No file icons</source>
+        <target state="translated">파일 아이콘 없음</target>
+      </trans-unit>
+      <trans-unit id="iconThemeError">
+        <source xml:lang="en">File icon theme is unknown or not installed.</source>
+        <target state="translated">파일 아이콘 테마가 알 수 없거나 설치되지 않았습니다.</target>
+      </trans-unit>
+      <trans-unit id="workbenchIconTheme">
+        <source xml:lang="en">Specifies the workbench icon theme used.</source>
+        <target state="translated">사용한 워크벤치 아이콘 테마를 지정합니다.</target>
+      </trans-unit>
+      <trans-unit id="defaultWorkbenchIconThemeDesc">
+        <source xml:lang="en">Default</source>
+        <target state="translated">기본값</target>
+      </trans-unit>
+      <trans-unit id="workbenchIconThemeError">
+        <source xml:lang="en">Workbench icon theme is unknown or not installed.</source>
+        <target state="translated">워크벤치 아이콘 테마를 알 수 없거나 테마가 설치되지 않았습니다.</target>
+      </trans-unit>
+      <trans-unit id="editorColors.comments">
+        <source xml:lang="en">Sets the colors and styles for comments</source>
+        <target state="translated">주석의 색 및 스타일을 설정합니다.</target>
+      </trans-unit>
+      <trans-unit id="editorColors.strings">
+        <source xml:lang="en">Sets the colors and styles for strings literals.</source>
+        <target state="translated">문자열 리터럴의 색 및 스타일을 설정합니다.</target>
+      </trans-unit>
+      <trans-unit id="editorColors.keywords">
+        <source xml:lang="en">Sets the colors and styles for keywords.</source>
+        <target state="translated">키워드의 색과 스타일을 설정합니다.</target>
+      </trans-unit>
+      <trans-unit id="editorColors.numbers">
+        <source xml:lang="en">Sets the colors and styles for number literals.</source>
+        <target state="translated">숫자 리터럴의 색과 스타일을 설정합니다.</target>
+      </trans-unit>
+      <trans-unit id="editorColors.types">
+        <source xml:lang="en">Sets the colors and styles for type declarations and references.</source>
+        <target state="translated">형식 선언 및 참조의 색 및 스타일을 설정합니다.</target>
+      </trans-unit>
+      <trans-unit id="editorColors.functions">
+        <source xml:lang="en">Sets the colors and styles for functions declarations and references.</source>
+        <target state="translated">함수 선언 및 참조의 색 및 스타일을 설정합니다.</target>
+      </trans-unit>
+      <trans-unit id="editorColors.variables">
+        <source xml:lang="en">Sets the colors and styles for variables declarations and references.</source>
+        <target state="translated">변수 선언 및 참조의 색 및 스타일을 설정합니다.</target>
+      </trans-unit>
+      <trans-unit id="editorColors.textMateRules">
+        <source xml:lang="en">Sets colors and styles using textmate theming rules (advanced).</source>
+        <target state="translated">textmate 테마 설정 규칙을 사용하여 색 및 스타일을 설정합니다(고급).</target>
+      </trans-unit>
+      <trans-unit id="editorColors.semanticHighlighting">
+        <source xml:lang="en">Whether semantic highlighting should be enabled for this theme.</source>
+        <target state="translated">이 테마에서 의미 체계 강조 표시를 사용하도록 설정해야 하는지 여부.</target>
+      </trans-unit>
+      <trans-unit id="editorColors">
+        <source xml:lang="en">Overrides editor colors and font style from the currently selected color theme.</source>
+        <target state="translated">현재 선택된 색 테마에서 편집기 색상과 글꼴 스타일을 재정의합니다.</target>
+      </trans-unit>
+      <trans-unit id="editorColorsTokenStyles">
+        <source xml:lang="en">Overrides token color and styles from the currently selected color theme.</source>
+        <target state="translated">현재 선택한 색상 테마에서 토큰 색상 및 스타일을 재정의합니다.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/common/themeExtensionPoints" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="vscode.extension.contributes.themes">
+        <source xml:lang="en">Contributes textmate color themes.</source>
+        <target state="translated">Textmate 색상 테마를 제공합니다.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.id">
+        <source xml:lang="en">Id of the color theme as used in the user settings.</source>
+        <target state="translated">사용자 설정에 사용되는 색상 테마 ID.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.label">
+        <source xml:lang="en">Label of the color theme as shown in the UI.</source>
+        <target state="translated">UI에 표시되는 색 테마의 레이블입니다.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.uiTheme">
+        <source xml:lang="en">Base theme defining the colors around the editor: 'vs' is the light color theme, 'vs-dark' is the dark color theme. 'hc-black' is the dark high contrast theme.</source>
+        <target state="translated">편집기 주변의 색을 정의하는 기본 테마입니다. 'vs'는 밝은색 테마이고, 'vs-dark'는 어두운색 테마입니다. 'hc-black'은 어두운 고대비 테마입니다.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.path">
+        <source xml:lang="en">Path of the tmTheme file. The path is relative to the extension folder and is typically './colorthemes/awesome-color-theme.json'.</source>
+        <target state="translated">tmTheme 파일의 경로. 이 경로는 확장 폴더를 기준으로 하며 일반적으로 './colorthemes/awesome-color-theme.json'입니다.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.iconThemes">
+        <source xml:lang="en">Contributes file icon themes.</source>
+        <target state="translated">파일 아이콘 테마를 적용합니다.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.iconThemes.id">
+        <source xml:lang="en">Id of the file icon theme as used in the user settings.</source>
+        <target state="translated">사용자 설정에 사용되는 파일 아이콘 테마의 ID.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.iconThemes.label">
+        <source xml:lang="en">Label of the file icon theme as shown in the UI.</source>
+        <target state="translated">UI에 표시된 파일 아이콘 테마의 레이블.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.iconThemes.path">
+        <source xml:lang="en">Path of the file icon theme definition file. The path is relative to the extension folder and is typically './fileicons/awesome-icon-theme.json'.</source>
+        <target state="translated">파일 아이콘 테마 정의 파일의 경로. 이 경로는 확장 폴더를 기준으로 하며 일반적으로 './fileicons/awesome-icon-theme.json'입니다.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.productIconThemes">
+        <source xml:lang="en">Contributes product icon themes.</source>
+        <target state="translated">제품 아이콘 테마를 제공합니다.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.productIconThemes.id">
+        <source xml:lang="en">Id of the product icon theme as used in the user settings.</source>
+        <target state="translated">사용자 설정에서 사용되는 제품 아이콘 테마의 ID.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.productIconThemes.label">
+        <source xml:lang="en">Label of the product icon theme as shown in the UI.</source>
+        <target state="translated">UI에 표시된 제품 아이콘 테마 레이블.</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.productIconThemes.path">
+        <source xml:lang="en">Path of the product icon theme definition file. The path is relative to the extension folder and is typically './producticons/awesome-product-icon-theme.json'.</source>
+        <target state="translated">제품 아이콘 테마 정의 파일의 경로. 이 파일은 확장 폴더를 기준으로 하며 일반적으로 './producticons/awesome-product-icon-theme.json'입니다.</target>
+      </trans-unit>
+      <trans-unit id="reqarray">
+        <source xml:lang="en">Extension point `{0}` must be an array.</source>
+        <target state="translated">확장점 '{0}'은(는) 배열이어야 합니다.</target>
+      </trans-unit>
+      <trans-unit id="reqpath">
+        <source xml:lang="en">Expected string in `contributes.{0}.path`. Provided value: {1}</source>
+        <target state="translated">`contributes.{0}.path`에 문자열이 필요합니다. 제공된 값: {1}</target>
+      </trans-unit>
+      <trans-unit id="reqid">
+        <source xml:lang="en">Expected string in `contributes.{0}.id`. Provided value: {1}</source>
+        <target state="translated">`contributes.{0}.id`에 문자열이 필요합니다. 제공된 값: {1}</target>
+      </trans-unit>
+      <trans-unit id="invalid.path.1">
+        <source xml:lang="en">Expected `contributes.{0}.path` ({1}) to be included inside extension's folder ({2}). This might make the extension non-portable.</source>
+        <target state="translated">확장 폴더({2})에 포함할 `contributes.{0}.path`({1})가 필요합니다. 확장이 이식 불가능해질 수 있습니다.</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/services/themes/common/colorThemeData" source-language="en" target-language="ko" datatype="plaintext">
     <body>
       <trans-unit id="error.cannotparsejson">
@@ -538,6 +610,11 @@
       <trans-unit id="error.invalidformat.tokenColors">
         <source xml:lang="en">Problem parsing color theme file: {0}. Property 'tokenColors' should be either an array specifying colors or a path to a TextMate theme file</source>
         <target state="translated">색 테마 파일 {0}을(를) 구문 분석하는 중 문제가 발생했습니다. 'tokenColors' 속성이 색을 지정하는 배열 또는 TextMate 테마 파일의 경로여야 합니다.</target>
+        <note>{0} will be replaced by a path. Values in quotes should not be translated.</note>
+      </trans-unit>
+      <trans-unit id="error.invalidformat.semanticTokenColors">
+        <source xml:lang="en">Problem parsing color theme file: {0}. Property 'semanticTokenColors' conatains a invalid selector</source>
+        <target state="translated">색상 테마 파일 구문 분석 문제: {0}. 속성 'semanticTokenColors'에 잘못된 선택기가 포함되어 있습니다.</target>
         <note>{0} will be replaced by a path. Values in quotes should not be translated.</note>
       </trans-unit>
       <trans-unit id="error.plist.invalidformat">

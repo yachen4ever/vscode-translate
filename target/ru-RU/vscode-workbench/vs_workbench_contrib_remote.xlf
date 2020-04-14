@@ -2,55 +2,6 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file original="src/vs/workbench/contrib/remote/electron-browser/remote.contribution" source-language="en" target-language="ru" datatype="plaintext">
     <body>
-      <trans-unit id="remote.category">
-        <source xml:lang="en">Remote</source>
-        <target state="translated">Удаленный</target>
-      </trans-unit>
-      <trans-unit id="remote.showMenu">
-        <source xml:lang="en">Show Remote Menu</source>
-        <target state="translated">Показать удаленное меню</target>
-      </trans-unit>
-      <trans-unit id="remote.close">
-        <source xml:lang="en">Close Remote Connection</source>
-        <target state="translated">Закрыть удаленное подключение</target>
-      </trans-unit>
-      <trans-unit id="host.open">
-        <source xml:lang="en">Opening Remote...</source>
-        <target state="translated">Открытие удаленного репозитория...</target>
-      </trans-unit>
-      <trans-unit id="miCloseRemote">
-        <source xml:lang="en">Close Re&amp;&amp;mote Connection</source>
-        <target state="translated">Закрытие уд&amp;&amp;аленного подключения</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="host.tooltip">
-        <source xml:lang="en">Editing on {0}</source>
-        <target state="translated">Редактирование в {0}</target>
-      </trans-unit>
-      <trans-unit id="disconnectedFrom">
-        <source xml:lang="en">Disconnected from</source>
-        <target state="translated">Отключен от</target>
-      </trans-unit>
-      <trans-unit id="host.tooltipDisconnected">
-        <source xml:lang="en">Disconnected from {0}</source>
-        <target state="translated">Отключен от (0)</target>
-      </trans-unit>
-      <trans-unit id="noHost.tooltip">
-        <source xml:lang="en">Open a remote window</source>
-        <target state="translated">Открыть удаленное окно</target>
-      </trans-unit>
-      <trans-unit id="status.host">
-        <source xml:lang="en">Remote Host</source>
-        <target state="translated">Удаленный узел</target>
-      </trans-unit>
-      <trans-unit id="cat.title">
-        <source xml:lang="en">{0}: {1}</source>
-        <target state="translated">{0}: {1}</target>
-      </trans-unit>
-      <trans-unit id="closeRemote.title">
-        <source xml:lang="en">Close Remote Connection</source>
-        <target state="translated">Закрыть удаленное подключение</target>
-      </trans-unit>
       <trans-unit id="remote">
         <source xml:lang="en">Remote</source>
         <target state="translated">Удаленный</target>
@@ -151,6 +102,14 @@
         <source xml:lang="en">View</source>
         <target state="translated">Вид</target>
       </trans-unit>
+      <trans-unit id="reconnectionWaitOne">
+        <source xml:lang="en">Attempting to reconnect in {0} second...</source>
+        <target state="translated">Попытка повторного подключения через {0} с...</target>
+      </trans-unit>
+      <trans-unit id="reconnectionWaitMany">
+        <source xml:lang="en">Attempting to reconnect in {0} seconds...</source>
+        <target state="translated">Попытка повторного подключения через {0} с...</target>
+      </trans-unit>
       <trans-unit id="reconnectNow">
         <source xml:lang="en">Reconnect Now</source>
         <target state="translated">Установить подключение повторно</target>
@@ -175,14 +134,6 @@
         <source xml:lang="en">Cancel</source>
         <target state="translated">Отмена</target>
       </trans-unit>
-      <trans-unit id="reconnectionWaitOne">
-        <source xml:lang="en">Attempting to reconnect in {0} second...</source>
-        <target state="translated">Попытка повторного подключения через {0} с...</target>
-      </trans-unit>
-      <trans-unit id="reconnectionWaitMany">
-        <source xml:lang="en">Attempting to reconnect in {0} seconds...</source>
-        <target state="translated">Попытка повторного подключения через {0} с...</target>
-      </trans-unit>
     </body>
   </file>
   <file original="src/vs/workbench/contrib/remote/browser/explorerViewItems" source-language="en" target-language="ru" datatype="plaintext">
@@ -194,6 +145,59 @@
       <trans-unit id="remote.explorer.switch">
         <source xml:lang="en">Switch Remote</source>
         <target state="translated">Переключение удаленного репозитория</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/remote/browser/remoteIndicator" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="remote.category">
+        <source xml:lang="en">Remote</source>
+        <target state="translated">Удаленный</target>
+      </trans-unit>
+      <trans-unit id="remote.showMenu">
+        <source xml:lang="en">Show Remote Menu</source>
+        <target state="translated">Показать удаленное меню</target>
+      </trans-unit>
+      <trans-unit id="remote.close">
+        <source xml:lang="en">Close Remote Connection</source>
+        <target state="translated">Закрыть удаленное подключение</target>
+      </trans-unit>
+      <trans-unit id="miCloseRemote">
+        <source xml:lang="en">Close Re&amp;&amp;mote Connection</source>
+        <target state="translated">Закрытие уд&amp;&amp;аленного подключения</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="host.open">
+        <source xml:lang="en">Opening Remote...</source>
+        <target state="translated">Открытие удаленного репозитория...</target>
+      </trans-unit>
+      <trans-unit id="host.tooltip">
+        <source xml:lang="en">Editing on {0}</source>
+        <target state="translated">Редактирование в {0}</target>
+      </trans-unit>
+      <trans-unit id="disconnectedFrom">
+        <source xml:lang="en">Disconnected from</source>
+        <target state="translated">Отключен от</target>
+      </trans-unit>
+      <trans-unit id="host.tooltipDisconnected">
+        <source xml:lang="en">Disconnected from {0}</source>
+        <target state="translated">Отключен от (0)</target>
+      </trans-unit>
+      <trans-unit id="noHost.tooltip">
+        <source xml:lang="en">Open a remote window</source>
+        <target state="translated">Открыть удаленное окно</target>
+      </trans-unit>
+      <trans-unit id="status.host">
+        <source xml:lang="en">Remote Host</source>
+        <target state="translated">Удаленный узел</target>
+      </trans-unit>
+      <trans-unit id="cat.title">
+        <source xml:lang="en">{0}: {1}</source>
+        <target state="translated">{0}: {1}</target>
+      </trans-unit>
+      <trans-unit id="closeRemote.title">
+        <source xml:lang="en">Close Remote Connection</source>
+        <target state="translated">Закрыть удаленное подключение</target>
       </trans-unit>
     </body>
   </file>

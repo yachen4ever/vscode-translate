@@ -1,13 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file original="src/vs/workbench/contrib/files/electron-browser/files.contribution" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
-      <trans-unit id="textFileEditor">
-        <source xml:lang="en">Text File Editor</source>
-        <target state="translated">텍스트 파일 편집기</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/files/electron-browser/fileActions.contribution" source-language="en" target-language="ko" datatype="plaintext">
     <body>
       <trans-unit id="revealInWindows">
@@ -28,6 +20,22 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/files/electron-browser/files.contribution" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="textFileEditor">
+        <source xml:lang="en">Text File Editor</source>
+        <target state="translated">텍스트 파일 편집기</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/files/electron-browser/fileCommands" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="openFileToReveal">
+        <source xml:lang="en">Open a file first to reveal</source>
+        <target state="translated">표시하려면 먼저 파일 열기</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/files/electron-browser/textFileEditor" source-language="en" target-language="ko" datatype="plaintext">
     <body>
       <trans-unit id="fileTooLargeForHeapError">
@@ -41,14 +49,6 @@
       <trans-unit id="configureMemoryLimit">
         <source xml:lang="en">Configure Memory Limit</source>
         <target state="translated">메모리 제한 구성</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/files/electron-browser/fileCommands" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
-      <trans-unit id="openFileToReveal">
-        <source xml:lang="en">Open a file first to reveal</source>
-        <target state="translated">표시하려면 먼저 파일 열기</target>
       </trans-unit>
     </body>
   </file>
@@ -83,16 +83,16 @@
         <target state="translated">이진 파일 편집기</target>
       </trans-unit>
       <trans-unit id="hotExit.off">
-        <source xml:lang="en">Disable hot exit.</source>
-        <target state="translated">핫 종료를 사용하지 않습니다.</target>
+        <source xml:lang="en">Disable hot exit. A prompt will show when attempting to close a window with dirty files.</source>
+        <target state="translated">Hot Exit를 사용하지 않도록 설정합니다. 더티 파일이 있는 창을 닫으려고 시도할 때 메시지가 표시됩니다.</target>
       </trans-unit>
       <trans-unit id="hotExit.onExit">
-        <source xml:lang="en">Hot exit will be triggered when the last window is closed on Windows/Linux or when the `workbench.action.quit` command is triggered (command palette, keybinding, menu). All windows with backups will be restored upon next launch.</source>
-        <target state="translated">Hot Exit는 Windows/Linux에서 마지막 창을 닫을 때나 'workbench.action.quit' 명령이 트리거될 때(명령 팔레트, 키 바인딩, 메뉴) 트리거됩니다. 다음 실행 시 백업을 포함한 모든 창이 복원됩니다.</target>
+        <source xml:lang="en">Hot exit will be triggered when the last window is closed on Windows/Linux or when the `workbench.action.quit` command is triggered (command palette, keybinding, menu). All windows without folders opened will be restored upon next launch. A list of workspaces with unsaved files can be accessed via `File &gt; Open Recent &gt; More...`</source>
+        <target state="translated">Windows/Linux에서 마지막 창이 닫히거나 `workbench.action.quit` 명령이 트리거될 때(명령 팔레트, 키 바인딩, 메뉴) Hot Exit가 트리거됩니다. 열린 폴더가 없는 모든 창은 다음 실행 시 복원됩니다. 저장되지 않은 파일이 포함된 작업 영역 목록은 `파일 &gt; 최근 파일 열기 &gt; 더 보기...`에서 액세스할 수 있습니다.</target>
       </trans-unit>
       <trans-unit id="hotExit.onExitAndWindowClose">
-        <source xml:lang="en">Hot exit will be triggered when the last window is closed on Windows/Linux or when the `workbench.action.quit` command is triggered (command palette, keybinding, menu), and also for any window with a folder opened regardless of whether it's the last window. All windows without folders opened will be restored upon next launch. To restore folder windows as they were before shutdown set `#window.restoreWindows#` to `all`.</source>
-        <target state="translated">Hot Exit는 Windows/Linux에서 마지막 창을 닫을 때나 'workbench.action.quit' 명령이 트리거될 때(명령 팔레트, 키 바인딩, 메뉴) 트리거됩니다. 또한 마지막 창인지 여부에 상관없이 폴더가 열려 있는 모든 창의 경우에도 트리거됩니다. 열린 폴더가 없는 모든 창은 다음 실행 시 복원됩니다. 종료되기 전 상태로 폴더 창을 복원하려면 `#window.restoreWindows#`를 'all'로 설정합니다.</target>
+        <source xml:lang="en">Hot exit will be triggered when the last window is closed on Windows/Linux or when the `workbench.action.quit` command is triggered (command palette, keybinding, menu), and also for any window with a folder opened regardless of whether it's the last window. All windows without folders opened will be restored upon next launch. A list of workspaces with unsaved files can be accessed via `File &gt; Open Recent &gt; More...`</source>
+        <target state="translated">Windows/Linux에서 마지막 창이 닫히거나 `workbench.action.quit` 명령이 트리거될 때(명령 팔레트, 키 바인딩, 메뉴) 또는 마지막 창인지 여부와 관계 없이 폴더가 열린 모든 창에 대해 Hot Exit가 트리거됩니다. 열린 폴더가 없는 모든 창은 다음 실행 시 복원됩니다. 저장되지 않은 파일이 포함된 작업 영역 목록은 `파일 &gt; 최근 파일 열기 &gt; 더 보기...`에서 액세스할 수 있습니다.</target>
       </trans-unit>
       <trans-unit id="hotExit">
         <source xml:lang="en">Controls whether unsaved files are remembered between sessions, allowing the save prompt when exiting the editor to be skipped.</source>
@@ -107,8 +107,8 @@
         <target state="translated">파일</target>
       </trans-unit>
       <trans-unit id="exclude">
-        <source xml:lang="en">Configure glob patterns for excluding files and folders. For example, the files explorer decides which files and folders to show or hide based on this setting. Read more about glob patterns [here](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).</source>
-        <target state="translated">파일 및 폴더를 제외하기 위한 GLOB 패턴을 구성합니다. 예를 들어 파일 탐색기는 이 설정에 따라 표시하거나 숨길 파일 및 폴더를 결정합니다. GLOB 패턴에 대한 자세한 내용은 [여기](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options)를 참조하세요.</target>
+        <source xml:lang="en">Configure glob patterns for excluding files and folders. For example, the files explorer decides which files and folders to show or hide based on this setting. Refer to the `#search.exclude#` setting to define search specific excludes. Read more about glob patterns [here](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).</source>
+        <target state="translated">파일 및 폴더를 제외하기 위한 glob 패턴을 구성합니다. 예를 들어 파일 탐색기는 이 설정을 기반으로 표시하거나 숨길 파일 및 폴더를 결정합니다. 검색 특정 제외 항목을 정의하려면 `#search.exclude#` 설정을 참조합니다. [여기](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options)에서 glob 패턴에 대해 자세히 알아보세요.</target>
       </trans-unit>
       <trans-unit id="files.exclude.boolean">
         <source xml:lang="en">The glob pattern to match file paths against. Set to true or false to enable or disable the pattern.</source>
@@ -193,7 +193,7 @@
         <note>This is the description for a setting. Values surrounded by single quotes are not to be translated.</note>
       </trans-unit>
       <trans-unit id="watcherExclude">
-        <source xml:lang="en">Configure glob patterns of file paths to exclude from file watching. Patterns must match on absolute paths (i.e. prefix with ** or the full path to match properly). Changing this setting requires a restart. When you experience Code consuming lots of cpu time on startup, you can exclude large folders to reduce the initial load.</source>
+        <source xml:lang="en">Configure glob patterns of file paths to exclude from file watching. Patterns must match on absolute paths (i.e. prefix with ** or the full path to match properly). Changing this setting requires a restart. When you experience Code consuming lots of CPU time on startup, you can exclude large folders to reduce the initial load.</source>
         <target state="translated">파일 감시에서 제외할 파일 경로의 GLOB 패턴을 구성하세요. 패턴은 절대 경로(**접두사가 있는 경로 또는 전체 경로)여야 합니다. 이 설정을 변경하려면 다시 시작해야 합니다. 시작 시 Code에서 CPU 시간을 많이 차지하면 대용량 폴더를 제외하여 초기 로드를 줄일 수 있습니다.</target>
       </trans-unit>
       <trans-unit id="defaultLanguage">
@@ -306,24 +306,6 @@
   </file>
   <file original="src/vs/workbench/contrib/files/browser/explorerViewlet" source-language="en" target-language="ko" datatype="plaintext">
     <body>
-      <trans-unit id="noWorkspaceHelp">
-        <source xml:lang="en">You have not yet added a folder to the workspace.
-[Add Folder](command:{0})</source>
-        <target state="translated">아직 작업 영역에 폴더를 추가하지 않았습니다.
-[폴더 추가](command:{0})</target>
-      </trans-unit>
-      <trans-unit id="remoteNoFolderHelp">
-        <source xml:lang="en">Connected to remote.
-[Open Folder](command:{0})</source>
-        <target state="translated">원격에 연결되었습니다.
-[폴더 열기](command:{0})</target>
-      </trans-unit>
-      <trans-unit id="noFolderHelp">
-        <source xml:lang="en">You have not yet opened a folder.
-[Open Folder](command:{0})</source>
-        <target state="translated">아직 폴더를 열지 않았습니다.
-[폴더 열기](command:{0})</target>
-      </trans-unit>
       <trans-unit id="folders">
         <source xml:lang="en">Folders</source>
         <target state="translated">폴더</target>
@@ -331,6 +313,27 @@
       <trans-unit id="explore">
         <source xml:lang="en">Explorer</source>
         <target state="translated">탐색기</target>
+      </trans-unit>
+      <trans-unit id="noWorkspaceHelp">
+        <source xml:lang="en">You have not yet added a folder to the workspace.
+[Add Folder](command:{0})</source>
+        <target state="translated">아직 작업 영역에 폴더를 추가하지 않았습니다.
+[폴더 추가](command:{0})</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
+      </trans-unit>
+      <trans-unit id="remoteNoFolderHelp">
+        <source xml:lang="en">Connected to remote.
+[Open Folder](command:{0})</source>
+        <target state="translated">원격에 연결되었습니다.
+[폴더 열기](command:{0})</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
+      </trans-unit>
+      <trans-unit id="noFolderHelp">
+        <source xml:lang="en">You have not yet opened a folder.
+[Open Folder](command:{0})</source>
+        <target state="translated">아직 폴더를 열지 않았습니다.
+[폴더 열기](command:{0})</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
       </trans-unit>
     </body>
   </file>
@@ -550,26 +553,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/files/common/dirtyFilesIndicator" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
-      <trans-unit id="dirtyFile">
-        <source xml:lang="en">1 unsaved file</source>
-        <target state="translated">저장되지 않은 파일 1개</target>
-      </trans-unit>
-      <trans-unit id="dirtyFiles">
-        <source xml:lang="en">{0} unsaved files</source>
-        <target state="translated">{0}개의 저장되지 않은 파일</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/files/browser/editors/binaryFileEditor" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
-      <trans-unit id="binaryFileEditor">
-        <source xml:lang="en">Binary File Viewer</source>
-        <target state="translated">이진 파일 뷰어</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/files/common/workspaceWatcher" source-language="en" target-language="ko" datatype="plaintext">
     <body>
       <trans-unit id="netVersionError">
@@ -587,6 +570,26 @@
       <trans-unit id="learnMore">
         <source xml:lang="en">Instructions</source>
         <target state="translated">지침</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/files/browser/editors/binaryFileEditor" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="binaryFileEditor">
+        <source xml:lang="en">Binary File Viewer</source>
+        <target state="translated">이진 파일 뷰어</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/files/common/dirtyFilesIndicator" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="dirtyFile">
+        <source xml:lang="en">1 unsaved file</source>
+        <target state="translated">저장되지 않은 파일 1개</target>
+      </trans-unit>
+      <trans-unit id="dirtyFiles">
+        <source xml:lang="en">{0} unsaved files</source>
+        <target state="translated">{0}개의 저장되지 않은 파일</target>
       </trans-unit>
     </body>
   </file>
@@ -972,6 +975,10 @@
       <trans-unit id="invalidFileNameError">
         <source xml:lang="en">The name **{0}** is not valid as a file or folder name. Please choose a different name.</source>
         <target state="translated">**{0}**(이)라는 이름은 파일 또는 폴더 이름으로 올바르지 않습니다. 다른 이름을 선택하세요.</target>
+      </trans-unit>
+      <trans-unit id="fileNameWhitespaceWarning">
+        <source xml:lang="en">Leading or trailing whitespace detected in file or folder name.</source>
+        <target state="translated">파일 또는 폴더 이름에 선행 또는 후행 공백이 있습니다.</target>
       </trans-unit>
       <trans-unit id="compareWithClipboard">
         <source xml:lang="en">Compare Active File with Clipboard</source>

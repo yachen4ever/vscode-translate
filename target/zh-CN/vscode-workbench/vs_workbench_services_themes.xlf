@@ -56,6 +56,14 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/services/themes/browser/workbenchThemeService" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <body>
+      <trans-unit id="error.cannotloadtheme">
+        <source xml:lang="en">Unable to load {0}: {1}</source>
+        <target state="translated">无法加载 {0}: {1}</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/services/themes/common/tokenClassificationExtensionPoint" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <body>
       <trans-unit id="contributes.semanticTokenTypes">
@@ -69,6 +77,14 @@
       <trans-unit id="contributes.semanticTokenTypes.id.format">
         <source xml:lang="en">Identifiers should be in the form letterOrDigit[_-letterOrDigit]*</source>
         <target state="translated">标识符的格式应为letterOrDigit[_-letterOrDigit]*</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenTypes.superType">
+        <source xml:lang="en">The super type of the semantic token type</source>
+        <target state="translated">语义令牌类型的超类型</target>
+      </trans-unit>
+      <trans-unit id="contributes.semanticTokenTypes.superType.format">
+        <source xml:lang="en">Super types should be in the form letterOrDigit[_-letterOrDigit]*</source>
+        <target state="translated">超类型的格式应为 letterOrDigit[_-letterOrDigit]*</target>
       </trans-unit>
       <trans-unit id="contributes.color.description">
         <source xml:lang="en">The description of the semantic token type</source>
@@ -90,33 +106,17 @@
         <source xml:lang="en">The description of the semantic token modifier</source>
         <target state="translated">语义令牌修饰符的说明</target>
       </trans-unit>
-      <trans-unit id="contributes.semanticTokenStyleDefaults">
-        <source xml:lang="en">Contributes semantic token style defaults.</source>
-        <target state="translated">提供语义令牌样式默认值。</target>
+      <trans-unit id="contributes.semanticTokenScopes">
+        <source xml:lang="en">Contributes semantic token scope maps.</source>
+        <target state="translated">提供语义令牌范围映射。</target>
       </trans-unit>
-      <trans-unit id="contributes.semanticTokenStyleDefaults.selector">
-        <source xml:lang="en">The selector matching token types and modifiers.</source>
-        <target state="translated">与令牌类型和修饰符匹配的选择器。</target>
+      <trans-unit id="contributes.semanticTokenScopes.languages">
+        <source xml:lang="en">Lists the languge for which the defaults are.</source>
+        <target state="translated">列出默认语言。</target>
       </trans-unit>
-      <trans-unit id="contributes.semanticTokenStyleDefaults.selector.format">
-        <source xml:lang="en">Selectors should be in the form (type|*)(.modifier)*</source>
-        <target state="translated">选择器的格式应为(type|*)(.modifier)*</target>
-      </trans-unit>
-      <trans-unit id="contributes.semanticTokenStyleDefaults.scope">
-        <source xml:lang="en">A TextMate scope against the current color theme is matched to find the style for the given selector</source>
-        <target state="translated">根据当前颜色主题匹配 TextMate 范围以查找给定选择器的样式</target>
-      </trans-unit>
-      <trans-unit id="contributes.semanticTokenStyleDefaults.light">
-        <source xml:lang="en">The default style used for light themes</source>
-        <target state="translated">用于浅色主题的默认样式</target>
-      </trans-unit>
-      <trans-unit id="contributes.semanticTokenStyleDefaults.dark">
-        <source xml:lang="en">The default style used for dark themes</source>
-        <target state="translated">用于深色主题的默认样式</target>
-      </trans-unit>
-      <trans-unit id="contributes.semanticTokenStyleDefaults.hc">
-        <source xml:lang="en">The default style used for high contrast themes</source>
-        <target state="translated">用于高对比度主题的默认样式</target>
+      <trans-unit id="contributes.semanticTokenScopes.scopes">
+        <source xml:lang="en">Maps a semantic token (described by semantic token selector) to one or more textMate scopes used to represent that token.</source>
+        <target state="translated">将语义令牌（由语义令牌选择器描述）映射到用于表示该令牌的一个或多个 textMate 作用域。</target>
       </trans-unit>
       <trans-unit id="invalid.id">
         <source xml:lang="en">'configuration.{0}.id' must be defined and can not be empty</source>
@@ -134,14 +134,6 @@
         <source xml:lang="en">'configuration.{0}.description' must be defined and can not be empty</source>
         <target state="translated">"configuration.{0}.description"必须定义，不能为空</target>
       </trans-unit>
-      <trans-unit id="invalid.color">
-        <source xml:lang="en">'configuration.{0}.foreground'  must follow the pattern #RRGGBB[AA]</source>
-        <target state="translated">"configuration.{0}.foreground"必须遵循模式#RRGGBB[AA]</target>
-      </trans-unit>
-      <trans-unit id="invalid.fontStyle">
-        <source xml:lang="en">'configuration.{0}.fontStyle'  must be one or a combination of  'italic', 'bold' or 'underline' or the empty string</source>
-        <target state="translated">“ configuration.{0}.fontStyle”必须是“斜体”，“粗体”或“下划线”之一或组合，或者是空字符串</target>
-      </trans-unit>
       <trans-unit id="invalid.semanticTokenTypeConfiguration">
         <source xml:lang="en">'configuration.semanticTokenType' must be an array</source>
         <target state="translated">“configuration.semanticTokenType”必须是数组</target>
@@ -150,113 +142,45 @@
         <source xml:lang="en">'configuration.semanticTokenModifier' must be an array</source>
         <target state="translated">“configuration.semanticTokenModifier” 必须是数组</target>
       </trans-unit>
-      <trans-unit id="invalid.semanticTokenStyleDefaultConfiguration">
-        <source xml:lang="en">'configuration.semanticTokenStyleDefaults' must be an array</source>
-        <target state="translated">“configuration.semanticTokenStyleDefaults”必须是数组</target>
+      <trans-unit id="invalid.semanticTokenScopes.configuration">
+        <source xml:lang="en">'configuration.semanticTokenScopes' must be an array</source>
+        <target state="translated">"configuration.semanticTokenScopes" 必须是一个数组</target>
       </trans-unit>
-      <trans-unit id="invalid.selector">
-        <source xml:lang="en">'configuration.semanticTokenStyleDefaults.selector' must be defined and can not be empty</source>
-        <target state="translated">“configuration.semanticTokenStyleDefaults.selector” 必须定义，不能为空</target>
+      <trans-unit id="invalid.semanticTokenScopes.language">
+        <source xml:lang="en">'configuration.semanticTokenScopes.language' must be a string</source>
+        <target state="translated">"configuration.semanticTokenScopes.language" 的值必须是字符串</target>
       </trans-unit>
-      <trans-unit id="invalid.selector.format">
-        <source xml:lang="en">'configuration.semanticTokenStyleDefaults.selector' must be in the form (type|*)(.modifier)*</source>
-        <target state="translated">“configuration.semanticTokenStyleDefaults.selector”的格式必须为 (type|*)(.modifier)*</target>
+      <trans-unit id="invalid.semanticTokenScopes.scopes">
+        <source xml:lang="en">'configuration.semanticTokenScopes.scopes' must be defined as an object</source>
+        <target state="translated">"configuration.semanticTokenScopes.scopes" 必须定义为对象</target>
       </trans-unit>
-      <trans-unit id="invalid.scope">
-        <source xml:lang="en">If defined, 'configuration.semanticTokenStyleDefaults.scope' must be an array of strings</source>
-        <target state="translated">如果定义，则“ configuration.semanticTokenStyleDefaults.scope”必须是字符串数组</target>
+      <trans-unit id="invalid.semanticTokenScopes.scopes.value">
+        <source xml:lang="en">'configuration.semanticTokenScopes.scopes' values must be an array of strings</source>
+        <target state="translated">"configuration.semanticTokenScopes.scopes" 的值必须是字符串数组</target>
       </trans-unit>
-      <trans-unit id="invalid.selector.parsing">
-        <source xml:lang="en">configuration.semanticTokenStyleDefaults.selector': Problems parsing {0}.</source>
-        <target state="translated">“configuration.semanticTokenStyleDefaults.selector”：解析{0}时出现问题。</target>
+      <trans-unit id="invalid.semanticTokenScopes.scopes.selector">
+        <source xml:lang="en">configuration.semanticTokenScopes.scopes': Problems parsing selector {0}.</source>
+        <target state="translated">"configuration.semanticTokenScopes.scopes"：解析选择器{0}时出现问题。</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/services/themes/browser/workbenchThemeService" source-language="en" target-language="zh-Hans" datatype="plaintext">
+  <file original="src/vs/workbench/services/themes/browser/productIconThemeData" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <body>
-      <trans-unit id="error.cannotloadtheme">
-        <source xml:lang="en">Unable to load {0}: {1}</source>
-        <target state="translated">无法加载 {0}: {1}</target>
+      <trans-unit id="defaultTheme">
+        <source xml:lang="en">Default</source>
+        <target state="translated">默认值</target>
       </trans-unit>
-      <trans-unit id="colorTheme">
-        <source xml:lang="en">Specifies the color theme used in the workbench.</source>
-        <target state="translated">指定用在工作台中的颜色主题。</target>
+      <trans-unit id="error.cannotparseicontheme">
+        <source xml:lang="en">Problems parsing product icons file: {0}</source>
+        <target state="translated">解析产品图标文件时出现问题：{0}</target>
       </trans-unit>
-      <trans-unit id="colorThemeError">
-        <source xml:lang="en">Theme is unknown or not installed.</source>
-        <target state="translated">主题未知或未安装。</target>
+      <trans-unit id="error.invalidformat">
+        <source xml:lang="en">Invalid format for product icons theme file: Object expected.</source>
+        <target state="translated">产品图标主题文件的格式无效：应为对象。</target>
       </trans-unit>
-      <trans-unit id="preferredDarkColorTheme">
-        <source xml:lang="en">Specifies the preferred color theme for dark OS appearance when '{0}' is enabled.</source>
-        <target state="translated">指定启用"{0}"时深色操作系统外观的首选颜色主题。</target>
-      </trans-unit>
-      <trans-unit id="preferredLightColorTheme">
-        <source xml:lang="en">Specifies the preferred color theme for light OS appearance when '{0}' is enabled.</source>
-        <target state="translated">指定启用"{0}"时浅色操作系统外观的首选颜色主题。</target>
-      </trans-unit>
-      <trans-unit id="preferredHCColorTheme">
-        <source xml:lang="en">Specifies the preferred color theme used in high contrast mode when '{0}' is enabled.</source>
-        <target state="translated">指定启用"{0}"时在高对比度模式下使用的首选颜色主题。</target>
-      </trans-unit>
-      <trans-unit id="detectColorScheme">
-        <source xml:lang="en">If set, automatically switch to the preferred color theme based on the OS appearance.</source>
-        <target state="translated">如果设置，则根据操作系统外观自动切换到首选颜色主题。</target>
-      </trans-unit>
-      <trans-unit id="iconTheme">
-        <source xml:lang="en">Specifies the icon theme used in the workbench or 'null' to not show any file icons.</source>
-        <target state="translated">指定在工作台中使用的图标主题，或指定 "null" 以不显示任何文件图标。</target>
-      </trans-unit>
-      <trans-unit id="noIconThemeDesc">
-        <source xml:lang="en">No file icons</source>
-        <target state="translated">无文件图标</target>
-      </trans-unit>
-      <trans-unit id="iconThemeError">
-        <source xml:lang="en">File icon theme is unknown or not installed.</source>
-        <target state="translated">文件图标主题未知或未安装。</target>
-      </trans-unit>
-      <trans-unit id="workbenchColors">
-        <source xml:lang="en">Overrides colors from the currently selected color theme.</source>
-        <target state="translated">覆盖当前所选颜色主题的颜色。</target>
-      </trans-unit>
-      <trans-unit id="editorColors.comments">
-        <source xml:lang="en">Sets the colors and styles for comments</source>
-        <target state="translated">设置注释的颜色和样式</target>
-      </trans-unit>
-      <trans-unit id="editorColors.strings">
-        <source xml:lang="en">Sets the colors and styles for strings literals.</source>
-        <target state="translated">设置字符串文本的颜色和样式</target>
-      </trans-unit>
-      <trans-unit id="editorColors.keywords">
-        <source xml:lang="en">Sets the colors and styles for keywords.</source>
-        <target state="translated">设置关键字的颜色和样式。</target>
-      </trans-unit>
-      <trans-unit id="editorColors.numbers">
-        <source xml:lang="en">Sets the colors and styles for number literals.</source>
-        <target state="translated">设置数字的颜色和样式。</target>
-      </trans-unit>
-      <trans-unit id="editorColors.types">
-        <source xml:lang="en">Sets the colors and styles for type declarations and references.</source>
-        <target state="translated">设置类型定义与引用的颜色和样式。</target>
-      </trans-unit>
-      <trans-unit id="editorColors.functions">
-        <source xml:lang="en">Sets the colors and styles for functions declarations and references.</source>
-        <target state="translated">设置函数定义与引用的颜色和样式。</target>
-      </trans-unit>
-      <trans-unit id="editorColors.variables">
-        <source xml:lang="en">Sets the colors and styles for variables declarations and references.</source>
-        <target state="translated">设置变量定义和引用的颜色和样式。</target>
-      </trans-unit>
-      <trans-unit id="editorColors.textMateRules">
-        <source xml:lang="en">Sets colors and styles using textmate theming rules (advanced).</source>
-        <target state="translated">使用 TextMate 主题规则设置颜色和样式(高级)。</target>
-      </trans-unit>
-      <trans-unit id="editorColors">
-        <source xml:lang="en">Overrides editor colors and font style from the currently selected color theme.</source>
-        <target state="translated">覆盖当前所选颜色主题中的编辑器颜色和字体样式。</target>
-      </trans-unit>
-      <trans-unit id="editorColorsTokenStyles">
-        <source xml:lang="en">Overrides token color and styles from the currently selected color theme.</source>
-        <target state="translated">覆盖当前所选颜色主题中的标记颜色和样式。</target>
+      <trans-unit id="error.missingProperties">
+        <source xml:lang="en">Invalid format for product icons theme file: Must contain iconDefinitions and fonts.</source>
+        <target state="translated">产品图标主题文件的格式无效：必须包含图标定义和字体。</target>
       </trans-unit>
     </body>
   </file>
@@ -306,89 +230,53 @@
         <source xml:lang="en">Colors for syntax highlighting</source>
         <target state="translated">语法突出显示颜色</target>
       </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/services/themes/browser/fileIconThemeStore" source-language="en" target-language="zh-Hans" datatype="plaintext">
-    <body>
-      <trans-unit id="vscode.extension.contributes.iconThemes">
-        <source xml:lang="en">Contributes file icon themes.</source>
-        <target state="translated">提供文件图标主题。</target>
+      <trans-unit id="schema.supportsSemanticHighlighting">
+        <source xml:lang="en">Whether semantic highlighting should be enabled for this theme.</source>
+        <target state="translated">是否应为此主题启用语义突出显示。</target>
       </trans-unit>
-      <trans-unit id="vscode.extension.contributes.iconThemes.id">
-        <source xml:lang="en">Id of the icon theme as used in the user settings.</source>
-        <target state="translated">用户设置中使用的图标主题的 ID。</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.iconThemes.label">
-        <source xml:lang="en">Label of the icon theme as shown in the UI.</source>
-        <target state="translated">UI 中显示的图标主题的标签。</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.iconThemes.path">
-        <source xml:lang="en">Path of the icon theme definition file. The path is relative to the extension folder and is typically './icons/awesome-icon-theme.json'.</source>
-        <target state="translated">图标主题定义文件的路径。该路径相对于扩展文件夹，通常是 "./icons/awesome-icon-theme.json"。</target>
-      </trans-unit>
-      <trans-unit id="reqarray">
-        <source xml:lang="en">Extension point `{0}` must be an array.</source>
-        <target state="translated">扩展点“{0}”必须是数组。 </target>
-      </trans-unit>
-      <trans-unit id="reqpath">
-        <source xml:lang="en">Expected string in `contributes.{0}.path`. Provided value: {1}</source>
-        <target state="translated">“contributes.{0}.path”中应为字符串。提供的值: {1}</target>
-      </trans-unit>
-      <trans-unit id="reqid">
-        <source xml:lang="en">Expected string in `contributes.{0}.id`. Provided value: {1}</source>
-        <target state="translated">contributes.{0}.id" 中的预期字符串。提供的值: {1}</target>
-      </trans-unit>
-      <trans-unit id="invalid.path.1">
-        <source xml:lang="en">Expected `contributes.{0}.path` ({1}) to be included inside extension's folder ({2}). This might make the extension non-portable.</source>
-        <target state="translated">“contributes.{0}.path”({1})应包含在扩展的文件夹({2})内。这可能会使扩展不可移植。</target>
+      <trans-unit id="schema.semanticTokenColors">
+        <source xml:lang="en">Colors for semantic tokens</source>
+        <target state="translated">语义标记的颜色</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/services/themes/common/colorThemeStore" source-language="en" target-language="zh-Hans" datatype="plaintext">
+  <file original="src/vs/workbench/services/themes/common/productIconThemeSchema" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <body>
-      <trans-unit id="vscode.extension.contributes.themes">
-        <source xml:lang="en">Contributes textmate color themes.</source>
-        <target state="translated">提供 TextMate 颜色主题。</target>
+      <trans-unit id="schema.fonts">
+        <source xml:lang="en">Fonts that are used in the icon definitions.</source>
+        <target state="translated">图标定义中使用的字体。</target>
       </trans-unit>
-      <trans-unit id="vscode.extension.contributes.themes.id">
-        <source xml:lang="en">Id of the icon theme as used in the user settings.</source>
-        <target state="translated">用户设置中使用的图标主题的 ID。</target>
+      <trans-unit id="schema.id">
+        <source xml:lang="en">The ID of the font.</source>
+        <target state="translated">字体的 ID。</target>
       </trans-unit>
-      <trans-unit id="vscode.extension.contributes.themes.label">
-        <source xml:lang="en">Label of the color theme as shown in the UI.</source>
-        <target state="translated">显示在 UI 中的颜色主题标签。</target>
+      <trans-unit id="schema.src">
+        <source xml:lang="en">The location of the font.</source>
+        <target state="translated">字体的位置。</target>
       </trans-unit>
-      <trans-unit id="vscode.extension.contributes.themes.uiTheme">
-        <source xml:lang="en">Base theme defining the colors around the editor: 'vs' is the light color theme, 'vs-dark' is the dark color theme. 'hc-black' is the dark high contrast theme.</source>
-        <target state="translated">用于定义编辑器周围颜色的基本主题: "vs" 是浅色主题，"vs-dark" 是深色主题。"hc-black" 是深色高对比度主题。</target>
+      <trans-unit id="schema.font-path">
+        <source xml:lang="en">The font path, relative to the current workbench icon theme file.</source>
+        <target state="translated">相对于当前工作台图标主题文件的字体路径。</target>
       </trans-unit>
-      <trans-unit id="vscode.extension.contributes.themes.path">
-        <source xml:lang="en">Path of the tmTheme file. The path is relative to the extension folder and is typically './themes/themeFile.tmTheme'.</source>
-        <target state="translated">tmTheme 文件的路径。该路径相对于扩展文件夹，通常为 "./themes/themeFile.tmTheme"。</target>
+      <trans-unit id="schema.font-format">
+        <source xml:lang="en">The format of the font.</source>
+        <target state="translated">字体的格式。</target>
       </trans-unit>
-      <trans-unit id="reqarray">
-        <source xml:lang="en">Extension point `{0}` must be an array.</source>
-        <target state="translated">扩展点“{0}”必须是数组。 </target>
+      <trans-unit id="schema.font-weight">
+        <source xml:lang="en">The weight of the font.</source>
+        <target state="translated">字体的粗细。</target>
       </trans-unit>
-      <trans-unit id="reqpath">
-        <source xml:lang="en">Expected string in `contributes.{0}.path`. Provided value: {1}</source>
-        <target state="translated">“contributes.{0}.path”中应为字符串。提供的值: {1}</target>
+      <trans-unit id="schema.font-sstyle">
+        <source xml:lang="en">The style of the font.</source>
+        <target state="translated">字体的样式。</target>
       </trans-unit>
-      <trans-unit id="invalid.path.1">
-        <source xml:lang="en">Expected `contributes.{0}.path` ({1}) to be included inside extension's folder ({2}). This might make the extension non-portable.</source>
-        <target state="translated">“contributes.{0}.path”({1})应包含在扩展的文件夹({2})内。这可能会使扩展不可移植。</target>
+      <trans-unit id="schema.font-size">
+        <source xml:lang="en">The default size of the font.</source>
+        <target state="translated">字体的默认大小。</target>
       </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/services/themes/browser/fileIconThemeData" source-language="en" target-language="zh-Hans" datatype="plaintext">
-    <body>
-      <trans-unit id="error.cannotparseicontheme">
-        <source xml:lang="en">Problems parsing file icons file: {0}</source>
-        <target state="translated">解析文件图标文件时出现问题: {0}</target>
-      </trans-unit>
-      <trans-unit id="error.invalidformat">
-        <source xml:lang="en">Invalid format for file icons theme file: Object expected.</source>
-        <target state="translated">文件图标主题文件的格式无效: 应为对象。</target>
+      <trans-unit id="schema.iconDefinitions">
+        <source xml:lang="en">Assocation of icon name to a font character.</source>
+        <target state="translated">图标名称与字体字符的关联。</target>
       </trans-unit>
     </body>
   </file>
@@ -520,6 +408,190 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/services/themes/browser/fileIconThemeData" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <body>
+      <trans-unit id="error.cannotparseicontheme">
+        <source xml:lang="en">Problems parsing file icons file: {0}</source>
+        <target state="translated">解析文件图标文件时出现问题: {0}</target>
+      </trans-unit>
+      <trans-unit id="error.invalidformat">
+        <source xml:lang="en">Invalid format for file icons theme file: Object expected.</source>
+        <target state="translated">文件图标主题文件的格式无效: 应为对象。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/common/themeConfiguration" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <body>
+      <trans-unit id="colorTheme">
+        <source xml:lang="en">Specifies the color theme used in the workbench.</source>
+        <target state="translated">指定用在工作台中的颜色主题。</target>
+      </trans-unit>
+      <trans-unit id="colorThemeError">
+        <source xml:lang="en">Theme is unknown or not installed.</source>
+        <target state="translated">主题未知或未安装。</target>
+      </trans-unit>
+      <trans-unit id="preferredDarkColorTheme">
+        <source xml:lang="en">Specifies the preferred color theme for dark OS appearance when '{0}' is enabled.</source>
+        <target state="translated">指定启用"{0}"时深色操作系统外观的首选颜色主题。</target>
+      </trans-unit>
+      <trans-unit id="preferredLightColorTheme">
+        <source xml:lang="en">Specifies the preferred color theme for light OS appearance when '{0}' is enabled.</source>
+        <target state="translated">指定启用"{0}"时浅色操作系统外观的首选颜色主题。</target>
+      </trans-unit>
+      <trans-unit id="preferredHCColorTheme">
+        <source xml:lang="en">Specifies the preferred color theme used in high contrast mode when '{0}' is enabled.</source>
+        <target state="translated">指定启用"{0}"时在高对比度模式下使用的首选颜色主题。</target>
+      </trans-unit>
+      <trans-unit id="detectColorScheme">
+        <source xml:lang="en">If set, automatically switch to the preferred color theme based on the OS appearance.</source>
+        <target state="translated">如果设置，则根据操作系统外观自动切换到首选颜色主题。</target>
+      </trans-unit>
+      <trans-unit id="workbenchColors">
+        <source xml:lang="en">Overrides colors from the currently selected color theme.</source>
+        <target state="translated">覆盖当前所选颜色主题的颜色。</target>
+      </trans-unit>
+      <trans-unit id="iconTheme">
+        <source xml:lang="en">Specifies the file icon theme used in the workbench or 'null' to not show any file icons.</source>
+        <target state="translated">指定工作台中使用的文件图标主题；若指定为 "null"，则不显示任何文件图标。</target>
+      </trans-unit>
+      <trans-unit id="noIconThemeDesc">
+        <source xml:lang="en">No file icons</source>
+        <target state="translated">无文件图标</target>
+      </trans-unit>
+      <trans-unit id="iconThemeError">
+        <source xml:lang="en">File icon theme is unknown or not installed.</source>
+        <target state="translated">文件图标主题未知或未安装。</target>
+      </trans-unit>
+      <trans-unit id="workbenchIconTheme">
+        <source xml:lang="en">Specifies the workbench icon theme used.</source>
+        <target state="translated">指定所使用的工作台图标主题。</target>
+      </trans-unit>
+      <trans-unit id="defaultWorkbenchIconThemeDesc">
+        <source xml:lang="en">Default</source>
+        <target state="translated">默认值</target>
+      </trans-unit>
+      <trans-unit id="workbenchIconThemeError">
+        <source xml:lang="en">Workbench icon theme is unknown or not installed.</source>
+        <target state="translated">工作台图标主题未知或未安装。</target>
+      </trans-unit>
+      <trans-unit id="editorColors.comments">
+        <source xml:lang="en">Sets the colors and styles for comments</source>
+        <target state="translated">设置注释的颜色和样式</target>
+      </trans-unit>
+      <trans-unit id="editorColors.strings">
+        <source xml:lang="en">Sets the colors and styles for strings literals.</source>
+        <target state="translated">设置字符串文本的颜色和样式</target>
+      </trans-unit>
+      <trans-unit id="editorColors.keywords">
+        <source xml:lang="en">Sets the colors and styles for keywords.</source>
+        <target state="translated">设置关键字的颜色和样式。</target>
+      </trans-unit>
+      <trans-unit id="editorColors.numbers">
+        <source xml:lang="en">Sets the colors and styles for number literals.</source>
+        <target state="translated">设置数字的颜色和样式。</target>
+      </trans-unit>
+      <trans-unit id="editorColors.types">
+        <source xml:lang="en">Sets the colors and styles for type declarations and references.</source>
+        <target state="translated">设置类型定义与引用的颜色和样式。</target>
+      </trans-unit>
+      <trans-unit id="editorColors.functions">
+        <source xml:lang="en">Sets the colors and styles for functions declarations and references.</source>
+        <target state="translated">设置函数定义与引用的颜色和样式。</target>
+      </trans-unit>
+      <trans-unit id="editorColors.variables">
+        <source xml:lang="en">Sets the colors and styles for variables declarations and references.</source>
+        <target state="translated">设置变量定义和引用的颜色和样式。</target>
+      </trans-unit>
+      <trans-unit id="editorColors.textMateRules">
+        <source xml:lang="en">Sets colors and styles using textmate theming rules (advanced).</source>
+        <target state="translated">使用 TextMate 主题规则设置颜色和样式(高级)。</target>
+      </trans-unit>
+      <trans-unit id="editorColors.semanticHighlighting">
+        <source xml:lang="en">Whether semantic highlighting should be enabled for this theme.</source>
+        <target state="translated">是否应为此主题启用语义突出显示。</target>
+      </trans-unit>
+      <trans-unit id="editorColors">
+        <source xml:lang="en">Overrides editor colors and font style from the currently selected color theme.</source>
+        <target state="translated">覆盖当前所选颜色主题中的编辑器颜色和字体样式。</target>
+      </trans-unit>
+      <trans-unit id="editorColorsTokenStyles">
+        <source xml:lang="en">Overrides token color and styles from the currently selected color theme.</source>
+        <target state="translated">覆盖当前所选颜色主题中的标记颜色和样式。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/common/themeExtensionPoints" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <body>
+      <trans-unit id="vscode.extension.contributes.themes">
+        <source xml:lang="en">Contributes textmate color themes.</source>
+        <target state="translated">提供 TextMate 颜色主题。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.id">
+        <source xml:lang="en">Id of the color theme as used in the user settings.</source>
+        <target state="translated">用户设置中使用的颜色主题的 ID。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.label">
+        <source xml:lang="en">Label of the color theme as shown in the UI.</source>
+        <target state="translated">显示在 UI 中的颜色主题标签。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.uiTheme">
+        <source xml:lang="en">Base theme defining the colors around the editor: 'vs' is the light color theme, 'vs-dark' is the dark color theme. 'hc-black' is the dark high contrast theme.</source>
+        <target state="translated">用于定义编辑器周围颜色的基本主题: "vs" 是浅色主题，"vs-dark" 是深色主题。"hc-black" 是深色高对比度主题。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.path">
+        <source xml:lang="en">Path of the tmTheme file. The path is relative to the extension folder and is typically './colorthemes/awesome-color-theme.json'.</source>
+        <target state="translated">tmTheme 文件的路径。该路径相对于扩展文件夹，通常为 "./colorthemes/awesome-color-theme.json"。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.iconThemes">
+        <source xml:lang="en">Contributes file icon themes.</source>
+        <target state="translated">提供文件图标主题。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.iconThemes.id">
+        <source xml:lang="en">Id of the file icon theme as used in the user settings.</source>
+        <target state="translated">在用户设置中使用的文件图标主题的 ID。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.iconThemes.label">
+        <source xml:lang="en">Label of the file icon theme as shown in the UI.</source>
+        <target state="translated">文件图标主题的标签，如 UI 所示。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.iconThemes.path">
+        <source xml:lang="en">Path of the file icon theme definition file. The path is relative to the extension folder and is typically './fileicons/awesome-icon-theme.json'.</source>
+        <target state="translated">文件图标主题定义文件的路径。该路径相对于扩展文件夹，通常为 "./fileicons/awesome-icon-theme.json"。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.productIconThemes">
+        <source xml:lang="en">Contributes product icon themes.</source>
+        <target state="translated">贡献产品图标主题。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.productIconThemes.id">
+        <source xml:lang="en">Id of the product icon theme as used in the user settings.</source>
+        <target state="translated">用户设置中使用的产品图标主题的 ID。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.productIconThemes.label">
+        <source xml:lang="en">Label of the product icon theme as shown in the UI.</source>
+        <target state="translated">产品图标主题的标签，如 UI 所示。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.productIconThemes.path">
+        <source xml:lang="en">Path of the product icon theme definition file. The path is relative to the extension folder and is typically './producticons/awesome-product-icon-theme.json'.</source>
+        <target state="translated">产品图标主题定义文件的路径。该路径相对于扩展文件夹，通常为 "./producticons/awesome-product-icon-theme.json"。</target>
+      </trans-unit>
+      <trans-unit id="reqarray">
+        <source xml:lang="en">Extension point `{0}` must be an array.</source>
+        <target state="translated">扩展点“{0}”必须是数组。 </target>
+      </trans-unit>
+      <trans-unit id="reqpath">
+        <source xml:lang="en">Expected string in `contributes.{0}.path`. Provided value: {1}</source>
+        <target state="translated">“contributes.{0}.path”中应为字符串。提供的值: {1}</target>
+      </trans-unit>
+      <trans-unit id="reqid">
+        <source xml:lang="en">Expected string in `contributes.{0}.id`. Provided value: {1}</source>
+        <target state="translated">contributes.{0}.id" 中的预期字符串。提供的值: {1}</target>
+      </trans-unit>
+      <trans-unit id="invalid.path.1">
+        <source xml:lang="en">Expected `contributes.{0}.path` ({1}) to be included inside extension's folder ({2}). This might make the extension non-portable.</source>
+        <target state="translated">“contributes.{0}.path”({1})应包含在扩展的文件夹({2})内。这可能会使扩展不可移植。</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/services/themes/common/colorThemeData" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <body>
       <trans-unit id="error.cannotparsejson">
@@ -538,6 +610,11 @@
       <trans-unit id="error.invalidformat.tokenColors">
         <source xml:lang="en">Problem parsing color theme file: {0}. Property 'tokenColors' should be either an array specifying colors or a path to a TextMate theme file</source>
         <target state="translated">分析颜色主题文件时出现问题：{0}。属性 "tokenColors" 应为指定颜色的数组或是指向 TextMate 主题文件的路径</target>
+        <note>{0} will be replaced by a path. Values in quotes should not be translated.</note>
+      </trans-unit>
+      <trans-unit id="error.invalidformat.semanticTokenColors">
+        <source xml:lang="en">Problem parsing color theme file: {0}. Property 'semanticTokenColors' conatains a invalid selector</source>
+        <target state="translated">分析颜色主题文件时发生问题: {0}。属性 "semanticTokenColors" 包含无效的选择器。</target>
         <note>{0} will be replaced by a path. Values in quotes should not be translated.</note>
       </trans-unit>
       <trans-unit id="error.plist.invalidformat">

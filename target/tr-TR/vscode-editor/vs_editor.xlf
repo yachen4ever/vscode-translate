@@ -1,5 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/editor/common/services/modelServiceImpl" source-language="en" target-language="tr" datatype="plaintext">
+    <body>
+      <trans-unit id="undoRedoConfirm">
+        <source xml:lang="en">Keep the undo-redo stack for {0} in memory ({1} MB)?</source>
+        <target state="new">Keep the undo-redo stack for {0} in memory ({1} MB)?</target>
+      </trans-unit>
+      <trans-unit id="nok">
+        <source xml:lang="en">Discard</source>
+        <target state="translated">At</target>
+      </trans-unit>
+      <trans-unit id="ok">
+        <source xml:lang="en">Keep</source>
+        <target state="translated">Yerinde Tut</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/common/standaloneStrings" source-language="en" target-language="tr" datatype="plaintext">
     <body>
       <trans-unit id="noSelection">
@@ -98,113 +114,33 @@
         <source xml:lang="en">Developer: Inspect Tokens</source>
         <target state="new">Developer: Inspect Tokens</target>
       </trans-unit>
-      <trans-unit id="gotoLineLabelValidLineAndColumn">
-        <source xml:lang="en">Go to line {0} and character {1}</source>
-        <target state="translated">{0}. satırın {1}. karakterine git</target>
-      </trans-unit>
-      <trans-unit id="gotoLineLabelValidLine">
-        <source xml:lang="en">Go to line {0}</source>
-        <target state="translated">{0} satırına git</target>
-      </trans-unit>
-      <trans-unit id="gotoLineLabelEmptyWithLineLimit">
-        <source xml:lang="en">Type a line number between 1 and {0} to navigate to</source>
-        <target state="translated">Gitmek için 1 ile {0} arasında bir satır numarası yazın</target>
-      </trans-unit>
-      <trans-unit id="gotoLineLabelEmptyWithLineAndColumnLimit">
-        <source xml:lang="en">Type a character between 1 and {0} to navigate to</source>
-        <target state="new">Type a character between 1 and {0} to navigate to</target>
-      </trans-unit>
-      <trans-unit id="gotoLineAriaLabel">
-        <source xml:lang="en">Current Line: {0}. Go to line {1}.</source>
-        <target state="new">Current Line: {0}. Go to line {1}.</target>
-      </trans-unit>
-      <trans-unit id="gotoLineActionInput">
-        <source xml:lang="en">Type a line number, followed by an optional colon and a character number to navigate to</source>
-        <target state="new">Type a line number, followed by an optional colon and a character number to navigate to</target>
-      </trans-unit>
       <trans-unit id="gotoLineActionLabel">
-        <source xml:lang="en">Go to Line...</source>
-        <target state="translated">Satıra Git...</target>
+        <source xml:lang="en">Go to Line/Column...</source>
+        <target state="new">Go to Line/Column...</target>
       </trans-unit>
-      <trans-unit id="ariaLabelEntryWithKey">
-        <source xml:lang="en">{0}, {1}, commands</source>
-        <target state="translated">{0}, {1}, komutlar</target>
-      </trans-unit>
-      <trans-unit id="ariaLabelEntry">
-        <source xml:lang="en">{0}, commands</source>
-        <target state="translated">{0}, komutlar</target>
-      </trans-unit>
-      <trans-unit id="quickCommandActionInput">
-        <source xml:lang="en">Type the name of an action you want to execute</source>
-        <target state="translated">Yürütmek istediğinizin eylemin adını yazın</target>
+      <trans-unit id="helpQuickAccess">
+        <source xml:lang="en">Show all Quick Access Providers</source>
+        <target state="new">Show all Quick Access Providers</target>
       </trans-unit>
       <trans-unit id="quickCommandActionLabel">
         <source xml:lang="en">Command Palette</source>
         <target state="translated">Komut Paleti</target>
       </trans-unit>
-      <trans-unit id="entryAriaLabel">
-        <source xml:lang="en">{0}, symbols</source>
-        <target state="translated">{0}, semboller</target>
-      </trans-unit>
-      <trans-unit id="quickOutlineActionInput">
-        <source xml:lang="en">Type the name of an identifier you wish to navigate to</source>
-        <target state="translated">Gitmek istediğiniz tanımlayıcının adını yazın</target>
+      <trans-unit id="quickCommandActionHelp">
+        <source xml:lang="en">Show And Run Commands</source>
+        <target state="translated">Komutları Göster ve Çalıştır</target>
       </trans-unit>
       <trans-unit id="quickOutlineActionLabel">
         <source xml:lang="en">Go to Symbol...</source>
         <target state="translated">Simgeye Git...</target>
       </trans-unit>
-      <trans-unit id="symbols">
-        <source xml:lang="en">symbols ({0})</source>
-        <target state="translated">simgeler ({0})</target>
-      </trans-unit>
-      <trans-unit id="modules">
-        <source xml:lang="en">modules ({0})</source>
-        <target state="translated">modüller ({0})</target>
-      </trans-unit>
-      <trans-unit id="class">
-        <source xml:lang="en">classes ({0})</source>
-        <target state="translated">sınıflar ({0})</target>
-      </trans-unit>
-      <trans-unit id="interface">
-        <source xml:lang="en">interfaces ({0})</source>
-        <target state="translated">arayüzler ({0})</target>
-      </trans-unit>
-      <trans-unit id="method">
-        <source xml:lang="en">methods ({0})</source>
-        <target state="translated">yöntemler ({0})</target>
-      </trans-unit>
-      <trans-unit id="function">
-        <source xml:lang="en">functions ({0})</source>
-        <target state="translated">işlevler ({0})</target>
-      </trans-unit>
-      <trans-unit id="property">
-        <source xml:lang="en">properties ({0})</source>
-        <target state="translated">özellikler ({0})</target>
-      </trans-unit>
-      <trans-unit id="variable">
-        <source xml:lang="en">variables ({0})</source>
-        <target state="translated">değişkenler ({0})</target>
-      </trans-unit>
-      <trans-unit id="variable2">
-        <source xml:lang="en">variables ({0})</source>
-        <target state="translated">değişkenler ({0})</target>
-      </trans-unit>
-      <trans-unit id="_constructor">
-        <source xml:lang="en">constructors ({0})</source>
-        <target state="translated">oluşturucular ({0})</target>
-      </trans-unit>
-      <trans-unit id="call">
-        <source xml:lang="en">calls ({0})</source>
-        <target state="translated">çağrılar ({0})</target>
+      <trans-unit id="quickOutlineByCategoryActionLabel">
+        <source xml:lang="en">Go to Symbol by Category...</source>
+        <target state="new">Go to Symbol by Category...</target>
       </trans-unit>
       <trans-unit id="editorViewAccessibleLabel">
         <source xml:lang="en">Editor content</source>
         <target state="translated">Düzenleyici içeriği</target>
-      </trans-unit>
-      <trans-unit id="accessibilityHelpMessageIE">
-        <source xml:lang="en">Press Ctrl+F1 for Accessibility Options.</source>
-        <target state="translated">Erişilebilirlik Seçenekleri için Ctrl+F1 tuşlarına basın.</target>
       </trans-unit>
       <trans-unit id="accessibilityHelpMessage">
         <source xml:lang="en">Press Alt+F1 for Accessibility Options.</source>
@@ -404,14 +340,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/browser/widget/codeEditorWidget" source-language="en" target-language="tr" datatype="plaintext">
-    <body>
-      <trans-unit id="cursors.maximum">
-        <source xml:lang="en">The number of cursors has been limited to {0}.</source>
-        <target state="translated">İmleç sayısı {0} ile sınırlandırılmış durumda.</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/browser/controller/coreCommands" source-language="en" target-language="tr" datatype="plaintext">
     <body>
       <trans-unit id="miSelectAll">
@@ -440,6 +368,14 @@
       <trans-unit id="redo">
         <source xml:lang="en">Redo</source>
         <target state="translated">Yinele</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/browser/widget/codeEditorWidget" source-language="en" target-language="tr" datatype="plaintext">
+    <body>
+      <trans-unit id="cursors.maximum">
+        <source xml:lang="en">The number of cursors has been limited to {0}.</source>
+        <target state="translated">İmleç sayısı {0} ile sınırlandırılmış durumda.</target>
       </trans-unit>
     </body>
   </file>
@@ -534,8 +470,8 @@
         <target state="new">Explicit font-feature-settings.</target>
       </trans-unit>
       <trans-unit id="fontLigaturesGeneral">
-        <source xml:lang="en">Configures font ligatures.</source>
-        <target state="new">Configures font ligatures.</target>
+        <source xml:lang="en">Configures font ligatures or font features.</source>
+        <target state="new">Configures font ligatures or font features.</target>
       </trans-unit>
       <trans-unit id="fontSize">
         <source xml:lang="en">Controls the font size in pixels.</source>
@@ -621,21 +557,21 @@
         <source xml:lang="en">Controls whether the minimap is shown.</source>
         <target state="translated">Mini haritanın gösterilip gösterilmeyeceğini denetler.</target>
       </trans-unit>
-      <trans-unit id="minimap.mode.actual">
-        <source xml:lang="en">The minimap will be displayed in its original size, so it might be higher than the editor.</source>
-        <target state="new">The minimap will be displayed in its original size, so it might be higher than the editor.</target>
+      <trans-unit id="minimap.size.proportional">
+        <source xml:lang="en">The minimap has the same size as the editor contents (and might scroll).</source>
+        <target state="new">The minimap has the same size as the editor contents (and might scroll).</target>
       </trans-unit>
-      <trans-unit id="minimap.mode.cover">
-        <source xml:lang="en">The minimap will always have the height of the editor and will stretch or shrink as necessary.</source>
-        <target state="new">The minimap will always have the height of the editor and will stretch or shrink as necessary.</target>
+      <trans-unit id="minimap.size.fill">
+        <source xml:lang="en">The minimap will stretch or shrink as necessary to fill the height of the editor (no scrolling).</source>
+        <target state="new">The minimap will stretch or shrink as necessary to fill the height of the editor (no scrolling).</target>
       </trans-unit>
-      <trans-unit id="minimap.mode.contain">
-        <source xml:lang="en">The minimap will shrink as necessary to never be higher than the editor.</source>
-        <target state="new">The minimap will shrink as necessary to never be higher than the editor.</target>
+      <trans-unit id="minimap.size.fit">
+        <source xml:lang="en">The minimap will shrink as necessary to never be larger than the editor (no scrolling).</source>
+        <target state="new">The minimap will shrink as necessary to never be larger than the editor (no scrolling).</target>
       </trans-unit>
-      <trans-unit id="minimap.mode">
-        <source xml:lang="en">Controls the rendering mode of the minimap.</source>
-        <target state="new">Controls the rendering mode of the minimap.</target>
+      <trans-unit id="minimap.size">
+        <source xml:lang="en">Controls the size of the minimap.</source>
+        <target state="new">Controls the size of the minimap.</target>
       </trans-unit>
       <trans-unit id="minimap.side">
         <source xml:lang="en">Controls the side where to render the minimap.</source>
@@ -646,8 +582,8 @@
         <target state="new">Controls when the minimap slider is shown.</target>
       </trans-unit>
       <trans-unit id="minimap.scale">
-        <source xml:lang="en">Scale of content drawn in the minimap.</source>
-        <target state="new">Scale of content drawn in the minimap.</target>
+        <source xml:lang="en">Scale of content drawn in the minimap: 1, 2 or 3.</source>
+        <target state="new">Scale of content drawn in the minimap: 1, 2 or 3.</target>
       </trans-unit>
       <trans-unit id="minimap.renderCharacters">
         <source xml:lang="en">Render the actual characters on a line as opposed to color blocks.</source>
@@ -732,10 +668,6 @@
       <trans-unit id="suggest.insertMode">
         <source xml:lang="en">Controls whether words are overwritten when accepting completions. Note that this depends on extensions opting into this feature.</source>
         <target state="new">Controls whether words are overwritten when accepting completions. Note that this depends on extensions opting into this feature.</target>
-      </trans-unit>
-      <trans-unit id="suggest.insertHighlight">
-        <source xml:lang="en">Controls whether unexpected text modifications while accepting completions should be highlighted, e.g `insertMode` is `replace` but the completion only supports `insert`.</source>
-        <target state="new">Controls whether unexpected text modifications while accepting completions should be highlighted, e.g `insertMode` is `replace` but the completion only supports `insert`.</target>
       </trans-unit>
       <trans-unit id="suggest.filterGraceful">
         <source xml:lang="en">Controls whether filtering and sorting suggestions accounts for small typos.</source>
@@ -869,7 +801,15 @@
         <source xml:lang="en">When enabled IntelliSense shows `snippet`-suggestions.</source>
         <target state="new">When enabled IntelliSense shows `snippet`-suggestions.</target>
       </trans-unit>
-      <trans-unit id="editor.suggest.hideStatusBar">
+      <trans-unit id="editor.suggest.showUsers">
+        <source xml:lang="en">When enabled IntelliSense shows `user`-suggestions.</source>
+        <target state="new">When enabled IntelliSense shows `user`-suggestions.</target>
+      </trans-unit>
+      <trans-unit id="editor.suggest.showIssues">
+        <source xml:lang="en">When enabled IntelliSense shows `issues`-suggestions.</source>
+        <target state="new">When enabled IntelliSense shows `issues`-suggestions.</target>
+      </trans-unit>
+      <trans-unit id="editor.suggest.statusBar.visible">
         <source xml:lang="en">Controls the visibility of the status bar at the bottom of the suggest widget.</source>
         <target state="new">Controls the visibility of the status bar at the bottom of the suggest widget.</target>
       </trans-unit>
@@ -1144,12 +1084,16 @@
         <target state="new">Controls whether to focus the inline editor or the tree in the peek widget.</target>
       </trans-unit>
       <trans-unit id="definitionLinkOpensInPeek">
-        <source xml:lang="en">Controls whether the definition link opens element in the peek widget.</source>
-        <target state="new">Controls whether the definition link opens element in the peek widget.</target>
+        <source xml:lang="en">Controls whether the Go to Definition mouse gesture always opens the peek widget.</source>
+        <target state="new">Controls whether the Go to Definition mouse gesture always opens the peek widget.</target>
       </trans-unit>
       <trans-unit id="quickSuggestionsDelay">
         <source xml:lang="en">Controls the delay in milliseconds after which quick suggestions will show up.</source>
         <target state="new">Controls the delay in milliseconds after which quick suggestions will show up.</target>
+      </trans-unit>
+      <trans-unit id="renameOnType">
+        <source xml:lang="en">Controls whether the editor auto renames on type.</source>
+        <target state="new">Controls whether the editor auto renames on type.</target>
       </trans-unit>
       <trans-unit id="renderControlCharacters">
         <source xml:lang="en">Controls whether the editor should render control characters.</source>
@@ -1170,6 +1114,10 @@
       <trans-unit id="renderLineHighlight">
         <source xml:lang="en">Controls how the editor should render the current line highlight.</source>
         <target state="translated">Editörün mevcut çizgiyi nasıl vurgulayacağını kontrol eder.</target>
+      </trans-unit>
+      <trans-unit id="renderLineHighlightOnlyWhenFocus">
+        <source xml:lang="en">Controls if the editor should render the current line highlight only when the editor is focused</source>
+        <target state="new">Controls if the editor should render the current line highlight only when the editor is focused</target>
       </trans-unit>
       <trans-unit id="renderWhitespace.boundary">
         <source xml:lang="en">Render whitespace characters except for single spaces between words.</source>
@@ -1369,43 +1317,43 @@
         <source xml:lang="en">Close</source>
         <target state="translated">Kapat</target>
       </trans-unit>
-      <trans-unit id="no_lines">
-        <source xml:lang="en">no lines</source>
-        <target state="translated">hiçbir satır</target>
+      <trans-unit id="no_lines_changed">
+        <source xml:lang="en">no lines changed</source>
+        <target state="new">no lines changed</target>
       </trans-unit>
-      <trans-unit id="one_line">
-        <source xml:lang="en">1 line</source>
-        <target state="translated">1 satır</target>
+      <trans-unit id="one_line_changed">
+        <source xml:lang="en">1 line changed</source>
+        <target state="new">1 line changed</target>
       </trans-unit>
-      <trans-unit id="more_lines">
-        <source xml:lang="en">{0} lines</source>
-        <target state="translated">{0} satır</target>
+      <trans-unit id="more_lines_changed">
+        <source xml:lang="en">{0} lines changed</source>
+        <target state="new">{0} lines changed</target>
       </trans-unit>
       <trans-unit id="header">
-        <source xml:lang="en">Difference {0} of {1}: original {2}, {3}, modified {4}, {5}</source>
-        <target state="translated">Farklılık {0}/{1}: orijinal {2}, {3}, değiştirilen {4}, {5}</target>
+        <source xml:lang="en">Difference {0} of {1}: original line {2}, {3}, modified line {4}, {5}</source>
+        <target state="new">Difference {0} of {1}: original line {2}, {3}, modified line {4}, {5}</target>
         <note>This is the ARIA label for a git diff header.
 A git diff header looks like this: @@ -154,12 +159,39 @@.
 That encodes that at original line 154 (which is now line 159), 12 lines were removed/changed with 39 lines.
 Variables 0 and 1 refer to the diff index out of total number of diffs.
 Variables 2 and 4 will be numbers (a line number).
-Variables 3 and 5 will be "no lines", "1 line" or "X lines", localized separately.</note>
+Variables 3 and 5 will be "no lines changed", "1 line changed" or "X lines changed", localized separately.</note>
       </trans-unit>
       <trans-unit id="blankLine">
         <source xml:lang="en">blank</source>
         <target state="translated">boş</target>
       </trans-unit>
       <trans-unit id="equalLine">
-        <source xml:lang="en">original {0}, modified {1}: {2}</source>
-        <target state="translated">orijinal {0}, değiştirilen {1}: {2}</target>
+        <source xml:lang="en">{0} original line {1} modified line {2}</source>
+        <target state="new">{0} original line {1} modified line {2}</target>
       </trans-unit>
       <trans-unit id="insertLine">
-        <source xml:lang="en">+ modified {0}: {1}</source>
-        <target state="translated">+ değiştirilen {0}: {1}</target>
+        <source xml:lang="en">+ {0} modified line {1}</source>
+        <target state="new">+ {0} modified line {1}</target>
       </trans-unit>
       <trans-unit id="deleteLine">
-        <source xml:lang="en">- original {0}: {1}</source>
-        <target state="translated">- orijinal {0}: {1}</target>
+        <source xml:lang="en">- {0} original line {1}</source>
+        <target state="new">- {0} original line {1}</target>
       </trans-unit>
       <trans-unit id="editor.action.diffReview.next">
         <source xml:lang="en">Go to Next Difference</source>
@@ -1420,8 +1368,8 @@ Variables 3 and 5 will be "no lines", "1 line" or "X lines", localized separatel
   <file original="src/vs/editor/browser/controller/textAreaHandler" source-language="en" target-language="tr" datatype="plaintext">
     <body>
       <trans-unit id="accessibilityOffAriaLabel">
-        <source xml:lang="en">The editor is not accessible at this time. Press Alt+F1 for options.</source>
-        <target state="translated">Düzenleyici şu an erişilebilir değil. Seçenekler için lütfen Alt+F1'e basın.</target>
+        <source xml:lang="en">The editor is not accessible at this time. Press {0} for options.</source>
+        <target state="new">The editor is not accessible at this time. Press {0} for options.</target>
       </trans-unit>
     </body>
   </file>

@@ -34,17 +34,13 @@
         <source xml:lang="en">Restart Extension Host</source>
         <target state="translated">Перезапустить хост-процесс для расширений</target>
       </trans-unit>
-      <trans-unit id="resolveAuthorityFailure">
-        <source xml:lang="en">Resolving the authority `{0}` failed</source>
-        <target state="translated">Разрешение полномочий "{0}" завершилось сбоем</target>
-      </trans-unit>
       <trans-unit id="getEnvironmentFailure">
         <source xml:lang="en">Could not fetch remote environment</source>
         <target state="translated">Не удалось получить удаленную среду</target>
       </trans-unit>
       <trans-unit id="enableResolver">
         <source xml:lang="en">Extension '{0}' is required to open the remote window.
-Ok to enable?</source>
+OK to enable?</source>
         <target state="translated">Для открытия удаленного окна требуется расширение "{0}".
 Включить его?</target>
       </trans-unit>
@@ -54,9 +50,9 @@ Ok to enable?</source>
       </trans-unit>
       <trans-unit id="installResolver">
         <source xml:lang="en">Extension '{0}' is required to open the remote window.
-Ok to install?</source>
+nOK to install?</source>
         <target state="translated">Для открытия удаленного окна требуется расширение "{0}".
-Установить его?</target>
+Установить?</target>
       </trans-unit>
       <trans-unit id="install">
         <source xml:lang="en">Install and Reload</source>
@@ -67,8 +63,12 @@ Ok to install?</source>
         <target state="translated">"{0}" не найден в Marketplace</target>
       </trans-unit>
       <trans-unit id="restartExtensionHost">
-        <source xml:lang="en">Developer: Restart Extension Host</source>
-        <target state="translated">Разработчик: перезапуск хост-процесса для расширений</target>
+        <source xml:lang="en">Restart Extension Host</source>
+        <target state="translated">Перезапустить хост-процесс для расширений</target>
+      </trans-unit>
+      <trans-unit id="developer">
+        <source xml:lang="en">Developer</source>
+        <target state="translated">Разработчик</target>
       </trans-unit>
     </body>
   </file>
@@ -77,6 +77,62 @@ Ok to install?</source>
       <trans-unit id="incompatible">
         <source xml:lang="en">Unable to install extension '{0}' as it is not compatible with VS Code '{1}'.</source>
         <target state="translated">Не удалось установить расширение '{0}', так как оно не совместимо с VS Code '{1}'.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/browser/extensionUrlHandler" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="confirmUrl">
+        <source xml:lang="en">Allow an extension to open this URI?</source>
+        <target state="translated">Разрешить расширению открыть этот URI?</target>
+      </trans-unit>
+      <trans-unit id="rememberConfirmUrl">
+        <source xml:lang="en">Don't ask again for this extension.</source>
+        <target state="translated">Больше не спрашивать для этого расширения.</target>
+      </trans-unit>
+      <trans-unit id="open">
+        <source xml:lang="en">&amp;&amp;Open</source>
+        <target state="translated">&amp;&amp;Открыть</target>
+      </trans-unit>
+      <trans-unit id="reloadAndHandle">
+        <source xml:lang="en">Extension '{0}' is not loaded. Would you like to reload the window to load the extension and open the URL?</source>
+        <target state="translated">Расширение "{0}" не загружено. Вы хотите перезагрузить окно, чтобы загрузить расширение и открыть URL-адрес?</target>
+      </trans-unit>
+      <trans-unit id="reloadAndOpen">
+        <source xml:lang="en">&amp;&amp;Reload Window and Open</source>
+        <target state="translated">&amp;&amp;Перезагрузить окно и открыть</target>
+      </trans-unit>
+      <trans-unit id="enableAndHandle">
+        <source xml:lang="en">Extension '{0}' is disabled. Would you like to enable the extension and reload the window to open the URL?</source>
+        <target state="translated">Расширение "{0}" отключено. Вы хотите перезагрузить окно, чтобы включить расширение и открыть URL-адрес?</target>
+      </trans-unit>
+      <trans-unit id="enableAndReload">
+        <source xml:lang="en">&amp;&amp;Enable and Open</source>
+        <target state="translated">&amp;&amp;Включить и открыть</target>
+      </trans-unit>
+      <trans-unit id="installAndHandle">
+        <source xml:lang="en">Extension '{0}' is not installed. Would you like to install the extension and reload the window to open this URL?</source>
+        <target state="translated">Расширение "{0}" не установлено. Вы хотите перезагрузить окно, чтобы установить расширение и открыть URL-адрес?</target>
+      </trans-unit>
+      <trans-unit id="install">
+        <source xml:lang="en">&amp;&amp;Install</source>
+        <target state="translated">&amp;&amp;Установка</target>
+      </trans-unit>
+      <trans-unit id="Installing">
+        <source xml:lang="en">Installing Extension '{0}'...</source>
+        <target state="translated">Установка расширения "{0}"...</target>
+      </trans-unit>
+      <trans-unit id="reload">
+        <source xml:lang="en">Would you like to reload the window and open the URL '{0}'?</source>
+        <target state="translated">Вы хотите перезагрузить окно и открыть URL-адрес "{0}"?</target>
+      </trans-unit>
+      <trans-unit id="Reload">
+        <source xml:lang="en">Reload Window and Open</source>
+        <target state="translated">Перезагрузить окно и открыть</target>
+      </trans-unit>
+      <trans-unit id="manage">
+        <source xml:lang="en">Manage Authorized Extension URIs...</source>
+        <target state="translated">Управление URI авторизованных расширений...</target>
       </trans-unit>
     </body>
   </file>
@@ -186,6 +242,10 @@ Ok to install?</source>
         <source xml:lang="en">An activation event emitted whenever a system-wide Uri directed towards this extension is open.</source>
         <target state="translated">Событие активации, которое выдается каждый раз при открытии системного URI этого расширения.</target>
       </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onCustomEditor">
+        <source xml:lang="en">An activation event emitted whenever the specified custom editor becomes visible.</source>
+        <target state="translated">Событие активации, возникающее каждый раз, когда указанный специализированный редактор становится видимым.</target>
+      </trans-unit>
       <trans-unit id="vscode.extension.activationEvents.star">
         <source xml:lang="en">An activation event emitted on VS Code startup. To ensure a great end user experience, please use this activation event in your extension only when no other activation events combination works in your use-case.</source>
         <target state="translated">Событие активации выдается при запуске VS Code. Для удобства пользователя используйте это событие в своем расширении только в том случае, если другие сочетания событий не подходят.</target>
@@ -260,67 +320,23 @@ Ok to install?</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/services/extensions/browser/extensionUrlHandler" source-language="en" target-language="ru" datatype="plaintext">
-    <body>
-      <trans-unit id="confirmUrl">
-        <source xml:lang="en">Allow an extension to open this URI?</source>
-        <target state="translated">Разрешить расширению открыть этот URI?</target>
-      </trans-unit>
-      <trans-unit id="rememberConfirmUrl">
-        <source xml:lang="en">Don't ask again for this extension.</source>
-        <target state="translated">Больше не спрашивать для этого расширения.</target>
-      </trans-unit>
-      <trans-unit id="open">
-        <source xml:lang="en">&amp;&amp;Open</source>
-        <target state="translated">&amp;&amp;Открыть</target>
-      </trans-unit>
-      <trans-unit id="reloadAndHandle">
-        <source xml:lang="en">Extension '{0}' is not loaded. Would you like to reload the window to load the extension and open the URL?</source>
-        <target state="translated">Расширение "{0}" не загружено. Вы хотите перезагрузить окно, чтобы загрузить расширение и открыть URL-адрес?</target>
-      </trans-unit>
-      <trans-unit id="reloadAndOpen">
-        <source xml:lang="en">&amp;&amp;Reload Window and Open</source>
-        <target state="translated">&amp;&amp;Перезагрузить окно и открыть</target>
-      </trans-unit>
-      <trans-unit id="enableAndHandle">
-        <source xml:lang="en">Extension '{0}' is disabled. Would you like to enable the extension and reload the window to open the URL?</source>
-        <target state="translated">Расширение "{0}" отключено. Вы хотите перезагрузить окно, чтобы включить расширение и открыть URL-адрес?</target>
-      </trans-unit>
-      <trans-unit id="enableAndReload">
-        <source xml:lang="en">&amp;&amp;Enable and Open</source>
-        <target state="translated">&amp;&amp;Включить и открыть</target>
-      </trans-unit>
-      <trans-unit id="installAndHandle">
-        <source xml:lang="en">Extension '{0}' is not installed. Would you like to install the extension and reload the window to open this URL?</source>
-        <target state="translated">Расширение "{0}" не установлено. Вы хотите перезагрузить окно, чтобы установить расширение и открыть URL-адрес?</target>
-      </trans-unit>
-      <trans-unit id="install">
-        <source xml:lang="en">&amp;&amp;Install</source>
-        <target state="translated">&amp;&amp;Установка</target>
-      </trans-unit>
-      <trans-unit id="Installing">
-        <source xml:lang="en">Installing Extension '{0}'...</source>
-        <target state="translated">Установка расширения "{0}"...</target>
-      </trans-unit>
-      <trans-unit id="reload">
-        <source xml:lang="en">Would you like to reload the window and open the URL '{0}'?</source>
-        <target state="translated">Вы хотите перезагрузить окно и открыть URL-адрес "{0}"?</target>
-      </trans-unit>
-      <trans-unit id="Reload">
-        <source xml:lang="en">Reload Window and Open</source>
-        <target state="translated">Перезагрузить окно и открыть</target>
-      </trans-unit>
-      <trans-unit id="manage">
-        <source xml:lang="en">Manage Authorized Extension URIs...</source>
-        <target state="translated">Управление URI авторизованных расширений...</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/services/extensions/common/remoteExtensionHostClient" source-language="en" target-language="ru" datatype="plaintext">
     <body>
       <trans-unit id="remote extension host Log">
         <source xml:lang="en">Remote Extension Host</source>
         <target state="translated">Удаленный хост-процесс для расширений</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/common/extensionHostProcessManager" source-language="en" target-language="ru" datatype="plaintext">
+    <body>
+      <trans-unit id="measureExtHostLatency">
+        <source xml:lang="en">Measure Extension Host Latency</source>
+        <target state="translated">Измерить задержку хост-процесса для расширений</target>
+      </trans-unit>
+      <trans-unit id="developer">
+        <source xml:lang="en">Developer</source>
+        <target state="translated">Разработчик</target>
       </trans-unit>
     </body>
   </file>
@@ -341,18 +357,6 @@ Ok to install?</source>
       <trans-unit id="reloadWindow">
         <source xml:lang="en">Reload Window</source>
         <target state="translated">Перезагрузить окно</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/services/extensions/common/extensionHostProcessManager" source-language="en" target-language="ru" datatype="plaintext">
-    <body>
-      <trans-unit id="measureExtHostLatency">
-        <source xml:lang="en">Measure Extension Host Latency</source>
-        <target state="translated">Измерить задержку хост-процесса для расширений</target>
-      </trans-unit>
-      <trans-unit id="developer">
-        <source xml:lang="en">Developer</source>
-        <target state="translated">Разработчик</target>
       </trans-unit>
     </body>
   </file>

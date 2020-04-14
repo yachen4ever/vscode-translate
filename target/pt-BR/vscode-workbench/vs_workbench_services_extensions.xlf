@@ -34,19 +34,15 @@
         <source xml:lang="en">Restart Extension Host</source>
         <target state="translated">Reiniciar o host de extensão</target>
       </trans-unit>
-      <trans-unit id="resolveAuthorityFailure">
-        <source xml:lang="en">Resolving the authority `{0}` failed</source>
-        <target state="translated">A resolução da autoridade '{0}' falhou</target>
-      </trans-unit>
       <trans-unit id="getEnvironmentFailure">
         <source xml:lang="en">Could not fetch remote environment</source>
         <target state="translated">Não foi possível buscar o ambiente remoto</target>
       </trans-unit>
       <trans-unit id="enableResolver">
         <source xml:lang="en">Extension '{0}' is required to open the remote window.
-Ok to enable?</source>
-        <target state="new">Extension '{0}' is required to open the remote window.
-Ok to enable?</target>
+OK to enable?</source>
+        <target state="translated">A extensão '{0}' é necessária para abrir a janela remota.
+Ok para habilitar?</target>
       </trans-unit>
       <trans-unit id="enable">
         <source xml:lang="en">Enable and Reload</source>
@@ -54,9 +50,9 @@ Ok to enable?</target>
       </trans-unit>
       <trans-unit id="installResolver">
         <source xml:lang="en">Extension '{0}' is required to open the remote window.
-Ok to install?</source>
-        <target state="new">Extension '{0}' is required to open the remote window.
-Ok to install?</target>
+nOK to install?</source>
+        <target state="translated">A extensão '{0}' é necessária para abrir a janela remota.
+Instalar?</target>
       </trans-unit>
       <trans-unit id="install">
         <source xml:lang="en">Install and Reload</source>
@@ -64,11 +60,15 @@ Ok to install?</target>
       </trans-unit>
       <trans-unit id="resolverExtensionNotFound">
         <source xml:lang="en">`{0}` not found on marketplace</source>
-        <target state="new">`{0}` not found on marketplace</target>
+        <target state="translated">'{0}' não encontrada no mercado</target>
       </trans-unit>
       <trans-unit id="restartExtensionHost">
-        <source xml:lang="en">Developer: Restart Extension Host</source>
-        <target state="new">Developer: Restart Extension Host</target>
+        <source xml:lang="en">Restart Extension Host</source>
+        <target state="translated">Reiniciar o host de extensão</target>
+      </trans-unit>
+      <trans-unit id="developer">
+        <source xml:lang="en">Developer</source>
+        <target state="translated">Desenvolvedor</target>
       </trans-unit>
     </body>
   </file>
@@ -77,6 +77,62 @@ Ok to install?</target>
       <trans-unit id="incompatible">
         <source xml:lang="en">Unable to install extension '{0}' as it is not compatible with VS Code '{1}'.</source>
         <target state="translated">Não é possível instalar a extensão ' {0} ', pois não é compatível com o VS Code '{1} '.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/browser/extensionUrlHandler" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="confirmUrl">
+        <source xml:lang="en">Allow an extension to open this URI?</source>
+        <target state="translated">Permitir que uma extensão abra esse URI?</target>
+      </trans-unit>
+      <trans-unit id="rememberConfirmUrl">
+        <source xml:lang="en">Don't ask again for this extension.</source>
+        <target state="translated">Não pergunte novamente para esta extensão.</target>
+      </trans-unit>
+      <trans-unit id="open">
+        <source xml:lang="en">&amp;&amp;Open</source>
+        <target state="translated">&amp;&amp;Abrir</target>
+      </trans-unit>
+      <trans-unit id="reloadAndHandle">
+        <source xml:lang="en">Extension '{0}' is not loaded. Would you like to reload the window to load the extension and open the URL?</source>
+        <target state="translated">Extensão '{0}' não está carregada. Você gostaria de recarregar a janela para carregar a extensão e abrir a URL?</target>
+      </trans-unit>
+      <trans-unit id="reloadAndOpen">
+        <source xml:lang="en">&amp;&amp;Reload Window and Open</source>
+        <target state="translated">&amp;&amp;Recarregar Janela e Abrir</target>
+      </trans-unit>
+      <trans-unit id="enableAndHandle">
+        <source xml:lang="en">Extension '{0}' is disabled. Would you like to enable the extension and reload the window to open the URL?</source>
+        <target state="translated">A extensão '{0}' está desativada. Você gostaria de habilitar a extensão e recarregar a janela para abrir o URL?</target>
+      </trans-unit>
+      <trans-unit id="enableAndReload">
+        <source xml:lang="en">&amp;&amp;Enable and Open</source>
+        <target state="translated">&amp;&amp;habilitar e abrir</target>
+      </trans-unit>
+      <trans-unit id="installAndHandle">
+        <source xml:lang="en">Extension '{0}' is not installed. Would you like to install the extension and reload the window to open this URL?</source>
+        <target state="translated">A extensão '{0}' não está instalada. Você gostaria de instalar a extensão e recarregar a janela para abrir este URL?</target>
+      </trans-unit>
+      <trans-unit id="install">
+        <source xml:lang="en">&amp;&amp;Install</source>
+        <target state="translated">&amp;&amp;Instalar</target>
+      </trans-unit>
+      <trans-unit id="Installing">
+        <source xml:lang="en">Installing Extension '{0}'...</source>
+        <target state="translated">Instalando a Extensão '{0}'...</target>
+      </trans-unit>
+      <trans-unit id="reload">
+        <source xml:lang="en">Would you like to reload the window and open the URL '{0}'?</source>
+        <target state="translated">Gostaria de recarregar a janela e abrir a URL '{0}'?</target>
+      </trans-unit>
+      <trans-unit id="Reload">
+        <source xml:lang="en">Reload Window and Open</source>
+        <target state="translated">Recarregar Janela e Abrir</target>
+      </trans-unit>
+      <trans-unit id="manage">
+        <source xml:lang="en">Manage Authorized Extension URIs...</source>
+        <target state="translated">Gerenciar URIs de Extensões Autorizadas...</target>
       </trans-unit>
     </body>
   </file>
@@ -186,6 +242,10 @@ Ok to install?</target>
         <source xml:lang="en">An activation event emitted whenever a system-wide Uri directed towards this extension is open.</source>
         <target state="translated">Um evento de ativação emitido sempre que um Uri de todo o sistema dirigido para esta extensão está aberto.</target>
       </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onCustomEditor">
+        <source xml:lang="en">An activation event emitted whenever the specified custom editor becomes visible.</source>
+        <target state="translated">Um evento de ativação emitido sempre que o editor personalizado especificado se torna visível.</target>
+      </trans-unit>
       <trans-unit id="vscode.extension.activationEvents.star">
         <source xml:lang="en">An activation event emitted on VS Code startup. To ensure a great end user experience, please use this activation event in your extension only when no other activation events combination works in your use-case.</source>
         <target state="translated">Um evento de ativação emitido na inicialização do VS Code. Para garantir uma ótima experiência de usuário, por favor, use este evento de ativação em sua extensão somente quando nenhuma outra combinação de eventos de ativação funcionar em seu caso de uso.</target>
@@ -224,7 +284,7 @@ Ok to install?</target>
       </trans-unit>
       <trans-unit id="extensionKind">
         <source xml:lang="en">Define the kind of an extension. `ui` extensions are installed and run on the local machine while `workspace` extensions run on the remote.</source>
-        <target state="new">Define the kind of an extension. `ui` extensions are installed and run on the local machine while `workspace` extensions run on the remote.</target>
+        <target state="translated">Defina o tipo de extensão. As extensões `ui` são instaladas e executadas na máquina local, enquanto as extensões `espaço de trabalho` são executadas remotamente.</target>
       </trans-unit>
       <trans-unit id="extensionKind.ui">
         <source xml:lang="en">Define an extension which can run only on the local machine when connected to remote window.</source>
@@ -260,67 +320,23 @@ Ok to install?</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/services/extensions/browser/extensionUrlHandler" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="confirmUrl">
-        <source xml:lang="en">Allow an extension to open this URI?</source>
-        <target state="translated">Permitir que uma extensão abra esse URI?</target>
-      </trans-unit>
-      <trans-unit id="rememberConfirmUrl">
-        <source xml:lang="en">Don't ask again for this extension.</source>
-        <target state="translated">Não pergunte novamente para esta extensão.</target>
-      </trans-unit>
-      <trans-unit id="open">
-        <source xml:lang="en">&amp;&amp;Open</source>
-        <target state="translated">&amp;&amp;Abrir</target>
-      </trans-unit>
-      <trans-unit id="reloadAndHandle">
-        <source xml:lang="en">Extension '{0}' is not loaded. Would you like to reload the window to load the extension and open the URL?</source>
-        <target state="translated">Extensão '{0}' não está carregada. Você gostaria de recarregar a janela para carregar a extensão e abrir a URL?</target>
-      </trans-unit>
-      <trans-unit id="reloadAndOpen">
-        <source xml:lang="en">&amp;&amp;Reload Window and Open</source>
-        <target state="translated">&amp;&amp;Recarregar Janela e Abrir</target>
-      </trans-unit>
-      <trans-unit id="enableAndHandle">
-        <source xml:lang="en">Extension '{0}' is disabled. Would you like to enable the extension and reload the window to open the URL?</source>
-        <target state="translated">A extensão '{0}' está desativada. Você gostaria de habilitar a extensão e recarregar a janela para abrir o URL?</target>
-      </trans-unit>
-      <trans-unit id="enableAndReload">
-        <source xml:lang="en">&amp;&amp;Enable and Open</source>
-        <target state="translated">&amp;&amp;habilitar e abrir</target>
-      </trans-unit>
-      <trans-unit id="installAndHandle">
-        <source xml:lang="en">Extension '{0}' is not installed. Would you like to install the extension and reload the window to open this URL?</source>
-        <target state="translated">A extensão '{0}' não está instalada. Você gostaria de instalar a extensão e recarregar a janela para abrir este URL?</target>
-      </trans-unit>
-      <trans-unit id="install">
-        <source xml:lang="en">&amp;&amp;Install</source>
-        <target state="translated">&amp;&amp;Instalar</target>
-      </trans-unit>
-      <trans-unit id="Installing">
-        <source xml:lang="en">Installing Extension '{0}'...</source>
-        <target state="translated">Instalando a Extensão '{0}'...</target>
-      </trans-unit>
-      <trans-unit id="reload">
-        <source xml:lang="en">Would you like to reload the window and open the URL '{0}'?</source>
-        <target state="translated">Gostaria de recarregar a janela e abrir a URL '{0}'?</target>
-      </trans-unit>
-      <trans-unit id="Reload">
-        <source xml:lang="en">Reload Window and Open</source>
-        <target state="translated">Recarregar Janela e Abrir</target>
-      </trans-unit>
-      <trans-unit id="manage">
-        <source xml:lang="en">Manage Authorized Extension URIs...</source>
-        <target state="translated">Gerenciar URIs de Extensões Autorizadas...</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/services/extensions/common/remoteExtensionHostClient" source-language="en" target-language="pt-BR" datatype="plaintext">
     <body>
       <trans-unit id="remote extension host Log">
         <source xml:lang="en">Remote Extension Host</source>
         <target state="translated">Host de extensão remota</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/common/extensionHostProcessManager" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="measureExtHostLatency">
+        <source xml:lang="en">Measure Extension Host Latency</source>
+        <target state="translated">Medir a extensão Host latência</target>
+      </trans-unit>
+      <trans-unit id="developer">
+        <source xml:lang="en">Developer</source>
+        <target state="translated">Desenvolvedor</target>
       </trans-unit>
     </body>
   </file>
@@ -341,18 +357,6 @@ Ok to install?</target>
       <trans-unit id="reloadWindow">
         <source xml:lang="en">Reload Window</source>
         <target state="translated">Recarregar Janela</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/services/extensions/common/extensionHostProcessManager" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="measureExtHostLatency">
-        <source xml:lang="en">Measure Extension Host Latency</source>
-        <target state="translated">Medir a extensão Host latência</target>
-      </trans-unit>
-      <trans-unit id="developer">
-        <source xml:lang="en">Developer</source>
-        <target state="translated">Desenvolvedor</target>
       </trans-unit>
     </body>
   </file>

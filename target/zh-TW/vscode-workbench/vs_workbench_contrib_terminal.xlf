@@ -32,30 +32,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/terminal/browser/terminalQuickOpen" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="termEntryAriaLabel">
-        <source xml:lang="en">{0}, terminal picker</source>
-        <target state="translated">{0} , 終端機選擇器</target>
-      </trans-unit>
-      <trans-unit id="termCreateEntryAriaLabel">
-        <source xml:lang="en">{0}, create new terminal</source>
-        <target state="translated">{0}，建立新的終端機</target>
-      </trans-unit>
-      <trans-unit id="workbench.action.terminal.newplus">
-        <source xml:lang="en">Create New Integrated Terminal</source>
-        <target state="translated">建立新的整合式終端機</target>
-      </trans-unit>
-      <trans-unit id="noTerminalsMatching">
-        <source xml:lang="en">No terminals matching</source>
-        <target state="translated">無相符的終端機</target>
-      </trans-unit>
-      <trans-unit id="noTerminalsFound">
-        <source xml:lang="en">No terminals open</source>
-        <target state="translated">無開啟的終端機</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/terminal/common/terminal" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
       <trans-unit id="terminalCategory">
@@ -86,7 +62,11 @@
   </file>
   <file original="src/vs/workbench/contrib/terminal/browser/terminal.contribution" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
-      <trans-unit id="quickOpen.terminal">
+      <trans-unit id="tasksQuickAccessPlaceholder">
+        <source xml:lang="en">Type the name of a terminal to open.</source>
+        <target state="translated">鍵入要開啟的終端機名稱。</target>
+      </trans-unit>
+      <trans-unit id="tasksQuickAccessHelp">
         <source xml:lang="en">Show All Opened Terminals</source>
         <target state="translated">顯示所有已開啟的終端機</target>
       </trans-unit>
@@ -282,6 +262,10 @@ Default Skipped Commands:
         <source xml:lang="en">Whether or not to allow chord keybindings in the terminal. Note that when this is true and the keystroke results in a chord it will bypass `#terminal.integrated.commandsToSkipShell#`, setting this to false is particularly useful when you want ctrl+k to go to your shell (not VS Code).</source>
         <target state="translated">是否要在終端機允取同步選取按鍵繫結關係。請注意，當此項目為 true 且按鍵輸入導致同步選取時，其會略過 `#terminal.integrated.commandsToSkipShell#`，當您希望以 CTRL+K 前往殼層 (非 VS Code) 時，將此項目設定為 false 相當實用。</target>
       </trans-unit>
+      <trans-unit id="terminal.integrated.allowMnemonics">
+        <source xml:lang="en">Whether to allow menubar mnemonics (eg. alt+f) to trigger the open the menubar. Note that this will cause all alt keystrokes will skip the shell when true. This does nothing on macOS.</source>
+        <target state="translated">是否允許功能表列助憶鍵 (例如 alt+f) 觸發開啟功能表列。請注意，如此會導致所有 alt 按鍵輸入為 true 時，跳過殼層。對 macOS 沒有任何作用。</target>
+      </trans-unit>
       <trans-unit id="terminal.integrated.inheritEnv">
         <source xml:lang="en">Whether new shells should inherit their environment from VS Code. This is not supported on Windows.</source>
         <target state="translated">新殼層是否應從 VS Code 繼承其環境。Windows 不支援此功能。</target>
@@ -413,6 +397,22 @@ Default Skipped Commands:
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalsQuickAccess" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="renameTerminal">
+        <source xml:lang="en">Rename Terminal</source>
+        <target state="translated">重新命名終端機</target>
+      </trans-unit>
+      <trans-unit id="killTerminal">
+        <source xml:lang="en">Kill Terminal Instance</source>
+        <target state="translated">終止終端機執行個體</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.newplus">
+        <source xml:lang="en">Create New Integrated Terminal</source>
+        <target state="translated">建立新的整合式終端機</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/terminal/browser/terminalService" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
       <trans-unit id="workbench.action.terminal.allowWorkspaceShell">
@@ -454,10 +454,6 @@ Default Skipped Commands:
       <trans-unit id="workbench.action.terminal.kill.short">
         <source xml:lang="en">Kill Terminal</source>
         <target state="translated">終止終端機</target>
-      </trans-unit>
-      <trans-unit id="workbench.action.terminal.quickKill">
-        <source xml:lang="en">Kill Terminal Instance</source>
-        <target state="translated">終止終端機執行個體</target>
       </trans-unit>
       <trans-unit id="workbench.action.terminal.copySelection">
         <source xml:lang="en">Copy Selection</source>
@@ -675,7 +671,7 @@ Default Skipped Commands:
         <source xml:lang="en">Hide Find Widget</source>
         <target state="translated">隱藏尋找小工具</target>
       </trans-unit>
-      <trans-unit id="quickOpenTerm">
+      <trans-unit id="quickAccessTerminal">
         <source xml:lang="en">Switch Active Terminal</source>
         <target state="translated">切換使用中的終端機 </target>
       </trans-unit>
@@ -726,38 +722,6 @@ Default Skipped Commands:
       <trans-unit id="workbench.action.terminal.findPrevious">
         <source xml:lang="en">Find previous</source>
         <target state="translated">尋找上一個</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/terminal/browser/terminalTab" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="terminalFocus">
-        <source xml:lang="en">Terminal {0}</source>
-        <target state="translated">終端機 {0}</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/terminal/browser/terminalConfigHelper" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="terminal.integrated.allowWorkspaceShell">
-        <source xml:lang="en">Do you allow this workspace to modify your terminal shell? {0}</source>
-        <target state="translated">您允許此工作區修改您的終端機殼層嗎? {0}</target>
-      </trans-unit>
-      <trans-unit id="allow">
-        <source xml:lang="en">Allow</source>
-        <target state="translated">允許</target>
-      </trans-unit>
-      <trans-unit id="disallow">
-        <source xml:lang="en">Disallow</source>
-        <target state="translated">不允許</target>
-      </trans-unit>
-      <trans-unit id="useWslExtension.title">
-        <source xml:lang="en">The '{0}' extension is recommended for opening a terminal in WSL.</source>
-        <target state="translated">建議使用 ‘{0}’ 延伸模組開啟 WSL 中的終端機。</target>
-      </trans-unit>
-      <trans-unit id="install">
-        <source xml:lang="en">Install</source>
-        <target state="translated">安裝</target>
       </trans-unit>
     </body>
   </file>
@@ -818,6 +782,38 @@ Default Skipped Commands:
       <trans-unit id="terminal.integrated.exitedWithCode">
         <source xml:lang="en">The terminal process terminated with exit code: {0}</source>
         <target state="translated">終端機處理程序已終止，結束代碼為: {0}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalConfigHelper" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="terminal.integrated.allowWorkspaceShell">
+        <source xml:lang="en">Do you allow this workspace to modify your terminal shell? {0}</source>
+        <target state="translated">您允許此工作區修改您的終端機殼層嗎? {0}</target>
+      </trans-unit>
+      <trans-unit id="allow">
+        <source xml:lang="en">Allow</source>
+        <target state="translated">允許</target>
+      </trans-unit>
+      <trans-unit id="disallow">
+        <source xml:lang="en">Disallow</source>
+        <target state="translated">不允許</target>
+      </trans-unit>
+      <trans-unit id="useWslExtension.title">
+        <source xml:lang="en">The '{0}' extension is recommended for opening a terminal in WSL.</source>
+        <target state="translated">建議使用 ‘{0}’ 延伸模組開啟 WSL 中的終端機。</target>
+      </trans-unit>
+      <trans-unit id="install">
+        <source xml:lang="en">Install</source>
+        <target state="translated">安裝</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalTab" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="terminalFocus">
+        <source xml:lang="en">Terminal {0}</source>
+        <target state="translated">終端機 {0}</target>
       </trans-unit>
     </body>
   </file>

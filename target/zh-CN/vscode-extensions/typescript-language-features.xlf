@@ -297,6 +297,26 @@ See the [TypeScript documentation](https://code.visualstudio.com/docs/typescript
         <source xml:lang="en">Based on the `baseUrl` configured in your `jsconfig.json` / `tsconfig.json`.</source>
         <target state="translated">根据 `jsconfig.json` 或 `tsconfig.json` 中配置的 `baseUrl` 。</target>
       </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifierEnding">
+        <source xml:lang="en">Preferred path ending for auto imports.</source>
+        <target state="translated">自动导入的首选路径结尾。</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifierEnding.auto">
+        <source xml:lang="en">Use project settings to select a default.</source>
+        <target state="translated">使用项目设置选择默认值。</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifierEnding.minimal">
+        <source xml:lang="en">Shorten `./component/index.js` to `./component`.</source>
+        <target state="translated">将 "./component/index.js" 缩短为 "./component"。</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifierEnding.index">
+        <source xml:lang="en">Shorten `./component/index.js` to `./component/index`</source>
+        <target state="translated">将 "./component/index.js" 缩短为 "./component/index"</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifierEnding.js">
+        <source xml:lang="en">Do not shorten path endings; include the `.js` extension.</source>
+        <target state="translated">不要缩短路径结尾;包括".js"扩展名。</target>
+      </trans-unit>
       <trans-unit id="typescript.updateImportsOnFileMove.enabled">
         <source xml:lang="en">Enable/disable automatic updating of import paths when you rename or move a file in VS Code. Requires using TypeScript 2.9 or newer in the workspace.</source>
         <target state="translated">当在 VS Code 中重命名或移动文件时，启用或禁用自动更新导入路径。要求工作区使用高于 2.9 版本的 TypeScript。</target>
@@ -487,16 +507,24 @@ See the [TypeScript documentation](https://code.visualstudio.com/docs/typescript
       </trans-unit>
     </body>
   </file>
-  <file original="extensions/typescript-language-features/dist/features/baseCodeLensProvider" source-language="en" target-language="zh-Hans" datatype="plaintext">
+  <file original="extensions/typescript-language-features/dist/utils/tsconfig" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <body>
-      <trans-unit id="referenceErrorLabel">
-        <source xml:lang="en">Could not determine references</source>
-        <target state="translated">无法确定引用</target>
+      <trans-unit id="typescript.configureTsconfigQuickPick">
+        <source xml:lang="en">Configure tsconfig.json</source>
+        <target state="translated">配置 tsconfig.json</target>
       </trans-unit>
-    </body>
-  </file>
-  <file original="extensions/typescript-language-features/dist/commands/goToProjectConfiguration" source-language="en" target-language="zh-Hans" datatype="plaintext">
-    <body>
+      <trans-unit id="typescript.configureJsconfigQuickPick">
+        <source xml:lang="en">Configure jsconfig.json</source>
+        <target state="translated">配置 jsconfig.json</target>
+      </trans-unit>
+      <trans-unit id="typescript.noTypeScriptProjectConfig">
+        <source xml:lang="en">File is not part of a TypeScript project. Click [here]({0}) to learn more.</source>
+        <target state="translated">文件不属于 TypeScript 项目。点击[这里]({0})了解更多。</target>
+      </trans-unit>
+      <trans-unit id="typescript.noJavaScriptProjectConfig">
+        <source xml:lang="en">File is not part of a JavaScript project Click [here]({0}) to learn more.</source>
+        <target state="translated">文件不属于 JavaScript 项目。点击[这里]({0})了解更多。</target>
+      </trans-unit>
       <trans-unit id="typescript.projectConfigNoWorkspace">
         <source xml:lang="en">Please open a folder in VS Code to use a TypeScript or JavaScript project</source>
         <target state="translated">请在 VS Code 中打开一个文件夹，以使用 TypeScript 或 JavaScript 项目</target>
@@ -509,21 +537,13 @@ See the [TypeScript documentation](https://code.visualstudio.com/docs/typescript
         <source xml:lang="en">Could not determine TypeScript or JavaScript project</source>
         <target state="translated">无法确定 TypeScript 或 JavaScript 项目</target>
       </trans-unit>
-      <trans-unit id="typescript.noTypeScriptProjectConfig">
-        <source xml:lang="en">File is not part of a TypeScript project. Click [here]({0}) to learn more.</source>
-        <target state="translated">文件不属于 TypeScript 项目。点击[这里]({0})了解更多。</target>
-      </trans-unit>
-      <trans-unit id="typescript.noJavaScriptProjectConfig">
-        <source xml:lang="en">File is not part of a JavaScript project Click [here]({0}) to learn more.</source>
-        <target state="translated">文件不属于 JavaScript 项目。点击[这里]({0})了解更多。</target>
-      </trans-unit>
-      <trans-unit id="typescript.configureTsconfigQuickPick">
-        <source xml:lang="en">Configure tsconfig.json</source>
-        <target state="translated">配置 tsconfig.json</target>
-      </trans-unit>
-      <trans-unit id="typescript.configureJsconfigQuickPick">
-        <source xml:lang="en">Configure jsconfig.json</source>
-        <target state="translated">配置 jsconfig.json</target>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/baseCodeLensProvider" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <body>
+      <trans-unit id="referenceErrorLabel">
+        <source xml:lang="en">Could not determine references</source>
+        <target state="translated">无法确定引用</target>
       </trans-unit>
     </body>
   </file>
@@ -562,6 +582,10 @@ See the [TypeScript documentation](https://code.visualstudio.com/docs/typescript
       <trans-unit id="ts-ignore">
         <source xml:lang="en">Suppresses @ts-check errors on the next line of a file.</source>
         <target state="translated">取消文件下一行的 @ts-check 错误提示。</target>
+      </trans-unit>
+      <trans-unit id="ts-expect-error">
+        <source xml:lang="en">Suppresses @ts-check errors on the next line of a file, expecting at least one to exist.</source>
+        <target state="translated">禁止在文件的下一行显示 @ts-check 错误，预计至少存在一个错误。</target>
       </trans-unit>
     </body>
   </file>
@@ -683,17 +707,21 @@ See the [TypeScript documentation](https://code.visualstudio.com/docs/typescript
         <source xml:lang="en">Could not open TS Server log file</source>
         <target state="translated">无法打开 TS 服务器日志文件</target>
       </trans-unit>
-      <trans-unit id="serverDiedAfterStart">
-        <source xml:lang="en">The TypeScript language service died 5 times right after it got started. The service will not be restarted.</source>
-        <target state="translated">TypeScript 语言服务在其启动后已中止 5 次。将不会重启该服务。</target>
-      </trans-unit>
       <trans-unit id="serverDiedReportIssue">
         <source xml:lang="en">Report Issue</source>
         <target state="translated">报告问题</target>
       </trans-unit>
+      <trans-unit id="serverDiedAfterStart">
+        <source xml:lang="en">The TypeScript language service died 5 times right after it got started. The service will not be restarted.</source>
+        <target state="translated">TypeScript 语言服务在其启动后已中止 5 次。将不会重启该服务。</target>
+      </trans-unit>
       <trans-unit id="serverDied">
         <source xml:lang="en">The TypeScript language service died unexpectedly 5 times in the last 5 Minutes.</source>
         <target state="translated">在过去 5 分钟内，TypeScript 语言服务意外中止了 5 次。</target>
+      </trans-unit>
+      <trans-unit id="serverDiedOnce">
+        <source xml:lang="en">The TypeScript language service died unexpectedly.</source>
+        <target state="translated">TypeScript 语言服务意外终止。</target>
       </trans-unit>
       <trans-unit id="serverLoading.progress">
         <source xml:lang="en">Initializing JS/TS language features</source>
@@ -709,8 +737,12 @@ See the [TypeScript documentation](https://code.visualstudio.com/docs/typescript
       </trans-unit>
     </body>
   </file>
-  <file original="extensions/typescript-language-features/dist/utils/versionPicker" source-language="en" target-language="zh-Hans" datatype="plaintext">
+  <file original="extensions/typescript-language-features/dist/utils/versionManager" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <body>
+      <trans-unit id="selectTsVersion">
+        <source xml:lang="en">Select the TypeScript version used for JavaScript and TypeScript language features</source>
+        <target state="translated">选择用于 JavaScript 和 TypeScript 语言功能的 TypeScript 版本</target>
+      </trans-unit>
       <trans-unit id="useVSCodeVersionOption">
         <source xml:lang="en">Use VS Code's Version</source>
         <target state="translated">使用 VS Code 的版本</target>
@@ -720,12 +752,8 @@ See the [TypeScript documentation](https://code.visualstudio.com/docs/typescript
         <target state="translated">使用工作区版本</target>
       </trans-unit>
       <trans-unit id="learnMore">
-        <source xml:lang="en">Learn More</source>
-        <target state="translated">了解详细信息</target>
-      </trans-unit>
-      <trans-unit id="selectTsVersion">
-        <source xml:lang="en">Select the TypeScript version used for JavaScript and TypeScript language features</source>
-        <target state="translated">选择用于 JavaScript 和 TypeScript 语言功能的 TypeScript 版本</target>
+        <source xml:lang="en">Learn more about managing TypeScript versions</source>
+        <target state="translated">了解有关管理 TypeScript 版本的更多信息</target>
       </trans-unit>
     </body>
   </file>
@@ -759,9 +787,33 @@ See the [TypeScript documentation](https://code.visualstudio.com/docs/typescript
   </file>
   <file original="extensions/typescript-language-features/dist/utils/versionStatus" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <body>
-      <trans-unit id="typescriptVersion">
-        <source xml:lang="en">TypeScript: Version</source>
-        <target state="translated">TypeScript: 版本</target>
+      <trans-unit id="projectQuickPick.placeholder">
+        <source xml:lang="en">TypeScript Project Info</source>
+        <target state="translated">TypeScript 项目信息</target>
+      </trans-unit>
+      <trans-unit id="projectQuickPick.version.label">
+        <source xml:lang="en">Select TypeScript Version...</source>
+        <target state="translated">选择 TypeScript 版本...</target>
+      </trans-unit>
+      <trans-unit id="projectQuickPick.project.create">
+        <source xml:lang="en">Create tsconfig</source>
+        <target state="translated">创建 tsconfig</target>
+      </trans-unit>
+      <trans-unit id="projectQuickPick.project.create.description">
+        <source xml:lang="en">This file is currently not part of a tsconfig/jsconfig project</source>
+        <target state="translated">此文件当前不是 tsconfig/jsconfig 项目的一部分</target>
+      </trans-unit>
+      <trans-unit id="projectQuickPick.version.goProjectConfig">
+        <source xml:lang="en">Open tsconfig</source>
+        <target state="translated">打开 tsconfig</target>
+      </trans-unit>
+      <trans-unit id="projectQuickPick.help">
+        <source xml:lang="en">TypeScript help</source>
+        <target state="translated">TypeScript帮助</target>
+      </trans-unit>
+      <trans-unit id="projectInfo.name">
+        <source xml:lang="en">TypeScript: Project Info</source>
+        <target state="translated">TypeScript：项目信息</target>
       </trans-unit>
     </body>
   </file>
@@ -805,7 +857,7 @@ See the [TypeScript documentation](https://code.visualstudio.com/docs/typescript
       </trans-unit>
     </body>
   </file>
-  <file original="extensions/typescript-language-features/dist/utils/projectStatus" source-language="en" target-language="zh-Hans" datatype="plaintext">
+  <file original="extensions/typescript-language-features/dist/utils/largeProjectStatus" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <body>
       <trans-unit id="statusExclude">
         <source xml:lang="en">TypeScript: Configure Excludes</source>

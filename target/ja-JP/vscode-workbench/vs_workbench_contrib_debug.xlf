@@ -8,34 +8,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/debugQuickOpen" source-language="en" target-language="ja" datatype="plaintext">
-    <body>
-      <trans-unit id="entryAriaLabel">
-        <source xml:lang="en">{0}, debug</source>
-        <target state="translated">{0}、デバッグ</target>
-      </trans-unit>
-      <trans-unit id="debugAriaLabel">
-        <source xml:lang="en">Type a name of a launch configuration to run.</source>
-        <target state="translated">実行する起動構成の名前を入力してください。</target>
-      </trans-unit>
-      <trans-unit id="addConfigTo">
-        <source xml:lang="en">Add Config ({0})...</source>
-        <target state="translated">構成 ({0}) の追加...</target>
-      </trans-unit>
-      <trans-unit id="addConfiguration">
-        <source xml:lang="en">Add Configuration...</source>
-        <target state="translated">構成の追加...</target>
-      </trans-unit>
-      <trans-unit id="noConfigurationsMatching">
-        <source xml:lang="en">No debug configurations matching</source>
-        <target state="translated">一致するデバッグ構成はありません</target>
-      </trans-unit>
-      <trans-unit id="noConfigurationsFound">
-        <source xml:lang="en">No debug configurations found. Please create a 'launch.json' file.</source>
-        <target state="translated">デバッグ構成が見つかりません。'launch.json' ファイルを作成してください。</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/browser/callStackEditorContribution" source-language="en" target-language="ja" datatype="plaintext">
     <body>
       <trans-unit id="topStackFrameLineHighlight">
@@ -212,7 +184,7 @@
     <body>
       <trans-unit id="toggleDebugViewlet">
         <source xml:lang="en">Show Run and Debug</source>
-        <target state="new">Show Run and Debug</target>
+        <target state="translated">実行とデバッグの表示</target>
       </trans-unit>
       <trans-unit id="run">
         <source xml:lang="en">Run</source>
@@ -272,17 +244,13 @@
         <source xml:lang="en">Inline Breakpoint</source>
         <target state="translated">インライン ブレークポイント</target>
       </trans-unit>
-      <trans-unit id="debugCommands">
-        <source xml:lang="en">Debug Configuration</source>
-        <target state="translated">デバッグ構成</target>
-      </trans-unit>
       <trans-unit id="startDebugPlaceholder">
         <source xml:lang="en">Type the name of a launch configuration to run.</source>
-        <target state="new">Type the name of a launch configuration to run.</target>
+        <target state="translated">実行する起動構成の名前を入力します。</target>
       </trans-unit>
-      <trans-unit id="startDebugHelp">
-        <source xml:lang="en">Start Debug Configurations</source>
-        <target state="new">Start Debug Configurations</target>
+      <trans-unit id="startDebuggingHelp">
+        <source xml:lang="en">Start Debugging</source>
+        <target state="translated">デバッグの開始</target>
       </trans-unit>
       <trans-unit id="debugConfigurationTitle">
         <source xml:lang="en">Debug</source>
@@ -592,18 +560,22 @@
       <trans-unit id="openAFileWhichCanBeDebugged">
         <source xml:lang="en">[Open a file](command:{0}) which can be debugged or run.</source>
         <target state="translated">デバッグまたは実行可能な[ファイルを開きます](command:{0})。</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
       </trans-unit>
       <trans-unit id="runAndDebugAction">
         <source xml:lang="en">[Run and Debug{0}](command:{1})</source>
         <target state="translated">[実行とデバッグ{0}](command:{1})</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
       </trans-unit>
       <trans-unit id="customizeRunAndDebug">
         <source xml:lang="en">To customize Run and Debug [create a launch.json file](command:{0}).</source>
         <target state="translated">実行とデバッグをカスタマイズするには、[launch.json ファイルを作成します](command:{0})。</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
       </trans-unit>
       <trans-unit id="customizeRunAndDebugOpenFolder">
         <source xml:lang="en">To customize Run and Debug, [open a folder](command:{0}) and create a launch.json file.</source>
         <target state="translated">実行とデバッグをカスタマイズするには、[フォルダーを開いた](command:{0})後、launch.json ファイルを作成します。</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
       </trans-unit>
     </body>
   </file>
@@ -628,6 +600,26 @@
       <trans-unit id="debugSession">
         <source xml:lang="en">Debug Session</source>
         <target state="translated">デバッグ セッション</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/exceptionWidget" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="debugExceptionWidgetBorder">
+        <source xml:lang="en">Exception widget border color.</source>
+        <target state="translated">例外ウィジェットの境界線の色。</target>
+      </trans-unit>
+      <trans-unit id="debugExceptionWidgetBackground">
+        <source xml:lang="en">Exception widget background color.</source>
+        <target state="translated">例外ウィジェットの背景色。</target>
+      </trans-unit>
+      <trans-unit id="exceptionThrownWithId">
+        <source xml:lang="en">Exception has occurred: {0}</source>
+        <target state="translated">例外が発生しました: {0}</target>
+      </trans-unit>
+      <trans-unit id="exceptionThrown">
+        <source xml:lang="en">Exception has occurred.</source>
+        <target state="translated">例外が発生しました</target>
       </trans-unit>
     </body>
   </file>
@@ -680,6 +672,78 @@
       <trans-unit id="debugIcon.stepBackForeground">
         <source xml:lang="en">Debug toolbar icon for step back.</source>
         <target state="translated">ステップ バックのデバッグ ツール バー アイコン。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/statusbarColorProvider" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="statusBarDebuggingBackground">
+        <source xml:lang="en">Status bar background color when a program is being debugged. The status bar is shown in the bottom of the window</source>
+        <target state="translated">プログラムをデバッグしているときのステータス バーの背景色。ステータス バーはウィンドウの下部に表示されます</target>
+      </trans-unit>
+      <trans-unit id="statusBarDebuggingForeground">
+        <source xml:lang="en">Status bar foreground color when a program is being debugged. The status bar is shown in the bottom of the window</source>
+        <target state="translated">プログラムをデバッグしているときのステータス バーの前景色。ステータス バーはウィンドウの下部に表示されます</target>
+      </trans-unit>
+      <trans-unit id="statusBarDebuggingBorder">
+        <source xml:lang="en">Status bar border color separating to the sidebar and editor when a program is being debugged. The status bar is shown in the bottom of the window</source>
+        <target state="translated">プログラムをデバッグしているときのサイドバーおよびエディターを隔てるステータス バーの境界線の色。ステータス バーはウィンドウの下部に表示されます</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/common/debugContentProvider" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="unable">
+        <source xml:lang="en">Unable to resolve the resource without a debug session</source>
+        <target state="translated">デバッグ セッションなしでリソースを解決できません</target>
+      </trans-unit>
+      <trans-unit id="canNotResolveSourceWithError">
+        <source xml:lang="en">Could not load source '{0}': {1}.</source>
+        <target state="translated">ソース '{0}' を読み込めませんでした: {1}。</target>
+      </trans-unit>
+      <trans-unit id="canNotResolveSource">
+        <source xml:lang="en">Could not load source '{0}'.</source>
+        <target state="translated">ソース '{0}' を読み込めませんでした。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/debugStatus" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="status.debug">
+        <source xml:lang="en">Debug</source>
+        <target state="translated">デバッグ</target>
+      </trans-unit>
+      <trans-unit id="selectAndStartDebug">
+        <source xml:lang="en">Select and start debug configuration</source>
+        <target state="translated">選択してデバッグ構成を開始</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/debugQuickAccess" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="customizeLaunchConfig">
+        <source xml:lang="en">Configure Launch Configuration</source>
+        <target state="translated">起動構成の設定</target>
+      </trans-unit>
+      <trans-unit id="addConfigTo">
+        <source xml:lang="en">Add Config ({0})...</source>
+        <target state="translated">構成 ({0}) の追加...</target>
+      </trans-unit>
+      <trans-unit id="addConfiguration">
+        <source xml:lang="en">Add Configuration...</source>
+        <target state="translated">構成の追加...</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/debugHover" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="treeAriaLabel">
+        <source xml:lang="en">Debug Hover</source>
+        <target state="translated">デバッグ ホバー</target>
+      </trans-unit>
+      <trans-unit id="variableAriaLabel">
+        <source xml:lang="en">{0} value {1}, variables, debug</source>
+        <target state="translated">{0} 値 {1}、変数、デバッグ</target>
       </trans-unit>
     </body>
   </file>
@@ -763,102 +827,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/exceptionWidget" source-language="en" target-language="ja" datatype="plaintext">
-    <body>
-      <trans-unit id="debugExceptionWidgetBorder">
-        <source xml:lang="en">Exception widget border color.</source>
-        <target state="translated">例外ウィジェットの境界線の色。</target>
-      </trans-unit>
-      <trans-unit id="debugExceptionWidgetBackground">
-        <source xml:lang="en">Exception widget background color.</source>
-        <target state="translated">例外ウィジェットの背景色。</target>
-      </trans-unit>
-      <trans-unit id="exceptionThrownWithId">
-        <source xml:lang="en">Exception has occurred: {0}</source>
-        <target state="translated">例外が発生しました: {0}</target>
-      </trans-unit>
-      <trans-unit id="exceptionThrown">
-        <source xml:lang="en">Exception has occurred.</source>
-        <target state="translated">例外が発生しました</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/statusbarColorProvider" source-language="en" target-language="ja" datatype="plaintext">
-    <body>
-      <trans-unit id="statusBarDebuggingBackground">
-        <source xml:lang="en">Status bar background color when a program is being debugged. The status bar is shown in the bottom of the window</source>
-        <target state="translated">プログラムをデバッグしているときのステータス バーの背景色。ステータス バーはウィンドウの下部に表示されます</target>
-      </trans-unit>
-      <trans-unit id="statusBarDebuggingForeground">
-        <source xml:lang="en">Status bar foreground color when a program is being debugged. The status bar is shown in the bottom of the window</source>
-        <target state="translated">プログラムをデバッグしているときのステータス バーの前景色。ステータス バーはウィンドウの下部に表示されます</target>
-      </trans-unit>
-      <trans-unit id="statusBarDebuggingBorder">
-        <source xml:lang="en">Status bar border color separating to the sidebar and editor when a program is being debugged. The status bar is shown in the bottom of the window</source>
-        <target state="translated">プログラムをデバッグしているときのサイドバーおよびエディターを隔てるステータス バーの境界線の色。ステータス バーはウィンドウの下部に表示されます</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/debugStatus" source-language="en" target-language="ja" datatype="plaintext">
-    <body>
-      <trans-unit id="status.debug">
-        <source xml:lang="en">Debug</source>
-        <target state="translated">デバッグ</target>
-      </trans-unit>
-      <trans-unit id="selectAndStartDebug">
-        <source xml:lang="en">Select and start debug configuration</source>
-        <target state="translated">選択してデバッグ構成を開始</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/common/debugContentProvider" source-language="en" target-language="ja" datatype="plaintext">
-    <body>
-      <trans-unit id="unable">
-        <source xml:lang="en">Unable to resolve the resource without a debug session</source>
-        <target state="translated">デバッグ セッションなしでリソースを解決できません</target>
-      </trans-unit>
-      <trans-unit id="canNotResolveSourceWithError">
-        <source xml:lang="en">Could not load source '{0}': {1}.</source>
-        <target state="translated">ソース '{0}' を読み込めませんでした: {1}。</target>
-      </trans-unit>
-      <trans-unit id="canNotResolveSource">
-        <source xml:lang="en">Could not load source '{0}'.</source>
-        <target state="translated">ソース '{0}' を読み込めませんでした。</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/debugQuickAccess" source-language="en" target-language="ja" datatype="plaintext">
-    <body>
-      <trans-unit id="entryAriaLabel">
-        <source xml:lang="en">{0}, debug</source>
-        <target state="translated">{0}、デバッグ</target>
-      </trans-unit>
-      <trans-unit id="customizeTask">
-        <source xml:lang="en">Configure Launch Configuration</source>
-        <target state="new">Configure Launch Configuration</target>
-      </trans-unit>
-      <trans-unit id="addConfigTo">
-        <source xml:lang="en">Add Config ({0})...</source>
-        <target state="translated">構成 ({0}) の追加...</target>
-      </trans-unit>
-      <trans-unit id="addConfiguration">
-        <source xml:lang="en">Add Configuration...</source>
-        <target state="translated">構成の追加...</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/debugHover" source-language="en" target-language="ja" datatype="plaintext">
-    <body>
-      <trans-unit id="treeAriaLabel">
-        <source xml:lang="en">Debug Hover</source>
-        <target state="translated">デバッグ ホバー</target>
-      </trans-unit>
-      <trans-unit id="variableAriaLabel">
-        <source xml:lang="en">{0} value {1}, variables, debug</source>
-        <target state="translated">{0} 値 {1}、変数、デバッグ</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/browser/debugEditorActions" source-language="en" target-language="ja" datatype="plaintext">
     <body>
       <trans-unit id="toggleBreakpointAction">
@@ -896,42 +864,6 @@
       <trans-unit id="goToPreviousBreakpoint">
         <source xml:lang="en">Debug: Go To Previous Breakpoint</source>
         <target state="translated">デバッグ: 前のブレークポイントへ移動</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/variablesView" source-language="en" target-language="ja" datatype="plaintext">
-    <body>
-      <trans-unit id="variablesAriaTreeLabel">
-        <source xml:lang="en">Debug Variables</source>
-        <target state="translated">変数のデバッグ</target>
-      </trans-unit>
-      <trans-unit id="setValue">
-        <source xml:lang="en">Set Value</source>
-        <target state="translated">値の設定</target>
-      </trans-unit>
-      <trans-unit id="copyAsExpression">
-        <source xml:lang="en">Copy as Expression</source>
-        <target state="translated">式としてコピー</target>
-      </trans-unit>
-      <trans-unit id="addToWatchExpressions">
-        <source xml:lang="en">Add to Watch</source>
-        <target state="translated">ウォッチに追加</target>
-      </trans-unit>
-      <trans-unit id="breakWhenValueChanges">
-        <source xml:lang="en">Break When Value Changes</source>
-        <target state="translated">値が変更されたときに中断する</target>
-      </trans-unit>
-      <trans-unit id="variableValueAriaLabel">
-        <source xml:lang="en">Type new variable value</source>
-        <target state="translated">新しい変数値を入力する</target>
-      </trans-unit>
-      <trans-unit id="variableScopeAriaLabel">
-        <source xml:lang="en">Scope {0}, variables, debug</source>
-        <target state="translated">範囲 {0}、変数、デバッグ</target>
-      </trans-unit>
-      <trans-unit id="variableAriaLabel">
-        <source xml:lang="en">{0} value {1}, variables, debug</source>
-        <target state="translated">{0} 値 {1}、変数、デバッグ</target>
       </trans-unit>
     </body>
   </file>
@@ -1021,6 +953,42 @@
       <trans-unit id="watchVariableAriaLabel">
         <source xml:lang="en">{0} value {1}, watch, debug</source>
         <target state="translated">{0} 値 {1}、ウォッチ、デバッグ</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/variablesView" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="variablesAriaTreeLabel">
+        <source xml:lang="en">Debug Variables</source>
+        <target state="translated">変数のデバッグ</target>
+      </trans-unit>
+      <trans-unit id="setValue">
+        <source xml:lang="en">Set Value</source>
+        <target state="translated">値の設定</target>
+      </trans-unit>
+      <trans-unit id="copyAsExpression">
+        <source xml:lang="en">Copy as Expression</source>
+        <target state="translated">式としてコピー</target>
+      </trans-unit>
+      <trans-unit id="addToWatchExpressions">
+        <source xml:lang="en">Add to Watch</source>
+        <target state="translated">ウォッチに追加</target>
+      </trans-unit>
+      <trans-unit id="breakWhenValueChanges">
+        <source xml:lang="en">Break When Value Changes</source>
+        <target state="translated">値が変更されたときに中断する</target>
+      </trans-unit>
+      <trans-unit id="variableValueAriaLabel">
+        <source xml:lang="en">Type new variable value</source>
+        <target state="translated">新しい変数値を入力する</target>
+      </trans-unit>
+      <trans-unit id="variableScopeAriaLabel">
+        <source xml:lang="en">Scope {0}, variables, debug</source>
+        <target state="translated">範囲 {0}、変数、デバッグ</target>
+      </trans-unit>
+      <trans-unit id="variableAriaLabel">
+        <source xml:lang="en">{0} value {1}, variables, debug</source>
+        <target state="translated">{0} 値 {1}、変数、デバッグ</target>
       </trans-unit>
     </body>
   </file>
@@ -1515,6 +1483,10 @@
   </file>
   <file original="src/vs/workbench/contrib/debug/browser/debugSession" source-language="en" target-language="ja" datatype="plaintext">
     <body>
+      <trans-unit id="noDebugAdapter">
+        <source xml:lang="en">No debug adapter, can not send '{0}'</source>
+        <target state="translated">デバッグ アダプターが無いため、'{0}' を送信できません</target>
+      </trans-unit>
       <trans-unit id="sessionNotReadyForBreakpoints">
         <source xml:lang="en">Session is not ready for breakpoints</source>
         <target state="translated">ブレークポイント用のセッションの準備が整っていません</target>
@@ -1526,6 +1498,86 @@
       <trans-unit id="debuggingStopped">
         <source xml:lang="en">Debugging stopped.</source>
         <target state="translated">デバッグは停止されました。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/common/debugger" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="cannot.find.da">
+        <source xml:lang="en">Cannot find debug adapter for type '{0}'.</source>
+        <target state="translated">型 '{0}' のデバッグ アダプターを見つけることができません。</target>
+      </trans-unit>
+      <trans-unit id="launch.config.comment1">
+        <source xml:lang="en">Use IntelliSense to learn about possible attributes.</source>
+        <target state="translated">IntelliSense を使用して利用可能な属性を学べます。</target>
+      </trans-unit>
+      <trans-unit id="launch.config.comment2">
+        <source xml:lang="en">Hover to view descriptions of existing attributes.</source>
+        <target state="translated">既存の属性の説明をホバーして表示します。</target>
+      </trans-unit>
+      <trans-unit id="launch.config.comment3">
+        <source xml:lang="en">For more information, visit: {0}</source>
+        <target state="translated">詳細情報は次を確認してください: {0}</target>
+      </trans-unit>
+      <trans-unit id="debugType">
+        <source xml:lang="en">Type of configuration.</source>
+        <target state="translated">構成の種類。</target>
+      </trans-unit>
+      <trans-unit id="debugTypeNotRecognised">
+        <source xml:lang="en">The debug type is not recognized. Make sure that you have a corresponding debug extension installed and that it is enabled.</source>
+        <target state="translated">デバッグの種類は認識されませんでした。対応するデバッグの拡張機能がインストールされており、有効になっていることを確認してください。</target>
+      </trans-unit>
+      <trans-unit id="node2NotSupported">
+        <source xml:lang="en">"node2" is no longer supported, use "node" instead and set the "protocol" attribute to "inspector".</source>
+        <target state="translated">"node2" はサポートされていません。代わりに "node" を使用し、"protocol" 属性を "inspector" に設定してください。</target>
+      </trans-unit>
+      <trans-unit id="debugName">
+        <source xml:lang="en">Name of configuration; appears in the launch configuration dropdown menu.</source>
+        <target state="translated">構成の名前。起動構成ドロップダウン メニューに表示されます。</target>
+      </trans-unit>
+      <trans-unit id="debugRequest">
+        <source xml:lang="en">Request type of configuration. Can be "launch" or "attach".</source>
+        <target state="translated">構成の要求の種類。"launch" または "attach" です。</target>
+      </trans-unit>
+      <trans-unit id="debugServer">
+        <source xml:lang="en">For debug extension development only: if a port is specified VS Code tries to connect to a debug adapter running in server mode</source>
+        <target state="translated">デバッグ拡張機能の開発のみ。ポートが指定の VS Code の場合、サーバー モードで実行中のデバッグ アダプターへの接続が試行されます。</target>
+      </trans-unit>
+      <trans-unit id="debugPrelaunchTask">
+        <source xml:lang="en">Task to run before debug session starts.</source>
+        <target state="translated">デバッグ セッションの開始前に実行するタスク。</target>
+      </trans-unit>
+      <trans-unit id="debugPostDebugTask">
+        <source xml:lang="en">Task to run after debug session ends.</source>
+        <target state="translated">デバッグ セッションの終了前に実行するタスク。</target>
+      </trans-unit>
+      <trans-unit id="debugWindowsConfiguration">
+        <source xml:lang="en">Windows specific launch configuration attributes.</source>
+        <target state="translated">Windows 固有の起動構成の属性。</target>
+      </trans-unit>
+      <trans-unit id="debugOSXConfiguration">
+        <source xml:lang="en">OS X specific launch configuration attributes.</source>
+        <target state="translated">OS X 固有の起動構成の属性。</target>
+      </trans-unit>
+      <trans-unit id="debugLinuxConfiguration">
+        <source xml:lang="en">Linux specific launch configuration attributes.</source>
+        <target state="translated">Linux 固有の起動構成の属性。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/rawDebugSession" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="noDebugAdapterStart">
+        <source xml:lang="en">No debug adapter, can not start debug session.</source>
+        <target state="translated">デバッグ アダプターが無いため、デバッグ セッションを開始できません。</target>
+      </trans-unit>
+      <trans-unit id="noDebugAdapter">
+        <source xml:lang="en">No debug adapter found. Can not send '{0}'.</source>
+        <target state="translated">デバッグ アダプターが見つかりません。'{0}' を送信できません。</target>
+      </trans-unit>
+      <trans-unit id="moreInfo">
+        <source xml:lang="en">More Info</source>
+        <target state="translated">詳細情報</target>
       </trans-unit>
     </body>
   </file>
@@ -1662,82 +1714,6 @@
       <trans-unit id="compoundPrelaunchTask">
         <source xml:lang="en">Task to run before any of the compound configurations start.</source>
         <target state="translated">複合構成の開始前に実行するタスク。</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/common/debugger" source-language="en" target-language="ja" datatype="plaintext">
-    <body>
-      <trans-unit id="cannot.find.da">
-        <source xml:lang="en">Cannot find debug adapter for type '{0}'.</source>
-        <target state="translated">型 '{0}' のデバッグ アダプターを見つけることができません。</target>
-      </trans-unit>
-      <trans-unit id="launch.config.comment1">
-        <source xml:lang="en">Use IntelliSense to learn about possible attributes.</source>
-        <target state="translated">IntelliSense を使用して利用可能な属性を学べます。</target>
-      </trans-unit>
-      <trans-unit id="launch.config.comment2">
-        <source xml:lang="en">Hover to view descriptions of existing attributes.</source>
-        <target state="translated">既存の属性の説明をホバーして表示します。</target>
-      </trans-unit>
-      <trans-unit id="launch.config.comment3">
-        <source xml:lang="en">For more information, visit: {0}</source>
-        <target state="translated">詳細情報は次を確認してください: {0}</target>
-      </trans-unit>
-      <trans-unit id="debugType">
-        <source xml:lang="en">Type of configuration.</source>
-        <target state="translated">構成の種類。</target>
-      </trans-unit>
-      <trans-unit id="debugTypeNotRecognised">
-        <source xml:lang="en">The debug type is not recognized. Make sure that you have a corresponding debug extension installed and that it is enabled.</source>
-        <target state="translated">デバッグの種類は認識されませんでした。対応するデバッグの拡張機能がインストールされており、有効になっていることを確認してください。</target>
-      </trans-unit>
-      <trans-unit id="node2NotSupported">
-        <source xml:lang="en">"node2" is no longer supported, use "node" instead and set the "protocol" attribute to "inspector".</source>
-        <target state="translated">"node2" はサポートされていません。代わりに "node" を使用し、"protocol" 属性を "inspector" に設定してください。</target>
-      </trans-unit>
-      <trans-unit id="debugName">
-        <source xml:lang="en">Name of configuration; appears in the launch configuration dropdown menu.</source>
-        <target state="translated">構成の名前。起動構成ドロップダウン メニューに表示されます。</target>
-      </trans-unit>
-      <trans-unit id="debugRequest">
-        <source xml:lang="en">Request type of configuration. Can be "launch" or "attach".</source>
-        <target state="translated">構成の要求の種類。"launch" または "attach" です。</target>
-      </trans-unit>
-      <trans-unit id="debugServer">
-        <source xml:lang="en">For debug extension development only: if a port is specified VS Code tries to connect to a debug adapter running in server mode</source>
-        <target state="translated">デバッグ拡張機能の開発のみ。ポートが指定の VS Code の場合、サーバー モードで実行中のデバッグ アダプターへの接続が試行されます。</target>
-      </trans-unit>
-      <trans-unit id="debugPrelaunchTask">
-        <source xml:lang="en">Task to run before debug session starts.</source>
-        <target state="translated">デバッグ セッションの開始前に実行するタスク。</target>
-      </trans-unit>
-      <trans-unit id="debugPostDebugTask">
-        <source xml:lang="en">Task to run after debug session ends.</source>
-        <target state="translated">デバッグ セッションの終了前に実行するタスク。</target>
-      </trans-unit>
-      <trans-unit id="debugWindowsConfiguration">
-        <source xml:lang="en">Windows specific launch configuration attributes.</source>
-        <target state="translated">Windows 固有の起動構成の属性。</target>
-      </trans-unit>
-      <trans-unit id="debugOSXConfiguration">
-        <source xml:lang="en">OS X specific launch configuration attributes.</source>
-        <target state="translated">OS X 固有の起動構成の属性。</target>
-      </trans-unit>
-      <trans-unit id="debugLinuxConfiguration">
-        <source xml:lang="en">Linux specific launch configuration attributes.</source>
-        <target state="translated">Linux 固有の起動構成の属性。</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/rawDebugSession" source-language="en" target-language="ja" datatype="plaintext">
-    <body>
-      <trans-unit id="noDebugAdapter">
-        <source xml:lang="en">No debug adapter found. Can not send '{0}'.</source>
-        <target state="translated">デバッグ アダプターが見つかりません。'{0}' を送信できません。</target>
-      </trans-unit>
-      <trans-unit id="moreInfo">
-        <source xml:lang="en">More Info</source>
-        <target state="translated">詳細情報</target>
       </trans-unit>
     </body>
   </file>

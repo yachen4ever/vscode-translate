@@ -8,7 +8,7 @@
       </trans-unit>
       <trans-unit id="attach.node.process">
         <source xml:lang="en">Attach to Node Process (preview)</source>
-        <target state="new">Attach to Node Process (preview)</target>
+        <target state="translated">Anexar ao processo Node (prévia)</target>
       </trans-unit>
       <trans-unit id="browser.address.description">
         <source xml:lang="en">TCP/IP address of debug port</source>
@@ -16,7 +16,7 @@
       </trans-unit>
       <trans-unit id="browser.baseUrl.description">
         <source xml:lang="en">Base URL to resolve paths baseUrl. baseURL is trimmed when mapping URLs to the files on disk. Defaults to the launch URL domain.</source>
-        <target state="new">Base URL to resolve paths baseUrl. baseURL is trimmed when mapping URLs to the files on disk. Defaults to the launch URL domain.</target>
+        <target state="translated">URL base para resolver os caminhos baseUrl. baseURL é aparado ao mapear URLs para os arquivos no disco. O padrão é o domínio da URL de inicialização.</target>
       </trans-unit>
       <trans-unit id="browser.cwd.description">
         <source xml:lang="en">Optional working directory for the runtime executable.</source>
@@ -28,11 +28,15 @@
       </trans-unit>
       <trans-unit id="browser.env.description">
         <source xml:lang="en">Optional dictionary of environment key/value pairs for the browser.</source>
-        <target state="new">Optional dictionary of environment key/value pairs for the browser.</target>
+        <target state="translated">Dicionário opcional de pares de chaves/valor de ambiente para o navegador.</target>
       </trans-unit>
       <trans-unit id="browser.file.description">
         <source xml:lang="en">A local html file to open in the browser</source>
         <target state="translated">Um arquivo HTML local para abrir no navegador</target>
+      </trans-unit>
+      <trans-unit id="browser.includeDefaultArgs.description">
+        <source xml:lang="en">Whether default browser launch arguments (to disable features that may make debugging harder) will be included in the launch.</source>
+        <target state="new">Whether default browser launch arguments (to disable features that may make debugging harder) will be included in the launch.</target>
       </trans-unit>
       <trans-unit id="browser.inspectUri.description">
         <source xml:lang="en">Format to use to rewrite the inspectUri: It's a template string that interpolates keys in `{curlyBraces}`. Available keys are:
@@ -50,11 +54,11 @@
       </trans-unit>
       <trans-unit id="browser.pathMapping.description">
         <source xml:lang="en">A mapping of URLs/paths to local folders, to resolve scripts in the Browser to scripts on disk</source>
-        <target state="new">A mapping of URLs/paths to local folders, to resolve scripts in the Browser to scripts on disk</target>
+        <target state="translated">Um mapeamento de URLs/caminhos para pastas locais, para resolver scripts no Navegador para scripts em disco</target>
       </trans-unit>
       <trans-unit id="browser.port.description">
         <source xml:lang="en">Port to use for remote debugging the browser.</source>
-        <target state="new">Port to use for remote debugging the browser.</target>
+        <target state="translated">Porta para usar para depuração remota do navegador.</target>
       </trans-unit>
       <trans-unit id="browser.runtimeArgs.description">
         <source xml:lang="en">Optional arguments passed to the runtime executable.</source>
@@ -124,9 +128,17 @@
         <source xml:lang="en">Chrome: Launch</source>
         <target state="translated">Chrome: Iniciar</target>
       </trans-unit>
+      <trans-unit id="configuration.automaticallyTunnelRemoteServer">
+        <source xml:lang="en">When debugging a remote web app, configures whether to automatically tunnel the remote server to your local machine.</source>
+        <target state="new">When debugging a remote web app, configures whether to automatically tunnel the remote server to your local machine.</target>
+      </trans-unit>
+      <trans-unit id="configuration.debugByLinkOptions">
+        <source xml:lang="en">Options used when debugging open links clicked from inside the debug terminal. Can be set to "false" to disable this behavior.</source>
+        <target state="new">Options used when debugging open links clicked from inside the debug terminal. Can be set to "false" to disable this behavior.</target>
+      </trans-unit>
       <trans-unit id="configuration.npmScriptLensLocation">
         <source xml:lang="en">Where a "Run" and "Debug" code lens should be shown in your npm scripts. It may be on "all", scripts, on "top" of the script section, or "never".</source>
-        <target state="new">Where a "Run" and "Debug" code lens should be shown in your npm scripts. It may be on "all", scripts, on "top" of the script section, or "never".</target>
+        <target state="translated">Onde uma lente de código "Executar" e "Depurar" deve ser mostrada nos seus scripts npm. Pode estar em "todos" os scripts, na "parte superior" da seção de scripts ou "nunca".</target>
       </trans-unit>
       <trans-unit id="configuration.suggestPrettyPrinting">
         <source xml:lang="en">Whether to suggest pretty printing JavaScript code that looks minified when you step into it.</source>
@@ -175,6 +187,14 @@
       <trans-unit id="debug.terminal.snippet.label">
         <source xml:lang="en">Run "npm start" in a debug terminal</source>
         <target state="translated">Executar "npm start" em um terminal de depuração</target>
+      </trans-unit>
+      <trans-unit id="debug.terminal.welcome">
+        <source xml:lang="en">[Node.js Debug Terminal](command:extension.pwa-node-debug.createDebuggerTerminal)
+
+You can use the Node.js Debug Terminal to instantly debug JavaScript you run from the command line.</source>
+        <target state="new">[Node.js Debug Terminal](command:extension.pwa-node-debug.createDebuggerTerminal)
+
+You can use the Node.js Debug Terminal to instantly debug JavaScript you run from the command line.</target>
       </trans-unit>
       <trans-unit id="edge.attach.description">
         <source xml:lang="en">Attach to an instance of Edge already in debug mode</source>
@@ -250,7 +270,7 @@
       </trans-unit>
       <trans-unit id="longPredictionWarning.open">
         <source xml:lang="en">Open launch.json</source>
-        <target state="new">Open launch.json</target>
+        <target state="translated">Abrir launch.json</target>
       </trans-unit>
       <trans-unit id="node.address.description">
         <source xml:lang="en">TCP/IP address of process to be debugged. Default is 'localhost'.</source>
@@ -382,7 +402,7 @@
       </trans-unit>
       <trans-unit id="node.pauseForSourceMap.description">
         <source xml:lang="en">Whether to wait for source maps to load for each incoming script. This has a performance overhead, and might be safely disabled when running off of disk, so long as `rootPath` is not disabled.</source>
-        <target state="new">Whether to wait for source maps to load for each incoming script. This has a performance overhead, and might be safely disabled when running off of disk, so long as `rootPath` is not disabled.</target>
+        <target state="translated">Se é necessário aguardar o carregamento dos mapas de origem para cada script recebido. Isso tem uma sobrecarga de desempenho e pode ser desativado com segurança ao ficar sem disco, desde que o `rootPath` não esteja desativado.</target>
       </trans-unit>
       <trans-unit id="node.port.description">
         <source xml:lang="en">Debug port to attach to. Default is 5858.</source>
@@ -508,6 +528,14 @@
         <source xml:lang="en">Pretty print for debugging</source>
         <target state="translated">Impressão bonita para depuração</target>
       </trans-unit>
+      <trans-unit id="profile.start">
+        <source xml:lang="en">Take Performance Profile</source>
+        <target state="new">Take Performance Profile</target>
+      </trans-unit>
+      <trans-unit id="profile.stop">
+        <source xml:lang="en">Stop Performance Profile</source>
+        <target state="new">Stop Performance Profile</target>
+      </trans-unit>
       <trans-unit id="remove.browser.breakpoint">
         <source xml:lang="en">Remove Browser Breakpoint</source>
         <target state="translated">Remover ponto de interrupção do navegador</target>
@@ -550,7 +578,11 @@
       </trans-unit>
       <trans-unit id="trace.logFile.description">
         <source xml:lang="en">Configures where on disk logs are written.</source>
-        <target state="new">Configures where on disk logs are written.</target>
+        <target state="translated">Configura onde os logs são gravados no disco.</target>
+      </trans-unit>
+      <trans-unit id="trace.stdio.description">
+        <source xml:lang="en">Whether to return trace data from the launched application or browser.</source>
+        <target state="new">Whether to return trace data from the launched application or browser.</target>
       </trans-unit>
       <trans-unit id="trace.tags.description">
         <source xml:lang="en">Configures what types of logs are recorded.</source>

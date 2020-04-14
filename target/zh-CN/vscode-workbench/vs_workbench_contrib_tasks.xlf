@@ -168,7 +168,11 @@ The task '{0}' was terminated per user request.</source>
         <source xml:lang="en">Open User Tasks</source>
         <target state="translated">打开用户任务</target>
       </trans-unit>
-      <trans-unit id="quickOpen.task">
+      <trans-unit id="tasksQuickAccessPlaceholder">
+        <source xml:lang="en">Type the name of a task to run.</source>
+        <target state="translated">键入要运行的任务的名称。</target>
+      </trans-unit>
+      <trans-unit id="tasksQuickAccessHelp">
         <source xml:lang="en">Run Task</source>
         <target state="translated">运行任务</target>
       </trans-unit>
@@ -226,22 +230,6 @@ The task '{0}' was terminated per user request.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/taskQuickOpen" source-language="en" target-language="zh-Hans" datatype="plaintext">
-    <body>
-      <trans-unit id="tasksAriaLabel">
-        <source xml:lang="en">Type the name of a task to run</source>
-        <target state="translated">键入要运行的任务的名称</target>
-      </trans-unit>
-      <trans-unit id="noTasksMatching">
-        <source xml:lang="en">No tasks matching</source>
-        <target state="translated">没有匹配的任务</target>
-      </trans-unit>
-      <trans-unit id="noTasksFound">
-        <source xml:lang="en">No tasks found</source>
-        <target state="translated">找不到任务</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/tasks/common/jsonSchema_v1" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <body>
       <trans-unit id="JsonSchema.version.deprecated">
@@ -275,6 +263,14 @@ The task '{0}' was terminated per user request.</source>
       <trans-unit id="JsonSchema.shell">
         <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
         <target state="translated">指定命令是 shell 命令还是外部程序。如果省略，默认值是 false。</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/tasksQuickAccess" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <body>
+      <trans-unit id="TaskService.pickRunTask">
+        <source xml:lang="en">Select the task to run</source>
+        <target state="translated">选择要运行的任务</target>
       </trans-unit>
     </body>
   </file>
@@ -327,30 +323,6 @@ The task '{0}' was terminated per user request.</source>
       <trans-unit id="workbench.action.tasks.disallowAutomaticTasks">
         <source xml:lang="en">Disallow Automatic Tasks in Folder</source>
         <target state="translated">禁止文件夹中的自动任务</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/quickOpen" source-language="en" target-language="zh-Hans" datatype="plaintext">
-    <body>
-      <trans-unit id="entryAriaLabel">
-        <source xml:lang="en">{0}, tasks</source>
-        <target state="translated">{0}，任务</target>
-      </trans-unit>
-      <trans-unit id="recentlyUsed">
-        <source xml:lang="en">recently used tasks</source>
-        <target state="translated">最近使用的任务</target>
-      </trans-unit>
-      <trans-unit id="configured">
-        <source xml:lang="en">configured tasks</source>
-        <target state="translated">已配置的任务</target>
-      </trans-unit>
-      <trans-unit id="detected">
-        <source xml:lang="en">detected tasks</source>
-        <target state="translated">检测到的任务</target>
-      </trans-unit>
-      <trans-unit id="customizeTask">
-        <source xml:lang="en">Configure Task</source>
-        <target state="translated">配置任务</target>
       </trans-unit>
     </body>
   </file>
@@ -864,6 +836,38 @@ The task '{0}' was terminated per user request.</source>
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/taskQuickPick" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <body>
+      <trans-unit id="taskQuickPick.showAll">
+        <source xml:lang="en">Show All Tasks...</source>
+        <target state="translated">显示所有任务...</target>
+      </trans-unit>
+      <trans-unit id="configureTask">
+        <source xml:lang="en">Configure Task</source>
+        <target state="translated">配置任务</target>
+      </trans-unit>
+      <trans-unit id="contributedTasks">
+        <source xml:lang="en">contributed</source>
+        <target state="translated">贡献</target>
+      </trans-unit>
+      <trans-unit id="recentlyUsed">
+        <source xml:lang="en">recently used</source>
+        <target state="translated">最近使用</target>
+      </trans-unit>
+      <trans-unit id="configured">
+        <source xml:lang="en">configured</source>
+        <target state="translated">已配置</target>
+      </trans-unit>
+      <trans-unit id="TaskQuickPick.goBack">
+        <source xml:lang="en">Go back ↩</source>
+        <target state="translated">返回</target>
+      </trans-unit>
+      <trans-unit id="TaskQuickPick.noTasksForType">
+        <source xml:lang="en">No {0} tasks found. Go back ↩</source>
+        <target state="translated">未找到任务 {0}。返回↩</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/tasks/common/problemMatcher" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <body>
       <trans-unit id="ProblemPatternParser.problemPattern.missingRegExp">
@@ -1370,14 +1374,6 @@ The task will be ignored.
         <source xml:lang="en">detected tasks</source>
         <target state="translated">检测到的任务</target>
       </trans-unit>
-      <trans-unit id="pickProgressManager.description">
-        <source xml:lang="en">Detecting tasks ({0} of {1}): {2} in progress</source>
-        <target state="translated">正在检测任务（第 {0} 项，共 {1} 项） ：正在进行{2}</target>
-      </trans-unit>
-      <trans-unit id="taskQuickPick.cancel">
-        <source xml:lang="en">Stop detecting</source>
-        <target state="translated">停止检测</target>
-      </trans-unit>
       <trans-unit id="TaskService.ignoredFolder">
         <source xml:lang="en">The following workspace folders are ignored since they use task version 0.1.0: {0}</source>
         <target state="translated">由于使用任务版本 0.1.0，以下工作区文件夹将被忽略: {0}</target>
@@ -1391,8 +1387,8 @@ The task will be ignored.
         <target state="translated">选择要运行的任务</target>
       </trans-unit>
       <trans-unit id="TaskService.noEntryToRun">
-        <source xml:lang="en">No task to run found. Configure Tasks...</source>
-        <target state="translated">没有找到要运行的任务。配置任务...</target>
+        <source xml:lang="en">No configured tasks. Configure Tasks...</source>
+        <target state="translated">没有配置的任务。配置任务…</target>
       </trans-unit>
       <trans-unit id="TaskService.fetchingBuildTasks">
         <source xml:lang="en">Fetching build tasks...</source>

@@ -1,13 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file original="src/vs/workbench/contrib/files/electron-browser/files.contribution" source-language="en" target-language="hu" datatype="plaintext">
-    <body>
-      <trans-unit id="textFileEditor">
-        <source xml:lang="en">Text File Editor</source>
-        <target state="translated">Szövegfájlszerkesztő</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/files/electron-browser/fileActions.contribution" source-language="en" target-language="hu" datatype="plaintext">
     <body>
       <trans-unit id="revealInWindows">
@@ -28,6 +20,22 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/files/electron-browser/files.contribution" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="textFileEditor">
+        <source xml:lang="en">Text File Editor</source>
+        <target state="translated">Szövegfájlszerkesztő</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/files/electron-browser/fileCommands" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="openFileToReveal">
+        <source xml:lang="en">Open a file first to reveal</source>
+        <target state="translated">Fájlok felfedéséhez elősször nyisson meg egy fájlt</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/files/electron-browser/textFileEditor" source-language="en" target-language="hu" datatype="plaintext">
     <body>
       <trans-unit id="fileTooLargeForHeapError">
@@ -41,14 +49,6 @@
       <trans-unit id="configureMemoryLimit">
         <source xml:lang="en">Configure Memory Limit</source>
         <target state="translated">Memóriakorlát beállítása</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/files/electron-browser/fileCommands" source-language="en" target-language="hu" datatype="plaintext">
-    <body>
-      <trans-unit id="openFileToReveal">
-        <source xml:lang="en">Open a file first to reveal</source>
-        <target state="translated">Fájlok felfedéséhez elősször nyisson meg egy fájlt</target>
       </trans-unit>
     </body>
   </file>
@@ -83,16 +83,16 @@
         <target state="translated">Bináris fájlszerkesztő</target>
       </trans-unit>
       <trans-unit id="hotExit.off">
-        <source xml:lang="en">Disable hot exit.</source>
-        <target state="translated">Gyors kilépés letiltása.</target>
+        <source xml:lang="en">Disable hot exit. A prompt will show when attempting to close a window with dirty files.</source>
+        <target state="new">Disable hot exit. A prompt will show when attempting to close a window with dirty files.</target>
       </trans-unit>
       <trans-unit id="hotExit.onExit">
-        <source xml:lang="en">Hot exit will be triggered when the last window is closed on Windows/Linux or when the `workbench.action.quit` command is triggered (command palette, keybinding, menu). All windows with backups will be restored upon next launch.</source>
-        <target state="translated">Gyors kilépésről akkor van szó, ha az utolsó ablakot bezárják Windowson és Linuxon, vagy ha a `workbench.action.quit` parancs van futtatva (a parancskatalógusból, billentyűkombinációval vagy a menüből). Az összes biztonsági mentéssel rendelkező ablak helyreáll az alkalmazás következő indítása során.</target>
+        <source xml:lang="en">Hot exit will be triggered when the last window is closed on Windows/Linux or when the `workbench.action.quit` command is triggered (command palette, keybinding, menu). All windows without folders opened will be restored upon next launch. A list of workspaces with unsaved files can be accessed via `File &gt; Open Recent &gt; More...`</source>
+        <target state="new">Hot exit will be triggered when the last window is closed on Windows/Linux or when the `workbench.action.quit` command is triggered (command palette, keybinding, menu). All windows without folders opened will be restored upon next launch. A list of workspaces with unsaved files can be accessed via `File &gt; Open Recent &gt; More...`</target>
       </trans-unit>
       <trans-unit id="hotExit.onExitAndWindowClose">
-        <source xml:lang="en">Hot exit will be triggered when the last window is closed on Windows/Linux or when the `workbench.action.quit` command is triggered (command palette, keybinding, menu), and also for any window with a folder opened regardless of whether it's the last window. All windows without folders opened will be restored upon next launch. To restore folder windows as they were before shutdown set `#window.restoreWindows#` to `all`.</source>
-        <target state="translated">Gyors kilépésről akkor van szó, ha az utolsó ablakot bezárják Windowson vagy Linuxon, ha a `workbench.action.quit` parancs van futtatva (a parancskatalógusból, billentyűkombinációval vagy a menüből), vagy bármely ablakot, amelyben mappa van megnyitva, függetlenül attól, hogy az az utolsó ablak-e. Az összes megnyitott, mappa nélküli ablak helyreáll az alkalmazás következő indítása során. A megnyitott mappát tartalmazó ablakok helyreállításához állítsa a `#window.restoreWindows#` értékét `all`-ra.</target>
+        <source xml:lang="en">Hot exit will be triggered when the last window is closed on Windows/Linux or when the `workbench.action.quit` command is triggered (command palette, keybinding, menu), and also for any window with a folder opened regardless of whether it's the last window. All windows without folders opened will be restored upon next launch. A list of workspaces with unsaved files can be accessed via `File &gt; Open Recent &gt; More...`</source>
+        <target state="new">Hot exit will be triggered when the last window is closed on Windows/Linux or when the `workbench.action.quit` command is triggered (command palette, keybinding, menu), and also for any window with a folder opened regardless of whether it's the last window. All windows without folders opened will be restored upon next launch. A list of workspaces with unsaved files can be accessed via `File &gt; Open Recent &gt; More...`</target>
       </trans-unit>
       <trans-unit id="hotExit">
         <source xml:lang="en">Controls whether unsaved files are remembered between sessions, allowing the save prompt when exiting the editor to be skipped.</source>
@@ -107,8 +107,8 @@
         <target state="translated">Fájlok</target>
       </trans-unit>
       <trans-unit id="exclude">
-        <source xml:lang="en">Configure glob patterns for excluding files and folders. For example, the files explorer decides which files and folders to show or hide based on this setting. Read more about glob patterns [here](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).</source>
-        <target state="translated">Globális minták konfigurálása fájlok és mappák keresésből való kizárásához. A fájlkezelő például ez alapján dönti el, hogy milyen fájlokat és mappákat jelenítsen meg. A globális mintákról [itt](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options) talál további információkat.</target>
+        <source xml:lang="en">Configure glob patterns for excluding files and folders. For example, the files explorer decides which files and folders to show or hide based on this setting. Refer to the `#search.exclude#` setting to define search specific excludes. Read more about glob patterns [here](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).</source>
+        <target state="new">Configure glob patterns for excluding files and folders. For example, the files explorer decides which files and folders to show or hide based on this setting. Refer to the `#search.exclude#` setting to define search specific excludes. Read more about glob patterns [here](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).</target>
       </trans-unit>
       <trans-unit id="files.exclude.boolean">
         <source xml:lang="en">The glob pattern to match file paths against. Set to true or false to enable or disable the pattern.</source>
@@ -193,7 +193,7 @@
         <note>This is the description for a setting. Values surrounded by single quotes are not to be translated.</note>
       </trans-unit>
       <trans-unit id="watcherExclude">
-        <source xml:lang="en">Configure glob patterns of file paths to exclude from file watching. Patterns must match on absolute paths (i.e. prefix with ** or the full path to match properly). Changing this setting requires a restart. When you experience Code consuming lots of cpu time on startup, you can exclude large folders to reduce the initial load.</source>
+        <source xml:lang="en">Configure glob patterns of file paths to exclude from file watching. Patterns must match on absolute paths (i.e. prefix with ** or the full path to match properly). Changing this setting requires a restart. When you experience Code consuming lots of CPU time on startup, you can exclude large folders to reduce the initial load.</source>
         <target state="translated">Globális minta, ami meghatározza azoknak a fájloknak a listáját, amelyek ki vannak szűrve a figyelésből. A mintáknak abszolút elérési utakra kell illeszkedniük (azaz előtagként adja hozzá a **-t vagy a teljes elérési utat a megfelelő illeszkedéshez). A beállítás módosítása újraindítást igényel. Ha úgy észleli, hogy a Code túl sok processzort használ indításnál, ki tudja szűrni a nagy mappákat a kezdeti terhelés csökkentés érdekében.</target>
       </trans-unit>
       <trans-unit id="defaultLanguage">
@@ -306,24 +306,6 @@
   </file>
   <file original="src/vs/workbench/contrib/files/browser/explorerViewlet" source-language="en" target-language="hu" datatype="plaintext">
     <body>
-      <trans-unit id="noWorkspaceHelp">
-        <source xml:lang="en">You have not yet added a folder to the workspace.
-[Add Folder](command:{0})</source>
-        <target state="new">You have not yet added a folder to the workspace.
-[Add Folder](command:{0})</target>
-      </trans-unit>
-      <trans-unit id="remoteNoFolderHelp">
-        <source xml:lang="en">Connected to remote.
-[Open Folder](command:{0})</source>
-        <target state="new">Connected to remote.
-[Open Folder](command:{0})</target>
-      </trans-unit>
-      <trans-unit id="noFolderHelp">
-        <source xml:lang="en">You have not yet opened a folder.
-[Open Folder](command:{0})</source>
-        <target state="new">You have not yet opened a folder.
-[Open Folder](command:{0})</target>
-      </trans-unit>
       <trans-unit id="folders">
         <source xml:lang="en">Folders</source>
         <target state="translated">Mappák</target>
@@ -331,6 +313,27 @@
       <trans-unit id="explore">
         <source xml:lang="en">Explorer</source>
         <target state="translated">Fájlkezelő</target>
+      </trans-unit>
+      <trans-unit id="noWorkspaceHelp">
+        <source xml:lang="en">You have not yet added a folder to the workspace.
+[Add Folder](command:{0})</source>
+        <target state="new">You have not yet added a folder to the workspace.
+[Add Folder](command:{0})</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
+      </trans-unit>
+      <trans-unit id="remoteNoFolderHelp">
+        <source xml:lang="en">Connected to remote.
+[Open Folder](command:{0})</source>
+        <target state="new">Connected to remote.
+[Open Folder](command:{0})</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
+      </trans-unit>
+      <trans-unit id="noFolderHelp">
+        <source xml:lang="en">You have not yet opened a folder.
+[Open Folder](command:{0})</source>
+        <target state="new">You have not yet opened a folder.
+[Open Folder](command:{0})</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
       </trans-unit>
     </body>
   </file>
@@ -550,26 +553,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/files/common/dirtyFilesIndicator" source-language="en" target-language="hu" datatype="plaintext">
-    <body>
-      <trans-unit id="dirtyFile">
-        <source xml:lang="en">1 unsaved file</source>
-        <target state="new">1 unsaved file</target>
-      </trans-unit>
-      <trans-unit id="dirtyFiles">
-        <source xml:lang="en">{0} unsaved files</source>
-        <target state="translated">{0} nem mentett fájl</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/files/browser/editors/binaryFileEditor" source-language="en" target-language="hu" datatype="plaintext">
-    <body>
-      <trans-unit id="binaryFileEditor">
-        <source xml:lang="en">Binary File Viewer</source>
-        <target state="translated">Bináris megjelenítő</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/files/common/workspaceWatcher" source-language="en" target-language="hu" datatype="plaintext">
     <body>
       <trans-unit id="netVersionError">
@@ -587,6 +570,26 @@
       <trans-unit id="learnMore">
         <source xml:lang="en">Instructions</source>
         <target state="translated">Utasítások</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/files/browser/editors/binaryFileEditor" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="binaryFileEditor">
+        <source xml:lang="en">Binary File Viewer</source>
+        <target state="translated">Bináris megjelenítő</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/files/common/dirtyFilesIndicator" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="dirtyFile">
+        <source xml:lang="en">1 unsaved file</source>
+        <target state="new">1 unsaved file</target>
+      </trans-unit>
+      <trans-unit id="dirtyFiles">
+        <source xml:lang="en">{0} unsaved files</source>
+        <target state="translated">{0} nem mentett fájl</target>
       </trans-unit>
     </body>
   </file>
@@ -972,6 +975,10 @@
       <trans-unit id="invalidFileNameError">
         <source xml:lang="en">The name **{0}** is not valid as a file or folder name. Please choose a different name.</source>
         <target state="translated">A(z) **{0}** név nem érvényes fájl- vagy mappanév. Adjon meg egy másik nevet!</target>
+      </trans-unit>
+      <trans-unit id="fileNameWhitespaceWarning">
+        <source xml:lang="en">Leading or trailing whitespace detected in file or folder name.</source>
+        <target state="new">Leading or trailing whitespace detected in file or folder name.</target>
       </trans-unit>
       <trans-unit id="compareWithClipboard">
         <source xml:lang="en">Compare Active File with Clipboard</source>

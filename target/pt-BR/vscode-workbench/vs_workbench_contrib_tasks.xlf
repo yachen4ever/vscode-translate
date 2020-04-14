@@ -123,7 +123,7 @@ A tarefa '{0}' foi finalizada por solicitação do usuário.</target>
       </trans-unit>
       <trans-unit id="workbench.action.tasks.openWorkspaceFileTasks">
         <source xml:lang="en">Open Workspace Tasks</source>
-        <target state="new">Open Workspace Tasks</target>
+        <target state="translated">Abrir Tarefas do Espaço de Trabalho</target>
       </trans-unit>
       <trans-unit id="ShowLogAction.label">
         <source xml:lang="en">Show Task Log</source>
@@ -169,7 +169,11 @@ A tarefa '{0}' foi finalizada por solicitação do usuário.</target>
         <source xml:lang="en">Open User Tasks</source>
         <target state="translated">Abrir tarefas do usuário</target>
       </trans-unit>
-      <trans-unit id="quickOpen.task">
+      <trans-unit id="tasksQuickAccessPlaceholder">
+        <source xml:lang="en">Type the name of a task to run.</source>
+        <target state="translated">Digite o nome de uma tarefa a ser executada.</target>
+      </trans-unit>
+      <trans-unit id="tasksQuickAccessHelp">
         <source xml:lang="en">Run Task</source>
         <target state="translated">Executar Tarefa</target>
       </trans-unit>
@@ -191,7 +195,7 @@ A tarefa '{0}' foi finalizada por solicitação do usuário.</target>
       </trans-unit>
       <trans-unit id="task.autoDetect">
         <source xml:lang="en">Controls enablement of `provideTasks` for all task provider extension. If the Tasks: Run Task command is slow, disabling auto detect for task providers may help. Individual extensions may also provide settings that disable auto detection.</source>
-        <target state="new">Controls enablement of `provideTasks` for all task provider extension. If the Tasks: Run Task command is slow, disabling auto detect for task providers may help. Individual extensions may also provide settings that disable auto detection.</target>
+        <target state="translated">Controla a habilitação de `provideTasks` para todas as extensões provedoras de tarefas. Se o comando Tarefas: Executar tarefa está lento, desativar a detecção automática para provedores de tarefas pode ajudar. Extensões particulares podem fornecer configurações que desativam a detecção automática.</target>
       </trans-unit>
       <trans-unit id="task.slowProviderWarning">
         <source xml:lang="en">Configures whether a warning is shown when a provider is slow</source>
@@ -224,22 +228,6 @@ A tarefa '{0}' foi finalizada por solicitação do usuário.</target>
       <trans-unit id="TaskDefinition.missingRequiredProperty">
         <source xml:lang="en">Error: the task identifier '{0}' is missing the required property '{1}'. The task identifier will be ignored.</source>
         <target state="translated">Erro: o identificador da tarefa '{0}' não possui a propriedade obrigatória '{1}'. O identificador da tarefa será ignorado.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/taskQuickOpen" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="tasksAriaLabel">
-        <source xml:lang="en">Type the name of a task to run</source>
-        <target state="translated">Digite o nome de uma tarefa para executar</target>
-      </trans-unit>
-      <trans-unit id="noTasksMatching">
-        <source xml:lang="en">No tasks matching</source>
-        <target state="translated">Não há tarefas correspondentes</target>
-      </trans-unit>
-      <trans-unit id="noTasksFound">
-        <source xml:lang="en">No tasks found</source>
-        <target state="translated">Não há tarefas encontradas</target>
       </trans-unit>
     </body>
   </file>
@@ -276,6 +264,14 @@ A tarefa '{0}' foi finalizada por solicitação do usuário.</target>
       <trans-unit id="JsonSchema.shell">
         <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
         <target state="translated">Especifica se o comando é um comando shell ou um programa externo. O padrão é falso se omitido.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/tasksQuickAccess" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="TaskService.pickRunTask">
+        <source xml:lang="en">Select the task to run</source>
+        <target state="translated">Selecione a tarefa a ser executada</target>
       </trans-unit>
     </body>
   </file>
@@ -328,30 +324,6 @@ A tarefa '{0}' foi finalizada por solicitação do usuário.</target>
       <trans-unit id="workbench.action.tasks.disallowAutomaticTasks">
         <source xml:lang="en">Disallow Automatic Tasks in Folder</source>
         <target state="translated">Não Permitir Tarefas Automáticas em Pasta</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/quickOpen" source-language="en" target-language="pt-BR" datatype="plaintext">
-    <body>
-      <trans-unit id="entryAriaLabel">
-        <source xml:lang="en">{0}, tasks</source>
-        <target state="translated">{0}, tarefas</target>
-      </trans-unit>
-      <trans-unit id="recentlyUsed">
-        <source xml:lang="en">recently used tasks</source>
-        <target state="translated">tarefas recentemente utilizadas</target>
-      </trans-unit>
-      <trans-unit id="configured">
-        <source xml:lang="en">configured tasks</source>
-        <target state="translated">tarefas configuradas</target>
-      </trans-unit>
-      <trans-unit id="detected">
-        <source xml:lang="en">detected tasks</source>
-        <target state="translated">tarefas detectadas</target>
-      </trans-unit>
-      <trans-unit id="customizeTask">
-        <source xml:lang="en">Configure Task</source>
-        <target state="translated">Configurar a tarefa</target>
       </trans-unit>
     </body>
   </file>
@@ -657,7 +629,7 @@ A tarefa '{0}' foi finalizada por solicitação do usuário.</target>
       </trans-unit>
       <trans-unit id="JsonSchema.tasks.instanceLimit">
         <source xml:lang="en">The number of instances of the task that are allowed to run simultaneously.</source>
-        <target state="new">The number of instances of the task that are allowed to run simultaneously.</target>
+        <target state="translated">O número de instâncias da tarefa que podem ser executadas simultaneamente.</target>
       </trans-unit>
       <trans-unit id="JsonSchema.tasks.runOptions">
         <source xml:lang="en">The task's run related options</source>
@@ -862,6 +834,38 @@ A tarefa '{0}' foi finalizada por solicitação do usuário.</target>
       <trans-unit id="JsonSchema.tasks">
         <source xml:lang="en">The task configurations. Usually these are enrichments of task already defined in the external task runner.</source>
         <target state="translated">As configurações de tarefa. Normalmente são ampliações de tarefas já definidas na execução de tarefa externa.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/taskQuickPick" source-language="en" target-language="pt-BR" datatype="plaintext">
+    <body>
+      <trans-unit id="taskQuickPick.showAll">
+        <source xml:lang="en">Show All Tasks...</source>
+        <target state="new">Show All Tasks...</target>
+      </trans-unit>
+      <trans-unit id="configureTask">
+        <source xml:lang="en">Configure Task</source>
+        <target state="translated">Configurar a tarefa</target>
+      </trans-unit>
+      <trans-unit id="contributedTasks">
+        <source xml:lang="en">contributed</source>
+        <target state="new">contributed</target>
+      </trans-unit>
+      <trans-unit id="recentlyUsed">
+        <source xml:lang="en">recently used</source>
+        <target state="translated">usados recentemente</target>
+      </trans-unit>
+      <trans-unit id="configured">
+        <source xml:lang="en">configured</source>
+        <target state="new">configured</target>
+      </trans-unit>
+      <trans-unit id="TaskQuickPick.goBack">
+        <source xml:lang="en">Go back ↩</source>
+        <target state="new">Go back ↩</target>
+      </trans-unit>
+      <trans-unit id="TaskQuickPick.noTasksForType">
+        <source xml:lang="en">No {0} tasks found. Go back ↩</source>
+        <target state="new">No {0} tasks found. Go back ↩</target>
       </trans-unit>
     </body>
   </file>
@@ -1225,7 +1229,7 @@ A tarefa '{0}' foi finalizada por solicitação do usuário.</target>
       </trans-unit>
       <trans-unit id="TaskService.attachProblemMatcher.neverType">
         <source xml:lang="en">Never scan the task output for {0} tasks</source>
-        <target state="new">Never scan the task output for {0} tasks</target>
+        <target state="translated">Nunca escanear a saída de tarefa para tarefas {0}</target>
       </trans-unit>
       <trans-unit id="TaskService.attachProblemMatcher.learnMoreAbout">
         <source xml:lang="en">Learn more about scanning the task output</source>
@@ -1366,14 +1370,6 @@ The task will be ignored.
         <source xml:lang="en">detected tasks</source>
         <target state="translated">tarefas detectadas</target>
       </trans-unit>
-      <trans-unit id="pickProgressManager.description">
-        <source xml:lang="en">Detecting tasks ({0} of {1}): {2} in progress</source>
-        <target state="new">Detecting tasks ({0} of {1}): {2} in progress</target>
-      </trans-unit>
-      <trans-unit id="taskQuickPick.cancel">
-        <source xml:lang="en">Stop detecting</source>
-        <target state="new">Stop detecting</target>
-      </trans-unit>
       <trans-unit id="TaskService.ignoredFolder">
         <source xml:lang="en">The following workspace folders are ignored since they use task version 0.1.0: {0}</source>
         <target state="translated">As seguintes pastas do espaço de trabalho estão sendo ignoradas, uma vez que elas usam task versão 0.1.0: {0}</target>
@@ -1387,8 +1383,8 @@ The task will be ignored.
         <target state="translated">Selecione a tarefa a ser executada</target>
       </trans-unit>
       <trans-unit id="TaskService.noEntryToRun">
-        <source xml:lang="en">No task to run found. Configure Tasks...</source>
-        <target state="translated">Nenhuma tarefa para executar foi encontrada. Configure Tarefas...</target>
+        <source xml:lang="en">No configured tasks. Configure Tasks...</source>
+        <target state="new">No configured tasks. Configure Tasks...</target>
       </trans-unit>
       <trans-unit id="TaskService.fetchingBuildTasks">
         <source xml:lang="en">Fetching build tasks...</source>

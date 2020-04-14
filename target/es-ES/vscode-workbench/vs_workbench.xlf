@@ -209,27 +209,6 @@ Esta opción requiere reiniciar para que tenga efecto.</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/actions/workspaceCommands" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="addFolderToWorkspace">
-        <source xml:lang="en">Add Folder to Workspace...</source>
-        <target state="translated">Agregar carpeta al área de trabajo...</target>
-      </trans-unit>
-      <trans-unit id="add">
-        <source xml:lang="en">&amp;&amp;Add</source>
-        <target state="translated">&amp;&amp;Agregar</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="addFolderToWorkspaceTitle">
-        <source xml:lang="en">Add Folder to Workspace</source>
-        <target state="translated">Agregar carpeta al área de trabajo</target>
-      </trans-unit>
-      <trans-unit id="workspaceFolderPickerPlaceholder">
-        <source xml:lang="en">Select workspace folder</source>
-        <target state="translated">Seleccionar la carpeta del área de trabajo</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/browser/actions/textInputActions" source-language="en" target-language="es" datatype="plaintext">
     <body>
       <trans-unit id="undo">
@@ -258,19 +237,62 @@ Esta opción requiere reiniciar para que tenga efecto.</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/electron-browser/actions/developerActions" source-language="en" target-language="es" datatype="plaintext">
+  <file original="src/vs/workbench/browser/actions/workspaceCommands" source-language="en" target-language="es" datatype="plaintext">
     <body>
-      <trans-unit id="toggleDevTools">
-        <source xml:lang="en">Toggle Developer Tools</source>
-        <target state="translated">Alternar herramientas de desarrollo</target>
+      <trans-unit id="addFolderToWorkspace">
+        <source xml:lang="en">Add Folder to Workspace...</source>
+        <target state="translated">Agregar carpeta al área de trabajo...</target>
       </trans-unit>
-      <trans-unit id="toggleSharedProcess">
-        <source xml:lang="en">Toggle Shared Process</source>
-        <target state="translated">Alternar proceso compartido</target>
+      <trans-unit id="add">
+        <source xml:lang="en">&amp;&amp;Add</source>
+        <target state="translated">&amp;&amp;Agregar</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
-      <trans-unit id="configureRuntimeArguments">
-        <source xml:lang="en">Configure Runtime Arguments</source>
-        <target state="translated">Configurar argumentos en tiempo de ejecución</target>
+      <trans-unit id="addFolderToWorkspaceTitle">
+        <source xml:lang="en">Add Folder to Workspace</source>
+        <target state="translated">Agregar carpeta al área de trabajo</target>
+      </trans-unit>
+      <trans-unit id="workspaceFolderPickerPlaceholder">
+        <source xml:lang="en">Select workspace folder</source>
+        <target state="translated">Seleccionar la carpeta del área de trabajo</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/actions/developerActions" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="inspect context keys">
+        <source xml:lang="en">Inspect Context Keys</source>
+        <target state="translated">Inspeccionar claves de contexto</target>
+      </trans-unit>
+      <trans-unit id="toggle screencast mode">
+        <source xml:lang="en">Toggle Screencast Mode</source>
+        <target state="translated">Alternar el modo de presentación en pantalla</target>
+      </trans-unit>
+      <trans-unit id="logStorage">
+        <source xml:lang="en">Log Storage Database Contents</source>
+        <target state="translated">Registrar el contenido de la base de datos de almacenamiento</target>
+        <note>A developer only action to log the contents of the storage for the current window.</note>
+      </trans-unit>
+      <trans-unit id="logWorkingCopies">
+        <source xml:lang="en">Log Working Copies</source>
+        <target state="translated">Registrar copias de trabajo</target>
+        <note>A developer only action to log the working copies that exist.</note>
+      </trans-unit>
+      <trans-unit id="developer">
+        <source xml:lang="en">Developer</source>
+        <target state="translated">Desarrollador</target>
+      </trans-unit>
+      <trans-unit id="screencastModeConfigurationTitle">
+        <source xml:lang="en">Screencast Mode</source>
+        <target state="translated">Modo de presentación en pantalla</target>
+      </trans-unit>
+      <trans-unit id="screencastMode.location.verticalPosition">
+        <source xml:lang="en">Controls the vertical offset of the screencast mode overlay from the bottom as a percentage of the workbench height.</source>
+        <target state="translated">Controla el desplazamiento vertical de la superposición del modo de presentación en pantalla desde la parte inferior como un porcentaje de la altura del área de trabajo.</target>
+      </trans-unit>
+      <trans-unit id="screencastMode.onlyKeyboardShortcuts">
+        <source xml:lang="en">Only show keyboard shortcuts in Screencast Mode.</source>
+        <target state="translated">Solo muestra los métodos abreviados de teclado en el modo de presentación de pantalla.</target>
       </trans-unit>
     </body>
   </file>
@@ -298,70 +320,27 @@ Esta opción requiere reiniciar para que tenga efecto.</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/actions/workspaceActions" source-language="en" target-language="es" datatype="plaintext">
+  <file original="src/vs/workbench/browser/actions/quickAccessActions" source-language="en" target-language="es" datatype="plaintext">
     <body>
-      <trans-unit id="openFile">
-        <source xml:lang="en">Open File...</source>
-        <target state="translated">Abrir archivo...</target>
+      <trans-unit id="quickOpen">
+        <source xml:lang="en">Go to File...</source>
+        <target state="translated">Ir al archivo...</target>
       </trans-unit>
-      <trans-unit id="openFolder">
-        <source xml:lang="en">Open Folder...</source>
-        <target state="translated">Abrir carpeta...</target>
+      <trans-unit id="quickNavigateNext">
+        <source xml:lang="en">Navigate Next in Quick Open</source>
+        <target state="translated">Navegar a siguiente en Quick Open</target>
       </trans-unit>
-      <trans-unit id="openFileFolder">
-        <source xml:lang="en">Open...</source>
-        <target state="translated">Abrir...</target>
+      <trans-unit id="quickNavigatePrevious">
+        <source xml:lang="en">Navigate Previous in Quick Open</source>
+        <target state="translated">Navegar a anterior en Quick Open</target>
       </trans-unit>
-      <trans-unit id="openWorkspaceAction">
-        <source xml:lang="en">Open Workspace...</source>
-        <target state="translated">Abrir área de trabajo...</target>
+      <trans-unit id="quickSelectNext">
+        <source xml:lang="en">Select Next in Quick Open</source>
+        <target state="translated">Seleccionar Siguiente en Quick Open</target>
       </trans-unit>
-      <trans-unit id="closeWorkspace">
-        <source xml:lang="en">Close Workspace</source>
-        <target state="translated">Cerrar área de trabajo</target>
-      </trans-unit>
-      <trans-unit id="noWorkspaceOpened">
-        <source xml:lang="en">There is currently no workspace opened in this instance to close.</source>
-        <target state="translated">No hay ninguna área de trabajo abierta en esta instancia para cerrarla.</target>
-      </trans-unit>
-      <trans-unit id="openWorkspaceConfigFile">
-        <source xml:lang="en">Open Workspace Configuration File</source>
-        <target state="translated">Abrir archivo de configuración del área de trabajo</target>
-      </trans-unit>
-      <trans-unit id="globalRemoveFolderFromWorkspace">
-        <source xml:lang="en">Remove Folder from Workspace...</source>
-        <target state="translated">Quitar carpeta del Área de trabajo...</target>
-      </trans-unit>
-      <trans-unit id="saveWorkspaceAsAction">
-        <source xml:lang="en">Save Workspace As...</source>
-        <target state="translated">Guardar área de trabajo como...</target>
-      </trans-unit>
-      <trans-unit id="duplicateWorkspaceInNewWindow">
-        <source xml:lang="en">Duplicate Workspace in New Window</source>
-        <target state="translated">Duplicar el área de trabajo en una ventana nueva</target>
-      </trans-unit>
-      <trans-unit id="workspaces">
-        <source xml:lang="en">Workspaces</source>
-        <target state="translated">Áreas de trabajo</target>
-      </trans-unit>
-      <trans-unit id="miAddFolderToWorkspace">
-        <source xml:lang="en">A&amp;&amp;dd Folder to Workspace...</source>
-        <target state="translated">A&amp;&amp;gregar carpeta al área de trabajo...</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miSaveWorkspaceAs">
-        <source xml:lang="en">Save Workspace As...</source>
-        <target state="translated">Guardar área de trabajo como...</target>
-      </trans-unit>
-      <trans-unit id="miCloseFolder">
-        <source xml:lang="en">Close &amp;&amp;Folder</source>
-        <target state="translated">Cerrar &amp;&amp;carpeta</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miCloseWorkspace">
-        <source xml:lang="en">Close &amp;&amp;Workspace</source>
-        <target state="translated">Cerrar &amp;&amp;área de trabajo</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
+      <trans-unit id="quickSelectPrevious">
+        <source xml:lang="en">Select Previous in Quick Open</source>
+        <target state="translated">Seleccionar Anterior en Quick Open</target>
       </trans-unit>
     </body>
   </file>
@@ -380,8 +359,8 @@ Esta opción requiere reiniciar para que tenga efecto.</target>
         <target state="translated">Configuración que solo se puede establecer en los valores del usuario.</target>
       </trans-unit>
       <trans-unit id="scope.machine.description">
-        <source xml:lang="en">Configuration that can be configured only in the user settings when the extension is running locally, or only in the remote settings when the extension is running remotely.</source>
-        <target state="translated">Configuración que solo se puede realizar en la configuración de usuario cuando la extensión se ejecuta localmente, o solo en la configuración remota cuando la extensión se ejecuta de forma remota.</target>
+        <source xml:lang="en">Configuration that can be configured only in the user settings or only in the remote settings.</source>
+        <target state="translated">Configuración que solo se puede establecer en la configuración de usuario o solo en la configuración remota.</target>
       </trans-unit>
       <trans-unit id="scope.window.description">
         <source xml:lang="en">Configuration that can be configured in the user, remote or workspace settings.</source>
@@ -485,44 +464,6 @@ Esta opción requiere reiniciar para que tenga efecto.</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/actions/developerActions" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="inspect context keys">
-        <source xml:lang="en">Inspect Context Keys</source>
-        <target state="translated">Inspeccionar claves de contexto</target>
-      </trans-unit>
-      <trans-unit id="toggle screencast mode">
-        <source xml:lang="en">Toggle Screencast Mode</source>
-        <target state="translated">Alternar el modo de presentación en pantalla</target>
-      </trans-unit>
-      <trans-unit id="logStorage">
-        <source xml:lang="en">Log Storage Database Contents</source>
-        <target state="translated">Registrar el contenido de la base de datos de almacenamiento</target>
-        <note>A developer only action to log the contents of the storage for the current window.</note>
-      </trans-unit>
-      <trans-unit id="logWorkingCopies">
-        <source xml:lang="en">Log Working Copies</source>
-        <target state="translated">Registrar copias de trabajo</target>
-        <note>A developer only action to log the working copies that exist.</note>
-      </trans-unit>
-      <trans-unit id="developer">
-        <source xml:lang="en">Developer</source>
-        <target state="translated">Desarrollador</target>
-      </trans-unit>
-      <trans-unit id="screencastModeConfigurationTitle">
-        <source xml:lang="en">Screencast Mode</source>
-        <target state="translated">Modo de presentación en pantalla</target>
-      </trans-unit>
-      <trans-unit id="screencastMode.location.verticalPosition">
-        <source xml:lang="en">Controls the vertical offset of the screencast mode overlay from the bottom as a percentage of the workbench height.</source>
-        <target state="translated">Controla el desplazamiento vertical de la superposición del modo de presentación en pantalla desde la parte inferior como un porcentaje de la altura del área de trabajo.</target>
-      </trans-unit>
-      <trans-unit id="screencastMode.onlyKeyboardShortcuts">
-        <source xml:lang="en">Only show keyboard shortcuts in Screencast Mode.</source>
-        <target state="translated">Solo muestra los métodos abreviados de teclado en el modo de presentación de pantalla.</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/browser/parts/sidebar/sidebarPart" source-language="en" target-language="es" datatype="plaintext">
     <body>
       <trans-unit id="focusSideBar">
@@ -535,136 +476,19 @@ Esta opción requiere reiniciar para que tenga efecto.</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/electron-browser/actions/windowActions" source-language="en" target-language="es" datatype="plaintext">
+  <file original="src/vs/workbench/electron-browser/actions/developerActions" source-language="en" target-language="es" datatype="plaintext">
     <body>
-      <trans-unit id="closeWindow">
-        <source xml:lang="en">Close Window</source>
-        <target state="translated">Cerrar ventana</target>
+      <trans-unit id="toggleDevTools">
+        <source xml:lang="en">Toggle Developer Tools</source>
+        <target state="translated">Alternar herramientas de desarrollo</target>
       </trans-unit>
-      <trans-unit id="zoomIn">
-        <source xml:lang="en">Zoom In</source>
-        <target state="translated">Acercar</target>
+      <trans-unit id="toggleSharedProcess">
+        <source xml:lang="en">Toggle Shared Process</source>
+        <target state="translated">Alternar proceso compartido</target>
       </trans-unit>
-      <trans-unit id="zoomOut">
-        <source xml:lang="en">Zoom Out</source>
-        <target state="translated">Alejar</target>
-      </trans-unit>
-      <trans-unit id="zoomReset">
-        <source xml:lang="en">Reset Zoom</source>
-        <target state="translated">Restablecer zoom</target>
-      </trans-unit>
-      <trans-unit id="reloadWindowWithExtensionsDisabled">
-        <source xml:lang="en">Reload With Extensions Disabled</source>
-        <target state="translated">Recargar con extensiones desactivadas</target>
-      </trans-unit>
-      <trans-unit id="close">
-        <source xml:lang="en">Close Window</source>
-        <target state="translated">Cerrar ventana</target>
-      </trans-unit>
-      <trans-unit id="switchWindowPlaceHolder">
-        <source xml:lang="en">Select a window to switch to</source>
-        <target state="translated">Seleccionar una ventana a la que cambiar</target>
-      </trans-unit>
-      <trans-unit id="current">
-        <source xml:lang="en">Current Window</source>
-        <target state="translated">Ventana actual</target>
-      </trans-unit>
-      <trans-unit id="switchWindow">
-        <source xml:lang="en">Switch Window...</source>
-        <target state="translated">Cambiar de Ventana...</target>
-      </trans-unit>
-      <trans-unit id="quickSwitchWindow">
-        <source xml:lang="en">Quick Switch Window...</source>
-        <target state="translated">Cambio Rápido de Ventana...</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/actions/windowActions" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="remove">
-        <source xml:lang="en">Remove from Recently Opened</source>
-        <target state="translated">Quitar de abiertos recientemente</target>
-      </trans-unit>
-      <trans-unit id="workspaces">
-        <source xml:lang="en">workspaces</source>
-        <target state="translated">Áreas de trabajo</target>
-      </trans-unit>
-      <trans-unit id="files">
-        <source xml:lang="en">files</source>
-        <target state="translated">archivos</target>
-      </trans-unit>
-      <trans-unit id="openRecentPlaceHolderMac">
-        <source xml:lang="en">Select to open (hold Cmd-key to open in new window)</source>
-        <target state="translated">Seleccione para abrir (mantenga presionada la tecla Comando para abrir en una ventana nueva)</target>
-      </trans-unit>
-      <trans-unit id="openRecentPlaceHolder">
-        <source xml:lang="en">Select to open (hold Ctrl-key to open in new window)</source>
-        <target state="translated">Seleccione para abrir (mantenga presionada la tecla Ctrl para abrir en una ventana nueva)</target>
-      </trans-unit>
-      <trans-unit id="openRecent">
-        <source xml:lang="en">Open Recent...</source>
-        <target state="translated">Abrir Reciente...</target>
-      </trans-unit>
-      <trans-unit id="quickOpenRecent">
-        <source xml:lang="en">Quick Open Recent...</source>
-        <target state="translated">Abrir Reciente Rapidamente...</target>
-      </trans-unit>
-      <trans-unit id="toggleFullScreen">
-        <source xml:lang="en">Toggle Full Screen</source>
-        <target state="translated">Alternar pantalla completa</target>
-      </trans-unit>
-      <trans-unit id="reloadWindow">
-        <source xml:lang="en">Reload Window</source>
-        <target state="translated">Recargar ventana</target>
-      </trans-unit>
-      <trans-unit id="about">
-        <source xml:lang="en">About</source>
-        <target state="translated">Acerca de</target>
-      </trans-unit>
-      <trans-unit id="newWindow">
-        <source xml:lang="en">New Window</source>
-        <target state="translated">Nueva ventana</target>
-      </trans-unit>
-      <trans-unit id="file">
-        <source xml:lang="en">File</source>
-        <target state="translated">archivo</target>
-      </trans-unit>
-      <trans-unit id="view">
-        <source xml:lang="en">View</source>
-        <target state="translated">Vista</target>
-      </trans-unit>
-      <trans-unit id="developer">
-        <source xml:lang="en">Developer</source>
-        <target state="translated">Desarrollador</target>
-      </trans-unit>
-      <trans-unit id="help">
-        <source xml:lang="en">Help</source>
-        <target state="translated">Ayuda</target>
-      </trans-unit>
-      <trans-unit id="miNewWindow">
-        <source xml:lang="en">New &amp;&amp;Window</source>
-        <target state="translated">&amp;&amp;Nueva ventana</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miOpenRecent">
-        <source xml:lang="en">Open &amp;&amp;Recent</source>
-        <target state="translated">Abrir &amp;&amp;reciente</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miMore">
-        <source xml:lang="en">&amp;&amp;More...</source>
-        <target state="translated">&amp;&amp;Más...</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miToggleFullScreen">
-        <source xml:lang="en">&amp;&amp;Full Screen</source>
-        <target state="translated">&amp;&amp;Pantalla completa</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miAbout">
-        <source xml:lang="en">&amp;&amp;About</source>
-        <target state="translated">&amp;&amp;Acerca de</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
+      <trans-unit id="configureRuntimeArguments">
+        <source xml:lang="en">Configure Runtime Arguments</source>
+        <target state="translated">Configurar argumentos en tiempo de ejecución</target>
       </trans-unit>
     </body>
   </file>
@@ -752,197 +576,6 @@ Esta opción requiere reiniciar para que tenga efecto.</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/common/menusExtensionPoint" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="requirearray">
-        <source xml:lang="en">menu items must be an array</source>
-        <target state="translated">los elementos de menú deben ser una matriz</target>
-      </trans-unit>
-      <trans-unit id="requirestring">
-        <source xml:lang="en">property `{0}` is mandatory and must be of type `string`</source>
-        <target state="translated">la propiedad `{0}` es obligatoria y debe ser de tipo "string"</target>
-      </trans-unit>
-      <trans-unit id="optstring">
-        <source xml:lang="en">property `{0}` can be omitted or must be of type `string`</source>
-        <target state="translated">la propiedad `{0}` se puede omitir o debe ser de tipo "string"</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.menuItem.command">
-        <source xml:lang="en">Identifier of the command to execute. The command must be declared in the 'commands'-section</source>
-        <target state="translated">El identificador del comando que se ejecutará. El comando se debe declarar en la sección 'commands'</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.menuItem.alt">
-        <source xml:lang="en">Identifier of an alternative command to execute. The command must be declared in the 'commands'-section</source>
-        <target state="translated">El identificador de un comando alternativo que se usará. El comando se debe declarar en la sección 'commands'</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.menuItem.when">
-        <source xml:lang="en">Condition which must be true to show this item</source>
-        <target state="translated">Condición que se debe cumplir para mostrar este elemento</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.menuItem.group">
-        <source xml:lang="en">Group into which this command belongs</source>
-        <target state="translated">Grupo al que pertenece este comando</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.menus">
-        <source xml:lang="en">Contributes menu items to the editor</source>
-        <target state="translated">Contribuye con elementos de menú al editor</target>
-      </trans-unit>
-      <trans-unit id="menus.commandPalette">
-        <source xml:lang="en">The Command Palette</source>
-        <target state="translated">La paleta de comandos</target>
-      </trans-unit>
-      <trans-unit id="menus.touchBar">
-        <source xml:lang="en">The touch bar (macOS only)</source>
-        <target state="translated">Barra táctil (sólo macOS)</target>
-      </trans-unit>
-      <trans-unit id="menus.editorTitle">
-        <source xml:lang="en">The editor title menu</source>
-        <target state="translated">El menú de título del editor</target>
-      </trans-unit>
-      <trans-unit id="menus.editorContext">
-        <source xml:lang="en">The editor context menu</source>
-        <target state="translated">El menú conextual del editor</target>
-      </trans-unit>
-      <trans-unit id="menus.explorerContext">
-        <source xml:lang="en">The file explorer context menu</source>
-        <target state="translated">El menú contextual del explorador de archivos</target>
-      </trans-unit>
-      <trans-unit id="menus.editorTabContext">
-        <source xml:lang="en">The editor tabs context menu</source>
-        <target state="translated">Menú contextual de pestañas del editor</target>
-      </trans-unit>
-      <trans-unit id="menus.debugCallstackContext">
-        <source xml:lang="en">The debug callstack context menu</source>
-        <target state="translated">El menú contextual de la pila de llamadas de depuración</target>
-      </trans-unit>
-      <trans-unit id="menus.debugToolBar">
-        <source xml:lang="en">The debug toolbar menu</source>
-      </trans-unit>
-      <trans-unit id="menus.scmTitle">
-        <source xml:lang="en">The Source Control title menu</source>
-        <target state="translated">El menú del título Control de código fuente</target>
-      </trans-unit>
-      <trans-unit id="menus.scmSourceControl">
-        <source xml:lang="en">The Source Control menu</source>
-        <target state="translated">El menú de control de código fuente</target>
-      </trans-unit>
-      <trans-unit id="menus.resourceGroupContext">
-        <source xml:lang="en">The Source Control resource group context menu</source>
-        <target state="translated">El menú contextual del grupo de recursos de Control de código fuente</target>
-      </trans-unit>
-      <trans-unit id="menus.resourceStateContext">
-        <source xml:lang="en">The Source Control resource state context menu</source>
-        <target state="translated">El menú contextual de estado de recursos de Control de código fuente</target>
-      </trans-unit>
-      <trans-unit id="view.viewTitle">
-        <source xml:lang="en">The contributed view title menu</source>
-        <target state="translated">El menú de título de vista contribuida</target>
-      </trans-unit>
-      <trans-unit id="view.itemContext">
-        <source xml:lang="en">The contributed view item context menu</source>
-        <target state="translated">El menú contextual del elemento de vista contribuida</target>
-      </trans-unit>
-      <trans-unit id="commentThread.title">
-        <source xml:lang="en">The contributed comment thread title menu</source>
-        <target state="translated">El menú del título del subproceso de comentarios aportado</target>
-      </trans-unit>
-      <trans-unit id="commentThread.actions">
-        <source xml:lang="en">The contributed comment thread context menu, rendered as buttons below the comment editor</source>
-        <target state="translated">El menú contextual del subproceso de comentario aportado, representado como botones debajo del editor de comentarios</target>
-      </trans-unit>
-      <trans-unit id="comment.title">
-        <source xml:lang="en">The contributed comment title menu</source>
-        <target state="translated">El menú de título de comentario aportado</target>
-      </trans-unit>
-      <trans-unit id="comment.actions">
-        <source xml:lang="en">The contributed comment context menu, rendered as buttons below the comment editor</source>
-        <target state="translated">El menú contextual de comentarios aportados, representado como botones debajo del editor de comentarios</target>
-      </trans-unit>
-      <trans-unit id="menus.extensionContext">
-        <source xml:lang="en">The extension context menu</source>
-        <target state="translated">Menú contextual de la extensión</target>
-      </trans-unit>
-      <trans-unit id="view.timelineTitle">
-        <source xml:lang="en">The Timeline view title menu</source>
-        <target state="translated">El menú de título de la vista de línea de tiempo</target>
-      </trans-unit>
-      <trans-unit id="view.timelineContext">
-        <source xml:lang="en">The Timeline view item context menu</source>
-        <target state="translated">El menú contextual del elemento de vista de línea de tiempo</target>
-      </trans-unit>
-      <trans-unit id="nonempty">
-        <source xml:lang="en">expected non-empty value.</source>
-        <target state="translated">se esperaba un valor no vacío.</target>
-      </trans-unit>
-      <trans-unit id="opticon">
-        <source xml:lang="en">property `icon` can be omitted or must be either a string or a literal like `{dark, light}`</source>
-        <target state="translated">la propiedad `icon` se puede omitir o debe ser una cadena o un literal como `{dark, light}`</target>
-      </trans-unit>
-      <trans-unit id="requireStringOrObject">
-        <source xml:lang="en">property `{0}` is mandatory and must be of type `string` or `object`</source>
-        <target state="translated">La propiedad "{0}" es obligatoria y debe ser de tipo "string" u "object"</target>
-      </trans-unit>
-      <trans-unit id="requirestrings">
-        <source xml:lang="en">properties `{0}` and `{1}` are mandatory and must be of type `string`</source>
-        <target state="translated">Las propiedades "{0}" y "{1}" son obligatorias y deben ser de tipo "string"</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.commandType.command">
-        <source xml:lang="en">Identifier of the command to execute</source>
-        <target state="translated">Identificador del comando que se va a ejecutar</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.commandType.title">
-        <source xml:lang="en">Title by which the command is represented in the UI</source>
-        <target state="translated">Título con el que se representa el comando en la interfaz de usuario</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.commandType.category">
-        <source xml:lang="en">(Optional) Category string by the command is grouped in the UI</source>
-        <target state="translated">(Opcional) la cadena de categoría se agrupa por el comando en la interfaz de usuario</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.commandType.precondition">
-        <source xml:lang="en">(Optional) Condition which must be true to enable the command</source>
-        <target state="translated">(Opcional) Condición que debe ser verdadera para habilitar el comando</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.commandType.icon">
-        <source xml:lang="en">(Optional) Icon which is used to represent the command in the UI. Either a file path, an object with file paths for dark and light themes, or a theme icon references, like `$(zap)`</source>
-        <target state="translated">(Opcional) Icono que se utiliza para representar el comando en la interfaz de usuario. Una ruta de archivo, un objeto con rutas de archivo para temas oscuros y claros o referencias a un icono de tema, como "$(zap)"</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.commandType.icon.light">
-        <source xml:lang="en">Icon path when a light theme is used</source>
-        <target state="translated">Ruta del ícono cuando un tema light es usado</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.commandType.icon.dark">
-        <source xml:lang="en">Icon path when a dark theme is used</source>
-        <target state="translated">Ruta de icono cuando se utiliza un tema oscuro</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.commands">
-        <source xml:lang="en">Contributes commands to the command palette.</source>
-        <target state="translated">Aporta comandos a la paleta de comandos.</target>
-      </trans-unit>
-      <trans-unit id="dup">
-        <source xml:lang="en">Command `{0}` appears multiple times in the `commands` section.</source>
-        <target state="translated">El comando `{0}` aparece varias veces en la sección 'commands'.</target>
-      </trans-unit>
-      <trans-unit id="menuId.invalid">
-        <source xml:lang="en">`{0}` is not a valid menu identifier</source>
-        <target state="translated">`{0}` no es un identificador de menú válido</target>
-      </trans-unit>
-      <trans-unit id="proposedAPI.invalid">
-        <source xml:lang="en">{0} is a proposed menu identifier and is only available when running out of dev or with the following command line switch: --enable-proposed-api {1}</source>
-        <target state="translated">{0} es un identificador de menú propuesto y solo está disponible al ejecutarlo fuera del entorno de desarrollo o con el siguiente modificador de la línea de comandos: --enable-proposed-api {1}</target>
-      </trans-unit>
-      <trans-unit id="missing.command">
-        <source xml:lang="en">Menu item references a command `{0}` which is not defined in the 'commands' section.</source>
-        <target state="translated">El elemento de menú hace referencia a un comando `{0}` que no está definido en la sección 'commands'.</target>
-      </trans-unit>
-      <trans-unit id="missing.altCommand">
-        <source xml:lang="en">Menu item references an alt-command `{0}` which is not defined in the 'commands' section.</source>
-        <target state="translated">El elemento de menú hace referencia a un comando alternativo `{0}` que no está definido en la sección 'commands'.</target>
-      </trans-unit>
-      <trans-unit id="dupe.command">
-        <source xml:lang="en">Menu item references the same command as default and alt-command</source>
-        <target state="translated">El elemento de menú hace referencia al mismo comando que el comando predeterminado y el comando alternativo</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/api/browser/viewsExtensionPoint" source-language="en" target-language="es" datatype="plaintext">
     <body>
       <trans-unit id="vscode.extension.contributes.views.containers.id">
@@ -965,6 +598,10 @@ Esta opción requiere reiniciar para que tenga efecto.</target>
       <trans-unit id="views.container.activitybar">
         <source xml:lang="en">Contribute views containers to Activity Bar</source>
         <target state="translated">Contribuir vistas de contenedores a la barra de actividades</target>
+      </trans-unit>
+      <trans-unit id="views.container.panel">
+        <source xml:lang="en">Contribute views containers to Panel</source>
+        <target state="translated">Aportar contenedores de vistas al Panel</target>
       </trans-unit>
       <trans-unit id="vscode.extension.contributes.view.id">
         <source xml:lang="en">Identifier of the view. This should be unique across all views. It is recommended to include your extension id as part of the view id. Use this to register a data provider through `vscode.window.registerTreeDataProviderForView` API. Also to trigger activating your extension by registering `onView:${id}` event to `activationEvents`.</source>
@@ -1064,24 +701,449 @@ Esta opción requiere reiniciar para que tenga efecto.</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/common/editor" source-language="en" target-language="es" datatype="plaintext">
+  <file original="src/vs/workbench/browser/actions/workspaceActions" source-language="en" target-language="es" datatype="plaintext">
     <body>
-      <trans-unit id="sideBySideLabels">
-        <source xml:lang="en">{0} - {1}</source>
-        <target state="translated">{0} - {1}</target>
+      <trans-unit id="openFile">
+        <source xml:lang="en">Open File...</source>
+        <target state="translated">Abrir archivo...</target>
+      </trans-unit>
+      <trans-unit id="openFolder">
+        <source xml:lang="en">Open Folder...</source>
+        <target state="translated">Abrir carpeta...</target>
+      </trans-unit>
+      <trans-unit id="openFileFolder">
+        <source xml:lang="en">Open...</source>
+        <target state="translated">Abrir...</target>
+      </trans-unit>
+      <trans-unit id="openWorkspaceAction">
+        <source xml:lang="en">Open Workspace...</source>
+        <target state="translated">Abrir área de trabajo...</target>
+      </trans-unit>
+      <trans-unit id="closeWorkspace">
+        <source xml:lang="en">Close Workspace</source>
+        <target state="translated">Cerrar área de trabajo</target>
+      </trans-unit>
+      <trans-unit id="noWorkspaceOpened">
+        <source xml:lang="en">There is currently no workspace opened in this instance to close.</source>
+        <target state="translated">No hay ninguna área de trabajo abierta en esta instancia para cerrarla.</target>
+      </trans-unit>
+      <trans-unit id="openWorkspaceConfigFile">
+        <source xml:lang="en">Open Workspace Configuration File</source>
+        <target state="translated">Abrir archivo de configuración del área de trabajo</target>
+      </trans-unit>
+      <trans-unit id="globalRemoveFolderFromWorkspace">
+        <source xml:lang="en">Remove Folder from Workspace...</source>
+        <target state="translated">Quitar carpeta del Área de trabajo...</target>
+      </trans-unit>
+      <trans-unit id="saveWorkspaceAsAction">
+        <source xml:lang="en">Save Workspace As...</source>
+        <target state="translated">Guardar área de trabajo como...</target>
+      </trans-unit>
+      <trans-unit id="duplicateWorkspaceInNewWindow">
+        <source xml:lang="en">Duplicate Workspace in New Window</source>
+        <target state="translated">Duplicar el área de trabajo en una ventana nueva</target>
+      </trans-unit>
+      <trans-unit id="workspaces">
+        <source xml:lang="en">Workspaces</source>
+        <target state="translated">Áreas de trabajo</target>
+      </trans-unit>
+      <trans-unit id="miAddFolderToWorkspace">
+        <source xml:lang="en">A&amp;&amp;dd Folder to Workspace...</source>
+        <target state="translated">A&amp;&amp;gregar carpeta al área de trabajo...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miSaveWorkspaceAs">
+        <source xml:lang="en">Save Workspace As...</source>
+        <target state="translated">Guardar área de trabajo como...</target>
+      </trans-unit>
+      <trans-unit id="miCloseFolder">
+        <source xml:lang="en">Close &amp;&amp;Folder</source>
+        <target state="translated">Cerrar &amp;&amp;carpeta</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miCloseWorkspace">
+        <source xml:lang="en">Close &amp;&amp;Workspace</source>
+        <target state="translated">Cerrar &amp;&amp;área de trabajo</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/workbench" source-language="en" target-language="es" datatype="plaintext">
+  <file original="src/vs/workbench/browser/actions/windowActions" source-language="en" target-language="es" datatype="plaintext">
     <body>
-      <trans-unit id="loaderErrorNative">
-        <source xml:lang="en">Failed to load a required file. Please restart the application to try again. Details: {0}</source>
-        <target state="translated">No se pudo cargar un archivo requerido. Reinicie la aplicación para intentarlo de nuevo. Detalles: {0}</target>
+      <trans-unit id="remove">
+        <source xml:lang="en">Remove from Recently Opened</source>
+        <target state="translated">Quitar de abiertos recientemente</target>
+      </trans-unit>
+      <trans-unit id="dirtyRecentlyOpened">
+        <source xml:lang="en">Workspace With Dirty Files</source>
+        <target state="translated">Área de trabajo con archivos modificados</target>
+      </trans-unit>
+      <trans-unit id="workspaces">
+        <source xml:lang="en">workspaces</source>
+        <target state="translated">Áreas de trabajo</target>
+      </trans-unit>
+      <trans-unit id="files">
+        <source xml:lang="en">files</source>
+        <target state="translated">archivos</target>
+      </trans-unit>
+      <trans-unit id="openRecentPlaceholderMac">
+        <source xml:lang="en">Select to open (hold Cmd-key to force new window or Alt-key for same window)</source>
+      </trans-unit>
+      <trans-unit id="openRecentPlaceholder">
+        <source xml:lang="en">Select to open (hold Ctrl-key to force new window or Alt-key for same window)</source>
+      </trans-unit>
+      <trans-unit id="dirtyWorkspace">
+        <source xml:lang="en">Workspace with Dirty Files</source>
+        <target state="translated">Área de trabajo con archivos modificados</target>
+      </trans-unit>
+      <trans-unit id="dirtyWorkspaceConfirm">
+        <source xml:lang="en">Do you want to open the workspace to review the dirty files?</source>
+        <target state="translated">¿Desea abrir el área de trabajo para revisar los archivos con modificaciones?</target>
+      </trans-unit>
+      <trans-unit id="dirtyWorkspaceConfirmDetail">
+        <source xml:lang="en">Workspaces with dirty files cannot be removed until all dirty files have been saved or reverted.</source>
+        <target state="translated">Las áreas de trabajo con archivos modificados no se pueden eliminar hasta que se hayan guardado o revertido todos los archivos modificados.</target>
+      </trans-unit>
+      <trans-unit id="recentDirtyAriaLabel">
+        <source xml:lang="en">{0}, dirty workspace</source>
+        <target state="translated">{0}, área de trabajo con modificaciones</target>
+      </trans-unit>
+      <trans-unit id="openRecent">
+        <source xml:lang="en">Open Recent...</source>
+        <target state="translated">Abrir Reciente...</target>
+      </trans-unit>
+      <trans-unit id="quickOpenRecent">
+        <source xml:lang="en">Quick Open Recent...</source>
+        <target state="translated">Abrir Reciente Rapidamente...</target>
+      </trans-unit>
+      <trans-unit id="toggleFullScreen">
+        <source xml:lang="en">Toggle Full Screen</source>
+        <target state="translated">Alternar pantalla completa</target>
+      </trans-unit>
+      <trans-unit id="reloadWindow">
+        <source xml:lang="en">Reload Window</source>
+        <target state="translated">Recargar ventana</target>
+      </trans-unit>
+      <trans-unit id="about">
+        <source xml:lang="en">About</source>
+        <target state="translated">Acerca de</target>
+      </trans-unit>
+      <trans-unit id="newWindow">
+        <source xml:lang="en">New Window</source>
+        <target state="translated">Nueva ventana</target>
+      </trans-unit>
+      <trans-unit id="file">
+        <source xml:lang="en">File</source>
+        <target state="translated">archivo</target>
+      </trans-unit>
+      <trans-unit id="view">
+        <source xml:lang="en">View</source>
+        <target state="translated">Vista</target>
+      </trans-unit>
+      <trans-unit id="developer">
+        <source xml:lang="en">Developer</source>
+        <target state="translated">Desarrollador</target>
+      </trans-unit>
+      <trans-unit id="help">
+        <source xml:lang="en">Help</source>
+        <target state="translated">Ayuda</target>
+      </trans-unit>
+      <trans-unit id="miNewWindow">
+        <source xml:lang="en">New &amp;&amp;Window</source>
+        <target state="translated">&amp;&amp;Nueva ventana</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miOpenRecent">
+        <source xml:lang="en">Open &amp;&amp;Recent</source>
+        <target state="translated">Abrir &amp;&amp;reciente</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miMore">
+        <source xml:lang="en">&amp;&amp;More...</source>
+        <target state="translated">&amp;&amp;Más...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miToggleFullScreen">
+        <source xml:lang="en">&amp;&amp;Full Screen</source>
+        <target state="translated">&amp;&amp;Pantalla completa</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miAbout">
+        <source xml:lang="en">&amp;&amp;About</source>
+        <target state="translated">&amp;&amp;Acerca de</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/common/menusExtensionPoint" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="requirearray">
+        <source xml:lang="en">menu items must be an array</source>
+        <target state="translated">los elementos de menú deben ser una matriz</target>
+      </trans-unit>
+      <trans-unit id="requirestring">
+        <source xml:lang="en">property `{0}` is mandatory and must be of type `string`</source>
+        <target state="translated">la propiedad `{0}` es obligatoria y debe ser de tipo "string"</target>
+      </trans-unit>
+      <trans-unit id="optstring">
+        <source xml:lang="en">property `{0}` can be omitted or must be of type `string`</source>
+        <target state="translated">la propiedad `{0}` se puede omitir o debe ser de tipo "string"</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.menuItem.command">
+        <source xml:lang="en">Identifier of the command to execute. The command must be declared in the 'commands'-section</source>
+        <target state="translated">El identificador del comando que se ejecutará. El comando se debe declarar en la sección 'commands'</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.menuItem.alt">
+        <source xml:lang="en">Identifier of an alternative command to execute. The command must be declared in the 'commands'-section</source>
+        <target state="translated">El identificador de un comando alternativo que se usará. El comando se debe declarar en la sección 'commands'</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.menuItem.when">
+        <source xml:lang="en">Condition which must be true to show this item</source>
+        <target state="translated">Condición que se debe cumplir para mostrar este elemento</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.menuItem.group">
+        <source xml:lang="en">Group into which this command belongs</source>
+        <target state="translated">Grupo al que pertenece este comando</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.menus">
+        <source xml:lang="en">Contributes menu items to the editor</source>
+        <target state="translated">Contribuye con elementos de menú al editor</target>
+      </trans-unit>
+      <trans-unit id="menus.commandPalette">
+        <source xml:lang="en">The Command Palette</source>
+        <target state="translated">La paleta de comandos</target>
+      </trans-unit>
+      <trans-unit id="menus.touchBar">
+        <source xml:lang="en">The touch bar (macOS only)</source>
+        <target state="translated">Barra táctil (sólo macOS)</target>
+      </trans-unit>
+      <trans-unit id="menus.editorTitle">
+        <source xml:lang="en">The editor title menu</source>
+        <target state="translated">El menú de título del editor</target>
+      </trans-unit>
+      <trans-unit id="menus.editorContext">
+        <source xml:lang="en">The editor context menu</source>
+        <target state="translated">El menú conextual del editor</target>
+      </trans-unit>
+      <trans-unit id="menus.explorerContext">
+        <source xml:lang="en">The file explorer context menu</source>
+        <target state="translated">El menú contextual del explorador de archivos</target>
+      </trans-unit>
+      <trans-unit id="menus.editorTabContext">
+        <source xml:lang="en">The editor tabs context menu</source>
+        <target state="translated">Menú contextual de pestañas del editor</target>
+      </trans-unit>
+      <trans-unit id="menus.debugCallstackContext">
+        <source xml:lang="en">The debug callstack context menu</source>
+        <target state="translated">El menú contextual de la pila de llamadas de depuración</target>
+      </trans-unit>
+      <trans-unit id="menus.debugToolBar">
+        <source xml:lang="en">The debug toolbar menu</source>
+      </trans-unit>
+      <trans-unit id="menus.webNavigation">
+        <source xml:lang="en">The top level navigational menu (web only)</source>
+        <target state="translated">El menú de navegación de nivel superior (solo web)</target>
+      </trans-unit>
+      <trans-unit id="menus.scmTitle">
+        <source xml:lang="en">The Source Control title menu</source>
+        <target state="translated">El menú del título Control de código fuente</target>
+      </trans-unit>
+      <trans-unit id="menus.scmSourceControl">
+        <source xml:lang="en">The Source Control menu</source>
+        <target state="translated">El menú de control de código fuente</target>
+      </trans-unit>
+      <trans-unit id="menus.resourceGroupContext">
+        <source xml:lang="en">The Source Control resource group context menu</source>
+        <target state="translated">El menú contextual del grupo de recursos de Control de código fuente</target>
+      </trans-unit>
+      <trans-unit id="menus.resourceStateContext">
+        <source xml:lang="en">The Source Control resource state context menu</source>
+        <target state="translated">El menú contextual de estado de recursos de Control de código fuente</target>
+      </trans-unit>
+      <trans-unit id="menus.resourceFolderContext">
+        <source xml:lang="en">The Source Control resource folder context menu</source>
+        <target state="translated">El menú contextual de la carpeta de recursos del control de código fuente</target>
+      </trans-unit>
+      <trans-unit id="menus.changeTitle">
+        <source xml:lang="en">The Source Control inline change menu</source>
+        <target state="translated">El menú de cambio en línea del control de código fuente</target>
+      </trans-unit>
+      <trans-unit id="view.viewTitle">
+        <source xml:lang="en">The contributed view title menu</source>
+        <target state="translated">El menú de título de vista contribuida</target>
+      </trans-unit>
+      <trans-unit id="view.itemContext">
+        <source xml:lang="en">The contributed view item context menu</source>
+        <target state="translated">El menú contextual del elemento de vista contribuida</target>
+      </trans-unit>
+      <trans-unit id="commentThread.title">
+        <source xml:lang="en">The contributed comment thread title menu</source>
+        <target state="translated">El menú del título del subproceso de comentarios aportado</target>
+      </trans-unit>
+      <trans-unit id="commentThread.actions">
+        <source xml:lang="en">The contributed comment thread context menu, rendered as buttons below the comment editor</source>
+        <target state="translated">El menú contextual del subproceso de comentario aportado, representado como botones debajo del editor de comentarios</target>
+      </trans-unit>
+      <trans-unit id="comment.title">
+        <source xml:lang="en">The contributed comment title menu</source>
+        <target state="translated">El menú de título de comentario aportado</target>
+      </trans-unit>
+      <trans-unit id="comment.actions">
+        <source xml:lang="en">The contributed comment context menu, rendered as buttons below the comment editor</source>
+        <target state="translated">El menú contextual de comentarios aportados, representado como botones debajo del editor de comentarios</target>
+      </trans-unit>
+      <trans-unit id="notebook.cell.title">
+        <source xml:lang="en">The contributed notebook cell title menu</source>
+        <target state="translated">El menú de título de la celda del cuaderno aportado</target>
+      </trans-unit>
+      <trans-unit id="menus.extensionContext">
+        <source xml:lang="en">The extension context menu</source>
+        <target state="translated">Menú contextual de la extensión</target>
+      </trans-unit>
+      <trans-unit id="view.timelineTitle">
+        <source xml:lang="en">The Timeline view title menu</source>
+        <target state="translated">El menú de título de la vista de línea de tiempo</target>
+      </trans-unit>
+      <trans-unit id="view.timelineContext">
+        <source xml:lang="en">The Timeline view item context menu</source>
+        <target state="translated">El menú contextual del elemento de vista de línea de tiempo</target>
+      </trans-unit>
+      <trans-unit id="nonempty">
+        <source xml:lang="en">expected non-empty value.</source>
+        <target state="translated">se esperaba un valor no vacío.</target>
+      </trans-unit>
+      <trans-unit id="opticon">
+        <source xml:lang="en">property `icon` can be omitted or must be either a string or a literal like `{dark, light}`</source>
+        <target state="translated">la propiedad `icon` se puede omitir o debe ser una cadena o un literal como `{dark, light}`</target>
+      </trans-unit>
+      <trans-unit id="requireStringOrObject">
+        <source xml:lang="en">property `{0}` is mandatory and must be of type `string` or `object`</source>
+        <target state="translated">La propiedad "{0}" es obligatoria y debe ser de tipo "string" u "object"</target>
+      </trans-unit>
+      <trans-unit id="requirestrings">
+        <source xml:lang="en">properties `{0}` and `{1}` are mandatory and must be of type `string`</source>
+        <target state="translated">Las propiedades "{0}" y "{1}" son obligatorias y deben ser de tipo "string"</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.commandType.command">
+        <source xml:lang="en">Identifier of the command to execute</source>
+        <target state="translated">Identificador del comando que se va a ejecutar</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.commandType.title">
+        <source xml:lang="en">Title by which the command is represented in the UI</source>
+        <target state="translated">Título con el que se representa el comando en la interfaz de usuario</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.commandType.category">
+        <source xml:lang="en">(Optional) Category string by the command is grouped in the UI</source>
+        <target state="translated">(Opcional) la cadena de categoría se agrupa por el comando en la interfaz de usuario</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.commandType.precondition">
+        <source xml:lang="en">(Optional) Condition which must be true to enable the command</source>
+        <target state="translated">(Opcional) Condición que debe ser verdadera para habilitar el comando</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.commandType.icon">
+        <source xml:lang="en">(Optional) Icon which is used to represent the command in the UI. Either a file path, an object with file paths for dark and light themes, or a theme icon references, like `$(zap)`</source>
+        <target state="translated">(Opcional) Icono que se utiliza para representar el comando en la interfaz de usuario. Una ruta de archivo, un objeto con rutas de archivo para temas oscuros y claros o referencias a un icono de tema, como "$(zap)"</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.commandType.icon.light">
+        <source xml:lang="en">Icon path when a light theme is used</source>
+        <target state="translated">Ruta del ícono cuando un tema light es usado</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.commandType.icon.dark">
+        <source xml:lang="en">Icon path when a dark theme is used</source>
+        <target state="translated">Ruta de icono cuando se utiliza un tema oscuro</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.commands">
+        <source xml:lang="en">Contributes commands to the command palette.</source>
+        <target state="translated">Aporta comandos a la paleta de comandos.</target>
+      </trans-unit>
+      <trans-unit id="dup">
+        <source xml:lang="en">Command `{0}` appears multiple times in the `commands` section.</source>
+        <target state="translated">El comando `{0}` aparece varias veces en la sección 'commands'.</target>
+      </trans-unit>
+      <trans-unit id="menuId.invalid">
+        <source xml:lang="en">`{0}` is not a valid menu identifier</source>
+        <target state="translated">`{0}` no es un identificador de menú válido</target>
+      </trans-unit>
+      <trans-unit id="proposedAPI.invalid">
+        <source xml:lang="en">{0} is a proposed menu identifier and is only available when running out of dev or with the following command line switch: --enable-proposed-api {1}</source>
+        <target state="translated">{0} es un identificador de menú propuesto y solo está disponible al ejecutarlo fuera del entorno de desarrollo o con el siguiente modificador de la línea de comandos: --enable-proposed-api {1}</target>
+      </trans-unit>
+      <trans-unit id="missing.command">
+        <source xml:lang="en">Menu item references a command `{0}` which is not defined in the 'commands' section.</source>
+        <target state="translated">El elemento de menú hace referencia a un comando `{0}` que no está definido en la sección 'commands'.</target>
+      </trans-unit>
+      <trans-unit id="missing.altCommand">
+        <source xml:lang="en">Menu item references an alt-command `{0}` which is not defined in the 'commands' section.</source>
+        <target state="translated">El elemento de menú hace referencia a un comando alternativo `{0}` que no está definido en la sección 'commands'.</target>
+      </trans-unit>
+      <trans-unit id="dupe.command">
+        <source xml:lang="en">Menu item references the same command as default and alt-command</source>
+        <target state="translated">El elemento de menú hace referencia al mismo comando que el comando predeterminado y el comando alternativo</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/electron-browser/actions/windowActions" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="closeWindow">
+        <source xml:lang="en">Close Window</source>
+        <target state="translated">Cerrar ventana</target>
+      </trans-unit>
+      <trans-unit id="zoomIn">
+        <source xml:lang="en">Zoom In</source>
+        <target state="translated">Acercar</target>
+      </trans-unit>
+      <trans-unit id="zoomOut">
+        <source xml:lang="en">Zoom Out</source>
+        <target state="translated">Alejar</target>
+      </trans-unit>
+      <trans-unit id="zoomReset">
+        <source xml:lang="en">Reset Zoom</source>
+        <target state="translated">Restablecer zoom</target>
+      </trans-unit>
+      <trans-unit id="reloadWindowWithExtensionsDisabled">
+        <source xml:lang="en">Reload With Extensions Disabled</source>
+        <target state="translated">Recargar con extensiones desactivadas</target>
+      </trans-unit>
+      <trans-unit id="close">
+        <source xml:lang="en">Close Window</source>
+        <target state="translated">Cerrar ventana</target>
+      </trans-unit>
+      <trans-unit id="switchWindowPlaceHolder">
+        <source xml:lang="en">Select a window to switch to</source>
+        <target state="translated">Seleccionar una ventana a la que cambiar</target>
+      </trans-unit>
+      <trans-unit id="windowDirtyAriaLabel">
+        <source xml:lang="en">{0}, dirty window</source>
+        <target state="translated">{0}, ventana con modificaciones</target>
+      </trans-unit>
+      <trans-unit id="current">
+        <source xml:lang="en">Current Window</source>
+        <target state="translated">Ventana actual</target>
+      </trans-unit>
+      <trans-unit id="switchWindow">
+        <source xml:lang="en">Switch Window...</source>
+        <target state="translated">Cambiar de Ventana...</target>
+      </trans-unit>
+      <trans-unit id="quickSwitchWindow">
+        <source xml:lang="en">Quick Switch Window...</source>
+        <target state="translated">Cambio Rápido de Ventana...</target>
       </trans-unit>
     </body>
   </file>
   <file original="src/vs/workbench/browser/workbench.contribution" source-language="en" target-language="es" datatype="plaintext">
     <body>
+      <trans-unit id="workbench.editor.titleScrollbarSizing.default">
+        <source xml:lang="en">The default size.</source>
+        <target state="translated">El tamaño predeterminado.</target>
+      </trans-unit>
+      <trans-unit id="workbench.editor.titleScrollbarSizing.large">
+        <source xml:lang="en">Increases the size, so it can be grabed more easily with the mouse</source>
+        <target state="translated">Aumenta el tamaño, por lo que se puede tomar más fácilmente con el mouse</target>
+      </trans-unit>
+      <trans-unit id="tabScrollbarHeight">
+        <source xml:lang="en">Controls the height of the scrollbars used for tabs and breadcrumbs in the editor title area.</source>
+        <target state="translated">Controla la altura de las barras de desplazamiento utilizadas para las pestañas y las rutas de navegación en el área de título del editor.</target>
+      </trans-unit>
       <trans-unit id="showEditorTabs">
         <source xml:lang="en">Controls whether opened editors should show in tabs or not.</source>
         <target state="translated">Controla si los editores abiertos se deben mostrar o no en pestañas.</target>
@@ -1263,10 +1325,6 @@ Esta opción requiere reiniciar para que tenga efecto.</target>
       <trans-unit id="viewVisibility">
         <source xml:lang="en">Controls the visibility of view header actions. View header actions may either be always visible, or only visible when that view is focused or hovered over.</source>
         <target state="translated">Controla la visibilidad de las acciones en el encabezado de la vista. Las acciones en el encabezado de la vista pueden ser siempre visibles, o solo cuando la vista es enfocada o apuntada.</target>
-      </trans-unit>
-      <trans-unit id="movingViewContainer">
-        <source xml:lang="en">Controls whether specific views will have a context menu entry allowing them to be moved to a new container. Currently, this setting only affects the outline view and views contributed by extensions.</source>
-        <target state="translated">Controla si las vistas específicas tendrán una entrada de menú contextual que permite moverlas a un nuevo contenedor. Actualmente, esta configuración solo afecta a la vista de esquema y a las vistas aportadas por las extensiones.</target>
       </trans-unit>
       <trans-unit id="fontAliasing">
         <source xml:lang="en">Controls font aliasing method in the workbench.</source>
@@ -1480,159 +1538,6 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/actions/layoutActions" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="view">
-        <source xml:lang="en">View</source>
-        <target state="translated">Vista</target>
-      </trans-unit>
-      <trans-unit id="closeSidebar">
-        <source xml:lang="en">Close Side Bar</source>
-        <target state="translated">Cerrar barra lateral</target>
-      </trans-unit>
-      <trans-unit id="toggleActivityBar">
-        <source xml:lang="en">Toggle Activity Bar Visibility</source>
-        <target state="translated">Alternar visibilidad de la barra de actividades</target>
-      </trans-unit>
-      <trans-unit id="miShowActivityBar">
-        <source xml:lang="en">Show &amp;&amp;Activity Bar</source>
-        <target state="translated">Mostrar &amp;&amp;barra de actividades</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="toggleCenteredLayout">
-        <source xml:lang="en">Toggle Centered Layout</source>
-        <target state="translated">Alternar diseño centrado</target>
-      </trans-unit>
-      <trans-unit id="miToggleCenteredLayout">
-        <source xml:lang="en">Centered Layout</source>
-        <target state="translated">Diseño centrado</target>
-      </trans-unit>
-      <trans-unit id="flipLayout">
-        <source xml:lang="en">Toggle Vertical/Horizontal Editor Layout</source>
-        <target state="translated">Alternar diseño vertical/horizontal del editor</target>
-      </trans-unit>
-      <trans-unit id="miToggleEditorLayout">
-        <source xml:lang="en">Flip &amp;&amp;Layout</source>
-        <target state="translated">Invertir &amp;&amp;diseño</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="toggleSidebarPosition">
-        <source xml:lang="en">Toggle Side Bar Position</source>
-        <target state="translated">Alternar posición de la barra lateral</target>
-      </trans-unit>
-      <trans-unit id="moveSidebarRight">
-        <source xml:lang="en">Move Side Bar Right</source>
-        <target state="translated">Mover la barra lateral a la derecha</target>
-      </trans-unit>
-      <trans-unit id="moveSidebarLeft">
-        <source xml:lang="en">Move Side Bar Left</source>
-        <target state="translated">Mover la barra lateral a la izquierda</target>
-      </trans-unit>
-      <trans-unit id="miMoveSidebarRight">
-        <source xml:lang="en">&amp;&amp;Move Side Bar Right</source>
-        <target state="translated">&amp;&amp;Mover barra lateral a la derecha</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miMoveSidebarLeft">
-        <source xml:lang="en">&amp;&amp;Move Side Bar Left</source>
-        <target state="translated">&amp;&amp;Mover barra lateral a la izquierda</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="toggleEditor">
-        <source xml:lang="en">Toggle Editor Area</source>
-        <target state="translated">Alternar área del editor</target>
-      </trans-unit>
-      <trans-unit id="miShowEditorArea">
-        <source xml:lang="en">Show &amp;&amp;Editor Area</source>
-        <target state="translated">Mostrar &amp;&amp;área de editor</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="toggleSidebar">
-        <source xml:lang="en">Toggle Side Bar Visibility</source>
-        <target state="translated">Alternar visibilidad de la barra lateral</target>
-      </trans-unit>
-      <trans-unit id="miAppearance">
-        <source xml:lang="en">&amp;&amp;Appearance</source>
-        <target state="translated">&amp;&amp;Apariencia</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miShowSidebar">
-        <source xml:lang="en">Show &amp;&amp;Side Bar</source>
-        <target state="translated">Mostrar barra &amp;&amp;lateral</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="toggleStatusbar">
-        <source xml:lang="en">Toggle Status Bar Visibility</source>
-        <target state="translated">Alternar visibilidad de la barra de estado</target>
-      </trans-unit>
-      <trans-unit id="miShowStatusbar">
-        <source xml:lang="en">Show S&amp;&amp;tatus Bar</source>
-        <target state="translated">Mostrar barra de e&amp;&amp;stado</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="toggleTabs">
-        <source xml:lang="en">Toggle Tab Visibility</source>
-        <target state="translated">Alternar visibilidad de la pestaña</target>
-      </trans-unit>
-      <trans-unit id="toggleZenMode">
-        <source xml:lang="en">Toggle Zen Mode</source>
-        <target state="translated">Alternar modo zen</target>
-      </trans-unit>
-      <trans-unit id="miToggleZenMode">
-        <source xml:lang="en">Zen Mode</source>
-        <target state="translated">Modo zen</target>
-      </trans-unit>
-      <trans-unit id="toggleMenuBar">
-        <source xml:lang="en">Toggle Menu Bar</source>
-        <target state="translated">Alternar barra de menús</target>
-      </trans-unit>
-      <trans-unit id="miShowMenuBar">
-        <source xml:lang="en">Show Menu &amp;&amp;Bar</source>
-        <target state="translated">Mostrar barra de &amp; &amp;menús</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="resetViewLocations">
-        <source xml:lang="en">Reset View Locations</source>
-        <target state="translated">Restablecer ubicaciones de vista</target>
-      </trans-unit>
-      <trans-unit id="moveFocusedView">
-        <source xml:lang="en">Move Focused View</source>
-        <target state="translated">Mover vista enfocada</target>
-      </trans-unit>
-      <trans-unit id="moveFocusedView.error.noFocusedView">
-        <source xml:lang="en">There is no view currently focused.</source>
-        <target state="translated">No hay ninguna vista enfocada actualmente.</target>
-      </trans-unit>
-      <trans-unit id="moveFocusedView.error.nonMovableView">
-        <source xml:lang="en">The currently focused view is not movable.</source>
-        <target state="translated">La vista enfocada actualmente no es móvil.</target>
-      </trans-unit>
-      <trans-unit id="moveFocusedView.selectDestination">
-        <source xml:lang="en">Select a Destination for the View</source>
-        <target state="translated">Seleccionar un Destino para la Vista</target>
-      </trans-unit>
-      <trans-unit id="sidebar">
-        <source xml:lang="en">Side Bar</source>
-        <target state="translated">Barra lateral</target>
-      </trans-unit>
-      <trans-unit id="panel">
-        <source xml:lang="en">Panel</source>
-        <target state="translated">Panel</target>
-      </trans-unit>
-      <trans-unit id="moveFocusedView.newContainerInPanel">
-        <source xml:lang="en">New Container in Panel</source>
-        <target state="translated">Nuevo contenedor en panel</target>
-      </trans-unit>
-      <trans-unit id="increaseViewSize">
-        <source xml:lang="en">Increase Current View Size</source>
-        <target state="translated">Aumentar tamaño de vista actual</target>
-      </trans-unit>
-      <trans-unit id="decreaseViewSize">
-        <source xml:lang="en">Decrease Current View Size</source>
-        <target state="translated">Reducir tamaño de vista actual</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/browser/parts/titlebar/titlebarPart" source-language="en" target-language="es" datatype="plaintext">
     <body>
       <trans-unit id="patchedWindowTitle">
@@ -1653,43 +1558,19 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/panel/panelPart" source-language="en" target-language="es" datatype="plaintext">
+  <file original="src/vs/workbench/browser/workbench" source-language="en" target-language="es" datatype="plaintext">
     <body>
-      <trans-unit id="hidePanel">
-        <source xml:lang="en">Hide Panel</source>
-        <target state="translated">Ocultar panel</target>
+      <trans-unit id="loaderErrorNative">
+        <source xml:lang="en">Failed to load a required file. Please restart the application to try again. Details: {0}</source>
+        <target state="translated">No se pudo cargar un archivo requerido. Reinicie la aplicación para intentarlo de nuevo. Detalles: {0}</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/statusbar/statusbarPart" source-language="en" target-language="es" datatype="plaintext">
+  <file original="src/vs/workbench/common/editor" source-language="en" target-language="es" datatype="plaintext">
     <body>
-      <trans-unit id="hide">
-        <source xml:lang="en">Hide '{0}'</source>
-        <target state="translated">Ocultar "{0}"</target>
-      </trans-unit>
-      <trans-unit id="hideStatusBar">
-        <source xml:lang="en">Hide Status Bar</source>
-        <target state="translated">Ocultar barra de estado</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/activitybar/activitybarPart" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="hideMenu">
-        <source xml:lang="en">Hide Menu</source>
-        <target state="translated">Ocultar menú</target>
-      </trans-unit>
-      <trans-unit id="showMenu">
-        <source xml:lang="en">Show Menu</source>
-        <target state="translated">Mostrar menú</target>
-      </trans-unit>
-      <trans-unit id="hideActivitBar">
-        <source xml:lang="en">Hide Activity Bar</source>
-        <target state="translated">Ocultar barra de actividades</target>
-      </trans-unit>
-      <trans-unit id="manage">
-        <source xml:lang="en">Manage</source>
-        <target state="translated">Administrar</target>
+      <trans-unit id="sideBySideLabels">
+        <source xml:lang="en">{0} - {1}</source>
+        <target state="translated">{0} - {1}</target>
       </trans-unit>
     </body>
   </file>
@@ -1700,8 +1581,8 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
         <target state="translated">Aporta la configuración del esquema JSON.</target>
       </trans-unit>
       <trans-unit id="contributes.jsonValidation.fileMatch">
-        <source xml:lang="en">The file pattern to match, for example "package.json" or "*.launch".</source>
-        <target state="translated">Patrón de archivo para buscar coincidencias, por ejemplo, "package.json" o "*.launch".</target>
+        <source xml:lang="en">The file pattern (or an array of patterns) to match, for example "package.json" or "*.launch". Exclusion patterns start with '!'</source>
+        <target state="translated">El patrón de archivo (o una matriz de patrones) para que coincida con, por ejemplo, "package.json" o "*.launch". Los patrones de exclusión comienzan con "!".</target>
       </trans-unit>
       <trans-unit id="contributes.jsonValidation.url">
         <source xml:lang="en">A schema URL ('http:', 'https:') or relative path to the extension folder ('./').</source>
@@ -1712,8 +1593,8 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
         <target state="translated">configuration.jsonValidation debe ser una matriz</target>
       </trans-unit>
       <trans-unit id="invalid.fileMatch">
-        <source xml:lang="en">'configuration.jsonValidation.fileMatch' must be defined</source>
-        <target state="translated">configuration.jsonValidation.fileMatch debe haberse definido</target>
+        <source xml:lang="en">'configuration.jsonValidation.fileMatch' must be defined as a string or an array of strings.</source>
+        <target state="translated">"configuration.jsonValidation.fileMatch" debe definirse como una cadena o una matriz de cadenas.</target>
       </trans-unit>
       <trans-unit id="invalid.url">
         <source xml:lang="en">'configuration.jsonValidation.url' must be a URL or relative path</source>
@@ -1781,83 +1662,212 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/browser/mainThreadAuthentication" source-language="en" target-language="es" datatype="plaintext">
+  <file original="src/vs/workbench/browser/actions/layoutActions" source-language="en" target-language="es" datatype="plaintext">
     <body>
-      <trans-unit id="confirmAuthenticationAccess">
-        <source xml:lang="en">The extension '{0}' is trying to access authentication information from {1}.</source>
-        <target state="translated">La extensión "{0}" está intentando acceder a la información de autenticación desde {1}.</target>
-      </trans-unit>
-      <trans-unit id="cancel">
-        <source xml:lang="en">Cancel</source>
-        <target state="translated">Cancelar</target>
-      </trans-unit>
-      <trans-unit id="allow">
-        <source xml:lang="en">Allow</source>
-        <target state="translated">Permitir</target>
-      </trans-unit>
-      <trans-unit id="neverAgain">
-        <source xml:lang="en">Don't Show Again</source>
-        <target state="translated">No mostrar de nuevo</target>
-      </trans-unit>
-      <trans-unit id="confirmLogin">
-        <source xml:lang="en">The extension '{0}' wants to sign in using {1}.</source>
-        <target state="translated">La extensión "{0}" desea iniciar sesión con {1}.</target>
-      </trans-unit>
-      <trans-unit id="continue">
-        <source xml:lang="en">Continue</source>
-        <target state="translated">Continuar</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/views/views" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="focus view">
-        <source xml:lang="en">Focus on {0} View</source>
-        <target state="translated">Centrarse en la vista {0}</target>
-      </trans-unit>
-      <trans-unit id="view category">
+      <trans-unit id="view">
         <source xml:lang="en">View</source>
         <target state="translated">Vista</target>
       </trans-unit>
-      <trans-unit id="moveViewToSidebar">
-        <source xml:lang="en">Move to Sidebar</source>
-        <target state="translated">Mover a la barra lateral</target>
+      <trans-unit id="closeSidebar">
+        <source xml:lang="en">Close Side Bar</source>
+        <target state="translated">Cerrar barra lateral</target>
       </trans-unit>
-      <trans-unit id="moveViewToPanel">
-        <source xml:lang="en">Move to Panel</source>
-        <target state="translated">Mover al panel</target>
+      <trans-unit id="toggleActivityBar">
+        <source xml:lang="en">Toggle Activity Bar Visibility</source>
+        <target state="translated">Alternar visibilidad de la barra de actividades</target>
+      </trans-unit>
+      <trans-unit id="miShowActivityBar">
+        <source xml:lang="en">Show &amp;&amp;Activity Bar</source>
+        <target state="translated">Mostrar &amp;&amp;barra de actividades</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="toggleCenteredLayout">
+        <source xml:lang="en">Toggle Centered Layout</source>
+        <target state="translated">Alternar diseño centrado</target>
+      </trans-unit>
+      <trans-unit id="miToggleCenteredLayout">
+        <source xml:lang="en">Centered Layout</source>
+        <target state="translated">Diseño centrado</target>
+      </trans-unit>
+      <trans-unit id="flipLayout">
+        <source xml:lang="en">Toggle Vertical/Horizontal Editor Layout</source>
+        <target state="translated">Alternar diseño vertical/horizontal del editor</target>
+      </trans-unit>
+      <trans-unit id="miToggleEditorLayout">
+        <source xml:lang="en">Flip &amp;&amp;Layout</source>
+        <target state="translated">Invertir &amp;&amp;diseño</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="toggleSidebarPosition">
+        <source xml:lang="en">Toggle Side Bar Position</source>
+        <target state="translated">Alternar posición de la barra lateral</target>
+      </trans-unit>
+      <trans-unit id="moveSidebarRight">
+        <source xml:lang="en">Move Side Bar Right</source>
+        <target state="translated">Mover la barra lateral a la derecha</target>
+      </trans-unit>
+      <trans-unit id="moveSidebarLeft">
+        <source xml:lang="en">Move Side Bar Left</source>
+        <target state="translated">Mover la barra lateral a la izquierda</target>
+      </trans-unit>
+      <trans-unit id="miMoveSidebarRight">
+        <source xml:lang="en">&amp;&amp;Move Side Bar Right</source>
+        <target state="translated">&amp;&amp;Mover barra lateral a la derecha</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miMoveSidebarLeft">
+        <source xml:lang="en">&amp;&amp;Move Side Bar Left</source>
+        <target state="translated">&amp;&amp;Mover barra lateral a la izquierda</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="toggleEditor">
+        <source xml:lang="en">Toggle Editor Area Visibility</source>
+        <target state="translated">Cambiar la visibilidad del área de edición</target>
+      </trans-unit>
+      <trans-unit id="miShowEditorArea">
+        <source xml:lang="en">Show &amp;&amp;Editor Area</source>
+        <target state="translated">Mostrar &amp;&amp;área de editor</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="toggleSidebar">
+        <source xml:lang="en">Toggle Side Bar Visibility</source>
+        <target state="translated">Alternar visibilidad de la barra lateral</target>
+      </trans-unit>
+      <trans-unit id="miAppearance">
+        <source xml:lang="en">&amp;&amp;Appearance</source>
+        <target state="translated">&amp;&amp;Apariencia</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miShowSidebar">
+        <source xml:lang="en">Show &amp;&amp;Side Bar</source>
+        <target state="translated">Mostrar barra &amp;&amp;lateral</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="toggleStatusbar">
+        <source xml:lang="en">Toggle Status Bar Visibility</source>
+        <target state="translated">Alternar visibilidad de la barra de estado</target>
+      </trans-unit>
+      <trans-unit id="miShowStatusbar">
+        <source xml:lang="en">Show S&amp;&amp;tatus Bar</source>
+        <target state="translated">Mostrar barra de e&amp;&amp;stado</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="toggleTabs">
+        <source xml:lang="en">Toggle Tab Visibility</source>
+        <target state="translated">Alternar visibilidad de la pestaña</target>
+      </trans-unit>
+      <trans-unit id="toggleZenMode">
+        <source xml:lang="en">Toggle Zen Mode</source>
+        <target state="translated">Alternar modo zen</target>
+      </trans-unit>
+      <trans-unit id="miToggleZenMode">
+        <source xml:lang="en">Zen Mode</source>
+        <target state="translated">Modo zen</target>
+      </trans-unit>
+      <trans-unit id="toggleMenuBar">
+        <source xml:lang="en">Toggle Menu Bar</source>
+        <target state="translated">Alternar barra de menús</target>
+      </trans-unit>
+      <trans-unit id="miShowMenuBar">
+        <source xml:lang="en">Show Menu &amp;&amp;Bar</source>
+        <target state="translated">Mostrar barra de &amp;&amp;menús</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="resetViewLocations">
+        <source xml:lang="en">Reset View Locations</source>
+        <target state="translated">Restablecer ubicaciones de vista</target>
+      </trans-unit>
+      <trans-unit id="moveFocusedView">
+        <source xml:lang="en">Move Focused View</source>
+        <target state="translated">Mover vista enfocada</target>
+      </trans-unit>
+      <trans-unit id="moveFocusedView.error.noFocusedView">
+        <source xml:lang="en">There is no view currently focused.</source>
+        <target state="translated">No hay ninguna vista enfocada actualmente.</target>
+      </trans-unit>
+      <trans-unit id="moveFocusedView.error.nonMovableView">
+        <source xml:lang="en">The currently focused view is not movable.</source>
+        <target state="translated">La vista enfocada actualmente no es móvil.</target>
+      </trans-unit>
+      <trans-unit id="moveFocusedView.selectDestination">
+        <source xml:lang="en">Select a Destination for the View</source>
+        <target state="translated">Seleccionar un Destino para la Vista</target>
+      </trans-unit>
+      <trans-unit id="sidebar">
+        <source xml:lang="en">Side Bar</source>
+        <target state="translated">Barra lateral</target>
+      </trans-unit>
+      <trans-unit id="moveFocusedView.newContainerInSidebar">
+        <source xml:lang="en">New Container in Side Bar</source>
+        <target state="translated">Nuevo contenedor en la barra lateral</target>
+      </trans-unit>
+      <trans-unit id="panel">
+        <source xml:lang="en">Panel</source>
+        <target state="translated">Panel</target>
+      </trans-unit>
+      <trans-unit id="moveFocusedView.newContainerInPanel">
+        <source xml:lang="en">New Container in Panel</source>
+        <target state="translated">Nuevo contenedor en panel</target>
+      </trans-unit>
+      <trans-unit id="resetFocusedViewLocation">
+        <source xml:lang="en">Reset Focused View Location</source>
+        <target state="translated">Restablecer la ubicación de la vista enfocada</target>
+      </trans-unit>
+      <trans-unit id="resetFocusedView.error.noFocusedView">
+        <source xml:lang="en">There is no view currently focused.</source>
+        <target state="translated">No hay ninguna vista enfocada actualmente.</target>
+      </trans-unit>
+      <trans-unit id="increaseViewSize">
+        <source xml:lang="en">Increase Current View Size</source>
+        <target state="translated">Aumentar tamaño de vista actual</target>
+      </trans-unit>
+      <trans-unit id="decreaseViewSize">
+        <source xml:lang="en">Decrease Current View Size</source>
+        <target state="translated">Reducir tamaño de vista actual</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/quickopen/quickOpenController" source-language="en" target-language="es" datatype="plaintext">
+  <file original="src/vs/workbench/browser/parts/panel/panelPart" source-language="en" target-language="es" datatype="plaintext">
     <body>
-      <trans-unit id="quickOpenInput">
-        <source xml:lang="en">Type '?' to get help on the actions you can take from here</source>
-        <target state="translated">Escriba '?' para obtener ayuda con las acciones que puede realizar desde aquí</target>
+      <trans-unit id="hidePanel">
+        <source xml:lang="en">Hide Panel</source>
+        <target state="translated">Ocultar panel</target>
       </trans-unit>
-      <trans-unit id="historyMatches">
-        <source xml:lang="en">recently opened</source>
-        <target state="translated">abiertos recientemente</target>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/activitybar/activitybarPart" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="hideMenu">
+        <source xml:lang="en">Hide Menu</source>
+        <target state="translated">Ocultar menú</target>
       </trans-unit>
-      <trans-unit id="noResultsFound1">
-        <source xml:lang="en">No results found</source>
-        <target state="translated">No se encontraron resultados</target>
+      <trans-unit id="showMenu">
+        <source xml:lang="en">Show Menu</source>
+        <target state="translated">Mostrar menú</target>
       </trans-unit>
-      <trans-unit id="canNotRunPlaceholder">
-        <source xml:lang="en">This quick open handler can not be used in the current context</source>
-        <target state="translated">Este controlador de Quick Open no se puede usar en el contexto actual</target>
+      <trans-unit id="hideActivitBar">
+        <source xml:lang="en">Hide Activity Bar</source>
+        <target state="translated">Ocultar barra de actividades</target>
       </trans-unit>
-      <trans-unit id="entryAriaLabel">
-        <source xml:lang="en">{0}, recently opened</source>
-        <target state="translated">{0}, abiertos recientemente</target>
+      <trans-unit id="manage">
+        <source xml:lang="en">Manage</source>
+        <target state="translated">Administrar</target>
       </trans-unit>
-      <trans-unit id="removeFromEditorHistory">
-        <source xml:lang="en">Remove From History</source>
-        <target state="translated">Quitar del historial</target>
+      <trans-unit id="accounts">
+        <source xml:lang="en">Accounts</source>
+        <target state="translated">Cuentas</target>
       </trans-unit>
-      <trans-unit id="pickHistory">
-        <source xml:lang="en">Select an editor entry to remove from history</source>
-        <target state="translated">Seleccione una entrada del editor para quitarla del historial</target>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/statusbar/statusbarPart" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="hide">
+        <source xml:lang="en">Hide '{0}'</source>
+        <target state="translated">Ocultar "{0}"</target>
+      </trans-unit>
+      <trans-unit id="hideStatusBar">
+        <source xml:lang="en">Hide Status Bar</source>
+        <target state="translated">Ocultar barra de estado</target>
       </trans-unit>
     </body>
   </file>
@@ -2155,14 +2165,6 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
         <source xml:lang="en">Side bar section header border color. The side bar is the container for views like explorer and search.</source>
         <target state="translated">Color de borde del encabezado de sección de la barra lateral, que es el contenedor de vistas como Explorador y Búsqueda.</target>
       </trans-unit>
-      <trans-unit id="quickInputBackground">
-        <source xml:lang="en">Quick Input background color. The Quick Input widget is the container for views like the color theme picker.</source>
-        <target state="translated">Color de fondo de la Entrada Rápida. El widget de Entrada rápida es el contenedor para vistas como el selector de tema de color.</target>
-      </trans-unit>
-      <trans-unit id="quickInputForeground">
-        <source xml:lang="en">Quick Input foreground color. The Quick Input widget is the container for views like the color theme picker.</source>
-        <target state="translated">Color de primer plano de entrada rápida. El widget Entrada rápida es el contenedor para vistas como el selector de tema de color.</target>
-      </trans-unit>
       <trans-unit id="titleBarActiveForeground">
         <source xml:lang="en">Title bar foreground when the window is active. Note that this color is currently only supported on macOS.</source>
         <target state="translated">Color de primer plano de la barra de título cuando la ventana está activa. Tenga en cuenta que, actualmente, este clor solo se admite en macOS.</target>
@@ -2249,6 +2251,14 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/api/node/extHostDebugService" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="debug.terminal.title">
+        <source xml:lang="en">debuggee</source>
+        <target state="translated">depurado</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/api/browser/mainThreadEditors" source-language="en" target-language="es" datatype="plaintext">
     <body>
       <trans-unit id="diffLeftRightLabel">
@@ -2313,47 +2323,59 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/quickopen/quickopen" source-language="en" target-language="es" datatype="plaintext">
+  <file original="src/vs/workbench/browser/parts/views/views" source-language="en" target-language="es" datatype="plaintext">
     <body>
-      <trans-unit id="quickOpen">
-        <source xml:lang="en">Go to File...</source>
-        <target state="translated">Ir al archivo...</target>
+      <trans-unit id="focus view">
+        <source xml:lang="en">Focus on {0} View</source>
+        <target state="translated">Centrarse en la vista {0}</target>
       </trans-unit>
-      <trans-unit id="quickNavigateNext">
-        <source xml:lang="en">Navigate Next in Quick Open</source>
-        <target state="translated">Navegar a siguiente en Quick Open</target>
+      <trans-unit id="view category">
+        <source xml:lang="en">View</source>
+        <target state="translated">Vista</target>
       </trans-unit>
-      <trans-unit id="quickNavigatePrevious">
-        <source xml:lang="en">Navigate Previous in Quick Open</source>
-        <target state="translated">Navegar a anterior en Quick Open</target>
-      </trans-unit>
-      <trans-unit id="quickSelectNext">
-        <source xml:lang="en">Select Next in Quick Open</source>
-        <target state="translated">Seleccionar Siguiente en Quick Open</target>
-      </trans-unit>
-      <trans-unit id="quickSelectPrevious">
-        <source xml:lang="en">Select Previous in Quick Open</source>
-        <target state="translated">Seleccionar Anterior en Quick Open</target>
+      <trans-unit id="resetViewLocation">
+        <source xml:lang="en">Reset View Location</source>
+        <target state="translated">Restablecer la ubicación de la vista</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/common/editor/diffEditorInput" source-language="en" target-language="es" datatype="plaintext">
+  <file original="src/vs/workbench/api/browser/mainThreadAuthentication" source-language="en" target-language="es" datatype="plaintext">
     <body>
-      <trans-unit id="sideBySideLabels">
-        <source xml:lang="en">{0} ↔ {1}</source>
-        <target state="translated">{0} ↔ {1}</target>
+      <trans-unit id="manageTrustedExtensions">
+        <source xml:lang="en">Manage Trusted Extensions</source>
+        <target state="translated">Administrar extensiones de confianza</target>
       </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/quickopen" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="noResultsMatching">
-        <source xml:lang="en">No results matching</source>
-        <target state="translated">No hay resultados coincidentes</target>
+      <trans-unit id="manageExensions">
+        <source xml:lang="en">Choose which extensions can access this account</source>
+        <target state="translated">Elija qué extensiones pueden acceder a esta cuenta</target>
       </trans-unit>
-      <trans-unit id="noResultsFound2">
-        <source xml:lang="en">No results found</source>
-        <target state="translated">No se encontraron resultados</target>
+      <trans-unit id="addAnotherAccount">
+        <source xml:lang="en">Sign in to another {0} account</source>
+        <target state="translated">Inicia sesión en otra cuenta de {0}</target>
+      </trans-unit>
+      <trans-unit id="addAccount">
+        <source xml:lang="en">Sign in to {0}</source>
+        <target state="translated">Identifícate para {0}</target>
+      </trans-unit>
+      <trans-unit id="signOut">
+        <source xml:lang="en">Sign Out</source>
+        <target state="translated">Cerrar sesión</target>
+      </trans-unit>
+      <trans-unit id="confirmAuthenticationAccess">
+        <source xml:lang="en">The extension '{0}' is trying to access authentication information for the {1} account '{2}'.</source>
+        <target state="translated">La extensión "{0}" está intentando acceder a la información de autenticación de la cuenta de {1} "{2}".</target>
+      </trans-unit>
+      <trans-unit id="cancel">
+        <source xml:lang="en">Cancel</source>
+        <target state="translated">Cancelar</target>
+      </trans-unit>
+      <trans-unit id="allow">
+        <source xml:lang="en">Allow</source>
+        <target state="translated">Permitir</target>
+      </trans-unit>
+      <trans-unit id="confirmLogin">
+        <source xml:lang="en">The extension '{0}' wants to sign in using {1}.</source>
+        <target state="translated">La extensión "{0}" desea iniciar sesión con {1}.</target>
       </trans-unit>
     </body>
   </file>
@@ -2365,11 +2387,11 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/node/extHostDebugService" source-language="en" target-language="es" datatype="plaintext">
+  <file original="src/vs/workbench/common/editor/diffEditorInput" source-language="en" target-language="es" datatype="plaintext">
     <body>
-      <trans-unit id="debug.terminal.title">
-        <source xml:lang="en">debuggee</source>
-        <target state="translated">depurado</target>
+      <trans-unit id="sideBySideLabels">
+        <source xml:lang="en">{0} ↔ {1}</source>
+        <target state="translated">{0} ↔ {1}</target>
       </trans-unit>
     </body>
   </file>
@@ -2385,14 +2407,6 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/browser/mainThreadWebview" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="errorMessage">
-        <source xml:lang="en">An error occurred while restoring view:{0}</source>
-        <target state="translated">Ha ocurrido un error mientras se restauraba la vista: {0}</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/browser/viewlet" source-language="en" target-language="es" datatype="plaintext">
     <body>
       <trans-unit id="compositePart.hideSideBarLabel">
@@ -2402,6 +2416,34 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
       <trans-unit id="collapse">
         <source xml:lang="en">Collapse All</source>
         <target state="translated">Contraer todo</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/browser/mainThreadTask" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="task.label">
+        <source xml:lang="en">{0}: {1}</source>
+        <target state="translated">{0}: {1}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/compositePart" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="ariaCompositeToolbarLabel">
+        <source xml:lang="en">{0} actions</source>
+        <target state="translated">acciones de {0}</target>
+      </trans-unit>
+      <trans-unit id="titleTooltip">
+        <source xml:lang="en">{0} ({1})</source>
+        <target state="translated">{0} ({1})</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/editor/editorWidgets" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="openWorkspace">
+        <source xml:lang="en">Open Workspace</source>
+        <target state="translated">Abrir área de trabajo</target>
       </trans-unit>
     </body>
   </file>
@@ -2445,34 +2487,6 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/browser/mainThreadTask" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="task.label">
-        <source xml:lang="en">{0}: {1}</source>
-        <target state="translated">{0}: {1}</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/compositePart" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="ariaCompositeToolbarLabel">
-        <source xml:lang="en">{0} actions</source>
-        <target state="translated">acciones de {0}</target>
-      </trans-unit>
-      <trans-unit id="titleTooltip">
-        <source xml:lang="en">{0} ({1})</source>
-        <target state="translated">{0} ({1})</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/editor/editorWidgets" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="openWorkspace">
-        <source xml:lang="en">Open Workspace</source>
-        <target state="translated">Abrir área de trabajo</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/api/common/extHostWorkspace" source-language="en" target-language="es" datatype="plaintext">
     <body>
       <trans-unit id="updateerror">
@@ -2481,47 +2495,15 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/notifications/notificationsCommands" source-language="en" target-language="es" datatype="plaintext">
+  <file original="src/vs/workbench/api/browser/mainThreadWebview" source-language="en" target-language="es" datatype="plaintext">
     <body>
-      <trans-unit id="notifications">
-        <source xml:lang="en">Notifications</source>
-        <target state="translated">Notificaciones</target>
+      <trans-unit id="errorMessage">
+        <source xml:lang="en">An error occurred while restoring view:{0}</source>
+        <target state="translated">Ha ocurrido un error mientras se restauraba la vista: {0}</target>
       </trans-unit>
-      <trans-unit id="showNotifications">
-        <source xml:lang="en">Show Notifications</source>
-        <target state="translated">Mostrar notificaciones</target>
-      </trans-unit>
-      <trans-unit id="hideNotifications">
-        <source xml:lang="en">Hide Notifications</source>
-        <target state="translated">Ocultar notificaciones</target>
-      </trans-unit>
-      <trans-unit id="clearAllNotifications">
-        <source xml:lang="en">Clear All Notifications</source>
-        <target state="translated">Limpiar todas las notificaciones</target>
-      </trans-unit>
-      <trans-unit id="focusNotificationToasts">
-        <source xml:lang="en">Focus Notification Toast</source>
-        <target state="translated">Centrarse en la notificación del sistema</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/notifications/notificationsCenter" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="notificationsEmpty">
-        <source xml:lang="en">No new notifications</source>
-        <target state="translated">No hay notificaciones nuevas</target>
-      </trans-unit>
-      <trans-unit id="notifications">
-        <source xml:lang="en">Notifications</source>
-        <target state="translated">Notificaciones</target>
-      </trans-unit>
-      <trans-unit id="notificationsToolbar">
-        <source xml:lang="en">Notification Center Actions</source>
-        <target state="translated">Acciones del centro de notificaciones</target>
-      </trans-unit>
-      <trans-unit id="notificationsList">
-        <source xml:lang="en">Notifications List</source>
-        <target state="translated">Lista de notificaciones</target>
+      <trans-unit id="defaultEditLabel">
+        <source xml:lang="en">Edit</source>
+        <target state="translated">Editar</target>
       </trans-unit>
     </body>
   </file>
@@ -2566,6 +2548,38 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
       <trans-unit id="status.message">
         <source xml:lang="en">Status Message</source>
         <target state="translated">Mensaje de estado</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/notifications/notificationsCommands" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="notifications">
+        <source xml:lang="en">Notifications</source>
+        <target state="translated">Notificaciones</target>
+      </trans-unit>
+      <trans-unit id="showNotifications">
+        <source xml:lang="en">Show Notifications</source>
+        <target state="translated">Mostrar notificaciones</target>
+      </trans-unit>
+      <trans-unit id="hideNotifications">
+        <source xml:lang="en">Hide Notifications</source>
+        <target state="translated">Ocultar notificaciones</target>
+      </trans-unit>
+      <trans-unit id="clearAllNotifications">
+        <source xml:lang="en">Clear All Notifications</source>
+        <target state="translated">Limpiar todas las notificaciones</target>
+      </trans-unit>
+      <trans-unit id="focusNotificationToasts">
+        <source xml:lang="en">Focus Notification Toast</source>
+        <target state="translated">Centrarse en la notificación del sistema</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/common/extHostExtensionService" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="extensionTestError">
+        <source xml:lang="en">Path {0} does not point to a valid extension test runner.</source>
+        <target state="translated">La ruta de acceso {0} no apunta a un ejecutor de pruebas de extensión.</target>
       </trans-unit>
     </body>
   </file>
@@ -2626,6 +2640,78 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/browser/parts/notifications/notificationsCenter" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="notificationsEmpty">
+        <source xml:lang="en">No new notifications</source>
+        <target state="translated">No hay notificaciones nuevas</target>
+      </trans-unit>
+      <trans-unit id="notifications">
+        <source xml:lang="en">Notifications</source>
+        <target state="translated">Notificaciones</target>
+      </trans-unit>
+      <trans-unit id="notificationsToolbar">
+        <source xml:lang="en">Notification Center Actions</source>
+        <target state="translated">Acciones del centro de notificaciones</target>
+      </trans-unit>
+      <trans-unit id="notificationsList">
+        <source xml:lang="en">Notifications List</source>
+        <target state="translated">Lista de notificaciones</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/editor/textEditor" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="editorLabelWithGroup">
+        <source xml:lang="en">{0}, {1}</source>
+        <target state="translated">{0}, {1}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/activitybar/activitybarActions" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="previousSideBarView">
+        <source xml:lang="en">Previous Side Bar View</source>
+        <target state="translated">Vista de barra lateral anterior</target>
+      </trans-unit>
+      <trans-unit id="nextSideBarView">
+        <source xml:lang="en">Next Side Bar View</source>
+        <target state="translated">Siguiente vista de barra lateral</target>
+      </trans-unit>
+      <trans-unit id="view">
+        <source xml:lang="en">View</source>
+        <target state="translated">Vista</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/notifications/notificationsToasts" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="notificationsToast">
+        <source xml:lang="en">Notification Toast</source>
+        <target state="translated">Notificación del sistema</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/views/treeView" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="no-dataprovider">
+        <source xml:lang="en">There is no data provider registered that can provide view data.</source>
+        <target state="translated">No hay ningún proveedor de datos registrado que pueda proporcionar datos de la vista.</target>
+      </trans-unit>
+      <trans-unit id="refresh">
+        <source xml:lang="en">Refresh</source>
+        <target state="translated">Actualizar</target>
+      </trans-unit>
+      <trans-unit id="collapseAll">
+        <source xml:lang="en">Collapse All</source>
+        <target state="translated">Contraer todo</target>
+      </trans-unit>
+      <trans-unit id="command-error">
+        <source xml:lang="en">Error running command {1}: {0}. This is likely caused by the extension that contributes {1}.</source>
+        <target state="translated">Error al ejecutar el comando {1}: {0}. Probablemente esté provocado por la extensión que contribuye a {1}.</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/browser/parts/compositeBarActions" source-language="en" target-language="es" datatype="plaintext">
     <body>
       <trans-unit id="badgeTitle">
@@ -2663,158 +2749,6 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
       <trans-unit id="toggle">
         <source xml:lang="en">Toggle View Pinned</source>
         <target state="translated">Alternar vista fijada</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/api/common/extHostExtensionService" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="extensionTestError">
-        <source xml:lang="en">Path {0} does not point to a valid extension test runner.</source>
-        <target state="translated">La ruta de acceso {0} no apunta a un ejecutor de pruebas de extensión.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/notifications/notificationsToasts" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="notificationsToast">
-        <source xml:lang="en">Notification Toast</source>
-        <target state="translated">Notificación del sistema</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/activitybar/activitybarActions" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="previousSideBarView">
-        <source xml:lang="en">Previous Side Bar View</source>
-        <target state="translated">Vista de barra lateral anterior</target>
-      </trans-unit>
-      <trans-unit id="nextSideBarView">
-        <source xml:lang="en">Next Side Bar View</source>
-        <target state="translated">Siguiente vista de barra lateral</target>
-      </trans-unit>
-      <trans-unit id="view">
-        <source xml:lang="en">View</source>
-        <target state="translated">Vista</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/views/viewPaneContainer" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="viewToolbarAriaLabel">
-        <source xml:lang="en">{0} actions</source>
-        <target state="translated">acciones de {0}</target>
-      </trans-unit>
-      <trans-unit id="hideView">
-        <source xml:lang="en">Hide</source>
-        <target state="translated">Ocultar</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/editor/textEditor" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="editorLabelWithGroup">
-        <source xml:lang="en">{0}, {1}</source>
-        <target state="translated">{0}, {1}</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/titlebar/menubarControl" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="mFile">
-        <source xml:lang="en">&amp;&amp;File</source>
-        <target state="translated">&amp;&amp;Archivo</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="mEdit">
-        <source xml:lang="en">&amp;&amp;Edit</source>
-        <target state="translated">&amp;&amp;Editar</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="mSelection">
-        <source xml:lang="en">&amp;&amp;Selection</source>
-        <target state="translated">&amp;&amp;Selección</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="mView">
-        <source xml:lang="en">&amp;&amp;View</source>
-        <target state="translated">&amp;&amp;Ver</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="mGoto">
-        <source xml:lang="en">&amp;&amp;Go</source>
-        <target state="translated">&amp;&amp;Ir</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="mRun">
-        <source xml:lang="en">&amp;&amp;Run</source>
-        <target state="translated">&amp;&amp;Ejecutar</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="mTerminal">
-        <source xml:lang="en">&amp;&amp;Terminal</source>
-        <target state="translated">&amp;&amp;Terminal</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="mHelp">
-        <source xml:lang="en">&amp;&amp;Help</source>
-        <target state="translated">&amp;&amp;Ayuda</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="menubar.customTitlebarAccessibilityNotification">
-        <source xml:lang="en">Accessibility support is enabled for you. For the most accessible experience, we recommend the custom title bar style.</source>
-        <target state="translated">El soporte de accesibilidad está habilitado para usted. Para que la experiencia sea más accesible, se recomienda el estilo de la barra de título personalizado.</target>
-      </trans-unit>
-      <trans-unit id="goToSetting">
-        <source xml:lang="en">Open Settings</source>
-        <target state="translated">Abrir configuración</target>
-      </trans-unit>
-      <trans-unit id="checkForUpdates">
-        <source xml:lang="en">Check for &amp;&amp;Updates...</source>
-        <target state="translated">Buscar &amp;&amp;actualizaciones...</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="checkingForUpdates">
-        <source xml:lang="en">Checking for Updates...</source>
-        <target state="translated">Buscando actualizaciones...</target>
-      </trans-unit>
-      <trans-unit id="download now">
-        <source xml:lang="en">D&amp;&amp;ownload Now</source>
-        <target state="translated">D&amp;&amp;escargar ahora</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="DownloadingUpdate">
-        <source xml:lang="en">Downloading Update...</source>
-        <target state="translated">Descargando actualización...</target>
-      </trans-unit>
-      <trans-unit id="installUpdate...">
-        <source xml:lang="en">Install &amp;&amp;Update...</source>
-        <target state="translated">Instalar &amp;&amp;actualización...</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="installingUpdate">
-        <source xml:lang="en">Installing Update...</source>
-        <target state="translated">Instalando actualización...</target>
-      </trans-unit>
-      <trans-unit id="restartToUpdate">
-        <source xml:lang="en">Restart to &amp;&amp;Update</source>
-        <target state="translated">Reiniciar para &amp;&amp;actualizar</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/views/customView" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="no-dataprovider">
-        <source xml:lang="en">There is no data provider registered that can provide view data.</source>
-        <target state="translated">No hay ningún proveedor de datos registrado que pueda proporcionar datos de la vista.</target>
-      </trans-unit>
-      <trans-unit id="collapseAll">
-        <source xml:lang="en">Collapse All</source>
-        <target state="translated">Contraer todo</target>
-      </trans-unit>
-      <trans-unit id="command-error">
-        <source xml:lang="en">Error running command {1}: {0}. This is likely caused by the extension that contributes {1}.</source>
-        <target state="translated">Error al ejecutar el comando {1}: {0}. Probablemente esté provocado por la extensión que contribuye a {1}.</target>
       </trans-unit>
     </body>
   </file>
@@ -2888,6 +2822,122 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/browser/parts/titlebar/menubarControl" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="mFile">
+        <source xml:lang="en">&amp;&amp;File</source>
+        <target state="translated">&amp;&amp;Archivo</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mEdit">
+        <source xml:lang="en">&amp;&amp;Edit</source>
+        <target state="translated">&amp;&amp;Editar</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mSelection">
+        <source xml:lang="en">&amp;&amp;Selection</source>
+        <target state="translated">&amp;&amp;Selección</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mView">
+        <source xml:lang="en">&amp;&amp;View</source>
+        <target state="translated">&amp;&amp;Ver</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mGoto">
+        <source xml:lang="en">&amp;&amp;Go</source>
+        <target state="translated">&amp;&amp;Ir</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mRun">
+        <source xml:lang="en">&amp;&amp;Run</source>
+        <target state="translated">&amp;&amp;Ejecutar</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mTerminal">
+        <source xml:lang="en">&amp;&amp;Terminal</source>
+        <target state="translated">&amp;&amp;Terminal</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mHelp">
+        <source xml:lang="en">&amp;&amp;Help</source>
+        <target state="translated">&amp;&amp;Ayuda</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="menubar.customTitlebarAccessibilityNotification">
+        <source xml:lang="en">Accessibility support is enabled for you. For the most accessible experience, we recommend the custom title bar style.</source>
+        <target state="translated">El soporte de accesibilidad está habilitado para usted. Para que la experiencia sea más accesible, se recomienda el estilo de la barra de título personalizado.</target>
+      </trans-unit>
+      <trans-unit id="goToSetting">
+        <source xml:lang="en">Open Settings</source>
+        <target state="translated">Abrir configuración</target>
+      </trans-unit>
+      <trans-unit id="checkForUpdates">
+        <source xml:lang="en">Check for &amp;&amp;Updates...</source>
+        <target state="translated">Buscar &amp;&amp;actualizaciones...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="checkingForUpdates">
+        <source xml:lang="en">Checking for Updates...</source>
+        <target state="translated">Buscando actualizaciones...</target>
+      </trans-unit>
+      <trans-unit id="download now">
+        <source xml:lang="en">D&amp;&amp;ownload Update</source>
+        <target state="translated">D&amp;&amp;escargar actualización</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="DownloadingUpdate">
+        <source xml:lang="en">Downloading Update...</source>
+        <target state="translated">Descargando actualización...</target>
+      </trans-unit>
+      <trans-unit id="installUpdate...">
+        <source xml:lang="en">Install &amp;&amp;Update...</source>
+        <target state="translated">Instalar &amp;&amp;actualización...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="installingUpdate">
+        <source xml:lang="en">Installing Update...</source>
+        <target state="translated">Instalando actualización...</target>
+      </trans-unit>
+      <trans-unit id="restartToUpdate">
+        <source xml:lang="en">Restart to &amp;&amp;Update</source>
+        <target state="translated">Reiniciar para &amp;&amp;actualizar</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/compositeBar" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="activityBarAriaLabel">
+        <source xml:lang="en">Active View Switcher</source>
+        <target state="translated">Modificador de vista activa</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/views/viewPaneContainer" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="viewToolbarAriaLabel">
+        <source xml:lang="en">{0} actions</source>
+        <target state="translated">acciones de {0}</target>
+      </trans-unit>
+      <trans-unit id="hideView">
+        <source xml:lang="en">Hide</source>
+        <target state="translated">Ocultar</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/common/extHostExtensionActivator" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="failedDep1">
+        <source xml:lang="en">Cannot activate extension '{0}' because it depends on extension '{1}', which failed to activate.</source>
+        <target state="translated">No puede activar la extensión "{0}" porque depende de extensión "{1}", que no se pudo activar.</target>
+      </trans-unit>
+      <trans-unit id="activationError">
+        <source xml:lang="en">Activating extension '{0}' failed: {1}.</source>
+        <target state="translated">No se pudo activar la extensión "{0}": {1}.</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/browser/parts/notifications/notificationsActions" source-language="en" target-language="es" datatype="plaintext">
     <body>
       <trans-unit id="clearNotification">
@@ -2920,23 +2970,11 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/compositeBar" source-language="en" target-language="es" datatype="plaintext">
+  <file original="src/vs/workbench/api/common/extHost.api.impl" source-language="en" target-language="es" datatype="plaintext">
     <body>
-      <trans-unit id="activityBarAriaLabel">
-        <source xml:lang="en">Active View Switcher</source>
-        <target state="translated">Modificador de vista activa</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/api/common/extHostExtensionActivator" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="failedDep1">
-        <source xml:lang="en">Cannot activate extension '{0}' because it depends on extension '{1}', which failed to activate.</source>
-        <target state="translated">No puede activar la extensión "{0}" porque depende de extensión "{1}", que no se pudo activar.</target>
-      </trans-unit>
-      <trans-unit id="activationError">
-        <source xml:lang="en">Activating extension '{0}' failed: {1}.</source>
-        <target state="translated">No se pudo activar la extensión "{0}": {1}.</target>
+      <trans-unit id="extensionLabel">
+        <source xml:lang="en">{0} (Extension)</source>
+        <target state="translated">{0} (Extensión)</target>
       </trans-unit>
     </body>
   </file>
@@ -2958,15 +2996,19 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
         <source xml:lang="en">Side by Side Editor</source>
         <target state="translated">Editor de lado a lado</target>
       </trans-unit>
-      <trans-unit id="groupOnePicker">
-        <source xml:lang="en">Show Editors in Active Group By Most Recently Used</source>
+      <trans-unit id="editorQuickAccessPlaceholder">
+        <source xml:lang="en">Type the name of an editor to open it.</source>
+        <target state="translated">Escriba el nombre de un editor para abrirlo.</target>
+      </trans-unit>
+      <trans-unit id="activeGroupEditorsByMostRecentlyUsedQuickAccess">
+        <source xml:lang="en">Show Editors in Active Group by Most Recently Used</source>
         <target state="translated">Mostrar editores en grupo activo por el más reciente utilizado</target>
       </trans-unit>
-      <trans-unit id="allEditorsPicker">
+      <trans-unit id="allEditorsByAppearanceQuickAccess">
         <source xml:lang="en">Show All Opened Editors By Appearance</source>
         <target state="translated">Mostrar todos los editores abiertos por apariencia</target>
       </trans-unit>
-      <trans-unit id="allEditorsPickerByMostRecentlyUsed">
+      <trans-unit id="allEditorsByMostRecentlyUsedQuickAccess">
         <source xml:lang="en">Show All Opened Editors By Most Recently Used</source>
         <target state="translated">Mostrar todos los editores abiertos por el más reciente utilizado</target>
       </trans-unit>
@@ -3267,6 +3309,50 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/browser/parts/editor/editorQuickAccess" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="entryAriaLabelWithGroupDirty">
+        <source xml:lang="en">{0}, dirty, {1}</source>
+        <target state="translated">{0}, con modificaciones, {1}</target>
+      </trans-unit>
+      <trans-unit id="entryAriaLabelWithGroup">
+        <source xml:lang="en">{0}, {1}</source>
+        <target state="translated">{0}, {1}</target>
+      </trans-unit>
+      <trans-unit id="entryAriaLabelDirty">
+        <source xml:lang="en">{0}, dirty</source>
+        <target state="translated">{0}, con modificaciones</target>
+      </trans-unit>
+      <trans-unit id="closeEditor">
+        <source xml:lang="en">Close Editor</source>
+        <target state="translated">Cerrar editor</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/editor/textDiffEditor" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="textDiffEditor">
+        <source xml:lang="en">Text Diff Editor</source>
+        <target state="translated">Editor de diferencias de texto</target>
+      </trans-unit>
+      <trans-unit id="readonlyEditorWithInputAriaLabel">
+        <source xml:lang="en">{0} readonly compare editor</source>
+        <target state="translated">{0} editor de comparación de solo lectura</target>
+      </trans-unit>
+      <trans-unit id="readonlyEditorAriaLabel">
+        <source xml:lang="en">Readonly compare editor</source>
+        <target state="translated">Editor de comparación de solo lectura</target>
+      </trans-unit>
+      <trans-unit id="editableEditorWithInputAriaLabel">
+        <source xml:lang="en">{0} compare editor</source>
+        <target state="translated">{0} editor de comparación</target>
+      </trans-unit>
+      <trans-unit id="editableEditorAriaLabel">
+        <source xml:lang="en">Compare editor</source>
+        <target state="translated">Comparar editor</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/browser/parts/editor/editorGroupView" source-language="en" target-language="es" datatype="plaintext">
     <body>
       <trans-unit id="araLabelGroupActions">
@@ -3307,35 +3393,36 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/editor/textDiffEditor" source-language="en" target-language="es" datatype="plaintext">
+  <file original="src/vs/workbench/api/common/extHostStatusBar" source-language="en" target-language="es" datatype="plaintext">
     <body>
-      <trans-unit id="textDiffEditor">
-        <source xml:lang="en">Text Diff Editor</source>
-        <target state="translated">Editor de diferencias de texto</target>
-      </trans-unit>
-      <trans-unit id="readonlyEditorWithInputAriaLabel">
-        <source xml:lang="en">{0} readonly compare editor</source>
-        <target state="translated">{0} editor de comparación de solo lectura</target>
-      </trans-unit>
-      <trans-unit id="readonlyEditorAriaLabel">
-        <source xml:lang="en">Readonly compare editor</source>
-        <target state="translated">Editor de comparación de solo lectura</target>
-      </trans-unit>
-      <trans-unit id="editableEditorWithInputAriaLabel">
-        <source xml:lang="en">{0} compare editor</source>
-        <target state="translated">{0} editor de comparación</target>
-      </trans-unit>
-      <trans-unit id="editableEditorAriaLabel">
-        <source xml:lang="en">Compare editor</source>
-        <target state="translated">Comparar editor</target>
+      <trans-unit id="status.extensionMessage">
+        <source xml:lang="en">Extension Status</source>
+        <target state="translated">Estado de la extensión</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/common/extHost.api.impl" source-language="en" target-language="es" datatype="plaintext">
+  <file original="src/vs/workbench/api/common/extHostProgress" source-language="en" target-language="es" datatype="plaintext">
     <body>
-      <trans-unit id="extensionLabel">
+      <trans-unit id="extensionSource">
         <source xml:lang="en">{0} (Extension)</source>
         <target state="translated">{0} (Extensión)</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/editor/binaryDiffEditor" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="metadataDiff">
+        <source xml:lang="en">{0} ↔ {1}</source>
+        <target state="translated">{0} ↔ {1}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/common/extHostDiagnostics" source-language="en" target-language="es" datatype="plaintext">
+    <body>
+      <trans-unit id="limitHit">
+        <source xml:lang="en">Not showing {0} further errors and warnings.</source>
+        <target state="translated">No se mostrarán {0} errores y advertencias adicionales.</target>
+        <note>amount of errors/warning skipped due to limits</note>
       </trans-unit>
     </body>
   </file>
@@ -3355,51 +3442,15 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/editor/binaryDiffEditor" source-language="en" target-language="es" datatype="plaintext">
+  <file original="src/vs/workbench/api/common/extHostTreeViews" source-language="en" target-language="es" datatype="plaintext">
     <body>
-      <trans-unit id="metadataDiff">
-        <source xml:lang="en">{0} ↔ {1}</source>
-        <target state="translated">{0} ↔ {1}</target>
+      <trans-unit id="treeView.notRegistered">
+        <source xml:lang="en">No tree view with id '{0}' registered.</source>
+        <target state="translated">No se ha registrado ninga vista del árbol con id '{0}'.</target>
       </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/editor/editorPicker" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="entryAriaLabel">
-        <source xml:lang="en">{0}, editor group picker</source>
-        <target state="translated">{0}, selector del grupo de editores</target>
-      </trans-unit>
-      <trans-unit id="noResultsFoundInGroup">
-        <source xml:lang="en">No matching opened editor found in active editor group</source>
-        <target state="translated">No se encuentra ningún editor abierto coincidente en el grupo de editores activo</target>
-      </trans-unit>
-      <trans-unit id="noOpenedEditors">
-        <source xml:lang="en">List of opened editors is currently empty in active editor group</source>
-        <target state="translated">La lista de editores abiertos está actualmente vacía en el grupo de editores activos</target>
-      </trans-unit>
-      <trans-unit id="noResultsFound">
-        <source xml:lang="en">No matching opened editor found</source>
-        <target state="translated">No se encontró un editor abierto coincidente</target>
-      </trans-unit>
-      <trans-unit id="noOpenedEditorsAllGroups">
-        <source xml:lang="en">List of opened editors is currently empty</source>
-        <target state="translated">La lista de editores abiertos está vacía actualmente.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/api/common/extHostProgress" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="extensionSource">
-        <source xml:lang="en">{0} (Extension)</source>
-        <target state="translated">{0} (Extensión)</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/api/common/extHostStatusBar" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="status.extensionMessage">
-        <source xml:lang="en">Extension Status</source>
-        <target state="translated">Estado de la extensión</target>
+      <trans-unit id="treeView.duplicateElement">
+        <source xml:lang="en">Element with id {0} is already registered</source>
+        <target state="translated">El elemento con id {0} está ya registrado</target>
       </trans-unit>
     </body>
   </file>
@@ -3476,10 +3527,6 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
       <trans-unit id="focusBelowGroup">
         <source xml:lang="en">Focus Below Editor Group</source>
         <target state="translated">Foco debajo del grupo de editores</target>
-      </trans-unit>
-      <trans-unit id="openToSide">
-        <source xml:lang="en">Open to the Side</source>
-        <target state="translated">Abrir en el lateral</target>
       </trans-unit>
       <trans-unit id="closeEditor">
         <source xml:lang="en">Close Editor</source>
@@ -3735,24 +3782,15 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/common/extHostDiagnostics" source-language="en" target-language="es" datatype="plaintext">
+  <file original="src/vs/workbench/browser/parts/editor/titleControl" source-language="en" target-language="es" datatype="plaintext">
     <body>
-      <trans-unit id="limitHit">
-        <source xml:lang="en">Not showing {0} further errors and warnings.</source>
-        <target state="translated">No se mostrarán {0} errores y advertencias adicionales.</target>
-        <note>amount of errors/warning skipped due to limits</note>
+      <trans-unit id="araLabelEditorActions">
+        <source xml:lang="en">Editor actions</source>
+        <target state="translated">Acciones del editor</target>
       </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/api/common/extHostTreeViews" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="treeView.notRegistered">
-        <source xml:lang="en">No tree view with id '{0}' registered.</source>
-        <target state="translated">No se ha registrado ninga vista del árbol con id '{0}'.</target>
-      </trans-unit>
-      <trans-unit id="treeView.duplicateElement">
-        <source xml:lang="en">Element with id {0} is already registered</source>
-        <target state="translated">El elemento con id {0} está ya registrado</target>
+      <trans-unit id="draggedEditorGroup">
+        <source xml:lang="en">{0} (+{1})</source>
+        <target state="translated">{0} (+ {1})</target>
       </trans-unit>
     </body>
   </file>
@@ -3851,8 +3889,8 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
         <target state="translated">Modo lector de pantalla</target>
       </trans-unit>
       <trans-unit id="gotoLine">
-        <source xml:lang="en">Go to Line</source>
-        <target state="translated">Ir a la línea</target>
+        <source xml:lang="en">Go to Line/Column</source>
+        <target state="translated">Ir a línea/columna</target>
       </trans-unit>
       <trans-unit id="status.editor.selection">
         <source xml:lang="en">Editor Selection</source>
@@ -3998,18 +4036,6 @@ Tenga en cuenta que aún puede haber casos en los que este valor se ignore (por 
       <trans-unit id="araLabelTabActions">
         <source xml:lang="en">Tab actions</source>
         <target state="translated">Acciones de pestaña</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/editor/titleControl" source-language="en" target-language="es" datatype="plaintext">
-    <body>
-      <trans-unit id="araLabelEditorActions">
-        <source xml:lang="en">Editor actions</source>
-        <target state="translated">Acciones del editor</target>
-      </trans-unit>
-      <trans-unit id="draggedEditorGroup">
-        <source xml:lang="en">{0} (+{1})</source>
-        <target state="translated">{0} (+ {1})</target>
       </trans-unit>
     </body>
   </file>

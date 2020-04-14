@@ -169,7 +169,11 @@ L'attività '{0}' è stata terminata come richiesto dall'utente.</target>
         <source xml:lang="en">Open User Tasks</source>
         <target state="translated">Apri attività utente</target>
       </trans-unit>
-      <trans-unit id="quickOpen.task">
+      <trans-unit id="tasksQuickAccessPlaceholder">
+        <source xml:lang="en">Type the name of a task to run.</source>
+        <target state="translated">Digitare il nome di un'attività da eseguire.</target>
+      </trans-unit>
+      <trans-unit id="tasksQuickAccessHelp">
         <source xml:lang="en">Run Task</source>
         <target state="translated">Esegui attività</target>
       </trans-unit>
@@ -227,22 +231,6 @@ L'attività '{0}' è stata terminata come richiesto dall'utente.</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/taskQuickOpen" source-language="en" target-language="it" datatype="plaintext">
-    <body>
-      <trans-unit id="tasksAriaLabel">
-        <source xml:lang="en">Type the name of a task to run</source>
-        <target state="translated">Digitare il nome di un'attività da eseguire</target>
-      </trans-unit>
-      <trans-unit id="noTasksMatching">
-        <source xml:lang="en">No tasks matching</source>
-        <target state="translated">Non ci sono attività corrispondenti</target>
-      </trans-unit>
-      <trans-unit id="noTasksFound">
-        <source xml:lang="en">No tasks found</source>
-        <target state="translated">Non sono state trovate attività</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/tasks/common/jsonSchema_v1" source-language="en" target-language="it" datatype="plaintext">
     <body>
       <trans-unit id="JsonSchema.version.deprecated">
@@ -276,6 +264,14 @@ L'attività '{0}' è stata terminata come richiesto dall'utente.</target>
       <trans-unit id="JsonSchema.shell">
         <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
         <target state="translated">Specifica se il comando è un comando della shell o un programma esterno. Se omesso, viene usato il valore predefinito false.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/tasksQuickAccess" source-language="en" target-language="it" datatype="plaintext">
+    <body>
+      <trans-unit id="TaskService.pickRunTask">
+        <source xml:lang="en">Select the task to run</source>
+        <target state="translated">Selezionare l'attività da eseguire</target>
       </trans-unit>
     </body>
   </file>
@@ -328,30 +324,6 @@ L'attività '{0}' è stata terminata come richiesto dall'utente.</target>
       <trans-unit id="workbench.action.tasks.disallowAutomaticTasks">
         <source xml:lang="en">Disallow Automatic Tasks in Folder</source>
         <target state="translated">Non consentire attività automatiche nella cartella</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/quickOpen" source-language="en" target-language="it" datatype="plaintext">
-    <body>
-      <trans-unit id="entryAriaLabel">
-        <source xml:lang="en">{0}, tasks</source>
-        <target state="translated">{0}, attività</target>
-      </trans-unit>
-      <trans-unit id="recentlyUsed">
-        <source xml:lang="en">recently used tasks</source>
-        <target state="translated">attività usate di recente</target>
-      </trans-unit>
-      <trans-unit id="configured">
-        <source xml:lang="en">configured tasks</source>
-        <target state="translated">attività configurate</target>
-      </trans-unit>
-      <trans-unit id="detected">
-        <source xml:lang="en">detected tasks</source>
-        <target state="translated">attività rilevate</target>
-      </trans-unit>
-      <trans-unit id="customizeTask">
-        <source xml:lang="en">Configure Task</source>
-        <target state="translated">Configura attività</target>
       </trans-unit>
     </body>
   </file>
@@ -866,6 +838,38 @@ L'attività '{0}' è stata terminata come richiesto dall'utente.</target>
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/taskQuickPick" source-language="en" target-language="it" datatype="plaintext">
+    <body>
+      <trans-unit id="taskQuickPick.showAll">
+        <source xml:lang="en">Show All Tasks...</source>
+        <target state="translated">Mostra tutte le attività...</target>
+      </trans-unit>
+      <trans-unit id="configureTask">
+        <source xml:lang="en">Configure Task</source>
+        <target state="translated">Configura attività</target>
+      </trans-unit>
+      <trans-unit id="contributedTasks">
+        <source xml:lang="en">contributed</source>
+        <target state="translated">aggiunte come contributo</target>
+      </trans-unit>
+      <trans-unit id="recentlyUsed">
+        <source xml:lang="en">recently used</source>
+        <target state="translated">usate di recente</target>
+      </trans-unit>
+      <trans-unit id="configured">
+        <source xml:lang="en">configured</source>
+        <target state="translated">Configurato</target>
+      </trans-unit>
+      <trans-unit id="TaskQuickPick.goBack">
+        <source xml:lang="en">Go back ↩</source>
+        <target state="translated">Torna indietro ↩</target>
+      </trans-unit>
+      <trans-unit id="TaskQuickPick.noTasksForType">
+        <source xml:lang="en">No {0} tasks found. Go back ↩</source>
+        <target state="translated">Non sono state trovate attività di tipo {0}. Torna indietro ↩</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/tasks/common/problemMatcher" source-language="en" target-language="it" datatype="plaintext">
     <body>
       <trans-unit id="ProblemPatternParser.problemPattern.missingRegExp">
@@ -1371,14 +1375,6 @@ L'attività verrà ignorata.
         <source xml:lang="en">detected tasks</source>
         <target state="translated">attività rilevate</target>
       </trans-unit>
-      <trans-unit id="pickProgressManager.description">
-        <source xml:lang="en">Detecting tasks ({0} of {1}): {2} in progress</source>
-        <target state="translated">Rilevamento delle attività ({0} di {1}): {2} in corso</target>
-      </trans-unit>
-      <trans-unit id="taskQuickPick.cancel">
-        <source xml:lang="en">Stop detecting</source>
-        <target state="translated">Arresta il rilevamento</target>
-      </trans-unit>
       <trans-unit id="TaskService.ignoredFolder">
         <source xml:lang="en">The following workspace folders are ignored since they use task version 0.1.0: {0}</source>
         <target state="translated">Le cartelle dell'area di lavoro seguenti verranno ignorate perché usano la versione 0.1.0 delle attività: {0}</target>
@@ -1392,8 +1388,8 @@ L'attività verrà ignorata.
         <target state="translated">Selezionare l'attività da eseguire</target>
       </trans-unit>
       <trans-unit id="TaskService.noEntryToRun">
-        <source xml:lang="en">No task to run found. Configure Tasks...</source>
-        <target state="translated">Non è stata trovata alcuna attività da eseguire. Configurare le attività...</target>
+        <source xml:lang="en">No configured tasks. Configure Tasks...</source>
+        <target state="translated">Non ci sono attività configurate. Configura attività...</target>
       </trans-unit>
       <trans-unit id="TaskService.fetchingBuildTasks">
         <source xml:lang="en">Fetching build tasks...</source>

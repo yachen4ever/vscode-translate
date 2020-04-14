@@ -32,30 +32,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/terminal/browser/terminalQuickOpen" source-language="en" target-language="de" datatype="plaintext">
-    <body>
-      <trans-unit id="termEntryAriaLabel">
-        <source xml:lang="en">{0}, terminal picker</source>
-        <target state="translated">{0}, Terminalauswahl</target>
-      </trans-unit>
-      <trans-unit id="termCreateEntryAriaLabel">
-        <source xml:lang="en">{0}, create new terminal</source>
-        <target state="translated">{0}, neues Terminal erstellen</target>
-      </trans-unit>
-      <trans-unit id="workbench.action.terminal.newplus">
-        <source xml:lang="en">Create New Integrated Terminal</source>
-        <target state="translated">Neues integriertes Terminal erstellen</target>
-      </trans-unit>
-      <trans-unit id="noTerminalsMatching">
-        <source xml:lang="en">No terminals matching</source>
-        <target state="translated">Keine übereinstimmenden Terminals</target>
-      </trans-unit>
-      <trans-unit id="noTerminalsFound">
-        <source xml:lang="en">No terminals open</source>
-        <target state="translated">Keine geöffneten Terminals</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/terminal/common/terminal" source-language="en" target-language="de" datatype="plaintext">
     <body>
       <trans-unit id="terminalCategory">
@@ -86,7 +62,11 @@
   </file>
   <file original="src/vs/workbench/contrib/terminal/browser/terminal.contribution" source-language="en" target-language="de" datatype="plaintext">
     <body>
-      <trans-unit id="quickOpen.terminal">
+      <trans-unit id="tasksQuickAccessPlaceholder">
+        <source xml:lang="en">Type the name of a terminal to open.</source>
+        <target state="translated">Geben Sie den Namen eines zu öffnenden Terminals ein.</target>
+      </trans-unit>
+      <trans-unit id="tasksQuickAccessHelp">
         <source xml:lang="en">Show All Opened Terminals</source>
         <target state="translated">Alle geöffneten Terminals anzeigen</target>
       </trans-unit>
@@ -282,6 +262,10 @@ Befehle, die standardmäßig übersprungen werden:
         <source xml:lang="en">Whether or not to allow chord keybindings in the terminal. Note that when this is true and the keystroke results in a chord it will bypass `#terminal.integrated.commandsToSkipShell#`, setting this to false is particularly useful when you want ctrl+k to go to your shell (not VS Code).</source>
         <target state="translated">Gibt an, ob Tastenzuordnungen im Terminal zugelassen werden sollen. Wenn diese Einstellung auf "true" festgelegt ist und ein Tastendruck als Tastenzuordnung erkannt wird, wird "#terminal.integrated.commandsToSkipShell#" umgangen. Den Wert auf "false" festzulegen ist insbesondere dann nützlich, wenn Sie STRG+K verwenden möchten, um zur Shell zu navigieren (nicht Visual Studio Code).</target>
       </trans-unit>
+      <trans-unit id="terminal.integrated.allowMnemonics">
+        <source xml:lang="en">Whether to allow menubar mnemonics (eg. alt+f) to trigger the open the menubar. Note that this will cause all alt keystrokes will skip the shell when true. This does nothing on macOS.</source>
+        <target state="translated">Gibt an, ob mnemonische Kombinationen (z. B. ALT+F) für die Menüleiste diese öffnen können. Beachten Sie, dass die Shell beim Drücken von ALT immer übersprungen wird, wenn diese Option aktiviert ist. Die Einstellung hat unter macOS keinen Effekt.</target>
+      </trans-unit>
       <trans-unit id="terminal.integrated.inheritEnv">
         <source xml:lang="en">Whether new shells should inherit their environment from VS Code. This is not supported on Windows.</source>
         <target state="translated">Gibt an, ob neue Shells ihre Umgebung aus VS Code erben sollen. Diese Einstellung wird unter Windows nicht unterstützt.</target>
@@ -376,7 +360,7 @@ Befehle, die standardmäßig übersprungen werden:
       </trans-unit>
       <trans-unit id="terminal.border">
         <source xml:lang="en">The color of the border that separates split panes within the terminal. This defaults to panel.border.</source>
-        <target state="translated">Die Farbe des Rahmens, der Bereiche innerhalb des Terminals teilt. Der Standardwert ist panel.border.</target>
+        <target state="translated">Die Farbe des Rahmens, der Panels innerhalb des Terminals teilt. Der Standardwert ist panel.border.</target>
       </trans-unit>
       <trans-unit id="terminal.ansiColor">
         <source xml:lang="en">'{0}' ANSI color in the terminal.</source>
@@ -410,6 +394,22 @@ Befehle, die standardmäßig übersprungen werden:
         <source xml:lang="en">Run &amp;&amp;Selected Text</source>
         <target state="translated">Ausgewählten &amp;&amp;Text ausführen</target>
         <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalsQuickAccess" source-language="en" target-language="de" datatype="plaintext">
+    <body>
+      <trans-unit id="renameTerminal">
+        <source xml:lang="en">Rename Terminal</source>
+        <target state="translated">Terminal umbenennen</target>
+      </trans-unit>
+      <trans-unit id="killTerminal">
+        <source xml:lang="en">Kill Terminal Instance</source>
+        <target state="translated">Terminalinstanz beenden</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.terminal.newplus">
+        <source xml:lang="en">Create New Integrated Terminal</source>
+        <target state="translated">Neues integriertes Terminal erstellen</target>
       </trans-unit>
     </body>
   </file>
@@ -454,10 +454,6 @@ Befehle, die standardmäßig übersprungen werden:
       <trans-unit id="workbench.action.terminal.kill.short">
         <source xml:lang="en">Kill Terminal</source>
         <target state="translated">Terminal beenden</target>
-      </trans-unit>
-      <trans-unit id="workbench.action.terminal.quickKill">
-        <source xml:lang="en">Kill Terminal Instance</source>
-        <target state="translated">Terminalinstanz beenden</target>
       </trans-unit>
       <trans-unit id="workbench.action.terminal.copySelection">
         <source xml:lang="en">Copy Selection</source>
@@ -675,7 +671,7 @@ Befehle, die standardmäßig übersprungen werden:
         <source xml:lang="en">Hide Find Widget</source>
         <target state="translated">Widget zum Ausblenden der Suche</target>
       </trans-unit>
-      <trans-unit id="quickOpenTerm">
+      <trans-unit id="quickAccessTerminal">
         <source xml:lang="en">Switch Active Terminal</source>
         <target state="translated">Aktives Terminal wechseln</target>
       </trans-unit>
@@ -726,38 +722,6 @@ Befehle, die standardmäßig übersprungen werden:
       <trans-unit id="workbench.action.terminal.findPrevious">
         <source xml:lang="en">Find previous</source>
         <target state="translated">Vorheriges Element suchen</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/terminal/browser/terminalTab" source-language="en" target-language="de" datatype="plaintext">
-    <body>
-      <trans-unit id="terminalFocus">
-        <source xml:lang="en">Terminal {0}</source>
-        <target state="translated">Terminal {0}</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/terminal/browser/terminalConfigHelper" source-language="en" target-language="de" datatype="plaintext">
-    <body>
-      <trans-unit id="terminal.integrated.allowWorkspaceShell">
-        <source xml:lang="en">Do you allow this workspace to modify your terminal shell? {0}</source>
-        <target state="translated">Möchten Sie zulassen, dass dieser Arbeitsbereich Änderungen an Ihrer Terminalshell vornimmt? {0}</target>
-      </trans-unit>
-      <trans-unit id="allow">
-        <source xml:lang="en">Allow</source>
-        <target state="translated">Zulassen</target>
-      </trans-unit>
-      <trans-unit id="disallow">
-        <source xml:lang="en">Disallow</source>
-        <target state="translated">Nicht zulassen</target>
-      </trans-unit>
-      <trans-unit id="useWslExtension.title">
-        <source xml:lang="en">The '{0}' extension is recommended for opening a terminal in WSL.</source>
-        <target state="translated">Die Erweiterung "{0}" wird zum Öffnen eines Terminals in WSL empfohlen.</target>
-      </trans-unit>
-      <trans-unit id="install">
-        <source xml:lang="en">Install</source>
-        <target state="translated">Installieren</target>
       </trans-unit>
     </body>
   </file>
@@ -818,6 +782,38 @@ Befehle, die standardmäßig übersprungen werden:
       <trans-unit id="terminal.integrated.exitedWithCode">
         <source xml:lang="en">The terminal process terminated with exit code: {0}</source>
         <target state="translated">Der Terminalprozess wurde mit folgendem Exitcode beendet: {0}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalConfigHelper" source-language="en" target-language="de" datatype="plaintext">
+    <body>
+      <trans-unit id="terminal.integrated.allowWorkspaceShell">
+        <source xml:lang="en">Do you allow this workspace to modify your terminal shell? {0}</source>
+        <target state="translated">Möchten Sie zulassen, dass dieser Arbeitsbereich Änderungen an Ihrer Terminalshell vornimmt? {0}</target>
+      </trans-unit>
+      <trans-unit id="allow">
+        <source xml:lang="en">Allow</source>
+        <target state="translated">Zulassen</target>
+      </trans-unit>
+      <trans-unit id="disallow">
+        <source xml:lang="en">Disallow</source>
+        <target state="translated">Nicht zulassen</target>
+      </trans-unit>
+      <trans-unit id="useWslExtension.title">
+        <source xml:lang="en">The '{0}' extension is recommended for opening a terminal in WSL.</source>
+        <target state="translated">Die Erweiterung "{0}" wird zum Öffnen eines Terminals in WSL empfohlen.</target>
+      </trans-unit>
+      <trans-unit id="install">
+        <source xml:lang="en">Install</source>
+        <target state="translated">Installieren</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalTab" source-language="en" target-language="de" datatype="plaintext">
+    <body>
+      <trans-unit id="terminalFocus">
+        <source xml:lang="en">Terminal {0}</source>
+        <target state="translated">Terminal {0}</target>
       </trans-unit>
     </body>
   </file>

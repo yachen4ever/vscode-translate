@@ -8,34 +8,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/debugQuickOpen" source-language="en" target-language="hu" datatype="plaintext">
-    <body>
-      <trans-unit id="entryAriaLabel">
-        <source xml:lang="en">{0}, debug</source>
-        <target state="translated">{0}, hibakeresés</target>
-      </trans-unit>
-      <trans-unit id="debugAriaLabel">
-        <source xml:lang="en">Type a name of a launch configuration to run.</source>
-        <target state="translated">Írja be a futtatandó konfiguráció nevét.</target>
-      </trans-unit>
-      <trans-unit id="addConfigTo">
-        <source xml:lang="en">Add Config ({0})...</source>
-        <target state="translated">Konfiguráció hozzáadása ({0})...</target>
-      </trans-unit>
-      <trans-unit id="addConfiguration">
-        <source xml:lang="en">Add Configuration...</source>
-        <target state="translated">Konfiguráció hozzáadása...</target>
-      </trans-unit>
-      <trans-unit id="noConfigurationsMatching">
-        <source xml:lang="en">No debug configurations matching</source>
-        <target state="translated">Nincs illeszkedő hibakeresési konfiguráció</target>
-      </trans-unit>
-      <trans-unit id="noConfigurationsFound">
-        <source xml:lang="en">No debug configurations found. Please create a 'launch.json' file.</source>
-        <target state="translated">Nem található hibakeresési konfiguráció. Készítsen egy 'launch.json' fájlt.</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/browser/callStackEditorContribution" source-language="en" target-language="hu" datatype="plaintext">
     <body>
       <trans-unit id="topStackFrameLineHighlight">
@@ -272,17 +244,13 @@
         <source xml:lang="en">Inline Breakpoint</source>
         <target state="translated">Sorbeli töréspont</target>
       </trans-unit>
-      <trans-unit id="debugCommands">
-        <source xml:lang="en">Debug Configuration</source>
-        <target state="translated">Hibakeresési konfiguráció</target>
-      </trans-unit>
       <trans-unit id="startDebugPlaceholder">
         <source xml:lang="en">Type the name of a launch configuration to run.</source>
         <target state="new">Type the name of a launch configuration to run.</target>
       </trans-unit>
-      <trans-unit id="startDebugHelp">
-        <source xml:lang="en">Start Debug Configurations</source>
-        <target state="new">Start Debug Configurations</target>
+      <trans-unit id="startDebuggingHelp">
+        <source xml:lang="en">Start Debugging</source>
+        <target state="translated">Hibakeresés indítása</target>
       </trans-unit>
       <trans-unit id="debugConfigurationTitle">
         <source xml:lang="en">Debug</source>
@@ -592,18 +560,22 @@
       <trans-unit id="openAFileWhichCanBeDebugged">
         <source xml:lang="en">[Open a file](command:{0}) which can be debugged or run.</source>
         <target state="new">[Open a file](command:{0}) which can be debugged or run.</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
       </trans-unit>
       <trans-unit id="runAndDebugAction">
         <source xml:lang="en">[Run and Debug{0}](command:{1})</source>
         <target state="new">[Run and Debug{0}](command:{1})</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
       </trans-unit>
       <trans-unit id="customizeRunAndDebug">
         <source xml:lang="en">To customize Run and Debug [create a launch.json file](command:{0}).</source>
         <target state="new">To customize Run and Debug [create a launch.json file](command:{0}).</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
       </trans-unit>
       <trans-unit id="customizeRunAndDebugOpenFolder">
         <source xml:lang="en">To customize Run and Debug, [open a folder](command:{0}) and create a launch.json file.</source>
         <target state="new">To customize Run and Debug, [open a folder](command:{0}) and create a launch.json file.</target>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
       </trans-unit>
     </body>
   </file>
@@ -628,6 +600,26 @@
       <trans-unit id="debugSession">
         <source xml:lang="en">Debug Session</source>
         <target state="new">Debug Session</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/exceptionWidget" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="debugExceptionWidgetBorder">
+        <source xml:lang="en">Exception widget border color.</source>
+        <target state="translated">A kivételmodul keretszíne.</target>
+      </trans-unit>
+      <trans-unit id="debugExceptionWidgetBackground">
+        <source xml:lang="en">Exception widget background color.</source>
+        <target state="translated">A kivételmodul háttérszíne.</target>
+      </trans-unit>
+      <trans-unit id="exceptionThrownWithId">
+        <source xml:lang="en">Exception has occurred: {0}</source>
+        <target state="translated">Kivétel következett be: {0}</target>
+      </trans-unit>
+      <trans-unit id="exceptionThrown">
+        <source xml:lang="en">Exception has occurred.</source>
+        <target state="translated">Kivétel következett be.</target>
       </trans-unit>
     </body>
   </file>
@@ -680,6 +672,78 @@
       <trans-unit id="debugIcon.stepBackForeground">
         <source xml:lang="en">Debug toolbar icon for step back.</source>
         <target state="new">Debug toolbar icon for step back.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/statusbarColorProvider" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="statusBarDebuggingBackground">
+        <source xml:lang="en">Status bar background color when a program is being debugged. The status bar is shown in the bottom of the window</source>
+        <target state="translated">Az állapotsor háttérszíne, ha a programon hibakeresés folyik. Az állapotsor az ablak alján jelenik meg.</target>
+      </trans-unit>
+      <trans-unit id="statusBarDebuggingForeground">
+        <source xml:lang="en">Status bar foreground color when a program is being debugged. The status bar is shown in the bottom of the window</source>
+        <target state="translated">Az állapotsor előtérszíne, ha a programon hibakeresés folyik. Az állapotsor az ablak alján jelenik meg.</target>
+      </trans-unit>
+      <trans-unit id="statusBarDebuggingBorder">
+        <source xml:lang="en">Status bar border color separating to the sidebar and editor when a program is being debugged. The status bar is shown in the bottom of the window</source>
+        <target state="translated">Az állapotsort az oldalsávtól és a szerkesztőablakoktól elválasztó keret színe, ha egy programon hibakeresés történik. Az állapotsor az ablak alján jelenik meg.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/common/debugContentProvider" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="unable">
+        <source xml:lang="en">Unable to resolve the resource without a debug session</source>
+        <target state="translated">Az erőforrás nem oldható fel hibakeresési munkamenet nélkül</target>
+      </trans-unit>
+      <trans-unit id="canNotResolveSourceWithError">
+        <source xml:lang="en">Could not load source '{0}': {1}.</source>
+        <target state="translated">Nem sikerült betölteni a(z) „{0}” forrását: {1}.</target>
+      </trans-unit>
+      <trans-unit id="canNotResolveSource">
+        <source xml:lang="en">Could not load source '{0}'.</source>
+        <target state="translated">Nem sikerült betölteni a(z) „{0}” forrását.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/debugStatus" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="status.debug">
+        <source xml:lang="en">Debug</source>
+        <target state="translated">Hibakeresés</target>
+      </trans-unit>
+      <trans-unit id="selectAndStartDebug">
+        <source xml:lang="en">Select and start debug configuration</source>
+        <target state="translated">Hibakeresési konfiguráció kiválasztása és indítása</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/debugQuickAccess" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="customizeLaunchConfig">
+        <source xml:lang="en">Configure Launch Configuration</source>
+        <target state="new">Configure Launch Configuration</target>
+      </trans-unit>
+      <trans-unit id="addConfigTo">
+        <source xml:lang="en">Add Config ({0})...</source>
+        <target state="translated">Konfiguráció hozzáadása ({0})...</target>
+      </trans-unit>
+      <trans-unit id="addConfiguration">
+        <source xml:lang="en">Add Configuration...</source>
+        <target state="translated">Konfiguráció hozzáadása...</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/debugHover" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="treeAriaLabel">
+        <source xml:lang="en">Debug Hover</source>
+        <target state="translated">Hibakeresési súgószöveg</target>
+      </trans-unit>
+      <trans-unit id="variableAriaLabel">
+        <source xml:lang="en">{0} value {1}, variables, debug</source>
+        <target state="translated">{0} értéke {1}, változók, hibakeresés</target>
       </trans-unit>
     </body>
   </file>
@@ -763,102 +827,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/exceptionWidget" source-language="en" target-language="hu" datatype="plaintext">
-    <body>
-      <trans-unit id="debugExceptionWidgetBorder">
-        <source xml:lang="en">Exception widget border color.</source>
-        <target state="translated">A kivételmodul keretszíne.</target>
-      </trans-unit>
-      <trans-unit id="debugExceptionWidgetBackground">
-        <source xml:lang="en">Exception widget background color.</source>
-        <target state="translated">A kivételmodul háttérszíne.</target>
-      </trans-unit>
-      <trans-unit id="exceptionThrownWithId">
-        <source xml:lang="en">Exception has occurred: {0}</source>
-        <target state="translated">Kivétel következett be: {0}</target>
-      </trans-unit>
-      <trans-unit id="exceptionThrown">
-        <source xml:lang="en">Exception has occurred.</source>
-        <target state="translated">Kivétel következett be.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/statusbarColorProvider" source-language="en" target-language="hu" datatype="plaintext">
-    <body>
-      <trans-unit id="statusBarDebuggingBackground">
-        <source xml:lang="en">Status bar background color when a program is being debugged. The status bar is shown in the bottom of the window</source>
-        <target state="translated">Az állapotsor háttérszíne, ha a programon hibakeresés folyik. Az állapotsor az ablak alján jelenik meg.</target>
-      </trans-unit>
-      <trans-unit id="statusBarDebuggingForeground">
-        <source xml:lang="en">Status bar foreground color when a program is being debugged. The status bar is shown in the bottom of the window</source>
-        <target state="translated">Az állapotsor előtérszíne, ha a programon hibakeresés folyik. Az állapotsor az ablak alján jelenik meg.</target>
-      </trans-unit>
-      <trans-unit id="statusBarDebuggingBorder">
-        <source xml:lang="en">Status bar border color separating to the sidebar and editor when a program is being debugged. The status bar is shown in the bottom of the window</source>
-        <target state="translated">Az állapotsort az oldalsávtól és a szerkesztőablakoktól elválasztó keret színe, ha egy programon hibakeresés történik. Az állapotsor az ablak alján jelenik meg.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/debugStatus" source-language="en" target-language="hu" datatype="plaintext">
-    <body>
-      <trans-unit id="status.debug">
-        <source xml:lang="en">Debug</source>
-        <target state="translated">Hibakeresés</target>
-      </trans-unit>
-      <trans-unit id="selectAndStartDebug">
-        <source xml:lang="en">Select and start debug configuration</source>
-        <target state="translated">Hibakeresési konfiguráció kiválasztása és indítása</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/common/debugContentProvider" source-language="en" target-language="hu" datatype="plaintext">
-    <body>
-      <trans-unit id="unable">
-        <source xml:lang="en">Unable to resolve the resource without a debug session</source>
-        <target state="translated">Az erőforrás nem oldható fel hibakeresési munkamenet nélkül</target>
-      </trans-unit>
-      <trans-unit id="canNotResolveSourceWithError">
-        <source xml:lang="en">Could not load source '{0}': {1}.</source>
-        <target state="translated">Nem sikerült betölteni a(z) „{0}” forrását: {1}.</target>
-      </trans-unit>
-      <trans-unit id="canNotResolveSource">
-        <source xml:lang="en">Could not load source '{0}'.</source>
-        <target state="translated">Nem sikerült betölteni a(z) „{0}” forrását.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/debugQuickAccess" source-language="en" target-language="hu" datatype="plaintext">
-    <body>
-      <trans-unit id="entryAriaLabel">
-        <source xml:lang="en">{0}, debug</source>
-        <target state="translated">{0}, hibakeresés</target>
-      </trans-unit>
-      <trans-unit id="customizeTask">
-        <source xml:lang="en">Configure Launch Configuration</source>
-        <target state="new">Configure Launch Configuration</target>
-      </trans-unit>
-      <trans-unit id="addConfigTo">
-        <source xml:lang="en">Add Config ({0})...</source>
-        <target state="translated">Konfiguráció hozzáadása ({0})...</target>
-      </trans-unit>
-      <trans-unit id="addConfiguration">
-        <source xml:lang="en">Add Configuration...</source>
-        <target state="translated">Konfiguráció hozzáadása...</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/debugHover" source-language="en" target-language="hu" datatype="plaintext">
-    <body>
-      <trans-unit id="treeAriaLabel">
-        <source xml:lang="en">Debug Hover</source>
-        <target state="translated">Hibakeresési súgószöveg</target>
-      </trans-unit>
-      <trans-unit id="variableAriaLabel">
-        <source xml:lang="en">{0} value {1}, variables, debug</source>
-        <target state="translated">{0} értéke {1}, változók, hibakeresés</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/browser/debugEditorActions" source-language="en" target-language="hu" datatype="plaintext">
     <body>
       <trans-unit id="toggleBreakpointAction">
@@ -896,42 +864,6 @@
       <trans-unit id="goToPreviousBreakpoint">
         <source xml:lang="en">Debug: Go To Previous Breakpoint</source>
         <target state="translated">Hibakeresés: Ugrás az előző töréspontra</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/variablesView" source-language="en" target-language="hu" datatype="plaintext">
-    <body>
-      <trans-unit id="variablesAriaTreeLabel">
-        <source xml:lang="en">Debug Variables</source>
-        <target state="translated">Hibakeresési változók</target>
-      </trans-unit>
-      <trans-unit id="setValue">
-        <source xml:lang="en">Set Value</source>
-        <target state="translated">Érték beállítása</target>
-      </trans-unit>
-      <trans-unit id="copyAsExpression">
-        <source xml:lang="en">Copy as Expression</source>
-        <target state="translated">Kifejezés másolása</target>
-      </trans-unit>
-      <trans-unit id="addToWatchExpressions">
-        <source xml:lang="en">Add to Watch</source>
-        <target state="translated">Hozzáadás a figyelőlistához</target>
-      </trans-unit>
-      <trans-unit id="breakWhenValueChanges">
-        <source xml:lang="en">Break When Value Changes</source>
-        <target state="new">Break When Value Changes</target>
-      </trans-unit>
-      <trans-unit id="variableValueAriaLabel">
-        <source xml:lang="en">Type new variable value</source>
-        <target state="translated">Adja meg a változó új nevét</target>
-      </trans-unit>
-      <trans-unit id="variableScopeAriaLabel">
-        <source xml:lang="en">Scope {0}, variables, debug</source>
-        <target state="translated">{0} hatókör, változók, hibakeresés</target>
-      </trans-unit>
-      <trans-unit id="variableAriaLabel">
-        <source xml:lang="en">{0} value {1}, variables, debug</source>
-        <target state="translated">{0} értéke {1}, változók, hibakeresés</target>
       </trans-unit>
     </body>
   </file>
@@ -1021,6 +953,42 @@
       <trans-unit id="watchVariableAriaLabel">
         <source xml:lang="en">{0} value {1}, watch, debug</source>
         <target state="translated">{0} értéke {1}, figyelt, hibakeresés</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/variablesView" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="variablesAriaTreeLabel">
+        <source xml:lang="en">Debug Variables</source>
+        <target state="translated">Hibakeresési változók</target>
+      </trans-unit>
+      <trans-unit id="setValue">
+        <source xml:lang="en">Set Value</source>
+        <target state="translated">Érték beállítása</target>
+      </trans-unit>
+      <trans-unit id="copyAsExpression">
+        <source xml:lang="en">Copy as Expression</source>
+        <target state="translated">Kifejezés másolása</target>
+      </trans-unit>
+      <trans-unit id="addToWatchExpressions">
+        <source xml:lang="en">Add to Watch</source>
+        <target state="translated">Hozzáadás a figyelőlistához</target>
+      </trans-unit>
+      <trans-unit id="breakWhenValueChanges">
+        <source xml:lang="en">Break When Value Changes</source>
+        <target state="new">Break When Value Changes</target>
+      </trans-unit>
+      <trans-unit id="variableValueAriaLabel">
+        <source xml:lang="en">Type new variable value</source>
+        <target state="translated">Adja meg a változó új nevét</target>
+      </trans-unit>
+      <trans-unit id="variableScopeAriaLabel">
+        <source xml:lang="en">Scope {0}, variables, debug</source>
+        <target state="translated">{0} hatókör, változók, hibakeresés</target>
+      </trans-unit>
+      <trans-unit id="variableAriaLabel">
+        <source xml:lang="en">{0} value {1}, variables, debug</source>
+        <target state="translated">{0} értéke {1}, változók, hibakeresés</target>
       </trans-unit>
     </body>
   </file>
@@ -1515,6 +1483,10 @@
   </file>
   <file original="src/vs/workbench/contrib/debug/browser/debugSession" source-language="en" target-language="hu" datatype="plaintext">
     <body>
+      <trans-unit id="noDebugAdapter">
+        <source xml:lang="en">No debug adapter, can not send '{0}'</source>
+        <target state="new">No debug adapter, can not send '{0}'</target>
+      </trans-unit>
       <trans-unit id="sessionNotReadyForBreakpoints">
         <source xml:lang="en">Session is not ready for breakpoints</source>
         <target state="new">Session is not ready for breakpoints</target>
@@ -1526,6 +1498,86 @@
       <trans-unit id="debuggingStopped">
         <source xml:lang="en">Debugging stopped.</source>
         <target state="translated">Hibakeresés leállítva.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/common/debugger" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="cannot.find.da">
+        <source xml:lang="en">Cannot find debug adapter for type '{0}'.</source>
+        <target state="new">Cannot find debug adapter for type '{0}'.</target>
+      </trans-unit>
+      <trans-unit id="launch.config.comment1">
+        <source xml:lang="en">Use IntelliSense to learn about possible attributes.</source>
+        <target state="translated">IntelliSense használata a lehetséges attribútumok listázásához</target>
+      </trans-unit>
+      <trans-unit id="launch.config.comment2">
+        <source xml:lang="en">Hover to view descriptions of existing attributes.</source>
+        <target state="translated">Húzza fölé az egeret a létező attribútumok leírásának megtekintéséhez!</target>
+      </trans-unit>
+      <trans-unit id="launch.config.comment3">
+        <source xml:lang="en">For more information, visit: {0}</source>
+        <target state="translated">További információért látogassa meg a következőt: {0}</target>
+      </trans-unit>
+      <trans-unit id="debugType">
+        <source xml:lang="en">Type of configuration.</source>
+        <target state="translated">A konfiguráció típusa.</target>
+      </trans-unit>
+      <trans-unit id="debugTypeNotRecognised">
+        <source xml:lang="en">The debug type is not recognized. Make sure that you have a corresponding debug extension installed and that it is enabled.</source>
+        <target state="translated">Ez a hibakeresési típus nem ismert. Bizonyosodjon meg róla, hogy telepítve és engedélyezve van a megfelelő hibakeresési kiegészítő.</target>
+      </trans-unit>
+      <trans-unit id="node2NotSupported">
+        <source xml:lang="en">"node2" is no longer supported, use "node" instead and set the "protocol" attribute to "inspector".</source>
+        <target state="translated">A "node2" már nem támogatott. Használja helyette a "node"-ot, és állítsa a "protocol" attribútum értékét "inspector"-ra.</target>
+      </trans-unit>
+      <trans-unit id="debugName">
+        <source xml:lang="en">Name of configuration; appears in the launch configuration dropdown menu.</source>
+        <target state="new">Name of configuration; appears in the launch configuration dropdown menu.</target>
+      </trans-unit>
+      <trans-unit id="debugRequest">
+        <source xml:lang="en">Request type of configuration. Can be "launch" or "attach".</source>
+        <target state="translated">A konfiguráció kérési típusa. Lehet "launch" vagy "attach".</target>
+      </trans-unit>
+      <trans-unit id="debugServer">
+        <source xml:lang="en">For debug extension development only: if a port is specified VS Code tries to connect to a debug adapter running in server mode</source>
+        <target state="translated">Csak hibakeresési kiegészítők fejlesztéséhez: ha a port meg van adva, akkor a VS Code egy szerver módban futó hibakeresési illesztőhöz próbál meg csatlakozni.</target>
+      </trans-unit>
+      <trans-unit id="debugPrelaunchTask">
+        <source xml:lang="en">Task to run before debug session starts.</source>
+        <target state="translated">A hibakeresési folyamat előtt futtatandó feladat.</target>
+      </trans-unit>
+      <trans-unit id="debugPostDebugTask">
+        <source xml:lang="en">Task to run after debug session ends.</source>
+        <target state="translated">A hibakeresési folyamat vége után futtatandó feladat.</target>
+      </trans-unit>
+      <trans-unit id="debugWindowsConfiguration">
+        <source xml:lang="en">Windows specific launch configuration attributes.</source>
+        <target state="translated">Windows-specifikus indítási konfigurációs attribútumok.</target>
+      </trans-unit>
+      <trans-unit id="debugOSXConfiguration">
+        <source xml:lang="en">OS X specific launch configuration attributes.</source>
+        <target state="translated">OS X-specifikus indítási konfigurációs attribútumok.</target>
+      </trans-unit>
+      <trans-unit id="debugLinuxConfiguration">
+        <source xml:lang="en">Linux specific launch configuration attributes.</source>
+        <target state="translated">Linux-specifikus indítási konfigurációs attribútumok.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/rawDebugSession" source-language="en" target-language="hu" datatype="plaintext">
+    <body>
+      <trans-unit id="noDebugAdapterStart">
+        <source xml:lang="en">No debug adapter, can not start debug session.</source>
+        <target state="new">No debug adapter, can not start debug session.</target>
+      </trans-unit>
+      <trans-unit id="noDebugAdapter">
+        <source xml:lang="en">No debug adapter found. Can not send '{0}'.</source>
+        <target state="new">No debug adapter found. Can not send '{0}'.</target>
+      </trans-unit>
+      <trans-unit id="moreInfo">
+        <source xml:lang="en">More Info</source>
+        <target state="translated">További információ</target>
       </trans-unit>
     </body>
   </file>
@@ -1662,82 +1714,6 @@
       <trans-unit id="compoundPrelaunchTask">
         <source xml:lang="en">Task to run before any of the compound configurations start.</source>
         <target state="new">Task to run before any of the compound configurations start.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/common/debugger" source-language="en" target-language="hu" datatype="plaintext">
-    <body>
-      <trans-unit id="cannot.find.da">
-        <source xml:lang="en">Cannot find debug adapter for type '{0}'.</source>
-        <target state="new">Cannot find debug adapter for type '{0}'.</target>
-      </trans-unit>
-      <trans-unit id="launch.config.comment1">
-        <source xml:lang="en">Use IntelliSense to learn about possible attributes.</source>
-        <target state="translated">IntelliSense használata a lehetséges attribútumok listázásához</target>
-      </trans-unit>
-      <trans-unit id="launch.config.comment2">
-        <source xml:lang="en">Hover to view descriptions of existing attributes.</source>
-        <target state="translated">Húzza fölé az egeret a létező attribútumok leírásának megtekintéséhez!</target>
-      </trans-unit>
-      <trans-unit id="launch.config.comment3">
-        <source xml:lang="en">For more information, visit: {0}</source>
-        <target state="translated">További információért látogassa meg a következőt: {0}</target>
-      </trans-unit>
-      <trans-unit id="debugType">
-        <source xml:lang="en">Type of configuration.</source>
-        <target state="translated">A konfiguráció típusa.</target>
-      </trans-unit>
-      <trans-unit id="debugTypeNotRecognised">
-        <source xml:lang="en">The debug type is not recognized. Make sure that you have a corresponding debug extension installed and that it is enabled.</source>
-        <target state="translated">Ez a hibakeresési típus nem ismert. Bizonyosodjon meg róla, hogy telepítve és engedélyezve van a megfelelő hibakeresési kiegészítő.</target>
-      </trans-unit>
-      <trans-unit id="node2NotSupported">
-        <source xml:lang="en">"node2" is no longer supported, use "node" instead and set the "protocol" attribute to "inspector".</source>
-        <target state="translated">A "node2" már nem támogatott. Használja helyette a "node"-ot, és állítsa a "protocol" attribútum értékét "inspector"-ra.</target>
-      </trans-unit>
-      <trans-unit id="debugName">
-        <source xml:lang="en">Name of configuration; appears in the launch configuration dropdown menu.</source>
-        <target state="new">Name of configuration; appears in the launch configuration dropdown menu.</target>
-      </trans-unit>
-      <trans-unit id="debugRequest">
-        <source xml:lang="en">Request type of configuration. Can be "launch" or "attach".</source>
-        <target state="translated">A konfiguráció kérési típusa. Lehet "launch" vagy "attach".</target>
-      </trans-unit>
-      <trans-unit id="debugServer">
-        <source xml:lang="en">For debug extension development only: if a port is specified VS Code tries to connect to a debug adapter running in server mode</source>
-        <target state="translated">Csak hibakeresési kiegészítők fejlesztéséhez: ha a port meg van adva, akkor a VS Code egy szerver módban futó hibakeresési illesztőhöz próbál meg csatlakozni.</target>
-      </trans-unit>
-      <trans-unit id="debugPrelaunchTask">
-        <source xml:lang="en">Task to run before debug session starts.</source>
-        <target state="translated">A hibakeresési folyamat előtt futtatandó feladat.</target>
-      </trans-unit>
-      <trans-unit id="debugPostDebugTask">
-        <source xml:lang="en">Task to run after debug session ends.</source>
-        <target state="translated">A hibakeresési folyamat vége után futtatandó feladat.</target>
-      </trans-unit>
-      <trans-unit id="debugWindowsConfiguration">
-        <source xml:lang="en">Windows specific launch configuration attributes.</source>
-        <target state="translated">Windows-specifikus indítási konfigurációs attribútumok.</target>
-      </trans-unit>
-      <trans-unit id="debugOSXConfiguration">
-        <source xml:lang="en">OS X specific launch configuration attributes.</source>
-        <target state="translated">OS X-specifikus indítási konfigurációs attribútumok.</target>
-      </trans-unit>
-      <trans-unit id="debugLinuxConfiguration">
-        <source xml:lang="en">Linux specific launch configuration attributes.</source>
-        <target state="translated">Linux-specifikus indítási konfigurációs attribútumok.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/rawDebugSession" source-language="en" target-language="hu" datatype="plaintext">
-    <body>
-      <trans-unit id="noDebugAdapter">
-        <source xml:lang="en">No debug adapter found. Can not send '{0}'.</source>
-        <target state="new">No debug adapter found. Can not send '{0}'.</target>
-      </trans-unit>
-      <trans-unit id="moreInfo">
-        <source xml:lang="en">More Info</source>
-        <target state="translated">További információ</target>
       </trans-unit>
     </body>
   </file>

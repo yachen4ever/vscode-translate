@@ -34,6 +34,10 @@
         <source xml:lang="en">A local html file to open in the browser</source>
         <target state="translated">本地端的 html 檔案開啟於瀏覽器</target>
       </trans-unit>
+      <trans-unit id="browser.includeDefaultArgs.description">
+        <source xml:lang="en">Whether default browser launch arguments (to disable features that may make debugging harder) will be included in the launch.</source>
+        <target state="translated">啟動中是否將包含預設的瀏覽器啟動引數 (以停用可能會讓偵錯更加困難的功能)。</target>
+      </trans-unit>
       <trans-unit id="browser.inspectUri.description">
         <source xml:lang="en">Format to use to rewrite the inspectUri: It's a template string that interpolates keys in `{curlyBraces}`. Available keys are:
  - `url.*` is the parsed address of the running application. For instance, `{url.port}`, `{url.hostname}`
@@ -123,6 +127,14 @@
         <source xml:lang="en">Chrome: Launch</source>
         <target state="translated">Chrome: 啟動</target>
       </trans-unit>
+      <trans-unit id="configuration.automaticallyTunnelRemoteServer">
+        <source xml:lang="en">When debugging a remote web app, configures whether to automatically tunnel the remote server to your local machine.</source>
+        <target state="translated">偵測遠端 Web 應用程式時，設定是否自動打開遠端伺服器到本機電腦的通道。</target>
+      </trans-unit>
+      <trans-unit id="configuration.debugByLinkOptions">
+        <source xml:lang="en">Options used when debugging open links clicked from inside the debug terminal. Can be set to "false" to disable this behavior.</source>
+        <target state="translated">在偵錯終端機內按一下偵錯開啟連結時所使用的選項。可設為 "false"，停用此行為。</target>
+      </trans-unit>
       <trans-unit id="configuration.npmScriptLensLocation">
         <source xml:lang="en">Where a "Run" and "Debug" code lens should be shown in your npm scripts. It may be on "all", scripts, on "top" of the script section, or "never".</source>
         <target state="translated">"Run" 與 "Debug" 程式碼濾鏡應在您 npm 指令碼中顯示的位置。可以是「全部」、指令碼、指令碼區段的「頂端」或「永不」。</target>
@@ -174,6 +186,14 @@
       <trans-unit id="debug.terminal.snippet.label">
         <source xml:lang="en">Run "npm start" in a debug terminal</source>
         <target state="translated">在偵錯終端機執行 "npm start"</target>
+      </trans-unit>
+      <trans-unit id="debug.terminal.welcome">
+        <source xml:lang="en">[Node.js Debug Terminal](command:extension.pwa-node-debug.createDebuggerTerminal)
+
+You can use the Node.js Debug Terminal to instantly debug JavaScript you run from the command line.</source>
+        <target state="translated">[Node.js 偵測終端機](command:extension.pwa-node-debug.createDebuggerTerminal)
+
+您可以使用 Node.js 偵測終端機，立即從命令列偵測您執行的 JavaScript。</target>
       </trans-unit>
       <trans-unit id="edge.attach.description">
         <source xml:lang="en">Attach to an instance of Edge already in debug mode</source>
@@ -507,6 +527,14 @@
         <source xml:lang="en">Pretty print for debugging</source>
         <target state="translated">偵錯的美化顯示</target>
       </trans-unit>
+      <trans-unit id="profile.start">
+        <source xml:lang="en">Take Performance Profile</source>
+        <target state="translated">採用效能設定檔</target>
+      </trans-unit>
+      <trans-unit id="profile.stop">
+        <source xml:lang="en">Stop Performance Profile</source>
+        <target state="translated">停止效能設定檔</target>
+      </trans-unit>
       <trans-unit id="remove.browser.breakpoint">
         <source xml:lang="en">Remove Browser Breakpoint</source>
         <target state="translated">移除瀏覽器中斷點</target>
@@ -550,6 +578,10 @@
       <trans-unit id="trace.logFile.description">
         <source xml:lang="en">Configures where on disk logs are written.</source>
         <target state="translated">設定要寫入磁碟記錄的位置。</target>
+      </trans-unit>
+      <trans-unit id="trace.stdio.description">
+        <source xml:lang="en">Whether to return trace data from the launched application or browser.</source>
+        <target state="translated">是否從啟動的應用程式或是瀏覽器傳回追蹤資料。</target>
       </trans-unit>
       <trans-unit id="trace.tags.description">
         <source xml:lang="en">Configures what types of logs are recorded.</source>

@@ -209,27 +209,6 @@ This option requires restart to take effect.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/actions/workspaceCommands" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="addFolderToWorkspace">
-        <source xml:lang="en">Add Folder to Workspace...</source>
-        <target state="translated">將資料夾新增到工作區...</target>
-      </trans-unit>
-      <trans-unit id="add">
-        <source xml:lang="en">&amp;&amp;Add</source>
-        <target state="translated">新增(&amp;&amp;A)</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="addFolderToWorkspaceTitle">
-        <source xml:lang="en">Add Folder to Workspace</source>
-        <target state="translated">將資料夾新增到工作區</target>
-      </trans-unit>
-      <trans-unit id="workspaceFolderPickerPlaceholder">
-        <source xml:lang="en">Select workspace folder</source>
-        <target state="translated">選取工作區資料夾</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/browser/actions/textInputActions" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
       <trans-unit id="undo">
@@ -258,19 +237,62 @@ This option requires restart to take effect.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/electron-browser/actions/developerActions" source-language="en" target-language="zh-Hant" datatype="plaintext">
+  <file original="src/vs/workbench/browser/actions/workspaceCommands" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
-      <trans-unit id="toggleDevTools">
-        <source xml:lang="en">Toggle Developer Tools</source>
-        <target state="translated">切換開發人員工具</target>
+      <trans-unit id="addFolderToWorkspace">
+        <source xml:lang="en">Add Folder to Workspace...</source>
+        <target state="translated">將資料夾新增到工作區...</target>
       </trans-unit>
-      <trans-unit id="toggleSharedProcess">
-        <source xml:lang="en">Toggle Shared Process</source>
-        <target state="translated">切換共用處理程序</target>
+      <trans-unit id="add">
+        <source xml:lang="en">&amp;&amp;Add</source>
+        <target state="translated">新增(&amp;&amp;A)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
-      <trans-unit id="configureRuntimeArguments">
-        <source xml:lang="en">Configure Runtime Arguments</source>
-        <target state="translated">設定執行階段引數</target>
+      <trans-unit id="addFolderToWorkspaceTitle">
+        <source xml:lang="en">Add Folder to Workspace</source>
+        <target state="translated">將資料夾新增到工作區</target>
+      </trans-unit>
+      <trans-unit id="workspaceFolderPickerPlaceholder">
+        <source xml:lang="en">Select workspace folder</source>
+        <target state="translated">選取工作區資料夾</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/actions/developerActions" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="inspect context keys">
+        <source xml:lang="en">Inspect Context Keys</source>
+        <target state="translated">檢查功能表內容</target>
+      </trans-unit>
+      <trans-unit id="toggle screencast mode">
+        <source xml:lang="en">Toggle Screencast Mode</source>
+        <target state="translated">切換螢幕錄製模式</target>
+      </trans-unit>
+      <trans-unit id="logStorage">
+        <source xml:lang="en">Log Storage Database Contents</source>
+        <target state="translated">記錄儲存體資料庫內容</target>
+        <note>A developer only action to log the contents of the storage for the current window.</note>
+      </trans-unit>
+      <trans-unit id="logWorkingCopies">
+        <source xml:lang="en">Log Working Copies</source>
+        <target state="translated">記錄工作複本</target>
+        <note>A developer only action to log the working copies that exist.</note>
+      </trans-unit>
+      <trans-unit id="developer">
+        <source xml:lang="en">Developer</source>
+        <target state="translated">開發人員</target>
+      </trans-unit>
+      <trans-unit id="screencastModeConfigurationTitle">
+        <source xml:lang="en">Screencast Mode</source>
+        <target state="translated">螢幕錄製模式</target>
+      </trans-unit>
+      <trans-unit id="screencastMode.location.verticalPosition">
+        <source xml:lang="en">Controls the vertical offset of the screencast mode overlay from the bottom as a percentage of the workbench height.</source>
+        <target state="translated">控制螢幕錄影模式重疊與底部的垂直差距，以工作台高度的百分比表示。</target>
+      </trans-unit>
+      <trans-unit id="screencastMode.onlyKeyboardShortcuts">
+        <source xml:lang="en">Only show keyboard shortcuts in Screencast Mode.</source>
+        <target state="translated">僅顯示「螢幕錄製」模式中的鍵盤快速鍵。</target>
       </trans-unit>
     </body>
   </file>
@@ -298,70 +320,27 @@ This option requires restart to take effect.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/actions/workspaceActions" source-language="en" target-language="zh-Hant" datatype="plaintext">
+  <file original="src/vs/workbench/browser/actions/quickAccessActions" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
-      <trans-unit id="openFile">
-        <source xml:lang="en">Open File...</source>
-        <target state="translated">開啟檔案...</target>
+      <trans-unit id="quickOpen">
+        <source xml:lang="en">Go to File...</source>
+        <target state="translated">移至檔案...</target>
       </trans-unit>
-      <trans-unit id="openFolder">
-        <source xml:lang="en">Open Folder...</source>
-        <target state="translated">開啟資料夾...</target>
+      <trans-unit id="quickNavigateNext">
+        <source xml:lang="en">Navigate Next in Quick Open</source>
+        <target state="translated">在 Quick Open 中導覽至下一項</target>
       </trans-unit>
-      <trans-unit id="openFileFolder">
-        <source xml:lang="en">Open...</source>
-        <target state="translated">開啟...</target>
+      <trans-unit id="quickNavigatePrevious">
+        <source xml:lang="en">Navigate Previous in Quick Open</source>
+        <target state="translated">在 Quick Open 中導覽至上一項</target>
       </trans-unit>
-      <trans-unit id="openWorkspaceAction">
-        <source xml:lang="en">Open Workspace...</source>
-        <target state="translated">開啟工作區...</target>
+      <trans-unit id="quickSelectNext">
+        <source xml:lang="en">Select Next in Quick Open</source>
+        <target state="translated">在 Quick Open 中選取下一個</target>
       </trans-unit>
-      <trans-unit id="closeWorkspace">
-        <source xml:lang="en">Close Workspace</source>
-        <target state="translated">關閉工作區</target>
-      </trans-unit>
-      <trans-unit id="noWorkspaceOpened">
-        <source xml:lang="en">There is currently no workspace opened in this instance to close.</source>
-        <target state="translated">此執行個體中目前沒有開啟的工作區可以關閉。</target>
-      </trans-unit>
-      <trans-unit id="openWorkspaceConfigFile">
-        <source xml:lang="en">Open Workspace Configuration File</source>
-        <target state="translated">開啟工作區組態檔</target>
-      </trans-unit>
-      <trans-unit id="globalRemoveFolderFromWorkspace">
-        <source xml:lang="en">Remove Folder from Workspace...</source>
-        <target state="translated">將資料夾從工作區移除...</target>
-      </trans-unit>
-      <trans-unit id="saveWorkspaceAsAction">
-        <source xml:lang="en">Save Workspace As...</source>
-        <target state="translated">另存工作區為...</target>
-      </trans-unit>
-      <trans-unit id="duplicateWorkspaceInNewWindow">
-        <source xml:lang="en">Duplicate Workspace in New Window</source>
-        <target state="translated">新視窗中的重覆工作區</target>
-      </trans-unit>
-      <trans-unit id="workspaces">
-        <source xml:lang="en">Workspaces</source>
-        <target state="translated">工作區</target>
-      </trans-unit>
-      <trans-unit id="miAddFolderToWorkspace">
-        <source xml:lang="en">A&amp;&amp;dd Folder to Workspace...</source>
-        <target state="translated">將資料夾新增至工作區(&amp;&amp;D)...</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miSaveWorkspaceAs">
-        <source xml:lang="en">Save Workspace As...</source>
-        <target state="translated">另存工作區為...</target>
-      </trans-unit>
-      <trans-unit id="miCloseFolder">
-        <source xml:lang="en">Close &amp;&amp;Folder</source>
-        <target state="translated">關閉資料夾(&amp;&amp;F)</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miCloseWorkspace">
-        <source xml:lang="en">Close &amp;&amp;Workspace</source>
-        <target state="translated">關閉工作區(&amp;&amp;W)</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
+      <trans-unit id="quickSelectPrevious">
+        <source xml:lang="en">Select Previous in Quick Open</source>
+        <target state="translated">在 Quick Open 中選取上一個</target>
       </trans-unit>
     </body>
   </file>
@@ -380,8 +359,8 @@ This option requires restart to take effect.</source>
         <target state="translated">只能在使用者設定中設定的組態。</target>
       </trans-unit>
       <trans-unit id="scope.machine.description">
-        <source xml:lang="en">Configuration that can be configured only in the user settings when the extension is running locally, or only in the remote settings when the extension is running remotely.</source>
-        <target state="translated">當延伸模組在本機執行時只能在使用者設定中設定的組態，或當延伸模組在遠端執行時只能在遠端設定中設定的組態。</target>
+        <source xml:lang="en">Configuration that can be configured only in the user settings or only in the remote settings.</source>
+        <target state="translated">只有在使用者設定或遠端設定中，才可設定組態。</target>
       </trans-unit>
       <trans-unit id="scope.window.description">
         <source xml:lang="en">Configuration that can be configured in the user, remote or workspace settings.</source>
@@ -485,44 +464,6 @@ This option requires restart to take effect.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/actions/developerActions" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="inspect context keys">
-        <source xml:lang="en">Inspect Context Keys</source>
-        <target state="translated">檢查功能表內容</target>
-      </trans-unit>
-      <trans-unit id="toggle screencast mode">
-        <source xml:lang="en">Toggle Screencast Mode</source>
-        <target state="translated">切換螢幕錄製模式</target>
-      </trans-unit>
-      <trans-unit id="logStorage">
-        <source xml:lang="en">Log Storage Database Contents</source>
-        <target state="translated">記錄儲存體資料庫內容</target>
-        <note>A developer only action to log the contents of the storage for the current window.</note>
-      </trans-unit>
-      <trans-unit id="logWorkingCopies">
-        <source xml:lang="en">Log Working Copies</source>
-        <target state="translated">記錄工作複本</target>
-        <note>A developer only action to log the working copies that exist.</note>
-      </trans-unit>
-      <trans-unit id="developer">
-        <source xml:lang="en">Developer</source>
-        <target state="translated">開發人員</target>
-      </trans-unit>
-      <trans-unit id="screencastModeConfigurationTitle">
-        <source xml:lang="en">Screencast Mode</source>
-        <target state="translated">螢幕錄製模式</target>
-      </trans-unit>
-      <trans-unit id="screencastMode.location.verticalPosition">
-        <source xml:lang="en">Controls the vertical offset of the screencast mode overlay from the bottom as a percentage of the workbench height.</source>
-        <target state="translated">控制螢幕錄影模式重疊與底部的垂直差距，以工作台高度的百分比表示。</target>
-      </trans-unit>
-      <trans-unit id="screencastMode.onlyKeyboardShortcuts">
-        <source xml:lang="en">Only show keyboard shortcuts in Screencast Mode.</source>
-        <target state="translated">僅顯示「螢幕錄製」模式中的鍵盤快速鍵。</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/browser/parts/sidebar/sidebarPart" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
       <trans-unit id="focusSideBar">
@@ -535,136 +476,19 @@ This option requires restart to take effect.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/electron-browser/actions/windowActions" source-language="en" target-language="zh-Hant" datatype="plaintext">
+  <file original="src/vs/workbench/electron-browser/actions/developerActions" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
-      <trans-unit id="closeWindow">
-        <source xml:lang="en">Close Window</source>
-        <target state="translated">關閉視窗</target>
+      <trans-unit id="toggleDevTools">
+        <source xml:lang="en">Toggle Developer Tools</source>
+        <target state="translated">切換開發人員工具</target>
       </trans-unit>
-      <trans-unit id="zoomIn">
-        <source xml:lang="en">Zoom In</source>
-        <target state="translated">放大</target>
+      <trans-unit id="toggleSharedProcess">
+        <source xml:lang="en">Toggle Shared Process</source>
+        <target state="translated">切換共用處理程序</target>
       </trans-unit>
-      <trans-unit id="zoomOut">
-        <source xml:lang="en">Zoom Out</source>
-        <target state="translated">縮小</target>
-      </trans-unit>
-      <trans-unit id="zoomReset">
-        <source xml:lang="en">Reset Zoom</source>
-        <target state="translated">重設縮放</target>
-      </trans-unit>
-      <trans-unit id="reloadWindowWithExtensionsDisabled">
-        <source xml:lang="en">Reload With Extensions Disabled</source>
-        <target state="translated">已停用延伸模組的重新載入</target>
-      </trans-unit>
-      <trans-unit id="close">
-        <source xml:lang="en">Close Window</source>
-        <target state="translated">關閉視窗</target>
-      </trans-unit>
-      <trans-unit id="switchWindowPlaceHolder">
-        <source xml:lang="en">Select a window to switch to</source>
-        <target state="translated">選取要切換的視窗</target>
-      </trans-unit>
-      <trans-unit id="current">
-        <source xml:lang="en">Current Window</source>
-        <target state="translated">目前視窗</target>
-      </trans-unit>
-      <trans-unit id="switchWindow">
-        <source xml:lang="en">Switch Window...</source>
-        <target state="translated">切換視窗...</target>
-      </trans-unit>
-      <trans-unit id="quickSwitchWindow">
-        <source xml:lang="en">Quick Switch Window...</source>
-        <target state="translated">快速切換視窗...</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/actions/windowActions" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="remove">
-        <source xml:lang="en">Remove from Recently Opened</source>
-        <target state="translated">從最近開啟的檔案中移除</target>
-      </trans-unit>
-      <trans-unit id="workspaces">
-        <source xml:lang="en">workspaces</source>
-        <target state="translated">工作區</target>
-      </trans-unit>
-      <trans-unit id="files">
-        <source xml:lang="en">files</source>
-        <target state="translated">檔案</target>
-      </trans-unit>
-      <trans-unit id="openRecentPlaceHolderMac">
-        <source xml:lang="en">Select to open (hold Cmd-key to open in new window)</source>
-        <target state="translated">選取以開啟 (按住 Cmd 鍵以在新視窗中開啟)</target>
-      </trans-unit>
-      <trans-unit id="openRecentPlaceHolder">
-        <source xml:lang="en">Select to open (hold Ctrl-key to open in new window)</source>
-        <target state="translated">選取以開啟 (按住 Ctrl 鍵以在新視窗中開啟)</target>
-      </trans-unit>
-      <trans-unit id="openRecent">
-        <source xml:lang="en">Open Recent...</source>
-        <target state="translated">開啟最近使用的檔案...</target>
-      </trans-unit>
-      <trans-unit id="quickOpenRecent">
-        <source xml:lang="en">Quick Open Recent...</source>
-        <target state="translated">快速開啟最近使用的檔案...</target>
-      </trans-unit>
-      <trans-unit id="toggleFullScreen">
-        <source xml:lang="en">Toggle Full Screen</source>
-        <target state="translated">切換全螢幕</target>
-      </trans-unit>
-      <trans-unit id="reloadWindow">
-        <source xml:lang="en">Reload Window</source>
-        <target state="translated">重新載入視窗</target>
-      </trans-unit>
-      <trans-unit id="about">
-        <source xml:lang="en">About</source>
-        <target state="translated">關於</target>
-      </trans-unit>
-      <trans-unit id="newWindow">
-        <source xml:lang="en">New Window</source>
-        <target state="translated">開新視窗</target>
-      </trans-unit>
-      <trans-unit id="file">
-        <source xml:lang="en">File</source>
-        <target state="translated">FILE</target>
-      </trans-unit>
-      <trans-unit id="view">
-        <source xml:lang="en">View</source>
-        <target state="translated">檢視</target>
-      </trans-unit>
-      <trans-unit id="developer">
-        <source xml:lang="en">Developer</source>
-        <target state="translated">開發人員</target>
-      </trans-unit>
-      <trans-unit id="help">
-        <source xml:lang="en">Help</source>
-        <target state="translated">說明</target>
-      </trans-unit>
-      <trans-unit id="miNewWindow">
-        <source xml:lang="en">New &amp;&amp;Window</source>
-        <target state="translated">開新視窗(&amp;&amp;W)</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miOpenRecent">
-        <source xml:lang="en">Open &amp;&amp;Recent</source>
-        <target state="translated">開啟最近的檔案(&amp;&amp;R)</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miMore">
-        <source xml:lang="en">&amp;&amp;More...</source>
-        <target state="translated">其他(&amp;&amp;M)...</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miToggleFullScreen">
-        <source xml:lang="en">&amp;&amp;Full Screen</source>
-        <target state="translated">&amp;&amp;全螢幕</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miAbout">
-        <source xml:lang="en">&amp;&amp;About</source>
-        <target state="translated">關於(&amp;&amp;A)</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
+      <trans-unit id="configureRuntimeArguments">
+        <source xml:lang="en">Configure Runtime Arguments</source>
+        <target state="translated">設定執行階段引數</target>
       </trans-unit>
     </body>
   </file>
@@ -752,197 +576,6 @@ This option requires restart to take effect.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/common/menusExtensionPoint" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="requirearray">
-        <source xml:lang="en">menu items must be an array</source>
-        <target state="translated">功能表項目必須為陣列</target>
-      </trans-unit>
-      <trans-unit id="requirestring">
-        <source xml:lang="en">property `{0}` is mandatory and must be of type `string`</source>
-        <target state="translated">屬性 '{0}' 為強制項目且必須屬於 `string` 類型</target>
-      </trans-unit>
-      <trans-unit id="optstring">
-        <source xml:lang="en">property `{0}` can be omitted or must be of type `string`</source>
-        <target state="translated">屬性 `{0}` 可以省略或必須屬於 `string` 類型</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.menuItem.command">
-        <source xml:lang="en">Identifier of the command to execute. The command must be declared in the 'commands'-section</source>
-        <target state="translated">所要執行命令的識別碼。命令必須在 'commands' 區段中宣告</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.menuItem.alt">
-        <source xml:lang="en">Identifier of an alternative command to execute. The command must be declared in the 'commands'-section</source>
-        <target state="translated">所要執行替代命令的識別碼。命令必須在 'commands' 區段中宣告</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.menuItem.when">
-        <source xml:lang="en">Condition which must be true to show this item</source>
-        <target state="translated">必須為 true 以顯示此項目的條件</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.menuItem.group">
-        <source xml:lang="en">Group into which this command belongs</source>
-        <target state="translated">此命令所屬群組</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.menus">
-        <source xml:lang="en">Contributes menu items to the editor</source>
-        <target state="translated">將功能表項目提供給編輯器</target>
-      </trans-unit>
-      <trans-unit id="menus.commandPalette">
-        <source xml:lang="en">The Command Palette</source>
-        <target state="translated">命令選擇區</target>
-      </trans-unit>
-      <trans-unit id="menus.touchBar">
-        <source xml:lang="en">The touch bar (macOS only)</source>
-        <target state="translated">Touch Bar (macOS)</target>
-      </trans-unit>
-      <trans-unit id="menus.editorTitle">
-        <source xml:lang="en">The editor title menu</source>
-        <target state="translated">編輯器標題功能表</target>
-      </trans-unit>
-      <trans-unit id="menus.editorContext">
-        <source xml:lang="en">The editor context menu</source>
-        <target state="translated">編輯器操作功能表</target>
-      </trans-unit>
-      <trans-unit id="menus.explorerContext">
-        <source xml:lang="en">The file explorer context menu</source>
-        <target state="translated">檔案總管操作功能表</target>
-      </trans-unit>
-      <trans-unit id="menus.editorTabContext">
-        <source xml:lang="en">The editor tabs context menu</source>
-        <target state="translated">編輯器索引標籤操作功能表</target>
-      </trans-unit>
-      <trans-unit id="menus.debugCallstackContext">
-        <source xml:lang="en">The debug callstack context menu</source>
-        <target state="translated">偵錯呼叫堆疊操作功能表</target>
-      </trans-unit>
-      <trans-unit id="menus.debugToolBar">
-        <source xml:lang="en">The debug toolbar menu</source>
-      </trans-unit>
-      <trans-unit id="menus.scmTitle">
-        <source xml:lang="en">The Source Control title menu</source>
-        <target state="translated">原始檔控制標題功能表</target>
-      </trans-unit>
-      <trans-unit id="menus.scmSourceControl">
-        <source xml:lang="en">The Source Control menu</source>
-        <target state="translated">原始檔控制功能表</target>
-      </trans-unit>
-      <trans-unit id="menus.resourceGroupContext">
-        <source xml:lang="en">The Source Control resource group context menu</source>
-        <target state="translated">原始檔控制資源群組操作功能表</target>
-      </trans-unit>
-      <trans-unit id="menus.resourceStateContext">
-        <source xml:lang="en">The Source Control resource state context menu</source>
-        <target state="translated">原始檔控制資源群組狀態操作功能表</target>
-      </trans-unit>
-      <trans-unit id="view.viewTitle">
-        <source xml:lang="en">The contributed view title menu</source>
-        <target state="translated">這有助於查看標題功能表</target>
-      </trans-unit>
-      <trans-unit id="view.itemContext">
-        <source xml:lang="en">The contributed view item context menu</source>
-        <target state="translated">這有助於查看項目內容功能表</target>
-      </trans-unit>
-      <trans-unit id="commentThread.title">
-        <source xml:lang="en">The contributed comment thread title menu</source>
-        <target state="translated">貢獻的註解執行緒標題功能表</target>
-      </trans-unit>
-      <trans-unit id="commentThread.actions">
-        <source xml:lang="en">The contributed comment thread context menu, rendered as buttons below the comment editor</source>
-        <target state="translated">貢獻的註解執行緒操作功能表，轉譯為註解編輯器下的按鈕</target>
-      </trans-unit>
-      <trans-unit id="comment.title">
-        <source xml:lang="en">The contributed comment title menu</source>
-        <target state="translated">貢獻的註解標題功能表</target>
-      </trans-unit>
-      <trans-unit id="comment.actions">
-        <source xml:lang="en">The contributed comment context menu, rendered as buttons below the comment editor</source>
-        <target state="translated">貢獻的註解操作功能表，轉譯為註解編輯器下的按鈕</target>
-      </trans-unit>
-      <trans-unit id="menus.extensionContext">
-        <source xml:lang="en">The extension context menu</source>
-        <target state="translated">延伸模組操作功能表</target>
-      </trans-unit>
-      <trans-unit id="view.timelineTitle">
-        <source xml:lang="en">The Timeline view title menu</source>
-        <target state="translated">時間軸檢視標題功能表</target>
-      </trans-unit>
-      <trans-unit id="view.timelineContext">
-        <source xml:lang="en">The Timeline view item context menu</source>
-        <target state="translated">時間軸檢視項目操作功能表</target>
-      </trans-unit>
-      <trans-unit id="nonempty">
-        <source xml:lang="en">expected non-empty value.</source>
-        <target state="translated">必須是非空白值。</target>
-      </trans-unit>
-      <trans-unit id="opticon">
-        <source xml:lang="en">property `icon` can be omitted or must be either a string or a literal like `{dark, light}`</source>
-        <target state="translated">屬性 `icon` 可以省略，否則必須為字串或類似 `{dark, light}` 的常值</target>
-      </trans-unit>
-      <trans-unit id="requireStringOrObject">
-        <source xml:lang="en">property `{0}` is mandatory and must be of type `string` or `object`</source>
-        <target state="translated">'{0}' 為必要屬性，且其類型必須是 'string' 或 'object'</target>
-      </trans-unit>
-      <trans-unit id="requirestrings">
-        <source xml:lang="en">properties `{0}` and `{1}` are mandatory and must be of type `string`</source>
-        <target state="translated">'{0}' 與 '{1}' 為必要屬性，且其類型必須是 'string'</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.commandType.command">
-        <source xml:lang="en">Identifier of the command to execute</source>
-        <target state="translated">所要執行命令的識別碼</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.commandType.title">
-        <source xml:lang="en">Title by which the command is represented in the UI</source>
-        <target state="translated">UI 中用以代表命令的標題</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.commandType.category">
-        <source xml:lang="en">(Optional) Category string by the command is grouped in the UI</source>
-        <target state="translated">(選用) UI 中用以將命令分組的分類字串</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.commandType.precondition">
-        <source xml:lang="en">(Optional) Condition which must be true to enable the command</source>
-        <target state="translated">(選擇性) 必須為 true 才能啟用命令的條件</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.commandType.icon">
-        <source xml:lang="en">(Optional) Icon which is used to represent the command in the UI. Either a file path, an object with file paths for dark and light themes, or a theme icon references, like `$(zap)`</source>
-        <target state="translated">(可選) 用來在 UI 中表示命令的圖示。可為檔案路徑、具有檔案路徑的物件 (深色和淺色佈景主題)，或是佈景主題圖示參考 (例如 `$(zap)`)。</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.commandType.icon.light">
-        <source xml:lang="en">Icon path when a light theme is used</source>
-        <target state="translated">使用亮色主題時的圖示路徑</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.commandType.icon.dark">
-        <source xml:lang="en">Icon path when a dark theme is used</source>
-        <target state="translated">使用暗色主題時的圖像路徑</target>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.commands">
-        <source xml:lang="en">Contributes commands to the command palette.</source>
-        <target state="translated">將命令提供給命令選擇區。</target>
-      </trans-unit>
-      <trans-unit id="dup">
-        <source xml:lang="en">Command `{0}` appears multiple times in the `commands` section.</source>
-        <target state="translated">命令 `{0}` 在 `commands` 區段中出現多次。</target>
-      </trans-unit>
-      <trans-unit id="menuId.invalid">
-        <source xml:lang="en">`{0}` is not a valid menu identifier</source>
-        <target state="translated">`{0}` 不是有效的功能表識別碼</target>
-      </trans-unit>
-      <trans-unit id="proposedAPI.invalid">
-        <source xml:lang="en">{0} is a proposed menu identifier and is only available when running out of dev or with the following command line switch: --enable-proposed-api {1}</source>
-        <target state="translated">{0} 是建議的功能表識別碼，只有在開發用完或使用下列命令列參數時才可使用: --enable-proposed-api {1}</target>
-      </trans-unit>
-      <trans-unit id="missing.command">
-        <source xml:lang="en">Menu item references a command `{0}` which is not defined in the 'commands' section.</source>
-        <target state="translated">功能表項目參考了 'commands' 區段中未定義的命令 `{0}`。</target>
-      </trans-unit>
-      <trans-unit id="missing.altCommand">
-        <source xml:lang="en">Menu item references an alt-command `{0}` which is not defined in the 'commands' section.</source>
-        <target state="translated">功能表項目參考了 'commands' 區段中未定義的替代命令 `{0}`。</target>
-      </trans-unit>
-      <trans-unit id="dupe.command">
-        <source xml:lang="en">Menu item references the same command as default and alt-command</source>
-        <target state="translated">功能表項目參考了與預設相同的命令和替代命令</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/api/browser/viewsExtensionPoint" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
       <trans-unit id="vscode.extension.contributes.views.containers.id">
@@ -965,6 +598,10 @@ This option requires restart to take effect.</source>
       <trans-unit id="views.container.activitybar">
         <source xml:lang="en">Contribute views containers to Activity Bar</source>
         <target state="translated">提供檢視容器給活動列</target>
+      </trans-unit>
+      <trans-unit id="views.container.panel">
+        <source xml:lang="en">Contribute views containers to Panel</source>
+        <target state="translated">為面板提供檢視容器</target>
       </trans-unit>
       <trans-unit id="vscode.extension.contributes.view.id">
         <source xml:lang="en">Identifier of the view. This should be unique across all views. It is recommended to include your extension id as part of the view id. Use this to register a data provider through `vscode.window.registerTreeDataProviderForView` API. Also to trigger activating your extension by registering `onView:${id}` event to `activationEvents`.</source>
@@ -1064,24 +701,449 @@ This option requires restart to take effect.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/common/editor" source-language="en" target-language="zh-Hant" datatype="plaintext">
+  <file original="src/vs/workbench/browser/actions/workspaceActions" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
-      <trans-unit id="sideBySideLabels">
-        <source xml:lang="en">{0} - {1}</source>
-        <target state="translated">{0} - {1}</target>
+      <trans-unit id="openFile">
+        <source xml:lang="en">Open File...</source>
+        <target state="translated">開啟檔案...</target>
+      </trans-unit>
+      <trans-unit id="openFolder">
+        <source xml:lang="en">Open Folder...</source>
+        <target state="translated">開啟資料夾...</target>
+      </trans-unit>
+      <trans-unit id="openFileFolder">
+        <source xml:lang="en">Open...</source>
+        <target state="translated">開啟...</target>
+      </trans-unit>
+      <trans-unit id="openWorkspaceAction">
+        <source xml:lang="en">Open Workspace...</source>
+        <target state="translated">開啟工作區...</target>
+      </trans-unit>
+      <trans-unit id="closeWorkspace">
+        <source xml:lang="en">Close Workspace</source>
+        <target state="translated">關閉工作區</target>
+      </trans-unit>
+      <trans-unit id="noWorkspaceOpened">
+        <source xml:lang="en">There is currently no workspace opened in this instance to close.</source>
+        <target state="translated">此執行個體中目前沒有開啟的工作區可以關閉。</target>
+      </trans-unit>
+      <trans-unit id="openWorkspaceConfigFile">
+        <source xml:lang="en">Open Workspace Configuration File</source>
+        <target state="translated">開啟工作區組態檔</target>
+      </trans-unit>
+      <trans-unit id="globalRemoveFolderFromWorkspace">
+        <source xml:lang="en">Remove Folder from Workspace...</source>
+        <target state="translated">將資料夾從工作區移除...</target>
+      </trans-unit>
+      <trans-unit id="saveWorkspaceAsAction">
+        <source xml:lang="en">Save Workspace As...</source>
+        <target state="translated">另存工作區為...</target>
+      </trans-unit>
+      <trans-unit id="duplicateWorkspaceInNewWindow">
+        <source xml:lang="en">Duplicate Workspace in New Window</source>
+        <target state="translated">新視窗中的重覆工作區</target>
+      </trans-unit>
+      <trans-unit id="workspaces">
+        <source xml:lang="en">Workspaces</source>
+        <target state="translated">工作區</target>
+      </trans-unit>
+      <trans-unit id="miAddFolderToWorkspace">
+        <source xml:lang="en">A&amp;&amp;dd Folder to Workspace...</source>
+        <target state="translated">將資料夾新增至工作區(&amp;&amp;D)...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miSaveWorkspaceAs">
+        <source xml:lang="en">Save Workspace As...</source>
+        <target state="translated">另存工作區為...</target>
+      </trans-unit>
+      <trans-unit id="miCloseFolder">
+        <source xml:lang="en">Close &amp;&amp;Folder</source>
+        <target state="translated">關閉資料夾(&amp;&amp;F)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miCloseWorkspace">
+        <source xml:lang="en">Close &amp;&amp;Workspace</source>
+        <target state="translated">關閉工作區(&amp;&amp;W)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/workbench" source-language="en" target-language="zh-Hant" datatype="plaintext">
+  <file original="src/vs/workbench/browser/actions/windowActions" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
-      <trans-unit id="loaderErrorNative">
-        <source xml:lang="en">Failed to load a required file. Please restart the application to try again. Details: {0}</source>
-        <target state="translated">無法載入必要的檔案。請重新啟動該應用程式，然後再試一次。詳細資料: {0}</target>
+      <trans-unit id="remove">
+        <source xml:lang="en">Remove from Recently Opened</source>
+        <target state="translated">從最近開啟的檔案中移除</target>
+      </trans-unit>
+      <trans-unit id="dirtyRecentlyOpened">
+        <source xml:lang="en">Workspace With Dirty Files</source>
+        <target state="translated">具有已改變檔案的工作區</target>
+      </trans-unit>
+      <trans-unit id="workspaces">
+        <source xml:lang="en">workspaces</source>
+        <target state="translated">工作區</target>
+      </trans-unit>
+      <trans-unit id="files">
+        <source xml:lang="en">files</source>
+        <target state="translated">檔案</target>
+      </trans-unit>
+      <trans-unit id="openRecentPlaceholderMac">
+        <source xml:lang="en">Select to open (hold Cmd-key to force new window or Alt-key for same window)</source>
+      </trans-unit>
+      <trans-unit id="openRecentPlaceholder">
+        <source xml:lang="en">Select to open (hold Ctrl-key to force new window or Alt-key for same window)</source>
+      </trans-unit>
+      <trans-unit id="dirtyWorkspace">
+        <source xml:lang="en">Workspace with Dirty Files</source>
+        <target state="translated">有已變更檔案的工作區</target>
+      </trans-unit>
+      <trans-unit id="dirtyWorkspaceConfirm">
+        <source xml:lang="en">Do you want to open the workspace to review the dirty files?</source>
+        <target state="translated">是否要開啟該工作區，檢閱已改變的檔案?</target>
+      </trans-unit>
+      <trans-unit id="dirtyWorkspaceConfirmDetail">
+        <source xml:lang="en">Workspaces with dirty files cannot be removed until all dirty files have been saved or reverted.</source>
+        <target state="translated">在儲存或還原所有已變更的檔案之前，無法移除具有已變更檔案的工作區。</target>
+      </trans-unit>
+      <trans-unit id="recentDirtyAriaLabel">
+        <source xml:lang="en">{0}, dirty workspace</source>
+        <target state="translated">已改變工作區 {0}</target>
+      </trans-unit>
+      <trans-unit id="openRecent">
+        <source xml:lang="en">Open Recent...</source>
+        <target state="translated">開啟最近使用的檔案...</target>
+      </trans-unit>
+      <trans-unit id="quickOpenRecent">
+        <source xml:lang="en">Quick Open Recent...</source>
+        <target state="translated">快速開啟最近使用的檔案...</target>
+      </trans-unit>
+      <trans-unit id="toggleFullScreen">
+        <source xml:lang="en">Toggle Full Screen</source>
+        <target state="translated">切換全螢幕</target>
+      </trans-unit>
+      <trans-unit id="reloadWindow">
+        <source xml:lang="en">Reload Window</source>
+        <target state="translated">重新載入視窗</target>
+      </trans-unit>
+      <trans-unit id="about">
+        <source xml:lang="en">About</source>
+        <target state="translated">關於</target>
+      </trans-unit>
+      <trans-unit id="newWindow">
+        <source xml:lang="en">New Window</source>
+        <target state="translated">開新視窗</target>
+      </trans-unit>
+      <trans-unit id="file">
+        <source xml:lang="en">File</source>
+        <target state="translated">FILE</target>
+      </trans-unit>
+      <trans-unit id="view">
+        <source xml:lang="en">View</source>
+        <target state="translated">檢視</target>
+      </trans-unit>
+      <trans-unit id="developer">
+        <source xml:lang="en">Developer</source>
+        <target state="translated">開發人員</target>
+      </trans-unit>
+      <trans-unit id="help">
+        <source xml:lang="en">Help</source>
+        <target state="translated">說明</target>
+      </trans-unit>
+      <trans-unit id="miNewWindow">
+        <source xml:lang="en">New &amp;&amp;Window</source>
+        <target state="translated">開新視窗(&amp;&amp;W)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miOpenRecent">
+        <source xml:lang="en">Open &amp;&amp;Recent</source>
+        <target state="translated">開啟最近的檔案(&amp;&amp;R)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miMore">
+        <source xml:lang="en">&amp;&amp;More...</source>
+        <target state="translated">其他(&amp;&amp;M)...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miToggleFullScreen">
+        <source xml:lang="en">&amp;&amp;Full Screen</source>
+        <target state="translated">全螢幕(&amp;&amp;F)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miAbout">
+        <source xml:lang="en">&amp;&amp;About</source>
+        <target state="translated">關於(&amp;&amp;A)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/common/menusExtensionPoint" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="requirearray">
+        <source xml:lang="en">menu items must be an array</source>
+        <target state="translated">功能表項目必須為陣列</target>
+      </trans-unit>
+      <trans-unit id="requirestring">
+        <source xml:lang="en">property `{0}` is mandatory and must be of type `string`</source>
+        <target state="translated">屬性 '{0}' 為強制項目且必須屬於 `string` 類型</target>
+      </trans-unit>
+      <trans-unit id="optstring">
+        <source xml:lang="en">property `{0}` can be omitted or must be of type `string`</source>
+        <target state="translated">屬性 `{0}` 可以省略或必須屬於 `string` 類型</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.menuItem.command">
+        <source xml:lang="en">Identifier of the command to execute. The command must be declared in the 'commands'-section</source>
+        <target state="translated">所要執行命令的識別碼。命令必須在 'commands' 區段中宣告</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.menuItem.alt">
+        <source xml:lang="en">Identifier of an alternative command to execute. The command must be declared in the 'commands'-section</source>
+        <target state="translated">所要執行替代命令的識別碼。命令必須在 'commands' 區段中宣告</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.menuItem.when">
+        <source xml:lang="en">Condition which must be true to show this item</source>
+        <target state="translated">必須為 true 以顯示此項目的條件</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.menuItem.group">
+        <source xml:lang="en">Group into which this command belongs</source>
+        <target state="translated">此命令所屬群組</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.menus">
+        <source xml:lang="en">Contributes menu items to the editor</source>
+        <target state="translated">將功能表項目提供給編輯器</target>
+      </trans-unit>
+      <trans-unit id="menus.commandPalette">
+        <source xml:lang="en">The Command Palette</source>
+        <target state="translated">命令選擇區</target>
+      </trans-unit>
+      <trans-unit id="menus.touchBar">
+        <source xml:lang="en">The touch bar (macOS only)</source>
+        <target state="translated">Touch Bar (macOS)</target>
+      </trans-unit>
+      <trans-unit id="menus.editorTitle">
+        <source xml:lang="en">The editor title menu</source>
+        <target state="translated">編輯器標題功能表</target>
+      </trans-unit>
+      <trans-unit id="menus.editorContext">
+        <source xml:lang="en">The editor context menu</source>
+        <target state="translated">編輯器操作功能表</target>
+      </trans-unit>
+      <trans-unit id="menus.explorerContext">
+        <source xml:lang="en">The file explorer context menu</source>
+        <target state="translated">檔案總管操作功能表</target>
+      </trans-unit>
+      <trans-unit id="menus.editorTabContext">
+        <source xml:lang="en">The editor tabs context menu</source>
+        <target state="translated">編輯器索引標籤操作功能表</target>
+      </trans-unit>
+      <trans-unit id="menus.debugCallstackContext">
+        <source xml:lang="en">The debug callstack context menu</source>
+        <target state="translated">偵錯呼叫堆疊操作功能表</target>
+      </trans-unit>
+      <trans-unit id="menus.debugToolBar">
+        <source xml:lang="en">The debug toolbar menu</source>
+      </trans-unit>
+      <trans-unit id="menus.webNavigation">
+        <source xml:lang="en">The top level navigational menu (web only)</source>
+        <target state="translated">最上層導覽功能表 (僅限 Web)</target>
+      </trans-unit>
+      <trans-unit id="menus.scmTitle">
+        <source xml:lang="en">The Source Control title menu</source>
+        <target state="translated">原始檔控制標題功能表</target>
+      </trans-unit>
+      <trans-unit id="menus.scmSourceControl">
+        <source xml:lang="en">The Source Control menu</source>
+        <target state="translated">原始檔控制功能表</target>
+      </trans-unit>
+      <trans-unit id="menus.resourceGroupContext">
+        <source xml:lang="en">The Source Control resource group context menu</source>
+        <target state="translated">原始檔控制資源群組操作功能表</target>
+      </trans-unit>
+      <trans-unit id="menus.resourceStateContext">
+        <source xml:lang="en">The Source Control resource state context menu</source>
+        <target state="translated">原始檔控制資源群組狀態操作功能表</target>
+      </trans-unit>
+      <trans-unit id="menus.resourceFolderContext">
+        <source xml:lang="en">The Source Control resource folder context menu</source>
+        <target state="translated">原始檔控制資源資料夾內容功能表</target>
+      </trans-unit>
+      <trans-unit id="menus.changeTitle">
+        <source xml:lang="en">The Source Control inline change menu</source>
+        <target state="translated">原始檔控制內嵌變更功能表</target>
+      </trans-unit>
+      <trans-unit id="view.viewTitle">
+        <source xml:lang="en">The contributed view title menu</source>
+        <target state="translated">這有助於查看標題功能表</target>
+      </trans-unit>
+      <trans-unit id="view.itemContext">
+        <source xml:lang="en">The contributed view item context menu</source>
+        <target state="translated">這有助於查看項目內容功能表</target>
+      </trans-unit>
+      <trans-unit id="commentThread.title">
+        <source xml:lang="en">The contributed comment thread title menu</source>
+        <target state="translated">貢獻的註解執行緒標題功能表</target>
+      </trans-unit>
+      <trans-unit id="commentThread.actions">
+        <source xml:lang="en">The contributed comment thread context menu, rendered as buttons below the comment editor</source>
+        <target state="translated">貢獻的註解執行緒操作功能表，轉譯為註解編輯器下的按鈕</target>
+      </trans-unit>
+      <trans-unit id="comment.title">
+        <source xml:lang="en">The contributed comment title menu</source>
+        <target state="translated">貢獻的註解標題功能表</target>
+      </trans-unit>
+      <trans-unit id="comment.actions">
+        <source xml:lang="en">The contributed comment context menu, rendered as buttons below the comment editor</source>
+        <target state="translated">貢獻的註解操作功能表，轉譯為註解編輯器下的按鈕</target>
+      </trans-unit>
+      <trans-unit id="notebook.cell.title">
+        <source xml:lang="en">The contributed notebook cell title menu</source>
+        <target state="translated">所提供的筆記本儲存格標題功能表</target>
+      </trans-unit>
+      <trans-unit id="menus.extensionContext">
+        <source xml:lang="en">The extension context menu</source>
+        <target state="translated">延伸模組操作功能表</target>
+      </trans-unit>
+      <trans-unit id="view.timelineTitle">
+        <source xml:lang="en">The Timeline view title menu</source>
+        <target state="translated">時間軸檢視標題功能表</target>
+      </trans-unit>
+      <trans-unit id="view.timelineContext">
+        <source xml:lang="en">The Timeline view item context menu</source>
+        <target state="translated">時間軸檢視項目操作功能表</target>
+      </trans-unit>
+      <trans-unit id="nonempty">
+        <source xml:lang="en">expected non-empty value.</source>
+        <target state="translated">必須是非空白值。</target>
+      </trans-unit>
+      <trans-unit id="opticon">
+        <source xml:lang="en">property `icon` can be omitted or must be either a string or a literal like `{dark, light}`</source>
+        <target state="translated">屬性 `icon` 可以省略，否則必須為字串或類似 `{dark, light}` 的常值</target>
+      </trans-unit>
+      <trans-unit id="requireStringOrObject">
+        <source xml:lang="en">property `{0}` is mandatory and must be of type `string` or `object`</source>
+        <target state="translated">'{0}' 為必要屬性，且其類型必須是 'string' 或 'object'</target>
+      </trans-unit>
+      <trans-unit id="requirestrings">
+        <source xml:lang="en">properties `{0}` and `{1}` are mandatory and must be of type `string`</source>
+        <target state="translated">'{0}' 與 '{1}' 為必要屬性，且其類型必須是 'string'</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.commandType.command">
+        <source xml:lang="en">Identifier of the command to execute</source>
+        <target state="translated">所要執行命令的識別碼</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.commandType.title">
+        <source xml:lang="en">Title by which the command is represented in the UI</source>
+        <target state="translated">UI 中用以代表命令的標題</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.commandType.category">
+        <source xml:lang="en">(Optional) Category string by the command is grouped in the UI</source>
+        <target state="translated">(選用) UI 中用以將命令分組的分類字串</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.commandType.precondition">
+        <source xml:lang="en">(Optional) Condition which must be true to enable the command</source>
+        <target state="translated">(選擇性) 必須為 true 才能啟用命令的條件</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.commandType.icon">
+        <source xml:lang="en">(Optional) Icon which is used to represent the command in the UI. Either a file path, an object with file paths for dark and light themes, or a theme icon references, like `$(zap)`</source>
+        <target state="translated">(可選) 用來在 UI 中表示命令的圖示。可為檔案路徑、具有檔案路徑的物件 (深色和淺色佈景主題)，或是佈景主題圖示參考 (例如 `$(zap)`)。</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.commandType.icon.light">
+        <source xml:lang="en">Icon path when a light theme is used</source>
+        <target state="translated">使用亮色主題時的圖示路徑</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.commandType.icon.dark">
+        <source xml:lang="en">Icon path when a dark theme is used</source>
+        <target state="translated">使用暗色主題時的圖像路徑</target>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.commands">
+        <source xml:lang="en">Contributes commands to the command palette.</source>
+        <target state="translated">將命令提供給命令選擇區。</target>
+      </trans-unit>
+      <trans-unit id="dup">
+        <source xml:lang="en">Command `{0}` appears multiple times in the `commands` section.</source>
+        <target state="translated">命令 `{0}` 在 `commands` 區段中出現多次。</target>
+      </trans-unit>
+      <trans-unit id="menuId.invalid">
+        <source xml:lang="en">`{0}` is not a valid menu identifier</source>
+        <target state="translated">`{0}` 不是有效的功能表識別碼</target>
+      </trans-unit>
+      <trans-unit id="proposedAPI.invalid">
+        <source xml:lang="en">{0} is a proposed menu identifier and is only available when running out of dev or with the following command line switch: --enable-proposed-api {1}</source>
+        <target state="translated">{0} 是建議的功能表識別碼，只有在開發用完或使用下列命令列參數時才可使用: --enable-proposed-api {1}</target>
+      </trans-unit>
+      <trans-unit id="missing.command">
+        <source xml:lang="en">Menu item references a command `{0}` which is not defined in the 'commands' section.</source>
+        <target state="translated">功能表項目參考了 'commands' 區段中未定義的命令 `{0}`。</target>
+      </trans-unit>
+      <trans-unit id="missing.altCommand">
+        <source xml:lang="en">Menu item references an alt-command `{0}` which is not defined in the 'commands' section.</source>
+        <target state="translated">功能表項目參考了 'commands' 區段中未定義的替代命令 `{0}`。</target>
+      </trans-unit>
+      <trans-unit id="dupe.command">
+        <source xml:lang="en">Menu item references the same command as default and alt-command</source>
+        <target state="translated">功能表項目參考了與預設相同的命令和替代命令</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/electron-browser/actions/windowActions" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="closeWindow">
+        <source xml:lang="en">Close Window</source>
+        <target state="translated">關閉視窗</target>
+      </trans-unit>
+      <trans-unit id="zoomIn">
+        <source xml:lang="en">Zoom In</source>
+        <target state="translated">放大</target>
+      </trans-unit>
+      <trans-unit id="zoomOut">
+        <source xml:lang="en">Zoom Out</source>
+        <target state="translated">縮小</target>
+      </trans-unit>
+      <trans-unit id="zoomReset">
+        <source xml:lang="en">Reset Zoom</source>
+        <target state="translated">重設縮放</target>
+      </trans-unit>
+      <trans-unit id="reloadWindowWithExtensionsDisabled">
+        <source xml:lang="en">Reload With Extensions Disabled</source>
+        <target state="translated">已停用延伸模組的重新載入</target>
+      </trans-unit>
+      <trans-unit id="close">
+        <source xml:lang="en">Close Window</source>
+        <target state="translated">關閉視窗</target>
+      </trans-unit>
+      <trans-unit id="switchWindowPlaceHolder">
+        <source xml:lang="en">Select a window to switch to</source>
+        <target state="translated">選取要切換的視窗</target>
+      </trans-unit>
+      <trans-unit id="windowDirtyAriaLabel">
+        <source xml:lang="en">{0}, dirty window</source>
+        <target state="translated">已改變的視窗 {0}</target>
+      </trans-unit>
+      <trans-unit id="current">
+        <source xml:lang="en">Current Window</source>
+        <target state="translated">目前視窗</target>
+      </trans-unit>
+      <trans-unit id="switchWindow">
+        <source xml:lang="en">Switch Window...</source>
+        <target state="translated">切換視窗...</target>
+      </trans-unit>
+      <trans-unit id="quickSwitchWindow">
+        <source xml:lang="en">Quick Switch Window...</source>
+        <target state="translated">快速切換視窗...</target>
       </trans-unit>
     </body>
   </file>
   <file original="src/vs/workbench/browser/workbench.contribution" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
+      <trans-unit id="workbench.editor.titleScrollbarSizing.default">
+        <source xml:lang="en">The default size.</source>
+        <target state="translated">預設大小。</target>
+      </trans-unit>
+      <trans-unit id="workbench.editor.titleScrollbarSizing.large">
+        <source xml:lang="en">Increases the size, so it can be grabed more easily with the mouse</source>
+        <target state="translated">加大大小，以便更容易利用滑鼠擷取</target>
+      </trans-unit>
+      <trans-unit id="tabScrollbarHeight">
+        <source xml:lang="en">Controls the height of the scrollbars used for tabs and breadcrumbs in the editor title area.</source>
+        <target state="translated">控制編輯器標題區域中，定位字元和階層連結所用捲軸的高度。</target>
+      </trans-unit>
       <trans-unit id="showEditorTabs">
         <source xml:lang="en">Controls whether opened editors should show in tabs or not.</source>
         <target state="translated">控制已開啟的編輯器是否應顯示在索引標籤中。</target>
@@ -1263,10 +1325,6 @@ This option requires restart to take effect.</source>
       <trans-unit id="viewVisibility">
         <source xml:lang="en">Controls the visibility of view header actions. View header actions may either be always visible, or only visible when that view is focused or hovered over.</source>
         <target state="translated">控制檢視標頭動作的可見度。檢視標頭動作可為總是可見，或在檢視為焦點或暫留時才可見。</target>
-      </trans-unit>
-      <trans-unit id="movingViewContainer">
-        <source xml:lang="en">Controls whether specific views will have a context menu entry allowing them to be moved to a new container. Currently, this setting only affects the outline view and views contributed by extensions.</source>
-        <target state="translated">控制特定檢視是否具有操作功能表項目，以便移至新的容器。這個設定目前只會影響大綱檢視和延伸模組提供的檢視。</target>
       </trans-unit>
       <trans-unit id="fontAliasing">
         <source xml:lang="en">Controls font aliasing method in the workbench.</source>
@@ -1480,159 +1538,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/actions/layoutActions" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="view">
-        <source xml:lang="en">View</source>
-        <target state="translated">檢視</target>
-      </trans-unit>
-      <trans-unit id="closeSidebar">
-        <source xml:lang="en">Close Side Bar</source>
-        <target state="translated">關閉提要欄位</target>
-      </trans-unit>
-      <trans-unit id="toggleActivityBar">
-        <source xml:lang="en">Toggle Activity Bar Visibility</source>
-        <target state="translated">切換活動列可見度</target>
-      </trans-unit>
-      <trans-unit id="miShowActivityBar">
-        <source xml:lang="en">Show &amp;&amp;Activity Bar</source>
-        <target state="translated">顯示活動列(&amp;&amp;A)</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="toggleCenteredLayout">
-        <source xml:lang="en">Toggle Centered Layout</source>
-        <target state="translated">切換置中配置</target>
-      </trans-unit>
-      <trans-unit id="miToggleCenteredLayout">
-        <source xml:lang="en">Centered Layout</source>
-        <target state="translated">置中配置</target>
-      </trans-unit>
-      <trans-unit id="flipLayout">
-        <source xml:lang="en">Toggle Vertical/Horizontal Editor Layout</source>
-        <target state="translated">切換垂直/水平編輯器版面配置</target>
-      </trans-unit>
-      <trans-unit id="miToggleEditorLayout">
-        <source xml:lang="en">Flip &amp;&amp;Layout</source>
-        <target state="translated">翻轉版面配置(&amp;&amp;L)</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="toggleSidebarPosition">
-        <source xml:lang="en">Toggle Side Bar Position</source>
-        <target state="translated">切換提要欄位位置</target>
-      </trans-unit>
-      <trans-unit id="moveSidebarRight">
-        <source xml:lang="en">Move Side Bar Right</source>
-        <target state="translated">向右移動側邊欄</target>
-      </trans-unit>
-      <trans-unit id="moveSidebarLeft">
-        <source xml:lang="en">Move Side Bar Left</source>
-        <target state="translated">向左移動側邊欄</target>
-      </trans-unit>
-      <trans-unit id="miMoveSidebarRight">
-        <source xml:lang="en">&amp;&amp;Move Side Bar Right</source>
-        <target state="translated">將提要欄位右移(&amp;&amp;M)</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miMoveSidebarLeft">
-        <source xml:lang="en">&amp;&amp;Move Side Bar Left</source>
-        <target state="translated">將提要欄位左移(&amp;&amp;M)</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="toggleEditor">
-        <source xml:lang="en">Toggle Editor Area</source>
-        <target state="translated">切換編輯器區域</target>
-      </trans-unit>
-      <trans-unit id="miShowEditorArea">
-        <source xml:lang="en">Show &amp;&amp;Editor Area</source>
-        <target state="translated">顯示編輯器區域(&amp;E)</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="toggleSidebar">
-        <source xml:lang="en">Toggle Side Bar Visibility</source>
-        <target state="translated">切換提要欄位可見度</target>
-      </trans-unit>
-      <trans-unit id="miAppearance">
-        <source xml:lang="en">&amp;&amp;Appearance</source>
-        <target state="translated">外觀(&amp;&amp;A)</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miShowSidebar">
-        <source xml:lang="en">Show &amp;&amp;Side Bar</source>
-        <target state="translated">顯示&amp;&amp;提要欄位</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="toggleStatusbar">
-        <source xml:lang="en">Toggle Status Bar Visibility</source>
-        <target state="translated">切換狀態列可見度</target>
-      </trans-unit>
-      <trans-unit id="miShowStatusbar">
-        <source xml:lang="en">Show S&amp;&amp;tatus Bar</source>
-        <target state="translated">顯示狀&amp;&amp;態列</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="toggleTabs">
-        <source xml:lang="en">Toggle Tab Visibility</source>
-        <target state="translated">切換標籤可見度</target>
-      </trans-unit>
-      <trans-unit id="toggleZenMode">
-        <source xml:lang="en">Toggle Zen Mode</source>
-        <target state="translated">切換無干擾模式</target>
-      </trans-unit>
-      <trans-unit id="miToggleZenMode">
-        <source xml:lang="en">Zen Mode</source>
-        <target state="translated">Zen Mode</target>
-      </trans-unit>
-      <trans-unit id="toggleMenuBar">
-        <source xml:lang="en">Toggle Menu Bar</source>
-        <target state="translated">切換功能表列</target>
-      </trans-unit>
-      <trans-unit id="miShowMenuBar">
-        <source xml:lang="en">Show Menu &amp;&amp;Bar</source>
-        <target state="translated">顯示功能表&amp;&amp;列</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="resetViewLocations">
-        <source xml:lang="en">Reset View Locations</source>
-        <target state="translated">重設檢視位置</target>
-      </trans-unit>
-      <trans-unit id="moveFocusedView">
-        <source xml:lang="en">Move Focused View</source>
-        <target state="translated">移動焦點檢視</target>
-      </trans-unit>
-      <trans-unit id="moveFocusedView.error.noFocusedView">
-        <source xml:lang="en">There is no view currently focused.</source>
-        <target state="translated">目前沒有任何焦點檢視。</target>
-      </trans-unit>
-      <trans-unit id="moveFocusedView.error.nonMovableView">
-        <source xml:lang="en">The currently focused view is not movable.</source>
-        <target state="translated">目前的焦點檢視無法移動。</target>
-      </trans-unit>
-      <trans-unit id="moveFocusedView.selectDestination">
-        <source xml:lang="en">Select a Destination for the View</source>
-        <target state="translated">選取檢視的目的地</target>
-      </trans-unit>
-      <trans-unit id="sidebar">
-        <source xml:lang="en">Side Bar</source>
-        <target state="translated">側邊欄</target>
-      </trans-unit>
-      <trans-unit id="panel">
-        <source xml:lang="en">Panel</source>
-        <target state="translated">面板</target>
-      </trans-unit>
-      <trans-unit id="moveFocusedView.newContainerInPanel">
-        <source xml:lang="en">New Container in Panel</source>
-        <target state="translated">在面板中新增容器</target>
-      </trans-unit>
-      <trans-unit id="increaseViewSize">
-        <source xml:lang="en">Increase Current View Size</source>
-        <target state="translated">增加目前的檢視大小</target>
-      </trans-unit>
-      <trans-unit id="decreaseViewSize">
-        <source xml:lang="en">Decrease Current View Size</source>
-        <target state="translated">縮小目前的檢視大小</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/browser/parts/titlebar/titlebarPart" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
       <trans-unit id="patchedWindowTitle">
@@ -1653,43 +1558,19 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/panel/panelPart" source-language="en" target-language="zh-Hant" datatype="plaintext">
+  <file original="src/vs/workbench/browser/workbench" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
-      <trans-unit id="hidePanel">
-        <source xml:lang="en">Hide Panel</source>
-        <target state="translated">隱藏面板</target>
+      <trans-unit id="loaderErrorNative">
+        <source xml:lang="en">Failed to load a required file. Please restart the application to try again. Details: {0}</source>
+        <target state="translated">無法載入必要的檔案。請重新啟動該應用程式，然後再試一次。詳細資料: {0}</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/statusbar/statusbarPart" source-language="en" target-language="zh-Hant" datatype="plaintext">
+  <file original="src/vs/workbench/common/editor" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
-      <trans-unit id="hide">
-        <source xml:lang="en">Hide '{0}'</source>
-        <target state="translated">隱藏 '{0}'</target>
-      </trans-unit>
-      <trans-unit id="hideStatusBar">
-        <source xml:lang="en">Hide Status Bar</source>
-        <target state="translated">隱藏狀態列</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/activitybar/activitybarPart" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="hideMenu">
-        <source xml:lang="en">Hide Menu</source>
-        <target state="translated">隱藏功能表</target>
-      </trans-unit>
-      <trans-unit id="showMenu">
-        <source xml:lang="en">Show Menu</source>
-        <target state="translated">顯示功能表</target>
-      </trans-unit>
-      <trans-unit id="hideActivitBar">
-        <source xml:lang="en">Hide Activity Bar</source>
-        <target state="translated">隱藏活動列</target>
-      </trans-unit>
-      <trans-unit id="manage">
-        <source xml:lang="en">Manage</source>
-        <target state="translated">管理</target>
+      <trans-unit id="sideBySideLabels">
+        <source xml:lang="en">{0} - {1}</source>
+        <target state="translated">{0} - {1}</target>
       </trans-unit>
     </body>
   </file>
@@ -1700,8 +1581,8 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
         <target state="translated">提供 JSON 結構描述組態。</target>
       </trans-unit>
       <trans-unit id="contributes.jsonValidation.fileMatch">
-        <source xml:lang="en">The file pattern to match, for example "package.json" or "*.launch".</source>
-        <target state="translated">要比對的檔案模式，例如 "package.json" 或 "*.launch"。</target>
+        <source xml:lang="en">The file pattern (or an array of patterns) to match, for example "package.json" or "*.launch". Exclusion patterns start with '!'</source>
+        <target state="translated">要比對的檔案模式 (或模式陣列)，例如 "package.json" 或 "*.launch"。會排除以 '!' 開頭的模式</target>
       </trans-unit>
       <trans-unit id="contributes.jsonValidation.url">
         <source xml:lang="en">A schema URL ('http:', 'https:') or relative path to the extension folder ('./').</source>
@@ -1712,8 +1593,8 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
         <target state="translated">'configuration.jsonValidation' 必須是陣列</target>
       </trans-unit>
       <trans-unit id="invalid.fileMatch">
-        <source xml:lang="en">'configuration.jsonValidation.fileMatch' must be defined</source>
-        <target state="translated">必須定義 'configuration.jsonValidation.fileMatch'</target>
+        <source xml:lang="en">'configuration.jsonValidation.fileMatch' must be defined as a string or an array of strings.</source>
+        <target state="translated">"configuration.jsonValidation.fileMatch" 必須定義為字串或字串陣列。</target>
       </trans-unit>
       <trans-unit id="invalid.url">
         <source xml:lang="en">'configuration.jsonValidation.url' must be a URL or relative path</source>
@@ -1781,83 +1662,212 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/browser/mainThreadAuthentication" source-language="en" target-language="zh-Hant" datatype="plaintext">
+  <file original="src/vs/workbench/browser/actions/layoutActions" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
-      <trans-unit id="confirmAuthenticationAccess">
-        <source xml:lang="en">The extension '{0}' is trying to access authentication information from {1}.</source>
-        <target state="translated">延伸模組 '{0}' 正在嘗試從 {1} 存取驗證資訊。</target>
-      </trans-unit>
-      <trans-unit id="cancel">
-        <source xml:lang="en">Cancel</source>
-        <target state="translated">取消</target>
-      </trans-unit>
-      <trans-unit id="allow">
-        <source xml:lang="en">Allow</source>
-        <target state="translated">允許</target>
-      </trans-unit>
-      <trans-unit id="neverAgain">
-        <source xml:lang="en">Don't Show Again</source>
-        <target state="translated">不要再顯示</target>
-      </trans-unit>
-      <trans-unit id="confirmLogin">
-        <source xml:lang="en">The extension '{0}' wants to sign in using {1}.</source>
-        <target state="translated">延伸模組 '{0}' 欲使用 {1} 登入。</target>
-      </trans-unit>
-      <trans-unit id="continue">
-        <source xml:lang="en">Continue</source>
-        <target state="translated">繼續</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/views/views" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="focus view">
-        <source xml:lang="en">Focus on {0} View</source>
-        <target state="translated">聚焦 {0} 檢視</target>
-      </trans-unit>
-      <trans-unit id="view category">
+      <trans-unit id="view">
         <source xml:lang="en">View</source>
         <target state="translated">檢視</target>
       </trans-unit>
-      <trans-unit id="moveViewToSidebar">
-        <source xml:lang="en">Move to Sidebar</source>
-        <target state="translated">移至提要欄位</target>
+      <trans-unit id="closeSidebar">
+        <source xml:lang="en">Close Side Bar</source>
+        <target state="translated">關閉提要欄位</target>
       </trans-unit>
-      <trans-unit id="moveViewToPanel">
-        <source xml:lang="en">Move to Panel</source>
-        <target state="translated">移至面板</target>
+      <trans-unit id="toggleActivityBar">
+        <source xml:lang="en">Toggle Activity Bar Visibility</source>
+        <target state="translated">切換活動列可見度</target>
+      </trans-unit>
+      <trans-unit id="miShowActivityBar">
+        <source xml:lang="en">Show &amp;&amp;Activity Bar</source>
+        <target state="translated">顯示活動列(&amp;&amp;A)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="toggleCenteredLayout">
+        <source xml:lang="en">Toggle Centered Layout</source>
+        <target state="translated">切換置中配置</target>
+      </trans-unit>
+      <trans-unit id="miToggleCenteredLayout">
+        <source xml:lang="en">Centered Layout</source>
+        <target state="translated">置中配置</target>
+      </trans-unit>
+      <trans-unit id="flipLayout">
+        <source xml:lang="en">Toggle Vertical/Horizontal Editor Layout</source>
+        <target state="translated">切換垂直/水平編輯器版面配置</target>
+      </trans-unit>
+      <trans-unit id="miToggleEditorLayout">
+        <source xml:lang="en">Flip &amp;&amp;Layout</source>
+        <target state="translated">翻轉版面配置(&amp;&amp;L)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="toggleSidebarPosition">
+        <source xml:lang="en">Toggle Side Bar Position</source>
+        <target state="translated">切換提要欄位位置</target>
+      </trans-unit>
+      <trans-unit id="moveSidebarRight">
+        <source xml:lang="en">Move Side Bar Right</source>
+        <target state="translated">向右移動側邊欄</target>
+      </trans-unit>
+      <trans-unit id="moveSidebarLeft">
+        <source xml:lang="en">Move Side Bar Left</source>
+        <target state="translated">向左移動側邊欄</target>
+      </trans-unit>
+      <trans-unit id="miMoveSidebarRight">
+        <source xml:lang="en">&amp;&amp;Move Side Bar Right</source>
+        <target state="translated">將提要欄位右移(&amp;&amp;M)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miMoveSidebarLeft">
+        <source xml:lang="en">&amp;&amp;Move Side Bar Left</source>
+        <target state="translated">將提要欄位左移(&amp;&amp;M)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="toggleEditor">
+        <source xml:lang="en">Toggle Editor Area Visibility</source>
+        <target state="translated">切換編輯器區域可見度</target>
+      </trans-unit>
+      <trans-unit id="miShowEditorArea">
+        <source xml:lang="en">Show &amp;&amp;Editor Area</source>
+        <target state="translated">顯示編輯器區域(&amp;&amp;E)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="toggleSidebar">
+        <source xml:lang="en">Toggle Side Bar Visibility</source>
+        <target state="translated">切換提要欄位可見度</target>
+      </trans-unit>
+      <trans-unit id="miAppearance">
+        <source xml:lang="en">&amp;&amp;Appearance</source>
+        <target state="translated">外觀(&amp;&amp;A)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miShowSidebar">
+        <source xml:lang="en">Show &amp;&amp;Side Bar</source>
+        <target state="translated">顯示提要欄位(&amp;&amp;S)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="toggleStatusbar">
+        <source xml:lang="en">Toggle Status Bar Visibility</source>
+        <target state="translated">切換狀態列可見度</target>
+      </trans-unit>
+      <trans-unit id="miShowStatusbar">
+        <source xml:lang="en">Show S&amp;&amp;tatus Bar</source>
+        <target state="translated">顯示狀態列(&amp;&amp;T)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="toggleTabs">
+        <source xml:lang="en">Toggle Tab Visibility</source>
+        <target state="translated">切換標籤可見度</target>
+      </trans-unit>
+      <trans-unit id="toggleZenMode">
+        <source xml:lang="en">Toggle Zen Mode</source>
+        <target state="translated">切換無干擾模式</target>
+      </trans-unit>
+      <trans-unit id="miToggleZenMode">
+        <source xml:lang="en">Zen Mode</source>
+        <target state="translated">Zen Mode</target>
+      </trans-unit>
+      <trans-unit id="toggleMenuBar">
+        <source xml:lang="en">Toggle Menu Bar</source>
+        <target state="translated">切換功能表列</target>
+      </trans-unit>
+      <trans-unit id="miShowMenuBar">
+        <source xml:lang="en">Show Menu &amp;&amp;Bar</source>
+        <target state="translated">顯示功能表&amp;&amp;列</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="resetViewLocations">
+        <source xml:lang="en">Reset View Locations</source>
+        <target state="translated">重設檢視位置</target>
+      </trans-unit>
+      <trans-unit id="moveFocusedView">
+        <source xml:lang="en">Move Focused View</source>
+        <target state="translated">移動焦點檢視</target>
+      </trans-unit>
+      <trans-unit id="moveFocusedView.error.noFocusedView">
+        <source xml:lang="en">There is no view currently focused.</source>
+        <target state="translated">目前沒有任何焦點檢視。</target>
+      </trans-unit>
+      <trans-unit id="moveFocusedView.error.nonMovableView">
+        <source xml:lang="en">The currently focused view is not movable.</source>
+        <target state="translated">目前的焦點檢視無法移動。</target>
+      </trans-unit>
+      <trans-unit id="moveFocusedView.selectDestination">
+        <source xml:lang="en">Select a Destination for the View</source>
+        <target state="translated">選取檢視的目的地</target>
+      </trans-unit>
+      <trans-unit id="sidebar">
+        <source xml:lang="en">Side Bar</source>
+        <target state="translated">側邊欄</target>
+      </trans-unit>
+      <trans-unit id="moveFocusedView.newContainerInSidebar">
+        <source xml:lang="en">New Container in Side Bar</source>
+        <target state="translated">提要欄位中的新容器</target>
+      </trans-unit>
+      <trans-unit id="panel">
+        <source xml:lang="en">Panel</source>
+        <target state="translated">面板</target>
+      </trans-unit>
+      <trans-unit id="moveFocusedView.newContainerInPanel">
+        <source xml:lang="en">New Container in Panel</source>
+        <target state="translated">在面板中新增容器</target>
+      </trans-unit>
+      <trans-unit id="resetFocusedViewLocation">
+        <source xml:lang="en">Reset Focused View Location</source>
+        <target state="translated">重設焦點檢視位置</target>
+      </trans-unit>
+      <trans-unit id="resetFocusedView.error.noFocusedView">
+        <source xml:lang="en">There is no view currently focused.</source>
+        <target state="translated">目前沒有任何焦點檢視。</target>
+      </trans-unit>
+      <trans-unit id="increaseViewSize">
+        <source xml:lang="en">Increase Current View Size</source>
+        <target state="translated">增加目前的檢視大小</target>
+      </trans-unit>
+      <trans-unit id="decreaseViewSize">
+        <source xml:lang="en">Decrease Current View Size</source>
+        <target state="translated">縮小目前的檢視大小</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/quickopen/quickOpenController" source-language="en" target-language="zh-Hant" datatype="plaintext">
+  <file original="src/vs/workbench/browser/parts/panel/panelPart" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
-      <trans-unit id="quickOpenInput">
-        <source xml:lang="en">Type '?' to get help on the actions you can take from here</source>
-        <target state="translated">輸入 '?' 即可取得相關說明來了解您可以在這裡執行的動作</target>
+      <trans-unit id="hidePanel">
+        <source xml:lang="en">Hide Panel</source>
+        <target state="translated">隱藏面板</target>
       </trans-unit>
-      <trans-unit id="historyMatches">
-        <source xml:lang="en">recently opened</source>
-        <target state="translated">最近開啟的</target>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/activitybar/activitybarPart" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="hideMenu">
+        <source xml:lang="en">Hide Menu</source>
+        <target state="translated">隱藏功能表</target>
       </trans-unit>
-      <trans-unit id="noResultsFound1">
-        <source xml:lang="en">No results found</source>
-        <target state="translated">找不到結果</target>
+      <trans-unit id="showMenu">
+        <source xml:lang="en">Show Menu</source>
+        <target state="translated">顯示功能表</target>
       </trans-unit>
-      <trans-unit id="canNotRunPlaceholder">
-        <source xml:lang="en">This quick open handler can not be used in the current context</source>
-        <target state="translated">目前內容無法使用這個 Quick Open 處理常式</target>
+      <trans-unit id="hideActivitBar">
+        <source xml:lang="en">Hide Activity Bar</source>
+        <target state="translated">隱藏活動列</target>
       </trans-unit>
-      <trans-unit id="entryAriaLabel">
-        <source xml:lang="en">{0}, recently opened</source>
-        <target state="translated">{0}，最近開啟的項目</target>
+      <trans-unit id="manage">
+        <source xml:lang="en">Manage</source>
+        <target state="translated">管理</target>
       </trans-unit>
-      <trans-unit id="removeFromEditorHistory">
-        <source xml:lang="en">Remove From History</source>
-        <target state="translated">從記錄中移除</target>
+      <trans-unit id="accounts">
+        <source xml:lang="en">Accounts</source>
+        <target state="translated">帳戶</target>
       </trans-unit>
-      <trans-unit id="pickHistory">
-        <source xml:lang="en">Select an editor entry to remove from history</source>
-        <target state="translated">選取編輯器輸入即可從歷程記錄移除</target>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/statusbar/statusbarPart" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="hide">
+        <source xml:lang="en">Hide '{0}'</source>
+        <target state="translated">隱藏 '{0}'</target>
+      </trans-unit>
+      <trans-unit id="hideStatusBar">
+        <source xml:lang="en">Hide Status Bar</source>
+        <target state="translated">隱藏狀態列</target>
       </trans-unit>
     </body>
   </file>
@@ -2155,14 +2165,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
         <source xml:lang="en">Side bar section header border color. The side bar is the container for views like explorer and search.</source>
         <target state="translated">側邊欄位區段標頭邊界色彩。側邊欄位是總管和搜尋等檢視的容器。</target>
       </trans-unit>
-      <trans-unit id="quickInputBackground">
-        <source xml:lang="en">Quick Input background color. The Quick Input widget is the container for views like the color theme picker.</source>
-        <target state="translated">快速輸入背景色彩。快速輸入小工具是色彩佈景主題選擇器等檢視的容器。</target>
-      </trans-unit>
-      <trans-unit id="quickInputForeground">
-        <source xml:lang="en">Quick Input foreground color. The Quick Input widget is the container for views like the color theme picker.</source>
-        <target state="translated">快速輸入前景色彩。快速輸入小工具是色彩佈景主題選擇器等檢視的容器。</target>
-      </trans-unit>
       <trans-unit id="titleBarActiveForeground">
         <source xml:lang="en">Title bar foreground when the window is active. Note that this color is currently only supported on macOS.</source>
         <target state="translated">作用中視窗之標題列的前景。請注意，目前只有 macOS 支援此色彩。</target>
@@ -2249,6 +2251,14 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/api/node/extHostDebugService" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="debug.terminal.title">
+        <source xml:lang="en">debuggee</source>
+        <target state="translated">偵錯項目</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/api/browser/mainThreadEditors" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
       <trans-unit id="diffLeftRightLabel">
@@ -2313,47 +2323,59 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/quickopen/quickopen" source-language="en" target-language="zh-Hant" datatype="plaintext">
+  <file original="src/vs/workbench/browser/parts/views/views" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
-      <trans-unit id="quickOpen">
-        <source xml:lang="en">Go to File...</source>
-        <target state="translated">移至檔案...</target>
+      <trans-unit id="focus view">
+        <source xml:lang="en">Focus on {0} View</source>
+        <target state="translated">聚焦 {0} 檢視</target>
       </trans-unit>
-      <trans-unit id="quickNavigateNext">
-        <source xml:lang="en">Navigate Next in Quick Open</source>
-        <target state="translated">在 Quick Open 中導覽至下一項</target>
+      <trans-unit id="view category">
+        <source xml:lang="en">View</source>
+        <target state="translated">檢視</target>
       </trans-unit>
-      <trans-unit id="quickNavigatePrevious">
-        <source xml:lang="en">Navigate Previous in Quick Open</source>
-        <target state="translated">在 Quick Open 中導覽至上一項</target>
-      </trans-unit>
-      <trans-unit id="quickSelectNext">
-        <source xml:lang="en">Select Next in Quick Open</source>
-        <target state="translated">在 Quick Open 中選取下一個</target>
-      </trans-unit>
-      <trans-unit id="quickSelectPrevious">
-        <source xml:lang="en">Select Previous in Quick Open</source>
-        <target state="translated">在 Quick Open 中選取上一個</target>
+      <trans-unit id="resetViewLocation">
+        <source xml:lang="en">Reset View Location</source>
+        <target state="translated">重設檢視位置</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/common/editor/diffEditorInput" source-language="en" target-language="zh-Hant" datatype="plaintext">
+  <file original="src/vs/workbench/api/browser/mainThreadAuthentication" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
-      <trans-unit id="sideBySideLabels">
-        <source xml:lang="en">{0} ↔ {1}</source>
-        <target state="translated">{0} ↔ {1}</target>
+      <trans-unit id="manageTrustedExtensions">
+        <source xml:lang="en">Manage Trusted Extensions</source>
+        <target state="translated">管理受信任的延伸模組</target>
       </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/quickopen" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="noResultsMatching">
-        <source xml:lang="en">No results matching</source>
-        <target state="translated">沒有相符的結果</target>
+      <trans-unit id="manageExensions">
+        <source xml:lang="en">Choose which extensions can access this account</source>
+        <target state="translated">選擇可存取此帳戶的延伸模組</target>
       </trans-unit>
-      <trans-unit id="noResultsFound2">
-        <source xml:lang="en">No results found</source>
-        <target state="translated">找不到結果</target>
+      <trans-unit id="addAnotherAccount">
+        <source xml:lang="en">Sign in to another {0} account</source>
+        <target state="translated">登入另一個 {0} 帳戶</target>
+      </trans-unit>
+      <trans-unit id="addAccount">
+        <source xml:lang="en">Sign in to {0}</source>
+        <target state="translated">登入 {0}</target>
+      </trans-unit>
+      <trans-unit id="signOut">
+        <source xml:lang="en">Sign Out</source>
+        <target state="translated">登出</target>
+      </trans-unit>
+      <trans-unit id="confirmAuthenticationAccess">
+        <source xml:lang="en">The extension '{0}' is trying to access authentication information for the {1} account '{2}'.</source>
+        <target state="translated">延伸模組 '{0}' 正在嘗試存取 {1} 帳戶 '{2}' 的驗證資訊。</target>
+      </trans-unit>
+      <trans-unit id="cancel">
+        <source xml:lang="en">Cancel</source>
+        <target state="translated">取消</target>
+      </trans-unit>
+      <trans-unit id="allow">
+        <source xml:lang="en">Allow</source>
+        <target state="translated">允許</target>
+      </trans-unit>
+      <trans-unit id="confirmLogin">
+        <source xml:lang="en">The extension '{0}' wants to sign in using {1}.</source>
+        <target state="translated">延伸模組 '{0}' 欲使用 {1} 登入。</target>
       </trans-unit>
     </body>
   </file>
@@ -2365,11 +2387,11 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/node/extHostDebugService" source-language="en" target-language="zh-Hant" datatype="plaintext">
+  <file original="src/vs/workbench/common/editor/diffEditorInput" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
-      <trans-unit id="debug.terminal.title">
-        <source xml:lang="en">debuggee</source>
-        <target state="translated">偵錯項目</target>
+      <trans-unit id="sideBySideLabels">
+        <source xml:lang="en">{0} ↔ {1}</source>
+        <target state="translated">{0} ↔ {1}</target>
       </trans-unit>
     </body>
   </file>
@@ -2385,14 +2407,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/browser/mainThreadWebview" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="errorMessage">
-        <source xml:lang="en">An error occurred while restoring view:{0}</source>
-        <target state="translated">還原 view:{0} 時發生錯誤</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/browser/viewlet" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
       <trans-unit id="compositePart.hideSideBarLabel">
@@ -2402,6 +2416,34 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="collapse">
         <source xml:lang="en">Collapse All</source>
         <target state="translated">全部摺疊</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/browser/mainThreadTask" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="task.label">
+        <source xml:lang="en">{0}: {1}</source>
+        <target state="translated">{0}: {1}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/compositePart" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="ariaCompositeToolbarLabel">
+        <source xml:lang="en">{0} actions</source>
+        <target state="translated">{0} 個動作</target>
+      </trans-unit>
+      <trans-unit id="titleTooltip">
+        <source xml:lang="en">{0} ({1})</source>
+        <target state="translated">{0} ({1})</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/editor/editorWidgets" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="openWorkspace">
+        <source xml:lang="en">Open Workspace</source>
+        <target state="translated">開啟工作區</target>
       </trans-unit>
     </body>
   </file>
@@ -2445,34 +2487,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/browser/mainThreadTask" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="task.label">
-        <source xml:lang="en">{0}: {1}</source>
-        <target state="translated">{0}: {1}</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/compositePart" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="ariaCompositeToolbarLabel">
-        <source xml:lang="en">{0} actions</source>
-        <target state="translated">{0} 個動作</target>
-      </trans-unit>
-      <trans-unit id="titleTooltip">
-        <source xml:lang="en">{0} ({1})</source>
-        <target state="translated">{0} ({1})</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/editor/editorWidgets" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="openWorkspace">
-        <source xml:lang="en">Open Workspace</source>
-        <target state="translated">開啟工作區</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/api/common/extHostWorkspace" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
       <trans-unit id="updateerror">
@@ -2481,47 +2495,15 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/notifications/notificationsCommands" source-language="en" target-language="zh-Hant" datatype="plaintext">
+  <file original="src/vs/workbench/api/browser/mainThreadWebview" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
-      <trans-unit id="notifications">
-        <source xml:lang="en">Notifications</source>
-        <target state="translated">通知</target>
+      <trans-unit id="errorMessage">
+        <source xml:lang="en">An error occurred while restoring view:{0}</source>
+        <target state="translated">還原 view:{0} 時發生錯誤</target>
       </trans-unit>
-      <trans-unit id="showNotifications">
-        <source xml:lang="en">Show Notifications</source>
-        <target state="translated">顯示通知</target>
-      </trans-unit>
-      <trans-unit id="hideNotifications">
-        <source xml:lang="en">Hide Notifications</source>
-        <target state="translated">隱藏通知</target>
-      </trans-unit>
-      <trans-unit id="clearAllNotifications">
-        <source xml:lang="en">Clear All Notifications</source>
-        <target state="translated">清除所有通知</target>
-      </trans-unit>
-      <trans-unit id="focusNotificationToasts">
-        <source xml:lang="en">Focus Notification Toast</source>
-        <target state="translated">焦點通知快顯通知</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/notifications/notificationsCenter" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="notificationsEmpty">
-        <source xml:lang="en">No new notifications</source>
-        <target state="translated">尚無新通知</target>
-      </trans-unit>
-      <trans-unit id="notifications">
-        <source xml:lang="en">Notifications</source>
-        <target state="translated">通知</target>
-      </trans-unit>
-      <trans-unit id="notificationsToolbar">
-        <source xml:lang="en">Notification Center Actions</source>
-        <target state="translated">通知中心動作</target>
-      </trans-unit>
-      <trans-unit id="notificationsList">
-        <source xml:lang="en">Notifications List</source>
-        <target state="translated">通知列表</target>
+      <trans-unit id="defaultEditLabel">
+        <source xml:lang="en">Edit</source>
+        <target state="translated">編輯</target>
       </trans-unit>
     </body>
   </file>
@@ -2566,6 +2548,38 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="status.message">
         <source xml:lang="en">Status Message</source>
         <target state="translated">狀態訊息</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/notifications/notificationsCommands" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="notifications">
+        <source xml:lang="en">Notifications</source>
+        <target state="translated">通知</target>
+      </trans-unit>
+      <trans-unit id="showNotifications">
+        <source xml:lang="en">Show Notifications</source>
+        <target state="translated">顯示通知</target>
+      </trans-unit>
+      <trans-unit id="hideNotifications">
+        <source xml:lang="en">Hide Notifications</source>
+        <target state="translated">隱藏通知</target>
+      </trans-unit>
+      <trans-unit id="clearAllNotifications">
+        <source xml:lang="en">Clear All Notifications</source>
+        <target state="translated">清除所有通知</target>
+      </trans-unit>
+      <trans-unit id="focusNotificationToasts">
+        <source xml:lang="en">Focus Notification Toast</source>
+        <target state="translated">焦點通知快顯通知</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/common/extHostExtensionService" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="extensionTestError">
+        <source xml:lang="en">Path {0} does not point to a valid extension test runner.</source>
+        <target state="translated">路徑 {0} 並未指向有效的延伸模組測試執行器。</target>
       </trans-unit>
     </body>
   </file>
@@ -2621,8 +2635,80 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
       <trans-unit id="miShowPanel">
         <source xml:lang="en">Show &amp;&amp;Panel</source>
-        <target state="translated">顯示&amp;&amp;面板</target>
+        <target state="translated">顯示面板(&amp;&amp;P)</target>
         <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/notifications/notificationsCenter" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="notificationsEmpty">
+        <source xml:lang="en">No new notifications</source>
+        <target state="translated">尚無新通知</target>
+      </trans-unit>
+      <trans-unit id="notifications">
+        <source xml:lang="en">Notifications</source>
+        <target state="translated">通知</target>
+      </trans-unit>
+      <trans-unit id="notificationsToolbar">
+        <source xml:lang="en">Notification Center Actions</source>
+        <target state="translated">通知中心動作</target>
+      </trans-unit>
+      <trans-unit id="notificationsList">
+        <source xml:lang="en">Notifications List</source>
+        <target state="translated">通知列表</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/editor/textEditor" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="editorLabelWithGroup">
+        <source xml:lang="en">{0}, {1}</source>
+        <target state="translated">{0}, {1}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/activitybar/activitybarActions" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="previousSideBarView">
+        <source xml:lang="en">Previous Side Bar View</source>
+        <target state="translated">上一個側邊欄檢視</target>
+      </trans-unit>
+      <trans-unit id="nextSideBarView">
+        <source xml:lang="en">Next Side Bar View</source>
+        <target state="translated">下一個側邊欄檢視</target>
+      </trans-unit>
+      <trans-unit id="view">
+        <source xml:lang="en">View</source>
+        <target state="translated">檢視</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/notifications/notificationsToasts" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="notificationsToast">
+        <source xml:lang="en">Notification Toast</source>
+        <target state="translated">通知 Toast</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/views/treeView" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="no-dataprovider">
+        <source xml:lang="en">There is no data provider registered that can provide view data.</source>
+        <target state="translated">沒有任何已註冊的資料提供者可提供檢視資料。</target>
+      </trans-unit>
+      <trans-unit id="refresh">
+        <source xml:lang="en">Refresh</source>
+        <target state="translated">重新整理</target>
+      </trans-unit>
+      <trans-unit id="collapseAll">
+        <source xml:lang="en">Collapse All</source>
+        <target state="translated">全部摺疊</target>
+      </trans-unit>
+      <trans-unit id="command-error">
+        <source xml:lang="en">Error running command {1}: {0}. This is likely caused by the extension that contributes {1}.</source>
+        <target state="translated">執行命令 {1} 時發生錯誤: {0}。這可能是貢獻 {1} 的延伸模組所引起。</target>
       </trans-unit>
     </body>
   </file>
@@ -2663,158 +2749,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="toggle">
         <source xml:lang="en">Toggle View Pinned</source>
         <target state="translated">切換釘選的檢視</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/api/common/extHostExtensionService" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="extensionTestError">
-        <source xml:lang="en">Path {0} does not point to a valid extension test runner.</source>
-        <target state="translated">路徑 {0} 並未指向有效的延伸模組測試執行器。</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/notifications/notificationsToasts" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="notificationsToast">
-        <source xml:lang="en">Notification Toast</source>
-        <target state="translated">通知 Toast</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/activitybar/activitybarActions" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="previousSideBarView">
-        <source xml:lang="en">Previous Side Bar View</source>
-        <target state="translated">上一個側邊欄檢視</target>
-      </trans-unit>
-      <trans-unit id="nextSideBarView">
-        <source xml:lang="en">Next Side Bar View</source>
-        <target state="translated">下一個側邊欄檢視</target>
-      </trans-unit>
-      <trans-unit id="view">
-        <source xml:lang="en">View</source>
-        <target state="translated">檢視</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/views/viewPaneContainer" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="viewToolbarAriaLabel">
-        <source xml:lang="en">{0} actions</source>
-        <target state="translated">{0} 個動作</target>
-      </trans-unit>
-      <trans-unit id="hideView">
-        <source xml:lang="en">Hide</source>
-        <target state="translated">隱藏</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/editor/textEditor" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="editorLabelWithGroup">
-        <source xml:lang="en">{0}, {1}</source>
-        <target state="translated">{0}, {1}</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/titlebar/menubarControl" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="mFile">
-        <source xml:lang="en">&amp;&amp;File</source>
-        <target state="translated">檔案(&amp;&amp;F)</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="mEdit">
-        <source xml:lang="en">&amp;&amp;Edit</source>
-        <target state="translated">編輯(&amp;&amp;E)</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="mSelection">
-        <source xml:lang="en">&amp;&amp;Selection</source>
-        <target state="translated">選取項目(&amp;&amp;S)</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="mView">
-        <source xml:lang="en">&amp;&amp;View</source>
-        <target state="translated">檢視(&amp;&amp;V)</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="mGoto">
-        <source xml:lang="en">&amp;&amp;Go</source>
-        <target state="translated">移至(&amp;&amp;G)</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="mRun">
-        <source xml:lang="en">&amp;&amp;Run</source>
-        <target state="translated">執行(&amp;amp;R)</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="mTerminal">
-        <source xml:lang="en">&amp;&amp;Terminal</source>
-        <target state="translated">終端機(&amp;&amp;T)</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="mHelp">
-        <source xml:lang="en">&amp;&amp;Help</source>
-        <target state="translated">說明(&amp;&amp;H)</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="menubar.customTitlebarAccessibilityNotification">
-        <source xml:lang="en">Accessibility support is enabled for you. For the most accessible experience, we recommend the custom title bar style.</source>
-        <target state="translated">已為您啟用協助工具支援。為了讓體驗達到最大的方便性，建議使用自訂標題列樣式。</target>
-      </trans-unit>
-      <trans-unit id="goToSetting">
-        <source xml:lang="en">Open Settings</source>
-        <target state="translated">開啟設定</target>
-      </trans-unit>
-      <trans-unit id="checkForUpdates">
-        <source xml:lang="en">Check for &amp;&amp;Updates...</source>
-        <target state="translated">檢查更新(&amp;&amp;U)…</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="checkingForUpdates">
-        <source xml:lang="en">Checking for Updates...</source>
-        <target state="translated">正在查看是否有更新...</target>
-      </trans-unit>
-      <trans-unit id="download now">
-        <source xml:lang="en">D&amp;&amp;ownload Now</source>
-        <target state="translated">立即下載(&amp;&amp;O)</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="DownloadingUpdate">
-        <source xml:lang="en">Downloading Update...</source>
-        <target state="translated">正在下載更新...</target>
-      </trans-unit>
-      <trans-unit id="installUpdate...">
-        <source xml:lang="en">Install &amp;&amp;Update...</source>
-        <target state="translated">安裝更新(&amp;&amp;U)...</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="installingUpdate">
-        <source xml:lang="en">Installing Update...</source>
-        <target state="translated">正在安裝更新...</target>
-      </trans-unit>
-      <trans-unit id="restartToUpdate">
-        <source xml:lang="en">Restart to &amp;&amp;Update</source>
-        <target state="translated">重新啟動以更新(&amp;&amp;U)</target>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/views/customView" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="no-dataprovider">
-        <source xml:lang="en">There is no data provider registered that can provide view data.</source>
-        <target state="translated">沒有任何已註冊的資料提供者可提供檢視資料。</target>
-      </trans-unit>
-      <trans-unit id="collapseAll">
-        <source xml:lang="en">Collapse All</source>
-        <target state="translated">全部摺疊</target>
-      </trans-unit>
-      <trans-unit id="command-error">
-        <source xml:lang="en">Error running command {1}: {0}. This is likely caused by the extension that contributes {1}.</source>
-        <target state="translated">執行命令 {1} 時發生錯誤: {0}。這可能是貢獻 {1} 的延伸模組所引起。</target>
       </trans-unit>
     </body>
   </file>
@@ -2888,6 +2822,122 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/browser/parts/titlebar/menubarControl" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="mFile">
+        <source xml:lang="en">&amp;&amp;File</source>
+        <target state="translated">檔案(&amp;&amp;F)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mEdit">
+        <source xml:lang="en">&amp;&amp;Edit</source>
+        <target state="translated">編輯(&amp;&amp;E)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mSelection">
+        <source xml:lang="en">&amp;&amp;Selection</source>
+        <target state="translated">選取項目(&amp;&amp;S)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mView">
+        <source xml:lang="en">&amp;&amp;View</source>
+        <target state="translated">檢視(&amp;&amp;V)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mGoto">
+        <source xml:lang="en">&amp;&amp;Go</source>
+        <target state="translated">移至(&amp;&amp;G)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mRun">
+        <source xml:lang="en">&amp;&amp;Run</source>
+        <target state="translated">執行(&amp;&amp;R)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mTerminal">
+        <source xml:lang="en">&amp;&amp;Terminal</source>
+        <target state="translated">終端機(&amp;&amp;T)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mHelp">
+        <source xml:lang="en">&amp;&amp;Help</source>
+        <target state="translated">說明(&amp;&amp;H)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="menubar.customTitlebarAccessibilityNotification">
+        <source xml:lang="en">Accessibility support is enabled for you. For the most accessible experience, we recommend the custom title bar style.</source>
+        <target state="translated">已為您啟用協助工具支援。為了讓體驗達到最大的方便性，建議使用自訂標題列樣式。</target>
+      </trans-unit>
+      <trans-unit id="goToSetting">
+        <source xml:lang="en">Open Settings</source>
+        <target state="translated">開啟設定</target>
+      </trans-unit>
+      <trans-unit id="checkForUpdates">
+        <source xml:lang="en">Check for &amp;&amp;Updates...</source>
+        <target state="translated">檢查更新(&amp;&amp;U)…</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="checkingForUpdates">
+        <source xml:lang="en">Checking for Updates...</source>
+        <target state="translated">正在查看是否有更新...</target>
+      </trans-unit>
+      <trans-unit id="download now">
+        <source xml:lang="en">D&amp;&amp;ownload Update</source>
+        <target state="translated">下載更新(&amp;O)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="DownloadingUpdate">
+        <source xml:lang="en">Downloading Update...</source>
+        <target state="translated">正在下載更新...</target>
+      </trans-unit>
+      <trans-unit id="installUpdate...">
+        <source xml:lang="en">Install &amp;&amp;Update...</source>
+        <target state="translated">安裝更新(&amp;&amp;U)...</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="installingUpdate">
+        <source xml:lang="en">Installing Update...</source>
+        <target state="translated">正在安裝更新...</target>
+      </trans-unit>
+      <trans-unit id="restartToUpdate">
+        <source xml:lang="en">Restart to &amp;&amp;Update</source>
+        <target state="translated">重新啟動以更新(&amp;&amp;U)</target>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/compositeBar" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="activityBarAriaLabel">
+        <source xml:lang="en">Active View Switcher</source>
+        <target state="translated">即時檢視切換器</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/views/viewPaneContainer" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="viewToolbarAriaLabel">
+        <source xml:lang="en">{0} actions</source>
+        <target state="translated">{0} 個動作</target>
+      </trans-unit>
+      <trans-unit id="hideView">
+        <source xml:lang="en">Hide</source>
+        <target state="translated">隱藏</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/common/extHostExtensionActivator" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="failedDep1">
+        <source xml:lang="en">Cannot activate extension '{0}' because it depends on extension '{1}', which failed to activate.</source>
+        <target state="translated">無法啟用延伸模組 '{0}’，原因是其相依於無法啟用的延伸模組 ‘{1}’。</target>
+      </trans-unit>
+      <trans-unit id="activationError">
+        <source xml:lang="en">Activating extension '{0}' failed: {1}.</source>
+        <target state="translated">啟動延伸模組 '{0}' 失敗: {1}。</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/browser/parts/notifications/notificationsActions" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
       <trans-unit id="clearNotification">
@@ -2920,23 +2970,11 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/compositeBar" source-language="en" target-language="zh-Hant" datatype="plaintext">
+  <file original="src/vs/workbench/api/common/extHost.api.impl" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
-      <trans-unit id="activityBarAriaLabel">
-        <source xml:lang="en">Active View Switcher</source>
-        <target state="translated">即時檢視切換器</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/api/common/extHostExtensionActivator" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="failedDep1">
-        <source xml:lang="en">Cannot activate extension '{0}' because it depends on extension '{1}', which failed to activate.</source>
-        <target state="translated">無法啟用延伸模組 '{0}’，原因是其相依於無法啟用的延伸模組 ‘{1}’。</target>
-      </trans-unit>
-      <trans-unit id="activationError">
-        <source xml:lang="en">Activating extension '{0}' failed: {1}.</source>
-        <target state="translated">啟動延伸模組 '{0}' 失敗: {1}。</target>
+      <trans-unit id="extensionLabel">
+        <source xml:lang="en">{0} (Extension)</source>
+        <target state="translated">{0} (延伸模組)</target>
       </trans-unit>
     </body>
   </file>
@@ -2958,15 +2996,19 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
         <source xml:lang="en">Side by Side Editor</source>
         <target state="translated">並排編輯器</target>
       </trans-unit>
-      <trans-unit id="groupOnePicker">
-        <source xml:lang="en">Show Editors in Active Group By Most Recently Used</source>
+      <trans-unit id="editorQuickAccessPlaceholder">
+        <source xml:lang="en">Type the name of an editor to open it.</source>
+        <target state="translated">鍵入編輯器名稱以開啟該編輯器。</target>
+      </trans-unit>
+      <trans-unit id="activeGroupEditorsByMostRecentlyUsedQuickAccess">
+        <source xml:lang="en">Show Editors in Active Group by Most Recently Used</source>
         <target state="translated">根據最近使用時間顯示使用中群組的編輯器</target>
       </trans-unit>
-      <trans-unit id="allEditorsPicker">
+      <trans-unit id="allEditorsByAppearanceQuickAccess">
         <source xml:lang="en">Show All Opened Editors By Appearance</source>
         <target state="translated">根據外觀顯示所有已開啟編輯器</target>
       </trans-unit>
-      <trans-unit id="allEditorsPickerByMostRecentlyUsed">
+      <trans-unit id="allEditorsByMostRecentlyUsedQuickAccess">
         <source xml:lang="en">Show All Opened Editors By Most Recently Used</source>
         <target state="translated">依最近使用順序顯示所有開啟的編輯器</target>
       </trans-unit>
@@ -3267,6 +3309,50 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/browser/parts/editor/editorQuickAccess" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="entryAriaLabelWithGroupDirty">
+        <source xml:lang="en">{0}, dirty, {1}</source>
+        <target state="translated">{0} 已改變，{1}</target>
+      </trans-unit>
+      <trans-unit id="entryAriaLabelWithGroup">
+        <source xml:lang="en">{0}, {1}</source>
+        <target state="translated">{0}, {1}</target>
+      </trans-unit>
+      <trans-unit id="entryAriaLabelDirty">
+        <source xml:lang="en">{0}, dirty</source>
+        <target state="translated">已改變 {0}</target>
+      </trans-unit>
+      <trans-unit id="closeEditor">
+        <source xml:lang="en">Close Editor</source>
+        <target state="translated">關閉編輯器</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/editor/textDiffEditor" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="textDiffEditor">
+        <source xml:lang="en">Text Diff Editor</source>
+        <target state="translated">文字 Diff 編輯器</target>
+      </trans-unit>
+      <trans-unit id="readonlyEditorWithInputAriaLabel">
+        <source xml:lang="en">{0} readonly compare editor</source>
+        <target state="translated">{0} 唯讀比較編輯器</target>
+      </trans-unit>
+      <trans-unit id="readonlyEditorAriaLabel">
+        <source xml:lang="en">Readonly compare editor</source>
+        <target state="translated">唯讀比較編輯器</target>
+      </trans-unit>
+      <trans-unit id="editableEditorWithInputAriaLabel">
+        <source xml:lang="en">{0} compare editor</source>
+        <target state="translated">{0} 比較編輯器</target>
+      </trans-unit>
+      <trans-unit id="editableEditorAriaLabel">
+        <source xml:lang="en">Compare editor</source>
+        <target state="translated">比較編輯器</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/browser/parts/editor/editorGroupView" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
       <trans-unit id="araLabelGroupActions">
@@ -3307,35 +3393,36 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/editor/textDiffEditor" source-language="en" target-language="zh-Hant" datatype="plaintext">
+  <file original="src/vs/workbench/api/common/extHostStatusBar" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
-      <trans-unit id="textDiffEditor">
-        <source xml:lang="en">Text Diff Editor</source>
-        <target state="translated">文字 Diff 編輯器</target>
-      </trans-unit>
-      <trans-unit id="readonlyEditorWithInputAriaLabel">
-        <source xml:lang="en">{0} readonly compare editor</source>
-        <target state="translated">{0} 唯讀比較編輯器</target>
-      </trans-unit>
-      <trans-unit id="readonlyEditorAriaLabel">
-        <source xml:lang="en">Readonly compare editor</source>
-        <target state="translated">唯讀比較編輯器</target>
-      </trans-unit>
-      <trans-unit id="editableEditorWithInputAriaLabel">
-        <source xml:lang="en">{0} compare editor</source>
-        <target state="translated">{0} 比較編輯器</target>
-      </trans-unit>
-      <trans-unit id="editableEditorAriaLabel">
-        <source xml:lang="en">Compare editor</source>
-        <target state="translated">比較編輯器</target>
+      <trans-unit id="status.extensionMessage">
+        <source xml:lang="en">Extension Status</source>
+        <target state="translated">延伸模組狀態</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/common/extHost.api.impl" source-language="en" target-language="zh-Hant" datatype="plaintext">
+  <file original="src/vs/workbench/api/common/extHostProgress" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
-      <trans-unit id="extensionLabel">
+      <trans-unit id="extensionSource">
         <source xml:lang="en">{0} (Extension)</source>
         <target state="translated">{0} (延伸模組)</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/editor/binaryDiffEditor" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="metadataDiff">
+        <source xml:lang="en">{0} ↔ {1}</source>
+        <target state="translated">{0} ↔ {1}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/common/extHostDiagnostics" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <body>
+      <trans-unit id="limitHit">
+        <source xml:lang="en">Not showing {0} further errors and warnings.</source>
+        <target state="translated">未顯示另外 {0} 個錯誤與警告。</target>
+        <note>amount of errors/warning skipped due to limits</note>
       </trans-unit>
     </body>
   </file>
@@ -3355,51 +3442,15 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/editor/binaryDiffEditor" source-language="en" target-language="zh-Hant" datatype="plaintext">
+  <file original="src/vs/workbench/api/common/extHostTreeViews" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
-      <trans-unit id="metadataDiff">
-        <source xml:lang="en">{0} ↔ {1}</source>
-        <target state="translated">{0} ↔ {1}</target>
+      <trans-unit id="treeView.notRegistered">
+        <source xml:lang="en">No tree view with id '{0}' registered.</source>
+        <target state="translated">未註冊識別碼為 '{0}' 的樹狀檢視。</target>
       </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/editor/editorPicker" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="entryAriaLabel">
-        <source xml:lang="en">{0}, editor group picker</source>
-        <target state="translated">{0}，編輯器群組選擇器</target>
-      </trans-unit>
-      <trans-unit id="noResultsFoundInGroup">
-        <source xml:lang="en">No matching opened editor found in active editor group</source>
-        <target state="translated">無法在正在使用的編輯器群組中找到符合的已開啟編輯器</target>
-      </trans-unit>
-      <trans-unit id="noOpenedEditors">
-        <source xml:lang="en">List of opened editors is currently empty in active editor group</source>
-        <target state="translated">在正在使用的編輯器群組中，目前為空的已開啟編輯器清單</target>
-      </trans-unit>
-      <trans-unit id="noResultsFound">
-        <source xml:lang="en">No matching opened editor found</source>
-        <target state="translated">找不到任何相符的已開啟編輯器</target>
-      </trans-unit>
-      <trans-unit id="noOpenedEditorsAllGroups">
-        <source xml:lang="en">List of opened editors is currently empty</source>
-        <target state="translated">開啟的編輯器清單目前為空白</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/api/common/extHostProgress" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="extensionSource">
-        <source xml:lang="en">{0} (Extension)</source>
-        <target state="translated">{0} (延伸模組)</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/api/common/extHostStatusBar" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="status.extensionMessage">
-        <source xml:lang="en">Extension Status</source>
-        <target state="translated">延伸模組狀態</target>
+      <trans-unit id="treeView.duplicateElement">
+        <source xml:lang="en">Element with id {0} is already registered</source>
+        <target state="translated">識別碼為 {0} 的元件已被註冊</target>
       </trans-unit>
     </body>
   </file>
@@ -3476,10 +3527,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="focusBelowGroup">
         <source xml:lang="en">Focus Below Editor Group</source>
         <target state="translated">將焦點集中在下方編輯器群組</target>
-      </trans-unit>
-      <trans-unit id="openToSide">
-        <source xml:lang="en">Open to the Side</source>
-        <target state="translated">開至側邊</target>
       </trans-unit>
       <trans-unit id="closeEditor">
         <source xml:lang="en">Close Editor</source>
@@ -3735,24 +3782,15 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/common/extHostDiagnostics" source-language="en" target-language="zh-Hant" datatype="plaintext">
+  <file original="src/vs/workbench/browser/parts/editor/titleControl" source-language="en" target-language="zh-Hant" datatype="plaintext">
     <body>
-      <trans-unit id="limitHit">
-        <source xml:lang="en">Not showing {0} further errors and warnings.</source>
-        <target state="translated">未顯示另外 {0} 個錯誤與警告。</target>
-        <note>amount of errors/warning skipped due to limits</note>
+      <trans-unit id="araLabelEditorActions">
+        <source xml:lang="en">Editor actions</source>
+        <target state="translated">編輯器動作</target>
       </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/api/common/extHostTreeViews" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="treeView.notRegistered">
-        <source xml:lang="en">No tree view with id '{0}' registered.</source>
-        <target state="translated">未註冊識別碼為 '{0}' 的樹狀檢視。</target>
-      </trans-unit>
-      <trans-unit id="treeView.duplicateElement">
-        <source xml:lang="en">Element with id {0} is already registered</source>
-        <target state="translated">識別碼為 {0} 的元件已被註冊</target>
+      <trans-unit id="draggedEditorGroup">
+        <source xml:lang="en">{0} (+{1})</source>
+        <target state="translated">{0} (+{1})</target>
       </trans-unit>
     </body>
   </file>
@@ -3851,8 +3889,8 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
         <target state="translated">螢幕助讀程式模式</target>
       </trans-unit>
       <trans-unit id="gotoLine">
-        <source xml:lang="en">Go to Line</source>
-        <target state="translated">移至行</target>
+        <source xml:lang="en">Go to Line/Column</source>
+        <target state="translated">前往行/欄</target>
       </trans-unit>
       <trans-unit id="status.editor.selection">
         <source xml:lang="en">Editor Selection</source>
@@ -3998,18 +4036,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="araLabelTabActions">
         <source xml:lang="en">Tab actions</source>
         <target state="translated">索引標籤動作</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/editor/titleControl" source-language="en" target-language="zh-Hant" datatype="plaintext">
-    <body>
-      <trans-unit id="araLabelEditorActions">
-        <source xml:lang="en">Editor actions</source>
-        <target state="translated">編輯器動作</target>
-      </trans-unit>
-      <trans-unit id="draggedEditorGroup">
-        <source xml:lang="en">{0} (+{1})</source>
-        <target state="translated">{0} (+{1})</target>
       </trans-unit>
     </body>
   </file>

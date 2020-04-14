@@ -3,8 +3,44 @@
   <file original="src/vs/workbench/contrib/userDataSync/electron-browser/userDataSync.contribution" source-language="en" target-language="ja" datatype="plaintext">
     <body>
       <trans-unit id="Open Backup folder">
-        <source xml:lang="en">Sync: Open Local Backups Folder</source>
-        <target state="translated">同期: ローカル バックアップ フォルダーを開く</target>
+        <source xml:lang="en">Open Local Backups Folder</source>
+        <target state="translated">ローカル バックアップ フォルダーを開く</target>
+      </trans-unit>
+      <trans-unit id="sync preferences">
+        <source xml:lang="en">Preferences Sync</source>
+        <target state="translated">設定同期</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/userDataSync/browser/userDataSyncView" source-language="en" target-language="ja" datatype="plaintext">
+    <body>
+      <trans-unit id="sync preferences">
+        <source xml:lang="en">Preferences Sync</source>
+        <target state="translated">設定同期</target>
+      </trans-unit>
+      <trans-unit id="remote title">
+        <source xml:lang="en">Remote Backup</source>
+        <target state="translated">リモート バックアップ</target>
+      </trans-unit>
+      <trans-unit id="local title">
+        <source xml:lang="en">Local Backup</source>
+        <target state="translated">ローカル バックアップ</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.showSyncRemoteBackup">
+        <source xml:lang="en">Show Remote Backup</source>
+        <target state="translated">リモートバックアップを表示</target>
+      </trans-unit>
+      <trans-unit id="workbench.action.showSyncLocalBackup">
+        <source xml:lang="en">Show Local Backup</source>
+        <target state="translated">ローカル バックアップの表示</target>
+      </trans-unit>
+      <trans-unit id="workbench.actions.sync.resolveResourceRef">
+        <source xml:lang="en">Show full content</source>
+        <target state="translated">コンテンツ全体を表示する</target>
+      </trans-unit>
+      <trans-unit id="workbench.actions.sync.commpareWithLocal">
+        <source xml:lang="en">Open Changes</source>
+        <target state="translated">変更を開く</target>
       </trans-unit>
     </body>
   </file>
@@ -15,8 +51,12 @@
         <target state="translated">設定</target>
       </trans-unit>
       <trans-unit id="keybindings">
-        <source xml:lang="en">Keybindings</source>
-        <target state="translated">キー バインド</target>
+        <source xml:lang="en">Keyboard Shortcuts</source>
+        <target state="translated">キーボード ショートカット</target>
+      </trans-unit>
+      <trans-unit id="snippets">
+        <source xml:lang="en">User Snippets</source>
+        <target state="translated">ユーザー スニペット</target>
       </trans-unit>
       <trans-unit id="extensions">
         <source xml:lang="en">Extensions</source>
@@ -35,36 +75,48 @@
         <target state="translated">{0} (同期済み {1})</target>
       </trans-unit>
       <trans-unit id="turn on sync with category">
-        <source xml:lang="en">Sync: Turn on Sync</source>
-        <target state="translated">同期: 同期をオンにする</target>
+        <source xml:lang="en">Preferences Sync: Turn on...</source>
+        <target state="translated">設定同期: オンにする...</target>
       </trans-unit>
       <trans-unit id="sign in">
-        <source xml:lang="en">Sync: Sign in to sync</source>
-        <target state="translated">同期: サインインして同期する</target>
+        <source xml:lang="en">Preferences Sync: Sign in to sync</source>
+        <target state="translated">設定同期: サインインして同期</target>
       </trans-unit>
       <trans-unit id="stop sync">
-        <source xml:lang="en">Sync: Turn off Sync</source>
-        <target state="translated">同期: 同期をオフにする</target>
+        <source xml:lang="en">Preferences Sync: Turn Off</source>
+        <target state="translated">設定の同期: オフにする</target>
       </trans-unit>
       <trans-unit id="showConflicts">
-        <source xml:lang="en">Sync: Show Settings Conflicts</source>
-        <target state="translated">同期: 設定の競合を表示</target>
+        <source xml:lang="en">Preferences Sync: Show Settings Conflicts</source>
+        <target state="translated">設定同期: 設定の競合を表示</target>
       </trans-unit>
       <trans-unit id="showKeybindingsConflicts">
-        <source xml:lang="en">Sync: Show Keybindings Conflicts</source>
-        <target state="translated">同期: キーバインドの競合を表示する</target>
+        <source xml:lang="en">Preferences Sync: Show Keybindings Conflicts</source>
+        <target state="translated">設定同期: キー バインドの競合を表示</target>
+      </trans-unit>
+      <trans-unit id="showSnippetsConflicts">
+        <source xml:lang="en">Preferences Sync: Show User Snippets Conflicts</source>
+        <target state="translated">設定同期: ユーザー スニペットの競合を表示</target>
       </trans-unit>
       <trans-unit id="configure sync">
-        <source xml:lang="en">Sync: Configure</source>
-        <target state="translated">同期: 構成</target>
+        <source xml:lang="en">Preferences Sync: Configure...</source>
+        <target state="translated">設定同期: 構成...</target>
       </trans-unit>
       <trans-unit id="show sync log">
-        <source xml:lang="en">Sync: Show Log</source>
-        <target state="translated">同期: ログを表示</target>
+        <source xml:lang="en">Preferences Sync: Show Log</source>
+        <target state="translated">設定同期: ログを表示</target>
       </trans-unit>
       <trans-unit id="sync settings">
-        <source xml:lang="en">Sync: Settings</source>
-        <target state="translated">同期: 設定</target>
+        <source xml:lang="en">Preferences Sync: Show Settings</source>
+        <target state="translated">設定同期: 設定を表示</target>
+      </trans-unit>
+      <trans-unit id="chooseAccountTitle">
+        <source xml:lang="en">Preferences Sync: Choose Account</source>
+        <target state="translated">設定同期: アカウントを選択</target>
+      </trans-unit>
+      <trans-unit id="chooseAccount">
+        <source xml:lang="en">Choose an account you would like to use for preferences sync</source>
+        <target state="translated">設定の同期に使用するアカウントを選択してください</target>
       </trans-unit>
       <trans-unit id="conflicts detected">
         <source xml:lang="en">Unable to sync due to conflicts in {0}. Please resolve them to continue.</source>
@@ -119,8 +171,8 @@
         <target state="translated">サインインして同期</target>
       </trans-unit>
       <trans-unit id="has conflicts">
-        <source xml:lang="en">Sync: Conflicts Detected</source>
-        <target state="translated">同期: 競合が検出されました</target>
+        <source xml:lang="en">Preferences Sync: Conflicts Detected</source>
+        <target state="translated">設定同期: 競合が検出されました</target>
       </trans-unit>
       <trans-unit id="sync preview message">
         <source xml:lang="en">Synchronizing your preferences is a preview feature, please read the documentation before turning it on.</source>
@@ -134,13 +186,17 @@
         <source xml:lang="en">Cancel</source>
         <target state="translated">キャンセル</target>
       </trans-unit>
-      <trans-unit id="turn on title">
-        <source xml:lang="en">Sync: Turn On</source>
-        <target state="translated">同期: オンにする</target>
+      <trans-unit id="turn on sync confirmation">
+        <source xml:lang="en">Do you want to turn on preferences sync?</source>
+        <target state="translated">設定同期を有効にしますか?</target>
       </trans-unit>
       <trans-unit id="turn on">
         <source xml:lang="en">Turn On</source>
         <target state="translated">オンにする</target>
+      </trans-unit>
+      <trans-unit id="turn on title">
+        <source xml:lang="en">Preferences Sync: Turn On</source>
+        <target state="translated">設定同期: オンにする</target>
       </trans-unit>
       <trans-unit id="sign in and turn on sync detail">
         <source xml:lang="en">Sign in with your {0} account to synchronize your data across devices.</source>
@@ -175,12 +231,8 @@
         <target state="translated">別のアカウントを使用する</target>
       </trans-unit>
       <trans-unit id="sync turned on">
-        <source xml:lang="en">Sync will happen automatically from now on.</source>
-        <target state="translated">同期は今後自動的に行われます。</target>
-      </trans-unit>
-      <trans-unit id="ui state description">
-        <source xml:lang="en">only 'Display Language' for now</source>
-        <target state="translated">今のところ '表示言語' のみ</target>
+        <source xml:lang="en">Preferences sync is turned on</source>
+        <target state="translated">設定の同期がオンになっています</target>
       </trans-unit>
       <trans-unit id="firs time sync">
         <source xml:lang="en">Sync</source>
@@ -201,8 +253,8 @@ Would you like to merge or replace with the data from the cloud?</source>
 クラウドのデータとマージするか、置き換えますか?</target>
       </trans-unit>
       <trans-unit id="turn off sync confirmation">
-        <source xml:lang="en">Turn off Sync</source>
-        <target state="translated">同期をオフにする</target>
+        <source xml:lang="en">Do you want to turn off sync?</source>
+        <target state="translated">同期をオフにしますか?</target>
       </trans-unit>
       <trans-unit id="turn off sync detail">
         <source xml:lang="en">Your settings, keybindings, extensions and UI State will no longer be synced.</source>
@@ -228,44 +280,56 @@ Would you like to merge or replace with the data from the cloud?</source>
         <source xml:lang="en">Keybindings Conflicts (Remote ↔ Local)</source>
         <target state="translated">キーバインドの競合 (リモート ↔ ローカル)</target>
       </trans-unit>
+      <trans-unit id="snippets conflicts preview">
+        <source xml:lang="en">User Snippet Conflicts (Remote ↔ Local) - {0}</source>
+        <target state="translated">ユーザー スニペットの競合 (リモート ↔ ローカル) - {0}</target>
+      </trans-unit>
       <trans-unit id="turn on failed">
         <source xml:lang="en">Error while starting Sync: {0}</source>
         <target state="translated">同期の開始中にエラーが発生しました: {0}</target>
       </trans-unit>
       <trans-unit id="global activity turn on sync">
-        <source xml:lang="en">Turn on Sync...</source>
-        <target state="translated">同期をオンにする...</target>
+        <source xml:lang="en">Turn on Preferences Sync...</source>
+        <target state="translated">設定同期をオンにする...</target>
+      </trans-unit>
+      <trans-unit id="sign in 2">
+        <source xml:lang="en">Preferences Sync: Sign in to sync (1)</source>
+        <target state="translated">設定同期: 同期のためにサインイン (1)</target>
       </trans-unit>
       <trans-unit id="resolveConflicts_global">
-        <source xml:lang="en">Sync: Show Settings Conflicts (1)</source>
-        <target state="translated">同期: 設定の競合を表示 (1)</target>
+        <source xml:lang="en">Preferences Sync: Show Settings Conflicts (1)</source>
+        <target state="translated">設定同期: 設定の競合を表示する (1)</target>
       </trans-unit>
       <trans-unit id="resolveKeybindingsConflicts_global">
-        <source xml:lang="en">Sync: Show Keybindings Conflicts (1)</source>
-        <target state="translated">同期: キー バインドの競合を表示する (1)</target>
+        <source xml:lang="en">Preferences Sync: Show Keybindings Conflicts (1)</source>
+        <target state="translated">設定同期: キー バインドの競合を表示 (1)</target>
+      </trans-unit>
+      <trans-unit id="resolveSnippetsConflicts_global">
+        <source xml:lang="en">Preferences Sync: Show User Snippets Conflicts ({0})</source>
+        <target state="translated">設定同期: ユーザー スニペットの競合を表示 ({0})</target>
       </trans-unit>
       <trans-unit id="sync is on">
-        <source xml:lang="en">Sync is on</source>
-        <target state="translated">同期がオン</target>
+        <source xml:lang="en">Preferences Sync is On</source>
+        <target state="translated">設定同期がオン</target>
       </trans-unit>
       <trans-unit id="turn off failed">
         <source xml:lang="en">Error while turning off sync: {0}</source>
         <target state="translated">同期をオフにしているときにエラーが発生しました: {0}</target>
       </trans-unit>
       <trans-unit id="Sync accept remote">
-        <source xml:lang="en">Sync: {0}</source>
-        <target state="translated">同期: {0}</target>
+        <source xml:lang="en">Preferences Sync: {0}</source>
+        <target state="translated">設定同期: {0}</target>
       </trans-unit>
       <trans-unit id="Sync accept local">
-        <source xml:lang="en">Sync: {0}</source>
-        <target state="translated">同期: {0}</target>
+        <source xml:lang="en">Preferences Sync: {0}</source>
+        <target state="translated">設定同期: {0}</target>
       </trans-unit>
       <trans-unit id="confirm replace and overwrite local">
-        <source xml:lang="en">Would you like to accept Remote {0} and replace Local {1}?</source>
+        <source xml:lang="en">Would you like to accept remote {0} and replace local {1}?</source>
         <target state="translated">リモート {0} を受け入れてローカル {1} を置き換えますか?</target>
       </trans-unit>
       <trans-unit id="confirm replace and overwrite remote">
-        <source xml:lang="en">Would you like to accept Local {0} and replace Remote {1}?</source>
+        <source xml:lang="en">Would you like to accept local {0} and replace remote {1}?</source>
         <target state="translated">ローカル {0} を受け入れてリモート {1} を置き換えますか?</target>
       </trans-unit>
       <trans-unit id="update conflicts">

@@ -34,6 +34,10 @@
         <source xml:lang="en">A local html file to open in the browser</source>
         <target state="translated">File HTML locale da aprire nel browser</target>
       </trans-unit>
+      <trans-unit id="browser.includeDefaultArgs.description">
+        <source xml:lang="en">Whether default browser launch arguments (to disable features that may make debugging harder) will be included in the launch.</source>
+        <target state="translated">Indica se gli argomenti predefiniti di avvio del browser (per disabilitare le funzioni che possono rendere più difficile il debug) saranno inclusi nell'avvio.</target>
+      </trans-unit>
       <trans-unit id="browser.inspectUri.description">
         <source xml:lang="en">Format to use to rewrite the inspectUri: It's a template string that interpolates keys in `{curlyBraces}`. Available keys are:
  - `url.*` is the parsed address of the running application. For instance, `{url.port}`, `{url.hostname}`
@@ -123,6 +127,14 @@
         <source xml:lang="en">Chrome: Launch</source>
         <target state="translated">Chrome: Avvia</target>
       </trans-unit>
+      <trans-unit id="configuration.automaticallyTunnelRemoteServer">
+        <source xml:lang="en">When debugging a remote web app, configures whether to automatically tunnel the remote server to your local machine.</source>
+        <target state="translated">Durante il debug di un'app Web remota, configura l'eventuale tunneling automatico del server remoto nel computer locale.</target>
+      </trans-unit>
+      <trans-unit id="configuration.debugByLinkOptions">
+        <source xml:lang="en">Options used when debugging open links clicked from inside the debug terminal. Can be set to "false" to disable this behavior.</source>
+        <target state="translated">Opzioni usate durante il debug di collegamenti aperto su cui viene fatto clic all'interno del terminale di debug. Impostare su "false" per disabilitare questo comportamento.</target>
+      </trans-unit>
       <trans-unit id="configuration.npmScriptLensLocation">
         <source xml:lang="en">Where a "Run" and "Debug" code lens should be shown in your npm scripts. It may be on "all", scripts, on "top" of the script section, or "never".</source>
         <target state="translated">Indica se visualizzare una finestra di CodeLens "Esegui" ed "Esegui debug" negli script npm. Può trovarsi in "all", negli script, in "top" della sezione script o in "never".</target>
@@ -174,6 +186,14 @@
       <trans-unit id="debug.terminal.snippet.label">
         <source xml:lang="en">Run "npm start" in a debug terminal</source>
         <target state="translated">Esegui "npm start" in un terminale di debug</target>
+      </trans-unit>
+      <trans-unit id="debug.terminal.welcome">
+        <source xml:lang="en">[Node.js Debug Terminal](command:extension.pwa-node-debug.createDebuggerTerminal)
+
+You can use the Node.js Debug Terminal to instantly debug JavaScript you run from the command line.</source>
+        <target state="translated">[Terminale di debug di Node.js](comando: extension.pwa-node-debug.createDebuggerTerminal)
+
+È possibile usare il terminale di debug di Node.js per eseguire istantaneamente il debug di codice JavaScript eseguito dalla riga di comando.</target>
       </trans-unit>
       <trans-unit id="edge.attach.description">
         <source xml:lang="en">Attach to an instance of Edge already in debug mode</source>
@@ -507,6 +527,14 @@
         <source xml:lang="en">Pretty print for debugging</source>
         <target state="translated">Riformattazione per il debug</target>
       </trans-unit>
+      <trans-unit id="profile.start">
+        <source xml:lang="en">Take Performance Profile</source>
+        <target state="translated">Accetta profilo prestazioni</target>
+      </trans-unit>
+      <trans-unit id="profile.stop">
+        <source xml:lang="en">Stop Performance Profile</source>
+        <target state="translated">Arresta profilo prestazioni</target>
+      </trans-unit>
       <trans-unit id="remove.browser.breakpoint">
         <source xml:lang="en">Remove Browser Breakpoint</source>
         <target state="translated">Rimuovi punto di interruzione browser</target>
@@ -550,6 +578,10 @@
       <trans-unit id="trace.logFile.description">
         <source xml:lang="en">Configures where on disk logs are written.</source>
         <target state="translated">Consente di configurare il percorso in cui vengono scritti i log del disco.</target>
+      </trans-unit>
+      <trans-unit id="trace.stdio.description">
+        <source xml:lang="en">Whether to return trace data from the launched application or browser.</source>
+        <target state="translated">Indica se restituire i dati di analisi del browser o dell'applicazione avviata.</target>
       </trans-unit>
       <trans-unit id="trace.tags.description">
         <source xml:lang="en">Configures what types of logs are recorded.</source>

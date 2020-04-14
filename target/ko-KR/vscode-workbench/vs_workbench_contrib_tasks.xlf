@@ -169,7 +169,11 @@ The task '{0}' was terminated per user request.</source>
         <source xml:lang="en">Open User Tasks</source>
         <target state="translated">사용자 작업 열기</target>
       </trans-unit>
-      <trans-unit id="quickOpen.task">
+      <trans-unit id="tasksQuickAccessPlaceholder">
+        <source xml:lang="en">Type the name of a task to run.</source>
+        <target state="translated">실행할 작업의 이름을 입력합니다.</target>
+      </trans-unit>
+      <trans-unit id="tasksQuickAccessHelp">
         <source xml:lang="en">Run Task</source>
         <target state="translated">작업 실행</target>
       </trans-unit>
@@ -227,22 +231,6 @@ The task '{0}' was terminated per user request.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/taskQuickOpen" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
-      <trans-unit id="tasksAriaLabel">
-        <source xml:lang="en">Type the name of a task to run</source>
-        <target state="translated">실행할 작업의 이름 입력</target>
-      </trans-unit>
-      <trans-unit id="noTasksMatching">
-        <source xml:lang="en">No tasks matching</source>
-        <target state="translated">일치하는 작업 없음</target>
-      </trans-unit>
-      <trans-unit id="noTasksFound">
-        <source xml:lang="en">No tasks found</source>
-        <target state="translated">작업을 찾을 수 없음</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/tasks/common/jsonSchema_v1" source-language="en" target-language="ko" datatype="plaintext">
     <body>
       <trans-unit id="JsonSchema.version.deprecated">
@@ -276,6 +264,14 @@ The task '{0}' was terminated per user request.</source>
       <trans-unit id="JsonSchema.shell">
         <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
         <target state="translated">명령이 셸 명령인지 외부 프로그램인지 여부를 지정합니다. 생략하면 기본값 false가 사용됩니다.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/tasksQuickAccess" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="TaskService.pickRunTask">
+        <source xml:lang="en">Select the task to run</source>
+        <target state="translated">실행할 작업 선택</target>
       </trans-unit>
     </body>
   </file>
@@ -328,30 +324,6 @@ The task '{0}' was terminated per user request.</source>
       <trans-unit id="workbench.action.tasks.disallowAutomaticTasks">
         <source xml:lang="en">Disallow Automatic Tasks in Folder</source>
         <target state="translated">폴더에서 자동 작업 허용 안 함</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/quickOpen" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
-      <trans-unit id="entryAriaLabel">
-        <source xml:lang="en">{0}, tasks</source>
-        <target state="translated">{0}, tasks</target>
-      </trans-unit>
-      <trans-unit id="recentlyUsed">
-        <source xml:lang="en">recently used tasks</source>
-        <target state="translated">최근에 사용한 작업</target>
-      </trans-unit>
-      <trans-unit id="configured">
-        <source xml:lang="en">configured tasks</source>
-        <target state="translated">구성된 작업</target>
-      </trans-unit>
-      <trans-unit id="detected">
-        <source xml:lang="en">detected tasks</source>
-        <target state="translated">감지된 작업</target>
-      </trans-unit>
-      <trans-unit id="customizeTask">
-        <source xml:lang="en">Configure Task</source>
-        <target state="translated">작업 구성</target>
       </trans-unit>
     </body>
   </file>
@@ -865,6 +837,38 @@ The task '{0}' was terminated per user request.</source>
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/taskQuickPick" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="taskQuickPick.showAll">
+        <source xml:lang="en">Show All Tasks...</source>
+        <target state="translated">작업 모두 표시...</target>
+      </trans-unit>
+      <trans-unit id="configureTask">
+        <source xml:lang="en">Configure Task</source>
+        <target state="translated">작업 구성</target>
+      </trans-unit>
+      <trans-unit id="contributedTasks">
+        <source xml:lang="en">contributed</source>
+        <target state="translated">제공됨</target>
+      </trans-unit>
+      <trans-unit id="recentlyUsed">
+        <source xml:lang="en">recently used</source>
+        <target state="translated">최근에 사용한 항목</target>
+      </trans-unit>
+      <trans-unit id="configured">
+        <source xml:lang="en">configured</source>
+        <target state="translated">구성됨</target>
+      </trans-unit>
+      <trans-unit id="TaskQuickPick.goBack">
+        <source xml:lang="en">Go back ↩</source>
+        <target state="translated">돌아가기 ↩</target>
+      </trans-unit>
+      <trans-unit id="TaskQuickPick.noTasksForType">
+        <source xml:lang="en">No {0} tasks found. Go back ↩</source>
+        <target state="translated">{0} 작업이 없습니다. 돌아가기 ↩</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/tasks/common/problemMatcher" source-language="en" target-language="ko" datatype="plaintext">
     <body>
       <trans-unit id="ProblemPatternParser.problemPattern.missingRegExp">
@@ -1371,14 +1375,6 @@ The task will be ignored.
         <source xml:lang="en">detected tasks</source>
         <target state="translated">감지된 작업</target>
       </trans-unit>
-      <trans-unit id="pickProgressManager.description">
-        <source xml:lang="en">Detecting tasks ({0} of {1}): {2} in progress</source>
-        <target state="translated">작업 검색({0}/{1}): {2} 진행 중</target>
-      </trans-unit>
-      <trans-unit id="taskQuickPick.cancel">
-        <source xml:lang="en">Stop detecting</source>
-        <target state="translated">검색 중지</target>
-      </trans-unit>
       <trans-unit id="TaskService.ignoredFolder">
         <source xml:lang="en">The following workspace folders are ignored since they use task version 0.1.0: {0}</source>
         <target state="translated">작업 버전 0.1.0을 사용하기 때문에 다음 작업 영역 폴더는 무시됩니다. {0}</target>
@@ -1392,8 +1388,8 @@ The task will be ignored.
         <target state="translated">실행할 작업 선택</target>
       </trans-unit>
       <trans-unit id="TaskService.noEntryToRun">
-        <source xml:lang="en">No task to run found. Configure Tasks...</source>
-        <target state="translated">실행할 작업이 없습니다. 작업 구성...</target>
+        <source xml:lang="en">No configured tasks. Configure Tasks...</source>
+        <target state="translated">구성된 작업이 없습니다. 작업 구성...</target>
       </trans-unit>
       <trans-unit id="TaskService.fetchingBuildTasks">
         <source xml:lang="en">Fetching build tasks...</source>

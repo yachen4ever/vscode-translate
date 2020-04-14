@@ -298,6 +298,26 @@ TypeScript 버전 관리에 대한 자세한 내용은 [TypeScript 설명서](ht
         <source xml:lang="en">Based on the `baseUrl` configured in your `jsconfig.json` / `tsconfig.json`.</source>
         <target state="translated">`jsconfig.json`/`tsconfig.json`에 구성된 `baseUrl`을 기준으로 합니다.</target>
       </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifierEnding">
+        <source xml:lang="en">Preferred path ending for auto imports.</source>
+        <target state="translated">자동 가져오기를 위한 기본 경로 끝자리.</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifierEnding.auto">
+        <source xml:lang="en">Use project settings to select a default.</source>
+        <target state="translated">프로젝트 설정을 사용하여 기본값을 선택합니다.</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifierEnding.minimal">
+        <source xml:lang="en">Shorten `./component/index.js` to `./component`.</source>
+        <target state="translated">`./component/index.js`를 `./component`로 줄입니다.</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifierEnding.index">
+        <source xml:lang="en">Shorten `./component/index.js` to `./component/index`</source>
+        <target state="translated">`./component/index.js`를 `./component/index`로 줄입니다.</target>
+      </trans-unit>
+      <trans-unit id="typescript.preferences.importModuleSpecifierEnding.js">
+        <source xml:lang="en">Do not shorten path endings; include the `.js` extension.</source>
+        <target state="translated">경로 끝을 줄이지 마세요. `.js` 확장명을 포함하세요.</target>
+      </trans-unit>
       <trans-unit id="typescript.updateImportsOnFileMove.enabled">
         <source xml:lang="en">Enable/disable automatic updating of import paths when you rename or move a file in VS Code. Requires using TypeScript 2.9 or newer in the workspace.</source>
         <target state="translated">VS Code에서 파일을 이동하거나 이름을 바꿀 때 가져오기 경로의 자동 업데이트를 사용하거나 사용하지 않도록 설정합니다. 작업 영역에서 TypeScript 2.9 이상을 사용해야 합니다.</target>
@@ -488,16 +508,24 @@ TypeScript 버전 관리에 대한 자세한 내용은 [TypeScript 설명서](ht
       </trans-unit>
     </body>
   </file>
-  <file original="extensions/typescript-language-features/dist/features/baseCodeLensProvider" source-language="en" target-language="ko" datatype="plaintext">
+  <file original="extensions/typescript-language-features/dist/utils/tsconfig" source-language="en" target-language="ko" datatype="plaintext">
     <body>
-      <trans-unit id="referenceErrorLabel">
-        <source xml:lang="en">Could not determine references</source>
-        <target state="translated">참조를 확인할 수 없음</target>
+      <trans-unit id="typescript.configureTsconfigQuickPick">
+        <source xml:lang="en">Configure tsconfig.json</source>
+        <target state="translated">tsconfig.json 구성</target>
       </trans-unit>
-    </body>
-  </file>
-  <file original="extensions/typescript-language-features/dist/commands/goToProjectConfiguration" source-language="en" target-language="ko" datatype="plaintext">
-    <body>
+      <trans-unit id="typescript.configureJsconfigQuickPick">
+        <source xml:lang="en">Configure jsconfig.json</source>
+        <target state="translated">jsconfig.json 구성</target>
+      </trans-unit>
+      <trans-unit id="typescript.noTypeScriptProjectConfig">
+        <source xml:lang="en">File is not part of a TypeScript project. Click [here]({0}) to learn more.</source>
+        <target state="translated">파일이 TypeScript 프로젝트의 일부가 아닙니다. 자세히 알아보려면 [여기]({0})를 클릭하세요.</target>
+      </trans-unit>
+      <trans-unit id="typescript.noJavaScriptProjectConfig">
+        <source xml:lang="en">File is not part of a JavaScript project Click [here]({0}) to learn more.</source>
+        <target state="translated">파일이 JavaScript 프로젝트의 일부가 아닙니다. 자세히 알아보려면 [여기]({0})를 클릭하세요.</target>
+      </trans-unit>
       <trans-unit id="typescript.projectConfigNoWorkspace">
         <source xml:lang="en">Please open a folder in VS Code to use a TypeScript or JavaScript project</source>
         <target state="translated">TypeScript 또는 JavaScript 프로젝트를 사용하려면 VS Code의 폴더를 여세요.</target>
@@ -510,21 +538,13 @@ TypeScript 버전 관리에 대한 자세한 내용은 [TypeScript 설명서](ht
         <source xml:lang="en">Could not determine TypeScript or JavaScript project</source>
         <target state="translated">TypeScript 또는 JavaScript 프로젝트를 확인할 수 없습니다.</target>
       </trans-unit>
-      <trans-unit id="typescript.noTypeScriptProjectConfig">
-        <source xml:lang="en">File is not part of a TypeScript project. Click [here]({0}) to learn more.</source>
-        <target state="translated">파일이 TypeScript 프로젝트의 일부가 아닙니다. 자세히 알아보려면 [여기]({0})를 클릭하세요.</target>
-      </trans-unit>
-      <trans-unit id="typescript.noJavaScriptProjectConfig">
-        <source xml:lang="en">File is not part of a JavaScript project Click [here]({0}) to learn more.</source>
-        <target state="translated">파일이 JavaScript 프로젝트의 일부가 아닙니다. 자세히 알아보려면 [여기]({0})를 클릭하세요.</target>
-      </trans-unit>
-      <trans-unit id="typescript.configureTsconfigQuickPick">
-        <source xml:lang="en">Configure tsconfig.json</source>
-        <target state="translated">tsconfig.json 구성</target>
-      </trans-unit>
-      <trans-unit id="typescript.configureJsconfigQuickPick">
-        <source xml:lang="en">Configure jsconfig.json</source>
-        <target state="translated">jsconfig.json 구성</target>
+    </body>
+  </file>
+  <file original="extensions/typescript-language-features/dist/features/baseCodeLensProvider" source-language="en" target-language="ko" datatype="plaintext">
+    <body>
+      <trans-unit id="referenceErrorLabel">
+        <source xml:lang="en">Could not determine references</source>
+        <target state="translated">참조를 확인할 수 없음</target>
       </trans-unit>
     </body>
   </file>
@@ -563,6 +583,10 @@ TypeScript 버전 관리에 대한 자세한 내용은 [TypeScript 설명서](ht
       <trans-unit id="ts-ignore">
         <source xml:lang="en">Suppresses @ts-check errors on the next line of a file.</source>
         <target state="translated">파일의 다음 행에서 @ts-check 오류를 억제합니다.</target>
+      </trans-unit>
+      <trans-unit id="ts-expect-error">
+        <source xml:lang="en">Suppresses @ts-check errors on the next line of a file, expecting at least one to exist.</source>
+        <target state="translated">파일 다음 줄에서 @ts-check 오류를 억제하며 하나 이상이 존재할 것으로 예상합니다.</target>
       </trans-unit>
     </body>
   </file>
@@ -684,17 +708,21 @@ TypeScript 버전 관리에 대한 자세한 내용은 [TypeScript 설명서](ht
         <source xml:lang="en">Could not open TS Server log file</source>
         <target state="translated">TS 서버 로그 파일을 열 수 없습니다.</target>
       </trans-unit>
-      <trans-unit id="serverDiedAfterStart">
-        <source xml:lang="en">The TypeScript language service died 5 times right after it got started. The service will not be restarted.</source>
-        <target state="translated">TypeScript 언어 서비스가 시작된 직후 5번 종료되었습니다. 서비스가 다시 시작되지 않습니다.</target>
-      </trans-unit>
       <trans-unit id="serverDiedReportIssue">
         <source xml:lang="en">Report Issue</source>
         <target state="translated">문제 신고</target>
       </trans-unit>
+      <trans-unit id="serverDiedAfterStart">
+        <source xml:lang="en">The TypeScript language service died 5 times right after it got started. The service will not be restarted.</source>
+        <target state="translated">TypeScript 언어 서비스가 시작된 직후 5번 종료되었습니다. 서비스가 다시 시작되지 않습니다.</target>
+      </trans-unit>
       <trans-unit id="serverDied">
         <source xml:lang="en">The TypeScript language service died unexpectedly 5 times in the last 5 Minutes.</source>
         <target state="translated">TypeScript 언어 서비스가 지난 5분 동안 예기치 않게 5번 종료되었습니다.</target>
+      </trans-unit>
+      <trans-unit id="serverDiedOnce">
+        <source xml:lang="en">The TypeScript language service died unexpectedly.</source>
+        <target state="translated">TypeScript 언어 서비스가 예기치 않게 종료되었습니다.</target>
       </trans-unit>
       <trans-unit id="serverLoading.progress">
         <source xml:lang="en">Initializing JS/TS language features</source>
@@ -710,8 +738,12 @@ TypeScript 버전 관리에 대한 자세한 내용은 [TypeScript 설명서](ht
       </trans-unit>
     </body>
   </file>
-  <file original="extensions/typescript-language-features/dist/utils/versionPicker" source-language="en" target-language="ko" datatype="plaintext">
+  <file original="extensions/typescript-language-features/dist/utils/versionManager" source-language="en" target-language="ko" datatype="plaintext">
     <body>
+      <trans-unit id="selectTsVersion">
+        <source xml:lang="en">Select the TypeScript version used for JavaScript and TypeScript language features</source>
+        <target state="translated">JavaScript 및 TypeScript 언어 기능에 사용되는 TypeScript 버전 선택</target>
+      </trans-unit>
       <trans-unit id="useVSCodeVersionOption">
         <source xml:lang="en">Use VS Code's Version</source>
         <target state="translated">VS Code의 버전 사용</target>
@@ -721,12 +753,8 @@ TypeScript 버전 관리에 대한 자세한 내용은 [TypeScript 설명서](ht
         <target state="translated">작업 영역 버전 사용</target>
       </trans-unit>
       <trans-unit id="learnMore">
-        <source xml:lang="en">Learn More</source>
-        <target state="translated">자세한 정보</target>
-      </trans-unit>
-      <trans-unit id="selectTsVersion">
-        <source xml:lang="en">Select the TypeScript version used for JavaScript and TypeScript language features</source>
-        <target state="translated">JavaScript 및 TypeScript 언어 기능에 사용되는 TypeScript 버전 선택</target>
+        <source xml:lang="en">Learn more about managing TypeScript versions</source>
+        <target state="translated">TypeScript 버전 관리에 대한 자세한 정보</target>
       </trans-unit>
     </body>
   </file>
@@ -760,9 +788,33 @@ TypeScript 버전 관리에 대한 자세한 내용은 [TypeScript 설명서](ht
   </file>
   <file original="extensions/typescript-language-features/dist/utils/versionStatus" source-language="en" target-language="ko" datatype="plaintext">
     <body>
-      <trans-unit id="typescriptVersion">
-        <source xml:lang="en">TypeScript: Version</source>
-        <target state="translated">TypeScript: 버전</target>
+      <trans-unit id="projectQuickPick.placeholder">
+        <source xml:lang="en">TypeScript Project Info</source>
+        <target state="translated">TypeScript 프로젝트 정보</target>
+      </trans-unit>
+      <trans-unit id="projectQuickPick.version.label">
+        <source xml:lang="en">Select TypeScript Version...</source>
+        <target state="translated">TypeScript 버전 선택...</target>
+      </trans-unit>
+      <trans-unit id="projectQuickPick.project.create">
+        <source xml:lang="en">Create tsconfig</source>
+        <target state="translated">tsconfig 만들기</target>
+      </trans-unit>
+      <trans-unit id="projectQuickPick.project.create.description">
+        <source xml:lang="en">This file is currently not part of a tsconfig/jsconfig project</source>
+        <target state="translated">이 파일은 현재 tsconfig/jsconfig 프로젝트의 일부가 아닙니다.</target>
+      </trans-unit>
+      <trans-unit id="projectQuickPick.version.goProjectConfig">
+        <source xml:lang="en">Open tsconfig</source>
+        <target state="translated">tsconfig 열기</target>
+      </trans-unit>
+      <trans-unit id="projectQuickPick.help">
+        <source xml:lang="en">TypeScript help</source>
+        <target state="translated">TypeScript 도움말</target>
+      </trans-unit>
+      <trans-unit id="projectInfo.name">
+        <source xml:lang="en">TypeScript: Project Info</source>
+        <target state="translated">TypeScript: 프로젝트 정보</target>
       </trans-unit>
     </body>
   </file>
@@ -806,7 +858,7 @@ TypeScript 버전 관리에 대한 자세한 내용은 [TypeScript 설명서](ht
       </trans-unit>
     </body>
   </file>
-  <file original="extensions/typescript-language-features/dist/utils/projectStatus" source-language="en" target-language="ko" datatype="plaintext">
+  <file original="extensions/typescript-language-features/dist/utils/largeProjectStatus" source-language="en" target-language="ko" datatype="plaintext">
     <body>
       <trans-unit id="statusExclude">
         <source xml:lang="en">TypeScript: Configure Excludes</source>

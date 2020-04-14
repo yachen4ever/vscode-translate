@@ -169,7 +169,11 @@ Der Task "{0}" wurde durch eine Benutzeranforderung beendet.</target>
         <source xml:lang="en">Open User Tasks</source>
         <target state="translated">Benutzeraufgaben öffnen</target>
       </trans-unit>
-      <trans-unit id="quickOpen.task">
+      <trans-unit id="tasksQuickAccessPlaceholder">
+        <source xml:lang="en">Type the name of a task to run.</source>
+        <target state="translated">Geben Sie den Namen eines auszuführenden Tasks ein.</target>
+      </trans-unit>
+      <trans-unit id="tasksQuickAccessHelp">
         <source xml:lang="en">Run Task</source>
         <target state="translated">Task ausführen</target>
       </trans-unit>
@@ -227,22 +231,6 @@ Der Task "{0}" wurde durch eine Benutzeranforderung beendet.</target>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/taskQuickOpen" source-language="en" target-language="de" datatype="plaintext">
-    <body>
-      <trans-unit id="tasksAriaLabel">
-        <source xml:lang="en">Type the name of a task to run</source>
-        <target state="translated">Geben Sie den Namen des auszuführenden Tasks ein.</target>
-      </trans-unit>
-      <trans-unit id="noTasksMatching">
-        <source xml:lang="en">No tasks matching</source>
-        <target state="translated">Keine übereinstimmenden Tasks</target>
-      </trans-unit>
-      <trans-unit id="noTasksFound">
-        <source xml:lang="en">No tasks found</source>
-        <target state="translated">Es wurden keine Tasks gefunden.</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/tasks/common/jsonSchema_v1" source-language="en" target-language="de" datatype="plaintext">
     <body>
       <trans-unit id="JsonSchema.version.deprecated">
@@ -276,6 +264,14 @@ Der Task "{0}" wurde durch eine Benutzeranforderung beendet.</target>
       <trans-unit id="JsonSchema.shell">
         <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
         <target state="translated">Gibt an, ob der Befehl ein Shellbefehl oder ein externes Programm ist. Wenn keine Angabe erfolgt, ist der Standardwert "false".</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/tasksQuickAccess" source-language="en" target-language="de" datatype="plaintext">
+    <body>
+      <trans-unit id="TaskService.pickRunTask">
+        <source xml:lang="en">Select the task to run</source>
+        <target state="translated">Auszuführende Aufgabe auswählen</target>
       </trans-unit>
     </body>
   </file>
@@ -328,30 +324,6 @@ Der Task "{0}" wurde durch eine Benutzeranforderung beendet.</target>
       <trans-unit id="workbench.action.tasks.disallowAutomaticTasks">
         <source xml:lang="en">Disallow Automatic Tasks in Folder</source>
         <target state="translated">Automatische Tasks im Ordner nicht zulassen</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/quickOpen" source-language="en" target-language="de" datatype="plaintext">
-    <body>
-      <trans-unit id="entryAriaLabel">
-        <source xml:lang="en">{0}, tasks</source>
-        <target state="translated">{0}, Aufgaben</target>
-      </trans-unit>
-      <trans-unit id="recentlyUsed">
-        <source xml:lang="en">recently used tasks</source>
-        <target state="translated">zuletzt verwendete Aufgaben</target>
-      </trans-unit>
-      <trans-unit id="configured">
-        <source xml:lang="en">configured tasks</source>
-        <target state="translated">konfigurierte Aufgaben</target>
-      </trans-unit>
-      <trans-unit id="detected">
-        <source xml:lang="en">detected tasks</source>
-        <target state="translated">erkannte Aufgaben</target>
-      </trans-unit>
-      <trans-unit id="customizeTask">
-        <source xml:lang="en">Configure Task</source>
-        <target state="translated">Aufgabe konfigurieren</target>
       </trans-unit>
     </body>
   </file>
@@ -506,19 +478,19 @@ Der Task "{0}" wurde durch eine Benutzeranforderung beendet.</target>
       </trans-unit>
       <trans-unit id="JsonSchema.tasks.presentation.revealProblems.always">
         <source xml:lang="en">Always reveals the problems panel when this task is executed.</source>
-        <target state="translated">Zeigt den Bereich "Probleme" immer an, wenn dieser Task ausgeführt wird</target>
+        <target state="translated">Zeigt das Panel "Probleme" immer an, wenn dieser Task ausgeführt wird.</target>
       </trans-unit>
       <trans-unit id="JsonSchema.tasks.presentation.revealProblems.onProblem">
         <source xml:lang="en">Only reveals the problems panel if a problem is found.</source>
-        <target state="translated">Zeigt den Bereich "Probleme" nur an, wenn ein Problem ermittelt wird</target>
+        <target state="translated">Zeigt das Panel "Probleme" nur an, wenn ein Problem ermittelt wird.</target>
       </trans-unit>
       <trans-unit id="JsonSchema.tasks.presentation.revealProblems.never">
         <source xml:lang="en">Never reveals the problems panel when this task is executed.</source>
-        <target state="translated">Zeigt den Bereich "Probleme" nie an, wenn dieser Task ausgeführt wird.</target>
+        <target state="translated">Zeigt das Panel "Probleme" nie an, wenn dieser Task ausgeführt wird.</target>
       </trans-unit>
       <trans-unit id="JsonSchema.tasks.presentation.revealProblems">
         <source xml:lang="en">Controls whether the problems panel is revealed when running this task or not. Takes precedence over option "reveal". Default is "never".</source>
-        <target state="translated">Legt fest, ob der Bereich "Probleme" angezeigt wird, wenn dieser Task ausgeführt wird. Hat Vorrang vor der Option "reveal". Der Standardwert ist "never".</target>
+        <target state="translated">Legt fest, ob der Panel "Probleme" angezeigt wird, wenn dieser Task ausgeführt wird. Hat Vorrang vor der Option "reveal". Der Standardwert ist "never".</target>
       </trans-unit>
       <trans-unit id="JsonSchema.tasks.presentation.reveal.always">
         <source xml:lang="en">Always reveals the terminal when this task is executed.</source>
@@ -863,6 +835,38 @@ Der Task "{0}" wurde durch eine Benutzeranforderung beendet.</target>
       <trans-unit id="JsonSchema.tasks">
         <source xml:lang="en">The task configurations. Usually these are enrichments of task already defined in the external task runner.</source>
         <target state="translated">Die Taskkonfigurationen. Normalerweise sind diese Erweiterungen der bereits in der externen Taskausführung definierten Tasks.</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/taskQuickPick" source-language="en" target-language="de" datatype="plaintext">
+    <body>
+      <trans-unit id="taskQuickPick.showAll">
+        <source xml:lang="en">Show All Tasks...</source>
+        <target state="translated">Alle Tasks anzeigen...</target>
+      </trans-unit>
+      <trans-unit id="configureTask">
+        <source xml:lang="en">Configure Task</source>
+        <target state="translated">Aufgabe konfigurieren</target>
+      </trans-unit>
+      <trans-unit id="contributedTasks">
+        <source xml:lang="en">contributed</source>
+        <target state="translated">hinzugefügt</target>
+      </trans-unit>
+      <trans-unit id="recentlyUsed">
+        <source xml:lang="en">recently used</source>
+        <target state="translated">zuletzt verwendet</target>
+      </trans-unit>
+      <trans-unit id="configured">
+        <source xml:lang="en">configured</source>
+        <target state="translated">Konfiguriert</target>
+      </trans-unit>
+      <trans-unit id="TaskQuickPick.goBack">
+        <source xml:lang="en">Go back ↩</source>
+        <target state="translated">Zurück ↩</target>
+      </trans-unit>
+      <trans-unit id="TaskQuickPick.noTasksForType">
+        <source xml:lang="en">No {0} tasks found. Go back ↩</source>
+        <target state="translated">Es wurden keine {0}-Tasks gefunden. Zurück ↩</target>
       </trans-unit>
     </body>
   </file>
@@ -1370,14 +1374,6 @@ Die Aufgabe wird ignoriert.
         <source xml:lang="en">detected tasks</source>
         <target state="translated">erkannte Aufgaben</target>
       </trans-unit>
-      <trans-unit id="pickProgressManager.description">
-        <source xml:lang="en">Detecting tasks ({0} of {1}): {2} in progress</source>
-        <target state="translated">Aufgaben werden erkannt ({0} von {1}): {2} in Bearbeitung</target>
-      </trans-unit>
-      <trans-unit id="taskQuickPick.cancel">
-        <source xml:lang="en">Stop detecting</source>
-        <target state="translated">Erkennung beenden</target>
-      </trans-unit>
       <trans-unit id="TaskService.ignoredFolder">
         <source xml:lang="en">The following workspace folders are ignored since they use task version 0.1.0: {0}</source>
         <target state="translated">Die folgenden Arbeitsbereichsordner werden ignoriert, da sie Aufgabenversion 0.1.0 verwenden: {0}</target>
@@ -1391,8 +1387,8 @@ Die Aufgabe wird ignoriert.
         <target state="translated">Auszuführende Aufgabe auswählen</target>
       </trans-unit>
       <trans-unit id="TaskService.noEntryToRun">
-        <source xml:lang="en">No task to run found. Configure Tasks...</source>
-        <target state="translated">Es wurde keine auszuführende Aufgabe gefunden. Aufgaben konfigurieren...</target>
+        <source xml:lang="en">No configured tasks. Configure Tasks...</source>
+        <target state="translated">Keine konfigurierten Tasks. Tasks konfigurieren...</target>
       </trans-unit>
       <trans-unit id="TaskService.fetchingBuildTasks">
         <source xml:lang="en">Fetching build tasks...</source>

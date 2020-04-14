@@ -16,26 +16,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/base/common/errorMessage" source-language="en" target-language="en-gb" datatype="plaintext">
-    <body>
-      <trans-unit id="stackTrace.format">
-        <source xml:lang="en">{0}: {1}</source>
-        <target state="translated">{0}: {1}</target>
-      </trans-unit>
-      <trans-unit id="nodeExceptionMessage">
-        <source xml:lang="en">A system error occurred ({0})</source>
-        <target state="new">A system error occurred ({0})</target>
-      </trans-unit>
-      <trans-unit id="error.defaultMessage">
-        <source xml:lang="en">An unknown error occurred. Please consult the log for more details.</source>
-        <target state="translated">An unknown error occurred. Please consult the log for more details.</target>
-      </trans-unit>
-      <trans-unit id="error.moreErrors">
-        <source xml:lang="en">{0} ({1} errors in total)</source>
-        <target state="translated">{0} ({1} errors in total)</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/base/common/date" source-language="en" target-language="en-gb" datatype="plaintext">
     <body>
       <trans-unit id="date.fromNow.now">
@@ -156,11 +136,23 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/base/node/processes" source-language="en" target-language="en-gb" datatype="plaintext">
+  <file original="src/vs/base/common/errorMessage" source-language="en" target-language="en-gb" datatype="plaintext">
     <body>
-      <trans-unit id="TaskRunner.UNC">
-        <source xml:lang="en">Can't execute a shell command on a UNC drive.</source>
-        <target state="translated">Can't execute a shell command on a UNC drive.</target>
+      <trans-unit id="stackTrace.format">
+        <source xml:lang="en">{0}: {1}</source>
+        <target state="translated">{0}: {1}</target>
+      </trans-unit>
+      <trans-unit id="nodeExceptionMessage">
+        <source xml:lang="en">A system error occurred ({0})</source>
+        <target state="new">A system error occurred ({0})</target>
+      </trans-unit>
+      <trans-unit id="error.defaultMessage">
+        <source xml:lang="en">An unknown error occurred. Please consult the log for more details.</source>
+        <target state="translated">An unknown error occurred. Please consult the log for more details.</target>
+      </trans-unit>
+      <trans-unit id="error.moreErrors">
+        <source xml:lang="en">{0} ({1} errors in total)</source>
+        <target state="translated">{0} ({1} errors in total)</target>
       </trans-unit>
     </body>
   </file>
@@ -190,15 +182,23 @@ action keybinding</note>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/base/browser/ui/dialog/dialog" source-language="en" target-language="en-gb" datatype="plaintext">
+  <file original="src/vs/base/node/processes" source-language="en" target-language="en-gb" datatype="plaintext">
     <body>
-      <trans-unit id="ok">
-        <source xml:lang="en">OK</source>
-        <target state="translated">OK</target>
+      <trans-unit id="TaskRunner.UNC">
+        <source xml:lang="en">Can't execute a shell command on a UNC drive.</source>
+        <target state="translated">Can't execute a shell command on a UNC drive.</target>
       </trans-unit>
-      <trans-unit id="dialogClose">
-        <source xml:lang="en">Close Dialog</source>
-        <target state="new">Close Dialog</target>
+    </body>
+  </file>
+  <file original="src/vs/base/browser/ui/aria/aria" source-language="en" target-language="en-gb" datatype="plaintext">
+    <body>
+      <trans-unit id="repeated">
+        <source xml:lang="en">{0} (occurred again)</source>
+        <target state="translated">{0} (occurred again)</target>
+      </trans-unit>
+      <trans-unit id="repeatedNtimes">
+        <source xml:lang="en">{0} (occurred {1} times)</source>
+        <target state="translated">{0} (occurred {1} times)</target>
       </trans-unit>
     </body>
   </file>
@@ -210,15 +210,15 @@ action keybinding</note>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/base/parts/quickopen/browser/quickOpenModel" source-language="en" target-language="en-gb" datatype="plaintext">
+  <file original="src/vs/base/browser/ui/dialog/dialog" source-language="en" target-language="en-gb" datatype="plaintext">
     <body>
-      <trans-unit id="quickOpenAriaLabelEntry">
-        <source xml:lang="en">{0}, picker</source>
-        <target state="translated">{0}, picker</target>
+      <trans-unit id="ok">
+        <source xml:lang="en">OK</source>
+        <target state="translated">OK</target>
       </trans-unit>
-      <trans-unit id="quickOpenAriaLabel">
-        <source xml:lang="en">picker</source>
-        <target state="translated">picker</target>
+      <trans-unit id="dialogClose">
+        <source xml:lang="en">Close Dialog</source>
+        <target state="new">Close Dialog</target>
       </trans-unit>
     </body>
   </file>
@@ -281,18 +281,6 @@ action keybinding</note>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/base/browser/ui/aria/aria" source-language="en" target-language="en-gb" datatype="plaintext">
-    <body>
-      <trans-unit id="repeated">
-        <source xml:lang="en">{0} (occurred again)</source>
-        <target state="translated">{0} (occurred again)</target>
-      </trans-unit>
-      <trans-unit id="repeatedNtimes">
-        <source xml:lang="en">{0} (occurred {1} times)</source>
-        <target state="translated">{0} (occurred {1} times)</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/base/browser/ui/menu/menu" source-language="en" target-language="en-gb" datatype="plaintext">
     <body>
       <trans-unit id="titleLabel">
@@ -308,14 +296,6 @@ action keybinding</note>
       <trans-unit id="aria list">
         <source xml:lang="en">{0}. Use the navigation keys to navigate.</source>
         <target state="new">{0}. Use the navigation keys to navigate.</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/base/parts/tree/browser/treeDefaults" source-language="en" target-language="en-gb" datatype="plaintext">
-    <body>
-      <trans-unit id="collapse all">
-        <source xml:lang="en">Collapse All</source>
-        <target state="translated">Collapse All</target>
       </trans-unit>
     </body>
   </file>
@@ -367,6 +347,66 @@ action keybinding</note>
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/base/browser/ui/findinput/replaceInput" source-language="en" target-language="en-gb" datatype="plaintext">
+    <body>
+      <trans-unit id="defaultLabel">
+        <source xml:lang="en">input</source>
+        <target state="translated">input</target>
+      </trans-unit>
+      <trans-unit id="label.preserveCaseCheckbox">
+        <source xml:lang="en">Preserve Case</source>
+        <target state="new">Preserve Case</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/base/browser/ui/inputbox/inputBox" source-language="en" target-language="en-gb" datatype="plaintext">
+    <body>
+      <trans-unit id="alertErrorMessage">
+        <source xml:lang="en">Error: {0}</source>
+        <target state="translated">Error: {0}</target>
+      </trans-unit>
+      <trans-unit id="alertWarningMessage">
+        <source xml:lang="en">Warning: {0}</source>
+        <target state="translated">Warning: {0}</target>
+      </trans-unit>
+      <trans-unit id="alertInfoMessage">
+        <source xml:lang="en">Info: {0}</source>
+        <target state="translated">Info: {0}</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/base/browser/ui/findinput/findInput" source-language="en" target-language="en-gb" datatype="plaintext">
+    <body>
+      <trans-unit id="defaultLabel">
+        <source xml:lang="en">input</source>
+        <target state="translated">input</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/base/browser/ui/tree/treeDefaults" source-language="en" target-language="en-gb" datatype="plaintext">
+    <body>
+      <trans-unit id="collapse all">
+        <source xml:lang="en">Collapse All</source>
+        <target state="translated">Collapse All</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/base/browser/ui/findinput/findInputCheckboxes" source-language="en" target-language="en-gb" datatype="plaintext">
+    <body>
+      <trans-unit id="caseDescription">
+        <source xml:lang="en">Match Case</source>
+        <target state="translated">Match Case</target>
+      </trans-unit>
+      <trans-unit id="wordsDescription">
+        <source xml:lang="en">Match Whole Word</source>
+        <target state="translated">Match Whole Word</target>
+      </trans-unit>
+      <trans-unit id="regexDescription">
+        <source xml:lang="en">Use Regular Expression</source>
+        <target state="translated">Use Regular Expression</target>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/base/parts/quickinput/browser/quickInput" source-language="en" target-language="en-gb" datatype="plaintext">
     <body>
       <trans-unit id="quickInput.back">
@@ -413,83 +453,6 @@ action keybinding</note>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/base/parts/quickopen/browser/quickOpenWidget" source-language="en" target-language="en-gb" datatype="plaintext">
-    <body>
-      <trans-unit id="quickOpenAriaLabel">
-        <source xml:lang="en">Quick picker. Type to narrow down results.</source>
-        <target state="translated">Quick picker. Type to narrow down results.</target>
-      </trans-unit>
-      <trans-unit id="treeAriaLabel">
-        <source xml:lang="en">Quick Picker</source>
-        <target state="translated">Quick Picker</target>
-      </trans-unit>
-      <trans-unit id="quickInput.visibleCount">
-        <source xml:lang="en">{0} Results</source>
-        <target state="new">{0} Results</target>
-        <note>This tells the user how many items are shown in a list of items to select from. The items can be anything. Currently not visible, but read by screen readers.</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/base/browser/ui/findinput/replaceInput" source-language="en" target-language="en-gb" datatype="plaintext">
-    <body>
-      <trans-unit id="defaultLabel">
-        <source xml:lang="en">input</source>
-        <target state="translated">input</target>
-      </trans-unit>
-      <trans-unit id="label.preserveCaseCheckbox">
-        <source xml:lang="en">Preserve Case</source>
-        <target state="new">Preserve Case</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/base/browser/ui/findinput/findInput" source-language="en" target-language="en-gb" datatype="plaintext">
-    <body>
-      <trans-unit id="defaultLabel">
-        <source xml:lang="en">input</source>
-        <target state="translated">input</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/base/browser/ui/inputbox/inputBox" source-language="en" target-language="en-gb" datatype="plaintext">
-    <body>
-      <trans-unit id="alertErrorMessage">
-        <source xml:lang="en">Error: {0}</source>
-        <target state="translated">Error: {0}</target>
-      </trans-unit>
-      <trans-unit id="alertWarningMessage">
-        <source xml:lang="en">Warning: {0}</source>
-        <target state="translated">Warning: {0}</target>
-      </trans-unit>
-      <trans-unit id="alertInfoMessage">
-        <source xml:lang="en">Info: {0}</source>
-        <target state="translated">Info: {0}</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/base/browser/ui/tree/treeDefaults" source-language="en" target-language="en-gb" datatype="plaintext">
-    <body>
-      <trans-unit id="collapse all">
-        <source xml:lang="en">Collapse All</source>
-        <target state="translated">Collapse All</target>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/base/browser/ui/findinput/findInputCheckboxes" source-language="en" target-language="en-gb" datatype="plaintext">
-    <body>
-      <trans-unit id="caseDescription">
-        <source xml:lang="en">Match Case</source>
-        <target state="translated">Match Case</target>
-      </trans-unit>
-      <trans-unit id="wordsDescription">
-        <source xml:lang="en">Match Whole Word</source>
-        <target state="translated">Match Whole Word</target>
-      </trans-unit>
-      <trans-unit id="regexDescription">
-        <source xml:lang="en">Use Regular Expression</source>
-        <target state="translated">Use Regular Expression</target>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/base/browser/ui/tree/abstractTree" source-language="en" target-language="en-gb" datatype="plaintext">
     <body>
       <trans-unit id="clear">
@@ -511,6 +474,14 @@ action keybinding</note>
       <trans-unit id="found">
         <source xml:lang="en">Matched {0} out of {1} elements</source>
         <target state="new">Matched {0} out of {1} elements</target>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/base/browser/ui/splitview/paneview" source-language="en" target-language="en-gb" datatype="plaintext">
+    <body>
+      <trans-unit id="viewSection">
+        <source xml:lang="en">{0} Section</source>
+        <target state="new">{0} Section</target>
       </trans-unit>
     </body>
   </file>
