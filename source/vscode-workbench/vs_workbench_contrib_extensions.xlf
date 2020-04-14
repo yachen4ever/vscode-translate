@@ -122,7 +122,7 @@
         <source xml:lang="en">Extension id required.</source>
       </trans-unit>
       <trans-unit id="notInstalled">
-        <source xml:lang="en">Extension '{0}' is not installed. Make sure you use the full extension ID, including the publisher, e.g.: ms-vscode.csharp.</source>
+        <source xml:lang="en">Extension '{0}' is not installed. Make sure you use the full extension ID, including the publisher, e.g.: ms-dotnettools.csharp.</source>
       </trans-unit>
       <trans-unit id="workbench.extensions.search.description">
         <source xml:lang="en">Search for a specific extension</source>
@@ -364,6 +364,62 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/extensions/common/extensionsInput" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="extensionsInputName_Duplicated4">
+        <source xml:lang="en">Extension: {0}</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/extensions/browser/extensionsDependencyChecker" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="extensions_Duplicated14">
+        <source xml:lang="en">Extensions</source>
+      </trans-unit>
+      <trans-unit id="auto install missing deps">
+        <source xml:lang="en">Install Missing Dependencies</source>
+      </trans-unit>
+      <trans-unit id="finished installing missing deps">
+        <source xml:lang="en">Finished installing missing dependencies. Please reload the window now.</source>
+      </trans-unit>
+      <trans-unit id="reload_Duplicated25">
+        <source xml:lang="en">Reload Window</source>
+      </trans-unit>
+      <trans-unit id="no missing deps">
+        <source xml:lang="en">There are no missing dependencies to install.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/extensions/browser/extensionsActivationProgress" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="activation">
+        <source xml:lang="en">Activating Extensions...</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/extensions/browser/extensionsQuickAccess" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="type">
+        <source xml:lang="en">Type an extension name to install or search.</source>
+      </trans-unit>
+      <trans-unit id="searchFor">
+        <source xml:lang="en">Press Enter to search for extension '{0}'.</source>
+      </trans-unit>
+      <trans-unit id="install_Duplicated27">
+        <source xml:lang="en">Press Enter to install extension '{0}'.</source>
+      </trans-unit>
+      <trans-unit id="manage_Duplicated30">
+        <source xml:lang="en">Press Enter to manage your extensions.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/extensions/browser/remoteExtensionsInstaller" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="remote">
+        <source xml:lang="en">Remote</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/extensions/common/extensionsFileTemplate" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="app.extensions.json.title">
@@ -380,62 +436,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/extensions/browser/remoteExtensionsInstaller" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="remote">
-        <source xml:lang="en">Remote</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/extensions/common/extensionsInput" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="extensionsInputName_Duplicated4">
-        <source xml:lang="en">Extension: {0}</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/extensions/browser/extensionsQuickAccess" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="type">
-        <source xml:lang="en">Type an extension name to install or search.</source>
-      </trans-unit>
-      <trans-unit id="searchFor">
-        <source xml:lang="en">Press Enter to search for extension '{0}'.</source>
-      </trans-unit>
-      <trans-unit id="install_Duplicated25">
-        <source xml:lang="en">Press Enter to install extension '{0}'.</source>
-      </trans-unit>
-      <trans-unit id="manage_Duplicated28">
-        <source xml:lang="en">Press Enter to manage your extensions.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/extensions/browser/extensionsDependencyChecker" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="extensions_Duplicated14">
-        <source xml:lang="en">Extensions</source>
-      </trans-unit>
-      <trans-unit id="auto install missing deps">
-        <source xml:lang="en">Install Missing Dependencies</source>
-      </trans-unit>
-      <trans-unit id="finished installing missing deps">
-        <source xml:lang="en">Finished installing missing dependencies. Please reload the window now.</source>
-      </trans-unit>
-      <trans-unit id="reload_Duplicated30">
-        <source xml:lang="en">Reload Window</source>
-      </trans-unit>
-      <trans-unit id="no missing deps">
-        <source xml:lang="en">There are no missing dependencies to install.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/extensions/browser/extensionsActivationProgress" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="activation">
-        <source xml:lang="en">Activating Extensions...</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/extensions/common/extensionsUtils" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="disableOtherKeymapsConfirmation">
@@ -446,6 +446,16 @@
       </trans-unit>
       <trans-unit id="no_Duplicated32">
         <source xml:lang="en">No</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/extensions/browser/exeBasedRecommendations" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="exeRecommended">
+        <source xml:lang="en">The '{0}' extension is recommended as you have {1} installed on your system.</source>
+      </trans-unit>
+      <trans-unit id="exeBasedRecommendation">
+        <source xml:lang="en">This extension is recommended because you have {0} installed.</source>
       </trans-unit>
     </body>
   </file>
@@ -480,6 +490,54 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/extensions/browser/dynamicWorkspaceRecommendations" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="dynamicWorkspaceRecommendation">
+        <source xml:lang="en">This extension may interest you because it's popular among users of the {0} repository.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/extensions/browser/workspaceRecommendations" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="neverShowAgain_Duplicated36">
+        <source xml:lang="en">Don't Show Again</source>
+      </trans-unit>
+      <trans-unit id="workspaceRecommendation">
+        <source xml:lang="en">This extension is recommended by users of the current workspace.</source>
+      </trans-unit>
+      <trans-unit id="workspaceRecommended">
+        <source xml:lang="en">This workspace has extension recommendations.</source>
+      </trans-unit>
+      <trans-unit id="installAll">
+        <source xml:lang="en">Install All</source>
+      </trans-unit>
+      <trans-unit id="showRecommendations_Duplicated38">
+        <source xml:lang="en">Show Recommendations</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/extensions/browser/fileBasedRecommendations" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="searchMarketplace">
+        <source xml:lang="en">Search Marketplace</source>
+      </trans-unit>
+      <trans-unit id="fileBasedRecommendation">
+        <source xml:lang="en">This extension is recommended based on the files you recently opened.</source>
+      </trans-unit>
+      <trans-unit id="reallyRecommended2">
+        <source xml:lang="en">The '{0}' extension is recommended for this file type.</source>
+      </trans-unit>
+      <trans-unit id="reallyRecommendedExtensionPack">
+        <source xml:lang="en">The '{0}' extension pack is recommended for this file type.</source>
+      </trans-unit>
+      <trans-unit id="showLanguageExtensions">
+        <source xml:lang="en">The Marketplace has extensions that can help with '.{0}' files</source>
+      </trans-unit>
+      <trans-unit id="dontShowAgainExtension">
+        <source xml:lang="en">Don't Show Again for '.{0}' files</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/extensions/browser/extensionEditor" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="name">
@@ -508,6 +566,9 @@
       </trans-unit>
       <trans-unit id="license">
         <source xml:lang="en">License</source>
+      </trans-unit>
+      <trans-unit id="version">
+        <source xml:lang="en">Version</source>
       </trans-unit>
       <trans-unit id="details">
         <source xml:lang="en">Details</source>
@@ -639,7 +700,7 @@
         <source xml:lang="en">Color Themes ({0})</source>
       </trans-unit>
       <trans-unit id="iconThemes">
-        <source xml:lang="en">Icon Themes ({0})</source>
+        <source xml:lang="en">File Icon Themes ({0})</source>
       </trans-unit>
       <trans-unit id="colors">
         <source xml:lang="en">Colors ({0})</source>
@@ -706,73 +767,18 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/extensions/browser/extensionTipsService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="neverShowAgain">
-        <source xml:lang="en">Don't Show Again</source>
-      </trans-unit>
-      <trans-unit id="searchMarketplace">
-        <source xml:lang="en">Search Marketplace</source>
-      </trans-unit>
-      <trans-unit id="dynamicWorkspaceRecommendation">
-        <source xml:lang="en">This extension may interest you because it's popular among users of the {0} repository.</source>
-      </trans-unit>
-      <trans-unit id="exeBasedRecommendation">
-        <source xml:lang="en">This extension is recommended because you have {0} installed.</source>
-      </trans-unit>
-      <trans-unit id="fileBasedRecommendation">
-        <source xml:lang="en">This extension is recommended based on the files you recently opened.</source>
-      </trans-unit>
-      <trans-unit id="workspaceRecommendation">
-        <source xml:lang="en">This extension is recommended by users of the current workspace.</source>
-      </trans-unit>
-      <trans-unit id="workspaceRecommended">
-        <source xml:lang="en">This workspace has extension recommendations.</source>
-      </trans-unit>
-      <trans-unit id="installAll">
-        <source xml:lang="en">Install All</source>
-      </trans-unit>
-      <trans-unit id="showRecommendations">
-        <source xml:lang="en">Show Recommendations</source>
-      </trans-unit>
-      <trans-unit id="exeRecommended">
-        <source xml:lang="en">The '{0}' extension is recommended as you have {1} installed on your system.</source>
-      </trans-unit>
-      <trans-unit id="install_Duplicated26">
-        <source xml:lang="en">Install</source>
-      </trans-unit>
-      <trans-unit id="ignoreExtensionRecommendations">
-        <source xml:lang="en">Do you want to ignore all extension recommendations?</source>
-      </trans-unit>
-      <trans-unit id="ignoreAll">
-        <source xml:lang="en">Yes, Ignore All</source>
-      </trans-unit>
-      <trans-unit id="no_Duplicated33">
-        <source xml:lang="en">No</source>
-      </trans-unit>
-      <trans-unit id="reallyRecommended2">
-        <source xml:lang="en">The '{0}' extension is recommended for this file type.</source>
-      </trans-unit>
-      <trans-unit id="reallyRecommendedExtensionPack">
-        <source xml:lang="en">The '{0}' extension pack is recommended for this file type.</source>
-      </trans-unit>
-      <trans-unit id="showLanguageExtensions">
-        <source xml:lang="en">The Marketplace has extensions that can help with '.{0}' files</source>
-      </trans-unit>
-      <trans-unit id="dontShowAgainExtension">
-        <source xml:lang="en">Don't Show Again for '.{0}' files</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/extensions/browser/extensionsViews" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="extensions_Duplicated15">
         <source xml:lang="en">Extensions</source>
       </trans-unit>
+      <trans-unit id="extension-arialabel_Duplicated40">
+        <source xml:lang="en">{0}. Press enter for extension details.</source>
+      </trans-unit>
       <trans-unit id="galleryError">
         <source xml:lang="en">We cannot connect to the Extensions Marketplace at this time, please try again later.</source>
       </trans-unit>
-      <trans-unit id="error_Duplicated36">
+      <trans-unit id="error_Duplicated42">
         <source xml:lang="en">Error while loading extensions. {0}</source>
       </trans-unit>
       <trans-unit id="no extensions found">
@@ -786,13 +792,38 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/extensions/browser/extensionRecommendations" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="neverShowAgain_Duplicated37">
+        <source xml:lang="en">Don't Show Again</source>
+      </trans-unit>
+      <trans-unit id="install_Duplicated28">
+        <source xml:lang="en">Install</source>
+      </trans-unit>
+      <trans-unit id="showRecommendations_Duplicated39">
+        <source xml:lang="en">Show Recommendations</source>
+      </trans-unit>
+      <trans-unit id="ignoreExtensionRecommendations">
+        <source xml:lang="en">Do you want to ignore all extension recommendations?</source>
+      </trans-unit>
+      <trans-unit id="ignoreAll">
+        <source xml:lang="en">Yes, Ignore All</source>
+      </trans-unit>
+      <trans-unit id="no_Duplicated33">
+        <source xml:lang="en">No</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/extensions/browser/extensionsViewer" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="error_Duplicated37">
+      <trans-unit id="error_Duplicated43">
         <source xml:lang="en">Error</source>
       </trans-unit>
       <trans-unit id="Unknown Extension">
         <source xml:lang="en">Unknown Extension:</source>
+      </trans-unit>
+      <trans-unit id="extension-arialabel_Duplicated41">
+        <source xml:lang="en">{0}. Press enter for extension details.</source>
       </trans-unit>
     </body>
   </file>
@@ -806,12 +837,6 @@
       </trans-unit>
       <trans-unit id="noRating">
         <source xml:lang="en">No rating</source>
-      </trans-unit>
-      <trans-unit id="extension-arialabel">
-        <source xml:lang="en">{0}. Press enter for extension details.</source>
-      </trans-unit>
-      <trans-unit id="viewExtensionDetailsAria">
-        <source xml:lang="en">{0}. Press enter for extension details.</source>
       </trans-unit>
       <trans-unit id="remote extension title">
         <source xml:lang="en">Extension in {0}</source>
@@ -853,7 +878,7 @@
       <trans-unit id="just now">
         <source xml:lang="en">Just now</source>
       </trans-unit>
-      <trans-unit id="install_Duplicated27">
+      <trans-unit id="install_Duplicated29">
         <source xml:lang="en">Install</source>
       </trans-unit>
       <trans-unit id="installing">
@@ -904,7 +929,7 @@
       <trans-unit id="updateAction">
         <source xml:lang="en">Update</source>
       </trans-unit>
-      <trans-unit id="manage_Duplicated29">
+      <trans-unit id="manage_Duplicated31">
         <source xml:lang="en">Manage</source>
       </trans-unit>
       <trans-unit id="ManageExtensionAction.uninstallingTooltip">
@@ -1253,7 +1278,7 @@
       <trans-unit id="finished installing">
         <source xml:lang="en">Successfully installed extensions in {0}. Please reload the window to enable them.</source>
       </trans-unit>
-      <trans-unit id="reload_Duplicated31">
+      <trans-unit id="reload_Duplicated26">
         <source xml:lang="en">Reload Window</source>
       </trans-unit>
       <trans-unit id="extensionButtonProminentBackground">

@@ -198,36 +198,6 @@ This option requires restart to take effect.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/actions/developerActions" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="inspect context keys">
-        <source xml:lang="en">Inspect Context Keys</source>
-      </trans-unit>
-      <trans-unit id="toggle screencast mode">
-        <source xml:lang="en">Toggle Screencast Mode</source>
-      </trans-unit>
-      <trans-unit id="logStorage">
-        <source xml:lang="en">Log Storage Database Contents</source>
-        <note>A developer only action to log the contents of the storage for the current window.</note>
-      </trans-unit>
-      <trans-unit id="logWorkingCopies">
-        <source xml:lang="en">Log Working Copies</source>
-        <note>A developer only action to log the working copies that exist.</note>
-      </trans-unit>
-      <trans-unit id="developer_Duplicated10">
-        <source xml:lang="en">Developer</source>
-      </trans-unit>
-      <trans-unit id="screencastModeConfigurationTitle">
-        <source xml:lang="en">Screencast Mode</source>
-      </trans-unit>
-      <trans-unit id="screencastMode.location.verticalPosition">
-        <source xml:lang="en">Controls the vertical offset of the screencast mode overlay from the bottom as a percentage of the workbench height.</source>
-      </trans-unit>
-      <trans-unit id="screencastMode.onlyKeyboardShortcuts">
-        <source xml:lang="en">Only show keyboard shortcuts in Screencast Mode.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/browser/actions/navigationActions" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="navigateLeft">
@@ -263,6 +233,46 @@ This option requires restart to take effect.</source>
       </trans-unit>
       <trans-unit id="quickSelectPrevious">
         <source xml:lang="en">Select Previous in Quick Open</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/actions/developerActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="inspect context keys">
+        <source xml:lang="en">Inspect Context Keys</source>
+      </trans-unit>
+      <trans-unit id="toggle screencast mode">
+        <source xml:lang="en">Toggle Screencast Mode</source>
+      </trans-unit>
+      <trans-unit id="logStorage">
+        <source xml:lang="en">Log Storage Database Contents</source>
+        <note>A developer only action to log the contents of the storage for the current window.</note>
+      </trans-unit>
+      <trans-unit id="logWorkingCopies">
+        <source xml:lang="en">Log Working Copies</source>
+        <note>A developer only action to log the working copies that exist.</note>
+      </trans-unit>
+      <trans-unit id="developer_Duplicated10">
+        <source xml:lang="en">Developer</source>
+      </trans-unit>
+      <trans-unit id="screencastModeConfigurationTitle">
+        <source xml:lang="en">Screencast Mode</source>
+      </trans-unit>
+      <trans-unit id="screencastMode.location.verticalPosition">
+        <source xml:lang="en">Controls the vertical offset of the screencast mode overlay from the bottom as a percentage of the workbench height.</source>
+      </trans-unit>
+      <trans-unit id="screencastMode.onlyKeyboardShortcuts">
+        <source xml:lang="en">Only show keyboard shortcuts in Screencast Mode.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/sidebar/sidebarPart" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="focusSideBar">
+        <source xml:lang="en">Focus into Side Bar</source>
+      </trans-unit>
+      <trans-unit id="viewCategory">
+        <source xml:lang="en">View</source>
       </trans-unit>
     </body>
   </file>
@@ -357,16 +367,6 @@ This option requires restart to take effect.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/sidebar/sidebarPart" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="focusSideBar">
-        <source xml:lang="en">Focus into Side Bar</source>
-      </trans-unit>
-      <trans-unit id="viewCategory">
-        <source xml:lang="en">View</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/electron-browser/actions/developerActions" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="toggleDevTools">
@@ -446,6 +446,142 @@ This option requires restart to take effect.</source>
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/browser/actions/windowActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="remove">
+        <source xml:lang="en">Remove from Recently Opened</source>
+      </trans-unit>
+      <trans-unit id="dirtyRecentlyOpened">
+        <source xml:lang="en">Workspace With Dirty Files</source>
+      </trans-unit>
+      <trans-unit id="workspaces_Duplicated16">
+        <source xml:lang="en">workspaces</source>
+      </trans-unit>
+      <trans-unit id="files">
+        <source xml:lang="en">files</source>
+      </trans-unit>
+      <trans-unit id="openRecentPlaceholderMac">
+        <source xml:lang="en">Select to open (hold Cmd-key to force new window or Alt-key for same window)</source>
+      </trans-unit>
+      <trans-unit id="openRecentPlaceholder">
+        <source xml:lang="en">Select to open (hold Ctrl-key to force new window or Alt-key for same window)</source>
+      </trans-unit>
+      <trans-unit id="dirtyWorkspace">
+        <source xml:lang="en">Workspace with Dirty Files</source>
+      </trans-unit>
+      <trans-unit id="dirtyWorkspaceConfirm">
+        <source xml:lang="en">Do you want to open the workspace to review the dirty files?</source>
+      </trans-unit>
+      <trans-unit id="dirtyWorkspaceConfirmDetail">
+        <source xml:lang="en">Workspaces with dirty files cannot be removed until all dirty files have been saved or reverted.</source>
+      </trans-unit>
+      <trans-unit id="recentDirtyAriaLabel">
+        <source xml:lang="en">{0}, dirty workspace</source>
+      </trans-unit>
+      <trans-unit id="openRecent">
+        <source xml:lang="en">Open Recent...</source>
+      </trans-unit>
+      <trans-unit id="quickOpenRecent">
+        <source xml:lang="en">Quick Open Recent...</source>
+      </trans-unit>
+      <trans-unit id="toggleFullScreen">
+        <source xml:lang="en">Toggle Full Screen</source>
+      </trans-unit>
+      <trans-unit id="reloadWindow">
+        <source xml:lang="en">Reload Window</source>
+      </trans-unit>
+      <trans-unit id="about">
+        <source xml:lang="en">About</source>
+      </trans-unit>
+      <trans-unit id="newWindow">
+        <source xml:lang="en">New Window</source>
+      </trans-unit>
+      <trans-unit id="file_Duplicated18">
+        <source xml:lang="en">File</source>
+      </trans-unit>
+      <trans-unit id="view_Duplicated3">
+        <source xml:lang="en">View</source>
+      </trans-unit>
+      <trans-unit id="developer_Duplicated11">
+        <source xml:lang="en">Developer</source>
+      </trans-unit>
+      <trans-unit id="help_Duplicated15">
+        <source xml:lang="en">Help</source>
+      </trans-unit>
+      <trans-unit id="miNewWindow">
+        <source xml:lang="en">New &amp;&amp;Window</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miOpenRecent">
+        <source xml:lang="en">Open &amp;&amp;Recent</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miMore">
+        <source xml:lang="en">&amp;&amp;More...</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miToggleFullScreen">
+        <source xml:lang="en">&amp;&amp;Full Screen</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miAbout">
+        <source xml:lang="en">&amp;&amp;About</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/actions/workspaceActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="openFile">
+        <source xml:lang="en">Open File...</source>
+      </trans-unit>
+      <trans-unit id="openFolder">
+        <source xml:lang="en">Open Folder...</source>
+      </trans-unit>
+      <trans-unit id="openFileFolder">
+        <source xml:lang="en">Open...</source>
+      </trans-unit>
+      <trans-unit id="openWorkspaceAction">
+        <source xml:lang="en">Open Workspace...</source>
+      </trans-unit>
+      <trans-unit id="closeWorkspace">
+        <source xml:lang="en">Close Workspace</source>
+      </trans-unit>
+      <trans-unit id="noWorkspaceOpened">
+        <source xml:lang="en">There is currently no workspace opened in this instance to close.</source>
+      </trans-unit>
+      <trans-unit id="openWorkspaceConfigFile">
+        <source xml:lang="en">Open Workspace Configuration File</source>
+      </trans-unit>
+      <trans-unit id="globalRemoveFolderFromWorkspace">
+        <source xml:lang="en">Remove Folder from Workspace...</source>
+      </trans-unit>
+      <trans-unit id="saveWorkspaceAsAction">
+        <source xml:lang="en">Save Workspace As...</source>
+      </trans-unit>
+      <trans-unit id="duplicateWorkspaceInNewWindow">
+        <source xml:lang="en">Duplicate Workspace in New Window</source>
+      </trans-unit>
+      <trans-unit id="workspaces_Duplicated17">
+        <source xml:lang="en">Workspaces</source>
+      </trans-unit>
+      <trans-unit id="miAddFolderToWorkspace">
+        <source xml:lang="en">A&amp;&amp;dd Folder to Workspace...</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miSaveWorkspaceAs">
+        <source xml:lang="en">Save Workspace As...</source>
+      </trans-unit>
+      <trans-unit id="miCloseFolder">
+        <source xml:lang="en">Close &amp;&amp;Folder</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miCloseWorkspace">
+        <source xml:lang="en">Close &amp;&amp;Workspace</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/api/browser/viewsExtensionPoint" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="vscode.extension.contributes.views.containers.id">
@@ -512,13 +648,13 @@ This option requires restart to take effect.</source>
       <trans-unit id="requireidstring">
         <source xml:lang="en">property `{0}` is mandatory and must be of type `string`. Only alphanumeric characters, '_', and '-' are allowed.</source>
       </trans-unit>
-      <trans-unit id="requirestring_Duplicated16">
+      <trans-unit id="requirestring_Duplicated20">
         <source xml:lang="en">property `{0}` is mandatory and must be of type `string`</source>
       </trans-unit>
       <trans-unit id="showViewlet">
         <source xml:lang="en">Show {0}</source>
       </trans-unit>
-      <trans-unit id="view_Duplicated3">
+      <trans-unit id="view_Duplicated4">
         <source xml:lang="en">View</source>
       </trans-unit>
       <trans-unit id="ViewContainerRequiresProposedAPI">
@@ -533,159 +669,23 @@ This option requires restart to take effect.</source>
       <trans-unit id="duplicateView2">
         <source xml:lang="en">A view with id `{0}` is already registered.</source>
       </trans-unit>
-      <trans-unit id="requirearray_Duplicated18">
+      <trans-unit id="requirearray_Duplicated22">
         <source xml:lang="en">views must be an array</source>
       </trans-unit>
-      <trans-unit id="optstring_Duplicated20">
+      <trans-unit id="optstring_Duplicated24">
         <source xml:lang="en">property `{0}` can be omitted or must be of type `string`</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/actions/workspaceActions" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="openFile">
-        <source xml:lang="en">Open File...</source>
-      </trans-unit>
-      <trans-unit id="openFolder">
-        <source xml:lang="en">Open Folder...</source>
-      </trans-unit>
-      <trans-unit id="openFileFolder">
-        <source xml:lang="en">Open...</source>
-      </trans-unit>
-      <trans-unit id="openWorkspaceAction">
-        <source xml:lang="en">Open Workspace...</source>
-      </trans-unit>
-      <trans-unit id="closeWorkspace">
-        <source xml:lang="en">Close Workspace</source>
-      </trans-unit>
-      <trans-unit id="noWorkspaceOpened">
-        <source xml:lang="en">There is currently no workspace opened in this instance to close.</source>
-      </trans-unit>
-      <trans-unit id="openWorkspaceConfigFile">
-        <source xml:lang="en">Open Workspace Configuration File</source>
-      </trans-unit>
-      <trans-unit id="globalRemoveFolderFromWorkspace">
-        <source xml:lang="en">Remove Folder from Workspace...</source>
-      </trans-unit>
-      <trans-unit id="saveWorkspaceAsAction">
-        <source xml:lang="en">Save Workspace As...</source>
-      </trans-unit>
-      <trans-unit id="duplicateWorkspaceInNewWindow">
-        <source xml:lang="en">Duplicate Workspace in New Window</source>
-      </trans-unit>
-      <trans-unit id="workspaces_Duplicated22">
-        <source xml:lang="en">Workspaces</source>
-      </trans-unit>
-      <trans-unit id="miAddFolderToWorkspace">
-        <source xml:lang="en">A&amp;&amp;dd Folder to Workspace...</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miSaveWorkspaceAs">
-        <source xml:lang="en">Save Workspace As...</source>
-      </trans-unit>
-      <trans-unit id="miCloseFolder">
-        <source xml:lang="en">Close &amp;&amp;Folder</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miCloseWorkspace">
-        <source xml:lang="en">Close &amp;&amp;Workspace</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/actions/windowActions" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="remove">
-        <source xml:lang="en">Remove from Recently Opened</source>
-      </trans-unit>
-      <trans-unit id="dirtyRecentlyOpened">
-        <source xml:lang="en">Workspace With Dirty Files</source>
-      </trans-unit>
-      <trans-unit id="workspaces_Duplicated23">
-        <source xml:lang="en">workspaces</source>
-      </trans-unit>
-      <trans-unit id="files">
-        <source xml:lang="en">files</source>
-      </trans-unit>
-      <trans-unit id="openRecentPlaceholderMac">
-        <source xml:lang="en">Select to open (hold Cmd-key to force new window or Alt-key for same window)</source>
-      </trans-unit>
-      <trans-unit id="openRecentPlaceholder">
-        <source xml:lang="en">Select to open (hold Ctrl-key to force new window or Alt-key for same window)</source>
-      </trans-unit>
-      <trans-unit id="dirtyWorkspace">
-        <source xml:lang="en">Workspace with Dirty Files</source>
-      </trans-unit>
-      <trans-unit id="dirtyWorkspaceConfirm">
-        <source xml:lang="en">Do you want to open the workspace to review the dirty files?</source>
-      </trans-unit>
-      <trans-unit id="dirtyWorkspaceConfirmDetail">
-        <source xml:lang="en">Workspaces with dirty files cannot be removed until all dirty files have been saved or reverted.</source>
-      </trans-unit>
-      <trans-unit id="recentDirtyAriaLabel">
-        <source xml:lang="en">{0}, dirty workspace</source>
-      </trans-unit>
-      <trans-unit id="openRecent">
-        <source xml:lang="en">Open Recent...</source>
-      </trans-unit>
-      <trans-unit id="quickOpenRecent">
-        <source xml:lang="en">Quick Open Recent...</source>
-      </trans-unit>
-      <trans-unit id="toggleFullScreen">
-        <source xml:lang="en">Toggle Full Screen</source>
-      </trans-unit>
-      <trans-unit id="reloadWindow">
-        <source xml:lang="en">Reload Window</source>
-      </trans-unit>
-      <trans-unit id="about">
-        <source xml:lang="en">About</source>
-      </trans-unit>
-      <trans-unit id="newWindow">
-        <source xml:lang="en">New Window</source>
-      </trans-unit>
-      <trans-unit id="file_Duplicated24">
-        <source xml:lang="en">File</source>
-      </trans-unit>
-      <trans-unit id="view_Duplicated4">
-        <source xml:lang="en">View</source>
-      </trans-unit>
-      <trans-unit id="developer_Duplicated11">
-        <source xml:lang="en">Developer</source>
-      </trans-unit>
-      <trans-unit id="help_Duplicated15">
-        <source xml:lang="en">Help</source>
-      </trans-unit>
-      <trans-unit id="miNewWindow">
-        <source xml:lang="en">New &amp;&amp;Window</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miOpenRecent">
-        <source xml:lang="en">Open &amp;&amp;Recent</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miMore">
-        <source xml:lang="en">&amp;&amp;More...</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miToggleFullScreen">
-        <source xml:lang="en">&amp;&amp;Full Screen</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miAbout">
-        <source xml:lang="en">&amp;&amp;About</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
     </body>
   </file>
   <file original="src/vs/workbench/api/common/menusExtensionPoint" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="requirearray_Duplicated19">
+      <trans-unit id="requirearray_Duplicated23">
         <source xml:lang="en">menu items must be an array</source>
       </trans-unit>
-      <trans-unit id="requirestring_Duplicated17">
+      <trans-unit id="requirestring_Duplicated21">
         <source xml:lang="en">property `{0}` is mandatory and must be of type `string`</source>
       </trans-unit>
-      <trans-unit id="optstring_Duplicated21">
+      <trans-unit id="optstring_Duplicated25">
         <source xml:lang="en">property `{0}` can be omitted or must be of type `string`</source>
       </trans-unit>
       <trans-unit id="vscode.extension.contributes.menuItem.command">
@@ -942,7 +942,7 @@ This option requires restart to take effect.</source>
         <source xml:lang="en">Controls whether tabs are closed in most recently used order or from left to right.</source>
       </trans-unit>
       <trans-unit id="showIcons">
-        <source xml:lang="en">Controls whether opened editors should show with an icon or not. This requires an icon theme to be enabled as well.</source>
+        <source xml:lang="en">Controls whether opened editors should show with an icon or not. This requires an file icon theme to be enabled as well.</source>
       </trans-unit>
       <trans-unit id="enablePreview">
         <source xml:lang="en">Controls whether opened editors show as preview. Preview editors are reused until they are pinned (e.g. via double click or editing) and show up with an italic font style.</source>
@@ -1092,6 +1092,9 @@ This option requires restart to take effect.</source>
       <trans-unit id="windowConfigurationTitle_Duplicated13">
         <source xml:lang="en">Window</source>
       </trans-unit>
+      <trans-unit id="window.titleSeparator">
+        <source xml:lang="en">Separator used by `window.title`.</source>
+      </trans-unit>
       <trans-unit id="window.menuBarVisibility.default">
         <source xml:lang="en">Menu is only hidden in full screen mode.</source>
       </trans-unit>
@@ -1239,25 +1242,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/browser/mainThreadMessageService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="extensionSource_Duplicated30">
-        <source xml:lang="en">{0} (Extension)</source>
-      </trans-unit>
-      <trans-unit id="defaultSource">
-        <source xml:lang="en">Extension</source>
-      </trans-unit>
-      <trans-unit id="manageExtension_Duplicated32">
-        <source xml:lang="en">Manage Extension</source>
-      </trans-unit>
-      <trans-unit id="cancel_Duplicated35">
-        <source xml:lang="en">Cancel</source>
-      </trans-unit>
-      <trans-unit id="ok_Duplicated38">
-        <source xml:lang="en">OK</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/api/browser/mainThreadFileSystemEventService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="files.participants.timeout">
@@ -1267,7 +1251,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
   </file>
   <file original="src/vs/workbench/api/browser/mainThreadProgress" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="manageExtension_Duplicated33">
+      <trans-unit id="manageExtension_Duplicated30">
         <source xml:lang="en">Manage Extension</source>
       </trans-unit>
     </body>
@@ -1380,6 +1364,9 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="moveFocusedView.selectDestination">
         <source xml:lang="en">Select a Destination for the View</source>
       </trans-unit>
+      <trans-unit id="moveFocusedView.title">
+        <source xml:lang="en">View: Move {0}</source>
+      </trans-unit>
       <trans-unit id="sidebar">
         <source xml:lang="en">Side Bar</source>
       </trans-unit>
@@ -1406,13 +1393,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/panel/panelPart" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="hidePanel">
-        <source xml:lang="en">Hide Panel</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/browser/parts/activitybar/activitybarPart" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="hideMenu">
@@ -1434,11 +1414,37 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
   </file>
   <file original="src/vs/workbench/browser/parts/statusbar/statusbarPart" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="hide_Duplicated40">
+      <trans-unit id="hide_Duplicated33">
         <source xml:lang="en">Hide '{0}'</source>
       </trans-unit>
       <trans-unit id="hideStatusBar">
         <source xml:lang="en">Hide Status Bar</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/panel/panelPart" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="hidePanel">
+        <source xml:lang="en">Hide Panel</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/browser/mainThreadMessageService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="extensionSource_Duplicated35">
+        <source xml:lang="en">{0} (Extension)</source>
+      </trans-unit>
+      <trans-unit id="defaultSource">
+        <source xml:lang="en">Extension</source>
+      </trans-unit>
+      <trans-unit id="manageExtension_Duplicated31">
+        <source xml:lang="en">Manage Extension</source>
+      </trans-unit>
+      <trans-unit id="cancel_Duplicated37">
+        <source xml:lang="en">Cancel</source>
+      </trans-unit>
+      <trans-unit id="ok_Duplicated40">
+        <source xml:lang="en">OK</source>
       </trans-unit>
     </body>
   </file>
@@ -1452,13 +1458,28 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
   <file original="src/vs/workbench/common/theme" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="tabActiveBackground">
-        <source xml:lang="en">Active tab background color. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
+        <source xml:lang="en">Active tab background color in an active group. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
       </trans-unit>
       <trans-unit id="tabUnfocusedActiveBackground">
         <source xml:lang="en">Active tab background color in an unfocused group. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
       </trans-unit>
       <trans-unit id="tabInactiveBackground">
-        <source xml:lang="en">Inactive tab background color. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
+        <source xml:lang="en">Inactive tab background color in an active group. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
+      </trans-unit>
+      <trans-unit id="tabUnfocusedInactiveBackground">
+        <source xml:lang="en">Inactive tab background color in an unfocused group. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
+      </trans-unit>
+      <trans-unit id="tabActiveForeground">
+        <source xml:lang="en">Active tab foreground color in an active group. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
+      </trans-unit>
+      <trans-unit id="tabInactiveForeground">
+        <source xml:lang="en">Inactive tab foreground color in an active group. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
+      </trans-unit>
+      <trans-unit id="tabUnfocusedActiveForeground">
+        <source xml:lang="en">Active tab foreground color in an unfocused group. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
+      </trans-unit>
+      <trans-unit id="tabUnfocusedInactiveForeground">
+        <source xml:lang="en">Inactive tab foreground color in an unfocused group. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
       </trans-unit>
       <trans-unit id="tabHoverBackground">
         <source xml:lang="en">Tab background color when hovering. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
@@ -1466,8 +1487,11 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="tabUnfocusedHoverBackground">
         <source xml:lang="en">Tab background color in an unfocused group when hovering. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
       </trans-unit>
-      <trans-unit id="tabBorder">
-        <source xml:lang="en">Border to separate tabs from each other. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
+      <trans-unit id="tabHoverForeground">
+        <source xml:lang="en">Tab foreground color when hovering. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
+      </trans-unit>
+      <trans-unit id="tabUnfocusedHoverForeground">
+        <source xml:lang="en">Tab foreground color in an unfocused group when hovering. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
       </trans-unit>
       <trans-unit id="tabActiveBorder">
         <source xml:lang="en">Border on the bottom of an active tab. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
@@ -1481,6 +1505,12 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="tabActiveUnfocusedBorderTop">
         <source xml:lang="en">Border to the top of an active tab in an unfocused group. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
       </trans-unit>
+      <trans-unit id="tabHoverBorder">
+        <source xml:lang="en">Border to highlight tabs when hovering. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
+      </trans-unit>
+      <trans-unit id="tabUnfocusedHoverBorder">
+        <source xml:lang="en">Border to highlight tabs in an unfocused group when hovering. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
+      </trans-unit>
       <trans-unit id="tabActiveModifiedBorder">
         <source xml:lang="en">Border on the top of modified (dirty) active tabs in an active group. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
       </trans-unit>
@@ -1493,23 +1523,8 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="unfocusedINactiveModifiedBorder">
         <source xml:lang="en">Border on the top of modified (dirty) inactive tabs in an unfocused group. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
       </trans-unit>
-      <trans-unit id="tabHoverBorder">
-        <source xml:lang="en">Border to highlight tabs when hovering. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
-      </trans-unit>
-      <trans-unit id="tabUnfocusedHoverBorder">
-        <source xml:lang="en">Border to highlight tabs in an unfocused group when hovering. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
-      </trans-unit>
-      <trans-unit id="tabActiveForeground">
-        <source xml:lang="en">Active tab foreground color in an active group. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
-      </trans-unit>
-      <trans-unit id="tabInactiveForeground">
-        <source xml:lang="en">Inactive tab foreground color in an active group. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
-      </trans-unit>
-      <trans-unit id="tabUnfocusedActiveForeground">
-        <source xml:lang="en">Active tab foreground color in an unfocused group. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
-      </trans-unit>
-      <trans-unit id="tabUnfocusedInactiveForeground">
-        <source xml:lang="en">Inactive tab foreground color in an unfocused group. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
+      <trans-unit id="tabBorder">
+        <source xml:lang="en">Border to separate tabs from each other. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.</source>
       </trans-unit>
       <trans-unit id="editorPaneBackground">
         <source xml:lang="en">Background color of the editor pane visible on the left and right side of the centered editor layout.</source>
@@ -1534,6 +1549,9 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
       <trans-unit id="editorGroupHeaderBackground">
         <source xml:lang="en">Background color of the editor group title header when tabs are disabled (`"workbench.editor.showTabs": false`). Editor groups are the containers of editors.</source>
+      </trans-unit>
+      <trans-unit id="editorTitleContainerBorder">
+        <source xml:lang="en">Border color of the editor group title header. Editor groups are the containers of editors.</source>
       </trans-unit>
       <trans-unit id="editorGroupBorder">
         <source xml:lang="en">Color to separate multiple editor groups from each other. Editor groups are the containers of editors.</source>
@@ -1729,17 +1747,29 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/node/extHostDebugService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="debug.terminal.title">
-        <source xml:lang="en">debuggee</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/api/browser/mainThreadEditors" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="diffLeftRightLabel">
         <source xml:lang="en">{0} ⟷ {1}</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/browser/mainThreadWorkspace" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="folderStatusMessageAddSingleFolder">
+        <source xml:lang="en">Extension '{0}' added 1 folder to the workspace</source>
+      </trans-unit>
+      <trans-unit id="folderStatusMessageAddMultipleFolders">
+        <source xml:lang="en">Extension '{0}' added {1} folders to the workspace</source>
+      </trans-unit>
+      <trans-unit id="folderStatusMessageRemoveSingleFolder">
+        <source xml:lang="en">Extension '{0}' removed 1 folder from the workspace</source>
+      </trans-unit>
+      <trans-unit id="folderStatusMessageRemoveMultipleFolders">
+        <source xml:lang="en">Extension '{0}' removed {1} folders from the workspace</source>
+      </trans-unit>
+      <trans-unit id="folderStatusChangeFolder">
+        <source xml:lang="en">Extension '{0}' changed folders of the workspace</source>
       </trans-unit>
     </body>
   </file>
@@ -1768,25 +1798,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/browser/mainThreadWorkspace" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="folderStatusMessageAddSingleFolder">
-        <source xml:lang="en">Extension '{0}' added 1 folder to the workspace</source>
-      </trans-unit>
-      <trans-unit id="folderStatusMessageAddMultipleFolders">
-        <source xml:lang="en">Extension '{0}' added {1} folders to the workspace</source>
-      </trans-unit>
-      <trans-unit id="folderStatusMessageRemoveSingleFolder">
-        <source xml:lang="en">Extension '{0}' removed 1 folder from the workspace</source>
-      </trans-unit>
-      <trans-unit id="folderStatusMessageRemoveMultipleFolders">
-        <source xml:lang="en">Extension '{0}' removed {1} folders from the workspace</source>
-      </trans-unit>
-      <trans-unit id="folderStatusChangeFolder">
-        <source xml:lang="en">Extension '{0}' changed folders of the workspace</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/browser/parts/views/views" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="focus view">
@@ -1797,37 +1808,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
       <trans-unit id="resetViewLocation">
         <source xml:lang="en">Reset View Location</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/api/browser/mainThreadAuthentication" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="manageTrustedExtensions">
-        <source xml:lang="en">Manage Trusted Extensions</source>
-      </trans-unit>
-      <trans-unit id="manageExensions">
-        <source xml:lang="en">Choose which extensions can access this account</source>
-      </trans-unit>
-      <trans-unit id="addAnotherAccount">
-        <source xml:lang="en">Sign in to another {0} account</source>
-      </trans-unit>
-      <trans-unit id="addAccount">
-        <source xml:lang="en">Sign in to {0}</source>
-      </trans-unit>
-      <trans-unit id="signOut">
-        <source xml:lang="en">Sign Out</source>
-      </trans-unit>
-      <trans-unit id="confirmAuthenticationAccess">
-        <source xml:lang="en">The extension '{0}' is trying to access authentication information for the {1} account '{2}'.</source>
-      </trans-unit>
-      <trans-unit id="cancel_Duplicated36">
-        <source xml:lang="en">Cancel</source>
-      </trans-unit>
-      <trans-unit id="allow">
-        <source xml:lang="en">Allow</source>
-      </trans-unit>
-      <trans-unit id="confirmLogin">
-        <source xml:lang="en">The extension '{0}' wants to sign in using {1}.</source>
       </trans-unit>
     </body>
   </file>
@@ -1845,13 +1825,10 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/electron-browser/window" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/api/node/extHostDebugService" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="runningAsRoot">
-        <source xml:lang="en">It is not recommended to run {0} as root user.</source>
-      </trans-unit>
-      <trans-unit id="mPreferences">
-        <source xml:lang="en">Preferences</source>
+      <trans-unit id="debug.terminal.title">
+        <source xml:lang="en">debuggee</source>
       </trans-unit>
     </body>
   </file>
@@ -1862,6 +1839,56 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
       <trans-unit id="collapse">
         <source xml:lang="en">Collapse All</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/browser/mainThreadAuthentication" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="manageTrustedExtensions">
+        <source xml:lang="en">Manage Trusted Extensions</source>
+      </trans-unit>
+      <trans-unit id="manageExensions">
+        <source xml:lang="en">Choose which extensions can access this account</source>
+      </trans-unit>
+      <trans-unit id="addAnotherAccount">
+        <source xml:lang="en">Sign in to another {0} account</source>
+      </trans-unit>
+      <trans-unit id="addAccount">
+        <source xml:lang="en">Sign in to {0}</source>
+      </trans-unit>
+      <trans-unit id="showUsage">
+        <source xml:lang="en">Show Extensions and Features Using This Account</source>
+      </trans-unit>
+      <trans-unit id="signOut">
+        <source xml:lang="en">Sign Out</source>
+      </trans-unit>
+      <trans-unit id="sync">
+        <source xml:lang="en">Preferences Sync</source>
+      </trans-unit>
+      <trans-unit id="signedOut">
+        <source xml:lang="en">Successfully signed out.</source>
+      </trans-unit>
+      <trans-unit id="confirmAuthenticationAccess">
+        <source xml:lang="en">The extension '{0}' is trying to access authentication information for the {1} account '{2}'.</source>
+      </trans-unit>
+      <trans-unit id="cancel_Duplicated38">
+        <source xml:lang="en">Cancel</source>
+      </trans-unit>
+      <trans-unit id="allow">
+        <source xml:lang="en">Allow</source>
+      </trans-unit>
+      <trans-unit id="confirmLogin">
+        <source xml:lang="en">The extension '{0}' wants to sign in using {1}.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/electron-browser/window" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="runningAsRoot">
+        <source xml:lang="en">It is not recommended to run {0} as root user.</source>
+      </trans-unit>
+      <trans-unit id="mPreferences">
+        <source xml:lang="en">Preferences</source>
       </trans-unit>
     </body>
   </file>
@@ -1894,17 +1921,11 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="textEditor_Duplicated42">
         <source xml:lang="en">Text Editor</source>
       </trans-unit>
-      <trans-unit id="readonlyEditorWithInputAriaLabel_Duplicated44">
-        <source xml:lang="en">{0} readonly editor</source>
-      </trans-unit>
-      <trans-unit id="readonlyEditorAriaLabel_Duplicated46">
-        <source xml:lang="en">Readonly editor</source>
-      </trans-unit>
-      <trans-unit id="writeableEditorWithInputAriaLabel">
-        <source xml:lang="en">{0} editor</source>
-      </trans-unit>
       <trans-unit id="writeableEditorAriaLabel">
         <source xml:lang="en">Editor</source>
+      </trans-unit>
+      <trans-unit id="readonlyEditor_Duplicated44">
+        <source xml:lang="en">{0} readonly</source>
       </trans-unit>
     </body>
   </file>
@@ -1921,17 +1942,10 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/common/extHostWorkspace" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="updateerror">
-        <source xml:lang="en">Extension '{0}' failed to update workspace folders: {1}</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/api/browser/mainThreadWebview" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="errorMessage">
-        <source xml:lang="en">An error occurred while restoring view:{0}</source>
+        <source xml:lang="en">An error occurred while loading view: {0}</source>
       </trans-unit>
       <trans-unit id="defaultEditLabel">
         <source xml:lang="en">Edit</source>
@@ -1943,7 +1957,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="status.notifications">
         <source xml:lang="en">Notifications</source>
       </trans-unit>
-      <trans-unit id="hideNotifications_Duplicated48">
+      <trans-unit id="hideNotifications_Duplicated46">
         <source xml:lang="en">Hide Notifications</source>
       </trans-unit>
       <trans-unit id="zeroNotifications">
@@ -1955,7 +1969,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="oneNotification">
         <source xml:lang="en">1 New Notification</source>
       </trans-unit>
-      <trans-unit id="notifications_Duplicated50">
+      <trans-unit id="notifications_Duplicated48">
         <source xml:lang="en">{0} New Notifications</source>
       </trans-unit>
       <trans-unit id="noNotificationsWithProgress">
@@ -1974,13 +1988,13 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
   </file>
   <file original="src/vs/workbench/browser/parts/notifications/notificationsCommands" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="notifications_Duplicated51">
+      <trans-unit id="notifications_Duplicated49">
         <source xml:lang="en">Notifications</source>
       </trans-unit>
       <trans-unit id="showNotifications">
         <source xml:lang="en">Show Notifications</source>
       </trans-unit>
-      <trans-unit id="hideNotifications_Duplicated49">
+      <trans-unit id="hideNotifications_Duplicated47">
         <source xml:lang="en">Hide Notifications</source>
       </trans-unit>
       <trans-unit id="clearAllNotifications">
@@ -1991,10 +2005,10 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/common/extHostExtensionService" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/api/common/extHostWorkspace" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="extensionTestError">
-        <source xml:lang="en">Path {0} does not point to a valid extension test runner.</source>
+      <trans-unit id="updateerror">
+        <source xml:lang="en">Extension '{0}' failed to update workspace folders: {1}</source>
       </trans-unit>
     </body>
   </file>
@@ -2047,7 +2061,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="notificationsEmpty">
         <source xml:lang="en">No new notifications</source>
       </trans-unit>
-      <trans-unit id="notifications_Duplicated52">
+      <trans-unit id="notifications_Duplicated50">
         <source xml:lang="en">Notifications</source>
       </trans-unit>
       <trans-unit id="notificationsToolbar">
@@ -2062,6 +2076,13 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
     <body>
       <trans-unit id="editorLabelWithGroup">
         <source xml:lang="en">{0}, {1}</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/common/extHostExtensionService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="extensionTestError">
+        <source xml:lang="en">Path {0} does not point to a valid extension test runner.</source>
       </trans-unit>
     </body>
   </file>
@@ -2085,6 +2106,37 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/browser/parts/compositeBarActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="badgeTitle">
+        <source xml:lang="en">{0} - {1}</source>
+      </trans-unit>
+      <trans-unit id="additionalViews">
+        <source xml:lang="en">Additional Views</source>
+      </trans-unit>
+      <trans-unit id="numberBadge">
+        <source xml:lang="en">{0} ({1})</source>
+      </trans-unit>
+      <trans-unit id="manageExtension_Duplicated32">
+        <source xml:lang="en">Manage Extension</source>
+      </trans-unit>
+      <trans-unit id="titleKeybinding">
+        <source xml:lang="en">{0} ({1})</source>
+      </trans-unit>
+      <trans-unit id="hide_Duplicated34">
+        <source xml:lang="en">Hide</source>
+      </trans-unit>
+      <trans-unit id="keep">
+        <source xml:lang="en">Keep</source>
+      </trans-unit>
+      <trans-unit id="compositeActive">
+        <source xml:lang="en">{0} active</source>
+      </trans-unit>
+      <trans-unit id="toggle">
+        <source xml:lang="en">Toggle View Pinned</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/browser/parts/views/treeView" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="no-dataprovider">
@@ -2098,37 +2150,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
       <trans-unit id="command-error">
         <source xml:lang="en">Error running command {1}: {0}. This is likely caused by the extension that contributes {1}.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/compositeBarActions" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="badgeTitle">
-        <source xml:lang="en">{0} - {1}</source>
-      </trans-unit>
-      <trans-unit id="additionalViews">
-        <source xml:lang="en">Additional Views</source>
-      </trans-unit>
-      <trans-unit id="numberBadge">
-        <source xml:lang="en">{0} ({1})</source>
-      </trans-unit>
-      <trans-unit id="manageExtension_Duplicated34">
-        <source xml:lang="en">Manage Extension</source>
-      </trans-unit>
-      <trans-unit id="titleKeybinding">
-        <source xml:lang="en">{0} ({1})</source>
-      </trans-unit>
-      <trans-unit id="hide_Duplicated41">
-        <source xml:lang="en">Hide</source>
-      </trans-unit>
-      <trans-unit id="keep">
-        <source xml:lang="en">Keep</source>
-      </trans-unit>
-      <trans-unit id="compositeActive">
-        <source xml:lang="en">{0} active</source>
-      </trans-unit>
-      <trans-unit id="toggle">
-        <source xml:lang="en">Toggle View Pinned</source>
       </trans-unit>
     </body>
   </file>
@@ -2177,7 +2198,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
 	* 'by': String value providing the unit for move (by tab or by group).
 	* 'value': Number value providing how many positions or an absolute position to move.</source>
       </trans-unit>
-      <trans-unit id="toggleInlineView_Duplicated53">
+      <trans-unit id="toggleInlineView_Duplicated51">
         <source xml:lang="en">Toggle Inline View</source>
       </trans-unit>
       <trans-unit id="compare">
@@ -2269,13 +2290,13 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/common/extHostExtensionActivator" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/browser/parts/notifications/notificationsList" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="failedDep1">
-        <source xml:lang="en">Cannot activate extension '{0}' because it depends on extension '{1}', which failed to activate.</source>
+      <trans-unit id="notificationAriaLabel">
+        <source xml:lang="en">{0}, notification</source>
       </trans-unit>
-      <trans-unit id="activationError">
-        <source xml:lang="en">Activating extension '{0}' failed: {1}.</source>
+      <trans-unit id="notificationWithSourceAriaLabel">
+        <source xml:lang="en">{0}, source: {1}, notification</source>
       </trans-unit>
     </body>
   </file>
@@ -2304,10 +2325,13 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/common/extHost.api.impl" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/api/common/extHostExtensionActivator" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="extensionLabel">
-        <source xml:lang="en">{0} (Extension)</source>
+      <trans-unit id="failedDep1">
+        <source xml:lang="en">Cannot activate extension '{0}' because it depends on extension '{1}', which failed to activate.</source>
+      </trans-unit>
+      <trans-unit id="activationError">
+        <source xml:lang="en">Activating extension '{0}' failed: {1}.</source>
       </trans-unit>
     </body>
   </file>
@@ -2316,7 +2340,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="textEditor_Duplicated43">
         <source xml:lang="en">Text Editor</source>
       </trans-unit>
-      <trans-unit id="textDiffEditor_Duplicated55">
+      <trans-unit id="textDiffEditor_Duplicated53">
         <source xml:lang="en">Text Diff Editor</source>
       </trans-unit>
       <trans-unit id="binaryDiffEditor">
@@ -2340,7 +2364,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="view_Duplicated8">
         <source xml:lang="en">View</source>
       </trans-unit>
-      <trans-unit id="file_Duplicated25">
+      <trans-unit id="file_Duplicated19">
         <source xml:lang="en">File</source>
       </trans-unit>
       <trans-unit id="splitUp">
@@ -2373,7 +2397,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="keepOpen">
         <source xml:lang="en">Keep Open</source>
       </trans-unit>
-      <trans-unit id="toggleInlineView_Duplicated54">
+      <trans-unit id="toggleInlineView_Duplicated52">
         <source xml:lang="en">Toggle Inline View</source>
       </trans-unit>
       <trans-unit id="showOpenedEditors">
@@ -2570,8 +2594,37 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/browser/parts/editor/textDiffEditor" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="textDiffEditor_Duplicated54">
+        <source xml:lang="en">Text Diff Editor</source>
+      </trans-unit>
+      <trans-unit id="readonlyEditorWithInputAriaLabel">
+        <source xml:lang="en">{0} readonly compare</source>
+      </trans-unit>
+      <trans-unit id="readonlyEditorAriaLabel">
+        <source xml:lang="en">Readonly compare</source>
+      </trans-unit>
+      <trans-unit id="editableEditorWithInputAriaLabel">
+        <source xml:lang="en">{0} compare</source>
+      </trans-unit>
+      <trans-unit id="editableEditorAriaLabel">
+        <source xml:lang="en">Compare</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/common/extHost.api.impl" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="extensionLabel">
+        <source xml:lang="en">{0} (Extension)</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/browser/parts/editor/editorQuickAccess" source-language="en" datatype="plaintext">
     <body>
+      <trans-unit id="noViewResults">
+        <source xml:lang="en">No matching editors</source>
+      </trans-unit>
       <trans-unit id="entryAriaLabelWithGroupDirty">
         <source xml:lang="en">{0}, dirty, {1}</source>
       </trans-unit>
@@ -2581,27 +2634,8 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="entryAriaLabelDirty">
         <source xml:lang="en">{0}, dirty</source>
       </trans-unit>
-      <trans-unit id="closeEditor_Duplicated57">
+      <trans-unit id="closeEditor_Duplicated55">
         <source xml:lang="en">Close Editor</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/editor/textDiffEditor" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="textDiffEditor_Duplicated56">
-        <source xml:lang="en">Text Diff Editor</source>
-      </trans-unit>
-      <trans-unit id="readonlyEditorWithInputAriaLabel_Duplicated45">
-        <source xml:lang="en">{0} readonly compare editor</source>
-      </trans-unit>
-      <trans-unit id="readonlyEditorAriaLabel_Duplicated47">
-        <source xml:lang="en">Readonly compare editor</source>
-      </trans-unit>
-      <trans-unit id="editableEditorWithInputAriaLabel">
-        <source xml:lang="en">{0} compare editor</source>
-      </trans-unit>
-      <trans-unit id="editableEditorAriaLabel">
-        <source xml:lang="en">Compare editor</source>
       </trans-unit>
     </body>
   </file>
@@ -2622,10 +2656,10 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="groupAriaLabel">
         <source xml:lang="en">Editor Group {0}</source>
       </trans-unit>
-      <trans-unit id="ok_Duplicated39">
+      <trans-unit id="ok_Duplicated41">
         <source xml:lang="en">OK</source>
       </trans-unit>
-      <trans-unit id="cancel_Duplicated37">
+      <trans-unit id="cancel_Duplicated39">
         <source xml:lang="en">Cancel</source>
       </trans-unit>
       <trans-unit id="editorOpenErrorDialog">
@@ -2636,32 +2670,10 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/common/extHostStatusBar" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="status.extensionMessage">
-        <source xml:lang="en">Extension Status</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/api/common/extHostProgress" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="extensionSource_Duplicated31">
-        <source xml:lang="en">{0} (Extension)</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/browser/parts/editor/binaryDiffEditor" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="metadataDiff">
         <source xml:lang="en">{0} ↔ {1}</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/api/common/extHostDiagnostics" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="limitHit">
-        <source xml:lang="en">Not showing {0} further errors and warnings.</source>
-        <note>amount of errors/warning skipped due to limits</note>
       </trans-unit>
     </body>
   </file>
@@ -2675,6 +2687,28 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
       <trans-unit id="notificationSource">
         <source xml:lang="en">Source: {0}</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/common/extHostStatusBar" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="status.extensionMessage">
+        <source xml:lang="en">Extension Status</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/common/extHostProgress" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="extensionSource_Duplicated36">
+        <source xml:lang="en">{0} (Extension)</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/common/extHostDiagnostics" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="limitHit">
+        <source xml:lang="en">Not showing {0} further errors and warnings.</source>
+        <note>amount of errors/warning skipped due to limits</note>
       </trans-unit>
     </body>
   </file>
@@ -2744,7 +2778,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="focusBelowGroup">
         <source xml:lang="en">Focus Below Editor Group</source>
       </trans-unit>
-      <trans-unit id="closeEditor_Duplicated58">
+      <trans-unit id="closeEditor_Duplicated56">
         <source xml:lang="en">Close Editor</source>
       </trans-unit>
       <trans-unit id="closeOneEditor">
@@ -2935,16 +2969,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/editor/titleControl" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="araLabelEditorActions">
-        <source xml:lang="en">Editor actions</source>
-      </trans-unit>
-      <trans-unit id="draggedEditorGroup">
-        <source xml:lang="en">{0} (+{1})</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/browser/parts/editor/editorStatus" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="singleSelectionRange">
@@ -3124,10 +3148,23 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/browser/parts/editor/titleControl" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="araLabelEditorActions">
+        <source xml:lang="en">Editor actions</source>
+      </trans-unit>
+      <trans-unit id="draggedEditorGroup">
+        <source xml:lang="en">{0} (+{1})</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/browser/parts/editor/tabsTitleControl" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="araLabelTabActions">
         <source xml:lang="en">Tab actions</source>
+      </trans-unit>
+      <trans-unit id="readonlyEditor_Duplicated45">
+        <source xml:lang="en">{0} readonly</source>
       </trans-unit>
     </body>
   </file>
