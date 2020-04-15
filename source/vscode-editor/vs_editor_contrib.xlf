@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/editor/contrib/caretOperations/transpose" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="transposeLetters.label">
+        <source xml:lang="en">Transpose Letters</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/caretOperations/caretOperations" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="caret.moveLeft">
@@ -10,10 +17,13 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/caretOperations/transpose" source-language="en" datatype="plaintext">
+  <file original="src/vs/editor/contrib/cursorUndo/cursorUndo" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="transposeLetters.label">
-        <source xml:lang="en">Transpose Letters</source>
+      <trans-unit id="cursor.undo">
+        <source xml:lang="en">Cursor Undo</source>
+      </trans-unit>
+      <trans-unit id="cursor.redo">
+        <source xml:lang="en">Cursor Redo</source>
       </trans-unit>
     </body>
   </file>
@@ -41,16 +51,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/cursorUndo/cursorUndo" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="cursor.undo">
-        <source xml:lang="en">Cursor Undo</source>
-      </trans-unit>
-      <trans-unit id="cursor.redo">
-        <source xml:lang="en">Cursor Redo</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/parameterHints/parameterHints" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="parameterHints.trigger.label">
@@ -71,6 +71,13 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/tokenization/tokenization" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="forceRetokenize">
+        <source xml:lang="en">Developer: Force Retokenize</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/toggleTabFocusMode/toggleTabFocusMode" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="toggle.tabMovesFocus">
@@ -82,13 +89,6 @@
       </trans-unit>
       <trans-unit id="toggle.tabMovesFocus.off">
         <source xml:lang="en">Pressing Tab will now insert the tab character</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/tokenization/tokenization" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="forceRetokenize">
-        <source xml:lang="en">Developer: Force Retokenize</source>
       </trans-unit>
     </body>
   </file>
@@ -134,6 +134,20 @@
       </trans-unit>
       <trans-unit id="formatSelection.label">
         <source xml:lang="en">Format Selection</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/hover/hover" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="showHover">
+        <source xml:lang="en">Show Hover</source>
+        <note>Label for action that will trigger the showing of a hover in the editor.
+This allows for users to show the hover without using the mouse.</note>
+      </trans-unit>
+      <trans-unit id="showDefinitionPreviewHover">
+        <source xml:lang="en">Show Definition Preview Hover</source>
+        <note>Label for action that will trigger the showing of definition preview hover in the editor.
+This allows for users to show the definition preview hover without using the mouse.</note>
       </trans-unit>
     </body>
   </file>
@@ -196,27 +210,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/hover/hover" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="showHover">
-        <source xml:lang="en">Show Hover</source>
-        <note>Label for action that will trigger the showing of a hover in the editor.
-This allows for users to show the hover without using the mouse.</note>
-      </trans-unit>
-      <trans-unit id="showDefinitionPreviewHover">
-        <source xml:lang="en">Show Definition Preview Hover</source>
-        <note>Label for action that will trigger the showing of definition preview hover in the editor.
-This allows for users to show the definition preview hover without using the mouse.</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/codelens/codelensController" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="showLensOnLine">
-        <source xml:lang="en">Show CodeLens Commands For Current Line</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/bracketMatching/bracketMatching" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="overviewRulerBracketMatchForeground">
@@ -234,41 +227,17 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/codelens/codelensController" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="showLensOnLine">
+        <source xml:lang="en">Show CodeLens Commands For Current Line</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/gotoSymbol/link/goToDefinitionAtPosition" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="multipleResults">
         <source xml:lang="en">Click to show {0} definitions.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/gotoError/gotoError" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="markerAction.next.label">
-        <source xml:lang="en">Go to Next Problem (Error, Warning, Info)</source>
-      </trans-unit>
-      <trans-unit id="markerAction.previous.label">
-        <source xml:lang="en">Go to Previous Problem (Error, Warning, Info)</source>
-      </trans-unit>
-      <trans-unit id="markerAction.nextInFiles.label">
-        <source xml:lang="en">Go to Next Problem in Files (Error, Warning, Info)</source>
-      </trans-unit>
-      <trans-unit id="markerAction.previousInFiles.label">
-        <source xml:lang="en">Go to Previous Problem in Files (Error, Warning, Info)</source>
-      </trans-unit>
-      <trans-unit id="miGotoNextProblem">
-        <source xml:lang="en">Next &amp;&amp;Problem</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miGotoPreviousProblem">
-        <source xml:lang="en">Previous &amp;&amp;Problem</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/rename/onTypeRename" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="onTypeRename.label">
-        <source xml:lang="en">On Type Rename Symbol</source>
       </trans-unit>
     </body>
   </file>
@@ -300,6 +269,37 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
       <trans-unit id="label_Duplicated2">
         <source xml:lang="en">Open Link</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/gotoError/gotoError" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="markerAction.next.label">
+        <source xml:lang="en">Go to Next Problem (Error, Warning, Info)</source>
+      </trans-unit>
+      <trans-unit id="markerAction.previous.label">
+        <source xml:lang="en">Go to Previous Problem (Error, Warning, Info)</source>
+      </trans-unit>
+      <trans-unit id="markerAction.nextInFiles.label">
+        <source xml:lang="en">Go to Next Problem in Files (Error, Warning, Info)</source>
+      </trans-unit>
+      <trans-unit id="markerAction.previousInFiles.label">
+        <source xml:lang="en">Go to Previous Problem in Files (Error, Warning, Info)</source>
+      </trans-unit>
+      <trans-unit id="miGotoNextProblem">
+        <source xml:lang="en">Next &amp;&amp;Problem</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miGotoPreviousProblem">
+        <source xml:lang="en">Previous &amp;&amp;Problem</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/rename/onTypeRename" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="onTypeRename.label">
+        <source xml:lang="en">On Type Rename Symbol</source>
       </trans-unit>
     </body>
   </file>
@@ -649,6 +649,67 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/multicursor/multicursor" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="mutlicursor.insertAbove">
+        <source xml:lang="en">Add Cursor Above</source>
+      </trans-unit>
+      <trans-unit id="miInsertCursorAbove">
+        <source xml:lang="en">&amp;&amp;Add Cursor Above</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mutlicursor.insertBelow">
+        <source xml:lang="en">Add Cursor Below</source>
+      </trans-unit>
+      <trans-unit id="miInsertCursorBelow">
+        <source xml:lang="en">A&amp;&amp;dd Cursor Below</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mutlicursor.insertAtEndOfEachLineSelected">
+        <source xml:lang="en">Add Cursors to Line Ends</source>
+      </trans-unit>
+      <trans-unit id="miInsertCursorAtEndOfEachLineSelected">
+        <source xml:lang="en">Add C&amp;&amp;ursors to Line Ends</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mutlicursor.addCursorsToBottom">
+        <source xml:lang="en">Add Cursors To Bottom</source>
+      </trans-unit>
+      <trans-unit id="mutlicursor.addCursorsToTop">
+        <source xml:lang="en">Add Cursors To Top</source>
+      </trans-unit>
+      <trans-unit id="addSelectionToNextFindMatch">
+        <source xml:lang="en">Add Selection To Next Find Match</source>
+      </trans-unit>
+      <trans-unit id="miAddSelectionToNextFindMatch">
+        <source xml:lang="en">Add &amp;&amp;Next Occurrence</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="addSelectionToPreviousFindMatch">
+        <source xml:lang="en">Add Selection To Previous Find Match</source>
+      </trans-unit>
+      <trans-unit id="miAddSelectionToPreviousFindMatch">
+        <source xml:lang="en">Add P&amp;&amp;revious Occurrence</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="moveSelectionToNextFindMatch">
+        <source xml:lang="en">Move Last Selection To Next Find Match</source>
+      </trans-unit>
+      <trans-unit id="moveSelectionToPreviousFindMatch">
+        <source xml:lang="en">Move Last Selection To Previous Find Match</source>
+      </trans-unit>
+      <trans-unit id="selectAllOccurrencesOfFindMatch">
+        <source xml:lang="en">Select All Occurrences of Find Match</source>
+      </trans-unit>
+      <trans-unit id="miSelectHighlights">
+        <source xml:lang="en">Select All &amp;&amp;Occurrences</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="changeAll.label">
+        <source xml:lang="en">Change All Occurrences</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/linesOperations/linesOperations" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="lines.copyUp">
@@ -733,81 +794,10 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/multicursor/multicursor" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="mutlicursor.insertAbove">
-        <source xml:lang="en">Add Cursor Above</source>
-      </trans-unit>
-      <trans-unit id="miInsertCursorAbove">
-        <source xml:lang="en">&amp;&amp;Add Cursor Above</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="mutlicursor.insertBelow">
-        <source xml:lang="en">Add Cursor Below</source>
-      </trans-unit>
-      <trans-unit id="miInsertCursorBelow">
-        <source xml:lang="en">A&amp;&amp;dd Cursor Below</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="mutlicursor.insertAtEndOfEachLineSelected">
-        <source xml:lang="en">Add Cursors to Line Ends</source>
-      </trans-unit>
-      <trans-unit id="miInsertCursorAtEndOfEachLineSelected">
-        <source xml:lang="en">Add C&amp;&amp;ursors to Line Ends</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="mutlicursor.addCursorsToBottom">
-        <source xml:lang="en">Add Cursors To Bottom</source>
-      </trans-unit>
-      <trans-unit id="mutlicursor.addCursorsToTop">
-        <source xml:lang="en">Add Cursors To Top</source>
-      </trans-unit>
-      <trans-unit id="addSelectionToNextFindMatch">
-        <source xml:lang="en">Add Selection To Next Find Match</source>
-      </trans-unit>
-      <trans-unit id="miAddSelectionToNextFindMatch">
-        <source xml:lang="en">Add &amp;&amp;Next Occurrence</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="addSelectionToPreviousFindMatch">
-        <source xml:lang="en">Add Selection To Previous Find Match</source>
-      </trans-unit>
-      <trans-unit id="miAddSelectionToPreviousFindMatch">
-        <source xml:lang="en">Add P&amp;&amp;revious Occurrence</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="moveSelectionToNextFindMatch">
-        <source xml:lang="en">Move Last Selection To Next Find Match</source>
-      </trans-unit>
-      <trans-unit id="moveSelectionToPreviousFindMatch">
-        <source xml:lang="en">Move Last Selection To Previous Find Match</source>
-      </trans-unit>
-      <trans-unit id="selectAllOccurrencesOfFindMatch">
-        <source xml:lang="en">Select All Occurrences of Find Match</source>
-      </trans-unit>
-      <trans-unit id="miSelectHighlights">
-        <source xml:lang="en">Select All &amp;&amp;Occurrences</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="changeAll.label">
-        <source xml:lang="en">Change All Occurrences</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/parameterHints/parameterHintsWidget" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="hint_Duplicated4">
         <source xml:lang="en">{0}, hint</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/rename/renameInputField" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="renameAriaLabel">
-        <source xml:lang="en">Rename input. Type new name and press Enter to commit.</source>
-      </trans-unit>
-      <trans-unit id="label_Duplicated3">
-        <source xml:lang="en">{0} to Rename, {1} to Preview</source>
       </trans-unit>
     </body>
   </file>
@@ -902,10 +892,114 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/rename/renameInputField" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="renameAriaLabel">
+        <source xml:lang="en">Rename input. Type new name and press Enter to commit.</source>
+      </trans-unit>
+      <trans-unit id="label_Duplicated3">
+        <source xml:lang="en">{0} to Rename, {1} to Preview</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/message/messageController" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="editor.readonly">
         <source xml:lang="en">Cannot edit in read-only editor</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/quickAccess/gotoSymbolQuickAccess" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="cannotRunGotoSymbolWithoutEditor">
+        <source xml:lang="en">To go to a symbol, first open a text editor with symbol information.</source>
+      </trans-unit>
+      <trans-unit id="cannotRunGotoSymbolWithoutSymbolProvider">
+        <source xml:lang="en">The active text editor does not provide symbol information.</source>
+      </trans-unit>
+      <trans-unit id="openToSide">
+        <source xml:lang="en">Open to the Side</source>
+      </trans-unit>
+      <trans-unit id="openToBottom">
+        <source xml:lang="en">Open to the Bottom</source>
+      </trans-unit>
+      <trans-unit id="symbols">
+        <source xml:lang="en">symbols ({0})</source>
+      </trans-unit>
+      <trans-unit id="property_Duplicated6">
+        <source xml:lang="en">properties ({0})</source>
+      </trans-unit>
+      <trans-unit id="method_Duplicated8">
+        <source xml:lang="en">methods ({0})</source>
+      </trans-unit>
+      <trans-unit id="function_Duplicated10">
+        <source xml:lang="en">functions ({0})</source>
+      </trans-unit>
+      <trans-unit id="_constructor">
+        <source xml:lang="en">constructors ({0})</source>
+      </trans-unit>
+      <trans-unit id="variable_Duplicated12">
+        <source xml:lang="en">variables ({0})</source>
+      </trans-unit>
+      <trans-unit id="class_Duplicated14">
+        <source xml:lang="en">classes ({0})</source>
+      </trans-unit>
+      <trans-unit id="struct_Duplicated16">
+        <source xml:lang="en">structs ({0})</source>
+      </trans-unit>
+      <trans-unit id="event_Duplicated18">
+        <source xml:lang="en">events ({0})</source>
+      </trans-unit>
+      <trans-unit id="operator_Duplicated20">
+        <source xml:lang="en">operators ({0})</source>
+      </trans-unit>
+      <trans-unit id="interface_Duplicated22">
+        <source xml:lang="en">interfaces ({0})</source>
+      </trans-unit>
+      <trans-unit id="namespace_Duplicated24">
+        <source xml:lang="en">namespaces ({0})</source>
+      </trans-unit>
+      <trans-unit id="package_Duplicated26">
+        <source xml:lang="en">packages ({0})</source>
+      </trans-unit>
+      <trans-unit id="typeParameter_Duplicated28">
+        <source xml:lang="en">type parameters ({0})</source>
+      </trans-unit>
+      <trans-unit id="modules">
+        <source xml:lang="en">modules ({0})</source>
+      </trans-unit>
+      <trans-unit id="enum_Duplicated30">
+        <source xml:lang="en">enumerations ({0})</source>
+      </trans-unit>
+      <trans-unit id="enumMember_Duplicated32">
+        <source xml:lang="en">enumeration members ({0})</source>
+      </trans-unit>
+      <trans-unit id="string_Duplicated34">
+        <source xml:lang="en">strings ({0})</source>
+      </trans-unit>
+      <trans-unit id="file_Duplicated36">
+        <source xml:lang="en">files ({0})</source>
+      </trans-unit>
+      <trans-unit id="array_Duplicated38">
+        <source xml:lang="en">arrays ({0})</source>
+      </trans-unit>
+      <trans-unit id="number_Duplicated40">
+        <source xml:lang="en">numbers ({0})</source>
+      </trans-unit>
+      <trans-unit id="boolean_Duplicated42">
+        <source xml:lang="en">booleans ({0})</source>
+      </trans-unit>
+      <trans-unit id="object_Duplicated44">
+        <source xml:lang="en">objects ({0})</source>
+      </trans-unit>
+      <trans-unit id="key_Duplicated46">
+        <source xml:lang="en">keys ({0})</source>
+      </trans-unit>
+      <trans-unit id="field_Duplicated48">
+        <source xml:lang="en">fields ({0})</source>
+      </trans-unit>
+      <trans-unit id="constant_Duplicated50">
+        <source xml:lang="en">constants ({0})</source>
       </trans-unit>
     </body>
   </file>
@@ -1034,100 +1128,6 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
       <trans-unit id="DecemberShort">
         <source xml:lang="en">Dec</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/quickAccess/gotoSymbolQuickAccess" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="cannotRunGotoSymbolWithoutEditor">
-        <source xml:lang="en">To go to a symbol, first open a text editor with symbol information.</source>
-      </trans-unit>
-      <trans-unit id="cannotRunGotoSymbolWithoutSymbolProvider">
-        <source xml:lang="en">The active text editor does not provide symbol information.</source>
-      </trans-unit>
-      <trans-unit id="openToSide">
-        <source xml:lang="en">Open to the Side</source>
-      </trans-unit>
-      <trans-unit id="openToBottom">
-        <source xml:lang="en">Open to the Bottom</source>
-      </trans-unit>
-      <trans-unit id="symbols">
-        <source xml:lang="en">symbols ({0})</source>
-      </trans-unit>
-      <trans-unit id="property_Duplicated6">
-        <source xml:lang="en">properties ({0})</source>
-      </trans-unit>
-      <trans-unit id="method_Duplicated8">
-        <source xml:lang="en">methods ({0})</source>
-      </trans-unit>
-      <trans-unit id="function_Duplicated10">
-        <source xml:lang="en">functions ({0})</source>
-      </trans-unit>
-      <trans-unit id="_constructor">
-        <source xml:lang="en">constructors ({0})</source>
-      </trans-unit>
-      <trans-unit id="variable_Duplicated12">
-        <source xml:lang="en">variables ({0})</source>
-      </trans-unit>
-      <trans-unit id="class_Duplicated14">
-        <source xml:lang="en">classes ({0})</source>
-      </trans-unit>
-      <trans-unit id="struct_Duplicated16">
-        <source xml:lang="en">structs ({0})</source>
-      </trans-unit>
-      <trans-unit id="event_Duplicated18">
-        <source xml:lang="en">events ({0})</source>
-      </trans-unit>
-      <trans-unit id="operator_Duplicated20">
-        <source xml:lang="en">operators ({0})</source>
-      </trans-unit>
-      <trans-unit id="interface_Duplicated22">
-        <source xml:lang="en">interfaces ({0})</source>
-      </trans-unit>
-      <trans-unit id="namespace_Duplicated24">
-        <source xml:lang="en">namespaces ({0})</source>
-      </trans-unit>
-      <trans-unit id="package_Duplicated26">
-        <source xml:lang="en">packages ({0})</source>
-      </trans-unit>
-      <trans-unit id="typeParameter_Duplicated28">
-        <source xml:lang="en">type parameters ({0})</source>
-      </trans-unit>
-      <trans-unit id="modules">
-        <source xml:lang="en">modules ({0})</source>
-      </trans-unit>
-      <trans-unit id="enum_Duplicated30">
-        <source xml:lang="en">enumerations ({0})</source>
-      </trans-unit>
-      <trans-unit id="enumMember_Duplicated32">
-        <source xml:lang="en">enumeration members ({0})</source>
-      </trans-unit>
-      <trans-unit id="string_Duplicated34">
-        <source xml:lang="en">strings ({0})</source>
-      </trans-unit>
-      <trans-unit id="file_Duplicated36">
-        <source xml:lang="en">files ({0})</source>
-      </trans-unit>
-      <trans-unit id="array_Duplicated38">
-        <source xml:lang="en">arrays ({0})</source>
-      </trans-unit>
-      <trans-unit id="number_Duplicated40">
-        <source xml:lang="en">numbers ({0})</source>
-      </trans-unit>
-      <trans-unit id="boolean_Duplicated42">
-        <source xml:lang="en">booleans ({0})</source>
-      </trans-unit>
-      <trans-unit id="object_Duplicated44">
-        <source xml:lang="en">objects ({0})</source>
-      </trans-unit>
-      <trans-unit id="key_Duplicated46">
-        <source xml:lang="en">keys ({0})</source>
-      </trans-unit>
-      <trans-unit id="field_Duplicated48">
-        <source xml:lang="en">fields ({0})</source>
-      </trans-unit>
-      <trans-unit id="constant_Duplicated50">
-        <source xml:lang="en">constants ({0})</source>
       </trans-unit>
     </body>
   </file>
