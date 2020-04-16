@@ -1,5 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/workbench/contrib/tasks/node/processTaskSystem" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="version1_0">
+        <source xml:lang="en">The task system is configured for version 0.1.0 (see tasks.json file), which can only execute custom tasks. Upgrade to version 2.0.0 to run the task: {0}</source>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.unknownError">
+        <source xml:lang="en">A unknown error has occurred while executing a task. See task output log for details.</source>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.watchingBuildTaskFinished">
+        <source xml:lang="en">
+Watching build tasks has finished.</source>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.childProcessError">
+        <source xml:lang="en">Failed to launch external program {0} {1}.</source>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.cancelRequested">
+        <source xml:lang="en">
+The task '{0}' was terminated per user request.</source>
+      </trans-unit>
+      <trans-unit id="unknownProblemMatcher_Duplicated1">
+        <source xml:lang="en">Problem matcher {0} can't be resolved. The matcher will be ignored</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/tasks/node/processRunnerDetector" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="TaskSystemDetector.noGulpTasks">
@@ -25,30 +49,6 @@
       </trans-unit>
       <trans-unit id="TaskSystemDetector.testTaskDetected">
         <source xml:lang="en">Test task named '{0}' detected.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/tasks/node/processTaskSystem" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="version1_0">
-        <source xml:lang="en">The task system is configured for version 0.1.0 (see tasks.json file), which can only execute custom tasks. Upgrade to version 2.0.0 to run the task: {0}</source>
-      </trans-unit>
-      <trans-unit id="TaskRunnerSystem.unknownError">
-        <source xml:lang="en">A unknown error has occurred while executing a task. See task output log for details.</source>
-      </trans-unit>
-      <trans-unit id="TaskRunnerSystem.watchingBuildTaskFinished">
-        <source xml:lang="en">
-Watching build tasks has finished.</source>
-      </trans-unit>
-      <trans-unit id="TaskRunnerSystem.childProcessError">
-        <source xml:lang="en">Failed to launch external program {0} {1}.</source>
-      </trans-unit>
-      <trans-unit id="TaskRunnerSystem.cancelRequested">
-        <source xml:lang="en">
-The task '{0}' was terminated per user request.</source>
-      </trans-unit>
-      <trans-unit id="unknownProblemMatcher_Duplicated1">
-        <source xml:lang="en">Problem matcher {0} can't be resolved. The matcher will be ignored</source>
       </trans-unit>
     </body>
   </file>
@@ -539,6 +539,31 @@ The task '{0}' was terminated per user request.</source>
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/taskQuickPick" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="taskQuickPick.showAll">
+        <source xml:lang="en">Show All Tasks...</source>
+      </trans-unit>
+      <trans-unit id="configureTask_Duplicated29">
+        <source xml:lang="en">Configure Task</source>
+      </trans-unit>
+      <trans-unit id="contributedTasks">
+        <source xml:lang="en">contributed</source>
+      </trans-unit>
+      <trans-unit id="recentlyUsed_Duplicated31">
+        <source xml:lang="en">recently used</source>
+      </trans-unit>
+      <trans-unit id="configured_Duplicated33">
+        <source xml:lang="en">configured</source>
+      </trans-unit>
+      <trans-unit id="TaskQuickPick.goBack">
+        <source xml:lang="en">Go back ↩</source>
+      </trans-unit>
+      <trans-unit id="TaskQuickPick.noTasksForType">
+        <source xml:lang="en">No {0} tasks found. Go back ↩</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/tasks/common/jsonSchemaCommon" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="JsonSchema.options">
@@ -636,31 +661,6 @@ The task '{0}' was terminated per user request.</source>
       </trans-unit>
       <trans-unit id="JsonSchema.tasks">
         <source xml:lang="en">The task configurations. Usually these are enrichments of task already defined in the external task runner.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/taskQuickPick" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="taskQuickPick.showAll">
-        <source xml:lang="en">Show All Tasks...</source>
-      </trans-unit>
-      <trans-unit id="configureTask_Duplicated29">
-        <source xml:lang="en">Configure Task</source>
-      </trans-unit>
-      <trans-unit id="contributedTasks">
-        <source xml:lang="en">contributed</source>
-      </trans-unit>
-      <trans-unit id="recentlyUsed_Duplicated31">
-        <source xml:lang="en">recently used</source>
-      </trans-unit>
-      <trans-unit id="configured_Duplicated33">
-        <source xml:lang="en">configured</source>
-      </trans-unit>
-      <trans-unit id="TaskQuickPick.goBack">
-        <source xml:lang="en">Go back ↩</source>
-      </trans-unit>
-      <trans-unit id="TaskQuickPick.noTasksForType">
-        <source xml:lang="en">No {0} tasks found. Go back ↩</source>
       </trans-unit>
     </body>
   </file>
