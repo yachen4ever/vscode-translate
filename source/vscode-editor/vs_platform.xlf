@@ -1,12 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/environment/node/argvHelper" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="extensions_Duplicated1">
-        <source xml:lang="en">Extensions</source>
+      <trans-unit id="unknownOption">
+        <source xml:lang="en">Warning: '{0}' is not in the list of known options, but still passed to Electron/Chromium.</source>
       </trans-unit>
-      <trans-unit id="preferences">
-        <source xml:lang="en">Preferences</source>
+      <trans-unit id="multipleValues">
+        <source xml:lang="en">Option '{0}' is defined more than once. Using value '{1}.'</source>
+      </trans-unit>
+      <trans-unit id="gotoValidation">
+        <source xml:lang="en">Arguments in `--goto` mode should be in the format of `FILE(:LINE(:CHARACTER))`.</source>
       </trans-unit>
     </body>
   </file>
@@ -41,23 +44,13 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/extensionManagement/node/extensionManagementUtil" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="invalidManifest_Duplicated3">
-        <source xml:lang="en">VSIX invalid: package.json is not a JSON file.</source>
+      <trans-unit id="extensions_Duplicated1">
+        <source xml:lang="en">Extensions</source>
       </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/environment/node/argvHelper" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="unknownOption">
-        <source xml:lang="en">Warning: '{0}' is not in the list of known options, but still passed to Electron/Chromium.</source>
-      </trans-unit>
-      <trans-unit id="multipleValues">
-        <source xml:lang="en">Option '{0}' is defined more than once. Using value '{1}.'</source>
-      </trans-unit>
-      <trans-unit id="gotoValidation">
-        <source xml:lang="en">Arguments in `--goto` mode should be in the format of `FILE(:LINE(:CHARACTER))`.</source>
+      <trans-unit id="preferences">
+        <source xml:lang="en">Preferences</source>
       </trans-unit>
     </body>
   </file>
@@ -81,7 +74,7 @@
       <trans-unit id="default">
         <source xml:lang="en">Enable automatic update checks. Code will check for updates automatically and periodically.</source>
       </trans-unit>
-      <trans-unit id="deprecated_Duplicated5">
+      <trans-unit id="deprecated_Duplicated3">
         <source xml:lang="en">This setting is deprecated, please use '{0}' instead.</source>
       </trans-unit>
       <trans-unit id="enableWindowsBackgroundUpdatesTitle">
@@ -95,23 +88,10 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/extensionManagement/node/extensionManagementUtil" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="telemetryConfigurationTitle">
-        <source xml:lang="en">Telemetry</source>
-      </trans-unit>
-      <trans-unit id="telemetry.enableTelemetry">
-        <source xml:lang="en">Enable usage data and errors to be sent to a Microsoft online service.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="binFailed">
-        <source xml:lang="en">Failed to move '{0}' to the recycle bin</source>
-      </trans-unit>
-      <trans-unit id="trashFailed">
-        <source xml:lang="en">Failed to move '{0}' to the trash</source>
+      <trans-unit id="invalidManifest_Duplicated6">
+        <source xml:lang="en">VSIX invalid: package.json is not a JSON file.</source>
       </trans-unit>
     </body>
   </file>
@@ -122,13 +102,6 @@
       </trans-unit>
       <trans-unit id="workspaceName">
         <source xml:lang="en">{0} (Workspace)</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/files/common/files" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="unknownError">
-        <source xml:lang="en">Unknown Error</source>
       </trans-unit>
     </body>
   </file>
@@ -259,6 +232,46 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="telemetryConfigurationTitle">
+        <source xml:lang="en">Telemetry</source>
+      </trans-unit>
+      <trans-unit id="telemetry.enableTelemetry">
+        <source xml:lang="en">Enable usage data and errors to be sent to a Microsoft online service.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="binFailed">
+        <source xml:lang="en">Failed to move '{0}' to the recycle bin</source>
+      </trans-unit>
+      <trans-unit id="trashFailed">
+        <source xml:lang="en">Failed to move '{0}' to the trash</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/common/files" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="unknownError">
+        <source xml:lang="en">Unknown Error</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/markers/common/markers" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="sev.error">
+        <source xml:lang="en">Error</source>
+      </trans-unit>
+      <trans-unit id="sev.warning">
+        <source xml:lang="en">Warning</source>
+      </trans-unit>
+      <trans-unit id="sev.info">
+        <source xml:lang="en">Info</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/userDataSync/common/userDataSync" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="sync_Duplicated14">
@@ -275,19 +288,6 @@
       </trans-unit>
       <trans-unit id="app.extension.identifier.errorMessage">
         <source xml:lang="en">Expected format '${publisher}.${name}'. Example: 'vscode.csharp'.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/markers/common/markers" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="sev.error">
-        <source xml:lang="en">Error</source>
-      </trans-unit>
-      <trans-unit id="sev.warning">
-        <source xml:lang="en">Warning</source>
-      </trans-unit>
-      <trans-unit id="sev.info">
-        <source xml:lang="en">Info</source>
       </trans-unit>
     </body>
   </file>
@@ -323,16 +323,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/userDataSync/common/userDataSyncService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="turned off">
-        <source xml:lang="en">Cannot sync because syncing is turned off in the cloud</source>
-      </trans-unit>
-      <trans-unit id="session expired">
-        <source xml:lang="en">Cannot sync because current session is expired</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/configuration/common/configurationRegistry" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="defaultConfigurations.title">
@@ -359,6 +349,16 @@
     <body>
       <trans-unit id="codeWorkspace">
         <source xml:lang="en">Code Workspace</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/userDataSyncService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="turned off">
+        <source xml:lang="en">Cannot sync because syncing is turned off in the cloud</source>
+      </trans-unit>
+      <trans-unit id="session expired">
+        <source xml:lang="en">Cannot sync because current session is expired</source>
       </trans-unit>
     </body>
   </file>
@@ -499,7 +499,7 @@
       <trans-unit id="tree horizontalScrolling setting">
         <source xml:lang="en">Controls whether trees support horizontal scrolling in the workbench.</source>
       </trans-unit>
-      <trans-unit id="deprecated_Duplicated6">
+      <trans-unit id="deprecated_Duplicated4">
         <source xml:lang="en">This setting is deprecated, please use '{0}' instead.</source>
       </trans-unit>
       <trans-unit id="tree indent setting">
@@ -525,9 +525,19 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/files/common/io" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="fileTooLargeForHeapError">
+        <source xml:lang="en">To open a file of this size, you need to restart and allow it to use more memory</source>
+      </trans-unit>
+      <trans-unit id="fileTooLargeError_Duplicated25">
+        <source xml:lang="en">File is too large to open</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/extensionManagement/node/extensionManagementService" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="invalidManifest_Duplicated4">
+      <trans-unit id="invalidManifest_Duplicated7">
         <source xml:lang="en">Extension invalid: package.json is not a JSON file.</source>
       </trans-unit>
       <trans-unit id="incompatible_Duplicated26">
@@ -580,16 +590,6 @@
       </trans-unit>
       <trans-unit id="notExists">
         <source xml:lang="en">Could not find extension</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/files/common/io" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="fileTooLargeForHeapError">
-        <source xml:lang="en">To open a file of this size, you need to restart and allow it to use more memory</source>
-      </trans-unit>
-      <trans-unit id="fileTooLargeError_Duplicated25">
-        <source xml:lang="en">File is too large to open</source>
       </trans-unit>
     </body>
   </file>
@@ -1060,6 +1060,13 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="errorInvalidSettings_Duplicated28">
+        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/extensions/common/extensionValidator" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="versionSyntax">
@@ -1076,20 +1083,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="errorInvalidSettings_Duplicated28">
-        <source xml:lang="en">Unable to sync keybindings as there are errors/warning in keybindings file.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="errorInvalidSettings_Duplicated29">
-        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/workspaces/electron-main/workspacesMainService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="ok_Duplicated19">
@@ -1100,6 +1093,13 @@
       </trans-unit>
       <trans-unit id="workspaceOpenedDetail">
         <source xml:lang="en">The workspace is already opened in another window. Please close that window first and then try again.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="errorInvalidSettings_Duplicated29">
+        <source xml:lang="en">Unable to sync keybindings as there are errors/warning in keybindings file.</source>
       </trans-unit>
     </body>
   </file>
@@ -1133,6 +1133,25 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/workspaces/electron-main/workspacesHistoryMainService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="newWindow_Duplicated13">
+        <source xml:lang="en">New Window</source>
+      </trans-unit>
+      <trans-unit id="newWindowDesc">
+        <source xml:lang="en">Opens a new window</source>
+      </trans-unit>
+      <trans-unit id="recentFolders">
+        <source xml:lang="en">Recent Workspaces</source>
+      </trans-unit>
+      <trans-unit id="folderDesc">
+        <source xml:lang="en">{0} {1}</source>
+      </trans-unit>
+      <trans-unit id="workspaceDesc">
+        <source xml:lang="en">{0} {1}</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/issue/electron-main/issueMainService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="local">
@@ -1158,25 +1177,6 @@
       </trans-unit>
       <trans-unit id="processExplorer">
         <source xml:lang="en">Process Explorer</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/workspaces/electron-main/workspacesHistoryMainService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="newWindow_Duplicated13">
-        <source xml:lang="en">New Window</source>
-      </trans-unit>
-      <trans-unit id="newWindowDesc">
-        <source xml:lang="en">Opens a new window</source>
-      </trans-unit>
-      <trans-unit id="recentFolders">
-        <source xml:lang="en">Recent Workspaces</source>
-      </trans-unit>
-      <trans-unit id="folderDesc">
-        <source xml:lang="en">{0} {1}</source>
-      </trans-unit>
-      <trans-unit id="workspaceDesc">
-        <source xml:lang="en">{0} {1}</source>
       </trans-unit>
     </body>
   </file>
@@ -1294,7 +1294,7 @@
       <trans-unit id="abstract">
         <source xml:lang="en">Style to use for symbols that are abstract.</source>
       </trans-unit>
-      <trans-unit id="deprecated_Duplicated7">
+      <trans-unit id="deprecated_Duplicated5">
         <source xml:lang="en">Style to use for symbols that are deprecated.</source>
       </trans-unit>
       <trans-unit id="modification">
