@@ -44,16 +44,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="extensions_Duplicated1">
-        <source xml:lang="en">Extensions</source>
-      </trans-unit>
-      <trans-unit id="preferences">
-        <source xml:lang="en">Preferences</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/update/common/update.config.contribution" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="updateConfigurationTitle">
@@ -74,7 +64,7 @@
       <trans-unit id="default">
         <source xml:lang="en">Enable automatic update checks. Code will check for updates automatically and periodically.</source>
       </trans-unit>
-      <trans-unit id="deprecated_Duplicated3">
+      <trans-unit id="deprecated_Duplicated1">
         <source xml:lang="en">This setting is deprecated, please use '{0}' instead.</source>
       </trans-unit>
       <trans-unit id="enableWindowsBackgroundUpdatesTitle">
@@ -88,6 +78,16 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="extensions_Duplicated4">
+        <source xml:lang="en">Extensions</source>
+      </trans-unit>
+      <trans-unit id="preferences">
+        <source xml:lang="en">Preferences</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/extensionManagement/node/extensionManagementUtil" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="invalidManifest_Duplicated6">
@@ -95,13 +95,13 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/label/common/label" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="untitledWorkspace">
-        <source xml:lang="en">Untitled (Workspace)</source>
+      <trans-unit id="binFailed">
+        <source xml:lang="en">Failed to move '{0}' to the recycle bin</source>
       </trans-unit>
-      <trans-unit id="workspaceName">
-        <source xml:lang="en">{0} (Workspace)</source>
+      <trans-unit id="trashFailed">
+        <source xml:lang="en">Failed to move '{0}' to the trash</source>
       </trans-unit>
     </body>
   </file>
@@ -232,6 +232,16 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/label/common/label" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="untitledWorkspace">
+        <source xml:lang="en">Untitled (Workspace)</source>
+      </trans-unit>
+      <trans-unit id="workspaceName">
+        <source xml:lang="en">{0} (Workspace)</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="telemetryConfigurationTitle">
@@ -242,13 +252,22 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/userDataSync/common/userDataSync" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="binFailed">
-        <source xml:lang="en">Failed to move '{0}' to the recycle bin</source>
+      <trans-unit id="sync_Duplicated14">
+        <source xml:lang="en">Sync</source>
       </trans-unit>
-      <trans-unit id="trashFailed">
-        <source xml:lang="en">Failed to move '{0}' to the trash</source>
+      <trans-unit id="sync.keybindingsPerPlatform">
+        <source xml:lang="en">Synchronize keybindings per platform.</source>
+      </trans-unit>
+      <trans-unit id="sync.ignoredExtensions">
+        <source xml:lang="en">List of extensions to be ignored while synchronizing. The identifier of an extension is always ${publisher}.${name}. For example: vscode.csharp.</source>
+      </trans-unit>
+      <trans-unit id="sync.ignoredSettings">
+        <source xml:lang="en">Configure settings to be ignored while synchronizing.</source>
+      </trans-unit>
+      <trans-unit id="app.extension.identifier.errorMessage">
+        <source xml:lang="en">Expected format '${publisher}.${name}'. Example: 'vscode.csharp'.</source>
       </trans-unit>
     </body>
   </file>
@@ -269,25 +288,6 @@
       </trans-unit>
       <trans-unit id="sev.info">
         <source xml:lang="en">Info</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/userDataSync" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="sync_Duplicated14">
-        <source xml:lang="en">Sync</source>
-      </trans-unit>
-      <trans-unit id="sync.keybindingsPerPlatform">
-        <source xml:lang="en">Synchronize keybindings per platform.</source>
-      </trans-unit>
-      <trans-unit id="sync.ignoredExtensions">
-        <source xml:lang="en">List of extensions to be ignored while synchronizing. The identifier of an extension is always ${publisher}.${name}. For example: vscode.csharp.</source>
-      </trans-unit>
-      <trans-unit id="sync.ignoredSettings">
-        <source xml:lang="en">Configure settings to be ignored while synchronizing.</source>
-      </trans-unit>
-      <trans-unit id="app.extension.identifier.errorMessage">
-        <source xml:lang="en">Expected format '${publisher}.${name}'. Example: 'vscode.csharp'.</source>
       </trans-unit>
     </body>
   </file>
@@ -323,6 +323,16 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/userDataSync/common/userDataSyncService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="turned off">
+        <source xml:lang="en">Cannot sync because syncing is turned off in the cloud</source>
+      </trans-unit>
+      <trans-unit id="session expired">
+        <source xml:lang="en">Cannot sync because current session is expired</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/configuration/common/configurationRegistry" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="defaultConfigurations.title">
@@ -349,16 +359,6 @@
     <body>
       <trans-unit id="codeWorkspace">
         <source xml:lang="en">Code Workspace</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/userDataSyncService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="turned off">
-        <source xml:lang="en">Cannot sync because syncing is turned off in the cloud</source>
-      </trans-unit>
-      <trans-unit id="session expired">
-        <source xml:lang="en">Cannot sync because current session is expired</source>
       </trans-unit>
     </body>
   </file>
@@ -499,7 +499,7 @@
       <trans-unit id="tree horizontalScrolling setting">
         <source xml:lang="en">Controls whether trees support horizontal scrolling in the workbench.</source>
       </trans-unit>
-      <trans-unit id="deprecated_Duplicated4">
+      <trans-unit id="deprecated_Duplicated2">
         <source xml:lang="en">This setting is deprecated, please use '{0}' instead.</source>
       </trans-unit>
       <trans-unit id="tree indent setting">
@@ -1060,26 +1060,17 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="errorInvalidSettings_Duplicated28">
-        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
+        <source xml:lang="en">Unable to sync keybindings as there are errors/warning in keybindings file.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/extensions/common/extensionValidator" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="versionSyntax">
-        <source xml:lang="en">Could not parse `engines.vscode` value {0}. Please use, for example: ^1.22.0, ^1.22.x, etc.</source>
-      </trans-unit>
-      <trans-unit id="versionSpecificity1">
-        <source xml:lang="en">Version specified in `engines.vscode` ({0}) is not specific enough. For vscode versions before 1.0.0, please define at a minimum the major and minor desired version. E.g. ^0.10.0, 0.10.x, 0.11.0, etc.</source>
-      </trans-unit>
-      <trans-unit id="versionSpecificity2">
-        <source xml:lang="en">Version specified in `engines.vscode` ({0}) is not specific enough. For vscode versions after 1.0.0, please define at a minimum the major desired version. E.g. ^1.10.0, 1.10.x, 1.x.x, 2.x.x, etc.</source>
-      </trans-unit>
-      <trans-unit id="versionMismatch">
-        <source xml:lang="en">Extension is not compatible with Code {0}. Extension requires: {1}.</source>
+      <trans-unit id="errorInvalidSettings_Duplicated29">
+        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
       </trans-unit>
     </body>
   </file>
@@ -1093,13 +1084,6 @@
       </trans-unit>
       <trans-unit id="workspaceOpenedDetail">
         <source xml:lang="en">The workspace is already opened in another window. Please close that window first and then try again.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="errorInvalidSettings_Duplicated29">
-        <source xml:lang="en">Unable to sync keybindings as there are errors/warning in keybindings file.</source>
       </trans-unit>
     </body>
   </file>
@@ -1123,6 +1107,22 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/extensions/common/extensionValidator" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="versionSyntax">
+        <source xml:lang="en">Could not parse `engines.vscode` value {0}. Please use, for example: ^1.22.0, ^1.22.x, etc.</source>
+      </trans-unit>
+      <trans-unit id="versionSpecificity1">
+        <source xml:lang="en">Version specified in `engines.vscode` ({0}) is not specific enough. For vscode versions before 1.0.0, please define at a minimum the major and minor desired version. E.g. ^0.10.0, 0.10.x, 0.11.0, etc.</source>
+      </trans-unit>
+      <trans-unit id="versionSpecificity2">
+        <source xml:lang="en">Version specified in `engines.vscode` ({0}) is not specific enough. For vscode versions after 1.0.0, please define at a minimum the major desired version. E.g. ^1.10.0, 1.10.x, 1.x.x, 2.x.x, etc.</source>
+      </trans-unit>
+      <trans-unit id="versionMismatch">
+        <source xml:lang="en">Extension is not compatible with Code {0}. Extension requires: {1}.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/keybinding/common/abstractKeybindingService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="first.chord">
@@ -1130,25 +1130,6 @@
       </trans-unit>
       <trans-unit id="missing.chord">
         <source xml:lang="en">The key combination ({0}, {1}) is not a command.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/workspaces/electron-main/workspacesHistoryMainService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="newWindow_Duplicated13">
-        <source xml:lang="en">New Window</source>
-      </trans-unit>
-      <trans-unit id="newWindowDesc">
-        <source xml:lang="en">Opens a new window</source>
-      </trans-unit>
-      <trans-unit id="recentFolders">
-        <source xml:lang="en">Recent Workspaces</source>
-      </trans-unit>
-      <trans-unit id="folderDesc">
-        <source xml:lang="en">{0} {1}</source>
-      </trans-unit>
-      <trans-unit id="workspaceDesc">
-        <source xml:lang="en">{0} {1}</source>
       </trans-unit>
     </body>
   </file>
@@ -1177,6 +1158,25 @@
       </trans-unit>
       <trans-unit id="processExplorer">
         <source xml:lang="en">Process Explorer</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/workspaces/electron-main/workspacesHistoryMainService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="newWindow_Duplicated13">
+        <source xml:lang="en">New Window</source>
+      </trans-unit>
+      <trans-unit id="newWindowDesc">
+        <source xml:lang="en">Opens a new window</source>
+      </trans-unit>
+      <trans-unit id="recentFolders">
+        <source xml:lang="en">Recent Workspaces</source>
+      </trans-unit>
+      <trans-unit id="folderDesc">
+        <source xml:lang="en">{0} {1}</source>
+      </trans-unit>
+      <trans-unit id="workspaceDesc">
+        <source xml:lang="en">{0} {1}</source>
       </trans-unit>
     </body>
   </file>
@@ -1294,7 +1294,7 @@
       <trans-unit id="abstract">
         <source xml:lang="en">Style to use for symbols that are abstract.</source>
       </trans-unit>
-      <trans-unit id="deprecated_Duplicated5">
+      <trans-unit id="deprecated_Duplicated3">
         <source xml:lang="en">Style to use for symbols that are deprecated.</source>
       </trans-unit>
       <trans-unit id="modification">
@@ -2280,7 +2280,7 @@
         <source xml:lang="en">
         </source>
       </trans-unit>
-      <trans-unit id="extensions_Duplicated2">
+      <trans-unit id="extensions_Duplicated5">
         <source xml:lang="en">
         </source>
       </trans-unit>

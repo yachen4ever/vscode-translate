@@ -148,6 +148,12 @@
       <trans-unit id="search.searchOnType">
         <source xml:lang="en">Search all files as you type.</source>
       </trans-unit>
+      <trans-unit id="search.seedWithNearestWord">
+        <source xml:lang="en">Enable seeding search from the word nearest the cursor when the active editor has no selection.</source>
+      </trans-unit>
+      <trans-unit id="search.seedOnFocus">
+        <source xml:lang="en">Update workspace seach query to the editor's selected text when focusing the search view. This happens either on click or when triggering the `workbench.views.search.focus` command.</source>
+      </trans-unit>
       <trans-unit id="search.searchOnTypeDebouncePeriod">
         <source xml:lang="en">When `#search.searchOnType#` is enabled, controls the timeout in milliseconds between a character being typed and the search starting. Has no effect when `search.searchOnType` is disabled.</source>
       </trans-unit>
@@ -381,6 +387,13 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/search/browser/replaceService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="fileReplaceChanges">
+        <source xml:lang="en">{0} ↔ {1} (Replace Preview)</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/search/browser/searchActions" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="showSearch">
@@ -452,13 +465,6 @@
       </trans-unit>
       <trans-unit id="closeEditor">
         <source xml:lang="en">Remove from Recently Opened</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/search/browser/replaceService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="fileReplaceChanges">
-        <source xml:lang="en">{0} ↔ {1} (Replace Preview)</source>
       </trans-unit>
     </body>
   </file>
