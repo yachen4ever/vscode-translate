@@ -181,12 +181,35 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/debug/browser/welcomeView" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="run_Duplicated19">
+        <source xml:lang="en">Run</source>
+      </trans-unit>
+      <trans-unit id="openAFileWhichCanBeDebugged">
+        <source xml:lang="en">[Open a file](command:{0}) which can be debugged or run.</source>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
+      </trans-unit>
+      <trans-unit id="runAndDebugAction">
+        <source xml:lang="en">[Run and Debug{0}](command:{1})</source>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
+      </trans-unit>
+      <trans-unit id="customizeRunAndDebug">
+        <source xml:lang="en">To customize Run and Debug [create a launch.json file](command:{0}).</source>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
+      </trans-unit>
+      <trans-unit id="customizeRunAndDebugOpenFolder">
+        <source xml:lang="en">To customize Run and Debug, [open a folder](command:{0}) and create a launch.json file.</source>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/debug/browser/debug.contribution" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="toggleDebugViewlet">
         <source xml:lang="en">Show Run and Debug</source>
       </trans-unit>
-      <trans-unit id="run_Duplicated19">
+      <trans-unit id="run_Duplicated20">
         <source xml:lang="en">Run</source>
       </trans-unit>
       <trans-unit id="debugPanel">
@@ -429,29 +452,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/welcomeView" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="run_Duplicated20">
-        <source xml:lang="en">Run</source>
-      </trans-unit>
-      <trans-unit id="openAFileWhichCanBeDebugged">
-        <source xml:lang="en">[Open a file](command:{0}) which can be debugged or run.</source>
-        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
-      </trans-unit>
-      <trans-unit id="runAndDebugAction">
-        <source xml:lang="en">[Run and Debug{0}](command:{1})</source>
-        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
-      </trans-unit>
-      <trans-unit id="customizeRunAndDebug">
-        <source xml:lang="en">To customize Run and Debug [create a launch.json file](command:{0}).</source>
-        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
-      </trans-unit>
-      <trans-unit id="customizeRunAndDebugOpenFolder">
-        <source xml:lang="en">To customize Run and Debug, [open a folder](command:{0}) and create a launch.json file.</source>
-        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/browser/debugActionViewItems" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="debugLaunchConfigurations">
@@ -598,32 +598,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/common/debugContentProvider" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="unable">
-        <source xml:lang="en">Unable to resolve the resource without a debug session</source>
-      </trans-unit>
-      <trans-unit id="canNotResolveSourceWithError">
-        <source xml:lang="en">Could not load source '{0}': {1}.</source>
-      </trans-unit>
-      <trans-unit id="canNotResolveSource">
-        <source xml:lang="en">Could not load source '{0}'.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/debugStatus" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="status.debug">
-        <source xml:lang="en">Debug</source>
-      </trans-unit>
-      <trans-unit id="debugTarget">
-        <source xml:lang="en">Debug: {0}</source>
-      </trans-unit>
-      <trans-unit id="selectAndStartDebug">
-        <source xml:lang="en">Select and start debug configuration</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/browser/debugQuickAccess" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="noDebugResults">
@@ -631,6 +605,12 @@
       </trans-unit>
       <trans-unit id="customizeLaunchConfig">
         <source xml:lang="en">Configure Launch Configuration</source>
+      </trans-unit>
+      <trans-unit id="contributed">
+        <source xml:lang="en">contributed</source>
+      </trans-unit>
+      <trans-unit id="configure">
+        <source xml:lang="en">configure</source>
       </trans-unit>
       <trans-unit id="addConfigTo_Duplicated30">
         <source xml:lang="en">Add Config ({0})...</source>
@@ -653,6 +633,32 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/debug/browser/debugStatus" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="status.debug">
+        <source xml:lang="en">Debug</source>
+      </trans-unit>
+      <trans-unit id="debugTarget">
+        <source xml:lang="en">Debug: {0}</source>
+      </trans-unit>
+      <trans-unit id="selectAndStartDebug">
+        <source xml:lang="en">Select and start debug configuration</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/common/debugContentProvider" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="unable">
+        <source xml:lang="en">Unable to resolve the resource without a debug session</source>
+      </trans-unit>
+      <trans-unit id="canNotResolveSourceWithError">
+        <source xml:lang="en">Could not load source '{0}': {1}.</source>
+      </trans-unit>
+      <trans-unit id="canNotResolveSource">
+        <source xml:lang="en">Could not load source '{0}'.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/debug/browser/linkDetector" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="fileLinkMac">
@@ -670,6 +676,31 @@
       </trans-unit>
       <trans-unit id="snapshotObj">
         <source xml:lang="en">Only primitive values are shown for this object.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/breakpointWidget" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="breakpointWidgetLogMessagePlaceholder">
+        <source xml:lang="en">Message to log when breakpoint is hit. Expressions within {} are interpolated. 'Enter' to accept, 'esc' to cancel.</source>
+      </trans-unit>
+      <trans-unit id="breakpointWidgetHitCountPlaceholder">
+        <source xml:lang="en">Break when hit count condition is met. 'Enter' to accept, 'esc' to cancel.</source>
+      </trans-unit>
+      <trans-unit id="breakpointWidgetExpressionPlaceholder">
+        <source xml:lang="en">Break when expression evaluates to true. 'Enter' to accept, 'esc' to cancel.</source>
+      </trans-unit>
+      <trans-unit id="expression_Duplicated35">
+        <source xml:lang="en">Expression</source>
+      </trans-unit>
+      <trans-unit id="hitCount_Duplicated37">
+        <source xml:lang="en">Hit Count</source>
+      </trans-unit>
+      <trans-unit id="logMessage_Duplicated39">
+        <source xml:lang="en">Log Message</source>
+      </trans-unit>
+      <trans-unit id="breakpointType">
+        <source xml:lang="en">Breakpoint Type</source>
       </trans-unit>
     </body>
   </file>
@@ -701,31 +732,6 @@
       </trans-unit>
       <trans-unit id="goToPreviousBreakpoint">
         <source xml:lang="en">Debug: Go To Previous Breakpoint</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/breakpointWidget" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="breakpointWidgetLogMessagePlaceholder">
-        <source xml:lang="en">Message to log when breakpoint is hit. Expressions within {} are interpolated. 'Enter' to accept, 'esc' to cancel.</source>
-      </trans-unit>
-      <trans-unit id="breakpointWidgetHitCountPlaceholder">
-        <source xml:lang="en">Break when hit count condition is met. 'Enter' to accept, 'esc' to cancel.</source>
-      </trans-unit>
-      <trans-unit id="breakpointWidgetExpressionPlaceholder">
-        <source xml:lang="en">Break when expression evaluates to true. 'Enter' to accept, 'esc' to cancel.</source>
-      </trans-unit>
-      <trans-unit id="expression_Duplicated35">
-        <source xml:lang="en">Expression</source>
-      </trans-unit>
-      <trans-unit id="hitCount_Duplicated37">
-        <source xml:lang="en">Hit Count</source>
-      </trans-unit>
-      <trans-unit id="logMessage_Duplicated39">
-        <source xml:lang="en">Log Message</source>
-      </trans-unit>
-      <trans-unit id="breakpointType">
-        <source xml:lang="en">Breakpoint Type</source>
       </trans-unit>
     </body>
   </file>
@@ -765,32 +771,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/watchExpressionsView" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="watchAriaTreeLabel">
-        <source xml:lang="en">Debug Watch Expressions</source>
-        <note>Debug is a noun in this context, not a verb.</note>
-      </trans-unit>
-      <trans-unit id="editWatchExpression">
-        <source xml:lang="en">Edit Expression</source>
-      </trans-unit>
-      <trans-unit id="removeWatchExpression">
-        <source xml:lang="en">Remove Expression</source>
-      </trans-unit>
-      <trans-unit id="watchExpressionInputAriaLabel">
-        <source xml:lang="en">Type watch expression</source>
-      </trans-unit>
-      <trans-unit id="watchExpressionPlaceholder">
-        <source xml:lang="en">Expression to watch</source>
-      </trans-unit>
-      <trans-unit id="watchExpressionAriaLabel">
-        <source xml:lang="en">{0} value {1}, watch, debug</source>
-      </trans-unit>
-      <trans-unit id="watchVariableAriaLabel">
-        <source xml:lang="en">{0} value {1}, watch, debug</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/browser/variablesView" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="variablesAriaTreeLabel">
@@ -816,6 +796,32 @@
       </trans-unit>
       <trans-unit id="variableAriaLabel_Duplicated32">
         <source xml:lang="en">{0} value {1}, variables, debug</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/watchExpressionsView" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="watchAriaTreeLabel">
+        <source xml:lang="en">Debug Watch Expressions</source>
+        <note>Debug is a noun in this context, not a verb.</note>
+      </trans-unit>
+      <trans-unit id="editWatchExpression">
+        <source xml:lang="en">Edit Expression</source>
+      </trans-unit>
+      <trans-unit id="removeWatchExpression">
+        <source xml:lang="en">Remove Expression</source>
+      </trans-unit>
+      <trans-unit id="watchExpressionInputAriaLabel">
+        <source xml:lang="en">Type watch expression</source>
+      </trans-unit>
+      <trans-unit id="watchExpressionPlaceholder">
+        <source xml:lang="en">Expression to watch</source>
+      </trans-unit>
+      <trans-unit id="watchExpressionAriaLabel">
+        <source xml:lang="en">{0} value {1}, watch, debug</source>
+      </trans-unit>
+      <trans-unit id="watchVariableAriaLabel">
+        <source xml:lang="en">{0} value {1}, watch, debug</source>
       </trans-unit>
     </body>
   </file>
@@ -1143,6 +1149,9 @@
   </file>
   <file original="src/vs/workbench/contrib/debug/browser/debugConfigurationManager" source-language="en" datatype="plaintext">
     <body>
+      <trans-unit id="selectConfiguration">
+        <source xml:lang="en">Select Debug Configuration</source>
+      </trans-unit>
       <trans-unit id="debugNoType">
         <source xml:lang="en">Debugger 'type' can not be omitted and must be of type 'string'.</source>
       </trans-unit>
@@ -1176,6 +1185,55 @@
       </trans-unit>
       <trans-unit id="debuggingStopped">
         <source xml:lang="en">Debugging stopped.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/common/debugger" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="cannot.find.da">
+        <source xml:lang="en">Cannot find debug adapter for type '{0}'.</source>
+      </trans-unit>
+      <trans-unit id="launch.config.comment1">
+        <source xml:lang="en">Use IntelliSense to learn about possible attributes.</source>
+      </trans-unit>
+      <trans-unit id="launch.config.comment2">
+        <source xml:lang="en">Hover to view descriptions of existing attributes.</source>
+      </trans-unit>
+      <trans-unit id="launch.config.comment3">
+        <source xml:lang="en">For more information, visit: {0}</source>
+      </trans-unit>
+      <trans-unit id="debugType">
+        <source xml:lang="en">Type of configuration.</source>
+      </trans-unit>
+      <trans-unit id="debugTypeNotRecognised">
+        <source xml:lang="en">The debug type is not recognized. Make sure that you have a corresponding debug extension installed and that it is enabled.</source>
+      </trans-unit>
+      <trans-unit id="node2NotSupported">
+        <source xml:lang="en">"node2" is no longer supported, use "node" instead and set the "protocol" attribute to "inspector".</source>
+      </trans-unit>
+      <trans-unit id="debugName">
+        <source xml:lang="en">Name of configuration; appears in the launch configuration dropdown menu.</source>
+      </trans-unit>
+      <trans-unit id="debugRequest">
+        <source xml:lang="en">Request type of configuration. Can be "launch" or "attach".</source>
+      </trans-unit>
+      <trans-unit id="debugServer">
+        <source xml:lang="en">For debug extension development only: if a port is specified VS Code tries to connect to a debug adapter running in server mode</source>
+      </trans-unit>
+      <trans-unit id="debugPrelaunchTask">
+        <source xml:lang="en">Task to run before debug session starts.</source>
+      </trans-unit>
+      <trans-unit id="debugPostDebugTask">
+        <source xml:lang="en">Task to run after debug session ends.</source>
+      </trans-unit>
+      <trans-unit id="debugWindowsConfiguration">
+        <source xml:lang="en">Windows specific launch configuration attributes.</source>
+      </trans-unit>
+      <trans-unit id="debugOSXConfiguration">
+        <source xml:lang="en">OS X specific launch configuration attributes.</source>
+      </trans-unit>
+      <trans-unit id="debugLinuxConfiguration">
+        <source xml:lang="en">Linux specific launch configuration attributes.</source>
       </trans-unit>
     </body>
   </file>
@@ -1279,55 +1337,6 @@
       </trans-unit>
       <trans-unit id="compoundPrelaunchTask">
         <source xml:lang="en">Task to run before any of the compound configurations start.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/common/debugger" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="cannot.find.da">
-        <source xml:lang="en">Cannot find debug adapter for type '{0}'.</source>
-      </trans-unit>
-      <trans-unit id="launch.config.comment1">
-        <source xml:lang="en">Use IntelliSense to learn about possible attributes.</source>
-      </trans-unit>
-      <trans-unit id="launch.config.comment2">
-        <source xml:lang="en">Hover to view descriptions of existing attributes.</source>
-      </trans-unit>
-      <trans-unit id="launch.config.comment3">
-        <source xml:lang="en">For more information, visit: {0}</source>
-      </trans-unit>
-      <trans-unit id="debugType">
-        <source xml:lang="en">Type of configuration.</source>
-      </trans-unit>
-      <trans-unit id="debugTypeNotRecognised">
-        <source xml:lang="en">The debug type is not recognized. Make sure that you have a corresponding debug extension installed and that it is enabled.</source>
-      </trans-unit>
-      <trans-unit id="node2NotSupported">
-        <source xml:lang="en">"node2" is no longer supported, use "node" instead and set the "protocol" attribute to "inspector".</source>
-      </trans-unit>
-      <trans-unit id="debugName">
-        <source xml:lang="en">Name of configuration; appears in the launch configuration dropdown menu.</source>
-      </trans-unit>
-      <trans-unit id="debugRequest">
-        <source xml:lang="en">Request type of configuration. Can be "launch" or "attach".</source>
-      </trans-unit>
-      <trans-unit id="debugServer">
-        <source xml:lang="en">For debug extension development only: if a port is specified VS Code tries to connect to a debug adapter running in server mode</source>
-      </trans-unit>
-      <trans-unit id="debugPrelaunchTask">
-        <source xml:lang="en">Task to run before debug session starts.</source>
-      </trans-unit>
-      <trans-unit id="debugPostDebugTask">
-        <source xml:lang="en">Task to run after debug session ends.</source>
-      </trans-unit>
-      <trans-unit id="debugWindowsConfiguration">
-        <source xml:lang="en">Windows specific launch configuration attributes.</source>
-      </trans-unit>
-      <trans-unit id="debugOSXConfiguration">
-        <source xml:lang="en">OS X specific launch configuration attributes.</source>
-      </trans-unit>
-      <trans-unit id="debugLinuxConfiguration">
-        <source xml:lang="en">Linux specific launch configuration attributes.</source>
       </trans-unit>
     </body>
   </file>
