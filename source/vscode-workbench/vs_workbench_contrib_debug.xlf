@@ -608,16 +608,16 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/common/debugContentProvider" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/debug/browser/statusbarColorProvider" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="unable">
-        <source xml:lang="en">Unable to resolve the resource without a debug session</source>
+      <trans-unit id="statusBarDebuggingBackground">
+        <source xml:lang="en">Status bar background color when a program is being debugged. The status bar is shown in the bottom of the window</source>
       </trans-unit>
-      <trans-unit id="canNotResolveSourceWithError">
-        <source xml:lang="en">Could not load source '{0}': {1}.</source>
+      <trans-unit id="statusBarDebuggingForeground">
+        <source xml:lang="en">Status bar foreground color when a program is being debugged. The status bar is shown in the bottom of the window</source>
       </trans-unit>
-      <trans-unit id="canNotResolveSource">
-        <source xml:lang="en">Could not load source '{0}'.</source>
+      <trans-unit id="statusBarDebuggingBorder">
+        <source xml:lang="en">Status bar border color separating to the sidebar and editor when a program is being debugged. The status bar is shown in the bottom of the window</source>
       </trans-unit>
     </body>
   </file>
@@ -646,16 +646,16 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/statusbarColorProvider" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/debug/common/debugContentProvider" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="statusBarDebuggingBackground">
-        <source xml:lang="en">Status bar background color when a program is being debugged. The status bar is shown in the bottom of the window</source>
+      <trans-unit id="unable">
+        <source xml:lang="en">Unable to resolve the resource without a debug session</source>
       </trans-unit>
-      <trans-unit id="statusBarDebuggingForeground">
-        <source xml:lang="en">Status bar foreground color when a program is being debugged. The status bar is shown in the bottom of the window</source>
+      <trans-unit id="canNotResolveSourceWithError">
+        <source xml:lang="en">Could not load source '{0}': {1}.</source>
       </trans-unit>
-      <trans-unit id="statusBarDebuggingBorder">
-        <source xml:lang="en">Status bar border color separating to the sidebar and editor when a program is being debugged. The status bar is shown in the bottom of the window</source>
+      <trans-unit id="canNotResolveSource">
+        <source xml:lang="en">Could not load source '{0}'.</source>
       </trans-unit>
     </body>
   </file>
@@ -690,6 +690,16 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/debug/browser/linkDetector" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="fileLinkMac">
+        <source xml:lang="en">Cmd + click to follow link</source>
+      </trans-unit>
+      <trans-unit id="fileLink">
+        <source xml:lang="en">Ctrl + click to follow link</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/debug/browser/breakpointWidget" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="breakpointWidgetLogMessagePlaceholder">
@@ -715,16 +725,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/linkDetector" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="fileLinkMac">
-        <source xml:lang="en">Cmd + click to follow link</source>
-      </trans-unit>
-      <trans-unit id="fileLink">
-        <source xml:lang="en">Ctrl + click to follow link</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/common/replModel" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="consoleCleared">
@@ -732,6 +732,23 @@
       </trans-unit>
       <trans-unit id="snapshotObj">
         <source xml:lang="en">Only primitive values are shown for this object.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/node/debugAdapter" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="debugAdapterBinNotFound">
+        <source xml:lang="en">Debug adapter executable '{0}' does not exist.</source>
+      </trans-unit>
+      <trans-unit id="debugAdapterCannotDetermineExecutable">
+        <source xml:lang="en">Cannot determine executable for debug adapter '{0}'.</source>
+        <note>Adapter executable file not found</note>
+      </trans-unit>
+      <trans-unit id="unableToLaunchDebugAdapter">
+        <source xml:lang="en">Unable to launch debug adapter from '{0}'.</source>
+      </trans-unit>
+      <trans-unit id="unableToLaunchDebugAdapterNoArgs">
+        <source xml:lang="en">Unable to launch debug adapter.</source>
       </trans-unit>
     </body>
   </file>
@@ -811,46 +828,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/node/debugAdapter" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="debugAdapterBinNotFound">
-        <source xml:lang="en">Debug adapter executable '{0}' does not exist.</source>
-      </trans-unit>
-      <trans-unit id="debugAdapterCannotDetermineExecutable">
-        <source xml:lang="en">Cannot determine executable for debug adapter '{0}'.</source>
-        <note>Adapter executable file not found</note>
-      </trans-unit>
-      <trans-unit id="unableToLaunchDebugAdapter">
-        <source xml:lang="en">Unable to launch debug adapter from '{0}'.</source>
-      </trans-unit>
-      <trans-unit id="unableToLaunchDebugAdapterNoArgs">
-        <source xml:lang="en">Unable to launch debug adapter.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/loadedScriptsView" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="loadedScriptsSession">
-        <source xml:lang="en">Debug Session</source>
-      </trans-unit>
-      <trans-unit id="loadedScriptsAriaLabel">
-        <source xml:lang="en">Debug Loaded Scripts</source>
-        <note>Debug is a noun in this context, not a verb.</note>
-      </trans-unit>
-      <trans-unit id="loadedScriptsRootFolderAriaLabel">
-        <source xml:lang="en">Workspace folder {0}, loaded script, debug</source>
-      </trans-unit>
-      <trans-unit id="loadedScriptsSessionAriaLabel">
-        <source xml:lang="en">Session {0}, loaded script, debug</source>
-      </trans-unit>
-      <trans-unit id="loadedScriptsFolderAriaLabel">
-        <source xml:lang="en">Folder {0}, loaded script, debug</source>
-      </trans-unit>
-      <trans-unit id="loadedScriptsSourceAriaLabel">
-        <source xml:lang="en">{0}, loaded script, debug</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/browser/debugCommands" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="restartDebug">
@@ -894,6 +871,29 @@
       </trans-unit>
       <trans-unit id="addInlineBreakpoint">
         <source xml:lang="en">Add Inline Breakpoint</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/loadedScriptsView" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="loadedScriptsSession">
+        <source xml:lang="en">Debug Session</source>
+      </trans-unit>
+      <trans-unit id="loadedScriptsAriaLabel">
+        <source xml:lang="en">Debug Loaded Scripts</source>
+        <note>Debug is a noun in this context, not a verb.</note>
+      </trans-unit>
+      <trans-unit id="loadedScriptsRootFolderAriaLabel">
+        <source xml:lang="en">Workspace folder {0}, loaded script, debug</source>
+      </trans-unit>
+      <trans-unit id="loadedScriptsSessionAriaLabel">
+        <source xml:lang="en">Session {0}, loaded script, debug</source>
+      </trans-unit>
+      <trans-unit id="loadedScriptsFolderAriaLabel">
+        <source xml:lang="en">Folder {0}, loaded script, debug</source>
+      </trans-unit>
+      <trans-unit id="loadedScriptsSourceAriaLabel">
+        <source xml:lang="en">{0}, loaded script, debug</source>
       </trans-unit>
     </body>
   </file>

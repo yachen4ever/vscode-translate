@@ -1,29 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file original="src/vs/workbench/contrib/tasks/node/processTaskSystem" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="version1_0">
-        <source xml:lang="en">The task system is configured for version 0.1.0 (see tasks.json file), which can only execute custom tasks. Upgrade to version 2.0.0 to run the task: {0}</source>
-      </trans-unit>
-      <trans-unit id="TaskRunnerSystem.unknownError">
-        <source xml:lang="en">A unknown error has occurred while executing a task. See task output log for details.</source>
-      </trans-unit>
-      <trans-unit id="TaskRunnerSystem.watchingBuildTaskFinished">
-        <source xml:lang="en">
-Watching build tasks has finished.</source>
-      </trans-unit>
-      <trans-unit id="TaskRunnerSystem.childProcessError">
-        <source xml:lang="en">Failed to launch external program {0} {1}.</source>
-      </trans-unit>
-      <trans-unit id="TaskRunnerSystem.cancelRequested">
-        <source xml:lang="en">
-The task '{0}' was terminated per user request.</source>
-      </trans-unit>
-      <trans-unit id="unknownProblemMatcher_Duplicated1">
-        <source xml:lang="en">Problem matcher {0} can't be resolved. The matcher will be ignored</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/tasks/node/processRunnerDetector" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="TaskSystemDetector.noGulpTasks">
@@ -49,6 +25,30 @@ The task '{0}' was terminated per user request.</source>
       </trans-unit>
       <trans-unit id="TaskSystemDetector.testTaskDetected">
         <source xml:lang="en">Test task named '{0}' detected.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/node/processTaskSystem" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="version1_0">
+        <source xml:lang="en">The task system is configured for version 0.1.0 (see tasks.json file), which can only execute custom tasks. Upgrade to version 2.0.0 to run the task: {0}</source>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.unknownError">
+        <source xml:lang="en">A unknown error has occurred while executing a task. See task output log for details.</source>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.watchingBuildTaskFinished">
+        <source xml:lang="en">
+Watching build tasks has finished.</source>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.childProcessError">
+        <source xml:lang="en">Failed to launch external program {0} {1}.</source>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.cancelRequested">
+        <source xml:lang="en">
+The task '{0}' was terminated per user request.</source>
+      </trans-unit>
+      <trans-unit id="unknownProblemMatcher_Duplicated1">
+        <source xml:lang="en">Problem matcher {0} can't be resolved. The matcher will be ignored</source>
       </trans-unit>
     </body>
   </file>
@@ -181,22 +181,12 @@ The task '{0}' was terminated per user request.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/tasksQuickAccess" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="noTaskResults">
-        <source xml:lang="en">No matching tasks</source>
-      </trans-unit>
-      <trans-unit id="TaskService.pickRunTask_Duplicated5">
-        <source xml:lang="en">Select the task to run</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/tasks/common/jsonSchema_v1" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="JsonSchema.version.deprecated">
         <source xml:lang="en">Task version 0.1.0 is deprecated. Please use 2.0.0</source>
       </trans-unit>
-      <trans-unit id="JsonSchema.version_Duplicated7">
+      <trans-unit id="JsonSchema.version_Duplicated5">
         <source xml:lang="en">The config's version number</source>
       </trans-unit>
       <trans-unit id="JsonSchema._runner">
@@ -205,17 +195,27 @@ The task '{0}' was terminated per user request.</source>
       <trans-unit id="JsonSchema.runner">
         <source xml:lang="en">Defines whether the task is executed as a process and the output is shown in the output window or inside the terminal.</source>
       </trans-unit>
-      <trans-unit id="JsonSchema.windows_Duplicated9">
+      <trans-unit id="JsonSchema.windows_Duplicated7">
         <source xml:lang="en">Windows specific command configuration</source>
       </trans-unit>
-      <trans-unit id="JsonSchema.mac_Duplicated11">
+      <trans-unit id="JsonSchema.mac_Duplicated9">
         <source xml:lang="en">Mac specific command configuration</source>
       </trans-unit>
-      <trans-unit id="JsonSchema.linux_Duplicated13">
+      <trans-unit id="JsonSchema.linux_Duplicated11">
         <source xml:lang="en">Linux specific command configuration</source>
       </trans-unit>
-      <trans-unit id="JsonSchema.shell_Duplicated15">
+      <trans-unit id="JsonSchema.shell_Duplicated13">
         <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/tasksQuickAccess" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="noTaskResults">
+        <source xml:lang="en">No matching tasks</source>
+      </trans-unit>
+      <trans-unit id="TaskService.pickRunTask_Duplicated15">
+        <source xml:lang="en">Select the task to run</source>
       </trans-unit>
     </body>
   </file>
@@ -327,7 +327,7 @@ The task '{0}' was terminated per user request.</source>
   </file>
   <file original="src/vs/workbench/contrib/tasks/common/jsonSchema_v2" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="JsonSchema.shell_Duplicated16">
+      <trans-unit id="JsonSchema.shell_Duplicated14">
         <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
       </trans-unit>
       <trans-unit id="JsonSchema.tasks.isShellCommand.deprecated">
@@ -465,7 +465,7 @@ The task '{0}' was terminated per user request.</source>
       <trans-unit id="JsonSchema.tasks.label">
         <source xml:lang="en">The task's user interface label</source>
       </trans-unit>
-      <trans-unit id="JsonSchema.version_Duplicated8">
+      <trans-unit id="JsonSchema.version_Duplicated6">
         <source xml:lang="en">The config's version number.</source>
       </trans-unit>
       <trans-unit id="JsonSchema.tasks.identifier">
@@ -528,13 +528,13 @@ The task '{0}' was terminated per user request.</source>
       <trans-unit id="JsonSchema.tasks.taskSelector.deprecated">
         <source xml:lang="en">The property taskSelector is deprecated. Inline the command with its arguments into the task instead. See also the 1.14 release notes.</source>
       </trans-unit>
-      <trans-unit id="JsonSchema.windows_Duplicated10">
+      <trans-unit id="JsonSchema.windows_Duplicated8">
         <source xml:lang="en">Windows specific command configuration</source>
       </trans-unit>
-      <trans-unit id="JsonSchema.mac_Duplicated12">
+      <trans-unit id="JsonSchema.mac_Duplicated10">
         <source xml:lang="en">Mac specific command configuration</source>
       </trans-unit>
-      <trans-unit id="JsonSchema.linux_Duplicated14">
+      <trans-unit id="JsonSchema.linux_Duplicated12">
         <source xml:lang="en">Linux specific command configuration</source>
       </trans-unit>
     </body>
@@ -1045,7 +1045,7 @@ The task will be ignored.
       <trans-unit id="TaskService.notAgain">
         <source xml:lang="en">Don't Show Again</source>
       </trans-unit>
-      <trans-unit id="TaskService.pickRunTask_Duplicated6">
+      <trans-unit id="TaskService.pickRunTask_Duplicated16">
         <source xml:lang="en">Select the task to run</source>
       </trans-unit>
       <trans-unit id="TaskService.noEntryToRun">

@@ -1,15 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file original="src/vs/platform/environment/node/argvHelper" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="unknownOption">
-        <source xml:lang="en">Warning: '{0}' is not in the list of known options, but still passed to Electron/Chromium.</source>
+      <trans-unit id="extensions">
+        <source xml:lang="en">Extensions</source>
       </trans-unit>
-      <trans-unit id="multipleValues">
-        <source xml:lang="en">Option '{0}' is defined more than once. Using value '{1}.'</source>
-      </trans-unit>
-      <trans-unit id="gotoValidation">
-        <source xml:lang="en">Arguments in `--goto` mode should be in the format of `FILE(:LINE(:CHARACTER))`.</source>
+      <trans-unit id="preferences">
+        <source xml:lang="en">Preferences</source>
       </trans-unit>
     </body>
   </file>
@@ -41,6 +38,58 @@
       </trans-unit>
       <trans-unit id="systemCertificates">
         <source xml:lang="en">Controls whether CA certificates should be loaded from the OS. (On Windows and macOS a reload of the window is required after turning this off.)</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="binFailed">
+        <source xml:lang="en">Failed to move '{0}' to the recycle bin</source>
+      </trans-unit>
+      <trans-unit id="trashFailed">
+        <source xml:lang="en">Failed to move '{0}' to the trash</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/environment/node/argvHelper" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="unknownOption">
+        <source xml:lang="en">Warning: '{0}' is not in the list of known options, but still passed to Electron/Chromium.</source>
+      </trans-unit>
+      <trans-unit id="multipleValues">
+        <source xml:lang="en">Option '{0}' is defined more than once. Using value '{1}.'</source>
+      </trans-unit>
+      <trans-unit id="gotoValidation">
+        <source xml:lang="en">Arguments in `--goto` mode should be in the format of `FILE(:LINE(:CHARACTER))`.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="telemetryConfigurationTitle">
+        <source xml:lang="en">Telemetry</source>
+      </trans-unit>
+      <trans-unit id="telemetry.enableTelemetry">
+        <source xml:lang="en">Enable usage data and errors to be sent to a Microsoft online service.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/userDataSync" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="sync">
+        <source xml:lang="en">Sync</source>
+      </trans-unit>
+      <trans-unit id="sync.keybindingsPerPlatform">
+        <source xml:lang="en">Synchronize keybindings per platform.</source>
+      </trans-unit>
+      <trans-unit id="sync.ignoredExtensions">
+        <source xml:lang="en">List of extensions to be ignored while synchronizing. The identifier of an extension is always ${publisher}.${name}. For example: vscode.csharp.</source>
+      </trans-unit>
+      <trans-unit id="sync.ignoredSettings">
+        <source xml:lang="en">Configure settings to be ignored while synchronizing.</source>
+      </trans-unit>
+      <trans-unit id="app.extension.identifier.errorMessage">
+        <source xml:lang="en">Expected format '${publisher}.${name}'. Example: 'vscode.csharp'.</source>
       </trans-unit>
     </body>
   </file>
@@ -78,16 +127,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="extensions">
-        <source xml:lang="en">Extensions</source>
-      </trans-unit>
-      <trans-unit id="preferences">
-        <source xml:lang="en">Preferences</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/extensionManagement/node/extensionManagementUtil" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="invalidManifest_Duplicated4">
@@ -95,42 +134,30 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/label/common/label" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="binFailed">
-        <source xml:lang="en">Failed to move '{0}' to the recycle bin</source>
+      <trans-unit id="untitledWorkspace">
+        <source xml:lang="en">Untitled (Workspace)</source>
       </trans-unit>
-      <trans-unit id="trashFailed">
-        <source xml:lang="en">Failed to move '{0}' to the trash</source>
+      <trans-unit id="workspaceName">
+        <source xml:lang="en">{0} (Workspace)</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/files/common/files" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="telemetryConfigurationTitle">
-        <source xml:lang="en">Telemetry</source>
-      </trans-unit>
-      <trans-unit id="telemetry.enableTelemetry">
-        <source xml:lang="en">Enable usage data and errors to be sent to a Microsoft online service.</source>
+      <trans-unit id="unknownError">
+        <source xml:lang="en">Unknown Error</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/userDataSync/common/userDataSync" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/userDataSync/common/userDataSyncService" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="sync">
-        <source xml:lang="en">Sync</source>
+      <trans-unit id="turned off">
+        <source xml:lang="en">Cannot sync because syncing is turned off in the cloud</source>
       </trans-unit>
-      <trans-unit id="sync.keybindingsPerPlatform">
-        <source xml:lang="en">Synchronize keybindings per platform.</source>
-      </trans-unit>
-      <trans-unit id="sync.ignoredExtensions">
-        <source xml:lang="en">List of extensions to be ignored while synchronizing. The identifier of an extension is always ${publisher}.${name}. For example: vscode.csharp.</source>
-      </trans-unit>
-      <trans-unit id="sync.ignoredSettings">
-        <source xml:lang="en">Configure settings to be ignored while synchronizing.</source>
-      </trans-unit>
-      <trans-unit id="app.extension.identifier.errorMessage">
-        <source xml:lang="en">Expected format '${publisher}.${name}'. Example: 'vscode.csharp'.</source>
+      <trans-unit id="session expired">
+        <source xml:lang="en">Cannot sync because current session is expired</source>
       </trans-unit>
     </body>
   </file>
@@ -261,33 +288,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/label/common/label" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="untitledWorkspace">
-        <source xml:lang="en">Untitled (Workspace)</source>
-      </trans-unit>
-      <trans-unit id="workspaceName">
-        <source xml:lang="en">{0} (Workspace)</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/files/common/files" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="unknownError">
-        <source xml:lang="en">Unknown Error</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/userDataSyncService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="turned off">
-        <source xml:lang="en">Cannot sync because syncing is turned off in the cloud</source>
-      </trans-unit>
-      <trans-unit id="session expired">
-        <source xml:lang="en">Cannot sync because current session is expired</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/markers/common/markers" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="sev.error">
@@ -308,28 +308,6 @@
       </trans-unit>
       <trans-unit id="moreFiles">
         <source xml:lang="en">...{0} additional files not shown</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/files/node/diskFileSystemProvider" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="fileExists_Duplicated8">
-        <source xml:lang="en">File already exists</source>
-      </trans-unit>
-      <trans-unit id="fileNotExists">
-        <source xml:lang="en">File does not exist</source>
-      </trans-unit>
-      <trans-unit id="moveError">
-        <source xml:lang="en">Unable to move '{0}' into '{1}' ({2}).</source>
-      </trans-unit>
-      <trans-unit id="copyError">
-        <source xml:lang="en">Unable to copy '{0}' into '{1}' ({2}).</source>
-      </trans-unit>
-      <trans-unit id="fileCopyErrorPathCase">
-        <source xml:lang="en">'File cannot be copied to same path with different path case</source>
-      </trans-unit>
-      <trans-unit id="fileCopyErrorExists">
-        <source xml:lang="en">File at target already exists</source>
       </trans-unit>
     </body>
   </file>
@@ -359,6 +337,28 @@
     <body>
       <trans-unit id="codeWorkspace">
         <source xml:lang="en">Code Workspace</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/node/diskFileSystemProvider" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="fileExists_Duplicated8">
+        <source xml:lang="en">File already exists</source>
+      </trans-unit>
+      <trans-unit id="fileNotExists">
+        <source xml:lang="en">File does not exist</source>
+      </trans-unit>
+      <trans-unit id="moveError">
+        <source xml:lang="en">Unable to move '{0}' into '{1}' ({2}).</source>
+      </trans-unit>
+      <trans-unit id="copyError">
+        <source xml:lang="en">Unable to copy '{0}' into '{1}' ({2}).</source>
+      </trans-unit>
+      <trans-unit id="fileCopyErrorPathCase">
+        <source xml:lang="en">'File cannot be copied to same path with different path case</source>
+      </trans-unit>
+      <trans-unit id="fileCopyErrorExists">
+        <source xml:lang="en">File at target already exists</source>
       </trans-unit>
     </body>
   </file>
@@ -583,6 +583,20 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="errorInvalidSettings_Duplicated20">
+        <source xml:lang="en">Unable to sync keybindings as there are errors/warning in keybindings file.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="errorInvalidSettings_Duplicated21">
+        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/files/common/io" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="fileTooLargeForHeapError">
@@ -590,20 +604,6 @@
       </trans-unit>
       <trans-unit id="fileTooLargeError_Duplicated17">
         <source xml:lang="en">File is too large to open</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="errorInvalidSettings_Duplicated20">
-        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="errorInvalidSettings_Duplicated21">
-        <source xml:lang="en">Unable to sync keybindings as there are errors/warning in keybindings file.</source>
       </trans-unit>
     </body>
   </file>
@@ -1090,6 +1090,16 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/keybinding/common/abstractKeybindingService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="first.chord">
+        <source xml:lang="en">({0}) was pressed. Waiting for second key of chord...</source>
+      </trans-unit>
+      <trans-unit id="missing.chord">
+        <source xml:lang="en">The key combination ({0}, {1}) is not a command.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/workspaces/electron-main/workspacesMainService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="ok_Duplicated11">
@@ -1120,16 +1130,6 @@
       <trans-unit id="openWorkspace">
         <source xml:lang="en">&amp;&amp;Open</source>
         <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/keybinding/common/abstractKeybindingService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="first.chord">
-        <source xml:lang="en">({0}) was pressed. Waiting for second key of chord...</source>
-      </trans-unit>
-      <trans-unit id="missing.chord">
-        <source xml:lang="en">The key combination ({0}, {1}) is not a command.</source>
       </trans-unit>
     </body>
   </file>
