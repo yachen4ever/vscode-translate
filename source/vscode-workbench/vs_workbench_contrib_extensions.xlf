@@ -10,17 +10,17 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/extensions/electron-browser/runtimeExtensionsInput" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="extensionsInputName_Duplicated3">
-        <source xml:lang="en">Running Extensions</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/extensions/electron-browser/extensionsActions" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="openExtensionsFolder">
         <source xml:lang="en">Open Extensions Folder</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/extensions/electron-browser/runtimeExtensionsInput" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="extensionsInputName_Duplicated3">
+        <source xml:lang="en">Running Extensions</source>
       </trans-unit>
     </body>
   </file>
@@ -374,10 +374,19 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/extensions/browser/extensionsActivationProgress" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/extensions/common/extensionsFileTemplate" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="activation">
-        <source xml:lang="en">Activating Extensions...</source>
+      <trans-unit id="app.extensions.json.title">
+        <source xml:lang="en">Extensions</source>
+      </trans-unit>
+      <trans-unit id="app.extensions.json.recommendations">
+        <source xml:lang="en">List of extensions which should be recommended for users of this workspace. The identifier of an extension is always '${publisher}.${name}'. For example: 'vscode.csharp'.</source>
+      </trans-unit>
+      <trans-unit id="app.extension.identifier.errorMessage">
+        <source xml:lang="en">Expected format '${publisher}.${name}'. Example: 'vscode.csharp'.</source>
+      </trans-unit>
+      <trans-unit id="app.extensions.json.unwantedRecommendations">
+        <source xml:lang="en">List of extensions recommended by VS Code that should not be recommended for users of this workspace. The identifier of an extension is always '${publisher}.${name}'. For example: 'vscode.csharp'.</source>
       </trans-unit>
     </body>
   </file>
@@ -400,26 +409,10 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/extensions/browser/remoteExtensionsInstaller" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/extensions/browser/extensionsActivationProgress" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="remote">
-        <source xml:lang="en">Remote</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/extensions/common/extensionsFileTemplate" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="app.extensions.json.title">
-        <source xml:lang="en">Extensions</source>
-      </trans-unit>
-      <trans-unit id="app.extensions.json.recommendations">
-        <source xml:lang="en">List of extensions which should be recommended for users of this workspace. The identifier of an extension is always '${publisher}.${name}'. For example: 'vscode.csharp'.</source>
-      </trans-unit>
-      <trans-unit id="app.extension.identifier.errorMessage">
-        <source xml:lang="en">Expected format '${publisher}.${name}'. Example: 'vscode.csharp'.</source>
-      </trans-unit>
-      <trans-unit id="app.extensions.json.unwantedRecommendations">
-        <source xml:lang="en">List of extensions recommended by VS Code that should not be recommended for users of this workspace. The identifier of an extension is always '${publisher}.${name}'. For example: 'vscode.csharp'.</source>
+      <trans-unit id="activation">
+        <source xml:lang="en">Activating Extensions...</source>
       </trans-unit>
     </body>
   </file>
@@ -436,6 +429,13 @@
       </trans-unit>
       <trans-unit id="manage_Duplicated31">
         <source xml:lang="en">Press Enter to manage your extensions.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/extensions/browser/remoteExtensionsInstaller" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="remote">
+        <source xml:lang="en">Remote</source>
       </trans-unit>
     </body>
   </file>
@@ -462,12 +462,31 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/extensions/browser/workspaceRecommendations" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="neverShowAgain_Duplicated37">
+        <source xml:lang="en">Don't Show Again</source>
+      </trans-unit>
+      <trans-unit id="workspaceRecommendation">
+        <source xml:lang="en">This extension is recommended by users of the current workspace.</source>
+      </trans-unit>
+      <trans-unit id="workspaceRecommended">
+        <source xml:lang="en">This workspace has extension recommendations.</source>
+      </trans-unit>
+      <trans-unit id="installAll">
+        <source xml:lang="en">Install All</source>
+      </trans-unit>
+      <trans-unit id="showRecommendations_Duplicated39">
+        <source xml:lang="en">Show Recommendations</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/extensions/browser/extensionsWorkbenchService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="Manifest is not found">
         <source xml:lang="en">Manifest is not found</source>
       </trans-unit>
-      <trans-unit id="malicious_Duplicated37">
+      <trans-unit id="malicious_Duplicated41">
         <source xml:lang="en">This extension is reported to be problematic.</source>
       </trans-unit>
       <trans-unit id="uninstallingExtension">
@@ -493,22 +512,10 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/extensions/browser/workspaceRecommendations" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/extensions/browser/dynamicWorkspaceRecommendations" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="neverShowAgain_Duplicated39">
-        <source xml:lang="en">Don't Show Again</source>
-      </trans-unit>
-      <trans-unit id="workspaceRecommendation">
-        <source xml:lang="en">This extension is recommended by users of the current workspace.</source>
-      </trans-unit>
-      <trans-unit id="workspaceRecommended">
-        <source xml:lang="en">This workspace has extension recommendations.</source>
-      </trans-unit>
-      <trans-unit id="installAll">
-        <source xml:lang="en">Install All</source>
-      </trans-unit>
-      <trans-unit id="showRecommendations_Duplicated41">
-        <source xml:lang="en">Show Recommendations</source>
+      <trans-unit id="dynamicWorkspaceRecommendation">
+        <source xml:lang="en">This extension may interest you because it's popular among users of the {0} repository.</source>
       </trans-unit>
     </body>
   </file>
@@ -522,13 +529,6 @@
       </trans-unit>
       <trans-unit id="exeBasedRecommendation_Duplicated36">
         <source xml:lang="en">This extension is recommended because of the current workspace configuration</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/extensions/browser/dynamicWorkspaceRecommendations" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="dynamicWorkspaceRecommendation">
-        <source xml:lang="en">This extension may interest you because it's popular among users of the {0} repository.</source>
       </trans-unit>
     </body>
   </file>
@@ -810,13 +810,13 @@
   </file>
   <file original="src/vs/workbench/contrib/extensions/browser/extensionRecommendations" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="neverShowAgain_Duplicated40">
+      <trans-unit id="neverShowAgain_Duplicated38">
         <source xml:lang="en">Don't Show Again</source>
       </trans-unit>
       <trans-unit id="install_Duplicated29">
         <source xml:lang="en">Install</source>
       </trans-unit>
-      <trans-unit id="showRecommendations_Duplicated42">
+      <trans-unit id="showRecommendations_Duplicated40">
         <source xml:lang="en">Show Recommendations</source>
       </trans-unit>
       <trans-unit id="ignoreExtensionRecommendations">
@@ -1182,7 +1182,7 @@
       <trans-unit id="malicious tooltip">
         <source xml:lang="en">This extension was reported to be problematic.</source>
       </trans-unit>
-      <trans-unit id="malicious_Duplicated38">
+      <trans-unit id="malicious_Duplicated42">
         <source xml:lang="en">Malicious</source>
       </trans-unit>
       <trans-unit id="syncingore.label">

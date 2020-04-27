@@ -1,5 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/workbench/contrib/tasks/node/processTaskSystem" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="version1_0">
+        <source xml:lang="en">The task system is configured for version 0.1.0 (see tasks.json file), which can only execute custom tasks. Upgrade to version 2.0.0 to run the task: {0}</source>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.unknownError">
+        <source xml:lang="en">A unknown error has occurred while executing a task. See task output log for details.</source>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.watchingBuildTaskFinished">
+        <source xml:lang="en">
+Watching build tasks has finished.</source>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.childProcessError">
+        <source xml:lang="en">Failed to launch external program {0} {1}.</source>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.cancelRequested">
+        <source xml:lang="en">
+The task '{0}' was terminated per user request.</source>
+      </trans-unit>
+      <trans-unit id="unknownProblemMatcher_Duplicated1">
+        <source xml:lang="en">Problem matcher {0} can't be resolved. The matcher will be ignored</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/tasks/node/processRunnerDetector" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="TaskSystemDetector.noGulpTasks">
@@ -25,30 +49,6 @@
       </trans-unit>
       <trans-unit id="TaskSystemDetector.testTaskDetected">
         <source xml:lang="en">Test task named '{0}' detected.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/tasks/node/processTaskSystem" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="version1_0">
-        <source xml:lang="en">The task system is configured for version 0.1.0 (see tasks.json file), which can only execute custom tasks. Upgrade to version 2.0.0 to run the task: {0}</source>
-      </trans-unit>
-      <trans-unit id="TaskRunnerSystem.unknownError">
-        <source xml:lang="en">A unknown error has occurred while executing a task. See task output log for details.</source>
-      </trans-unit>
-      <trans-unit id="TaskRunnerSystem.watchingBuildTaskFinished">
-        <source xml:lang="en">
-Watching build tasks has finished.</source>
-      </trans-unit>
-      <trans-unit id="TaskRunnerSystem.childProcessError">
-        <source xml:lang="en">Failed to launch external program {0} {1}.</source>
-      </trans-unit>
-      <trans-unit id="TaskRunnerSystem.cancelRequested">
-        <source xml:lang="en">
-The task '{0}' was terminated per user request.</source>
-      </trans-unit>
-      <trans-unit id="unknownProblemMatcher_Duplicated1">
-        <source xml:lang="en">Problem matcher {0} can't be resolved. The matcher will be ignored</source>
       </trans-unit>
     </body>
   </file>
@@ -171,6 +171,21 @@ The task '{0}' was terminated per user request.</source>
       </trans-unit>
       <trans-unit id="task.quickOpen.skip">
         <source xml:lang="en">Controls whether the task quick pick is skipped when there is only one task to pick from.</source>
+      </trans-unit>
+      <trans-unit id="task.quickOpen.showAll">
+        <source xml:lang="en">Causes the Tasks: Run Task command to use the slower "show all" behavior instead of the faster two level picker where tasks are grouped by provider.</source>
+      </trans-unit>
+      <trans-unit id="task.saveBeforeRun">
+        <source xml:lang="en">Configures whether all editor will be saved before running a task.</source>
+      </trans-unit>
+      <trans-unit id="task.saveBeforeRun.always">
+        <source xml:lang="en">Always saves all editors before running.</source>
+      </trans-unit>
+      <trans-unit id="task.saveBeforeRun.never">
+        <source xml:lang="en">Never saves editors before running.</source>
+      </trans-unit>
+      <trans-unit id="task.SaveBeforeRun.prompt">
+        <source xml:lang="en">Prompts whether to save editors before running.</source>
       </trans-unit>
     </body>
   </file>
@@ -953,6 +968,18 @@ The task '{0}' was terminated per user request.</source>
         <source xml:lang="en">There are many build tasks defined in the tasks.json. Executing the first one.
 </source>
       </trans-unit>
+      <trans-unit id="TaskSystem.saveBeforeRun.prompt.title">
+        <source xml:lang="en">Save all editors?</source>
+      </trans-unit>
+      <trans-unit id="saveBeforeRun.save">
+        <source xml:lang="en">Save</source>
+      </trans-unit>
+      <trans-unit id="saveBeforeRun.dontSave">
+        <source xml:lang="en">Don't save</source>
+      </trans-unit>
+      <trans-unit id="detail">
+        <source xml:lang="en">Do you want to save all editors before running the task?</source>
+      </trans-unit>
       <trans-unit id="TaskSystem.activeSame.noBackground">
         <source xml:lang="en">The task '{0}' is already active.</source>
       </trans-unit>
@@ -1047,6 +1074,9 @@ The task will be ignored.
       </trans-unit>
       <trans-unit id="TaskService.pickRunTask_Duplicated16">
         <source xml:lang="en">Select the task to run</source>
+      </trans-unit>
+      <trans-unit id="TaskService.noEntryToRunSlow">
+        <source xml:lang="en">No task to run found. Configure Tasks...</source>
       </trans-unit>
       <trans-unit id="TaskService.noEntryToRun">
         <source xml:lang="en">No configured tasks. Configure Tasks...</source>
