@@ -185,6 +185,9 @@
       <trans-unit id="maxMemoryForLargeFilesMB">
         <source xml:lang="en">Controls the memory available to VS Code after restart when trying to open large files. Same effect as specifying `--max-memory=NEWSIZE` on the command line.</source>
       </trans-unit>
+      <trans-unit id="maxMemoryForClosedFilesUndoStackMB">
+        <source xml:lang="en">Controls the maximum ammount of memory the undo stack should hold for files that have been closed.</source>
+      </trans-unit>
       <trans-unit id="askUser">
         <source xml:lang="en">Will refuse to save and ask for resolving the save conflict manually.</source>
       </trans-unit>
@@ -432,16 +435,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/files/common/dirtyFilesIndicator" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="dirtyFile">
-        <source xml:lang="en">1 unsaved file</source>
-      </trans-unit>
-      <trans-unit id="dirtyFiles">
-        <source xml:lang="en">{0} unsaved files</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/files/common/workspaceWatcher" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="netVersionError">
@@ -455,6 +448,16 @@
       </trans-unit>
       <trans-unit id="learnMore_Duplicated15">
         <source xml:lang="en">Instructions</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/files/common/dirtyFilesIndicator" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="dirtyFile">
+        <source xml:lang="en">1 unsaved file</source>
+      </trans-unit>
+      <trans-unit id="dirtyFiles">
+        <source xml:lang="en">{0} unsaved files</source>
       </trans-unit>
     </body>
   </file>
@@ -540,11 +543,11 @@
       <trans-unit id="promptOpenWith.setDefaultTooltip">
         <source xml:lang="en">Set as default editor for '{0}' files</source>
       </trans-unit>
-      <trans-unit id="promptOpenWith.defaultEditor.displayName">
-        <source xml:lang="en">Text Editor</source>
-      </trans-unit>
       <trans-unit id="promptOpenWith.placeHolder">
         <source xml:lang="en">Select editor for '{0}'</source>
+      </trans-unit>
+      <trans-unit id="promptOpenWith.defaultEditor.displayName">
+        <source xml:lang="en">Text Editor</source>
       </trans-unit>
     </body>
   </file>
@@ -725,6 +728,9 @@
       </trans-unit>
       <trans-unit id="workbench.files.action.reopenWithEditor">
         <source xml:lang="en">Reopen With...</source>
+      </trans-unit>
+      <trans-unit id="workbench.files.action.toggleEditorType">
+        <source xml:lang="en">Toggle Editor Type</source>
       </trans-unit>
       <trans-unit id="toggleAutoSave">
         <source xml:lang="en">Toggle Auto Save</source>

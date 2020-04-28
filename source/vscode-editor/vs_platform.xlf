@@ -13,6 +13,16 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="extensions">
+        <source xml:lang="en">Extensions</source>
+      </trans-unit>
+      <trans-unit id="preferences">
+        <source xml:lang="en">Preferences</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/request/common/request" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="httpConfigurationTitle">
@@ -44,20 +54,13 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="extensions">
-        <source xml:lang="en">Extensions</source>
+      <trans-unit id="binFailed">
+        <source xml:lang="en">Failed to move '{0}' to the recycle bin</source>
       </trans-unit>
-      <trans-unit id="preferences">
-        <source xml:lang="en">Preferences</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/extensionManagement/node/extensionManagementUtil" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="invalidManifest_Duplicated1">
-        <source xml:lang="en">VSIX invalid: package.json is not a JSON file.</source>
+      <trans-unit id="trashFailed">
+        <source xml:lang="en">Failed to move '{0}' to the trash</source>
       </trans-unit>
     </body>
   </file>
@@ -81,7 +84,7 @@
       <trans-unit id="default">
         <source xml:lang="en">Enable automatic update checks. Code will check for updates automatically and periodically.</source>
       </trans-unit>
-      <trans-unit id="deprecated_Duplicated3">
+      <trans-unit id="deprecated_Duplicated1">
         <source xml:lang="en">This setting is deprecated, please use '{0}' instead.</source>
       </trans-unit>
       <trans-unit id="enableWindowsBackgroundUpdatesTitle">
@@ -92,26 +95,6 @@
       </trans-unit>
       <trans-unit id="showReleaseNotes">
         <source xml:lang="en">Show Release Notes after an update. The Release Notes are fetched from a Microsoft online service.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="binFailed">
-        <source xml:lang="en">Failed to move '{0}' to the recycle bin</source>
-      </trans-unit>
-      <trans-unit id="trashFailed">
-        <source xml:lang="en">Failed to move '{0}' to the trash</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="telemetryConfigurationTitle">
-        <source xml:lang="en">Telemetry</source>
-      </trans-unit>
-      <trans-unit id="telemetry.enableTelemetry">
-        <source xml:lang="en">Enable usage data and errors to be sent to a Microsoft online service.</source>
       </trans-unit>
     </body>
   </file>
@@ -135,7 +118,7 @@
       <trans-unit id="goto">
         <source xml:lang="en">Open a file at the path on the specified line and character position.</source>
       </trans-unit>
-      <trans-unit id="newWindow_Duplicated6">
+      <trans-unit id="newWindow_Duplicated4">
         <source xml:lang="en">Force to open a new window.</source>
       </trans-unit>
       <trans-unit id="reuseWindow">
@@ -242,13 +225,13 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/label/common/label" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="untitledWorkspace">
-        <source xml:lang="en">Untitled (Workspace)</source>
+      <trans-unit id="telemetryConfigurationTitle">
+        <source xml:lang="en">Telemetry</source>
       </trans-unit>
-      <trans-unit id="workspaceName">
-        <source xml:lang="en">{0} (Workspace)</source>
+      <trans-unit id="telemetry.enableTelemetry">
+        <source xml:lang="en">Enable usage data and errors to be sent to a Microsoft online service.</source>
       </trans-unit>
     </body>
   </file>
@@ -271,10 +254,37 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/extensionManagement/node/extensionManagementUtil" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="invalidManifest_Duplicated6">
+        <source xml:lang="en">VSIX invalid: package.json is not a JSON file.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/label/common/label" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="untitledWorkspace">
+        <source xml:lang="en">Untitled (Workspace)</source>
+      </trans-unit>
+      <trans-unit id="workspaceName">
+        <source xml:lang="en">{0} (Workspace)</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/files/common/files" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="unknownError">
         <source xml:lang="en">Unknown Error</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/userDataSyncService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="turned off">
+        <source xml:lang="en">Cannot sync because syncing is turned off in the cloud</source>
+      </trans-unit>
+      <trans-unit id="session expired">
+        <source xml:lang="en">Cannot sync because current session is expired</source>
       </trans-unit>
     </body>
   </file>
@@ -298,16 +308,6 @@
       </trans-unit>
       <trans-unit id="moreFiles">
         <source xml:lang="en">...{0} additional files not shown</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/userDataSyncService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="turned off">
-        <source xml:lang="en">Cannot sync because syncing is turned off in the cloud</source>
-      </trans-unit>
-      <trans-unit id="session expired">
-        <source xml:lang="en">Cannot sync because current session is expired</source>
       </trans-unit>
     </body>
   </file>
@@ -499,7 +499,7 @@
       <trans-unit id="tree horizontalScrolling setting">
         <source xml:lang="en">Controls whether trees support horizontal scrolling in the workbench.</source>
       </trans-unit>
-      <trans-unit id="deprecated_Duplicated4">
+      <trans-unit id="deprecated_Duplicated2">
         <source xml:lang="en">This setting is deprecated, please use '{0}' instead.</source>
       </trans-unit>
       <trans-unit id="tree indent setting">
@@ -527,7 +527,7 @@
   </file>
   <file original="src/vs/platform/extensionManagement/node/extensionManagementService" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="invalidManifest_Duplicated2">
+      <trans-unit id="invalidManifest_Duplicated7">
         <source xml:lang="en">Extension invalid: package.json is not a JSON file.</source>
       </trans-unit>
       <trans-unit id="incompatible_Duplicated18">
@@ -590,6 +590,20 @@
       </trans-unit>
       <trans-unit id="fileTooLargeError_Duplicated17">
         <source xml:lang="en">File is too large to open</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="errorInvalidSettings_Duplicated20">
+        <source xml:lang="en">Unable to sync keybindings as there are errors/warning in keybindings file.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="errorInvalidSettings_Duplicated21">
+        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
       </trans-unit>
     </body>
   </file>
@@ -881,6 +895,9 @@
       <trans-unit id="diffEditorBorder">
         <source xml:lang="en">Border color between the two text editors.</source>
       </trans-unit>
+      <trans-unit id="diffDiagonalFill">
+        <source xml:lang="en">Color of the diff editor's diagonal fill. The diagonal fill is used in side-by-side diff views.</source>
+      </trans-unit>
       <trans-unit id="listFocusBackground">
         <source xml:lang="en">List/Tree background color for the focused item when the list/tree is active. An active list/tree has keyboard focus, an inactive does not.</source>
       </trans-unit>
@@ -1060,20 +1077,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="errorInvalidSettings_Duplicated20">
-        <source xml:lang="en">Unable to sync keybindings as there are errors/warning in keybindings file.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="errorInvalidSettings_Duplicated21">
-        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/extensions/common/extensionValidator" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="versionSyntax">
@@ -1103,6 +1106,16 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/keybinding/common/abstractKeybindingService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="first.chord">
+        <source xml:lang="en">({0}) was pressed. Waiting for second key of chord...</source>
+      </trans-unit>
+      <trans-unit id="missing.chord">
+        <source xml:lang="en">The key combination ({0}, {1}) is not a command.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/dialogs/electron-main/dialogs" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="open">
@@ -1120,16 +1133,6 @@
       <trans-unit id="openWorkspace">
         <source xml:lang="en">&amp;&amp;Open</source>
         <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/keybinding/common/abstractKeybindingService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="first.chord">
-        <source xml:lang="en">({0}) was pressed. Waiting for second key of chord...</source>
-      </trans-unit>
-      <trans-unit id="missing.chord">
-        <source xml:lang="en">The key combination ({0}, {1}) is not a command.</source>
       </trans-unit>
     </body>
   </file>
@@ -1163,7 +1166,7 @@
   </file>
   <file original="src/vs/platform/workspaces/electron-main/workspacesHistoryMainService" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="newWindow_Duplicated7">
+      <trans-unit id="newWindow_Duplicated5">
         <source xml:lang="en">New Window</source>
       </trans-unit>
       <trans-unit id="newWindowDesc">
@@ -1303,7 +1306,7 @@
       <trans-unit id="abstract">
         <source xml:lang="en">Style to use for symbols that are abstract.</source>
       </trans-unit>
-      <trans-unit id="deprecated_Duplicated5">
+      <trans-unit id="deprecated_Duplicated3">
         <source xml:lang="en">Style to use for symbols that are deprecated.</source>
       </trans-unit>
       <trans-unit id="modification">
@@ -1317,6 +1320,13 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/userDataSync/common/abstractSynchronizer" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="incompatible_Duplicated19">
+        <source xml:lang="en">Cannot sync {0} as its version {1} is not compatible with cloud {2}</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/theme/common/iconRegistry" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="iconDefintion.fontId">
@@ -1327,13 +1337,6 @@
       </trans-unit>
       <trans-unit id="icon.defaultDescription">
         <source xml:lang="en">Icon with identifier {0}</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/abstractSynchronizer" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="incompatible_Duplicated19">
-        <source xml:lang="en">Cannot sync {0} as its version {1} is not compatible with cloud {2}</source>
       </trans-unit>
     </body>
   </file>
