@@ -1,12 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file original="src/vs/editor/contrib/caretOperations/transpose" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="transposeLetters.label">
-        <source xml:lang="en">Transpose Letters</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/caretOperations/caretOperations" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="caret.moveLeft">
@@ -14,6 +7,13 @@
       </trans-unit>
       <trans-unit id="caret.moveRight">
         <source xml:lang="en">Move Selected Text Right</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/caretOperations/transpose" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="transposeLetters.label">
+        <source xml:lang="en">Transpose Letters</source>
       </trans-unit>
     </body>
   </file>
@@ -41,19 +41,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/fontZoom/fontZoom" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="EditorFontZoomIn.label">
-        <source xml:lang="en">Editor Font Zoom In</source>
-      </trans-unit>
-      <trans-unit id="EditorFontZoomOut.label">
-        <source xml:lang="en">Editor Font Zoom Out</source>
-      </trans-unit>
-      <trans-unit id="EditorFontZoomReset.label">
-        <source xml:lang="en">Editor Font Zoom Reset</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/cursorUndo/cursorUndo" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="cursor.undo">
@@ -71,6 +58,13 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/tokenization/tokenization" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="forceRetokenize">
+        <source xml:lang="en">Developer: Force Retokenize</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/toggleTabFocusMode/toggleTabFocusMode" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="toggle.tabMovesFocus">
@@ -85,10 +79,16 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/tokenization/tokenization" source-language="en" datatype="plaintext">
+  <file original="src/vs/editor/contrib/fontZoom/fontZoom" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="forceRetokenize">
-        <source xml:lang="en">Developer: Force Retokenize</source>
+      <trans-unit id="EditorFontZoomIn.label">
+        <source xml:lang="en">Editor Font Zoom In</source>
+      </trans-unit>
+      <trans-unit id="EditorFontZoomOut.label">
+        <source xml:lang="en">Editor Font Zoom Out</source>
+      </trans-unit>
+      <trans-unit id="EditorFontZoomReset.label">
+        <source xml:lang="en">Editor Font Zoom Reset</source>
       </trans-unit>
     </body>
   </file>
@@ -137,6 +137,16 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/inPlaceReplace/inPlaceReplace" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="InPlaceReplaceAction.previous.label">
+        <source xml:lang="en">Replace with Previous Value</source>
+      </trans-unit>
+      <trans-unit id="InPlaceReplaceAction.next.label">
+        <source xml:lang="en">Replace with Next Value</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/hover/hover" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="showHover">
@@ -148,34 +158,6 @@ This allows for users to show the hover without using the mouse.</note>
         <source xml:lang="en">Show Definition Preview Hover</source>
         <note>Label for action that will trigger the showing of definition preview hover in the editor.
 This allows for users to show the definition preview hover without using the mouse.</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/inPlaceReplace/inPlaceReplace" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="InPlaceReplaceAction.previous.label">
-        <source xml:lang="en">Replace with Previous Value</source>
-      </trans-unit>
-      <trans-unit id="InPlaceReplaceAction.next.label">
-        <source xml:lang="en">Replace with Next Value</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/smartSelect/smartSelect" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="smartSelect.expand">
-        <source xml:lang="en">Expand Selection</source>
-      </trans-unit>
-      <trans-unit id="miSmartSelectGrow">
-        <source xml:lang="en">&amp;&amp;Expand Selection</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="smartSelect.shrink">
-        <source xml:lang="en">Shrink Selection</source>
-      </trans-unit>
-      <trans-unit id="miSmartSelectShrink">
-        <source xml:lang="en">&amp;&amp;Shrink Selection</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
     </body>
   </file>
@@ -210,10 +192,21 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/codelens/codelensController" source-language="en" datatype="plaintext">
+  <file original="src/vs/editor/contrib/smartSelect/smartSelect" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="showLensOnLine">
-        <source xml:lang="en">Show CodeLens Commands For Current Line</source>
+      <trans-unit id="smartSelect.expand">
+        <source xml:lang="en">Expand Selection</source>
+      </trans-unit>
+      <trans-unit id="miSmartSelectGrow">
+        <source xml:lang="en">&amp;&amp;Expand Selection</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="smartSelect.shrink">
+        <source xml:lang="en">Shrink Selection</source>
+      </trans-unit>
+      <trans-unit id="miSmartSelectShrink">
+        <source xml:lang="en">&amp;&amp;Shrink Selection</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
     </body>
   </file>
@@ -234,27 +227,10 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/gotoError/gotoError" source-language="en" datatype="plaintext">
+  <file original="src/vs/editor/contrib/codelens/codelensController" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="markerAction.next.label">
-        <source xml:lang="en">Go to Next Problem (Error, Warning, Info)</source>
-      </trans-unit>
-      <trans-unit id="markerAction.previous.label">
-        <source xml:lang="en">Go to Previous Problem (Error, Warning, Info)</source>
-      </trans-unit>
-      <trans-unit id="markerAction.nextInFiles.label">
-        <source xml:lang="en">Go to Next Problem in Files (Error, Warning, Info)</source>
-      </trans-unit>
-      <trans-unit id="markerAction.previousInFiles.label">
-        <source xml:lang="en">Go to Previous Problem in Files (Error, Warning, Info)</source>
-      </trans-unit>
-      <trans-unit id="miGotoNextProblem">
-        <source xml:lang="en">Next &amp;&amp;Problem</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miGotoPreviousProblem">
-        <source xml:lang="en">Previous &amp;&amp;Problem</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
+      <trans-unit id="showLensOnLine">
+        <source xml:lang="en">Show CodeLens Commands For Current Line</source>
       </trans-unit>
     </body>
   </file>
@@ -289,6 +265,13 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/gotoSymbol/link/goToDefinitionAtPosition" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="multipleResults">
+        <source xml:lang="en">Click to show {0} definitions.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/rename/onTypeRename" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="onTypeRename.label">
@@ -296,10 +279,27 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/gotoSymbol/link/goToDefinitionAtPosition" source-language="en" datatype="plaintext">
+  <file original="src/vs/editor/contrib/gotoError/gotoError" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="multipleResults">
-        <source xml:lang="en">Click to show {0} definitions.</source>
+      <trans-unit id="markerAction.next.label">
+        <source xml:lang="en">Go to Next Problem (Error, Warning, Info)</source>
+      </trans-unit>
+      <trans-unit id="markerAction.previous.label">
+        <source xml:lang="en">Go to Previous Problem (Error, Warning, Info)</source>
+      </trans-unit>
+      <trans-unit id="markerAction.nextInFiles.label">
+        <source xml:lang="en">Go to Next Problem in Files (Error, Warning, Info)</source>
+      </trans-unit>
+      <trans-unit id="markerAction.previousInFiles.label">
+        <source xml:lang="en">Go to Previous Problem in Files (Error, Warning, Info)</source>
+      </trans-unit>
+      <trans-unit id="miGotoNextProblem">
+        <source xml:lang="en">Next &amp;&amp;Problem</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miGotoPreviousProblem">
+        <source xml:lang="en">Previous &amp;&amp;Problem</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
     </body>
   </file>
@@ -888,13 +888,6 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/parameterHints/parameterHintsWidget" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="hint_Duplicated4">
-        <source xml:lang="en">{0}, hint</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/rename/renameInputField" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="renameAriaLabel">
@@ -909,6 +902,13 @@ This allows for users to show the definition preview hover without using the mou
     <body>
       <trans-unit id="editor.readonly">
         <source xml:lang="en">Cannot edit in read-only editor</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/parameterHints/parameterHintsWidget" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="hint_Duplicated4">
+        <source xml:lang="en">{0}, hint</source>
       </trans-unit>
     </body>
   </file>
@@ -1453,6 +1453,19 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/codeAction/lightBulbWidget" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="prefferedQuickFixWithKb">
+        <source xml:lang="en">Show Fixes. Preferred Fix Available ({0})</source>
+      </trans-unit>
+      <trans-unit id="quickFixWithKb">
+        <source xml:lang="en">Show Fixes ({0})</source>
+      </trans-unit>
+      <trans-unit id="quickFix">
+        <source xml:lang="en">Show Fixes</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/find/findWidget" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="label.find">
@@ -1551,19 +1564,6 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
       <trans-unit id="suggest">
         <source xml:lang="en">Suggest</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/codeAction/lightBulbWidget" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="prefferedQuickFixWithKb">
-        <source xml:lang="en">Show Fixes. Preferred Fix Available ({0})</source>
-      </trans-unit>
-      <trans-unit id="quickFixWithKb">
-        <source xml:lang="en">Show Fixes ({0})</source>
-      </trans-unit>
-      <trans-unit id="quickFix">
-        <source xml:lang="en">Show Fixes</source>
       </trans-unit>
     </body>
   </file>

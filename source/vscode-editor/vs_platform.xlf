@@ -13,6 +13,16 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="extensions">
+        <source xml:lang="en">Extensions</source>
+      </trans-unit>
+      <trans-unit id="preferences">
+        <source xml:lang="en">Preferences</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/update/common/update.config.contribution" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="updateConfigurationTitle">
@@ -47,6 +57,13 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/extensionManagement/node/extensionManagementUtil" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="invalidManifest_Duplicated4">
+        <source xml:lang="en">VSIX invalid: package.json is not a JSON file.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/request/common/request" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="httpConfigurationTitle">
@@ -78,20 +95,23 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="extensions">
-        <source xml:lang="en">Extensions</source>
+      <trans-unit id="binFailed">
+        <source xml:lang="en">Failed to move '{0}' to the recycle bin</source>
       </trans-unit>
-      <trans-unit id="preferences">
-        <source xml:lang="en">Preferences</source>
+      <trans-unit id="trashFailed">
+        <source xml:lang="en">Failed to move '{0}' to the trash</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/extensionManagement/node/extensionManagementUtil" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="invalidManifest_Duplicated4">
-        <source xml:lang="en">VSIX invalid: package.json is not a JSON file.</source>
+      <trans-unit id="telemetryConfigurationTitle">
+        <source xml:lang="en">Telemetry</source>
+      </trans-unit>
+      <trans-unit id="telemetry.enableTelemetry">
+        <source xml:lang="en">Enable usage data and errors to be sent to a Microsoft online service.</source>
       </trans-unit>
     </body>
   </file>
@@ -222,26 +242,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="telemetryConfigurationTitle">
-        <source xml:lang="en">Telemetry</source>
-      </trans-unit>
-      <trans-unit id="telemetry.enableTelemetry">
-        <source xml:lang="en">Enable usage data and errors to be sent to a Microsoft online service.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="binFailed">
-        <source xml:lang="en">Failed to move '{0}' to the recycle bin</source>
-      </trans-unit>
-      <trans-unit id="trashFailed">
-        <source xml:lang="en">Failed to move '{0}' to the trash</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/label/common/label" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="untitledWorkspace">
@@ -249,13 +249,6 @@
       </trans-unit>
       <trans-unit id="workspaceName">
         <source xml:lang="en">{0} (Workspace)</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/files/common/files" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="unknownError">
-        <source xml:lang="en">Unknown Error</source>
       </trans-unit>
     </body>
   </file>
@@ -275,6 +268,13 @@
       </trans-unit>
       <trans-unit id="app.extension.identifier.errorMessage">
         <source xml:lang="en">Expected format '${publisher}.${name}'. Example: 'vscode.csharp'.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/common/files" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="unknownError">
+        <source xml:lang="en">Unknown Error</source>
       </trans-unit>
     </body>
   </file>
@@ -301,6 +301,16 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/userDataSync/common/userDataSyncService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="turned off">
+        <source xml:lang="en">Cannot sync because syncing is turned off in the cloud</source>
+      </trans-unit>
+      <trans-unit id="session expired">
+        <source xml:lang="en">Cannot sync because current session is expired</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/files/node/diskFileSystemProvider" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="fileExists_Duplicated8">
@@ -320,16 +330,6 @@
       </trans-unit>
       <trans-unit id="fileCopyErrorExists">
         <source xml:lang="en">File at target already exists</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/userDataSyncService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="turned off">
-        <source xml:lang="en">Cannot sync because syncing is turned off in the cloud</source>
-      </trans-unit>
-      <trans-unit id="session expired">
-        <source xml:lang="en">Cannot sync because current session is expired</source>
       </trans-unit>
     </body>
   </file>
@@ -1063,6 +1063,20 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="errorInvalidSettings_Duplicated20">
+        <source xml:lang="en">Unable to sync keybindings as there are errors/warning in keybindings file.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="errorInvalidSettings_Duplicated21">
+        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/extensions/common/extensionValidator" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="versionSyntax">
@@ -1076,20 +1090,6 @@
       </trans-unit>
       <trans-unit id="versionMismatch">
         <source xml:lang="en">Extension is not compatible with Code {0}. Extension requires: {1}.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="errorInvalidSettings_Duplicated20">
-        <source xml:lang="en">Unable to sync keybindings as there are errors/warning in keybindings file.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="errorInvalidSettings_Duplicated21">
-        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
       </trans-unit>
     </body>
   </file>
@@ -1329,7 +1329,7 @@
         <source xml:lang="en">The font character associated with the icon definition.</source>
       </trans-unit>
       <trans-unit id="icon.defaultDescription">
-        <source xml:lang="en">Icon with identifier {0}</source>
+        <source xml:lang="en">Icon with identifier '{0}'</source>
       </trans-unit>
     </body>
   </file>
