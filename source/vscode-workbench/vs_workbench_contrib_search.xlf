@@ -152,7 +152,7 @@
         <source xml:lang="en">Enable seeding search from the word nearest the cursor when the active editor has no selection.</source>
       </trans-unit>
       <trans-unit id="search.seedOnFocus">
-        <source xml:lang="en">Update workspace seach query to the editor's selected text when focusing the search view. This happens either on click or when triggering the `workbench.views.search.focus` command.</source>
+        <source xml:lang="en">Update workspace search query to the editor's selected text when focusing the search view. This happens either on click or when triggering the `workbench.views.search.focus` command.</source>
       </trans-unit>
       <trans-unit id="search.searchOnTypeDebouncePeriod">
         <source xml:lang="en">When `#search.searchOnType#` is enabled, controls the timeout in milliseconds between a character being typed and the search starting. Has no effect when `search.searchOnType` is disabled.</source>
@@ -168,6 +168,9 @@
       </trans-unit>
       <trans-unit id="search.searchEditor.doubleClickBehaviour">
         <source xml:lang="en">Configure effect of double clicking a result in a search editor.</source>
+      </trans-unit>
+      <trans-unit id="search.searchEditor.reusePriorSearchConfiguration">
+        <source xml:lang="en">When enabled, new Search Editors will reuse the includes, excludes, and flags of the previously opened Search Editor</source>
       </trans-unit>
       <trans-unit id="searchSortOrder.default">
         <source xml:lang="en">Results are sorted by folder and file names, in alphabetical order.</source>
@@ -294,6 +297,9 @@
       <trans-unit id="replaceAll.occurrences.files.confirmation.message">
         <source xml:lang="en">Replace {0} occurrences across {1} files?</source>
       </trans-unit>
+      <trans-unit id="emptySearch">
+        <source xml:lang="en">Empty Search</source>
+      </trans-unit>
       <trans-unit id="ariaSearchResultsClearStatus">
         <source xml:lang="en">The search results have been cleared</source>
       </trans-unit>
@@ -330,6 +336,9 @@
       <trans-unit id="ariaSearchResultsStatus">
         <source xml:lang="en">Search returned {0} results in {1} files</source>
       </trans-unit>
+      <trans-unit id="forTerm">
+        <source xml:lang="en"> - Search: {0}</source>
+      </trans-unit>
       <trans-unit id="useIgnoresAndExcludesDisabled">
         <source xml:lang="en"> - exclude settings and ignore files are disabled</source>
       </trans-unit>
@@ -356,44 +365,6 @@
       </trans-unit>
       <trans-unit id="openFolder">
         <source xml:lang="en">Open Folder</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/search/browser/searchWidget" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="search.action.replaceAll.disabled.label">
-        <source xml:lang="en">Replace All (Submit Search to Enable)</source>
-      </trans-unit>
-      <trans-unit id="search.action.replaceAll.enabled.label">
-        <source xml:lang="en">Replace All</source>
-      </trans-unit>
-      <trans-unit id="search.replace.toggle.button.title">
-        <source xml:lang="en">Toggle Replace</source>
-      </trans-unit>
-      <trans-unit id="label.Search">
-        <source xml:lang="en">Search: Type Search Term and press Enter to search or Escape to cancel</source>
-      </trans-unit>
-      <trans-unit id="search.placeHolder">
-        <source xml:lang="en">Search</source>
-      </trans-unit>
-      <trans-unit id="showContext">
-        <source xml:lang="en">Show Context</source>
-      </trans-unit>
-      <trans-unit id="label.Replace">
-        <source xml:lang="en">Replace: Type replace term and press Enter to preview or Escape to cancel</source>
-      </trans-unit>
-      <trans-unit id="search.replace.placeHolder">
-        <source xml:lang="en">Replace</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/search/browser/patternInputWidget" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="defaultLabel">
-        <source xml:lang="en">input</source>
-      </trans-unit>
-      <trans-unit id="useExcludesAndIgnoreFilesDescription">
-        <source xml:lang="en">Use Exclude Settings and Ignore Files</source>
       </trans-unit>
     </body>
   </file>
@@ -443,6 +414,34 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/search/browser/searchWidget" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="search.action.replaceAll.disabled.label">
+        <source xml:lang="en">Replace All (Submit Search to Enable)</source>
+      </trans-unit>
+      <trans-unit id="search.action.replaceAll.enabled.label">
+        <source xml:lang="en">Replace All</source>
+      </trans-unit>
+      <trans-unit id="search.replace.toggle.button.title">
+        <source xml:lang="en">Toggle Replace</source>
+      </trans-unit>
+      <trans-unit id="label.Search">
+        <source xml:lang="en">Search: Type Search Term and press Enter to search or Escape to cancel</source>
+      </trans-unit>
+      <trans-unit id="search.placeHolder">
+        <source xml:lang="en">Search</source>
+      </trans-unit>
+      <trans-unit id="showContext">
+        <source xml:lang="en">Show Context</source>
+      </trans-unit>
+      <trans-unit id="label.Replace">
+        <source xml:lang="en">Replace: Type replace term and press Enter to preview or Escape to cancel</source>
+      </trans-unit>
+      <trans-unit id="search.replace.placeHolder">
+        <source xml:lang="en">Replace</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/search/browser/replaceService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="fileReplaceChanges">
@@ -475,6 +474,16 @@
       </trans-unit>
       <trans-unit id="closeEditor">
         <source xml:lang="en">Remove from Recently Opened</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/search/browser/patternInputWidget" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="defaultLabel">
+        <source xml:lang="en">input</source>
+      </trans-unit>
+      <trans-unit id="useExcludesAndIgnoreFilesDescription">
+        <source xml:lang="en">Use Exclude Settings and Ignore Files</source>
       </trans-unit>
     </body>
   </file>

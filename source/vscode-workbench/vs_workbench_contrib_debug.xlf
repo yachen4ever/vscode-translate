@@ -7,16 +7,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/debugViewlet" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="startAdditionalSession">
-        <source xml:lang="en">Start Additional Session</source>
-      </trans-unit>
-      <trans-unit id="toggleDebugPanel">
-        <source xml:lang="en">Debug Console</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/browser/callStackEditorContribution" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="topStackFrameLineHighlight">
@@ -24,6 +14,16 @@
       </trans-unit>
       <trans-unit id="focusedStackFrameLineHighlight">
         <source xml:lang="en">Background color for the highlight of line at focused stack frame position.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/debugViewlet" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="startAdditionalSession">
+        <source xml:lang="en">Start Additional Session</source>
+      </trans-unit>
+      <trans-unit id="toggleDebugPanel">
+        <source xml:lang="en">Debug Console</source>
       </trans-unit>
     </body>
   </file>
@@ -233,10 +233,6 @@
       <trans-unit id="openDebug">
         <source xml:lang="en">Controls when the debug view should open.</source>
       </trans-unit>
-      <trans-unit id="enableAllHovers">
-        <source xml:lang="en">Controls whether the non-debug hovers should be enabled while debugging. When enabled the hover providers will be called to provide a hover. Regular hovers will not be shown even if this setting is enabled.</source>
-        <note>This is the description for a setting</note>
-      </trans-unit>
       <trans-unit id="showSubSessionsInToolBar">
         <source xml:lang="en">Controls whether the debug sub-sessions are shown in the debug tool bar. When this setting is false the stop command on a sub-session will also stop the parent session.</source>
         <note>This is the description for a setting</note>
@@ -439,6 +435,10 @@
         <source xml:lang="en">[Run and Debug{0}](command:{1})</source>
         <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
       </trans-unit>
+      <trans-unit id="detectThenRunAndDebug">
+        <source xml:lang="en">[Show](command:{0}) all automatic debug configurations.</source>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
+      </trans-unit>
       <trans-unit id="customizeRunAndDebug">
         <source xml:lang="en">To customize Run and Debug [create a launch.json file](command:{0}).</source>
         <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
@@ -446,6 +446,22 @@
       <trans-unit id="customizeRunAndDebugOpenFolder">
         <source xml:lang="en">To customize Run and Debug, [open a folder](command:{0}) and create a launch.json file.</source>
         <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/exceptionWidget" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="debugExceptionWidgetBorder">
+        <source xml:lang="en">Exception widget border color.</source>
+      </trans-unit>
+      <trans-unit id="debugExceptionWidgetBackground">
+        <source xml:lang="en">Exception widget background color.</source>
+      </trans-unit>
+      <trans-unit id="exceptionThrownWithId">
+        <source xml:lang="en">Exception has occurred: {0}</source>
+      </trans-unit>
+      <trans-unit id="exceptionThrown">
+        <source xml:lang="en">Exception has occurred.</source>
       </trans-unit>
     </body>
   </file>
@@ -508,29 +524,13 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/exceptionWidget" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="debugExceptionWidgetBorder">
-        <source xml:lang="en">Exception widget border color.</source>
-      </trans-unit>
-      <trans-unit id="debugExceptionWidgetBackground">
-        <source xml:lang="en">Exception widget background color.</source>
-      </trans-unit>
-      <trans-unit id="exceptionThrownWithId">
-        <source xml:lang="en">Exception has occurred: {0}</source>
-      </trans-unit>
-      <trans-unit id="exceptionThrown">
-        <source xml:lang="en">Exception has occurred.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/browser/debugHover" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="treeAriaLabel">
         <source xml:lang="en">Debug Hover</source>
       </trans-unit>
       <trans-unit id="variableAriaLabel_Duplicated35">
-        <source xml:lang="en">{0} value {1}, variables, debug</source>
+        <source xml:lang="en">{0}, value {1}, variables, debug</source>
       </trans-unit>
     </body>
   </file>
@@ -546,7 +546,7 @@
         <source xml:lang="en">Please first open a folder in order to do advanced debug configuration.</source>
       </trans-unit>
       <trans-unit id="selectWorkspaceFolder">
-        <source xml:lang="en">Select a workspace folder to create a launch.json file in</source>
+        <source xml:lang="en">Select a workspace folder to create a launch.json file in or add it to the workspace config file</source>
       </trans-unit>
       <trans-unit id="startDebug">
         <source xml:lang="en">Start Debugging</source>
@@ -608,19 +608,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/common/debugContentProvider" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="unable">
-        <source xml:lang="en">Unable to resolve the resource without a debug session</source>
-      </trans-unit>
-      <trans-unit id="canNotResolveSourceWithError">
-        <source xml:lang="en">Could not load source '{0}': {1}.</source>
-      </trans-unit>
-      <trans-unit id="canNotResolveSource">
-        <source xml:lang="en">Could not load source '{0}'.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/browser/debugStatus" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="status.debug">
@@ -631,6 +618,19 @@
       </trans-unit>
       <trans-unit id="selectAndStartDebug">
         <source xml:lang="en">Select and start debug configuration</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/common/debugContentProvider" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="unable">
+        <source xml:lang="en">Unable to resolve the resource without a debug session</source>
+      </trans-unit>
+      <trans-unit id="canNotResolveSourceWithError">
+        <source xml:lang="en">Could not load source '{0}': {1}.</source>
+      </trans-unit>
+      <trans-unit id="canNotResolveSource">
+        <source xml:lang="en">Could not load source '{0}'.</source>
       </trans-unit>
     </body>
   </file>
@@ -656,37 +656,6 @@
       </trans-unit>
       <trans-unit id="addConfiguration_Duplicated3">
         <source xml:lang="en">Add Configuration...</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/debugEditorActions" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="toggleBreakpointAction">
-        <source xml:lang="en">Debug: Toggle Breakpoint</source>
-      </trans-unit>
-      <trans-unit id="conditionalBreakpointEditorAction">
-        <source xml:lang="en">Debug: Add Conditional Breakpoint...</source>
-      </trans-unit>
-      <trans-unit id="logPointEditorAction">
-        <source xml:lang="en">Debug: Add Logpoint...</source>
-      </trans-unit>
-      <trans-unit id="runToCursor">
-        <source xml:lang="en">Run to Cursor</source>
-      </trans-unit>
-      <trans-unit id="evaluateInDebugConsole">
-        <source xml:lang="en">Evaluate in Debug Console</source>
-      </trans-unit>
-      <trans-unit id="addToWatch">
-        <source xml:lang="en">Add to Watch</source>
-      </trans-unit>
-      <trans-unit id="showDebugHover">
-        <source xml:lang="en">Debug: Show Hover</source>
-      </trans-unit>
-      <trans-unit id="goToNextBreakpoint">
-        <source xml:lang="en">Debug: Go To Next Breakpoint</source>
-      </trans-unit>
-      <trans-unit id="goToPreviousBreakpoint">
-        <source xml:lang="en">Debug: Go To Previous Breakpoint</source>
       </trans-unit>
     </body>
   </file>
@@ -735,6 +704,57 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/debug/node/debugAdapter" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="debugAdapterBinNotFound">
+        <source xml:lang="en">Debug adapter executable '{0}' does not exist.</source>
+      </trans-unit>
+      <trans-unit id="debugAdapterCannotDetermineExecutable">
+        <source xml:lang="en">Cannot determine executable for debug adapter '{0}'.</source>
+        <note>Adapter executable file not found</note>
+      </trans-unit>
+      <trans-unit id="unableToLaunchDebugAdapter">
+        <source xml:lang="en">Unable to launch debug adapter from '{0}'.</source>
+      </trans-unit>
+      <trans-unit id="unableToLaunchDebugAdapterNoArgs">
+        <source xml:lang="en">Unable to launch debug adapter.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/debugEditorActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="toggleBreakpointAction">
+        <source xml:lang="en">Debug: Toggle Breakpoint</source>
+      </trans-unit>
+      <trans-unit id="conditionalBreakpointEditorAction">
+        <source xml:lang="en">Debug: Add Conditional Breakpoint...</source>
+      </trans-unit>
+      <trans-unit id="logPointEditorAction">
+        <source xml:lang="en">Debug: Add Logpoint...</source>
+      </trans-unit>
+      <trans-unit id="runToCursor">
+        <source xml:lang="en">Run to Cursor</source>
+      </trans-unit>
+      <trans-unit id="evaluateInDebugConsole">
+        <source xml:lang="en">Evaluate in Debug Console</source>
+      </trans-unit>
+      <trans-unit id="addToWatch">
+        <source xml:lang="en">Add to Watch</source>
+      </trans-unit>
+      <trans-unit id="showDebugHover">
+        <source xml:lang="en">Debug: Show Hover</source>
+      </trans-unit>
+      <trans-unit id="stepIntoTargets">
+        <source xml:lang="en">Step Into Targets...</source>
+      </trans-unit>
+      <trans-unit id="goToNextBreakpoint">
+        <source xml:lang="en">Debug: Go To Next Breakpoint</source>
+      </trans-unit>
+      <trans-unit id="goToPreviousBreakpoint">
+        <source xml:lang="en">Debug: Go To Previous Breakpoint</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/debug/browser/watchExpressionsView" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="editWatchExpression">
@@ -754,10 +774,10 @@
         <note>Debug is a noun in this context, not a verb.</note>
       </trans-unit>
       <trans-unit id="watchExpressionAriaLabel">
-        <source xml:lang="en">{0} value {1}, watch, debug</source>
+        <source xml:lang="en">{0}, value {1}</source>
       </trans-unit>
       <trans-unit id="watchVariableAriaLabel">
-        <source xml:lang="en">{0} value {1}, watch, debug</source>
+        <source xml:lang="en">{0}, value {1}</source>
       </trans-unit>
     </body>
   </file>
@@ -782,49 +802,29 @@
         <source xml:lang="en">Debug Variables</source>
       </trans-unit>
       <trans-unit id="variableScopeAriaLabel">
-        <source xml:lang="en">Scope {0}, variables, debug</source>
+        <source xml:lang="en">Scope {0}</source>
       </trans-unit>
       <trans-unit id="variableAriaLabel_Duplicated36">
-        <source xml:lang="en">{0} value {1}, variables, debug</source>
+        <source xml:lang="en">{0}, value {1}</source>
       </trans-unit>
     </body>
   </file>
   <file original="src/vs/workbench/contrib/debug/browser/replViewer" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="stateCapture">
-        <source xml:lang="en">Object state is captured from first evaluation</source>
-      </trans-unit>
       <trans-unit id="debugConsole_Duplicated30">
         <source xml:lang="en">Debug Console</source>
       </trans-unit>
       <trans-unit id="replVariableAriaLabel">
-        <source xml:lang="en">Variable {0} has value {1}, read eval print loop, debug</source>
+        <source xml:lang="en">Variable {0}, value {1}</source>
       </trans-unit>
       <trans-unit id="replValueOutputAriaLabel">
-        <source xml:lang="en">{0}, read eval print loop, debug</source>
+        <source xml:lang="en">{0}</source>
       </trans-unit>
       <trans-unit id="replRawObjectAriaLabel">
-        <source xml:lang="en">Repl variable {0} has value {1}, read eval print loop, debug</source>
+        <source xml:lang="en">Repl variable {0}, value {1}</source>
       </trans-unit>
       <trans-unit id="replGroup">
         <source xml:lang="en">Repl group {0}, read eval print loop, debug</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/node/debugAdapter" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="debugAdapterBinNotFound">
-        <source xml:lang="en">Debug adapter executable '{0}' does not exist.</source>
-      </trans-unit>
-      <trans-unit id="debugAdapterCannotDetermineExecutable">
-        <source xml:lang="en">Cannot determine executable for debug adapter '{0}'.</source>
-        <note>Adapter executable file not found</note>
-      </trans-unit>
-      <trans-unit id="unableToLaunchDebugAdapter">
-        <source xml:lang="en">Unable to launch debug adapter from '{0}'.</source>
-      </trans-unit>
-      <trans-unit id="unableToLaunchDebugAdapterNoArgs">
-        <source xml:lang="en">Unable to launch debug adapter.</source>
       </trans-unit>
     </body>
   </file>
@@ -1013,7 +1013,7 @@
         <source xml:lang="en">Thread {0}, callstack, debug</source>
       </trans-unit>
       <trans-unit id="stackFrameAriaLabel">
-        <source xml:lang="en">Stack Frame {0} line {1} {2}, callstack, debug</source>
+        <source xml:lang="en">Stack Frame {0}, line {1}, {2}, callstack, debug</source>
       </trans-unit>
       <trans-unit id="sessionLabel">
         <source xml:lang="en">Debug Session {0}</source>
@@ -1155,8 +1155,11 @@
   </file>
   <file original="src/vs/workbench/contrib/debug/browser/debugConfigurationManager" source-language="en" datatype="plaintext">
     <body>
+      <trans-unit id="editLaunchConfig">
+        <source xml:lang="en">Edit Debug Configuration in launch.json</source>
+      </trans-unit>
       <trans-unit id="selectConfiguration">
-        <source xml:lang="en">Select Debug Configuration</source>
+        <source xml:lang="en">Select Launch Configuration</source>
       </trans-unit>
       <trans-unit id="debugNoType">
         <source xml:lang="en">Debugger 'type' can not be omitted and must be of type 'string'.</source>

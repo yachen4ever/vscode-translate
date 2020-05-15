@@ -15,6 +15,23 @@
     <trans-unit id="label">
       <source xml:lang="en">Format Notebook</source>
     </trans-unit>
+    <trans-unit id="formatCell.label">
+      <source xml:lang="en">Format Cell</source>
+    </trans-unit>
+  </body></file>
+  <file original="src/vs/workbench/contrib/notebook/browser/contrib/status/editorStatus" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="notebookActions.selectKernel">
+      <source xml:lang="en">Select Notebook Kernel</source>
+    </trans-unit>
+    <trans-unit id="currentActiveKernel">
+      <source xml:lang="en"> (Currently Active)</source>
+    </trans-unit>
+    <trans-unit id="currentActiveBuiltinKernel">
+      <source xml:lang="en"> (Currently Active)</source>
+    </trans-unit>
+    <trans-unit id="pickAction">
+      <source xml:lang="en">Select Action</source>
+    </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/notebook/browser/contrib/coreActions" source-language="en" datatype="plaintext"><body>
     <trans-unit id="notebookActions.category">
@@ -113,6 +130,12 @@
     <trans-unit id="cursorMoveUp">
       <source xml:lang="en">Cursor Move Up</source>
     </trans-unit>
+    <trans-unit id="focusOutput">
+      <source xml:lang="en">Focus In Active Cell Output</source>
+    </trans-unit>
+    <trans-unit id="focusOutputOut">
+      <source xml:lang="en">Focus Out Active Cell Output</source>
+    </trans-unit>
     <trans-unit id="undo">
       <source xml:lang="en">Undo</source>
     </trans-unit>
@@ -143,10 +166,14 @@
     <trans-unit id="clearAllCellsOutputs">
       <source xml:lang="en">Clear All Cells Outputs</source>
     </trans-unit>
-  </body></file>
-  <file original="src/vs/workbench/contrib/notebook/browser/notebookService" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="builtinProviderDisplayName">
-      <source xml:lang="en">Built-in</source>
+    <trans-unit id="notebookActions.splitCell">
+      <source xml:lang="en">Split Cell</source>
+    </trans-unit>
+    <trans-unit id="notebookActions.joinCellAbove">
+      <source xml:lang="en">Join with Previous Cell</source>
+    </trans-unit>
+    <trans-unit id="notebookActions.joinCellBelow">
+      <source xml:lang="en">Join with Next Cell</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/notebook/browser/contrib/find/findController" source-language="en" datatype="plaintext"><body>
@@ -165,18 +192,9 @@
       <source xml:lang="en">Unfold Cell</source>
     </trans-unit>
   </body></file>
-  <file original="src/vs/workbench/contrib/notebook/browser/notebookEditor" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="notebookTreeAriaLabel">
-      <source xml:lang="en">Notebook</source>
-    </trans-unit>
-    <trans-unit id="notebook.focusedCellIndicator">
-      <source xml:lang="en">The color of the focused notebook cell indicator.</source>
-    </trans-unit>
-    <trans-unit id="notebook.outputContainerBackgroundColor">
-      <source xml:lang="en">The Color of the notebook output container background.</source>
-    </trans-unit>
-    <trans-unit id="cellToolbarSeperator">
-      <source xml:lang="en">The color of seperator in Cell bottom toolbar</source>
+  <file original="src/vs/workbench/contrib/notebook/browser/notebookServiceImpl" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="builtinProviderDisplayName">
+      <source xml:lang="en">Built-in</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/notebook/browser/extensionPoint" source-language="en" datatype="plaintext"><body>
@@ -211,9 +229,18 @@
       <source xml:lang="en">Set of globs that the notebook is for.</source>
     </trans-unit>
   </body></file>
-  <file original="src/vs/workbench/contrib/notebook/browser/view/renderers/cellRenderer" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="cellRunningStatus">
-      <source xml:lang="en">Running</source>
+  <file original="src/vs/workbench/contrib/notebook/browser/notebookEditorWidget" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="notebookTreeAriaLabel">
+      <source xml:lang="en">Notebook</source>
+    </trans-unit>
+    <trans-unit id="notebook.focusedCellIndicator">
+      <source xml:lang="en">The color of the focused notebook cell indicator.</source>
+    </trans-unit>
+    <trans-unit id="notebook.outputContainerBackgroundColor">
+      <source xml:lang="en">The Color of the notebook output container background.</source>
+    </trans-unit>
+    <trans-unit id="cellToolbarSeperator">
+      <source xml:lang="en">The color of seperator in Cell bottom toolbar</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/notebook/browser/view/renderers/codeCell" source-language="en" datatype="plaintext"><body>

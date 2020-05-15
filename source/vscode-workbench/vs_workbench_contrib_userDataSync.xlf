@@ -10,25 +10,34 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/userDataSync/browser/userDataSyncView" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/userDataSync/browser/userDataSyncDataViews" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="sync preferences_Duplicated2">
-        <source xml:lang="en">Preferences Sync</source>
-      </trans-unit>
       <trans-unit id="remote title">
-        <source xml:lang="en">Remote Backup</source>
+        <source xml:lang="en">Synced Data</source>
       </trans-unit>
       <trans-unit id="local title">
         <source xml:lang="en">Local Backup</source>
       </trans-unit>
       <trans-unit id="workbench.action.showSyncRemoteBackup">
-        <source xml:lang="en">Show Remote Backup</source>
+        <source xml:lang="en">Show Remote Data</source>
       </trans-unit>
       <trans-unit id="workbench.action.showSyncLocalBackup">
         <source xml:lang="en">Show Local Backup</source>
       </trans-unit>
+      <trans-unit id="sync preferences_Duplicated2">
+        <source xml:lang="en">Preferences Sync</source>
+      </trans-unit>
       <trans-unit id="workbench.actions.sync.resolveResourceRef">
         <source xml:lang="en">Show raw JSON sync data</source>
+      </trans-unit>
+      <trans-unit id="workbench.actions.sync.replaceCurrent">
+        <source xml:lang="en">Download...</source>
+      </trans-unit>
+      <trans-unit id="confirm replace">
+        <source xml:lang="en">Would you like to replace your current {0} with selected?</source>
+      </trans-unit>
+      <trans-unit id="preferences sync">
+        <source xml:lang="en">Preferences Sync</source>
       </trans-unit>
       <trans-unit id="workbench.actions.sync.commpareWithLocal">
         <source xml:lang="en">Open Changes</source>
@@ -37,26 +46,17 @@
   </file>
   <file original="src/vs/workbench/contrib/userDataSync/browser/userDataSync" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="settings">
-        <source xml:lang="en">Settings</source>
-      </trans-unit>
-      <trans-unit id="keybindings">
-        <source xml:lang="en">Keyboard Shortcuts</source>
-      </trans-unit>
-      <trans-unit id="snippets">
-        <source xml:lang="en">User Snippets</source>
-      </trans-unit>
-      <trans-unit id="extensions">
-        <source xml:lang="en">Extensions</source>
-      </trans-unit>
-      <trans-unit id="ui state label">
-        <source xml:lang="en">UI State</source>
-      </trans-unit>
       <trans-unit id="turn on sync with category">
         <source xml:lang="en">Preferences Sync: Turn On...</source>
       </trans-unit>
       <trans-unit id="stop sync">
         <source xml:lang="en">Preferences Sync: Turn Off</source>
+      </trans-unit>
+      <trans-unit id="configure sync_Duplicated4">
+        <source xml:lang="en">Preferences Sync: Configure...</source>
+      </trans-unit>
+      <trans-unit id="show sync log title">
+        <source xml:lang="en">Preferences Sync: Show Log</source>
       </trans-unit>
       <trans-unit id="showConflicts">
         <source xml:lang="en">Preferences Sync: Show Settings Conflicts</source>
@@ -67,11 +67,8 @@
       <trans-unit id="showSnippetsConflicts">
         <source xml:lang="en">Preferences Sync: Show User Snippets Conflicts</source>
       </trans-unit>
-      <trans-unit id="configure sync">
-        <source xml:lang="en">Preferences Sync: Configure...</source>
-      </trans-unit>
-      <trans-unit id="show sync log">
-        <source xml:lang="en">Preferences Sync: Show Log</source>
+      <trans-unit id="sync now">
+        <source xml:lang="en">Preferences Sync: Sync Now</source>
       </trans-unit>
       <trans-unit id="sync is on with syncing">
         <source xml:lang="en">syncing</source>
@@ -219,6 +216,9 @@ Would you like to merge or replace with the data from the cloud?</source>
       <trans-unit id="turn off failed">
         <source xml:lang="en">Error while turning off sync: {0}</source>
       </trans-unit>
+      <trans-unit id="sync preferences_Duplicated3">
+        <source xml:lang="en">Preferences Sync</source>
+      </trans-unit>
       <trans-unit id="Sync accept remote">
         <source xml:lang="en">Preferences Sync: {0}</source>
       </trans-unit>
@@ -233,6 +233,16 @@ Would you like to merge or replace with the data from the cloud?</source>
       </trans-unit>
       <trans-unit id="update conflicts">
         <source xml:lang="en">Could not resolve conflicts as there is new local version available. Please try again.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/userDataSync/browser/userDataSyncView" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="showLog">
+        <source xml:lang="en">Show Log</source>
+      </trans-unit>
+      <trans-unit id="configure sync_Duplicated5">
+        <source xml:lang="en">Configure...</source>
       </trans-unit>
     </body>
   </file>

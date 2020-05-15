@@ -14,11 +14,6 @@
       <source xml:lang="en">View</source>
     </trans-unit>
   </body></file>
-  <file original="src/vs/workbench/contrib/terminal/common/terminal" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="terminalCategory">
-      <source xml:lang="en">Terminal</source>
-    </trans-unit>
-  </body></file>
   <file original="src/vs/workbench/contrib/terminal/common/terminalConfiguration" source-language="en" datatype="plaintext"><body>
     <trans-unit id="terminalIntegratedConfigurationTitle">
       <source xml:lang="en">Integrated Terminal</source>
@@ -152,7 +147,7 @@
       <source xml:lang="en">Controls whether the terminal bell is enabled.</source>
     </trans-unit>
     <trans-unit id="terminal.integrated.commandsToSkipShell">
-      <source xml:lang="en">A set of command IDs whose keybindings will not be sent to the shell and instead always be handled by Code. This allows the use of keybindings that would normally be consumed by the shell to act the same as when the terminal is not focused, for example ctrl+p to launch Quick Open.
+      <source xml:lang="en">A set of command IDs whose keybindings will not be sent to the shell and instead always be handled by Code. This allows the use of keybindings that would normally be consumed by the shell to act the same as when the terminal is not focused, for example ctrl+p to launch Quick Open. Use the command prefixed with `-` to remove default commands from the list.
 Default Skipped Commands:
 
 {0}</source>
@@ -245,6 +240,11 @@ Default Skipped Commands:
       <source xml:lang="en">The path of the shell that the terminal uses on Windows. [Read more about configuring the shell](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</source>
     </trans-unit>
   </body></file>
+  <file original="src/vs/workbench/contrib/terminal/common/terminal" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="terminalCategory">
+      <source xml:lang="en">Terminal</source>
+    </trans-unit>
+  </body></file>
   <file original="src/vs/workbench/contrib/terminal/browser/terminalView" source-language="en" datatype="plaintext"><body>
     <trans-unit id="terminal.useMonospace">
       <source xml:lang="en">Use 'monospace'</source>
@@ -256,6 +256,29 @@ Default Skipped Commands:
   <file original="src/vs/workbench/contrib/terminal/electron-browser/terminalRemote" source-language="en" datatype="plaintext"><body>
     <trans-unit id="workbench.action.terminal.newLocal">
       <source xml:lang="en">Create New Integrated Terminal (Local)</source>
+    </trans-unit>
+  </body></file>
+  <file original="src/vs/workbench/contrib/terminal/common/terminalColorRegistry" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="terminal.background">
+      <source xml:lang="en">The background color of the terminal, this allows coloring the terminal differently to the panel.</source>
+    </trans-unit>
+    <trans-unit id="terminal.foreground">
+      <source xml:lang="en">The foreground color of the terminal.</source>
+    </trans-unit>
+    <trans-unit id="terminalCursor.foreground">
+      <source xml:lang="en">The foreground color of the terminal cursor.</source>
+    </trans-unit>
+    <trans-unit id="terminalCursor.background">
+      <source xml:lang="en">The background color of the terminal cursor. Allows customizing the color of a character overlapped by a block cursor.</source>
+    </trans-unit>
+    <trans-unit id="terminal.selectionBackground">
+      <source xml:lang="en">The selection background color of the terminal.</source>
+    </trans-unit>
+    <trans-unit id="terminal.border">
+      <source xml:lang="en">The color of the border that separates split panes within the terminal. This defaults to panel.border.</source>
+    </trans-unit>
+    <trans-unit id="terminal.ansiColor">
+      <source xml:lang="en">'{0}' ANSI color in the terminal.</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/terminal/common/terminalMenu" source-language="en" datatype="plaintext"><body>
@@ -289,29 +312,6 @@ Default Skipped Commands:
     </trans-unit>
     <trans-unit id="workbench.action.terminal.newplus">
       <source xml:lang="en">Create New Integrated Terminal</source>
-    </trans-unit>
-  </body></file>
-  <file original="src/vs/workbench/contrib/terminal/common/terminalColorRegistry" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="terminal.background">
-      <source xml:lang="en">The background color of the terminal, this allows coloring the terminal differently to the panel.</source>
-    </trans-unit>
-    <trans-unit id="terminal.foreground">
-      <source xml:lang="en">The foreground color of the terminal.</source>
-    </trans-unit>
-    <trans-unit id="terminalCursor.foreground">
-      <source xml:lang="en">The foreground color of the terminal cursor.</source>
-    </trans-unit>
-    <trans-unit id="terminalCursor.background">
-      <source xml:lang="en">The background color of the terminal cursor. Allows customizing the color of a character overlapped by a block cursor.</source>
-    </trans-unit>
-    <trans-unit id="terminal.selectionBackground">
-      <source xml:lang="en">The selection background color of the terminal.</source>
-    </trans-unit>
-    <trans-unit id="terminal.border">
-      <source xml:lang="en">The color of the border that separates split panes within the terminal. This defaults to panel.border.</source>
-    </trans-unit>
-    <trans-unit id="terminal.ansiColor">
-      <source xml:lang="en">'{0}' ANSI color in the terminal.</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/terminal/browser/terminalService" source-language="en" datatype="plaintext"><body>
@@ -464,11 +464,11 @@ Default Skipped Commands:
     <trans-unit id="workbench.action.terminal.rename.prompt">
       <source xml:lang="en">Enter terminal name</source>
     </trans-unit>
-    <trans-unit id="workbench.action.terminal.focusFindWidget">
-      <source xml:lang="en">Focus Find Widget</source>
+    <trans-unit id="workbench.action.terminal.focusFind">
+      <source xml:lang="en">Focus Find</source>
     </trans-unit>
-    <trans-unit id="workbench.action.terminal.hideFindWidget">
-      <source xml:lang="en">Hide Find Widget</source>
+    <trans-unit id="workbench.action.terminal.hideFind">
+      <source xml:lang="en">Hide Find</source>
     </trans-unit>
     <trans-unit id="quickAccessTerminal">
       <source xml:lang="en">Switch Active Terminal</source>
@@ -513,13 +513,13 @@ Default Skipped Commands:
       <source xml:lang="en">No name argument provided</source>
     </trans-unit>
     <trans-unit id="workbench.action.terminal.toggleFindRegex">
-      <source xml:lang="en">Toggle find using regex</source>
+      <source xml:lang="en">Toggle Find Using Regex</source>
     </trans-unit>
     <trans-unit id="workbench.action.terminal.toggleFindWholeWord">
-      <source xml:lang="en">Toggle find using whole word</source>
+      <source xml:lang="en">Toggle Find Using Whole Word</source>
     </trans-unit>
     <trans-unit id="workbench.action.terminal.toggleFindCaseSensitive">
-      <source xml:lang="en">Toggle find using case sensitive</source>
+      <source xml:lang="en">Toggle Find Using Case Sensitive</source>
     </trans-unit>
     <trans-unit id="workbench.action.terminal.findNext">
       <source xml:lang="en">Find Next</source>

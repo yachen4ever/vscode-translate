@@ -1,5 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/platform/userDataSync/common/userDataSync" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="sync">
+        <source xml:lang="en">Sync</source>
+      </trans-unit>
+      <trans-unit id="sync.keybindingsPerPlatform">
+        <source xml:lang="en">Synchronize keybindings per platform.</source>
+      </trans-unit>
+      <trans-unit id="sync.ignoredExtensions">
+        <source xml:lang="en">List of extensions to be ignored while synchronizing. The identifier of an extension is always ${publisher}.${name}. For example: vscode.csharp.</source>
+      </trans-unit>
+      <trans-unit id="sync.ignoredSettings">
+        <source xml:lang="en">Configure settings to be ignored while synchronizing.</source>
+      </trans-unit>
+      <trans-unit id="app.extension.identifier.errorMessage">
+        <source xml:lang="en">Expected format '${publisher}.${name}'. Example: 'vscode.csharp'.</source>
+      </trans-unit>
+      <trans-unit id="settings">
+        <source xml:lang="en">Settings</source>
+      </trans-unit>
+      <trans-unit id="keybindings">
+        <source xml:lang="en">Keyboard Shortcuts</source>
+      </trans-unit>
+      <trans-unit id="snippets">
+        <source xml:lang="en">User Snippets</source>
+      </trans-unit>
+      <trans-unit id="extensions_Duplicated1">
+        <source xml:lang="en">Extensions</source>
+      </trans-unit>
+      <trans-unit id="ui state label">
+        <source xml:lang="en">UI State</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/environment/node/argvHelper" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="unknownOption">
@@ -10,57 +44,6 @@
       </trans-unit>
       <trans-unit id="gotoValidation">
         <source xml:lang="en">Arguments in `--goto` mode should be in the format of `FILE(:LINE(:CHARACTER))`.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="extensions">
-        <source xml:lang="en">Extensions</source>
-      </trans-unit>
-      <trans-unit id="preferences">
-        <source xml:lang="en">Preferences</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/update/common/update.config.contribution" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="updateConfigurationTitle">
-        <source xml:lang="en">Update</source>
-      </trans-unit>
-      <trans-unit id="updateMode">
-        <source xml:lang="en">Configure whether you receive automatic updates. Requires a restart after change. The updates are fetched from a Microsoft online service.</source>
-      </trans-unit>
-      <trans-unit id="none">
-        <source xml:lang="en">Disable updates.</source>
-      </trans-unit>
-      <trans-unit id="manual">
-        <source xml:lang="en">Disable automatic background update checks. Updates will be available if you manually check for updates.</source>
-      </trans-unit>
-      <trans-unit id="start">
-        <source xml:lang="en">Check for updates only on startup. Disable automatic background update checks.</source>
-      </trans-unit>
-      <trans-unit id="default">
-        <source xml:lang="en">Enable automatic update checks. Code will check for updates automatically and periodically.</source>
-      </trans-unit>
-      <trans-unit id="deprecated_Duplicated1">
-        <source xml:lang="en">This setting is deprecated, please use '{0}' instead.</source>
-      </trans-unit>
-      <trans-unit id="enableWindowsBackgroundUpdatesTitle">
-        <source xml:lang="en">Enable Background Updates on Windows</source>
-      </trans-unit>
-      <trans-unit id="enableWindowsBackgroundUpdates">
-        <source xml:lang="en">Enable to download and install new VS Code Versions in the background on Windows</source>
-      </trans-unit>
-      <trans-unit id="showReleaseNotes">
-        <source xml:lang="en">Show Release Notes after an update. The Release Notes are fetched from a Microsoft online service.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/extensionManagement/node/extensionManagementUtil" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="invalidManifest_Duplicated4">
-        <source xml:lang="en">VSIX invalid: package.json is not a JSON file.</source>
       </trans-unit>
     </body>
   </file>
@@ -95,6 +78,57 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/update/common/update.config.contribution" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="updateConfigurationTitle">
+        <source xml:lang="en">Update</source>
+      </trans-unit>
+      <trans-unit id="updateMode">
+        <source xml:lang="en">Configure whether you receive automatic updates. Requires a restart after change. The updates are fetched from a Microsoft online service.</source>
+      </trans-unit>
+      <trans-unit id="none">
+        <source xml:lang="en">Disable updates.</source>
+      </trans-unit>
+      <trans-unit id="manual">
+        <source xml:lang="en">Disable automatic background update checks. Updates will be available if you manually check for updates.</source>
+      </trans-unit>
+      <trans-unit id="start">
+        <source xml:lang="en">Check for updates only on startup. Disable automatic background update checks.</source>
+      </trans-unit>
+      <trans-unit id="default">
+        <source xml:lang="en">Enable automatic update checks. Code will check for updates automatically and periodically.</source>
+      </trans-unit>
+      <trans-unit id="deprecated_Duplicated3">
+        <source xml:lang="en">This setting is deprecated, please use '{0}' instead.</source>
+      </trans-unit>
+      <trans-unit id="enableWindowsBackgroundUpdatesTitle">
+        <source xml:lang="en">Enable Background Updates on Windows</source>
+      </trans-unit>
+      <trans-unit id="enableWindowsBackgroundUpdates">
+        <source xml:lang="en">Enable to download and install new VS Code Versions in the background on Windows</source>
+      </trans-unit>
+      <trans-unit id="showReleaseNotes">
+        <source xml:lang="en">Show Release Notes after an update. The Release Notes are fetched from a Microsoft online service.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="extensions_Duplicated2">
+        <source xml:lang="en">Extensions</source>
+      </trans-unit>
+      <trans-unit id="preferences">
+        <source xml:lang="en">Preferences</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/extensionManagement/node/extensionManagementUtil" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="invalidManifest_Duplicated6">
+        <source xml:lang="en">VSIX invalid: package.json is not a JSON file.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="binFailed">
@@ -102,16 +136,6 @@
       </trans-unit>
       <trans-unit id="trashFailed">
         <source xml:lang="en">Failed to move '{0}' to the trash</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="telemetryConfigurationTitle">
-        <source xml:lang="en">Telemetry</source>
-      </trans-unit>
-      <trans-unit id="telemetry.enableTelemetry">
-        <source xml:lang="en">Enable usage data and errors to be sent to a Microsoft online service.</source>
       </trans-unit>
     </body>
   </file>
@@ -135,7 +159,7 @@
       <trans-unit id="goto">
         <source xml:lang="en">Open a file at the path on the specified line and character position.</source>
       </trans-unit>
-      <trans-unit id="newWindow_Duplicated6">
+      <trans-unit id="newWindow_Duplicated8">
         <source xml:lang="en">Force to open a new window.</source>
       </trans-unit>
       <trans-unit id="reuseWindow">
@@ -242,6 +266,16 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="telemetryConfigurationTitle">
+        <source xml:lang="en">Telemetry</source>
+      </trans-unit>
+      <trans-unit id="telemetry.enableTelemetry">
+        <source xml:lang="en">Enable usage data and errors to be sent to a Microsoft online service.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/label/common/label" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="untitledWorkspace">
@@ -252,29 +286,20 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/userDataSync/common/userDataSync" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="sync">
-        <source xml:lang="en">Sync</source>
-      </trans-unit>
-      <trans-unit id="sync.keybindingsPerPlatform">
-        <source xml:lang="en">Synchronize keybindings per platform.</source>
-      </trans-unit>
-      <trans-unit id="sync.ignoredExtensions">
-        <source xml:lang="en">List of extensions to be ignored while synchronizing. The identifier of an extension is always ${publisher}.${name}. For example: vscode.csharp.</source>
-      </trans-unit>
-      <trans-unit id="sync.ignoredSettings">
-        <source xml:lang="en">Configure settings to be ignored while synchronizing.</source>
-      </trans-unit>
-      <trans-unit id="app.extension.identifier.errorMessage">
-        <source xml:lang="en">Expected format '${publisher}.${name}'. Example: 'vscode.csharp'.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/files/common/files" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="unknownError">
         <source xml:lang="en">Unknown Error</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/userDataSyncService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="turned off">
+        <source xml:lang="en">Cannot sync because syncing is turned off in the cloud</source>
+      </trans-unit>
+      <trans-unit id="session expired">
+        <source xml:lang="en">Cannot sync because current session is expired</source>
       </trans-unit>
     </body>
   </file>
@@ -301,19 +326,9 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/userDataSync/common/userDataSyncService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="turned off">
-        <source xml:lang="en">Cannot sync because syncing is turned off in the cloud</source>
-      </trans-unit>
-      <trans-unit id="session expired">
-        <source xml:lang="en">Cannot sync because current session is expired</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/files/node/diskFileSystemProvider" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="fileExists_Duplicated8">
+      <trans-unit id="fileExists_Duplicated10">
         <source xml:lang="en">File already exists</source>
       </trans-unit>
       <trans-unit id="fileNotExists">
@@ -379,13 +394,13 @@
       <trans-unit id="confirmWorkspace">
         <source xml:lang="en">Would you like to undo '{0}' across all files?</source>
       </trans-unit>
-      <trans-unit id="ok_Duplicated10">
+      <trans-unit id="ok_Duplicated12">
         <source xml:lang="en">Undo in {0} Files</source>
       </trans-unit>
       <trans-unit id="nok">
         <source xml:lang="en">Undo this File</source>
       </trans-unit>
-      <trans-unit id="cancel_Duplicated14">
+      <trans-unit id="cancel_Duplicated16">
         <source xml:lang="en">Cancel</source>
       </trans-unit>
       <trans-unit id="cannotWorkspaceRedo">
@@ -407,7 +422,7 @@
       <trans-unit id="fileNotFoundError">
         <source xml:lang="en">Unable to resolve non-existing file '{0}'</source>
       </trans-unit>
-      <trans-unit id="fileExists_Duplicated9">
+      <trans-unit id="fileExists_Duplicated11">
         <source xml:lang="en">Unable to create file '{0}' that already exists when overwrite flag is not set</source>
       </trans-unit>
       <trans-unit id="err.write">
@@ -428,7 +443,7 @@
       <trans-unit id="fileNotModifiedError">
         <source xml:lang="en">File not modified since</source>
       </trans-unit>
-      <trans-unit id="fileTooLargeError_Duplicated16">
+      <trans-unit id="fileTooLargeError_Duplicated18">
         <source xml:lang="en">Unable to read file '{0}' that is too large to open</source>
       </trans-unit>
       <trans-unit id="unableToMoveCopyError1">
@@ -499,7 +514,7 @@
       <trans-unit id="tree horizontalScrolling setting">
         <source xml:lang="en">Controls whether trees support horizontal scrolling in the workbench.</source>
       </trans-unit>
-      <trans-unit id="deprecated_Duplicated2">
+      <trans-unit id="deprecated_Duplicated4">
         <source xml:lang="en">This setting is deprecated, please use '{0}' instead.</source>
       </trans-unit>
       <trans-unit id="tree indent setting">
@@ -530,17 +545,17 @@
       <trans-unit id="fileTooLargeForHeapError">
         <source xml:lang="en">To open a file of this size, you need to restart and allow it to use more memory</source>
       </trans-unit>
-      <trans-unit id="fileTooLargeError_Duplicated17">
+      <trans-unit id="fileTooLargeError_Duplicated19">
         <source xml:lang="en">File is too large to open</source>
       </trans-unit>
     </body>
   </file>
   <file original="src/vs/platform/extensionManagement/node/extensionManagementService" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="invalidManifest_Duplicated5">
+      <trans-unit id="invalidManifest_Duplicated7">
         <source xml:lang="en">Extension invalid: package.json is not a JSON file.</source>
       </trans-unit>
-      <trans-unit id="incompatible_Duplicated18">
+      <trans-unit id="incompatible_Duplicated20">
         <source xml:lang="en">Unable to install extension '{0}' as it is not compatible with VS Code '{1}'.</source>
       </trans-unit>
       <trans-unit id="restartCode">
@@ -590,6 +605,20 @@
       </trans-unit>
       <trans-unit id="notExists">
         <source xml:lang="en">Could not find extension</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="errorInvalidSettings_Duplicated22">
+        <source xml:lang="en">Unable to sync keybindings as there are errors/warning in keybindings file.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="errorInvalidSettings_Duplicated23">
+        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
       </trans-unit>
     </body>
   </file>
@@ -1063,20 +1092,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="errorInvalidSettings_Duplicated20">
-        <source xml:lang="en">Unable to sync keybindings as there are errors/warning in keybindings file.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="errorInvalidSettings_Duplicated21">
-        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/extensions/common/extensionValidator" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="versionSyntax">
@@ -1095,7 +1110,7 @@
   </file>
   <file original="src/vs/platform/workspaces/electron-main/workspacesMainService" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="ok_Duplicated11">
+      <trans-unit id="ok_Duplicated13">
         <source xml:lang="en">OK</source>
       </trans-unit>
       <trans-unit id="workspaceOpenedMessage">
@@ -1144,10 +1159,10 @@
       <trans-unit id="issueReporterWriteToClipboard">
         <source xml:lang="en">There is too much data to send to GitHub directly. The data will be copied to the clipboard, please paste it into the GitHub issue page that is opened.</source>
       </trans-unit>
-      <trans-unit id="ok_Duplicated12">
+      <trans-unit id="ok_Duplicated14">
         <source xml:lang="en">OK</source>
       </trans-unit>
-      <trans-unit id="cancel_Duplicated15">
+      <trans-unit id="cancel_Duplicated17">
         <source xml:lang="en">Cancel</source>
       </trans-unit>
       <trans-unit id="confirmCloseIssueReporter">
@@ -1166,7 +1181,7 @@
   </file>
   <file original="src/vs/platform/workspaces/electron-main/workspacesHistoryMainService" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="newWindow_Duplicated7">
+      <trans-unit id="newWindow_Duplicated9">
         <source xml:lang="en">New Window</source>
       </trans-unit>
       <trans-unit id="newWindowDesc">
@@ -1306,7 +1321,7 @@
       <trans-unit id="abstract">
         <source xml:lang="en">Style to use for symbols that are abstract.</source>
       </trans-unit>
-      <trans-unit id="deprecated_Duplicated3">
+      <trans-unit id="deprecated_Duplicated5">
         <source xml:lang="en">Style to use for symbols that are deprecated.</source>
       </trans-unit>
       <trans-unit id="modification">
@@ -1335,7 +1350,7 @@
   </file>
   <file original="src/vs/platform/userDataSync/common/abstractSynchronizer" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="incompatible_Duplicated19">
+      <trans-unit id="incompatible_Duplicated21">
         <source xml:lang="en">Cannot sync {0} as its version {1} is not compatible with cloud {2}</source>
       </trans-unit>
     </body>
@@ -1468,7 +1483,7 @@
       <trans-unit id="uriInvalidDetail">
         <source xml:lang="en">The URI '{0}' is not valid and can not be opened.</source>
       </trans-unit>
-      <trans-unit id="ok_Duplicated13">
+      <trans-unit id="ok_Duplicated15">
         <source xml:lang="en">OK</source>
       </trans-unit>
     </body>
