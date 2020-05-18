@@ -458,6 +458,58 @@ This option requires restart to take effect.</source>
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/browser/actions/workspaceActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="openFile">
+        <source xml:lang="en">Open File...</source>
+      </trans-unit>
+      <trans-unit id="openFolder">
+        <source xml:lang="en">Open Folder...</source>
+      </trans-unit>
+      <trans-unit id="openFileFolder">
+        <source xml:lang="en">Open...</source>
+      </trans-unit>
+      <trans-unit id="openWorkspaceAction">
+        <source xml:lang="en">Open Workspace...</source>
+      </trans-unit>
+      <trans-unit id="closeWorkspace">
+        <source xml:lang="en">Close Workspace</source>
+      </trans-unit>
+      <trans-unit id="noWorkspaceOpened">
+        <source xml:lang="en">There is currently no workspace opened in this instance to close.</source>
+      </trans-unit>
+      <trans-unit id="openWorkspaceConfigFile">
+        <source xml:lang="en">Open Workspace Configuration File</source>
+      </trans-unit>
+      <trans-unit id="globalRemoveFolderFromWorkspace">
+        <source xml:lang="en">Remove Folder from Workspace...</source>
+      </trans-unit>
+      <trans-unit id="saveWorkspaceAsAction">
+        <source xml:lang="en">Save Workspace As...</source>
+      </trans-unit>
+      <trans-unit id="duplicateWorkspaceInNewWindow">
+        <source xml:lang="en">Duplicate Workspace in New Window</source>
+      </trans-unit>
+      <trans-unit id="workspaces_Duplicated16">
+        <source xml:lang="en">Workspaces</source>
+      </trans-unit>
+      <trans-unit id="miAddFolderToWorkspace">
+        <source xml:lang="en">A&amp;&amp;dd Folder to Workspace...</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miSaveWorkspaceAs">
+        <source xml:lang="en">Save Workspace As...</source>
+      </trans-unit>
+      <trans-unit id="miCloseFolder">
+        <source xml:lang="en">Close &amp;&amp;Folder</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miCloseWorkspace">
+        <source xml:lang="en">Close &amp;&amp;Workspace</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/browser/actions/windowActions" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="remove">
@@ -466,7 +518,7 @@ This option requires restart to take effect.</source>
       <trans-unit id="dirtyRecentlyOpened">
         <source xml:lang="en">Workspace With Dirty Files</source>
       </trans-unit>
-      <trans-unit id="workspaces_Duplicated16">
+      <trans-unit id="workspaces_Duplicated17">
         <source xml:lang="en">workspaces</source>
       </trans-unit>
       <trans-unit id="files">
@@ -538,58 +590,6 @@ This option requires restart to take effect.</source>
       </trans-unit>
       <trans-unit id="miAbout">
         <source xml:lang="en">&amp;&amp;About</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/actions/workspaceActions" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="openFile">
-        <source xml:lang="en">Open File...</source>
-      </trans-unit>
-      <trans-unit id="openFolder">
-        <source xml:lang="en">Open Folder...</source>
-      </trans-unit>
-      <trans-unit id="openFileFolder">
-        <source xml:lang="en">Open...</source>
-      </trans-unit>
-      <trans-unit id="openWorkspaceAction">
-        <source xml:lang="en">Open Workspace...</source>
-      </trans-unit>
-      <trans-unit id="closeWorkspace">
-        <source xml:lang="en">Close Workspace</source>
-      </trans-unit>
-      <trans-unit id="noWorkspaceOpened">
-        <source xml:lang="en">There is currently no workspace opened in this instance to close.</source>
-      </trans-unit>
-      <trans-unit id="openWorkspaceConfigFile">
-        <source xml:lang="en">Open Workspace Configuration File</source>
-      </trans-unit>
-      <trans-unit id="globalRemoveFolderFromWorkspace">
-        <source xml:lang="en">Remove Folder from Workspace...</source>
-      </trans-unit>
-      <trans-unit id="saveWorkspaceAsAction">
-        <source xml:lang="en">Save Workspace As...</source>
-      </trans-unit>
-      <trans-unit id="duplicateWorkspaceInNewWindow">
-        <source xml:lang="en">Duplicate Workspace in New Window</source>
-      </trans-unit>
-      <trans-unit id="workspaces_Duplicated17">
-        <source xml:lang="en">Workspaces</source>
-      </trans-unit>
-      <trans-unit id="miAddFolderToWorkspace">
-        <source xml:lang="en">A&amp;&amp;dd Folder to Workspace...</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miSaveWorkspaceAs">
-        <source xml:lang="en">Save Workspace As...</source>
-      </trans-unit>
-      <trans-unit id="miCloseFolder">
-        <source xml:lang="en">Close &amp;&amp;Folder</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miCloseWorkspace">
-        <source xml:lang="en">Close &amp;&amp;Workspace</source>
         <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
     </body>
@@ -1235,7 +1235,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
         <source xml:lang="en">View</source>
       </trans-unit>
       <trans-unit id="resetViewLocation">
-        <source xml:lang="en">Reset View Location</source>
+        <source xml:lang="en">Reset Location</source>
       </trans-unit>
     </body>
   </file>
@@ -1816,6 +1816,16 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/browser/parts/panel/panelPart" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="hidePanel">
+        <source xml:lang="en">Hide Panel</source>
+      </trans-unit>
+      <trans-unit id="panel.emptyMessage">
+        <source xml:lang="en">Drag a view into the panel to display.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/browser/parts/activitybar/activitybarPart" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="hideMenu">
@@ -1838,16 +1848,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
       <trans-unit id="accounts">
         <source xml:lang="en">Accounts</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/panel/panelPart" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="hidePanel">
-        <source xml:lang="en">Hide Panel</source>
-      </trans-unit>
-      <trans-unit id="panel.emptyMessage">
-        <source xml:lang="en">Drag a view into the panel to display.</source>
       </trans-unit>
     </body>
   </file>
@@ -1911,9 +1911,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
 {1}
 
  Sign out of these features?</source>
-      </trans-unit>
-      <trans-unit id="sync">
-        <source xml:lang="en">Preferences Sync</source>
       </trans-unit>
       <trans-unit id="signedOut">
         <source xml:lang="en">Successfully signed out.</source>
@@ -2001,31 +1998,12 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/notifications/notificationsCommands" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="notifications_Duplicated46">
-        <source xml:lang="en">Notifications</source>
-      </trans-unit>
-      <trans-unit id="showNotifications">
-        <source xml:lang="en">Show Notifications</source>
-      </trans-unit>
-      <trans-unit id="hideNotifications_Duplicated49">
-        <source xml:lang="en">Hide Notifications</source>
-      </trans-unit>
-      <trans-unit id="clearAllNotifications">
-        <source xml:lang="en">Clear All Notifications</source>
-      </trans-unit>
-      <trans-unit id="focusNotificationToasts">
-        <source xml:lang="en">Focus Notification Toast</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/browser/parts/notifications/notificationsStatus" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="status.notifications">
         <source xml:lang="en">Notifications</source>
       </trans-unit>
-      <trans-unit id="hideNotifications_Duplicated50">
+      <trans-unit id="hideNotifications_Duplicated46">
         <source xml:lang="en">Hide Notifications</source>
       </trans-unit>
       <trans-unit id="zeroNotifications">
@@ -2037,7 +2015,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="oneNotification">
         <source xml:lang="en">1 New Notification</source>
       </trans-unit>
-      <trans-unit id="notifications_Duplicated47">
+      <trans-unit id="notifications_Duplicated48">
         <source xml:lang="en">{0} New Notifications</source>
       </trans-unit>
       <trans-unit id="noNotificationsWithProgress">
@@ -2054,6 +2032,25 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/browser/parts/notifications/notificationsCommands" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="notifications_Duplicated49">
+        <source xml:lang="en">Notifications</source>
+      </trans-unit>
+      <trans-unit id="showNotifications">
+        <source xml:lang="en">Show Notifications</source>
+      </trans-unit>
+      <trans-unit id="hideNotifications_Duplicated47">
+        <source xml:lang="en">Hide Notifications</source>
+      </trans-unit>
+      <trans-unit id="clearAllNotifications">
+        <source xml:lang="en">Clear All Notifications</source>
+      </trans-unit>
+      <trans-unit id="focusNotificationToasts">
+        <source xml:lang="en">Focus Notification Toast</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/api/common/extHostWorkspace" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="updateerror">
@@ -2066,7 +2063,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="notificationsEmpty">
         <source xml:lang="en">No new notifications</source>
       </trans-unit>
-      <trans-unit id="notifications_Duplicated48">
+      <trans-unit id="notifications_Duplicated50">
         <source xml:lang="en">Notifications</source>
       </trans-unit>
       <trans-unit id="notificationsToolbar">
@@ -2209,22 +2206,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/views/treeView" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="no-dataprovider">
-        <source xml:lang="en">There is no data provider registered that can provide view data.</source>
-      </trans-unit>
-      <trans-unit id="refresh">
-        <source xml:lang="en">Refresh</source>
-      </trans-unit>
-      <trans-unit id="collapseAll">
-        <source xml:lang="en">Collapse All</source>
-      </trans-unit>
-      <trans-unit id="command-error">
-        <source xml:lang="en">Error running command {1}: {0}. This is likely caused by the extension that contributes {1}.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/browser/parts/activitybar/activitybarActions" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="previousSideBarView">
@@ -2288,6 +2269,22 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
       <trans-unit id="compare">
         <source xml:lang="en">Compare</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/views/treeView" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="no-dataprovider">
+        <source xml:lang="en">There is no data provider registered that can provide view data.</source>
+      </trans-unit>
+      <trans-unit id="refresh">
+        <source xml:lang="en">Refresh</source>
+      </trans-unit>
+      <trans-unit id="collapseAll">
+        <source xml:lang="en">Collapse All</source>
+      </trans-unit>
+      <trans-unit id="command-error">
+        <source xml:lang="en">Error running command {1}: {0}. This is likely caused by the extension that contributes {1}.</source>
       </trans-unit>
     </body>
   </file>
