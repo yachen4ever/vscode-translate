@@ -1,57 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file original="src/vs/workbench/contrib/tasks/node/processRunnerDetector" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="TaskSystemDetector.noGulpTasks">
-        <source xml:lang="en">Running gulp --tasks-simple didn't list any tasks. Did you run npm install?</source>
-      </trans-unit>
-      <trans-unit id="TaskSystemDetector.noJakeTasks">
-        <source xml:lang="en">Running jake --tasks didn't list any tasks. Did you run npm install?</source>
-      </trans-unit>
-      <trans-unit id="TaskSystemDetector.noGulpProgram">
-        <source xml:lang="en">Gulp is not installed on your system. Run npm install -g gulp to install it.</source>
-      </trans-unit>
-      <trans-unit id="TaskSystemDetector.noJakeProgram">
-        <source xml:lang="en">Jake is not installed on your system. Run npm install -g jake to install it.</source>
-      </trans-unit>
-      <trans-unit id="TaskSystemDetector.noGruntProgram">
-        <source xml:lang="en">Grunt is not installed on your system. Run npm install -g grunt to install it.</source>
-      </trans-unit>
-      <trans-unit id="TaskSystemDetector.noProgram">
-        <source xml:lang="en">Program {0} was not found. Message is {1}</source>
-      </trans-unit>
-      <trans-unit id="TaskSystemDetector.buildTaskDetected">
-        <source xml:lang="en">Build task named '{0}' detected.</source>
-      </trans-unit>
-      <trans-unit id="TaskSystemDetector.testTaskDetected">
-        <source xml:lang="en">Test task named '{0}' detected.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/tasks/node/processTaskSystem" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="version1_0">
-        <source xml:lang="en">The task system is configured for version 0.1.0 (see tasks.json file), which can only execute custom tasks. Upgrade to version 2.0.0 to run the task: {0}</source>
-      </trans-unit>
-      <trans-unit id="TaskRunnerSystem.unknownError">
-        <source xml:lang="en">A unknown error has occurred while executing a task. See task output log for details.</source>
-      </trans-unit>
-      <trans-unit id="TaskRunnerSystem.watchingBuildTaskFinished">
-        <source xml:lang="en">
-Watching build tasks has finished.</source>
-      </trans-unit>
-      <trans-unit id="TaskRunnerSystem.childProcessError">
-        <source xml:lang="en">Failed to launch external program {0} {1}.</source>
-      </trans-unit>
-      <trans-unit id="TaskRunnerSystem.cancelRequested">
-        <source xml:lang="en">
-The task '{0}' was terminated per user request.</source>
-      </trans-unit>
-      <trans-unit id="unknownProblemMatcher_Duplicated1">
-        <source xml:lang="en">Problem matcher {0} can't be resolved. The matcher will be ignored</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/tasks/browser/task.contribution" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="tasksCategory">
@@ -115,7 +63,7 @@ The task '{0}' was terminated per user request.</source>
       <trans-unit id="ShowTasksAction.label">
         <source xml:lang="en">Show Running Tasks</source>
       </trans-unit>
-      <trans-unit id="TerminateAction.label_Duplicated3">
+      <trans-unit id="TerminateAction.label_Duplicated1">
         <source xml:lang="en">Terminate Task</source>
       </trans-unit>
       <trans-unit id="BuildAction.label">
@@ -189,92 +137,6 @@ The task '{0}' was terminated per user request.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/tasks/common/tasks" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="TaskDefinition.missingRequiredProperty">
-        <source xml:lang="en">Error: the task identifier '{0}' is missing the required property '{1}'. The task identifier will be ignored.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/tasks/common/jsonSchema_v1" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="JsonSchema.version.deprecated">
-        <source xml:lang="en">Task version 0.1.0 is deprecated. Please use 2.0.0</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.version_Duplicated5">
-        <source xml:lang="en">The config's version number</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema._runner">
-        <source xml:lang="en">The runner has graduated. Use the offical runner property</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.runner">
-        <source xml:lang="en">Defines whether the task is executed as a process and the output is shown in the output window or inside the terminal.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.windows_Duplicated7">
-        <source xml:lang="en">Windows specific command configuration</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.mac_Duplicated9">
-        <source xml:lang="en">Mac specific command configuration</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.linux_Duplicated11">
-        <source xml:lang="en">Linux specific command configuration</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.shell_Duplicated13">
-        <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/tasksQuickAccess" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="noTaskResults">
-        <source xml:lang="en">No matching tasks</source>
-      </trans-unit>
-      <trans-unit id="TaskService.pickRunTask_Duplicated15">
-        <source xml:lang="en">Select the task to run</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/tasks/common/taskDefinitionRegistry" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="TaskDefinition.description">
-        <source xml:lang="en">The actual task type. Please note that types starting with a '$' are reserved for internal usage.</source>
-      </trans-unit>
-      <trans-unit id="TaskDefinition.properties">
-        <source xml:lang="en">Additional properties of the task type</source>
-      </trans-unit>
-      <trans-unit id="TaskTypeConfiguration.noType">
-        <source xml:lang="en">The task type configuration is missing the required 'taskType' property</source>
-      </trans-unit>
-      <trans-unit id="TaskDefinitionExtPoint">
-        <source xml:lang="en">Contributes task kinds</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/runAutomaticTasks" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="tasks.run.allowAutomatic">
-        <source xml:lang="en">This folder has tasks ({0}) defined in 'tasks.json' that run automatically when you open this folder. Do you allow automatic tasks to run when you open this folder?</source>
-      </trans-unit>
-      <trans-unit id="allow">
-        <source xml:lang="en">Allow and run</source>
-      </trans-unit>
-      <trans-unit id="disallow">
-        <source xml:lang="en">Disallow</source>
-      </trans-unit>
-      <trans-unit id="openTasks">
-        <source xml:lang="en">Open tasks.json</source>
-      </trans-unit>
-      <trans-unit id="workbench.action.tasks.manageAutomaticRunning">
-        <source xml:lang="en">Manage Automatic Tasks in Folder</source>
-      </trans-unit>
-      <trans-unit id="workbench.action.tasks.allowAutomaticTasks">
-        <source xml:lang="en">Allow Automatic Tasks in Folder</source>
-      </trans-unit>
-      <trans-unit id="workbench.action.tasks.disallowAutomaticTasks">
-        <source xml:lang="en">Disallow Automatic Tasks in Folder</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/tasks/common/taskConfiguration" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="ConfigurationParser.invalidCWD">
@@ -340,9 +202,357 @@ The task '{0}' was terminated per user request.</source>
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/tasks/node/processRunnerDetector" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="TaskSystemDetector.noGulpTasks">
+        <source xml:lang="en">Running gulp --tasks-simple didn't list any tasks. Did you run npm install?</source>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noJakeTasks">
+        <source xml:lang="en">Running jake --tasks didn't list any tasks. Did you run npm install?</source>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noGulpProgram">
+        <source xml:lang="en">Gulp is not installed on your system. Run npm install -g gulp to install it.</source>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noJakeProgram">
+        <source xml:lang="en">Jake is not installed on your system. Run npm install -g jake to install it.</source>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noGruntProgram">
+        <source xml:lang="en">Grunt is not installed on your system. Run npm install -g grunt to install it.</source>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noProgram">
+        <source xml:lang="en">Program {0} was not found. Message is {1}</source>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.buildTaskDetected">
+        <source xml:lang="en">Build task named '{0}' detected.</source>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.testTaskDetected">
+        <source xml:lang="en">Test task named '{0}' detected.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/node/processTaskSystem" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="version1_0">
+        <source xml:lang="en">The task system is configured for version 0.1.0 (see tasks.json file), which can only execute custom tasks. Upgrade to version 2.0.0 to run the task: {0}</source>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.unknownError">
+        <source xml:lang="en">A unknown error has occurred while executing a task. See task output log for details.</source>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.watchingBuildTaskFinished">
+        <source xml:lang="en">
+Watching build tasks has finished.</source>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.childProcessError">
+        <source xml:lang="en">Failed to launch external program {0} {1}.</source>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.cancelRequested">
+        <source xml:lang="en">
+The task '{0}' was terminated per user request.</source>
+      </trans-unit>
+      <trans-unit id="unknownProblemMatcher_Duplicated3">
+        <source xml:lang="en">Problem matcher {0} can't be resolved. The matcher will be ignored</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/abstractTaskService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="ConfigureTaskRunnerAction.label">
+        <source xml:lang="en">Configure Task</source>
+      </trans-unit>
+      <trans-unit id="tasks">
+        <source xml:lang="en">Tasks</source>
+      </trans-unit>
+      <trans-unit id="TaskSystem.noHotSwap">
+        <source xml:lang="en">Changing the task execution engine with an active task running requires to reload the Window</source>
+      </trans-unit>
+      <trans-unit id="reloadWindow">
+        <source xml:lang="en">Reload Window</source>
+      </trans-unit>
+      <trans-unit id="TaskService.pickBuildTaskForLabel">
+        <source xml:lang="en">Select the build task (there is no default build task defined)</source>
+      </trans-unit>
+      <trans-unit id="taskServiceOutputPrompt">
+        <source xml:lang="en">There are task errors. See the output for details.</source>
+      </trans-unit>
+      <trans-unit id="showOutput">
+        <source xml:lang="en">Show output</source>
+      </trans-unit>
+      <trans-unit id="TaskServer.folderIgnored">
+        <source xml:lang="en">The folder {0} is ignored since it uses task version 0.1.0</source>
+      </trans-unit>
+      <trans-unit id="TaskService.noBuildTask1">
+        <source xml:lang="en">No build task defined. Mark a task with 'isBuildCommand' in the tasks.json file.</source>
+      </trans-unit>
+      <trans-unit id="TaskService.noBuildTask2">
+        <source xml:lang="en">No build task defined. Mark a task with as a 'build' group in the tasks.json file.</source>
+      </trans-unit>
+      <trans-unit id="TaskService.noTestTask1">
+        <source xml:lang="en">No test task defined. Mark a task with 'isTestCommand' in the tasks.json file.</source>
+      </trans-unit>
+      <trans-unit id="TaskService.noTestTask2">
+        <source xml:lang="en">No test task defined. Mark a task with as a 'test' group in the tasks.json file.</source>
+      </trans-unit>
+      <trans-unit id="TaskServer.noTask">
+        <source xml:lang="en">Task to execute is undefined</source>
+      </trans-unit>
+      <trans-unit id="TaskService.associate">
+        <source xml:lang="en">associate</source>
+      </trans-unit>
+      <trans-unit id="TaskService.attachProblemMatcher.continueWithout">
+        <source xml:lang="en">Continue without scanning the task output</source>
+      </trans-unit>
+      <trans-unit id="TaskService.attachProblemMatcher.never">
+        <source xml:lang="en">Never scan the task output for this task</source>
+      </trans-unit>
+      <trans-unit id="TaskService.attachProblemMatcher.neverType">
+        <source xml:lang="en">Never scan the task output for {0} tasks</source>
+      </trans-unit>
+      <trans-unit id="TaskService.attachProblemMatcher.learnMoreAbout">
+        <source xml:lang="en">Learn more about scanning the task output</source>
+      </trans-unit>
+      <trans-unit id="selectProblemMatcher">
+        <source xml:lang="en">Select for which kind of errors and warnings to scan the task output</source>
+      </trans-unit>
+      <trans-unit id="customizeParseErrors">
+        <source xml:lang="en">The current task configuration has errors. Please fix the errors first before customizing a task.</source>
+      </trans-unit>
+      <trans-unit id="tasksJsonComment">
+        <source xml:lang="en">	// See https://go.microsoft.com/fwlink/?LinkId=733558 
+	// for the documentation about the tasks.json format</source>
+      </trans-unit>
+      <trans-unit id="moreThanOneBuildTask">
+        <source xml:lang="en">There are many build tasks defined in the tasks.json. Executing the first one.
+</source>
+      </trans-unit>
+      <trans-unit id="TaskSystem.saveBeforeRun.prompt.title">
+        <source xml:lang="en">Save all editors?</source>
+      </trans-unit>
+      <trans-unit id="saveBeforeRun.save">
+        <source xml:lang="en">Save</source>
+      </trans-unit>
+      <trans-unit id="saveBeforeRun.dontSave">
+        <source xml:lang="en">Don't save</source>
+      </trans-unit>
+      <trans-unit id="detail">
+        <source xml:lang="en">Do you want to save all editors before running the task?</source>
+      </trans-unit>
+      <trans-unit id="TaskSystem.activeSame.noBackground">
+        <source xml:lang="en">The task '{0}' is already active.</source>
+      </trans-unit>
+      <trans-unit id="terminateTask">
+        <source xml:lang="en">Terminate Task</source>
+      </trans-unit>
+      <trans-unit id="restartTask">
+        <source xml:lang="en">Restart Task</source>
+      </trans-unit>
+      <trans-unit id="TaskSystem.active">
+        <source xml:lang="en">There is already a task running. Terminate it first before executing another task.</source>
+      </trans-unit>
+      <trans-unit id="TaskSystem.restartFailed">
+        <source xml:lang="en">Failed to terminate and restart task {0}</source>
+      </trans-unit>
+      <trans-unit id="unexpectedTaskType">
+        <source xml:lang="en">The task provider for "{0}" tasks unexpectedly provided a task of type "{1}".
+</source>
+      </trans-unit>
+      <trans-unit id="TaskService.noConfiguration">
+        <source xml:lang="en">Error: The {0} task detection didn't contribute a task for the following configuration:
+{1}
+The task will be ignored.
+</source>
+      </trans-unit>
+      <trans-unit id="TaskSystem.configurationErrors">
+        <source xml:lang="en">Error: the provided task configuration has validation errors and can't not be used. Please correct the errors first.</source>
+      </trans-unit>
+      <trans-unit id="TaskSystem.invalidTaskJsonOther">
+        <source xml:lang="en">Error: The content of the tasks json in {0} has syntax errors. Please correct them before executing a task.
+</source>
+      </trans-unit>
+      <trans-unit id="TasksSystem.locationWorkspaceConfig">
+        <source xml:lang="en">workspace file</source>
+      </trans-unit>
+      <trans-unit id="TaskSystem.versionWorkspaceFile">
+        <source xml:lang="en">Only tasks version 2.0.0 permitted in .codeworkspace.</source>
+      </trans-unit>
+      <trans-unit id="TasksSystem.locationUserConfig">
+        <source xml:lang="en">user settings</source>
+      </trans-unit>
+      <trans-unit id="TaskSystem.versionSettings">
+        <source xml:lang="en">Only tasks version 2.0.0 permitted in user settings.</source>
+      </trans-unit>
+      <trans-unit id="taskService.ignoreingFolder">
+        <source xml:lang="en">Ignoring task configurations for workspace folder {0}. Multi folder workspace task support requires that all folders use task version 2.0.0
+</source>
+      </trans-unit>
+      <trans-unit id="TaskSystem.invalidTaskJson">
+        <source xml:lang="en">Error: The content of the tasks.json file has syntax errors. Please correct them before executing a task.
+</source>
+      </trans-unit>
+      <trans-unit id="TaskSystem.runningTask">
+        <source xml:lang="en">There is a task running. Do you want to terminate it?</source>
+      </trans-unit>
+      <trans-unit id="TaskSystem.terminateTask">
+        <source xml:lang="en">&amp;&amp;Terminate Task</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="TaskSystem.noProcess">
+        <source xml:lang="en">The launched task doesn't exist anymore. If the task spawned background processes exiting VS Code might result in orphaned processes. To avoid this start the last background process with a wait flag.</source>
+      </trans-unit>
+      <trans-unit id="TaskSystem.exitAnyways">
+        <source xml:lang="en">&amp;&amp;Exit Anyways</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="TerminateAction.label_Duplicated2">
+        <source xml:lang="en">Terminate Task</source>
+      </trans-unit>
+      <trans-unit id="TaskSystem.unknownError">
+        <source xml:lang="en">An error has occurred while running a task. See task log for details.</source>
+      </trans-unit>
+      <trans-unit id="TaskService.noWorkspace">
+        <source xml:lang="en">Tasks are only available on a workspace folder.</source>
+      </trans-unit>
+      <trans-unit id="TaskService.learnMore">
+        <source xml:lang="en">Learn More</source>
+      </trans-unit>
+      <trans-unit id="configureTask_Duplicated5">
+        <source xml:lang="en">Configure Task</source>
+      </trans-unit>
+      <trans-unit id="recentlyUsed_Duplicated7">
+        <source xml:lang="en">recently used tasks</source>
+      </trans-unit>
+      <trans-unit id="configured_Duplicated9">
+        <source xml:lang="en">configured tasks</source>
+      </trans-unit>
+      <trans-unit id="detected">
+        <source xml:lang="en">detected tasks</source>
+      </trans-unit>
+      <trans-unit id="TaskService.ignoredFolder">
+        <source xml:lang="en">The following workspace folders are ignored since they use task version 0.1.0: {0}</source>
+      </trans-unit>
+      <trans-unit id="TaskService.notAgain">
+        <source xml:lang="en">Don't Show Again</source>
+      </trans-unit>
+      <trans-unit id="TaskService.pickRunTask_Duplicated11">
+        <source xml:lang="en">Select the task to run</source>
+      </trans-unit>
+      <trans-unit id="TaskService.noEntryToRunSlow">
+        <source xml:lang="en">No task to run found. Configure Tasks...</source>
+      </trans-unit>
+      <trans-unit id="TaskService.noEntryToRun">
+        <source xml:lang="en">No configured tasks. Configure Tasks...</source>
+      </trans-unit>
+      <trans-unit id="TaskService.fetchingBuildTasks">
+        <source xml:lang="en">Fetching build tasks...</source>
+      </trans-unit>
+      <trans-unit id="TaskService.pickBuildTask">
+        <source xml:lang="en">Select the build task to run</source>
+      </trans-unit>
+      <trans-unit id="TaskService.noBuildTask">
+        <source xml:lang="en">No build task to run found. Configure Build Task...</source>
+      </trans-unit>
+      <trans-unit id="TaskService.fetchingTestTasks">
+        <source xml:lang="en">Fetching test tasks...</source>
+      </trans-unit>
+      <trans-unit id="TaskService.pickTestTask">
+        <source xml:lang="en">Select the test task to run</source>
+      </trans-unit>
+      <trans-unit id="TaskService.noTestTaskTerminal">
+        <source xml:lang="en">No test task to run found. Configure Tasks...</source>
+      </trans-unit>
+      <trans-unit id="TaskService.taskToTerminate">
+        <source xml:lang="en">Select a task to terminate</source>
+      </trans-unit>
+      <trans-unit id="TaskService.noTaskRunning">
+        <source xml:lang="en">No task is currently running</source>
+      </trans-unit>
+      <trans-unit id="TaskService.terminateAllRunningTasks">
+        <source xml:lang="en">All Running Tasks</source>
+      </trans-unit>
+      <trans-unit id="TerminateAction.noProcess">
+        <source xml:lang="en">The launched process doesn't exist anymore. If the task spawned background tasks exiting VS Code might result in orphaned processes.</source>
+      </trans-unit>
+      <trans-unit id="TerminateAction.failed">
+        <source xml:lang="en">Failed to terminate running task</source>
+      </trans-unit>
+      <trans-unit id="TaskService.taskToRestart">
+        <source xml:lang="en">Select the task to restart</source>
+      </trans-unit>
+      <trans-unit id="TaskService.noTaskToRestart">
+        <source xml:lang="en">No task to restart</source>
+      </trans-unit>
+      <trans-unit id="TaskService.template">
+        <source xml:lang="en">Select a Task Template</source>
+      </trans-unit>
+      <trans-unit id="taskQuickPick.userSettings">
+        <source xml:lang="en">User Settings</source>
+      </trans-unit>
+      <trans-unit id="TaskService.createJsonFile">
+        <source xml:lang="en">Create tasks.json file from template</source>
+      </trans-unit>
+      <trans-unit id="TaskService.openJsonFile">
+        <source xml:lang="en">Open tasks.json file</source>
+      </trans-unit>
+      <trans-unit id="TaskService.pickTask">
+        <source xml:lang="en">Select a task to configure</source>
+      </trans-unit>
+      <trans-unit id="TaskService.defaultBuildTaskExists">
+        <source xml:lang="en">{0} is already marked as the default build task</source>
+      </trans-unit>
+      <trans-unit id="TaskService.pickDefaultBuildTask">
+        <source xml:lang="en">Select the task to be used as the default build task</source>
+      </trans-unit>
+      <trans-unit id="TaskService.defaultTestTaskExists">
+        <source xml:lang="en">{0} is already marked as the default test task.</source>
+      </trans-unit>
+      <trans-unit id="TaskService.pickDefaultTestTask">
+        <source xml:lang="en">Select the task to be used as the default test task</source>
+      </trans-unit>
+      <trans-unit id="TaskService.pickShowTask">
+        <source xml:lang="en">Select the task to show its output</source>
+      </trans-unit>
+      <trans-unit id="TaskService.noTaskIsRunning">
+        <source xml:lang="en">No task is running</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/tasks" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="TaskDefinition.missingRequiredProperty">
+        <source xml:lang="en">Error: the task identifier '{0}' is missing the required property '{1}'. The task identifier will be ignored.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/jsonSchema_v1" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="JsonSchema.version.deprecated">
+        <source xml:lang="en">Task version 0.1.0 is deprecated. Please use 2.0.0</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.version_Duplicated13">
+        <source xml:lang="en">The config's version number</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema._runner">
+        <source xml:lang="en">The runner has graduated. Use the offical runner property</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.runner">
+        <source xml:lang="en">Defines whether the task is executed as a process and the output is shown in the output window or inside the terminal.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.windows_Duplicated15">
+        <source xml:lang="en">Windows specific command configuration</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.mac_Duplicated17">
+        <source xml:lang="en">Mac specific command configuration</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.linux_Duplicated19">
+        <source xml:lang="en">Linux specific command configuration</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.shell_Duplicated21">
+        <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/tasks/common/jsonSchema_v2" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="JsonSchema.shell_Duplicated14">
+      <trans-unit id="JsonSchema.shell_Duplicated22">
         <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
       </trans-unit>
       <trans-unit id="JsonSchema.tasks.isShellCommand.deprecated">
@@ -465,7 +675,7 @@ The task '{0}' was terminated per user request.</source>
       <trans-unit id="JsonSchema.command.quotesString.quote">
         <source xml:lang="en">How the command value should be quoted.</source>
       </trans-unit>
-      <trans-unit id="JsonSchema.command_Duplicated17">
+      <trans-unit id="JsonSchema.command_Duplicated23">
         <source xml:lang="en">The command to be executed. Can be an external program or a shell command.</source>
       </trans-unit>
       <trans-unit id="JsonSchema.args.quotedString.value">
@@ -474,13 +684,13 @@ The task '{0}' was terminated per user request.</source>
       <trans-unit id="JsonSchema.args.quotesString.quote">
         <source xml:lang="en">How the argument value should be quoted.</source>
       </trans-unit>
-      <trans-unit id="JsonSchema.tasks.args_Duplicated19">
+      <trans-unit id="JsonSchema.tasks.args_Duplicated25">
         <source xml:lang="en">Arguments passed to the command when this task is invoked.</source>
       </trans-unit>
       <trans-unit id="JsonSchema.tasks.label">
         <source xml:lang="en">The task's user interface label</source>
       </trans-unit>
-      <trans-unit id="JsonSchema.version_Duplicated6">
+      <trans-unit id="JsonSchema.version_Duplicated14">
         <source xml:lang="en">The config's version number.</source>
       </trans-unit>
       <trans-unit id="JsonSchema.tasks.identifier">
@@ -504,19 +714,19 @@ The task '{0}' was terminated per user request.</source>
       <trans-unit id="JsonSchema.tasks.taskLabel">
         <source xml:lang="en">The task's label</source>
       </trans-unit>
-      <trans-unit id="JsonSchema.tasks.taskName_Duplicated21">
+      <trans-unit id="JsonSchema.tasks.taskName_Duplicated27">
         <source xml:lang="en">The task's name</source>
       </trans-unit>
       <trans-unit id="JsonSchema.tasks.taskName.deprecated">
         <source xml:lang="en">The task's name property is deprecated. Use the label property instead.</source>
       </trans-unit>
-      <trans-unit id="JsonSchema.tasks.background_Duplicated23">
+      <trans-unit id="JsonSchema.tasks.background_Duplicated29">
         <source xml:lang="en">Whether the executed task is kept alive and is running in the background.</source>
       </trans-unit>
-      <trans-unit id="JsonSchema.tasks.promptOnClose_Duplicated25">
+      <trans-unit id="JsonSchema.tasks.promptOnClose_Duplicated31">
         <source xml:lang="en">Whether the user is prompted when VS Code closes with a running task.</source>
       </trans-unit>
-      <trans-unit id="JsonSchema.tasks.matchers_Duplicated27">
+      <trans-unit id="JsonSchema.tasks.matchers_Duplicated33">
         <source xml:lang="en">The problem matcher(s) to use. Can either be a string or a problem matcher definition or an array of strings and problem matchers.</source>
       </trans-unit>
       <trans-unit id="JsonSchema.customizations.customizes.type">
@@ -543,145 +753,49 @@ The task '{0}' was terminated per user request.</source>
       <trans-unit id="JsonSchema.tasks.taskSelector.deprecated">
         <source xml:lang="en">The property taskSelector is deprecated. Inline the command with its arguments into the task instead. See also the 1.14 release notes.</source>
       </trans-unit>
-      <trans-unit id="JsonSchema.windows_Duplicated8">
+      <trans-unit id="JsonSchema.windows_Duplicated16">
         <source xml:lang="en">Windows specific command configuration</source>
       </trans-unit>
-      <trans-unit id="JsonSchema.mac_Duplicated10">
+      <trans-unit id="JsonSchema.mac_Duplicated18">
         <source xml:lang="en">Mac specific command configuration</source>
       </trans-unit>
-      <trans-unit id="JsonSchema.linux_Duplicated12">
+      <trans-unit id="JsonSchema.linux_Duplicated20">
         <source xml:lang="en">Linux specific command configuration</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/tasks/common/jsonSchemaCommon" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/tasks/browser/tasksQuickAccess" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="JsonSchema.options">
-        <source xml:lang="en">Additional command options</source>
+      <trans-unit id="noTaskResults">
+        <source xml:lang="en">No matching tasks</source>
       </trans-unit>
-      <trans-unit id="JsonSchema.options.cwd">
-        <source xml:lang="en">The current working directory of the executed program or script. If omitted Code's current workspace root is used.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.options.env">
-        <source xml:lang="en">The environment of the executed program or shell. If omitted the parent process' environment is used.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.shellConfiguration">
-        <source xml:lang="en">Configures the shell to be used.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.shell.executable">
-        <source xml:lang="en">The shell to be used.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.shell.args">
-        <source xml:lang="en">The shell arguments.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.command_Duplicated18">
-        <source xml:lang="en">The command to be executed. Can be an external program or a shell command.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.args_Duplicated20">
-        <source xml:lang="en">Arguments passed to the command when this task is invoked.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.taskName_Duplicated22">
-        <source xml:lang="en">The task's name</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.windows">
-        <source xml:lang="en">Windows specific command configuration</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.matchers_Duplicated28">
-        <source xml:lang="en">The problem matcher(s) to use. Can either be a string or a problem matcher definition or an array of strings and problem matchers.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.mac">
-        <source xml:lang="en">Mac specific command configuration</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.linux">
-        <source xml:lang="en">Linux specific command configuration</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.suppressTaskName">
-        <source xml:lang="en">Controls whether the task name is added as an argument to the command. If omitted the globally defined value is used.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.showOutput">
-        <source xml:lang="en">Controls whether the output of the running task is shown or not. If omitted the globally defined value is used.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.echoCommand">
-        <source xml:lang="en">Controls whether the executed command is echoed to the output. Default is false.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.watching.deprecation">
-        <source xml:lang="en">Deprecated. Use isBackground instead.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.watching">
-        <source xml:lang="en">Whether the executed task is kept alive and is watching the file system.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.background_Duplicated24">
-        <source xml:lang="en">Whether the executed task is kept alive and is running in the background.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.promptOnClose_Duplicated26">
-        <source xml:lang="en">Whether the user is prompted when VS Code closes with a running task.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.build">
-        <source xml:lang="en">Maps this task to Code's default build command.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.test">
-        <source xml:lang="en">Maps this task to Code's default test command.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.args">
-        <source xml:lang="en">Additional arguments passed to the command.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.showOutput">
-        <source xml:lang="en">Controls whether the output of the running task is shown or not. If omitted 'always' is used.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.watching.deprecation">
-        <source xml:lang="en">Deprecated. Use isBackground instead.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.watching">
-        <source xml:lang="en">Whether the executed task is kept alive and is watching the file system.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.background">
-        <source xml:lang="en">Whether the executed task is kept alive and is running in the background.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.promptOnClose">
-        <source xml:lang="en">Whether the user is prompted when VS Code closes with a running background task.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.suppressTaskName">
-        <source xml:lang="en">Controls whether the task name is added as an argument to the command. Default is false.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.taskSelector">
-        <source xml:lang="en">Prefix to indicate that an argument is task.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.matchers">
-        <source xml:lang="en">The problem matcher(s) to use. Can either be a string or a problem matcher definition or an array of strings and problem matchers.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks">
-        <source xml:lang="en">The task configurations. Usually these are enrichments of task already defined in the external task runner.</source>
+      <trans-unit id="TaskService.pickRunTask_Duplicated12">
+        <source xml:lang="en">Select the task to run</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/taskQuickPick" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/tasks/browser/runAutomaticTasks" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="taskQuickPick.showAll">
-        <source xml:lang="en">Show All Tasks...</source>
+      <trans-unit id="tasks.run.allowAutomatic">
+        <source xml:lang="en">This folder has tasks ({0}) defined in 'tasks.json' that run automatically when you open this folder. Do you allow automatic tasks to run when you open this folder?</source>
       </trans-unit>
-      <trans-unit id="configureTask_Duplicated29">
-        <source xml:lang="en">Configure Task</source>
+      <trans-unit id="allow">
+        <source xml:lang="en">Allow and run</source>
       </trans-unit>
-      <trans-unit id="contributedTasks">
-        <source xml:lang="en">contributed</source>
+      <trans-unit id="disallow">
+        <source xml:lang="en">Disallow</source>
       </trans-unit>
-      <trans-unit id="taskType">
-        <source xml:lang="en">All {0} tasks</source>
+      <trans-unit id="openTasks">
+        <source xml:lang="en">Open tasks.json</source>
       </trans-unit>
-      <trans-unit id="recentlyUsed_Duplicated31">
-        <source xml:lang="en">recently used</source>
+      <trans-unit id="workbench.action.tasks.manageAutomaticRunning">
+        <source xml:lang="en">Manage Automatic Tasks in Folder</source>
       </trans-unit>
-      <trans-unit id="configured_Duplicated33">
-        <source xml:lang="en">configured</source>
+      <trans-unit id="workbench.action.tasks.allowAutomaticTasks">
+        <source xml:lang="en">Allow Automatic Tasks in Folder</source>
       </trans-unit>
-      <trans-unit id="TaskQuickPick.goBack">
-        <source xml:lang="en">Go back ↩</source>
-      </trans-unit>
-      <trans-unit id="TaskQuickPick.noTasksForType">
-        <source xml:lang="en">No {0} tasks found. Go back ↩</source>
-      </trans-unit>
-      <trans-unit id="noProviderForTask">
-        <source xml:lang="en">There is no task provider registered for tasks of type "{0}".</source>
+      <trans-unit id="workbench.action.tasks.disallowAutomaticTasks">
+        <source xml:lang="en">Disallow Automatic Tasks in Folder</source>
       </trans-unit>
     </body>
   </file>
@@ -901,264 +1015,50 @@ The task '{0}' was terminated per user request.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/abstractTaskService" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/tasks/common/taskDefinitionRegistry" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="ConfigureTaskRunnerAction.label">
+      <trans-unit id="TaskDefinition.description">
+        <source xml:lang="en">The actual task type. Please note that types starting with a '$' are reserved for internal usage.</source>
+      </trans-unit>
+      <trans-unit id="TaskDefinition.properties">
+        <source xml:lang="en">Additional properties of the task type</source>
+      </trans-unit>
+      <trans-unit id="TaskTypeConfiguration.noType">
+        <source xml:lang="en">The task type configuration is missing the required 'taskType' property</source>
+      </trans-unit>
+      <trans-unit id="TaskDefinitionExtPoint">
+        <source xml:lang="en">Contributes task kinds</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/taskQuickPick" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="taskQuickPick.showAll">
+        <source xml:lang="en">Show All Tasks...</source>
+      </trans-unit>
+      <trans-unit id="configureTask_Duplicated6">
         <source xml:lang="en">Configure Task</source>
       </trans-unit>
-      <trans-unit id="tasks">
-        <source xml:lang="en">Tasks</source>
+      <trans-unit id="contributedTasks">
+        <source xml:lang="en">contributed</source>
       </trans-unit>
-      <trans-unit id="TaskSystem.noHotSwap">
-        <source xml:lang="en">Changing the task execution engine with an active task running requires to reload the Window</source>
+      <trans-unit id="taskType">
+        <source xml:lang="en">All {0} tasks</source>
       </trans-unit>
-      <trans-unit id="reloadWindow">
-        <source xml:lang="en">Reload Window</source>
+      <trans-unit id="recentlyUsed_Duplicated8">
+        <source xml:lang="en">recently used</source>
       </trans-unit>
-      <trans-unit id="TaskService.pickBuildTaskForLabel">
-        <source xml:lang="en">Select the build task (there is no default build task defined)</source>
+      <trans-unit id="configured_Duplicated10">
+        <source xml:lang="en">configured</source>
       </trans-unit>
-      <trans-unit id="taskServiceOutputPrompt">
-        <source xml:lang="en">There are task errors. See the output for details.</source>
+      <trans-unit id="TaskQuickPick.goBack">
+        <source xml:lang="en">Go back ↩</source>
       </trans-unit>
-      <trans-unit id="showOutput">
-        <source xml:lang="en">Show output</source>
+      <trans-unit id="TaskQuickPick.noTasksForType">
+        <source xml:lang="en">No {0} tasks found. Go back ↩</source>
       </trans-unit>
-      <trans-unit id="TaskServer.folderIgnored">
-        <source xml:lang="en">The folder {0} is ignored since it uses task version 0.1.0</source>
-      </trans-unit>
-      <trans-unit id="TaskService.noBuildTask1">
-        <source xml:lang="en">No build task defined. Mark a task with 'isBuildCommand' in the tasks.json file.</source>
-      </trans-unit>
-      <trans-unit id="TaskService.noBuildTask2">
-        <source xml:lang="en">No build task defined. Mark a task with as a 'build' group in the tasks.json file.</source>
-      </trans-unit>
-      <trans-unit id="TaskService.noTestTask1">
-        <source xml:lang="en">No test task defined. Mark a task with 'isTestCommand' in the tasks.json file.</source>
-      </trans-unit>
-      <trans-unit id="TaskService.noTestTask2">
-        <source xml:lang="en">No test task defined. Mark a task with as a 'test' group in the tasks.json file.</source>
-      </trans-unit>
-      <trans-unit id="TaskServer.noTask">
-        <source xml:lang="en">Task to execute is undefined</source>
-      </trans-unit>
-      <trans-unit id="TaskService.associate">
-        <source xml:lang="en">associate</source>
-      </trans-unit>
-      <trans-unit id="TaskService.attachProblemMatcher.continueWithout">
-        <source xml:lang="en">Continue without scanning the task output</source>
-      </trans-unit>
-      <trans-unit id="TaskService.attachProblemMatcher.never">
-        <source xml:lang="en">Never scan the task output for this task</source>
-      </trans-unit>
-      <trans-unit id="TaskService.attachProblemMatcher.neverType">
-        <source xml:lang="en">Never scan the task output for {0} tasks</source>
-      </trans-unit>
-      <trans-unit id="TaskService.attachProblemMatcher.learnMoreAbout">
-        <source xml:lang="en">Learn more about scanning the task output</source>
-      </trans-unit>
-      <trans-unit id="selectProblemMatcher">
-        <source xml:lang="en">Select for which kind of errors and warnings to scan the task output</source>
-      </trans-unit>
-      <trans-unit id="customizeParseErrors">
-        <source xml:lang="en">The current task configuration has errors. Please fix the errors first before customizing a task.</source>
-      </trans-unit>
-      <trans-unit id="tasksJsonComment">
-        <source xml:lang="en">	// See https://go.microsoft.com/fwlink/?LinkId=733558 
-	// for the documentation about the tasks.json format</source>
-      </trans-unit>
-      <trans-unit id="moreThanOneBuildTask">
-        <source xml:lang="en">There are many build tasks defined in the tasks.json. Executing the first one.
-</source>
-      </trans-unit>
-      <trans-unit id="TaskSystem.saveBeforeRun.prompt.title">
-        <source xml:lang="en">Save all editors?</source>
-      </trans-unit>
-      <trans-unit id="saveBeforeRun.save">
-        <source xml:lang="en">Save</source>
-      </trans-unit>
-      <trans-unit id="saveBeforeRun.dontSave">
-        <source xml:lang="en">Don't save</source>
-      </trans-unit>
-      <trans-unit id="detail">
-        <source xml:lang="en">Do you want to save all editors before running the task?</source>
-      </trans-unit>
-      <trans-unit id="TaskSystem.activeSame.noBackground">
-        <source xml:lang="en">The task '{0}' is already active.</source>
-      </trans-unit>
-      <trans-unit id="terminateTask">
-        <source xml:lang="en">Terminate Task</source>
-      </trans-unit>
-      <trans-unit id="restartTask">
-        <source xml:lang="en">Restart Task</source>
-      </trans-unit>
-      <trans-unit id="TaskSystem.active">
-        <source xml:lang="en">There is already a task running. Terminate it first before executing another task.</source>
-      </trans-unit>
-      <trans-unit id="TaskSystem.restartFailed">
-        <source xml:lang="en">Failed to terminate and restart task {0}</source>
-      </trans-unit>
-      <trans-unit id="unexpectedTaskType">
-        <source xml:lang="en">The task provider for "{0}" tasks unexpectedly provided a task of type "{1}".
-</source>
-      </trans-unit>
-      <trans-unit id="TaskService.noConfiguration">
-        <source xml:lang="en">Error: The {0} task detection didn't contribute a task for the following configuration:
-{1}
-The task will be ignored.
-</source>
-      </trans-unit>
-      <trans-unit id="TaskSystem.configurationErrors">
-        <source xml:lang="en">Error: the provided task configuration has validation errors and can't not be used. Please correct the errors first.</source>
-      </trans-unit>
-      <trans-unit id="TaskSystem.invalidTaskJsonOther">
-        <source xml:lang="en">Error: The content of the tasks json in {0} has syntax errors. Please correct them before executing a task.
-</source>
-      </trans-unit>
-      <trans-unit id="TasksSystem.locationWorkspaceConfig">
-        <source xml:lang="en">workspace file</source>
-      </trans-unit>
-      <trans-unit id="TaskSystem.versionWorkspaceFile">
-        <source xml:lang="en">Only tasks version 2.0.0 permitted in .codeworkspace.</source>
-      </trans-unit>
-      <trans-unit id="TasksSystem.locationUserConfig">
-        <source xml:lang="en">user settings</source>
-      </trans-unit>
-      <trans-unit id="TaskSystem.versionSettings">
-        <source xml:lang="en">Only tasks version 2.0.0 permitted in user settings.</source>
-      </trans-unit>
-      <trans-unit id="taskService.ignoreingFolder">
-        <source xml:lang="en">Ignoring task configurations for workspace folder {0}. Multi folder workspace task support requires that all folders use task version 2.0.0
-</source>
-      </trans-unit>
-      <trans-unit id="TaskSystem.invalidTaskJson">
-        <source xml:lang="en">Error: The content of the tasks.json file has syntax errors. Please correct them before executing a task.
-</source>
-      </trans-unit>
-      <trans-unit id="TaskSystem.runningTask">
-        <source xml:lang="en">There is a task running. Do you want to terminate it?</source>
-      </trans-unit>
-      <trans-unit id="TaskSystem.terminateTask">
-        <source xml:lang="en">&amp;&amp;Terminate Task</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="TaskSystem.noProcess">
-        <source xml:lang="en">The launched task doesn't exist anymore. If the task spawned background processes exiting VS Code might result in orphaned processes. To avoid this start the last background process with a wait flag.</source>
-      </trans-unit>
-      <trans-unit id="TaskSystem.exitAnyways">
-        <source xml:lang="en">&amp;&amp;Exit Anyways</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="TerminateAction.label_Duplicated4">
-        <source xml:lang="en">Terminate Task</source>
-      </trans-unit>
-      <trans-unit id="TaskSystem.unknownError">
-        <source xml:lang="en">An error has occurred while running a task. See task log for details.</source>
-      </trans-unit>
-      <trans-unit id="TaskService.noWorkspace">
-        <source xml:lang="en">Tasks are only available on a workspace folder.</source>
-      </trans-unit>
-      <trans-unit id="TaskService.learnMore">
-        <source xml:lang="en">Learn More</source>
-      </trans-unit>
-      <trans-unit id="configureTask_Duplicated30">
-        <source xml:lang="en">Configure Task</source>
-      </trans-unit>
-      <trans-unit id="recentlyUsed_Duplicated32">
-        <source xml:lang="en">recently used tasks</source>
-      </trans-unit>
-      <trans-unit id="configured_Duplicated34">
-        <source xml:lang="en">configured tasks</source>
-      </trans-unit>
-      <trans-unit id="detected">
-        <source xml:lang="en">detected tasks</source>
-      </trans-unit>
-      <trans-unit id="TaskService.ignoredFolder">
-        <source xml:lang="en">The following workspace folders are ignored since they use task version 0.1.0: {0}</source>
-      </trans-unit>
-      <trans-unit id="TaskService.notAgain">
-        <source xml:lang="en">Don't Show Again</source>
-      </trans-unit>
-      <trans-unit id="TaskService.pickRunTask_Duplicated16">
-        <source xml:lang="en">Select the task to run</source>
-      </trans-unit>
-      <trans-unit id="TaskService.noEntryToRunSlow">
-        <source xml:lang="en">No task to run found. Configure Tasks...</source>
-      </trans-unit>
-      <trans-unit id="TaskService.noEntryToRun">
-        <source xml:lang="en">No configured tasks. Configure Tasks...</source>
-      </trans-unit>
-      <trans-unit id="TaskService.fetchingBuildTasks">
-        <source xml:lang="en">Fetching build tasks...</source>
-      </trans-unit>
-      <trans-unit id="TaskService.pickBuildTask">
-        <source xml:lang="en">Select the build task to run</source>
-      </trans-unit>
-      <trans-unit id="TaskService.noBuildTask">
-        <source xml:lang="en">No build task to run found. Configure Build Task...</source>
-      </trans-unit>
-      <trans-unit id="TaskService.fetchingTestTasks">
-        <source xml:lang="en">Fetching test tasks...</source>
-      </trans-unit>
-      <trans-unit id="TaskService.pickTestTask">
-        <source xml:lang="en">Select the test task to run</source>
-      </trans-unit>
-      <trans-unit id="TaskService.noTestTaskTerminal">
-        <source xml:lang="en">No test task to run found. Configure Tasks...</source>
-      </trans-unit>
-      <trans-unit id="TaskService.taskToTerminate">
-        <source xml:lang="en">Select a task to terminate</source>
-      </trans-unit>
-      <trans-unit id="TaskService.noTaskRunning">
-        <source xml:lang="en">No task is currently running</source>
-      </trans-unit>
-      <trans-unit id="TaskService.terminateAllRunningTasks">
-        <source xml:lang="en">All Running Tasks</source>
-      </trans-unit>
-      <trans-unit id="TerminateAction.noProcess">
-        <source xml:lang="en">The launched process doesn't exist anymore. If the task spawned background tasks exiting VS Code might result in orphaned processes.</source>
-      </trans-unit>
-      <trans-unit id="TerminateAction.failed">
-        <source xml:lang="en">Failed to terminate running task</source>
-      </trans-unit>
-      <trans-unit id="TaskService.taskToRestart">
-        <source xml:lang="en">Select the task to restart</source>
-      </trans-unit>
-      <trans-unit id="TaskService.noTaskToRestart">
-        <source xml:lang="en">No task to restart</source>
-      </trans-unit>
-      <trans-unit id="TaskService.template">
-        <source xml:lang="en">Select a Task Template</source>
-      </trans-unit>
-      <trans-unit id="taskQuickPick.userSettings">
-        <source xml:lang="en">User Settings</source>
-      </trans-unit>
-      <trans-unit id="TaskService.createJsonFile">
-        <source xml:lang="en">Create tasks.json file from template</source>
-      </trans-unit>
-      <trans-unit id="TaskService.openJsonFile">
-        <source xml:lang="en">Open tasks.json file</source>
-      </trans-unit>
-      <trans-unit id="TaskService.pickTask">
-        <source xml:lang="en">Select a task to configure</source>
-      </trans-unit>
-      <trans-unit id="TaskService.defaultBuildTaskExists">
-        <source xml:lang="en">{0} is already marked as the default build task</source>
-      </trans-unit>
-      <trans-unit id="TaskService.pickDefaultBuildTask">
-        <source xml:lang="en">Select the task to be used as the default build task</source>
-      </trans-unit>
-      <trans-unit id="TaskService.defaultTestTaskExists">
-        <source xml:lang="en">{0} is already marked as the default test task.</source>
-      </trans-unit>
-      <trans-unit id="TaskService.pickDefaultTestTask">
-        <source xml:lang="en">Select the task to be used as the default test task</source>
-      </trans-unit>
-      <trans-unit id="TaskService.pickShowTask">
-        <source xml:lang="en">Select the task to show its output</source>
-      </trans-unit>
-      <trans-unit id="TaskService.noTaskIsRunning">
-        <source xml:lang="en">No task is running</source>
+      <trans-unit id="noProviderForTask">
+        <source xml:lang="en">There is no task provider registered for tasks of type "{0}".</source>
       </trans-unit>
     </body>
   </file>
@@ -1201,8 +1101,108 @@ The task will be ignored.
       <trans-unit id="TerminalTaskSystem">
         <source xml:lang="en">Can't execute a shell command on an UNC drive using cmd.exe.</source>
       </trans-unit>
-      <trans-unit id="unknownProblemMatcher_Duplicated2">
+      <trans-unit id="unknownProblemMatcher_Duplicated4">
         <source xml:lang="en">Problem matcher {0} can't be resolved. The matcher will be ignored</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/jsonSchemaCommon" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="JsonSchema.options">
+        <source xml:lang="en">Additional command options</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.options.cwd">
+        <source xml:lang="en">The current working directory of the executed program or script. If omitted Code's current workspace root is used.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.options.env">
+        <source xml:lang="en">The environment of the executed program or shell. If omitted the parent process' environment is used.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.shellConfiguration">
+        <source xml:lang="en">Configures the shell to be used.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.shell.executable">
+        <source xml:lang="en">The shell to be used.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.shell.args">
+        <source xml:lang="en">The shell arguments.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.command_Duplicated24">
+        <source xml:lang="en">The command to be executed. Can be an external program or a shell command.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.args_Duplicated26">
+        <source xml:lang="en">Arguments passed to the command when this task is invoked.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.taskName_Duplicated28">
+        <source xml:lang="en">The task's name</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.windows">
+        <source xml:lang="en">Windows specific command configuration</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.matchers_Duplicated34">
+        <source xml:lang="en">The problem matcher(s) to use. Can either be a string or a problem matcher definition or an array of strings and problem matchers.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.mac">
+        <source xml:lang="en">Mac specific command configuration</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.linux">
+        <source xml:lang="en">Linux specific command configuration</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.suppressTaskName">
+        <source xml:lang="en">Controls whether the task name is added as an argument to the command. If omitted the globally defined value is used.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.showOutput">
+        <source xml:lang="en">Controls whether the output of the running task is shown or not. If omitted the globally defined value is used.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.echoCommand">
+        <source xml:lang="en">Controls whether the executed command is echoed to the output. Default is false.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.watching.deprecation">
+        <source xml:lang="en">Deprecated. Use isBackground instead.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.watching">
+        <source xml:lang="en">Whether the executed task is kept alive and is watching the file system.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.background_Duplicated30">
+        <source xml:lang="en">Whether the executed task is kept alive and is running in the background.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.promptOnClose_Duplicated32">
+        <source xml:lang="en">Whether the user is prompted when VS Code closes with a running task.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.build">
+        <source xml:lang="en">Maps this task to Code's default build command.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.test">
+        <source xml:lang="en">Maps this task to Code's default test command.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.args">
+        <source xml:lang="en">Additional arguments passed to the command.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.showOutput">
+        <source xml:lang="en">Controls whether the output of the running task is shown or not. If omitted 'always' is used.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.watching.deprecation">
+        <source xml:lang="en">Deprecated. Use isBackground instead.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.watching">
+        <source xml:lang="en">Whether the executed task is kept alive and is watching the file system.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.background">
+        <source xml:lang="en">Whether the executed task is kept alive and is running in the background.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.promptOnClose">
+        <source xml:lang="en">Whether the user is prompted when VS Code closes with a running background task.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.suppressTaskName">
+        <source xml:lang="en">Controls whether the task name is added as an argument to the command. Default is false.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.taskSelector">
+        <source xml:lang="en">Prefix to indicate that an argument is task.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.matchers">
+        <source xml:lang="en">The problem matcher(s) to use. Can either be a string or a problem matcher definition or an array of strings and problem matchers.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks">
+        <source xml:lang="en">The task configurations. Usually these are enrichments of task already defined in the external task runner.</source>
       </trans-unit>
     </body>
   </file>
