@@ -17,21 +17,6 @@
       <trans-unit id="app.extension.identifier.errorMessage">
         <source xml:lang="en">Expected format '${publisher}.${name}'. Example: 'vscode.csharp'.</source>
       </trans-unit>
-      <trans-unit id="settings">
-        <source xml:lang="en">Settings</source>
-      </trans-unit>
-      <trans-unit id="keybindings">
-        <source xml:lang="en">Keyboard Shortcuts</source>
-      </trans-unit>
-      <trans-unit id="snippets">
-        <source xml:lang="en">User Snippets</source>
-      </trans-unit>
-      <trans-unit id="extensions_Duplicated1">
-        <source xml:lang="en">Extensions</source>
-      </trans-unit>
-      <trans-unit id="ui state label">
-        <source xml:lang="en">UI State</source>
-      </trans-unit>
     </body>
   </file>
   <file original="src/vs/platform/environment/node/argvHelper" source-language="en" datatype="plaintext">
@@ -47,44 +32,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/request/common/request" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="httpConfigurationTitle">
-        <source xml:lang="en">HTTP</source>
-      </trans-unit>
-      <trans-unit id="proxy">
-        <source xml:lang="en">The proxy setting to use. If not set, will be inherited from the `http_proxy` and `https_proxy` environment variables.</source>
-      </trans-unit>
-      <trans-unit id="strictSSL">
-        <source xml:lang="en">Controls whether the proxy server certificate should be verified against the list of supplied CAs.</source>
-      </trans-unit>
-      <trans-unit id="proxyAuthorization">
-        <source xml:lang="en">The value to send as the `Proxy-Authorization` header for every network request.</source>
-      </trans-unit>
-      <trans-unit id="proxySupportOff">
-        <source xml:lang="en">Disable proxy support for extensions.</source>
-      </trans-unit>
-      <trans-unit id="proxySupportOn">
-        <source xml:lang="en">Enable proxy support for extensions.</source>
-      </trans-unit>
-      <trans-unit id="proxySupportOverride">
-        <source xml:lang="en">Enable proxy support for extensions, override request options.</source>
-      </trans-unit>
-      <trans-unit id="proxySupport">
-        <source xml:lang="en">Use the proxy support for extensions.</source>
-      </trans-unit>
-      <trans-unit id="systemCertificates">
-        <source xml:lang="en">Controls whether CA certificates should be loaded from the OS. (On Windows and macOS a reload of the window is required after turning this off.)</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/files/common/files" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="unknownError">
-        <source xml:lang="en">Unknown Error</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/files/common/fileService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="invalidPath">
@@ -96,7 +43,7 @@
       <trans-unit id="fileNotFoundError">
         <source xml:lang="en">Unable to resolve non-existing file '{0}'</source>
       </trans-unit>
-      <trans-unit id="fileExists_Duplicated3">
+      <trans-unit id="fileExists_Duplicated1">
         <source xml:lang="en">Unable to create file '{0}' that already exists when overwrite flag is not set</source>
       </trans-unit>
       <trans-unit id="err.write">
@@ -117,7 +64,7 @@
       <trans-unit id="fileNotModifiedError">
         <source xml:lang="en">File not modified since</source>
       </trans-unit>
-      <trans-unit id="fileTooLargeError_Duplicated5">
+      <trans-unit id="fileTooLargeError_Duplicated3">
         <source xml:lang="en">Unable to read file '{0}' that is too large to open</source>
       </trans-unit>
       <trans-unit id="unableToMoveCopyError1">
@@ -149,6 +96,35 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/files/node/diskFileSystemProvider" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="fileExists_Duplicated2">
+        <source xml:lang="en">File already exists</source>
+      </trans-unit>
+      <trans-unit id="fileNotExists">
+        <source xml:lang="en">File does not exist</source>
+      </trans-unit>
+      <trans-unit id="moveError">
+        <source xml:lang="en">Unable to move '{0}' into '{1}' ({2}).</source>
+      </trans-unit>
+      <trans-unit id="copyError">
+        <source xml:lang="en">Unable to copy '{0}' into '{1}' ({2}).</source>
+      </trans-unit>
+      <trans-unit id="fileCopyErrorPathCase">
+        <source xml:lang="en">'File cannot be copied to same path with different path case</source>
+      </trans-unit>
+      <trans-unit id="fileCopyErrorExists">
+        <source xml:lang="en">File at target already exists</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/common/files" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="unknownError">
+        <source xml:lang="en">Unknown Error</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/update/common/update.config.contribution" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="updateConfigurationTitle">
@@ -169,7 +145,7 @@
       <trans-unit id="default">
         <source xml:lang="en">Enable automatic update checks. Code will check for updates automatically and periodically.</source>
       </trans-unit>
-      <trans-unit id="deprecated_Duplicated7">
+      <trans-unit id="deprecated_Duplicated5">
         <source xml:lang="en">This setting is deprecated, please use '{0}' instead.</source>
       </trans-unit>
       <trans-unit id="enableWindowsBackgroundUpdatesTitle">
@@ -180,28 +156,6 @@
       </trans-unit>
       <trans-unit id="showReleaseNotes">
         <source xml:lang="en">Show Release Notes after an update. The Release Notes are fetched from a Microsoft online service.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/files/node/diskFileSystemProvider" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="fileExists_Duplicated4">
-        <source xml:lang="en">File already exists</source>
-      </trans-unit>
-      <trans-unit id="fileNotExists">
-        <source xml:lang="en">File does not exist</source>
-      </trans-unit>
-      <trans-unit id="moveError">
-        <source xml:lang="en">Unable to move '{0}' into '{1}' ({2}).</source>
-      </trans-unit>
-      <trans-unit id="copyError">
-        <source xml:lang="en">Unable to copy '{0}' into '{1}' ({2}).</source>
-      </trans-unit>
-      <trans-unit id="fileCopyErrorPathCase">
-        <source xml:lang="en">'File cannot be copied to same path with different path case</source>
-      </trans-unit>
-      <trans-unit id="fileCopyErrorExists">
-        <source xml:lang="en">File at target already exists</source>
       </trans-unit>
     </body>
   </file>
@@ -225,7 +179,7 @@
       <trans-unit id="goto">
         <source xml:lang="en">Open a file at the path on the specified line and character position.</source>
       </trans-unit>
-      <trans-unit id="newWindow_Duplicated10">
+      <trans-unit id="newWindow_Duplicated8">
         <source xml:lang="en">Force to open a new window.</source>
       </trans-unit>
       <trans-unit id="reuseWindow">
@@ -334,7 +288,7 @@
   </file>
   <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="extensions_Duplicated2">
+      <trans-unit id="extensions">
         <source xml:lang="en">Extensions</source>
       </trans-unit>
       <trans-unit id="preferences">
@@ -344,10 +298,10 @@
   </file>
   <file original="src/vs/platform/extensionManagement/node/extensionManagementService" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="invalidManifest_Duplicated12">
+      <trans-unit id="invalidManifest_Duplicated10">
         <source xml:lang="en">Extension invalid: package.json is not a JSON file.</source>
       </trans-unit>
-      <trans-unit id="incompatible_Duplicated14">
+      <trans-unit id="incompatible_Duplicated12">
         <source xml:lang="en">Unable to install extension '{0}' as it is not compatible with VS Code '{1}'.</source>
       </trans-unit>
       <trans-unit id="restartCode">
@@ -412,7 +366,7 @@
   </file>
   <file original="src/vs/platform/extensionManagement/node/extensionManagementUtil" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="invalidManifest_Duplicated13">
+      <trans-unit id="invalidManifest_Duplicated11">
         <source xml:lang="en">VSIX invalid: package.json is not a JSON file.</source>
       </trans-unit>
     </body>
@@ -427,6 +381,37 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/request/common/request" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="httpConfigurationTitle">
+        <source xml:lang="en">HTTP</source>
+      </trans-unit>
+      <trans-unit id="proxy">
+        <source xml:lang="en">The proxy setting to use. If not set, will be inherited from the `http_proxy` and `https_proxy` environment variables.</source>
+      </trans-unit>
+      <trans-unit id="strictSSL">
+        <source xml:lang="en">Controls whether the proxy server certificate should be verified against the list of supplied CAs.</source>
+      </trans-unit>
+      <trans-unit id="proxyAuthorization">
+        <source xml:lang="en">The value to send as the `Proxy-Authorization` header for every network request.</source>
+      </trans-unit>
+      <trans-unit id="proxySupportOff">
+        <source xml:lang="en">Disable proxy support for extensions.</source>
+      </trans-unit>
+      <trans-unit id="proxySupportOn">
+        <source xml:lang="en">Enable proxy support for extensions.</source>
+      </trans-unit>
+      <trans-unit id="proxySupportOverride">
+        <source xml:lang="en">Enable proxy support for extensions, override request options.</source>
+      </trans-unit>
+      <trans-unit id="proxySupport">
+        <source xml:lang="en">Use the proxy support for extensions.</source>
+      </trans-unit>
+      <trans-unit id="systemCertificates">
+        <source xml:lang="en">Controls whether CA certificates should be loaded from the OS. (On Windows and macOS a reload of the window is required after turning this off.)</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/userDataSync/common/userDataSyncService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="turned off">
@@ -434,6 +419,16 @@
       </trans-unit>
       <trans-unit id="session expired">
         <source xml:lang="en">Cannot sync because current session is expired</source>
+      </trans-unit>
+      <trans-unit id="turned off machine">
+        <source xml:lang="en">Cannot sync because syncing is turned off on this machine from another machine.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/userDataSyncMachines" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="error incompatible">
+        <source xml:lang="en">Cannot read machines data as the current version is incompatible. Please update {0} and try again.</source>
       </trans-unit>
     </body>
   </file>
@@ -456,6 +451,16 @@
       </trans-unit>
       <trans-unit id="config.property.duplicate">
         <source xml:lang="en">Cannot register '{0}'. This property is already registered.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/label/common/label" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="untitledWorkspace">
+        <source xml:lang="en">Untitled (Workspace)</source>
+      </trans-unit>
+      <trans-unit id="workspaceName">
+        <source xml:lang="en">{0} (Workspace)</source>
       </trans-unit>
     </body>
   </file>
@@ -485,7 +490,7 @@
       <trans-unit id="tree horizontalScrolling setting">
         <source xml:lang="en">Controls whether trees support horizontal scrolling in the workbench.</source>
       </trans-unit>
-      <trans-unit id="deprecated_Duplicated8">
+      <trans-unit id="deprecated_Duplicated6">
         <source xml:lang="en">This setting is deprecated, please use '{0}' instead.</source>
       </trans-unit>
       <trans-unit id="tree indent setting">
@@ -508,16 +513,6 @@
       </trans-unit>
       <trans-unit id="automatic keyboard navigation setting">
         <source xml:lang="en">Controls whether keyboard navigation in lists and trees is automatically triggered simply by typing. If set to `false`, keyboard navigation is only triggered when executing the `list.toggleKeyboardNavigation` command, for which you can assign a keyboard shortcut.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/label/common/label" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="untitledWorkspace">
-        <source xml:lang="en">Untitled (Workspace)</source>
-      </trans-unit>
-      <trans-unit id="workspaceName">
-        <source xml:lang="en">{0} (Workspace)</source>
       </trans-unit>
     </body>
   </file>
@@ -551,13 +546,13 @@
       <trans-unit id="confirmWorkspace">
         <source xml:lang="en">Would you like to undo '{0}' across all files?</source>
       </trans-unit>
-      <trans-unit id="ok_Duplicated16">
+      <trans-unit id="ok_Duplicated14">
         <source xml:lang="en">Undo in {0} Files</source>
       </trans-unit>
       <trans-unit id="nok">
         <source xml:lang="en">Undo this File</source>
       </trans-unit>
-      <trans-unit id="cancel_Duplicated20">
+      <trans-unit id="cancel_Duplicated18">
         <source xml:lang="en">Cancel</source>
       </trans-unit>
       <trans-unit id="cannotWorkspaceRedo">
@@ -568,13 +563,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/workspaces/common/workspaces" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="codeWorkspace">
-        <source xml:lang="en">Code Workspace</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/dialogs/common/dialogs" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="moreFile">
@@ -582,6 +570,13 @@
       </trans-unit>
       <trans-unit id="moreFiles">
         <source xml:lang="en">...{0} additional files not shown</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/workspaces/common/workspaces" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="codeWorkspace">
+        <source xml:lang="en">Code Workspace</source>
       </trans-unit>
     </body>
   </file>
@@ -1062,7 +1057,7 @@
       <trans-unit id="uriInvalidDetail">
         <source xml:lang="en">The URI '{0}' is not valid and can not be opened.</source>
       </trans-unit>
-      <trans-unit id="ok_Duplicated17">
+      <trans-unit id="ok_Duplicated15">
         <source xml:lang="en">OK</source>
       </trans-unit>
     </body>
@@ -1075,10 +1070,10 @@
       <trans-unit id="issueReporterWriteToClipboard">
         <source xml:lang="en">There is too much data to send to GitHub directly. The data will be copied to the clipboard, please paste it into the GitHub issue page that is opened.</source>
       </trans-unit>
-      <trans-unit id="ok_Duplicated18">
+      <trans-unit id="ok_Duplicated16">
         <source xml:lang="en">OK</source>
       </trans-unit>
-      <trans-unit id="cancel_Duplicated21">
+      <trans-unit id="cancel_Duplicated19">
         <source xml:lang="en">Cancel</source>
       </trans-unit>
       <trans-unit id="confirmCloseIssueReporter">
@@ -1097,7 +1092,7 @@
   </file>
   <file original="src/vs/platform/workspaces/electron-main/workspacesMainService" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="ok_Duplicated19">
+      <trans-unit id="ok_Duplicated17">
         <source xml:lang="en">OK</source>
       </trans-unit>
       <trans-unit id="workspaceOpenedMessage">
@@ -1105,6 +1100,25 @@
       </trans-unit>
       <trans-unit id="workspaceOpenedDetail">
         <source xml:lang="en">The workspace is already opened in another window. Please close that window first and then try again.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/workspaces/electron-main/workspacesHistoryMainService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="newWindow_Duplicated9">
+        <source xml:lang="en">New Window</source>
+      </trans-unit>
+      <trans-unit id="newWindowDesc">
+        <source xml:lang="en">Opens a new window</source>
+      </trans-unit>
+      <trans-unit id="recentFolders">
+        <source xml:lang="en">Recent Workspaces</source>
+      </trans-unit>
+      <trans-unit id="folderDesc">
+        <source xml:lang="en">{0} {1}</source>
+      </trans-unit>
+      <trans-unit id="workspaceDesc">
+        <source xml:lang="en">{0} {1}</source>
       </trans-unit>
     </body>
   </file>
@@ -1133,27 +1147,8 @@
       <trans-unit id="fileTooLargeForHeapError">
         <source xml:lang="en">To open a file of this size, you need to restart and allow it to use more memory</source>
       </trans-unit>
-      <trans-unit id="fileTooLargeError_Duplicated6">
+      <trans-unit id="fileTooLargeError_Duplicated4">
         <source xml:lang="en">File is too large to open</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/workspaces/electron-main/workspacesHistoryMainService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="newWindow_Duplicated11">
-        <source xml:lang="en">New Window</source>
-      </trans-unit>
-      <trans-unit id="newWindowDesc">
-        <source xml:lang="en">Opens a new window</source>
-      </trans-unit>
-      <trans-unit id="recentFolders">
-        <source xml:lang="en">Recent Workspaces</source>
-      </trans-unit>
-      <trans-unit id="folderDesc">
-        <source xml:lang="en">{0} {1}</source>
-      </trans-unit>
-      <trans-unit id="workspaceDesc">
-        <source xml:lang="en">{0} {1}</source>
       </trans-unit>
     </body>
   </file>
@@ -1173,17 +1168,17 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="errorInvalidSettings_Duplicated22">
-        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
+      <trans-unit id="errorInvalidSettings_Duplicated20">
+        <source xml:lang="en">Unable to sync keybindings as there are errors/warning in keybindings file.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="errorInvalidSettings_Duplicated23">
-        <source xml:lang="en">Unable to sync keybindings as there are errors/warning in keybindings file.</source>
+      <trans-unit id="errorInvalidSettings_Duplicated21">
+        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
       </trans-unit>
     </body>
   </file>
@@ -1333,7 +1328,7 @@
   </file>
   <file original="src/vs/platform/userDataSync/common/abstractSynchronizer" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="incompatible_Duplicated15">
+      <trans-unit id="incompatible_Duplicated13">
         <source xml:lang="en">Cannot sync {0} as its version {1} is not compatible with cloud {2}</source>
       </trans-unit>
     </body>
@@ -1445,7 +1440,7 @@
       <trans-unit id="abstract">
         <source xml:lang="en">Style to use for symbols that are abstract.</source>
       </trans-unit>
-      <trans-unit id="deprecated_Duplicated9">
+      <trans-unit id="deprecated_Duplicated7">
         <source xml:lang="en">Style to use for symbols that are deprecated.</source>
       </trans-unit>
       <trans-unit id="modification">

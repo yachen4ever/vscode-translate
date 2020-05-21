@@ -8,7 +8,10 @@
       <source xml:lang="en">Attach to Node Process (preview)</source>
     </trans-unit>
     <trans-unit id="browser.address.description">
-      <source xml:lang="en">TCP/IP address of debug port</source>
+      <source xml:lang="en">IP address or hostname the debugged browser is listening on.</source>
+    </trans-unit>
+    <trans-unit id="browser.attach.port.description">
+      <source xml:lang="en">Port to use to remote debugging the browser, given as `--remote-debugging-port` when launching the browser.</source>
     </trans-unit>
     <trans-unit id="browser.baseUrl.description">
       <source xml:lang="en">Base URL to resolve paths baseUrl. baseURL is trimmed when mapping URLs to the files on disk. Defaults to the launch URL domain.</source>
@@ -39,11 +42,17 @@
  - `wsProtocol` is the hinted websocket protocol. This is set to `wss` if the original URL is `https`, or `ws` otherwise.
 </source>
     </trans-unit>
+    <trans-unit id="browser.launch.port.description">
+      <source xml:lang="en">Port for the browser to listen on. Defaults to "0", which will cause the browser to be debugged via pipes, which is generally more secure and should be chosen unless you need to attach to the browser from another tool.</source>
+    </trans-unit>
     <trans-unit id="browser.pathMapping.description">
       <source xml:lang="en">A mapping of URLs/paths to local folders, to resolve scripts in the Browser to scripts on disk</source>
     </trans-unit>
-    <trans-unit id="browser.port.description">
-      <source xml:lang="en">Port to use for remote debugging the browser.</source>
+    <trans-unit id="browser.profileStartup.description">
+      <source xml:lang="en">If true, will start profiling soon as the process launches</source>
+    </trans-unit>
+    <trans-unit id="browser.restart">
+      <source xml:lang="en">Whether to reconnect if the browser connection is closed</source>
     </trans-unit>
     <trans-unit id="browser.runtimeArgs.description">
       <source xml:lang="en">Optional arguments passed to the runtime executable.</source>
@@ -98,6 +107,9 @@
     </trans-unit>
     <trans-unit id="chrome.launch.label">
       <source xml:lang="en">Chrome: Launch</source>
+    </trans-unit>
+    <trans-unit id="configuration.autoExpandGetters">
+      <source xml:lang="en">Configures whether property getters will be expanded automatically. If this is false, the getter will appear as `get propertyName` and will only be evaluated when you click on it.</source>
     </trans-unit>
     <trans-unit id="configuration.automaticallyTunnelRemoteServer">
       <source xml:lang="en">When debugging a remote web app, configures whether to automatically tunnel the remote server to your local machine.</source>
@@ -158,6 +170,9 @@
 
 You can use the Node.js Debug Terminal to instantly debug JavaScript you run from the command line.</source>
     </trans-unit>
+    <trans-unit id="edge.address.description">
+      <source xml:lang="en">When debugging webviews, the IP address or hostname the webview is listening on. Will be automatically discovered if not set.</source>
+    </trans-unit>
     <trans-unit id="edge.attach.description">
       <source xml:lang="en">Attach to an instance of Edge already in debug mode</source>
     </trans-unit>
@@ -172,6 +187,9 @@ You can use the Node.js Debug Terminal to instantly debug JavaScript you run fro
     </trans-unit>
     <trans-unit id="edge.launch.label">
       <source xml:lang="en">Edge: Launch</source>
+    </trans-unit>
+    <trans-unit id="edge.port.description">
+      <source xml:lang="en">When debugging webviews, the port the webview debugger is listening on. Will be automatically discovered if not set.</source>
     </trans-unit>
     <trans-unit id="edge.useWebView.description">
       <source xml:lang="en">(Edge (Chromium) only) When 'true', the debugger will treat the runtime executable as a host application that contains a WebView allowing you to debug the WebView script content.</source>
@@ -285,7 +303,7 @@ You can use the Node.js Debug Terminal to instantly debug JavaScript you run fro
       <source xml:lang="en">Path to the log file for Debug Adapter Protocol messages</source>
     </trans-unit>
     <trans-unit id="node.launch.outputCapture.description">
-      <source xml:lang="en">From where to capture output messages: The debug API, or stdout/stderr streams.</source>
+      <source xml:lang="en">From where to capture output messages: the default debug API if set to `console`, or stdout/stderr streams if set to `std`.</source>
     </trans-unit>
     <trans-unit id="node.launch.program.description">
       <source xml:lang="en">Absolute path to the program. Generated value is guessed by looking at package.json and opened files. Edit this attribute.</source>
@@ -319,6 +337,9 @@ You can use the Node.js Debug Terminal to instantly debug JavaScript you run fro
     </trans-unit>
     <trans-unit id="node.processattach.config.name">
       <source xml:lang="en">Attach to Process</source>
+    </trans-unit>
+    <trans-unit id="node.profileStartup.description">
+      <source xml:lang="en">If true, will start profiling soon as the process launches</source>
     </trans-unit>
     <trans-unit id="node.remoteRoot.description">
       <source xml:lang="en">Absolute path to the remote directory containing the program.</source>

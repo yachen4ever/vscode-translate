@@ -2,11 +2,27 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file original="src/vs/workbench/contrib/userDataSync/electron-browser/userDataSync.contribution" source-language="en" datatype="plaintext">
     <body>
+      <trans-unit id="too many requests_Duplicated1">
+        <source xml:lang="en">Turned off syncing preferences on this device because it is making too many requests. Please report an issue by providing the sync logs.</source>
+      </trans-unit>
+      <trans-unit id="show sync logs">
+        <source xml:lang="en">Show Log</source>
+      </trans-unit>
+      <trans-unit id="report issue">
+        <source xml:lang="en">Report Issue</source>
+      </trans-unit>
       <trans-unit id="Open Backup folder">
         <source xml:lang="en">Open Local Backups Folder</source>
       </trans-unit>
-      <trans-unit id="sync preferences_Duplicated1">
+      <trans-unit id="sync preferences_Duplicated3">
         <source xml:lang="en">Preferences Sync</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/userDataSync/browser/userDataSync.contribution" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="too many requests_Duplicated2">
+        <source xml:lang="en">Turned off syncing preferences on this device because it is making too many requests.</source>
       </trans-unit>
     </body>
   </file>
@@ -60,9 +76,6 @@
       <trans-unit id="turn on sync">
         <source xml:lang="en">Turn on Preferences Sync...</source>
       </trans-unit>
-      <trans-unit id="too many requests">
-        <source xml:lang="en">Turned off syncing because of making too many requests to server</source>
-      </trans-unit>
       <trans-unit id="too large">
         <source xml:lang="en">Disabled syncing {0} because size of the {1} file to sync is larger than {2}. Please open the file and reduce the size and enable sync</source>
       </trans-unit>
@@ -111,25 +124,6 @@
       </trans-unit>
       <trans-unit id="configure sync placeholder">
         <source xml:lang="en">Choose what to sync</source>
-      </trans-unit>
-      <trans-unit id="no account">
-        <source xml:lang="en">No account available</source>
-      </trans-unit>
-      <trans-unit id="sync turned on">
-        <source xml:lang="en">Preferences sync is turned on</source>
-      </trans-unit>
-      <trans-unit id="firs time sync">
-        <source xml:lang="en">Sync</source>
-      </trans-unit>
-      <trans-unit id="merge">
-        <source xml:lang="en">Merge</source>
-      </trans-unit>
-      <trans-unit id="replace">
-        <source xml:lang="en">Replace Local</source>
-      </trans-unit>
-      <trans-unit id="first time sync detail">
-        <source xml:lang="en">It looks like this is the first time sync is set up.
-Would you like to merge or replace with the data from the cloud?</source>
       </trans-unit>
       <trans-unit id="turn off sync confirmation">
         <source xml:lang="en">Do you want to turn off sync?</source>
@@ -185,7 +179,7 @@ Would you like to merge or replace with the data from the cloud?</source>
       <trans-unit id="show sync log title">
         <source xml:lang="en">Preferences Sync: Show Log</source>
       </trans-unit>
-      <trans-unit id="sync preferences_Duplicated2">
+      <trans-unit id="sync preferences_Duplicated4">
         <source xml:lang="en">Preferences Sync</source>
       </trans-unit>
       <trans-unit id="Sync accept remote">
@@ -202,28 +196,6 @@ Would you like to merge or replace with the data from the cloud?</source>
       </trans-unit>
       <trans-unit id="update conflicts">
         <source xml:lang="en">Could not resolve conflicts as there is new local version available. Please try again.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/userDataSync/browser/userDataSyncAccount" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="pick an account">
-        <source xml:lang="en">Preferences Sync</source>
-      </trans-unit>
-      <trans-unit id="choose account placeholder">
-        <source xml:lang="en">Select an account</source>
-      </trans-unit>
-      <trans-unit id="signed in">
-        <source xml:lang="en">Signed in</source>
-      </trans-unit>
-      <trans-unit id="last used">
-        <source xml:lang="en">Last Used with Sync</source>
-      </trans-unit>
-      <trans-unit id="others">
-        <source xml:lang="en">Others</source>
-      </trans-unit>
-      <trans-unit id="sign in using account">
-        <source xml:lang="en">Sign in with {0}</source>
       </trans-unit>
     </body>
   </file>
@@ -247,8 +219,17 @@ Would you like to merge or replace with the data from the cloud?</source>
       <trans-unit id="workbench.action.showSyncLocalBackup">
         <source xml:lang="en">Show Local Backup</source>
       </trans-unit>
-      <trans-unit id="sync preferences_Duplicated3">
+      <trans-unit id="sync preferences_Duplicated5">
         <source xml:lang="en">Preferences Sync</source>
+      </trans-unit>
+      <trans-unit id="synced machines">
+        <source xml:lang="en">Synced Machines</source>
+      </trans-unit>
+      <trans-unit id="workbench.actions.sync.editCurrentMachineName">
+        <source xml:lang="en">Edit Name</source>
+      </trans-unit>
+      <trans-unit id="placeholder">
+        <source xml:lang="en">Enter the name of the machine</source>
       </trans-unit>
       <trans-unit id="workbench.actions.sync.resolveResourceRef">
         <source xml:lang="en">Show raw JSON sync data</source>
@@ -279,6 +260,13 @@ Would you like to merge or replace with the data from the cloud?</source>
       </trans-unit>
       <trans-unit id="not syncing">
         <source xml:lang="en">Not syncing</source>
+      </trans-unit>
+      <trans-unit id="no machines">
+        <source xml:lang="en">No Machines</source>
+      </trans-unit>
+      <trans-unit id="current">
+        <source xml:lang="en">Current</source>
+        <note>Current machine</note>
       </trans-unit>
     </body>
   </file>
