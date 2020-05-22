@@ -385,19 +385,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/files/common/editors/fileEditorInput" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="orphanedReadonlyFile">
-        <source xml:lang="en">{0} (deleted, read-only)</source>
-      </trans-unit>
-      <trans-unit id="orphanedFile">
-        <source xml:lang="en">{0} (deleted)</source>
-      </trans-unit>
-      <trans-unit id="readonlyFile">
-        <source xml:lang="en">{0} (read-only)</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/files/electron-browser/textFileEditor" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="fileTooLargeForHeapError">
@@ -408,6 +395,19 @@
       </trans-unit>
       <trans-unit id="configureMemoryLimit">
         <source xml:lang="en">Configure Memory Limit</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/files/common/editors/fileEditorInput" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="orphanedReadonlyFile">
+        <source xml:lang="en">{0} (deleted, read-only)</source>
+      </trans-unit>
+      <trans-unit id="orphanedFile">
+        <source xml:lang="en">{0} (deleted)</source>
+      </trans-unit>
+      <trans-unit id="readonlyFile">
+        <source xml:lang="en">{0} (read-only)</source>
       </trans-unit>
     </body>
   </file>
@@ -425,44 +425,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/files/browser/views/explorerView" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="explorerSection">
-        <source xml:lang="en">Explorer Section: {0}</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/files/browser/fileCommands" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="saveAs">
-        <source xml:lang="en">Save As...</source>
-      </trans-unit>
-      <trans-unit id="save">
-        <source xml:lang="en">Save</source>
-      </trans-unit>
-      <trans-unit id="saveWithoutFormatting">
-        <source xml:lang="en">Save without Formatting</source>
-      </trans-unit>
-      <trans-unit id="saveAll_Duplicated10">
-        <source xml:lang="en">Save All</source>
-      </trans-unit>
-      <trans-unit id="removeFolderFromWorkspace">
-        <source xml:lang="en">Remove Folder from Workspace</source>
-      </trans-unit>
-      <trans-unit id="modifiedLabel">
-        <source xml:lang="en">{0} (in file) ↔ {1}</source>
-      </trans-unit>
-      <trans-unit id="openFileToCopy">
-        <source xml:lang="en">Open a file first to copy its path</source>
-      </trans-unit>
-      <trans-unit id="genericSaveError_Duplicated15">
-        <source xml:lang="en">Failed to save '{0}': {1}</source>
-      </trans-unit>
-      <trans-unit id="genericRevertError">
-        <source xml:lang="en">Failed to revert '{0}': {1}</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/files/browser/views/openEditorsView" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="openEditors">
@@ -474,6 +436,13 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/files/browser/views/explorerView" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="explorerSection">
+        <source xml:lang="en">Explorer Section: {0}</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/files/browser/editors/textFileSaveErrorHandler" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="userGuide">
@@ -482,7 +451,7 @@
       <trans-unit id="staleSaveError">
         <source xml:lang="en">Failed to save '{0}': The content of the file is newer. Please compare your version with the file contents or overwrite the content of the file with your changes.</source>
       </trans-unit>
-      <trans-unit id="retry_Duplicated17">
+      <trans-unit id="retry_Duplicated15">
         <source xml:lang="en">Retry</source>
       </trans-unit>
       <trans-unit id="discard">
@@ -503,7 +472,7 @@
       <trans-unit id="permissionDeniedSaveErrorSudo">
         <source xml:lang="en">Failed to save '{0}': Insufficient permissions. Select 'Retry as Sudo' to retry as superuser.</source>
       </trans-unit>
-      <trans-unit id="genericSaveError_Duplicated16">
+      <trans-unit id="genericSaveError_Duplicated17">
         <source xml:lang="en">Failed to save '{0}': {1}</source>
       </trans-unit>
       <trans-unit id="learnMore_Duplicated19">
@@ -538,36 +507,34 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/files/browser/editors/binaryFileEditor" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/files/browser/fileCommands" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="binaryFileEditor_Duplicated14">
-        <source xml:lang="en">Binary File Viewer</source>
+      <trans-unit id="saveAs">
+        <source xml:lang="en">Save As...</source>
       </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/files/common/workspaceWatcher" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="netVersionError">
-        <source xml:lang="en">The Microsoft .NET Framework 4.5 is required. Please follow the link to install it.</source>
+      <trans-unit id="save">
+        <source xml:lang="en">Save</source>
       </trans-unit>
-      <trans-unit id="installNet">
-        <source xml:lang="en">Download .NET Framework 4.5</source>
+      <trans-unit id="saveWithoutFormatting">
+        <source xml:lang="en">Save without Formatting</source>
       </trans-unit>
-      <trans-unit id="enospcError">
-        <source xml:lang="en">Unable to watch for file changes in this large workspace. Please follow the instructions link to resolve this issue.</source>
+      <trans-unit id="saveAll_Duplicated10">
+        <source xml:lang="en">Save All</source>
       </trans-unit>
-      <trans-unit id="learnMore_Duplicated20">
-        <source xml:lang="en">Instructions</source>
+      <trans-unit id="removeFolderFromWorkspace">
+        <source xml:lang="en">Remove Folder from Workspace</source>
       </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/files/common/dirtyFilesIndicator" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="dirtyFile">
-        <source xml:lang="en">1 unsaved file</source>
+      <trans-unit id="modifiedLabel">
+        <source xml:lang="en">{0} (in file) ↔ {1}</source>
       </trans-unit>
-      <trans-unit id="dirtyFiles">
-        <source xml:lang="en">{0} unsaved files</source>
+      <trans-unit id="openFileToCopy">
+        <source xml:lang="en">Open a file first to copy its path</source>
+      </trans-unit>
+      <trans-unit id="genericSaveError_Duplicated18">
+        <source xml:lang="en">Failed to save '{0}': {1}</source>
+      </trans-unit>
+      <trans-unit id="genericRevertError">
+        <source xml:lang="en">Failed to revert '{0}': {1}</source>
       </trans-unit>
     </body>
   </file>
@@ -757,7 +724,7 @@
       <trans-unit id="clipboardComparisonLabel">
         <source xml:lang="en">Clipboard ↔ {0}</source>
       </trans-unit>
-      <trans-unit id="retry_Duplicated18">
+      <trans-unit id="retry_Duplicated16">
         <source xml:lang="en">Retry</source>
       </trans-unit>
       <trans-unit id="downloadFolder">
@@ -771,6 +738,39 @@
       </trans-unit>
       <trans-unit id="fileDeleted">
         <source xml:lang="en">The file to paste has been deleted or moved since you copied it. {0}</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/files/browser/editors/binaryFileEditor" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="binaryFileEditor_Duplicated14">
+        <source xml:lang="en">Binary File Viewer</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/files/common/workspaceWatcher" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="netVersionError">
+        <source xml:lang="en">The Microsoft .NET Framework 4.5 is required. Please follow the link to install it.</source>
+      </trans-unit>
+      <trans-unit id="installNet">
+        <source xml:lang="en">Download .NET Framework 4.5</source>
+      </trans-unit>
+      <trans-unit id="enospcError">
+        <source xml:lang="en">Unable to watch for file changes in this large workspace. Please follow the instructions link to resolve this issue.</source>
+      </trans-unit>
+      <trans-unit id="learnMore_Duplicated20">
+        <source xml:lang="en">Instructions</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/files/common/dirtyFilesIndicator" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="dirtyFile">
+        <source xml:lang="en">1 unsaved file</source>
+      </trans-unit>
+      <trans-unit id="dirtyFiles">
+        <source xml:lang="en">{0} unsaved files</source>
       </trans-unit>
     </body>
   </file>

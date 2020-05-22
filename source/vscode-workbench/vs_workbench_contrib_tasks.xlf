@@ -233,34 +233,6 @@ The task '{0}' was terminated per user request.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/tasks/node/processRunnerDetector" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="TaskSystemDetector.noGulpTasks">
-        <source xml:lang="en">Running gulp --tasks-simple didn't list any tasks. Did you run npm install?</source>
-      </trans-unit>
-      <trans-unit id="TaskSystemDetector.noJakeTasks">
-        <source xml:lang="en">Running jake --tasks didn't list any tasks. Did you run npm install?</source>
-      </trans-unit>
-      <trans-unit id="TaskSystemDetector.noGulpProgram">
-        <source xml:lang="en">Gulp is not installed on your system. Run npm install -g gulp to install it.</source>
-      </trans-unit>
-      <trans-unit id="TaskSystemDetector.noJakeProgram">
-        <source xml:lang="en">Jake is not installed on your system. Run npm install -g jake to install it.</source>
-      </trans-unit>
-      <trans-unit id="TaskSystemDetector.noGruntProgram">
-        <source xml:lang="en">Grunt is not installed on your system. Run npm install -g grunt to install it.</source>
-      </trans-unit>
-      <trans-unit id="TaskSystemDetector.noProgram">
-        <source xml:lang="en">Program {0} was not found. Message is {1}</source>
-      </trans-unit>
-      <trans-unit id="TaskSystemDetector.buildTaskDetected">
-        <source xml:lang="en">Build task named '{0}' detected.</source>
-      </trans-unit>
-      <trans-unit id="TaskSystemDetector.testTaskDetected">
-        <source xml:lang="en">Test task named '{0}' detected.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/tasks/browser/abstractTaskService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="ConfigureTaskRunnerAction.label">
@@ -522,6 +494,34 @@ The task will be ignored.
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/tasks/node/processRunnerDetector" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="TaskSystemDetector.noGulpTasks">
+        <source xml:lang="en">Running gulp --tasks-simple didn't list any tasks. Did you run npm install?</source>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noJakeTasks">
+        <source xml:lang="en">Running jake --tasks didn't list any tasks. Did you run npm install?</source>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noGulpProgram">
+        <source xml:lang="en">Gulp is not installed on your system. Run npm install -g gulp to install it.</source>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noJakeProgram">
+        <source xml:lang="en">Jake is not installed on your system. Run npm install -g jake to install it.</source>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noGruntProgram">
+        <source xml:lang="en">Grunt is not installed on your system. Run npm install -g grunt to install it.</source>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noProgram">
+        <source xml:lang="en">Program {0} was not found. Message is {1}</source>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.buildTaskDetected">
+        <source xml:lang="en">Build task named '{0}' detected.</source>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.testTaskDetected">
+        <source xml:lang="en">Test task named '{0}' detected.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/tasks/browser/runAutomaticTasks" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="tasks.run.allowAutomatic">
@@ -572,6 +572,220 @@ The task will be ignored.
       </trans-unit>
       <trans-unit id="JsonSchema.shell_Duplicated21">
         <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/jsonSchema_v2" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="JsonSchema.shell_Duplicated22">
+        <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.isShellCommand.deprecated">
+        <source xml:lang="en">The property isShellCommand is deprecated. Use the type property of the task and the shell property in the options instead. See also the 1.14 release notes.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOn.identifier">
+        <source xml:lang="en">The task identifier.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOn.string">
+        <source xml:lang="en">Another task this task depends on.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOn.array">
+        <source xml:lang="en">The other tasks this task depends on.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOn">
+        <source xml:lang="en">Either a string representing another task or an array of other tasks that this task depends on.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOrder.parallel">
+        <source xml:lang="en">Run all dependsOn tasks in parallel.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOrder.sequence">
+        <source xml:lang="en">Run all dependsOn tasks in sequence.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.dependsOrder">
+        <source xml:lang="en">Determines the order of the dependsOn tasks for this task. Note that this property is not recursive.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.detail">
+        <source xml:lang="en">An optional description of a task that shows in the Run Task quick pick as a detail.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation">
+        <source xml:lang="en">Configures the panel that is used to present the task's output and reads its input.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.echo">
+        <source xml:lang="en">Controls whether the executed command is echoed to the panel. Default is true.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.focus">
+        <source xml:lang="en">Controls whether the panel takes focus. Default is false. If set to true the panel is revealed as well.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.revealProblems.always">
+        <source xml:lang="en">Always reveals the problems panel when this task is executed.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.revealProblems.onProblem">
+        <source xml:lang="en">Only reveals the problems panel if a problem is found.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.revealProblems.never">
+        <source xml:lang="en">Never reveals the problems panel when this task is executed.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.revealProblems">
+        <source xml:lang="en">Controls whether the problems panel is revealed when running this task or not. Takes precedence over option "reveal". Default is "never".</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.reveal.always">
+        <source xml:lang="en">Always reveals the terminal when this task is executed.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.reveal.silent">
+        <source xml:lang="en">Only reveals the terminal if the task exits with an error or the problem matcher finds an error.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.reveal.never">
+        <source xml:lang="en">Never reveals the terminal when this task is executed.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.reveal">
+        <source xml:lang="en">Controls whether the terminal running the task is revealed or not. May be overridden by option "revealProblems". Default is "always".</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.instance">
+        <source xml:lang="en">Controls if the panel is shared between tasks, dedicated to this task or a new one is created on every run.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.showReuseMessage">
+        <source xml:lang="en">Controls whether to show the `Terminal will be reused by tasks, press any key to close it` message.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.clear">
+        <source xml:lang="en">Controls whether the terminal is cleared before executing the task.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.presentation.group">
+        <source xml:lang="en">Controls whether the task is executed in a specific terminal group using split panes.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.terminal">
+        <source xml:lang="en">The terminal property is deprecated. Use presentation instead</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.kind">
+        <source xml:lang="en">The task's execution group.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.isDefault">
+        <source xml:lang="en">Defines if this task is the default task in the group.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.defaultBuild">
+        <source xml:lang="en">Marks the task as the default build task.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.defaultTest">
+        <source xml:lang="en">Marks the task as the default test task.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.build">
+        <source xml:lang="en">Marks the task as a build task accessible through the 'Run Build Task' command.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.test">
+        <source xml:lang="en">Marks the task as a test task accessible through the 'Run Test Task' command.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group.none">
+        <source xml:lang="en">Assigns the task to no group</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.group">
+        <source xml:lang="en">Defines to which execution group this task belongs to. It supports "build" to add it to the build group and "test" to add it to the test group.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.type">
+        <source xml:lang="en">Defines whether the task is run as a process or as a command inside a shell.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.commandArray">
+        <source xml:lang="en">The shell command to be executed. Array items will be joined using a space character</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.command.quotedString.value">
+        <source xml:lang="en">The actual command value</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.quoting.escape">
+        <source xml:lang="en">Escapes characters using the shell's escape character (e.g. ` under PowerShell and \ under bash).</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.quoting.strong">
+        <source xml:lang="en">Quotes the argument using the shell's strong quote character (e.g. " under PowerShell and bash).</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.quoting.weak">
+        <source xml:lang="en">Quotes the argument using the shell's weak quote character (e.g. ' under PowerShell and bash).</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.command.quotesString.quote">
+        <source xml:lang="en">How the command value should be quoted.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.command_Duplicated23">
+        <source xml:lang="en">The command to be executed. Can be an external program or a shell command.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.args.quotedString.value">
+        <source xml:lang="en">The actual argument value</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.args.quotesString.quote">
+        <source xml:lang="en">How the argument value should be quoted.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.args_Duplicated25">
+        <source xml:lang="en">Arguments passed to the command when this task is invoked.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.label">
+        <source xml:lang="en">The task's user interface label</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.version_Duplicated14">
+        <source xml:lang="en">The config's version number.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.identifier">
+        <source xml:lang="en">A user defined identifier to reference the task in launch.json or a dependsOn clause.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.identifier.deprecated">
+        <source xml:lang="en">User defined identifiers are deprecated. For custom task use the name as a reference and for tasks provided by extensions use their defined task identifier.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.reevaluateOnRerun">
+        <source xml:lang="en">Whether to reevaluate task variables on rerun.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.runOn">
+        <source xml:lang="en">Configures when the task should be run. If set to folderOpen, then the task will be run automatically when the folder is opened.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.instanceLimit">
+        <source xml:lang="en">The number of instances of the task that are allowed to run simultaneously.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.runOptions">
+        <source xml:lang="en">The task's run related options</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.taskLabel">
+        <source xml:lang="en">The task's label</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.taskName_Duplicated27">
+        <source xml:lang="en">The task's name</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.taskName.deprecated">
+        <source xml:lang="en">The task's name property is deprecated. Use the label property instead.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.background_Duplicated29">
+        <source xml:lang="en">Whether the executed task is kept alive and is running in the background.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.promptOnClose_Duplicated31">
+        <source xml:lang="en">Whether the user is prompted when VS Code closes with a running task.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.matchers_Duplicated33">
+        <source xml:lang="en">The problem matcher(s) to use. Can either be a string or a problem matcher definition or an array of strings and problem matchers.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.customizations.customizes.type">
+        <source xml:lang="en">The task type to customize</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.customize.deprecated">
+        <source xml:lang="en">The customize property is deprecated. See the 1.14 release notes on how to migrate to the new task customization approach</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.showOutput.deprecated">
+        <source xml:lang="en">The property showOutput is deprecated. Use the reveal property inside the presentation property instead. See also the 1.14 release notes.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.echoCommand.deprecated">
+        <source xml:lang="en">The property echoCommand is deprecated. Use the echo property inside the presentation property instead. See also the 1.14 release notes.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.suppressTaskName.deprecated">
+        <source xml:lang="en">The property suppressTaskName is deprecated. Inline the command with its arguments into the task instead. See also the 1.14 release notes.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.isBuildCommand.deprecated">
+        <source xml:lang="en">The property isBuildCommand is deprecated. Use the group property instead. See also the 1.14 release notes.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.isTestCommand.deprecated">
+        <source xml:lang="en">The property isTestCommand is deprecated. Use the group property instead. See also the 1.14 release notes.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.tasks.taskSelector.deprecated">
+        <source xml:lang="en">The property taskSelector is deprecated. Inline the command with its arguments into the task instead. See also the 1.14 release notes.</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.windows_Duplicated16">
+        <source xml:lang="en">Windows specific command configuration</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.mac_Duplicated18">
+        <source xml:lang="en">Mac specific command configuration</source>
+      </trans-unit>
+      <trans-unit id="JsonSchema.linux_Duplicated20">
+        <source xml:lang="en">Linux specific command configuration</source>
       </trans-unit>
     </body>
   </file>
@@ -798,220 +1012,6 @@ The task will be ignored.
       </trans-unit>
       <trans-unit id="TaskService.pickRunTask_Duplicated12">
         <source xml:lang="en">Select the task to run</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/tasks/common/jsonSchema_v2" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="JsonSchema.shell_Duplicated22">
-        <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.isShellCommand.deprecated">
-        <source xml:lang="en">The property isShellCommand is deprecated. Use the type property of the task and the shell property in the options instead. See also the 1.14 release notes.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.dependsOn.identifier">
-        <source xml:lang="en">The task identifier.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.dependsOn.string">
-        <source xml:lang="en">Another task this task depends on.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.dependsOn.array">
-        <source xml:lang="en">The other tasks this task depends on.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.dependsOn">
-        <source xml:lang="en">Either a string representing another task or an array of other tasks that this task depends on.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.dependsOrder.parallel">
-        <source xml:lang="en">Run all dependsOn tasks in parallel.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.dependsOrder.sequence">
-        <source xml:lang="en">Run all dependsOn tasks in sequence.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.dependsOrder">
-        <source xml:lang="en">Determines the order of the dependsOn tasks for this task. Note that this property is not recursive.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.detail">
-        <source xml:lang="en">An optional description of a task that shows in the Run Task quick pick as a detail.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.presentation">
-        <source xml:lang="en">Configures the panel that is used to present the task's output and reads its input.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.presentation.echo">
-        <source xml:lang="en">Controls whether the executed command is echoed to the panel. Default is true.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.presentation.focus">
-        <source xml:lang="en">Controls whether the panel takes focus. Default is false. If set to true the panel is revealed as well.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.presentation.revealProblems.always">
-        <source xml:lang="en">Always reveals the problems panel when this task is executed.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.presentation.revealProblems.onProblem">
-        <source xml:lang="en">Only reveals the problems panel if a problem is found.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.presentation.revealProblems.never">
-        <source xml:lang="en">Never reveals the problems panel when this task is executed.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.presentation.revealProblems">
-        <source xml:lang="en">Controls whether the problems panel is revealed when running this task or not. Takes precedence over option "reveal". Default is "never".</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.presentation.reveal.always">
-        <source xml:lang="en">Always reveals the terminal when this task is executed.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.presentation.reveal.silent">
-        <source xml:lang="en">Only reveals the terminal if the task exits with an error or the problem matcher finds an error.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.presentation.reveal.never">
-        <source xml:lang="en">Never reveals the terminal when this task is executed.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.presentation.reveal">
-        <source xml:lang="en">Controls whether the terminal running the task is revealed or not. May be overridden by option "revealProblems". Default is "always".</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.presentation.instance">
-        <source xml:lang="en">Controls if the panel is shared between tasks, dedicated to this task or a new one is created on every run.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.presentation.showReuseMessage">
-        <source xml:lang="en">Controls whether to show the `Terminal will be reused by tasks, press any key to close it` message.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.presentation.clear">
-        <source xml:lang="en">Controls whether the terminal is cleared before executing the task.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.presentation.group">
-        <source xml:lang="en">Controls whether the task is executed in a specific terminal group using split panes.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.terminal">
-        <source xml:lang="en">The terminal property is deprecated. Use presentation instead</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.group.kind">
-        <source xml:lang="en">The task's execution group.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.group.isDefault">
-        <source xml:lang="en">Defines if this task is the default task in the group.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.group.defaultBuild">
-        <source xml:lang="en">Marks the task as the default build task.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.group.defaultTest">
-        <source xml:lang="en">Marks the task as the default test task.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.group.build">
-        <source xml:lang="en">Marks the task as a build task accessible through the 'Run Build Task' command.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.group.test">
-        <source xml:lang="en">Marks the task as a test task accessible through the 'Run Test Task' command.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.group.none">
-        <source xml:lang="en">Assigns the task to no group</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.group">
-        <source xml:lang="en">Defines to which execution group this task belongs to. It supports "build" to add it to the build group and "test" to add it to the test group.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.type">
-        <source xml:lang="en">Defines whether the task is run as a process or as a command inside a shell.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.commandArray">
-        <source xml:lang="en">The shell command to be executed. Array items will be joined using a space character</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.command.quotedString.value">
-        <source xml:lang="en">The actual command value</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.quoting.escape">
-        <source xml:lang="en">Escapes characters using the shell's escape character (e.g. ` under PowerShell and \ under bash).</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.quoting.strong">
-        <source xml:lang="en">Quotes the argument using the shell's strong quote character (e.g. " under PowerShell and bash).</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.quoting.weak">
-        <source xml:lang="en">Quotes the argument using the shell's weak quote character (e.g. ' under PowerShell and bash).</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.command.quotesString.quote">
-        <source xml:lang="en">How the command value should be quoted.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.command_Duplicated23">
-        <source xml:lang="en">The command to be executed. Can be an external program or a shell command.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.args.quotedString.value">
-        <source xml:lang="en">The actual argument value</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.args.quotesString.quote">
-        <source xml:lang="en">How the argument value should be quoted.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.args_Duplicated25">
-        <source xml:lang="en">Arguments passed to the command when this task is invoked.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.label">
-        <source xml:lang="en">The task's user interface label</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.version_Duplicated14">
-        <source xml:lang="en">The config's version number.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.identifier">
-        <source xml:lang="en">A user defined identifier to reference the task in launch.json or a dependsOn clause.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.identifier.deprecated">
-        <source xml:lang="en">User defined identifiers are deprecated. For custom task use the name as a reference and for tasks provided by extensions use their defined task identifier.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.reevaluateOnRerun">
-        <source xml:lang="en">Whether to reevaluate task variables on rerun.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.runOn">
-        <source xml:lang="en">Configures when the task should be run. If set to folderOpen, then the task will be run automatically when the folder is opened.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.instanceLimit">
-        <source xml:lang="en">The number of instances of the task that are allowed to run simultaneously.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.runOptions">
-        <source xml:lang="en">The task's run related options</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.taskLabel">
-        <source xml:lang="en">The task's label</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.taskName_Duplicated27">
-        <source xml:lang="en">The task's name</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.taskName.deprecated">
-        <source xml:lang="en">The task's name property is deprecated. Use the label property instead.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.background_Duplicated29">
-        <source xml:lang="en">Whether the executed task is kept alive and is running in the background.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.promptOnClose_Duplicated31">
-        <source xml:lang="en">Whether the user is prompted when VS Code closes with a running task.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.matchers_Duplicated33">
-        <source xml:lang="en">The problem matcher(s) to use. Can either be a string or a problem matcher definition or an array of strings and problem matchers.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.customizations.customizes.type">
-        <source xml:lang="en">The task type to customize</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.customize.deprecated">
-        <source xml:lang="en">The customize property is deprecated. See the 1.14 release notes on how to migrate to the new task customization approach</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.showOutput.deprecated">
-        <source xml:lang="en">The property showOutput is deprecated. Use the reveal property inside the presentation property instead. See also the 1.14 release notes.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.echoCommand.deprecated">
-        <source xml:lang="en">The property echoCommand is deprecated. Use the echo property inside the presentation property instead. See also the 1.14 release notes.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.suppressTaskName.deprecated">
-        <source xml:lang="en">The property suppressTaskName is deprecated. Inline the command with its arguments into the task instead. See also the 1.14 release notes.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.isBuildCommand.deprecated">
-        <source xml:lang="en">The property isBuildCommand is deprecated. Use the group property instead. See also the 1.14 release notes.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.isTestCommand.deprecated">
-        <source xml:lang="en">The property isTestCommand is deprecated. Use the group property instead. See also the 1.14 release notes.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.tasks.taskSelector.deprecated">
-        <source xml:lang="en">The property taskSelector is deprecated. Inline the command with its arguments into the task instead. See also the 1.14 release notes.</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.windows_Duplicated16">
-        <source xml:lang="en">Windows specific command configuration</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.mac_Duplicated18">
-        <source xml:lang="en">Mac specific command configuration</source>
-      </trans-unit>
-      <trans-unit id="JsonSchema.linux_Duplicated20">
-        <source xml:lang="en">Linux specific command configuration</source>
       </trans-unit>
     </body>
   </file>
