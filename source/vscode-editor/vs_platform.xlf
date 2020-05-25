@@ -63,13 +63,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/files/common/files" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="unknownError">
-        <source xml:lang="en">Unknown Error</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/files/node/diskFileSystemProvider" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="fileExists_Duplicated1">
@@ -187,6 +180,13 @@
       </trans-unit>
       <trans-unit id="showReleaseNotes">
         <source xml:lang="en">Show Release Notes after an update. The Release Notes are fetched from a Microsoft online service.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/common/files" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="unknownError">
+        <source xml:lang="en">Unknown Error</source>
       </trans-unit>
     </body>
   </file>
@@ -390,16 +390,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="binFailed">
-        <source xml:lang="en">Failed to move '{0}' to the recycle bin</source>
-      </trans-unit>
-      <trans-unit id="trashFailed">
-        <source xml:lang="en">Failed to move '{0}' to the trash</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/userDataSync/common/userDataSyncService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="turned off">
@@ -410,6 +400,16 @@
       </trans-unit>
       <trans-unit id="turned off machine">
         <source xml:lang="en">Cannot sync because syncing is turned off on this machine from another machine.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="binFailed">
+        <source xml:lang="en">Failed to move '{0}' to the recycle bin</source>
+      </trans-unit>
+      <trans-unit id="trashFailed">
+        <source xml:lang="en">Failed to move '{0}' to the trash</source>
       </trans-unit>
     </body>
   </file>
@@ -449,13 +449,6 @@
       </trans-unit>
       <trans-unit id="config.property.duplicate">
         <source xml:lang="en">Cannot register '{0}'. This property is already registered.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/workspaces/common/workspaces" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="codeWorkspace">
-        <source xml:lang="en">Code Workspace</source>
       </trans-unit>
     </body>
   </file>
@@ -565,6 +558,13 @@
       </trans-unit>
       <trans-unit id="moreFiles">
         <source xml:lang="en">...{0} additional files not shown</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/workspaces/common/workspaces" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="codeWorkspace">
+        <source xml:lang="en">Code Workspace</source>
       </trans-unit>
     </body>
   </file>
@@ -1130,6 +1130,16 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/files/common/io" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="fileTooLargeForHeapError">
+        <source xml:lang="en">To open a file of this size, you need to restart and allow it to use more memory</source>
+      </trans-unit>
+      <trans-unit id="fileTooLargeError_Duplicated4">
+        <source xml:lang="en">File is too large to open</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/extensions/common/extensionValidator" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="versionSyntax">
@@ -1143,16 +1153,6 @@
       </trans-unit>
       <trans-unit id="versionMismatch">
         <source xml:lang="en">Extension is not compatible with Code {0}. Extension requires: {1}.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/files/common/io" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="fileTooLargeForHeapError">
-        <source xml:lang="en">To open a file of this size, you need to restart and allow it to use more memory</source>
-      </trans-unit>
-      <trans-unit id="fileTooLargeError_Duplicated4">
-        <source xml:lang="en">File is too large to open</source>
       </trans-unit>
     </body>
   </file>
@@ -1172,17 +1172,17 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="errorInvalidSettings_Duplicated20">
-        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
+        <source xml:lang="en">Unable to sync keybindings as there are errors/warning in keybindings file.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="errorInvalidSettings_Duplicated21">
-        <source xml:lang="en">Unable to sync keybindings as there are errors/warning in keybindings file.</source>
+        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
       </trans-unit>
     </body>
   </file>
@@ -1334,6 +1334,9 @@
     <body>
       <trans-unit id="incompatible_Duplicated11">
         <source xml:lang="en">Cannot sync {0} as its version {1} is not compatible with cloud {2}</source>
+      </trans-unit>
+      <trans-unit id="incompatible sync data">
+        <source xml:lang="en">Cannot parse sync data as it is not compatible with current version.</source>
       </trans-unit>
     </body>
   </file>
