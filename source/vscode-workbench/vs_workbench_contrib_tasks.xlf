@@ -144,6 +144,30 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/tasks/node/processTaskSystem" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="version1_0">
+        <source xml:lang="en">The task system is configured for version 0.1.0 (see tasks.json file), which can only execute custom tasks. Upgrade to version 2.0.0 to run the task: {0}</source>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.unknownError">
+        <source xml:lang="en">A unknown error has occurred while executing a task. See task output log for details.</source>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.watchingBuildTaskFinished">
+        <source xml:lang="en">
+Watching build tasks has finished.</source>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.childProcessError">
+        <source xml:lang="en">Failed to launch external program {0} {1}.</source>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.cancelRequested">
+        <source xml:lang="en">
+The task '{0}' was terminated per user request.</source>
+      </trans-unit>
+      <trans-unit id="unknownProblemMatcher_Duplicated3">
+        <source xml:lang="en">Problem matcher {0} can't be resolved. The matcher will be ignored</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/tasks/node/processRunnerDetector" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="TaskSystemDetector.noGulpTasks">
@@ -169,30 +193,6 @@
       </trans-unit>
       <trans-unit id="TaskSystemDetector.testTaskDetected">
         <source xml:lang="en">Test task named '{0}' detected.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/tasks/node/processTaskSystem" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="version1_0">
-        <source xml:lang="en">The task system is configured for version 0.1.0 (see tasks.json file), which can only execute custom tasks. Upgrade to version 2.0.0 to run the task: {0}</source>
-      </trans-unit>
-      <trans-unit id="TaskRunnerSystem.unknownError">
-        <source xml:lang="en">A unknown error has occurred while executing a task. See task output log for details.</source>
-      </trans-unit>
-      <trans-unit id="TaskRunnerSystem.watchingBuildTaskFinished">
-        <source xml:lang="en">
-Watching build tasks has finished.</source>
-      </trans-unit>
-      <trans-unit id="TaskRunnerSystem.childProcessError">
-        <source xml:lang="en">Failed to launch external program {0} {1}.</source>
-      </trans-unit>
-      <trans-unit id="TaskRunnerSystem.cancelRequested">
-        <source xml:lang="en">
-The task '{0}' was terminated per user request.</source>
-      </trans-unit>
-      <trans-unit id="unknownProblemMatcher_Duplicated3">
-        <source xml:lang="en">Problem matcher {0} can't be resolved. The matcher will be ignored</source>
       </trans-unit>
     </body>
   </file>
@@ -522,31 +522,6 @@ The task will be ignored.
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/runAutomaticTasks" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="tasks.run.allowAutomatic">
-        <source xml:lang="en">This folder has tasks ({0}) defined in 'tasks.json' that run automatically when you open this folder. Do you allow automatic tasks to run when you open this folder?</source>
-      </trans-unit>
-      <trans-unit id="allow">
-        <source xml:lang="en">Allow and run</source>
-      </trans-unit>
-      <trans-unit id="disallow">
-        <source xml:lang="en">Disallow</source>
-      </trans-unit>
-      <trans-unit id="openTasks">
-        <source xml:lang="en">Open tasks.json</source>
-      </trans-unit>
-      <trans-unit id="workbench.action.tasks.manageAutomaticRunning">
-        <source xml:lang="en">Manage Automatic Tasks in Folder</source>
-      </trans-unit>
-      <trans-unit id="workbench.action.tasks.allowAutomaticTasks">
-        <source xml:lang="en">Allow Automatic Tasks in Folder</source>
-      </trans-unit>
-      <trans-unit id="workbench.action.tasks.disallowAutomaticTasks">
-        <source xml:lang="en">Disallow Automatic Tasks in Folder</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/tasks/common/jsonSchema_v1" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="JsonSchema.version.deprecated">
@@ -572,6 +547,31 @@ The task will be ignored.
       </trans-unit>
       <trans-unit id="JsonSchema.shell_Duplicated21">
         <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/runAutomaticTasks" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="tasks.run.allowAutomatic">
+        <source xml:lang="en">This folder has tasks ({0}) defined in 'tasks.json' that run automatically when you open this folder. Do you allow automatic tasks to run when you open this folder?</source>
+      </trans-unit>
+      <trans-unit id="allow">
+        <source xml:lang="en">Allow and run</source>
+      </trans-unit>
+      <trans-unit id="disallow">
+        <source xml:lang="en">Disallow</source>
+      </trans-unit>
+      <trans-unit id="openTasks">
+        <source xml:lang="en">Open tasks.json</source>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.manageAutomaticRunning">
+        <source xml:lang="en">Manage Automatic Tasks in Folder</source>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.allowAutomaticTasks">
+        <source xml:lang="en">Allow Automatic Tasks in Folder</source>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.disallowAutomaticTasks">
+        <source xml:lang="en">Disallow Automatic Tasks in Folder</source>
       </trans-unit>
     </body>
   </file>
@@ -791,6 +791,16 @@ The task will be ignored.
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/tasksQuickAccess" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="noTaskResults">
+        <source xml:lang="en">No matching tasks</source>
+      </trans-unit>
+      <trans-unit id="TaskService.pickRunTask_Duplicated12">
+        <source xml:lang="en">Select the task to run</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/tasks/common/jsonSchema_v2" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="JsonSchema.shell_Duplicated22">
@@ -1005,16 +1015,6 @@ The task will be ignored.
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/tasksQuickAccess" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="noTaskResults">
-        <source xml:lang="en">No matching tasks</source>
-      </trans-unit>
-      <trans-unit id="TaskService.pickRunTask_Duplicated12">
-        <source xml:lang="en">Select the task to run</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/tasks/common/taskDefinitionRegistry" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="TaskDefinition.description">
@@ -1047,34 +1047,6 @@ The task will be ignored.
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/terminalTaskSystem" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="TerminalTaskSystem.unknownError">
-        <source xml:lang="en">A unknown error has occurred while executing a task. See task output log for details.</source>
-      </trans-unit>
-      <trans-unit id="dependencyFailed">
-        <source xml:lang="en">Couldn't resolve dependent task '{0}' in workspace folder '{1}'</source>
-      </trans-unit>
-      <trans-unit id="TerminalTaskSystem.nonWatchingMatcher">
-        <source xml:lang="en">Task {0} is a background task but uses a problem matcher without a background pattern</source>
-      </trans-unit>
-      <trans-unit id="TerminalTaskSystem.terminalName">
-        <source xml:lang="en">Task - {0}</source>
-      </trans-unit>
-      <trans-unit id="closeTerminal">
-        <source xml:lang="en">Press any key to close the terminal.</source>
-      </trans-unit>
-      <trans-unit id="reuseTerminal">
-        <source xml:lang="en">Terminal will be reused by tasks, press any key to close it.</source>
-      </trans-unit>
-      <trans-unit id="TerminalTaskSystem">
-        <source xml:lang="en">Can't execute a shell command on an UNC drive using cmd.exe.</source>
-      </trans-unit>
-      <trans-unit id="unknownProblemMatcher_Duplicated4">
-        <source xml:lang="en">Problem matcher {0} can't be resolved. The matcher will be ignored</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/tasks/browser/taskQuickPick" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="taskQuickPick.showAll">
@@ -1103,6 +1075,34 @@ The task will be ignored.
       </trans-unit>
       <trans-unit id="noProviderForTask">
         <source xml:lang="en">There is no task provider registered for tasks of type "{0}".</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/terminalTaskSystem" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="TerminalTaskSystem.unknownError">
+        <source xml:lang="en">A unknown error has occurred while executing a task. See task output log for details.</source>
+      </trans-unit>
+      <trans-unit id="dependencyFailed">
+        <source xml:lang="en">Couldn't resolve dependent task '{0}' in workspace folder '{1}'</source>
+      </trans-unit>
+      <trans-unit id="TerminalTaskSystem.nonWatchingMatcher">
+        <source xml:lang="en">Task {0} is a background task but uses a problem matcher without a background pattern</source>
+      </trans-unit>
+      <trans-unit id="TerminalTaskSystem.terminalName">
+        <source xml:lang="en">Task - {0}</source>
+      </trans-unit>
+      <trans-unit id="closeTerminal">
+        <source xml:lang="en">Press any key to close the terminal.</source>
+      </trans-unit>
+      <trans-unit id="reuseTerminal">
+        <source xml:lang="en">Terminal will be reused by tasks, press any key to close it.</source>
+      </trans-unit>
+      <trans-unit id="TerminalTaskSystem">
+        <source xml:lang="en">Can't execute a shell command on an UNC drive using cmd.exe.</source>
+      </trans-unit>
+      <trans-unit id="unknownProblemMatcher_Duplicated4">
+        <source xml:lang="en">Problem matcher {0} can't be resolved. The matcher will be ignored</source>
       </trans-unit>
     </body>
   </file>
