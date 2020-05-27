@@ -70,67 +70,25 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/files/common/fileService" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/files/node/diskFileSystemProvider" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="invalidPath">
-        <source xml:lang="en">Unable to resolve filesystem provider with relative file path '{0}'</source>
-      </trans-unit>
-      <trans-unit id="noProviderFound">
-        <source xml:lang="en">No file system provider found for resource '{0}'</source>
-      </trans-unit>
-      <trans-unit id="fileNotFoundError">
-        <source xml:lang="en">Unable to resolve non-existing file '{0}'</source>
-      </trans-unit>
       <trans-unit id="fileExists_Duplicated1">
-        <source xml:lang="en">Unable to create file '{0}' that already exists when overwrite flag is not set</source>
+        <source xml:lang="en">File already exists</source>
       </trans-unit>
-      <trans-unit id="err.write">
-        <source xml:lang="en">Unable to write file '{0}' ({1})</source>
+      <trans-unit id="fileNotExists">
+        <source xml:lang="en">File does not exist</source>
       </trans-unit>
-      <trans-unit id="fileIsDirectoryWriteError">
-        <source xml:lang="en">Unable to write file '{0}' that is actually a directory</source>
+      <trans-unit id="moveError">
+        <source xml:lang="en">Unable to move '{0}' into '{1}' ({2}).</source>
       </trans-unit>
-      <trans-unit id="fileModifiedError">
-        <source xml:lang="en">File Modified Since</source>
+      <trans-unit id="copyError">
+        <source xml:lang="en">Unable to copy '{0}' into '{1}' ({2}).</source>
       </trans-unit>
-      <trans-unit id="err.read">
-        <source xml:lang="en">Unable to read file '{0}' ({1})</source>
+      <trans-unit id="fileCopyErrorPathCase">
+        <source xml:lang="en">'File cannot be copied to same path with different path case</source>
       </trans-unit>
-      <trans-unit id="fileIsDirectoryReadError">
-        <source xml:lang="en">Unable to read file '{0}' that is actually a directory</source>
-      </trans-unit>
-      <trans-unit id="fileNotModifiedError">
-        <source xml:lang="en">File not modified since</source>
-      </trans-unit>
-      <trans-unit id="fileTooLargeError_Duplicated3">
-        <source xml:lang="en">Unable to read file '{0}' that is too large to open</source>
-      </trans-unit>
-      <trans-unit id="unableToMoveCopyError1">
-        <source xml:lang="en">Unable to copy when source '{0}' is same as target '{1}' with different path case on a case insensitive file system</source>
-      </trans-unit>
-      <trans-unit id="unableToMoveCopyError2">
-        <source xml:lang="en">Unable to move/copy when source '{0}' is parent of target '{1}'.</source>
-      </trans-unit>
-      <trans-unit id="unableToMoveCopyError3">
-        <source xml:lang="en">Unable to move/copy '{0}' because target '{1}' already exists at destination.</source>
-      </trans-unit>
-      <trans-unit id="unableToMoveCopyError4">
-        <source xml:lang="en">Unable to move/copy '{0}' into '{1}' since a file would replace the folder it is contained in.</source>
-      </trans-unit>
-      <trans-unit id="mkdirExistsError">
-        <source xml:lang="en">Unable to create folder '{0}' that already exists but is not a directory</source>
-      </trans-unit>
-      <trans-unit id="deleteFailedTrashUnsupported">
-        <source xml:lang="en">Unable to delete file '{0}' via trash because provider does not support it.</source>
-      </trans-unit>
-      <trans-unit id="deleteFailedNotFound">
-        <source xml:lang="en">Unable to delete non-existing file '{0}'</source>
-      </trans-unit>
-      <trans-unit id="deleteFailedNonEmptyFolder">
-        <source xml:lang="en">Unable to delete non-empty folder '{0}'.</source>
-      </trans-unit>
-      <trans-unit id="err.readonly">
-        <source xml:lang="en">Unable to modify readonly file '{0}'</source>
+      <trans-unit id="fileCopyErrorExists">
+        <source xml:lang="en">File at target already exists</source>
       </trans-unit>
     </body>
   </file>
@@ -154,7 +112,7 @@
       <trans-unit id="goto">
         <source xml:lang="en">Open a file at the path on the specified line and character position.</source>
       </trans-unit>
-      <trans-unit id="newWindow_Duplicated5">
+      <trans-unit id="newWindow_Duplicated3">
         <source xml:lang="en">Force to open a new window.</source>
       </trans-unit>
       <trans-unit id="reuseWindow">
@@ -281,7 +239,7 @@
       <trans-unit id="default">
         <source xml:lang="en">Enable automatic update checks. Code will check for updates automatically and periodically.</source>
       </trans-unit>
-      <trans-unit id="deprecated_Duplicated7">
+      <trans-unit id="deprecated_Duplicated5">
         <source xml:lang="en">This setting is deprecated, please use '{0}' instead.</source>
       </trans-unit>
       <trans-unit id="enableWindowsBackgroundUpdatesTitle">
@@ -295,25 +253,67 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/files/node/diskFileSystemProvider" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/files/common/fileService" source-language="en" datatype="plaintext">
     <body>
+      <trans-unit id="invalidPath">
+        <source xml:lang="en">Unable to resolve filesystem provider with relative file path '{0}'</source>
+      </trans-unit>
+      <trans-unit id="noProviderFound">
+        <source xml:lang="en">No file system provider found for resource '{0}'</source>
+      </trans-unit>
+      <trans-unit id="fileNotFoundError">
+        <source xml:lang="en">Unable to resolve non-existing file '{0}'</source>
+      </trans-unit>
       <trans-unit id="fileExists_Duplicated2">
-        <source xml:lang="en">File already exists</source>
+        <source xml:lang="en">Unable to create file '{0}' that already exists when overwrite flag is not set</source>
       </trans-unit>
-      <trans-unit id="fileNotExists">
-        <source xml:lang="en">File does not exist</source>
+      <trans-unit id="err.write">
+        <source xml:lang="en">Unable to write file '{0}' ({1})</source>
       </trans-unit>
-      <trans-unit id="moveError">
-        <source xml:lang="en">Unable to move '{0}' into '{1}' ({2}).</source>
+      <trans-unit id="fileIsDirectoryWriteError">
+        <source xml:lang="en">Unable to write file '{0}' that is actually a directory</source>
       </trans-unit>
-      <trans-unit id="copyError">
-        <source xml:lang="en">Unable to copy '{0}' into '{1}' ({2}).</source>
+      <trans-unit id="fileModifiedError">
+        <source xml:lang="en">File Modified Since</source>
       </trans-unit>
-      <trans-unit id="fileCopyErrorPathCase">
-        <source xml:lang="en">'File cannot be copied to same path with different path case</source>
+      <trans-unit id="err.read">
+        <source xml:lang="en">Unable to read file '{0}' ({1})</source>
       </trans-unit>
-      <trans-unit id="fileCopyErrorExists">
-        <source xml:lang="en">File at target already exists</source>
+      <trans-unit id="fileIsDirectoryReadError">
+        <source xml:lang="en">Unable to read file '{0}' that is actually a directory</source>
+      </trans-unit>
+      <trans-unit id="fileNotModifiedError">
+        <source xml:lang="en">File not modified since</source>
+      </trans-unit>
+      <trans-unit id="fileTooLargeError_Duplicated8">
+        <source xml:lang="en">Unable to read file '{0}' that is too large to open</source>
+      </trans-unit>
+      <trans-unit id="unableToMoveCopyError1">
+        <source xml:lang="en">Unable to copy when source '{0}' is same as target '{1}' with different path case on a case insensitive file system</source>
+      </trans-unit>
+      <trans-unit id="unableToMoveCopyError2">
+        <source xml:lang="en">Unable to move/copy when source '{0}' is parent of target '{1}'.</source>
+      </trans-unit>
+      <trans-unit id="unableToMoveCopyError3">
+        <source xml:lang="en">Unable to move/copy '{0}' because target '{1}' already exists at destination.</source>
+      </trans-unit>
+      <trans-unit id="unableToMoveCopyError4">
+        <source xml:lang="en">Unable to move/copy '{0}' into '{1}' since a file would replace the folder it is contained in.</source>
+      </trans-unit>
+      <trans-unit id="mkdirExistsError">
+        <source xml:lang="en">Unable to create folder '{0}' that already exists but is not a directory</source>
+      </trans-unit>
+      <trans-unit id="deleteFailedTrashUnsupported">
+        <source xml:lang="en">Unable to delete file '{0}' via trash because provider does not support it.</source>
+      </trans-unit>
+      <trans-unit id="deleteFailedNotFound">
+        <source xml:lang="en">Unable to delete non-existing file '{0}'</source>
+      </trans-unit>
+      <trans-unit id="deleteFailedNonEmptyFolder">
+        <source xml:lang="en">Unable to delete non-empty folder '{0}'.</source>
+      </trans-unit>
+      <trans-unit id="err.readonly">
+        <source xml:lang="en">Unable to modify readonly file '{0}'</source>
       </trans-unit>
     </body>
   </file>
@@ -363,16 +363,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="extensions">
-        <source xml:lang="en">Extensions</source>
-      </trans-unit>
-      <trans-unit id="preferences">
-        <source xml:lang="en">Preferences</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="telemetryConfigurationTitle">
@@ -383,10 +373,37 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="extensions">
+        <source xml:lang="en">Extensions</source>
+      </trans-unit>
+      <trans-unit id="preferences">
+        <source xml:lang="en">Preferences</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="binFailed">
+        <source xml:lang="en">Failed to move '{0}' to the recycle bin</source>
+      </trans-unit>
+      <trans-unit id="trashFailed">
+        <source xml:lang="en">Failed to move '{0}' to the trash</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/extensionManagement/node/extensionManagementUtil" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="invalidManifest_Duplicated12">
         <source xml:lang="en">VSIX invalid: package.json is not a JSON file.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/userDataSyncMachines" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="error incompatible">
+        <source xml:lang="en">Cannot read machines data as the current version is incompatible. Please update {0} and try again.</source>
       </trans-unit>
     </body>
   </file>
@@ -403,23 +420,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="binFailed">
-        <source xml:lang="en">Failed to move '{0}' to the recycle bin</source>
-      </trans-unit>
-      <trans-unit id="trashFailed">
-        <source xml:lang="en">Failed to move '{0}' to the trash</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/userDataSyncMachines" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="error incompatible">
-        <source xml:lang="en">Cannot read machines data as the current version is incompatible. Please update {0} and try again.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/label/common/label" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="untitledWorkspace">
@@ -427,6 +427,45 @@
       </trans-unit>
       <trans-unit id="workspaceName">
         <source xml:lang="en">{0} (Workspace)</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/configuration/common/configurationRegistry" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="defaultConfigurations.title">
+        <source xml:lang="en">Default Configuration Overrides</source>
+      </trans-unit>
+      <trans-unit id="overrideSettings.description">
+        <source xml:lang="en">Configure editor settings to be overridden for {0} language.</source>
+      </trans-unit>
+      <trans-unit id="overrideSettings.defaultDescription">
+        <source xml:lang="en">Configure editor settings to be overridden for a language.</source>
+      </trans-unit>
+      <trans-unit id="overrideSettings.errorMessage">
+        <source xml:lang="en">This setting does not support per-language configuration.</source>
+      </trans-unit>
+      <trans-unit id="config.property.languageDefault">
+        <source xml:lang="en">Cannot register '{0}'. This matches property pattern '\\[.*\\]$' for describing language specific editor settings. Use 'configurationDefaults' contribution.</source>
+      </trans-unit>
+      <trans-unit id="config.property.duplicate">
+        <source xml:lang="en">Cannot register '{0}'. This property is already registered.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/workspaces/common/workspaces" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="codeWorkspace">
+        <source xml:lang="en">Code Workspace</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/dialogs/common/dialogs" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="moreFile">
+        <source xml:lang="en">...1 additional file not shown</source>
+      </trans-unit>
+      <trans-unit id="moreFiles">
+        <source xml:lang="en">...{0} additional files not shown</source>
       </trans-unit>
     </body>
   </file>
@@ -456,7 +495,7 @@
       <trans-unit id="tree horizontalScrolling setting">
         <source xml:lang="en">Controls whether trees support horizontal scrolling in the workbench.</source>
       </trans-unit>
-      <trans-unit id="deprecated_Duplicated8">
+      <trans-unit id="deprecated_Duplicated6">
         <source xml:lang="en">This setting is deprecated, please use '{0}' instead.</source>
       </trans-unit>
       <trans-unit id="tree indent setting">
@@ -526,45 +565,6 @@
       </trans-unit>
       <trans-unit id="cannotWorkspaceRedoDueToChanges">
         <source xml:lang="en">Could not redo '{0}' across all files because changes were made to {1}</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/configuration/common/configurationRegistry" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="defaultConfigurations.title">
-        <source xml:lang="en">Default Configuration Overrides</source>
-      </trans-unit>
-      <trans-unit id="overrideSettings.description">
-        <source xml:lang="en">Configure editor settings to be overridden for {0} language.</source>
-      </trans-unit>
-      <trans-unit id="overrideSettings.defaultDescription">
-        <source xml:lang="en">Configure editor settings to be overridden for a language.</source>
-      </trans-unit>
-      <trans-unit id="overrideSettings.errorMessage">
-        <source xml:lang="en">This setting does not support per-language configuration.</source>
-      </trans-unit>
-      <trans-unit id="config.property.languageDefault">
-        <source xml:lang="en">Cannot register '{0}'. This matches property pattern '\\[.*\\]$' for describing language specific editor settings. Use 'configurationDefaults' contribution.</source>
-      </trans-unit>
-      <trans-unit id="config.property.duplicate">
-        <source xml:lang="en">Cannot register '{0}'. This property is already registered.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/dialogs/common/dialogs" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="moreFile">
-        <source xml:lang="en">...1 additional file not shown</source>
-      </trans-unit>
-      <trans-unit id="moreFiles">
-        <source xml:lang="en">...{0} additional files not shown</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/workspaces/common/workspaces" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="codeWorkspace">
-        <source xml:lang="en">Code Workspace</source>
       </trans-unit>
     </body>
   </file>
@@ -1050,6 +1050,25 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/workspaces/electron-main/workspacesHistoryMainService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="newWindow_Duplicated4">
+        <source xml:lang="en">New Window</source>
+      </trans-unit>
+      <trans-unit id="newWindowDesc">
+        <source xml:lang="en">Opens a new window</source>
+      </trans-unit>
+      <trans-unit id="recentFolders">
+        <source xml:lang="en">Recent Workspaces</source>
+      </trans-unit>
+      <trans-unit id="folderDesc">
+        <source xml:lang="en">{0} {1}</source>
+      </trans-unit>
+      <trans-unit id="workspaceDesc">
+        <source xml:lang="en">{0} {1}</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/issue/electron-main/issueMainService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="local">
@@ -1078,38 +1097,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/workspaces/electron-main/workspacesHistoryMainService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="newWindow_Duplicated6">
-        <source xml:lang="en">New Window</source>
-      </trans-unit>
-      <trans-unit id="newWindowDesc">
-        <source xml:lang="en">Opens a new window</source>
-      </trans-unit>
-      <trans-unit id="recentFolders">
-        <source xml:lang="en">Recent Workspaces</source>
-      </trans-unit>
-      <trans-unit id="folderDesc">
-        <source xml:lang="en">{0} {1}</source>
-      </trans-unit>
-      <trans-unit id="workspaceDesc">
-        <source xml:lang="en">{0} {1}</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/workspaces/electron-main/workspacesMainService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="ok_Duplicated17">
-        <source xml:lang="en">OK</source>
-      </trans-unit>
-      <trans-unit id="workspaceOpenedMessage">
-        <source xml:lang="en">Unable to save workspace '{0}'</source>
-      </trans-unit>
-      <trans-unit id="workspaceOpenedDetail">
-        <source xml:lang="en">The workspace is already opened in another window. Please close that window first and then try again.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/dialogs/electron-main/dialogs" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="open">
@@ -1130,12 +1117,25 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/workspaces/electron-main/workspacesMainService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="ok_Duplicated17">
+        <source xml:lang="en">OK</source>
+      </trans-unit>
+      <trans-unit id="workspaceOpenedMessage">
+        <source xml:lang="en">Unable to save workspace '{0}'</source>
+      </trans-unit>
+      <trans-unit id="workspaceOpenedDetail">
+        <source xml:lang="en">The workspace is already opened in another window. Please close that window first and then try again.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/files/common/io" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="fileTooLargeForHeapError">
         <source xml:lang="en">To open a file of this size, you need to restart and allow it to use more memory</source>
       </trans-unit>
-      <trans-unit id="fileTooLargeError_Duplicated4">
+      <trans-unit id="fileTooLargeError_Duplicated9">
         <source xml:lang="en">File is too large to open</source>
       </trans-unit>
     </body>
@@ -1172,17 +1172,17 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="errorInvalidSettings_Duplicated20">
-        <source xml:lang="en">Unable to sync keybindings as there are errors/warning in keybindings file.</source>
+        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="errorInvalidSettings_Duplicated21">
-        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
+        <source xml:lang="en">Unable to sync keybindings as there are errors/warning in keybindings file.</source>
       </trans-unit>
     </body>
   </file>
@@ -1447,7 +1447,7 @@
       <trans-unit id="abstract">
         <source xml:lang="en">Style to use for symbols that are abstract.</source>
       </trans-unit>
-      <trans-unit id="deprecated_Duplicated9">
+      <trans-unit id="deprecated_Duplicated7">
         <source xml:lang="en">Style to use for symbols that are deprecated.</source>
       </trans-unit>
       <trans-unit id="modification">
