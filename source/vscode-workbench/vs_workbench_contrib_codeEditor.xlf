@@ -10,10 +10,30 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/codeEditor/electron-browser/selectionClipboard" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/codeEditor/electron-sandbox/selectionClipboard" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="actions.pasteSelectionClipboard">
         <source xml:lang="en">Paste Selection Clipboard</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/toggleWordWrap" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="toggle.wordwrap">
+        <source xml:lang="en">View: Toggle Word Wrap</source>
+      </trans-unit>
+      <trans-unit id="wordWrap.notInDiffEditor">
+        <source xml:lang="en">Cannot toggle word wrap in a diff editor.</source>
+      </trans-unit>
+      <trans-unit id="unwrapMinified">
+        <source xml:lang="en">Disable wrapping for this file</source>
+      </trans-unit>
+      <trans-unit id="wrapMinified">
+        <source xml:lang="en">Enable wrapping for this file</source>
+      </trans-unit>
+      <trans-unit id="miToggleWordWrap">
+        <source xml:lang="en">Toggle &amp;&amp;Word Wrap</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
     </body>
   </file>
@@ -160,59 +180,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/inspectKeybindings" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="workbench.action.inspectKeyMap">
-        <source xml:lang="en">Developer: Inspect Key Mappings</source>
-      </trans-unit>
-      <trans-unit id="workbench.action.inspectKeyMapJSON">
-        <source xml:lang="en">Inspect Key Mappings (JSON)</source>
-      </trans-unit>
-      <trans-unit id="developer_Duplicated2">
-        <source xml:lang="en">Developer</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/diffEditorHelper" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="hintTimeout">
-        <source xml:lang="en">The diff algorithm was stopped early (after {0} ms.)</source>
-      </trans-unit>
-      <trans-unit id="removeTimeout">
-        <source xml:lang="en">Remove limit</source>
-      </trans-unit>
-      <trans-unit id="hintWhitespace">
-        <source xml:lang="en">Show Whitespace Differences</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/largeFileOptimizations" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="largeFile">
-        <source xml:lang="en">{0}: tokenization, wrapping and folding have been turned off for this large file in order to reduce memory usage and avoid freezing or crashing.</source>
-        <note>Variable 0 will be a file name.</note>
-      </trans-unit>
-      <trans-unit id="removeOptimizations">
-        <source xml:lang="en">Forcefully enable features</source>
-      </trans-unit>
-      <trans-unit id="reopenFilePrompt">
-        <source xml:lang="en">Please reopen file in order for this setting to take effect.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/quickaccess/gotoLineQuickAccess" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="gotoLineQuickAccessPlaceholder">
-        <source xml:lang="en">Type the line number and optional column to go to (e.g. 42:5 for line 42 and column 5).</source>
-      </trans-unit>
-      <trans-unit id="gotoLineQuickAccess">
-        <source xml:lang="en">Go to Line/Column</source>
-      </trans-unit>
-      <trans-unit id="gotoLine">
-        <source xml:lang="en">Go to Line/Column...</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/codeEditor/browser/accessibility/accessibility" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="emergencyConfOn">
@@ -274,6 +241,81 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/largeFileOptimizations" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="largeFile">
+        <source xml:lang="en">{0}: tokenization, wrapping and folding have been turned off for this large file in order to reduce memory usage and avoid freezing or crashing.</source>
+        <note>Variable 0 will be a file name.</note>
+      </trans-unit>
+      <trans-unit id="removeOptimizations">
+        <source xml:lang="en">Forcefully enable features</source>
+      </trans-unit>
+      <trans-unit id="reopenFilePrompt">
+        <source xml:lang="en">Please reopen file in order for this setting to take effect.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/diffEditorHelper" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="hintTimeout">
+        <source xml:lang="en">The diff algorithm was stopped early (after {0} ms.)</source>
+      </trans-unit>
+      <trans-unit id="removeTimeout">
+        <source xml:lang="en">Remove limit</source>
+      </trans-unit>
+      <trans-unit id="hintWhitespace">
+        <source xml:lang="en">Show Whitespace Differences</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/semanticTokensHelp" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="semanticTokensHelp">
+        <source xml:lang="en">Code coloring of '{0}' has been updated as the theme '{1}' has [semantic highlighting](https://go.microsoft.com/fwlink/?linkid=2122588) enabled.</source>
+        <note>Variable 0 will be a file name.
+Variable 1 will be a theme name.</note>
+      </trans-unit>
+      <trans-unit id="learnMoreButton">
+        <source xml:lang="en">Learn More</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/inspectKeybindings" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="workbench.action.inspectKeyMap">
+        <source xml:lang="en">Developer: Inspect Key Mappings</source>
+      </trans-unit>
+      <trans-unit id="workbench.action.inspectKeyMapJSON">
+        <source xml:lang="en">Inspect Key Mappings (JSON)</source>
+      </trans-unit>
+      <trans-unit id="developer_Duplicated2">
+        <source xml:lang="en">Developer</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/quickaccess/gotoLineQuickAccess" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="gotoLineQuickAccessPlaceholder">
+        <source xml:lang="en">Type the line number and optional column to go to (e.g. 42:5 for line 42 and column 5).</source>
+      </trans-unit>
+      <trans-unit id="gotoLineQuickAccess">
+        <source xml:lang="en">Go to Line/Column</source>
+      </trans-unit>
+      <trans-unit id="gotoLine">
+        <source xml:lang="en">Go to Line/Column...</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/inspectEditorTokens/inspectEditorTokens" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="inspectEditorTokens">
+        <source xml:lang="en">Developer: Inspect Editor Tokens and Scopes</source>
+      </trans-unit>
+      <trans-unit id="inspectTMScopesWidget.loading">
+        <source xml:lang="en">Loading...</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/codeEditor/browser/saveParticipants" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="formatting">
@@ -290,29 +332,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/semanticTokensHelp" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="semanticTokensHelp">
-        <source xml:lang="en">Code coloring of '{0}' has been updated as the theme '{1}' has [semantic highlighting](https://go.microsoft.com/fwlink/?linkid=2122588) enabled.</source>
-        <note>Variable 0 will be a file name.
-Variable 1 will be a theme name.</note>
-      </trans-unit>
-      <trans-unit id="learnMoreButton">
-        <source xml:lang="en">Learn More</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/toggleColumnSelection" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="toggleColumnSelection">
-        <source xml:lang="en">Toggle Column Selection Mode</source>
-      </trans-unit>
-      <trans-unit id="miColumnSelection">
-        <source xml:lang="en">Column &amp;&amp;Selection Mode</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/codeEditor/browser/toggleMinimap" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="toggleMinimap">
@@ -324,30 +343,6 @@ Variable 1 will be a theme name.</note>
       <trans-unit id="miShowMinimap">
         <source xml:lang="en">Show &amp;&amp;Minimap</source>
         <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/toggleRenderWhitespace" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="toggleRenderWhitespace">
-        <source xml:lang="en">Toggle Render Whitespace</source>
-      </trans-unit>
-      <trans-unit id="view_Duplicated4">
-        <source xml:lang="en">View</source>
-      </trans-unit>
-      <trans-unit id="miToggleRenderWhitespace">
-        <source xml:lang="en">&amp;&amp;Render Whitespace</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/inspectEditorTokens/inspectEditorTokens" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="inspectEditorTokens">
-        <source xml:lang="en">Developer: Inspect Editor Tokens and Scopes</source>
-      </trans-unit>
-      <trans-unit id="inspectTMScopesWidget.loading">
-        <source xml:lang="en">Loading...</source>
       </trans-unit>
     </body>
   </file>
@@ -367,6 +362,31 @@ Variable 1 will be a theme name.</note>
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/toggleRenderWhitespace" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="toggleRenderWhitespace">
+        <source xml:lang="en">Toggle Render Whitespace</source>
+      </trans-unit>
+      <trans-unit id="view_Duplicated4">
+        <source xml:lang="en">View</source>
+      </trans-unit>
+      <trans-unit id="miToggleRenderWhitespace">
+        <source xml:lang="en">&amp;&amp;Render Whitespace</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/toggleColumnSelection" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="toggleColumnSelection">
+        <source xml:lang="en">Toggle Column Selection Mode</source>
+      </trans-unit>
+      <trans-unit id="miColumnSelection">
+        <source xml:lang="en">Column &amp;&amp;Selection Mode</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/codeEditor/browser/toggleRenderControlCharacter" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="toggleRenderControlCharacters">
@@ -381,27 +401,7 @@ Variable 1 will be a theme name.</note>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/toggleWordWrap" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="toggle.wordwrap">
-        <source xml:lang="en">View: Toggle Word Wrap</source>
-      </trans-unit>
-      <trans-unit id="wordWrap.notInDiffEditor">
-        <source xml:lang="en">Cannot toggle word wrap in a diff editor.</source>
-      </trans-unit>
-      <trans-unit id="unwrapMinified">
-        <source xml:lang="en">Disable wrapping for this file</source>
-      </trans-unit>
-      <trans-unit id="wrapMinified">
-        <source xml:lang="en">Enable wrapping for this file</source>
-      </trans-unit>
-      <trans-unit id="miToggleWordWrap">
-        <source xml:lang="en">Toggle &amp;&amp;Word Wrap</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/find/simpleFindReplaceWidget" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/codeEditor/browser/find/simpleFindWidget" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="label.find_Duplicated6">
         <source xml:lang="en">Find</source>
@@ -418,24 +418,9 @@ Variable 1 will be a theme name.</note>
       <trans-unit id="label.closeButton_Duplicated14">
         <source xml:lang="en">Close</source>
       </trans-unit>
-      <trans-unit id="label.toggleReplaceButton">
-        <source xml:lang="en">Toggle Replace mode</source>
-      </trans-unit>
-      <trans-unit id="label.replace">
-        <source xml:lang="en">Replace</source>
-      </trans-unit>
-      <trans-unit id="placeholder.replace">
-        <source xml:lang="en">Replace</source>
-      </trans-unit>
-      <trans-unit id="label.replaceButton">
-        <source xml:lang="en">Replace</source>
-      </trans-unit>
-      <trans-unit id="label.replaceAllButton">
-        <source xml:lang="en">Replace All</source>
-      </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/find/simpleFindWidget" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/codeEditor/browser/find/simpleFindReplaceWidget" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="label.find_Duplicated7">
         <source xml:lang="en">Find</source>
@@ -451,6 +436,21 @@ Variable 1 will be a theme name.</note>
       </trans-unit>
       <trans-unit id="label.closeButton_Duplicated15">
         <source xml:lang="en">Close</source>
+      </trans-unit>
+      <trans-unit id="label.toggleReplaceButton">
+        <source xml:lang="en">Toggle Replace mode</source>
+      </trans-unit>
+      <trans-unit id="label.replace">
+        <source xml:lang="en">Replace</source>
+      </trans-unit>
+      <trans-unit id="placeholder.replace">
+        <source xml:lang="en">Replace</source>
+      </trans-unit>
+      <trans-unit id="label.replaceButton">
+        <source xml:lang="en">Replace</source>
+      </trans-unit>
+      <trans-unit id="label.replaceAllButton">
+        <source xml:lang="en">Replace All</source>
       </trans-unit>
     </body>
   </file>
