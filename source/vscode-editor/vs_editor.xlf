@@ -531,9 +531,6 @@
       <trans-unit id="quickSuggestionsDelay">
         <source xml:lang="en">Controls the delay in milliseconds after which quick suggestions will show up.</source>
       </trans-unit>
-      <trans-unit id="removeUnusualLineTerminators">
-        <source xml:lang="en">Remove unusual line terminators that might cause problems.</source>
-      </trans-unit>
       <trans-unit id="renameOnType">
         <source xml:lang="en">Controls whether the editor auto renames on type.</source>
       </trans-unit>
@@ -644,6 +641,18 @@
       </trans-unit>
       <trans-unit id="tabCompletion">
         <source xml:lang="en">Enables tab completions.</source>
+      </trans-unit>
+      <trans-unit id="unusualLineTerminators.off">
+        <source xml:lang="en">Unusual line terminators are ignored.</source>
+      </trans-unit>
+      <trans-unit id="unusualLineTerminators.prompt">
+        <source xml:lang="en">Unusual line terminators prompt to be removed.</source>
+      </trans-unit>
+      <trans-unit id="unusualLineTerminators.auto">
+        <source xml:lang="en">Unusual line terminators are automatically removed.</source>
+      </trans-unit>
+      <trans-unit id="unusualLineTerminators">
+        <source xml:lang="en">Remove unusual line terminators that might cause problems.</source>
       </trans-unit>
       <trans-unit id="useTabStops">
         <source xml:lang="en">Inserting and deleting whitespace follows tab stops.</source>
@@ -787,8 +796,18 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/browser/widget/codeEditorWidget" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="cursors.maximum">
+        <source xml:lang="en">The number of cursors has been limited to {0}.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/browser/controller/coreCommands" source-language="en" datatype="plaintext">
     <body>
+      <trans-unit id="stickydesc">
+        <source xml:lang="en">Stick to the end even when going to longer lines</source>
+      </trans-unit>
       <trans-unit id="miSelectAll">
         <source xml:lang="en">&amp;&amp;Select All</source>
         <note>&amp;&amp; denotes a mnemonic</note>
@@ -809,13 +828,6 @@
       </trans-unit>
       <trans-unit id="redo">
         <source xml:lang="en">Redo</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/browser/widget/codeEditorWidget" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="cursors.maximum">
-        <source xml:lang="en">The number of cursors has been limited to {0}.</source>
       </trans-unit>
     </body>
   </file>
@@ -1006,6 +1018,7 @@ Variables 3 and 5 will be "no lines changed", "1 line changed" or "X lines chang
       </trans-unit>
       <trans-unit id="unchangedLine">
         <source xml:lang="en">{0} unchanged line {1}</source>
+        <note>The placholders are contents of the line and should not be translated.</note>
       </trans-unit>
       <trans-unit id="equalLine">
         <source xml:lang="en">{0} original line {1} modified line {2}</source>

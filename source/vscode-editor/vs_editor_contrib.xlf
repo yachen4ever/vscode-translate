@@ -22,6 +22,30 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/caretOperations/transpose" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="transposeLetters.label">
+        <source xml:lang="en">Transpose Letters</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/bracketMatching/bracketMatching" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="overviewRulerBracketMatchForeground">
+        <source xml:lang="en">Overview ruler marker color for matching brackets.</source>
+      </trans-unit>
+      <trans-unit id="smartSelect.jumpBracket">
+        <source xml:lang="en">Go to Bracket</source>
+      </trans-unit>
+      <trans-unit id="smartSelect.selectToBracket">
+        <source xml:lang="en">Select to Bracket</source>
+      </trans-unit>
+      <trans-unit id="miGoToBracket">
+        <source xml:lang="en">Go to &amp;&amp;Bracket</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/caretOperations/caretOperations" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="caret.moveLeft">
@@ -32,10 +56,44 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/caretOperations/transpose" source-language="en" datatype="plaintext">
+  <file original="src/vs/editor/contrib/comment/comment" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="transposeLetters.label">
-        <source xml:lang="en">Transpose Letters</source>
+      <trans-unit id="comment.line">
+        <source xml:lang="en">Toggle Line Comment</source>
+      </trans-unit>
+      <trans-unit id="miToggleLineComment">
+        <source xml:lang="en">&amp;&amp;Toggle Line Comment</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="comment.line.add">
+        <source xml:lang="en">Add Line Comment</source>
+      </trans-unit>
+      <trans-unit id="comment.line.remove">
+        <source xml:lang="en">Remove Line Comment</source>
+      </trans-unit>
+      <trans-unit id="comment.block">
+        <source xml:lang="en">Toggle Block Comment</source>
+      </trans-unit>
+      <trans-unit id="miToggleBlockComment">
+        <source xml:lang="en">Toggle &amp;&amp;Block Comment</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/codelens/codelensController" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="showLensOnLine">
+        <source xml:lang="en">Show CodeLens Commands For Current Line</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/cursorUndo/cursorUndo" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="cursor.undo">
+        <source xml:lang="en">Cursor Undo</source>
+      </trans-unit>
+      <trans-unit id="cursor.redo">
+        <source xml:lang="en">Cursor Redo</source>
       </trans-unit>
     </body>
   </file>
@@ -64,64 +122,6 @@
       </trans-unit>
       <trans-unit id="actions.clipboard.copyWithSyntaxHighlightingLabel">
         <source xml:lang="en">Copy With Syntax Highlighting</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/bracketMatching/bracketMatching" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="overviewRulerBracketMatchForeground">
-        <source xml:lang="en">Overview ruler marker color for matching brackets.</source>
-      </trans-unit>
-      <trans-unit id="smartSelect.jumpBracket">
-        <source xml:lang="en">Go to Bracket</source>
-      </trans-unit>
-      <trans-unit id="smartSelect.selectToBracket">
-        <source xml:lang="en">Select to Bracket</source>
-      </trans-unit>
-      <trans-unit id="miGoToBracket">
-        <source xml:lang="en">Go to &amp;&amp;Bracket</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/codelens/codelensController" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="showLensOnLine">
-        <source xml:lang="en">Show CodeLens Commands For Current Line</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/comment/comment" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="comment.line">
-        <source xml:lang="en">Toggle Line Comment</source>
-      </trans-unit>
-      <trans-unit id="miToggleLineComment">
-        <source xml:lang="en">&amp;&amp;Toggle Line Comment</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="comment.line.add">
-        <source xml:lang="en">Add Line Comment</source>
-      </trans-unit>
-      <trans-unit id="comment.line.remove">
-        <source xml:lang="en">Remove Line Comment</source>
-      </trans-unit>
-      <trans-unit id="comment.block">
-        <source xml:lang="en">Toggle Block Comment</source>
-      </trans-unit>
-      <trans-unit id="miToggleBlockComment">
-        <source xml:lang="en">Toggle &amp;&amp;Block Comment</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/cursorUndo/cursorUndo" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="cursor.undo">
-        <source xml:lang="en">Cursor Undo</source>
-      </trans-unit>
-      <trans-unit id="cursor.redo">
-        <source xml:lang="en">Cursor Redo</source>
       </trans-unit>
     </body>
   </file>
@@ -228,6 +228,61 @@
       </trans-unit>
       <trans-unit id="formatSelection.label">
         <source xml:lang="en">Format Selection</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/gotoError/gotoError" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="markerAction.next.label">
+        <source xml:lang="en">Go to Next Problem (Error, Warning, Info)</source>
+      </trans-unit>
+      <trans-unit id="markerAction.previous.label">
+        <source xml:lang="en">Go to Previous Problem (Error, Warning, Info)</source>
+      </trans-unit>
+      <trans-unit id="markerAction.nextInFiles.label">
+        <source xml:lang="en">Go to Next Problem in Files (Error, Warning, Info)</source>
+      </trans-unit>
+      <trans-unit id="miGotoNextProblem">
+        <source xml:lang="en">Next &amp;&amp;Problem</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="markerAction.previousInFiles.label">
+        <source xml:lang="en">Go to Previous Problem in Files (Error, Warning, Info)</source>
+      </trans-unit>
+      <trans-unit id="miGotoPreviousProblem">
+        <source xml:lang="en">Previous &amp;&amp;Problem</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/gotoSymbol/link/goToDefinitionAtPosition" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="multipleResults">
+        <source xml:lang="en">Click to show {0} definitions.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/hover/hover" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="showHover">
+        <source xml:lang="en">Show Hover</source>
+        <note>Label for action that will trigger the showing of a hover in the editor.
+This allows for users to show the hover without using the mouse.</note>
+      </trans-unit>
+      <trans-unit id="showDefinitionPreviewHover">
+        <source xml:lang="en">Show Definition Preview Hover</source>
+        <note>Label for action that will trigger the showing of definition preview hover in the editor.
+This allows for users to show the definition preview hover without using the mouse.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/inPlaceReplace/inPlaceReplace" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="InPlaceReplaceAction.previous.label">
+        <source xml:lang="en">Replace with Previous Value</source>
+      </trans-unit>
+      <trans-unit id="InPlaceReplaceAction.next.label">
+        <source xml:lang="en">Replace with Next Value</source>
       </trans-unit>
     </body>
   </file>
@@ -345,51 +400,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/hover/hover" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="showHover">
-        <source xml:lang="en">Show Hover</source>
-        <note>Label for action that will trigger the showing of a hover in the editor.
-This allows for users to show the hover without using the mouse.</note>
-      </trans-unit>
-      <trans-unit id="showDefinitionPreviewHover">
-        <source xml:lang="en">Show Definition Preview Hover</source>
-        <note>Label for action that will trigger the showing of definition preview hover in the editor.
-This allows for users to show the definition preview hover without using the mouse.</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/gotoSymbol/link/goToDefinitionAtPosition" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="multipleResults">
-        <source xml:lang="en">Click to show {0} definitions.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/gotoError/gotoError" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="markerAction.next.label">
-        <source xml:lang="en">Go to Next Problem (Error, Warning, Info)</source>
-      </trans-unit>
-      <trans-unit id="markerAction.previous.label">
-        <source xml:lang="en">Go to Previous Problem (Error, Warning, Info)</source>
-      </trans-unit>
-      <trans-unit id="markerAction.nextInFiles.label">
-        <source xml:lang="en">Go to Next Problem in Files (Error, Warning, Info)</source>
-      </trans-unit>
-      <trans-unit id="miGotoNextProblem">
-        <source xml:lang="en">Next &amp;&amp;Problem</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="markerAction.previousInFiles.label">
-        <source xml:lang="en">Go to Previous Problem in Files (Error, Warning, Info)</source>
-      </trans-unit>
-      <trans-unit id="miGotoPreviousProblem">
-        <source xml:lang="en">Previous &amp;&amp;Problem</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/indentation/indentation" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="indentationToSpaces">
@@ -419,47 +429,6 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
       <trans-unit id="editor.reindentselectedlines">
         <source xml:lang="en">Reindent Selected Lines</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/links/links" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="links.navigate.executeCmd">
-        <source xml:lang="en">Execute command</source>
-      </trans-unit>
-      <trans-unit id="links.navigate.follow">
-        <source xml:lang="en">Follow link</source>
-      </trans-unit>
-      <trans-unit id="links.navigate.kb.meta.mac">
-        <source xml:lang="en">cmd + click</source>
-      </trans-unit>
-      <trans-unit id="links.navigate.kb.meta">
-        <source xml:lang="en">ctrl + click</source>
-      </trans-unit>
-      <trans-unit id="links.navigate.kb.alt.mac">
-        <source xml:lang="en">option + click</source>
-      </trans-unit>
-      <trans-unit id="links.navigate.kb.alt">
-        <source xml:lang="en">alt + click</source>
-      </trans-unit>
-      <trans-unit id="invalid.url">
-        <source xml:lang="en">Failed to open this link because it is not well-formed: {0}</source>
-      </trans-unit>
-      <trans-unit id="missing.url">
-        <source xml:lang="en">Failed to open this link because its target is missing.</source>
-      </trans-unit>
-      <trans-unit id="label_Duplicated1">
-        <source xml:lang="en">Open Link</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/inPlaceReplace/inPlaceReplace" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="InPlaceReplaceAction.previous.label">
-        <source xml:lang="en">Replace with Previous Value</source>
-      </trans-unit>
-      <trans-unit id="InPlaceReplaceAction.next.label">
-        <source xml:lang="en">Replace with Next Value</source>
       </trans-unit>
     </body>
   </file>
@@ -547,6 +516,37 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/links/links" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="links.navigate.executeCmd">
+        <source xml:lang="en">Execute command</source>
+      </trans-unit>
+      <trans-unit id="links.navigate.follow">
+        <source xml:lang="en">Follow link</source>
+      </trans-unit>
+      <trans-unit id="links.navigate.kb.meta.mac">
+        <source xml:lang="en">cmd + click</source>
+      </trans-unit>
+      <trans-unit id="links.navigate.kb.meta">
+        <source xml:lang="en">ctrl + click</source>
+      </trans-unit>
+      <trans-unit id="links.navigate.kb.alt.mac">
+        <source xml:lang="en">option + click</source>
+      </trans-unit>
+      <trans-unit id="links.navigate.kb.alt">
+        <source xml:lang="en">alt + click</source>
+      </trans-unit>
+      <trans-unit id="invalid.url">
+        <source xml:lang="en">Failed to open this link because it is not well-formed: {0}</source>
+      </trans-unit>
+      <trans-unit id="missing.url">
+        <source xml:lang="en">Failed to open this link because its target is missing.</source>
+      </trans-unit>
+      <trans-unit id="label_Duplicated1">
+        <source xml:lang="en">Open Link</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/multicursor/multicursor" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="mutlicursor.insertAbove">
@@ -608,13 +608,6 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/rename/onTypeRename" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="onTypeRename.label">
-        <source xml:lang="en">On Type Rename Symbol</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/rename/rename" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="no result">
@@ -653,31 +646,10 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/suggest/suggestController" source-language="en" datatype="plaintext">
+  <file original="src/vs/editor/contrib/rename/onTypeRename" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="arai.alert.snippet">
-        <source xml:lang="en">Accepting '{0}' made {1} additional edits</source>
-      </trans-unit>
-      <trans-unit id="suggest.trigger.label">
-        <source xml:lang="en">Trigger Suggest</source>
-      </trans-unit>
-      <trans-unit id="accept.accept">
-        <source xml:lang="en">{0} to insert</source>
-        <note>{0} will be a keybinding, e.g "Enter to insert"</note>
-      </trans-unit>
-      <trans-unit id="accept.insert">
-        <source xml:lang="en">{0} to insert</source>
-        <note>{0} will be a keybinding, e.g "Enter to insert"</note>
-      </trans-unit>
-      <trans-unit id="accept.replace">
-        <source xml:lang="en">{0} to replace</source>
-        <note>{0} will be a keybinding, e.g "Enter to replace"</note>
-      </trans-unit>
-      <trans-unit id="detail.more">
-        <source xml:lang="en">show less</source>
-      </trans-unit>
-      <trans-unit id="detail.less">
-        <source xml:lang="en">show more</source>
+      <trans-unit id="onTypeRename.label">
+        <source xml:lang="en">On Type Rename Symbol</source>
       </trans-unit>
     </body>
   </file>
@@ -706,26 +678,31 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/unusualLineTerminators/unusualLineTerminators" source-language="en" datatype="plaintext">
+  <file original="src/vs/editor/contrib/suggest/suggestController" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="unusualLineTerminators.title">
-        <source xml:lang="en">Unusual Line Terminators</source>
+      <trans-unit id="arai.alert.snippet">
+        <source xml:lang="en">Accepting '{0}' made {1} additional edits</source>
       </trans-unit>
-      <trans-unit id="unusualLineTerminators.message">
-        <source xml:lang="en">Detected unusual line terminators</source>
+      <trans-unit id="suggest.trigger.label">
+        <source xml:lang="en">Trigger Suggest</source>
       </trans-unit>
-      <trans-unit id="unusualLineTerminators.detail">
-        <source xml:lang="en">Your file contains one or more unusual line terminator characters, like Line Separator (LS), Paragraph Separator (PS) or Next Line (NEL).
-
-These characters can cause subtle problems with language servers, due to how each programming language specifies its line terminators. e.g. what is line 11 for VS Code might be line 12 for a language server.
-
-This check can be disabled via `editor.removeUnusualLineTerminators`.</source>
+      <trans-unit id="accept.accept">
+        <source xml:lang="en">{0} to insert</source>
+        <note>{0} will be a keybinding, e.g "Enter to insert"</note>
       </trans-unit>
-      <trans-unit id="unusualLineTerminators.fix">
-        <source xml:lang="en">Fix this file</source>
+      <trans-unit id="accept.insert">
+        <source xml:lang="en">{0} to insert</source>
+        <note>{0} will be a keybinding, e.g "Enter to insert"</note>
       </trans-unit>
-      <trans-unit id="unusualLineTerminators.ignore">
-        <source xml:lang="en">Ignore problem for this file</source>
+      <trans-unit id="accept.replace">
+        <source xml:lang="en">{0} to replace</source>
+        <note>{0} will be a keybinding, e.g "Enter to replace"</note>
+      </trans-unit>
+      <trans-unit id="detail.more">
+        <source xml:lang="en">show less</source>
+      </trans-unit>
+      <trans-unit id="detail.less">
+        <source xml:lang="en">show more</source>
       </trans-unit>
     </body>
   </file>
@@ -771,6 +748,27 @@ This check can be disabled via `editor.removeUnusualLineTerminators`.</source>
       </trans-unit>
       <trans-unit id="wordHighlight.trigger.label">
         <source xml:lang="en">Trigger Symbol Highlight</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/unusualLineTerminators/unusualLineTerminators" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="unusualLineTerminators.title">
+        <source xml:lang="en">Unusual Line Terminators</source>
+      </trans-unit>
+      <trans-unit id="unusualLineTerminators.message">
+        <source xml:lang="en">Detected unusual line terminators</source>
+      </trans-unit>
+      <trans-unit id="unusualLineTerminators.detail">
+        <source xml:lang="en">This file contains one or more unusual line terminator characters, like Line Separator (LS) or Paragraph Separator (PS).
+
+It is recommended to remove them from the file. This can be configured via `editor.unusualLineTerminators`.</source>
+      </trans-unit>
+      <trans-unit id="unusualLineTerminators.fix">
+        <source xml:lang="en">Fix this file</source>
+      </trans-unit>
+      <trans-unit id="unusualLineTerminators.ignore">
+        <source xml:lang="en">Ignore problem for this file</source>
       </trans-unit>
     </body>
   </file>
@@ -1010,77 +1008,6 @@ This check can be disabled via `editor.removeUnusualLineTerminators`.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/message/messageController" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="editor.readonly">
-        <source xml:lang="en">Cannot edit in read-only editor</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/gotoSymbol/peek/referencesController" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="labelLoading">
-        <source xml:lang="en">Loading...</source>
-      </trans-unit>
-      <trans-unit id="metaTitle.N">
-        <source xml:lang="en">{0} ({1})</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/gotoSymbol/referencesModel" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="aria.oneReference">
-        <source xml:lang="en">symbol in {0} on line {1} at column {2}</source>
-      </trans-unit>
-      <trans-unit id="aria.fileReferences.1">
-        <source xml:lang="en">1 symbol in {0}, full path {1}</source>
-      </trans-unit>
-      <trans-unit id="aria.fileReferences.N">
-        <source xml:lang="en">{0} symbols in {1}, full path {2}</source>
-      </trans-unit>
-      <trans-unit id="aria.result.0">
-        <source xml:lang="en">No results found</source>
-      </trans-unit>
-      <trans-unit id="aria.result.1">
-        <source xml:lang="en">Found 1 symbol in {0}</source>
-      </trans-unit>
-      <trans-unit id="aria.result.n1">
-        <source xml:lang="en">Found {0} symbols in {1}</source>
-      </trans-unit>
-      <trans-unit id="aria.result.nm">
-        <source xml:lang="en">Found {0} symbols in {1} files</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/hover/modesContentHover" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="modesContentHover.loading">
-        <source xml:lang="en">Loading...</source>
-      </trans-unit>
-      <trans-unit id="peek problem">
-        <source xml:lang="en">Peek Problem</source>
-      </trans-unit>
-      <trans-unit id="checkingForQuickFixes">
-        <source xml:lang="en">Checking for quick fixes...</source>
-      </trans-unit>
-      <trans-unit id="noQuickFixes">
-        <source xml:lang="en">No quick fixes available</source>
-      </trans-unit>
-      <trans-unit id="quick fixes">
-        <source xml:lang="en">Quick Fix...</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/gotoSymbol/symbolNavigation" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="location.kb">
-        <source xml:lang="en">Symbol {0} of {1}, {2} for next</source>
-      </trans-unit>
-      <trans-unit id="location">
-        <source xml:lang="en">Symbol {0} of {1}</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/gotoError/gotoErrorWidget" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="Error">
@@ -1118,6 +1045,74 @@ This check can be disabled via `editor.removeUnusualLineTerminators`.</source>
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/hover/modesContentHover" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="modesContentHover.loading">
+        <source xml:lang="en">Loading...</source>
+      </trans-unit>
+      <trans-unit id="peek problem">
+        <source xml:lang="en">Peek Problem</source>
+      </trans-unit>
+      <trans-unit id="checkingForQuickFixes">
+        <source xml:lang="en">Checking for quick fixes...</source>
+      </trans-unit>
+      <trans-unit id="noQuickFixes">
+        <source xml:lang="en">No quick fixes available</source>
+      </trans-unit>
+      <trans-unit id="quick fixes">
+        <source xml:lang="en">Quick Fix...</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/gotoSymbol/peek/referencesController" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="labelLoading">
+        <source xml:lang="en">Loading...</source>
+      </trans-unit>
+      <trans-unit id="metaTitle.N">
+        <source xml:lang="en">{0} ({1})</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/message/messageController" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="editor.readonly">
+        <source xml:lang="en">Cannot edit in read-only editor</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/gotoSymbol/referencesModel" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="aria.oneReference">
+        <source xml:lang="en">symbol in {0} on line {1} at column {2}</source>
+      </trans-unit>
+      <trans-unit id="aria.fileReferences.1">
+        <source xml:lang="en">1 symbol in {0}, full path {1}</source>
+      </trans-unit>
+      <trans-unit id="aria.fileReferences.N">
+        <source xml:lang="en">{0} symbols in {1}, full path {2}</source>
+      </trans-unit>
+      <trans-unit id="aria.result.0">
+        <source xml:lang="en">No results found</source>
+      </trans-unit>
+      <trans-unit id="aria.result.1">
+        <source xml:lang="en">Found 1 symbol in {0}</source>
+      </trans-unit>
+      <trans-unit id="aria.result.n1">
+        <source xml:lang="en">Found {0} symbols in {1}</source>
+      </trans-unit>
+      <trans-unit id="aria.result.nm">
+        <source xml:lang="en">Found {0} symbols in {1} files</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/parameterHints/parameterHintsWidget" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="hint_Duplicated5">
+        <source xml:lang="en">{0}, hint</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/rename/renameInputField" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="renameAriaLabel">
@@ -1129,10 +1124,13 @@ This check can be disabled via `editor.removeUnusualLineTerminators`.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/parameterHints/parameterHintsWidget" source-language="en" datatype="plaintext">
+  <file original="src/vs/editor/contrib/gotoSymbol/symbolNavigation" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="hint_Duplicated5">
-        <source xml:lang="en">{0}, hint</source>
+      <trans-unit id="location.kb">
+        <source xml:lang="en">Symbol {0} of {1}, {2} for next</source>
+      </trans-unit>
+      <trans-unit id="location">
+        <source xml:lang="en">Symbol {0} of {1}</source>
       </trans-unit>
     </body>
   </file>
@@ -1154,10 +1152,10 @@ This check can be disabled via `editor.removeUnusualLineTerminators`.</source>
         <source xml:lang="en">Color of the match highlights in the suggest widget.</source>
       </trans-unit>
       <trans-unit id="readMore">
-        <source xml:lang="en">Read More...{0}</source>
+        <source xml:lang="en">Read More ({0})</source>
       </trans-unit>
       <trans-unit id="readLess">
-        <source xml:lang="en">Read less...{0}</source>
+        <source xml:lang="en">Read Less ({0})</source>
       </trans-unit>
       <trans-unit id="loading">
         <source xml:lang="en">Loading...</source>
@@ -1600,19 +1598,6 @@ This check can be disabled via `editor.removeUnusualLineTerminators`.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/gotoSymbol/peek/referencesTree" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="referencesCount">
-        <source xml:lang="en">{0} references</source>
-      </trans-unit>
-      <trans-unit id="referenceCount">
-        <source xml:lang="en">{0} reference</source>
-      </trans-unit>
-      <trans-unit id="treeAriaLabel">
-        <source xml:lang="en">References</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/codeAction/lightBulbWidget" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="prefferedQuickFixWithKb">
@@ -1623,6 +1608,19 @@ This check can be disabled via `editor.removeUnusualLineTerminators`.</source>
       </trans-unit>
       <trans-unit id="quickFix">
         <source xml:lang="en">Show Fixes</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/gotoSymbol/peek/referencesTree" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="referencesCount">
+        <source xml:lang="en">{0} references</source>
+      </trans-unit>
+      <trans-unit id="referenceCount">
+        <source xml:lang="en">{0} reference</source>
+      </trans-unit>
+      <trans-unit id="treeAriaLabel">
+        <source xml:lang="en">References</source>
       </trans-unit>
     </body>
   </file>

@@ -126,6 +126,16 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/services/themes/browser/fileIconThemeData" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="error.cannotparseicontheme_Duplicated9">
+        <source xml:lang="en">Problems parsing file icons file: {0}</source>
+      </trans-unit>
+      <trans-unit id="error.invalidformat_Duplicated11">
+        <source xml:lang="en">Invalid format for file icons theme file: Object expected.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/services/themes/common/fileIconThemeSchema" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="schema.folderExpanded">
@@ -170,31 +180,31 @@
       <trans-unit id="schema.fonts">
         <source xml:lang="en">Fonts that are used in the icon definitions.</source>
       </trans-unit>
-      <trans-unit id="schema.id_Duplicated9">
+      <trans-unit id="schema.id_Duplicated14">
         <source xml:lang="en">The ID of the font.</source>
       </trans-unit>
-      <trans-unit id="schema.id.formatError_Duplicated11">
+      <trans-unit id="schema.id.formatError_Duplicated16">
         <source xml:lang="en">The ID must only contain letter, numbers, underscore and minus.</source>
       </trans-unit>
-      <trans-unit id="schema.src_Duplicated13">
+      <trans-unit id="schema.src_Duplicated18">
         <source xml:lang="en">The location of the font.</source>
       </trans-unit>
-      <trans-unit id="schema.font-path_Duplicated15">
+      <trans-unit id="schema.font-path_Duplicated20">
         <source xml:lang="en">The font path, relative to the current file icon theme file.</source>
       </trans-unit>
-      <trans-unit id="schema.font-format_Duplicated17">
+      <trans-unit id="schema.font-format_Duplicated22">
         <source xml:lang="en">The format of the font.</source>
       </trans-unit>
-      <trans-unit id="schema.font-weight_Duplicated19">
+      <trans-unit id="schema.font-weight_Duplicated24">
         <source xml:lang="en">The weight of the font. See https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight for valid values.</source>
       </trans-unit>
-      <trans-unit id="schema.font-style_Duplicated21">
+      <trans-unit id="schema.font-style_Duplicated26">
         <source xml:lang="en">The style of the font. See https://developer.mozilla.org/en-US/docs/Web/CSS/font-style for valid values.</source>
       </trans-unit>
       <trans-unit id="schema.font-size">
         <source xml:lang="en">The default size of the font. See https://developer.mozilla.org/en-US/docs/Web/CSS/font-size for valid values.</source>
       </trans-unit>
-      <trans-unit id="schema.iconDefinitions_Duplicated23">
+      <trans-unit id="schema.iconDefinitions_Duplicated28">
         <source xml:lang="en">Description of all icons that can be used when associating files to icons.</source>
       </trans-unit>
       <trans-unit id="schema.iconDefinition">
@@ -223,135 +233,6 @@
       </trans-unit>
       <trans-unit id="schema.hidesExplorerArrows">
         <source xml:lang="en">Configures whether the file explorer's arrows should be hidden when this theme is active.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/services/themes/common/colorThemeData" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="error.cannotparsejson">
-        <source xml:lang="en">Problems parsing JSON theme file: {0}</source>
-      </trans-unit>
-      <trans-unit id="error.invalidformat_Duplicated25">
-        <source xml:lang="en">Invalid format for JSON theme file: Object expected.</source>
-      </trans-unit>
-      <trans-unit id="error.invalidformat.colors">
-        <source xml:lang="en">Problem parsing color theme file: {0}. Property 'colors' is not of type 'object'.</source>
-        <note>{0} will be replaced by a path. Values in quotes should not be translated.</note>
-      </trans-unit>
-      <trans-unit id="error.invalidformat.tokenColors">
-        <source xml:lang="en">Problem parsing color theme file: {0}. Property 'tokenColors' should be either an array specifying colors or a path to a TextMate theme file</source>
-        <note>{0} will be replaced by a path. Values in quotes should not be translated.</note>
-      </trans-unit>
-      <trans-unit id="error.invalidformat.semanticTokenColors">
-        <source xml:lang="en">Problem parsing color theme file: {0}. Property 'semanticTokenColors' conatains a invalid selector</source>
-        <note>{0} will be replaced by a path. Values in quotes should not be translated.</note>
-      </trans-unit>
-      <trans-unit id="error.plist.invalidformat">
-        <source xml:lang="en">Problem parsing tmTheme file: {0}. 'settings' is not array.</source>
-      </trans-unit>
-      <trans-unit id="error.cannotparse">
-        <source xml:lang="en">Problems parsing tmTheme file: {0}</source>
-      </trans-unit>
-      <trans-unit id="error.cannotload">
-        <source xml:lang="en">Problems loading tmTheme file {0}: {1}</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/services/themes/common/themeExtensionPoints" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="vscode.extension.contributes.themes">
-        <source xml:lang="en">Contributes textmate color themes.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.themes.id">
-        <source xml:lang="en">Id of the color theme as used in the user settings.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.themes.label">
-        <source xml:lang="en">Label of the color theme as shown in the UI.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.themes.uiTheme">
-        <source xml:lang="en">Base theme defining the colors around the editor: 'vs' is the light color theme, 'vs-dark' is the dark color theme. 'hc-black' is the dark high contrast theme.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.themes.path">
-        <source xml:lang="en">Path of the tmTheme file. The path is relative to the extension folder and is typically './colorthemes/awesome-color-theme.json'.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.iconThemes">
-        <source xml:lang="en">Contributes file icon themes.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.iconThemes.id">
-        <source xml:lang="en">Id of the file icon theme as used in the user settings.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.iconThemes.label">
-        <source xml:lang="en">Label of the file icon theme as shown in the UI.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.iconThemes.path">
-        <source xml:lang="en">Path of the file icon theme definition file. The path is relative to the extension folder and is typically './fileicons/awesome-icon-theme.json'.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.productIconThemes">
-        <source xml:lang="en">Contributes product icon themes.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.productIconThemes.id">
-        <source xml:lang="en">Id of the product icon theme as used in the user settings.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.productIconThemes.label">
-        <source xml:lang="en">Label of the product icon theme as shown in the UI.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.productIconThemes.path">
-        <source xml:lang="en">Path of the product icon theme definition file. The path is relative to the extension folder and is typically './producticons/awesome-product-icon-theme.json'.</source>
-      </trans-unit>
-      <trans-unit id="reqarray">
-        <source xml:lang="en">Extension point `{0}` must be an array.</source>
-      </trans-unit>
-      <trans-unit id="reqpath">
-        <source xml:lang="en">Expected string in `contributes.{0}.path`. Provided value: {1}</source>
-      </trans-unit>
-      <trans-unit id="reqid">
-        <source xml:lang="en">Expected string in `contributes.{0}.id`. Provided value: {1}</source>
-      </trans-unit>
-      <trans-unit id="invalid.path.1">
-        <source xml:lang="en">Expected `contributes.{0}.path` ({1}) to be included inside extension's folder ({2}). This might make the extension non-portable.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/services/themes/common/colorThemeSchema" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="schema.token.settings">
-        <source xml:lang="en">Colors and styles for the token.</source>
-      </trans-unit>
-      <trans-unit id="schema.token.foreground">
-        <source xml:lang="en">Foreground color for the token.</source>
-      </trans-unit>
-      <trans-unit id="schema.token.background.warning">
-        <source xml:lang="en">Token background colors are currently not supported.</source>
-      </trans-unit>
-      <trans-unit id="schema.token.fontStyle">
-        <source xml:lang="en">Font style of the rule: 'italic', 'bold' or 'underline' or a combination. The empty string unsets inherited settings.</source>
-      </trans-unit>
-      <trans-unit id="schema.fontStyle.error">
-        <source xml:lang="en">Font style must be 'italic', 'bold' or 'underline' or a combination or the empty string.</source>
-      </trans-unit>
-      <trans-unit id="schema.token.fontStyle.none">
-        <source xml:lang="en">None (clear inherited style)</source>
-      </trans-unit>
-      <trans-unit id="schema.properties.name">
-        <source xml:lang="en">Description of the rule.</source>
-      </trans-unit>
-      <trans-unit id="schema.properties.scope">
-        <source xml:lang="en">Scope selector against which this rule matches.</source>
-      </trans-unit>
-      <trans-unit id="schema.workbenchColors">
-        <source xml:lang="en">Colors in the workbench</source>
-      </trans-unit>
-      <trans-unit id="schema.tokenColors.path">
-        <source xml:lang="en">Path to a tmTheme file (relative to the current file).</source>
-      </trans-unit>
-      <trans-unit id="schema.colors">
-        <source xml:lang="en">Colors for syntax highlighting</source>
-      </trans-unit>
-      <trans-unit id="schema.supportsSemanticHighlighting">
-        <source xml:lang="en">Whether semantic highlighting should be enabled for this theme.</source>
-      </trans-unit>
-      <trans-unit id="schema.semanticTokenColors">
-        <source xml:lang="en">Colors for semantic tokens</source>
       </trans-unit>
     </body>
   </file>
@@ -443,13 +324,117 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/services/themes/browser/fileIconThemeData" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/services/themes/common/themeExtensionPoints" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="error.cannotparseicontheme_Duplicated28">
-        <source xml:lang="en">Problems parsing file icons file: {0}</source>
+      <trans-unit id="vscode.extension.contributes.themes">
+        <source xml:lang="en">Contributes textmate color themes.</source>
       </trans-unit>
-      <trans-unit id="error.invalidformat_Duplicated26">
-        <source xml:lang="en">Invalid format for file icons theme file: Object expected.</source>
+      <trans-unit id="vscode.extension.contributes.themes.id">
+        <source xml:lang="en">Id of the color theme as used in the user settings.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.label">
+        <source xml:lang="en">Label of the color theme as shown in the UI.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.uiTheme">
+        <source xml:lang="en">Base theme defining the colors around the editor: 'vs' is the light color theme, 'vs-dark' is the dark color theme. 'hc-black' is the dark high contrast theme.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.path">
+        <source xml:lang="en">Path of the tmTheme file. The path is relative to the extension folder and is typically './colorthemes/awesome-color-theme.json'.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.iconThemes">
+        <source xml:lang="en">Contributes file icon themes.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.iconThemes.id">
+        <source xml:lang="en">Id of the file icon theme as used in the user settings.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.iconThemes.label">
+        <source xml:lang="en">Label of the file icon theme as shown in the UI.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.iconThemes.path">
+        <source xml:lang="en">Path of the file icon theme definition file. The path is relative to the extension folder and is typically './fileicons/awesome-icon-theme.json'.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.productIconThemes">
+        <source xml:lang="en">Contributes product icon themes.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.productIconThemes.id">
+        <source xml:lang="en">Id of the product icon theme as used in the user settings.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.productIconThemes.label">
+        <source xml:lang="en">Label of the product icon theme as shown in the UI.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.productIconThemes.path">
+        <source xml:lang="en">Path of the product icon theme definition file. The path is relative to the extension folder and is typically './producticons/awesome-product-icon-theme.json'.</source>
+      </trans-unit>
+      <trans-unit id="reqarray">
+        <source xml:lang="en">Extension point `{0}` must be an array.</source>
+      </trans-unit>
+      <trans-unit id="reqpath">
+        <source xml:lang="en">Expected string in `contributes.{0}.path`. Provided value: {1}</source>
+      </trans-unit>
+      <trans-unit id="reqid">
+        <source xml:lang="en">Expected string in `contributes.{0}.id`. Provided value: {1}</source>
+      </trans-unit>
+      <trans-unit id="invalid.path.1">
+        <source xml:lang="en">Expected `contributes.{0}.path` ({1}) to be included inside extension's folder ({2}). This might make the extension non-portable.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/common/productIconThemeSchema" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="schema.id_Duplicated15">
+        <source xml:lang="en">The ID of the font.</source>
+      </trans-unit>
+      <trans-unit id="schema.id.formatError_Duplicated17">
+        <source xml:lang="en">The ID must only contain letters, numbers, underscore and minus.</source>
+      </trans-unit>
+      <trans-unit id="schema.src_Duplicated19">
+        <source xml:lang="en">The location of the font.</source>
+      </trans-unit>
+      <trans-unit id="schema.font-path_Duplicated21">
+        <source xml:lang="en">The font path, relative to the current product icon theme file.</source>
+      </trans-unit>
+      <trans-unit id="schema.font-format_Duplicated23">
+        <source xml:lang="en">The format of the font.</source>
+      </trans-unit>
+      <trans-unit id="schema.font-weight_Duplicated25">
+        <source xml:lang="en">The weight of the font. See https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight for valid values.</source>
+      </trans-unit>
+      <trans-unit id="schema.font-style_Duplicated27">
+        <source xml:lang="en">The style of the font. See https://developer.mozilla.org/en-US/docs/Web/CSS/font-style for valid values.</source>
+      </trans-unit>
+      <trans-unit id="schema.iconDefinitions_Duplicated29">
+        <source xml:lang="en">Association of icon name to a font character.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/common/colorThemeData" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="error.cannotparsejson">
+        <source xml:lang="en">Problems parsing JSON theme file: {0}</source>
+      </trans-unit>
+      <trans-unit id="error.invalidformat_Duplicated12">
+        <source xml:lang="en">Invalid format for JSON theme file: Object expected.</source>
+      </trans-unit>
+      <trans-unit id="error.invalidformat.colors">
+        <source xml:lang="en">Problem parsing color theme file: {0}. Property 'colors' is not of type 'object'.</source>
+        <note>{0} will be replaced by a path. Values in quotes should not be translated.</note>
+      </trans-unit>
+      <trans-unit id="error.invalidformat.tokenColors">
+        <source xml:lang="en">Problem parsing color theme file: {0}. Property 'tokenColors' should be either an array specifying colors or a path to a TextMate theme file</source>
+        <note>{0} will be replaced by a path. Values in quotes should not be translated.</note>
+      </trans-unit>
+      <trans-unit id="error.invalidformat.semanticTokenColors">
+        <source xml:lang="en">Problem parsing color theme file: {0}. Property 'semanticTokenColors' conatains a invalid selector</source>
+        <note>{0} will be replaced by a path. Values in quotes should not be translated.</note>
+      </trans-unit>
+      <trans-unit id="error.plist.invalidformat">
+        <source xml:lang="en">Problem parsing tmTheme file: {0}. 'settings' is not array.</source>
+      </trans-unit>
+      <trans-unit id="error.cannotparse">
+        <source xml:lang="en">Problems parsing tmTheme file: {0}</source>
+      </trans-unit>
+      <trans-unit id="error.cannotload">
+        <source xml:lang="en">Problems loading tmTheme file {0}: {1}</source>
       </trans-unit>
     </body>
   </file>
@@ -462,10 +447,10 @@
       <trans-unit id="defaultTheme">
         <source xml:lang="en">Default</source>
       </trans-unit>
-      <trans-unit id="error.cannotparseicontheme_Duplicated29">
+      <trans-unit id="error.cannotparseicontheme_Duplicated10">
         <source xml:lang="en">Problems parsing product icons file: {0}</source>
       </trans-unit>
-      <trans-unit id="error.invalidformat_Duplicated27">
+      <trans-unit id="error.invalidformat_Duplicated13">
         <source xml:lang="en">Invalid format for product icons theme file: Object expected.</source>
       </trans-unit>
       <trans-unit id="error.missingProperties">
@@ -488,31 +473,46 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/services/themes/common/productIconThemeSchema" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/services/themes/common/colorThemeSchema" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="schema.id_Duplicated10">
-        <source xml:lang="en">The ID of the font.</source>
+      <trans-unit id="schema.token.settings">
+        <source xml:lang="en">Colors and styles for the token.</source>
       </trans-unit>
-      <trans-unit id="schema.id.formatError_Duplicated12">
-        <source xml:lang="en">The ID must only contain letters, numbers, underscore and minus.</source>
+      <trans-unit id="schema.token.foreground">
+        <source xml:lang="en">Foreground color for the token.</source>
       </trans-unit>
-      <trans-unit id="schema.src_Duplicated14">
-        <source xml:lang="en">The location of the font.</source>
+      <trans-unit id="schema.token.background.warning">
+        <source xml:lang="en">Token background colors are currently not supported.</source>
       </trans-unit>
-      <trans-unit id="schema.font-path_Duplicated16">
-        <source xml:lang="en">The font path, relative to the current product icon theme file.</source>
+      <trans-unit id="schema.token.fontStyle">
+        <source xml:lang="en">Font style of the rule: 'italic', 'bold' or 'underline' or a combination. The empty string unsets inherited settings.</source>
       </trans-unit>
-      <trans-unit id="schema.font-format_Duplicated18">
-        <source xml:lang="en">The format of the font.</source>
+      <trans-unit id="schema.fontStyle.error">
+        <source xml:lang="en">Font style must be 'italic', 'bold' or 'underline' or a combination or the empty string.</source>
       </trans-unit>
-      <trans-unit id="schema.font-weight_Duplicated20">
-        <source xml:lang="en">The weight of the font. See https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight for valid values.</source>
+      <trans-unit id="schema.token.fontStyle.none">
+        <source xml:lang="en">None (clear inherited style)</source>
       </trans-unit>
-      <trans-unit id="schema.font-style_Duplicated22">
-        <source xml:lang="en">The style of the font. See https://developer.mozilla.org/en-US/docs/Web/CSS/font-style for valid values.</source>
+      <trans-unit id="schema.properties.name">
+        <source xml:lang="en">Description of the rule.</source>
       </trans-unit>
-      <trans-unit id="schema.iconDefinitions_Duplicated24">
-        <source xml:lang="en">Association of icon name to a font character.</source>
+      <trans-unit id="schema.properties.scope">
+        <source xml:lang="en">Scope selector against which this rule matches.</source>
+      </trans-unit>
+      <trans-unit id="schema.workbenchColors">
+        <source xml:lang="en">Colors in the workbench</source>
+      </trans-unit>
+      <trans-unit id="schema.tokenColors.path">
+        <source xml:lang="en">Path to a tmTheme file (relative to the current file).</source>
+      </trans-unit>
+      <trans-unit id="schema.colors">
+        <source xml:lang="en">Colors for syntax highlighting</source>
+      </trans-unit>
+      <trans-unit id="schema.supportsSemanticHighlighting">
+        <source xml:lang="en">Whether semantic highlighting should be enabled for this theme.</source>
+      </trans-unit>
+      <trans-unit id="schema.semanticTokenColors">
+        <source xml:lang="en">Colors for semantic tokens</source>
       </trans-unit>
     </body>
   </file>

@@ -38,6 +38,12 @@
       <trans-unit id="view">
         <source xml:lang="en">View</source>
       </trans-unit>
+      <trans-unit id="findInFiles.description">
+        <source xml:lang="en">Open the search viewlet</source>
+      </trans-unit>
+      <trans-unit id="findInFiles.args">
+        <source xml:lang="en">A set of options for the search viewlet</source>
+      </trans-unit>
       <trans-unit id="findInFiles">
         <source xml:lang="en">Find in Files</source>
       </trans-unit>
@@ -116,7 +122,7 @@
         <source xml:lang="en">Controls whether the search will be shown as a view in the sidebar or as a panel in the panel area for more horizontal space.</source>
       </trans-unit>
       <trans-unit id="search.location.deprecationMessage">
-        <source xml:lang="en">This setting is deprecated. Please use the search view's context menu instead.</source>
+        <source xml:lang="en">This setting is deprecated. Please use drag and drop instead by dragging the search icon.</source>
       </trans-unit>
       <trans-unit id="search.collapseResults.auto">
         <source xml:lang="en">Files with less than 10 results are expanded. Others are collapsed.</source>
@@ -171,6 +177,9 @@
       </trans-unit>
       <trans-unit id="search.searchEditor.reusePriorSearchConfiguration">
         <source xml:lang="en">When enabled, new Search Editors will reuse the includes, excludes, and flags of the previously opened Search Editor</source>
+      </trans-unit>
+      <trans-unit id="search.searchEditor.defaultNumberOfContextLines">
+        <source xml:lang="en">The default number of surrounding context lines to use when creating new Search Editors. If using `#search.searchEditor.reusePriorSearchConfiguration#`, this can be set to `null` (empty) to use the prior Search Editor's configuration.</source>
       </trans-unit>
       <trans-unit id="searchSortOrder.default">
         <source xml:lang="en">Results are sorted by folder and file names, in alphabetical order.</source>
@@ -348,34 +357,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/search/browser/searchWidget" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="search.action.replaceAll.disabled.label">
-        <source xml:lang="en">Replace All (Submit Search to Enable)</source>
-      </trans-unit>
-      <trans-unit id="search.action.replaceAll.enabled.label">
-        <source xml:lang="en">Replace All</source>
-      </trans-unit>
-      <trans-unit id="search.replace.toggle.button.title">
-        <source xml:lang="en">Toggle Replace</source>
-      </trans-unit>
-      <trans-unit id="label.Search">
-        <source xml:lang="en">Search: Type Search Term and press Enter to search or Escape to cancel</source>
-      </trans-unit>
-      <trans-unit id="search.placeHolder">
-        <source xml:lang="en">Search</source>
-      </trans-unit>
-      <trans-unit id="showContext">
-        <source xml:lang="en">Show Context</source>
-      </trans-unit>
-      <trans-unit id="label.Replace">
-        <source xml:lang="en">Replace: Type replace term and press Enter to preview or Escape to cancel</source>
-      </trans-unit>
-      <trans-unit id="search.replace.placeHolder">
-        <source xml:lang="en">Replace</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/search/browser/searchActions" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="showSearch">
@@ -432,6 +413,34 @@
       </trans-unit>
       <trans-unit id="openToBottom_Duplicated5">
         <source xml:lang="en">Open to the Bottom</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/search/browser/searchWidget" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="search.action.replaceAll.disabled.label">
+        <source xml:lang="en">Replace All (Submit Search to Enable)</source>
+      </trans-unit>
+      <trans-unit id="search.action.replaceAll.enabled.label">
+        <source xml:lang="en">Replace All</source>
+      </trans-unit>
+      <trans-unit id="search.replace.toggle.button.title">
+        <source xml:lang="en">Toggle Replace</source>
+      </trans-unit>
+      <trans-unit id="label.Search">
+        <source xml:lang="en">Search: Type Search Term and press Enter to search or Escape to cancel</source>
+      </trans-unit>
+      <trans-unit id="search.placeHolder">
+        <source xml:lang="en">Search</source>
+      </trans-unit>
+      <trans-unit id="showContext">
+        <source xml:lang="en">Show Context</source>
+      </trans-unit>
+      <trans-unit id="label.Replace">
+        <source xml:lang="en">Replace: Type replace term and press Enter to preview or Escape to cancel</source>
+      </trans-unit>
+      <trans-unit id="search.replace.placeHolder">
+        <source xml:lang="en">Replace</source>
       </trans-unit>
     </body>
   </file>
@@ -508,6 +517,13 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/search/common/queryBuilder" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="search.noWorkspaceWithName">
+        <source xml:lang="en">No folder in workspace with name: {0}</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/search/browser/patternInputWidget" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="defaultLabel">
@@ -515,13 +531,6 @@
       </trans-unit>
       <trans-unit id="useExcludesAndIgnoreFilesDescription">
         <source xml:lang="en">Use Exclude Settings and Ignore Files</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/search/common/queryBuilder" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="search.noWorkspaceWithName">
-        <source xml:lang="en">No folder in workspace with name: {0}</source>
       </trans-unit>
     </body>
   </file>

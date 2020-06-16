@@ -79,23 +79,29 @@
       <trans-unit id="too large">
         <source xml:lang="en">Disabled syncing {0} because size of the {1} file to sync is larger than {2}. Please open the file and reduce the size and enable sync</source>
       </trans-unit>
+      <trans-unit id="error upgrade required">
+        <source xml:lang="en">Preferences sync is disabled because the current version ({0}, {1}) is not compatible with the sync service. Please update before turning on sync.</source>
+      </trans-unit>
       <trans-unit id="open file">
         <source xml:lang="en">Open {0} File</source>
       </trans-unit>
-      <trans-unit id="error upgrade required">
-        <source xml:lang="en">Turned off sync because the current version ({0}, {1}) of {2} is not compatible with the Preferences Sync Service. Please update and turn on sync to continue syncing.</source>
-      </trans-unit>
       <trans-unit id="errorInvalidConfiguration">
-        <source xml:lang="en">Unable to sync {0} because there are some errors/warnings in the file. Please open the file to correct errors/warnings in it.</source>
-      </trans-unit>
-      <trans-unit id="sign in to sync preferences">
-        <source xml:lang="en">Sign in to Sync Preferences</source>
+        <source xml:lang="en">Unable to sync {0} because the content in the file is not valid. Please open the file and correct it.</source>
       </trans-unit>
       <trans-unit id="has conflicts">
         <source xml:lang="en">Preferences Sync: Conflicts Detected</source>
       </trans-unit>
       <trans-unit id="turning on syncing">
         <source xml:lang="en">Turning on Preferences Sync...</source>
+      </trans-unit>
+      <trans-unit id="sign in to sync preferences">
+        <source xml:lang="en">Sign in to Sync Preferences</source>
+      </trans-unit>
+      <trans-unit id="too large while starting sync">
+        <source xml:lang="en">Preferences sync cannot be turned on because size of the {0} file to sync is larger than {1}. Please open the file and reduce the size and turn on sync</source>
+      </trans-unit>
+      <trans-unit id="error upgrade required while starting sync">
+        <source xml:lang="en">Preferences sync cannot be turned on because the current version ({0}, {1}) is not compatible with the sync service. Please update before turning on sync.</source>
       </trans-unit>
       <trans-unit id="turn on failed">
         <source xml:lang="en">Error while starting Sync: {0}</source>
@@ -156,10 +162,10 @@
         <source xml:lang="en">Turning on Preferences Sync...</source>
       </trans-unit>
       <trans-unit id="sign in global">
-        <source xml:lang="en">Sign in to Sync Preferences(1)</source>
+        <source xml:lang="en">Sign in to Sync Preferences</source>
       </trans-unit>
       <trans-unit id="sign in accounts">
-        <source xml:lang="en">Sign in to Sync Preferences</source>
+        <source xml:lang="en">Sign in to Sync Preferences (1)</source>
       </trans-unit>
       <trans-unit id="resolveConflicts_global">
         <source xml:lang="en">Preferences Sync: Show Settings Conflicts (1)</source>
@@ -228,14 +234,11 @@
       <trans-unit id="workbench.actions.sync.editCurrentMachineName">
         <source xml:lang="en">Edit Name</source>
       </trans-unit>
-      <trans-unit id="placeholder">
-        <source xml:lang="en">Enter the name of the machine</source>
-      </trans-unit>
       <trans-unit id="workbench.actions.sync.resolveResourceRef">
         <source xml:lang="en">Show raw JSON sync data</source>
       </trans-unit>
       <trans-unit id="workbench.actions.sync.replaceCurrent">
-        <source xml:lang="en">Download...</source>
+        <source xml:lang="en">Restore</source>
       </trans-unit>
       <trans-unit id="confirm replace">
         <source xml:lang="en">Would you like to replace your current {0} with selected?</source>
@@ -261,12 +264,24 @@
       <trans-unit id="not syncing">
         <source xml:lang="en">Not syncing</source>
       </trans-unit>
+      <trans-unit id="no data">
+        <source xml:lang="en">No Data</source>
+      </trans-unit>
       <trans-unit id="no machines">
         <source xml:lang="en">No Machines</source>
       </trans-unit>
       <trans-unit id="current">
         <source xml:lang="en">Current</source>
         <note>Current machine</note>
+      </trans-unit>
+      <trans-unit id="placeholder">
+        <source xml:lang="en">Enter the name of the machine</source>
+      </trans-unit>
+      <trans-unit id="not found">
+        <source xml:lang="en">machine not found with id: {0}</source>
+      </trans-unit>
+      <trans-unit id="valid message">
+        <source xml:lang="en">Machine name should be unique and not empty</source>
       </trans-unit>
     </body>
   </file>

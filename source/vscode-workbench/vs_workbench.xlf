@@ -164,6 +164,9 @@ This option requires restart to take effect.</source>
       <trans-unit id="argv.forceColorProfile">
         <source xml:lang="en">Allows to override the color profile to use. If you experience colors appear badly, try to set this to `srgb` and restart.</source>
       </trans-unit>
+      <trans-unit id="argv.enebleProposedApi">
+        <source xml:lang="en">Enable proposed APIs for a list of extension ids (such as `vscode.git`). Proposed APIs are unstable and subject to breaking without warning at any time. This should only be set for extension development and testing purposes.</source>
+      </trans-unit>
       <trans-unit id="argv.force-renderer-accessibility">
         <source xml:lang="en">Forces the renderer to be accessible. ONLY change this if you are using a screen reader on Linux. On other platforms the renderer will automatically be accessible. This flag is automatically set if you have editor.accessibilitySupport: on.</source>
       </trans-unit>
@@ -183,16 +186,6 @@ This option requires restart to take effect.</source>
       </trans-unit>
       <trans-unit id="mPreferences">
         <source xml:lang="en">Preferences</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/editor/editor" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="preview">
-        <source xml:lang="en">{0}, preview</source>
-      </trans-unit>
-      <trans-unit id="pinned">
-        <source xml:lang="en">{0}, pinned</source>
       </trans-unit>
     </body>
   </file>
@@ -334,10 +327,10 @@ This option requires restart to take effect.</source>
         <source xml:lang="en">Panel section header foreground color. Panels are shown below the editor area and contain views like output and integrated terminal.</source>
       </trans-unit>
       <trans-unit id="panelSectionHeaderBorder">
-        <source xml:lang="en">Panel section header border color. Panels are shown below the editor area and contain views like output and integrated terminal.</source>
+        <source xml:lang="en">Panel section header border color used when multiple views are stacked vertically in the panel. Panels are shown below the editor area and contain views like output and integrated terminal.</source>
       </trans-unit>
       <trans-unit id="panelSectionBorder">
-        <source xml:lang="en">Panel section border color. Panels are shown below the editor area and contain views like output and integrated terminal.</source>
+        <source xml:lang="en">Panel section border color used when multiple views are stacked horizontally in the panel. Panels are shown below the editor area and contain views like output and integrated terminal.</source>
       </trans-unit>
       <trans-unit id="statusBarForeground">
         <source xml:lang="en">Status bar foreground color when a workspace is opened. The status bar is shown in the bottom of the window.</source>
@@ -508,34 +501,18 @@ This option requires restart to take effect.</source>
       <trans-unit id="sideBySideLabels_Duplicated15">
         <source xml:lang="en">{0} - {1}</source>
       </trans-unit>
+      <trans-unit id="preview">
+        <source xml:lang="en">{0}, preview</source>
+      </trans-unit>
+      <trans-unit id="pinned">
+        <source xml:lang="en">{0}, pinned</source>
+      </trans-unit>
     </body>
   </file>
   <file original="src/vs/workbench/common/views" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="duplicateId">
         <source xml:lang="en">A view with id '{0}' is already registered</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/actions/textInputActions" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="undo">
-        <source xml:lang="en">Undo</source>
-      </trans-unit>
-      <trans-unit id="redo">
-        <source xml:lang="en">Redo</source>
-      </trans-unit>
-      <trans-unit id="cut">
-        <source xml:lang="en">Cut</source>
-      </trans-unit>
-      <trans-unit id="copy">
-        <source xml:lang="en">Copy</source>
-      </trans-unit>
-      <trans-unit id="paste">
-        <source xml:lang="en">Paste</source>
-      </trans-unit>
-      <trans-unit id="selectAll">
-        <source xml:lang="en">Select All</source>
       </trans-unit>
     </body>
   </file>
@@ -886,48 +863,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/actions/navigationActions" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="navigateLeft">
-        <source xml:lang="en">Navigate to the View on the Left</source>
-      </trans-unit>
-      <trans-unit id="navigateRight">
-        <source xml:lang="en">Navigate to the View on the Right</source>
-      </trans-unit>
-      <trans-unit id="navigateUp">
-        <source xml:lang="en">Navigate to the View Above</source>
-      </trans-unit>
-      <trans-unit id="navigateDown">
-        <source xml:lang="en">Navigate to the View Below</source>
-      </trans-unit>
-      <trans-unit id="focusNextPart">
-        <source xml:lang="en">Focus Next Part</source>
-      </trans-unit>
-      <trans-unit id="focusPreviousPart">
-        <source xml:lang="en">Focus Previous Part</source>
-      </trans-unit>
-      <trans-unit id="view_Duplicated6">
-        <source xml:lang="en">View</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/actions/workspaceCommands" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="addFolderToWorkspace">
-        <source xml:lang="en">Add Folder to Workspace...</source>
-      </trans-unit>
-      <trans-unit id="add">
-        <source xml:lang="en">&amp;&amp;Add</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="addFolderToWorkspaceTitle">
-        <source xml:lang="en">Add Folder to Workspace</source>
-      </trans-unit>
-      <trans-unit id="workspaceFolderPickerPlaceholder">
-        <source xml:lang="en">Select workspace folder</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/browser/actions/helpActions" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="keybindingsReference">
@@ -994,93 +929,9 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/actions/windowActions" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="remove">
-        <source xml:lang="en">Remove from Recently Opened</source>
-      </trans-unit>
-      <trans-unit id="dirtyRecentlyOpened">
-        <source xml:lang="en">Workspace With Dirty Files</source>
-      </trans-unit>
-      <trans-unit id="workspaces_Duplicated19">
-        <source xml:lang="en">workspaces</source>
-      </trans-unit>
-      <trans-unit id="files">
-        <source xml:lang="en">files</source>
-      </trans-unit>
-      <trans-unit id="openRecentPlaceholderMac">
-        <source xml:lang="en">Select to open (hold Cmd-key to force new window or Alt-key for same window)</source>
-      </trans-unit>
-      <trans-unit id="openRecentPlaceholder">
-        <source xml:lang="en">Select to open (hold Ctrl-key to force new window or Alt-key for same window)</source>
-      </trans-unit>
-      <trans-unit id="dirtyWorkspace">
-        <source xml:lang="en">Workspace with Dirty Files</source>
-      </trans-unit>
-      <trans-unit id="dirtyWorkspaceConfirm">
-        <source xml:lang="en">Do you want to open the workspace to review the dirty files?</source>
-      </trans-unit>
-      <trans-unit id="dirtyWorkspaceConfirmDetail">
-        <source xml:lang="en">Workspaces with dirty files cannot be removed until all dirty files have been saved or reverted.</source>
-      </trans-unit>
-      <trans-unit id="recentDirtyAriaLabel">
-        <source xml:lang="en">{0}, dirty workspace</source>
-      </trans-unit>
-      <trans-unit id="openRecent">
-        <source xml:lang="en">Open Recent...</source>
-      </trans-unit>
-      <trans-unit id="quickOpenRecent">
-        <source xml:lang="en">Quick Open Recent...</source>
-      </trans-unit>
-      <trans-unit id="toggleFullScreen">
-        <source xml:lang="en">Toggle Full Screen</source>
-      </trans-unit>
-      <trans-unit id="reloadWindow">
-        <source xml:lang="en">Reload Window</source>
-      </trans-unit>
-      <trans-unit id="about">
-        <source xml:lang="en">About</source>
-      </trans-unit>
-      <trans-unit id="newWindow">
-        <source xml:lang="en">New Window</source>
-      </trans-unit>
-      <trans-unit id="file_Duplicated21">
-        <source xml:lang="en">File</source>
-      </trans-unit>
-      <trans-unit id="view_Duplicated7">
-        <source xml:lang="en">View</source>
-      </trans-unit>
-      <trans-unit id="developer_Duplicated4">
-        <source xml:lang="en">Developer</source>
-      </trans-unit>
-      <trans-unit id="help_Duplicated18">
-        <source xml:lang="en">Help</source>
-      </trans-unit>
-      <trans-unit id="miNewWindow">
-        <source xml:lang="en">New &amp;&amp;Window</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miOpenRecent">
-        <source xml:lang="en">Open &amp;&amp;Recent</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miMore">
-        <source xml:lang="en">&amp;&amp;More...</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miToggleFullScreen">
-        <source xml:lang="en">&amp;&amp;Full Screen</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miAbout">
-        <source xml:lang="en">&amp;&amp;About</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/browser/actions/layoutActions" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="view_Duplicated8">
+      <trans-unit id="view_Duplicated6">
         <source xml:lang="en">View</source>
       </trans-unit>
       <trans-unit id="closeSidebar">
@@ -1221,6 +1072,112 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/browser/actions/textInputActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="undo">
+        <source xml:lang="en">Undo</source>
+      </trans-unit>
+      <trans-unit id="redo">
+        <source xml:lang="en">Redo</source>
+      </trans-unit>
+      <trans-unit id="cut">
+        <source xml:lang="en">Cut</source>
+      </trans-unit>
+      <trans-unit id="copy">
+        <source xml:lang="en">Copy</source>
+      </trans-unit>
+      <trans-unit id="paste">
+        <source xml:lang="en">Paste</source>
+      </trans-unit>
+      <trans-unit id="selectAll">
+        <source xml:lang="en">Select All</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/actions/windowActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="remove">
+        <source xml:lang="en">Remove from Recently Opened</source>
+      </trans-unit>
+      <trans-unit id="dirtyRecentlyOpened">
+        <source xml:lang="en">Workspace With Dirty Files</source>
+      </trans-unit>
+      <trans-unit id="workspaces_Duplicated19">
+        <source xml:lang="en">workspaces</source>
+      </trans-unit>
+      <trans-unit id="files">
+        <source xml:lang="en">files</source>
+      </trans-unit>
+      <trans-unit id="openRecentPlaceholderMac">
+        <source xml:lang="en">Select to open (hold Cmd-key to force new window or Alt-key for same window)</source>
+      </trans-unit>
+      <trans-unit id="openRecentPlaceholder">
+        <source xml:lang="en">Select to open (hold Ctrl-key to force new window or Alt-key for same window)</source>
+      </trans-unit>
+      <trans-unit id="dirtyWorkspace">
+        <source xml:lang="en">Workspace with Dirty Files</source>
+      </trans-unit>
+      <trans-unit id="dirtyWorkspaceConfirm">
+        <source xml:lang="en">Do you want to open the workspace to review the dirty files?</source>
+      </trans-unit>
+      <trans-unit id="dirtyWorkspaceConfirmDetail">
+        <source xml:lang="en">Workspaces with dirty files cannot be removed until all dirty files have been saved or reverted.</source>
+      </trans-unit>
+      <trans-unit id="recentDirtyAriaLabel">
+        <source xml:lang="en">{0}, dirty workspace</source>
+      </trans-unit>
+      <trans-unit id="openRecent">
+        <source xml:lang="en">Open Recent...</source>
+      </trans-unit>
+      <trans-unit id="quickOpenRecent">
+        <source xml:lang="en">Quick Open Recent...</source>
+      </trans-unit>
+      <trans-unit id="toggleFullScreen">
+        <source xml:lang="en">Toggle Full Screen</source>
+      </trans-unit>
+      <trans-unit id="reloadWindow">
+        <source xml:lang="en">Reload Window</source>
+      </trans-unit>
+      <trans-unit id="about">
+        <source xml:lang="en">About</source>
+      </trans-unit>
+      <trans-unit id="newWindow">
+        <source xml:lang="en">New Window</source>
+      </trans-unit>
+      <trans-unit id="file_Duplicated21">
+        <source xml:lang="en">File</source>
+      </trans-unit>
+      <trans-unit id="view_Duplicated7">
+        <source xml:lang="en">View</source>
+      </trans-unit>
+      <trans-unit id="developer_Duplicated4">
+        <source xml:lang="en">Developer</source>
+      </trans-unit>
+      <trans-unit id="help_Duplicated18">
+        <source xml:lang="en">Help</source>
+      </trans-unit>
+      <trans-unit id="miNewWindow">
+        <source xml:lang="en">New &amp;&amp;Window</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miOpenRecent">
+        <source xml:lang="en">Open &amp;&amp;Recent</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miMore">
+        <source xml:lang="en">&amp;&amp;More...</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miToggleFullScreen">
+        <source xml:lang="en">&amp;&amp;Full Screen</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miAbout">
+        <source xml:lang="en">&amp;&amp;About</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/browser/actions/quickAccessActions" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="quickOpen">
@@ -1237,103 +1194,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
       <trans-unit id="quickSelectPrevious">
         <source xml:lang="en">Select Previous in Quick Open</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/api/common/configurationExtensionPoint" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="vscode.extension.contributes.configuration.title">
-        <source xml:lang="en">A summary of the settings. This label will be used in the settings file as separating comment.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.configuration.properties">
-        <source xml:lang="en">Description of the configuration properties.</source>
-      </trans-unit>
-      <trans-unit id="scope.application.description">
-        <source xml:lang="en">Configuration that can be configured only in the user settings.</source>
-      </trans-unit>
-      <trans-unit id="scope.machine.description">
-        <source xml:lang="en">Configuration that can be configured only in the user settings or only in the remote settings.</source>
-      </trans-unit>
-      <trans-unit id="scope.window.description">
-        <source xml:lang="en">Configuration that can be configured in the user, remote or workspace settings.</source>
-      </trans-unit>
-      <trans-unit id="scope.resource.description">
-        <source xml:lang="en">Configuration that can be configured in the user, remote, workspace or folder settings.</source>
-      </trans-unit>
-      <trans-unit id="scope.language-overridable.description">
-        <source xml:lang="en">Resource configuration that can be configured in language specific settings.</source>
-      </trans-unit>
-      <trans-unit id="scope.machine-overridable.description">
-        <source xml:lang="en">Machine configuration that can be configured also in workspace or folder settings.</source>
-      </trans-unit>
-      <trans-unit id="scope.description">
-        <source xml:lang="en">Scope in which the configuration is applicable. Available scopes are `application`, `machine`, `window`, `resource`, and `machine-overridable`.</source>
-      </trans-unit>
-      <trans-unit id="scope.enumDescriptions">
-        <source xml:lang="en">Descriptions for enum values</source>
-      </trans-unit>
-      <trans-unit id="scope.markdownEnumDescriptions">
-        <source xml:lang="en">Descriptions for enum values in the markdown format.</source>
-      </trans-unit>
-      <trans-unit id="scope.markdownDescription">
-        <source xml:lang="en">The description in the markdown format.</source>
-      </trans-unit>
-      <trans-unit id="scope.deprecationMessage">
-        <source xml:lang="en">If set, the property is marked as deprecated and the given message is shown as an explanation.</source>
-      </trans-unit>
-      <trans-unit id="scope.markdownDeprecationMessage">
-        <source xml:lang="en">If set, the property is marked as deprecated and the given message is shown as an explanation in the markdown format.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.defaultConfiguration">
-        <source xml:lang="en">Contributes default editor configuration settings by language.</source>
-      </trans-unit>
-      <trans-unit id="config.property.defaultConfiguration.warning">
-        <source xml:lang="en">Cannot register configuration defaults for '{0}'. Only defaults for language specific settings are supported.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.configuration">
-        <source xml:lang="en">Contributes configuration settings.</source>
-      </trans-unit>
-      <trans-unit id="invalid.title">
-        <source xml:lang="en">'configuration.title' must be a string</source>
-      </trans-unit>
-      <trans-unit id="invalid.properties">
-        <source xml:lang="en">'configuration.properties' must be an object</source>
-      </trans-unit>
-      <trans-unit id="invalid.property">
-        <source xml:lang="en">'configuration.property' must be an object</source>
-      </trans-unit>
-      <trans-unit id="invalid.allOf">
-        <source xml:lang="en">'configuration.allOf' is deprecated and should no longer be used. Instead, pass multiple configuration sections as an array to the 'configuration' contribution point.</source>
-      </trans-unit>
-      <trans-unit id="workspaceConfig.folders.description">
-        <source xml:lang="en">List of folders to be loaded in the workspace.</source>
-      </trans-unit>
-      <trans-unit id="workspaceConfig.path.description">
-        <source xml:lang="en">A file path. e.g. `/root/folderA` or `./folderA` for a relative path that will be resolved against the location of the workspace file.</source>
-      </trans-unit>
-      <trans-unit id="workspaceConfig.name.description">
-        <source xml:lang="en">An optional name for the folder. </source>
-      </trans-unit>
-      <trans-unit id="workspaceConfig.uri.description">
-        <source xml:lang="en">URI of the folder</source>
-      </trans-unit>
-      <trans-unit id="workspaceConfig.settings.description">
-        <source xml:lang="en">Workspace settings</source>
-      </trans-unit>
-      <trans-unit id="workspaceConfig.launch.description">
-        <source xml:lang="en">Workspace launch configurations</source>
-      </trans-unit>
-      <trans-unit id="workspaceConfig.tasks.description">
-        <source xml:lang="en">Workspace task configurations</source>
-      </trans-unit>
-      <trans-unit id="workspaceConfig.extensions.description">
-        <source xml:lang="en">Workspace extensions</source>
-      </trans-unit>
-      <trans-unit id="workspaceConfig.remoteAuthority">
-        <source xml:lang="en">The remote server where the workspace is located. Only used by unsaved remote workspaces.</source>
-      </trans-unit>
-      <trans-unit id="unknownWorkspaceProperty">
-        <source xml:lang="en">Unknown workspace configuration property</source>
       </trans-unit>
     </body>
   </file>
@@ -1389,12 +1249,44 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/sidebar/sidebarPart" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/browser/actions/workspaceCommands" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="focusSideBar">
-        <source xml:lang="en">Focus into Side Bar</source>
+      <trans-unit id="addFolderToWorkspace">
+        <source xml:lang="en">Add Folder to Workspace...</source>
       </trans-unit>
-      <trans-unit id="viewCategory">
+      <trans-unit id="add">
+        <source xml:lang="en">&amp;&amp;Add</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="addFolderToWorkspaceTitle">
+        <source xml:lang="en">Add Folder to Workspace</source>
+      </trans-unit>
+      <trans-unit id="workspaceFolderPickerPlaceholder">
+        <source xml:lang="en">Select workspace folder</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/actions/navigationActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="navigateLeft">
+        <source xml:lang="en">Navigate to the View on the Left</source>
+      </trans-unit>
+      <trans-unit id="navigateRight">
+        <source xml:lang="en">Navigate to the View on the Right</source>
+      </trans-unit>
+      <trans-unit id="navigateUp">
+        <source xml:lang="en">Navigate to the View Above</source>
+      </trans-unit>
+      <trans-unit id="navigateDown">
+        <source xml:lang="en">Navigate to the View Below</source>
+      </trans-unit>
+      <trans-unit id="focusNextPart">
+        <source xml:lang="en">Focus Next Part</source>
+      </trans-unit>
+      <trans-unit id="focusPreviousPart">
+        <source xml:lang="en">Focus Previous Part</source>
+      </trans-unit>
+      <trans-unit id="view_Duplicated8">
         <source xml:lang="en">View</source>
       </trans-unit>
     </body>
@@ -1556,8 +1448,114 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/api/common/configurationExtensionPoint" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="vscode.extension.contributes.configuration.title">
+        <source xml:lang="en">A summary of the settings. This label will be used in the settings file as separating comment.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.configuration.properties">
+        <source xml:lang="en">Description of the configuration properties.</source>
+      </trans-unit>
+      <trans-unit id="scope.application.description">
+        <source xml:lang="en">Configuration that can be configured only in the user settings.</source>
+      </trans-unit>
+      <trans-unit id="scope.machine.description">
+        <source xml:lang="en">Configuration that can be configured only in the user settings or only in the remote settings.</source>
+      </trans-unit>
+      <trans-unit id="scope.window.description">
+        <source xml:lang="en">Configuration that can be configured in the user, remote or workspace settings.</source>
+      </trans-unit>
+      <trans-unit id="scope.resource.description">
+        <source xml:lang="en">Configuration that can be configured in the user, remote, workspace or folder settings.</source>
+      </trans-unit>
+      <trans-unit id="scope.language-overridable.description">
+        <source xml:lang="en">Resource configuration that can be configured in language specific settings.</source>
+      </trans-unit>
+      <trans-unit id="scope.machine-overridable.description">
+        <source xml:lang="en">Machine configuration that can be configured also in workspace or folder settings.</source>
+      </trans-unit>
+      <trans-unit id="scope.description">
+        <source xml:lang="en">Scope in which the configuration is applicable. Available scopes are `application`, `machine`, `window`, `resource`, and `machine-overridable`.</source>
+      </trans-unit>
+      <trans-unit id="scope.enumDescriptions">
+        <source xml:lang="en">Descriptions for enum values</source>
+      </trans-unit>
+      <trans-unit id="scope.markdownEnumDescriptions">
+        <source xml:lang="en">Descriptions for enum values in the markdown format.</source>
+      </trans-unit>
+      <trans-unit id="scope.markdownDescription">
+        <source xml:lang="en">The description in the markdown format.</source>
+      </trans-unit>
+      <trans-unit id="scope.deprecationMessage">
+        <source xml:lang="en">If set, the property is marked as deprecated and the given message is shown as an explanation.</source>
+      </trans-unit>
+      <trans-unit id="scope.markdownDeprecationMessage">
+        <source xml:lang="en">If set, the property is marked as deprecated and the given message is shown as an explanation in the markdown format.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.defaultConfiguration">
+        <source xml:lang="en">Contributes default editor configuration settings by language.</source>
+      </trans-unit>
+      <trans-unit id="config.property.defaultConfiguration.languageExpected">
+        <source xml:lang="en">Language selector expected (e.g. ["java"])</source>
+      </trans-unit>
+      <trans-unit id="config.property.defaultConfiguration.warning">
+        <source xml:lang="en">Cannot register configuration defaults for '{0}'. Only defaults for language specific settings are supported.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.configuration">
+        <source xml:lang="en">Contributes configuration settings.</source>
+      </trans-unit>
+      <trans-unit id="invalid.title">
+        <source xml:lang="en">'configuration.title' must be a string</source>
+      </trans-unit>
+      <trans-unit id="invalid.properties">
+        <source xml:lang="en">'configuration.properties' must be an object</source>
+      </trans-unit>
+      <trans-unit id="invalid.property">
+        <source xml:lang="en">'configuration.property' must be an object</source>
+      </trans-unit>
+      <trans-unit id="invalid.allOf">
+        <source xml:lang="en">'configuration.allOf' is deprecated and should no longer be used. Instead, pass multiple configuration sections as an array to the 'configuration' contribution point.</source>
+      </trans-unit>
+      <trans-unit id="workspaceConfig.folders.description">
+        <source xml:lang="en">List of folders to be loaded in the workspace.</source>
+      </trans-unit>
+      <trans-unit id="workspaceConfig.path.description">
+        <source xml:lang="en">A file path. e.g. `/root/folderA` or `./folderA` for a relative path that will be resolved against the location of the workspace file.</source>
+      </trans-unit>
+      <trans-unit id="workspaceConfig.name.description">
+        <source xml:lang="en">An optional name for the folder. </source>
+      </trans-unit>
+      <trans-unit id="workspaceConfig.uri.description">
+        <source xml:lang="en">URI of the folder</source>
+      </trans-unit>
+      <trans-unit id="workspaceConfig.settings.description">
+        <source xml:lang="en">Workspace settings</source>
+      </trans-unit>
+      <trans-unit id="workspaceConfig.launch.description">
+        <source xml:lang="en">Workspace launch configurations</source>
+      </trans-unit>
+      <trans-unit id="workspaceConfig.tasks.description">
+        <source xml:lang="en">Workspace task configurations</source>
+      </trans-unit>
+      <trans-unit id="workspaceConfig.extensions.description">
+        <source xml:lang="en">Workspace extensions</source>
+      </trans-unit>
+      <trans-unit id="workspaceConfig.remoteAuthority">
+        <source xml:lang="en">The remote server where the workspace is located. Only used by unsaved remote workspaces.</source>
+      </trans-unit>
+      <trans-unit id="unknownWorkspaceProperty">
+        <source xml:lang="en">Unknown workspace configuration property</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/browser/parts/activitybar/activitybarPart" source-language="en" datatype="plaintext">
     <body>
+      <trans-unit id="hideHomeBar">
+        <source xml:lang="en">Hide Home Button</source>
+      </trans-unit>
+      <trans-unit id="showHomeBar">
+        <source xml:lang="en">Show Home Button</source>
+      </trans-unit>
       <trans-unit id="hideMenu">
         <source xml:lang="en">Hide Menu</source>
       </trans-unit>
@@ -1566,6 +1564,9 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
       <trans-unit id="hideActivitBar">
         <source xml:lang="en">Hide Activity Bar</source>
+      </trans-unit>
+      <trans-unit id="resetLocation">
+        <source xml:lang="en">Reset Location</source>
       </trans-unit>
       <trans-unit id="homeIndicator">
         <source xml:lang="en">Home</source>
@@ -1578,6 +1579,16 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
       <trans-unit id="accounts">
         <source xml:lang="en">Accounts</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/statusbar/statusbarPart" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="hide_Duplicated29">
+        <source xml:lang="en">Hide '{0}'</source>
+      </trans-unit>
+      <trans-unit id="hideStatusBar">
+        <source xml:lang="en">Hide Status Bar</source>
       </trans-unit>
     </body>
   </file>
@@ -1682,16 +1693,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/statusbar/statusbarPart" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="hide_Duplicated29">
-        <source xml:lang="en">Hide '{0}'</source>
-      </trans-unit>
-      <trans-unit id="hideStatusBar">
-        <source xml:lang="en">Hide Status Bar</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/browser/parts/panel/panelPart" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="hidePanel">
@@ -1712,6 +1713,26 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
       <trans-unit id="resetViewLocation">
         <source xml:lang="en">Reset Location</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/sidebar/sidebarPart" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="focusSideBar">
+        <source xml:lang="en">Focus into Side Bar</source>
+      </trans-unit>
+      <trans-unit id="viewCategory">
+        <source xml:lang="en">View</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/electron-sandbox/actions/developerActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="toggleDevTools">
+        <source xml:lang="en">Toggle Developer Tools</source>
+      </trans-unit>
+      <trans-unit id="configureRuntimeArguments">
+        <source xml:lang="en">Configure Runtime Arguments</source>
       </trans-unit>
     </body>
   </file>
@@ -1752,13 +1773,16 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/electron-sandbox/actions/developerActions" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/browser/parts/notifications/notificationsAlerts" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="toggleDevTools">
-        <source xml:lang="en">Toggle Developer Tools</source>
+      <trans-unit id="alertErrorMessage">
+        <source xml:lang="en">Error: {0}</source>
       </trans-unit>
-      <trans-unit id="configureRuntimeArguments">
-        <source xml:lang="en">Configure Runtime Arguments</source>
+      <trans-unit id="alertWarningMessage">
+        <source xml:lang="en">Warning: {0}</source>
+      </trans-unit>
+      <trans-unit id="alertInfoMessage">
+        <source xml:lang="en">Info: {0}</source>
       </trans-unit>
     </body>
   </file>
@@ -1775,16 +1799,22 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/notifications/notificationsAlerts" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/browser/parts/notifications/notificationsCommands" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="alertErrorMessage">
-        <source xml:lang="en">Error: {0}</source>
+      <trans-unit id="notifications_Duplicated34">
+        <source xml:lang="en">Notifications</source>
       </trans-unit>
-      <trans-unit id="alertWarningMessage">
-        <source xml:lang="en">Warning: {0}</source>
+      <trans-unit id="showNotifications">
+        <source xml:lang="en">Show Notifications</source>
       </trans-unit>
-      <trans-unit id="alertInfoMessage">
-        <source xml:lang="en">Info: {0}</source>
+      <trans-unit id="hideNotifications_Duplicated36">
+        <source xml:lang="en">Hide Notifications</source>
+      </trans-unit>
+      <trans-unit id="clearAllNotifications">
+        <source xml:lang="en">Clear All Notifications</source>
+      </trans-unit>
+      <trans-unit id="focusNotificationToasts">
+        <source xml:lang="en">Focus Notification Toast</source>
       </trans-unit>
     </body>
   </file>
@@ -1793,7 +1823,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="status.notifications">
         <source xml:lang="en">Notifications</source>
       </trans-unit>
-      <trans-unit id="hideNotifications_Duplicated36">
+      <trans-unit id="hideNotifications_Duplicated37">
         <source xml:lang="en">Hide Notifications</source>
       </trans-unit>
       <trans-unit id="zeroNotifications">
@@ -1805,7 +1835,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="oneNotification">
         <source xml:lang="en">1 New Notification</source>
       </trans-unit>
-      <trans-unit id="notifications_Duplicated34">
+      <trans-unit id="notifications_Duplicated35">
         <source xml:lang="en">{0} New Notifications</source>
       </trans-unit>
       <trans-unit id="noNotificationsWithProgress">
@@ -1819,25 +1849,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
       <trans-unit id="status.message">
         <source xml:lang="en">Status Message</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/notifications/notificationsCommands" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="notifications_Duplicated35">
-        <source xml:lang="en">Notifications</source>
-      </trans-unit>
-      <trans-unit id="showNotifications">
-        <source xml:lang="en">Show Notifications</source>
-      </trans-unit>
-      <trans-unit id="hideNotifications_Duplicated37">
-        <source xml:lang="en">Hide Notifications</source>
-      </trans-unit>
-      <trans-unit id="clearAllNotifications">
-        <source xml:lang="en">Clear All Notifications</source>
-      </trans-unit>
-      <trans-unit id="focusNotificationToasts">
-        <source xml:lang="en">Focus Notification Toast</source>
       </trans-unit>
     </body>
   </file>
@@ -1881,6 +1892,9 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="goToSetting">
         <source xml:lang="en">Open Settings</source>
       </trans-unit>
+      <trans-unit id="focusMenu">
+        <source xml:lang="en">Focus Application Menu</source>
+      </trans-unit>
       <trans-unit id="checkForUpdates">
         <source xml:lang="en">Check for &amp;&amp;Updates...</source>
         <note>&amp;&amp; denotes a mnemonic</note>
@@ -1915,13 +1929,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/common/extHostWorkspace" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="updateerror">
-        <source xml:lang="en">Extension '{0}' failed to update workspace folders: {1}</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/api/common/extHostExtensionService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="extensionTestError">
@@ -1929,10 +1936,31 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/api/common/extHostWorkspace" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="updateerror">
+        <source xml:lang="en">Extension '{0}' failed to update workspace folders: {1}</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/common/extHostTerminalService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="launchFail.idMissingOnExtHost">
+        <source xml:lang="en">Could not find the terminal with id {0} on the extension host</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/api/node/extHostDebugService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="debug.terminal.title">
         <source xml:lang="en">debuggee</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/common/configuration" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="workbenchConfigurationTitle">
+        <source xml:lang="en">Workbench</source>
       </trans-unit>
     </body>
   </file>
@@ -1967,20 +1995,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/browser/mainThreadEditors" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="diffLeftRightLabel">
-        <source xml:lang="en">{0} ⟷ {1}</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/api/browser/mainThreadFileSystemEventService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="files.participants.timeout">
-        <source xml:lang="en">Timeout in milliseconds after which file participants for create, rename, and delete are cancelled. Use `0` to disable participants.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/api/browser/mainThreadExtensionService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="reload window">
@@ -2003,6 +2017,20 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
       <trans-unit id="unknownDep">
         <source xml:lang="en">Cannot activate the '{0}' extension because it depends on an unknown '{1}' extension .</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/browser/mainThreadEditors" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="diffLeftRightLabel">
+        <source xml:lang="en">{0} ⟷ {1}</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/browser/mainThreadFileSystemEventService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="files.participants.timeout">
+        <source xml:lang="en">Timeout in milliseconds after which file participants for create, rename, and delete are cancelled. Use `0` to disable participants.</source>
       </trans-unit>
     </body>
   </file>
@@ -2032,32 +2060,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/browser/mainThreadSaveParticipant" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="timeout.onWillSave">
-        <source xml:lang="en">Aborted onWillSaveTextDocument-event after 1750ms</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/api/browser/mainThreadWorkspace" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="folderStatusMessageAddSingleFolder">
-        <source xml:lang="en">Extension '{0}' added 1 folder to the workspace</source>
-      </trans-unit>
-      <trans-unit id="folderStatusMessageAddMultipleFolders">
-        <source xml:lang="en">Extension '{0}' added {1} folders to the workspace</source>
-      </trans-unit>
-      <trans-unit id="folderStatusMessageRemoveSingleFolder">
-        <source xml:lang="en">Extension '{0}' removed 1 folder from the workspace</source>
-      </trans-unit>
-      <trans-unit id="folderStatusMessageRemoveMultipleFolders">
-        <source xml:lang="en">Extension '{0}' removed {1} folders from the workspace</source>
-      </trans-unit>
-      <trans-unit id="folderStatusChangeFolder">
-        <source xml:lang="en">Extension '{0}' changed folders of the workspace</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/api/browser/mainThreadWebview" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="errorMessage">
@@ -2083,14 +2085,11 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="notUsed">
         <source xml:lang="en">Has not used this account</source>
       </trans-unit>
-      <trans-unit id="manageTrustedExtensions">
+      <trans-unit id="manageTrustedExtensions_Duplicated48">
         <source xml:lang="en">Manage Trusted Extensions</source>
       </trans-unit>
       <trans-unit id="manageExensions">
         <source xml:lang="en">Choose which extensions can access this account</source>
-      </trans-unit>
-      <trans-unit id="signOut">
-        <source xml:lang="en">Sign Out</source>
       </trans-unit>
       <trans-unit id="signOutConfirm">
         <source xml:lang="en">Sign out of {0}</source>
@@ -2131,112 +2130,29 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/common/configuration" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/api/browser/mainThreadSaveParticipant" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="workbenchConfigurationTitle">
-        <source xml:lang="en">Workbench</source>
+      <trans-unit id="timeout.onWillSave">
+        <source xml:lang="en">Aborted onWillSaveTextDocument-event after 1750ms</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/compositePart" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/api/browser/mainThreadWorkspace" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="ariaCompositeToolbarLabel">
-        <source xml:lang="en">{0} actions</source>
+      <trans-unit id="folderStatusMessageAddSingleFolder">
+        <source xml:lang="en">Extension '{0}' added 1 folder to the workspace</source>
       </trans-unit>
-      <trans-unit id="titleTooltip">
-        <source xml:lang="en">{0} ({1})</source>
+      <trans-unit id="folderStatusMessageAddMultipleFolders">
+        <source xml:lang="en">Extension '{0}' added {1} folders to the workspace</source>
       </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/viewlet" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="compositePart.hideSideBarLabel">
-        <source xml:lang="en">Hide Side Bar</source>
+      <trans-unit id="folderStatusMessageRemoveSingleFolder">
+        <source xml:lang="en">Extension '{0}' removed 1 folder from the workspace</source>
       </trans-unit>
-      <trans-unit id="collapse">
-        <source xml:lang="en">Collapse All</source>
+      <trans-unit id="folderStatusMessageRemoveMultipleFolders">
+        <source xml:lang="en">Extension '{0}' removed {1} folders from the workspace</source>
       </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/compositeBarActions" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="badgeTitle">
-        <source xml:lang="en">{0} - {1}</source>
-      </trans-unit>
-      <trans-unit id="additionalViews">
-        <source xml:lang="en">Additional Views</source>
-      </trans-unit>
-      <trans-unit id="numberBadge">
-        <source xml:lang="en">{0} ({1})</source>
-      </trans-unit>
-      <trans-unit id="manageExtension_Duplicated42">
-        <source xml:lang="en">Manage Extension</source>
-      </trans-unit>
-      <trans-unit id="titleKeybinding">
-        <source xml:lang="en">{0} ({1})</source>
-      </trans-unit>
-      <trans-unit id="hide_Duplicated30">
-        <source xml:lang="en">Hide</source>
-      </trans-unit>
-      <trans-unit id="keep">
-        <source xml:lang="en">Keep</source>
-      </trans-unit>
-      <trans-unit id="compositeActive">
-        <source xml:lang="en">{0} active</source>
-      </trans-unit>
-      <trans-unit id="toggle">
-        <source xml:lang="en">Toggle View Pinned</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/activitybar/activitybarActions" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="previousSideBarView">
-        <source xml:lang="en">Previous Side Bar View</source>
-      </trans-unit>
-      <trans-unit id="nextSideBarView">
-        <source xml:lang="en">Next Side Bar View</source>
-      </trans-unit>
-      <trans-unit id="view_Duplicated10">
-        <source xml:lang="en">View</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/compositeBar" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="activityBarAriaLabel">
-        <source xml:lang="en">Active View Switcher</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/editor/editorGroupView" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="araLabelGroupActions">
-        <source xml:lang="en">Editor group actions</source>
-      </trans-unit>
-      <trans-unit id="closeGroupAction">
-        <source xml:lang="en">Close</source>
-      </trans-unit>
-      <trans-unit id="emptyEditorGroup">
-        <source xml:lang="en">{0} (empty)</source>
-      </trans-unit>
-      <trans-unit id="groupLabel">
-        <source xml:lang="en">Group {0}</source>
-      </trans-unit>
-      <trans-unit id="groupAriaLabel">
-        <source xml:lang="en">Editor Group {0}</source>
-      </trans-unit>
-      <trans-unit id="ok_Duplicated47">
-        <source xml:lang="en">OK</source>
-      </trans-unit>
-      <trans-unit id="cancel_Duplicated45">
-        <source xml:lang="en">Cancel</source>
-      </trans-unit>
-      <trans-unit id="editorOpenErrorDialog">
-        <source xml:lang="en">Unable to open '{0}'</source>
-      </trans-unit>
-      <trans-unit id="editorOpenError">
-        <source xml:lang="en">Unable to open '{0}': {1}.</source>
+      <trans-unit id="folderStatusChangeFolder">
+        <source xml:lang="en">Extension '{0}' changed folders of the workspace</source>
       </trans-unit>
     </body>
   </file>
@@ -2278,12 +2194,50 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/browser/parts/editor/editorDropTarget" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="fileTooLarge">
+        <source xml:lang="en">File is too large to open as untitled editor. Please upload it first into the file explorer and then try again.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/editor/editorGroupView" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="araLabelGroupActions">
+        <source xml:lang="en">Editor group actions</source>
+      </trans-unit>
+      <trans-unit id="closeGroupAction">
+        <source xml:lang="en">Close</source>
+      </trans-unit>
+      <trans-unit id="emptyEditorGroup">
+        <source xml:lang="en">{0} (empty)</source>
+      </trans-unit>
+      <trans-unit id="groupLabel">
+        <source xml:lang="en">Group {0}</source>
+      </trans-unit>
+      <trans-unit id="groupAriaLabel">
+        <source xml:lang="en">Editor Group {0}</source>
+      </trans-unit>
+      <trans-unit id="ok_Duplicated47">
+        <source xml:lang="en">OK</source>
+      </trans-unit>
+      <trans-unit id="cancel_Duplicated45">
+        <source xml:lang="en">Cancel</source>
+      </trans-unit>
+      <trans-unit id="editorOpenErrorDialog">
+        <source xml:lang="en">Unable to open '{0}'</source>
+      </trans-unit>
+      <trans-unit id="editorOpenError">
+        <source xml:lang="en">Unable to open '{0}': {1}.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/browser/parts/editor/editor.contribution" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="textEditor_Duplicated48">
+      <trans-unit id="textEditor_Duplicated50">
         <source xml:lang="en">Text Editor</source>
       </trans-unit>
-      <trans-unit id="textDiffEditor_Duplicated50">
+      <trans-unit id="textDiffEditor_Duplicated52">
         <source xml:lang="en">Text Diff Editor</source>
       </trans-unit>
       <trans-unit id="binaryDiffEditor">
@@ -2304,7 +2258,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="allEditorsByMostRecentlyUsedQuickAccess">
         <source xml:lang="en">Show All Opened Editors By Most Recently Used</source>
       </trans-unit>
-      <trans-unit id="view_Duplicated11">
+      <trans-unit id="view_Duplicated10">
         <source xml:lang="en">View</source>
       </trans-unit>
       <trans-unit id="file_Duplicated22">
@@ -2346,7 +2300,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="unpin">
         <source xml:lang="en">Unpin</source>
       </trans-unit>
-      <trans-unit id="toggleInlineView_Duplicated52">
+      <trans-unit id="toggleInlineView_Duplicated54">
         <source xml:lang="en">Toggle Inline View</source>
       </trans-unit>
       <trans-unit id="showOpenedEditors">
@@ -2549,6 +2503,73 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/browser/parts/activitybar/activitybarActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="manageTrustedExtensions_Duplicated49">
+        <source xml:lang="en">Manage Trusted Extensions</source>
+      </trans-unit>
+      <trans-unit id="signOut">
+        <source xml:lang="en">Sign Out</source>
+      </trans-unit>
+      <trans-unit id="previousSideBarView">
+        <source xml:lang="en">Previous Side Bar View</source>
+      </trans-unit>
+      <trans-unit id="nextSideBarView">
+        <source xml:lang="en">Next Side Bar View</source>
+      </trans-unit>
+      <trans-unit id="view_Duplicated11">
+        <source xml:lang="en">View</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/compositeBarActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="badgeTitle">
+        <source xml:lang="en">{0} - {1}</source>
+      </trans-unit>
+      <trans-unit id="additionalViews">
+        <source xml:lang="en">Additional Views</source>
+      </trans-unit>
+      <trans-unit id="numberBadge">
+        <source xml:lang="en">{0} ({1})</source>
+      </trans-unit>
+      <trans-unit id="manageExtension_Duplicated42">
+        <source xml:lang="en">Manage Extension</source>
+      </trans-unit>
+      <trans-unit id="titleKeybinding">
+        <source xml:lang="en">{0} ({1})</source>
+      </trans-unit>
+      <trans-unit id="hide_Duplicated30">
+        <source xml:lang="en">Hide</source>
+      </trans-unit>
+      <trans-unit id="keep">
+        <source xml:lang="en">Keep</source>
+      </trans-unit>
+      <trans-unit id="compositeActive">
+        <source xml:lang="en">{0} active</source>
+      </trans-unit>
+      <trans-unit id="toggle">
+        <source xml:lang="en">Toggle View Pinned</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/compositeBar" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="activityBarAriaLabel">
+        <source xml:lang="en">Active View Switcher</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/viewlet" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="compositePart.hideSideBarLabel">
+        <source xml:lang="en">Hide Side Bar</source>
+      </trans-unit>
+      <trans-unit id="collapse">
+        <source xml:lang="en">Collapse All</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/browser/parts/panel/panelActions" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="closePanel">
@@ -2593,6 +2614,16 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/browser/parts/compositePart" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="ariaCompositeToolbarLabel">
+        <source xml:lang="en">{0} actions</source>
+      </trans-unit>
+      <trans-unit id="titleTooltip">
+        <source xml:lang="en">{0} ({1})</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/browser/parts/editor/editorWidgets" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="openWorkspace">
@@ -2614,7 +2645,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
 	* 'by': String value providing the unit for move (by tab or by group).
 	* 'value': Number value providing how many positions or an absolute position to move.</source>
       </trans-unit>
-      <trans-unit id="toggleInlineView_Duplicated53">
+      <trans-unit id="toggleInlineView_Duplicated55">
         <source xml:lang="en">Toggle Inline View</source>
       </trans-unit>
       <trans-unit id="compare">
@@ -2624,7 +2655,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
   </file>
   <file original="src/vs/workbench/browser/parts/editor/textResourceEditor" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="textEditor_Duplicated49">
+      <trans-unit id="textEditor_Duplicated51">
         <source xml:lang="en">Text Editor</source>
       </trans-unit>
     </body>
@@ -2707,6 +2738,13 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/browser/parts/editor/textDiffEditor" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="textDiffEditor_Duplicated53">
+        <source xml:lang="en">Text Diff Editor</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/browser/parts/editor/tabsTitleControl" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="araLabelTabActions">
@@ -2714,193 +2752,29 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/editor/editorStatus" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="singleSelectionRange">
-        <source xml:lang="en">Ln {0}, Col {1} ({2} selected)</source>
-      </trans-unit>
-      <trans-unit id="singleSelection">
-        <source xml:lang="en">Ln {0}, Col {1}</source>
-      </trans-unit>
-      <trans-unit id="multiSelectionRange">
-        <source xml:lang="en">{0} selections ({1} characters selected)</source>
-      </trans-unit>
-      <trans-unit id="multiSelection">
-        <source xml:lang="en">{0} selections</source>
-      </trans-unit>
-      <trans-unit id="endOfLineLineFeed">
-        <source xml:lang="en">LF</source>
-      </trans-unit>
-      <trans-unit id="endOfLineCarriageReturnLineFeed">
-        <source xml:lang="en">CRLF</source>
-      </trans-unit>
-      <trans-unit id="screenReaderDetectedExplanation.question">
-        <source xml:lang="en">Are you using a screen reader to operate VS Code? (Certain features like word wrap are disabled when using a screen reader)</source>
-      </trans-unit>
-      <trans-unit id="screenReaderDetectedExplanation.answerYes">
-        <source xml:lang="en">Yes</source>
-      </trans-unit>
-      <trans-unit id="screenReaderDetectedExplanation.answerNo">
-        <source xml:lang="en">No</source>
-      </trans-unit>
-      <trans-unit id="noEditor">
-        <source xml:lang="en">No text editor active at this time</source>
-      </trans-unit>
-      <trans-unit id="noWritableCodeEditor">
-        <source xml:lang="en">The active code editor is read-only.</source>
-      </trans-unit>
-      <trans-unit id="indentConvert">
-        <source xml:lang="en">convert file</source>
-      </trans-unit>
-      <trans-unit id="indentView">
-        <source xml:lang="en">change view</source>
-      </trans-unit>
-      <trans-unit id="pickAction">
-        <source xml:lang="en">Select Action</source>
-      </trans-unit>
-      <trans-unit id="tabFocusModeEnabled">
-        <source xml:lang="en">Tab Moves Focus</source>
-      </trans-unit>
-      <trans-unit id="disableTabMode">
-        <source xml:lang="en">Disable Accessibility Mode</source>
-      </trans-unit>
-      <trans-unit id="status.editor.tabFocusMode">
-        <source xml:lang="en">Accessibility Mode</source>
-      </trans-unit>
-      <trans-unit id="columnSelectionModeEnabled">
-        <source xml:lang="en">Column Selection</source>
-      </trans-unit>
-      <trans-unit id="disableColumnSelectionMode">
-        <source xml:lang="en">Disable Column Selection Mode</source>
-      </trans-unit>
-      <trans-unit id="status.editor.columnSelectionMode">
-        <source xml:lang="en">Column Selection Mode</source>
-      </trans-unit>
-      <trans-unit id="screenReaderDetected">
-        <source xml:lang="en">Screen Reader Optimized</source>
-      </trans-unit>
-      <trans-unit id="status.editor.screenReaderMode">
-        <source xml:lang="en">Screen Reader Mode</source>
-      </trans-unit>
-      <trans-unit id="gotoLine">
-        <source xml:lang="en">Go to Line/Column</source>
-      </trans-unit>
-      <trans-unit id="status.editor.selection">
-        <source xml:lang="en">Editor Selection</source>
-      </trans-unit>
-      <trans-unit id="selectIndentation">
-        <source xml:lang="en">Select Indentation</source>
-      </trans-unit>
-      <trans-unit id="status.editor.indentation">
-        <source xml:lang="en">Editor Indentation</source>
-      </trans-unit>
-      <trans-unit id="selectEncoding">
-        <source xml:lang="en">Select Encoding</source>
-      </trans-unit>
-      <trans-unit id="status.editor.encoding">
-        <source xml:lang="en">Editor Encoding</source>
-      </trans-unit>
-      <trans-unit id="selectEOL">
-        <source xml:lang="en">Select End of Line Sequence</source>
-      </trans-unit>
-      <trans-unit id="status.editor.eol">
-        <source xml:lang="en">Editor End of Line</source>
-      </trans-unit>
-      <trans-unit id="selectLanguageMode">
-        <source xml:lang="en">Select Language Mode</source>
-      </trans-unit>
-      <trans-unit id="status.editor.mode">
-        <source xml:lang="en">Editor Language</source>
-      </trans-unit>
-      <trans-unit id="fileInfo">
-        <source xml:lang="en">File Information</source>
-      </trans-unit>
-      <trans-unit id="status.editor.info">
-        <source xml:lang="en">File Information</source>
-      </trans-unit>
-      <trans-unit id="spacesSize">
-        <source xml:lang="en">Spaces: {0}</source>
-      </trans-unit>
-      <trans-unit id="tabSize">
-        <source xml:lang="en">Tab Size: {0}</source>
-        <note>Tab corresponds to the tab key</note>
-      </trans-unit>
-      <trans-unit id="currentProblem">
-        <source xml:lang="en">Current Problem</source>
-      </trans-unit>
-      <trans-unit id="showLanguageExtensions">
-        <source xml:lang="en">Search Marketplace Extensions for '{0}'...</source>
-      </trans-unit>
-      <trans-unit id="changeMode">
-        <source xml:lang="en">Change Language Mode</source>
-      </trans-unit>
-      <trans-unit id="languageDescription">
-        <source xml:lang="en">({0}) - Configured Language</source>
-      </trans-unit>
-      <trans-unit id="languageDescriptionConfigured">
-        <source xml:lang="en">({0})</source>
-      </trans-unit>
-      <trans-unit id="languagesPicks">
-        <source xml:lang="en">languages (identifier)</source>
-      </trans-unit>
-      <trans-unit id="configureModeSettings">
-        <source xml:lang="en">Configure '{0}' language based settings...</source>
-      </trans-unit>
-      <trans-unit id="configureAssociationsExt">
-        <source xml:lang="en">Configure File Association for '{0}'...</source>
-      </trans-unit>
-      <trans-unit id="autoDetect">
-        <source xml:lang="en">Auto Detect</source>
-      </trans-unit>
-      <trans-unit id="pickLanguage">
-        <source xml:lang="en">Select Language Mode</source>
-      </trans-unit>
-      <trans-unit id="currentAssociation">
-        <source xml:lang="en">Current Association</source>
-      </trans-unit>
-      <trans-unit id="pickLanguageToConfigure">
-        <source xml:lang="en">Select Language Mode to Associate with '{0}'</source>
-      </trans-unit>
-      <trans-unit id="changeEndOfLine">
-        <source xml:lang="en">Change End of Line Sequence</source>
-      </trans-unit>
-      <trans-unit id="pickEndOfLine">
-        <source xml:lang="en">Select End of Line Sequence</source>
-      </trans-unit>
-      <trans-unit id="changeEncoding">
-        <source xml:lang="en">Change File Encoding</source>
-      </trans-unit>
-      <trans-unit id="noFileEditor">
-        <source xml:lang="en">No file active at this time</source>
-      </trans-unit>
-      <trans-unit id="saveWithEncoding">
-        <source xml:lang="en">Save with Encoding</source>
-      </trans-unit>
-      <trans-unit id="reopenWithEncoding">
-        <source xml:lang="en">Reopen with Encoding</source>
-      </trans-unit>
-      <trans-unit id="guessedEncoding">
-        <source xml:lang="en">Guessed from content</source>
-      </trans-unit>
-      <trans-unit id="pickEncodingForReopen">
-        <source xml:lang="en">Select File Encoding to Reopen File</source>
-      </trans-unit>
-      <trans-unit id="pickEncodingForSave">
-        <source xml:lang="en">Select File Encoding to Save with</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/editor/textDiffEditor" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="textDiffEditor_Duplicated51">
-        <source xml:lang="en">Text Diff Editor</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/browser/parts/editor/binaryDiffEditor" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="metadataDiff">
         <source xml:lang="en">{0} ↔ {1}</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/editor/editorQuickAccess" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="noViewResults">
+        <source xml:lang="en">No matching editors</source>
+      </trans-unit>
+      <trans-unit id="entryAriaLabelWithGroupDirty">
+        <source xml:lang="en">{0}, dirty, {1}</source>
+      </trans-unit>
+      <trans-unit id="entryAriaLabelWithGroup">
+        <source xml:lang="en">{0}, {1}</source>
+      </trans-unit>
+      <trans-unit id="entryAriaLabelDirty">
+        <source xml:lang="en">{0}, dirty</source>
+      </trans-unit>
+      <trans-unit id="closeEditor_Duplicated56">
+        <source xml:lang="en">Close Editor</source>
       </trans-unit>
     </body>
   </file>
@@ -2960,7 +2834,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="focusBelowGroup">
         <source xml:lang="en">Focus Below Editor Group</source>
       </trans-unit>
-      <trans-unit id="closeEditor_Duplicated54">
+      <trans-unit id="closeEditor_Duplicated57">
         <source xml:lang="en">Close Editor</source>
       </trans-unit>
       <trans-unit id="closeOneEditor">
@@ -3151,22 +3025,179 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/editor/editorQuickAccess" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/browser/parts/editor/editorStatus" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="noViewResults">
-        <source xml:lang="en">No matching editors</source>
+      <trans-unit id="singleSelectionRange">
+        <source xml:lang="en">Ln {0}, Col {1} ({2} selected)</source>
       </trans-unit>
-      <trans-unit id="entryAriaLabelWithGroupDirty">
-        <source xml:lang="en">{0}, dirty, {1}</source>
+      <trans-unit id="singleSelection">
+        <source xml:lang="en">Ln {0}, Col {1}</source>
       </trans-unit>
-      <trans-unit id="entryAriaLabelWithGroup">
-        <source xml:lang="en">{0}, {1}</source>
+      <trans-unit id="multiSelectionRange">
+        <source xml:lang="en">{0} selections ({1} characters selected)</source>
       </trans-unit>
-      <trans-unit id="entryAriaLabelDirty">
-        <source xml:lang="en">{0}, dirty</source>
+      <trans-unit id="multiSelection">
+        <source xml:lang="en">{0} selections</source>
       </trans-unit>
-      <trans-unit id="closeEditor_Duplicated55">
-        <source xml:lang="en">Close Editor</source>
+      <trans-unit id="endOfLineLineFeed">
+        <source xml:lang="en">LF</source>
+      </trans-unit>
+      <trans-unit id="endOfLineCarriageReturnLineFeed">
+        <source xml:lang="en">CRLF</source>
+      </trans-unit>
+      <trans-unit id="screenReaderDetectedExplanation.question">
+        <source xml:lang="en">Are you using a screen reader to operate VS Code? (Certain features like word wrap are disabled when using a screen reader)</source>
+      </trans-unit>
+      <trans-unit id="screenReaderDetectedExplanation.answerYes">
+        <source xml:lang="en">Yes</source>
+      </trans-unit>
+      <trans-unit id="screenReaderDetectedExplanation.answerNo">
+        <source xml:lang="en">No</source>
+      </trans-unit>
+      <trans-unit id="noEditor">
+        <source xml:lang="en">No text editor active at this time</source>
+      </trans-unit>
+      <trans-unit id="noWritableCodeEditor">
+        <source xml:lang="en">The active code editor is read-only.</source>
+      </trans-unit>
+      <trans-unit id="indentConvert">
+        <source xml:lang="en">convert file</source>
+      </trans-unit>
+      <trans-unit id="indentView">
+        <source xml:lang="en">change view</source>
+      </trans-unit>
+      <trans-unit id="pickAction">
+        <source xml:lang="en">Select Action</source>
+      </trans-unit>
+      <trans-unit id="tabFocusModeEnabled">
+        <source xml:lang="en">Tab Moves Focus</source>
+      </trans-unit>
+      <trans-unit id="disableTabMode">
+        <source xml:lang="en">Disable Accessibility Mode</source>
+      </trans-unit>
+      <trans-unit id="status.editor.tabFocusMode">
+        <source xml:lang="en">Accessibility Mode</source>
+      </trans-unit>
+      <trans-unit id="columnSelectionModeEnabled">
+        <source xml:lang="en">Column Selection</source>
+      </trans-unit>
+      <trans-unit id="disableColumnSelectionMode">
+        <source xml:lang="en">Disable Column Selection Mode</source>
+      </trans-unit>
+      <trans-unit id="status.editor.columnSelectionMode">
+        <source xml:lang="en">Column Selection Mode</source>
+      </trans-unit>
+      <trans-unit id="screenReaderDetected">
+        <source xml:lang="en">Screen Reader Optimized</source>
+      </trans-unit>
+      <trans-unit id="status.editor.screenReaderMode">
+        <source xml:lang="en">Screen Reader Mode</source>
+      </trans-unit>
+      <trans-unit id="gotoLine">
+        <source xml:lang="en">Go to Line/Column</source>
+      </trans-unit>
+      <trans-unit id="status.editor.selection">
+        <source xml:lang="en">Editor Selection</source>
+      </trans-unit>
+      <trans-unit id="selectIndentation">
+        <source xml:lang="en">Select Indentation</source>
+      </trans-unit>
+      <trans-unit id="status.editor.indentation">
+        <source xml:lang="en">Editor Indentation</source>
+      </trans-unit>
+      <trans-unit id="selectEncoding">
+        <source xml:lang="en">Select Encoding</source>
+      </trans-unit>
+      <trans-unit id="status.editor.encoding">
+        <source xml:lang="en">Editor Encoding</source>
+      </trans-unit>
+      <trans-unit id="selectEOL">
+        <source xml:lang="en">Select End of Line Sequence</source>
+      </trans-unit>
+      <trans-unit id="status.editor.eol">
+        <source xml:lang="en">Editor End of Line</source>
+      </trans-unit>
+      <trans-unit id="selectLanguageMode">
+        <source xml:lang="en">Select Language Mode</source>
+      </trans-unit>
+      <trans-unit id="status.editor.mode">
+        <source xml:lang="en">Editor Language</source>
+      </trans-unit>
+      <trans-unit id="fileInfo">
+        <source xml:lang="en">File Information</source>
+      </trans-unit>
+      <trans-unit id="status.editor.info">
+        <source xml:lang="en">File Information</source>
+      </trans-unit>
+      <trans-unit id="spacesSize">
+        <source xml:lang="en">Spaces: {0}</source>
+      </trans-unit>
+      <trans-unit id="tabSize">
+        <source xml:lang="en">Tab Size: {0}</source>
+        <note>Tab corresponds to the tab key</note>
+      </trans-unit>
+      <trans-unit id="currentProblem">
+        <source xml:lang="en">Current Problem</source>
+      </trans-unit>
+      <trans-unit id="showLanguageExtensions">
+        <source xml:lang="en">Search Marketplace Extensions for '{0}'...</source>
+      </trans-unit>
+      <trans-unit id="changeMode">
+        <source xml:lang="en">Change Language Mode</source>
+      </trans-unit>
+      <trans-unit id="languageDescription">
+        <source xml:lang="en">({0}) - Configured Language</source>
+      </trans-unit>
+      <trans-unit id="languageDescriptionConfigured">
+        <source xml:lang="en">({0})</source>
+      </trans-unit>
+      <trans-unit id="languagesPicks">
+        <source xml:lang="en">languages (identifier)</source>
+      </trans-unit>
+      <trans-unit id="configureModeSettings">
+        <source xml:lang="en">Configure '{0}' language based settings...</source>
+      </trans-unit>
+      <trans-unit id="configureAssociationsExt">
+        <source xml:lang="en">Configure File Association for '{0}'...</source>
+      </trans-unit>
+      <trans-unit id="autoDetect">
+        <source xml:lang="en">Auto Detect</source>
+      </trans-unit>
+      <trans-unit id="pickLanguage">
+        <source xml:lang="en">Select Language Mode</source>
+      </trans-unit>
+      <trans-unit id="currentAssociation">
+        <source xml:lang="en">Current Association</source>
+      </trans-unit>
+      <trans-unit id="pickLanguageToConfigure">
+        <source xml:lang="en">Select Language Mode to Associate with '{0}'</source>
+      </trans-unit>
+      <trans-unit id="changeEndOfLine">
+        <source xml:lang="en">Change End of Line Sequence</source>
+      </trans-unit>
+      <trans-unit id="pickEndOfLine">
+        <source xml:lang="en">Select End of Line Sequence</source>
+      </trans-unit>
+      <trans-unit id="changeEncoding">
+        <source xml:lang="en">Change File Encoding</source>
+      </trans-unit>
+      <trans-unit id="noFileEditor">
+        <source xml:lang="en">No file active at this time</source>
+      </trans-unit>
+      <trans-unit id="saveWithEncoding">
+        <source xml:lang="en">Save with Encoding</source>
+      </trans-unit>
+      <trans-unit id="reopenWithEncoding">
+        <source xml:lang="en">Reopen with Encoding</source>
+      </trans-unit>
+      <trans-unit id="guessedEncoding">
+        <source xml:lang="en">Guessed from content</source>
+      </trans-unit>
+      <trans-unit id="pickEncodingForReopen">
+        <source xml:lang="en">Select File Encoding to Reopen File</source>
+      </trans-unit>
+      <trans-unit id="pickEncodingForSave">
+        <source xml:lang="en">Select File Encoding to Save with</source>
       </trans-unit>
     </body>
   </file>
@@ -3174,21 +3205,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
     <body>
       <trans-unit id="binaryEditor">
         <source xml:lang="en">Binary Viewer</source>
-      </trans-unit>
-      <trans-unit id="sizeB">
-        <source xml:lang="en">{0}B</source>
-      </trans-unit>
-      <trans-unit id="sizeKB">
-        <source xml:lang="en">{0}KB</source>
-      </trans-unit>
-      <trans-unit id="sizeMB">
-        <source xml:lang="en">{0}MB</source>
-      </trans-unit>
-      <trans-unit id="sizeGB">
-        <source xml:lang="en">{0}GB</source>
-      </trans-unit>
-      <trans-unit id="sizeTB">
-        <source xml:lang="en">{0}TB</source>
       </trans-unit>
       <trans-unit id="nativeFileTooLargeError">
         <source xml:lang="en">The file is not displayed in the editor because it is too large ({0}).</source>

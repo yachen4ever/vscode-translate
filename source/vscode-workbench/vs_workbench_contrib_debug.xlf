@@ -7,13 +7,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/debugEditorContribution" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="addConfiguration_Duplicated1">
-        <source xml:lang="en">Add Configuration...</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/browser/callStackEditorContribution" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="topStackFrameLineHighlight">
@@ -21,6 +14,13 @@
       </trans-unit>
       <trans-unit id="focusedStackFrameLineHighlight">
         <source xml:lang="en">Background color for the highlight of line at focused stack frame position.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/debugEditorContribution" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="addConfiguration_Duplicated1">
+        <source xml:lang="en">Add Configuration...</source>
       </trans-unit>
     </body>
   </file>
@@ -69,6 +69,9 @@
       </trans-unit>
       <trans-unit id="jumpToCursor_Duplicated8">
         <source xml:lang="en">Jump to Cursor</source>
+      </trans-unit>
+      <trans-unit id="SetNextStatement">
+        <source xml:lang="en">Set Next Statement</source>
       </trans-unit>
       <trans-unit id="inlineBreakpoint">
         <source xml:lang="en">Inline Breakpoint</source>
@@ -268,12 +271,50 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/debug/browser/repl" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="debugConsole_Duplicated19">
+        <source xml:lang="en">Debug Console</source>
+      </trans-unit>
+      <trans-unit id="copy">
+        <source xml:lang="en">Copy</source>
+      </trans-unit>
+      <trans-unit id="copyAll">
+        <source xml:lang="en">Copy All</source>
+      </trans-unit>
+      <trans-unit id="collapse">
+        <source xml:lang="en">Collapse All</source>
+      </trans-unit>
+      <trans-unit id="startDebugFirst_Duplicated21">
+        <source xml:lang="en">Please start a debug session to evaluate expressions</source>
+      </trans-unit>
+      <trans-unit id="actions.repl.acceptInput">
+        <source xml:lang="en">REPL Accept Input</source>
+        <note>Apply input from the debug console input box</note>
+      </trans-unit>
+      <trans-unit id="repl.action.filter">
+        <source xml:lang="en">REPL Focus Content to Filter</source>
+      </trans-unit>
+      <trans-unit id="actions.repl.copyAll">
+        <source xml:lang="en">Debug: Console Copy All</source>
+      </trans-unit>
+      <trans-unit id="selectRepl">
+        <source xml:lang="en">Select Debug Console</source>
+      </trans-unit>
+      <trans-unit id="clearRepl">
+        <source xml:lang="en">Clear Console</source>
+      </trans-unit>
+      <trans-unit id="debugConsoleCleared">
+        <source xml:lang="en">Debug console was cleared</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/debug/browser/breakpointEditorContribution" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="logPoint_Duplicated19">
+      <trans-unit id="logPoint_Duplicated23">
         <source xml:lang="en">Logpoint</source>
       </trans-unit>
-      <trans-unit id="breakpoint_Duplicated21">
+      <trans-unit id="breakpoint_Duplicated25">
         <source xml:lang="en">Breakpoint</source>
       </trans-unit>
       <trans-unit id="breakpointHasConditionDisabled">
@@ -303,10 +344,10 @@
       <trans-unit id="cancel_Duplicated15">
         <source xml:lang="en">Cancel</source>
       </trans-unit>
-      <trans-unit id="removeBreakpoint_Duplicated24">
+      <trans-unit id="removeBreakpoint_Duplicated28">
         <source xml:lang="en">Remove {0}</source>
       </trans-unit>
-      <trans-unit id="editBreakpoint_Duplicated27">
+      <trans-unit id="editBreakpoint_Duplicated31">
         <source xml:lang="en">Edit {0}...</source>
       </trans-unit>
       <trans-unit id="disableBreakpoint">
@@ -384,41 +425,64 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/repl" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/debug/browser/debugActions" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="debugConsole_Duplicated29">
-        <source xml:lang="en">Debug Console</source>
+      <trans-unit id="openLaunchJson">
+        <source xml:lang="en">Open {0}</source>
       </trans-unit>
-      <trans-unit id="copy">
-        <source xml:lang="en">Copy</source>
+      <trans-unit id="launchJsonNeedsConfigurtion">
+        <source xml:lang="en">Configure or Fix 'launch.json'</source>
       </trans-unit>
-      <trans-unit id="copyAll">
-        <source xml:lang="en">Copy All</source>
+      <trans-unit id="noFolderDebugConfig_Duplicated33">
+        <source xml:lang="en">Please first open a folder in order to do advanced debug configuration.</source>
       </trans-unit>
-      <trans-unit id="collapse">
-        <source xml:lang="en">Collapse All</source>
+      <trans-unit id="selectWorkspaceFolder">
+        <source xml:lang="en">Select a workspace folder to create a launch.json file in or add it to the workspace config file</source>
       </trans-unit>
-      <trans-unit id="startDebugFirst_Duplicated31">
-        <source xml:lang="en">Please start a debug session to evaluate expressions</source>
+      <trans-unit id="startDebug">
+        <source xml:lang="en">Start Debugging</source>
       </trans-unit>
-      <trans-unit id="actions.repl.acceptInput">
-        <source xml:lang="en">REPL Accept Input</source>
-        <note>Apply input from the debug console input box</note>
+      <trans-unit id="startWithoutDebugging">
+        <source xml:lang="en">Start Without Debugging</source>
       </trans-unit>
-      <trans-unit id="repl.action.filter">
-        <source xml:lang="en">REPL Focus Content to Filter</source>
+      <trans-unit id="selectAndStartDebugging">
+        <source xml:lang="en">Select and Start Debugging</source>
       </trans-unit>
-      <trans-unit id="actions.repl.copyAll">
-        <source xml:lang="en">Debug: Console Copy All</source>
+      <trans-unit id="removeBreakpoint_Duplicated29">
+        <source xml:lang="en">Remove Breakpoint</source>
       </trans-unit>
-      <trans-unit id="selectRepl">
-        <source xml:lang="en">Select Debug Console</source>
+      <trans-unit id="removeAllBreakpoints">
+        <source xml:lang="en">Remove All Breakpoints</source>
       </trans-unit>
-      <trans-unit id="clearRepl">
-        <source xml:lang="en">Clear Console</source>
+      <trans-unit id="enableAllBreakpoints">
+        <source xml:lang="en">Enable All Breakpoints</source>
       </trans-unit>
-      <trans-unit id="debugConsoleCleared">
-        <source xml:lang="en">Debug console was cleared</source>
+      <trans-unit id="disableAllBreakpoints">
+        <source xml:lang="en">Disable All Breakpoints</source>
+      </trans-unit>
+      <trans-unit id="activateBreakpoints">
+        <source xml:lang="en">Activate Breakpoints</source>
+      </trans-unit>
+      <trans-unit id="deactivateBreakpoints">
+        <source xml:lang="en">Deactivate Breakpoints</source>
+      </trans-unit>
+      <trans-unit id="reapplyAllBreakpoints">
+        <source xml:lang="en">Reapply All Breakpoints</source>
+      </trans-unit>
+      <trans-unit id="addFunctionBreakpoint">
+        <source xml:lang="en">Add Function Breakpoint</source>
+      </trans-unit>
+      <trans-unit id="addWatchExpression">
+        <source xml:lang="en">Add Expression</source>
+      </trans-unit>
+      <trans-unit id="removeAllWatchExpressions">
+        <source xml:lang="en">Remove All Expressions</source>
+      </trans-unit>
+      <trans-unit id="focusSession">
+        <source xml:lang="en">Focus Session</source>
+      </trans-unit>
+      <trans-unit id="copyValue">
+        <source xml:lang="en">Copy Value</source>
       </trans-unit>
     </body>
   </file>
@@ -438,29 +502,18 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/debugHover" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="treeAriaLabel">
-        <source xml:lang="en">Debug Hover</source>
-      </trans-unit>
-      <trans-unit id="variableAriaLabel_Duplicated33">
-        <source xml:lang="en">{0}, value {1}, variables, debug</source>
-        <note>Do not translate placholders. Placeholders are name and value of a variable.</note>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/browser/breakpointsView" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="Logpoint_Duplicated20">
+      <trans-unit id="Logpoint_Duplicated24">
         <source xml:lang="en">Logpoint</source>
       </trans-unit>
-      <trans-unit id="Breakpoint_Duplicated22">
+      <trans-unit id="Breakpoint_Duplicated26">
         <source xml:lang="en">Breakpoint</source>
       </trans-unit>
-      <trans-unit id="editBreakpoint_Duplicated28">
+      <trans-unit id="editBreakpoint_Duplicated32">
         <source xml:lang="en">Edit {0}...</source>
       </trans-unit>
-      <trans-unit id="removeBreakpoint_Duplicated25">
+      <trans-unit id="removeBreakpoint_Duplicated30">
         <source xml:lang="en">Remove {0}</source>
       </trans-unit>
       <trans-unit id="functionBreakpointsNotSupported">
@@ -514,8 +567,59 @@
       <trans-unit id="hitCount_Duplicated39">
         <source xml:lang="en">Hit Count: {0}</source>
       </trans-unit>
-      <trans-unit id="breakpoint_Duplicated23">
+      <trans-unit id="breakpoint_Duplicated27">
         <source xml:lang="en">Breakpoint</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/debugHover" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="treeAriaLabel">
+        <source xml:lang="en">Debug Hover</source>
+      </trans-unit>
+      <trans-unit id="variableAriaLabel_Duplicated41">
+        <source xml:lang="en">{0}, value {1}, variables, debug</source>
+        <note>Do not translate placholders. Placeholders are name and value of a variable.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/debugToolBar" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="debugToolBarBackground">
+        <source xml:lang="en">Debug toolbar background color.</source>
+      </trans-unit>
+      <trans-unit id="debugToolBarBorder">
+        <source xml:lang="en">Debug toolbar border color.</source>
+      </trans-unit>
+      <trans-unit id="debugIcon.startForeground">
+        <source xml:lang="en">Debug toolbar icon for start debugging.</source>
+      </trans-unit>
+      <trans-unit id="debugIcon.pauseForeground">
+        <source xml:lang="en">Debug toolbar icon for pause.</source>
+      </trans-unit>
+      <trans-unit id="debugIcon.stopForeground">
+        <source xml:lang="en">Debug toolbar icon for stop.</source>
+      </trans-unit>
+      <trans-unit id="debugIcon.disconnectForeground">
+        <source xml:lang="en">Debug toolbar icon for disconnect.</source>
+      </trans-unit>
+      <trans-unit id="debugIcon.restartForeground">
+        <source xml:lang="en">Debug toolbar icon for restart.</source>
+      </trans-unit>
+      <trans-unit id="debugIcon.stepOverForeground">
+        <source xml:lang="en">Debug toolbar icon for step over.</source>
+      </trans-unit>
+      <trans-unit id="debugIcon.stepIntoForeground">
+        <source xml:lang="en">Debug toolbar icon for step into.</source>
+      </trans-unit>
+      <trans-unit id="debugIcon.stepOutForeground">
+        <source xml:lang="en">Debug toolbar icon for step over.</source>
+      </trans-unit>
+      <trans-unit id="debugIcon.continueForeground">
+        <source xml:lang="en">Debug toolbar icon for continue.</source>
+      </trans-unit>
+      <trans-unit id="debugIcon.stepBackForeground">
+        <source xml:lang="en">Debug toolbar icon for step back.</source>
       </trans-unit>
     </body>
   </file>
@@ -531,7 +635,7 @@
         <source xml:lang="en">Session</source>
         <note>Session is a noun</note>
       </trans-unit>
-      <trans-unit id="running_Duplicated41">
+      <trans-unit id="running_Duplicated43">
         <source xml:lang="en">Running</source>
         <note>indicates state</note>
       </trans-unit>
@@ -628,107 +732,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/debugActions" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="openLaunchJson">
-        <source xml:lang="en">Open {0}</source>
-      </trans-unit>
-      <trans-unit id="launchJsonNeedsConfigurtion">
-        <source xml:lang="en">Configure or Fix 'launch.json'</source>
-      </trans-unit>
-      <trans-unit id="noFolderDebugConfig_Duplicated43">
-        <source xml:lang="en">Please first open a folder in order to do advanced debug configuration.</source>
-      </trans-unit>
-      <trans-unit id="selectWorkspaceFolder">
-        <source xml:lang="en">Select a workspace folder to create a launch.json file in or add it to the workspace config file</source>
-      </trans-unit>
-      <trans-unit id="startDebug">
-        <source xml:lang="en">Start Debugging</source>
-      </trans-unit>
-      <trans-unit id="startWithoutDebugging">
-        <source xml:lang="en">Start Without Debugging</source>
-      </trans-unit>
-      <trans-unit id="selectAndStartDebugging">
-        <source xml:lang="en">Select and Start Debugging</source>
-      </trans-unit>
-      <trans-unit id="removeBreakpoint_Duplicated26">
-        <source xml:lang="en">Remove Breakpoint</source>
-      </trans-unit>
-      <trans-unit id="removeAllBreakpoints">
-        <source xml:lang="en">Remove All Breakpoints</source>
-      </trans-unit>
-      <trans-unit id="enableAllBreakpoints">
-        <source xml:lang="en">Enable All Breakpoints</source>
-      </trans-unit>
-      <trans-unit id="disableAllBreakpoints">
-        <source xml:lang="en">Disable All Breakpoints</source>
-      </trans-unit>
-      <trans-unit id="activateBreakpoints">
-        <source xml:lang="en">Activate Breakpoints</source>
-      </trans-unit>
-      <trans-unit id="deactivateBreakpoints">
-        <source xml:lang="en">Deactivate Breakpoints</source>
-      </trans-unit>
-      <trans-unit id="reapplyAllBreakpoints">
-        <source xml:lang="en">Reapply All Breakpoints</source>
-      </trans-unit>
-      <trans-unit id="addFunctionBreakpoint">
-        <source xml:lang="en">Add Function Breakpoint</source>
-      </trans-unit>
-      <trans-unit id="addWatchExpression">
-        <source xml:lang="en">Add Expression</source>
-      </trans-unit>
-      <trans-unit id="removeAllWatchExpressions">
-        <source xml:lang="en">Remove All Expressions</source>
-      </trans-unit>
-      <trans-unit id="focusSession">
-        <source xml:lang="en">Focus Session</source>
-      </trans-unit>
-      <trans-unit id="copyValue">
-        <source xml:lang="en">Copy Value</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/debugToolBar" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="debugToolBarBackground">
-        <source xml:lang="en">Debug toolbar background color.</source>
-      </trans-unit>
-      <trans-unit id="debugToolBarBorder">
-        <source xml:lang="en">Debug toolbar border color.</source>
-      </trans-unit>
-      <trans-unit id="debugIcon.startForeground">
-        <source xml:lang="en">Debug toolbar icon for start debugging.</source>
-      </trans-unit>
-      <trans-unit id="debugIcon.pauseForeground">
-        <source xml:lang="en">Debug toolbar icon for pause.</source>
-      </trans-unit>
-      <trans-unit id="debugIcon.stopForeground">
-        <source xml:lang="en">Debug toolbar icon for stop.</source>
-      </trans-unit>
-      <trans-unit id="debugIcon.disconnectForeground">
-        <source xml:lang="en">Debug toolbar icon for disconnect.</source>
-      </trans-unit>
-      <trans-unit id="debugIcon.restartForeground">
-        <source xml:lang="en">Debug toolbar icon for restart.</source>
-      </trans-unit>
-      <trans-unit id="debugIcon.stepOverForeground">
-        <source xml:lang="en">Debug toolbar icon for step over.</source>
-      </trans-unit>
-      <trans-unit id="debugIcon.stepIntoForeground">
-        <source xml:lang="en">Debug toolbar icon for step into.</source>
-      </trans-unit>
-      <trans-unit id="debugIcon.stepOutForeground">
-        <source xml:lang="en">Debug toolbar icon for step over.</source>
-      </trans-unit>
-      <trans-unit id="debugIcon.continueForeground">
-        <source xml:lang="en">Debug toolbar icon for continue.</source>
-      </trans-unit>
-      <trans-unit id="debugIcon.stepBackForeground">
-        <source xml:lang="en">Debug toolbar icon for step back.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/browser/debugCommands" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="restartDebug">
@@ -767,7 +770,7 @@
       <trans-unit id="debug">
         <source xml:lang="en">Debug</source>
       </trans-unit>
-      <trans-unit id="noFolderDebugConfig_Duplicated44">
+      <trans-unit id="noFolderDebugConfig_Duplicated34">
         <source xml:lang="en">Please first open a folder in order to do advanced debug configuration.</source>
       </trans-unit>
       <trans-unit id="addInlineBreakpoint">
@@ -775,16 +778,16 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/statusbarColorProvider" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/debug/browser/debugStatus" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="statusBarDebuggingBackground">
-        <source xml:lang="en">Status bar background color when a program is being debugged. The status bar is shown in the bottom of the window</source>
+      <trans-unit id="status.debug">
+        <source xml:lang="en">Debug</source>
       </trans-unit>
-      <trans-unit id="statusBarDebuggingForeground">
-        <source xml:lang="en">Status bar foreground color when a program is being debugged. The status bar is shown in the bottom of the window</source>
+      <trans-unit id="debugTarget">
+        <source xml:lang="en">Debug: {0}</source>
       </trans-unit>
-      <trans-unit id="statusBarDebuggingBorder">
-        <source xml:lang="en">Status bar border color separating to the sidebar and editor when a program is being debugged. The status bar is shown in the bottom of the window</source>
+      <trans-unit id="selectAndStartDebug">
+        <source xml:lang="en">Select and start debug configuration</source>
       </trans-unit>
     </body>
   </file>
@@ -811,111 +814,16 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/common/debugContentProvider" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/debug/browser/statusbarColorProvider" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="unable">
-        <source xml:lang="en">Unable to resolve the resource without a debug session</source>
+      <trans-unit id="statusBarDebuggingBackground">
+        <source xml:lang="en">Status bar background color when a program is being debugged. The status bar is shown in the bottom of the window</source>
       </trans-unit>
-      <trans-unit id="canNotResolveSourceWithError">
-        <source xml:lang="en">Could not load source '{0}': {1}.</source>
+      <trans-unit id="statusBarDebuggingForeground">
+        <source xml:lang="en">Status bar foreground color when a program is being debugged. The status bar is shown in the bottom of the window</source>
       </trans-unit>
-      <trans-unit id="canNotResolveSource">
-        <source xml:lang="en">Could not load source '{0}'.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/watchExpressionsView" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="editWatchExpression">
-        <source xml:lang="en">Edit Expression</source>
-      </trans-unit>
-      <trans-unit id="removeWatchExpression">
-        <source xml:lang="en">Remove Expression</source>
-      </trans-unit>
-      <trans-unit id="watchExpressionInputAriaLabel">
-        <source xml:lang="en">Type watch expression</source>
-      </trans-unit>
-      <trans-unit id="watchExpressionPlaceholder">
-        <source xml:lang="en">Expression to watch</source>
-      </trans-unit>
-      <trans-unit id="watchAriaTreeLabel">
-        <source xml:lang="en">Debug Watch Expressions</source>
-        <note>Debug is a noun in this context, not a verb.</note>
-      </trans-unit>
-      <trans-unit id="watchExpressionAriaLabel">
-        <source xml:lang="en">{0}, value {1}</source>
-      </trans-unit>
-      <trans-unit id="watchVariableAriaLabel">
-        <source xml:lang="en">{0}, value {1}</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/debugStatus" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="status.debug">
-        <source xml:lang="en">Debug</source>
-      </trans-unit>
-      <trans-unit id="debugTarget">
-        <source xml:lang="en">Debug: {0}</source>
-      </trans-unit>
-      <trans-unit id="selectAndStartDebug">
-        <source xml:lang="en">Select and start debug configuration</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/welcomeView" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="run_Duplicated5">
-        <source xml:lang="en">Run</source>
-      </trans-unit>
-      <trans-unit id="openAFileWhichCanBeDebugged">
-        <source xml:lang="en">[Open a file](command:{0}) which can be debugged or run.</source>
-        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
-      </trans-unit>
-      <trans-unit id="runAndDebugAction">
-        <source xml:lang="en">[Run and Debug{0}](command:{1})</source>
-        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
-      </trans-unit>
-      <trans-unit id="detectThenRunAndDebug">
-        <source xml:lang="en">[Show](command:{0}) all automatic debug configurations.</source>
-        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
-      </trans-unit>
-      <trans-unit id="customizeRunAndDebug">
-        <source xml:lang="en">To customize Run and Debug [create a launch.json file](command:{0}).</source>
-        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
-      </trans-unit>
-      <trans-unit id="customizeRunAndDebugOpenFolder">
-        <source xml:lang="en">To customize Run and Debug, [open a folder](command:{0}) and create a launch.json file.</source>
-        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/variablesView" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="setValue">
-        <source xml:lang="en">Set Value</source>
-      </trans-unit>
-      <trans-unit id="copyAsExpression">
-        <source xml:lang="en">Copy as Expression</source>
-      </trans-unit>
-      <trans-unit id="addToWatchExpressions">
-        <source xml:lang="en">Add to Watch</source>
-      </trans-unit>
-      <trans-unit id="breakWhenValueChanges">
-        <source xml:lang="en">Break When Value Changes</source>
-      </trans-unit>
-      <trans-unit id="variableValueAriaLabel">
-        <source xml:lang="en">Type new variable value</source>
-      </trans-unit>
-      <trans-unit id="variablesAriaTreeLabel">
-        <source xml:lang="en">Debug Variables</source>
-      </trans-unit>
-      <trans-unit id="variableScopeAriaLabel">
-        <source xml:lang="en">Scope {0}</source>
-      </trans-unit>
-      <trans-unit id="variableAriaLabel_Duplicated34">
-        <source xml:lang="en">{0}, value {1}</source>
-        <note>Placeholders are variable name and variable value respectivly. They should not be translated.</note>
+      <trans-unit id="statusBarDebuggingBorder">
+        <source xml:lang="en">Status bar border color separating to the sidebar and editor when a program is being debugged. The status bar is shown in the bottom of the window</source>
       </trans-unit>
     </body>
   </file>
@@ -953,6 +861,74 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/debug/browser/watchExpressionsView" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="editWatchExpression">
+        <source xml:lang="en">Edit Expression</source>
+      </trans-unit>
+      <trans-unit id="removeWatchExpression">
+        <source xml:lang="en">Remove Expression</source>
+      </trans-unit>
+      <trans-unit id="watchExpressionInputAriaLabel">
+        <source xml:lang="en">Type watch expression</source>
+      </trans-unit>
+      <trans-unit id="watchExpressionPlaceholder">
+        <source xml:lang="en">Expression to watch</source>
+      </trans-unit>
+      <trans-unit id="watchAriaTreeLabel">
+        <source xml:lang="en">Debug Watch Expressions</source>
+        <note>Debug is a noun in this context, not a verb.</note>
+      </trans-unit>
+      <trans-unit id="watchExpressionAriaLabel">
+        <source xml:lang="en">{0}, value {1}</source>
+      </trans-unit>
+      <trans-unit id="watchVariableAriaLabel">
+        <source xml:lang="en">{0}, value {1}</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/variablesView" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="setValue">
+        <source xml:lang="en">Set Value</source>
+      </trans-unit>
+      <trans-unit id="copyAsExpression">
+        <source xml:lang="en">Copy as Expression</source>
+      </trans-unit>
+      <trans-unit id="addToWatchExpressions">
+        <source xml:lang="en">Add to Watch</source>
+      </trans-unit>
+      <trans-unit id="breakWhenValueChanges">
+        <source xml:lang="en">Break When Value Changes</source>
+      </trans-unit>
+      <trans-unit id="variableValueAriaLabel">
+        <source xml:lang="en">Type new variable value</source>
+      </trans-unit>
+      <trans-unit id="variablesAriaTreeLabel">
+        <source xml:lang="en">Debug Variables</source>
+      </trans-unit>
+      <trans-unit id="variableScopeAriaLabel">
+        <source xml:lang="en">Scope {0}</source>
+      </trans-unit>
+      <trans-unit id="variableAriaLabel_Duplicated42">
+        <source xml:lang="en">{0}, value {1}</source>
+        <note>Placeholders are variable name and variable value respectivly. They should not be translated.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/common/debugContentProvider" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="unable">
+        <source xml:lang="en">Unable to resolve the resource without a debug session</source>
+      </trans-unit>
+      <trans-unit id="canNotResolveSourceWithError">
+        <source xml:lang="en">Could not load source '{0}': {1}.</source>
+      </trans-unit>
+      <trans-unit id="canNotResolveSource">
+        <source xml:lang="en">Could not load source '{0}'.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/debug/browser/debugQuickAccess" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="noDebugResults">
@@ -980,6 +956,33 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/debug/browser/welcomeView" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="run_Duplicated5">
+        <source xml:lang="en">Run</source>
+      </trans-unit>
+      <trans-unit id="openAFileWhichCanBeDebugged">
+        <source xml:lang="en">[Open a file](command:{0}) which can be debugged or run.</source>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
+      </trans-unit>
+      <trans-unit id="runAndDebugAction">
+        <source xml:lang="en">[Run and Debug{0}](command:{1})</source>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
+      </trans-unit>
+      <trans-unit id="detectThenRunAndDebug">
+        <source xml:lang="en">[Show](command:{0}) all automatic debug configurations.</source>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
+      </trans-unit>
+      <trans-unit id="customizeRunAndDebug">
+        <source xml:lang="en">To customize Run and Debug [create a launch.json file](command:{0}).</source>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
+      </trans-unit>
+      <trans-unit id="customizeRunAndDebugOpenFolder">
+        <source xml:lang="en">To customize Run and Debug, [open a folder](command:{0}) and create a launch.json file.</source>
+        <note>Please do not translate the word "commmand", it is part of our internal syntax which must not change</note>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/debug/browser/debugActionViewItems" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="debugLaunchConfigurations">
@@ -996,6 +999,45 @@
       </trans-unit>
       <trans-unit id="debugSession">
         <source xml:lang="en">Debug Session</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/linkDetector" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="fileLinkMac">
+        <source xml:lang="en">Cmd + click to follow link</source>
+      </trans-unit>
+      <trans-unit id="fileLink">
+        <source xml:lang="en">Ctrl + click to follow link</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/common/replModel" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="consoleCleared">
+        <source xml:lang="en">Console was cleared</source>
+      </trans-unit>
+      <trans-unit id="snapshotObj">
+        <source xml:lang="en">Only primitive values are shown for this object.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/replViewer" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="debugConsole_Duplicated20">
+        <source xml:lang="en">Debug Console</source>
+      </trans-unit>
+      <trans-unit id="replVariableAriaLabel">
+        <source xml:lang="en">Variable {0}, value {1}</source>
+      </trans-unit>
+      <trans-unit id="replValueOutputAriaLabel">
+        <source xml:lang="en">{0}</source>
+      </trans-unit>
+      <trans-unit id="replRawObjectAriaLabel">
+        <source xml:lang="en">Repl variable {0}, value {1}</source>
+      </trans-unit>
+      <trans-unit id="replGroup">
+        <source xml:lang="en">Repl group {0}, read eval print loop, debug</source>
       </trans-unit>
     </body>
   </file>
@@ -1024,45 +1066,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/linkDetector" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="fileLinkMac">
-        <source xml:lang="en">Cmd + click to follow link</source>
-      </trans-unit>
-      <trans-unit id="fileLink">
-        <source xml:lang="en">Ctrl + click to follow link</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/replViewer" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="debugConsole_Duplicated30">
-        <source xml:lang="en">Debug Console</source>
-      </trans-unit>
-      <trans-unit id="replVariableAriaLabel">
-        <source xml:lang="en">Variable {0}, value {1}</source>
-      </trans-unit>
-      <trans-unit id="replValueOutputAriaLabel">
-        <source xml:lang="en">{0}</source>
-      </trans-unit>
-      <trans-unit id="replRawObjectAriaLabel">
-        <source xml:lang="en">Repl variable {0}, value {1}</source>
-      </trans-unit>
-      <trans-unit id="replGroup">
-        <source xml:lang="en">Repl group {0}, read eval print loop, debug</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/common/replModel" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="consoleCleared">
-        <source xml:lang="en">Console was cleared</source>
-      </trans-unit>
-      <trans-unit id="snapshotObj">
-        <source xml:lang="en">Only primitive values are shown for this object.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/node/debugAdapter" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="debugAdapterBinNotFound">
@@ -1077,6 +1080,49 @@
       </trans-unit>
       <trans-unit id="unableToLaunchDebugAdapterNoArgs">
         <source xml:lang="en">Unable to launch debug adapter.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/common/debugModel" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="invalidVariableAttributes">
+        <source xml:lang="en">Invalid variable attributes</source>
+      </trans-unit>
+      <trans-unit id="startDebugFirst_Duplicated22">
+        <source xml:lang="en">Please start a debug session to evaluate expressions</source>
+      </trans-unit>
+      <trans-unit id="notAvailable">
+        <source xml:lang="en">not available</source>
+      </trans-unit>
+      <trans-unit id="pausedOn">
+        <source xml:lang="en">Paused on {0}</source>
+        <note>indicates reason for program being paused</note>
+      </trans-unit>
+      <trans-unit id="paused">
+        <source xml:lang="en">Paused</source>
+      </trans-unit>
+      <trans-unit id="running_Duplicated44">
+        <source xml:lang="en">Running</source>
+        <note>indicates state</note>
+      </trans-unit>
+      <trans-unit id="breakpointDirtydHover">
+        <source xml:lang="en">Unverified breakpoint. File is modified, please restart debug session.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/debugSession" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="noDebugAdapter_Duplicated47">
+        <source xml:lang="en">No debug adapter, can not send '{0}'</source>
+      </trans-unit>
+      <trans-unit id="sessionNotReadyForBreakpoints">
+        <source xml:lang="en">Session is not ready for breakpoints</source>
+      </trans-unit>
+      <trans-unit id="debuggingStarted">
+        <source xml:lang="en">Debugging started.</source>
+      </trans-unit>
+      <trans-unit id="debuggingStopped">
+        <source xml:lang="en">Debugging stopped.</source>
       </trans-unit>
     </body>
   </file>
@@ -1108,30 +1154,10 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/common/debugModel" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/debug/common/debugSource" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="invalidVariableAttributes">
-        <source xml:lang="en">Invalid variable attributes</source>
-      </trans-unit>
-      <trans-unit id="startDebugFirst_Duplicated32">
-        <source xml:lang="en">Please start a debug session to evaluate expressions</source>
-      </trans-unit>
-      <trans-unit id="notAvailable">
-        <source xml:lang="en">not available</source>
-      </trans-unit>
-      <trans-unit id="pausedOn">
-        <source xml:lang="en">Paused on {0}</source>
-        <note>indicates reason for program being paused</note>
-      </trans-unit>
-      <trans-unit id="paused">
-        <source xml:lang="en">Paused</source>
-      </trans-unit>
-      <trans-unit id="running_Duplicated42">
-        <source xml:lang="en">Running</source>
-        <note>indicates state</note>
-      </trans-unit>
-      <trans-unit id="breakpointDirtydHover">
-        <source xml:lang="en">Unverified breakpoint. File is modified, please restart debug session.</source>
+      <trans-unit id="unknownSource">
+        <source xml:lang="en">Unknown Source</source>
       </trans-unit>
     </body>
   </file>
@@ -1175,91 +1201,6 @@
       </trans-unit>
       <trans-unit id="taskNotTracked">
         <source xml:lang="en">The task '{0}' cannot be tracked.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/debugSession" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="noDebugAdapter_Duplicated47">
-        <source xml:lang="en">No debug adapter, can not send '{0}'</source>
-      </trans-unit>
-      <trans-unit id="sessionNotReadyForBreakpoints">
-        <source xml:lang="en">Session is not ready for breakpoints</source>
-      </trans-unit>
-      <trans-unit id="debuggingStarted">
-        <source xml:lang="en">Debugging started.</source>
-      </trans-unit>
-      <trans-unit id="debuggingStopped">
-        <source xml:lang="en">Debugging stopped.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/common/debugSource" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="unknownSource">
-        <source xml:lang="en">Unknown Source</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/rawDebugSession" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="noDebugAdapterStart">
-        <source xml:lang="en">No debug adapter, can not start debug session.</source>
-      </trans-unit>
-      <trans-unit id="noDebugAdapter_Duplicated48">
-        <source xml:lang="en">No debug adapter found. Can not send '{0}'.</source>
-      </trans-unit>
-      <trans-unit id="moreInfo">
-        <source xml:lang="en">More Info</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/common/debugger" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="cannot.find.da">
-        <source xml:lang="en">Cannot find debug adapter for type '{0}'.</source>
-      </trans-unit>
-      <trans-unit id="launch.config.comment1">
-        <source xml:lang="en">Use IntelliSense to learn about possible attributes.</source>
-      </trans-unit>
-      <trans-unit id="launch.config.comment2">
-        <source xml:lang="en">Hover to view descriptions of existing attributes.</source>
-      </trans-unit>
-      <trans-unit id="launch.config.comment3">
-        <source xml:lang="en">For more information, visit: {0}</source>
-      </trans-unit>
-      <trans-unit id="debugType">
-        <source xml:lang="en">Type of configuration.</source>
-      </trans-unit>
-      <trans-unit id="debugTypeNotRecognised">
-        <source xml:lang="en">The debug type is not recognized. Make sure that you have a corresponding debug extension installed and that it is enabled.</source>
-      </trans-unit>
-      <trans-unit id="node2NotSupported">
-        <source xml:lang="en">"node2" is no longer supported, use "node" instead and set the "protocol" attribute to "inspector".</source>
-      </trans-unit>
-      <trans-unit id="debugName">
-        <source xml:lang="en">Name of configuration; appears in the launch configuration dropdown menu.</source>
-      </trans-unit>
-      <trans-unit id="debugRequest">
-        <source xml:lang="en">Request type of configuration. Can be "launch" or "attach".</source>
-      </trans-unit>
-      <trans-unit id="debugServer">
-        <source xml:lang="en">For debug extension development only: if a port is specified VS Code tries to connect to a debug adapter running in server mode</source>
-      </trans-unit>
-      <trans-unit id="debugPrelaunchTask">
-        <source xml:lang="en">Task to run before debug session starts.</source>
-      </trans-unit>
-      <trans-unit id="debugPostDebugTask">
-        <source xml:lang="en">Task to run after debug session ends.</source>
-      </trans-unit>
-      <trans-unit id="debugWindowsConfiguration">
-        <source xml:lang="en">Windows specific launch configuration attributes.</source>
-      </trans-unit>
-      <trans-unit id="debugOSXConfiguration">
-        <source xml:lang="en">OS X specific launch configuration attributes.</source>
-      </trans-unit>
-      <trans-unit id="debugLinuxConfiguration">
-        <source xml:lang="en">Linux specific launch configuration attributes.</source>
       </trans-unit>
     </body>
   </file>
@@ -1366,6 +1307,68 @@
       </trans-unit>
       <trans-unit id="compoundPrelaunchTask">
         <source xml:lang="en">Task to run before any of the compound configurations start.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/common/debugger" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="cannot.find.da">
+        <source xml:lang="en">Cannot find debug adapter for type '{0}'.</source>
+      </trans-unit>
+      <trans-unit id="launch.config.comment1">
+        <source xml:lang="en">Use IntelliSense to learn about possible attributes.</source>
+      </trans-unit>
+      <trans-unit id="launch.config.comment2">
+        <source xml:lang="en">Hover to view descriptions of existing attributes.</source>
+      </trans-unit>
+      <trans-unit id="launch.config.comment3">
+        <source xml:lang="en">For more information, visit: {0}</source>
+      </trans-unit>
+      <trans-unit id="debugType">
+        <source xml:lang="en">Type of configuration.</source>
+      </trans-unit>
+      <trans-unit id="debugTypeNotRecognised">
+        <source xml:lang="en">The debug type is not recognized. Make sure that you have a corresponding debug extension installed and that it is enabled.</source>
+      </trans-unit>
+      <trans-unit id="node2NotSupported">
+        <source xml:lang="en">"node2" is no longer supported, use "node" instead and set the "protocol" attribute to "inspector".</source>
+      </trans-unit>
+      <trans-unit id="debugName">
+        <source xml:lang="en">Name of configuration; appears in the launch configuration dropdown menu.</source>
+      </trans-unit>
+      <trans-unit id="debugRequest">
+        <source xml:lang="en">Request type of configuration. Can be "launch" or "attach".</source>
+      </trans-unit>
+      <trans-unit id="debugServer">
+        <source xml:lang="en">For debug extension development only: if a port is specified VS Code tries to connect to a debug adapter running in server mode</source>
+      </trans-unit>
+      <trans-unit id="debugPrelaunchTask">
+        <source xml:lang="en">Task to run before debug session starts.</source>
+      </trans-unit>
+      <trans-unit id="debugPostDebugTask">
+        <source xml:lang="en">Task to run after debug session ends.</source>
+      </trans-unit>
+      <trans-unit id="debugWindowsConfiguration">
+        <source xml:lang="en">Windows specific launch configuration attributes.</source>
+      </trans-unit>
+      <trans-unit id="debugOSXConfiguration">
+        <source xml:lang="en">OS X specific launch configuration attributes.</source>
+      </trans-unit>
+      <trans-unit id="debugLinuxConfiguration">
+        <source xml:lang="en">Linux specific launch configuration attributes.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/rawDebugSession" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="noDebugAdapterStart">
+        <source xml:lang="en">No debug adapter, can not start debug session.</source>
+      </trans-unit>
+      <trans-unit id="noDebugAdapter_Duplicated48">
+        <source xml:lang="en">No debug adapter found. Can not send '{0}'.</source>
+      </trans-unit>
+      <trans-unit id="moreInfo">
+        <source xml:lang="en">More Info</source>
       </trans-unit>
     </body>
   </file>

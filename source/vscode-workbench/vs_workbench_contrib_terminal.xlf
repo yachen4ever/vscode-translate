@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/workbench/contrib/terminal/common/terminal" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="terminalCategory">
+      <source xml:lang="en">Terminal</source>
+    </trans-unit>
+  </body></file>
   <file original="src/vs/workbench/contrib/terminal/common/terminalConfiguration" source-language="en" datatype="plaintext"><body>
     <trans-unit id="terminalIntegratedConfigurationTitle">
       <source xml:lang="en">Integrated Terminal</source>
@@ -229,11 +234,6 @@ Default Skipped Commands:
       <source xml:lang="en">The path of the shell that the terminal uses on Windows. [Read more about configuring the shell](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</source>
     </trans-unit>
   </body></file>
-  <file original="src/vs/workbench/contrib/terminal/common/terminal" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="terminalCategory">
-      <source xml:lang="en">Terminal</source>
-    </trans-unit>
-  </body></file>
   <file original="src/vs/workbench/contrib/terminal/browser/terminal.contribution" source-language="en" datatype="plaintext"><body>
     <trans-unit id="tasksQuickAccessPlaceholder">
       <source xml:lang="en">Type the name of a terminal to open.</source>
@@ -256,9 +256,45 @@ Default Skipped Commands:
       <source xml:lang="en">The terminal only supports monospace fonts. Be sure to restart VS Code if this is a newly installed font.</source>
     </trans-unit>
   </body></file>
+  <file original="src/vs/workbench/contrib/terminal/node/terminalProcess" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="launchFail.cwdNotDirectory">
+      <source xml:lang="en">Starting directory (cwd) "{0}" is not a directory</source>
+    </trans-unit>
+    <trans-unit id="launchFail.cwdDoesNotExist">
+      <source xml:lang="en">Starting directory (cwd) "{0}" does not exist</source>
+    </trans-unit>
+    <trans-unit id="launchFail.executableIsNotFileOrSymlink">
+      <source xml:lang="en">Shell path "{0}" is not a file of a symlink</source>
+    </trans-unit>
+    <trans-unit id="launchFail.executableDoesNotExist">
+      <source xml:lang="en">Shell path "{0}" does not exist</source>
+    </trans-unit>
+  </body></file>
   <file original="src/vs/workbench/contrib/terminal/electron-browser/terminalRemote" source-language="en" datatype="plaintext"><body>
     <trans-unit id="workbench.action.terminal.newLocal">
       <source xml:lang="en">Create New Integrated Terminal (Local)</source>
+    </trans-unit>
+  </body></file>
+  <file original="src/vs/workbench/contrib/terminal/common/terminalMenu" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="miToggleIntegratedTerminal">
+      <source xml:lang="en">&amp;&amp;Terminal</source>
+      <note>&amp;&amp; denotes a mnemonic</note>
+    </trans-unit>
+    <trans-unit id="miNewTerminal">
+      <source xml:lang="en">&amp;&amp;New Terminal</source>
+      <note>&amp;&amp; denotes a mnemonic</note>
+    </trans-unit>
+    <trans-unit id="miSplitTerminal">
+      <source xml:lang="en">&amp;&amp;Split Terminal</source>
+      <note>&amp;&amp; denotes a mnemonic</note>
+    </trans-unit>
+    <trans-unit id="miRunActiveFile">
+      <source xml:lang="en">Run &amp;&amp;Active File</source>
+      <note>&amp;&amp; denotes a mnemonic</note>
+    </trans-unit>
+    <trans-unit id="miRunSelectedText">
+      <source xml:lang="en">Run &amp;&amp;Selected Text</source>
+      <note>&amp;&amp; denotes a mnemonic</note>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/terminal/common/terminalColorRegistry" source-language="en" datatype="plaintext"><body>
@@ -338,6 +374,9 @@ Default Skipped Commands:
     </trans-unit>
     <trans-unit id="workbench.action.terminal.clear">
       <source xml:lang="en">Clear</source>
+    </trans-unit>
+    <trans-unit id="terminalLaunchTroubleshoot">
+      <source xml:lang="en">Troubleshoot</source>
     </trans-unit>
     <trans-unit id="workbench.action.terminal.newInActiveWorkspace">
       <source xml:lang="en">Create New Integrated Terminal (In Active Workspace)</source>
@@ -487,26 +526,15 @@ Default Skipped Commands:
       <source xml:lang="en">Show Environment Information</source>
     </trans-unit>
   </body></file>
-  <file original="src/vs/workbench/contrib/terminal/common/terminalMenu" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="miToggleIntegratedTerminal">
-      <source xml:lang="en">&amp;&amp;Terminal</source>
-      <note>&amp;&amp; denotes a mnemonic</note>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalQuickAccess" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="renameTerminal">
+      <source xml:lang="en">Rename Terminal</source>
     </trans-unit>
-    <trans-unit id="miNewTerminal">
-      <source xml:lang="en">&amp;&amp;New Terminal</source>
-      <note>&amp;&amp; denotes a mnemonic</note>
+    <trans-unit id="killTerminal">
+      <source xml:lang="en">Kill Terminal Instance</source>
     </trans-unit>
-    <trans-unit id="miSplitTerminal">
-      <source xml:lang="en">&amp;&amp;Split Terminal</source>
-      <note>&amp;&amp; denotes a mnemonic</note>
-    </trans-unit>
-    <trans-unit id="miRunActiveFile">
-      <source xml:lang="en">Run &amp;&amp;Active File</source>
-      <note>&amp;&amp; denotes a mnemonic</note>
-    </trans-unit>
-    <trans-unit id="miRunSelectedText">
-      <source xml:lang="en">Run &amp;&amp;Selected Text</source>
-      <note>&amp;&amp; denotes a mnemonic</note>
+    <trans-unit id="workbench.action.terminal.newplus">
+      <source xml:lang="en">Create New Integrated Terminal</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/terminal/browser/terminalService" source-language="en" datatype="plaintext"><body>
@@ -524,17 +552,6 @@ Default Skipped Commands:
     </trans-unit>
     <trans-unit id="terminal.integrated.chooseWindowsShell">
       <source xml:lang="en">Select your preferred terminal shell, you can change this later in your settings</source>
-    </trans-unit>
-  </body></file>
-  <file original="src/vs/workbench/contrib/terminal/browser/terminalQuickAccess" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="renameTerminal">
-      <source xml:lang="en">Rename Terminal</source>
-    </trans-unit>
-    <trans-unit id="killTerminal">
-      <source xml:lang="en">Kill Terminal Instance</source>
-    </trans-unit>
-    <trans-unit id="workbench.action.terminal.newplus">
-      <source xml:lang="en">Create New Integrated Terminal</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/terminal/browser/terminalConfigHelper" source-language="en" datatype="plaintext"><body>
@@ -561,6 +578,9 @@ Default Skipped Commands:
     <trans-unit id="terminal.integrated.a11yTooMuchOutput">
       <source xml:lang="en">Too much output to announce, navigate to rows manually to read</source>
     </trans-unit>
+    <trans-unit id="terminalTextBoxAriaLabelNumberAndTitle">
+      <source xml:lang="en">Terminal {0}, {1}</source>
+    </trans-unit>
     <trans-unit id="terminalTextBoxAriaLabel">
       <source xml:lang="en">Terminal {0}</source>
     </trans-unit>
@@ -579,26 +599,20 @@ Default Skipped Commands:
     <trans-unit id="terminal.integrated.copySelection.noSelection">
       <source xml:lang="en">The terminal has no selection to copy</source>
     </trans-unit>
-    <trans-unit id="terminal.integrated.exitedWithInvalidPath">
-      <source xml:lang="en">The terminal shell path "{0}" does not exist</source>
+    <trans-unit id="launchFailed.exitCodeAndCommandLine">
+      <source xml:lang="en">The terminal process "{0}" failed to launch (exit code: {1})</source>
     </trans-unit>
-    <trans-unit id="terminal.integrated.exitedWithInvalidPathDirectory">
-      <source xml:lang="en">The terminal shell path "{0}" is a directory</source>
-    </trans-unit>
-    <trans-unit id="terminal.integrated.exitedWithInvalidCWD">
-      <source xml:lang="en">The terminal shell CWD "{0}" does not exist</source>
-    </trans-unit>
-    <trans-unit id="terminal.integrated.legacyConsoleModeError">
-      <source xml:lang="en">The terminal failed to launch properly because your system has legacy console mode enabled, uncheck "Use legacy console" cmd.exe's properties to fix this.</source>
-    </trans-unit>
-    <trans-unit id="terminal.integrated.launchFailed">
-      <source xml:lang="en">The terminal process command '{0}{1}' failed to launch (exit code: {2})</source>
-    </trans-unit>
-    <trans-unit id="terminal.integrated.launchFailedExtHost">
+    <trans-unit id="launchFailed.exitCodeOnly">
       <source xml:lang="en">The terminal process failed to launch (exit code: {0})</source>
     </trans-unit>
-    <trans-unit id="terminal.integrated.exitedWithCode">
+    <trans-unit id="terminated.exitCodeAndCommandLine">
+      <source xml:lang="en">The terminal process "{0}" terminated with exit code: {1}</source>
+    </trans-unit>
+    <trans-unit id="terminated.exitCodeOnly">
       <source xml:lang="en">The terminal process terminated with exit code: {0}</source>
+    </trans-unit>
+    <trans-unit id="launchFailed.errorMessage">
+      <source xml:lang="en">The terminal process failed to launch: {0}</source>
     </trans-unit>
     <trans-unit id="terminalStaleTextBoxAriaLabel">
       <source xml:lang="en">Terminal {0} environment is stale, run the 'Show Environment Information' command for more information</source>

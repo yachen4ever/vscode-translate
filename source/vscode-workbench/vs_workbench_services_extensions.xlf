@@ -54,6 +54,13 @@ Do you want to install the extension?</source>
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/services/extensions/electron-browser/remoteExtensionManagementIpc" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="incompatible">
+        <source xml:lang="en">Unable to install extension '{0}' as it is not compatible with VS Code '{1}'.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/services/extensions/electron-browser/extensionHost" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="extensionHost.startupFailDebug">
@@ -73,13 +80,6 @@ Do you want to install the extension?</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/services/extensions/electron-browser/remoteExtensionManagementIpc" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="incompatible">
-        <source xml:lang="en">Unable to install extension '{0}' as it is not compatible with VS Code '{1}'.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/services/extensions/electron-browser/cachedExtensionScanner" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="overwritingExtension">
@@ -96,6 +96,13 @@ Do you want to install the extension?</source>
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/services/extensions/common/remoteExtensionHostClient" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="remote extension host Log">
+        <source xml:lang="en">Remote Extension Host</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/services/extensions/common/extensionHostProcessManager" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="measureExtHostLatency">
@@ -103,13 +110,6 @@ Do you want to install the extension?</source>
       </trans-unit>
       <trans-unit id="developer_Duplicated7">
         <source xml:lang="en">Developer</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/services/extensions/common/remoteExtensionHostClient" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="remote extension host Log">
-        <source xml:lang="en">Remote Extension Host</source>
       </trans-unit>
     </body>
   </file>
@@ -223,6 +223,9 @@ Do you want to install the extension?</source>
       </trans-unit>
       <trans-unit id="vscode.extension.activationEvents.workspaceContains">
         <source xml:lang="en">An activation event emitted whenever a folder is opened that contains at least a file matching the specified glob pattern.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onStartupFinished">
+        <source xml:lang="en">An activation event emitted after the start-up finished (after all eager activated extensions have finished activating).</source>
       </trans-unit>
       <trans-unit id="vscode.extension.activationEvents.onFileSystem">
         <source xml:lang="en">An activation event emitted whenever a file or folder is accessed with the given scheme.</source>
