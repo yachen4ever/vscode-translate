@@ -1,5 +1,57 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/workbench/contrib/tasks/node/processTaskSystem" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="version1_0">
+        <source xml:lang="en">The task system is configured for version 0.1.0 (see tasks.json file), which can only execute custom tasks. Upgrade to version 2.0.0 to run the task: {0}</source>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.unknownError">
+        <source xml:lang="en">A unknown error has occurred while executing a task. See task output log for details.</source>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.watchingBuildTaskFinished">
+        <source xml:lang="en">
+Watching build tasks has finished.</source>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.childProcessError">
+        <source xml:lang="en">Failed to launch external program {0} {1}.</source>
+      </trans-unit>
+      <trans-unit id="TaskRunnerSystem.cancelRequested">
+        <source xml:lang="en">
+The task '{0}' was terminated per user request.</source>
+      </trans-unit>
+      <trans-unit id="unknownProblemMatcher_Duplicated1">
+        <source xml:lang="en">Problem matcher {0} can't be resolved. The matcher will be ignored</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/node/processRunnerDetector" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="TaskSystemDetector.noGulpTasks">
+        <source xml:lang="en">Running gulp --tasks-simple didn't list any tasks. Did you run npm install?</source>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noJakeTasks">
+        <source xml:lang="en">Running jake --tasks didn't list any tasks. Did you run npm install?</source>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noGulpProgram">
+        <source xml:lang="en">Gulp is not installed on your system. Run npm install -g gulp to install it.</source>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noJakeProgram">
+        <source xml:lang="en">Jake is not installed on your system. Run npm install -g jake to install it.</source>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noGruntProgram">
+        <source xml:lang="en">Grunt is not installed on your system. Run npm install -g grunt to install it.</source>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.noProgram">
+        <source xml:lang="en">Program {0} was not found. Message is {1}</source>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.buildTaskDetected">
+        <source xml:lang="en">Build task named '{0}' detected.</source>
+      </trans-unit>
+      <trans-unit id="TaskSystemDetector.testTaskDetected">
+        <source xml:lang="en">Test task named '{0}' detected.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/tasks/common/tasks" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="TaskDefinition.missingRequiredProperty">
@@ -69,58 +121,6 @@
       <trans-unit id="TaskParse.noOsSpecificGlobalTasks">
         <source xml:lang="en">Task version 2.0.0 doesn't support global OS specific tasks. Convert them to a task with a OS specific command. Affected tasks are:
 {0}</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/tasks/node/processTaskSystem" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="version1_0">
-        <source xml:lang="en">The task system is configured for version 0.1.0 (see tasks.json file), which can only execute custom tasks. Upgrade to version 2.0.0 to run the task: {0}</source>
-      </trans-unit>
-      <trans-unit id="TaskRunnerSystem.unknownError">
-        <source xml:lang="en">A unknown error has occurred while executing a task. See task output log for details.</source>
-      </trans-unit>
-      <trans-unit id="TaskRunnerSystem.watchingBuildTaskFinished">
-        <source xml:lang="en">
-Watching build tasks has finished.</source>
-      </trans-unit>
-      <trans-unit id="TaskRunnerSystem.childProcessError">
-        <source xml:lang="en">Failed to launch external program {0} {1}.</source>
-      </trans-unit>
-      <trans-unit id="TaskRunnerSystem.cancelRequested">
-        <source xml:lang="en">
-The task '{0}' was terminated per user request.</source>
-      </trans-unit>
-      <trans-unit id="unknownProblemMatcher_Duplicated1">
-        <source xml:lang="en">Problem matcher {0} can't be resolved. The matcher will be ignored</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/tasks/node/processRunnerDetector" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="TaskSystemDetector.noGulpTasks">
-        <source xml:lang="en">Running gulp --tasks-simple didn't list any tasks. Did you run npm install?</source>
-      </trans-unit>
-      <trans-unit id="TaskSystemDetector.noJakeTasks">
-        <source xml:lang="en">Running jake --tasks didn't list any tasks. Did you run npm install?</source>
-      </trans-unit>
-      <trans-unit id="TaskSystemDetector.noGulpProgram">
-        <source xml:lang="en">Gulp is not installed on your system. Run npm install -g gulp to install it.</source>
-      </trans-unit>
-      <trans-unit id="TaskSystemDetector.noJakeProgram">
-        <source xml:lang="en">Jake is not installed on your system. Run npm install -g jake to install it.</source>
-      </trans-unit>
-      <trans-unit id="TaskSystemDetector.noGruntProgram">
-        <source xml:lang="en">Grunt is not installed on your system. Run npm install -g grunt to install it.</source>
-      </trans-unit>
-      <trans-unit id="TaskSystemDetector.noProgram">
-        <source xml:lang="en">Program {0} was not found. Message is {1}</source>
-      </trans-unit>
-      <trans-unit id="TaskSystemDetector.buildTaskDetected">
-        <source xml:lang="en">Build task named '{0}' detected.</source>
-      </trans-unit>
-      <trans-unit id="TaskSystemDetector.testTaskDetected">
-        <source xml:lang="en">Test task named '{0}' detected.</source>
       </trans-unit>
     </body>
   </file>
@@ -522,6 +522,47 @@ The task will be ignored.
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/runAutomaticTasks" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="tasks.run.allowAutomatic">
+        <source xml:lang="en">This folder has tasks ({0}) defined in 'tasks.json' that run automatically when you open this folder. Do you allow automatic tasks to run when you open this folder?</source>
+      </trans-unit>
+      <trans-unit id="allow">
+        <source xml:lang="en">Allow and run</source>
+      </trans-unit>
+      <trans-unit id="disallow">
+        <source xml:lang="en">Disallow</source>
+      </trans-unit>
+      <trans-unit id="openTasks">
+        <source xml:lang="en">Open tasks.json</source>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.manageAutomaticRunning">
+        <source xml:lang="en">Manage Automatic Tasks in Folder</source>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.allowAutomaticTasks">
+        <source xml:lang="en">Allow Automatic Tasks in Folder</source>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.disallowAutomaticTasks">
+        <source xml:lang="en">Disallow Automatic Tasks in Folder</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/taskTemplates" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="dotnetCore">
+        <source xml:lang="en">Executes .NET Core build command</source>
+      </trans-unit>
+      <trans-unit id="msbuild">
+        <source xml:lang="en">Executes the build target</source>
+      </trans-unit>
+      <trans-unit id="externalCommand">
+        <source xml:lang="en">Example to run an arbitrary external command</source>
+      </trans-unit>
+      <trans-unit id="Maven">
+        <source xml:lang="en">Executes common maven commands</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/tasks/common/taskDefinitionRegistry" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="TaskDefinition.description">
@@ -535,6 +576,37 @@ The task will be ignored.
       </trans-unit>
       <trans-unit id="TaskDefinitionExtPoint">
         <source xml:lang="en">Contributes task kinds</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/taskQuickPick" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="taskQuickPick.showAll">
+        <source xml:lang="en">Show All Tasks...</source>
+      </trans-unit>
+      <trans-unit id="configureTask_Duplicated6">
+        <source xml:lang="en">Configure Task</source>
+      </trans-unit>
+      <trans-unit id="contributedTasks">
+        <source xml:lang="en">contributed</source>
+      </trans-unit>
+      <trans-unit id="taskType">
+        <source xml:lang="en">All {0} tasks</source>
+      </trans-unit>
+      <trans-unit id="recentlyUsed_Duplicated8">
+        <source xml:lang="en">recently used</source>
+      </trans-unit>
+      <trans-unit id="configured_Duplicated10">
+        <source xml:lang="en">configured</source>
+      </trans-unit>
+      <trans-unit id="TaskQuickPick.goBack">
+        <source xml:lang="en">Go back ↩</source>
+      </trans-unit>
+      <trans-unit id="TaskQuickPick.noTasksForType">
+        <source xml:lang="en">No {0} tasks found. Go back ↩</source>
+      </trans-unit>
+      <trans-unit id="noProviderForTask">
+        <source xml:lang="en">There is no task provider registered for tasks of type "{0}".</source>
       </trans-unit>
     </body>
   </file>
@@ -754,31 +826,6 @@ The task will be ignored.
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/runAutomaticTasks" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="tasks.run.allowAutomatic">
-        <source xml:lang="en">This folder has tasks ({0}) defined in 'tasks.json' that run automatically when you open this folder. Do you allow automatic tasks to run when you open this folder?</source>
-      </trans-unit>
-      <trans-unit id="allow">
-        <source xml:lang="en">Allow and run</source>
-      </trans-unit>
-      <trans-unit id="disallow">
-        <source xml:lang="en">Disallow</source>
-      </trans-unit>
-      <trans-unit id="openTasks">
-        <source xml:lang="en">Open tasks.json</source>
-      </trans-unit>
-      <trans-unit id="workbench.action.tasks.manageAutomaticRunning">
-        <source xml:lang="en">Manage Automatic Tasks in Folder</source>
-      </trans-unit>
-      <trans-unit id="workbench.action.tasks.allowAutomaticTasks">
-        <source xml:lang="en">Allow Automatic Tasks in Folder</source>
-      </trans-unit>
-      <trans-unit id="workbench.action.tasks.disallowAutomaticTasks">
-        <source xml:lang="en">Disallow Automatic Tasks in Folder</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/tasks/browser/terminalTaskSystem" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="TerminalTaskSystem.unknownError">
@@ -807,50 +854,13 @@ The task will be ignored.
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/tasks/common/taskTemplates" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/tasks/browser/tasksQuickAccess" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="dotnetCore">
-        <source xml:lang="en">Executes .NET Core build command</source>
+      <trans-unit id="noTaskResults">
+        <source xml:lang="en">No matching tasks</source>
       </trans-unit>
-      <trans-unit id="msbuild">
-        <source xml:lang="en">Executes the build target</source>
-      </trans-unit>
-      <trans-unit id="externalCommand">
-        <source xml:lang="en">Example to run an arbitrary external command</source>
-      </trans-unit>
-      <trans-unit id="Maven">
-        <source xml:lang="en">Executes common maven commands</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/taskQuickPick" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="taskQuickPick.showAll">
-        <source xml:lang="en">Show All Tasks...</source>
-      </trans-unit>
-      <trans-unit id="configureTask_Duplicated6">
-        <source xml:lang="en">Configure Task</source>
-      </trans-unit>
-      <trans-unit id="contributedTasks">
-        <source xml:lang="en">contributed</source>
-      </trans-unit>
-      <trans-unit id="taskType">
-        <source xml:lang="en">All {0} tasks</source>
-      </trans-unit>
-      <trans-unit id="recentlyUsed_Duplicated8">
-        <source xml:lang="en">recently used</source>
-      </trans-unit>
-      <trans-unit id="configured_Duplicated10">
-        <source xml:lang="en">configured</source>
-      </trans-unit>
-      <trans-unit id="TaskQuickPick.goBack">
-        <source xml:lang="en">Go back ↩</source>
-      </trans-unit>
-      <trans-unit id="TaskQuickPick.noTasksForType">
-        <source xml:lang="en">No {0} tasks found. Go back ↩</source>
-      </trans-unit>
-      <trans-unit id="noProviderForTask">
-        <source xml:lang="en">There is no task provider registered for tasks of type "{0}".</source>
+      <trans-unit id="TaskService.pickRunTask_Duplicated12">
+        <source xml:lang="en">Select the task to run</source>
       </trans-unit>
     </body>
   </file>
@@ -879,16 +889,6 @@ The task will be ignored.
       </trans-unit>
       <trans-unit id="JsonSchema.shell_Duplicated21">
         <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/tasksQuickAccess" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="noTaskResults">
-        <source xml:lang="en">No matching tasks</source>
-      </trans-unit>
-      <trans-unit id="TaskService.pickRunTask_Duplicated12">
-        <source xml:lang="en">Select the task to run</source>
       </trans-unit>
     </body>
   </file>

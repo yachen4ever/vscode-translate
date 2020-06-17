@@ -63,28 +63,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/files/common/files" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="unknownError">
-        <source xml:lang="en">Unknown Error</source>
-      </trans-unit>
-      <trans-unit id="sizeB">
-        <source xml:lang="en">{0}B</source>
-      </trans-unit>
-      <trans-unit id="sizeKB">
-        <source xml:lang="en">{0}KB</source>
-      </trans-unit>
-      <trans-unit id="sizeMB">
-        <source xml:lang="en">{0}MB</source>
-      </trans-unit>
-      <trans-unit id="sizeGB">
-        <source xml:lang="en">{0}GB</source>
-      </trans-unit>
-      <trans-unit id="sizeTB">
-        <source xml:lang="en">{0}TB</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/files/node/diskFileSystemProvider" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="fileExists_Duplicated1">
@@ -107,37 +85,89 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/update/common/update.config.contribution" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/files/common/fileService" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="updateConfigurationTitle">
-        <source xml:lang="en">Update</source>
+      <trans-unit id="invalidPath">
+        <source xml:lang="en">Unable to resolve filesystem provider with relative file path '{0}'</source>
       </trans-unit>
-      <trans-unit id="updateMode">
-        <source xml:lang="en">Configure whether you receive automatic updates. Requires a restart after change. The updates are fetched from a Microsoft online service.</source>
+      <trans-unit id="noProviderFound">
+        <source xml:lang="en">No file system provider found for resource '{0}'</source>
       </trans-unit>
-      <trans-unit id="none">
-        <source xml:lang="en">Disable updates.</source>
+      <trans-unit id="fileNotFoundError">
+        <source xml:lang="en">Unable to resolve non-existing file '{0}'</source>
       </trans-unit>
-      <trans-unit id="manual">
-        <source xml:lang="en">Disable automatic background update checks. Updates will be available if you manually check for updates.</source>
+      <trans-unit id="fileExists_Duplicated2">
+        <source xml:lang="en">Unable to create file '{0}' that already exists when overwrite flag is not set</source>
       </trans-unit>
-      <trans-unit id="start">
-        <source xml:lang="en">Check for updates only on startup. Disable automatic background update checks.</source>
+      <trans-unit id="err.write">
+        <source xml:lang="en">Unable to write file '{0}' ({1})</source>
       </trans-unit>
-      <trans-unit id="default">
-        <source xml:lang="en">Enable automatic update checks. Code will check for updates automatically and periodically.</source>
+      <trans-unit id="fileIsDirectoryWriteError">
+        <source xml:lang="en">Unable to write file '{0}' that is actually a directory</source>
       </trans-unit>
-      <trans-unit id="deprecated_Duplicated3">
-        <source xml:lang="en">This setting is deprecated, please use '{0}' instead.</source>
+      <trans-unit id="fileModifiedError">
+        <source xml:lang="en">File Modified Since</source>
       </trans-unit>
-      <trans-unit id="enableWindowsBackgroundUpdatesTitle">
-        <source xml:lang="en">Enable Background Updates on Windows</source>
+      <trans-unit id="err.read">
+        <source xml:lang="en">Unable to read file '{0}' ({1})</source>
       </trans-unit>
-      <trans-unit id="enableWindowsBackgroundUpdates">
-        <source xml:lang="en">Enable to download and install new VS Code Versions in the background on Windows</source>
+      <trans-unit id="fileIsDirectoryReadError">
+        <source xml:lang="en">Unable to read file '{0}' that is actually a directory</source>
       </trans-unit>
-      <trans-unit id="showReleaseNotes">
-        <source xml:lang="en">Show Release Notes after an update. The Release Notes are fetched from a Microsoft online service.</source>
+      <trans-unit id="fileNotModifiedError">
+        <source xml:lang="en">File not modified since</source>
+      </trans-unit>
+      <trans-unit id="fileTooLargeError_Duplicated3">
+        <source xml:lang="en">Unable to read file '{0}' that is too large to open</source>
+      </trans-unit>
+      <trans-unit id="unableToMoveCopyError1">
+        <source xml:lang="en">Unable to copy when source '{0}' is same as target '{1}' with different path case on a case insensitive file system</source>
+      </trans-unit>
+      <trans-unit id="unableToMoveCopyError2">
+        <source xml:lang="en">Unable to move/copy when source '{0}' is parent of target '{1}'.</source>
+      </trans-unit>
+      <trans-unit id="unableToMoveCopyError3">
+        <source xml:lang="en">Unable to move/copy '{0}' because target '{1}' already exists at destination.</source>
+      </trans-unit>
+      <trans-unit id="unableToMoveCopyError4">
+        <source xml:lang="en">Unable to move/copy '{0}' into '{1}' since a file would replace the folder it is contained in.</source>
+      </trans-unit>
+      <trans-unit id="mkdirExistsError">
+        <source xml:lang="en">Unable to create folder '{0}' that already exists but is not a directory</source>
+      </trans-unit>
+      <trans-unit id="deleteFailedTrashUnsupported">
+        <source xml:lang="en">Unable to delete file '{0}' via trash because provider does not support it.</source>
+      </trans-unit>
+      <trans-unit id="deleteFailedNotFound">
+        <source xml:lang="en">Unable to delete non-existing file '{0}'</source>
+      </trans-unit>
+      <trans-unit id="deleteFailedNonEmptyFolder">
+        <source xml:lang="en">Unable to delete non-empty folder '{0}'.</source>
+      </trans-unit>
+      <trans-unit id="err.readonly">
+        <source xml:lang="en">Unable to modify readonly file '{0}'</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/common/files" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="unknownError">
+        <source xml:lang="en">Unknown Error</source>
+      </trans-unit>
+      <trans-unit id="sizeB">
+        <source xml:lang="en">{0}B</source>
+      </trans-unit>
+      <trans-unit id="sizeKB">
+        <source xml:lang="en">{0}KB</source>
+      </trans-unit>
+      <trans-unit id="sizeMB">
+        <source xml:lang="en">{0}MB</source>
+      </trans-unit>
+      <trans-unit id="sizeGB">
+        <source xml:lang="en">{0}GB</source>
+      </trans-unit>
+      <trans-unit id="sizeTB">
+        <source xml:lang="en">{0}TB</source>
       </trans-unit>
     </body>
   </file>
@@ -268,70 +298,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/files/common/fileService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="invalidPath">
-        <source xml:lang="en">Unable to resolve filesystem provider with relative file path '{0}'</source>
-      </trans-unit>
-      <trans-unit id="noProviderFound">
-        <source xml:lang="en">No file system provider found for resource '{0}'</source>
-      </trans-unit>
-      <trans-unit id="fileNotFoundError">
-        <source xml:lang="en">Unable to resolve non-existing file '{0}'</source>
-      </trans-unit>
-      <trans-unit id="fileExists_Duplicated2">
-        <source xml:lang="en">Unable to create file '{0}' that already exists when overwrite flag is not set</source>
-      </trans-unit>
-      <trans-unit id="err.write">
-        <source xml:lang="en">Unable to write file '{0}' ({1})</source>
-      </trans-unit>
-      <trans-unit id="fileIsDirectoryWriteError">
-        <source xml:lang="en">Unable to write file '{0}' that is actually a directory</source>
-      </trans-unit>
-      <trans-unit id="fileModifiedError">
-        <source xml:lang="en">File Modified Since</source>
-      </trans-unit>
-      <trans-unit id="err.read">
-        <source xml:lang="en">Unable to read file '{0}' ({1})</source>
-      </trans-unit>
-      <trans-unit id="fileIsDirectoryReadError">
-        <source xml:lang="en">Unable to read file '{0}' that is actually a directory</source>
-      </trans-unit>
-      <trans-unit id="fileNotModifiedError">
-        <source xml:lang="en">File not modified since</source>
-      </trans-unit>
-      <trans-unit id="fileTooLargeError_Duplicated7">
-        <source xml:lang="en">Unable to read file '{0}' that is too large to open</source>
-      </trans-unit>
-      <trans-unit id="unableToMoveCopyError1">
-        <source xml:lang="en">Unable to copy when source '{0}' is same as target '{1}' with different path case on a case insensitive file system</source>
-      </trans-unit>
-      <trans-unit id="unableToMoveCopyError2">
-        <source xml:lang="en">Unable to move/copy when source '{0}' is parent of target '{1}'.</source>
-      </trans-unit>
-      <trans-unit id="unableToMoveCopyError3">
-        <source xml:lang="en">Unable to move/copy '{0}' because target '{1}' already exists at destination.</source>
-      </trans-unit>
-      <trans-unit id="unableToMoveCopyError4">
-        <source xml:lang="en">Unable to move/copy '{0}' into '{1}' since a file would replace the folder it is contained in.</source>
-      </trans-unit>
-      <trans-unit id="mkdirExistsError">
-        <source xml:lang="en">Unable to create folder '{0}' that already exists but is not a directory</source>
-      </trans-unit>
-      <trans-unit id="deleteFailedTrashUnsupported">
-        <source xml:lang="en">Unable to delete file '{0}' via trash because provider does not support it.</source>
-      </trans-unit>
-      <trans-unit id="deleteFailedNotFound">
-        <source xml:lang="en">Unable to delete non-existing file '{0}'</source>
-      </trans-unit>
-      <trans-unit id="deleteFailedNonEmptyFolder">
-        <source xml:lang="en">Unable to delete non-empty folder '{0}'.</source>
-      </trans-unit>
-      <trans-unit id="err.readonly">
-        <source xml:lang="en">Unable to modify readonly file '{0}'</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="extensions">
@@ -342,9 +308,60 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/update/common/update.config.contribution" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="updateConfigurationTitle">
+        <source xml:lang="en">Update</source>
+      </trans-unit>
+      <trans-unit id="updateMode">
+        <source xml:lang="en">Configure whether you receive automatic updates. Requires a restart after change. The updates are fetched from a Microsoft online service.</source>
+      </trans-unit>
+      <trans-unit id="none">
+        <source xml:lang="en">Disable updates.</source>
+      </trans-unit>
+      <trans-unit id="manual">
+        <source xml:lang="en">Disable automatic background update checks. Updates will be available if you manually check for updates.</source>
+      </trans-unit>
+      <trans-unit id="start">
+        <source xml:lang="en">Check for updates only on startup. Disable automatic background update checks.</source>
+      </trans-unit>
+      <trans-unit id="default">
+        <source xml:lang="en">Enable automatic update checks. Code will check for updates automatically and periodically.</source>
+      </trans-unit>
+      <trans-unit id="deprecated_Duplicated7">
+        <source xml:lang="en">This setting is deprecated, please use '{0}' instead.</source>
+      </trans-unit>
+      <trans-unit id="enableWindowsBackgroundUpdatesTitle">
+        <source xml:lang="en">Enable Background Updates on Windows</source>
+      </trans-unit>
+      <trans-unit id="enableWindowsBackgroundUpdates">
+        <source xml:lang="en">Enable to download and install new VS Code Versions in the background on Windows</source>
+      </trans-unit>
+      <trans-unit id="showReleaseNotes">
+        <source xml:lang="en">Show Release Notes after an update. The Release Notes are fetched from a Microsoft online service.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="telemetryConfigurationTitle">
+        <source xml:lang="en">Telemetry</source>
+      </trans-unit>
+      <trans-unit id="telemetry.enableTelemetry">
+        <source xml:lang="en">Enable usage data and errors to be sent to a Microsoft online service.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/extensionManagement/node/extensionManagementUtil" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="invalidManifest_Duplicated9">
+        <source xml:lang="en">VSIX invalid: package.json is not a JSON file.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/extensionManagement/node/extensionManagementService" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="incompatible_Duplicated9">
+      <trans-unit id="incompatible_Duplicated11">
         <source xml:lang="en">Unable to install extension '{0}' as it is not compatible with VS Code '{1}'.</source>
       </trans-unit>
       <trans-unit id="restartCode">
@@ -388,23 +405,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="telemetryConfigurationTitle">
-        <source xml:lang="en">Telemetry</source>
-      </trans-unit>
-      <trans-unit id="telemetry.enableTelemetry">
-        <source xml:lang="en">Enable usage data and errors to be sent to a Microsoft online service.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/extensionManagement/node/extensionManagementUtil" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="invalidManifest_Duplicated11">
-        <source xml:lang="en">VSIX invalid: package.json is not a JSON file.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/userDataSync/common/userDataSyncService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="turned off">
@@ -422,6 +422,23 @@
     <body>
       <trans-unit id="error incompatible">
         <source xml:lang="en">Cannot read machines data as the current version is incompatible. Please update {0} and try again.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/dialogs/common/dialogs" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="moreFile">
+        <source xml:lang="en">...1 additional file not shown</source>
+      </trans-unit>
+      <trans-unit id="moreFiles">
+        <source xml:lang="en">...{0} additional files not shown</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/workspaces/common/workspaces" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="codeWorkspace">
+        <source xml:lang="en">Code Workspace</source>
       </trans-unit>
     </body>
   </file>
@@ -447,20 +464,13 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/dialogs/common/dialogs" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="moreFile">
-        <source xml:lang="en">...1 additional file not shown</source>
+      <trans-unit id="binFailed">
+        <source xml:lang="en">Failed to move '{0}' to the recycle bin</source>
       </trans-unit>
-      <trans-unit id="moreFiles">
-        <source xml:lang="en">...{0} additional files not shown</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/workspaces/common/workspaces" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="codeWorkspace">
-        <source xml:lang="en">Code Workspace</source>
+      <trans-unit id="trashFailed">
+        <source xml:lang="en">Failed to move '{0}' to the trash</source>
       </trans-unit>
     </body>
   </file>
@@ -471,16 +481,6 @@
       </trans-unit>
       <trans-unit id="workspaceName">
         <source xml:lang="en">{0} (Workspace)</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="binFailed">
-        <source xml:lang="en">Failed to move '{0}' to the recycle bin</source>
-      </trans-unit>
-      <trans-unit id="trashFailed">
-        <source xml:lang="en">Failed to move '{0}' to the trash</source>
       </trans-unit>
     </body>
   </file>
@@ -1006,6 +1006,19 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/workspaces/electron-main/workspacesMainService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="ok_Duplicated15">
+        <source xml:lang="en">OK</source>
+      </trans-unit>
+      <trans-unit id="workspaceOpenedMessage">
+        <source xml:lang="en">Unable to save workspace '{0}'</source>
+      </trans-unit>
+      <trans-unit id="workspaceOpenedDetail">
+        <source xml:lang="en">The workspace is already opened in another window. Please close that window first and then try again.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/workspaces/electron-main/workspacesHistoryMainService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="newWindow_Duplicated6">
@@ -1022,19 +1035,6 @@
       </trans-unit>
       <trans-unit id="workspaceDesc">
         <source xml:lang="en">{0} {1}</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/workspaces/electron-main/workspacesMainService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="ok_Duplicated15">
-        <source xml:lang="en">OK</source>
-      </trans-unit>
-      <trans-unit id="workspaceOpenedMessage">
-        <source xml:lang="en">Unable to save workspace '{0}'</source>
-      </trans-unit>
-      <trans-unit id="workspaceOpenedDetail">
-        <source xml:lang="en">The workspace is already opened in another window. Please close that window first and then try again.</source>
       </trans-unit>
     </body>
   </file>
@@ -1063,8 +1063,24 @@
       <trans-unit id="fileTooLargeForHeapError">
         <source xml:lang="en">To open a file of this size, you need to restart and allow it to use more memory</source>
       </trans-unit>
-      <trans-unit id="fileTooLargeError_Duplicated8">
+      <trans-unit id="fileTooLargeError_Duplicated4">
         <source xml:lang="en">File is too large to open</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/extensionManagement/node/extensionsScanner" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="errorDeleting">
+        <source xml:lang="en">Unable to delete the existing folder '{0}' while installing the extension '{1}'. Please delete the folder manually and try again</source>
+      </trans-unit>
+      <trans-unit id="cannot read">
+        <source xml:lang="en">Cannot read the extension from {0}</source>
+      </trans-unit>
+      <trans-unit id="renameError">
+        <source xml:lang="en">Unknown error while renaming {0} to {1}</source>
+      </trans-unit>
+      <trans-unit id="invalidManifest_Duplicated10">
+        <source xml:lang="en">Extension invalid: package.json is not a JSON file.</source>
       </trans-unit>
     </body>
   </file>
@@ -1081,22 +1097,6 @@
       </trans-unit>
       <trans-unit id="versionMismatch">
         <source xml:lang="en">Extension is not compatible with Code {0}. Extension requires: {1}.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/extensionManagement/node/extensionsScanner" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="errorDeleting">
-        <source xml:lang="en">Unable to delete the existing folder '{0}' while installing the extension '{1}'. Please delete the folder manually and try again</source>
-      </trans-unit>
-      <trans-unit id="cannot read">
-        <source xml:lang="en">Cannot read the extension from {0}</source>
-      </trans-unit>
-      <trans-unit id="renameError">
-        <source xml:lang="en">Unknown error while renaming {0} to {1}</source>
-      </trans-unit>
-      <trans-unit id="invalidManifest_Duplicated12">
-        <source xml:lang="en">Extension invalid: package.json is not a JSON file.</source>
       </trans-unit>
     </body>
   </file>
@@ -1352,7 +1352,7 @@
   </file>
   <file original="src/vs/platform/userDataSync/common/abstractSynchronizer" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="incompatible_Duplicated10">
+      <trans-unit id="incompatible_Duplicated12">
         <source xml:lang="en">Cannot sync {0} as its local version {1} is not compatible with its remote version {2}</source>
         <note>This is an error while syncing a resource that its local version is not compatible with its remote version.</note>
       </trans-unit>
@@ -1491,7 +1491,7 @@
       <trans-unit id="abstract">
         <source xml:lang="en">Style to use for symbols that are abstract.</source>
       </trans-unit>
-      <trans-unit id="deprecated_Duplicated4">
+      <trans-unit id="deprecated_Duplicated8">
         <source xml:lang="en">Style to use for symbols that are deprecated.</source>
       </trans-unit>
       <trans-unit id="modification">
