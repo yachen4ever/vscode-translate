@@ -59,71 +59,6 @@ The task '{0}' was terminated per user request.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/tasks/common/taskConfiguration" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="ConfigurationParser.invalidCWD">
-        <source xml:lang="en">Warning: options.cwd must be of type string. Ignoring value {0}
-</source>
-      </trans-unit>
-      <trans-unit id="ConfigurationParser.inValidArg">
-        <source xml:lang="en">Error: command argument must either be a string or a quoted string. Provided value is:
-{0}</source>
-      </trans-unit>
-      <trans-unit id="ConfigurationParser.noShell">
-        <source xml:lang="en">Warning: shell configuration is only supported when executing tasks in the terminal.</source>
-      </trans-unit>
-      <trans-unit id="ConfigurationParser.noName">
-        <source xml:lang="en">Error: Problem Matcher in declare scope must have a name:
-{0}
-</source>
-      </trans-unit>
-      <trans-unit id="ConfigurationParser.unknownMatcherKind">
-        <source xml:lang="en">Warning: the defined problem matcher is unknown. Supported types are string | ProblemMatcher | Array&lt;string | ProblemMatcher&gt;.
-{0}
-</source>
-      </trans-unit>
-      <trans-unit id="ConfigurationParser.invalidVariableReference">
-        <source xml:lang="en">Error: Invalid problemMatcher reference: {0}
-</source>
-      </trans-unit>
-      <trans-unit id="ConfigurationParser.noTaskType">
-        <source xml:lang="en">Error: tasks configuration must have a type property. The configuration will be ignored.
-{0}
-</source>
-      </trans-unit>
-      <trans-unit id="ConfigurationParser.noTypeDefinition">
-        <source xml:lang="en">Error: there is no registered task type '{0}'. Did you miss to install an extension that provides a corresponding task provider?</source>
-      </trans-unit>
-      <trans-unit id="ConfigurationParser.missingType">
-        <source xml:lang="en">Error: the task configuration '{0}' is missing the required property 'type'. The task configuration will be ignored.</source>
-      </trans-unit>
-      <trans-unit id="ConfigurationParser.incorrectType">
-        <source xml:lang="en">Error: the task configuration '{0}' is using an unknown type. The task configuration will be ignored.</source>
-      </trans-unit>
-      <trans-unit id="ConfigurationParser.notCustom">
-        <source xml:lang="en">Error: tasks is not declared as a custom task. The configuration will be ignored.
-{0}
-</source>
-      </trans-unit>
-      <trans-unit id="ConfigurationParser.noTaskName">
-        <source xml:lang="en">Error: a task must provide a label property. The task will be ignored.
-{0}
-</source>
-      </trans-unit>
-      <trans-unit id="taskConfiguration.noCommandOrDependsOn">
-        <source xml:lang="en">Error: the task '{0}' neither specifies a command nor a dependsOn property. The task will be ignored. Its definition is:
-{1}</source>
-      </trans-unit>
-      <trans-unit id="taskConfiguration.noCommand">
-        <source xml:lang="en">Error: the task '{0}' doesn't define a command. The task will be ignored. Its definition is:
-{1}</source>
-      </trans-unit>
-      <trans-unit id="TaskParse.noOsSpecificGlobalTasks">
-        <source xml:lang="en">Task version 2.0.0 doesn't support global OS specific tasks. Convert them to a task with a OS specific command. Affected tasks are:
-{0}</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/tasks/browser/abstractTaskService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="ConfigureTaskRunnerAction.label">
@@ -385,6 +320,71 @@ The task will be ignored.
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/tasks/common/taskConfiguration" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="ConfigurationParser.invalidCWD">
+        <source xml:lang="en">Warning: options.cwd must be of type string. Ignoring value {0}
+</source>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.inValidArg">
+        <source xml:lang="en">Error: command argument must either be a string or a quoted string. Provided value is:
+{0}</source>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.noShell">
+        <source xml:lang="en">Warning: shell configuration is only supported when executing tasks in the terminal.</source>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.noName">
+        <source xml:lang="en">Error: Problem Matcher in declare scope must have a name:
+{0}
+</source>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.unknownMatcherKind">
+        <source xml:lang="en">Warning: the defined problem matcher is unknown. Supported types are string | ProblemMatcher | Array&lt;string | ProblemMatcher&gt;.
+{0}
+</source>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.invalidVariableReference">
+        <source xml:lang="en">Error: Invalid problemMatcher reference: {0}
+</source>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.noTaskType">
+        <source xml:lang="en">Error: tasks configuration must have a type property. The configuration will be ignored.
+{0}
+</source>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.noTypeDefinition">
+        <source xml:lang="en">Error: there is no registered task type '{0}'. Did you miss to install an extension that provides a corresponding task provider?</source>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.missingType">
+        <source xml:lang="en">Error: the task configuration '{0}' is missing the required property 'type'. The task configuration will be ignored.</source>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.incorrectType">
+        <source xml:lang="en">Error: the task configuration '{0}' is using an unknown type. The task configuration will be ignored.</source>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.notCustom">
+        <source xml:lang="en">Error: tasks is not declared as a custom task. The configuration will be ignored.
+{0}
+</source>
+      </trans-unit>
+      <trans-unit id="ConfigurationParser.noTaskName">
+        <source xml:lang="en">Error: a task must provide a label property. The task will be ignored.
+{0}
+</source>
+      </trans-unit>
+      <trans-unit id="taskConfiguration.noCommandOrDependsOn">
+        <source xml:lang="en">Error: the task '{0}' neither specifies a command nor a dependsOn property. The task will be ignored. Its definition is:
+{1}</source>
+      </trans-unit>
+      <trans-unit id="taskConfiguration.noCommand">
+        <source xml:lang="en">Error: the task '{0}' doesn't define a command. The task will be ignored. Its definition is:
+{1}</source>
+      </trans-unit>
+      <trans-unit id="TaskParse.noOsSpecificGlobalTasks">
+        <source xml:lang="en">Task version 2.0.0 doesn't support global OS specific tasks. Convert them to a task with a OS specific command. Affected tasks are:
+{0}</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/tasks/browser/task.contribution" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="tasksCategory">
@@ -519,6 +519,22 @@ The task will be ignored.
       </trans-unit>
       <trans-unit id="task.SaveBeforeRun.prompt">
         <source xml:lang="en">Prompts whether to save editors before running.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/common/taskDefinitionRegistry" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="TaskDefinition.description">
+        <source xml:lang="en">The actual task type. Please note that types starting with a '$' are reserved for internal usage.</source>
+      </trans-unit>
+      <trans-unit id="TaskDefinition.properties">
+        <source xml:lang="en">Additional properties of the task type</source>
+      </trans-unit>
+      <trans-unit id="TaskTypeConfiguration.noType">
+        <source xml:lang="en">The task type configuration is missing the required 'taskType' property</source>
+      </trans-unit>
+      <trans-unit id="TaskDefinitionExtPoint">
+        <source xml:lang="en">Contributes task kinds</source>
       </trans-unit>
     </body>
   </file>
@@ -738,22 +754,6 @@ The task will be ignored.
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/tasks/common/taskDefinitionRegistry" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="TaskDefinition.description">
-        <source xml:lang="en">The actual task type. Please note that types starting with a '$' are reserved for internal usage.</source>
-      </trans-unit>
-      <trans-unit id="TaskDefinition.properties">
-        <source xml:lang="en">Additional properties of the task type</source>
-      </trans-unit>
-      <trans-unit id="TaskTypeConfiguration.noType">
-        <source xml:lang="en">The task type configuration is missing the required 'taskType' property</source>
-      </trans-unit>
-      <trans-unit id="TaskDefinitionExtPoint">
-        <source xml:lang="en">Contributes task kinds</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/tasks/common/taskTemplates" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="dotnetCore">
@@ -767,31 +767,6 @@ The task will be ignored.
       </trans-unit>
       <trans-unit id="Maven">
         <source xml:lang="en">Executes common maven commands</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/runAutomaticTasks" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="tasks.run.allowAutomatic">
-        <source xml:lang="en">This folder has tasks ({0}) defined in 'tasks.json' that run automatically when you open this folder. Do you allow automatic tasks to run when you open this folder?</source>
-      </trans-unit>
-      <trans-unit id="allow">
-        <source xml:lang="en">Allow and run</source>
-      </trans-unit>
-      <trans-unit id="disallow">
-        <source xml:lang="en">Disallow</source>
-      </trans-unit>
-      <trans-unit id="openTasks">
-        <source xml:lang="en">Open tasks.json</source>
-      </trans-unit>
-      <trans-unit id="workbench.action.tasks.manageAutomaticRunning">
-        <source xml:lang="en">Manage Automatic Tasks in Folder</source>
-      </trans-unit>
-      <trans-unit id="workbench.action.tasks.allowAutomaticTasks">
-        <source xml:lang="en">Allow Automatic Tasks in Folder</source>
-      </trans-unit>
-      <trans-unit id="workbench.action.tasks.disallowAutomaticTasks">
-        <source xml:lang="en">Disallow Automatic Tasks in Folder</source>
       </trans-unit>
     </body>
   </file>
@@ -854,6 +829,41 @@ The task will be ignored.
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/runAutomaticTasks" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="tasks.run.allowAutomatic">
+        <source xml:lang="en">This folder has tasks ({0}) defined in 'tasks.json' that run automatically when you open this folder. Do you allow automatic tasks to run when you open this folder?</source>
+      </trans-unit>
+      <trans-unit id="allow">
+        <source xml:lang="en">Allow and run</source>
+      </trans-unit>
+      <trans-unit id="disallow">
+        <source xml:lang="en">Disallow</source>
+      </trans-unit>
+      <trans-unit id="openTasks">
+        <source xml:lang="en">Open tasks.json</source>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.manageAutomaticRunning">
+        <source xml:lang="en">Manage Automatic Tasks in Folder</source>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.allowAutomaticTasks">
+        <source xml:lang="en">Allow Automatic Tasks in Folder</source>
+      </trans-unit>
+      <trans-unit id="workbench.action.tasks.disallowAutomaticTasks">
+        <source xml:lang="en">Disallow Automatic Tasks in Folder</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/tasks/browser/tasksQuickAccess" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="noTaskResults">
+        <source xml:lang="en">No matching tasks</source>
+      </trans-unit>
+      <trans-unit id="TaskService.pickRunTask_Duplicated12">
+        <source xml:lang="en">Select the task to run</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/tasks/common/jsonSchema_v1" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="JsonSchema.version.deprecated">
@@ -879,16 +889,6 @@ The task will be ignored.
       </trans-unit>
       <trans-unit id="JsonSchema.shell_Duplicated21">
         <source xml:lang="en">Specifies whether the command is a shell command or an external program. Defaults to false if omitted.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/tasks/browser/tasksQuickAccess" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="noTaskResults">
-        <source xml:lang="en">No matching tasks</source>
-      </trans-unit>
-      <trans-unit id="TaskService.pickRunTask_Duplicated12">
-        <source xml:lang="en">Select the task to run</source>
       </trans-unit>
     </body>
   </file>
