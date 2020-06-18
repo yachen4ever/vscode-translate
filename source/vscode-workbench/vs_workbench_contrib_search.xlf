@@ -38,12 +38,6 @@
       <trans-unit id="view">
         <source xml:lang="en">View</source>
       </trans-unit>
-      <trans-unit id="findInFiles.description">
-        <source xml:lang="en">Open the search viewlet</source>
-      </trans-unit>
-      <trans-unit id="findInFiles.args">
-        <source xml:lang="en">A set of options for the search viewlet</source>
-      </trans-unit>
       <trans-unit id="findInFiles">
         <source xml:lang="en">Find in Files</source>
       </trans-unit>
@@ -122,7 +116,7 @@
         <source xml:lang="en">Controls whether the search will be shown as a view in the sidebar or as a panel in the panel area for more horizontal space.</source>
       </trans-unit>
       <trans-unit id="search.location.deprecationMessage">
-        <source xml:lang="en">This setting is deprecated. Please use drag and drop instead by dragging the search icon.</source>
+        <source xml:lang="en">This setting is deprecated. Please use the search view's context menu instead.</source>
       </trans-unit>
       <trans-unit id="search.collapseResults.auto">
         <source xml:lang="en">Files with less than 10 results are expanded. Others are collapsed.</source>
@@ -178,9 +172,6 @@
       <trans-unit id="search.searchEditor.reusePriorSearchConfiguration">
         <source xml:lang="en">When enabled, new Search Editors will reuse the includes, excludes, and flags of the previously opened Search Editor</source>
       </trans-unit>
-      <trans-unit id="search.searchEditor.defaultNumberOfContextLines">
-        <source xml:lang="en">The default number of surrounding context lines to use when creating new Search Editors. If using `#search.searchEditor.reusePriorSearchConfiguration#`, this can be set to `null` (empty) to use the prior Search Editor's configuration.</source>
-      </trans-unit>
       <trans-unit id="searchSortOrder.default">
         <source xml:lang="en">Results are sorted by folder and file names, in alphabetical order.</source>
       </trans-unit>
@@ -209,6 +200,26 @@
       <trans-unit id="miGotoSymbolInWorkspace">
         <source xml:lang="en">Go to Symbol in &amp;&amp;Workspace...</source>
         <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/search/browser/symbolsQuickAccess" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="noSymbolResults">
+        <source xml:lang="en">No matching workspace symbols</source>
+      </trans-unit>
+      <trans-unit id="openToSide_Duplicated3">
+        <source xml:lang="en">Open to the Side</source>
+      </trans-unit>
+      <trans-unit id="openToBottom_Duplicated5">
+        <source xml:lang="en">Open to the Bottom</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/search/common/queryBuilder" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="search.noWorkspaceWithName">
+        <source xml:lang="en">No folder in workspace with name: {0}</source>
       </trans-unit>
     </body>
   </file>
@@ -431,16 +442,10 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/search/browser/symbolsQuickAccess" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/search/browser/replaceService" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="noSymbolResults">
-        <source xml:lang="en">No matching workspace symbols</source>
-      </trans-unit>
-      <trans-unit id="openToSide_Duplicated3">
-        <source xml:lang="en">Open to the Side</source>
-      </trans-unit>
-      <trans-unit id="openToBottom_Duplicated5">
-        <source xml:lang="en">Open to the Bottom</source>
+      <trans-unit id="fileReplaceChanges">
+        <source xml:lang="en">{0} ↔ {1} (Replace Preview)</source>
       </trans-unit>
     </body>
   </file>
@@ -463,14 +468,22 @@
       </trans-unit>
       <trans-unit id="openToSide_Duplicated4">
         <source xml:lang="en">Open to the Side</source>
-        <note>Open this file in a split editor on the left/right side</note>
       </trans-unit>
       <trans-unit id="openToBottom_Duplicated6">
         <source xml:lang="en">Open to the Bottom</source>
-        <note>Open this file in a split editor on the bottom</note>
       </trans-unit>
       <trans-unit id="closeEditor">
         <source xml:lang="en">Remove from Recently Opened</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/search/browser/patternInputWidget" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="defaultLabel">
+        <source xml:lang="en">input</source>
+      </trans-unit>
+      <trans-unit id="useExcludesAndIgnoreFilesDescription">
+        <source xml:lang="en">Use Exclude Settings and Ignore Files</source>
       </trans-unit>
     </body>
   </file>
@@ -514,30 +527,6 @@
       </trans-unit>
       <trans-unit id="searchResultAria">
         <source xml:lang="en">Found '{0}' at column {1} in line '{2}'</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/search/common/queryBuilder" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="search.noWorkspaceWithName">
-        <source xml:lang="en">No folder in workspace with name: {0}</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/search/browser/patternInputWidget" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="defaultLabel">
-        <source xml:lang="en">input</source>
-      </trans-unit>
-      <trans-unit id="useExcludesAndIgnoreFilesDescription">
-        <source xml:lang="en">Use Exclude Settings and Ignore Files</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/search/browser/replaceService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="fileReplaceChanges">
-        <source xml:lang="en">{0} ↔ {1} (Replace Preview)</source>
       </trans-unit>
     </body>
   </file>

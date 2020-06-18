@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file original="src/vs/workbench/contrib/terminal/common/terminal" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="terminalCategory">
+  <file original="src/vs/workbench/contrib/terminal/browser/terminal.contribution" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="tasksQuickAccessPlaceholder">
+      <source xml:lang="en">Type the name of a terminal to open.</source>
+    </trans-unit>
+    <trans-unit id="tasksQuickAccessHelp">
+      <source xml:lang="en">Show All Opened Terminals</source>
+    </trans-unit>
+    <trans-unit id="terminal">
       <source xml:lang="en">Terminal</source>
+    </trans-unit>
+    <trans-unit id="viewCategory">
+      <source xml:lang="en">View</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/terminal/common/terminalConfiguration" source-language="en" datatype="plaintext"><body>
@@ -11,15 +20,12 @@
     </trans-unit>
     <trans-unit id="terminal.integrated.automationShell.linux">
       <source xml:lang="en">A path that when set will override {0} and ignore {1} values for automation-related terminal usage like tasks and debug.</source>
-      <note>{0} and {1} are the `shell` and `shellArgs` settings keys</note>
     </trans-unit>
     <trans-unit id="terminal.integrated.automationShell.osx">
       <source xml:lang="en">A path that when set will override {0} and ignore {1} values for automation-related terminal usage like tasks and debug.</source>
-      <note>{0} and {1} are the `shell` and `shellArgs` settings keys</note>
     </trans-unit>
     <trans-unit id="terminal.integrated.automationShell.windows">
       <source xml:lang="en">A path that when set will override {0} and ignore {1} values for automation-related terminal usage like tasks and debug.</source>
-      <note>{0} and {1} are the `shell` and `shellArgs` settings keys</note>
     </trans-unit>
     <trans-unit id="terminal.integrated.shellArgs.linux">
       <source xml:lang="en">The command line arguments to use when on the Linux terminal. [Read more about configuring the shell](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</source>
@@ -234,18 +240,9 @@ Default Skipped Commands:
       <source xml:lang="en">The path of the shell that the terminal uses on Windows. [Read more about configuring the shell](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</source>
     </trans-unit>
   </body></file>
-  <file original="src/vs/workbench/contrib/terminal/browser/terminal.contribution" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="tasksQuickAccessPlaceholder">
-      <source xml:lang="en">Type the name of a terminal to open.</source>
-    </trans-unit>
-    <trans-unit id="tasksQuickAccessHelp">
-      <source xml:lang="en">Show All Opened Terminals</source>
-    </trans-unit>
-    <trans-unit id="terminal">
+  <file original="src/vs/workbench/contrib/terminal/common/terminal" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="terminalCategory">
       <source xml:lang="en">Terminal</source>
-    </trans-unit>
-    <trans-unit id="viewCategory">
-      <source xml:lang="en">View</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/terminal/browser/terminalView" source-language="en" datatype="plaintext"><body>
@@ -254,20 +251,6 @@ Default Skipped Commands:
     </trans-unit>
     <trans-unit id="terminal.monospaceOnly">
       <source xml:lang="en">The terminal only supports monospace fonts. Be sure to restart VS Code if this is a newly installed font.</source>
-    </trans-unit>
-  </body></file>
-  <file original="src/vs/workbench/contrib/terminal/node/terminalProcess" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="launchFail.cwdNotDirectory">
-      <source xml:lang="en">Starting directory (cwd) "{0}" is not a directory</source>
-    </trans-unit>
-    <trans-unit id="launchFail.cwdDoesNotExist">
-      <source xml:lang="en">Starting directory (cwd) "{0}" does not exist</source>
-    </trans-unit>
-    <trans-unit id="launchFail.executableIsNotFileOrSymlink">
-      <source xml:lang="en">Shell path "{0}" is not a file of a symlink</source>
-    </trans-unit>
-    <trans-unit id="launchFail.executableDoesNotExist">
-      <source xml:lang="en">Shell path "{0}" does not exist</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/terminal/electron-browser/terminalRemote" source-language="en" datatype="plaintext"><body>
@@ -331,6 +314,23 @@ Default Skipped Commands:
       <source xml:lang="en">Create New Integrated Terminal</source>
     </trans-unit>
   </body></file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalService" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="workbench.action.terminal.allowWorkspaceShell">
+      <source xml:lang="en">Allow Workspace Shell Configuration</source>
+    </trans-unit>
+    <trans-unit id="workbench.action.terminal.disallowWorkspaceShell">
+      <source xml:lang="en">Disallow Workspace Shell Configuration</source>
+    </trans-unit>
+    <trans-unit id="terminalService.terminalCloseConfirmationSingular">
+      <source xml:lang="en">There is an active terminal session, do you want to kill it?</source>
+    </trans-unit>
+    <trans-unit id="terminalService.terminalCloseConfirmationPlural">
+      <source xml:lang="en">There are {0} active terminal sessions, do you want to kill them?</source>
+    </trans-unit>
+    <trans-unit id="terminal.integrated.chooseWindowsShell">
+      <source xml:lang="en">Select your preferred terminal shell, you can change this later in your settings</source>
+    </trans-unit>
+  </body></file>
   <file original="src/vs/workbench/contrib/terminal/browser/terminalActions" source-language="en" datatype="plaintext"><body>
     <trans-unit id="workbench.action.terminal.newWorkspacePlaceholder">
       <source xml:lang="en">Select current working directory for new terminal</source>
@@ -385,9 +385,6 @@ Default Skipped Commands:
     </trans-unit>
     <trans-unit id="workbench.action.terminal.clear">
       <source xml:lang="en">Clear</source>
-    </trans-unit>
-    <trans-unit id="terminalLaunchTroubleshoot">
-      <source xml:lang="en">Troubleshoot</source>
     </trans-unit>
     <trans-unit id="workbench.action.terminal.newInActiveWorkspace">
       <source xml:lang="en">Create New Integrated Terminal (In Active Workspace)</source>
@@ -537,23 +534,6 @@ Default Skipped Commands:
       <source xml:lang="en">Show Environment Information</source>
     </trans-unit>
   </body></file>
-  <file original="src/vs/workbench/contrib/terminal/browser/terminalService" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="workbench.action.terminal.allowWorkspaceShell">
-      <source xml:lang="en">Allow Workspace Shell Configuration</source>
-    </trans-unit>
-    <trans-unit id="workbench.action.terminal.disallowWorkspaceShell">
-      <source xml:lang="en">Disallow Workspace Shell Configuration</source>
-    </trans-unit>
-    <trans-unit id="terminalService.terminalCloseConfirmationSingular">
-      <source xml:lang="en">There is an active terminal session, do you want to kill it?</source>
-    </trans-unit>
-    <trans-unit id="terminalService.terminalCloseConfirmationPlural">
-      <source xml:lang="en">There are {0} active terminal sessions, do you want to kill them?</source>
-    </trans-unit>
-    <trans-unit id="terminal.integrated.chooseWindowsShell">
-      <source xml:lang="en">Select your preferred terminal shell, you can change this later in your settings</source>
-    </trans-unit>
-  </body></file>
   <file original="src/vs/workbench/contrib/terminal/browser/terminalConfigHelper" source-language="en" datatype="plaintext"><body>
     <trans-unit id="terminal.integrated.allowWorkspaceShell">
       <source xml:lang="en">Do you allow this workspace to modify your terminal shell? {0}</source>
@@ -578,9 +558,6 @@ Default Skipped Commands:
     <trans-unit id="terminal.integrated.a11yTooMuchOutput">
       <source xml:lang="en">Too much output to announce, navigate to rows manually to read</source>
     </trans-unit>
-    <trans-unit id="terminalTextBoxAriaLabelNumberAndTitle">
-      <source xml:lang="en">Terminal {0}, {1}</source>
-    </trans-unit>
     <trans-unit id="terminalTextBoxAriaLabel">
       <source xml:lang="en">Terminal {0}</source>
     </trans-unit>
@@ -599,20 +576,26 @@ Default Skipped Commands:
     <trans-unit id="terminal.integrated.copySelection.noSelection">
       <source xml:lang="en">The terminal has no selection to copy</source>
     </trans-unit>
-    <trans-unit id="launchFailed.exitCodeAndCommandLine">
-      <source xml:lang="en">The terminal process "{0}" failed to launch (exit code: {1})</source>
+    <trans-unit id="terminal.integrated.exitedWithInvalidPath">
+      <source xml:lang="en">The terminal shell path "{0}" does not exist</source>
     </trans-unit>
-    <trans-unit id="launchFailed.exitCodeOnly">
+    <trans-unit id="terminal.integrated.exitedWithInvalidPathDirectory">
+      <source xml:lang="en">The terminal shell path "{0}" is a directory</source>
+    </trans-unit>
+    <trans-unit id="terminal.integrated.exitedWithInvalidCWD">
+      <source xml:lang="en">The terminal shell CWD "{0}" does not exist</source>
+    </trans-unit>
+    <trans-unit id="terminal.integrated.legacyConsoleModeError">
+      <source xml:lang="en">The terminal failed to launch properly because your system has legacy console mode enabled, uncheck "Use legacy console" cmd.exe's properties to fix this.</source>
+    </trans-unit>
+    <trans-unit id="terminal.integrated.launchFailed">
+      <source xml:lang="en">The terminal process command '{0}{1}' failed to launch (exit code: {2})</source>
+    </trans-unit>
+    <trans-unit id="terminal.integrated.launchFailedExtHost">
       <source xml:lang="en">The terminal process failed to launch (exit code: {0})</source>
     </trans-unit>
-    <trans-unit id="terminated.exitCodeAndCommandLine">
-      <source xml:lang="en">The terminal process "{0}" terminated with exit code: {1}</source>
-    </trans-unit>
-    <trans-unit id="terminated.exitCodeOnly">
+    <trans-unit id="terminal.integrated.exitedWithCode">
       <source xml:lang="en">The terminal process terminated with exit code: {0}</source>
-    </trans-unit>
-    <trans-unit id="launchFailed.errorMessage">
-      <source xml:lang="en">The terminal process failed to launch: {0}</source>
     </trans-unit>
     <trans-unit id="terminalStaleTextBoxAriaLabel">
       <source xml:lang="en">Terminal {0} environment is stale, run the 'Show Environment Information' command for more information</source>
@@ -635,11 +618,6 @@ Default Skipped Commands:
       <source xml:lang="en">Follow Link</source>
     </trans-unit>
   </body></file>
-  <file original="src/vs/workbench/contrib/terminal/browser/links/terminalWordLinkProvider" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="searchWorkspace">
-      <source xml:lang="en">Search workspace</source>
-    </trans-unit>
-  </body></file>
   <file original="src/vs/workbench/contrib/terminal/browser/terminalProcessExtHostProxy" source-language="en" datatype="plaintext"><body>
     <trans-unit id="terminal.integrated.starting">
       <source xml:lang="en">Starting...</source>
@@ -657,6 +635,11 @@ Default Skipped Commands:
     </trans-unit>
     <trans-unit id="extensionEnvironmentContributionInfo">
       <source xml:lang="en">Extensions have made changes to this terminal's environment</source>
+    </trans-unit>
+  </body></file>
+  <file original="src/vs/workbench/contrib/terminal/browser/links/terminalWordLinkProvider" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="searchWorkspace">
+      <source xml:lang="en">Search workspace</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/terminal/browser/links/terminalLink" source-language="en" datatype="plaintext"><body>

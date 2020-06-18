@@ -1,27 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file original="src/vs/editor/contrib/anchorSelect/anchorSelect" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="selectionAnchor">
-        <source xml:lang="en">Selection Anchor</source>
-      </trans-unit>
-      <trans-unit id="anchorSet">
-        <source xml:lang="en">Anchor set at {0}:{1}</source>
-      </trans-unit>
-      <trans-unit id="setSelectionAnchor">
-        <source xml:lang="en">Set Selection Anchor</source>
-      </trans-unit>
-      <trans-unit id="goToSelectionAnchor">
-        <source xml:lang="en">Go to Selection Anchor</source>
-      </trans-unit>
-      <trans-unit id="selectFromAnchorToCursor">
-        <source xml:lang="en">Select from Anchor to Cursor</source>
-      </trans-unit>
-      <trans-unit id="cancelSelectionAnchor">
-        <source xml:lang="en">Cancel Selection Anchor</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/caretOperations/caretOperations" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="caret.moveLeft">
@@ -39,20 +17,101 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/bracketMatching/bracketMatching" source-language="en" datatype="plaintext">
+  <file original="src/vs/editor/contrib/comment/comment" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="overviewRulerBracketMatchForeground">
-        <source xml:lang="en">Overview ruler marker color for matching brackets.</source>
+      <trans-unit id="comment.line">
+        <source xml:lang="en">Toggle Line Comment</source>
       </trans-unit>
-      <trans-unit id="smartSelect.jumpBracket">
-        <source xml:lang="en">Go to Bracket</source>
-      </trans-unit>
-      <trans-unit id="smartSelect.selectToBracket">
-        <source xml:lang="en">Select to Bracket</source>
-      </trans-unit>
-      <trans-unit id="miGoToBracket">
-        <source xml:lang="en">Go to &amp;&amp;Bracket</source>
+      <trans-unit id="miToggleLineComment">
+        <source xml:lang="en">&amp;&amp;Toggle Line Comment</source>
         <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="comment.line.add">
+        <source xml:lang="en">Add Line Comment</source>
+      </trans-unit>
+      <trans-unit id="comment.line.remove">
+        <source xml:lang="en">Remove Line Comment</source>
+      </trans-unit>
+      <trans-unit id="comment.block">
+        <source xml:lang="en">Toggle Block Comment</source>
+      </trans-unit>
+      <trans-unit id="miToggleBlockComment">
+        <source xml:lang="en">Toggle &amp;&amp;Block Comment</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/cursorUndo/cursorUndo" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="cursor.undo">
+        <source xml:lang="en">Cursor Undo</source>
+      </trans-unit>
+      <trans-unit id="cursor.redo">
+        <source xml:lang="en">Cursor Redo</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/fontZoom/fontZoom" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="EditorFontZoomIn.label">
+        <source xml:lang="en">Editor Font Zoom In</source>
+      </trans-unit>
+      <trans-unit id="EditorFontZoomOut.label">
+        <source xml:lang="en">Editor Font Zoom Out</source>
+      </trans-unit>
+      <trans-unit id="EditorFontZoomReset.label">
+        <source xml:lang="en">Editor Font Zoom Reset</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/parameterHints/parameterHints" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="parameterHints.trigger.label">
+        <source xml:lang="en">Trigger Parameter Hints</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/tokenization/tokenization" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="forceRetokenize">
+        <source xml:lang="en">Developer: Force Retokenize</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/toggleTabFocusMode/toggleTabFocusMode" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="toggle.tabMovesFocus">
+        <source xml:lang="en">Toggle Tab Key Moves Focus</source>
+        <note>Turn on/off use of tab key for moving focus around VS Code</note>
+      </trans-unit>
+      <trans-unit id="toggle.tabMovesFocus.on">
+        <source xml:lang="en">Pressing Tab will now move focus to the next focusable element</source>
+      </trans-unit>
+      <trans-unit id="toggle.tabMovesFocus.off">
+        <source xml:lang="en">Pressing Tab will now insert the tab character</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/unusualLineTerminators/unusualLineTerminators" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="unusualLineTerminators.title">
+        <source xml:lang="en">Unusual Line Terminators</source>
+      </trans-unit>
+      <trans-unit id="unusualLineTerminators.message">
+        <source xml:lang="en">Detected unusual line terminators</source>
+      </trans-unit>
+      <trans-unit id="unusualLineTerminators.detail">
+        <source xml:lang="en">Your file contains one or more unusual line terminator characters, like Line Separator (LS), Paragraph Separator (PS) or Next Line (NEL).
+
+These characters can cause subtle problems with language servers, due to how each programming language specifies its line terminators. e.g. what is line 11 for VS Code might be line 12 for a language server.
+
+This check can be disabled via `editor.removeUnusualLineTerminators`.</source>
+      </trans-unit>
+      <trans-unit id="unusualLineTerminators.fix">
+        <source xml:lang="en">Fix this file</source>
+      </trans-unit>
+      <trans-unit id="unusualLineTerminators.ignore">
+        <source xml:lang="en">Ignore problem for this file</source>
       </trans-unit>
     </body>
   </file>
@@ -84,136 +143,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/codelens/codelensController" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="showLensOnLine">
-        <source xml:lang="en">Show CodeLens Commands For Current Line</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/comment/comment" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="comment.line">
-        <source xml:lang="en">Toggle Line Comment</source>
-      </trans-unit>
-      <trans-unit id="miToggleLineComment">
-        <source xml:lang="en">&amp;&amp;Toggle Line Comment</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="comment.line.add">
-        <source xml:lang="en">Add Line Comment</source>
-      </trans-unit>
-      <trans-unit id="comment.line.remove">
-        <source xml:lang="en">Remove Line Comment</source>
-      </trans-unit>
-      <trans-unit id="comment.block">
-        <source xml:lang="en">Toggle Block Comment</source>
-      </trans-unit>
-      <trans-unit id="miToggleBlockComment">
-        <source xml:lang="en">Toggle &amp;&amp;Block Comment</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/find/findController" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="startFindAction">
-        <source xml:lang="en">Find</source>
-      </trans-unit>
-      <trans-unit id="miFind">
-        <source xml:lang="en">&amp;&amp;Find</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="startFindWithSelectionAction">
-        <source xml:lang="en">Find With Selection</source>
-      </trans-unit>
-      <trans-unit id="findNextMatchAction">
-        <source xml:lang="en">Find Next</source>
-      </trans-unit>
-      <trans-unit id="findPreviousMatchAction">
-        <source xml:lang="en">Find Previous</source>
-      </trans-unit>
-      <trans-unit id="nextSelectionMatchFindAction">
-        <source xml:lang="en">Find Next Selection</source>
-      </trans-unit>
-      <trans-unit id="previousSelectionMatchFindAction">
-        <source xml:lang="en">Find Previous Selection</source>
-      </trans-unit>
-      <trans-unit id="startReplace">
-        <source xml:lang="en">Replace</source>
-      </trans-unit>
-      <trans-unit id="miReplace">
-        <source xml:lang="en">&amp;&amp;Replace</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/folding/folding" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="unfoldAction.label">
-        <source xml:lang="en">Unfold</source>
-      </trans-unit>
-      <trans-unit id="unFoldRecursivelyAction.label">
-        <source xml:lang="en">Unfold Recursively</source>
-      </trans-unit>
-      <trans-unit id="foldAction.label">
-        <source xml:lang="en">Fold</source>
-      </trans-unit>
-      <trans-unit id="toggleFoldAction.label">
-        <source xml:lang="en">Toggle Fold</source>
-      </trans-unit>
-      <trans-unit id="foldRecursivelyAction.label">
-        <source xml:lang="en">Fold Recursively</source>
-      </trans-unit>
-      <trans-unit id="foldAllBlockComments.label">
-        <source xml:lang="en">Fold All Block Comments</source>
-      </trans-unit>
-      <trans-unit id="foldAllMarkerRegions.label">
-        <source xml:lang="en">Fold All Regions</source>
-      </trans-unit>
-      <trans-unit id="unfoldAllMarkerRegions.label">
-        <source xml:lang="en">Unfold All Regions</source>
-      </trans-unit>
-      <trans-unit id="foldAllAction.label">
-        <source xml:lang="en">Fold All</source>
-      </trans-unit>
-      <trans-unit id="unfoldAllAction.label">
-        <source xml:lang="en">Unfold All</source>
-      </trans-unit>
-      <trans-unit id="foldLevelAction.label">
-        <source xml:lang="en">Fold Level {0}</source>
-      </trans-unit>
-      <trans-unit id="foldBackgroundBackground">
-        <source xml:lang="en">Background color behind folded ranges. The color must not be opaque so as not to hide underlying decorations.</source>
-      </trans-unit>
-      <trans-unit id="editorGutter.foldingControlForeground">
-        <source xml:lang="en">Color of the folding control in the editor gutter.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/fontZoom/fontZoom" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="EditorFontZoomIn.label">
-        <source xml:lang="en">Editor Font Zoom In</source>
-      </trans-unit>
-      <trans-unit id="EditorFontZoomOut.label">
-        <source xml:lang="en">Editor Font Zoom Out</source>
-      </trans-unit>
-      <trans-unit id="EditorFontZoomReset.label">
-        <source xml:lang="en">Editor Font Zoom Reset</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/cursorUndo/cursorUndo" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="cursor.undo">
-        <source xml:lang="en">Cursor Undo</source>
-      </trans-unit>
-      <trans-unit id="cursor.redo">
-        <source xml:lang="en">Cursor Redo</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/contextmenu/contextmenu" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="action.showContextMenu.label">
@@ -228,13 +157,6 @@
       </trans-unit>
       <trans-unit id="formatSelection.label">
         <source xml:lang="en">Format Selection</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/gotoSymbol/link/goToDefinitionAtPosition" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="multipleResults">
-        <source xml:lang="en">Click to show {0} definitions.</source>
       </trans-unit>
     </body>
   </file>
@@ -259,6 +181,197 @@
       <trans-unit id="miGotoPreviousProblem">
         <source xml:lang="en">Previous &amp;&amp;Problem</source>
         <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/hover/hover" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="showHover">
+        <source xml:lang="en">Show Hover</source>
+        <note>Label for action that will trigger the showing of a hover in the editor.
+This allows for users to show the hover without using the mouse.</note>
+      </trans-unit>
+      <trans-unit id="showDefinitionPreviewHover">
+        <source xml:lang="en">Show Definition Preview Hover</source>
+        <note>Label for action that will trigger the showing of definition preview hover in the editor.
+This allows for users to show the definition preview hover without using the mouse.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/inPlaceReplace/inPlaceReplace" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="InPlaceReplaceAction.previous.label">
+        <source xml:lang="en">Replace with Previous Value</source>
+      </trans-unit>
+      <trans-unit id="InPlaceReplaceAction.next.label">
+        <source xml:lang="en">Replace with Next Value</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/rename/rename" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="no result">
+        <source xml:lang="en">No result.</source>
+      </trans-unit>
+      <trans-unit id="resolveRenameLocationFailed">
+        <source xml:lang="en">An unknown error occurred while resolving rename location</source>
+      </trans-unit>
+      <trans-unit id="label_Duplicated1">
+        <source xml:lang="en">Renaming '{0}'</source>
+      </trans-unit>
+      <trans-unit id="quotableLabel">
+        <source xml:lang="en">Renaming {0}</source>
+      </trans-unit>
+      <trans-unit id="aria">
+        <source xml:lang="en">Successfully renamed '{0}' to '{1}'. Summary: {2}</source>
+      </trans-unit>
+      <trans-unit id="rename.failedApply">
+        <source xml:lang="en">Rename failed to apply edits</source>
+      </trans-unit>
+      <trans-unit id="rename.failed">
+        <source xml:lang="en">Rename failed to compute edits</source>
+      </trans-unit>
+      <trans-unit id="rename.label">
+        <source xml:lang="en">Rename Symbol</source>
+      </trans-unit>
+      <trans-unit id="enablePreview">
+        <source xml:lang="en">Enable/disable the ability to preview changes before renaming</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/smartSelect/smartSelect" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="smartSelect.expand">
+        <source xml:lang="en">Expand Selection</source>
+      </trans-unit>
+      <trans-unit id="miSmartSelectGrow">
+        <source xml:lang="en">&amp;&amp;Expand Selection</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="smartSelect.shrink">
+        <source xml:lang="en">Shrink Selection</source>
+      </trans-unit>
+      <trans-unit id="miSmartSelectShrink">
+        <source xml:lang="en">&amp;&amp;Shrink Selection</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/bracketMatching/bracketMatching" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="overviewRulerBracketMatchForeground">
+        <source xml:lang="en">Overview ruler marker color for matching brackets.</source>
+      </trans-unit>
+      <trans-unit id="smartSelect.jumpBracket">
+        <source xml:lang="en">Go to Bracket</source>
+      </trans-unit>
+      <trans-unit id="smartSelect.selectToBracket">
+        <source xml:lang="en">Select to Bracket</source>
+      </trans-unit>
+      <trans-unit id="miGoToBracket">
+        <source xml:lang="en">Go to &amp;&amp;Bracket</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/codelens/codelensController" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="showLensOnLine">
+        <source xml:lang="en">Show CodeLens Commands For Current Line</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/gotoSymbol/link/goToDefinitionAtPosition" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="multipleResults">
+        <source xml:lang="en">Click to show {0} definitions.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/links/links" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="links.navigate.executeCmd">
+        <source xml:lang="en">Execute command</source>
+      </trans-unit>
+      <trans-unit id="links.navigate.follow">
+        <source xml:lang="en">Follow link</source>
+      </trans-unit>
+      <trans-unit id="links.navigate.kb.meta.mac">
+        <source xml:lang="en">cmd + click</source>
+      </trans-unit>
+      <trans-unit id="links.navigate.kb.meta">
+        <source xml:lang="en">ctrl + click</source>
+      </trans-unit>
+      <trans-unit id="links.navigate.kb.alt.mac">
+        <source xml:lang="en">option + click</source>
+      </trans-unit>
+      <trans-unit id="links.navigate.kb.alt">
+        <source xml:lang="en">alt + click</source>
+      </trans-unit>
+      <trans-unit id="invalid.url">
+        <source xml:lang="en">Failed to open this link because it is not well-formed: {0}</source>
+      </trans-unit>
+      <trans-unit id="missing.url">
+        <source xml:lang="en">Failed to open this link because its target is missing.</source>
+      </trans-unit>
+      <trans-unit id="label_Duplicated2">
+        <source xml:lang="en">Open Link</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/rename/onTypeRename" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="onTypeRename.label">
+        <source xml:lang="en">On Type Rename Symbol</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/peekView/peekView" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="label.close">
+        <source xml:lang="en">Close</source>
+      </trans-unit>
+      <trans-unit id="peekViewTitleBackground">
+        <source xml:lang="en">Background color of the peek view title area.</source>
+      </trans-unit>
+      <trans-unit id="peekViewTitleForeground">
+        <source xml:lang="en">Color of the peek view title.</source>
+      </trans-unit>
+      <trans-unit id="peekViewTitleInfoForeground">
+        <source xml:lang="en">Color of the peek view title info.</source>
+      </trans-unit>
+      <trans-unit id="peekViewBorder">
+        <source xml:lang="en">Color of the peek view borders and arrow.</source>
+      </trans-unit>
+      <trans-unit id="peekViewResultsBackground">
+        <source xml:lang="en">Background color of the peek view result list.</source>
+      </trans-unit>
+      <trans-unit id="peekViewResultsMatchForeground">
+        <source xml:lang="en">Foreground color for line nodes in the peek view result list.</source>
+      </trans-unit>
+      <trans-unit id="peekViewResultsFileForeground">
+        <source xml:lang="en">Foreground color for file nodes in the peek view result list.</source>
+      </trans-unit>
+      <trans-unit id="peekViewResultsSelectionBackground">
+        <source xml:lang="en">Background color of the selected entry in the peek view result list.</source>
+      </trans-unit>
+      <trans-unit id="peekViewResultsSelectionForeground">
+        <source xml:lang="en">Foreground color of the selected entry in the peek view result list.</source>
+      </trans-unit>
+      <trans-unit id="peekViewEditorBackground">
+        <source xml:lang="en">Background color of the peek view editor.</source>
+      </trans-unit>
+      <trans-unit id="peekViewEditorGutterBackground">
+        <source xml:lang="en">Background color of the gutter in the peek view editor.</source>
+      </trans-unit>
+      <trans-unit id="peekViewResultsMatchHighlight">
+        <source xml:lang="en">Match highlight color in the peek view result list.</source>
+      </trans-unit>
+      <trans-unit id="peekViewEditorMatchHighlight">
+        <source xml:lang="en">Match highlight color in the peek view editor.</source>
+      </trans-unit>
+      <trans-unit id="peekViewEditorMatchHighlightBorder">
+        <source xml:lang="en">Match highlight border in the peek view editor.</source>
       </trans-unit>
     </body>
   </file>
@@ -376,109 +489,189 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/hover/hover" source-language="en" datatype="plaintext">
+  <file original="src/vs/editor/contrib/indentation/indentation" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="showHover">
-        <source xml:lang="en">Show Hover</source>
-        <note>Label for action that will trigger the showing of a hover in the editor.
-This allows for users to show the hover without using the mouse.</note>
+      <trans-unit id="indentationToSpaces">
+        <source xml:lang="en">Convert Indentation to Spaces</source>
       </trans-unit>
-      <trans-unit id="showDefinitionPreviewHover">
-        <source xml:lang="en">Show Definition Preview Hover</source>
-        <note>Label for action that will trigger the showing of definition preview hover in the editor.
-This allows for users to show the definition preview hover without using the mouse.</note>
+      <trans-unit id="indentationToTabs">
+        <source xml:lang="en">Convert Indentation to Tabs</source>
+      </trans-unit>
+      <trans-unit id="configuredTabSize">
+        <source xml:lang="en">Configured Tab Size</source>
+      </trans-unit>
+      <trans-unit id="selectTabWidth">
+        <source xml:lang="en">Select Tab Size for Current File</source>
+        <note>Tab corresponds to the tab key</note>
+      </trans-unit>
+      <trans-unit id="indentUsingTabs">
+        <source xml:lang="en">Indent Using Tabs</source>
+      </trans-unit>
+      <trans-unit id="indentUsingSpaces">
+        <source xml:lang="en">Indent Using Spaces</source>
+      </trans-unit>
+      <trans-unit id="detectIndentation">
+        <source xml:lang="en">Detect Indentation from Content</source>
+      </trans-unit>
+      <trans-unit id="editor.reindentlines">
+        <source xml:lang="en">Reindent Lines</source>
+      </trans-unit>
+      <trans-unit id="editor.reindentselectedlines">
+        <source xml:lang="en">Reindent Selected Lines</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/links/links" source-language="en" datatype="plaintext">
+  <file original="src/vs/editor/contrib/wordHighlighter/wordHighlighter" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="links.navigate.executeCmd">
-        <source xml:lang="en">Execute command</source>
+      <trans-unit id="wordHighlight">
+        <source xml:lang="en">Background color of a symbol during read-access, like reading a variable. The color must not be opaque so as not to hide underlying decorations.</source>
       </trans-unit>
-      <trans-unit id="links.navigate.follow">
-        <source xml:lang="en">Follow link</source>
+      <trans-unit id="wordHighlightStrong">
+        <source xml:lang="en">Background color of a symbol during write-access, like writing to a variable. The color must not be opaque so as not to hide underlying decorations.</source>
       </trans-unit>
-      <trans-unit id="links.navigate.kb.meta.mac">
-        <source xml:lang="en">cmd + click</source>
+      <trans-unit id="wordHighlightBorder">
+        <source xml:lang="en">Border color of a symbol during read-access, like reading a variable.</source>
       </trans-unit>
-      <trans-unit id="links.navigate.kb.meta">
-        <source xml:lang="en">ctrl + click</source>
+      <trans-unit id="wordHighlightStrongBorder">
+        <source xml:lang="en">Border color of a symbol during write-access, like writing to a variable.</source>
       </trans-unit>
-      <trans-unit id="links.navigate.kb.alt.mac">
-        <source xml:lang="en">option + click</source>
+      <trans-unit id="overviewRulerWordHighlightForeground">
+        <source xml:lang="en">Overview ruler marker color for symbol highlights. The color must not be opaque so as not to hide underlying decorations.</source>
       </trans-unit>
-      <trans-unit id="links.navigate.kb.alt">
-        <source xml:lang="en">alt + click</source>
+      <trans-unit id="overviewRulerWordHighlightStrongForeground">
+        <source xml:lang="en">Overview ruler marker color for write-access symbol highlights. The color must not be opaque so as not to hide underlying decorations.</source>
       </trans-unit>
-      <trans-unit id="invalid.url">
-        <source xml:lang="en">Failed to open this link because it is not well-formed: {0}</source>
+      <trans-unit id="wordHighlight.next.label">
+        <source xml:lang="en">Go to Next Symbol Highlight</source>
       </trans-unit>
-      <trans-unit id="missing.url">
-        <source xml:lang="en">Failed to open this link because its target is missing.</source>
+      <trans-unit id="wordHighlight.previous.label">
+        <source xml:lang="en">Go to Previous Symbol Highlight</source>
       </trans-unit>
-      <trans-unit id="label_Duplicated1">
-        <source xml:lang="en">Open Link</source>
+      <trans-unit id="wordHighlight.trigger.label">
+        <source xml:lang="en">Trigger Symbol Highlight</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/multicursor/multicursor" source-language="en" datatype="plaintext">
+  <file original="src/vs/editor/contrib/find/findController" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="mutlicursor.insertAbove">
-        <source xml:lang="en">Add Cursor Above</source>
+      <trans-unit id="startFindAction">
+        <source xml:lang="en">Find</source>
       </trans-unit>
-      <trans-unit id="miInsertCursorAbove">
-        <source xml:lang="en">&amp;&amp;Add Cursor Above</source>
+      <trans-unit id="miFind">
+        <source xml:lang="en">&amp;&amp;Find</source>
         <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
-      <trans-unit id="mutlicursor.insertBelow">
-        <source xml:lang="en">Add Cursor Below</source>
+      <trans-unit id="startFindWithSelectionAction">
+        <source xml:lang="en">Find With Selection</source>
       </trans-unit>
-      <trans-unit id="miInsertCursorBelow">
-        <source xml:lang="en">A&amp;&amp;dd Cursor Below</source>
+      <trans-unit id="findNextMatchAction">
+        <source xml:lang="en">Find Next</source>
+      </trans-unit>
+      <trans-unit id="findPreviousMatchAction">
+        <source xml:lang="en">Find Previous</source>
+      </trans-unit>
+      <trans-unit id="nextSelectionMatchFindAction">
+        <source xml:lang="en">Find Next Selection</source>
+      </trans-unit>
+      <trans-unit id="previousSelectionMatchFindAction">
+        <source xml:lang="en">Find Previous Selection</source>
+      </trans-unit>
+      <trans-unit id="startReplace">
+        <source xml:lang="en">Replace</source>
+      </trans-unit>
+      <trans-unit id="miReplace">
+        <source xml:lang="en">&amp;&amp;Replace</source>
         <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
-      <trans-unit id="mutlicursor.insertAtEndOfEachLineSelected">
-        <source xml:lang="en">Add Cursors to Line Ends</source>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/suggest/suggestController" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="arai.alert.snippet">
+        <source xml:lang="en">Accepting '{0}' made {1} additional edits</source>
       </trans-unit>
-      <trans-unit id="miInsertCursorAtEndOfEachLineSelected">
-        <source xml:lang="en">Add C&amp;&amp;ursors to Line Ends</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
+      <trans-unit id="suggest.trigger.label">
+        <source xml:lang="en">Trigger Suggest</source>
       </trans-unit>
-      <trans-unit id="mutlicursor.addCursorsToBottom">
-        <source xml:lang="en">Add Cursors To Bottom</source>
+      <trans-unit id="accept.accept">
+        <source xml:lang="en">{0} to insert</source>
+        <note>{0} will be a keybinding, e.g "Enter to insert"</note>
       </trans-unit>
-      <trans-unit id="mutlicursor.addCursorsToTop">
-        <source xml:lang="en">Add Cursors To Top</source>
+      <trans-unit id="accept.insert">
+        <source xml:lang="en">{0} to insert</source>
+        <note>{0} will be a keybinding, e.g "Enter to insert"</note>
       </trans-unit>
-      <trans-unit id="addSelectionToNextFindMatch">
-        <source xml:lang="en">Add Selection To Next Find Match</source>
+      <trans-unit id="accept.replace">
+        <source xml:lang="en">{0} to replace</source>
+        <note>{0} will be a keybinding, e.g "Enter to replace"</note>
       </trans-unit>
-      <trans-unit id="miAddSelectionToNextFindMatch">
-        <source xml:lang="en">Add &amp;&amp;Next Occurrence</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
+      <trans-unit id="detail.more">
+        <source xml:lang="en">show less</source>
       </trans-unit>
-      <trans-unit id="addSelectionToPreviousFindMatch">
-        <source xml:lang="en">Add Selection To Previous Find Match</source>
+      <trans-unit id="detail.less">
+        <source xml:lang="en">show more</source>
       </trans-unit>
-      <trans-unit id="miAddSelectionToPreviousFindMatch">
-        <source xml:lang="en">Add P&amp;&amp;revious Occurrence</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/quickAccess/gotoLineQuickAccess" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="cannotRunGotoLine">
+        <source xml:lang="en">Open a text editor first to go to a line.</source>
       </trans-unit>
-      <trans-unit id="moveSelectionToNextFindMatch">
-        <source xml:lang="en">Move Last Selection To Next Find Match</source>
+      <trans-unit id="gotoLineColumnLabel">
+        <source xml:lang="en">Go to line {0} and column {1}.</source>
       </trans-unit>
-      <trans-unit id="moveSelectionToPreviousFindMatch">
-        <source xml:lang="en">Move Last Selection To Previous Find Match</source>
+      <trans-unit id="gotoLineLabel">
+        <source xml:lang="en">Go to line {0}.</source>
       </trans-unit>
-      <trans-unit id="selectAllOccurrencesOfFindMatch">
-        <source xml:lang="en">Select All Occurrences of Find Match</source>
+      <trans-unit id="gotoLineLabelEmptyWithLimit">
+        <source xml:lang="en">Current Line: {0}, Character: {1}. Type a line number between 1 and {2} to navigate to.</source>
       </trans-unit>
-      <trans-unit id="miSelectHighlights">
-        <source xml:lang="en">Select All &amp;&amp;Occurrences</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
+      <trans-unit id="gotoLineLabelEmpty">
+        <source xml:lang="en">Current Line: {0}, Character: {1}. Type a line number to navigate to.</source>
       </trans-unit>
-      <trans-unit id="changeAll.label">
-        <source xml:lang="en">Change All Occurrences</source>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/folding/folding" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="unfoldAction.label">
+        <source xml:lang="en">Unfold</source>
+      </trans-unit>
+      <trans-unit id="unFoldRecursivelyAction.label">
+        <source xml:lang="en">Unfold Recursively</source>
+      </trans-unit>
+      <trans-unit id="foldAction.label">
+        <source xml:lang="en">Fold</source>
+      </trans-unit>
+      <trans-unit id="toggleFoldAction.label">
+        <source xml:lang="en">Toggle Fold</source>
+      </trans-unit>
+      <trans-unit id="foldRecursivelyAction.label">
+        <source xml:lang="en">Fold Recursively</source>
+      </trans-unit>
+      <trans-unit id="foldAllBlockComments.label">
+        <source xml:lang="en">Fold All Block Comments</source>
+      </trans-unit>
+      <trans-unit id="foldAllMarkerRegions.label">
+        <source xml:lang="en">Fold All Regions</source>
+      </trans-unit>
+      <trans-unit id="unfoldAllMarkerRegions.label">
+        <source xml:lang="en">Unfold All Regions</source>
+      </trans-unit>
+      <trans-unit id="foldAllAction.label">
+        <source xml:lang="en">Fold All</source>
+      </trans-unit>
+      <trans-unit id="unfoldAllAction.label">
+        <source xml:lang="en">Unfold All</source>
+      </trans-unit>
+      <trans-unit id="foldLevelAction.label">
+        <source xml:lang="en">Fold Level {0}</source>
+      </trans-unit>
+      <trans-unit id="foldBackgroundBackground">
+        <source xml:lang="en">Background color behind folded ranges. The color must not be opaque so as not to hide underlying decorations.</source>
+      </trans-unit>
+      <trans-unit id="editorGutter.foldingControlForeground">
+        <source xml:lang="en">Color of the folding control in the editor gutter.</source>
       </trans-unit>
     </body>
   </file>
@@ -566,277 +759,64 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/indentation/indentation" source-language="en" datatype="plaintext">
+  <file original="src/vs/editor/contrib/multicursor/multicursor" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="indentationToSpaces">
-        <source xml:lang="en">Convert Indentation to Spaces</source>
+      <trans-unit id="mutlicursor.insertAbove">
+        <source xml:lang="en">Add Cursor Above</source>
       </trans-unit>
-      <trans-unit id="indentationToTabs">
-        <source xml:lang="en">Convert Indentation to Tabs</source>
-      </trans-unit>
-      <trans-unit id="configuredTabSize">
-        <source xml:lang="en">Configured Tab Size</source>
-      </trans-unit>
-      <trans-unit id="selectTabWidth">
-        <source xml:lang="en">Select Tab Size for Current File</source>
-        <note>Tab corresponds to the tab key</note>
-      </trans-unit>
-      <trans-unit id="indentUsingTabs">
-        <source xml:lang="en">Indent Using Tabs</source>
-      </trans-unit>
-      <trans-unit id="indentUsingSpaces">
-        <source xml:lang="en">Indent Using Spaces</source>
-      </trans-unit>
-      <trans-unit id="detectIndentation">
-        <source xml:lang="en">Detect Indentation from Content</source>
-      </trans-unit>
-      <trans-unit id="editor.reindentlines">
-        <source xml:lang="en">Reindent Lines</source>
-      </trans-unit>
-      <trans-unit id="editor.reindentselectedlines">
-        <source xml:lang="en">Reindent Selected Lines</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/rename/onTypeRename" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="onTypeRename.label">
-        <source xml:lang="en">On Type Rename Symbol</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/rename/rename" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="no result">
-        <source xml:lang="en">No result.</source>
-      </trans-unit>
-      <trans-unit id="resolveRenameLocationFailed">
-        <source xml:lang="en">An unknown error occurred while resolving rename location</source>
-      </trans-unit>
-      <trans-unit id="label_Duplicated2">
-        <source xml:lang="en">Renaming '{0}'</source>
-      </trans-unit>
-      <trans-unit id="quotableLabel">
-        <source xml:lang="en">Renaming {0}</source>
-      </trans-unit>
-      <trans-unit id="aria">
-        <source xml:lang="en">Successfully renamed '{0}' to '{1}'. Summary: {2}</source>
-      </trans-unit>
-      <trans-unit id="rename.failedApply">
-        <source xml:lang="en">Rename failed to apply edits</source>
-      </trans-unit>
-      <trans-unit id="rename.failed">
-        <source xml:lang="en">Rename failed to compute edits</source>
-      </trans-unit>
-      <trans-unit id="rename.label">
-        <source xml:lang="en">Rename Symbol</source>
-      </trans-unit>
-      <trans-unit id="enablePreview">
-        <source xml:lang="en">Enable/disable the ability to preview changes before renaming</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/parameterHints/parameterHints" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="parameterHints.trigger.label">
-        <source xml:lang="en">Trigger Parameter Hints</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/inPlaceReplace/inPlaceReplace" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="InPlaceReplaceAction.previous.label">
-        <source xml:lang="en">Replace with Previous Value</source>
-      </trans-unit>
-      <trans-unit id="InPlaceReplaceAction.next.label">
-        <source xml:lang="en">Replace with Next Value</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/unusualLineTerminators/unusualLineTerminators" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="unusualLineTerminators.title">
-        <source xml:lang="en">Unusual Line Terminators</source>
-      </trans-unit>
-      <trans-unit id="unusualLineTerminators.message">
-        <source xml:lang="en">Detected unusual line terminators</source>
-      </trans-unit>
-      <trans-unit id="unusualLineTerminators.detail">
-        <source xml:lang="en">This file contains one or more unusual line terminator characters, like Line Separator (LS) or Paragraph Separator (PS).
-
-It is recommended to remove them from the file. This can be configured via `editor.unusualLineTerminators`.</source>
-      </trans-unit>
-      <trans-unit id="unusualLineTerminators.fix">
-        <source xml:lang="en">Fix this file</source>
-      </trans-unit>
-      <trans-unit id="unusualLineTerminators.ignore">
-        <source xml:lang="en">Ignore problem for this file</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/toggleTabFocusMode/toggleTabFocusMode" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="toggle.tabMovesFocus">
-        <source xml:lang="en">Toggle Tab Key Moves Focus</source>
-        <note>Turn on/off use of tab key for moving focus around VS Code</note>
-      </trans-unit>
-      <trans-unit id="toggle.tabMovesFocus.on">
-        <source xml:lang="en">Pressing Tab will now move focus to the next focusable element</source>
-      </trans-unit>
-      <trans-unit id="toggle.tabMovesFocus.off">
-        <source xml:lang="en">Pressing Tab will now insert the tab character</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/tokenization/tokenization" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="forceRetokenize">
-        <source xml:lang="en">Developer: Force Retokenize</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/suggest/suggestController" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="arai.alert.snippet">
-        <source xml:lang="en">Accepting '{0}' made {1} additional edits</source>
-      </trans-unit>
-      <trans-unit id="suggest.trigger.label">
-        <source xml:lang="en">Trigger Suggest</source>
-      </trans-unit>
-      <trans-unit id="accept.accept">
-        <source xml:lang="en">{0} to insert</source>
-        <note>{0} will be a keybinding, e.g "Enter to insert"</note>
-      </trans-unit>
-      <trans-unit id="accept.insert">
-        <source xml:lang="en">{0} to insert</source>
-        <note>{0} will be a keybinding, e.g "Enter to insert"</note>
-      </trans-unit>
-      <trans-unit id="accept.replace">
-        <source xml:lang="en">{0} to replace</source>
-        <note>{0} will be a keybinding, e.g "Enter to replace"</note>
-      </trans-unit>
-      <trans-unit id="detail.more">
-        <source xml:lang="en">show less</source>
-      </trans-unit>
-      <trans-unit id="detail.less">
-        <source xml:lang="en">show more</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/wordHighlighter/wordHighlighter" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="wordHighlight">
-        <source xml:lang="en">Background color of a symbol during read-access, like reading a variable. The color must not be opaque so as not to hide underlying decorations.</source>
-      </trans-unit>
-      <trans-unit id="wordHighlightStrong">
-        <source xml:lang="en">Background color of a symbol during write-access, like writing to a variable. The color must not be opaque so as not to hide underlying decorations.</source>
-      </trans-unit>
-      <trans-unit id="wordHighlightBorder">
-        <source xml:lang="en">Border color of a symbol during read-access, like reading a variable.</source>
-      </trans-unit>
-      <trans-unit id="wordHighlightStrongBorder">
-        <source xml:lang="en">Border color of a symbol during write-access, like writing to a variable.</source>
-      </trans-unit>
-      <trans-unit id="overviewRulerWordHighlightForeground">
-        <source xml:lang="en">Overview ruler marker color for symbol highlights. The color must not be opaque so as not to hide underlying decorations.</source>
-      </trans-unit>
-      <trans-unit id="overviewRulerWordHighlightStrongForeground">
-        <source xml:lang="en">Overview ruler marker color for write-access symbol highlights. The color must not be opaque so as not to hide underlying decorations.</source>
-      </trans-unit>
-      <trans-unit id="wordHighlight.next.label">
-        <source xml:lang="en">Go to Next Symbol Highlight</source>
-      </trans-unit>
-      <trans-unit id="wordHighlight.previous.label">
-        <source xml:lang="en">Go to Previous Symbol Highlight</source>
-      </trans-unit>
-      <trans-unit id="wordHighlight.trigger.label">
-        <source xml:lang="en">Trigger Symbol Highlight</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/smartSelect/smartSelect" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="smartSelect.expand">
-        <source xml:lang="en">Expand Selection</source>
-      </trans-unit>
-      <trans-unit id="miSmartSelectGrow">
-        <source xml:lang="en">&amp;&amp;Expand Selection</source>
+      <trans-unit id="miInsertCursorAbove">
+        <source xml:lang="en">&amp;&amp;Add Cursor Above</source>
         <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
-      <trans-unit id="smartSelect.shrink">
-        <source xml:lang="en">Shrink Selection</source>
+      <trans-unit id="mutlicursor.insertBelow">
+        <source xml:lang="en">Add Cursor Below</source>
       </trans-unit>
-      <trans-unit id="miSmartSelectShrink">
-        <source xml:lang="en">&amp;&amp;Shrink Selection</source>
+      <trans-unit id="miInsertCursorBelow">
+        <source xml:lang="en">A&amp;&amp;dd Cursor Below</source>
         <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/quickAccess/gotoLineQuickAccess" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="cannotRunGotoLine">
-        <source xml:lang="en">Open a text editor first to go to a line.</source>
+      <trans-unit id="mutlicursor.insertAtEndOfEachLineSelected">
+        <source xml:lang="en">Add Cursors to Line Ends</source>
       </trans-unit>
-      <trans-unit id="gotoLineColumnLabel">
-        <source xml:lang="en">Go to line {0} and column {1}.</source>
+      <trans-unit id="miInsertCursorAtEndOfEachLineSelected">
+        <source xml:lang="en">Add C&amp;&amp;ursors to Line Ends</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
-      <trans-unit id="gotoLineLabel">
-        <source xml:lang="en">Go to line {0}.</source>
+      <trans-unit id="mutlicursor.addCursorsToBottom">
+        <source xml:lang="en">Add Cursors To Bottom</source>
       </trans-unit>
-      <trans-unit id="gotoLineLabelEmptyWithLimit">
-        <source xml:lang="en">Current Line: {0}, Character: {1}. Type a line number between 1 and {2} to navigate to.</source>
+      <trans-unit id="mutlicursor.addCursorsToTop">
+        <source xml:lang="en">Add Cursors To Top</source>
       </trans-unit>
-      <trans-unit id="gotoLineLabelEmpty">
-        <source xml:lang="en">Current Line: {0}, Character: {1}. Type a line number to navigate to.</source>
+      <trans-unit id="addSelectionToNextFindMatch">
+        <source xml:lang="en">Add Selection To Next Find Match</source>
       </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/peekView/peekView" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="label.close">
-        <source xml:lang="en">Close</source>
+      <trans-unit id="miAddSelectionToNextFindMatch">
+        <source xml:lang="en">Add &amp;&amp;Next Occurrence</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
-      <trans-unit id="peekViewTitleBackground">
-        <source xml:lang="en">Background color of the peek view title area.</source>
+      <trans-unit id="addSelectionToPreviousFindMatch">
+        <source xml:lang="en">Add Selection To Previous Find Match</source>
       </trans-unit>
-      <trans-unit id="peekViewTitleForeground">
-        <source xml:lang="en">Color of the peek view title.</source>
+      <trans-unit id="miAddSelectionToPreviousFindMatch">
+        <source xml:lang="en">Add P&amp;&amp;revious Occurrence</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
-      <trans-unit id="peekViewTitleInfoForeground">
-        <source xml:lang="en">Color of the peek view title info.</source>
+      <trans-unit id="moveSelectionToNextFindMatch">
+        <source xml:lang="en">Move Last Selection To Next Find Match</source>
       </trans-unit>
-      <trans-unit id="peekViewBorder">
-        <source xml:lang="en">Color of the peek view borders and arrow.</source>
+      <trans-unit id="moveSelectionToPreviousFindMatch">
+        <source xml:lang="en">Move Last Selection To Previous Find Match</source>
       </trans-unit>
-      <trans-unit id="peekViewResultsBackground">
-        <source xml:lang="en">Background color of the peek view result list.</source>
+      <trans-unit id="selectAllOccurrencesOfFindMatch">
+        <source xml:lang="en">Select All Occurrences of Find Match</source>
       </trans-unit>
-      <trans-unit id="peekViewResultsMatchForeground">
-        <source xml:lang="en">Foreground color for line nodes in the peek view result list.</source>
+      <trans-unit id="miSelectHighlights">
+        <source xml:lang="en">Select All &amp;&amp;Occurrences</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
-      <trans-unit id="peekViewResultsFileForeground">
-        <source xml:lang="en">Foreground color for file nodes in the peek view result list.</source>
-      </trans-unit>
-      <trans-unit id="peekViewResultsSelectionBackground">
-        <source xml:lang="en">Background color of the selected entry in the peek view result list.</source>
-      </trans-unit>
-      <trans-unit id="peekViewResultsSelectionForeground">
-        <source xml:lang="en">Foreground color of the selected entry in the peek view result list.</source>
-      </trans-unit>
-      <trans-unit id="peekViewEditorBackground">
-        <source xml:lang="en">Background color of the peek view editor.</source>
-      </trans-unit>
-      <trans-unit id="peekViewEditorGutterBackground">
-        <source xml:lang="en">Background color of the gutter in the peek view editor.</source>
-      </trans-unit>
-      <trans-unit id="peekViewResultsMatchHighlight">
-        <source xml:lang="en">Match highlight color in the peek view result list.</source>
-      </trans-unit>
-      <trans-unit id="peekViewEditorMatchHighlight">
-        <source xml:lang="en">Match highlight color in the peek view editor.</source>
-      </trans-unit>
-      <trans-unit id="peekViewEditorMatchHighlightBorder">
-        <source xml:lang="en">Match highlight border in the peek view editor.</source>
+      <trans-unit id="changeAll.label">
+        <source xml:lang="en">Change All Occurrences</source>
       </trans-unit>
     </body>
   </file>
@@ -931,188 +911,10 @@ It is recommended to remove them from the file. This can be configured via `edit
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/find/findWidget" source-language="en" datatype="plaintext">
+  <file original="src/vs/editor/contrib/parameterHints/parameterHintsWidget" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="label.find">
-        <source xml:lang="en">Find</source>
-      </trans-unit>
-      <trans-unit id="placeholder.find">
-        <source xml:lang="en">Find</source>
-      </trans-unit>
-      <trans-unit id="label.previousMatchButton">
-        <source xml:lang="en">Previous match</source>
-      </trans-unit>
-      <trans-unit id="label.nextMatchButton">
-        <source xml:lang="en">Next match</source>
-      </trans-unit>
-      <trans-unit id="label.toggleSelectionFind">
-        <source xml:lang="en">Find in selection</source>
-      </trans-unit>
-      <trans-unit id="label.closeButton">
-        <source xml:lang="en">Close</source>
-      </trans-unit>
-      <trans-unit id="label.replace">
-        <source xml:lang="en">Replace</source>
-      </trans-unit>
-      <trans-unit id="placeholder.replace">
-        <source xml:lang="en">Replace</source>
-      </trans-unit>
-      <trans-unit id="label.replaceButton">
-        <source xml:lang="en">Replace</source>
-      </trans-unit>
-      <trans-unit id="label.replaceAllButton">
-        <source xml:lang="en">Replace All</source>
-      </trans-unit>
-      <trans-unit id="label.toggleReplaceButton">
-        <source xml:lang="en">Toggle Replace mode</source>
-      </trans-unit>
-      <trans-unit id="title.matchesCountLimit">
-        <source xml:lang="en">Only the first {0} results are highlighted, but all find operations work on the entire text.</source>
-      </trans-unit>
-      <trans-unit id="label.matchesLocation">
-        <source xml:lang="en">{0} of {1}</source>
-      </trans-unit>
-      <trans-unit id="label.noResults">
-        <source xml:lang="en">No results</source>
-      </trans-unit>
-      <trans-unit id="ariaSearchNoResultEmpty">
-        <source xml:lang="en">{0} found</source>
-      </trans-unit>
-      <trans-unit id="ariaSearchNoResult">
-        <source xml:lang="en">{0} found for '{1}'</source>
-      </trans-unit>
-      <trans-unit id="ariaSearchNoResultWithLineNum">
-        <source xml:lang="en">{0} found for '{1}', at {2}</source>
-      </trans-unit>
-      <trans-unit id="ariaSearchNoResultWithLineNumNoCurrentMatch">
-        <source xml:lang="en">{0} found for '{1}'</source>
-      </trans-unit>
-      <trans-unit id="ctrlEnter.keybindingChanged">
-        <source xml:lang="en">Ctrl+Enter now inserts line break instead of replacing all. You can modify the keybinding for editor.action.replaceAll to override this behavior.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/format/format" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="hint11">
-        <source xml:lang="en">Made 1 formatting edit on line {0}</source>
-      </trans-unit>
-      <trans-unit id="hintn1">
-        <source xml:lang="en">Made {0} formatting edits on line {1}</source>
-      </trans-unit>
-      <trans-unit id="hint1n">
-        <source xml:lang="en">Made 1 formatting edit between lines {0} and {1}</source>
-      </trans-unit>
-      <trans-unit id="hintnn">
-        <source xml:lang="en">Made {0} formatting edits between lines {1} and {2}</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/gotoError/gotoErrorWidget" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="Error">
-        <source xml:lang="en">Error</source>
-      </trans-unit>
-      <trans-unit id="Warning">
-        <source xml:lang="en">Warning</source>
-      </trans-unit>
-      <trans-unit id="Info">
-        <source xml:lang="en">Info</source>
-      </trans-unit>
-      <trans-unit id="Hint_Duplicated4">
-        <source xml:lang="en">Hint</source>
-      </trans-unit>
-      <trans-unit id="marker aria">
-        <source xml:lang="en">{0} at {1}. </source>
-      </trans-unit>
-      <trans-unit id="problems">
-        <source xml:lang="en">{0} of {1} problems</source>
-      </trans-unit>
-      <trans-unit id="change">
-        <source xml:lang="en">{0} of {1} problem</source>
-      </trans-unit>
-      <trans-unit id="editorMarkerNavigationError">
-        <source xml:lang="en">Editor marker navigation widget error color.</source>
-      </trans-unit>
-      <trans-unit id="editorMarkerNavigationWarning">
-        <source xml:lang="en">Editor marker navigation widget warning color.</source>
-      </trans-unit>
-      <trans-unit id="editorMarkerNavigationInfo">
-        <source xml:lang="en">Editor marker navigation widget info color.</source>
-      </trans-unit>
-      <trans-unit id="editorMarkerNavigationBackground">
-        <source xml:lang="en">Editor marker navigation widget background.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/message/messageController" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="editor.readonly">
-        <source xml:lang="en">Cannot edit in read-only editor</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/gotoSymbol/referencesModel" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="aria.oneReference">
-        <source xml:lang="en">symbol in {0} on line {1} at column {2}</source>
-      </trans-unit>
-      <trans-unit id="aria.fileReferences.1">
-        <source xml:lang="en">1 symbol in {0}, full path {1}</source>
-      </trans-unit>
-      <trans-unit id="aria.fileReferences.N">
-        <source xml:lang="en">{0} symbols in {1}, full path {2}</source>
-      </trans-unit>
-      <trans-unit id="aria.result.0">
-        <source xml:lang="en">No results found</source>
-      </trans-unit>
-      <trans-unit id="aria.result.1">
-        <source xml:lang="en">Found 1 symbol in {0}</source>
-      </trans-unit>
-      <trans-unit id="aria.result.n1">
-        <source xml:lang="en">Found {0} symbols in {1}</source>
-      </trans-unit>
-      <trans-unit id="aria.result.nm">
-        <source xml:lang="en">Found {0} symbols in {1} files</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/gotoSymbol/peek/referencesController" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="labelLoading">
-        <source xml:lang="en">Loading...</source>
-      </trans-unit>
-      <trans-unit id="metaTitle.N">
-        <source xml:lang="en">{0} ({1})</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/gotoSymbol/symbolNavigation" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="location.kb">
-        <source xml:lang="en">Symbol {0} of {1}, {2} for next</source>
-      </trans-unit>
-      <trans-unit id="location">
-        <source xml:lang="en">Symbol {0} of {1}</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/hover/modesContentHover" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="modesContentHover.loading">
-        <source xml:lang="en">Loading...</source>
-      </trans-unit>
-      <trans-unit id="peek problem">
-        <source xml:lang="en">Peek Problem</source>
-      </trans-unit>
-      <trans-unit id="checkingForQuickFixes">
-        <source xml:lang="en">Checking for quick fixes...</source>
-      </trans-unit>
-      <trans-unit id="noQuickFixes">
-        <source xml:lang="en">No quick fixes available</source>
-      </trans-unit>
-      <trans-unit id="quick fixes">
-        <source xml:lang="en">Quick Fix...</source>
+      <trans-unit id="hint_Duplicated4">
+        <source xml:lang="en">{0}, hint</source>
       </trans-unit>
     </body>
   </file>
@@ -1123,154 +925,23 @@ It is recommended to remove them from the file. This can be configured via `edit
       </trans-unit>
       <trans-unit id="label_Duplicated3">
         <source xml:lang="en">{0} to Rename, {1} to Preview</source>
-        <note>placeholders are keybindings, e.g "F2 to Rename, Shift+F2 to Preview"</note>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/parameterHints/parameterHintsWidget" source-language="en" datatype="plaintext">
+  <file original="src/vs/editor/contrib/message/messageController" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="hint_Duplicated5">
-        <source xml:lang="en">{0}, hint</source>
+      <trans-unit id="editor.readonly">
+        <source xml:lang="en">Cannot edit in read-only editor</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/suggest/suggestWidget" source-language="en" datatype="plaintext">
+  <file original="src/vs/editor/contrib/gotoSymbol/peek/referencesController" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="editorSuggestWidgetBackground">
-        <source xml:lang="en">Background color of the suggest widget.</source>
-      </trans-unit>
-      <trans-unit id="editorSuggestWidgetBorder">
-        <source xml:lang="en">Border color of the suggest widget.</source>
-      </trans-unit>
-      <trans-unit id="editorSuggestWidgetForeground">
-        <source xml:lang="en">Foreground color of the suggest widget.</source>
-      </trans-unit>
-      <trans-unit id="editorSuggestWidgetSelectedBackground">
-        <source xml:lang="en">Background color of the selected entry in the suggest widget.</source>
-      </trans-unit>
-      <trans-unit id="editorSuggestWidgetHighlightForeground">
-        <source xml:lang="en">Color of the match highlights in the suggest widget.</source>
-      </trans-unit>
-      <trans-unit id="readMore">
-        <source xml:lang="en">Read More ({0})</source>
-      </trans-unit>
-      <trans-unit id="readLess">
-        <source xml:lang="en">Read Less ({0})</source>
-      </trans-unit>
-      <trans-unit id="loading">
+      <trans-unit id="labelLoading">
         <source xml:lang="en">Loading...</source>
       </trans-unit>
-      <trans-unit id="suggestWidget.loading">
-        <source xml:lang="en">Loading...</source>
-      </trans-unit>
-      <trans-unit id="suggestWidget.noSuggestions">
-        <source xml:lang="en">No suggestions.</source>
-      </trans-unit>
-      <trans-unit id="ariaCurrenttSuggestionReadDetails">
-        <source xml:lang="en">Item {0}, docs: {1}</source>
-      </trans-unit>
-      <trans-unit id="suggest">
-        <source xml:lang="en">Suggest</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/quickAccess/gotoSymbolQuickAccess" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="cannotRunGotoSymbolWithoutEditor">
-        <source xml:lang="en">To go to a symbol, first open a text editor with symbol information.</source>
-      </trans-unit>
-      <trans-unit id="cannotRunGotoSymbolWithoutSymbolProvider">
-        <source xml:lang="en">The active text editor does not provide symbol information.</source>
-      </trans-unit>
-      <trans-unit id="noMatchingSymbolResults">
-        <source xml:lang="en">No matching editor symbols</source>
-      </trans-unit>
-      <trans-unit id="noSymbolResults">
-        <source xml:lang="en">No editor symbols</source>
-      </trans-unit>
-      <trans-unit id="openToSide">
-        <source xml:lang="en">Open to the Side</source>
-      </trans-unit>
-      <trans-unit id="openToBottom">
-        <source xml:lang="en">Open to the Bottom</source>
-      </trans-unit>
-      <trans-unit id="symbols">
-        <source xml:lang="en">symbols ({0})</source>
-      </trans-unit>
-      <trans-unit id="property_Duplicated6">
-        <source xml:lang="en">properties ({0})</source>
-      </trans-unit>
-      <trans-unit id="method_Duplicated8">
-        <source xml:lang="en">methods ({0})</source>
-      </trans-unit>
-      <trans-unit id="function_Duplicated10">
-        <source xml:lang="en">functions ({0})</source>
-      </trans-unit>
-      <trans-unit id="_constructor">
-        <source xml:lang="en">constructors ({0})</source>
-      </trans-unit>
-      <trans-unit id="variable_Duplicated12">
-        <source xml:lang="en">variables ({0})</source>
-      </trans-unit>
-      <trans-unit id="class_Duplicated14">
-        <source xml:lang="en">classes ({0})</source>
-      </trans-unit>
-      <trans-unit id="struct_Duplicated16">
-        <source xml:lang="en">structs ({0})</source>
-      </trans-unit>
-      <trans-unit id="event_Duplicated18">
-        <source xml:lang="en">events ({0})</source>
-      </trans-unit>
-      <trans-unit id="operator_Duplicated20">
-        <source xml:lang="en">operators ({0})</source>
-      </trans-unit>
-      <trans-unit id="interface_Duplicated22">
-        <source xml:lang="en">interfaces ({0})</source>
-      </trans-unit>
-      <trans-unit id="namespace_Duplicated24">
-        <source xml:lang="en">namespaces ({0})</source>
-      </trans-unit>
-      <trans-unit id="package_Duplicated26">
-        <source xml:lang="en">packages ({0})</source>
-      </trans-unit>
-      <trans-unit id="typeParameter_Duplicated28">
-        <source xml:lang="en">type parameters ({0})</source>
-      </trans-unit>
-      <trans-unit id="modules">
-        <source xml:lang="en">modules ({0})</source>
-      </trans-unit>
-      <trans-unit id="enum_Duplicated30">
-        <source xml:lang="en">enumerations ({0})</source>
-      </trans-unit>
-      <trans-unit id="enumMember_Duplicated32">
-        <source xml:lang="en">enumeration members ({0})</source>
-      </trans-unit>
-      <trans-unit id="string_Duplicated34">
-        <source xml:lang="en">strings ({0})</source>
-      </trans-unit>
-      <trans-unit id="file_Duplicated36">
-        <source xml:lang="en">files ({0})</source>
-      </trans-unit>
-      <trans-unit id="array_Duplicated38">
-        <source xml:lang="en">arrays ({0})</source>
-      </trans-unit>
-      <trans-unit id="number_Duplicated40">
-        <source xml:lang="en">numbers ({0})</source>
-      </trans-unit>
-      <trans-unit id="boolean_Duplicated42">
-        <source xml:lang="en">booleans ({0})</source>
-      </trans-unit>
-      <trans-unit id="object_Duplicated44">
-        <source xml:lang="en">objects ({0})</source>
-      </trans-unit>
-      <trans-unit id="key_Duplicated46">
-        <source xml:lang="en">keys ({0})</source>
-      </trans-unit>
-      <trans-unit id="field_Duplicated48">
-        <source xml:lang="en">fields ({0})</source>
-      </trans-unit>
-      <trans-unit id="constant_Duplicated50">
-        <source xml:lang="en">constants ({0})</source>
+      <trans-unit id="metaTitle.N">
+        <source xml:lang="en">{0} ({1})</source>
       </trans-unit>
     </body>
   </file>
@@ -1389,6 +1060,213 @@ It is recommended to remove them from the file. This can be configured via `edit
       </trans-unit>
       <trans-unit id="DecemberShort">
         <source xml:lang="en">Dec</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/format/format" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="hint11">
+        <source xml:lang="en">Made 1 formatting edit on line {0}</source>
+      </trans-unit>
+      <trans-unit id="hintn1">
+        <source xml:lang="en">Made {0} formatting edits on line {1}</source>
+      </trans-unit>
+      <trans-unit id="hint1n">
+        <source xml:lang="en">Made 1 formatting edit between lines {0} and {1}</source>
+      </trans-unit>
+      <trans-unit id="hintnn">
+        <source xml:lang="en">Made {0} formatting edits between lines {1} and {2}</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/gotoError/gotoErrorWidget" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="Error">
+        <source xml:lang="en">Error</source>
+      </trans-unit>
+      <trans-unit id="Warning">
+        <source xml:lang="en">Warning</source>
+      </trans-unit>
+      <trans-unit id="Info">
+        <source xml:lang="en">Info</source>
+      </trans-unit>
+      <trans-unit id="Hint_Duplicated5">
+        <source xml:lang="en">Hint</source>
+      </trans-unit>
+      <trans-unit id="marker aria">
+        <source xml:lang="en">{0} at {1}. </source>
+      </trans-unit>
+      <trans-unit id="problems">
+        <source xml:lang="en">{0} of {1} problems</source>
+      </trans-unit>
+      <trans-unit id="change">
+        <source xml:lang="en">{0} of {1} problem</source>
+      </trans-unit>
+      <trans-unit id="editorMarkerNavigationError">
+        <source xml:lang="en">Editor marker navigation widget error color.</source>
+      </trans-unit>
+      <trans-unit id="editorMarkerNavigationWarning">
+        <source xml:lang="en">Editor marker navigation widget warning color.</source>
+      </trans-unit>
+      <trans-unit id="editorMarkerNavigationInfo">
+        <source xml:lang="en">Editor marker navigation widget info color.</source>
+      </trans-unit>
+      <trans-unit id="editorMarkerNavigationBackground">
+        <source xml:lang="en">Editor marker navigation widget background.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/quickAccess/gotoSymbolQuickAccess" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="cannotRunGotoSymbolWithoutEditor">
+        <source xml:lang="en">To go to a symbol, first open a text editor with symbol information.</source>
+      </trans-unit>
+      <trans-unit id="cannotRunGotoSymbolWithoutSymbolProvider">
+        <source xml:lang="en">The active text editor does not provide symbol information.</source>
+      </trans-unit>
+      <trans-unit id="noMatchingSymbolResults">
+        <source xml:lang="en">No matching editor symbols</source>
+      </trans-unit>
+      <trans-unit id="noSymbolResults">
+        <source xml:lang="en">No editor symbols</source>
+      </trans-unit>
+      <trans-unit id="openToSide">
+        <source xml:lang="en">Open to the Side</source>
+      </trans-unit>
+      <trans-unit id="openToBottom">
+        <source xml:lang="en">Open to the Bottom</source>
+      </trans-unit>
+      <trans-unit id="symbols">
+        <source xml:lang="en">symbols ({0})</source>
+      </trans-unit>
+      <trans-unit id="property_Duplicated6">
+        <source xml:lang="en">properties ({0})</source>
+      </trans-unit>
+      <trans-unit id="method_Duplicated8">
+        <source xml:lang="en">methods ({0})</source>
+      </trans-unit>
+      <trans-unit id="function_Duplicated10">
+        <source xml:lang="en">functions ({0})</source>
+      </trans-unit>
+      <trans-unit id="_constructor">
+        <source xml:lang="en">constructors ({0})</source>
+      </trans-unit>
+      <trans-unit id="variable_Duplicated12">
+        <source xml:lang="en">variables ({0})</source>
+      </trans-unit>
+      <trans-unit id="class_Duplicated14">
+        <source xml:lang="en">classes ({0})</source>
+      </trans-unit>
+      <trans-unit id="struct_Duplicated16">
+        <source xml:lang="en">structs ({0})</source>
+      </trans-unit>
+      <trans-unit id="event_Duplicated18">
+        <source xml:lang="en">events ({0})</source>
+      </trans-unit>
+      <trans-unit id="operator_Duplicated20">
+        <source xml:lang="en">operators ({0})</source>
+      </trans-unit>
+      <trans-unit id="interface_Duplicated22">
+        <source xml:lang="en">interfaces ({0})</source>
+      </trans-unit>
+      <trans-unit id="namespace_Duplicated24">
+        <source xml:lang="en">namespaces ({0})</source>
+      </trans-unit>
+      <trans-unit id="package_Duplicated26">
+        <source xml:lang="en">packages ({0})</source>
+      </trans-unit>
+      <trans-unit id="typeParameter_Duplicated28">
+        <source xml:lang="en">type parameters ({0})</source>
+      </trans-unit>
+      <trans-unit id="modules">
+        <source xml:lang="en">modules ({0})</source>
+      </trans-unit>
+      <trans-unit id="enum_Duplicated30">
+        <source xml:lang="en">enumerations ({0})</source>
+      </trans-unit>
+      <trans-unit id="enumMember_Duplicated32">
+        <source xml:lang="en">enumeration members ({0})</source>
+      </trans-unit>
+      <trans-unit id="string_Duplicated34">
+        <source xml:lang="en">strings ({0})</source>
+      </trans-unit>
+      <trans-unit id="file_Duplicated36">
+        <source xml:lang="en">files ({0})</source>
+      </trans-unit>
+      <trans-unit id="array_Duplicated38">
+        <source xml:lang="en">arrays ({0})</source>
+      </trans-unit>
+      <trans-unit id="number_Duplicated40">
+        <source xml:lang="en">numbers ({0})</source>
+      </trans-unit>
+      <trans-unit id="boolean_Duplicated42">
+        <source xml:lang="en">booleans ({0})</source>
+      </trans-unit>
+      <trans-unit id="object_Duplicated44">
+        <source xml:lang="en">objects ({0})</source>
+      </trans-unit>
+      <trans-unit id="key_Duplicated46">
+        <source xml:lang="en">keys ({0})</source>
+      </trans-unit>
+      <trans-unit id="field_Duplicated48">
+        <source xml:lang="en">fields ({0})</source>
+      </trans-unit>
+      <trans-unit id="constant_Duplicated50">
+        <source xml:lang="en">constants ({0})</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/gotoSymbol/referencesModel" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="aria.oneReference">
+        <source xml:lang="en">symbol in {0} on line {1} at column {2}</source>
+      </trans-unit>
+      <trans-unit id="aria.fileReferences.1">
+        <source xml:lang="en">1 symbol in {0}, full path {1}</source>
+      </trans-unit>
+      <trans-unit id="aria.fileReferences.N">
+        <source xml:lang="en">{0} symbols in {1}, full path {2}</source>
+      </trans-unit>
+      <trans-unit id="aria.result.0">
+        <source xml:lang="en">No results found</source>
+      </trans-unit>
+      <trans-unit id="aria.result.1">
+        <source xml:lang="en">Found 1 symbol in {0}</source>
+      </trans-unit>
+      <trans-unit id="aria.result.n1">
+        <source xml:lang="en">Found {0} symbols in {1}</source>
+      </trans-unit>
+      <trans-unit id="aria.result.nm">
+        <source xml:lang="en">Found {0} symbols in {1} files</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/gotoSymbol/symbolNavigation" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="location.kb">
+        <source xml:lang="en">Symbol {0} of {1}, {2} for next</source>
+      </trans-unit>
+      <trans-unit id="location">
+        <source xml:lang="en">Symbol {0} of {1}</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/hover/modesContentHover" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="modesContentHover.loading">
+        <source xml:lang="en">Loading...</source>
+      </trans-unit>
+      <trans-unit id="peek problem">
+        <source xml:lang="en">Peek Problem</source>
+      </trans-unit>
+      <trans-unit id="checkingForQuickFixes">
+        <source xml:lang="en">Checking for quick fixes...</source>
+      </trans-unit>
+      <trans-unit id="noQuickFixes">
+        <source xml:lang="en">No quick fixes available</source>
+      </trans-unit>
+      <trans-unit id="quick fixes">
+        <source xml:lang="en">Quick Fix...</source>
       </trans-unit>
     </body>
   </file>
@@ -1608,6 +1486,107 @@ It is recommended to remove them from the file. This can be configured via `edit
       </trans-unit>
       <trans-unit id="quickFix">
         <source xml:lang="en">Show Fixes</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/find/findWidget" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="label.find">
+        <source xml:lang="en">Find</source>
+      </trans-unit>
+      <trans-unit id="placeholder.find">
+        <source xml:lang="en">Find</source>
+      </trans-unit>
+      <trans-unit id="label.previousMatchButton">
+        <source xml:lang="en">Previous match</source>
+      </trans-unit>
+      <trans-unit id="label.nextMatchButton">
+        <source xml:lang="en">Next match</source>
+      </trans-unit>
+      <trans-unit id="label.toggleSelectionFind">
+        <source xml:lang="en">Find in selection</source>
+      </trans-unit>
+      <trans-unit id="label.closeButton">
+        <source xml:lang="en">Close</source>
+      </trans-unit>
+      <trans-unit id="label.replace">
+        <source xml:lang="en">Replace</source>
+      </trans-unit>
+      <trans-unit id="placeholder.replace">
+        <source xml:lang="en">Replace</source>
+      </trans-unit>
+      <trans-unit id="label.replaceButton">
+        <source xml:lang="en">Replace</source>
+      </trans-unit>
+      <trans-unit id="label.replaceAllButton">
+        <source xml:lang="en">Replace All</source>
+      </trans-unit>
+      <trans-unit id="label.toggleReplaceButton">
+        <source xml:lang="en">Toggle Replace mode</source>
+      </trans-unit>
+      <trans-unit id="title.matchesCountLimit">
+        <source xml:lang="en">Only the first {0} results are highlighted, but all find operations work on the entire text.</source>
+      </trans-unit>
+      <trans-unit id="label.matchesLocation">
+        <source xml:lang="en">{0} of {1}</source>
+      </trans-unit>
+      <trans-unit id="label.noResults">
+        <source xml:lang="en">No results</source>
+      </trans-unit>
+      <trans-unit id="ariaSearchNoResultEmpty">
+        <source xml:lang="en">{0} found</source>
+      </trans-unit>
+      <trans-unit id="ariaSearchNoResult">
+        <source xml:lang="en">{0} found for '{1}'</source>
+      </trans-unit>
+      <trans-unit id="ariaSearchNoResultWithLineNum">
+        <source xml:lang="en">{0} found for '{1}', at {2}</source>
+      </trans-unit>
+      <trans-unit id="ariaSearchNoResultWithLineNumNoCurrentMatch">
+        <source xml:lang="en">{0} found for '{1}'</source>
+      </trans-unit>
+      <trans-unit id="ctrlEnter.keybindingChanged">
+        <source xml:lang="en">Ctrl+Enter now inserts line break instead of replacing all. You can modify the keybinding for editor.action.replaceAll to override this behavior.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/suggest/suggestWidget" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="editorSuggestWidgetBackground">
+        <source xml:lang="en">Background color of the suggest widget.</source>
+      </trans-unit>
+      <trans-unit id="editorSuggestWidgetBorder">
+        <source xml:lang="en">Border color of the suggest widget.</source>
+      </trans-unit>
+      <trans-unit id="editorSuggestWidgetForeground">
+        <source xml:lang="en">Foreground color of the suggest widget.</source>
+      </trans-unit>
+      <trans-unit id="editorSuggestWidgetSelectedBackground">
+        <source xml:lang="en">Background color of the selected entry in the suggest widget.</source>
+      </trans-unit>
+      <trans-unit id="editorSuggestWidgetHighlightForeground">
+        <source xml:lang="en">Color of the match highlights in the suggest widget.</source>
+      </trans-unit>
+      <trans-unit id="readMore">
+        <source xml:lang="en">Read More...{0}</source>
+      </trans-unit>
+      <trans-unit id="readLess">
+        <source xml:lang="en">Read less...{0}</source>
+      </trans-unit>
+      <trans-unit id="loading">
+        <source xml:lang="en">Loading...</source>
+      </trans-unit>
+      <trans-unit id="suggestWidget.loading">
+        <source xml:lang="en">Loading...</source>
+      </trans-unit>
+      <trans-unit id="suggestWidget.noSuggestions">
+        <source xml:lang="en">No suggestions.</source>
+      </trans-unit>
+      <trans-unit id="ariaCurrenttSuggestionReadDetails">
+        <source xml:lang="en">Item {0}, docs: {1}</source>
+      </trans-unit>
+      <trans-unit id="suggest">
+        <source xml:lang="en">Suggest</source>
       </trans-unit>
     </body>
   </file>

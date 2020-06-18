@@ -2,27 +2,11 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file original="src/vs/workbench/contrib/userDataSync/electron-browser/userDataSync.contribution" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="too many requests_Duplicated1">
-        <source xml:lang="en">Turned off syncing preferences on this device because it is making too many requests. Please report an issue by providing the sync logs.</source>
-      </trans-unit>
-      <trans-unit id="show sync logs">
-        <source xml:lang="en">Show Log</source>
-      </trans-unit>
-      <trans-unit id="report issue">
-        <source xml:lang="en">Report Issue</source>
-      </trans-unit>
       <trans-unit id="Open Backup folder">
         <source xml:lang="en">Open Local Backups Folder</source>
       </trans-unit>
-      <trans-unit id="sync preferences_Duplicated3">
+      <trans-unit id="sync preferences_Duplicated1">
         <source xml:lang="en">Preferences Sync</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/userDataSync/browser/userDataSync.contribution" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="too many requests_Duplicated2">
-        <source xml:lang="en">Turned off syncing preferences on this device because it is making too many requests.</source>
       </trans-unit>
     </body>
   </file>
@@ -79,32 +63,23 @@
       <trans-unit id="too large">
         <source xml:lang="en">Disabled syncing {0} because size of the {1} file to sync is larger than {2}. Please open the file and reduce the size and enable sync</source>
       </trans-unit>
-      <trans-unit id="error upgrade required">
-        <source xml:lang="en">Preferences sync is disabled because the current version ({0}, {1}) is not compatible with the sync service. Please update before turning on sync.</source>
-      </trans-unit>
       <trans-unit id="open file">
         <source xml:lang="en">Open {0} File</source>
       </trans-unit>
+      <trans-unit id="error incompatible">
+        <source xml:lang="en">Turned off sync because local data is incompatible with the data in the cloud. Please update {0} and turn on sync to continue syncing.</source>
+      </trans-unit>
       <trans-unit id="errorInvalidConfiguration">
-        <source xml:lang="en">Unable to sync {0} because the content in the file is not valid. Please open the file and correct it.</source>
+        <source xml:lang="en">Unable to sync {0} because there are some errors/warnings in the file. Please open the file to correct errors/warnings in it.</source>
+      </trans-unit>
+      <trans-unit id="sign in to sync preferences">
+        <source xml:lang="en">Sign in to Sync Preferences</source>
       </trans-unit>
       <trans-unit id="has conflicts">
         <source xml:lang="en">Preferences Sync: Conflicts Detected</source>
       </trans-unit>
       <trans-unit id="turning on syncing">
         <source xml:lang="en">Turning on Preferences Sync...</source>
-      </trans-unit>
-      <trans-unit id="sign in to sync preferences">
-        <source xml:lang="en">Sign in to Sync Preferences</source>
-      </trans-unit>
-      <trans-unit id="too large while starting sync">
-        <source xml:lang="en">Preferences sync cannot be turned on because size of the {0} file to sync is larger than {1}. Please open the file and reduce the size and turn on sync</source>
-      </trans-unit>
-      <trans-unit id="error upgrade required while starting sync">
-        <source xml:lang="en">Preferences sync cannot be turned on because the current version ({0}, {1}) is not compatible with the sync service. Please update before turning on sync.</source>
-      </trans-unit>
-      <trans-unit id="turn on failed">
-        <source xml:lang="en">Error while starting Sync: {0}</source>
       </trans-unit>
       <trans-unit id="sync preview message">
         <source xml:lang="en">Synchronizing your preferences is a preview feature, please read the documentation before turning it on.</source>
@@ -134,13 +109,32 @@
       <trans-unit id="configure sync placeholder">
         <source xml:lang="en">Choose what to sync</source>
       </trans-unit>
+      <trans-unit id="no account">
+        <source xml:lang="en">No account available</source>
+      </trans-unit>
+      <trans-unit id="sync turned on">
+        <source xml:lang="en">Preferences sync is turned on</source>
+      </trans-unit>
+      <trans-unit id="firs time sync">
+        <source xml:lang="en">Sync</source>
+      </trans-unit>
+      <trans-unit id="merge">
+        <source xml:lang="en">Merge</source>
+      </trans-unit>
+      <trans-unit id="replace">
+        <source xml:lang="en">Replace Local</source>
+      </trans-unit>
+      <trans-unit id="first time sync detail">
+        <source xml:lang="en">It looks like this is the first time sync is set up.
+Would you like to merge or replace with the data from the cloud?</source>
+      </trans-unit>
       <trans-unit id="turn off sync confirmation">
         <source xml:lang="en">Do you want to turn off sync?</source>
       </trans-unit>
       <trans-unit id="turn off sync detail">
         <source xml:lang="en">Your settings, keybindings, extensions and UI State will no longer be synced.</source>
       </trans-unit>
-      <trans-unit id="turn off_Duplicated6">
+      <trans-unit id="turn off">
         <source xml:lang="en">Turn Off</source>
       </trans-unit>
       <trans-unit id="turn off sync everywhere">
@@ -155,6 +149,9 @@
       <trans-unit id="snippets conflicts preview">
         <source xml:lang="en">User Snippet Conflicts (Remote ↔ Local) - {0}</source>
       </trans-unit>
+      <trans-unit id="turn on failed">
+        <source xml:lang="en">Error while starting Sync: {0}</source>
+      </trans-unit>
       <trans-unit id="global activity turn on sync">
         <source xml:lang="en">Turn on Preferences Sync...</source>
       </trans-unit>
@@ -162,10 +159,10 @@
         <source xml:lang="en">Turning on Preferences Sync...</source>
       </trans-unit>
       <trans-unit id="sign in global">
-        <source xml:lang="en">Sign in to Sync Preferences</source>
+        <source xml:lang="en">Sign in to Sync Preferences(1)</source>
       </trans-unit>
       <trans-unit id="sign in accounts">
-        <source xml:lang="en">Sign in to Sync Preferences (1)</source>
+        <source xml:lang="en">Sign in to Sync Preferences</source>
       </trans-unit>
       <trans-unit id="resolveConflicts_global">
         <source xml:lang="en">Preferences Sync: Show Settings Conflicts (1)</source>
@@ -185,7 +182,7 @@
       <trans-unit id="show sync log title">
         <source xml:lang="en">Preferences Sync: Show Log</source>
       </trans-unit>
-      <trans-unit id="sync preferences_Duplicated4">
+      <trans-unit id="sync preferences_Duplicated2">
         <source xml:lang="en">Preferences Sync</source>
       </trans-unit>
       <trans-unit id="Sync accept remote">
@@ -202,6 +199,28 @@
       </trans-unit>
       <trans-unit id="update conflicts">
         <source xml:lang="en">Could not resolve conflicts as there is new local version available. Please try again.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/userDataSync/browser/userDataSyncAccount" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="pick an account">
+        <source xml:lang="en">Preferences Sync</source>
+      </trans-unit>
+      <trans-unit id="choose account placeholder">
+        <source xml:lang="en">Select an account</source>
+      </trans-unit>
+      <trans-unit id="signed in">
+        <source xml:lang="en">Signed in</source>
+      </trans-unit>
+      <trans-unit id="last used">
+        <source xml:lang="en">Last Used with Sync</source>
+      </trans-unit>
+      <trans-unit id="others">
+        <source xml:lang="en">Others</source>
+      </trans-unit>
+      <trans-unit id="sign in using account">
+        <source xml:lang="en">Sign in with {0}</source>
       </trans-unit>
     </body>
   </file>
@@ -225,23 +244,14 @@
       <trans-unit id="workbench.action.showSyncLocalBackup">
         <source xml:lang="en">Show Local Backup</source>
       </trans-unit>
-      <trans-unit id="sync preferences_Duplicated5">
+      <trans-unit id="sync preferences_Duplicated3">
         <source xml:lang="en">Preferences Sync</source>
-      </trans-unit>
-      <trans-unit id="synced machines">
-        <source xml:lang="en">Synced Machines</source>
-      </trans-unit>
-      <trans-unit id="workbench.actions.sync.editMachineName">
-        <source xml:lang="en">Edit Name</source>
-      </trans-unit>
-      <trans-unit id="workbench.actions.sync.turnOffSyncOnMachine">
-        <source xml:lang="en">Turn off Preferences Sync</source>
       </trans-unit>
       <trans-unit id="workbench.actions.sync.resolveResourceRef">
         <source xml:lang="en">Show raw JSON sync data</source>
       </trans-unit>
       <trans-unit id="workbench.actions.sync.replaceCurrent">
-        <source xml:lang="en">Restore</source>
+        <source xml:lang="en">Download...</source>
       </trans-unit>
       <trans-unit id="confirm replace">
         <source xml:lang="en">Would you like to replace your current {0} with selected?</source>
@@ -266,31 +276,6 @@
       </trans-unit>
       <trans-unit id="not syncing">
         <source xml:lang="en">Not syncing</source>
-      </trans-unit>
-      <trans-unit id="no data">
-        <source xml:lang="en">No Data</source>
-      </trans-unit>
-      <trans-unit id="no machines">
-        <source xml:lang="en">No Machines</source>
-      </trans-unit>
-      <trans-unit id="current">
-        <source xml:lang="en">Current</source>
-        <note>Current machine</note>
-      </trans-unit>
-      <trans-unit id="not found">
-        <source xml:lang="en">machine not found with id: {0}</source>
-      </trans-unit>
-      <trans-unit id="turn off sync on machine">
-        <source xml:lang="en">Are you sure you want to turn off sync on {0}?</source>
-      </trans-unit>
-      <trans-unit id="turn off_Duplicated7">
-        <source xml:lang="en">Turn off</source>
-      </trans-unit>
-      <trans-unit id="placeholder">
-        <source xml:lang="en">Enter the name of the machine</source>
-      </trans-unit>
-      <trans-unit id="valid message">
-        <source xml:lang="en">Machine name should be unique and not empty</source>
       </trans-unit>
     </body>
   </file>
