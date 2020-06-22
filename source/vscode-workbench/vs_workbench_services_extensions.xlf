@@ -54,6 +54,48 @@ Do you want to install the extension?</source>
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/services/extensions/electron-browser/localProcessExtensionHost" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="extensionHost.startupFailDebug">
+        <source xml:lang="en">Extension host did not start in 10 seconds, it might be stopped on the first line and needs a debugger to continue.</source>
+      </trans-unit>
+      <trans-unit id="extensionHost.startupFail">
+        <source xml:lang="en">Extension host did not start in 10 seconds, that might be a problem.</source>
+      </trans-unit>
+      <trans-unit id="reloadWindow_Duplicated8">
+        <source xml:lang="en">Reload Window</source>
+      </trans-unit>
+      <trans-unit id="extension host Log">
+        <source xml:lang="en">Extension Host</source>
+      </trans-unit>
+      <trans-unit id="extensionHost.error">
+        <source xml:lang="en">Error from the extension host: {0}</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/electron-browser/cachedExtensionScanner" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="overwritingExtension">
+        <source xml:lang="en">Overwriting extension {0} with {1}.</source>
+      </trans-unit>
+      <trans-unit id="extensionUnderDevelopment">
+        <source xml:lang="en">Loading development extension at {0}</source>
+      </trans-unit>
+      <trans-unit id="extensionCache.invalid">
+        <source xml:lang="en">Extensions have been modified on disk. Please reload the window.</source>
+      </trans-unit>
+      <trans-unit id="reloadWindow_Duplicated9">
+        <source xml:lang="en">Reload Window</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/common/remoteExtensionHost" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="remote extension host Log">
+        <source xml:lang="en">Remote Extension Host</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/services/extensions/electron-browser/remoteExtensionManagementIpc" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="incompatible">
@@ -172,6 +214,9 @@ Do you want to install the extension?</source>
       <trans-unit id="vscode.extension.activationEvents.workspaceContains">
         <source xml:lang="en">An activation event emitted whenever a folder is opened that contains at least a file matching the specified glob pattern.</source>
       </trans-unit>
+      <trans-unit id="vscode.extension.activationEvents.onStartupFinished">
+        <source xml:lang="en">An activation event emitted after the start-up finished (after all eager activated extensions have finished activating).</source>
+      </trans-unit>
       <trans-unit id="vscode.extension.activationEvents.onFileSystem">
         <source xml:lang="en">An activation event emitted whenever a file or folder is accessed with the given scheme.</source>
       </trans-unit>
@@ -246,55 +291,13 @@ Do you want to install the extension?</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/services/extensions/common/remoteExtensionHostClient" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="remote extension host Log">
-        <source xml:lang="en">Remote Extension Host</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/services/extensions/electron-browser/cachedExtensionScanner" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="overwritingExtension">
-        <source xml:lang="en">Overwriting extension {0} with {1}.</source>
-      </trans-unit>
-      <trans-unit id="extensionUnderDevelopment">
-        <source xml:lang="en">Loading development extension at {0}</source>
-      </trans-unit>
-      <trans-unit id="extensionCache.invalid">
-        <source xml:lang="en">Extensions have been modified on disk. Please reload the window.</source>
-      </trans-unit>
-      <trans-unit id="reloadWindow_Duplicated8">
-        <source xml:lang="en">Reload Window</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/services/extensions/common/extensionHostProcessManager" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/services/extensions/common/extensionHostManager" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="measureExtHostLatency">
         <source xml:lang="en">Measure Extension Host Latency</source>
       </trans-unit>
       <trans-unit id="developer_Duplicated7">
         <source xml:lang="en">Developer</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/services/extensions/electron-browser/extensionHost" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="extensionHost.startupFailDebug">
-        <source xml:lang="en">Extension host did not start in 10 seconds, it might be stopped on the first line and needs a debugger to continue.</source>
-      </trans-unit>
-      <trans-unit id="extensionHost.startupFail">
-        <source xml:lang="en">Extension host did not start in 10 seconds, that might be a problem.</source>
-      </trans-unit>
-      <trans-unit id="reloadWindow_Duplicated9">
-        <source xml:lang="en">Reload Window</source>
-      </trans-unit>
-      <trans-unit id="extension host Log">
-        <source xml:lang="en">Extension Host</source>
-      </trans-unit>
-      <trans-unit id="extensionHost.error">
-        <source xml:lang="en">Error from the extension host: {0}</source>
       </trans-unit>
     </body>
   </file>

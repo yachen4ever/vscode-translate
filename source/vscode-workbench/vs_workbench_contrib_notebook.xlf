@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file original="src/vs/workbench/contrib/notebook/browser/notebook.contribution" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="notebookConfigurationTitle">
-      <source xml:lang="en">Notebook</source>
-    </trans-unit>
-    <trans-unit id="notebook.displayOrder.description">
-      <source xml:lang="en">Priority list for output mime types</source>
-    </trans-unit>
-  </body></file>
   <file original="src/vs/workbench/contrib/notebook/browser/contrib/coreActions" source-language="en" datatype="plaintext"><body>
     <trans-unit id="notebookActions.category">
       <source xml:lang="en">Notebook</source>
@@ -30,23 +22,20 @@
     <trans-unit id="notebookActions.executeAndInsertBelow">
       <source xml:lang="en">Execute Notebook Cell and Insert Below</source>
     </trans-unit>
+    <trans-unit id="notebookActions.renderMarkdown">
+      <source xml:lang="en">Render All Markdown Cells</source>
+    </trans-unit>
     <trans-unit id="notebookActions.executeNotebook">
       <source xml:lang="en">Execute Notebook</source>
     </trans-unit>
     <trans-unit id="notebookActions.cancelNotebook">
       <source xml:lang="en">Cancel Notebook Execution</source>
     </trans-unit>
-    <trans-unit id="notebookActions.quitEditing">
-      <source xml:lang="en">Quit Notebook Cell Editing</source>
-    </trans-unit>
     <trans-unit id="notebookActions.menu.executeNotebook">
       <source xml:lang="en">Execute Notebook (Run all cells)</source>
     </trans-unit>
     <trans-unit id="notebookActions.menu.cancelNotebook">
       <source xml:lang="en">Stop Notebook Execution</source>
-    </trans-unit>
-    <trans-unit id="notebookActions.menu.execute">
-      <source xml:lang="en">Execute Notebook Cell</source>
     </trans-unit>
     <trans-unit id="notebookActions.changeCellToCode">
       <source xml:lang="en">Change Cell to Code</source>
@@ -60,17 +49,23 @@
     <trans-unit id="notebookActions.insertCodeCellBelow">
       <source xml:lang="en">Insert Code Cell Below</source>
     </trans-unit>
+    <trans-unit id="notebookActions.menu.insertCode">
+      <source xml:lang="en">$(add) Code</source>
+    </trans-unit>
     <trans-unit id="notebookActions.insertMarkdownCellAbove">
       <source xml:lang="en">Insert Markdown Cell Above</source>
     </trans-unit>
     <trans-unit id="notebookActions.insertMarkdownCellBelow">
       <source xml:lang="en">Insert Markdown Cell Below</source>
     </trans-unit>
+    <trans-unit id="notebookActions.menu.insertMarkdown">
+      <source xml:lang="en">$(add) Markdown</source>
+    </trans-unit>
     <trans-unit id="notebookActions.editCell">
       <source xml:lang="en">Edit Cell</source>
     </trans-unit>
-    <trans-unit id="notebookActions.saveCell">
-      <source xml:lang="en">Save Cell</source>
+    <trans-unit id="notebookActions.quitEdit">
+      <source xml:lang="en">Stop Editing Cell</source>
     </trans-unit>
     <trans-unit id="notebookActions.deleteCell">
       <source xml:lang="en">Delete Cell</source>
@@ -100,10 +95,10 @@
       <source xml:lang="en">Copy Cell Down</source>
     </trans-unit>
     <trans-unit id="cursorMoveDown">
-      <source xml:lang="en">Cursor Move Down</source>
+      <source xml:lang="en">Focus Next Cell Editor</source>
     </trans-unit>
     <trans-unit id="cursorMoveUp">
-      <source xml:lang="en">Cursor Move Up</source>
+      <source xml:lang="en">Focus Previous Cell Editor</source>
     </trans-unit>
     <trans-unit id="focusOutput">
       <source xml:lang="en">Focus In Active Cell Output</source>
@@ -154,6 +149,67 @@
       <source xml:lang="en">Center Active Cell</source>
     </trans-unit>
   </body></file>
+  <file original="src/vs/workbench/contrib/notebook/browser/notebook.contribution" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="notebookConfigurationTitle">
+      <source xml:lang="en">Notebook</source>
+    </trans-unit>
+    <trans-unit id="notebook.displayOrder.description">
+      <source xml:lang="en">Priority list for output mime types</source>
+    </trans-unit>
+  </body></file>
+  <file original="src/vs/workbench/contrib/notebook/browser/notebookEditor" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="fail.noEditor">
+      <source xml:lang="en">Cannot open resource with notebook editor type '${input.viewType}', please check if you have the right extension installed or enabled.</source>
+    </trans-unit>
+    <trans-unit id="fail.reOpen">
+      <source xml:lang="en">Reopen file with VS Code standard text editor</source>
+    </trans-unit>
+  </body></file>
+  <file original="src/vs/workbench/contrib/notebook/browser/notebookServiceImpl" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="builtinProviderDisplayName">
+      <source xml:lang="en">Built-in</source>
+    </trans-unit>
+  </body></file>
+  <file original="src/vs/workbench/contrib/notebook/browser/contrib/find/findController" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="notebookActions.hideFind">
+      <source xml:lang="en">Hide Find in Notebook</source>
+    </trans-unit>
+    <trans-unit id="notebookActions.findInNotebook">
+      <source xml:lang="en">Find in Notebook</source>
+    </trans-unit>
+  </body></file>
+  <file original="src/vs/workbench/contrib/notebook/browser/notebookEditorWidget" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="notebookTreeAriaLabel">
+      <source xml:lang="en">Notebook</source>
+    </trans-unit>
+    <trans-unit id="notebook.cellBorderColor">
+      <source xml:lang="en">The border color for notebook cells.</source>
+    </trans-unit>
+    <trans-unit id="notebook.focusedCellIndicator">
+      <source xml:lang="en">The color of the notebook cell indicator.</source>
+    </trans-unit>
+    <trans-unit id="notebook.focusedEditorIndicator">
+      <source xml:lang="en">The color of the notebook cell editor indicator.</source>
+    </trans-unit>
+    <trans-unit id="notebookStatusSuccessIcon.foreground">
+      <source xml:lang="en">The error icon color of notebook cells in the cell status bar.</source>
+    </trans-unit>
+    <trans-unit id="notebookStatusErrorIcon.foreground">
+      <source xml:lang="en">The error icon color of notebook cells in the cell status bar.</source>
+    </trans-unit>
+    <trans-unit id="notebookStatusRunningIcon.foreground">
+      <source xml:lang="en">The running icon color of notebook cells in the cell status bar.</source>
+    </trans-unit>
+    <trans-unit id="notebook.outputContainerBackgroundColor">
+      <source xml:lang="en">The Color of the notebook output container background.</source>
+    </trans-unit>
+    <trans-unit id="cellToolbarSeperator">
+      <source xml:lang="en">The color of seperator in Cell bottom toolbar</source>
+    </trans-unit>
+    <trans-unit id="notebook.cellStatusBarItemHoverBackground">
+      <source xml:lang="en">The background color of notebook cell status bar items.</source>
+    </trans-unit>
+  </body></file>
   <file original="src/vs/workbench/contrib/notebook/browser/contrib/format/formatting" source-language="en" datatype="plaintext"><body>
     <trans-unit id="format.title">
       <source xml:lang="en">Format Notebook</source>
@@ -163,6 +219,14 @@
     </trans-unit>
     <trans-unit id="formatCell.label">
       <source xml:lang="en">Format Cell</source>
+    </trans-unit>
+  </body></file>
+  <file original="src/vs/workbench/contrib/notebook/browser/contrib/fold/folding" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="fold.cell">
+      <source xml:lang="en">Fold Cell</source>
+    </trans-unit>
+    <trans-unit id="unfold.cell">
+      <source xml:lang="en">Unfold Cell</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/notebook/browser/contrib/status/editorStatus" source-language="en" datatype="plaintext"><body>
@@ -177,27 +241,6 @@
     </trans-unit>
     <trans-unit id="pickAction">
       <source xml:lang="en">Select Action</source>
-    </trans-unit>
-  </body></file>
-  <file original="src/vs/workbench/contrib/notebook/browser/contrib/find/findController" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="notebookActions.hideFind">
-      <source xml:lang="en">Hide Find in Notebook</source>
-    </trans-unit>
-    <trans-unit id="notebookActions.findInNotebook">
-      <source xml:lang="en">Find in Notebook</source>
-    </trans-unit>
-  </body></file>
-  <file original="src/vs/workbench/contrib/notebook/browser/contrib/fold/folding" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="fold.cell">
-      <source xml:lang="en">Fold Cell</source>
-    </trans-unit>
-    <trans-unit id="unfold.cell">
-      <source xml:lang="en">Unfold Cell</source>
-    </trans-unit>
-  </body></file>
-  <file original="src/vs/workbench/contrib/notebook/browser/notebookServiceImpl" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="builtinProviderDisplayName">
-      <source xml:lang="en">Built-in</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/notebook/browser/extensionPoint" source-language="en" datatype="plaintext"><body>
@@ -219,6 +262,15 @@
     <trans-unit id="contributes.notebook.selector.provider.excludeFileNamePattern">
       <source xml:lang="en">Glob that the notebook is disabled for.</source>
     </trans-unit>
+    <trans-unit id="contributes.priority">
+      <source xml:lang="en">Controls if the custom editor is enabled automatically when the user opens a file. This may be overridden by users using the `workbench.editorAssociations` setting.</source>
+    </trans-unit>
+    <trans-unit id="contributes.priority.default">
+      <source xml:lang="en">The editor is automatically used when the user opens a resource, provided that no other default custom editors are registered for that resource.</source>
+    </trans-unit>
+    <trans-unit id="contributes.priority.option">
+      <source xml:lang="en">The editor is not automatically used when the user opens a resource, but a user can switch to the editor using the `Reopen With` command.</source>
+    </trans-unit>
     <trans-unit id="contributes.notebook.renderer">
       <source xml:lang="en">Contributes notebook output renderer provider.</source>
     </trans-unit>
@@ -232,20 +284,6 @@
       <source xml:lang="en">Set of globs that the notebook is for.</source>
     </trans-unit>
   </body></file>
-  <file original="src/vs/workbench/contrib/notebook/browser/notebookEditorWidget" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="notebookTreeAriaLabel">
-      <source xml:lang="en">Notebook</source>
-    </trans-unit>
-    <trans-unit id="notebook.focusedCellIndicator">
-      <source xml:lang="en">The color of the focused notebook cell indicator.</source>
-    </trans-unit>
-    <trans-unit id="notebook.outputContainerBackgroundColor">
-      <source xml:lang="en">The Color of the notebook output container background.</source>
-    </trans-unit>
-    <trans-unit id="cellToolbarSeperator">
-      <source xml:lang="en">The color of seperator in Cell bottom toolbar</source>
-    </trans-unit>
-  </body></file>
   <file original="src/vs/workbench/contrib/notebook/browser/view/renderers/codeCell" source-language="en" datatype="plaintext"><body>
     <trans-unit id="mimeTypePicker">
       <source xml:lang="en">Choose a different output mimetype, available mimetypes: {0}</source>
@@ -254,7 +292,7 @@
       <source xml:lang="en">built-in</source>
     </trans-unit>
     <trans-unit id="curruentActiveMimeType">
-      <source xml:lang="en"> (Currently Active)</source>
+      <source xml:lang="en">Currently Active</source>
     </trans-unit>
     <trans-unit id="promptChooseMimeType.placeHolder">
       <source xml:lang="en">Select output mimetype to render for current output</source>
