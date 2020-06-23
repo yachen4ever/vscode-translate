@@ -180,19 +180,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/diffEditorHelper" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="hintTimeout">
-        <source xml:lang="en">The diff algorithm was stopped early (after {0} ms.)</source>
-      </trans-unit>
-      <trans-unit id="removeTimeout">
-        <source xml:lang="en">Remove limit</source>
-      </trans-unit>
-      <trans-unit id="hintWhitespace">
-        <source xml:lang="en">Show Whitespace Differences</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/codeEditor/browser/accessibility/accessibility" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="emergencyConfOn">
@@ -254,40 +241,16 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/largeFileOptimizations" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/codeEditor/browser/diffEditorHelper" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="largeFile">
-        <source xml:lang="en">{0}: tokenization, wrapping and folding have been turned off for this large file in order to reduce memory usage and avoid freezing or crashing.</source>
-        <note>Variable 0 will be a file name.</note>
+      <trans-unit id="hintTimeout">
+        <source xml:lang="en">The diff algorithm was stopped early (after {0} ms.)</source>
       </trans-unit>
-      <trans-unit id="removeOptimizations">
-        <source xml:lang="en">Forcefully enable features</source>
+      <trans-unit id="removeTimeout">
+        <source xml:lang="en">Remove limit</source>
       </trans-unit>
-      <trans-unit id="reopenFilePrompt">
-        <source xml:lang="en">Please reopen file in order for this setting to take effect.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/inspectEditorTokens/inspectEditorTokens" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="inspectEditorTokens">
-        <source xml:lang="en">Developer: Inspect Editor Tokens and Scopes</source>
-      </trans-unit>
-      <trans-unit id="inspectTMScopesWidget.loading">
-        <source xml:lang="en">Loading...</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/quickaccess/gotoLineQuickAccess" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="gotoLineQuickAccessPlaceholder">
-        <source xml:lang="en">Type the line number and optional column to go to (e.g. 42:5 for line 42 and column 5).</source>
-      </trans-unit>
-      <trans-unit id="gotoLineQuickAccess">
-        <source xml:lang="en">Go to Line/Column</source>
-      </trans-unit>
-      <trans-unit id="gotoLine">
-        <source xml:lang="en">Go to Line/Column...</source>
+      <trans-unit id="hintWhitespace">
+        <source xml:lang="en">Show Whitespace Differences</source>
       </trans-unit>
     </body>
   </file>
@@ -304,6 +267,43 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/inspectEditorTokens/inspectEditorTokens" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="inspectEditorTokens">
+        <source xml:lang="en">Developer: Inspect Editor Tokens and Scopes</source>
+      </trans-unit>
+      <trans-unit id="inspectTMScopesWidget.loading">
+        <source xml:lang="en">Loading...</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/largeFileOptimizations" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="largeFile">
+        <source xml:lang="en">{0}: tokenization, wrapping and folding have been turned off for this large file in order to reduce memory usage and avoid freezing or crashing.</source>
+        <note>Variable 0 will be a file name.</note>
+      </trans-unit>
+      <trans-unit id="removeOptimizations">
+        <source xml:lang="en">Forcefully enable features</source>
+      </trans-unit>
+      <trans-unit id="reopenFilePrompt">
+        <source xml:lang="en">Please reopen file in order for this setting to take effect.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/quickaccess/gotoLineQuickAccess" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="gotoLineQuickAccessPlaceholder">
+        <source xml:lang="en">Type the line number and optional column to go to (e.g. 42:5 for line 42 and column 5).</source>
+      </trans-unit>
+      <trans-unit id="gotoLineQuickAccess">
+        <source xml:lang="en">Go to Line/Column</source>
+      </trans-unit>
+      <trans-unit id="gotoLine">
+        <source xml:lang="en">Go to Line/Column...</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/codeEditor/browser/toggleColumnSelection" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="toggleColumnSelection">
@@ -312,6 +312,22 @@
       <trans-unit id="miColumnSelection">
         <source xml:lang="en">Column &amp;&amp;Selection Mode</source>
         <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/codeEditor/browser/saveParticipants" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="formatting">
+        <source xml:lang="en">Running '{0}' Formatter ([configure](command:workbench.action.openSettings?%5B%22editor.formatOnSave%22%5D)).</source>
+      </trans-unit>
+      <trans-unit id="codeaction">
+        <source xml:lang="en">Quick Fixes</source>
+      </trans-unit>
+      <trans-unit id="codeaction.get">
+        <source xml:lang="en">Getting code actions from '{0}' ([configure](command:workbench.action.openSettings?%5B%22editor.codeActionsOnSave%22%5D)).</source>
+      </trans-unit>
+      <trans-unit id="codeAction.apply">
+        <source xml:lang="en">Applying code action '{0}'.</source>
       </trans-unit>
     </body>
   </file>
@@ -338,22 +354,6 @@ Variable 1 will be a theme name.</note>
       </trans-unit>
       <trans-unit id="learnMoreButton">
         <source xml:lang="en">Learn More</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/codeEditor/browser/saveParticipants" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="formatting">
-        <source xml:lang="en">Running '{0}' Formatter ([configure](command:workbench.action.openSettings?%5B%22editor.formatOnSave%22%5D)).</source>
-      </trans-unit>
-      <trans-unit id="codeaction">
-        <source xml:lang="en">Quick Fixes</source>
-      </trans-unit>
-      <trans-unit id="codeaction.get">
-        <source xml:lang="en">Getting code actions from '{0}' ([configure](command:workbench.action.openSettings?%5B%22editor.codeActionsOnSave%22%5D)).</source>
-      </trans-unit>
-      <trans-unit id="codeAction.apply">
-        <source xml:lang="en">Applying code action '{0}'.</source>
       </trans-unit>
     </body>
   </file>
