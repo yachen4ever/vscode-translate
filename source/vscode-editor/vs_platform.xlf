@@ -19,69 +19,16 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/environment/node/argvHelper" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="extensions">
-        <source xml:lang="en">Extensions</source>
+      <trans-unit id="unknownOption">
+        <source xml:lang="en">Warning: '{0}' is not in the list of known options, but still passed to Electron/Chromium.</source>
       </trans-unit>
-      <trans-unit id="preferences">
-        <source xml:lang="en">Preferences</source>
+      <trans-unit id="multipleValues">
+        <source xml:lang="en">Option '{0}' is defined more than once. Using value '{1}.'</source>
       </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/extensionManagement/node/extensionManagementService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="incompatible_Duplicated1">
-        <source xml:lang="en">Unable to install extension '{0}' as it is not compatible with VS Code '{1}'.</source>
-      </trans-unit>
-      <trans-unit id="restartCode">
-        <source xml:lang="en">Please restart VS Code before reinstalling {0}.</source>
-      </trans-unit>
-      <trans-unit id="MarketPlaceDisabled">
-        <source xml:lang="en">Marketplace is not enabled</source>
-      </trans-unit>
-      <trans-unit id="malicious extension">
-        <source xml:lang="en">Can't install extension since it was reported to be problematic.</source>
-      </trans-unit>
-      <trans-unit id="notFoundCompatibleDependency">
-        <source xml:lang="en">Unable to install '{0}' extension because it is not compatible with the current version of VS Code (version {1}).</source>
-      </trans-unit>
-      <trans-unit id="removeError">
-        <source xml:lang="en">Error while removing the extension: {0}. Please Quit and Start VS Code before trying again.</source>
-      </trans-unit>
-      <trans-unit id="Not a Marketplace extension">
-        <source xml:lang="en">Only Marketplace Extensions can be reinstalled</source>
-      </trans-unit>
-      <trans-unit id="quitCode">
-        <source xml:lang="en">Unable to install the extension. Please Quit and Start VS Code before reinstalling.</source>
-      </trans-unit>
-      <trans-unit id="exitCode">
-        <source xml:lang="en">Unable to install the extension. Please Exit and Start VS Code before reinstalling.</source>
-      </trans-unit>
-      <trans-unit id="notInstalled">
-        <source xml:lang="en">Extension '{0}' is not installed.</source>
-      </trans-unit>
-      <trans-unit id="singleDependentError">
-        <source xml:lang="en">Cannot uninstall extension '{0}'. Extension '{1}' depends on this.</source>
-      </trans-unit>
-      <trans-unit id="twoDependentsError">
-        <source xml:lang="en">Cannot uninstall extension '{0}'. Extensions '{1}' and '{2}' depend on this.</source>
-      </trans-unit>
-      <trans-unit id="multipleDependentsError">
-        <source xml:lang="en">Cannot uninstall extension '{0}'. Extensions '{1}', '{2}' and others depend on this.</source>
-      </trans-unit>
-      <trans-unit id="notExists">
-        <source xml:lang="en">Could not find extension</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="telemetryConfigurationTitle">
-        <source xml:lang="en">Telemetry</source>
-      </trans-unit>
-      <trans-unit id="telemetry.enableTelemetry">
-        <source xml:lang="en">Enable usage data and errors to be sent to a Microsoft online service.</source>
+      <trans-unit id="gotoValidation">
+        <source xml:lang="en">Arguments in `--goto` mode should be in the format of `FILE(:LINE(:CHARACTER))`.</source>
       </trans-unit>
     </body>
   </file>
@@ -116,134 +63,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/extensionManagement/node/extensionManagementUtil" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="invalidManifest_Duplicated3">
-        <source xml:lang="en">VSIX invalid: package.json is not a JSON file.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/files/common/fileService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="invalidPath">
-        <source xml:lang="en">Unable to resolve filesystem provider with relative file path '{0}'</source>
-      </trans-unit>
-      <trans-unit id="noProviderFound">
-        <source xml:lang="en">No file system provider found for resource '{0}'</source>
-      </trans-unit>
-      <trans-unit id="fileNotFoundError">
-        <source xml:lang="en">Unable to resolve non-existing file '{0}'</source>
-      </trans-unit>
-      <trans-unit id="fileExists_Duplicated5">
-        <source xml:lang="en">Unable to create file '{0}' that already exists when overwrite flag is not set</source>
-      </trans-unit>
-      <trans-unit id="err.write">
-        <source xml:lang="en">Unable to write file '{0}' ({1})</source>
-      </trans-unit>
-      <trans-unit id="fileIsDirectoryWriteError">
-        <source xml:lang="en">Unable to write file '{0}' that is actually a directory</source>
-      </trans-unit>
-      <trans-unit id="fileModifiedError">
-        <source xml:lang="en">File Modified Since</source>
-      </trans-unit>
-      <trans-unit id="err.read">
-        <source xml:lang="en">Unable to read file '{0}' ({1})</source>
-      </trans-unit>
-      <trans-unit id="fileIsDirectoryReadError">
-        <source xml:lang="en">Unable to read file '{0}' that is actually a directory</source>
-      </trans-unit>
-      <trans-unit id="fileNotModifiedError">
-        <source xml:lang="en">File not modified since</source>
-      </trans-unit>
-      <trans-unit id="fileTooLargeError_Duplicated7">
-        <source xml:lang="en">Unable to read file '{0}' that is too large to open</source>
-      </trans-unit>
-      <trans-unit id="unableToMoveCopyError1">
-        <source xml:lang="en">Unable to copy when source '{0}' is same as target '{1}' with different path case on a case insensitive file system</source>
-      </trans-unit>
-      <trans-unit id="unableToMoveCopyError2">
-        <source xml:lang="en">Unable to move/copy when source '{0}' is parent of target '{1}'.</source>
-      </trans-unit>
-      <trans-unit id="unableToMoveCopyError3">
-        <source xml:lang="en">Unable to move/copy '{0}' because target '{1}' already exists at destination.</source>
-      </trans-unit>
-      <trans-unit id="unableToMoveCopyError4">
-        <source xml:lang="en">Unable to move/copy '{0}' into '{1}' since a file would replace the folder it is contained in.</source>
-      </trans-unit>
-      <trans-unit id="mkdirExistsError">
-        <source xml:lang="en">Unable to create folder '{0}' that already exists but is not a directory</source>
-      </trans-unit>
-      <trans-unit id="deleteFailedTrashUnsupported">
-        <source xml:lang="en">Unable to delete file '{0}' via trash because provider does not support it.</source>
-      </trans-unit>
-      <trans-unit id="deleteFailedNotFound">
-        <source xml:lang="en">Unable to delete non-existing file '{0}'</source>
-      </trans-unit>
-      <trans-unit id="deleteFailedNonEmptyFolder">
-        <source xml:lang="en">Unable to delete non-empty folder '{0}'.</source>
-      </trans-unit>
-      <trans-unit id="err.readonly">
-        <source xml:lang="en">Unable to modify readonly file '{0}'</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/files/common/files" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="unknownError">
-        <source xml:lang="en">Unknown Error</source>
-      </trans-unit>
-      <trans-unit id="sizeB">
-        <source xml:lang="en">{0}B</source>
-      </trans-unit>
-      <trans-unit id="sizeKB">
-        <source xml:lang="en">{0}KB</source>
-      </trans-unit>
-      <trans-unit id="sizeMB">
-        <source xml:lang="en">{0}MB</source>
-      </trans-unit>
-      <trans-unit id="sizeGB">
-        <source xml:lang="en">{0}GB</source>
-      </trans-unit>
-      <trans-unit id="sizeTB">
-        <source xml:lang="en">{0}TB</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/environment/node/argvHelper" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="unknownOption">
-        <source xml:lang="en">Warning: '{0}' is not in the list of known options, but still passed to Electron/Chromium.</source>
-      </trans-unit>
-      <trans-unit id="multipleValues">
-        <source xml:lang="en">Option '{0}' is defined more than once. Using value '{1}.'</source>
-      </trans-unit>
-      <trans-unit id="gotoValidation">
-        <source xml:lang="en">Arguments in `--goto` mode should be in the format of `FILE(:LINE(:CHARACTER))`.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/files/node/diskFileSystemProvider" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="fileExists_Duplicated6">
-        <source xml:lang="en">File already exists</source>
-      </trans-unit>
-      <trans-unit id="fileNotExists">
-        <source xml:lang="en">File does not exist</source>
-      </trans-unit>
-      <trans-unit id="moveError">
-        <source xml:lang="en">Unable to move '{0}' into '{1}' ({2}).</source>
-      </trans-unit>
-      <trans-unit id="copyError">
-        <source xml:lang="en">Unable to copy '{0}' into '{1}' ({2}).</source>
-      </trans-unit>
-      <trans-unit id="fileCopyErrorPathCase">
-        <source xml:lang="en">'File cannot be copied to same path with different path case</source>
-      </trans-unit>
-      <trans-unit id="fileCopyErrorExists">
-        <source xml:lang="en">File at target already exists</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/update/common/update.config.contribution" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="updateConfigurationTitle">
@@ -264,7 +83,7 @@
       <trans-unit id="default">
         <source xml:lang="en">Enable automatic update checks. Code will check for updates automatically and periodically.</source>
       </trans-unit>
-      <trans-unit id="deprecated_Duplicated9">
+      <trans-unit id="deprecated_Duplicated1">
         <source xml:lang="en">This setting is deprecated, please use '{0}' instead.</source>
       </trans-unit>
       <trans-unit id="enableWindowsBackgroundUpdatesTitle">
@@ -275,6 +94,23 @@
       </trans-unit>
       <trans-unit id="showReleaseNotes">
         <source xml:lang="en">Show Release Notes after an update. The Release Notes are fetched from a Microsoft online service.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="extensions">
+        <source xml:lang="en">Extensions</source>
+      </trans-unit>
+      <trans-unit id="preferences">
+        <source xml:lang="en">Preferences</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/extensionManagement/node/extensionManagementUtil" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="invalidManifest_Duplicated3">
+        <source xml:lang="en">VSIX invalid: package.json is not a JSON file.</source>
       </trans-unit>
     </body>
   </file>
@@ -298,7 +134,7 @@
       <trans-unit id="goto">
         <source xml:lang="en">Open a file at the path on the specified line and character position.</source>
       </trans-unit>
-      <trans-unit id="newWindow_Duplicated11">
+      <trans-unit id="newWindow_Duplicated5">
         <source xml:lang="en">Force to open a new window.</source>
       </trans-unit>
       <trans-unit id="reuseWindow">
@@ -405,10 +241,107 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="telemetryConfigurationTitle">
+        <source xml:lang="en">Telemetry</source>
+      </trans-unit>
+      <trans-unit id="telemetry.enableTelemetry">
+        <source xml:lang="en">Enable usage data and errors to be sent to a Microsoft online service.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/userDataSync/common/userDataSyncMachines" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="error incompatible">
         <source xml:lang="en">Cannot read machines data as the current version is incompatible. Please update {0} and try again.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/label/common/label" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="untitledWorkspace">
+        <source xml:lang="en">Untitled (Workspace)</source>
+      </trans-unit>
+      <trans-unit id="workspaceName">
+        <source xml:lang="en">{0} (Workspace)</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/common/files" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="unknownError">
+        <source xml:lang="en">Unknown Error</source>
+      </trans-unit>
+      <trans-unit id="sizeB">
+        <source xml:lang="en">{0}B</source>
+      </trans-unit>
+      <trans-unit id="sizeKB">
+        <source xml:lang="en">{0}KB</source>
+      </trans-unit>
+      <trans-unit id="sizeMB">
+        <source xml:lang="en">{0}MB</source>
+      </trans-unit>
+      <trans-unit id="sizeGB">
+        <source xml:lang="en">{0}GB</source>
+      </trans-unit>
+      <trans-unit id="sizeTB">
+        <source xml:lang="en">{0}TB</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/dialogs/common/dialogs" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="moreFile">
+        <source xml:lang="en">...1 additional file not shown</source>
+      </trans-unit>
+      <trans-unit id="moreFiles">
+        <source xml:lang="en">...{0} additional files not shown</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/node/diskFileSystemProvider" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="fileExists_Duplicated7">
+        <source xml:lang="en">File already exists</source>
+      </trans-unit>
+      <trans-unit id="fileNotExists">
+        <source xml:lang="en">File does not exist</source>
+      </trans-unit>
+      <trans-unit id="moveError">
+        <source xml:lang="en">Unable to move '{0}' into '{1}' ({2}).</source>
+      </trans-unit>
+      <trans-unit id="copyError">
+        <source xml:lang="en">Unable to copy '{0}' into '{1}' ({2}).</source>
+      </trans-unit>
+      <trans-unit id="fileCopyErrorPathCase">
+        <source xml:lang="en">'File cannot be copied to same path with different path case</source>
+      </trans-unit>
+      <trans-unit id="fileCopyErrorExists">
+        <source xml:lang="en">File at target already exists</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/userDataAutoSyncService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="turned off">
+        <source xml:lang="en">Cannot sync because syncing is turned off in the cloud</source>
+      </trans-unit>
+      <trans-unit id="session expired">
+        <source xml:lang="en">Cannot sync because current session is expired</source>
+      </trans-unit>
+      <trans-unit id="turned off machine">
+        <source xml:lang="en">Cannot sync because syncing is turned off on this machine from another machine.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="binFailed">
+        <source xml:lang="en">Failed to move '{0}' to the recycle bin</source>
+      </trans-unit>
+      <trans-unit id="trashFailed">
+        <source xml:lang="en">Failed to move '{0}' to the trash</source>
       </trans-unit>
     </body>
   </file>
@@ -434,19 +367,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/userDataSync/common/userDataAutoSyncService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="turned off">
-        <source xml:lang="en">Cannot sync because syncing is turned off in the cloud</source>
-      </trans-unit>
-      <trans-unit id="session expired">
-        <source xml:lang="en">Cannot sync because current session is expired</source>
-      </trans-unit>
-      <trans-unit id="turned off machine">
-        <source xml:lang="en">Cannot sync because syncing is turned off on this machine from another machine.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/workspaces/common/workspaces" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="codeWorkspace">
@@ -454,33 +374,166 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/extensionManagement/node/extensionManagementService" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="binFailed">
-        <source xml:lang="en">Failed to move '{0}' to the recycle bin</source>
+      <trans-unit id="incompatible_Duplicated9">
+        <source xml:lang="en">Unable to install extension '{0}' as it is not compatible with VS Code '{1}'.</source>
       </trans-unit>
-      <trans-unit id="trashFailed">
-        <source xml:lang="en">Failed to move '{0}' to the trash</source>
+      <trans-unit id="restartCode">
+        <source xml:lang="en">Please restart VS Code before reinstalling {0}.</source>
+      </trans-unit>
+      <trans-unit id="MarketPlaceDisabled">
+        <source xml:lang="en">Marketplace is not enabled</source>
+      </trans-unit>
+      <trans-unit id="malicious extension">
+        <source xml:lang="en">Can't install extension since it was reported to be problematic.</source>
+      </trans-unit>
+      <trans-unit id="notFoundCompatibleDependency">
+        <source xml:lang="en">Unable to install '{0}' extension because it is not compatible with the current version of VS Code (version {1}).</source>
+      </trans-unit>
+      <trans-unit id="removeError">
+        <source xml:lang="en">Error while removing the extension: {0}. Please Quit and Start VS Code before trying again.</source>
+      </trans-unit>
+      <trans-unit id="Not a Marketplace extension">
+        <source xml:lang="en">Only Marketplace Extensions can be reinstalled</source>
+      </trans-unit>
+      <trans-unit id="quitCode">
+        <source xml:lang="en">Unable to install the extension. Please Quit and Start VS Code before reinstalling.</source>
+      </trans-unit>
+      <trans-unit id="exitCode">
+        <source xml:lang="en">Unable to install the extension. Please Exit and Start VS Code before reinstalling.</source>
+      </trans-unit>
+      <trans-unit id="notInstalled">
+        <source xml:lang="en">Extension '{0}' is not installed.</source>
+      </trans-unit>
+      <trans-unit id="singleDependentError">
+        <source xml:lang="en">Cannot uninstall extension '{0}'. Extension '{1}' depends on this.</source>
+      </trans-unit>
+      <trans-unit id="twoDependentsError">
+        <source xml:lang="en">Cannot uninstall extension '{0}'. Extensions '{1}' and '{2}' depend on this.</source>
+      </trans-unit>
+      <trans-unit id="multipleDependentsError">
+        <source xml:lang="en">Cannot uninstall extension '{0}'. Extensions '{1}', '{2}' and others depend on this.</source>
+      </trans-unit>
+      <trans-unit id="notExists">
+        <source xml:lang="en">Could not find extension</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/dialogs/common/dialogs" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/files/common/fileService" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="moreFile">
-        <source xml:lang="en">...1 additional file not shown</source>
+      <trans-unit id="invalidPath">
+        <source xml:lang="en">Unable to resolve filesystem provider with relative file path '{0}'</source>
       </trans-unit>
-      <trans-unit id="moreFiles">
-        <source xml:lang="en">...{0} additional files not shown</source>
+      <trans-unit id="noProviderFound">
+        <source xml:lang="en">No file system provider found for resource '{0}'</source>
+      </trans-unit>
+      <trans-unit id="fileNotFoundError">
+        <source xml:lang="en">Unable to resolve non-existing file '{0}'</source>
+      </trans-unit>
+      <trans-unit id="fileExists_Duplicated8">
+        <source xml:lang="en">Unable to create file '{0}' that already exists when overwrite flag is not set</source>
+      </trans-unit>
+      <trans-unit id="err.write">
+        <source xml:lang="en">Unable to write file '{0}' ({1})</source>
+      </trans-unit>
+      <trans-unit id="fileIsDirectoryWriteError">
+        <source xml:lang="en">Unable to write file '{0}' that is actually a directory</source>
+      </trans-unit>
+      <trans-unit id="fileModifiedError">
+        <source xml:lang="en">File Modified Since</source>
+      </trans-unit>
+      <trans-unit id="err.read">
+        <source xml:lang="en">Unable to read file '{0}' ({1})</source>
+      </trans-unit>
+      <trans-unit id="fileIsDirectoryReadError">
+        <source xml:lang="en">Unable to read file '{0}' that is actually a directory</source>
+      </trans-unit>
+      <trans-unit id="fileNotModifiedError">
+        <source xml:lang="en">File not modified since</source>
+      </trans-unit>
+      <trans-unit id="fileTooLargeError_Duplicated11">
+        <source xml:lang="en">Unable to read file '{0}' that is too large to open</source>
+      </trans-unit>
+      <trans-unit id="unableToMoveCopyError1">
+        <source xml:lang="en">Unable to copy when source '{0}' is same as target '{1}' with different path case on a case insensitive file system</source>
+      </trans-unit>
+      <trans-unit id="unableToMoveCopyError2">
+        <source xml:lang="en">Unable to move/copy when source '{0}' is parent of target '{1}'.</source>
+      </trans-unit>
+      <trans-unit id="unableToMoveCopyError3">
+        <source xml:lang="en">Unable to move/copy '{0}' because target '{1}' already exists at destination.</source>
+      </trans-unit>
+      <trans-unit id="unableToMoveCopyError4">
+        <source xml:lang="en">Unable to move/copy '{0}' into '{1}' since a file would replace the folder it is contained in.</source>
+      </trans-unit>
+      <trans-unit id="mkdirExistsError">
+        <source xml:lang="en">Unable to create folder '{0}' that already exists but is not a directory</source>
+      </trans-unit>
+      <trans-unit id="deleteFailedTrashUnsupported">
+        <source xml:lang="en">Unable to delete file '{0}' via trash because provider does not support it.</source>
+      </trans-unit>
+      <trans-unit id="deleteFailedNotFound">
+        <source xml:lang="en">Unable to delete non-existing file '{0}'</source>
+      </trans-unit>
+      <trans-unit id="deleteFailedNonEmptyFolder">
+        <source xml:lang="en">Unable to delete non-empty folder '{0}'.</source>
+      </trans-unit>
+      <trans-unit id="err.readonly">
+        <source xml:lang="en">Unable to modify readonly file '{0}'</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/label/common/label" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/markers/common/markers" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="untitledWorkspace">
-        <source xml:lang="en">Untitled (Workspace)</source>
+      <trans-unit id="sev.error">
+        <source xml:lang="en">Error</source>
       </trans-unit>
-      <trans-unit id="workspaceName">
-        <source xml:lang="en">{0} (Workspace)</source>
+      <trans-unit id="sev.warning">
+        <source xml:lang="en">Warning</source>
+      </trans-unit>
+      <trans-unit id="sev.info">
+        <source xml:lang="en">Info</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/files/common/io" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="fileTooLargeForHeapError">
+        <source xml:lang="en">To open a file of this size, you need to restart and allow it to use more memory</source>
+      </trans-unit>
+      <trans-unit id="fileTooLargeError_Duplicated12">
+        <source xml:lang="en">File is too large to open</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="errorInvalidSettings_Duplicated13">
+        <source xml:lang="en">Unable to sync keybindings because the content in the file is not valid. Please open the file and correct it.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/extensions/common/extensionValidator" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="versionSyntax">
+        <source xml:lang="en">Could not parse `engines.vscode` value {0}. Please use, for example: ^1.22.0, ^1.22.x, etc.</source>
+      </trans-unit>
+      <trans-unit id="versionSpecificity1">
+        <source xml:lang="en">Version specified in `engines.vscode` ({0}) is not specific enough. For vscode versions before 1.0.0, please define at a minimum the major and minor desired version. E.g. ^0.10.0, 0.10.x, 0.11.0, etc.</source>
+      </trans-unit>
+      <trans-unit id="versionSpecificity2">
+        <source xml:lang="en">Version specified in `engines.vscode` ({0}) is not specific enough. For vscode versions after 1.0.0, please define at a minimum the major desired version. E.g. ^1.10.0, 1.10.x, 1.x.x, 2.x.x, etc.</source>
+      </trans-unit>
+      <trans-unit id="versionMismatch">
+        <source xml:lang="en">Extension is not compatible with Code {0}. Extension requires: {1}.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="errorInvalidSettings_Duplicated14">
+        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
       </trans-unit>
     </body>
   </file>
@@ -959,127 +1012,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/extensions/common/extensionValidator" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="versionSyntax">
-        <source xml:lang="en">Could not parse `engines.vscode` value {0}. Please use, for example: ^1.22.0, ^1.22.x, etc.</source>
-      </trans-unit>
-      <trans-unit id="versionSpecificity1">
-        <source xml:lang="en">Version specified in `engines.vscode` ({0}) is not specific enough. For vscode versions before 1.0.0, please define at a minimum the major and minor desired version. E.g. ^0.10.0, 0.10.x, 0.11.0, etc.</source>
-      </trans-unit>
-      <trans-unit id="versionSpecificity2">
-        <source xml:lang="en">Version specified in `engines.vscode` ({0}) is not specific enough. For vscode versions after 1.0.0, please define at a minimum the major desired version. E.g. ^1.10.0, 1.10.x, 1.x.x, 2.x.x, etc.</source>
-      </trans-unit>
-      <trans-unit id="versionMismatch">
-        <source xml:lang="en">Extension is not compatible with Code {0}. Extension requires: {1}.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/files/common/io" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="fileTooLargeForHeapError">
-        <source xml:lang="en">To open a file of this size, you need to restart and allow it to use more memory</source>
-      </trans-unit>
-      <trans-unit id="fileTooLargeError_Duplicated8">
-        <source xml:lang="en">File is too large to open</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/extensionManagement/node/extensionsScanner" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="errorDeleting">
-        <source xml:lang="en">Unable to delete the existing folder '{0}' while installing the extension '{1}'. Please delete the folder manually and try again</source>
-      </trans-unit>
-      <trans-unit id="cannot read">
-        <source xml:lang="en">Cannot read the extension from {0}</source>
-      </trans-unit>
-      <trans-unit id="renameError">
-        <source xml:lang="en">Unknown error while renaming {0} to {1}</source>
-      </trans-unit>
-      <trans-unit id="invalidManifest_Duplicated4">
-        <source xml:lang="en">Extension invalid: package.json is not a JSON file.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/windows/electron-main/windowsMainService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="pathNotExistTitle">
-        <source xml:lang="en">Path does not exist</source>
-      </trans-unit>
-      <trans-unit id="pathNotExistDetail">
-        <source xml:lang="en">The path '{0}' does not seem to exist anymore on disk.</source>
-      </trans-unit>
-      <trans-unit id="uriInvalidTitle">
-        <source xml:lang="en">URI can not be opened</source>
-      </trans-unit>
-      <trans-unit id="uriInvalidDetail">
-        <source xml:lang="en">The URI '{0}' is not valid and can not be opened.</source>
-      </trans-unit>
-      <trans-unit id="ok_Duplicated13">
-        <source xml:lang="en">OK</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/issue/electron-main/issueMainService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="local">
-        <source xml:lang="en">Local</source>
-      </trans-unit>
-      <trans-unit id="issueReporterWriteToClipboard">
-        <source xml:lang="en">There is too much data to send to GitHub directly. The data will be copied to the clipboard, please paste it into the GitHub issue page that is opened.</source>
-      </trans-unit>
-      <trans-unit id="ok_Duplicated14">
-        <source xml:lang="en">OK</source>
-      </trans-unit>
-      <trans-unit id="cancel_Duplicated17">
-        <source xml:lang="en">Cancel</source>
-      </trans-unit>
-      <trans-unit id="confirmCloseIssueReporter">
-        <source xml:lang="en">Your input will not be saved. Are you sure you want to close this window?</source>
-      </trans-unit>
-      <trans-unit id="yes">
-        <source xml:lang="en">Yes</source>
-      </trans-unit>
-      <trans-unit id="issueReporter">
-        <source xml:lang="en">Issue Reporter</source>
-      </trans-unit>
-      <trans-unit id="processExplorer">
-        <source xml:lang="en">Process Explorer</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/workspaces/electron-main/workspacesHistoryMainService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="newWindow_Duplicated12">
-        <source xml:lang="en">New Window</source>
-      </trans-unit>
-      <trans-unit id="newWindowDesc">
-        <source xml:lang="en">Opens a new window</source>
-      </trans-unit>
-      <trans-unit id="recentFolders">
-        <source xml:lang="en">Recent Workspaces</source>
-      </trans-unit>
-      <trans-unit id="folderDesc">
-        <source xml:lang="en">{0} {1}</source>
-      </trans-unit>
-      <trans-unit id="workspaceDesc">
-        <source xml:lang="en">{0} {1}</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/workspaces/electron-main/workspacesMainService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="ok_Duplicated15">
-        <source xml:lang="en">OK</source>
-      </trans-unit>
-      <trans-unit id="workspaceOpenedMessage">
-        <source xml:lang="en">Unable to save workspace '{0}'</source>
-      </trans-unit>
-      <trans-unit id="workspaceOpenedDetail">
-        <source xml:lang="en">The workspace is already opened in another window. Please close that window first and then try again.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/dialogs/electron-main/dialogs" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="open">
@@ -1100,17 +1032,29 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/workspaces/electron-main/workspacesMainService" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="errorInvalidSettings_Duplicated19">
-        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
+      <trans-unit id="ok_Duplicated15">
+        <source xml:lang="en">OK</source>
+      </trans-unit>
+      <trans-unit id="workspaceOpenedMessage">
+        <source xml:lang="en">Unable to save workspace '{0}'</source>
+      </trans-unit>
+      <trans-unit id="workspaceOpenedDetail">
+        <source xml:lang="en">The workspace is already opened in another window. Please close that window first and then try again.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/quickinput/browser/helpQuickAccess" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="errorInvalidSettings_Duplicated20">
-        <source xml:lang="en">Unable to sync keybindings because the content in the file is not valid. Please open the file and correct it.</source>
+      <trans-unit id="globalCommands">
+        <source xml:lang="en">global commands</source>
+      </trans-unit>
+      <trans-unit id="editorCommands">
+        <source xml:lang="en">editor commands</source>
+      </trans-unit>
+      <trans-unit id="helpPickAriaLabel">
+        <source xml:lang="en">{0}, {1}</source>
       </trans-unit>
     </body>
   </file>
@@ -1163,16 +1107,66 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/markers/common/markers" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/issue/electron-main/issueMainService" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="sev.error">
-        <source xml:lang="en">Error</source>
+      <trans-unit id="local">
+        <source xml:lang="en">Local</source>
       </trans-unit>
-      <trans-unit id="sev.warning">
-        <source xml:lang="en">Warning</source>
+      <trans-unit id="issueReporterWriteToClipboard">
+        <source xml:lang="en">There is too much data to send to GitHub directly. The data will be copied to the clipboard, please paste it into the GitHub issue page that is opened.</source>
       </trans-unit>
-      <trans-unit id="sev.info">
-        <source xml:lang="en">Info</source>
+      <trans-unit id="ok_Duplicated16">
+        <source xml:lang="en">OK</source>
+      </trans-unit>
+      <trans-unit id="cancel_Duplicated19">
+        <source xml:lang="en">Cancel</source>
+      </trans-unit>
+      <trans-unit id="confirmCloseIssueReporter">
+        <source xml:lang="en">Your input will not be saved. Are you sure you want to close this window?</source>
+      </trans-unit>
+      <trans-unit id="yes">
+        <source xml:lang="en">Yes</source>
+      </trans-unit>
+      <trans-unit id="issueReporter">
+        <source xml:lang="en">Issue Reporter</source>
+      </trans-unit>
+      <trans-unit id="processExplorer">
+        <source xml:lang="en">Process Explorer</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/workspaces/electron-main/workspacesHistoryMainService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="newWindow_Duplicated6">
+        <source xml:lang="en">New Window</source>
+      </trans-unit>
+      <trans-unit id="newWindowDesc">
+        <source xml:lang="en">Opens a new window</source>
+      </trans-unit>
+      <trans-unit id="recentFolders">
+        <source xml:lang="en">Recent Workspaces</source>
+      </trans-unit>
+      <trans-unit id="folderDesc">
+        <source xml:lang="en">{0} {1}</source>
+      </trans-unit>
+      <trans-unit id="workspaceDesc">
+        <source xml:lang="en">{0} {1}</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/extensionManagement/node/extensionsScanner" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="errorDeleting">
+        <source xml:lang="en">Unable to delete the existing folder '{0}' while installing the extension '{1}'. Please delete the folder manually and try again</source>
+      </trans-unit>
+      <trans-unit id="cannot read">
+        <source xml:lang="en">Cannot read the extension from {0}</source>
+      </trans-unit>
+      <trans-unit id="renameError">
+        <source xml:lang="en">Unknown error while renaming {0} to {1}</source>
+      </trans-unit>
+      <trans-unit id="invalidManifest_Duplicated4">
+        <source xml:lang="en">Extension invalid: package.json is not a JSON file.</source>
       </trans-unit>
     </body>
   </file>
@@ -1199,14 +1193,14 @@
       <trans-unit id="confirmWorkspace">
         <source xml:lang="en">Would you like to undo '{0}' across all files?</source>
       </trans-unit>
-      <trans-unit id="ok_Duplicated16">
+      <trans-unit id="ok_Duplicated17">
         <source xml:lang="en">Undo in {0} Files</source>
         <note>{0} denotes a number that is &gt; 1</note>
       </trans-unit>
       <trans-unit id="nok">
         <source xml:lang="en">Undo this File</source>
       </trans-unit>
-      <trans-unit id="cancel_Duplicated18">
+      <trans-unit id="cancel_Duplicated20">
         <source xml:lang="en">Cancel</source>
       </trans-unit>
       <trans-unit id="cannotResourceUndoDueToInProgressUndoRedo">
@@ -1233,6 +1227,43 @@
     <body>
       <trans-unit id="titleAndKb">
         <source xml:lang="en">{0} ({1})</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/abstractSynchronizer" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="incompatible_Duplicated10">
+        <source xml:lang="en">Cannot sync {0} as its local version {1} is not compatible with its remote version {2}</source>
+        <note>This is an error while syncing a resource that its local version is not compatible with its remote version.</note>
+      </trans-unit>
+      <trans-unit id="incompatible sync data">
+        <source xml:lang="en">Cannot parse sync data as it is not compatible with current version.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/keybinding/common/abstractKeybindingService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="first.chord">
+        <source xml:lang="en">({0}) was pressed. Waiting for second key of chord...</source>
+      </trans-unit>
+      <trans-unit id="missing.chord">
+        <source xml:lang="en">The key combination ({0}, {1}) is not a command.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/quickinput/browser/commandsQuickAccess" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="commandPickAriaLabelWithKeybinding">
+        <source xml:lang="en">{0}, {1}</source>
+      </trans-unit>
+      <trans-unit id="recentlyUsed">
+        <source xml:lang="en">recently used</source>
+      </trans-unit>
+      <trans-unit id="morecCommands">
+        <source xml:lang="en">other commands</source>
+      </trans-unit>
+      <trans-unit id="canNotRun">
+        <source xml:lang="en">Command '{0}' resulted in an error ({1})</source>
       </trans-unit>
     </body>
   </file>
@@ -1350,40 +1381,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/userDataSync/common/abstractSynchronizer" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="incompatible_Duplicated2">
-        <source xml:lang="en">Cannot sync {0} as its local version {1} is not compatible with its remote version {2}</source>
-        <note>This is an error while syncing a resource that its local version is not compatible with its remote version.</note>
-      </trans-unit>
-      <trans-unit id="incompatible sync data">
-        <source xml:lang="en">Cannot parse sync data as it is not compatible with current version.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/keybinding/common/abstractKeybindingService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="first.chord">
-        <source xml:lang="en">({0}) was pressed. Waiting for second key of chord...</source>
-      </trans-unit>
-      <trans-unit id="missing.chord">
-        <source xml:lang="en">The key combination ({0}, {1}) is not a command.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/quickinput/browser/helpQuickAccess" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="globalCommands">
-        <source xml:lang="en">global commands</source>
-      </trans-unit>
-      <trans-unit id="editorCommands">
-        <source xml:lang="en">editor commands</source>
-      </trans-unit>
-      <trans-unit id="helpPickAriaLabel">
-        <source xml:lang="en">{0}, {1}</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/theme/common/tokenClassificationRegistry" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="schema.token.settings">
@@ -1491,7 +1488,7 @@
       <trans-unit id="abstract">
         <source xml:lang="en">Style to use for symbols that are abstract.</source>
       </trans-unit>
-      <trans-unit id="deprecated_Duplicated10">
+      <trans-unit id="deprecated_Duplicated2">
         <source xml:lang="en">Style to use for symbols that are deprecated.</source>
       </trans-unit>
       <trans-unit id="modification">
@@ -1518,19 +1515,22 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/quickinput/browser/commandsQuickAccess" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/windows/electron-main/windowsMainService" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="commandPickAriaLabelWithKeybinding">
-        <source xml:lang="en">{0}, {1}</source>
+      <trans-unit id="pathNotExistTitle">
+        <source xml:lang="en">Path does not exist</source>
       </trans-unit>
-      <trans-unit id="recentlyUsed">
-        <source xml:lang="en">recently used</source>
+      <trans-unit id="pathNotExistDetail">
+        <source xml:lang="en">The path '{0}' does not seem to exist anymore on disk.</source>
       </trans-unit>
-      <trans-unit id="morecCommands">
-        <source xml:lang="en">other commands</source>
+      <trans-unit id="uriInvalidTitle">
+        <source xml:lang="en">URI can not be opened</source>
       </trans-unit>
-      <trans-unit id="canNotRun">
-        <source xml:lang="en">Command '{0}' resulted in an error ({1})</source>
+      <trans-unit id="uriInvalidDetail">
+        <source xml:lang="en">The URI '{0}' is not valid and can not be opened.</source>
+      </trans-unit>
+      <trans-unit id="ok_Duplicated18">
+        <source xml:lang="en">OK</source>
       </trans-unit>
     </body>
   </file>

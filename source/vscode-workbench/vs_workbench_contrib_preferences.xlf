@@ -1,5 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/workbench/contrib/preferences/browser/keybindingsEditorContribution" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="defineKeybinding.start">
+        <source xml:lang="en">Define Keybinding</source>
+      </trans-unit>
+      <trans-unit id="defineKeybinding.kbLayoutErrorMessage">
+        <source xml:lang="en">You won't be able to produce this key combination under your current keyboard layout.</source>
+      </trans-unit>
+      <trans-unit id="defineKeybinding.kbLayoutLocalAndUSMessage">
+        <source xml:lang="en">**{0}** for your current keyboard layout (**{1}** for US standard).</source>
+        <note>Please translate maintaining the stars (*) around the placeholders such that they will be rendered in bold.
+The placeholders will contain a keyboard combination e.g. Ctrl+Shift+/</note>
+      </trans-unit>
+      <trans-unit id="defineKeybinding.kbLayoutLocalMessage">
+        <source xml:lang="en">**{0}** for your current keyboard layout.</source>
+        <note>Please translate maintaining the stars (*) around the placeholder such that it will be rendered in bold.
+The placeholder will contain a keyboard combination e.g. Ctrl+Shift+/</note>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/preferences/browser/preferences.contribution" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="defaultPreferencesEditor">
@@ -115,23 +135,48 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/preferences/browser/keybindingsEditorContribution" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/preferences/browser/keybindingWidgets" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="defineKeybinding.start">
-        <source xml:lang="en">Define Keybinding</source>
+      <trans-unit id="defineKeybinding.initial">
+        <source xml:lang="en">Press desired key combination and then press ENTER.</source>
       </trans-unit>
-      <trans-unit id="defineKeybinding.kbLayoutErrorMessage">
-        <source xml:lang="en">You won't be able to produce this key combination under your current keyboard layout.</source>
+      <trans-unit id="defineKeybinding.oneExists">
+        <source xml:lang="en">1 existing command has this keybinding</source>
       </trans-unit>
-      <trans-unit id="defineKeybinding.kbLayoutLocalAndUSMessage">
-        <source xml:lang="en">**{0}** for your current keyboard layout (**{1}** for US standard).</source>
-        <note>Please translate maintaining the stars (*) around the placeholders such that they will be rendered in bold.
-The placeholders will contain a keyboard combination e.g. Ctrl+Shift+/</note>
+      <trans-unit id="defineKeybinding.existing">
+        <source xml:lang="en">{0} existing commands have this keybinding</source>
       </trans-unit>
-      <trans-unit id="defineKeybinding.kbLayoutLocalMessage">
-        <source xml:lang="en">**{0}** for your current keyboard layout.</source>
-        <note>Please translate maintaining the stars (*) around the placeholder such that it will be rendered in bold.
-The placeholder will contain a keyboard combination e.g. Ctrl+Shift+/</note>
+      <trans-unit id="defineKeybinding.chordsTo">
+        <source xml:lang="en">chord to</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/preferences/browser/preferencesActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="configureLanguageBasedSettings">
+        <source xml:lang="en">Configure Language Specific Settings...</source>
+      </trans-unit>
+      <trans-unit id="languageDescriptionConfigured">
+        <source xml:lang="en">({0})</source>
+      </trans-unit>
+      <trans-unit id="pickLanguage">
+        <source xml:lang="en">Select Language</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/preferences/common/preferencesContribution" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="enableNaturalLanguageSettingsSearch">
+        <source xml:lang="en">Controls whether to enable the natural language search mode for settings. The natural language search is provided by a Microsoft online service.</source>
+      </trans-unit>
+      <trans-unit id="settingsSearchTocBehavior.hide">
+        <source xml:lang="en">Hide the Table of Contents while searching.</source>
+      </trans-unit>
+      <trans-unit id="settingsSearchTocBehavior.filter">
+        <source xml:lang="en">Filter the Table of Contents to just categories that have matching settings. Clicking a category will filter the results to that category.</source>
+      </trans-unit>
+      <trans-unit id="settingsSearchTocBehavior">
+        <source xml:lang="en">Controls the behavior of the settings editor Table of Contents while searching.</source>
       </trans-unit>
     </body>
   </file>
@@ -181,16 +226,31 @@ The placeholder will contain a keyboard combination e.g. Ctrl+Shift+/</note>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/preferences/browser/preferencesActions" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/preferences/browser/preferencesWidgets" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="configureLanguageBasedSettings">
-        <source xml:lang="en">Configure Language Specific Settings...</source>
+      <trans-unit id="defaultSettings_Duplicated7">
+        <source xml:lang="en">Place your settings in the right hand side editor to override.</source>
       </trans-unit>
-      <trans-unit id="languageDescriptionConfigured">
-        <source xml:lang="en">({0})</source>
+      <trans-unit id="noSettingsFound_Duplicated5">
+        <source xml:lang="en">No Settings Found.</source>
       </trans-unit>
-      <trans-unit id="pickLanguage">
-        <source xml:lang="en">Select Language</source>
+      <trans-unit id="settingsSwitcherBarAriaLabel">
+        <source xml:lang="en">Settings Switcher</source>
+      </trans-unit>
+      <trans-unit id="userSettings">
+        <source xml:lang="en">User</source>
+      </trans-unit>
+      <trans-unit id="userSettingsRemote">
+        <source xml:lang="en">Remote</source>
+      </trans-unit>
+      <trans-unit id="workspaceSettings">
+        <source xml:lang="en">Workspace</source>
+      </trans-unit>
+      <trans-unit id="folderSettings">
+        <source xml:lang="en">Folder</source>
+      </trans-unit>
+      <trans-unit id="preferencesEditIcon">
+        <source xml:lang="en">Icon for the edit action in preferences.</source>
       </trans-unit>
     </body>
   </file>
@@ -294,22 +354,6 @@ The placeholder will contain a keyboard combination e.g. Ctrl+Shift+/</note>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/preferences/common/preferencesContribution" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="enableNaturalLanguageSettingsSearch">
-        <source xml:lang="en">Controls whether to enable the natural language search mode for settings. The natural language search is provided by a Microsoft online service.</source>
-      </trans-unit>
-      <trans-unit id="settingsSearchTocBehavior.hide">
-        <source xml:lang="en">Hide the Table of Contents while searching.</source>
-      </trans-unit>
-      <trans-unit id="settingsSearchTocBehavior.filter">
-        <source xml:lang="en">Filter the Table of Contents to just categories that have matching settings. Clicking a category will filter the results to that category.</source>
-      </trans-unit>
-      <trans-unit id="settingsSearchTocBehavior">
-        <source xml:lang="en">Controls the behavior of the settings editor Table of Contents while searching.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/preferences/browser/settingsEditor2" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="SearchSettings.AriaLabel">
@@ -341,90 +385,6 @@ The placeholder will contain a keyboard combination e.g. Ctrl+Shift+/</note>
       </trans-unit>
       <trans-unit id="lastSyncedLabel">
         <source xml:lang="en">Last synced: {0}</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/preferences/browser/keybindingWidgets" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="defineKeybinding.initial">
-        <source xml:lang="en">Press desired key combination and then press ENTER.</source>
-      </trans-unit>
-      <trans-unit id="defineKeybinding.oneExists">
-        <source xml:lang="en">1 existing command has this keybinding</source>
-      </trans-unit>
-      <trans-unit id="defineKeybinding.existing">
-        <source xml:lang="en">{0} existing commands have this keybinding</source>
-      </trans-unit>
-      <trans-unit id="defineKeybinding.chordsTo">
-        <source xml:lang="en">chord to</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/preferences/browser/preferencesRenderers" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="emptyUserSettingsHeader">
-        <source xml:lang="en">Place your settings here to override the Default Settings.</source>
-      </trans-unit>
-      <trans-unit id="emptyWorkspaceSettingsHeader">
-        <source xml:lang="en">Place your settings here to override the User Settings.</source>
-      </trans-unit>
-      <trans-unit id="emptyFolderSettingsHeader">
-        <source xml:lang="en">Place your folder settings here to override those from the Workspace Settings.</source>
-      </trans-unit>
-      <trans-unit id="editTtile">
-        <source xml:lang="en">Edit</source>
-      </trans-unit>
-      <trans-unit id="replaceDefaultValue">
-        <source xml:lang="en">Replace in Settings</source>
-      </trans-unit>
-      <trans-unit id="copyDefaultValue">
-        <source xml:lang="en">Copy to Settings</source>
-      </trans-unit>
-      <trans-unit id="unknown configuration setting">
-        <source xml:lang="en">Unknown Configuration Setting</source>
-      </trans-unit>
-      <trans-unit id="unsupportedRemoteMachineSetting">
-        <source xml:lang="en">This setting cannot be applied in this window. It will be applied when you open local window.</source>
-      </trans-unit>
-      <trans-unit id="unsupportedWindowSetting">
-        <source xml:lang="en">This setting cannot be applied in this workspace. It will be applied when you open the containing workspace folder directly.</source>
-      </trans-unit>
-      <trans-unit id="unsupportedApplicationSetting">
-        <source xml:lang="en">This setting can be applied only in application user settings</source>
-      </trans-unit>
-      <trans-unit id="unsupportedMachineSetting">
-        <source xml:lang="en">This setting can only be applied in user settings in local window or in remote settings in remote window.</source>
-      </trans-unit>
-      <trans-unit id="unsupportedProperty">
-        <source xml:lang="en">Unsupported Property</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/preferences/browser/preferencesWidgets" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="defaultSettings_Duplicated7">
-        <source xml:lang="en">Place your settings in the right hand side editor to override.</source>
-      </trans-unit>
-      <trans-unit id="noSettingsFound_Duplicated5">
-        <source xml:lang="en">No Settings Found.</source>
-      </trans-unit>
-      <trans-unit id="settingsSwitcherBarAriaLabel">
-        <source xml:lang="en">Settings Switcher</source>
-      </trans-unit>
-      <trans-unit id="userSettings">
-        <source xml:lang="en">User</source>
-      </trans-unit>
-      <trans-unit id="userSettingsRemote">
-        <source xml:lang="en">Remote</source>
-      </trans-unit>
-      <trans-unit id="workspaceSettings">
-        <source xml:lang="en">Workspace</source>
-      </trans-unit>
-      <trans-unit id="folderSettings">
-        <source xml:lang="en">Folder</source>
-      </trans-unit>
-      <trans-unit id="preferencesEditIcon">
-        <source xml:lang="en">Icon for the edit action in preferences.</source>
       </trans-unit>
     </body>
   </file>
@@ -549,19 +509,6 @@ The placeholder will contain a keyboard combination e.g. Ctrl+Shift+/</note>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/preferences/browser/settingsTreeModels" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="workspace">
-        <source xml:lang="en">Workspace</source>
-      </trans-unit>
-      <trans-unit id="remote_Duplicated13">
-        <source xml:lang="en">Remote</source>
-      </trans-unit>
-      <trans-unit id="user">
-        <source xml:lang="en">User</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/preferences/browser/tocTree" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="settingsTOC">
@@ -573,55 +520,56 @@ The placeholder will contain a keyboard combination e.g. Ctrl+Shift+/</note>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/preferences/browser/settingsTree" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/preferences/browser/preferencesRenderers" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="extensions_Duplicated11">
-        <source xml:lang="en">Extensions</source>
+      <trans-unit id="emptyUserSettingsHeader">
+        <source xml:lang="en">Place your settings here to override the Default Settings.</source>
       </trans-unit>
-      <trans-unit id="extensionSyncIgnoredLabel">
-        <source xml:lang="en">Sync: Ignored</source>
+      <trans-unit id="emptyWorkspaceSettingsHeader">
+        <source xml:lang="en">Place your settings here to override the User Settings.</source>
       </trans-unit>
-      <trans-unit id="modified">
-        <source xml:lang="en">Modified</source>
+      <trans-unit id="emptyFolderSettingsHeader">
+        <source xml:lang="en">Place your folder settings here to override those from the Workspace Settings.</source>
       </trans-unit>
-      <trans-unit id="settingsContextMenuTitle">
-        <source xml:lang="en">More Actions... </source>
+      <trans-unit id="editTtile">
+        <source xml:lang="en">Edit</source>
       </trans-unit>
-      <trans-unit id="alsoConfiguredIn">
-        <source xml:lang="en">Also modified in</source>
+      <trans-unit id="replaceDefaultValue">
+        <source xml:lang="en">Replace in Settings</source>
       </trans-unit>
-      <trans-unit id="configuredIn">
-        <source xml:lang="en">Modified in</source>
+      <trans-unit id="copyDefaultValue">
+        <source xml:lang="en">Copy to Settings</source>
       </trans-unit>
-      <trans-unit id="settings.Modified">
-        <source xml:lang="en"> Modified. </source>
+      <trans-unit id="unknown configuration setting">
+        <source xml:lang="en">Unknown Configuration Setting</source>
       </trans-unit>
-      <trans-unit id="newExtensionsButtonLabel">
-        <source xml:lang="en">Show matching extensions</source>
+      <trans-unit id="unsupportedRemoteMachineSetting">
+        <source xml:lang="en">This setting cannot be applied in this window. It will be applied when you open local window.</source>
       </trans-unit>
-      <trans-unit id="editInSettingsJson">
-        <source xml:lang="en">Edit in settings.json</source>
+      <trans-unit id="unsupportedWindowSetting">
+        <source xml:lang="en">This setting cannot be applied in this workspace. It will be applied when you open the containing workspace folder directly.</source>
       </trans-unit>
-      <trans-unit id="settings.Default">
-        <source xml:lang="en">{0}</source>
+      <trans-unit id="unsupportedApplicationSetting">
+        <source xml:lang="en">This setting can be applied only in application user settings</source>
       </trans-unit>
-      <trans-unit id="resetSettingLabel">
-        <source xml:lang="en">Reset Setting</source>
+      <trans-unit id="unsupportedMachineSetting">
+        <source xml:lang="en">This setting can only be applied in user settings in local window or in remote settings in remote window.</source>
       </trans-unit>
-      <trans-unit id="validationError">
-        <source xml:lang="en">Validation Error.</source>
+      <trans-unit id="unsupportedProperty">
+        <source xml:lang="en">Unsupported Property</source>
       </trans-unit>
-      <trans-unit id="settings_Duplicated3">
-        <source xml:lang="en">Settings</source>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/preferences/browser/settingsTreeModels" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="workspace">
+        <source xml:lang="en">Workspace</source>
       </trans-unit>
-      <trans-unit id="copySettingIdLabel">
-        <source xml:lang="en">Copy Setting ID</source>
+      <trans-unit id="remote_Duplicated13">
+        <source xml:lang="en">Remote</source>
       </trans-unit>
-      <trans-unit id="copySettingAsJSONLabel">
-        <source xml:lang="en">Copy Setting as JSON</source>
-      </trans-unit>
-      <trans-unit id="stopSyncingSetting">
-        <source xml:lang="en">Sync This Setting</source>
+      <trans-unit id="user">
+        <source xml:lang="en">User</source>
       </trans-unit>
     </body>
   </file>
@@ -737,6 +685,58 @@ The placeholder will contain a keyboard combination e.g. Ctrl+Shift+/</note>
       </trans-unit>
       <trans-unit id="objectValueInputPlaceholder">
         <source xml:lang="en">Value</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/preferences/browser/settingsTree" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="extensions_Duplicated11">
+        <source xml:lang="en">Extensions</source>
+      </trans-unit>
+      <trans-unit id="extensionSyncIgnoredLabel">
+        <source xml:lang="en">Sync: Ignored</source>
+      </trans-unit>
+      <trans-unit id="modified">
+        <source xml:lang="en">Modified</source>
+      </trans-unit>
+      <trans-unit id="settingsContextMenuTitle">
+        <source xml:lang="en">More Actions... </source>
+      </trans-unit>
+      <trans-unit id="alsoConfiguredIn">
+        <source xml:lang="en">Also modified in</source>
+      </trans-unit>
+      <trans-unit id="configuredIn">
+        <source xml:lang="en">Modified in</source>
+      </trans-unit>
+      <trans-unit id="settings.Modified">
+        <source xml:lang="en"> Modified. </source>
+      </trans-unit>
+      <trans-unit id="newExtensionsButtonLabel">
+        <source xml:lang="en">Show matching extensions</source>
+      </trans-unit>
+      <trans-unit id="editInSettingsJson">
+        <source xml:lang="en">Edit in settings.json</source>
+      </trans-unit>
+      <trans-unit id="settings.Default">
+        <source xml:lang="en">{0}</source>
+      </trans-unit>
+      <trans-unit id="resetSettingLabel">
+        <source xml:lang="en">Reset Setting</source>
+      </trans-unit>
+      <trans-unit id="validationError">
+        <source xml:lang="en">Validation Error.</source>
+      </trans-unit>
+      <trans-unit id="settings_Duplicated3">
+        <source xml:lang="en">Settings</source>
+      </trans-unit>
+      <trans-unit id="copySettingIdLabel">
+        <source xml:lang="en">Copy Setting ID</source>
+      </trans-unit>
+      <trans-unit id="copySettingAsJSONLabel">
+        <source xml:lang="en">Copy Setting as JSON</source>
+      </trans-unit>
+      <trans-unit id="stopSyncingSetting">
+        <source xml:lang="en">Sync This Setting</source>
       </trans-unit>
     </body>
   </file>
