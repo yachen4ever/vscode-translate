@@ -234,14 +234,6 @@ Default Skipped Commands:
       <source xml:lang="en">The path of the shell that the terminal uses on Windows. [Read more about configuring the shell](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</source>
     </trans-unit>
   </body></file>
-  <file original="src/vs/workbench/contrib/terminal/browser/terminalView" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="terminal.useMonospace">
-      <source xml:lang="en">Use 'monospace'</source>
-    </trans-unit>
-    <trans-unit id="terminal.monospaceOnly">
-      <source xml:lang="en">The terminal only supports monospace fonts. Be sure to restart VS Code if this is a newly installed font.</source>
-    </trans-unit>
-  </body></file>
   <file original="src/vs/workbench/contrib/terminal/browser/terminal.contribution" source-language="en" datatype="plaintext"><body>
     <trans-unit id="tasksQuickAccessPlaceholder">
       <source xml:lang="en">Type the name of a terminal to open.</source>
@@ -256,6 +248,19 @@ Default Skipped Commands:
       <source xml:lang="en">View</source>
     </trans-unit>
   </body></file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalView" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="terminal.useMonospace">
+      <source xml:lang="en">Use 'monospace'</source>
+    </trans-unit>
+    <trans-unit id="terminal.monospaceOnly">
+      <source xml:lang="en">The terminal only supports monospace fonts. Be sure to restart VS Code if this is a newly installed font.</source>
+    </trans-unit>
+  </body></file>
+  <file original="src/vs/workbench/contrib/terminal/electron-browser/terminalRemote" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="workbench.action.terminal.newLocal">
+      <source xml:lang="en">Create New Integrated Terminal (Local)</source>
+    </trans-unit>
+  </body></file>
   <file original="src/vs/workbench/contrib/terminal/node/terminalProcess" source-language="en" datatype="plaintext"><body>
     <trans-unit id="launchFail.cwdNotDirectory">
       <source xml:lang="en">Starting directory (cwd) "{0}" is not a directory</source>
@@ -268,11 +273,6 @@ Default Skipped Commands:
     </trans-unit>
     <trans-unit id="launchFail.executableDoesNotExist">
       <source xml:lang="en">Shell path "{0}" does not exist</source>
-    </trans-unit>
-  </body></file>
-  <file original="src/vs/workbench/contrib/terminal/electron-browser/terminalRemote" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="workbench.action.terminal.newLocal">
-      <source xml:lang="en">Create New Integrated Terminal (Local)</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/terminal/common/terminalColorRegistry" source-language="en" datatype="plaintext"><body>
@@ -296,6 +296,45 @@ Default Skipped Commands:
     </trans-unit>
     <trans-unit id="terminal.ansiColor">
       <source xml:lang="en">'{0}' ANSI color in the terminal.</source>
+    </trans-unit>
+  </body></file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalService" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="workbench.action.terminal.allowWorkspaceShell">
+      <source xml:lang="en">Allow Workspace Shell Configuration</source>
+    </trans-unit>
+    <trans-unit id="workbench.action.terminal.disallowWorkspaceShell">
+      <source xml:lang="en">Disallow Workspace Shell Configuration</source>
+    </trans-unit>
+    <trans-unit id="terminalService.terminalCloseConfirmationSingular">
+      <source xml:lang="en">There is an active terminal session, do you want to kill it?</source>
+    </trans-unit>
+    <trans-unit id="terminalService.terminalCloseConfirmationPlural">
+      <source xml:lang="en">There are {0} active terminal sessions, do you want to kill them?</source>
+    </trans-unit>
+    <trans-unit id="terminal.integrated.chooseWindowsShell">
+      <source xml:lang="en">Select your preferred terminal shell, you can change this later in your settings</source>
+    </trans-unit>
+  </body></file>
+  <file original="src/vs/workbench/contrib/terminal/common/terminalMenu" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="miToggleIntegratedTerminal">
+      <source xml:lang="en">&amp;&amp;Terminal</source>
+      <note>&amp;&amp; denotes a mnemonic</note>
+    </trans-unit>
+    <trans-unit id="miNewTerminal">
+      <source xml:lang="en">&amp;&amp;New Terminal</source>
+      <note>&amp;&amp; denotes a mnemonic</note>
+    </trans-unit>
+    <trans-unit id="miSplitTerminal">
+      <source xml:lang="en">&amp;&amp;Split Terminal</source>
+      <note>&amp;&amp; denotes a mnemonic</note>
+    </trans-unit>
+    <trans-unit id="miRunActiveFile">
+      <source xml:lang="en">Run &amp;&amp;Active File</source>
+      <note>&amp;&amp; denotes a mnemonic</note>
+    </trans-unit>
+    <trans-unit id="miRunSelectedText">
+      <source xml:lang="en">Run &amp;&amp;Selected Text</source>
+      <note>&amp;&amp; denotes a mnemonic</note>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/terminal/browser/terminalActions" source-language="en" datatype="plaintext"><body>
@@ -504,45 +543,6 @@ Default Skipped Commands:
       <source xml:lang="en">Show Environment Information</source>
     </trans-unit>
   </body></file>
-  <file original="src/vs/workbench/contrib/terminal/common/terminalMenu" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="miToggleIntegratedTerminal">
-      <source xml:lang="en">&amp;&amp;Terminal</source>
-      <note>&amp;&amp; denotes a mnemonic</note>
-    </trans-unit>
-    <trans-unit id="miNewTerminal">
-      <source xml:lang="en">&amp;&amp;New Terminal</source>
-      <note>&amp;&amp; denotes a mnemonic</note>
-    </trans-unit>
-    <trans-unit id="miSplitTerminal">
-      <source xml:lang="en">&amp;&amp;Split Terminal</source>
-      <note>&amp;&amp; denotes a mnemonic</note>
-    </trans-unit>
-    <trans-unit id="miRunActiveFile">
-      <source xml:lang="en">Run &amp;&amp;Active File</source>
-      <note>&amp;&amp; denotes a mnemonic</note>
-    </trans-unit>
-    <trans-unit id="miRunSelectedText">
-      <source xml:lang="en">Run &amp;&amp;Selected Text</source>
-      <note>&amp;&amp; denotes a mnemonic</note>
-    </trans-unit>
-  </body></file>
-  <file original="src/vs/workbench/contrib/terminal/browser/terminalService" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="workbench.action.terminal.allowWorkspaceShell">
-      <source xml:lang="en">Allow Workspace Shell Configuration</source>
-    </trans-unit>
-    <trans-unit id="workbench.action.terminal.disallowWorkspaceShell">
-      <source xml:lang="en">Disallow Workspace Shell Configuration</source>
-    </trans-unit>
-    <trans-unit id="terminalService.terminalCloseConfirmationSingular">
-      <source xml:lang="en">There is an active terminal session, do you want to kill it?</source>
-    </trans-unit>
-    <trans-unit id="terminalService.terminalCloseConfirmationPlural">
-      <source xml:lang="en">There are {0} active terminal sessions, do you want to kill them?</source>
-    </trans-unit>
-    <trans-unit id="terminal.integrated.chooseWindowsShell">
-      <source xml:lang="en">Select your preferred terminal shell, you can change this later in your settings</source>
-    </trans-unit>
-  </body></file>
   <file original="src/vs/workbench/contrib/terminal/browser/terminalQuickAccess" source-language="en" datatype="plaintext"><body>
     <trans-unit id="renameTerminal">
       <source xml:lang="en">Rename Terminal</source>
@@ -552,23 +552,6 @@ Default Skipped Commands:
     </trans-unit>
     <trans-unit id="workbench.action.terminal.newplus">
       <source xml:lang="en">Create New Integrated Terminal</source>
-    </trans-unit>
-  </body></file>
-  <file original="src/vs/workbench/contrib/terminal/browser/terminalConfigHelper" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="terminal.integrated.allowWorkspaceShell">
-      <source xml:lang="en">Do you allow this workspace to modify your terminal shell? {0}</source>
-    </trans-unit>
-    <trans-unit id="allow">
-      <source xml:lang="en">Allow</source>
-    </trans-unit>
-    <trans-unit id="disallow">
-      <source xml:lang="en">Disallow</source>
-    </trans-unit>
-    <trans-unit id="useWslExtension.title">
-      <source xml:lang="en">The '{0}' extension is recommended for opening a terminal in WSL.</source>
-    </trans-unit>
-    <trans-unit id="install">
-      <source xml:lang="en">Install</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/terminal/browser/terminalInstance" source-language="en" datatype="plaintext"><body>
@@ -618,6 +601,23 @@ Default Skipped Commands:
       <source xml:lang="en">Terminal {0} environment is stale, run the 'Show Environment Information' command for more information</source>
     </trans-unit>
   </body></file>
+  <file original="src/vs/workbench/contrib/terminal/browser/terminalConfigHelper" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="terminal.integrated.allowWorkspaceShell">
+      <source xml:lang="en">Do you allow this workspace to modify your terminal shell? {0}</source>
+    </trans-unit>
+    <trans-unit id="allow">
+      <source xml:lang="en">Allow</source>
+    </trans-unit>
+    <trans-unit id="disallow">
+      <source xml:lang="en">Disallow</source>
+    </trans-unit>
+    <trans-unit id="useWslExtension.title">
+      <source xml:lang="en">The '{0}' extension is recommended for opening a terminal in WSL.</source>
+    </trans-unit>
+    <trans-unit id="install">
+      <source xml:lang="en">Install</source>
+    </trans-unit>
+  </body></file>
   <file original="src/vs/workbench/contrib/terminal/browser/links/terminalLinkManager" source-language="en" datatype="plaintext"><body>
     <trans-unit id="terminalLinkHandler.followLinkAlt.mac">
       <source xml:lang="en">option + click</source>
@@ -633,11 +633,6 @@ Default Skipped Commands:
     </trans-unit>
     <trans-unit id="followLink">
       <source xml:lang="en">Follow Link</source>
-    </trans-unit>
-  </body></file>
-  <file original="src/vs/workbench/contrib/terminal/browser/links/terminalWordLinkProvider" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="searchWorkspace">
-      <source xml:lang="en">Search workspace</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/terminal/browser/terminalProcessExtHostProxy" source-language="en" datatype="plaintext"><body>
@@ -657,6 +652,11 @@ Default Skipped Commands:
     </trans-unit>
     <trans-unit id="extensionEnvironmentContributionInfo">
       <source xml:lang="en">Extensions have made changes to this terminal's environment</source>
+    </trans-unit>
+  </body></file>
+  <file original="src/vs/workbench/contrib/terminal/browser/links/terminalWordLinkProvider" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="searchWorkspace">
+      <source xml:lang="en">Search workspace</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/terminal/browser/links/terminalLink" source-language="en" datatype="plaintext"><body>
