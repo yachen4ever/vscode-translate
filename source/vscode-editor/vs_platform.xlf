@@ -114,6 +114,16 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="telemetryConfigurationTitle">
+        <source xml:lang="en">Telemetry</source>
+      </trans-unit>
+      <trans-unit id="telemetry.enableTelemetry">
+        <source xml:lang="en">Enable usage data and errors to be sent to a Microsoft online service.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/environment/node/argv" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="optionsUpperCase">
@@ -171,7 +181,7 @@
         <source xml:lang="en">Filters installed extensions by provided category, when using --list-extension.</source>
       </trans-unit>
       <trans-unit id="installExtension">
-        <source xml:lang="en">Installs or updates the extension. Use `--force` argument to avoid prompts.</source>
+        <source xml:lang="en">Installs or updates the extension. Use `--force` argument to avoid prompts. The identifier of an extension is always `${publisher}.${name}`. To install a specific version provide `@${version}`. For example: 'vscode.csharp@1.2.3'.</source>
       </trans-unit>
       <trans-unit id="uninstallExtension">
         <source xml:lang="en">Uninstalls an extension.</source>
@@ -238,16 +248,6 @@
       </trans-unit>
       <trans-unit id="unknownCommit">
         <source xml:lang="en">Unknown commit</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="telemetryConfigurationTitle">
-        <source xml:lang="en">Telemetry</source>
-      </trans-unit>
-      <trans-unit id="telemetry.enableTelemetry">
-        <source xml:lang="en">Enable usage data and errors to be sent to a Microsoft online service.</source>
       </trans-unit>
     </body>
   </file>
@@ -511,22 +511,6 @@
     <body>
       <trans-unit id="errorInvalidSettings_Duplicated13">
         <source xml:lang="en">Unable to sync keybindings because the content in the file is not valid. Please open the file and correct it.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/extensions/common/extensionValidator" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="versionSyntax">
-        <source xml:lang="en">Could not parse `engines.vscode` value {0}. Please use, for example: ^1.22.0, ^1.22.x, etc.</source>
-      </trans-unit>
-      <trans-unit id="versionSpecificity1">
-        <source xml:lang="en">Version specified in `engines.vscode` ({0}) is not specific enough. For vscode versions before 1.0.0, please define at a minimum the major and minor desired version. E.g. ^0.10.0, 0.10.x, 0.11.0, etc.</source>
-      </trans-unit>
-      <trans-unit id="versionSpecificity2">
-        <source xml:lang="en">Version specified in `engines.vscode` ({0}) is not specific enough. For vscode versions after 1.0.0, please define at a minimum the major desired version. E.g. ^1.10.0, 1.10.x, 1.x.x, 2.x.x, etc.</source>
-      </trans-unit>
-      <trans-unit id="versionMismatch">
-        <source xml:lang="en">Extension is not compatible with Code {0}. Extension requires: {1}.</source>
       </trans-unit>
     </body>
   </file>
@@ -1032,6 +1016,22 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/extensions/common/extensionValidator" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="versionSyntax">
+        <source xml:lang="en">Could not parse `engines.vscode` value {0}. Please use, for example: ^1.22.0, ^1.22.x, etc.</source>
+      </trans-unit>
+      <trans-unit id="versionSpecificity1">
+        <source xml:lang="en">Version specified in `engines.vscode` ({0}) is not specific enough. For vscode versions before 1.0.0, please define at a minimum the major and minor desired version. E.g. ^0.10.0, 0.10.x, 0.11.0, etc.</source>
+      </trans-unit>
+      <trans-unit id="versionSpecificity2">
+        <source xml:lang="en">Version specified in `engines.vscode` ({0}) is not specific enough. For vscode versions after 1.0.0, please define at a minimum the major desired version. E.g. ^1.10.0, 1.10.x, 1.x.x, 2.x.x, etc.</source>
+      </trans-unit>
+      <trans-unit id="versionMismatch">
+        <source xml:lang="en">Extension is not compatible with Code {0}. Extension requires: {1}.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/workspaces/electron-main/workspacesMainService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="ok_Duplicated15">
@@ -1230,6 +1230,16 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/keybinding/common/abstractKeybindingService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="first.chord">
+        <source xml:lang="en">({0}) was pressed. Waiting for second key of chord...</source>
+      </trans-unit>
+      <trans-unit id="missing.chord">
+        <source xml:lang="en">The key combination ({0}, {1}) is not a command.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/userDataSync/common/abstractSynchronizer" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="incompatible_Duplicated10">
@@ -1238,16 +1248,6 @@
       </trans-unit>
       <trans-unit id="incompatible sync data">
         <source xml:lang="en">Cannot parse sync data as it is not compatible with current version.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/keybinding/common/abstractKeybindingService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="first.chord">
-        <source xml:lang="en">({0}) was pressed. Waiting for second key of chord...</source>
-      </trans-unit>
-      <trans-unit id="missing.chord">
-        <source xml:lang="en">The key combination ({0}, {1}) is not a command.</source>
       </trans-unit>
     </body>
   </file>
