@@ -187,30 +187,6 @@ It is recommended to remove them from the file. This can be configured via `edit
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/format/formatActions" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="formatDocument.label">
-        <source xml:lang="en">Format Document</source>
-      </trans-unit>
-      <trans-unit id="formatSelection.label">
-        <source xml:lang="en">Format Selection</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/hover/hover" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="showHover">
-        <source xml:lang="en">Show Hover</source>
-        <note>Label for action that will trigger the showing of a hover in the editor.
-This allows for users to show the hover without using the mouse.</note>
-      </trans-unit>
-      <trans-unit id="showDefinitionPreviewHover">
-        <source xml:lang="en">Show Definition Preview Hover</source>
-        <note>Label for action that will trigger the showing of definition preview hover in the editor.
-This allows for users to show the definition preview hover without using the mouse.</note>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/gotoError/gotoError" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="markerAction.next.label">
@@ -235,6 +211,16 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/format/formatActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="formatDocument.label">
+        <source xml:lang="en">Format Document</source>
+      </trans-unit>
+      <trans-unit id="formatSelection.label">
+        <source xml:lang="en">Format Selection</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/inPlaceReplace/inPlaceReplace" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="InPlaceReplaceAction.previous.label">
@@ -242,6 +228,20 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
       <trans-unit id="InPlaceReplaceAction.next.label">
         <source xml:lang="en">Replace with Next Value</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/hover/hover" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="showHover">
+        <source xml:lang="en">Show Hover</source>
+        <note>Label for action that will trigger the showing of a hover in the editor.
+This allows for users to show the hover without using the mouse.</note>
+      </trans-unit>
+      <trans-unit id="showDefinitionPreviewHover">
+        <source xml:lang="en">Show Definition Preview Hover</source>
+        <note>Label for action that will trigger the showing of definition preview hover in the editor.
+This allows for users to show the definition preview hover without using the mouse.</note>
       </trans-unit>
     </body>
   </file>
@@ -458,39 +458,6 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/find/findController" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="startFindAction">
-        <source xml:lang="en">Find</source>
-      </trans-unit>
-      <trans-unit id="miFind">
-        <source xml:lang="en">&amp;&amp;Find</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="startFindWithSelectionAction">
-        <source xml:lang="en">Find With Selection</source>
-      </trans-unit>
-      <trans-unit id="findNextMatchAction">
-        <source xml:lang="en">Find Next</source>
-      </trans-unit>
-      <trans-unit id="findPreviousMatchAction">
-        <source xml:lang="en">Find Previous</source>
-      </trans-unit>
-      <trans-unit id="nextSelectionMatchFindAction">
-        <source xml:lang="en">Find Next Selection</source>
-      </trans-unit>
-      <trans-unit id="previousSelectionMatchFindAction">
-        <source xml:lang="en">Find Previous Selection</source>
-      </trans-unit>
-      <trans-unit id="startReplace">
-        <source xml:lang="en">Replace</source>
-      </trans-unit>
-      <trans-unit id="miReplace">
-        <source xml:lang="en">&amp;&amp;Replace</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/folding/folding" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="unfoldAction.label">
@@ -531,6 +498,39 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
       <trans-unit id="editorGutter.foldingControlForeground">
         <source xml:lang="en">Color of the folding control in the editor gutter.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/find/findController" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="startFindAction">
+        <source xml:lang="en">Find</source>
+      </trans-unit>
+      <trans-unit id="miFind">
+        <source xml:lang="en">&amp;&amp;Find</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="startFindWithSelectionAction">
+        <source xml:lang="en">Find With Selection</source>
+      </trans-unit>
+      <trans-unit id="findNextMatchAction">
+        <source xml:lang="en">Find Next</source>
+      </trans-unit>
+      <trans-unit id="findPreviousMatchAction">
+        <source xml:lang="en">Find Previous</source>
+      </trans-unit>
+      <trans-unit id="nextSelectionMatchFindAction">
+        <source xml:lang="en">Find Next Selection</source>
+      </trans-unit>
+      <trans-unit id="previousSelectionMatchFindAction">
+        <source xml:lang="en">Find Previous Selection</source>
+      </trans-unit>
+      <trans-unit id="startReplace">
+        <source xml:lang="en">Replace</source>
+      </trans-unit>
+      <trans-unit id="miReplace">
+        <source xml:lang="en">&amp;&amp;Replace</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
     </body>
   </file>
@@ -1256,16 +1256,6 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/gotoSymbol/symbolNavigation" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="location.kb">
-        <source xml:lang="en">Symbol {0} of {1}, {2} for next</source>
-      </trans-unit>
-      <trans-unit id="location">
-        <source xml:lang="en">Symbol {0} of {1}</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/gotoSymbol/referencesModel" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="aria.oneReference">
@@ -1288,6 +1278,16 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
       <trans-unit id="aria.result.nm">
         <source xml:lang="en">Found {0} symbols in {1} files</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/gotoSymbol/symbolNavigation" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="location.kb">
+        <source xml:lang="en">Symbol {0} of {1}, {2} for next</source>
+      </trans-unit>
+      <trans-unit id="location">
+        <source xml:lang="en">Symbol {0} of {1}</source>
       </trans-unit>
     </body>
   </file>

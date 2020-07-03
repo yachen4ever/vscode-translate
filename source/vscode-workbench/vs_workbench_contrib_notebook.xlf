@@ -188,6 +188,14 @@
       <source xml:lang="en">Select Action</source>
     </trans-unit>
   </body></file>
+  <file original="src/vs/workbench/contrib/notebook/browser/contrib/fold/folding" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="fold.cell">
+      <source xml:lang="en">Fold Cell</source>
+    </trans-unit>
+    <trans-unit id="unfold.cell">
+      <source xml:lang="en">Unfold Cell</source>
+    </trans-unit>
+  </body></file>
   <file original="src/vs/workbench/contrib/notebook/browser/notebookEditor" source-language="en" datatype="plaintext"><body>
     <trans-unit id="fail.noEditor">
       <source xml:lang="en">Cannot open resource with notebook editor type '{0}', please check if you have the right extension installed or enabled.</source>
@@ -202,14 +210,6 @@
     </trans-unit>
     <trans-unit id="notebookActions.findInNotebook">
       <source xml:lang="en">Find in Notebook</source>
-    </trans-unit>
-  </body></file>
-  <file original="src/vs/workbench/contrib/notebook/browser/contrib/fold/folding" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="fold.cell">
-      <source xml:lang="en">Fold Cell</source>
-    </trans-unit>
-    <trans-unit id="unfold.cell">
-      <source xml:lang="en">Unfold Cell</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/notebook/browser/notebookServiceImpl" source-language="en" datatype="plaintext"><body>
@@ -265,8 +265,8 @@
     <trans-unit id="notebook.cellBorderColor">
       <source xml:lang="en">The border color for notebook cells.</source>
     </trans-unit>
-    <trans-unit id="notebook.focusedEditorIndicator">
-      <source xml:lang="en">The color of the notebook cell editor indicator.</source>
+    <trans-unit id="notebook.focusedEditorBorder">
+      <source xml:lang="en">The color of the notebook cell editor border.</source>
     </trans-unit>
     <trans-unit id="notebookStatusSuccessIcon.foreground">
       <source xml:lang="en">The error icon color of notebook cells in the cell status bar.</source>
@@ -280,14 +280,20 @@
     <trans-unit id="notebook.outputContainerBackgroundColor">
       <source xml:lang="en">The Color of the notebook output container background.</source>
     </trans-unit>
-    <trans-unit id="cellToolbarSeperator">
+    <trans-unit id="notebook.cellToolbarSeperator">
       <source xml:lang="en">The color of the seperator in the cell bottom toolbar</source>
     </trans-unit>
-    <trans-unit id="cellFocusBackground">
-      <source xml:lang="en">The background color of focused or hovered cells</source>
+    <trans-unit id="focusedCellBackground">
+      <source xml:lang="en">The background color of a cell when the cell is focused.</source>
     </trans-unit>
-    <trans-unit id="cellShadow">
-      <source xml:lang="en">The color of the shadow on the focused or hovered cell</source>
+    <trans-unit id="notebook.cellHoverBackground">
+      <source xml:lang="en">The background color of a cell when the cell is hovered.</source>
+    </trans-unit>
+    <trans-unit id="notebook.focusedCellBorder">
+      <source xml:lang="en">The color of the cell's top and bottom border when the cell is focused.</source>
+    </trans-unit>
+    <trans-unit id="notebook.focusedCellShadow">
+      <source xml:lang="en">The color of the cell shadow when cells are focused.</source>
     </trans-unit>
     <trans-unit id="notebook.cellStatusBarItemHoverBackground">
       <source xml:lang="en">The background color of notebook cell status bar items.</source>
