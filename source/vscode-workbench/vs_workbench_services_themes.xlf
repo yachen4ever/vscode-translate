@@ -126,6 +126,41 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/services/themes/browser/productIconThemeData" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="error.parseicondefs">
+        <source xml:lang="en">Problems processing product icons definitions in {0}:
+{1}</source>
+      </trans-unit>
+      <trans-unit id="defaultTheme">
+        <source xml:lang="en">Default</source>
+      </trans-unit>
+      <trans-unit id="error.cannotparseicontheme_Duplicated9">
+        <source xml:lang="en">Problems parsing product icons file: {0}</source>
+      </trans-unit>
+      <trans-unit id="error.invalidformat_Duplicated11">
+        <source xml:lang="en">Invalid format for product icons theme file: Object expected.</source>
+      </trans-unit>
+      <trans-unit id="error.missingProperties">
+        <source xml:lang="en">Invalid format for product icons theme file: Must contain iconDefinitions and fonts.</source>
+      </trans-unit>
+      <trans-unit id="error.fontWeight">
+        <source xml:lang="en">Invalid font weight in font '{0}'. Ignoring setting.</source>
+      </trans-unit>
+      <trans-unit id="error.fontStyle">
+        <source xml:lang="en">Invalid font style in font '{0}'. Ignoring setting.</source>
+      </trans-unit>
+      <trans-unit id="error.fontId">
+        <source xml:lang="en">Missing or invalid font id '{0}'. Skipping font definition.</source>
+      </trans-unit>
+      <trans-unit id="error.icon.fontId">
+        <source xml:lang="en">Skipping icon definition '{0}'. Unknown font.</source>
+      </trans-unit>
+      <trans-unit id="error.icon.fontCharacter">
+        <source xml:lang="en">Skipping icon definition '{0}'. Unknown fontCharacter.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/services/themes/common/colorThemeSchema" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="schema.token.settings">
@@ -169,41 +204,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/services/themes/browser/productIconThemeData" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="error.parseicondefs">
-        <source xml:lang="en">Problems processing product icons definitions in {0}:
-{1}</source>
-      </trans-unit>
-      <trans-unit id="defaultTheme">
-        <source xml:lang="en">Default</source>
-      </trans-unit>
-      <trans-unit id="error.cannotparseicontheme_Duplicated9">
-        <source xml:lang="en">Problems parsing product icons file: {0}</source>
-      </trans-unit>
-      <trans-unit id="error.invalidformat_Duplicated11">
-        <source xml:lang="en">Invalid format for product icons theme file: Object expected.</source>
-      </trans-unit>
-      <trans-unit id="error.missingProperties">
-        <source xml:lang="en">Invalid format for product icons theme file: Must contain iconDefinitions and fonts.</source>
-      </trans-unit>
-      <trans-unit id="error.fontWeight">
-        <source xml:lang="en">Invalid font weight in font '{0}'. Ignoring setting.</source>
-      </trans-unit>
-      <trans-unit id="error.fontStyle">
-        <source xml:lang="en">Invalid font style in font '{0}'. Ignoring setting.</source>
-      </trans-unit>
-      <trans-unit id="error.fontId">
-        <source xml:lang="en">Missing or invalid font id '{0}'. Skipping font definition.</source>
-      </trans-unit>
-      <trans-unit id="error.icon.fontId">
-        <source xml:lang="en">Skipping icon definition '{0}'. Unknown font.</source>
-      </trans-unit>
-      <trans-unit id="error.icon.fontCharacter">
-        <source xml:lang="en">Skipping icon definition '{0}'. Unknown fontCharacter.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/services/themes/common/productIconThemeSchema" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="schema.id_Duplicated14">
@@ -229,6 +229,149 @@
       </trans-unit>
       <trans-unit id="schema.iconDefinitions_Duplicated28">
         <source xml:lang="en">Association of icon name to a font character.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/common/themeExtensionPoints" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="vscode.extension.contributes.themes">
+        <source xml:lang="en">Contributes textmate color themes.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.id">
+        <source xml:lang="en">Id of the color theme as used in the user settings.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.label">
+        <source xml:lang="en">Label of the color theme as shown in the UI.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.uiTheme">
+        <source xml:lang="en">Base theme defining the colors around the editor: 'vs' is the light color theme, 'vs-dark' is the dark color theme. 'hc-black' is the dark high contrast theme.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.themes.path">
+        <source xml:lang="en">Path of the tmTheme file. The path is relative to the extension folder and is typically './colorthemes/awesome-color-theme.json'.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.iconThemes">
+        <source xml:lang="en">Contributes file icon themes.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.iconThemes.id">
+        <source xml:lang="en">Id of the file icon theme as used in the user settings.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.iconThemes.label">
+        <source xml:lang="en">Label of the file icon theme as shown in the UI.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.iconThemes.path">
+        <source xml:lang="en">Path of the file icon theme definition file. The path is relative to the extension folder and is typically './fileicons/awesome-icon-theme.json'.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.productIconThemes">
+        <source xml:lang="en">Contributes product icon themes.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.productIconThemes.id">
+        <source xml:lang="en">Id of the product icon theme as used in the user settings.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.productIconThemes.label">
+        <source xml:lang="en">Label of the product icon theme as shown in the UI.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.productIconThemes.path">
+        <source xml:lang="en">Path of the product icon theme definition file. The path is relative to the extension folder and is typically './producticons/awesome-product-icon-theme.json'.</source>
+      </trans-unit>
+      <trans-unit id="reqarray">
+        <source xml:lang="en">Extension point `{0}` must be an array.</source>
+      </trans-unit>
+      <trans-unit id="reqpath">
+        <source xml:lang="en">Expected string in `contributes.{0}.path`. Provided value: {1}</source>
+      </trans-unit>
+      <trans-unit id="reqid">
+        <source xml:lang="en">Expected string in `contributes.{0}.id`. Provided value: {1}</source>
+      </trans-unit>
+      <trans-unit id="invalid.path.1">
+        <source xml:lang="en">Expected `contributes.{0}.path` ({1}) to be included inside extension's folder ({2}). This might make the extension non-portable.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/themes/common/themeConfiguration" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="colorTheme">
+        <source xml:lang="en">Specifies the color theme used in the workbench.</source>
+      </trans-unit>
+      <trans-unit id="colorThemeError">
+        <source xml:lang="en">Theme is unknown or not installed.</source>
+      </trans-unit>
+      <trans-unit id="preferredDarkColorTheme">
+        <source xml:lang="en">Specifies the preferred color theme for dark OS appearance when '{0}' is enabled.</source>
+      </trans-unit>
+      <trans-unit id="preferredLightColorTheme">
+        <source xml:lang="en">Specifies the preferred color theme for light OS appearance when '{0}' is enabled.</source>
+      </trans-unit>
+      <trans-unit id="preferredHCColorTheme">
+        <source xml:lang="en">Specifies the preferred color theme used in high contrast mode when '{0}' is enabled.</source>
+      </trans-unit>
+      <trans-unit id="detectColorScheme">
+        <source xml:lang="en">If set, automatically switch to the preferred color theme based on the OS appearance.</source>
+      </trans-unit>
+      <trans-unit id="workbenchColors">
+        <source xml:lang="en">Overrides colors from the currently selected color theme.</source>
+      </trans-unit>
+      <trans-unit id="iconTheme">
+        <source xml:lang="en">Specifies the file icon theme used in the workbench or 'null' to not show any file icons.</source>
+      </trans-unit>
+      <trans-unit id="noIconThemeDesc">
+        <source xml:lang="en">No file icons</source>
+      </trans-unit>
+      <trans-unit id="iconThemeError">
+        <source xml:lang="en">File icon theme is unknown or not installed.</source>
+      </trans-unit>
+      <trans-unit id="productIconTheme">
+        <source xml:lang="en">Specifies the product icon theme used.</source>
+      </trans-unit>
+      <trans-unit id="defaultProductIconThemeDesc">
+        <source xml:lang="en">Default</source>
+      </trans-unit>
+      <trans-unit id="productIconThemeError">
+        <source xml:lang="en">Product icon theme is unknown or not installed.</source>
+      </trans-unit>
+      <trans-unit id="editorColors.comments">
+        <source xml:lang="en">Sets the colors and styles for comments</source>
+      </trans-unit>
+      <trans-unit id="editorColors.strings">
+        <source xml:lang="en">Sets the colors and styles for strings literals.</source>
+      </trans-unit>
+      <trans-unit id="editorColors.keywords">
+        <source xml:lang="en">Sets the colors and styles for keywords.</source>
+      </trans-unit>
+      <trans-unit id="editorColors.numbers">
+        <source xml:lang="en">Sets the colors and styles for number literals.</source>
+      </trans-unit>
+      <trans-unit id="editorColors.types">
+        <source xml:lang="en">Sets the colors and styles for type declarations and references.</source>
+      </trans-unit>
+      <trans-unit id="editorColors.functions">
+        <source xml:lang="en">Sets the colors and styles for functions declarations and references.</source>
+      </trans-unit>
+      <trans-unit id="editorColors.variables">
+        <source xml:lang="en">Sets the colors and styles for variables declarations and references.</source>
+      </trans-unit>
+      <trans-unit id="editorColors.textMateRules">
+        <source xml:lang="en">Sets colors and styles using textmate theming rules (advanced).</source>
+      </trans-unit>
+      <trans-unit id="editorColors.semanticHighlighting">
+        <source xml:lang="en">Whether semantic highlighting should be enabled for this theme.</source>
+      </trans-unit>
+      <trans-unit id="editorColors.semanticHighlighting.deprecationMessage">
+        <source xml:lang="en">Use `enabled` in `editor.semanticTokenColorCustomizations` setting instead.</source>
+      </trans-unit>
+      <trans-unit id="editorColors">
+        <source xml:lang="en">Overrides editor syntax colors and font style from the currently selected color theme.</source>
+      </trans-unit>
+      <trans-unit id="editorColors.semanticHighlighting.enabled">
+        <source xml:lang="en">Whether semantic highlighting is enabled or disabled for this theme</source>
+      </trans-unit>
+      <trans-unit id="editorColors.semanticHighlighting.rules">
+        <source xml:lang="en">Semantic token styling rules for this theme.</source>
+      </trans-unit>
+      <trans-unit id="semanticTokenColors">
+        <source xml:lang="en">Overrides editor semantic token color and styles from the currently selected color theme.</source>
+      </trans-unit>
+      <trans-unit id="editorColors.experimentalTokenStyling.deprecationMessage">
+        <source xml:lang="en">Use `editor.semanticTokenColorCustomizations` instead.</source>
       </trans-unit>
     </body>
   </file>
@@ -339,149 +482,6 @@
       </trans-unit>
       <trans-unit id="error.invalidformat_Duplicated12">
         <source xml:lang="en">Invalid format for file icons theme file: Object expected.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/services/themes/common/themeConfiguration" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="colorTheme">
-        <source xml:lang="en">Specifies the color theme used in the workbench.</source>
-      </trans-unit>
-      <trans-unit id="colorThemeError">
-        <source xml:lang="en">Theme is unknown or not installed.</source>
-      </trans-unit>
-      <trans-unit id="preferredDarkColorTheme">
-        <source xml:lang="en">Specifies the preferred color theme for dark OS appearance when '{0}' is enabled.</source>
-      </trans-unit>
-      <trans-unit id="preferredLightColorTheme">
-        <source xml:lang="en">Specifies the preferred color theme for light OS appearance when '{0}' is enabled.</source>
-      </trans-unit>
-      <trans-unit id="preferredHCColorTheme">
-        <source xml:lang="en">Specifies the preferred color theme used in high contrast mode when '{0}' is enabled.</source>
-      </trans-unit>
-      <trans-unit id="detectColorScheme">
-        <source xml:lang="en">If set, automatically switch to the preferred color theme based on the OS appearance.</source>
-      </trans-unit>
-      <trans-unit id="workbenchColors">
-        <source xml:lang="en">Overrides colors from the currently selected color theme.</source>
-      </trans-unit>
-      <trans-unit id="iconTheme">
-        <source xml:lang="en">Specifies the file icon theme used in the workbench or 'null' to not show any file icons.</source>
-      </trans-unit>
-      <trans-unit id="noIconThemeDesc">
-        <source xml:lang="en">No file icons</source>
-      </trans-unit>
-      <trans-unit id="iconThemeError">
-        <source xml:lang="en">File icon theme is unknown or not installed.</source>
-      </trans-unit>
-      <trans-unit id="productIconTheme">
-        <source xml:lang="en">Specifies the product icon theme used.</source>
-      </trans-unit>
-      <trans-unit id="defaultProductIconThemeDesc">
-        <source xml:lang="en">Default</source>
-      </trans-unit>
-      <trans-unit id="productIconThemeError">
-        <source xml:lang="en">Product icon theme is unknown or not installed.</source>
-      </trans-unit>
-      <trans-unit id="editorColors.comments">
-        <source xml:lang="en">Sets the colors and styles for comments</source>
-      </trans-unit>
-      <trans-unit id="editorColors.strings">
-        <source xml:lang="en">Sets the colors and styles for strings literals.</source>
-      </trans-unit>
-      <trans-unit id="editorColors.keywords">
-        <source xml:lang="en">Sets the colors and styles for keywords.</source>
-      </trans-unit>
-      <trans-unit id="editorColors.numbers">
-        <source xml:lang="en">Sets the colors and styles for number literals.</source>
-      </trans-unit>
-      <trans-unit id="editorColors.types">
-        <source xml:lang="en">Sets the colors and styles for type declarations and references.</source>
-      </trans-unit>
-      <trans-unit id="editorColors.functions">
-        <source xml:lang="en">Sets the colors and styles for functions declarations and references.</source>
-      </trans-unit>
-      <trans-unit id="editorColors.variables">
-        <source xml:lang="en">Sets the colors and styles for variables declarations and references.</source>
-      </trans-unit>
-      <trans-unit id="editorColors.textMateRules">
-        <source xml:lang="en">Sets colors and styles using textmate theming rules (advanced).</source>
-      </trans-unit>
-      <trans-unit id="editorColors.semanticHighlighting">
-        <source xml:lang="en">Whether semantic highlighting should be enabled for this theme.</source>
-      </trans-unit>
-      <trans-unit id="editorColors.semanticHighlighting.deprecationMessage">
-        <source xml:lang="en">Use `enabled` in `editor.semanticTokenColorCustomizations` setting instead.</source>
-      </trans-unit>
-      <trans-unit id="editorColors">
-        <source xml:lang="en">Overrides editor syntax colors and font style from the currently selected color theme.</source>
-      </trans-unit>
-      <trans-unit id="editorColors.semanticHighlighting.enabled">
-        <source xml:lang="en">Whether semantic highlighting is enabled or disabled for this theme</source>
-      </trans-unit>
-      <trans-unit id="editorColors.semanticHighlighting.rules">
-        <source xml:lang="en">Semantic token styling rules for this theme.</source>
-      </trans-unit>
-      <trans-unit id="semanticTokenColors">
-        <source xml:lang="en">Overrides editor semantic token color and styles from the currently selected color theme.</source>
-      </trans-unit>
-      <trans-unit id="editorColors.experimentalTokenStyling.deprecationMessage">
-        <source xml:lang="en">Use `editor.semanticTokenColorCustomizations` instead.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/services/themes/common/themeExtensionPoints" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="vscode.extension.contributes.themes">
-        <source xml:lang="en">Contributes textmate color themes.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.themes.id">
-        <source xml:lang="en">Id of the color theme as used in the user settings.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.themes.label">
-        <source xml:lang="en">Label of the color theme as shown in the UI.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.themes.uiTheme">
-        <source xml:lang="en">Base theme defining the colors around the editor: 'vs' is the light color theme, 'vs-dark' is the dark color theme. 'hc-black' is the dark high contrast theme.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.themes.path">
-        <source xml:lang="en">Path of the tmTheme file. The path is relative to the extension folder and is typically './colorthemes/awesome-color-theme.json'.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.iconThemes">
-        <source xml:lang="en">Contributes file icon themes.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.iconThemes.id">
-        <source xml:lang="en">Id of the file icon theme as used in the user settings.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.iconThemes.label">
-        <source xml:lang="en">Label of the file icon theme as shown in the UI.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.iconThemes.path">
-        <source xml:lang="en">Path of the file icon theme definition file. The path is relative to the extension folder and is typically './fileicons/awesome-icon-theme.json'.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.productIconThemes">
-        <source xml:lang="en">Contributes product icon themes.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.productIconThemes.id">
-        <source xml:lang="en">Id of the product icon theme as used in the user settings.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.productIconThemes.label">
-        <source xml:lang="en">Label of the product icon theme as shown in the UI.</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.productIconThemes.path">
-        <source xml:lang="en">Path of the product icon theme definition file. The path is relative to the extension folder and is typically './producticons/awesome-product-icon-theme.json'.</source>
-      </trans-unit>
-      <trans-unit id="reqarray">
-        <source xml:lang="en">Extension point `{0}` must be an array.</source>
-      </trans-unit>
-      <trans-unit id="reqpath">
-        <source xml:lang="en">Expected string in `contributes.{0}.path`. Provided value: {1}</source>
-      </trans-unit>
-      <trans-unit id="reqid">
-        <source xml:lang="en">Expected string in `contributes.{0}.id`. Provided value: {1}</source>
-      </trans-unit>
-      <trans-unit id="invalid.path.1">
-        <source xml:lang="en">Expected `contributes.{0}.path` ({1}) to be included inside extension's folder ({2}). This might make the extension non-portable.</source>
       </trans-unit>
     </body>
   </file>

@@ -620,19 +620,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/debugStatus" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="status.debug">
-        <source xml:lang="en">Debug</source>
-      </trans-unit>
-      <trans-unit id="debugTarget">
-        <source xml:lang="en">Debug: {0}</source>
-      </trans-unit>
-      <trans-unit id="selectAndStartDebug">
-        <source xml:lang="en">Select and start debug configuration</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/browser/statusbarColorProvider" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="statusBarDebuggingBackground">
@@ -643,6 +630,19 @@
       </trans-unit>
       <trans-unit id="statusBarDebuggingBorder">
         <source xml:lang="en">Status bar border color separating to the sidebar and editor when a program is being debugged. The status bar is shown in the bottom of the window</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/debugStatus" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="status.debug">
+        <source xml:lang="en">Debug</source>
+      </trans-unit>
+      <trans-unit id="debugTarget">
+        <source xml:lang="en">Debug: {0}</source>
+      </trans-unit>
+      <trans-unit id="selectAndStartDebug">
+        <source xml:lang="en">Select and start debug configuration</source>
       </trans-unit>
     </body>
   </file>
@@ -696,16 +696,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/common/replModel" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="consoleCleared">
-        <source xml:lang="en">Console was cleared</source>
-      </trans-unit>
-      <trans-unit id="snapshotObj">
-        <source xml:lang="en">Only primitive values are shown for this object.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/browser/replViewer" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="debugConsole_Duplicated18">
@@ -722,6 +712,16 @@
       </trans-unit>
       <trans-unit id="replGroup">
         <source xml:lang="en">Debug console group {0}, read eval print loop, debug</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/common/replModel" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="consoleCleared">
+        <source xml:lang="en">Console was cleared</source>
+      </trans-unit>
+      <trans-unit id="snapshotObj">
+        <source xml:lang="en">Only primitive values are shown for this object.</source>
       </trans-unit>
     </body>
   </file>
@@ -747,6 +747,61 @@
       </trans-unit>
       <trans-unit id="breakpointType">
         <source xml:lang="en">Breakpoint Type</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/watchExpressionsView" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="editWatchExpression">
+        <source xml:lang="en">Edit Expression</source>
+      </trans-unit>
+      <trans-unit id="removeWatchExpression">
+        <source xml:lang="en">Remove Expression</source>
+      </trans-unit>
+      <trans-unit id="watchExpressionInputAriaLabel">
+        <source xml:lang="en">Type watch expression</source>
+      </trans-unit>
+      <trans-unit id="watchExpressionPlaceholder">
+        <source xml:lang="en">Expression to watch</source>
+      </trans-unit>
+      <trans-unit id="watchAriaTreeLabel">
+        <source xml:lang="en">Debug Watch Expressions</source>
+        <note>Debug is a noun in this context, not a verb.</note>
+      </trans-unit>
+      <trans-unit id="watchExpressionAriaLabel">
+        <source xml:lang="en">{0}, value {1}</source>
+      </trans-unit>
+      <trans-unit id="watchVariableAriaLabel">
+        <source xml:lang="en">{0}, value {1}</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/variablesView" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="setValue">
+        <source xml:lang="en">Set Value</source>
+      </trans-unit>
+      <trans-unit id="copyAsExpression">
+        <source xml:lang="en">Copy as Expression</source>
+      </trans-unit>
+      <trans-unit id="addToWatchExpressions">
+        <source xml:lang="en">Add to Watch</source>
+      </trans-unit>
+      <trans-unit id="breakWhenValueChanges">
+        <source xml:lang="en">Break When Value Changes</source>
+      </trans-unit>
+      <trans-unit id="variableValueAriaLabel">
+        <source xml:lang="en">Type new variable value</source>
+      </trans-unit>
+      <trans-unit id="variablesAriaTreeLabel">
+        <source xml:lang="en">Debug Variables</source>
+      </trans-unit>
+      <trans-unit id="variableScopeAriaLabel">
+        <source xml:lang="en">Scope {0}</source>
+      </trans-unit>
+      <trans-unit id="variableAriaLabel_Duplicated38">
+        <source xml:lang="en">{0}, value {1}</source>
+        <note>Placeholders are variable name and variable value respectivly. They should not be translated.</note>
       </trans-unit>
     </body>
   </file>
@@ -785,58 +840,26 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/variablesView" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/debug/browser/loadedScriptsView" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="setValue">
-        <source xml:lang="en">Set Value</source>
+      <trans-unit id="loadedScriptsSession">
+        <source xml:lang="en">Debug Session</source>
       </trans-unit>
-      <trans-unit id="copyAsExpression">
-        <source xml:lang="en">Copy as Expression</source>
-      </trans-unit>
-      <trans-unit id="addToWatchExpressions">
-        <source xml:lang="en">Add to Watch</source>
-      </trans-unit>
-      <trans-unit id="breakWhenValueChanges">
-        <source xml:lang="en">Break When Value Changes</source>
-      </trans-unit>
-      <trans-unit id="variableValueAriaLabel">
-        <source xml:lang="en">Type new variable value</source>
-      </trans-unit>
-      <trans-unit id="variablesAriaTreeLabel">
-        <source xml:lang="en">Debug Variables</source>
-      </trans-unit>
-      <trans-unit id="variableScopeAriaLabel">
-        <source xml:lang="en">Scope {0}</source>
-      </trans-unit>
-      <trans-unit id="variableAriaLabel_Duplicated38">
-        <source xml:lang="en">{0}, value {1}</source>
-        <note>Placeholders are variable name and variable value respectivly. They should not be translated.</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/watchExpressionsView" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="editWatchExpression">
-        <source xml:lang="en">Edit Expression</source>
-      </trans-unit>
-      <trans-unit id="removeWatchExpression">
-        <source xml:lang="en">Remove Expression</source>
-      </trans-unit>
-      <trans-unit id="watchExpressionInputAriaLabel">
-        <source xml:lang="en">Type watch expression</source>
-      </trans-unit>
-      <trans-unit id="watchExpressionPlaceholder">
-        <source xml:lang="en">Expression to watch</source>
-      </trans-unit>
-      <trans-unit id="watchAriaTreeLabel">
-        <source xml:lang="en">Debug Watch Expressions</source>
+      <trans-unit id="loadedScriptsAriaLabel">
+        <source xml:lang="en">Debug Loaded Scripts</source>
         <note>Debug is a noun in this context, not a verb.</note>
       </trans-unit>
-      <trans-unit id="watchExpressionAriaLabel">
-        <source xml:lang="en">{0}, value {1}</source>
+      <trans-unit id="loadedScriptsRootFolderAriaLabel">
+        <source xml:lang="en">Workspace folder {0}, loaded script, debug</source>
       </trans-unit>
-      <trans-unit id="watchVariableAriaLabel">
-        <source xml:lang="en">{0}, value {1}</source>
+      <trans-unit id="loadedScriptsSessionAriaLabel">
+        <source xml:lang="en">Session {0}, loaded script, debug</source>
+      </trans-unit>
+      <trans-unit id="loadedScriptsFolderAriaLabel">
+        <source xml:lang="en">Folder {0}, loaded script, debug</source>
+      </trans-unit>
+      <trans-unit id="loadedScriptsSourceAriaLabel">
+        <source xml:lang="en">{0}, loaded script, debug</source>
       </trans-unit>
     </body>
   </file>
@@ -883,29 +906,6 @@
       </trans-unit>
       <trans-unit id="addInlineBreakpoint">
         <source xml:lang="en">Add Inline Breakpoint</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/loadedScriptsView" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="loadedScriptsSession">
-        <source xml:lang="en">Debug Session</source>
-      </trans-unit>
-      <trans-unit id="loadedScriptsAriaLabel">
-        <source xml:lang="en">Debug Loaded Scripts</source>
-        <note>Debug is a noun in this context, not a verb.</note>
-      </trans-unit>
-      <trans-unit id="loadedScriptsRootFolderAriaLabel">
-        <source xml:lang="en">Workspace folder {0}, loaded script, debug</source>
-      </trans-unit>
-      <trans-unit id="loadedScriptsSessionAriaLabel">
-        <source xml:lang="en">Session {0}, loaded script, debug</source>
-      </trans-unit>
-      <trans-unit id="loadedScriptsFolderAriaLabel">
-        <source xml:lang="en">Folder {0}, loaded script, debug</source>
-      </trans-unit>
-      <trans-unit id="loadedScriptsSourceAriaLabel">
-        <source xml:lang="en">{0}, loaded script, debug</source>
       </trans-unit>
     </body>
   </file>
@@ -986,52 +986,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/callStackView" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="debugStopped">
-        <source xml:lang="en">Paused on {0}</source>
-      </trans-unit>
-      <trans-unit id="showMoreStackFrames2">
-        <source xml:lang="en">Show More Stack Frames</source>
-      </trans-unit>
-      <trans-unit id="session">
-        <source xml:lang="en">Session</source>
-        <note>Session is a noun</note>
-      </trans-unit>
-      <trans-unit id="running_Duplicated45">
-        <source xml:lang="en">Running</source>
-        <note>indicates state</note>
-      </trans-unit>
-      <trans-unit id="thread">
-        <source xml:lang="en">Thread</source>
-      </trans-unit>
-      <trans-unit id="restartFrame_Duplicated32">
-        <source xml:lang="en">Restart Frame</source>
-      </trans-unit>
-      <trans-unit id="loadMoreStackFrames">
-        <source xml:lang="en">Load More Stack Frames</source>
-      </trans-unit>
-      <trans-unit id="showMoreAndOrigin">
-        <source xml:lang="en">Show {0} More: {1}</source>
-      </trans-unit>
-      <trans-unit id="showMoreStackFrames">
-        <source xml:lang="en">Show {0} More Stack Frames</source>
-      </trans-unit>
-      <trans-unit id="callStackAriaLabel">
-        <source xml:lang="en">Debug Call Stack</source>
-        <note>Debug is a noun in this context, not a verb.</note>
-      </trans-unit>
-      <trans-unit id="threadAriaLabel">
-        <source xml:lang="en">Thread {0}, callstack, debug</source>
-      </trans-unit>
-      <trans-unit id="stackFrameAriaLabel">
-        <source xml:lang="en">Stack Frame {0}, line {1}, {2}, callstack, debug</source>
-      </trans-unit>
-      <trans-unit id="sessionLabel">
-        <source xml:lang="en">Debug Session {0}</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/browser/debugService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="1activeSession">
@@ -1092,6 +1046,52 @@
       </trans-unit>
       <trans-unit id="breakpointRemoved">
         <source xml:lang="en">Removed breakpoint, line {0}, file {1}</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/callStackView" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="debugStopped">
+        <source xml:lang="en">Paused on {0}</source>
+      </trans-unit>
+      <trans-unit id="showMoreStackFrames2">
+        <source xml:lang="en">Show More Stack Frames</source>
+      </trans-unit>
+      <trans-unit id="session">
+        <source xml:lang="en">Session</source>
+        <note>Session is a noun</note>
+      </trans-unit>
+      <trans-unit id="running_Duplicated45">
+        <source xml:lang="en">Running</source>
+        <note>indicates state</note>
+      </trans-unit>
+      <trans-unit id="thread">
+        <source xml:lang="en">Thread</source>
+      </trans-unit>
+      <trans-unit id="restartFrame_Duplicated32">
+        <source xml:lang="en">Restart Frame</source>
+      </trans-unit>
+      <trans-unit id="loadMoreStackFrames">
+        <source xml:lang="en">Load More Stack Frames</source>
+      </trans-unit>
+      <trans-unit id="showMoreAndOrigin">
+        <source xml:lang="en">Show {0} More: {1}</source>
+      </trans-unit>
+      <trans-unit id="showMoreStackFrames">
+        <source xml:lang="en">Show {0} More Stack Frames</source>
+      </trans-unit>
+      <trans-unit id="callStackAriaLabel">
+        <source xml:lang="en">Debug Call Stack</source>
+        <note>Debug is a noun in this context, not a verb.</note>
+      </trans-unit>
+      <trans-unit id="threadAriaLabel">
+        <source xml:lang="en">Thread {0}, callstack, debug</source>
+      </trans-unit>
+      <trans-unit id="stackFrameAriaLabel">
+        <source xml:lang="en">Stack Frame {0}, line {1}, {2}, callstack, debug</source>
+      </trans-unit>
+      <trans-unit id="sessionLabel">
+        <source xml:lang="en">Debug Session {0}</source>
       </trans-unit>
     </body>
   </file>
@@ -1209,55 +1209,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/common/debugger" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="cannot.find.da">
-        <source xml:lang="en">Cannot find debug adapter for type '{0}'.</source>
-      </trans-unit>
-      <trans-unit id="launch.config.comment1">
-        <source xml:lang="en">Use IntelliSense to learn about possible attributes.</source>
-      </trans-unit>
-      <trans-unit id="launch.config.comment2">
-        <source xml:lang="en">Hover to view descriptions of existing attributes.</source>
-      </trans-unit>
-      <trans-unit id="launch.config.comment3">
-        <source xml:lang="en">For more information, visit: {0}</source>
-      </trans-unit>
-      <trans-unit id="debugType">
-        <source xml:lang="en">Type of configuration.</source>
-      </trans-unit>
-      <trans-unit id="debugTypeNotRecognised">
-        <source xml:lang="en">The debug type is not recognized. Make sure that you have a corresponding debug extension installed and that it is enabled.</source>
-      </trans-unit>
-      <trans-unit id="node2NotSupported">
-        <source xml:lang="en">"node2" is no longer supported, use "node" instead and set the "protocol" attribute to "inspector".</source>
-      </trans-unit>
-      <trans-unit id="debugName">
-        <source xml:lang="en">Name of configuration; appears in the launch configuration dropdown menu.</source>
-      </trans-unit>
-      <trans-unit id="debugRequest">
-        <source xml:lang="en">Request type of configuration. Can be "launch" or "attach".</source>
-      </trans-unit>
-      <trans-unit id="debugServer">
-        <source xml:lang="en">For debug extension development only: if a port is specified VS Code tries to connect to a debug adapter running in server mode</source>
-      </trans-unit>
-      <trans-unit id="debugPrelaunchTask">
-        <source xml:lang="en">Task to run before debug session starts.</source>
-      </trans-unit>
-      <trans-unit id="debugPostDebugTask">
-        <source xml:lang="en">Task to run after debug session ends.</source>
-      </trans-unit>
-      <trans-unit id="debugWindowsConfiguration">
-        <source xml:lang="en">Windows specific launch configuration attributes.</source>
-      </trans-unit>
-      <trans-unit id="debugOSXConfiguration">
-        <source xml:lang="en">OS X specific launch configuration attributes.</source>
-      </trans-unit>
-      <trans-unit id="debugLinuxConfiguration">
-        <source xml:lang="en">Linux specific launch configuration attributes.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/common/debugSchemas" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="vscode.extension.contributes.debuggers">
@@ -1361,6 +1312,55 @@
       </trans-unit>
       <trans-unit id="compoundPrelaunchTask">
         <source xml:lang="en">Task to run before any of the compound configurations start.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/common/debugger" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="cannot.find.da">
+        <source xml:lang="en">Cannot find debug adapter for type '{0}'.</source>
+      </trans-unit>
+      <trans-unit id="launch.config.comment1">
+        <source xml:lang="en">Use IntelliSense to learn about possible attributes.</source>
+      </trans-unit>
+      <trans-unit id="launch.config.comment2">
+        <source xml:lang="en">Hover to view descriptions of existing attributes.</source>
+      </trans-unit>
+      <trans-unit id="launch.config.comment3">
+        <source xml:lang="en">For more information, visit: {0}</source>
+      </trans-unit>
+      <trans-unit id="debugType">
+        <source xml:lang="en">Type of configuration.</source>
+      </trans-unit>
+      <trans-unit id="debugTypeNotRecognised">
+        <source xml:lang="en">The debug type is not recognized. Make sure that you have a corresponding debug extension installed and that it is enabled.</source>
+      </trans-unit>
+      <trans-unit id="node2NotSupported">
+        <source xml:lang="en">"node2" is no longer supported, use "node" instead and set the "protocol" attribute to "inspector".</source>
+      </trans-unit>
+      <trans-unit id="debugName">
+        <source xml:lang="en">Name of configuration; appears in the launch configuration dropdown menu.</source>
+      </trans-unit>
+      <trans-unit id="debugRequest">
+        <source xml:lang="en">Request type of configuration. Can be "launch" or "attach".</source>
+      </trans-unit>
+      <trans-unit id="debugServer">
+        <source xml:lang="en">For debug extension development only: if a port is specified VS Code tries to connect to a debug adapter running in server mode</source>
+      </trans-unit>
+      <trans-unit id="debugPrelaunchTask">
+        <source xml:lang="en">Task to run before debug session starts.</source>
+      </trans-unit>
+      <trans-unit id="debugPostDebugTask">
+        <source xml:lang="en">Task to run after debug session ends.</source>
+      </trans-unit>
+      <trans-unit id="debugWindowsConfiguration">
+        <source xml:lang="en">Windows specific launch configuration attributes.</source>
+      </trans-unit>
+      <trans-unit id="debugOSXConfiguration">
+        <source xml:lang="en">OS X specific launch configuration attributes.</source>
+      </trans-unit>
+      <trans-unit id="debugLinuxConfiguration">
+        <source xml:lang="en">Linux specific launch configuration attributes.</source>
       </trans-unit>
     </body>
   </file>

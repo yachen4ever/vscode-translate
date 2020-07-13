@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="src/vs/workbench/contrib/terminal/common/terminal" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="terminalCategory">
+      <source xml:lang="en">Terminal</source>
+    </trans-unit>
+    <trans-unit id="vscode.extension.contributes.terminal">
+      <source xml:lang="en">Contributes terminal functionality.</source>
+    </trans-unit>
+    <trans-unit id="vscode.extension.contributes.terminal.types">
+      <source xml:lang="en">Defines additional terminal types that the user can create.</source>
+    </trans-unit>
+    <trans-unit id="vscode.extension.contributes.terminal.types.command">
+      <source xml:lang="en">Command to execute when the user creates this type of terminal.</source>
+    </trans-unit>
+    <trans-unit id="vscode.extension.contributes.terminal.types.title">
+      <source xml:lang="en">Title for this type of terminal.</source>
+    </trans-unit>
+  </body></file>
   <file original="src/vs/workbench/contrib/terminal/common/terminalConfiguration" source-language="en" datatype="plaintext"><body>
     <trans-unit id="terminalIntegratedConfigurationTitle">
       <source xml:lang="en">Integrated Terminal</source>
@@ -136,7 +153,16 @@
       <source xml:lang="en">Controls whether the terminal bell is enabled.</source>
     </trans-unit>
     <trans-unit id="terminal.integrated.commandsToSkipShell">
-      <source xml:lang="en">A set of command IDs whose keybindings will not be sent to the shell and instead always be handled by VS Code. This allows the use of keybindings that would normally be consumed by the shell to act the same as when the terminal is not focused, for example ctrl+p to launch Quick Open. Use the command prefixed with `-` to remove default commands from the list.
+      <source xml:lang="en">A set of command IDs whose keybindings will not be sent to the shell but instead always be handled by VS Code. This allows keybindings that would normally be consumed by the shell to act instead the same as when the terminal is not focused, for example `Ctrl+P` to launch Quick Open.
+
+---
+
+Many commands are skipped by default. To override a default and pass that command's keybinding to the shell instead, add the command prefixed with the `-` character. For example add `-workbench.action.quickOpen` to allow `Ctrl+P` to reach the shell.
+
+*The following list of default skipped commands is truncated when viewed in Settings Editor. To see the full list, [open the default settings JSON](command:workbench.action.openRawDefaultSettings 'Open Default Settings (JSON)') and search for the first command from the list below.*
+
+---
+
 Default Skipped Commands:
 
 {0}</source>
@@ -227,23 +253,6 @@ Default Skipped Commands:
     </trans-unit>
     <trans-unit id="terminal.integrated.shell.windows.noDefault">
       <source xml:lang="en">The path of the shell that the terminal uses on Windows. [Read more about configuring the shell](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).</source>
-    </trans-unit>
-  </body></file>
-  <file original="src/vs/workbench/contrib/terminal/common/terminal" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="terminalCategory">
-      <source xml:lang="en">Terminal</source>
-    </trans-unit>
-    <trans-unit id="vscode.extension.contributes.terminal">
-      <source xml:lang="en">Contributes terminal functionality.</source>
-    </trans-unit>
-    <trans-unit id="vscode.extension.contributes.terminal.types">
-      <source xml:lang="en">Defines additional terminal types that the user can create.</source>
-    </trans-unit>
-    <trans-unit id="vscode.extension.contributes.terminal.types.command">
-      <source xml:lang="en">Command to execute when the user creates this type of terminal.</source>
-    </trans-unit>
-    <trans-unit id="vscode.extension.contributes.terminal.types.title">
-      <source xml:lang="en">Title for this type of terminal.</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/terminal/electron-browser/terminalRemote" source-language="en" datatype="plaintext"><body>

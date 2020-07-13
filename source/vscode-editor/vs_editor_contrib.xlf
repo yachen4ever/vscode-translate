@@ -28,6 +28,16 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/caretOperations/caretOperations" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="caret.moveLeft">
+        <source xml:lang="en">Move Selected Text Left</source>
+      </trans-unit>
+      <trans-unit id="caret.moveRight">
+        <source xml:lang="en">Move Selected Text Right</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/caretOperations/transpose" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="transposeLetters.label">
@@ -56,16 +66,6 @@
       <trans-unit id="miToggleBlockComment">
         <source xml:lang="en">Toggle &amp;&amp;Block Comment</source>
         <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/caretOperations/caretOperations" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="caret.moveLeft">
-        <source xml:lang="en">Move Selected Text Left</source>
-      </trans-unit>
-      <trans-unit id="caret.moveRight">
-        <source xml:lang="en">Move Selected Text Right</source>
       </trans-unit>
     </body>
   </file>
@@ -99,10 +99,17 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/tokenization/tokenization" source-language="en" datatype="plaintext">
+  <file original="src/vs/editor/contrib/toggleTabFocusMode/toggleTabFocusMode" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="forceRetokenize">
-        <source xml:lang="en">Developer: Force Retokenize</source>
+      <trans-unit id="toggle.tabMovesFocus">
+        <source xml:lang="en">Toggle Tab Key Moves Focus</source>
+        <note>Turn on/off use of tab key for moving focus around VS Code</note>
+      </trans-unit>
+      <trans-unit id="toggle.tabMovesFocus.on">
+        <source xml:lang="en">Pressing Tab will now move focus to the next focusable element</source>
+      </trans-unit>
+      <trans-unit id="toggle.tabMovesFocus.off">
+        <source xml:lang="en">Pressing Tab will now insert the tab character</source>
       </trans-unit>
     </body>
   </file>
@@ -127,24 +134,27 @@ It is recommended to remove them from the file. This can be configured via `edit
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/toggleTabFocusMode/toggleTabFocusMode" source-language="en" datatype="plaintext">
+  <file original="src/vs/editor/contrib/tokenization/tokenization" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="toggle.tabMovesFocus">
-        <source xml:lang="en">Toggle Tab Key Moves Focus</source>
-        <note>Turn on/off use of tab key for moving focus around VS Code</note>
-      </trans-unit>
-      <trans-unit id="toggle.tabMovesFocus.on">
-        <source xml:lang="en">Pressing Tab will now move focus to the next focusable element</source>
-      </trans-unit>
-      <trans-unit id="toggle.tabMovesFocus.off">
-        <source xml:lang="en">Pressing Tab will now insert the tab character</source>
+      <trans-unit id="forceRetokenize">
+        <source xml:lang="en">Developer: Force Retokenize</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/contextmenu/contextmenu" source-language="en" datatype="plaintext">
+  <file original="src/vs/editor/contrib/bracketMatching/bracketMatching" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="action.showContextMenu.label">
-        <source xml:lang="en">Show Editor Context Menu</source>
+      <trans-unit id="overviewRulerBracketMatchForeground">
+        <source xml:lang="en">Overview ruler marker color for matching brackets.</source>
+      </trans-unit>
+      <trans-unit id="smartSelect.jumpBracket">
+        <source xml:lang="en">Go to Bracket</source>
+      </trans-unit>
+      <trans-unit id="smartSelect.selectToBracket">
+        <source xml:lang="en">Select to Bracket</source>
+      </trans-unit>
+      <trans-unit id="miGoToBracket">
+        <source xml:lang="en">Go to &amp;&amp;Bracket</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
     </body>
   </file>
@@ -170,20 +180,10 @@ It is recommended to remove them from the file. This can be configured via `edit
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/bracketMatching/bracketMatching" source-language="en" datatype="plaintext">
+  <file original="src/vs/editor/contrib/contextmenu/contextmenu" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="overviewRulerBracketMatchForeground">
-        <source xml:lang="en">Overview ruler marker color for matching brackets.</source>
-      </trans-unit>
-      <trans-unit id="smartSelect.jumpBracket">
-        <source xml:lang="en">Go to Bracket</source>
-      </trans-unit>
-      <trans-unit id="smartSelect.selectToBracket">
-        <source xml:lang="en">Select to Bracket</source>
-      </trans-unit>
-      <trans-unit id="miGoToBracket">
-        <source xml:lang="en">Go to &amp;&amp;Bracket</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
+      <trans-unit id="action.showContextMenu.label">
+        <source xml:lang="en">Show Editor Context Menu</source>
       </trans-unit>
     </body>
   </file>
@@ -194,20 +194,6 @@ It is recommended to remove them from the file. This can be configured via `edit
       </trans-unit>
       <trans-unit id="formatSelection.label">
         <source xml:lang="en">Format Selection</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/hover/hover" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="showHover">
-        <source xml:lang="en">Show Hover</source>
-        <note>Label for action that will trigger the showing of a hover in the editor.
-This allows for users to show the hover without using the mouse.</note>
-      </trans-unit>
-      <trans-unit id="showDefinitionPreviewHover">
-        <source xml:lang="en">Show Definition Preview Hover</source>
-        <note>Label for action that will trigger the showing of definition preview hover in the editor.
-This allows for users to show the definition preview hover without using the mouse.</note>
       </trans-unit>
     </body>
   </file>
@@ -235,10 +221,17 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/rename/onTypeRename" source-language="en" datatype="plaintext">
+  <file original="src/vs/editor/contrib/hover/hover" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="onTypeRename.label">
-        <source xml:lang="en">On Type Rename Symbol</source>
+      <trans-unit id="showHover">
+        <source xml:lang="en">Show Hover</source>
+        <note>Label for action that will trigger the showing of a hover in the editor.
+This allows for users to show the hover without using the mouse.</note>
+      </trans-unit>
+      <trans-unit id="showDefinitionPreviewHover">
+        <source xml:lang="en">Show Definition Preview Hover</source>
+        <note>Label for action that will trigger the showing of definition preview hover in the editor.
+This allows for users to show the definition preview hover without using the mouse.</note>
       </trans-unit>
     </body>
   </file>
@@ -249,6 +242,13 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
       <trans-unit id="InPlaceReplaceAction.next.label">
         <source xml:lang="en">Replace with Next Value</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/rename/onTypeRename" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="onTypeRename.label">
+        <source xml:lang="en">On Type Rename Symbol</source>
       </trans-unit>
     </body>
   </file>
@@ -1119,13 +1119,6 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/message/messageController" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="editor.readonly">
-        <source xml:lang="en">Cannot edit in read-only editor</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/rename/renameInputField" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="renameAriaLabel">
@@ -1134,6 +1127,13 @@ This allows for users to show the definition preview hover without using the mou
       <trans-unit id="label_Duplicated3">
         <source xml:lang="en">{0} to Rename, {1} to Preview</source>
         <note>placeholders are keybindings, e.g "F2 to Rename, Shift+F2 to Preview"</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/message/messageController" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="editor.readonly">
+        <source xml:lang="en">Cannot edit in read-only editor</source>
       </trans-unit>
     </body>
   </file>

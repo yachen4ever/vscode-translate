@@ -63,16 +63,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="extensions">
-        <source xml:lang="en">Extensions</source>
-      </trans-unit>
-      <trans-unit id="preferences">
-        <source xml:lang="en">Preferences</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/update/common/update.config.contribution" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="updateConfigurationTitle">
@@ -107,10 +97,30 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="extensions">
+        <source xml:lang="en">Extensions</source>
+      </trans-unit>
+      <trans-unit id="preferences">
+        <source xml:lang="en">Preferences</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/extensionManagement/node/extensionManagementUtil" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="invalidManifest_Duplicated3">
         <source xml:lang="en">VSIX invalid: package.json is not a JSON file.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="telemetryConfigurationTitle">
+        <source xml:lang="en">Telemetry</source>
+      </trans-unit>
+      <trans-unit id="telemetry.enableTelemetry">
+        <source xml:lang="en">Enable usage data and errors to be sent to a Microsoft online service.</source>
       </trans-unit>
     </body>
   </file>
@@ -241,30 +251,10 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/telemetry/common/telemetryService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="telemetryConfigurationTitle">
-        <source xml:lang="en">Telemetry</source>
-      </trans-unit>
-      <trans-unit id="telemetry.enableTelemetry">
-        <source xml:lang="en">Enable usage data and errors to be sent to a Microsoft online service.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/userDataSync/common/userDataSyncMachines" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="error incompatible">
         <source xml:lang="en">Cannot read machines data as the current version is incompatible. Please update {0} and try again.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/label/common/label" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="untitledWorkspace">
-        <source xml:lang="en">Untitled (Workspace)</source>
-      </trans-unit>
-      <trans-unit id="workspaceName">
-        <source xml:lang="en">{0} (Workspace)</source>
       </trans-unit>
     </body>
   </file>
@@ -504,20 +494,6 @@
       </trans-unit>
       <trans-unit id="fileTooLargeError_Duplicated12">
         <source xml:lang="en">File is too large to open</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="errorInvalidSettings_Duplicated13">
-        <source xml:lang="en">Unable to sync keybindings because the content in the file is not valid. Please open the file and correct it.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="errorInvalidSettings_Duplicated14">
-        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
       </trans-unit>
     </body>
   </file>
@@ -996,6 +972,22 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/extensions/common/extensionValidator" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="versionSyntax">
+        <source xml:lang="en">Could not parse `engines.vscode` value {0}. Please use, for example: ^1.22.0, ^1.22.x, etc.</source>
+      </trans-unit>
+      <trans-unit id="versionSpecificity1">
+        <source xml:lang="en">Version specified in `engines.vscode` ({0}) is not specific enough. For vscode versions before 1.0.0, please define at a minimum the major and minor desired version. E.g. ^0.10.0, 0.10.x, 0.11.0, etc.</source>
+      </trans-unit>
+      <trans-unit id="versionSpecificity2">
+        <source xml:lang="en">Version specified in `engines.vscode` ({0}) is not specific enough. For vscode versions after 1.0.0, please define at a minimum the major desired version. E.g. ^1.10.0, 1.10.x, 1.x.x, 2.x.x, etc.</source>
+      </trans-unit>
+      <trans-unit id="versionMismatch">
+        <source xml:lang="en">Extension is not compatible with Code {0}. Extension requires: {1}.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/dialogs/electron-main/dialogs" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="open">
@@ -1016,26 +1008,17 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/extensions/common/extensionValidator" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="versionSyntax">
-        <source xml:lang="en">Could not parse `engines.vscode` value {0}. Please use, for example: ^1.22.0, ^1.22.x, etc.</source>
-      </trans-unit>
-      <trans-unit id="versionSpecificity1">
-        <source xml:lang="en">Version specified in `engines.vscode` ({0}) is not specific enough. For vscode versions before 1.0.0, please define at a minimum the major and minor desired version. E.g. ^0.10.0, 0.10.x, 0.11.0, etc.</source>
-      </trans-unit>
-      <trans-unit id="versionSpecificity2">
-        <source xml:lang="en">Version specified in `engines.vscode` ({0}) is not specific enough. For vscode versions after 1.0.0, please define at a minimum the major desired version. E.g. ^1.10.0, 1.10.x, 1.x.x, 2.x.x, etc.</source>
-      </trans-unit>
-      <trans-unit id="versionMismatch">
-        <source xml:lang="en">Extension is not compatible with Code {0}. Extension requires: {1}.</source>
+      <trans-unit id="errorInvalidSettings_Duplicated13">
+        <source xml:lang="en">Unable to sync keybindings because the content in the file is not valid. Please open the file and correct it.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/userDataSync/common/snippetsSync" source-language="en" datatype="plaintext">
+  <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="unresolved conflicts">
-        <source xml:lang="en">Error while syncing {0}. Please resolve conflicts first.</source>
+      <trans-unit id="errorInvalidSettings_Duplicated14">
+        <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
       </trans-unit>
     </body>
   </file>
@@ -1049,6 +1032,13 @@
       </trans-unit>
       <trans-unit id="workspaceOpenedDetail">
         <source xml:lang="en">The workspace is already opened in another window. Please close that window first and then try again.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/snippetsSync" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="unresolved conflicts">
+        <source xml:lang="en">Error while syncing {0}. Please resolve conflicts first.</source>
       </trans-unit>
     </body>
   </file>
@@ -1159,6 +1149,12 @@
       <trans-unit id="workspaceDesc">
         <source xml:lang="en">{0} {1}</source>
       </trans-unit>
+      <trans-unit id="untitledWorkspace">
+        <source xml:lang="en">Untitled (Workspace)</source>
+      </trans-unit>
+      <trans-unit id="workspaceName">
+        <source xml:lang="en">{0} (Workspace)</source>
+      </trans-unit>
     </body>
   </file>
   <file original="src/vs/platform/extensionManagement/node/extensionsScanner" source-language="en" datatype="plaintext">
@@ -1247,17 +1243,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/userDataSync/common/abstractSynchronizer" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="incompatible_Duplicated10">
-        <source xml:lang="en">Cannot sync {0} as its local version {1} is not compatible with its remote version {2}</source>
-        <note>This is an error while syncing a resource that its local version is not compatible with its remote version.</note>
-      </trans-unit>
-      <trans-unit id="incompatible sync data">
-        <source xml:lang="en">Cannot parse sync data as it is not compatible with current version.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/quickinput/browser/commandsQuickAccess" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="commandPickAriaLabelWithKeybinding">
@@ -1271,6 +1256,17 @@
       </trans-unit>
       <trans-unit id="canNotRun">
         <source xml:lang="en">Command '{0}' resulted in an error ({1})</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/abstractSynchronizer" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="incompatible_Duplicated10">
+        <source xml:lang="en">Cannot sync {0} as its local version {1} is not compatible with its remote version {2}</source>
+        <note>This is an error while syncing a resource that its local version is not compatible with its remote version.</note>
+      </trans-unit>
+      <trans-unit id="incompatible sync data">
+        <source xml:lang="en">Cannot parse sync data as it is not compatible with current version.</source>
       </trans-unit>
     </body>
   </file>
