@@ -28,23 +28,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/caretOperations/caretOperations" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="caret.moveLeft">
-        <source xml:lang="en">Move Selected Text Left</source>
-      </trans-unit>
-      <trans-unit id="caret.moveRight">
-        <source xml:lang="en">Move Selected Text Right</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/caretOperations/transpose" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="transposeLetters.label">
-        <source xml:lang="en">Transpose Letters</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/comment/comment" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="comment.line">
@@ -66,6 +49,23 @@
       <trans-unit id="miToggleBlockComment">
         <source xml:lang="en">Toggle &amp;&amp;Block Comment</source>
         <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/caretOperations/caretOperations" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="caret.moveLeft">
+        <source xml:lang="en">Move Selected Text Left</source>
+      </trans-unit>
+      <trans-unit id="caret.moveRight">
+        <source xml:lang="en">Move Selected Text Right</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/caretOperations/transpose" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="transposeLetters.label">
+        <source xml:lang="en">Transpose Letters</source>
       </trans-unit>
     </body>
   </file>
@@ -113,6 +113,13 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/tokenization/tokenization" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="forceRetokenize">
+        <source xml:lang="en">Developer: Force Retokenize</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/unusualLineTerminators/unusualLineTerminators" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="unusualLineTerminators.title">
@@ -131,30 +138,6 @@ It is recommended to remove them from the file. This can be configured via `edit
       </trans-unit>
       <trans-unit id="unusualLineTerminators.ignore">
         <source xml:lang="en">Ignore problem for this file</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/tokenization/tokenization" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="forceRetokenize">
-        <source xml:lang="en">Developer: Force Retokenize</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/bracketMatching/bracketMatching" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="overviewRulerBracketMatchForeground">
-        <source xml:lang="en">Overview ruler marker color for matching brackets.</source>
-      </trans-unit>
-      <trans-unit id="smartSelect.jumpBracket">
-        <source xml:lang="en">Go to Bracket</source>
-      </trans-unit>
-      <trans-unit id="smartSelect.selectToBracket">
-        <source xml:lang="en">Select to Bracket</source>
-      </trans-unit>
-      <trans-unit id="miGoToBracket">
-        <source xml:lang="en">Go to &amp;&amp;Bracket</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
     </body>
   </file>
@@ -177,6 +160,23 @@ It is recommended to remove them from the file. This can be configured via `edit
       </trans-unit>
       <trans-unit id="cancelSelectionAnchor">
         <source xml:lang="en">Cancel Selection Anchor</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/bracketMatching/bracketMatching" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="overviewRulerBracketMatchForeground">
+        <source xml:lang="en">Overview ruler marker color for matching brackets.</source>
+      </trans-unit>
+      <trans-unit id="smartSelect.jumpBracket">
+        <source xml:lang="en">Go to Bracket</source>
+      </trans-unit>
+      <trans-unit id="smartSelect.selectToBracket">
+        <source xml:lang="en">Select to Bracket</source>
+      </trans-unit>
+      <trans-unit id="miGoToBracket">
+        <source xml:lang="en">Go to &amp;&amp;Bracket</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
       </trans-unit>
     </body>
   </file>
@@ -1119,6 +1119,13 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/message/messageController" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="editor.readonly">
+        <source xml:lang="en">Cannot edit in read-only editor</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/rename/renameInputField" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="renameAriaLabel">
@@ -1127,13 +1134,6 @@ This allows for users to show the definition preview hover without using the mou
       <trans-unit id="label_Duplicated3">
         <source xml:lang="en">{0} to Rename, {1} to Preview</source>
         <note>placeholders are keybindings, e.g "F2 to Rename, Shift+F2 to Preview"</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/message/messageController" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="editor.readonly">
-        <source xml:lang="en">Cannot edit in read-only editor</source>
       </trans-unit>
     </body>
   </file>
@@ -1256,16 +1256,6 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/gotoSymbol/symbolNavigation" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="location.kb">
-        <source xml:lang="en">Symbol {0} of {1}, {2} for next</source>
-      </trans-unit>
-      <trans-unit id="location">
-        <source xml:lang="en">Symbol {0} of {1}</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/gotoSymbol/referencesModel" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="aria.oneReference">
@@ -1288,6 +1278,16 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
       <trans-unit id="aria.result.nm">
         <source xml:lang="en">Found {0} symbols in {1} files</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/gotoSymbol/symbolNavigation" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="location.kb">
+        <source xml:lang="en">Symbol {0} of {1}, {2} for next</source>
+      </trans-unit>
+      <trans-unit id="location">
+        <source xml:lang="en">Symbol {0} of {1}</source>
       </trans-unit>
     </body>
   </file>
