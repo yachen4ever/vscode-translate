@@ -2,9 +2,15 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file original="src/vs/workbench/contrib/userDataSync/electron-browser/userDataSync.contribution" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="too many requests_Duplicated1">
+      <trans-unit id="operationId_Duplicated1">
+        <source xml:lang="en">Operation Id: {0}</source>
+      </trans-unit>
+      <trans-unit id="too many requests_Duplicated4">
         <source xml:lang="en">Preferences sync is disabled because the current device is making too many requests. Please report an issue by providing the sync logs.</source>
         <note>Preferences Sync is the name of the feature</note>
+      </trans-unit>
+      <trans-unit id="preferences sync_Duplicated6">
+        <source xml:lang="en">Preferences Sync. Operation Id: {0}</source>
       </trans-unit>
       <trans-unit id="show sync logs">
         <source xml:lang="en">Show Log</source>
@@ -15,14 +21,17 @@
       <trans-unit id="Open Backup folder">
         <source xml:lang="en">Open Local Backups Folder</source>
       </trans-unit>
-      <trans-unit id="sync preferences_Duplicated3">
+      <trans-unit id="sync preferences_Duplicated8">
         <source xml:lang="en">Preferences Sync</source>
       </trans-unit>
     </body>
   </file>
   <file original="src/vs/workbench/contrib/userDataSync/browser/userDataSync.contribution" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="too many requests_Duplicated2">
+      <trans-unit id="operationId_Duplicated2">
+        <source xml:lang="en">Operation Id: {0}</source>
+      </trans-unit>
+      <trans-unit id="too many requests_Duplicated5">
         <source xml:lang="en">Turned off syncing preferences on this device because it is making too many requests.</source>
       </trans-unit>
     </body>
@@ -59,6 +68,9 @@
       <trans-unit id="sync settings">
         <source xml:lang="en">Preferences Sync: Show Settings</source>
       </trans-unit>
+      <trans-unit id="show synced data">
+        <source xml:lang="en">Preferences Sync: Show Synced Data</source>
+      </trans-unit>
       <trans-unit id="conflicts detected">
         <source xml:lang="en">Unable to sync due to conflicts in {0}. Please resolve them to continue.</source>
       </trans-unit>
@@ -86,6 +98,18 @@
       <trans-unit id="error upgrade required">
         <source xml:lang="en">Preferences sync is disabled because the current version ({0}, {1}) is not compatible with the sync service. Please update before turning on sync.</source>
       </trans-unit>
+      <trans-unit id="operationId_Duplicated3">
+        <source xml:lang="en">Operation Id: {0}</source>
+      </trans-unit>
+      <trans-unit id="error reset required">
+        <source xml:lang="en">Preferences sync is disabled because your data in the cloud is older than that of in the client. Please reset your data in the cloud before turning on sync.</source>
+      </trans-unit>
+      <trans-unit id="reset_Duplicated10">
+        <source xml:lang="en">Reset Synced Data</source>
+      </trans-unit>
+      <trans-unit id="show synced data action">
+        <source xml:lang="en">Show Synced Data</source>
+      </trans-unit>
       <trans-unit id="open file">
         <source xml:lang="en">Open {0} File</source>
       </trans-unit>
@@ -107,19 +131,22 @@
       <trans-unit id="error upgrade required while starting sync">
         <source xml:lang="en">Preferences sync cannot be turned on because the current version ({0}, {1}) is not compatible with the sync service. Please update before turning on sync.</source>
       </trans-unit>
+      <trans-unit id="error reset required while starting sync">
+        <source xml:lang="en">Preferences sync cannot be turned on because your data in the cloud is older than that of in the client. Please reset your data in the cloud before turning on sync.</source>
+      </trans-unit>
       <trans-unit id="turn on failed">
         <source xml:lang="en">Error while starting Sync: {0}</source>
       </trans-unit>
       <trans-unit id="sync preview message">
         <source xml:lang="en">Synchronizing your preferences is a preview feature, please read the documentation before turning it on.</source>
       </trans-unit>
-      <trans-unit id="open doc">
-        <source xml:lang="en">Open Documentation</source>
-      </trans-unit>
       <trans-unit id="turn on">
         <source xml:lang="en">Turn On</source>
       </trans-unit>
-      <trans-unit id="cancel">
+      <trans-unit id="open doc">
+        <source xml:lang="en">Open Documentation</source>
+      </trans-unit>
+      <trans-unit id="cancel_Duplicated12">
         <source xml:lang="en">Cancel</source>
       </trans-unit>
       <trans-unit id="Preferences Sync Title">
@@ -144,7 +171,7 @@
       <trans-unit id="turn off sync detail">
         <source xml:lang="en">Your settings, keybindings, extensions and UI State will no longer be synced.</source>
       </trans-unit>
-      <trans-unit id="turn off_Duplicated5">
+      <trans-unit id="turn off_Duplicated14">
         <source xml:lang="en">Turn Off</source>
       </trans-unit>
       <trans-unit id="turn off sync everywhere">
@@ -183,13 +210,10 @@
       <trans-unit id="sync is on">
         <source xml:lang="en">Preferences Sync is On</source>
       </trans-unit>
-      <trans-unit id="show synced data">
-        <source xml:lang="en">Preferences Sync: Show Synced Data</source>
-      </trans-unit>
       <trans-unit id="workbench.action.showSyncRemoteBackup">
         <source xml:lang="en">Show Synced Data</source>
       </trans-unit>
-      <trans-unit id="sync preferences_Duplicated4">
+      <trans-unit id="sync preferences_Duplicated9">
         <source xml:lang="en">Preferences Sync</source>
       </trans-unit>
       <trans-unit id="turn off failed">
@@ -226,60 +250,8 @@
       <trans-unit id="workbench.actions.syncData.reset">
         <source xml:lang="en">Reset Synced Data</source>
       </trans-unit>
-      <trans-unit id="reset">
-        <source xml:lang="en">This will clear your synced data from the cloud and stop sync on all your devices.</source>
-      </trans-unit>
-      <trans-unit id="reset title">
-        <source xml:lang="en">Reset Synced Data</source>
-      </trans-unit>
-      <trans-unit id="reset button">
-        <source xml:lang="en">Reset</source>
-      </trans-unit>
       <trans-unit id="manual sync">
-        <source xml:lang="en">Sync Manually</source>
-      </trans-unit>
-      <trans-unit id="workbench.actions.sync.acceptLocalAll">
-        <source xml:lang="en">Accept Local</source>
-      </trans-unit>
-      <trans-unit id="workbench.actions.sync.acceptRemoteAll">
-        <source xml:lang="en">Accept Remote</source>
-      </trans-unit>
-      <trans-unit id="workbench.actions.sync.mergeAll">
-        <source xml:lang="en">Merge</source>
-      </trans-unit>
-      <trans-unit id="workbench.actions.sync.acceptLocal">
-        <source xml:lang="en">Accept Local</source>
-      </trans-unit>
-      <trans-unit id="workbench.actions.sync.acceptRemote">
-        <source xml:lang="en">Accept Remote</source>
-      </trans-unit>
-      <trans-unit id="workbench.actions.sync.merge">
-        <source xml:lang="en">Merge</source>
-      </trans-unit>
-      <trans-unit id="workbench.actions.sync.deleteLocal">
-        <source xml:lang="en">Delete</source>
-      </trans-unit>
-      <trans-unit id="workbench.actions.sync.addLocal">
-        <source xml:lang="en">Add</source>
-      </trans-unit>
-      <trans-unit id="workbench.actions.sync.showChanges">
-        <source xml:lang="en">Open Changes</source>
-        <note>This is an action title to show the changes between local and remote version of resources</note>
-      </trans-unit>
-      <trans-unit id="resourceLabel">
-        <source xml:lang="en">{0} (Remote)</source>
-        <note>remote as in file in cloud</note>
-      </trans-unit>
-      <trans-unit id="leftResourceName">
-        <source xml:lang="en">{0} (Remote)</source>
-        <note>remote as in file in cloud</note>
-      </trans-unit>
-      <trans-unit id="rightResourceName">
-        <source xml:lang="en">{0} (Local)</source>
-        <note>local as in file in disk</note>
-      </trans-unit>
-      <trans-unit id="sideBySideLabels">
-        <source xml:lang="en">{0} ↔ {1}</source>
+        <source xml:lang="en">Manual Sync</source>
       </trans-unit>
       <trans-unit id="synced machines">
         <source xml:lang="en">Synced Machines</source>
@@ -306,18 +278,15 @@
         <source xml:lang="en">Would you like to replace your current {0} with selected?</source>
         <note>A confirmation message to replace current user data (settings, extensions, keybindings, snippets) with selected version</note>
       </trans-unit>
-      <trans-unit id="preferences sync">
+      <trans-unit id="preferences sync_Duplicated7">
         <source xml:lang="en">Preferences Sync</source>
       </trans-unit>
       <trans-unit id="workbench.actions.sync.compareWithLocal">
         <source xml:lang="en">Open Changes</source>
         <note>This is an action title to show the changes between local and remote version of resources</note>
       </trans-unit>
-      <trans-unit id="changes">
-        <source xml:lang="en">Changes</source>
-      </trans-unit>
-      <trans-unit id="conflicts">
-        <source xml:lang="en">Conflicts</source>
+      <trans-unit id="reset_Duplicated11">
+        <source xml:lang="en">Reset Synced Data</source>
       </trans-unit>
       <trans-unit id="current">
         <source xml:lang="en">Current</source>
@@ -332,7 +301,7 @@
       <trans-unit id="turn off sync on machine">
         <source xml:lang="en">Are you sure you want to turn off sync on {0}?</source>
       </trans-unit>
-      <trans-unit id="turn off_Duplicated6">
+      <trans-unit id="turn off_Duplicated15">
         <source xml:lang="en">Turn off</source>
       </trans-unit>
       <trans-unit id="placeholder">
@@ -340,6 +309,49 @@
       </trans-unit>
       <trans-unit id="valid message">
         <source xml:lang="en">Machine name should be unique and not empty</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/userDataSync/browser/userDataManualSyncView" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="accept">
+        <source xml:lang="en">Sync</source>
+      </trans-unit>
+      <trans-unit id="cancel_Duplicated13">
+        <source xml:lang="en">Cancel</source>
+      </trans-unit>
+      <trans-unit id="workbench.actions.sync.acceptRemote">
+        <source xml:lang="en">Accept Remote</source>
+      </trans-unit>
+      <trans-unit id="workbench.actions.sync.acceptLocal">
+        <source xml:lang="en">Accept Local</source>
+      </trans-unit>
+      <trans-unit id="workbench.actions.sync.merge">
+        <source xml:lang="en">Merge</source>
+      </trans-unit>
+      <trans-unit id="workbench.actions.sync.discard">
+        <source xml:lang="en">Discard</source>
+      </trans-unit>
+      <trans-unit id="workbench.actions.sync.showChanges">
+        <source xml:lang="en">Open Changes</source>
+        <note>This is an action title to show the changes between local and remote version of resources</note>
+      </trans-unit>
+      <trans-unit id="preview">
+        <source xml:lang="en">{0} (Preview)</source>
+      </trans-unit>
+      <trans-unit id="leftResourceName">
+        <source xml:lang="en">{0} (Remote)</source>
+        <note>remote as in file in cloud</note>
+      </trans-unit>
+      <trans-unit id="rightResourceName">
+        <source xml:lang="en">{0} (Local)</source>
+        <note>local as in file in disk</note>
+      </trans-unit>
+      <trans-unit id="sideBySideLabels">
+        <source xml:lang="en">{0} ↔ {1}</source>
+      </trans-unit>
+      <trans-unit id="label">
+        <source xml:lang="en">UserDataSyncResources</source>
       </trans-unit>
     </body>
   </file>

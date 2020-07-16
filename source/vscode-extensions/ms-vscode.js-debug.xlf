@@ -133,6 +133,11 @@
       <trans-unit id="configuration.npmScriptLensLocation">
         <source xml:lang="en">Where a "Run" and "Debug" code lens should be shown in your npm scripts. It may be on "all", scripts, on "top" of the script section, or "never".</source>
       </trans-unit>
+      <trans-unit id="configuration.onlyAutoAttachExplicit">
+        <source xml:lang="en">If true (default), only processes started with --inspect will be debugged. If this setting is toggled to false, we will debug all processes started while Auto Attach is on.
+
+Note: you may need to toggle Auto Attach to "disabled" and then "on" again for changes in this setting to take effect.</source>
+      </trans-unit>
       <trans-unit id="configuration.pickAndAttachOptions">
         <source xml:lang="en">Default options used when debugging a process through the `Debug: Attach to Node.js Process` command</source>
       </trans-unit>
@@ -269,6 +274,9 @@ You can use the Node.js Debug Terminal to instantly debug JavaScript you run fro
       </trans-unit>
       <trans-unit id="node.attach.restart.description">
         <source xml:lang="en">Try to reconnect to the program if we lose connection. If set to `true`, we'll try once a second, forever. You can customize the interval and maximum number of attempts by specifying the `delay` and `maxAttempts` in an object instead.</source>
+      </trans-unit>
+      <trans-unit id="node.attachSimplePort.description">
+        <source xml:lang="en">If set, attaches to the process via the given port. This is generally no longer necessary for Node.js programs and loses the ability to debug child processes, but can be useful in more esoteric scenarios such as with Deno and Docker launches.</source>
       </trans-unit>
       <trans-unit id="node.console.title_Duplicated17">
         <source xml:lang="en">Node Debug Console</source>
@@ -744,6 +752,9 @@ You can use the Node.js Debug Terminal to instantly debug JavaScript you run fro
       </trans-unit>
       <trans-unit id="console.assert">
         <source xml:lang="en">Assertion failed</source>
+      </trans-unit>
+      <trans-unit id="warnings.handleSourceMapPause.didNotWait">
+        <source xml:lang="en">WARNING: Processing source-maps of {0} took longer than {1} ms so we continued execution without waiting for all the breakpoints for the script to be set.</source>
       </trans-unit>
     </body>
   </file>
