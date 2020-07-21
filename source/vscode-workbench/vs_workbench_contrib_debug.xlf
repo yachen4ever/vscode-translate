@@ -620,19 +620,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/debugStatus" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="status.debug">
-        <source xml:lang="en">Debug</source>
-      </trans-unit>
-      <trans-unit id="debugTarget">
-        <source xml:lang="en">Debug: {0}</source>
-      </trans-unit>
-      <trans-unit id="selectAndStartDebug">
-        <source xml:lang="en">Select and start debug configuration</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/browser/statusbarColorProvider" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="statusBarDebuggingBackground">
@@ -643,6 +630,19 @@
       </trans-unit>
       <trans-unit id="statusBarDebuggingBorder">
         <source xml:lang="en">Status bar border color separating to the sidebar and editor when a program is being debugged. The status bar is shown in the bottom of the window</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/debugStatus" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="status.debug">
+        <source xml:lang="en">Debug</source>
+      </trans-unit>
+      <trans-unit id="debugTarget">
+        <source xml:lang="en">Debug: {0}</source>
+      </trans-unit>
+      <trans-unit id="selectAndStartDebug">
+        <source xml:lang="en">Select and start debug configuration</source>
       </trans-unit>
     </body>
   </file>
@@ -686,6 +686,16 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/debug/common/replModel" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="consoleCleared">
+        <source xml:lang="en">Console was cleared</source>
+      </trans-unit>
+      <trans-unit id="snapshotObj">
+        <source xml:lang="en">Only primitive values are shown for this object.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/debug/browser/linkDetector" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="fileLinkMac">
@@ -715,16 +725,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/common/replModel" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="consoleCleared">
-        <source xml:lang="en">Console was cleared</source>
-      </trans-unit>
-      <trans-unit id="snapshotObj">
-        <source xml:lang="en">Only primitive values are shown for this object.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/browser/breakpointWidget" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="breakpointWidgetLogMessagePlaceholder">
@@ -747,6 +747,32 @@
       </trans-unit>
       <trans-unit id="breakpointType">
         <source xml:lang="en">Breakpoint Type</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/watchExpressionsView" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="editWatchExpression">
+        <source xml:lang="en">Edit Expression</source>
+      </trans-unit>
+      <trans-unit id="removeWatchExpression">
+        <source xml:lang="en">Remove Expression</source>
+      </trans-unit>
+      <trans-unit id="watchExpressionInputAriaLabel">
+        <source xml:lang="en">Type watch expression</source>
+      </trans-unit>
+      <trans-unit id="watchExpressionPlaceholder">
+        <source xml:lang="en">Expression to watch</source>
+      </trans-unit>
+      <trans-unit id="watchAriaTreeLabel">
+        <source xml:lang="en">Debug Watch Expressions</source>
+        <note>Debug is a noun in this context, not a verb.</note>
+      </trans-unit>
+      <trans-unit id="watchExpressionAriaLabel">
+        <source xml:lang="en">{0}, value {1}</source>
+      </trans-unit>
+      <trans-unit id="watchVariableAriaLabel">
+        <source xml:lang="en">{0}, value {1}</source>
       </trans-unit>
     </body>
   </file>
@@ -814,29 +840,26 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/watchExpressionsView" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/debug/browser/loadedScriptsView" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="editWatchExpression">
-        <source xml:lang="en">Edit Expression</source>
+      <trans-unit id="loadedScriptsSession">
+        <source xml:lang="en">Debug Session</source>
       </trans-unit>
-      <trans-unit id="removeWatchExpression">
-        <source xml:lang="en">Remove Expression</source>
-      </trans-unit>
-      <trans-unit id="watchExpressionInputAriaLabel">
-        <source xml:lang="en">Type watch expression</source>
-      </trans-unit>
-      <trans-unit id="watchExpressionPlaceholder">
-        <source xml:lang="en">Expression to watch</source>
-      </trans-unit>
-      <trans-unit id="watchAriaTreeLabel">
-        <source xml:lang="en">Debug Watch Expressions</source>
+      <trans-unit id="loadedScriptsAriaLabel">
+        <source xml:lang="en">Debug Loaded Scripts</source>
         <note>Debug is a noun in this context, not a verb.</note>
       </trans-unit>
-      <trans-unit id="watchExpressionAriaLabel">
-        <source xml:lang="en">{0}, value {1}</source>
+      <trans-unit id="loadedScriptsRootFolderAriaLabel">
+        <source xml:lang="en">Workspace folder {0}, loaded script, debug</source>
       </trans-unit>
-      <trans-unit id="watchVariableAriaLabel">
-        <source xml:lang="en">{0}, value {1}</source>
+      <trans-unit id="loadedScriptsSessionAriaLabel">
+        <source xml:lang="en">Session {0}, loaded script, debug</source>
+      </trans-unit>
+      <trans-unit id="loadedScriptsFolderAriaLabel">
+        <source xml:lang="en">Folder {0}, loaded script, debug</source>
+      </trans-unit>
+      <trans-unit id="loadedScriptsSourceAriaLabel">
+        <source xml:lang="en">{0}, loaded script, debug</source>
       </trans-unit>
     </body>
   </file>
@@ -883,29 +906,6 @@
       </trans-unit>
       <trans-unit id="addInlineBreakpoint">
         <source xml:lang="en">Add Inline Breakpoint</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/loadedScriptsView" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="loadedScriptsSession">
-        <source xml:lang="en">Debug Session</source>
-      </trans-unit>
-      <trans-unit id="loadedScriptsAriaLabel">
-        <source xml:lang="en">Debug Loaded Scripts</source>
-        <note>Debug is a noun in this context, not a verb.</note>
-      </trans-unit>
-      <trans-unit id="loadedScriptsRootFolderAriaLabel">
-        <source xml:lang="en">Workspace folder {0}, loaded script, debug</source>
-      </trans-unit>
-      <trans-unit id="loadedScriptsSessionAriaLabel">
-        <source xml:lang="en">Session {0}, loaded script, debug</source>
-      </trans-unit>
-      <trans-unit id="loadedScriptsFolderAriaLabel">
-        <source xml:lang="en">Folder {0}, loaded script, debug</source>
-      </trans-unit>
-      <trans-unit id="loadedScriptsSourceAriaLabel">
-        <source xml:lang="en">{0}, loaded script, debug</source>
       </trans-unit>
     </body>
   </file>

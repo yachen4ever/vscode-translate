@@ -771,16 +771,6 @@ This option requires restart to take effect.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/sidebar/sidebarPart" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="focusSideBar">
-        <source xml:lang="en">Focus into Side Bar</source>
-      </trans-unit>
-      <trans-unit id="view_Duplicated7">
-        <source xml:lang="en">View</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/api/common/configurationExtensionPoint" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="vscode.extension.contributes.configuration.title">
@@ -878,6 +868,16 @@ This option requires restart to take effect.</source>
       </trans-unit>
       <trans-unit id="unknownWorkspaceProperty">
         <source xml:lang="en">Unknown workspace configuration property</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/sidebar/sidebarPart" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="focusSideBar">
+        <source xml:lang="en">Focus into Side Bar</source>
+      </trans-unit>
+      <trans-unit id="view_Duplicated7">
+        <source xml:lang="en">View</source>
       </trans-unit>
     </body>
   </file>
@@ -1309,7 +1309,7 @@ This option requires restart to take effect.</source>
         <source xml:lang="en">The default size.</source>
       </trans-unit>
       <trans-unit id="workbench.editor.titleScrollbarSizing.large">
-        <source xml:lang="en">Increases the size, so it can be grabed more easily with the mouse</source>
+        <source xml:lang="en">Increases the size, so it can be grabbed more easily with the mouse</source>
       </trans-unit>
       <trans-unit id="tabScrollbarHeight">
         <source xml:lang="en">Controls the height of the scrollbars used for tabs and breadcrumbs in the editor title area.</source>
@@ -1967,13 +1967,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/browser/mainThreadEditors" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="diffLeftRightLabel">
-        <source xml:lang="en">{0} ⟷ {1}</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/api/browser/mainThreadExtensionService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="reload window">
@@ -1996,6 +1989,13 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
       <trans-unit id="unknownDep">
         <source xml:lang="en">Cannot activate the '{0}' extension because it depends on an unknown '{1}' extension .</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/browser/mainThreadEditors" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="diffLeftRightLabel">
+        <source xml:lang="en">{0} ⟷ {1}</source>
       </trans-unit>
     </body>
   </file>
@@ -2182,14 +2182,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="errorMessage">
         <source xml:lang="en">An error occurred while loading view: {0}</source>
       </trans-unit>
-      <trans-unit id="defaultEditLabel_Duplicated53">
-        <source xml:lang="en">Edit</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/api/browser/mainThreadNotebook" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="defaultEditLabel_Duplicated54">
+      <trans-unit id="defaultEditLabel">
         <source xml:lang="en">Edit</source>
       </trans-unit>
     </body>
@@ -2255,31 +2248,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
       <trans-unit id="notificationsList">
         <source xml:lang="en">Notifications List</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/notifications/notificationsActions" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="clearNotification">
-        <source xml:lang="en">Clear Notification</source>
-      </trans-unit>
-      <trans-unit id="clearNotifications">
-        <source xml:lang="en">Clear All Notifications</source>
-      </trans-unit>
-      <trans-unit id="hideNotificationsCenter">
-        <source xml:lang="en">Hide Notifications</source>
-      </trans-unit>
-      <trans-unit id="expandNotification">
-        <source xml:lang="en">Expand Notification</source>
-      </trans-unit>
-      <trans-unit id="collapseNotification">
-        <source xml:lang="en">Collapse Notification</source>
-      </trans-unit>
-      <trans-unit id="configureNotification">
-        <source xml:lang="en">Configure Notification</source>
-      </trans-unit>
-      <trans-unit id="copyNotification">
-        <source xml:lang="en">Copy Text</source>
       </trans-unit>
     </body>
   </file>
@@ -2353,22 +2321,28 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/activitybar/activitybarActions" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/browser/parts/notifications/notificationsActions" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="manageTrustedExtensions_Duplicated50">
-        <source xml:lang="en">Manage Trusted Extensions</source>
+      <trans-unit id="clearNotification">
+        <source xml:lang="en">Clear Notification</source>
       </trans-unit>
-      <trans-unit id="signOut">
-        <source xml:lang="en">Sign Out</source>
+      <trans-unit id="clearNotifications">
+        <source xml:lang="en">Clear All Notifications</source>
       </trans-unit>
-      <trans-unit id="previousSideBarView">
-        <source xml:lang="en">Previous Side Bar View</source>
+      <trans-unit id="hideNotificationsCenter">
+        <source xml:lang="en">Hide Notifications</source>
       </trans-unit>
-      <trans-unit id="nextSideBarView">
-        <source xml:lang="en">Next Side Bar View</source>
+      <trans-unit id="expandNotification">
+        <source xml:lang="en">Expand Notification</source>
       </trans-unit>
-      <trans-unit id="view_Duplicated12">
-        <source xml:lang="en">View</source>
+      <trans-unit id="collapseNotification">
+        <source xml:lang="en">Collapse Notification</source>
+      </trans-unit>
+      <trans-unit id="configureNotification">
+        <source xml:lang="en">Configure Notification</source>
+      </trans-unit>
+      <trans-unit id="copyNotification">
+        <source xml:lang="en">Copy Text</source>
       </trans-unit>
     </body>
   </file>
@@ -2403,6 +2377,25 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/browser/parts/activitybar/activitybarActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="manageTrustedExtensions_Duplicated50">
+        <source xml:lang="en">Manage Trusted Extensions</source>
+      </trans-unit>
+      <trans-unit id="signOut">
+        <source xml:lang="en">Sign Out</source>
+      </trans-unit>
+      <trans-unit id="previousSideBarView">
+        <source xml:lang="en">Previous Side Bar View</source>
+      </trans-unit>
+      <trans-unit id="nextSideBarView">
+        <source xml:lang="en">Next Side Bar View</source>
+      </trans-unit>
+      <trans-unit id="view_Duplicated12">
+        <source xml:lang="en">View</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/browser/parts/editor/binaryEditor" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="binaryEditor">
@@ -2433,7 +2426,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
 	* 'by': String value providing the unit for move (by tab or by group).
 	* 'value': Number value providing how many positions or an absolute position to move.</source>
       </trans-unit>
-      <trans-unit id="toggleInlineView_Duplicated55">
+      <trans-unit id="toggleInlineView_Duplicated53">
         <source xml:lang="en">Toggle Inline View</source>
       </trans-unit>
       <trans-unit id="compare">
@@ -2441,17 +2434,17 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/common/extHostProgress" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="extensionSource_Duplicated33">
-        <source xml:lang="en">{0} (Extension)</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/api/common/extHostStatusBar" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="status.extensionMessage">
         <source xml:lang="en">Extension Status</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/common/extHostProgress" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="extensionSource_Duplicated33">
+        <source xml:lang="en">{0} (Extension)</source>
       </trans-unit>
     </body>
   </file>
@@ -2527,7 +2520,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="textEditor_Duplicated52">
         <source xml:lang="en">Text Editor</source>
       </trans-unit>
-      <trans-unit id="textDiffEditor_Duplicated57">
+      <trans-unit id="textDiffEditor_Duplicated55">
         <source xml:lang="en">Text Diff Editor</source>
       </trans-unit>
       <trans-unit id="binaryDiffEditor">
@@ -2590,7 +2583,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="unpin">
         <source xml:lang="en">Unpin</source>
       </trans-unit>
-      <trans-unit id="toggleInlineView_Duplicated56">
+      <trans-unit id="toggleInlineView_Duplicated54">
         <source xml:lang="en">Toggle Inline View</source>
       </trans-unit>
       <trans-unit id="showOpenedEditors">
@@ -2793,6 +2786,13 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/browser/parts/editor/textDiffEditor" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="textDiffEditor_Duplicated56">
+        <source xml:lang="en">Text Diff Editor</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/browser/parts/editor/editorQuickAccess" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="noViewResults">
@@ -2807,15 +2807,8 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="entryAriaLabelDirty">
         <source xml:lang="en">{0}, dirty</source>
       </trans-unit>
-      <trans-unit id="closeEditor_Duplicated59">
+      <trans-unit id="closeEditor_Duplicated57">
         <source xml:lang="en">Close Editor</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/editor/textDiffEditor" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="textDiffEditor_Duplicated58">
-        <source xml:lang="en">Text Diff Editor</source>
       </trans-unit>
     </body>
   </file>
@@ -2913,7 +2906,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="focusBelowGroup">
         <source xml:lang="en">Focus Below Editor Group</source>
       </trans-unit>
-      <trans-unit id="closeEditor_Duplicated60">
+      <trans-unit id="closeEditor_Duplicated58">
         <source xml:lang="en">Close Editor</source>
       </trans-unit>
       <trans-unit id="closeOneEditor">
