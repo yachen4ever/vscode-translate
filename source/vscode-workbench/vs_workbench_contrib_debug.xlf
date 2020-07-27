@@ -7,16 +7,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/callStackEditorContribution" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="topStackFrameLineHighlight">
-        <source xml:lang="en">Background color for the highlight of line at the top stack frame position.</source>
-      </trans-unit>
-      <trans-unit id="focusedStackFrameLineHighlight">
-        <source xml:lang="en">Background color for the highlight of line at focused stack frame position.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/browser/debugViewlet" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="startAdditionalSession">
@@ -24,6 +14,16 @@
       </trans-unit>
       <trans-unit id="toggleDebugPanel">
         <source xml:lang="en">Debug Console</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/callStackEditorContribution" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="topStackFrameLineHighlight">
+        <source xml:lang="en">Background color for the highlight of line at the top stack frame position.</source>
+      </trans-unit>
+      <trans-unit id="focusedStackFrameLineHighlight">
+        <source xml:lang="en">Background color for the highlight of line at focused stack frame position.</source>
       </trans-unit>
     </body>
   </file>
@@ -620,19 +620,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/statusbarColorProvider" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="statusBarDebuggingBackground">
-        <source xml:lang="en">Status bar background color when a program is being debugged. The status bar is shown in the bottom of the window</source>
-      </trans-unit>
-      <trans-unit id="statusBarDebuggingForeground">
-        <source xml:lang="en">Status bar foreground color when a program is being debugged. The status bar is shown in the bottom of the window</source>
-      </trans-unit>
-      <trans-unit id="statusBarDebuggingBorder">
-        <source xml:lang="en">Status bar border color separating to the sidebar and editor when a program is being debugged. The status bar is shown in the bottom of the window</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/browser/debugStatus" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="status.debug">
@@ -643,6 +630,19 @@
       </trans-unit>
       <trans-unit id="selectAndStartDebug">
         <source xml:lang="en">Select and start debug configuration</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/statusbarColorProvider" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="statusBarDebuggingBackground">
+        <source xml:lang="en">Status bar background color when a program is being debugged. The status bar is shown in the bottom of the window</source>
+      </trans-unit>
+      <trans-unit id="statusBarDebuggingForeground">
+        <source xml:lang="en">Status bar foreground color when a program is being debugged. The status bar is shown in the bottom of the window</source>
+      </trans-unit>
+      <trans-unit id="statusBarDebuggingBorder">
+        <source xml:lang="en">Status bar border color separating to the sidebar and editor when a program is being debugged. The status bar is shown in the bottom of the window</source>
       </trans-unit>
     </body>
   </file>
@@ -686,16 +686,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/common/replModel" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="consoleCleared">
-        <source xml:lang="en">Console was cleared</source>
-      </trans-unit>
-      <trans-unit id="snapshotObj">
-        <source xml:lang="en">Only primitive values are shown for this object.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/browser/linkDetector" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="fileLinkMac">
@@ -703,6 +693,16 @@
       </trans-unit>
       <trans-unit id="fileLink">
         <source xml:lang="en">Ctrl + click to follow link</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/common/replModel" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="consoleCleared">
+        <source xml:lang="en">Console was cleared</source>
+      </trans-unit>
+      <trans-unit id="snapshotObj">
+        <source xml:lang="en">Only primitive values are shown for this object.</source>
       </trans-unit>
     </body>
   </file>
@@ -986,6 +986,52 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/debug/browser/callStackView" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="debugStopped">
+        <source xml:lang="en">Paused on {0}</source>
+      </trans-unit>
+      <trans-unit id="showMoreStackFrames2">
+        <source xml:lang="en">Show More Stack Frames</source>
+      </trans-unit>
+      <trans-unit id="session">
+        <source xml:lang="en">Session</source>
+        <note>Session is a noun</note>
+      </trans-unit>
+      <trans-unit id="running_Duplicated45">
+        <source xml:lang="en">Running</source>
+        <note>indicates state</note>
+      </trans-unit>
+      <trans-unit id="thread">
+        <source xml:lang="en">Thread</source>
+      </trans-unit>
+      <trans-unit id="restartFrame_Duplicated32">
+        <source xml:lang="en">Restart Frame</source>
+      </trans-unit>
+      <trans-unit id="loadMoreStackFrames">
+        <source xml:lang="en">Load More Stack Frames</source>
+      </trans-unit>
+      <trans-unit id="showMoreAndOrigin">
+        <source xml:lang="en">Show {0} More: {1}</source>
+      </trans-unit>
+      <trans-unit id="showMoreStackFrames">
+        <source xml:lang="en">Show {0} More Stack Frames</source>
+      </trans-unit>
+      <trans-unit id="callStackAriaLabel">
+        <source xml:lang="en">Debug Call Stack</source>
+        <note>Debug is a noun in this context, not a verb.</note>
+      </trans-unit>
+      <trans-unit id="threadAriaLabel">
+        <source xml:lang="en">Thread {0}, callstack, debug</source>
+      </trans-unit>
+      <trans-unit id="stackFrameAriaLabel">
+        <source xml:lang="en">Stack Frame {0}, line {1}, {2}, callstack, debug</source>
+      </trans-unit>
+      <trans-unit id="sessionLabel">
+        <source xml:lang="en">Debug Session {0}</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/debug/browser/debugService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="1activeSession">
@@ -1046,52 +1092,6 @@
       </trans-unit>
       <trans-unit id="breakpointRemoved">
         <source xml:lang="en">Removed breakpoint, line {0}, file {1}</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/callStackView" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="debugStopped">
-        <source xml:lang="en">Paused on {0}</source>
-      </trans-unit>
-      <trans-unit id="showMoreStackFrames2">
-        <source xml:lang="en">Show More Stack Frames</source>
-      </trans-unit>
-      <trans-unit id="session">
-        <source xml:lang="en">Session</source>
-        <note>Session is a noun</note>
-      </trans-unit>
-      <trans-unit id="running_Duplicated45">
-        <source xml:lang="en">Running</source>
-        <note>indicates state</note>
-      </trans-unit>
-      <trans-unit id="thread">
-        <source xml:lang="en">Thread</source>
-      </trans-unit>
-      <trans-unit id="restartFrame_Duplicated32">
-        <source xml:lang="en">Restart Frame</source>
-      </trans-unit>
-      <trans-unit id="loadMoreStackFrames">
-        <source xml:lang="en">Load More Stack Frames</source>
-      </trans-unit>
-      <trans-unit id="showMoreAndOrigin">
-        <source xml:lang="en">Show {0} More: {1}</source>
-      </trans-unit>
-      <trans-unit id="showMoreStackFrames">
-        <source xml:lang="en">Show {0} More Stack Frames</source>
-      </trans-unit>
-      <trans-unit id="callStackAriaLabel">
-        <source xml:lang="en">Debug Call Stack</source>
-        <note>Debug is a noun in this context, not a verb.</note>
-      </trans-unit>
-      <trans-unit id="threadAriaLabel">
-        <source xml:lang="en">Thread {0}, callstack, debug</source>
-      </trans-unit>
-      <trans-unit id="stackFrameAriaLabel">
-        <source xml:lang="en">Stack Frame {0}, line {1}, {2}, callstack, debug</source>
-      </trans-unit>
-      <trans-unit id="sessionLabel">
-        <source xml:lang="en">Debug Session {0}</source>
       </trans-unit>
     </body>
   </file>

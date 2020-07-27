@@ -166,6 +166,12 @@ This option requires restart to take effect.</source>
       <trans-unit id="argv.forceColorProfile">
         <source xml:lang="en">Allows to override the color profile to use. If you experience colors appear badly, try to set this to `srgb` and restart.</source>
       </trans-unit>
+      <trans-unit id="argv.enableCrashReporter">
+        <source xml:lang="en">Allows to disable crash reporting, should restart the app if the value is changed.</source>
+      </trans-unit>
+      <trans-unit id="argv.crashReporterId">
+        <source xml:lang="en">Unique id used for correlating crash reports sent from this app instance.</source>
+      </trans-unit>
       <trans-unit id="argv.enebleProposedApi">
         <source xml:lang="en">Enable proposed APIs for a list of extension ids (such as `vscode.git`). Proposed APIs are unstable and subject to breaking without warning at any time. This should only be set for extension development and testing purposes.</source>
       </trans-unit>
@@ -575,9 +581,152 @@ This option requires restart to take effect.</source>
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/electron-browser/window" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="runningAsRoot">
+        <source xml:lang="en">It is not recommended to run {0} as root user.</source>
+      </trans-unit>
+      <trans-unit id="mPreferences">
+        <source xml:lang="en">Preferences</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/actions/developerActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="developer_Duplicated3">
+        <source xml:lang="en">Developer</source>
+        <note>A developer on Code itself or someone diagnosing issues in Code</note>
+      </trans-unit>
+      <trans-unit id="inspect context keys">
+        <source xml:lang="en">Inspect Context Keys</source>
+      </trans-unit>
+      <trans-unit id="toggle screencast mode">
+        <source xml:lang="en">Toggle Screencast Mode</source>
+      </trans-unit>
+      <trans-unit id="logStorage">
+        <source xml:lang="en">Log Storage Database Contents</source>
+        <note>A developer only action to log the contents of the storage for the current window.</note>
+      </trans-unit>
+      <trans-unit id="logWorkingCopies">
+        <source xml:lang="en">Log Working Copies</source>
+        <note>A developer only action to log the working copies that exist.</note>
+      </trans-unit>
+      <trans-unit id="screencastModeConfigurationTitle">
+        <source xml:lang="en">Screencast Mode</source>
+      </trans-unit>
+      <trans-unit id="screencastMode.location.verticalPosition">
+        <source xml:lang="en">Controls the vertical offset of the screencast mode overlay from the bottom as a percentage of the workbench height.</source>
+      </trans-unit>
+      <trans-unit id="screencastMode.fontSize">
+        <source xml:lang="en">Controls the font size (in pixels) of the screencast mode keyboard.</source>
+      </trans-unit>
+      <trans-unit id="screencastMode.onlyKeyboardShortcuts">
+        <source xml:lang="en">Only show keyboard shortcuts in Screencast Mode.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/actions/navigationActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="navigateLeft">
+        <source xml:lang="en">Navigate to the View on the Left</source>
+      </trans-unit>
+      <trans-unit id="navigateRight">
+        <source xml:lang="en">Navigate to the View on the Right</source>
+      </trans-unit>
+      <trans-unit id="navigateUp">
+        <source xml:lang="en">Navigate to the View Above</source>
+      </trans-unit>
+      <trans-unit id="navigateDown">
+        <source xml:lang="en">Navigate to the View Below</source>
+      </trans-unit>
+      <trans-unit id="focusNextPart">
+        <source xml:lang="en">Focus Next Part</source>
+      </trans-unit>
+      <trans-unit id="focusPreviousPart">
+        <source xml:lang="en">Focus Previous Part</source>
+      </trans-unit>
+      <trans-unit id="goHome">
+        <source xml:lang="en">Go Home</source>
+      </trans-unit>
+      <trans-unit id="view_Duplicated6">
+        <source xml:lang="en">View</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/actions/quickAccessActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="quickOpen">
+        <source xml:lang="en">Go to File...</source>
+      </trans-unit>
+      <trans-unit id="quickNavigateNext">
+        <source xml:lang="en">Navigate Next in Quick Open</source>
+      </trans-unit>
+      <trans-unit id="quickNavigatePrevious">
+        <source xml:lang="en">Navigate Previous in Quick Open</source>
+      </trans-unit>
+      <trans-unit id="quickSelectNext">
+        <source xml:lang="en">Select Next in Quick Open</source>
+      </trans-unit>
+      <trans-unit id="quickSelectPrevious">
+        <source xml:lang="en">Select Previous in Quick Open</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/actions/workspaceActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="openFile">
+        <source xml:lang="en">Open File...</source>
+      </trans-unit>
+      <trans-unit id="openFolder">
+        <source xml:lang="en">Open Folder...</source>
+      </trans-unit>
+      <trans-unit id="openFileFolder">
+        <source xml:lang="en">Open...</source>
+      </trans-unit>
+      <trans-unit id="openWorkspaceAction">
+        <source xml:lang="en">Open Workspace...</source>
+      </trans-unit>
+      <trans-unit id="closeWorkspace">
+        <source xml:lang="en">Close Workspace</source>
+      </trans-unit>
+      <trans-unit id="noWorkspaceOpened">
+        <source xml:lang="en">There is currently no workspace opened in this instance to close.</source>
+      </trans-unit>
+      <trans-unit id="openWorkspaceConfigFile">
+        <source xml:lang="en">Open Workspace Configuration File</source>
+      </trans-unit>
+      <trans-unit id="globalRemoveFolderFromWorkspace">
+        <source xml:lang="en">Remove Folder from Workspace...</source>
+      </trans-unit>
+      <trans-unit id="saveWorkspaceAsAction">
+        <source xml:lang="en">Save Workspace As...</source>
+      </trans-unit>
+      <trans-unit id="duplicateWorkspaceInNewWindow">
+        <source xml:lang="en">Duplicate Workspace in New Window</source>
+      </trans-unit>
+      <trans-unit id="workspaces_Duplicated18">
+        <source xml:lang="en">Workspaces</source>
+      </trans-unit>
+      <trans-unit id="miAddFolderToWorkspace">
+        <source xml:lang="en">A&amp;&amp;dd Folder to Workspace...</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miSaveWorkspaceAs">
+        <source xml:lang="en">Save Workspace As...</source>
+      </trans-unit>
+      <trans-unit id="miCloseFolder">
+        <source xml:lang="en">Close &amp;&amp;Folder</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miCloseWorkspace">
+        <source xml:lang="en">Close &amp;&amp;Workspace</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/browser/actions/helpActions" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="help_Duplicated18">
+      <trans-unit id="help_Duplicated20">
         <source xml:lang="en">Help</source>
       </trans-unit>
       <trans-unit id="keybindingsReference">
@@ -641,133 +790,13 @@ This option requires restart to take effect.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/actions/developerActions" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/browser/parts/sidebar/sidebarPart" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="developer_Duplicated3">
-        <source xml:lang="en">Developer</source>
-        <note>A developer on Code itself or someone diagnosing issues in Code</note>
+      <trans-unit id="focusSideBar">
+        <source xml:lang="en">Focus into Side Bar</source>
       </trans-unit>
-      <trans-unit id="inspect context keys">
-        <source xml:lang="en">Inspect Context Keys</source>
-      </trans-unit>
-      <trans-unit id="toggle screencast mode">
-        <source xml:lang="en">Toggle Screencast Mode</source>
-      </trans-unit>
-      <trans-unit id="logStorage">
-        <source xml:lang="en">Log Storage Database Contents</source>
-        <note>A developer only action to log the contents of the storage for the current window.</note>
-      </trans-unit>
-      <trans-unit id="logWorkingCopies">
-        <source xml:lang="en">Log Working Copies</source>
-        <note>A developer only action to log the working copies that exist.</note>
-      </trans-unit>
-      <trans-unit id="screencastModeConfigurationTitle">
-        <source xml:lang="en">Screencast Mode</source>
-      </trans-unit>
-      <trans-unit id="screencastMode.location.verticalPosition">
-        <source xml:lang="en">Controls the vertical offset of the screencast mode overlay from the bottom as a percentage of the workbench height.</source>
-      </trans-unit>
-      <trans-unit id="screencastMode.fontSize">
-        <source xml:lang="en">Controls the font size (in pixels) of the screencast mode keyboard.</source>
-      </trans-unit>
-      <trans-unit id="screencastMode.onlyKeyboardShortcuts">
-        <source xml:lang="en">Only show keyboard shortcuts in Screencast Mode.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/actions/navigationActions" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="navigateLeft">
-        <source xml:lang="en">Navigate to the View on the Left</source>
-      </trans-unit>
-      <trans-unit id="navigateRight">
-        <source xml:lang="en">Navigate to the View on the Right</source>
-      </trans-unit>
-      <trans-unit id="navigateUp">
-        <source xml:lang="en">Navigate to the View Above</source>
-      </trans-unit>
-      <trans-unit id="navigateDown">
-        <source xml:lang="en">Navigate to the View Below</source>
-      </trans-unit>
-      <trans-unit id="focusNextPart">
-        <source xml:lang="en">Focus Next Part</source>
-      </trans-unit>
-      <trans-unit id="focusPreviousPart">
-        <source xml:lang="en">Focus Previous Part</source>
-      </trans-unit>
-      <trans-unit id="view_Duplicated6">
+      <trans-unit id="view_Duplicated7">
         <source xml:lang="en">View</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/actions/workspaceActions" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="openFile">
-        <source xml:lang="en">Open File...</source>
-      </trans-unit>
-      <trans-unit id="openFolder">
-        <source xml:lang="en">Open Folder...</source>
-      </trans-unit>
-      <trans-unit id="openFileFolder">
-        <source xml:lang="en">Open...</source>
-      </trans-unit>
-      <trans-unit id="openWorkspaceAction">
-        <source xml:lang="en">Open Workspace...</source>
-      </trans-unit>
-      <trans-unit id="closeWorkspace">
-        <source xml:lang="en">Close Workspace</source>
-      </trans-unit>
-      <trans-unit id="noWorkspaceOpened">
-        <source xml:lang="en">There is currently no workspace opened in this instance to close.</source>
-      </trans-unit>
-      <trans-unit id="openWorkspaceConfigFile">
-        <source xml:lang="en">Open Workspace Configuration File</source>
-      </trans-unit>
-      <trans-unit id="globalRemoveFolderFromWorkspace">
-        <source xml:lang="en">Remove Folder from Workspace...</source>
-      </trans-unit>
-      <trans-unit id="saveWorkspaceAsAction">
-        <source xml:lang="en">Save Workspace As...</source>
-      </trans-unit>
-      <trans-unit id="duplicateWorkspaceInNewWindow">
-        <source xml:lang="en">Duplicate Workspace in New Window</source>
-      </trans-unit>
-      <trans-unit id="workspaces_Duplicated20">
-        <source xml:lang="en">Workspaces</source>
-      </trans-unit>
-      <trans-unit id="miAddFolderToWorkspace">
-        <source xml:lang="en">A&amp;&amp;dd Folder to Workspace...</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miSaveWorkspaceAs">
-        <source xml:lang="en">Save Workspace As...</source>
-      </trans-unit>
-      <trans-unit id="miCloseFolder">
-        <source xml:lang="en">Close &amp;&amp;Folder</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miCloseWorkspace">
-        <source xml:lang="en">Close &amp;&amp;Workspace</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/actions/quickAccessActions" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="quickOpen">
-        <source xml:lang="en">Go to File...</source>
-      </trans-unit>
-      <trans-unit id="quickNavigateNext">
-        <source xml:lang="en">Navigate Next in Quick Open</source>
-      </trans-unit>
-      <trans-unit id="quickNavigatePrevious">
-        <source xml:lang="en">Navigate Previous in Quick Open</source>
-      </trans-unit>
-      <trans-unit id="quickSelectNext">
-        <source xml:lang="en">Select Next in Quick Open</source>
-      </trans-unit>
-      <trans-unit id="quickSelectPrevious">
-        <source xml:lang="en">Select Previous in Quick Open</source>
       </trans-unit>
     </body>
   </file>
@@ -871,16 +900,6 @@ This option requires restart to take effect.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/sidebar/sidebarPart" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="focusSideBar">
-        <source xml:lang="en">Focus into Side Bar</source>
-      </trans-unit>
-      <trans-unit id="view_Duplicated7">
-        <source xml:lang="en">View</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/electron-sandbox/actions/developerActions" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="toggleDevTools">
@@ -906,7 +925,7 @@ This option requires restart to take effect.</source>
       <trans-unit id="dirtyRecentlyOpened">
         <source xml:lang="en">Workspace With Dirty Files</source>
       </trans-unit>
-      <trans-unit id="workspaces_Duplicated21">
+      <trans-unit id="workspaces_Duplicated19">
         <source xml:lang="en">workspaces</source>
       </trans-unit>
       <trans-unit id="files">
@@ -958,7 +977,7 @@ This option requires restart to take effect.</source>
         <source xml:lang="en">Developer</source>
         <note>A developer on Code itself or someone diagnosing issues in Code</note>
       </trans-unit>
-      <trans-unit id="help_Duplicated19">
+      <trans-unit id="help_Duplicated21">
         <source xml:lang="en">Help</source>
       </trans-unit>
       <trans-unit id="miNewWindow">
@@ -980,163 +999,6 @@ This option requires restart to take effect.</source>
       <trans-unit id="miAbout">
         <source xml:lang="en">&amp;&amp;About</source>
         <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/api/common/menusExtensionPoint" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="requirearray_Duplicated24">
-        <source xml:lang="en">menu items must be an array</source>
-      </trans-unit>
-      <trans-unit id="requirestring_Duplicated26">
-        <source xml:lang="en">property `{0}` is mandatory and must be of type `string`</source>
-      </trans-unit>
-      <trans-unit id="optstring_Duplicated28">
-        <source xml:lang="en">property `{0}` can be omitted or must be of type `string`</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.menuItem.command">
-        <source xml:lang="en">Identifier of the command to execute. The command must be declared in the 'commands'-section</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.menuItem.alt">
-        <source xml:lang="en">Identifier of an alternative command to execute. The command must be declared in the 'commands'-section</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.menuItem.when">
-        <source xml:lang="en">Condition which must be true to show this item</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.menuItem.group">
-        <source xml:lang="en">Group into which this command belongs</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.menus">
-        <source xml:lang="en">Contributes menu items to the editor</source>
-      </trans-unit>
-      <trans-unit id="menus.commandPalette">
-        <source xml:lang="en">The Command Palette</source>
-      </trans-unit>
-      <trans-unit id="menus.touchBar">
-        <source xml:lang="en">The touch bar (macOS only)</source>
-      </trans-unit>
-      <trans-unit id="menus.editorTitle">
-        <source xml:lang="en">The editor title menu</source>
-      </trans-unit>
-      <trans-unit id="menus.editorContext">
-        <source xml:lang="en">The editor context menu</source>
-      </trans-unit>
-      <trans-unit id="menus.explorerContext">
-        <source xml:lang="en">The file explorer context menu</source>
-      </trans-unit>
-      <trans-unit id="menus.editorTabContext">
-        <source xml:lang="en">The editor tabs context menu</source>
-      </trans-unit>
-      <trans-unit id="menus.debugCallstackContext">
-        <source xml:lang="en">The debug callstack context menu</source>
-      </trans-unit>
-      <trans-unit id="menus.debugToolBar">
-        <source xml:lang="en">The debug toolbar menu</source>
-      </trans-unit>
-      <trans-unit id="menus.webNavigation">
-        <source xml:lang="en">The top level navigational menu (web only)</source>
-      </trans-unit>
-      <trans-unit id="menus.scmTitle">
-        <source xml:lang="en">The Source Control title menu</source>
-      </trans-unit>
-      <trans-unit id="menus.scmSourceControl">
-        <source xml:lang="en">The Source Control menu</source>
-      </trans-unit>
-      <trans-unit id="menus.resourceGroupContext">
-        <source xml:lang="en">The Source Control resource group context menu</source>
-      </trans-unit>
-      <trans-unit id="menus.resourceStateContext">
-        <source xml:lang="en">The Source Control resource state context menu</source>
-      </trans-unit>
-      <trans-unit id="menus.resourceFolderContext">
-        <source xml:lang="en">The Source Control resource folder context menu</source>
-      </trans-unit>
-      <trans-unit id="menus.changeTitle">
-        <source xml:lang="en">The Source Control inline change menu</source>
-      </trans-unit>
-      <trans-unit id="view.viewTitle">
-        <source xml:lang="en">The contributed view title menu</source>
-      </trans-unit>
-      <trans-unit id="view.itemContext">
-        <source xml:lang="en">The contributed view item context menu</source>
-      </trans-unit>
-      <trans-unit id="commentThread.title">
-        <source xml:lang="en">The contributed comment thread title menu</source>
-      </trans-unit>
-      <trans-unit id="commentThread.actions">
-        <source xml:lang="en">The contributed comment thread context menu, rendered as buttons below the comment editor</source>
-      </trans-unit>
-      <trans-unit id="comment.title">
-        <source xml:lang="en">The contributed comment title menu</source>
-      </trans-unit>
-      <trans-unit id="comment.actions">
-        <source xml:lang="en">The contributed comment context menu, rendered as buttons below the comment editor</source>
-      </trans-unit>
-      <trans-unit id="notebook.cell.title">
-        <source xml:lang="en">The contributed notebook cell title menu</source>
-      </trans-unit>
-      <trans-unit id="menus.extensionContext">
-        <source xml:lang="en">The extension context menu</source>
-      </trans-unit>
-      <trans-unit id="view.timelineTitle">
-        <source xml:lang="en">The Timeline view title menu</source>
-      </trans-unit>
-      <trans-unit id="view.timelineContext">
-        <source xml:lang="en">The Timeline view item context menu</source>
-      </trans-unit>
-      <trans-unit id="nonempty">
-        <source xml:lang="en">expected non-empty value.</source>
-      </trans-unit>
-      <trans-unit id="opticon">
-        <source xml:lang="en">property `icon` can be omitted or must be either a string or a literal like `{dark, light}`</source>
-      </trans-unit>
-      <trans-unit id="requireStringOrObject">
-        <source xml:lang="en">property `{0}` is mandatory and must be of type `string` or `object`</source>
-      </trans-unit>
-      <trans-unit id="requirestrings">
-        <source xml:lang="en">properties `{0}` and `{1}` are mandatory and must be of type `string`</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.commandType.command">
-        <source xml:lang="en">Identifier of the command to execute</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.commandType.title">
-        <source xml:lang="en">Title by which the command is represented in the UI</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.commandType.category">
-        <source xml:lang="en">(Optional) Category string by the command is grouped in the UI</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.commandType.precondition">
-        <source xml:lang="en">(Optional) Condition which must be true to enable the command</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.commandType.icon">
-        <source xml:lang="en">(Optional) Icon which is used to represent the command in the UI. Either a file path, an object with file paths for dark and light themes, or a theme icon references, like `\$(zap)`</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.commandType.icon.light">
-        <source xml:lang="en">Icon path when a light theme is used</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.commandType.icon.dark">
-        <source xml:lang="en">Icon path when a dark theme is used</source>
-      </trans-unit>
-      <trans-unit id="vscode.extension.contributes.commands">
-        <source xml:lang="en">Contributes commands to the command palette.</source>
-      </trans-unit>
-      <trans-unit id="dup">
-        <source xml:lang="en">Command `{0}` appears multiple times in the `commands` section.</source>
-      </trans-unit>
-      <trans-unit id="menuId.invalid">
-        <source xml:lang="en">`{0}` is not a valid menu identifier</source>
-      </trans-unit>
-      <trans-unit id="proposedAPI.invalid">
-        <source xml:lang="en">{0} is a proposed menu identifier and is only available when running out of dev or with the following command line switch: --enable-proposed-api {1}</source>
-      </trans-unit>
-      <trans-unit id="missing.command">
-        <source xml:lang="en">Menu item references a command `{0}` which is not defined in the 'commands' section.</source>
-      </trans-unit>
-      <trans-unit id="missing.altCommand">
-        <source xml:lang="en">Menu item references an alt-command `{0}` which is not defined in the 'commands' section.</source>
-      </trans-unit>
-      <trans-unit id="dupe.command">
-        <source xml:lang="en">Menu item references the same command as default and alt-command</source>
       </trans-unit>
     </body>
   </file>
@@ -1224,7 +1086,7 @@ This option requires restart to take effect.</source>
       <trans-unit id="requireidstring">
         <source xml:lang="en">property `{0}` is mandatory and must be of type `string`. Only alphanumeric characters, '_', and '-' are allowed.</source>
       </trans-unit>
-      <trans-unit id="requirestring_Duplicated27">
+      <trans-unit id="requirestring_Duplicated24">
         <source xml:lang="en">property `{0}` is mandatory and must be of type `string`</source>
       </trans-unit>
       <trans-unit id="showViewlet">
@@ -1245,10 +1107,10 @@ This option requires restart to take effect.</source>
       <trans-unit id="duplicateView2">
         <source xml:lang="en">A view with id `{0}` is already registered.</source>
       </trans-unit>
-      <trans-unit id="requirearray_Duplicated25">
+      <trans-unit id="requirearray_Duplicated26">
         <source xml:lang="en">views must be an array</source>
       </trans-unit>
-      <trans-unit id="optstring_Duplicated29">
+      <trans-unit id="optstring_Duplicated28">
         <source xml:lang="en">property `{0}` can be omitted or must be of type `string`</source>
       </trans-unit>
       <trans-unit id="optenum">
@@ -1293,13 +1155,16 @@ This option requires restart to take effect.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/electron-browser/window" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/browser/parts/notifications/notificationsAlerts" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="runningAsRoot">
-        <source xml:lang="en">It is not recommended to run {0} as root user.</source>
+      <trans-unit id="alertErrorMessage">
+        <source xml:lang="en">Error: {0}</source>
       </trans-unit>
-      <trans-unit id="mPreferences">
-        <source xml:lang="en">Preferences</source>
+      <trans-unit id="alertWarningMessage">
+        <source xml:lang="en">Warning: {0}</source>
+      </trans-unit>
+      <trans-unit id="alertInfoMessage">
+        <source xml:lang="en">Info: {0}</source>
       </trans-unit>
     </body>
   </file>
@@ -1617,6 +1482,214 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/api/common/menusExtensionPoint" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="menus.commandPalette">
+        <source xml:lang="en">The Command Palette</source>
+      </trans-unit>
+      <trans-unit id="menus.touchBar">
+        <source xml:lang="en">The touch bar (macOS only)</source>
+      </trans-unit>
+      <trans-unit id="menus.editorTitle">
+        <source xml:lang="en">The editor title menu</source>
+      </trans-unit>
+      <trans-unit id="menus.editorContext">
+        <source xml:lang="en">The editor context menu</source>
+      </trans-unit>
+      <trans-unit id="menus.explorerContext">
+        <source xml:lang="en">The file explorer context menu</source>
+      </trans-unit>
+      <trans-unit id="menus.editorTabContext">
+        <source xml:lang="en">The editor tabs context menu</source>
+      </trans-unit>
+      <trans-unit id="menus.debugCallstackContext">
+        <source xml:lang="en">The debug callstack context menu</source>
+      </trans-unit>
+      <trans-unit id="menus.debugToolBar">
+        <source xml:lang="en">The debug toolbar menu</source>
+      </trans-unit>
+      <trans-unit id="menus.webNavigation">
+        <source xml:lang="en">The top level navigational menu (web only)</source>
+      </trans-unit>
+      <trans-unit id="menus.scmTitle">
+        <source xml:lang="en">The Source Control title menu</source>
+      </trans-unit>
+      <trans-unit id="menus.scmSourceControl">
+        <source xml:lang="en">The Source Control menu</source>
+      </trans-unit>
+      <trans-unit id="menus.resourceGroupContext">
+        <source xml:lang="en">The Source Control resource group context menu</source>
+      </trans-unit>
+      <trans-unit id="menus.resourceStateContext">
+        <source xml:lang="en">The Source Control resource state context menu</source>
+      </trans-unit>
+      <trans-unit id="menus.resourceFolderContext">
+        <source xml:lang="en">The Source Control resource folder context menu</source>
+      </trans-unit>
+      <trans-unit id="menus.changeTitle">
+        <source xml:lang="en">The Source Control inline change menu</source>
+      </trans-unit>
+      <trans-unit id="menus.statusBarWindowIndicator">
+        <source xml:lang="en">The window indicator menu in the status bar</source>
+      </trans-unit>
+      <trans-unit id="view.viewTitle">
+        <source xml:lang="en">The contributed view title menu</source>
+      </trans-unit>
+      <trans-unit id="view.itemContext">
+        <source xml:lang="en">The contributed view item context menu</source>
+      </trans-unit>
+      <trans-unit id="commentThread.title">
+        <source xml:lang="en">The contributed comment thread title menu</source>
+      </trans-unit>
+      <trans-unit id="commentThread.actions">
+        <source xml:lang="en">The contributed comment thread context menu, rendered as buttons below the comment editor</source>
+      </trans-unit>
+      <trans-unit id="comment.title">
+        <source xml:lang="en">The contributed comment title menu</source>
+      </trans-unit>
+      <trans-unit id="comment.actions">
+        <source xml:lang="en">The contributed comment context menu, rendered as buttons below the comment editor</source>
+      </trans-unit>
+      <trans-unit id="notebook.cell.title">
+        <source xml:lang="en">The contributed notebook cell title menu</source>
+      </trans-unit>
+      <trans-unit id="menus.extensionContext">
+        <source xml:lang="en">The extension context menu</source>
+      </trans-unit>
+      <trans-unit id="view.timelineTitle">
+        <source xml:lang="en">The Timeline view title menu</source>
+      </trans-unit>
+      <trans-unit id="view.timelineContext">
+        <source xml:lang="en">The Timeline view item context menu</source>
+      </trans-unit>
+      <trans-unit id="requirestring_Duplicated25">
+        <source xml:lang="en">property `{0}` is mandatory and must be of type `string`</source>
+      </trans-unit>
+      <trans-unit id="optstring_Duplicated29">
+        <source xml:lang="en">property `{0}` can be omitted or must be of type `string`</source>
+      </trans-unit>
+      <trans-unit id="requirearray_Duplicated27">
+        <source xml:lang="en">submenu items must be an array</source>
+      </trans-unit>
+      <trans-unit id="require">
+        <source xml:lang="en">submenu items must be an object</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.menuItem.command">
+        <source xml:lang="en">Identifier of the command to execute. The command must be declared in the 'commands'-section</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.menuItem.alt">
+        <source xml:lang="en">Identifier of an alternative command to execute. The command must be declared in the 'commands'-section</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.menuItem.when">
+        <source xml:lang="en">Condition which must be true to show this item</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.menuItem.group">
+        <source xml:lang="en">Group into which this command belongs</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.menuItem.submenu">
+        <source xml:lang="en">Identifier of the submenu to display in this item.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.submenu.id">
+        <source xml:lang="en">Identifier of the menu to display as a submenu.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.submenu.label">
+        <source xml:lang="en">The label of the menu item which leads to this submenu.</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.submenu.icon">
+        <source xml:lang="en">(Optional) Icon which is used to represent the submenu in the UI. Either a file path, an object with file paths for dark and light themes, or a theme icon references, like `\$(zap)`</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.submenu.icon.light">
+        <source xml:lang="en">Icon path when a light theme is used</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.submenu.icon.dark">
+        <source xml:lang="en">Icon path when a dark theme is used</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.menus">
+        <source xml:lang="en">Contributes menu items to the editor</source>
+      </trans-unit>
+      <trans-unit id="proposed">
+        <source xml:lang="en">Proposed API</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.submenus">
+        <source xml:lang="en">(Proposed API) Contributes submenu items to the editor</source>
+      </trans-unit>
+      <trans-unit id="nonempty">
+        <source xml:lang="en">expected non-empty value.</source>
+      </trans-unit>
+      <trans-unit id="opticon">
+        <source xml:lang="en">property `icon` can be omitted or must be either a string or a literal like `{dark, light}`</source>
+      </trans-unit>
+      <trans-unit id="requireStringOrObject">
+        <source xml:lang="en">property `{0}` is mandatory and must be of type `string` or `object`</source>
+      </trans-unit>
+      <trans-unit id="requirestrings">
+        <source xml:lang="en">properties `{0}` and `{1}` are mandatory and must be of type `string`</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.commandType.command">
+        <source xml:lang="en">Identifier of the command to execute</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.commandType.title">
+        <source xml:lang="en">Title by which the command is represented in the UI</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.commandType.category">
+        <source xml:lang="en">(Optional) Category string by the command is grouped in the UI</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.commandType.precondition">
+        <source xml:lang="en">(Optional) Condition which must be true to enable the command</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.commandType.icon">
+        <source xml:lang="en">(Optional) Icon which is used to represent the command in the UI. Either a file path, an object with file paths for dark and light themes, or a theme icon references, like `\$(zap)`</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.commandType.icon.light">
+        <source xml:lang="en">Icon path when a light theme is used</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.commandType.icon.dark">
+        <source xml:lang="en">Icon path when a dark theme is used</source>
+      </trans-unit>
+      <trans-unit id="vscode.extension.contributes.commands">
+        <source xml:lang="en">Contributes commands to the command palette.</source>
+      </trans-unit>
+      <trans-unit id="dup">
+        <source xml:lang="en">Command `{0}` appears multiple times in the `commands` section.</source>
+      </trans-unit>
+      <trans-unit id="submenuId.invalid.id">
+        <source xml:lang="en">`{0}` is not a valid submenu identifier</source>
+      </trans-unit>
+      <trans-unit id="submenuId.invalid.label">
+        <source xml:lang="en">`{0}` is not a valid submenu label</source>
+      </trans-unit>
+      <trans-unit id="submenu.proposedAPI.invalid">
+        <source xml:lang="en">Submenus are proposed API and are only available when running out of dev or with the following command line switch: --enable-proposed-api {1}</source>
+      </trans-unit>
+      <trans-unit id="menuId.invalid">
+        <source xml:lang="en">`{0}` is not a valid menu identifier</source>
+      </trans-unit>
+      <trans-unit id="proposedAPI.invalid">
+        <source xml:lang="en">{0} is a proposed menu identifier and is only available when running out of dev or with the following command line switch: --enable-proposed-api {1}</source>
+      </trans-unit>
+      <trans-unit id="proposedAPI.invalid.submenu">
+        <source xml:lang="en">{0} is a submenu identifier and is only available when running out of dev or with the following command line switch: --enable-proposed-api {1}</source>
+      </trans-unit>
+      <trans-unit id="missing.command">
+        <source xml:lang="en">Menu item references a command `{0}` which is not defined in the 'commands' section.</source>
+      </trans-unit>
+      <trans-unit id="missing.altCommand">
+        <source xml:lang="en">Menu item references an alt-command `{0}` which is not defined in the 'commands' section.</source>
+      </trans-unit>
+      <trans-unit id="dupe.command">
+        <source xml:lang="en">Menu item references the same command as default and alt-command</source>
+      </trans-unit>
+      <trans-unit id="proposedAPI.invalid.submenureference">
+        <source xml:lang="en">Menu item references a submenu which is only available when running out of dev or with the following command line switch: --enable-proposed-api {0}</source>
+      </trans-unit>
+      <trans-unit id="proposedAPI.unsupported.submenureference">
+        <source xml:lang="en">Menu item references a submenu for a menu which doesn't have submenu support.</source>
+      </trans-unit>
+      <trans-unit id="missing.submenu">
+        <source xml:lang="en">Menu item references a submenu `{0}` which is not defined in the 'submenus' section.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/browser/parts/views/viewsService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="focus view">
@@ -1631,16 +1704,73 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/notifications/notificationsAlerts" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/browser/parts/notifications/notificationsCommands" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="alertErrorMessage">
-        <source xml:lang="en">Error: {0}</source>
+      <trans-unit id="notifications_Duplicated32">
+        <source xml:lang="en">Notifications</source>
       </trans-unit>
-      <trans-unit id="alertWarningMessage">
-        <source xml:lang="en">Warning: {0}</source>
+      <trans-unit id="showNotifications">
+        <source xml:lang="en">Show Notifications</source>
       </trans-unit>
-      <trans-unit id="alertInfoMessage">
-        <source xml:lang="en">Info: {0}</source>
+      <trans-unit id="hideNotifications_Duplicated35">
+        <source xml:lang="en">Hide Notifications</source>
+      </trans-unit>
+      <trans-unit id="clearAllNotifications">
+        <source xml:lang="en">Clear All Notifications</source>
+      </trans-unit>
+      <trans-unit id="focusNotificationToasts">
+        <source xml:lang="en">Focus Notification Toast</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/notifications/notificationsStatus" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="status.notifications">
+        <source xml:lang="en">Notifications</source>
+      </trans-unit>
+      <trans-unit id="hideNotifications_Duplicated36">
+        <source xml:lang="en">Hide Notifications</source>
+      </trans-unit>
+      <trans-unit id="zeroNotifications">
+        <source xml:lang="en">No Notifications</source>
+      </trans-unit>
+      <trans-unit id="noNotifications">
+        <source xml:lang="en">No New Notifications</source>
+      </trans-unit>
+      <trans-unit id="oneNotification">
+        <source xml:lang="en">1 New Notification</source>
+      </trans-unit>
+      <trans-unit id="notifications_Duplicated33">
+        <source xml:lang="en">{0} New Notifications</source>
+        <note>{0} will be replaced by a number</note>
+      </trans-unit>
+      <trans-unit id="noNotificationsWithProgress">
+        <source xml:lang="en">No New Notifications ({0} in progress)</source>
+        <note>{0} will be replaced by a number</note>
+      </trans-unit>
+      <trans-unit id="oneNotificationWithProgress">
+        <source xml:lang="en">1 New Notification ({0} in progress)</source>
+        <note>{0} will be replaced by a number</note>
+      </trans-unit>
+      <trans-unit id="notificationsWithProgress">
+        <source xml:lang="en">{0} New Notifications ({1} in progress)</source>
+        <note>{0} and {1} will be replaced by a number</note>
+      </trans-unit>
+      <trans-unit id="status.message">
+        <source xml:lang="en">Status Message</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/notifications/notificationsCenter" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="notificationsEmpty">
+        <source xml:lang="en">No new notifications</source>
+      </trans-unit>
+      <trans-unit id="notifications_Duplicated34">
+        <source xml:lang="en">Notifications</source>
+      </trans-unit>
+      <trans-unit id="notificationsToolbar">
+        <source xml:lang="en">Notification Center Actions</source>
       </trans-unit>
     </body>
   </file>
@@ -1675,36 +1805,36 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/browser/mainThreadFileSystemEventService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="files.participants.timeout">
-        <source xml:lang="en">Timeout in milliseconds after which file participants for create, rename, and delete are cancelled. Use `0` to disable participants.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/api/browser/mainThreadMessageService" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="extensionSource_Duplicated32">
+      <trans-unit id="extensionSource_Duplicated37">
         <source xml:lang="en">{0} (Extension)</source>
       </trans-unit>
       <trans-unit id="defaultSource">
         <source xml:lang="en">Extension</source>
       </trans-unit>
-      <trans-unit id="manageExtension_Duplicated34">
+      <trans-unit id="manageExtension_Duplicated39">
         <source xml:lang="en">Manage Extension</source>
       </trans-unit>
-      <trans-unit id="cancel_Duplicated37">
+      <trans-unit id="cancel_Duplicated42">
         <source xml:lang="en">Cancel</source>
       </trans-unit>
-      <trans-unit id="ok_Duplicated40">
+      <trans-unit id="ok_Duplicated45">
         <source xml:lang="en">OK</source>
       </trans-unit>
     </body>
   </file>
   <file original="src/vs/workbench/api/browser/mainThreadProgress" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="manageExtension_Duplicated35">
+      <trans-unit id="manageExtension_Duplicated40">
         <source xml:lang="en">Manage Extension</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/browser/mainThreadFileSystemEventService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="files.participants.timeout">
+        <source xml:lang="en">Timeout in milliseconds after which file participants for create, rename, and delete are cancelled. Use `0` to disable participants.</source>
       </trans-unit>
     </body>
   </file>
@@ -1860,6 +1990,16 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/browser/parts/statusbar/statusbarPart" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="hide_Duplicated47">
+        <source xml:lang="en">Hide '{0}'</source>
+      </trans-unit>
+      <trans-unit id="hideStatusBar">
+        <source xml:lang="en">Hide Status Bar</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/browser/parts/panel/panelPart" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="hidePanel">
@@ -1870,90 +2010,10 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/statusbar/statusbarPart" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="hide_Duplicated42">
-        <source xml:lang="en">Hide '{0}'</source>
-      </trans-unit>
-      <trans-unit id="hideStatusBar">
-        <source xml:lang="en">Hide Status Bar</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/common/configuration" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="workbenchConfigurationTitle">
         <source xml:lang="en">Workbench</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/notifications/notificationsCenter" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="notificationsEmpty">
-        <source xml:lang="en">No new notifications</source>
-      </trans-unit>
-      <trans-unit id="notifications_Duplicated44">
-        <source xml:lang="en">Notifications</source>
-      </trans-unit>
-      <trans-unit id="notificationsToolbar">
-        <source xml:lang="en">Notification Center Actions</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/notifications/notificationsCommands" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="notifications_Duplicated45">
-        <source xml:lang="en">Notifications</source>
-      </trans-unit>
-      <trans-unit id="showNotifications">
-        <source xml:lang="en">Show Notifications</source>
-      </trans-unit>
-      <trans-unit id="hideNotifications_Duplicated47">
-        <source xml:lang="en">Hide Notifications</source>
-      </trans-unit>
-      <trans-unit id="clearAllNotifications">
-        <source xml:lang="en">Clear All Notifications</source>
-      </trans-unit>
-      <trans-unit id="focusNotificationToasts">
-        <source xml:lang="en">Focus Notification Toast</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/notifications/notificationsStatus" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="status.notifications">
-        <source xml:lang="en">Notifications</source>
-      </trans-unit>
-      <trans-unit id="hideNotifications_Duplicated48">
-        <source xml:lang="en">Hide Notifications</source>
-      </trans-unit>
-      <trans-unit id="zeroNotifications">
-        <source xml:lang="en">No Notifications</source>
-      </trans-unit>
-      <trans-unit id="noNotifications">
-        <source xml:lang="en">No New Notifications</source>
-      </trans-unit>
-      <trans-unit id="oneNotification">
-        <source xml:lang="en">1 New Notification</source>
-      </trans-unit>
-      <trans-unit id="notifications_Duplicated46">
-        <source xml:lang="en">{0} New Notifications</source>
-        <note>{0} will be replaced by a number</note>
-      </trans-unit>
-      <trans-unit id="noNotificationsWithProgress">
-        <source xml:lang="en">No New Notifications ({0} in progress)</source>
-        <note>{0} will be replaced by a number</note>
-      </trans-unit>
-      <trans-unit id="oneNotificationWithProgress">
-        <source xml:lang="en">1 New Notification ({0} in progress)</source>
-        <note>{0} will be replaced by a number</note>
-      </trans-unit>
-      <trans-unit id="notificationsWithProgress">
-        <source xml:lang="en">{0} New Notifications ({1} in progress)</source>
-        <note>{0} and {1} will be replaced by a number</note>
-      </trans-unit>
-      <trans-unit id="status.message">
-        <source xml:lang="en">Status Message</source>
       </trans-unit>
     </body>
   </file>
@@ -1964,6 +2024,13 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
       <trans-unit id="activationError">
         <source xml:lang="en">Activating extension '{0}' failed: {1}.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/browser/mainThreadEditors" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="diffLeftRightLabel">
+        <source xml:lang="en">{0} ⟷ {1}</source>
       </trans-unit>
     </body>
   </file>
@@ -1992,13 +2059,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/api/browser/mainThreadEditors" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="diffLeftRightLabel">
-        <source xml:lang="en">{0} ⟷ {1}</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/api/browser/mainThreadWorkspace" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="folderStatusMessageAddSingleFolder">
@@ -2018,40 +2078,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/activitybar/activitybarPart" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="hideHomeBar">
-        <source xml:lang="en">Hide Home Button</source>
-      </trans-unit>
-      <trans-unit id="showHomeBar">
-        <source xml:lang="en">Show Home Button</source>
-      </trans-unit>
-      <trans-unit id="hideMenu">
-        <source xml:lang="en">Hide Menu</source>
-      </trans-unit>
-      <trans-unit id="showMenu">
-        <source xml:lang="en">Show Menu</source>
-      </trans-unit>
-      <trans-unit id="hideActivitBar">
-        <source xml:lang="en">Hide Activity Bar</source>
-      </trans-unit>
-      <trans-unit id="resetLocation">
-        <source xml:lang="en">Reset Location</source>
-      </trans-unit>
-      <trans-unit id="homeIndicator">
-        <source xml:lang="en">Home</source>
-      </trans-unit>
-      <trans-unit id="home">
-        <source xml:lang="en">Home</source>
-      </trans-unit>
-      <trans-unit id="manage">
-        <source xml:lang="en">Manage</source>
-      </trans-unit>
-      <trans-unit id="accounts">
-        <source xml:lang="en">Accounts</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/api/browser/mainThreadAuthentication" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="accountLastUsedDate">
@@ -2061,7 +2087,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="notUsed">
         <source xml:lang="en">Has not used this account</source>
       </trans-unit>
-      <trans-unit id="manageTrustedExtensions_Duplicated49">
+      <trans-unit id="manageTrustedExtensions_Duplicated50">
         <source xml:lang="en">Manage Trusted Extensions</source>
       </trans-unit>
       <trans-unit id="manageExensions">
@@ -2099,7 +2125,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="allow">
         <source xml:lang="en">Allow</source>
       </trans-unit>
-      <trans-unit id="cancel_Duplicated38">
+      <trans-unit id="cancel_Duplicated43">
         <source xml:lang="en">Cancel</source>
       </trans-unit>
       <trans-unit id="confirmLogin">
@@ -2117,6 +2143,40 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
       <trans-unit id="collapse">
         <source xml:lang="en">Collapse All</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/activitybar/activitybarPart" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="hideHomeBar">
+        <source xml:lang="en">Hide Home Button</source>
+      </trans-unit>
+      <trans-unit id="showHomeBar">
+        <source xml:lang="en">Show Home Button</source>
+      </trans-unit>
+      <trans-unit id="hideMenu">
+        <source xml:lang="en">Hide Menu</source>
+      </trans-unit>
+      <trans-unit id="showMenu">
+        <source xml:lang="en">Show Menu</source>
+      </trans-unit>
+      <trans-unit id="accounts">
+        <source xml:lang="en">Accounts</source>
+      </trans-unit>
+      <trans-unit id="hideActivitBar">
+        <source xml:lang="en">Hide Activity Bar</source>
+      </trans-unit>
+      <trans-unit id="resetLocation">
+        <source xml:lang="en">Reset Location</source>
+      </trans-unit>
+      <trans-unit id="homeIndicator">
+        <source xml:lang="en">Home</source>
+      </trans-unit>
+      <trans-unit id="home">
+        <source xml:lang="en">Home</source>
+      </trans-unit>
+      <trans-unit id="manage">
+        <source xml:lang="en">Manage</source>
       </trans-unit>
     </body>
   </file>
@@ -2165,7 +2225,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
   </file>
   <file original="src/vs/workbench/browser/parts/editor/textResourceEditor" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="textEditor_Duplicated51">
+      <trans-unit id="textEditor_Duplicated52">
         <source xml:lang="en">Text Editor</source>
       </trans-unit>
     </body>
@@ -2174,80 +2234,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
     <body>
       <trans-unit id="extensionLabel">
         <source xml:lang="en">{0} (Extension)</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/api/browser/mainThreadWebview" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="errorMessage">
-        <source xml:lang="en">An error occurred while loading view: {0}</source>
-      </trans-unit>
-      <trans-unit id="defaultEditLabel">
-        <source xml:lang="en">Edit</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/panel/panelActions" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="closePanel">
-        <source xml:lang="en">Close Panel</source>
-      </trans-unit>
-      <trans-unit id="togglePanel">
-        <source xml:lang="en">Toggle Panel</source>
-      </trans-unit>
-      <trans-unit id="focusPanel">
-        <source xml:lang="en">Focus into Panel</source>
-      </trans-unit>
-      <trans-unit id="toggleMaximizedPanel">
-        <source xml:lang="en">Toggle Maximized Panel</source>
-      </trans-unit>
-      <trans-unit id="maximizePanel">
-        <source xml:lang="en">Maximize Panel Size</source>
-      </trans-unit>
-      <trans-unit id="minimizePanel">
-        <source xml:lang="en">Restore Panel Size</source>
-      </trans-unit>
-      <trans-unit id="positionPanelLeft">
-        <source xml:lang="en">Move Panel Left</source>
-      </trans-unit>
-      <trans-unit id="positionPanelRight">
-        <source xml:lang="en">Move Panel Right</source>
-      </trans-unit>
-      <trans-unit id="positionPanelBottom">
-        <source xml:lang="en">Move Panel To Bottom</source>
-      </trans-unit>
-      <trans-unit id="previousPanelView">
-        <source xml:lang="en">Previous Panel View</source>
-      </trans-unit>
-      <trans-unit id="nextPanelView">
-        <source xml:lang="en">Next Panel View</source>
-      </trans-unit>
-      <trans-unit id="view_Duplicated11">
-        <source xml:lang="en">View</source>
-      </trans-unit>
-      <trans-unit id="miShowPanel">
-        <source xml:lang="en">Show &amp;&amp;Panel</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/editor/textEditor" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="editor">
-        <source xml:lang="en">Editor</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/notifications/notificationsList" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="notificationAriaLabel">
-        <source xml:lang="en">{0}, notification</source>
-      </trans-unit>
-      <trans-unit id="notificationWithSourceAriaLabel">
-        <source xml:lang="en">{0}, source: {1}, notification</source>
-      </trans-unit>
-      <trans-unit id="notificationsList">
-        <source xml:lang="en">Notifications List</source>
       </trans-unit>
     </body>
   </file>
@@ -2321,6 +2307,29 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/api/browser/mainThreadWebview" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="errorMessage">
+        <source xml:lang="en">An error occurred while loading view: {0}</source>
+      </trans-unit>
+      <trans-unit id="defaultEditLabel">
+        <source xml:lang="en">Edit</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/notifications/notificationsList" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="notificationAriaLabel">
+        <source xml:lang="en">{0}, notification</source>
+      </trans-unit>
+      <trans-unit id="notificationWithSourceAriaLabel">
+        <source xml:lang="en">{0}, source: {1}, notification</source>
+      </trans-unit>
+      <trans-unit id="notificationsList">
+        <source xml:lang="en">Notifications List</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/browser/parts/notifications/notificationsActions" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="clearNotification">
@@ -2346,6 +2355,57 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/browser/parts/panel/panelActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="closePanel">
+        <source xml:lang="en">Close Panel</source>
+      </trans-unit>
+      <trans-unit id="togglePanel">
+        <source xml:lang="en">Toggle Panel</source>
+      </trans-unit>
+      <trans-unit id="focusPanel">
+        <source xml:lang="en">Focus into Panel</source>
+      </trans-unit>
+      <trans-unit id="toggleMaximizedPanel">
+        <source xml:lang="en">Toggle Maximized Panel</source>
+      </trans-unit>
+      <trans-unit id="maximizePanel">
+        <source xml:lang="en">Maximize Panel Size</source>
+      </trans-unit>
+      <trans-unit id="minimizePanel">
+        <source xml:lang="en">Restore Panel Size</source>
+      </trans-unit>
+      <trans-unit id="positionPanelLeft">
+        <source xml:lang="en">Move Panel Left</source>
+      </trans-unit>
+      <trans-unit id="positionPanelRight">
+        <source xml:lang="en">Move Panel Right</source>
+      </trans-unit>
+      <trans-unit id="positionPanelBottom">
+        <source xml:lang="en">Move Panel To Bottom</source>
+      </trans-unit>
+      <trans-unit id="previousPanelView">
+        <source xml:lang="en">Previous Panel View</source>
+      </trans-unit>
+      <trans-unit id="nextPanelView">
+        <source xml:lang="en">Next Panel View</source>
+      </trans-unit>
+      <trans-unit id="view_Duplicated11">
+        <source xml:lang="en">View</source>
+      </trans-unit>
+      <trans-unit id="miShowPanel">
+        <source xml:lang="en">Show &amp;&amp;Panel</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/editor/textEditor" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="editor">
+        <source xml:lang="en">Editor</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/browser/parts/compositeBarActions" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="badgeTitle">
@@ -2357,13 +2417,13 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="numberBadge">
         <source xml:lang="en">{0} ({1})</source>
       </trans-unit>
-      <trans-unit id="manageExtension_Duplicated36">
+      <trans-unit id="manageExtension_Duplicated41">
         <source xml:lang="en">Manage Extension</source>
       </trans-unit>
       <trans-unit id="titleKeybinding">
         <source xml:lang="en">{0} ({1})</source>
       </trans-unit>
-      <trans-unit id="hide_Duplicated43">
+      <trans-unit id="hide_Duplicated48">
         <source xml:lang="en">Hide</source>
       </trans-unit>
       <trans-unit id="keep">
@@ -2374,25 +2434,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
       <trans-unit id="toggle">
         <source xml:lang="en">Toggle View Pinned</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/activitybar/activitybarActions" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="manageTrustedExtensions_Duplicated50">
-        <source xml:lang="en">Manage Trusted Extensions</source>
-      </trans-unit>
-      <trans-unit id="signOut">
-        <source xml:lang="en">Sign Out</source>
-      </trans-unit>
-      <trans-unit id="previousSideBarView">
-        <source xml:lang="en">Previous Side Bar View</source>
-      </trans-unit>
-      <trans-unit id="nextSideBarView">
-        <source xml:lang="en">Next Side Bar View</source>
-      </trans-unit>
-      <trans-unit id="view_Duplicated12">
-        <source xml:lang="en">View</source>
       </trans-unit>
     </body>
   </file>
@@ -2426,7 +2467,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
 	* 'by': String value providing the unit for move (by tab or by group).
 	* 'value': Number value providing how many positions or an absolute position to move.</source>
       </trans-unit>
-      <trans-unit id="toggleInlineView_Duplicated53">
+      <trans-unit id="toggleInlineView_Duplicated54">
         <source xml:lang="en">Toggle Inline View</source>
       </trans-unit>
       <trans-unit id="compare">
@@ -2434,17 +2475,17 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/api/common/extHostProgress" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="extensionSource_Duplicated38">
+        <source xml:lang="en">{0} (Extension)</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/api/common/extHostStatusBar" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="status.extensionMessage">
         <source xml:lang="en">Extension Status</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/api/common/extHostProgress" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="extensionSource_Duplicated33">
-        <source xml:lang="en">{0} (Extension)</source>
       </trans-unit>
     </body>
   </file>
@@ -2467,6 +2508,28 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="limitHit">
         <source xml:lang="en">Not showing {0} further errors and warnings.</source>
         <note>amount of errors/warning skipped due to limits</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/activitybar/activitybarActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="manageTrustedExtensions_Duplicated51">
+        <source xml:lang="en">Manage Trusted Extensions</source>
+      </trans-unit>
+      <trans-unit id="signOut">
+        <source xml:lang="en">Sign Out</source>
+      </trans-unit>
+      <trans-unit id="hide_Duplicated49">
+        <source xml:lang="en">Hide</source>
+      </trans-unit>
+      <trans-unit id="previousSideBarView">
+        <source xml:lang="en">Previous Side Bar View</source>
+      </trans-unit>
+      <trans-unit id="nextSideBarView">
+        <source xml:lang="en">Next Side Bar View</source>
+      </trans-unit>
+      <trans-unit id="view_Duplicated12">
+        <source xml:lang="en">View</source>
       </trans-unit>
     </body>
   </file>
@@ -2517,10 +2580,10 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
   </file>
   <file original="src/vs/workbench/browser/parts/editor/editor.contribution" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="textEditor_Duplicated52">
+      <trans-unit id="textEditor_Duplicated53">
         <source xml:lang="en">Text Editor</source>
       </trans-unit>
-      <trans-unit id="textDiffEditor_Duplicated55">
+      <trans-unit id="textDiffEditor_Duplicated56">
         <source xml:lang="en">Text Diff Editor</source>
       </trans-unit>
       <trans-unit id="binaryDiffEditor">
@@ -2583,7 +2646,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="unpin">
         <source xml:lang="en">Unpin</source>
       </trans-unit>
-      <trans-unit id="toggleInlineView_Duplicated54">
+      <trans-unit id="toggleInlineView_Duplicated55">
         <source xml:lang="en">Toggle Inline View</source>
       </trans-unit>
       <trans-unit id="showOpenedEditors">
@@ -2788,7 +2851,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
   </file>
   <file original="src/vs/workbench/browser/parts/editor/textDiffEditor" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="textDiffEditor_Duplicated56">
+      <trans-unit id="textDiffEditor_Duplicated57">
         <source xml:lang="en">Text Diff Editor</source>
       </trans-unit>
     </body>
@@ -2807,7 +2870,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="entryAriaLabelDirty">
         <source xml:lang="en">{0}, dirty</source>
       </trans-unit>
-      <trans-unit id="closeEditor_Duplicated57">
+      <trans-unit id="closeEditor_Duplicated58">
         <source xml:lang="en">Close Editor</source>
       </trans-unit>
     </body>
@@ -2829,10 +2892,10 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="groupAriaLabel">
         <source xml:lang="en">Editor Group {0}</source>
       </trans-unit>
-      <trans-unit id="ok_Duplicated41">
+      <trans-unit id="ok_Duplicated46">
         <source xml:lang="en">OK</source>
       </trans-unit>
-      <trans-unit id="cancel_Duplicated39">
+      <trans-unit id="cancel_Duplicated44">
         <source xml:lang="en">Cancel</source>
       </trans-unit>
       <trans-unit id="editorOpenErrorDialog">
@@ -2906,7 +2969,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="focusBelowGroup">
         <source xml:lang="en">Focus Below Editor Group</source>
       </trans-unit>
-      <trans-unit id="closeEditor_Duplicated58">
+      <trans-unit id="closeEditor_Duplicated59">
         <source xml:lang="en">Close Editor</source>
       </trans-unit>
       <trans-unit id="closeOneEditor">

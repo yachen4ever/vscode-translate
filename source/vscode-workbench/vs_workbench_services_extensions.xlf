@@ -62,17 +62,17 @@ Do you want to install the extension?</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/services/extensions/common/remoteExtensionHost" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="remote extension host Log">
-        <source xml:lang="en">Remote Extension Host</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/services/extensions/browser/webWorkerExtensionHost" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="name">
         <source xml:lang="en">Worker Extension Host</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/services/extensions/common/remoteExtensionHost" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="remote extension host Log">
+        <source xml:lang="en">Remote Extension Host</source>
       </trans-unit>
     </body>
   </file>
@@ -83,6 +83,9 @@ Do you want to install the extension?</source>
       </trans-unit>
       <trans-unit id="workspace">
         <source xml:lang="en">Workspace extension kind. In a remote window, such extensions are enabled only when available on the remote.</source>
+      </trans-unit>
+      <trans-unit id="web">
+        <source xml:lang="en">Web worker extension kind. Such an extension can execute in a web worker extension host.</source>
       </trans-unit>
       <trans-unit id="vscode.extension.engines">
         <source xml:lang="en">Engine compatibility.</source>
@@ -367,6 +370,15 @@ Do you want to install the extension?</source>
         <source xml:lang="en">Expected `main` ({0}) to be included inside extension's folder ({1}). This might make the extension non-portable.</source>
       </trans-unit>
       <trans-unit id="extensionDescription.main3">
+        <source xml:lang="en">properties `{0}` and `{1}` must both be specified or must both be omitted</source>
+      </trans-unit>
+      <trans-unit id="extensionDescription.browser1">
+        <source xml:lang="en">property `{0}` can be omitted or must be of type `string`</source>
+      </trans-unit>
+      <trans-unit id="extensionDescription.browser2">
+        <source xml:lang="en">Expected `browser` ({0}) to be included inside extension's folder ({1}). This might make the extension non-portable.</source>
+      </trans-unit>
+      <trans-unit id="extensionDescription.browser3">
         <source xml:lang="en">properties `{0}` and `{1}` must both be specified or must both be omitted</source>
       </trans-unit>
     </body>
