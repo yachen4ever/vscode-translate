@@ -99,20 +99,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/toggleTabFocusMode/toggleTabFocusMode" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="toggle.tabMovesFocus">
-        <source xml:lang="en">Toggle Tab Key Moves Focus</source>
-        <note>Turn on/off use of tab key for moving focus around VS Code</note>
-      </trans-unit>
-      <trans-unit id="toggle.tabMovesFocus.on">
-        <source xml:lang="en">Pressing Tab will now move focus to the next focusable element</source>
-      </trans-unit>
-      <trans-unit id="toggle.tabMovesFocus.off">
-        <source xml:lang="en">Pressing Tab will now insert the tab character</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/tokenization/tokenization" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="forceRetokenize">
@@ -141,6 +127,20 @@ It is recommended to remove them from the file. This can be configured via `edit
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/toggleTabFocusMode/toggleTabFocusMode" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="toggle.tabMovesFocus">
+        <source xml:lang="en">Toggle Tab Key Moves Focus</source>
+        <note>Turn on/off use of tab key for moving focus around VS Code</note>
+      </trans-unit>
+      <trans-unit id="toggle.tabMovesFocus.on">
+        <source xml:lang="en">Pressing Tab will now move focus to the next focusable element</source>
+      </trans-unit>
+      <trans-unit id="toggle.tabMovesFocus.off">
+        <source xml:lang="en">Pressing Tab will now insert the tab character</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/anchorSelect/anchorSelect" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="selectionAnchor">
@@ -160,13 +160,6 @@ It is recommended to remove them from the file. This can be configured via `edit
       </trans-unit>
       <trans-unit id="cancelSelectionAnchor">
         <source xml:lang="en">Cancel Selection Anchor</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/contextmenu/contextmenu" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="action.showContextMenu.label">
-        <source xml:lang="en">Show Editor Context Menu</source>
       </trans-unit>
     </body>
   </file>
@@ -197,6 +190,13 @@ It is recommended to remove them from the file. This can be configured via `edit
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/contextmenu/contextmenu" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="action.showContextMenu.label">
+        <source xml:lang="en">Show Editor Context Menu</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/gotoError/gotoError" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="markerAction.next.label">
@@ -221,6 +221,16 @@ It is recommended to remove them from the file. This can be configured via `edit
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/inPlaceReplace/inPlaceReplace" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="InPlaceReplaceAction.previous.label">
+        <source xml:lang="en">Replace with Previous Value</source>
+      </trans-unit>
+      <trans-unit id="InPlaceReplaceAction.next.label">
+        <source xml:lang="en">Replace with Next Value</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/hover/hover" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="showHover">
@@ -232,16 +242,6 @@ This allows for users to show the hover without using the mouse.</note>
         <source xml:lang="en">Show Definition Preview Hover</source>
         <note>Label for action that will trigger the showing of definition preview hover in the editor.
 This allows for users to show the definition preview hover without using the mouse.</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/inPlaceReplace/inPlaceReplace" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="InPlaceReplaceAction.previous.label">
-        <source xml:lang="en">Replace with Previous Value</source>
-      </trans-unit>
-      <trans-unit id="InPlaceReplaceAction.next.label">
-        <source xml:lang="en">Replace with Next Value</source>
       </trans-unit>
     </body>
   </file>
@@ -274,16 +274,6 @@ This allows for users to show the definition preview hover without using the mou
     <body>
       <trans-unit id="multipleResults">
         <source xml:lang="en">Click to show {0} definitions.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/rename/onTypeRename" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="onTypeRename.label">
-        <source xml:lang="en">On Type Rename Symbol</source>
-      </trans-unit>
-      <trans-unit id="editorOnTypeRenameBackground">
-        <source xml:lang="en">Background color when the editor auto renames on type.</source>
       </trans-unit>
     </body>
   </file>
@@ -346,6 +336,16 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
       <trans-unit id="enablePreview">
         <source xml:lang="en">Enable/disable the ability to preview changes before renaming</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/rename/onTypeRename" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="onTypeRename.label">
+        <source xml:lang="en">On Type Rename Symbol</source>
+      </trans-unit>
+      <trans-unit id="editorOnTypeRenameBackground">
+        <source xml:lang="en">Background color when the editor auto renames on type.</source>
       </trans-unit>
     </body>
   </file>
@@ -698,6 +698,67 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/multicursor/multicursor" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="mutlicursor.insertAbove">
+        <source xml:lang="en">Add Cursor Above</source>
+      </trans-unit>
+      <trans-unit id="miInsertCursorAbove">
+        <source xml:lang="en">&amp;&amp;Add Cursor Above</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mutlicursor.insertBelow">
+        <source xml:lang="en">Add Cursor Below</source>
+      </trans-unit>
+      <trans-unit id="miInsertCursorBelow">
+        <source xml:lang="en">A&amp;&amp;dd Cursor Below</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mutlicursor.insertAtEndOfEachLineSelected">
+        <source xml:lang="en">Add Cursors to Line Ends</source>
+      </trans-unit>
+      <trans-unit id="miInsertCursorAtEndOfEachLineSelected">
+        <source xml:lang="en">Add C&amp;&amp;ursors to Line Ends</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mutlicursor.addCursorsToBottom">
+        <source xml:lang="en">Add Cursors To Bottom</source>
+      </trans-unit>
+      <trans-unit id="mutlicursor.addCursorsToTop">
+        <source xml:lang="en">Add Cursors To Top</source>
+      </trans-unit>
+      <trans-unit id="addSelectionToNextFindMatch">
+        <source xml:lang="en">Add Selection To Next Find Match</source>
+      </trans-unit>
+      <trans-unit id="miAddSelectionToNextFindMatch">
+        <source xml:lang="en">Add &amp;&amp;Next Occurrence</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="addSelectionToPreviousFindMatch">
+        <source xml:lang="en">Add Selection To Previous Find Match</source>
+      </trans-unit>
+      <trans-unit id="miAddSelectionToPreviousFindMatch">
+        <source xml:lang="en">Add P&amp;&amp;revious Occurrence</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="moveSelectionToNextFindMatch">
+        <source xml:lang="en">Move Last Selection To Next Find Match</source>
+      </trans-unit>
+      <trans-unit id="moveSelectionToPreviousFindMatch">
+        <source xml:lang="en">Move Last Selection To Previous Find Match</source>
+      </trans-unit>
+      <trans-unit id="selectAllOccurrencesOfFindMatch">
+        <source xml:lang="en">Select All Occurrences of Find Match</source>
+      </trans-unit>
+      <trans-unit id="miSelectHighlights">
+        <source xml:lang="en">Select All &amp;&amp;Occurrences</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="changeAll.label">
+        <source xml:lang="en">Change All Occurrences</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/linesOperations/linesOperations" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="lines.copyUp">
@@ -779,67 +840,6 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
       <trans-unit id="editor.transformToTitlecase">
         <source xml:lang="en">Transform to Title Case</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/multicursor/multicursor" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="mutlicursor.insertAbove">
-        <source xml:lang="en">Add Cursor Above</source>
-      </trans-unit>
-      <trans-unit id="miInsertCursorAbove">
-        <source xml:lang="en">&amp;&amp;Add Cursor Above</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="mutlicursor.insertBelow">
-        <source xml:lang="en">Add Cursor Below</source>
-      </trans-unit>
-      <trans-unit id="miInsertCursorBelow">
-        <source xml:lang="en">A&amp;&amp;dd Cursor Below</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="mutlicursor.insertAtEndOfEachLineSelected">
-        <source xml:lang="en">Add Cursors to Line Ends</source>
-      </trans-unit>
-      <trans-unit id="miInsertCursorAtEndOfEachLineSelected">
-        <source xml:lang="en">Add C&amp;&amp;ursors to Line Ends</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="mutlicursor.addCursorsToBottom">
-        <source xml:lang="en">Add Cursors To Bottom</source>
-      </trans-unit>
-      <trans-unit id="mutlicursor.addCursorsToTop">
-        <source xml:lang="en">Add Cursors To Top</source>
-      </trans-unit>
-      <trans-unit id="addSelectionToNextFindMatch">
-        <source xml:lang="en">Add Selection To Next Find Match</source>
-      </trans-unit>
-      <trans-unit id="miAddSelectionToNextFindMatch">
-        <source xml:lang="en">Add &amp;&amp;Next Occurrence</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="addSelectionToPreviousFindMatch">
-        <source xml:lang="en">Add Selection To Previous Find Match</source>
-      </trans-unit>
-      <trans-unit id="miAddSelectionToPreviousFindMatch">
-        <source xml:lang="en">Add P&amp;&amp;revious Occurrence</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="moveSelectionToNextFindMatch">
-        <source xml:lang="en">Move Last Selection To Next Find Match</source>
-      </trans-unit>
-      <trans-unit id="moveSelectionToPreviousFindMatch">
-        <source xml:lang="en">Move Last Selection To Previous Find Match</source>
-      </trans-unit>
-      <trans-unit id="selectAllOccurrencesOfFindMatch">
-        <source xml:lang="en">Select All Occurrences of Find Match</source>
-      </trans-unit>
-      <trans-unit id="miSelectHighlights">
-        <source xml:lang="en">Select All &amp;&amp;Occurrences</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="changeAll.label">
-        <source xml:lang="en">Change All Occurrences</source>
       </trans-unit>
     </body>
   </file>
@@ -1122,6 +1122,13 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/message/messageController" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="editor.readonly">
+        <source xml:lang="en">Cannot edit in read-only editor</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/rename/renameInputField" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="renameAriaLabel">
@@ -1130,13 +1137,6 @@ This allows for users to show the definition preview hover without using the mou
       <trans-unit id="label_Duplicated3">
         <source xml:lang="en">{0} to Rename, {1} to Preview</source>
         <note>placeholders are keybindings, e.g "F2 to Rename, Shift+F2 to Preview"</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/message/messageController" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="editor.readonly">
-        <source xml:lang="en">Cannot edit in read-only editor</source>
       </trans-unit>
     </body>
   </file>
@@ -1594,7 +1594,7 @@ This allows for users to show the definition preview hover without using the mou
         <source xml:lang="en">No suggestions.</source>
       </trans-unit>
       <trans-unit id="ariaCurrenttSuggestionReadDetails">
-        <source xml:lang="en">Item {0}, docs: {1}</source>
+        <source xml:lang="en">{0}, docs: {1}</source>
       </trans-unit>
       <trans-unit id="suggest">
         <source xml:lang="en">Suggest</source>

@@ -63,6 +63,16 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="extensions">
+        <source xml:lang="en">Extensions</source>
+      </trans-unit>
+      <trans-unit id="preferences">
+        <source xml:lang="en">Preferences</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/update/common/update.config.contribution" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="updateConfigurationTitle">
@@ -97,16 +107,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="extensions">
-        <source xml:lang="en">Extensions</source>
-      </trans-unit>
-      <trans-unit id="preferences">
-        <source xml:lang="en">Preferences</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/extensionManagement/node/extensionManagementUtil" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="invalidManifest_Duplicated3">
@@ -121,6 +121,13 @@
       </trans-unit>
       <trans-unit id="telemetry.enableTelemetry">
         <source xml:lang="en">Enable usage data and errors to be sent to a Microsoft online service.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/userDataSyncMachines" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="error incompatible">
+        <source xml:lang="en">Cannot read machines data as the current version is incompatible. Please update {0} and try again.</source>
       </trans-unit>
     </body>
   </file>
@@ -251,13 +258,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/userDataSync/common/userDataSyncMachines" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="error incompatible">
-        <source xml:lang="en">Cannot read machines data as the current version is incompatible. Please update {0} and try again.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/files/common/files" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="unknownError">
@@ -312,19 +312,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/userDataSync/common/userDataAutoSyncService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="turned off">
-        <source xml:lang="en">Cannot sync because syncing is turned off in the cloud</source>
-      </trans-unit>
-      <trans-unit id="session expired">
-        <source xml:lang="en">Cannot sync because current session is expired</source>
-      </trans-unit>
-      <trans-unit id="turned off machine">
-        <source xml:lang="en">Cannot sync because syncing is turned off on this machine from another machine.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="binFailed">
@@ -361,6 +348,22 @@
     <body>
       <trans-unit id="codeWorkspace">
         <source xml:lang="en">Code Workspace</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/userDataAutoSyncService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="turned off">
+        <source xml:lang="en">Cannot sync because syncing is turned off in the cloud</source>
+      </trans-unit>
+      <trans-unit id="endpoint changed">
+        <source xml:lang="en">Cannot sync because sync endpoint is changed</source>
+      </trans-unit>
+      <trans-unit id="session expired">
+        <source xml:lang="en">Cannot sync because current session is expired</source>
+      </trans-unit>
+      <trans-unit id="turned off machine">
+        <source xml:lang="en">Cannot sync because syncing is turned off on this machine from another machine.</source>
       </trans-unit>
     </body>
   </file>
@@ -1178,31 +1181,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/workspaces/electron-main/workspacesHistoryMainService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="newWindow_Duplicated6">
-        <source xml:lang="en">New Window</source>
-      </trans-unit>
-      <trans-unit id="newWindowDesc">
-        <source xml:lang="en">Opens a new window</source>
-      </trans-unit>
-      <trans-unit id="recentFolders">
-        <source xml:lang="en">Recent Workspaces</source>
-      </trans-unit>
-      <trans-unit id="folderDesc">
-        <source xml:lang="en">{0} {1}</source>
-      </trans-unit>
-      <trans-unit id="workspaceDesc">
-        <source xml:lang="en">{0} {1}</source>
-      </trans-unit>
-      <trans-unit id="untitledWorkspace">
-        <source xml:lang="en">Untitled (Workspace)</source>
-      </trans-unit>
-      <trans-unit id="workspaceName">
-        <source xml:lang="en">{0} (Workspace)</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/issue/electron-main/issueMainService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="local">
@@ -1228,6 +1206,31 @@
       </trans-unit>
       <trans-unit id="processExplorer">
         <source xml:lang="en">Process Explorer</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/workspaces/electron-main/workspacesHistoryMainService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="newWindow_Duplicated6">
+        <source xml:lang="en">New Window</source>
+      </trans-unit>
+      <trans-unit id="newWindowDesc">
+        <source xml:lang="en">Opens a new window</source>
+      </trans-unit>
+      <trans-unit id="recentFolders">
+        <source xml:lang="en">Recent Workspaces</source>
+      </trans-unit>
+      <trans-unit id="folderDesc">
+        <source xml:lang="en">{0} {1}</source>
+      </trans-unit>
+      <trans-unit id="workspaceDesc">
+        <source xml:lang="en">{0} {1}</source>
+      </trans-unit>
+      <trans-unit id="untitledWorkspace">
+        <source xml:lang="en">Untitled (Workspace)</source>
+      </trans-unit>
+      <trans-unit id="workspaceName">
+        <source xml:lang="en">{0} (Workspace)</source>
       </trans-unit>
     </body>
   </file>
