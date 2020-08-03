@@ -166,12 +166,6 @@ This option requires restart to take effect.</source>
       <trans-unit id="argv.forceColorProfile">
         <source xml:lang="en">Allows to override the color profile to use. If you experience colors appear badly, try to set this to `srgb` and restart.</source>
       </trans-unit>
-      <trans-unit id="argv.enableCrashReporter">
-        <source xml:lang="en">Allows to disable crash reporting, should restart the app if the value is changed.</source>
-      </trans-unit>
-      <trans-unit id="argv.crashReporterId">
-        <source xml:lang="en">Unique id used for correlating crash reports sent from this app instance.</source>
-      </trans-unit>
       <trans-unit id="argv.enebleProposedApi">
         <source xml:lang="en">Enable proposed APIs for a list of extension ids (such as `vscode.git`). Proposed APIs are unstable and subject to breaking without warning at any time. This should only be set for extension development and testing purposes.</source>
       </trans-unit>
@@ -184,13 +178,6 @@ This option requires restart to take effect.</source>
     <body>
       <trans-unit id="updateerror">
         <source xml:lang="en">Extension '{0}' failed to update workspace folders: {1}</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/api/common/extHostTerminalService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="launchFail.idMissingOnExtHost">
-        <source xml:lang="en">Could not find the terminal with id {0} on the extension host</source>
       </trans-unit>
     </body>
   </file>
@@ -218,6 +205,13 @@ This option requires restart to take effect.</source>
     <body>
       <trans-unit id="extensionTestError">
         <source xml:lang="en">Path {0} does not point to a valid extension test runner.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/common/extHostTerminalService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="launchFail.idMissingOnExtHost">
+        <source xml:lang="en">Could not find the terminal with id {0} on the extension host</source>
       </trans-unit>
     </body>
   </file>
@@ -615,34 +609,6 @@ This option requires restart to take effect.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/actions/navigationActions" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="navigateLeft">
-        <source xml:lang="en">Navigate to the View on the Left</source>
-      </trans-unit>
-      <trans-unit id="navigateRight">
-        <source xml:lang="en">Navigate to the View on the Right</source>
-      </trans-unit>
-      <trans-unit id="navigateUp">
-        <source xml:lang="en">Navigate to the View Above</source>
-      </trans-unit>
-      <trans-unit id="navigateDown">
-        <source xml:lang="en">Navigate to the View Below</source>
-      </trans-unit>
-      <trans-unit id="focusNextPart">
-        <source xml:lang="en">Focus Next Part</source>
-      </trans-unit>
-      <trans-unit id="focusPreviousPart">
-        <source xml:lang="en">Focus Previous Part</source>
-      </trans-unit>
-      <trans-unit id="goHome">
-        <source xml:lang="en">Go Home</source>
-      </trans-unit>
-      <trans-unit id="view_Duplicated6">
-        <source xml:lang="en">View</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/browser/actions/helpActions" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="help_Duplicated18">
@@ -706,6 +672,105 @@ This option requires restart to take effect.</source>
       <trans-unit id="miPrivacyStatement">
         <source xml:lang="en">Privac&amp;&amp;y Statement</source>
         <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/actions/navigationActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="navigateLeft">
+        <source xml:lang="en">Navigate to the View on the Left</source>
+      </trans-unit>
+      <trans-unit id="navigateRight">
+        <source xml:lang="en">Navigate to the View on the Right</source>
+      </trans-unit>
+      <trans-unit id="navigateUp">
+        <source xml:lang="en">Navigate to the View Above</source>
+      </trans-unit>
+      <trans-unit id="navigateDown">
+        <source xml:lang="en">Navigate to the View Below</source>
+      </trans-unit>
+      <trans-unit id="focusNextPart">
+        <source xml:lang="en">Focus Next Part</source>
+      </trans-unit>
+      <trans-unit id="focusPreviousPart">
+        <source xml:lang="en">Focus Previous Part</source>
+      </trans-unit>
+      <trans-unit id="goHome">
+        <source xml:lang="en">Go Home</source>
+      </trans-unit>
+      <trans-unit id="view_Duplicated6">
+        <source xml:lang="en">View</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/actions/workspaceActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="openFile">
+        <source xml:lang="en">Open File...</source>
+      </trans-unit>
+      <trans-unit id="openFolder">
+        <source xml:lang="en">Open Folder...</source>
+      </trans-unit>
+      <trans-unit id="openFileFolder">
+        <source xml:lang="en">Open...</source>
+      </trans-unit>
+      <trans-unit id="openWorkspaceAction">
+        <source xml:lang="en">Open Workspace...</source>
+      </trans-unit>
+      <trans-unit id="closeWorkspace">
+        <source xml:lang="en">Close Workspace</source>
+      </trans-unit>
+      <trans-unit id="noWorkspaceOpened">
+        <source xml:lang="en">There is currently no workspace opened in this instance to close.</source>
+      </trans-unit>
+      <trans-unit id="openWorkspaceConfigFile">
+        <source xml:lang="en">Open Workspace Configuration File</source>
+      </trans-unit>
+      <trans-unit id="globalRemoveFolderFromWorkspace">
+        <source xml:lang="en">Remove Folder from Workspace...</source>
+      </trans-unit>
+      <trans-unit id="saveWorkspaceAsAction">
+        <source xml:lang="en">Save Workspace As...</source>
+      </trans-unit>
+      <trans-unit id="duplicateWorkspaceInNewWindow">
+        <source xml:lang="en">Duplicate Workspace in New Window</source>
+      </trans-unit>
+      <trans-unit id="workspaces_Duplicated20">
+        <source xml:lang="en">Workspaces</source>
+      </trans-unit>
+      <trans-unit id="miAddFolderToWorkspace">
+        <source xml:lang="en">A&amp;&amp;dd Folder to Workspace...</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miSaveWorkspaceAs">
+        <source xml:lang="en">Save Workspace As...</source>
+      </trans-unit>
+      <trans-unit id="miCloseFolder">
+        <source xml:lang="en">Close &amp;&amp;Folder</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="miCloseWorkspace">
+        <source xml:lang="en">Close &amp;&amp;Workspace</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/actions/quickAccessActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="quickOpen">
+        <source xml:lang="en">Go to File...</source>
+      </trans-unit>
+      <trans-unit id="quickNavigateNext">
+        <source xml:lang="en">Navigate Next in Quick Open</source>
+      </trans-unit>
+      <trans-unit id="quickNavigatePrevious">
+        <source xml:lang="en">Navigate Previous in Quick Open</source>
+      </trans-unit>
+      <trans-unit id="quickSelectNext">
+        <source xml:lang="en">Select Next in Quick Open</source>
+      </trans-unit>
+      <trans-unit id="quickSelectPrevious">
+        <source xml:lang="en">Select Previous in Quick Open</source>
       </trans-unit>
     </body>
   </file>
@@ -809,77 +874,6 @@ This option requires restart to take effect.</source>
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/actions/workspaceActions" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="openFile">
-        <source xml:lang="en">Open File...</source>
-      </trans-unit>
-      <trans-unit id="openFolder">
-        <source xml:lang="en">Open Folder...</source>
-      </trans-unit>
-      <trans-unit id="openFileFolder">
-        <source xml:lang="en">Open...</source>
-      </trans-unit>
-      <trans-unit id="openWorkspaceAction">
-        <source xml:lang="en">Open Workspace...</source>
-      </trans-unit>
-      <trans-unit id="closeWorkspace">
-        <source xml:lang="en">Close Workspace</source>
-      </trans-unit>
-      <trans-unit id="noWorkspaceOpened">
-        <source xml:lang="en">There is currently no workspace opened in this instance to close.</source>
-      </trans-unit>
-      <trans-unit id="openWorkspaceConfigFile">
-        <source xml:lang="en">Open Workspace Configuration File</source>
-      </trans-unit>
-      <trans-unit id="globalRemoveFolderFromWorkspace">
-        <source xml:lang="en">Remove Folder from Workspace...</source>
-      </trans-unit>
-      <trans-unit id="saveWorkspaceAsAction">
-        <source xml:lang="en">Save Workspace As...</source>
-      </trans-unit>
-      <trans-unit id="duplicateWorkspaceInNewWindow">
-        <source xml:lang="en">Duplicate Workspace in New Window</source>
-      </trans-unit>
-      <trans-unit id="workspaces_Duplicated20">
-        <source xml:lang="en">Workspaces</source>
-      </trans-unit>
-      <trans-unit id="miAddFolderToWorkspace">
-        <source xml:lang="en">A&amp;&amp;dd Folder to Workspace...</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miSaveWorkspaceAs">
-        <source xml:lang="en">Save Workspace As...</source>
-      </trans-unit>
-      <trans-unit id="miCloseFolder">
-        <source xml:lang="en">Close &amp;&amp;Folder</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="miCloseWorkspace">
-        <source xml:lang="en">Close &amp;&amp;Workspace</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/actions/quickAccessActions" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="quickOpen">
-        <source xml:lang="en">Go to File...</source>
-      </trans-unit>
-      <trans-unit id="quickNavigateNext">
-        <source xml:lang="en">Navigate Next in Quick Open</source>
-      </trans-unit>
-      <trans-unit id="quickNavigatePrevious">
-        <source xml:lang="en">Navigate Previous in Quick Open</source>
-      </trans-unit>
-      <trans-unit id="quickSelectNext">
-        <source xml:lang="en">Select Next in Quick Open</source>
-      </trans-unit>
-      <trans-unit id="quickSelectPrevious">
-        <source xml:lang="en">Select Previous in Quick Open</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/browser/parts/sidebar/sidebarPart" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="focusSideBar">
@@ -897,16 +891,6 @@ This option requires restart to take effect.</source>
       </trans-unit>
       <trans-unit id="configureRuntimeArguments">
         <source xml:lang="en">Configure Runtime Arguments</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/electron-browser/window" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="runningAsRoot">
-        <source xml:lang="en">It is not recommended to run {0} as root user.</source>
-      </trans-unit>
-      <trans-unit id="mPreferences">
-        <source xml:lang="en">Preferences</source>
       </trans-unit>
     </body>
   </file>
@@ -1152,6 +1136,16 @@ This option requires restart to take effect.</source>
       </trans-unit>
       <trans-unit id="quickSwitchWindow">
         <source xml:lang="en">Quick Switch Window...</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/electron-browser/window" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="runningAsRoot">
+        <source xml:lang="en">It is not recommended to run {0} as root user.</source>
+      </trans-unit>
+      <trans-unit id="mPreferences">
+        <source xml:lang="en">Preferences</source>
       </trans-unit>
     </body>
   </file>
@@ -1920,16 +1914,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/panel/panelPart" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="hidePanel">
-        <source xml:lang="en">Hide Panel</source>
-      </trans-unit>
-      <trans-unit id="panel.emptyMessage">
-        <source xml:lang="en">Drag a view into the panel to display.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/browser/parts/statusbar/statusbarPart" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="hide_Duplicated42">
@@ -1940,10 +1924,52 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/browser/parts/panel/panelPart" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="hidePanel">
+        <source xml:lang="en">Hide Panel</source>
+      </trans-unit>
+      <trans-unit id="panel.emptyMessage">
+        <source xml:lang="en">Drag a view into the panel to display.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/common/configuration" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="workbenchConfigurationTitle">
         <source xml:lang="en">Workbench</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/notifications/notificationsCenter" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="notificationsEmpty">
+        <source xml:lang="en">No new notifications</source>
+      </trans-unit>
+      <trans-unit id="notifications_Duplicated45">
+        <source xml:lang="en">Notifications</source>
+      </trans-unit>
+      <trans-unit id="notificationsToolbar">
+        <source xml:lang="en">Notification Center Actions</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/notifications/notificationsCommands" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="notifications_Duplicated46">
+        <source xml:lang="en">Notifications</source>
+      </trans-unit>
+      <trans-unit id="showNotifications">
+        <source xml:lang="en">Show Notifications</source>
+      </trans-unit>
+      <trans-unit id="hideNotifications_Duplicated48">
+        <source xml:lang="en">Hide Notifications</source>
+      </trans-unit>
+      <trans-unit id="clearAllNotifications">
+        <source xml:lang="en">Clear All Notifications</source>
+      </trans-unit>
+      <trans-unit id="focusNotificationToasts">
+        <source xml:lang="en">Focus Notification Toast</source>
       </trans-unit>
     </body>
   </file>
@@ -1952,7 +1978,7 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="status.notifications">
         <source xml:lang="en">Notifications</source>
       </trans-unit>
-      <trans-unit id="hideNotifications_Duplicated45">
+      <trans-unit id="hideNotifications_Duplicated49">
         <source xml:lang="en">Hide Notifications</source>
       </trans-unit>
       <trans-unit id="zeroNotifications">
@@ -1985,38 +2011,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/notifications/notificationsCommands" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="notifications_Duplicated48">
-        <source xml:lang="en">Notifications</source>
-      </trans-unit>
-      <trans-unit id="showNotifications">
-        <source xml:lang="en">Show Notifications</source>
-      </trans-unit>
-      <trans-unit id="hideNotifications_Duplicated46">
-        <source xml:lang="en">Hide Notifications</source>
-      </trans-unit>
-      <trans-unit id="clearAllNotifications">
-        <source xml:lang="en">Clear All Notifications</source>
-      </trans-unit>
-      <trans-unit id="focusNotificationToasts">
-        <source xml:lang="en">Focus Notification Toast</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/notifications/notificationsCenter" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="notificationsEmpty">
-        <source xml:lang="en">No new notifications</source>
-      </trans-unit>
-      <trans-unit id="notifications_Duplicated49">
-        <source xml:lang="en">Notifications</source>
-      </trans-unit>
-      <trans-unit id="notificationsToolbar">
-        <source xml:lang="en">Notification Center Actions</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/api/common/extHostExtensionActivator" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="failedDep1">
@@ -2024,6 +2018,13 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
       <trans-unit id="activationError">
         <source xml:lang="en">Activating extension '{0}' failed: {1}.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/api/browser/mainThreadEditors" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="diffLeftRightLabel">
+        <source xml:lang="en">{0} ⟷ {1}</source>
       </trans-unit>
     </body>
   </file>
@@ -2049,13 +2050,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
       <trans-unit id="unknownDep">
         <source xml:lang="en">Cannot activate the '{0}' extension because it depends on an unknown '{1}' extension .</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/api/browser/mainThreadEditors" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="diffLeftRightLabel">
-        <source xml:lang="en">{0} ⟷ {1}</source>
       </trans-unit>
     </body>
   </file>
@@ -2247,6 +2241,95 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/browser/parts/panel/panelActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="closePanel">
+        <source xml:lang="en">Close Panel</source>
+      </trans-unit>
+      <trans-unit id="togglePanel">
+        <source xml:lang="en">Toggle Panel</source>
+      </trans-unit>
+      <trans-unit id="focusPanel">
+        <source xml:lang="en">Focus into Panel</source>
+      </trans-unit>
+      <trans-unit id="toggleMaximizedPanel">
+        <source xml:lang="en">Toggle Maximized Panel</source>
+      </trans-unit>
+      <trans-unit id="maximizePanel">
+        <source xml:lang="en">Maximize Panel Size</source>
+      </trans-unit>
+      <trans-unit id="minimizePanel">
+        <source xml:lang="en">Restore Panel Size</source>
+      </trans-unit>
+      <trans-unit id="positionPanelLeft">
+        <source xml:lang="en">Move Panel Left</source>
+      </trans-unit>
+      <trans-unit id="positionPanelRight">
+        <source xml:lang="en">Move Panel Right</source>
+      </trans-unit>
+      <trans-unit id="positionPanelBottom">
+        <source xml:lang="en">Move Panel To Bottom</source>
+      </trans-unit>
+      <trans-unit id="previousPanelView">
+        <source xml:lang="en">Previous Panel View</source>
+      </trans-unit>
+      <trans-unit id="nextPanelView">
+        <source xml:lang="en">Next Panel View</source>
+      </trans-unit>
+      <trans-unit id="view_Duplicated11">
+        <source xml:lang="en">View</source>
+      </trans-unit>
+      <trans-unit id="miShowPanel">
+        <source xml:lang="en">Show &amp;&amp;Panel</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/editor/textEditor" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="editor">
+        <source xml:lang="en">Editor</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/notifications/notificationsList" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="notificationAriaLabel">
+        <source xml:lang="en">{0}, notification</source>
+      </trans-unit>
+      <trans-unit id="notificationWithSourceAriaLabel">
+        <source xml:lang="en">{0}, source: {1}, notification</source>
+      </trans-unit>
+      <trans-unit id="notificationsList">
+        <source xml:lang="en">Notifications List</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/notifications/notificationsActions" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="clearNotification">
+        <source xml:lang="en">Clear Notification</source>
+      </trans-unit>
+      <trans-unit id="clearNotifications">
+        <source xml:lang="en">Clear All Notifications</source>
+      </trans-unit>
+      <trans-unit id="hideNotificationsCenter">
+        <source xml:lang="en">Hide Notifications</source>
+      </trans-unit>
+      <trans-unit id="expandNotification">
+        <source xml:lang="en">Expand Notification</source>
+      </trans-unit>
+      <trans-unit id="collapseNotification">
+        <source xml:lang="en">Collapse Notification</source>
+      </trans-unit>
+      <trans-unit id="configureNotification">
+        <source xml:lang="en">Configure Notification</source>
+      </trans-unit>
+      <trans-unit id="copyNotification">
+        <source xml:lang="en">Copy Text</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/browser/parts/titlebar/menubarControl" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="mFile">
@@ -2314,95 +2397,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <trans-unit id="restartToUpdate">
         <source xml:lang="en">Restart to &amp;&amp;Update</source>
         <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/panel/panelActions" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="closePanel">
-        <source xml:lang="en">Close Panel</source>
-      </trans-unit>
-      <trans-unit id="togglePanel">
-        <source xml:lang="en">Toggle Panel</source>
-      </trans-unit>
-      <trans-unit id="focusPanel">
-        <source xml:lang="en">Focus into Panel</source>
-      </trans-unit>
-      <trans-unit id="toggleMaximizedPanel">
-        <source xml:lang="en">Toggle Maximized Panel</source>
-      </trans-unit>
-      <trans-unit id="maximizePanel">
-        <source xml:lang="en">Maximize Panel Size</source>
-      </trans-unit>
-      <trans-unit id="minimizePanel">
-        <source xml:lang="en">Restore Panel Size</source>
-      </trans-unit>
-      <trans-unit id="positionPanelLeft">
-        <source xml:lang="en">Move Panel Left</source>
-      </trans-unit>
-      <trans-unit id="positionPanelRight">
-        <source xml:lang="en">Move Panel Right</source>
-      </trans-unit>
-      <trans-unit id="positionPanelBottom">
-        <source xml:lang="en">Move Panel To Bottom</source>
-      </trans-unit>
-      <trans-unit id="previousPanelView">
-        <source xml:lang="en">Previous Panel View</source>
-      </trans-unit>
-      <trans-unit id="nextPanelView">
-        <source xml:lang="en">Next Panel View</source>
-      </trans-unit>
-      <trans-unit id="view_Duplicated11">
-        <source xml:lang="en">View</source>
-      </trans-unit>
-      <trans-unit id="miShowPanel">
-        <source xml:lang="en">Show &amp;&amp;Panel</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/editor/textEditor" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="editor">
-        <source xml:lang="en">Editor</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/notifications/notificationsActions" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="clearNotification">
-        <source xml:lang="en">Clear Notification</source>
-      </trans-unit>
-      <trans-unit id="clearNotifications">
-        <source xml:lang="en">Clear All Notifications</source>
-      </trans-unit>
-      <trans-unit id="hideNotificationsCenter">
-        <source xml:lang="en">Hide Notifications</source>
-      </trans-unit>
-      <trans-unit id="expandNotification">
-        <source xml:lang="en">Expand Notification</source>
-      </trans-unit>
-      <trans-unit id="collapseNotification">
-        <source xml:lang="en">Collapse Notification</source>
-      </trans-unit>
-      <trans-unit id="configureNotification">
-        <source xml:lang="en">Configure Notification</source>
-      </trans-unit>
-      <trans-unit id="copyNotification">
-        <source xml:lang="en">Copy Text</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/browser/parts/notifications/notificationsList" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="notificationAriaLabel">
-        <source xml:lang="en">{0}, notification</source>
-      </trans-unit>
-      <trans-unit id="notificationWithSourceAriaLabel">
-        <source xml:lang="en">{0}, source: {1}, notification</source>
-      </trans-unit>
-      <trans-unit id="notificationsList">
-        <source xml:lang="en">Notifications List</source>
       </trans-unit>
     </body>
   </file>
@@ -2489,17 +2483,17 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/browser/parts/compositeBar" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="activityBarAriaLabel">
-        <source xml:lang="en">Active View Switcher</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/browser/parts/editor/editorDropTarget" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="fileTooLarge">
         <source xml:lang="en">File is too large to open as untitled editor. Please upload it first into the file explorer and then try again.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/browser/parts/compositeBar" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="activityBarAriaLabel">
+        <source xml:lang="en">Active View Switcher</source>
       </trans-unit>
     </body>
   </file>
