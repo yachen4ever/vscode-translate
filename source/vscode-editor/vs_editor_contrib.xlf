@@ -28,6 +28,28 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/anchorSelect/anchorSelect" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="selectionAnchor">
+        <source xml:lang="en">Selection Anchor</source>
+      </trans-unit>
+      <trans-unit id="anchorSet">
+        <source xml:lang="en">Anchor set at {0}:{1}</source>
+      </trans-unit>
+      <trans-unit id="setSelectionAnchor">
+        <source xml:lang="en">Set Selection Anchor</source>
+      </trans-unit>
+      <trans-unit id="goToSelectionAnchor">
+        <source xml:lang="en">Go to Selection Anchor</source>
+      </trans-unit>
+      <trans-unit id="selectFromAnchorToCursor">
+        <source xml:lang="en">Select from Anchor to Cursor</source>
+      </trans-unit>
+      <trans-unit id="cancelSelectionAnchor">
+        <source xml:lang="en">Cancel Selection Anchor</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/caretOperations/caretOperations" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="caret.moveLeft">
@@ -99,6 +121,13 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/tokenization/tokenization" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="forceRetokenize">
+        <source xml:lang="en">Developer: Force Retokenize</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/toggleTabFocusMode/toggleTabFocusMode" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="toggle.tabMovesFocus">
@@ -110,13 +139,6 @@
       </trans-unit>
       <trans-unit id="toggle.tabMovesFocus.off">
         <source xml:lang="en">Pressing Tab will now insert the tab character</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/tokenization/tokenization" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="forceRetokenize">
-        <source xml:lang="en">Developer: Force Retokenize</source>
       </trans-unit>
     </body>
   </file>
@@ -138,28 +160,6 @@ It is recommended to remove them from the file. This can be configured via `edit
       </trans-unit>
       <trans-unit id="unusualLineTerminators.ignore">
         <source xml:lang="en">Ignore problem for this file</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/anchorSelect/anchorSelect" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="selectionAnchor">
-        <source xml:lang="en">Selection Anchor</source>
-      </trans-unit>
-      <trans-unit id="anchorSet">
-        <source xml:lang="en">Anchor set at {0}:{1}</source>
-      </trans-unit>
-      <trans-unit id="setSelectionAnchor">
-        <source xml:lang="en">Set Selection Anchor</source>
-      </trans-unit>
-      <trans-unit id="goToSelectionAnchor">
-        <source xml:lang="en">Go to Selection Anchor</source>
-      </trans-unit>
-      <trans-unit id="selectFromAnchorToCursor">
-        <source xml:lang="en">Select from Anchor to Cursor</source>
-      </trans-unit>
-      <trans-unit id="cancelSelectionAnchor">
-        <source xml:lang="en">Cancel Selection Anchor</source>
       </trans-unit>
     </body>
   </file>
@@ -245,6 +245,16 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/editor/contrib/rename/onTypeRename" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="onTypeRename.label">
+        <source xml:lang="en">On Type Rename Symbol</source>
+      </trans-unit>
+      <trans-unit id="editorOnTypeRenameBackground">
+        <source xml:lang="en">Background color when the editor auto renames on type.</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/editor/contrib/smartSelect/smartSelect" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="smartSelect.expand">
@@ -260,6 +270,37 @@ This allows for users to show the definition preview hover without using the mou
       <trans-unit id="miSmartSelectShrink">
         <source xml:lang="en">&amp;&amp;Shrink Selection</source>
         <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/rename/rename" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="no result">
+        <source xml:lang="en">No result.</source>
+      </trans-unit>
+      <trans-unit id="resolveRenameLocationFailed">
+        <source xml:lang="en">An unknown error occurred while resolving rename location</source>
+      </trans-unit>
+      <trans-unit id="label_Duplicated1">
+        <source xml:lang="en">Renaming '{0}'</source>
+      </trans-unit>
+      <trans-unit id="quotableLabel">
+        <source xml:lang="en">Renaming {0}</source>
+      </trans-unit>
+      <trans-unit id="aria">
+        <source xml:lang="en">Successfully renamed '{0}' to '{1}'. Summary: {2}</source>
+      </trans-unit>
+      <trans-unit id="rename.failedApply">
+        <source xml:lang="en">Rename failed to apply edits</source>
+      </trans-unit>
+      <trans-unit id="rename.failed">
+        <source xml:lang="en">Rename failed to compute edits</source>
+      </trans-unit>
+      <trans-unit id="rename.label">
+        <source xml:lang="en">Rename Symbol</source>
+      </trans-unit>
+      <trans-unit id="enablePreview">
+        <source xml:lang="en">Enable/disable the ability to preview changes before renaming</source>
       </trans-unit>
     </body>
   </file>
@@ -303,49 +344,8 @@ This allows for users to show the definition preview hover without using the mou
       <trans-unit id="missing.url">
         <source xml:lang="en">Failed to open this link because its target is missing.</source>
       </trans-unit>
-      <trans-unit id="label_Duplicated1">
-        <source xml:lang="en">Open Link</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/rename/onTypeRename" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="onTypeRename.label">
-        <source xml:lang="en">On Type Rename Symbol</source>
-      </trans-unit>
-      <trans-unit id="editorOnTypeRenameBackground">
-        <source xml:lang="en">Background color when the editor auto renames on type.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/rename/rename" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="no result">
-        <source xml:lang="en">No result.</source>
-      </trans-unit>
-      <trans-unit id="resolveRenameLocationFailed">
-        <source xml:lang="en">An unknown error occurred while resolving rename location</source>
-      </trans-unit>
       <trans-unit id="label_Duplicated2">
-        <source xml:lang="en">Renaming '{0}'</source>
-      </trans-unit>
-      <trans-unit id="quotableLabel">
-        <source xml:lang="en">Renaming {0}</source>
-      </trans-unit>
-      <trans-unit id="aria">
-        <source xml:lang="en">Successfully renamed '{0}' to '{1}'. Summary: {2}</source>
-      </trans-unit>
-      <trans-unit id="rename.failedApply">
-        <source xml:lang="en">Rename failed to apply edits</source>
-      </trans-unit>
-      <trans-unit id="rename.failed">
-        <source xml:lang="en">Rename failed to compute edits</source>
-      </trans-unit>
-      <trans-unit id="rename.label">
-        <source xml:lang="en">Rename Symbol</source>
-      </trans-unit>
-      <trans-unit id="enablePreview">
-        <source xml:lang="en">Enable/disable the ability to preview changes before renaming</source>
+        <source xml:lang="en">Open Link</source>
       </trans-unit>
     </body>
   </file>
@@ -395,6 +395,120 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
       <trans-unit id="peekViewEditorMatchHighlightBorder">
         <source xml:lang="en">Match highlight border in the peek view editor.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/gotoSymbol/goToCommands" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="peek.submenu">
+        <source xml:lang="en">Peek</source>
+      </trans-unit>
+      <trans-unit id="def.title">
+        <source xml:lang="en">Definitions</source>
+      </trans-unit>
+      <trans-unit id="noResultWord">
+        <source xml:lang="en">No definition found for '{0}'</source>
+      </trans-unit>
+      <trans-unit id="generic.noResults">
+        <source xml:lang="en">No definition found</source>
+      </trans-unit>
+      <trans-unit id="actions.goToDecl.label">
+        <source xml:lang="en">Go to Definition</source>
+      </trans-unit>
+      <trans-unit id="miGotoDefinition">
+        <source xml:lang="en">Go to &amp;&amp;Definition</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="actions.goToDeclToSide.label">
+        <source xml:lang="en">Open Definition to the Side</source>
+      </trans-unit>
+      <trans-unit id="actions.previewDecl.label">
+        <source xml:lang="en">Peek Definition</source>
+      </trans-unit>
+      <trans-unit id="decl.title">
+        <source xml:lang="en">Declarations</source>
+      </trans-unit>
+      <trans-unit id="decl.noResultWord">
+        <source xml:lang="en">No declaration found for '{0}'</source>
+      </trans-unit>
+      <trans-unit id="decl.generic.noResults">
+        <source xml:lang="en">No declaration found</source>
+      </trans-unit>
+      <trans-unit id="actions.goToDeclaration.label">
+        <source xml:lang="en">Go to Declaration</source>
+      </trans-unit>
+      <trans-unit id="miGotoDeclaration">
+        <source xml:lang="en">Go to &amp;&amp;Declaration</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="actions.peekDecl.label">
+        <source xml:lang="en">Peek Declaration</source>
+      </trans-unit>
+      <trans-unit id="typedef.title">
+        <source xml:lang="en">Type Definitions</source>
+      </trans-unit>
+      <trans-unit id="goToTypeDefinition.noResultWord">
+        <source xml:lang="en">No type definition found for '{0}'</source>
+      </trans-unit>
+      <trans-unit id="goToTypeDefinition.generic.noResults">
+        <source xml:lang="en">No type definition found</source>
+      </trans-unit>
+      <trans-unit id="actions.goToTypeDefinition.label">
+        <source xml:lang="en">Go to Type Definition</source>
+      </trans-unit>
+      <trans-unit id="miGotoTypeDefinition">
+        <source xml:lang="en">Go to &amp;&amp;Type Definition</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="actions.peekTypeDefinition.label">
+        <source xml:lang="en">Peek Type Definition</source>
+      </trans-unit>
+      <trans-unit id="impl.title">
+        <source xml:lang="en">Implementations</source>
+      </trans-unit>
+      <trans-unit id="goToImplementation.noResultWord">
+        <source xml:lang="en">No implementation found for '{0}'</source>
+      </trans-unit>
+      <trans-unit id="goToImplementation.generic.noResults">
+        <source xml:lang="en">No implementation found</source>
+      </trans-unit>
+      <trans-unit id="actions.goToImplementation.label">
+        <source xml:lang="en">Go to Implementations</source>
+      </trans-unit>
+      <trans-unit id="miGotoImplementation">
+        <source xml:lang="en">Go to &amp;&amp;Implementations</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="actions.peekImplementation.label">
+        <source xml:lang="en">Peek Implementations</source>
+      </trans-unit>
+      <trans-unit id="references.no">
+        <source xml:lang="en">No references found for '{0}'</source>
+      </trans-unit>
+      <trans-unit id="references.noGeneric">
+        <source xml:lang="en">No references found</source>
+      </trans-unit>
+      <trans-unit id="goToReferences.label">
+        <source xml:lang="en">Go to References</source>
+      </trans-unit>
+      <trans-unit id="miGotoReference">
+        <source xml:lang="en">Go to &amp;&amp;References</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="ref.title">
+        <source xml:lang="en">References</source>
+      </trans-unit>
+      <trans-unit id="references.action.label">
+        <source xml:lang="en">Peek References</source>
+      </trans-unit>
+      <trans-unit id="label.generic">
+        <source xml:lang="en">Go To Any Symbol</source>
+      </trans-unit>
+      <trans-unit id="generic.title">
+        <source xml:lang="en">Locations</source>
+      </trans-unit>
+      <trans-unit id="generic.noResult">
+        <source xml:lang="en">No results for '{0}'</source>
       </trans-unit>
     </body>
   </file>
@@ -537,120 +651,6 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/gotoSymbol/goToCommands" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="peek.submenu">
-        <source xml:lang="en">Peek</source>
-      </trans-unit>
-      <trans-unit id="def.title">
-        <source xml:lang="en">Definitions</source>
-      </trans-unit>
-      <trans-unit id="noResultWord">
-        <source xml:lang="en">No definition found for '{0}'</source>
-      </trans-unit>
-      <trans-unit id="generic.noResults">
-        <source xml:lang="en">No definition found</source>
-      </trans-unit>
-      <trans-unit id="actions.goToDecl.label">
-        <source xml:lang="en">Go to Definition</source>
-      </trans-unit>
-      <trans-unit id="miGotoDefinition">
-        <source xml:lang="en">Go to &amp;&amp;Definition</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="actions.goToDeclToSide.label">
-        <source xml:lang="en">Open Definition to the Side</source>
-      </trans-unit>
-      <trans-unit id="actions.previewDecl.label">
-        <source xml:lang="en">Peek Definition</source>
-      </trans-unit>
-      <trans-unit id="decl.title">
-        <source xml:lang="en">Declarations</source>
-      </trans-unit>
-      <trans-unit id="decl.noResultWord">
-        <source xml:lang="en">No declaration found for '{0}'</source>
-      </trans-unit>
-      <trans-unit id="decl.generic.noResults">
-        <source xml:lang="en">No declaration found</source>
-      </trans-unit>
-      <trans-unit id="actions.goToDeclaration.label">
-        <source xml:lang="en">Go to Declaration</source>
-      </trans-unit>
-      <trans-unit id="miGotoDeclaration">
-        <source xml:lang="en">Go to &amp;&amp;Declaration</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="actions.peekDecl.label">
-        <source xml:lang="en">Peek Declaration</source>
-      </trans-unit>
-      <trans-unit id="typedef.title">
-        <source xml:lang="en">Type Definitions</source>
-      </trans-unit>
-      <trans-unit id="goToTypeDefinition.noResultWord">
-        <source xml:lang="en">No type definition found for '{0}'</source>
-      </trans-unit>
-      <trans-unit id="goToTypeDefinition.generic.noResults">
-        <source xml:lang="en">No type definition found</source>
-      </trans-unit>
-      <trans-unit id="actions.goToTypeDefinition.label">
-        <source xml:lang="en">Go to Type Definition</source>
-      </trans-unit>
-      <trans-unit id="miGotoTypeDefinition">
-        <source xml:lang="en">Go to &amp;&amp;Type Definition</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="actions.peekTypeDefinition.label">
-        <source xml:lang="en">Peek Type Definition</source>
-      </trans-unit>
-      <trans-unit id="impl.title">
-        <source xml:lang="en">Implementations</source>
-      </trans-unit>
-      <trans-unit id="goToImplementation.noResultWord">
-        <source xml:lang="en">No implementation found for '{0}'</source>
-      </trans-unit>
-      <trans-unit id="goToImplementation.generic.noResults">
-        <source xml:lang="en">No implementation found</source>
-      </trans-unit>
-      <trans-unit id="actions.goToImplementation.label">
-        <source xml:lang="en">Go to Implementations</source>
-      </trans-unit>
-      <trans-unit id="miGotoImplementation">
-        <source xml:lang="en">Go to &amp;&amp;Implementations</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="actions.peekImplementation.label">
-        <source xml:lang="en">Peek Implementations</source>
-      </trans-unit>
-      <trans-unit id="references.no">
-        <source xml:lang="en">No references found for '{0}'</source>
-      </trans-unit>
-      <trans-unit id="references.noGeneric">
-        <source xml:lang="en">No references found</source>
-      </trans-unit>
-      <trans-unit id="goToReferences.label">
-        <source xml:lang="en">Go to References</source>
-      </trans-unit>
-      <trans-unit id="miGotoReference">
-        <source xml:lang="en">Go to &amp;&amp;References</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="ref.title">
-        <source xml:lang="en">References</source>
-      </trans-unit>
-      <trans-unit id="references.action.label">
-        <source xml:lang="en">Peek References</source>
-      </trans-unit>
-      <trans-unit id="label.generic">
-        <source xml:lang="en">Go To Any Symbol</source>
-      </trans-unit>
-      <trans-unit id="generic.title">
-        <source xml:lang="en">Locations</source>
-      </trans-unit>
-      <trans-unit id="generic.noResult">
-        <source xml:lang="en">No results for '{0}'</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/suggest/suggestController" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="arai.alert.snippet">
@@ -695,6 +695,67 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
       <trans-unit id="gotoLineLabelEmpty">
         <source xml:lang="en">Current Line: {0}, Character: {1}. Type a line number to navigate to.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/multicursor/multicursor" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="mutlicursor.insertAbove">
+        <source xml:lang="en">Add Cursor Above</source>
+      </trans-unit>
+      <trans-unit id="miInsertCursorAbove">
+        <source xml:lang="en">&amp;&amp;Add Cursor Above</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mutlicursor.insertBelow">
+        <source xml:lang="en">Add Cursor Below</source>
+      </trans-unit>
+      <trans-unit id="miInsertCursorBelow">
+        <source xml:lang="en">A&amp;&amp;dd Cursor Below</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mutlicursor.insertAtEndOfEachLineSelected">
+        <source xml:lang="en">Add Cursors to Line Ends</source>
+      </trans-unit>
+      <trans-unit id="miInsertCursorAtEndOfEachLineSelected">
+        <source xml:lang="en">Add C&amp;&amp;ursors to Line Ends</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="mutlicursor.addCursorsToBottom">
+        <source xml:lang="en">Add Cursors To Bottom</source>
+      </trans-unit>
+      <trans-unit id="mutlicursor.addCursorsToTop">
+        <source xml:lang="en">Add Cursors To Top</source>
+      </trans-unit>
+      <trans-unit id="addSelectionToNextFindMatch">
+        <source xml:lang="en">Add Selection To Next Find Match</source>
+      </trans-unit>
+      <trans-unit id="miAddSelectionToNextFindMatch">
+        <source xml:lang="en">Add &amp;&amp;Next Occurrence</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="addSelectionToPreviousFindMatch">
+        <source xml:lang="en">Add Selection To Previous Find Match</source>
+      </trans-unit>
+      <trans-unit id="miAddSelectionToPreviousFindMatch">
+        <source xml:lang="en">Add P&amp;&amp;revious Occurrence</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="moveSelectionToNextFindMatch">
+        <source xml:lang="en">Move Last Selection To Next Find Match</source>
+      </trans-unit>
+      <trans-unit id="moveSelectionToPreviousFindMatch">
+        <source xml:lang="en">Move Last Selection To Previous Find Match</source>
+      </trans-unit>
+      <trans-unit id="selectAllOccurrencesOfFindMatch">
+        <source xml:lang="en">Select All Occurrences of Find Match</source>
+      </trans-unit>
+      <trans-unit id="miSelectHighlights">
+        <source xml:lang="en">Select All &amp;&amp;Occurrences</source>
+        <note>&amp;&amp; denotes a mnemonic</note>
+      </trans-unit>
+      <trans-unit id="changeAll.label">
+        <source xml:lang="en">Change All Occurrences</source>
       </trans-unit>
     </body>
   </file>
@@ -779,67 +840,6 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
       <trans-unit id="editor.transformToTitlecase">
         <source xml:lang="en">Transform to Title Case</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/multicursor/multicursor" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="mutlicursor.insertAbove">
-        <source xml:lang="en">Add Cursor Above</source>
-      </trans-unit>
-      <trans-unit id="miInsertCursorAbove">
-        <source xml:lang="en">&amp;&amp;Add Cursor Above</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="mutlicursor.insertBelow">
-        <source xml:lang="en">Add Cursor Below</source>
-      </trans-unit>
-      <trans-unit id="miInsertCursorBelow">
-        <source xml:lang="en">A&amp;&amp;dd Cursor Below</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="mutlicursor.insertAtEndOfEachLineSelected">
-        <source xml:lang="en">Add Cursors to Line Ends</source>
-      </trans-unit>
-      <trans-unit id="miInsertCursorAtEndOfEachLineSelected">
-        <source xml:lang="en">Add C&amp;&amp;ursors to Line Ends</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="mutlicursor.addCursorsToBottom">
-        <source xml:lang="en">Add Cursors To Bottom</source>
-      </trans-unit>
-      <trans-unit id="mutlicursor.addCursorsToTop">
-        <source xml:lang="en">Add Cursors To Top</source>
-      </trans-unit>
-      <trans-unit id="addSelectionToNextFindMatch">
-        <source xml:lang="en">Add Selection To Next Find Match</source>
-      </trans-unit>
-      <trans-unit id="miAddSelectionToNextFindMatch">
-        <source xml:lang="en">Add &amp;&amp;Next Occurrence</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="addSelectionToPreviousFindMatch">
-        <source xml:lang="en">Add Selection To Previous Find Match</source>
-      </trans-unit>
-      <trans-unit id="miAddSelectionToPreviousFindMatch">
-        <source xml:lang="en">Add P&amp;&amp;revious Occurrence</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="moveSelectionToNextFindMatch">
-        <source xml:lang="en">Move Last Selection To Next Find Match</source>
-      </trans-unit>
-      <trans-unit id="moveSelectionToPreviousFindMatch">
-        <source xml:lang="en">Move Last Selection To Previous Find Match</source>
-      </trans-unit>
-      <trans-unit id="selectAllOccurrencesOfFindMatch">
-        <source xml:lang="en">Select All Occurrences of Find Match</source>
-      </trans-unit>
-      <trans-unit id="miSelectHighlights">
-        <source xml:lang="en">Select All &amp;&amp;Occurrences</source>
-        <note>&amp;&amp; denotes a mnemonic</note>
-      </trans-unit>
-      <trans-unit id="changeAll.label">
-        <source xml:lang="en">Change All Occurrences</source>
       </trans-unit>
     </body>
   </file>
@@ -954,6 +954,24 @@ This allows for users to show the definition preview hover without using the mou
     <body>
       <trans-unit id="hint_Duplicated4">
         <source xml:lang="en">{0}, hint</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/rename/renameInputField" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="renameAriaLabel">
+        <source xml:lang="en">Rename input. Type new name and press Enter to commit.</source>
+      </trans-unit>
+      <trans-unit id="label_Duplicated3">
+        <source xml:lang="en">{0} to Rename, {1} to Preview</source>
+        <note>placeholders are keybindings, e.g "F2 to Rename, Shift+F2 to Preview"</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/message/messageController" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="editor.readonly">
+        <source xml:lang="en">Cannot edit in read-only editor</source>
       </trans-unit>
     </body>
   </file>
@@ -1122,24 +1140,6 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/rename/renameInputField" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="renameAriaLabel">
-        <source xml:lang="en">Rename input. Type new name and press Enter to commit.</source>
-      </trans-unit>
-      <trans-unit id="label_Duplicated3">
-        <source xml:lang="en">{0} to Rename, {1} to Preview</source>
-        <note>placeholders are keybindings, e.g "F2 to Rename, Shift+F2 to Preview"</note>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/editor/contrib/message/messageController" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="editor.readonly">
-        <source xml:lang="en">Cannot edit in read-only editor</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/quickAccess/gotoSymbolQuickAccess" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="cannotRunGotoSymbolWithoutEditor">
@@ -1240,25 +1240,6 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/hover/modesContentHover" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="modesContentHover.loading">
-        <source xml:lang="en">Loading...</source>
-      </trans-unit>
-      <trans-unit id="peek problem">
-        <source xml:lang="en">Peek Problem</source>
-      </trans-unit>
-      <trans-unit id="checkingForQuickFixes">
-        <source xml:lang="en">Checking for quick fixes...</source>
-      </trans-unit>
-      <trans-unit id="noQuickFixes">
-        <source xml:lang="en">No quick fixes available</source>
-      </trans-unit>
-      <trans-unit id="quick fixes">
-        <source xml:lang="en">Quick Fix...</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/gotoSymbol/referencesModel" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="aria.oneReference">
@@ -1291,6 +1272,25 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
       <trans-unit id="location">
         <source xml:lang="en">Symbol {0} of {1}</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/hover/modesContentHover" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="modesContentHover.loading">
+        <source xml:lang="en">Loading...</source>
+      </trans-unit>
+      <trans-unit id="peek problem">
+        <source xml:lang="en">Peek Problem</source>
+      </trans-unit>
+      <trans-unit id="checkingForQuickFixes">
+        <source xml:lang="en">Checking for quick fixes...</source>
+      </trans-unit>
+      <trans-unit id="noQuickFixes">
+        <source xml:lang="en">No quick fixes available</source>
+      </trans-unit>
+      <trans-unit id="quick fixes">
+        <source xml:lang="en">Quick Fix...</source>
       </trans-unit>
     </body>
   </file>
@@ -1487,19 +1487,6 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/editor/contrib/gotoSymbol/peek/referencesWidget" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="missingPreviewMessage">
-        <source xml:lang="en">no preview available</source>
-      </trans-unit>
-      <trans-unit id="noResults">
-        <source xml:lang="en">No results</source>
-      </trans-unit>
-      <trans-unit id="peekView.alternateTitle">
-        <source xml:lang="en">References</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/editor/contrib/find/findWidget" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="label.find">
@@ -1558,6 +1545,19 @@ This allows for users to show the definition preview hover without using the mou
       </trans-unit>
       <trans-unit id="ctrlEnter.keybindingChanged">
         <source xml:lang="en">Ctrl+Enter now inserts line break instead of replacing all. You can modify the keybinding for editor.action.replaceAll to override this behavior.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/editor/contrib/gotoSymbol/peek/referencesWidget" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="missingPreviewMessage">
+        <source xml:lang="en">no preview available</source>
+      </trans-unit>
+      <trans-unit id="noResults">
+        <source xml:lang="en">No results</source>
+      </trans-unit>
+      <trans-unit id="peekView.alternateTitle">
+        <source xml:lang="en">References</source>
       </trans-unit>
     </body>
   </file>

@@ -188,6 +188,9 @@ Note: you may need to toggle Auto Attach to "disabled" and then "on" again for c
 
 You can use the Node.js Debug Terminal to instantly debug JavaScript you run from the command line.</source>
       </trans-unit>
+      <trans-unit id="debugLink.label">
+        <source xml:lang="en">Open Link</source>
+      </trans-unit>
       <trans-unit id="edge.address.description">
         <source xml:lang="en">When debugging webviews, the IP address or hostname the webview is listening on. Will be automatically discovered if not set.</source>
       </trans-unit>
@@ -212,6 +215,9 @@ You can use the Node.js Debug Terminal to instantly debug JavaScript you run fro
       <trans-unit id="edge.useWebView.description">
         <source xml:lang="en">(Edge (Chromium) only) When 'true', the debugger will treat the runtime executable as a host application that contains a WebView allowing you to debug the WebView script content.</source>
       </trans-unit>
+      <trans-unit id="enableContentValidation.description">
+        <source xml:lang="en">Toggles whether we verify the contents of files on disk match the ones loaded in the runtime. This is useful in a variety of scenarios and required in some, but can cause issues if you have server-side transformation of scripts, for example.</source>
+      </trans-unit>
       <trans-unit id="errors.timeout">
         <source xml:lang="en">{0}: timeout after {1}ms</source>
       </trans-unit>
@@ -224,11 +230,17 @@ You can use the Node.js Debug Terminal to instantly debug JavaScript you run fro
       <trans-unit id="extensionHost.launch.config.name">
         <source xml:lang="en">Launch Extension</source>
       </trans-unit>
+      <trans-unit id="extensionHost.launch.debugWebWorkerHost">
+        <source xml:lang="en">Configures whether we should try to attach to the web worker extension host.</source>
+      </trans-unit>
       <trans-unit id="extensionHost.launch.debugWebviews">
         <source xml:lang="en">Configures whether we should try to attach to webviews in the launched VS Code instance. **Note:** at the moment this requires the setting `"webview.experimental.useExternalEndpoint": true` to work properly, and will only work in desktop VS Code.</source>
       </trans-unit>
       <trans-unit id="extensionHost.launch.env.description">
         <source xml:lang="en">Environment variables passed to the extension host.</source>
+      </trans-unit>
+      <trans-unit id="extensionHost.launch.rendererDebugOptions">
+        <source xml:lang="en">Chrome launch options used when attaching to the renderer process, with `debugWebviews` or `debugWebWorkerHost`.</source>
       </trans-unit>
       <trans-unit id="extensionHost.launch.runtimeExecutable.description">
         <source xml:lang="en">Absolute path to VS Code.</source>
@@ -276,7 +288,7 @@ You can use the Node.js Debug Terminal to instantly debug JavaScript you run fro
         <source xml:lang="en">Try to reconnect to the program if we lose connection. If set to `true`, we'll try once a second, forever. You can customize the interval and maximum number of attempts by specifying the `delay` and `maxAttempts` in an object instead.</source>
       </trans-unit>
       <trans-unit id="node.attachSimplePort.description">
-        <source xml:lang="en">If set, attaches to the process via the given port. This is generally no longer necessary for Node.js programs and loses the ability to debug child processes, but can be useful in more esoteric scenarios such as with Deno and Docker launches.</source>
+        <source xml:lang="en">If set, attaches to the process via the given port. This is generally no longer necessary for Node.js programs and loses the ability to debug child processes, but can be useful in more esoteric scenarios such as with Deno and Docker launches. If set to 0, a random port will be chosen and --inspect-brk added to the launch arguments automatically.</source>
       </trans-unit>
       <trans-unit id="node.console.title_Duplicated17">
         <source xml:lang="en">Node Debug Console</source>
@@ -836,6 +848,13 @@ You can use the Node.js Debug Terminal to instantly debug JavaScript you run fro
     <body>
       <trans-unit id="cannotDebugInBrowser">
         <source xml:lang="en">We can't launch a browser in debug mode from here. Open this workspace in VS Code on your desktop to enable debugging.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="extensions/ms-vscode.js-debug//src/ui/debugLinkUI" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="debugLink.invalidUrl">
+        <source xml:lang="en">The URL provided is invalid</source>
       </trans-unit>
     </body>
   </file>

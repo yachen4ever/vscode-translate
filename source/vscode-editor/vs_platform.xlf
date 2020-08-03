@@ -280,6 +280,16 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="binFailed">
+        <source xml:lang="en">Failed to move '{0}' to the recycle bin</source>
+      </trans-unit>
+      <trans-unit id="trashFailed">
+        <source xml:lang="en">Failed to move '{0}' to the trash</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/dialogs/common/dialogs" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="moreFile">
@@ -312,6 +322,13 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/platform/workspaces/common/workspaces" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="codeWorkspace">
+        <source xml:lang="en">Code Workspace</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/platform/configuration/common/configurationRegistry" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="defaultLanguageConfigurationOverrides.title">
@@ -331,42 +348,6 @@
       </trans-unit>
       <trans-unit id="config.property.duplicate">
         <source xml:lang="en">Cannot register '{0}'. This property is already registered.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/files/electron-browser/diskFileSystemProvider" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="binFailed">
-        <source xml:lang="en">Failed to move '{0}' to the recycle bin</source>
-      </trans-unit>
-      <trans-unit id="trashFailed">
-        <source xml:lang="en">Failed to move '{0}' to the trash</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/workspaces/common/workspaces" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="codeWorkspace">
-        <source xml:lang="en">Code Workspace</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/userDataSync/common/userDataAutoSyncService" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="default service changed">
-        <source xml:lang="en">Cannot sync because sync default servuce has changed</source>
-      </trans-unit>
-      <trans-unit id="service changed">
-        <source xml:lang="en">Cannot sync because sync service has changed</source>
-      </trans-unit>
-      <trans-unit id="turned off">
-        <source xml:lang="en">Cannot sync because syncing is turned off in the cloud</source>
-      </trans-unit>
-      <trans-unit id="session expired">
-        <source xml:lang="en">Cannot sync because current session is expired</source>
-      </trans-unit>
-      <trans-unit id="turned off machine">
-        <source xml:lang="en">Cannot sync because syncing is turned off on this machine from another machine.</source>
       </trans-unit>
     </body>
   </file>
@@ -413,6 +394,25 @@
       </trans-unit>
       <trans-unit id="notExists">
         <source xml:lang="en">Could not find extension</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/userDataSync/common/userDataAutoSyncService" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="default service changed">
+        <source xml:lang="en">Cannot sync because sync default servuce has changed</source>
+      </trans-unit>
+      <trans-unit id="service changed">
+        <source xml:lang="en">Cannot sync because sync service has changed</source>
+      </trans-unit>
+      <trans-unit id="turned off">
+        <source xml:lang="en">Cannot sync because syncing is turned off in the cloud</source>
+      </trans-unit>
+      <trans-unit id="session expired">
+        <source xml:lang="en">Cannot sync because current session is expired</source>
+      </trans-unit>
+      <trans-unit id="turned off machine">
+        <source xml:lang="en">Cannot sync because syncing is turned off on this machine from another machine.</source>
       </trans-unit>
     </body>
   </file>
@@ -500,6 +500,22 @@
       </trans-unit>
       <trans-unit id="fileTooLargeError_Duplicated12">
         <source xml:lang="en">File is too large to open</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/extensions/common/extensionValidator" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="versionSyntax">
+        <source xml:lang="en">Could not parse `engines.vscode` value {0}. Please use, for example: ^1.22.0, ^1.22.x, etc.</source>
+      </trans-unit>
+      <trans-unit id="versionSpecificity1">
+        <source xml:lang="en">Version specified in `engines.vscode` ({0}) is not specific enough. For vscode versions before 1.0.0, please define at a minimum the major and minor desired version. E.g. ^0.10.0, 0.10.x, 0.11.0, etc.</source>
+      </trans-unit>
+      <trans-unit id="versionSpecificity2">
+        <source xml:lang="en">Version specified in `engines.vscode` ({0}) is not specific enough. For vscode versions after 1.0.0, please define at a minimum the major desired version. E.g. ^1.10.0, 1.10.x, 1.x.x, 2.x.x, etc.</source>
+      </trans-unit>
+      <trans-unit id="versionMismatch">
+        <source xml:lang="en">Extension is not compatible with Code {0}. Extension requires: {1}.</source>
       </trans-unit>
     </body>
   </file>
@@ -1005,22 +1021,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/extensions/common/extensionValidator" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="versionSyntax">
-        <source xml:lang="en">Could not parse `engines.vscode` value {0}. Please use, for example: ^1.22.0, ^1.22.x, etc.</source>
-      </trans-unit>
-      <trans-unit id="versionSpecificity1">
-        <source xml:lang="en">Version specified in `engines.vscode` ({0}) is not specific enough. For vscode versions before 1.0.0, please define at a minimum the major and minor desired version. E.g. ^0.10.0, 0.10.x, 0.11.0, etc.</source>
-      </trans-unit>
-      <trans-unit id="versionSpecificity2">
-        <source xml:lang="en">Version specified in `engines.vscode` ({0}) is not specific enough. For vscode versions after 1.0.0, please define at a minimum the major desired version. E.g. ^1.10.0, 1.10.x, 1.x.x, 2.x.x, etc.</source>
-      </trans-unit>
-      <trans-unit id="versionMismatch">
-        <source xml:lang="en">Extension is not compatible with Code {0}. Extension requires: {1}.</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/userDataSync/common/settingsSync" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="errorInvalidSettings_Duplicated14">
@@ -1038,6 +1038,22 @@
       </trans-unit>
       <trans-unit id="workspaceOpenedDetail">
         <source xml:lang="en">The workspace is already opened in another window. Please close that window first and then try again.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/extensionManagement/node/extensionsScanner" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="errorDeleting">
+        <source xml:lang="en">Unable to delete the existing folder '{0}' while installing the extension '{1}'. Please delete the folder manually and try again</source>
+      </trans-unit>
+      <trans-unit id="cannot read">
+        <source xml:lang="en">Cannot read the extension from {0}</source>
+      </trans-unit>
+      <trans-unit id="renameError">
+        <source xml:lang="en">Unknown error while renaming {0} to {1}</source>
+      </trans-unit>
+      <trans-unit id="invalidManifest_Duplicated4">
+        <source xml:lang="en">Extension invalid: package.json is not a JSON file.</source>
       </trans-unit>
     </body>
   </file>
@@ -1153,22 +1169,6 @@
       </trans-unit>
       <trans-unit id="workspaceName">
         <source xml:lang="en">{0} (Workspace)</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/platform/extensionManagement/node/extensionsScanner" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="errorDeleting">
-        <source xml:lang="en">Unable to delete the existing folder '{0}' while installing the extension '{1}'. Please delete the folder manually and try again</source>
-      </trans-unit>
-      <trans-unit id="cannot read">
-        <source xml:lang="en">Cannot read the extension from {0}</source>
-      </trans-unit>
-      <trans-unit id="renameError">
-        <source xml:lang="en">Unknown error while renaming {0} to {1}</source>
-      </trans-unit>
-      <trans-unit id="invalidManifest_Duplicated4">
-        <source xml:lang="en">Extension invalid: package.json is not a JSON file.</source>
       </trans-unit>
     </body>
   </file>
