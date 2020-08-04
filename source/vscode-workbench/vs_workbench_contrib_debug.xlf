@@ -633,32 +633,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/common/debugContentProvider" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="unable">
-        <source xml:lang="en">Unable to resolve the resource without a debug session</source>
-      </trans-unit>
-      <trans-unit id="canNotResolveSourceWithError">
-        <source xml:lang="en">Could not load source '{0}': {1}.</source>
-      </trans-unit>
-      <trans-unit id="canNotResolveSource">
-        <source xml:lang="en">Could not load source '{0}'.</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/debugStatus" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="status.debug">
-        <source xml:lang="en">Debug</source>
-      </trans-unit>
-      <trans-unit id="debugTarget">
-        <source xml:lang="en">Debug: {0}</source>
-      </trans-unit>
-      <trans-unit id="selectAndStartDebug">
-        <source xml:lang="en">Select and start debug configuration</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/workbench/contrib/debug/browser/debugQuickAccess" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="noDebugResults">
@@ -686,13 +660,29 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/workbench/contrib/debug/browser/linkDetector" source-language="en" datatype="plaintext">
+  <file original="src/vs/workbench/contrib/debug/browser/debugStatus" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="fileLinkMac">
-        <source xml:lang="en">Cmd + click to follow link</source>
+      <trans-unit id="status.debug">
+        <source xml:lang="en">Debug</source>
       </trans-unit>
-      <trans-unit id="fileLink">
-        <source xml:lang="en">Ctrl + click to follow link</source>
+      <trans-unit id="debugTarget">
+        <source xml:lang="en">Debug: {0}</source>
+      </trans-unit>
+      <trans-unit id="selectAndStartDebug">
+        <source xml:lang="en">Select and start debug configuration</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/common/debugContentProvider" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="unable">
+        <source xml:lang="en">Unable to resolve the resource without a debug session</source>
+      </trans-unit>
+      <trans-unit id="canNotResolveSourceWithError">
+        <source xml:lang="en">Could not load source '{0}': {1}.</source>
+      </trans-unit>
+      <trans-unit id="canNotResolveSource">
+        <source xml:lang="en">Could not load source '{0}'.</source>
       </trans-unit>
     </body>
   </file>
@@ -722,6 +712,16 @@
       </trans-unit>
       <trans-unit id="snapshotObj">
         <source xml:lang="en">Only primitive values are shown for this object.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/workbench/contrib/debug/browser/linkDetector" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="fileLinkMac">
+        <source xml:lang="en">Cmd + click to follow link</source>
+      </trans-unit>
+      <trans-unit id="fileLink">
+        <source xml:lang="en">Ctrl + click to follow link</source>
       </trans-unit>
     </body>
   </file>
@@ -779,6 +779,32 @@
       </trans-unit>
     </body>
   </file>
+  <file original="src/vs/workbench/contrib/debug/browser/watchExpressionsView" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="editWatchExpression">
+        <source xml:lang="en">Edit Expression</source>
+      </trans-unit>
+      <trans-unit id="removeWatchExpression">
+        <source xml:lang="en">Remove Expression</source>
+      </trans-unit>
+      <trans-unit id="watchExpressionInputAriaLabel">
+        <source xml:lang="en">Type watch expression</source>
+      </trans-unit>
+      <trans-unit id="watchExpressionPlaceholder">
+        <source xml:lang="en">Expression to watch</source>
+      </trans-unit>
+      <trans-unit id="watchAriaTreeLabel">
+        <source xml:lang="en">Debug Watch Expressions</source>
+        <note>Debug is a noun in this context, not a verb.</note>
+      </trans-unit>
+      <trans-unit id="watchExpressionAriaLabel">
+        <source xml:lang="en">{0}, value {1}</source>
+      </trans-unit>
+      <trans-unit id="watchVariableAriaLabel">
+        <source xml:lang="en">{0}, value {1}</source>
+      </trans-unit>
+    </body>
+  </file>
   <file original="src/vs/workbench/contrib/debug/browser/debugEditorActions" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="toggleBreakpointAction">
@@ -811,32 +837,6 @@
       </trans-unit>
       <trans-unit id="goToPreviousBreakpoint">
         <source xml:lang="en">Debug: Go To Previous Breakpoint</source>
-      </trans-unit>
-    </body>
-  </file>
-  <file original="src/vs/workbench/contrib/debug/browser/watchExpressionsView" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="editWatchExpression">
-        <source xml:lang="en">Edit Expression</source>
-      </trans-unit>
-      <trans-unit id="removeWatchExpression">
-        <source xml:lang="en">Remove Expression</source>
-      </trans-unit>
-      <trans-unit id="watchExpressionInputAriaLabel">
-        <source xml:lang="en">Type watch expression</source>
-      </trans-unit>
-      <trans-unit id="watchExpressionPlaceholder">
-        <source xml:lang="en">Expression to watch</source>
-      </trans-unit>
-      <trans-unit id="watchAriaTreeLabel">
-        <source xml:lang="en">Debug Watch Expressions</source>
-        <note>Debug is a noun in this context, not a verb.</note>
-      </trans-unit>
-      <trans-unit id="watchExpressionAriaLabel">
-        <source xml:lang="en">{0}, value {1}</source>
-      </trans-unit>
-      <trans-unit id="watchVariableAriaLabel">
-        <source xml:lang="en">{0}, value {1}</source>
       </trans-unit>
     </body>
   </file>
