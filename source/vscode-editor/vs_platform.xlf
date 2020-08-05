@@ -2,17 +2,26 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file original="src/vs/platform/userDataSync/common/userDataSync" source-language="en" datatype="plaintext">
     <body>
-      <trans-unit id="sync">
-        <source xml:lang="en">Sync</source>
+      <trans-unit id="settings sync">
+        <source xml:lang="en">Settings Sync</source>
       </trans-unit>
-      <trans-unit id="sync.keybindingsPerPlatform">
-        <source xml:lang="en">Synchronize keybindings per platform.</source>
+      <trans-unit id="settingsSync.keybindingsPerPlatform">
+        <source xml:lang="en">Synchronize keybindings for each platform.</source>
       </trans-unit>
-      <trans-unit id="sync.ignoredExtensions">
+      <trans-unit id="sync.keybindingsPerPlatform.deprecated">
+        <source xml:lang="en">Deprecated, use settingsSync.keybindingsPerPlatform instead</source>
+      </trans-unit>
+      <trans-unit id="settingsSync.ignoredExtensions">
         <source xml:lang="en">List of extensions to be ignored while synchronizing. The identifier of an extension is always ${publisher}.${name}. For example: vscode.csharp.</source>
       </trans-unit>
-      <trans-unit id="sync.ignoredSettings">
+      <trans-unit id="sync.ignoredExtensions.deprecated">
+        <source xml:lang="en">Deprecated, use settingsSync.ignoredExtensions instead</source>
+      </trans-unit>
+      <trans-unit id="settingsSync.ignoredSettings">
         <source xml:lang="en">Configure settings to be ignored while synchronizing.</source>
+      </trans-unit>
+      <trans-unit id="sync.ignoredSettings.deprecated">
+        <source xml:lang="en">Deprecated, use settingsSync.ignoredSettings instead</source>
       </trans-unit>
       <trans-unit id="app.extension.identifier.errorMessage">
         <source xml:lang="en">Expected format '${publisher}.${name}'. Example: 'vscode.csharp'.</source>
@@ -63,16 +72,6 @@
       </trans-unit>
     </body>
   </file>
-  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext">
-    <body>
-      <trans-unit id="extensions">
-        <source xml:lang="en">Extensions</source>
-      </trans-unit>
-      <trans-unit id="preferences">
-        <source xml:lang="en">Preferences</source>
-      </trans-unit>
-    </body>
-  </file>
   <file original="src/vs/platform/update/common/update.config.contribution" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="updateConfigurationTitle">
@@ -104,6 +103,16 @@
       </trans-unit>
       <trans-unit id="showReleaseNotes">
         <source xml:lang="en">Show Release Notes after an update. The Release Notes are fetched from a Microsoft online service.</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="extensions">
+        <source xml:lang="en">Extensions</source>
+      </trans-unit>
+      <trans-unit id="preferences">
+        <source xml:lang="en">Preferences</source>
       </trans-unit>
     </body>
   </file>
@@ -400,7 +409,7 @@
   <file original="src/vs/platform/userDataSync/common/userDataAutoSyncService" source-language="en" datatype="plaintext">
     <body>
       <trans-unit id="default service changed">
-        <source xml:lang="en">Cannot sync because sync default servuce has changed</source>
+        <source xml:lang="en">Cannot sync because default service has changed</source>
       </trans-unit>
       <trans-unit id="service changed">
         <source xml:lang="en">Cannot sync because sync service has changed</source>
