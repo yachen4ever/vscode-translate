@@ -120,39 +120,6 @@
       <source xml:lang="en">configuration.semanticTokenScopes.scopes': Problems parsing selector {0}.</source>
     </trans-unit>
   </body></file>
-  <file original="src/vs/workbench/services/themes/browser/productIconThemeData" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="error.parseicondefs">
-      <source xml:lang="en">Problems processing product icons definitions in {0}:
-{1}</source>
-    </trans-unit>
-    <trans-unit id="defaultTheme">
-      <source xml:lang="en">Default</source>
-    </trans-unit>
-    <trans-unit id="error.cannotparseicontheme">
-      <source xml:lang="en">Problems parsing product icons file: {0}</source>
-    </trans-unit>
-    <trans-unit id="error.invalidformat">
-      <source xml:lang="en">Invalid format for product icons theme file: Object expected.</source>
-    </trans-unit>
-    <trans-unit id="error.missingProperties">
-      <source xml:lang="en">Invalid format for product icons theme file: Must contain iconDefinitions and fonts.</source>
-    </trans-unit>
-    <trans-unit id="error.fontWeight">
-      <source xml:lang="en">Invalid font weight in font '{0}'. Ignoring setting.</source>
-    </trans-unit>
-    <trans-unit id="error.fontStyle">
-      <source xml:lang="en">Invalid font style in font '{0}'. Ignoring setting.</source>
-    </trans-unit>
-    <trans-unit id="error.fontId">
-      <source xml:lang="en">Missing or invalid font id '{0}'. Skipping font definition.</source>
-    </trans-unit>
-    <trans-unit id="error.icon.fontId">
-      <source xml:lang="en">Skipping icon definition '{0}'. Unknown font.</source>
-    </trans-unit>
-    <trans-unit id="error.icon.fontCharacter">
-      <source xml:lang="en">Skipping icon definition '{0}'. Unknown fontCharacter.</source>
-    </trans-unit>
-  </body></file>
   <file original="src/vs/workbench/services/themes/common/colorThemeSchema" source-language="en" datatype="plaintext"><body>
     <trans-unit id="schema.token.settings">
       <source xml:lang="en">Colors and styles for the token.</source>
@@ -194,6 +161,39 @@
       <source xml:lang="en">Colors for semantic tokens</source>
     </trans-unit>
   </body></file>
+  <file original="src/vs/workbench/services/themes/browser/productIconThemeData" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="error.parseicondefs">
+      <source xml:lang="en">Problems processing product icons definitions in {0}:
+{1}</source>
+    </trans-unit>
+    <trans-unit id="defaultTheme">
+      <source xml:lang="en">Default</source>
+    </trans-unit>
+    <trans-unit id="error.cannotparseicontheme">
+      <source xml:lang="en">Problems parsing product icons file: {0}</source>
+    </trans-unit>
+    <trans-unit id="error.invalidformat">
+      <source xml:lang="en">Invalid format for product icons theme file: Object expected.</source>
+    </trans-unit>
+    <trans-unit id="error.missingProperties">
+      <source xml:lang="en">Invalid format for product icons theme file: Must contain iconDefinitions and fonts.</source>
+    </trans-unit>
+    <trans-unit id="error.fontWeight">
+      <source xml:lang="en">Invalid font weight in font '{0}'. Ignoring setting.</source>
+    </trans-unit>
+    <trans-unit id="error.fontStyle">
+      <source xml:lang="en">Invalid font style in font '{0}'. Ignoring setting.</source>
+    </trans-unit>
+    <trans-unit id="error.fontId">
+      <source xml:lang="en">Missing or invalid font id '{0}'. Skipping font definition.</source>
+    </trans-unit>
+    <trans-unit id="error.icon.fontId">
+      <source xml:lang="en">Skipping icon definition '{0}'. Unknown font.</source>
+    </trans-unit>
+    <trans-unit id="error.icon.fontCharacter">
+      <source xml:lang="en">Skipping icon definition '{0}'. Unknown fontCharacter.</source>
+    </trans-unit>
+  </body></file>
   <file original="src/vs/workbench/services/themes/common/productIconThemeSchema" source-language="en" datatype="plaintext"><body>
     <trans-unit id="schema.id">
       <source xml:lang="en">The ID of the font.</source>
@@ -220,102 +220,12 @@
       <source xml:lang="en">Association of icon name to a font character.</source>
     </trans-unit>
   </body></file>
-  <file original="src/vs/workbench/services/themes/common/fileIconThemeSchema" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="schema.folderExpanded">
-      <source xml:lang="en">The folder icon for expanded folders. The expanded folder icon is optional. If not set, the icon defined for folder will be shown.</source>
+  <file original="src/vs/workbench/services/themes/browser/fileIconThemeData" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="error.cannotparseicontheme">
+      <source xml:lang="en">Problems parsing file icons file: {0}</source>
     </trans-unit>
-    <trans-unit id="schema.folder">
-      <source xml:lang="en">The folder icon for collapsed folders, and if folderExpanded is not set, also for expanded folders.</source>
-    </trans-unit>
-    <trans-unit id="schema.file">
-      <source xml:lang="en">The default file icon, shown for all files that don't match any extension, filename or language id.</source>
-    </trans-unit>
-    <trans-unit id="schema.folderNames">
-      <source xml:lang="en">Associates folder names to icons. The object key is the folder name, not including any path segments. No patterns or wildcards are allowed. Folder name matching is case insensitive.</source>
-    </trans-unit>
-    <trans-unit id="schema.folderName">
-      <source xml:lang="en">The ID of the icon definition for the association.</source>
-    </trans-unit>
-    <trans-unit id="schema.folderNamesExpanded">
-      <source xml:lang="en">Associates folder names to icons for expanded folders. The object key is the folder name, not including any path segments. No patterns or wildcards are allowed. Folder name matching is case insensitive.</source>
-    </trans-unit>
-    <trans-unit id="schema.folderNameExpanded">
-      <source xml:lang="en">The ID of the icon definition for the association.</source>
-    </trans-unit>
-    <trans-unit id="schema.fileExtensions">
-      <source xml:lang="en">Associates file extensions to icons. The object key is the file extension name. The extension name is the last segment of a file name after the last dot (not including the dot). Extensions are compared case insensitive.</source>
-    </trans-unit>
-    <trans-unit id="schema.fileExtension">
-      <source xml:lang="en">The ID of the icon definition for the association.</source>
-    </trans-unit>
-    <trans-unit id="schema.fileNames">
-      <source xml:lang="en">Associates file names to icons. The object key is the full file name, but not including any path segments. File name can include dots and a possible file extension. No patterns or wildcards are allowed. File name matching is case insensitive.</source>
-    </trans-unit>
-    <trans-unit id="schema.fileName">
-      <source xml:lang="en">The ID of the icon definition for the association.</source>
-    </trans-unit>
-    <trans-unit id="schema.languageIds">
-      <source xml:lang="en">Associates languages to icons. The object key is the language id as defined in the language contribution point.</source>
-    </trans-unit>
-    <trans-unit id="schema.languageId">
-      <source xml:lang="en">The ID of the icon definition for the association.</source>
-    </trans-unit>
-    <trans-unit id="schema.fonts">
-      <source xml:lang="en">Fonts that are used in the icon definitions.</source>
-    </trans-unit>
-    <trans-unit id="schema.id">
-      <source xml:lang="en">The ID of the font.</source>
-    </trans-unit>
-    <trans-unit id="schema.id.formatError">
-      <source xml:lang="en">The ID must only contain letter, numbers, underscore and minus.</source>
-    </trans-unit>
-    <trans-unit id="schema.src">
-      <source xml:lang="en">The location of the font.</source>
-    </trans-unit>
-    <trans-unit id="schema.font-path">
-      <source xml:lang="en">The font path, relative to the current file icon theme file.</source>
-    </trans-unit>
-    <trans-unit id="schema.font-format">
-      <source xml:lang="en">The format of the font.</source>
-    </trans-unit>
-    <trans-unit id="schema.font-weight">
-      <source xml:lang="en">The weight of the font. See https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight for valid values.</source>
-    </trans-unit>
-    <trans-unit id="schema.font-style">
-      <source xml:lang="en">The style of the font. See https://developer.mozilla.org/en-US/docs/Web/CSS/font-style for valid values.</source>
-    </trans-unit>
-    <trans-unit id="schema.font-size">
-      <source xml:lang="en">The default size of the font. See https://developer.mozilla.org/en-US/docs/Web/CSS/font-size for valid values.</source>
-    </trans-unit>
-    <trans-unit id="schema.iconDefinitions">
-      <source xml:lang="en">Description of all icons that can be used when associating files to icons.</source>
-    </trans-unit>
-    <trans-unit id="schema.iconDefinition">
-      <source xml:lang="en">An icon definition. The object key is the ID of the definition.</source>
-    </trans-unit>
-    <trans-unit id="schema.iconPath">
-      <source xml:lang="en">When using a SVG or PNG: The path to the image. The path is relative to the icon set file.</source>
-    </trans-unit>
-    <trans-unit id="schema.fontCharacter">
-      <source xml:lang="en">When using a glyph font: The character in the font to use.</source>
-    </trans-unit>
-    <trans-unit id="schema.fontColor">
-      <source xml:lang="en">When using a glyph font: The color to use.</source>
-    </trans-unit>
-    <trans-unit id="schema.fontSize">
-      <source xml:lang="en">When using a font: The font size in percentage to the text font. If not set, defaults to the size in the font definition.</source>
-    </trans-unit>
-    <trans-unit id="schema.fontId">
-      <source xml:lang="en">When using a font: The id of the font. If not set, defaults to the first font definition.</source>
-    </trans-unit>
-    <trans-unit id="schema.light">
-      <source xml:lang="en">Optional associations for file icons in light color themes.</source>
-    </trans-unit>
-    <trans-unit id="schema.highContrast">
-      <source xml:lang="en">Optional associations for file icons in high contrast color themes.</source>
-    </trans-unit>
-    <trans-unit id="schema.hidesExplorerArrows">
-      <source xml:lang="en">Configures whether the file explorer's arrows should be hidden when this theme is active.</source>
+    <trans-unit id="error.invalidformat">
+      <source xml:lang="en">Invalid format for file icons theme file: Object expected.</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/services/themes/common/themeConfiguration" source-language="en" datatype="plaintext"><body>
@@ -457,12 +367,102 @@
       <source xml:lang="en">Expected `contributes.{0}.path` ({1}) to be included inside extension's folder ({2}). This might make the extension non-portable.</source>
     </trans-unit>
   </body></file>
-  <file original="src/vs/workbench/services/themes/browser/fileIconThemeData" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="error.cannotparseicontheme">
-      <source xml:lang="en">Problems parsing file icons file: {0}</source>
+  <file original="src/vs/workbench/services/themes/common/fileIconThemeSchema" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="schema.folderExpanded">
+      <source xml:lang="en">The folder icon for expanded folders. The expanded folder icon is optional. If not set, the icon defined for folder will be shown.</source>
     </trans-unit>
-    <trans-unit id="error.invalidformat">
-      <source xml:lang="en">Invalid format for file icons theme file: Object expected.</source>
+    <trans-unit id="schema.folder">
+      <source xml:lang="en">The folder icon for collapsed folders, and if folderExpanded is not set, also for expanded folders.</source>
+    </trans-unit>
+    <trans-unit id="schema.file">
+      <source xml:lang="en">The default file icon, shown for all files that don't match any extension, filename or language id.</source>
+    </trans-unit>
+    <trans-unit id="schema.folderNames">
+      <source xml:lang="en">Associates folder names to icons. The object key is the folder name, not including any path segments. No patterns or wildcards are allowed. Folder name matching is case insensitive.</source>
+    </trans-unit>
+    <trans-unit id="schema.folderName">
+      <source xml:lang="en">The ID of the icon definition for the association.</source>
+    </trans-unit>
+    <trans-unit id="schema.folderNamesExpanded">
+      <source xml:lang="en">Associates folder names to icons for expanded folders. The object key is the folder name, not including any path segments. No patterns or wildcards are allowed. Folder name matching is case insensitive.</source>
+    </trans-unit>
+    <trans-unit id="schema.folderNameExpanded">
+      <source xml:lang="en">The ID of the icon definition for the association.</source>
+    </trans-unit>
+    <trans-unit id="schema.fileExtensions">
+      <source xml:lang="en">Associates file extensions to icons. The object key is the file extension name. The extension name is the last segment of a file name after the last dot (not including the dot). Extensions are compared case insensitive.</source>
+    </trans-unit>
+    <trans-unit id="schema.fileExtension">
+      <source xml:lang="en">The ID of the icon definition for the association.</source>
+    </trans-unit>
+    <trans-unit id="schema.fileNames">
+      <source xml:lang="en">Associates file names to icons. The object key is the full file name, but not including any path segments. File name can include dots and a possible file extension. No patterns or wildcards are allowed. File name matching is case insensitive.</source>
+    </trans-unit>
+    <trans-unit id="schema.fileName">
+      <source xml:lang="en">The ID of the icon definition for the association.</source>
+    </trans-unit>
+    <trans-unit id="schema.languageIds">
+      <source xml:lang="en">Associates languages to icons. The object key is the language id as defined in the language contribution point.</source>
+    </trans-unit>
+    <trans-unit id="schema.languageId">
+      <source xml:lang="en">The ID of the icon definition for the association.</source>
+    </trans-unit>
+    <trans-unit id="schema.fonts">
+      <source xml:lang="en">Fonts that are used in the icon definitions.</source>
+    </trans-unit>
+    <trans-unit id="schema.id">
+      <source xml:lang="en">The ID of the font.</source>
+    </trans-unit>
+    <trans-unit id="schema.id.formatError">
+      <source xml:lang="en">The ID must only contain letter, numbers, underscore and minus.</source>
+    </trans-unit>
+    <trans-unit id="schema.src">
+      <source xml:lang="en">The location of the font.</source>
+    </trans-unit>
+    <trans-unit id="schema.font-path">
+      <source xml:lang="en">The font path, relative to the current file icon theme file.</source>
+    </trans-unit>
+    <trans-unit id="schema.font-format">
+      <source xml:lang="en">The format of the font.</source>
+    </trans-unit>
+    <trans-unit id="schema.font-weight">
+      <source xml:lang="en">The weight of the font. See https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight for valid values.</source>
+    </trans-unit>
+    <trans-unit id="schema.font-style">
+      <source xml:lang="en">The style of the font. See https://developer.mozilla.org/en-US/docs/Web/CSS/font-style for valid values.</source>
+    </trans-unit>
+    <trans-unit id="schema.font-size">
+      <source xml:lang="en">The default size of the font. See https://developer.mozilla.org/en-US/docs/Web/CSS/font-size for valid values.</source>
+    </trans-unit>
+    <trans-unit id="schema.iconDefinitions">
+      <source xml:lang="en">Description of all icons that can be used when associating files to icons.</source>
+    </trans-unit>
+    <trans-unit id="schema.iconDefinition">
+      <source xml:lang="en">An icon definition. The object key is the ID of the definition.</source>
+    </trans-unit>
+    <trans-unit id="schema.iconPath">
+      <source xml:lang="en">When using a SVG or PNG: The path to the image. The path is relative to the icon set file.</source>
+    </trans-unit>
+    <trans-unit id="schema.fontCharacter">
+      <source xml:lang="en">When using a glyph font: The character in the font to use.</source>
+    </trans-unit>
+    <trans-unit id="schema.fontColor">
+      <source xml:lang="en">When using a glyph font: The color to use.</source>
+    </trans-unit>
+    <trans-unit id="schema.fontSize">
+      <source xml:lang="en">When using a font: The font size in percentage to the text font. If not set, defaults to the size in the font definition.</source>
+    </trans-unit>
+    <trans-unit id="schema.fontId">
+      <source xml:lang="en">When using a font: The id of the font. If not set, defaults to the first font definition.</source>
+    </trans-unit>
+    <trans-unit id="schema.light">
+      <source xml:lang="en">Optional associations for file icons in light color themes.</source>
+    </trans-unit>
+    <trans-unit id="schema.highContrast">
+      <source xml:lang="en">Optional associations for file icons in high contrast color themes.</source>
+    </trans-unit>
+    <trans-unit id="schema.hidesExplorerArrows">
+      <source xml:lang="en">Configures whether the file explorer's arrows should be hidden when this theme is active.</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/services/themes/common/colorThemeData" source-language="en" datatype="plaintext"><body>
