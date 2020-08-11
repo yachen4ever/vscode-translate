@@ -37,14 +37,6 @@
       <source xml:lang="en">Arguments in `--goto` mode should be in the format of `FILE(:LINE(:CHARACTER))`.</source>
     </trans-unit>
   </body></file>
-  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="extensions">
-      <source xml:lang="en">Extensions</source>
-    </trans-unit>
-    <trans-unit id="preferences">
-      <source xml:lang="en">Preferences</source>
-    </trans-unit>
-  </body></file>
   <file original="src/vs/platform/request/common/request" source-language="en" datatype="plaintext"><body>
     <trans-unit id="httpConfigurationTitle">
       <source xml:lang="en">HTTP</source>
@@ -72,11 +64,6 @@
     </trans-unit>
     <trans-unit id="systemCertificates">
       <source xml:lang="en">Controls whether CA certificates should be loaded from the OS. (On Windows and macOS a reload of the window is required after turning this off.)</source>
-    </trans-unit>
-  </body></file>
-  <file original="src/vs/platform/extensionManagement/node/extensionManagementUtil" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="invalidManifest">
-      <source xml:lang="en">VSIX invalid: package.json is not a JSON file.</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/platform/update/common/update.config.contribution" source-language="en" datatype="plaintext"><body>
@@ -109,6 +96,19 @@
     </trans-unit>
     <trans-unit id="showReleaseNotes">
       <source xml:lang="en">Show Release Notes after an update. The Release Notes are fetched from a Microsoft online service.</source>
+    </trans-unit>
+  </body></file>
+  <file original="src/vs/platform/extensionManagement/common/extensionManagement" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="extensions">
+      <source xml:lang="en">Extensions</source>
+    </trans-unit>
+    <trans-unit id="preferences">
+      <source xml:lang="en">Preferences</source>
+    </trans-unit>
+  </body></file>
+  <file original="src/vs/platform/extensionManagement/node/extensionManagementUtil" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="invalidManifest">
+      <source xml:lang="en">VSIX invalid: package.json is not a JSON file.</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/platform/environment/node/argv" source-language="en" datatype="plaintext"><body>
@@ -464,6 +464,14 @@
       <source xml:lang="en">Info</source>
     </trans-unit>
   </body></file>
+  <file original="src/vs/platform/files/common/io" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="fileTooLargeForHeapError">
+      <source xml:lang="en">To open a file of this size, you need to restart and allow it to use more memory</source>
+    </trans-unit>
+    <trans-unit id="fileTooLargeError">
+      <source xml:lang="en">File is too large to open</source>
+    </trans-unit>
+  </body></file>
   <file original="src/vs/platform/extensions/common/extensionValidator" source-language="en" datatype="plaintext"><body>
     <trans-unit id="versionSyntax">
       <source xml:lang="en">Could not parse `engines.vscode` value {0}. Please use, for example: ^1.22.0, ^1.22.x, etc.</source>
@@ -476,14 +484,6 @@
     </trans-unit>
     <trans-unit id="versionMismatch">
       <source xml:lang="en">Extension is not compatible with Code {0}. Extension requires: {1}.</source>
-    </trans-unit>
-  </body></file>
-  <file original="src/vs/platform/files/common/io" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="fileTooLargeForHeapError">
-      <source xml:lang="en">To open a file of this size, you need to restart and allow it to use more memory</source>
-    </trans-unit>
-    <trans-unit id="fileTooLargeError">
-      <source xml:lang="en">File is too large to open</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/platform/userDataSync/common/keybindingsSync" source-language="en" datatype="plaintext"><body>
@@ -987,6 +987,17 @@
       <source xml:lang="en">Unable to sync settings as there are errors/warning in settings file.</source>
     </trans-unit>
   </body></file>
+  <file original="src/vs/platform/workspaces/electron-main/workspacesMainService" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="ok">
+      <source xml:lang="en">OK</source>
+    </trans-unit>
+    <trans-unit id="workspaceOpenedMessage">
+      <source xml:lang="en">Unable to save workspace '{0}'</source>
+    </trans-unit>
+    <trans-unit id="workspaceOpenedDetail">
+      <source xml:lang="en">The workspace is already opened in another window. Please close that window first and then try again.</source>
+    </trans-unit>
+  </body></file>
   <file original="src/vs/platform/extensionManagement/node/extensionsScanner" source-language="en" datatype="plaintext"><body>
     <trans-unit id="errorDeleting">
       <source xml:lang="en">Unable to delete the existing folder '{0}' while installing the extension '{1}'. Please delete the folder manually and try again</source>
@@ -999,17 +1010,6 @@
     </trans-unit>
     <trans-unit id="invalidManifest">
       <source xml:lang="en">Extension invalid: package.json is not a JSON file.</source>
-    </trans-unit>
-  </body></file>
-  <file original="src/vs/platform/workspaces/electron-main/workspacesMainService" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="ok">
-      <source xml:lang="en">OK</source>
-    </trans-unit>
-    <trans-unit id="workspaceOpenedMessage">
-      <source xml:lang="en">Unable to save workspace '{0}'</source>
-    </trans-unit>
-    <trans-unit id="workspaceOpenedDetail">
-      <source xml:lang="en">The workspace is already opened in another window. Please close that window first and then try again.</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/platform/quickinput/browser/helpQuickAccess" source-language="en" datatype="plaintext"><body>

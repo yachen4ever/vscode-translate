@@ -403,11 +403,6 @@
       <source xml:lang="en">Reload Now</source>
     </trans-unit>
   </body></file>
-  <file original="src/vs/workbench/contrib/extensions/common/extensionsInput" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="extensionsInputName">
-      <source xml:lang="en">Extension: {0}</source>
-    </trans-unit>
-  </body></file>
   <file original="src/vs/workbench/contrib/extensions/common/extensionsFileTemplate" source-language="en" datatype="plaintext"><body>
     <trans-unit id="app.extensions.json.title">
       <source xml:lang="en">Extensions</source>
@@ -431,6 +426,17 @@
     </trans-unit>
     <trans-unit id="no">
       <source xml:lang="en">No</source>
+    </trans-unit>
+  </body></file>
+  <file original="src/vs/workbench/contrib/extensions/common/extensionsInput" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="extensionsInputName">
+      <source xml:lang="en">Extension: {0}</source>
+    </trans-unit>
+  </body></file>
+  <file original="src/vs/workbench/contrib/extensions/browser/remoteExtensionsInstaller" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="remote">
+      <source xml:lang="en">Remote</source>
+      <note>Remote as in remote machine</note>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/extensions/browser/extensionsActivationProgress" source-language="en" datatype="plaintext"><body>
@@ -469,12 +475,6 @@
       <source xml:lang="en">Press Enter to manage your extensions.</source>
     </trans-unit>
   </body></file>
-  <file original="src/vs/workbench/contrib/extensions/browser/remoteExtensionsInstaller" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="remote">
-      <source xml:lang="en">Remote</source>
-      <note>Remote as in remote machine</note>
-    </trans-unit>
-  </body></file>
   <file original="src/vs/workbench/contrib/extensions/browser/dynamicWorkspaceRecommendations" source-language="en" datatype="plaintext"><body>
     <trans-unit id="dynamicWorkspaceRecommendation">
       <source xml:lang="en">This extension may interest you because it's popular among users of the {0} repository.</source>
@@ -489,23 +489,6 @@
     </trans-unit>
     <trans-unit id="exeBasedRecommendation">
       <source xml:lang="en">This extension is recommended because of the current workspace configuration</source>
-    </trans-unit>
-  </body></file>
-  <file original="src/vs/workbench/contrib/extensions/browser/exeBasedRecommendations" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="extensionPackRecommended">
-      <source xml:lang="en">The '{0}' extension pack is recommended as you have {1} installed on your system.</source>
-    </trans-unit>
-    <trans-unit id="exeRecommended">
-      <source xml:lang="en">The '{0}' extension is recommended as you have {1} installed on your system.</source>
-    </trans-unit>
-    <trans-unit id="two extensions recommended">
-      <source xml:lang="en">The '{0}' and '{1}' extensions are recommended as you have {2} installed on your system.</source>
-    </trans-unit>
-    <trans-unit id="more than two extensions recommended">
-      <source xml:lang="en">The '{0}', '{1}' and other extensions are recommended as you have {2} installed on your system.</source>
-    </trans-unit>
-    <trans-unit id="exeBasedRecommendation">
-      <source xml:lang="en">This extension is recommended because you have {0} installed.</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/extensions/browser/workspaceRecommendations" source-language="en" datatype="plaintext"><body>
@@ -523,6 +506,23 @@
     </trans-unit>
     <trans-unit id="showRecommendations">
       <source xml:lang="en">Show Recommendations</source>
+    </trans-unit>
+  </body></file>
+  <file original="src/vs/workbench/contrib/extensions/browser/exeBasedRecommendations" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="extensionPackRecommended">
+      <source xml:lang="en">The '{0}' extension pack is recommended as you have {1} installed on your system.</source>
+    </trans-unit>
+    <trans-unit id="exeRecommended">
+      <source xml:lang="en">The '{0}' extension is recommended as you have {1} installed on your system.</source>
+    </trans-unit>
+    <trans-unit id="two extensions recommended">
+      <source xml:lang="en">The '{0}' and '{1}' extensions are recommended as you have {2} installed on your system.</source>
+    </trans-unit>
+    <trans-unit id="more than two extensions recommended">
+      <source xml:lang="en">The '{0}', '{1}' and other extensions are recommended as you have {2} installed on your system.</source>
+    </trans-unit>
+    <trans-unit id="exeBasedRecommendation">
+      <source xml:lang="en">This extension is recommended because you have {0} installed.</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/extensions/browser/extensionsWorkbenchService" source-language="en" datatype="plaintext"><body>
@@ -850,20 +850,6 @@
       <source xml:lang="en">No</source>
     </trans-unit>
   </body></file>
-  <file original="src/vs/workbench/contrib/extensions/browser/extensionsWidgets" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="ratedBySingleUser">
-      <source xml:lang="en">Rated by 1 user</source>
-    </trans-unit>
-    <trans-unit id="ratedByUsers">
-      <source xml:lang="en">Rated by {0} users</source>
-    </trans-unit>
-    <trans-unit id="noRating">
-      <source xml:lang="en">No rating</source>
-    </trans-unit>
-    <trans-unit id="remote extension title">
-      <source xml:lang="en">Extension in {0}</source>
-    </trans-unit>
-  </body></file>
   <file original="src/vs/workbench/contrib/extensions/browser/extensionsViewer" source-language="en" datatype="plaintext"><body>
     <trans-unit id="error">
       <source xml:lang="en">Error</source>
@@ -876,6 +862,20 @@
     </trans-unit>
     <trans-unit id="extensions">
       <source xml:lang="en">Extensions</source>
+    </trans-unit>
+  </body></file>
+  <file original="src/vs/workbench/contrib/extensions/browser/extensionsWidgets" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="ratedBySingleUser">
+      <source xml:lang="en">Rated by 1 user</source>
+    </trans-unit>
+    <trans-unit id="ratedByUsers">
+      <source xml:lang="en">Rated by {0} users</source>
+    </trans-unit>
+    <trans-unit id="noRating">
+      <source xml:lang="en">No rating</source>
+    </trans-unit>
+    <trans-unit id="remote extension title">
+      <source xml:lang="en">Extension in {0}</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/contrib/extensions/browser/extensionsActions" source-language="en" datatype="plaintext"><body>

@@ -723,23 +723,6 @@ This option requires restart to take effect.</source>
       <note>&amp;&amp; denotes a mnemonic</note>
     </trans-unit>
   </body></file>
-  <file original="src/vs/workbench/browser/actions/quickAccessActions" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="quickOpen">
-      <source xml:lang="en">Go to File...</source>
-    </trans-unit>
-    <trans-unit id="quickNavigateNext">
-      <source xml:lang="en">Navigate Next in Quick Open</source>
-    </trans-unit>
-    <trans-unit id="quickNavigatePrevious">
-      <source xml:lang="en">Navigate Previous in Quick Open</source>
-    </trans-unit>
-    <trans-unit id="quickSelectNext">
-      <source xml:lang="en">Select Next in Quick Open</source>
-    </trans-unit>
-    <trans-unit id="quickSelectPrevious">
-      <source xml:lang="en">Select Previous in Quick Open</source>
-    </trans-unit>
-  </body></file>
   <file original="src/vs/workbench/api/common/configurationExtensionPoint" source-language="en" datatype="plaintext"><body>
     <trans-unit id="vscode.extension.contributes.configuration.title">
       <source xml:lang="en">A summary of the settings. This label will be used in the settings file as separating comment.</source>
@@ -836,6 +819,23 @@ This option requires restart to take effect.</source>
     </trans-unit>
     <trans-unit id="unknownWorkspaceProperty">
       <source xml:lang="en">Unknown workspace configuration property</source>
+    </trans-unit>
+  </body></file>
+  <file original="src/vs/workbench/browser/actions/quickAccessActions" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="quickOpen">
+      <source xml:lang="en">Go to File...</source>
+    </trans-unit>
+    <trans-unit id="quickNavigateNext">
+      <source xml:lang="en">Navigate Next in Quick Open</source>
+    </trans-unit>
+    <trans-unit id="quickNavigatePrevious">
+      <source xml:lang="en">Navigate Previous in Quick Open</source>
+    </trans-unit>
+    <trans-unit id="quickSelectNext">
+      <source xml:lang="en">Select Next in Quick Open</source>
+    </trans-unit>
+    <trans-unit id="quickSelectPrevious">
+      <source xml:lang="en">Select Previous in Quick Open</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/browser/parts/sidebar/sidebarPart" source-language="en" datatype="plaintext"><body>
@@ -1649,15 +1649,21 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <source xml:lang="en">Reset Location</source>
     </trans-unit>
   </body></file>
-  <file original="src/vs/workbench/browser/parts/notifications/notificationsCenter" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="notificationsEmpty">
-      <source xml:lang="en">No new notifications</source>
-    </trans-unit>
+  <file original="src/vs/workbench/browser/parts/notifications/notificationsCommands" source-language="en" datatype="plaintext"><body>
     <trans-unit id="notifications">
       <source xml:lang="en">Notifications</source>
     </trans-unit>
-    <trans-unit id="notificationsToolbar">
-      <source xml:lang="en">Notification Center Actions</source>
+    <trans-unit id="showNotifications">
+      <source xml:lang="en">Show Notifications</source>
+    </trans-unit>
+    <trans-unit id="hideNotifications">
+      <source xml:lang="en">Hide Notifications</source>
+    </trans-unit>
+    <trans-unit id="clearAllNotifications">
+      <source xml:lang="en">Clear All Notifications</source>
+    </trans-unit>
+    <trans-unit id="focusNotificationToasts">
+      <source xml:lang="en">Focus Notification Toast</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/browser/parts/notifications/notificationsStatus" source-language="en" datatype="plaintext"><body>
@@ -1696,21 +1702,15 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <source xml:lang="en">Status Message</source>
     </trans-unit>
   </body></file>
-  <file original="src/vs/workbench/browser/parts/notifications/notificationsCommands" source-language="en" datatype="plaintext"><body>
+  <file original="src/vs/workbench/browser/parts/notifications/notificationsCenter" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="notificationsEmpty">
+      <source xml:lang="en">No new notifications</source>
+    </trans-unit>
     <trans-unit id="notifications">
       <source xml:lang="en">Notifications</source>
     </trans-unit>
-    <trans-unit id="showNotifications">
-      <source xml:lang="en">Show Notifications</source>
-    </trans-unit>
-    <trans-unit id="hideNotifications">
-      <source xml:lang="en">Hide Notifications</source>
-    </trans-unit>
-    <trans-unit id="clearAllNotifications">
-      <source xml:lang="en">Clear All Notifications</source>
-    </trans-unit>
-    <trans-unit id="focusNotificationToasts">
-      <source xml:lang="en">Focus Notification Toast</source>
+    <trans-unit id="notificationsToolbar">
+      <source xml:lang="en">Notification Center Actions</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/api/common/extHostExtensionActivator" source-language="en" datatype="plaintext"><body>
@@ -1778,6 +1778,11 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <source xml:lang="en">Timeout in milliseconds after which file participants for create, rename, and delete are cancelled. Use `0` to disable participants.</source>
     </trans-unit>
   </body></file>
+  <file original="src/vs/workbench/api/browser/mainThreadProgress" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="manageExtension">
+      <source xml:lang="en">Manage Extension</source>
+    </trans-unit>
+  </body></file>
   <file original="src/vs/workbench/api/browser/mainThreadMessageService" source-language="en" datatype="plaintext"><body>
     <trans-unit id="extensionSource">
       <source xml:lang="en">{0} (Extension)</source>
@@ -1793,11 +1798,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
     </trans-unit>
     <trans-unit id="ok">
       <source xml:lang="en">OK</source>
-    </trans-unit>
-  </body></file>
-  <file original="src/vs/workbench/api/browser/mainThreadProgress" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="manageExtension">
-      <source xml:lang="en">Manage Extension</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/api/browser/mainThreadSaveParticipant" source-language="en" datatype="plaintext"><body>
@@ -2140,6 +2140,17 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <source xml:lang="en">Edit</source>
     </trans-unit>
   </body></file>
+  <file original="src/vs/workbench/browser/parts/notifications/notificationsList" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="notificationAriaLabel">
+      <source xml:lang="en">{0}, notification</source>
+    </trans-unit>
+    <trans-unit id="notificationWithSourceAriaLabel">
+      <source xml:lang="en">{0}, source: {1}, notification</source>
+    </trans-unit>
+    <trans-unit id="notificationsList">
+      <source xml:lang="en">Notifications List</source>
+    </trans-unit>
+  </body></file>
   <file original="src/vs/workbench/browser/parts/titlebar/menubarControl" source-language="en" datatype="plaintext"><body>
     <trans-unit id="mFile">
       <source xml:lang="en">&amp;&amp;File</source>
@@ -2206,17 +2217,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
     <trans-unit id="restartToUpdate">
       <source xml:lang="en">Restart to &amp;&amp;Update</source>
       <note>&amp;&amp; denotes a mnemonic</note>
-    </trans-unit>
-  </body></file>
-  <file original="src/vs/workbench/browser/parts/notifications/notificationsList" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="notificationAriaLabel">
-      <source xml:lang="en">{0}, notification</source>
-    </trans-unit>
-    <trans-unit id="notificationWithSourceAriaLabel">
-      <source xml:lang="en">{0}, source: {1}, notification</source>
-    </trans-unit>
-    <trans-unit id="notificationsList">
-      <source xml:lang="en">Notifications List</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/browser/parts/notifications/notificationsActions" source-language="en" datatype="plaintext"><body>
@@ -2706,11 +2706,6 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
       <note>&amp;&amp; denotes a mnemonic</note>
     </trans-unit>
   </body></file>
-  <file original="src/vs/workbench/browser/parts/editor/textDiffEditor" source-language="en" datatype="plaintext"><body>
-    <trans-unit id="textDiffEditor">
-      <source xml:lang="en">Text Diff Editor</source>
-    </trans-unit>
-  </body></file>
   <file original="src/vs/workbench/browser/parts/editor/editorQuickAccess" source-language="en" datatype="plaintext"><body>
     <trans-unit id="noViewResults">
       <source xml:lang="en">No matching editors</source>
@@ -2726,6 +2721,11 @@ Note that there can still be cases where this setting is ignored (e.g. when usin
     </trans-unit>
     <trans-unit id="closeEditor">
       <source xml:lang="en">Close Editor</source>
+    </trans-unit>
+  </body></file>
+  <file original="src/vs/workbench/browser/parts/editor/textDiffEditor" source-language="en" datatype="plaintext"><body>
+    <trans-unit id="textDiffEditor">
+      <source xml:lang="en">Text Diff Editor</source>
     </trans-unit>
   </body></file>
   <file original="src/vs/workbench/browser/parts/editor/editorGroupView" source-language="en" datatype="plaintext"><body>
